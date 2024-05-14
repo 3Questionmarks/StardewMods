@@ -1,0 +1,77 @@
+{
+"Changes": [
+ {
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Update": "OnTimeChange, OnLocationChange",
+"Entries": {
+"{{ModID}}_GemGive.Trigger":  {
+"Id": "{{ModID}}_GemGive.Trigger",
+"Trigger": "DayStarted",
+"Condition": null,
+"HostOnly": false,
+"Action": "AddMail Current {{ModID}}_GemGive.Mail",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Update": "OnTimeChange, OnLocationChange",
+"Entries": {
+"{{ModID}}_GotGem.Trigger":  {
+"Id": "{{ModID}}_GotGem.Trigger",
+"Trigger": "LocationChanged",
+"Condition": "PLAYER_HAS_ITEM Current {{ModID}}_StatueGem 1 1",
+"HostOnly": false,
+"Action": "AddMail current {{ModID}}_GotGem.Mail",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Update": "OnTimeChange, OnLocationChange",
+"Entries": {
+"{{ModID}}_Graveyard.Trigger":  {
+"Id": "{{ModID}}_Graveyard.Trigger",
+"Trigger": "DayStarted",
+"Condition": "PLAYER_HAS_MAIL Current landslideDone Received",
+"HostOnly": false,
+"Action": "AddMail Current {{ModID}}_Graveyard.Mail",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Update": "OnTimeChange, OnLocationChange",
+"Entries": {
+"{{ModID}}_DodoEgg.Trigger":  {
+"Id": "{{ModID}}_DodoEgg.Trigger",
+"Trigger": "DayStarted",
+"Condition": "PLAYER_HAS_SEEN_EVENT current {{ModID}}_CaveBlockUnlock",
+"HostOnly": false,
+"Action": "AddMail Current {{ModID}}_DodoEgg.Mail",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+{
+"LogName": "Mail",
+"Action": "EditData",
+"Target": "data/mail",
+"Entries": {
+"{{ModID}}_Graveyard.Mail": "{{i18n:FC.Graveyard.Mail}}[#]{{i18n:FC.Graveyard.Mail.Title}}",
+"{{ModID}}_DodoEgg.Mail": "{{i18n:FC.DodoEgg.Mail}}[#]{{i18n:FC.DodoEgg.Mail.Title}}",
+}
+},
+]
+}

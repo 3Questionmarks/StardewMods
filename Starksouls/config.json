@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "Health": {
+    "$id": "2",
+    "Enabled": true,
+    "HealthRegenPercent": 25,
+    "HealthAfterDeathPercent": 10
+  },
+  "Stamina": {
+    "$id": "3",
+    "Enabled": true,
+    "StaminaRegenPercent": 25,
+    "StaminaAfterPassOutPercent": 25
+  }
+}

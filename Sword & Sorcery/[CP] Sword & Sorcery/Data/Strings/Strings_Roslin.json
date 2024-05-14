@@ -1,0 +1,17 @@
+{
+    "Changes": 
+    [
+    {
+        "LogName": "Map Strings",
+        "Action": "EditData",
+        "Target": "strings/StringsFromMaps",
+        "Entries": 
+        {
+            //ROSLIN'S STRINGS 
+    
+            "EXAMPLE":"{{i18n:Strings.Roslin.EXAMPLE}}",
+    
+        }
+       }
+    ]
+}

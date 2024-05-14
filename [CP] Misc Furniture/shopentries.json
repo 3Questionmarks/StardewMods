@@ -1,0 +1,122 @@
+{
+  "Changes": [
+
+    {
+        "LogName": "Add Misc Furniture To Robin's Shop",
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "TargetField": [ "Carpenter", "Items" ],
+        "Entries": {
+            "{{ModId}}_GamingConsole0": {
+                "Id": "{{ModId}}_GamingConsole0",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_GamingConsole0",
+                "Price": 1500,
+            },
+            "{{ModId}}_VideoGameConsole1": {
+                "Id": "{{ModId}}_VideoGameConsole1",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_VideoGameConsole1",
+                "Price": 100,
+            },
+            "{{ModId}}_Computers2": {
+                "Id": "{{ModId}}_Computers2",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Computers2",
+                "Price": 700,
+            },
+            "{{ModId}}_Monitor3": {
+                "Id": "{{ModId}}_Monitor3",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Monitor3",
+                "Price": 1000,
+            },
+            "{{ModId}}_Computer4": {
+                "Id": "{{ModId}}_Computer4",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Computer4",
+                "Price": 600,
+            },
+            "{{ModId}}_HangingSword5": {
+                "Id": "{{ModId}}_HangingSword5",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_HangingSword5",
+                "Price": 900,
+            },
+            "{{ModId}}_SkinnedBear6": {
+                "Id": "{{ModId}}_SkinnedBear6",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_SkinnedBear6",
+                "Price": 5000,
+            },
+            "{{ModId}}_Map7": {
+                "Id": "{{ModId}}_Map7",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Map7",
+                "Price": 400,
+            },
+            "{{ModId}}_LeaningSword8": {
+                "Id": "{{ModId}}_LeaningSword8",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_LeaningSword8",
+                "Price": 850,
+            },
+            "{{ModId}}_ProfiledComputer9": {
+                "Id": "{{ModId}}_ProfiledComputer9",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_ProfiledComputer9",
+                "Price": 300,
+            },
+            "{{ModId}}_Laptop10": {
+                "Id": "{{ModId}}_Laptop10",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Laptop10",
+                "Price": 900,
+            },
+            "{{ModId}}_NotBrandedMusicPlayer11": {
+                "Id": "{{ModId}}_NotBrandedMusicPlayer11",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_NotBrandedMusicPlayer11",
+                "Price": 3000,
+            },
+            "{{ModId}}_LightComputerDesk12": {
+                "Id": "{{ModId}}_LightComputerDesk12",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_LightComputerDesk12",
+                "Price": 1400,
+            },
+            "{{ModId}}_DarkComputerDesk13": {
+                "Id": "{{ModId}}_DarkComputerDesk13",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_DarkComputerDesk13",
+                "Price": 1400,
+            },
+            "{{ModId}}_ComputerDeskinProfile14": {
+                "Id": "{{ModId}}_ComputerDeskinProfile14",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_ComputerDeskinProfile14",
+                "Price": 1600,
+            },
+            "{{ModId}}_HangingEmblem15": {
+                "Id": "{{ModId}}_HangingEmblem15",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_HangingEmblem15",
+                "Price": 2400,
+            },
+            "{{ModId}}_QuestBoard16": {
+                "Id": "{{ModId}}_QuestBoard16",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_QuestBoard16",
+                "Price": 1200,
+            },
+            "{{ModId}}_ArcadeSign17": {
+                "Id": "{{ModId}}_ArcadeSign17",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_ArcadeSign17",
+                "Price": 5000,
+            }
+        }
+    }
+   
+  ]
+}

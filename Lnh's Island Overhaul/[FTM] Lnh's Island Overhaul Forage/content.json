@@ -1,0 +1,1158 @@
+{
+  "$id": "1",
+  "ForageSpawnEnabled": true,
+  "LargeObjectSpawnEnabled": true,
+  "OreSpawnEnabled": true,
+  "MonsterSpawnEnabled": false,
+  "Forage_Spawn_Settings": {
+    "$id": "2",
+    "Areas": [
+      {
+        "$id": "3",
+        "SpringItemIndex": [
+          393,
+          397,
+          372
+        ],
+        "SummerItemIndex": [
+          393,
+          397,
+          372
+        ],
+        "FallItemIndex": [
+          393,
+          397,
+          372
+        ],
+        "WinterItemIndex": [
+          393,
+          397,
+          372
+        ],
+        "UniqueAreaID": "Lnh's New Island Forage1",
+        "MapName": "IslandWest",
+        "MinimumSpawnsPerDay": 3,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "56, 78/101, 83"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "$id": "4",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "5",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "6"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "$id": "7",
+        "SpringItemIndex": [
+          "Morel",
+          "Common Mushroom"
+        ],
+        "SummerItemIndex": [
+          420,
+          404
+        ],
+        "FallItemIndex": [
+          281,
+          404,
+          420,
+          422
+        ],
+        "WinterItemIndex": [],
+        "UniqueAreaID": "Lnh's New Island Forage2",
+        "MapName": "Custom_IslandFarmCave",
+        "MinimumSpawnsPerDay": 3,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [
+          "Grass",
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "$id": "8",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "9",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "10"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "$id": "11",
+        "SpringItemIndex": [
+          398,
+          396,
+          402,
+          420,
+          259,
+          404
+        ],
+        "SummerItemIndex": [
+          398,
+          396,
+          402,
+          420,
+          259,
+          404
+        ],
+        "FallItemIndex": [
+          398,
+          396,
+          402,
+          420,
+          259,
+          404
+        ],
+        "WinterItemIndex": [
+          398,
+          396,
+          402,
+          420,
+          259,
+          404
+        ],
+        "UniqueAreaID": "Lnh's New Island Forage3",
+        "MapName": "Custom_IslandFarmCave",
+        "MinimumSpawnsPerDay": 3,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [
+          "Grass",
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "$id": "12",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "13",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "14"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "$id": "15",
+        "SpringItemIndex": [
+          {
+            "category": "chest",
+            "contents": [
+              {
+                "category": "object",
+                "name": 852,
+                "PercentChanceToSpawn": "30"
+              },
+              {
+                "category": "object",
+                "name": 851,
+                "PercentChanceToSpawn": "50"
+              },
+              {
+                "category": "object",
+                "name": 896,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 909,
+                "Stack": "5",
+                "PercentChanceToSpawn": "10"
+              },
+              {
+                "category": "object",
+                "name": 910,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 858,
+                "Stack": "5",
+                "PercentChanceToSpawn": "10"
+              }
+            ]
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "category": "chest",
+            "contents": [
+              {
+                "category": "object",
+                "name": 852,
+                "PercentChanceToSpawn": "30"
+              },
+              {
+                "category": "object",
+                "name": 851,
+                "PercentChanceToSpawn": "50"
+              },
+              {
+                "category": "object",
+                "name": 896,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 909,
+                "Stack": "5",
+                "PercentChanceToSpawn": "10"
+              },
+              {
+                "category": "object",
+                "name": 910,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 858,
+                "Stack": "5",
+                "PercentChanceToSpawn": "10"
+              }
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "category": "chest",
+            "contents": [
+              {
+                "category": "object",
+                "name": 852,
+                "PercentChanceToSpawn": "30"
+              },
+              {
+                "category": "object",
+                "name": 851,
+                "PercentChanceToSpawn": "50"
+              },
+              {
+                "category": "object",
+                "name": 896,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 909,
+                "Stack": "5",
+                "PercentChanceToSpawn": "10"
+              },
+              {
+                "category": "object",
+                "name": 910,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 858,
+                "Stack": "5",
+                "PercentChanceToSpawn": "10"
+              }
+            ]
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "category": "chest",
+            "contents": [
+              {
+                "category": "object",
+                "name": 852,
+                "PercentChanceToSpawn": "30"
+              },
+              {
+                "category": "object",
+                "name": 851,
+                "PercentChanceToSpawn": "50"
+              },
+              {
+                "category": "object",
+                "name": 896,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 909,
+                "Stack": "5",
+                "PercentChanceToSpawn": "10"
+              },
+              {
+                "category": "object",
+                "name": 910,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 858,
+                "Stack": "5",
+                "PercentChanceToSpawn": "10"
+              }
+            ]
+          }
+        ],
+        "UniqueAreaID": "Lnh's New Island Forage4",
+        "MapName": "Custom_IslandFarmCave",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Grass",
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "$id": "16",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "17",
+          "Years": [],
+          "Seasons": [],
+          "Days": [
+            "1",
+            "28"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "18"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 27
+      },
+      {
+        "$id": "19",
+        "SpringItemIndex": [
+          {
+            "category": "chest",
+            "contents": [
+              {
+                "category": "object",
+                "name": 848,
+                "Stack": "10",
+                "PercentChanceToSpawn": "10"
+              },
+              {
+                "category": "object",
+                "name": 835,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 891,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 69,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 91,
+                "Stack": "3",
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 791,
+                "PercentChanceToSpawn": "5"
+              }
+            ]
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "category": "chest",
+            "contents": [
+              {
+                "category": "object",
+                "name": 848,
+                "Stack": "10",
+                "PercentChanceToSpawn": "10"
+              },
+              {
+                "category": "object",
+                "name": 835,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 891,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 69,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 91,
+                "Stack": "3",
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 791,
+                "PercentChanceToSpawn": "5"
+              }
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "category": "chest",
+            "contents": [
+              {
+                "category": "object",
+                "name": 848,
+                "Stack": "10",
+                "PercentChanceToSpawn": "10"
+              },
+              {
+                "category": "object",
+                "name": 835,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 891,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 69,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 91,
+                "Stack": "3",
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 791,
+                "PercentChanceToSpawn": "5"
+              }
+            ]
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "category": "chest",
+            "contents": [
+              {
+                "category": "object",
+                "name": 848,
+                "Stack": "10",
+                "PercentChanceToSpawn": "10"
+              },
+              {
+                "category": "object",
+                "name": 835,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 891,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 69,
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 91,
+                "Stack": "3",
+                "PercentChanceToSpawn": "5"
+              },
+              {
+                "category": "object",
+                "name": 791,
+                "PercentChanceToSpawn": "5"
+              }
+            ]
+          }
+        ],
+        "UniqueAreaID": "Lnh's New Island Forage5",
+        "MapName": "Custom_IslandFarmCave",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Grass",
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "$id": "20",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "21",
+          "Years": [],
+          "Seasons": [],
+          "Days": [
+            "1",
+            "28"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "22"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 27
+      },
+      {
+        "$id": "23",
+        "SpringItemIndex": [
+          {
+            "category": "Buried",
+            "contents": [
+              {
+                "category": "object",
+                "name": 791,
+                "PercentChanceToSpawn": "20"
+              },
+              {
+                "category": "object",
+                "name": 292,
+                "PercentChanceToSpawn": "30"
+              },
+              {
+                "category": "object",
+                "name": 774,
+                "PercentChanceToSpawn": "30"
+              },
+              {
+                "category": "object",
+                "name": 749,
+                "PercentChanceToSpawn": "80"
+              },
+              {
+                "category": "object",
+                "name": 826,
+                "PercentChanceToSpawn": "30"
+              }
+            ]
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "category": "Buried",
+            "contents": [
+              {
+                "category": "object",
+                "name": 791,
+                "PercentChanceToSpawn": "20"
+              },
+              {
+                "category": "object",
+                "name": 292,
+                "PercentChanceToSpawn": "30"
+              },
+              {
+                "category": "object",
+                "name": 774,
+                "PercentChanceToSpawn": "30"
+              },
+              {
+                "category": "object",
+                "name": 749,
+                "PercentChanceToSpawn": "80"
+              },
+              {
+                "category": "object",
+                "name": 826,
+                "PercentChanceToSpawn": "30"
+              }
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "category": "Buried",
+            "contents": [
+              {
+                "category": "object",
+                "name": 791,
+                "PercentChanceToSpawn": "20"
+              },
+              {
+                "category": "object",
+                "name": 292,
+                "PercentChanceToSpawn": "30"
+              },
+              {
+                "category": "object",
+                "name": 774,
+                "PercentChanceToSpawn": "30"
+              },
+              {
+                "category": "object",
+                "name": 749,
+                "PercentChanceToSpawn": "80"
+              },
+              {
+                "category": "object",
+                "name": 826,
+                "PercentChanceToSpawn": "30"
+              }
+            ]
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "category": "Buried",
+            "contents": [
+              {
+                "category": "object",
+                "name": 791,
+                "PercentChanceToSpawn": "20"
+              },
+              {
+                "category": "object",
+                "name": 292,
+                "PercentChanceToSpawn": "30"
+              },
+              {
+                "category": "object",
+                "name": 774,
+                "PercentChanceToSpawn": "30"
+              },
+              {
+                "category": "object",
+                "name": 749,
+                "PercentChanceToSpawn": "80"
+              },
+              {
+                "category": "object",
+                "name": 826,
+                "PercentChanceToSpawn": "30"
+              }
+            ]
+          }
+        ],
+        "UniqueAreaID": "Lnh's New Island Forage6",
+        "MapName": "IslandWest",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "64, 45/98, 84"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "$id": "24",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "25",
+          "Years": [],
+          "Seasons": [],
+          "Days": [
+            "4",
+            "8",
+            "12",
+            "16",
+            "20",
+            "24",
+            "28"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "26"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      }
+    ],
+    "PercentExtraSpawnsPerForagingLevel": 0,
+    "SpringItemIndex": [
+      16,
+      20,
+      22,
+      257
+    ],
+    "SummerItemIndex": [
+      396,
+      398,
+      402,
+      404
+    ],
+    "FallItemIndex": [
+      281,
+      404,
+      420,
+      422
+    ],
+    "WinterItemIndex": [],
+    "CustomTileIndex": []
+  },
+  "Large_Object_Spawn_Settings": {
+    "$id": "27",
+    "Areas": [
+      {
+        "$id": "28",
+        "ObjectTypes": [
+          "Stump"
+        ],
+        "FindExistingObjectLocations": true,
+        "PercentExtraSpawnsPerSkillLevel": 0,
+        "RelatedSkill": "Foraging",
+        "UniqueAreaID": "Lnh's New Island Stump",
+        "MapName": "Custom_Island_NW",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "8, 27/15, 27"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "$id": "29",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "30",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "31"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      }
+    ],
+    "CustomTileIndex": []
+  },
+  "Ore_Spawn_Settings": {
+    "$id": "32",
+    "Areas": [
+      {
+        "$id": "33",
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": null,
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "Lnh's New Island ore area 1",
+        "MapName": "Custom_Island_NW",
+        "MinimumSpawnsPerDay": 30,
+        "MaximumSpawnsPerDay": 30,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "26, 39/40, 39",
+          "27, 40/36, 40",
+          "28, 41/35, 41",
+          "29, 42/34, 42",
+          "26, 38/44, 38",
+          "30, 37/32, 37",
+          "35, 37/38, 37",
+          "37, 36/38, 36",
+          "38, 35/38, 35",
+          "39, 32/45, 37",
+          "40, 31/43, 31"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "$id": "34",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "35",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "36"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      }
+    ],
+    "PercentExtraSpawnsPerMiningLevel": 0,
+    "MiningLevelRequired": {
+      "$id": "37",
+      "Stone": 0,
+      "Fossil": 0,
+      "Clay": 0
+    },
+    "StartingSpawnChance": {
+      "$id": "38",
+      "Stone": 40,
+      "Fossil": 50,
+      "Clay": 40
+    },
+    "LevelTenSpawnChance": {
+      "$id": "39",
+      "Stone": 40,
+      "Fossil": 50,
+      "Clay": 40
+    },
+    "CustomTileIndex": []
+  },
+  "Monster_Spawn_Settings": {
+    "$id": "40",
+    "Areas": [
+      {
+        "$id": "41",
+        "MonsterTypes": [
+          {
+            "$id": "42",
+            "MonsterName": "shadow brute",
+            "Settings": {
+              "$id": "43",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 8
+            }
+          },
+          {
+            "$id": "44",
+            "MonsterName": "wilderness golem",
+            "Settings": {
+              "$id": "45",
+              "SpawnWeight": 4
+            }
+          },
+          {
+            "$id": "46",
+            "MonsterName": "purple slime",
+            "Settings": {
+              "$id": "47",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "$id": "48",
+            "MonsterName": "red slime",
+            "Settings": {
+              "$id": "49",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 8,
+              "MaximumSkillLevel": 9,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "$id": "50",
+            "MonsterName": "blue slime",
+            "Settings": {
+              "$id": "51",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 4,
+              "MaximumSkillLevel": 7,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "$id": "52",
+            "MonsterName": "green slime",
+            "Settings": {
+              "$id": "53",
+              "RelatedSkill": "Combat",
+              "MaximumSkillLevel": 3,
+              "SpawnWeight": 2
+            }
+          }
+        ],
+        "UniqueAreaID": "LnhFarm monster area 1",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 15,
+        "IncludeTerrainTypes": [
+          "Dirt",
+          "Diggable",
+          "Grass",
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "$id": "54",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 15,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "55",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "56"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "$id": "57",
+        "MonsterTypes": [
+          {
+            "$id": "58",
+            "MonsterName": "iridium bat",
+            "Settings": {
+              "$id": "59",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 4
+            }
+          },
+          {
+            "$id": "60",
+            "MonsterName": "serpent",
+            "Settings": {
+              "$id": "61",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 3
+            }
+          },
+          {
+            "$id": "62",
+            "MonsterName": "lava bat",
+            "Settings": {
+              "$id": "63",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 8,
+              "SpawnWeight": 4
+            }
+          },
+          {
+            "$id": "64",
+            "MonsterName": "frost bat",
+            "Settings": {
+              "$id": "65",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 5,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "$id": "66",
+            "MonsterName": "bat",
+            "Settings": {
+              "$id": "67",
+              "SpawnWeight": 2
+            }
+          }
+        ],
+        "UniqueAreaID": "LnhFarm monster area 2",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 15,
+        "IncludeTerrainTypes": [
+          "Dirt",
+          "Diggable",
+          "Grass",
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "$id": "68",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 15,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "69",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "70"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      }
+    ],
+    "CustomTileIndex": []
+  },
+  "QuarryTileIndex": [
+    481,
+    556,
+    558,
+    583,
+    608,
+    607,
+    606,
+    630,
+    680,
+    681,
+    685,
+    537
+  ],
+  "File_Conditions": {
+    "$id": "71",
+    "FarmTypes": [],
+    "FarmerNames": [],
+    "SaveFileNames": [],
+    "OtherMods": {
+      "$id": "72"
+    }
+  }
+}

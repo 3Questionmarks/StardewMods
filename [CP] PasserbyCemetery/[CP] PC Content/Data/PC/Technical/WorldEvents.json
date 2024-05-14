@@ -1,0 +1,12 @@
+{
+"Changes": [
+{
+"Action": "EditData",
+"Target": "Data/Events/{{ModID}}_OldGraveYard",
+"Entries": {
+"{{ModID}}_AltarOffering": "none/-1000 -1000/farmer 17 49 2/viewport 17 49 clamp true/pause 900/question fork0 \"{{i18n:BlessedFruitEvent.1}}#{{i18n:BlessedFruitEvent.2}}#{{i18n:BlessedFruitEvent.3}}#\"/fork FC.YesFruit/end position 17 49",
+"FC.YesFruit": "showFrame farmer 3/playSound stardrop/glow 00 255 4000/farmerEat {{ModID}}_SpeedFruit/message \"{{i18n:BlessedFruitEvent.4}}\"/action addmoney -200/end position 17 49",
+}, 
+},
+]
+}

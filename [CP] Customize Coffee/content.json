@@ -1,0 +1,87 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    "CoffeeDuration": {
+      "Default": 120,
+      "Section": "Coffee",
+      "Description": "Duration of coffee per minute, set -2 to make last for the rest of the day. Default: 120"
+    },
+    "CoffeeSpeed": {
+      "Default": 1.0,
+      "Section": "Coffee",
+      "Description": "Speed boost of coffee. Default: 1.0"
+    },
+    "CoffeeEdibility": {
+      "Default": 1,
+      "Section": "Coffee",
+      "Description": "Determines how much energy (edibility × 2.5) and health (edibility × 1.125) is restored when this item is eaten. Support negative value. Default: 1"
+    },
+    "EspressoDuration": {
+      "Default": 360,
+      "Section": "Triple Shot Espresso",
+      "Description": "Duration of Triple Shot Espresso per minute, set -2 to make last for the rest of the day. Default: 360"
+    },
+    "EspressoSpeed": {
+      "Default": 1.0,
+      "Section": "Triple Shot Espresso",
+      "Description": "Speed boost of Triple Shot Espresso. Default: 1.0"
+    },
+    "EspressoEdibility": {
+      "Default": 3,
+      "Section": "Triple Shot Espresso",
+      "Description": "Determines how much energy (edibility × 2.5) and health (edibility × 1.125) is restored when this item is eaten. Support negative value. Default: 3"
+    }
+  },
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Fields": {
+        "395": {
+          "Edibility": "{{CoffeeEdibility}}"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": ["395", "Buffs", "#0"],
+      "Entries": {
+        "Duration": "{{CoffeeDuration}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": ["395", "Buffs", "#0", "CustomAttributes"],
+      "Entries": {
+        "Speed": "{{CoffeeSpeed}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Fields": {
+        "253": {
+          "Edibility": "{{EspressoEdibility}}"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": ["253", "Buffs", "#0"],
+      "Entries": {
+        "Duration": "{{EspressoDuration}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": ["253", "Buffs", "#0", "CustomAttributes"],
+      "Entries": {
+        "Speed": "{{EspressoSpeed}}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}_Piano0": "{{ModId}}_Piano0/decor/3 2/3 1/1/100/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Piano0.Name]/0/Mods\\{{ModId}}\\furniture_piano"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Furniture",
+            "Entries": {
+                "{{ModId}}_Piano0.Name": "{{i18n:Piano0.name}}",
+                "{{ModId}}_Piano0.Description": "{{i18n:Piano0.description}}",
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/furniture_piano",
+            "FromFile": "assets/furniture_piano.png"
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/FurnitureExtensionData",
+            "Entries": {
+                "{{ModId}}_Piano0": {
+                    "TileProperties": {
+                    "0, 0": {
+                        "Buildings": {
+                            "Action": "ElliottPiano 1"
+                     }
+                  },
+                     "1, 0": {
+                        "Buildings": {
+                            "Action": "ElliottPiano 2"
+                     }
+                  },
+                     "2, 0": {
+                        "Buildings": {
+                            "Action": "ElliottPiano 3"
+                     }
+                  }
+
+               },
+            "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Piano0.Description]"
+            }
+         }
+      }
+   ]
+}

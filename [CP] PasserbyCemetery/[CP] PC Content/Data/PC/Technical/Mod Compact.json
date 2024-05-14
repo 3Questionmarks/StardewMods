@@ -1,0 +1,17 @@
+{
+   "Changes": [
+    {
+    "Action": "EditData",
+    "Target": "Mods/CJBok.CheatsMenu/Warps",
+    "Entries": {
+        "{{ModID}}_PasserbyCemetery": {
+            "Id": "{{ModID}}_PasserbyCemetery",
+            "SectionId": "Mountain",
+            "DisplayName": "{{i18n:FC.CemeteryEntrance}}",
+            "Location": "Mountain",
+            "Tile": "64, 4"
+        }
+    }
+},
+   ]
+}

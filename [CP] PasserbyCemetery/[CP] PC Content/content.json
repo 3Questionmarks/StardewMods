@@ -1,0 +1,81 @@
+{
+"Format":"2.0.0",
+"DynamicTokens": [
+       {
+      "Name": "ValidNpcs",
+      "Value": "Marnie,Robin,{{PlayerName}}"
+   },
+    
+            {
+      "Name": "RaffleWinner",
+      "Value": "{{Random: {{ValidNpcs}}|key=RW}}"
+   },
+    {
+      "Name": "RaffleResult",
+      "Value": "addItem {{Random:Fellowclown.PC_SqueakyAxe,Fellowclown.PC_SqueakyPick,Fellowclown.PC_ColorfulCan,Fellowclown.PC_SqueakyHoe,Fellowclown.PC_SqueakySword}} 1 0", //Better than [ID] because it opens a menu if your inventory is full
+      "When": {
+        "Query: '{{RaffleWinner}}' = '{{PlayerName}}'": true
+      }
+   },
+   {
+    "Name": "RaffleResult",
+    "Value": "",
+    "When": {
+      "Query: '{{RaffleWinner}}' = '{{PlayerName}}'": false
+    }
+ }
+    ],
+"Changes":[
+/************************************************
+Technical Includes
+ ************************************************/
+ {
+"LogName": "PC Technical Information",
+"Action": "Include",
+"FromFile": "Data/PC/Technical/MapPatches.json,Data/PC/Technical/FarmAnimals.json,Data/PC/Technical/Fish.json,Data/PC/Technical/GhostSpawn.json,Data/PC/Technical/Loadables.json,Data/PC/Technical/Locational Maps.json,Data/PC/Technical/Mail Triggers.json,Data/PC/Technical/Music.json,Data/PC/Technical/Objects.json,Data/PC/Technical/Shops.json,Data/PC/Technical/Shops.json,Data/PC/Technical/Totems.json,Data/PC/Technical/WorldEvents.json,"
+ },
+  {
+"LogName": "SW Technical Information",
+"Action": "Include",
+"FromFile": "Data/SW/Technical/Crops.json,Data/SW/Technical/Loadables.json,Data/SW/Technical/Mail Triggers.json,Data/SW/Technical/Map Patches.json,Data/SW/Technical/Marketpalooza.json,Data/SW/Technical/Meep.json,Data/SW/Technical/Mod Compact.json,Data/SW/Technical/Meep.json,Data/SW/Technical/Tools.json,Data/SW/Technical/Music.json,Data/SW/Technical/Objects.json,Data/SW/Technical/Quest.json,Data/SW/Technical/Shops.json,Data/SW/Technical/Locational Maps.json"
+ },
+
+ /************************************************
+ Character Includes
+ ************************************************/
+ {
+"LogName": "Maverick Info [PC]",
+"Action": "Include",
+"FromFile": "Data/PC/Characters/Maverick/Dispositions.json,Data/PC/Characters/Maverick/Dialogue.json,Data/PC/Characters/Maverick/Events.json,Data/PC/Characters/Maverick/Schedules.json,Data/PC/Characters/Maverick/GiftTaste.json"
+ },
+ {
+"LogName": "Zuuie Info [PC]",
+"Action": "Include",
+"FromFile": "Data/PC/Characters/Zuuie/Dispositions.json,Data/PC/Characters/Zuuie/Dialogue.json,Data/PC/Characters/Zuuie/Events.json,Data/PC/Characters/Zuuie/Schedules.json,Data/PC/Characters/Zuuie/GiftTaste.json"
+ },
+ {
+"LogName": "Nikolai Info [SW]",
+"Action": "Include",
+"FromFile": "Data/SW/Characters/Nikolai/Festivals.json,Data/SW/Characters/Nikolai/Dispositions.json,Data/SW/Characters/Nikolai/Dialogue.json,Data/SW/Characters/Nikolai/Events.json,Data/SW/Characters/Nikolai/Movies.json,Data/SW/Characters/Nikolai/Schedules.json,Data/SW/Characters/Nikolai/GiftTaste.json"
+ },
+ {
+"LogName": "Kaia Info [SW]",
+"Action": "Include",
+"FromFile": "Data/SW/Characters/Kaia/Dispositions.json,Data/SW/Characters/Kaia/Dialogue.json,Data/SW/Characters/Kaia/Events.json,Data/SW/Characters/Kaia/Schedules.json,Data/SW/Characters/Kaia/GiftTaste.json"
+ },
+  {
+"LogName": "Boxy Info [SW]",
+"Action": "Include",
+"FromFile": "Data/SW/Characters/Boxy/Dispositions.json,Data/SW/Characters/Boxy/Dialogue.json,Data/SW/Characters/Boxy/Events.json,Data/SW/Characters/Boxy/Schedules.json,Data/SW/Characters/Boxy/GiftTaste.json"
+ },
+  {
+"LogName": "Technical Information",
+"Action": "Include",
+ "Update": "OnTimeChange, OnLocationChange",
+"FromFile": "Data/PC/Technical/GhostSpawn.json",
+       "When": {
+      "Season": "winter",
+            },
+        }
+],
+}

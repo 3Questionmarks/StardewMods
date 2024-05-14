@@ -1,0 +1,19 @@
+{
+   "Name": "Zuzu Obelisk Retexture in Gweniaczek Style",
+   "Author": "tragco",
+   "Version": "1.0",
+   "Description": "Replaces the Zuzu mod obelisk with one that matches Gwen's obelisks",
+   "UniqueID": "tragco.zuzuobeliskreplacer",
+   "UpdateKeys": ["Nexus:mymodnumber"], 
+
+"Dependencies": [
+    {
+      "UniqueID": "DTZ.DowntownZuzuDLL",
+      "IsRequired": true
+    },
+   
+                ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+	   }
+}

@@ -1,0 +1,30 @@
+{
+  "$id": "1",
+  "Enabled": true,
+  "Indentation": 25.0,
+  "MinigameHud": {
+    "$id": "2",
+    "Show": true,
+    "HexColor": "#CD853F"
+  },
+  "TopLeft": {
+    "$id": "3",
+    "Show": false,
+    "HexColor": "#808080"
+  },
+  "TopRight": {
+    "$id": "4",
+    "Show": false,
+    "HexColor": "#808080"
+  },
+  "BottomLeft": {
+    "$id": "5",
+    "Show": false,
+    "HexColor": "#808080"
+  },
+  "BottomRight": {
+    "$id": "6",
+    "Show": false,
+    "HexColor": "#808080"
+  }
+}

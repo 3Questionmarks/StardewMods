@@ -1,0 +1,153 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+      {
+        "Action": "Load",
+        "Target": "Mods/{{ModId}}/Objects",
+        "FromFile": "Objects/totems.png"
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+            "{{ModId}}_SunTotem": {
+              "Name": "{{ModId}}/SunTotem",
+              "DisplayName" : "{{i18n: TheMightyAmondee.WeatherTotemsCP/SunTotem}}",
+              "Description" : "{{i18n: TheMightyAmondee.WeatherTotemsCP/SunTotem_Description}}",
+              "Type" : "Crafting",
+              "Category" : 0,
+              "Price" : 20,
+              "Edibility" : -300,
+              "IsDrink" : false,
+              "Buffs" : null,
+              "GeodeDropsDefaultItems" : false,
+              "GeodeDrops" : null,
+              "ArtifactSpotChances" : null,
+              "ExcludeFromFishingCollection" : false,
+              "ExcludeFromShippingCollection" : false,
+              "ExcludeFromRandomSale" : true,
+              "Texture" : "Mods/{{ModId}}/Objects",
+              "SpriteIndex" : 0,
+              "ContextTags" : ["color_yellow", "not_placeable", "totem_item"]
+                }
+              }
+        },
+        {
+          "Action": "EditData",
+          "Target": "Data/Objects",
+          "Entries": {
+              "{{ModId}}_WindTotem": {
+                "Name": "{{ModId}}/WindTotem",
+                "DisplayName" : "{{i18n: TheMightyAmondee.WeatherTotemsCP/WindTotem}}",
+                "Description" : "{{i18n: TheMightyAmondee.WeatherTotemsCP/WindTotem_Description}}",
+                "Type" : "Crafting",
+                "Category" : 0,
+                "Price" : 20,
+                "Edibility" : -300,
+                "IsDrink" : false,
+                "Buffs" : null,
+                "GeodeDropsDefaultItems" : false,
+                "GeodeDrops" : null,
+                "ArtifactSpotChances" : null,
+                "ExcludeFromFishingCollection" : false,
+                "ExcludeFromShippingCollection" : false,
+                "ExcludeFromRandomSale" : true,
+                "Texture" : "Mods/{{ModId}}/Objects",
+                "SpriteIndex" : 1,
+                "ContextTags" : ["color_gray", "not_placeable", "totem_item"]
+                  }
+                }
+          },
+          {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_SnowTotem": {
+                  "Name": "{{ModId}}/SnowTotem",
+                  "DisplayName" : "{{i18n: TheMightyAmondee.WeatherTotemsCP/SnowTotem}}",
+                  "Description" : "{{i18n: TheMightyAmondee.WeatherTotemsCP/SnowTotem_Description}}",
+                  "Type" : "Crafting",
+                  "Category" : 0,
+                  "Price" : 20,
+                  "Edibility" : -300,
+                  "IsDrink" : false,
+                  "Buffs" : null,
+                  "GeodeDropsDefaultItems" : false,
+                  "GeodeDrops" : null,
+                  "ArtifactSpotChances" : null,
+                  "ExcludeFromFishingCollection" : false,
+                  "ExcludeFromShippingCollection" : false,
+                  "ExcludeFromRandomSale" : true,
+                  "Texture" : "Mods/{{ModId}}/Objects",
+                  "SpriteIndex" : 2,
+                  "ContextTags" : ["color_white", "not_placeable", "totem_item"]
+                    }
+                  }
+            },
+            {
+              "Action": "EditData",
+              "Target": "Data/Objects",
+              "Entries": {
+                  "{{ModId}}_ThunderTotem": {
+                    "Name": "{{ModId}}/ThunderTotem",
+                    "DisplayName" : "{{i18n: TheMightyAmondee.WeatherTotemsCP/ThunderTotem}}",
+                    "Description" : "{{i18n: TheMightyAmondee.WeatherTotemsCP/ThunderTotem_Description}}",
+                    "Type" : "Crafting",
+                    "Category" : 0,
+                    "Price" : 20,
+                    "Edibility" : -300,
+                    "IsDrink" : false,
+                    "Buffs" : null,
+                    "GeodeDropsDefaultItems" : false,
+                    "GeodeDrops" : null,
+                    "ArtifactSpotChances" : null,
+                    "ExcludeFromFishingCollection" : false,
+                    "ExcludeFromShippingCollection" : false,
+                    "ExcludeFromRandomSale" : true,
+                    "Texture" : "Mods/{{ModId}}/Objects",
+                    "SpriteIndex" : 3,
+                    "ContextTags" : ["color_purple", "not_placeable", "totem_item"]
+                      }
+                    }
+              },
+              {
+                "Action": "EditData",
+                "Target": "Data/Objects",
+                "Entries": {
+                    "{{ModId}}_GreenRainTotem": {
+                      "Name": "{{ModId}}/GreenRainTotem",
+                      "DisplayName" : "{{i18n: TheMightyAmondee.WeatherTotemsCP/GreenRainTotem}}",
+                      "Description" : "{{i18n: TheMightyAmondee.WeatherTotemsCP/GreenRainTotem_Description}}",
+                      "Type" : "Crafting",
+                      "Category" : 0,
+                      "Price" : 20,
+                      "Edibility" : -300,
+                      "IsDrink" : false,
+                      "Buffs" : null,
+                      "GeodeDropsDefaultItems" : false,
+                      "GeodeDrops" : null,
+                      "ArtifactSpotChances" : null,
+                      "ExcludeFromFishingCollection" : false,
+                      "ExcludeFromShippingCollection" : false,
+                      "ExcludeFromRandomSale" : true,
+                      "Texture" : "Mods/{{ModId}}/Objects",
+                      "SpriteIndex" : 4,
+                      "ContextTags" : ["color_green", "not_placeable", "totem_item"]
+                        }
+                      }
+              },
+
+              {
+                "Action":"EditData",
+                "Target":"Data/CraftingRecipes",
+                "Entries":{
+                  "{{i18n: TheMightyAmondee.WeatherTotemsCP/SunTotem}}":"709 1 432 1 768 5/Field/TheMightyAmondee.WeatherTotemsCP_SunTotem/false/Foraging 8",
+					        "{{i18n: TheMightyAmondee.WeatherTotemsCP/WindTotem}}":"709 1 432 1 725 5/Field/TheMightyAmondee.WeatherTotemsCP_WindTotem/false/Foraging 4",
+					        "{{i18n: TheMightyAmondee.WeatherTotemsCP/SnowTotem}}":"709 1 432 1 283 5/Field/TheMightyAmondee.WeatherTotemsCP_SnowTotem/false/Foraging 8",
+					        "{{i18n: TheMightyAmondee.WeatherTotemsCP/ThunderTotem}}":"709 1 432 1 769 5/Field/TheMightyAmondee.WeatherTotemsCP_ThunderTotem/false/Foraging 9",
+                  "{{i18n: TheMightyAmondee.WeatherTotemsCP/GreenRainTotem}}":"709 1 432 1 Moss 150/Field/TheMightyAmondee.WeatherTotemsCP_GreenRainTotem/false/Foraging 9"
+                }
+              }
+    ]
+}

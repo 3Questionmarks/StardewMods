@@ -1,0 +1,153 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}_GamingConsole0": "{{ModId}}_GamingConsole0/decor/1 1/1 1/1/1500/-1/[LocalizedText Strings\\Furniture:{{ModId}}_GamingConsole0.Name]/0/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_VideoGameConsole1": "{{ModId}}_VideoGameConsole1/decor/1 1/1 1/1/100/-1/[LocalizedText Strings\\Furniture:{{ModId}}_VideoGameConsole1.Name]/1/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_Computers2": "{{ModId}}_Computers2/decor/1 1/1 1/1/700/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Computers2.Name]/2/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_Monitor3": "{{ModId}}_Monitor3/decor/1 1/1 1/1/1000/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Monitor3.Name]/3/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_Computer4": "{{ModId}}_Computer4/decor/1 1/1 1/1/600/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Computer4.Name]/4/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_HangingSword5": "{{ModId}}_HangingSword5/painting/1 2/1 2/1/900/-1/[LocalizedText Strings\\Furniture:{{ModId}}_HangingSword5.Name]/59/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_SkinnedBear6": "{{ModId}}_SkinnedBear6/rug/4 3/4 3/1/5000/-1/[LocalizedText Strings\\Furniture:{{ModId}}_SkinnedBear6.Name]/6/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_Map7": "{{ModId}}_Map7/painting/2 2/2 2/1/400/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Map7.Name]/10/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_LeaningSword8": "{{ModId}}_LeaningSword8/decor/1 2/1 1/1/850/-1/[LocalizedText Strings\\Furniture:{{ModId}}_LeaningSword8.Name]/12/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_ProfiledComputer9": "{{ModId}}_ProfiledComputer9/decor/1 1/1 1/2/300/-1/[LocalizedText Strings\\Furniture:{{ModId}}_ProfiledComputer9.Name]/67/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_Laptop10": "{{ModId}}_Laptop10/decor/1 1/1 1/1/900/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Laptop10.Name]/14/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_NotBrandedMusicPlayer11": "{{ModId}}_NotBrandedMusicPlayer11/decor/1 1/1 1/1/3000/-1/[LocalizedText Strings\\Furniture:{{ModId}}_NotBrandedMusicPlayer11.Name]/23/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_LightComputerDesk12": "{{ModId}}_LightComputerDesk12/decor/2 2/2 1/1/1400/-1/[LocalizedText Strings\\Furniture:{{ModId}}_LightComputerDesk12.Name]/30/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_DarkComputerDesk13": "{{ModId}}_DarkComputerDesk13/decor/2 2/2 1/1/1400/-1/[LocalizedText Strings\\Furniture:{{ModId}}_DarkComputerDesk13.Name]/32/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_ComputerDeskinProfile14": "{{ModId}}_ComputerDeskinProfile14/decor/1 3/1 2/2/1600/-1/[LocalizedText Strings\\Furniture:{{ModId}}_ComputerDeskinProfile14.Name]/24/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_HangingEmblem15": "{{ModId}}_HangingEmblem15/painting/2 2/2 2/1/2400/-1/[LocalizedText Strings\\Furniture:{{ModId}}_HangingEmblem15.Name]/36/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_QuestBoard16": "{{ModId}}_QuestBoard16/painting/2 2/2 2/1/1200/-1/[LocalizedText Strings\\Furniture:{{ModId}}_QuestBoard16.Name]/60/Mods\\{{ModId}}\\misc items",
+                "{{ModId}}_ArcadeSign17": "{{ModId}}_ArcadeSign17/painting/3 1/3 1/1/5000/-1/[LocalizedText Strings\\Furniture:{{ModId}}_ArcadeSign17.Name]/0/Mods\\{{ModId}}\\arcadesign"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Furniture",
+            "Entries": {
+                "{{ModId}}_GamingConsole0.Name": "{{i18n:GamingConsole0.name}}",
+                "{{ModId}}_GamingConsole0.Description": "{{i18n:GamingConsole0.description}}",
+                "{{ModId}}_VideoGameConsole1.Name": "{{i18n:VideoGameConsole1.name}}",
+                "{{ModId}}_VideoGameConsole1.Description": "{{i18n:VideoGameConsole1.description}}",
+                "{{ModId}}_Computers2.Name": "{{i18n:Computers2.name}}",
+                "{{ModId}}_Computers2.Description": "{{i18n:Computers2.description}}",
+                "{{ModId}}_Monitor3.Name": "{{i18n:Monitor3.name}}",
+                "{{ModId}}_Monitor3.Description": "{{i18n:Monitor3.description}}",
+                "{{ModId}}_Computer4.Name": "{{i18n:Computer4.name}}",
+                "{{ModId}}_Computer4.Description": "{{i18n:Computer4.description}}",
+                "{{ModId}}_HangingSword5.Name": "{{i18n:HangingSword5.name}}",
+                "{{ModId}}_HangingSword5.Description": "{{i18n:HangingSword5.description}}",
+                "{{ModId}}_SkinnedBear6.Name": "{{i18n:SkinnedBear6.name}}",
+                "{{ModId}}_SkinnedBear6.Description": "{{i18n:SkinnedBear6.description}}",
+                "{{ModId}}_Map7.Name": "{{i18n:Map7.name}}",
+                "{{ModId}}_Map7.Description": "{{i18n:Map7.description}}",
+                "{{ModId}}_LeaningSword8.Name": "{{i18n:LeaningSword8.name}}",
+                "{{ModId}}_LeaningSword8.Description": "{{i18n:LeaningSword8.description}}",
+                "{{ModId}}_ProfiledComputer9.Name": "{{i18n:ProfiledComputer9.name}}",
+                "{{ModId}}_ProfiledComputer9.Description": "{{i18n:ProfiledComputer9.description}}",
+                "{{ModId}}_Laptop10.Name": "{{i18n:Laptop10.name}}",
+                "{{ModId}}_Laptop10.Description": "{{i18n:Laptop10.description}}",
+                "{{ModId}}_NotBrandedMusicPlayer11.Name": "{{i18n:NotBrandedMusicPlayer11.name}}",
+                "{{ModId}}_NotBrandedMusicPlayer11.Description": "{{i18n:NotBrandedMusicPlayer11.description}}",
+                "{{ModId}}_LightComputerDesk12.Name": "{{i18n:LightComputerDesk12.name}}",
+                "{{ModId}}_LightComputerDesk12.Description": "{{i18n:LightComputerDesk12.description}}",
+                "{{ModId}}_DarkComputerDesk13.Name": "{{i18n:DarkComputerDesk13.name}}",
+                "{{ModId}}_DarkComputerDesk13.Description": "{{i18n:DarkComputerDesk13.description}}",
+                "{{ModId}}_ComputerDeskinProfile14.Name": "{{i18n:ComputerDeskinProfile14.name}}",
+                "{{ModId}}_ComputerDeskinProfile14.Description": "{{i18n:ComputerDeskinProfile14.description}}",
+                "{{ModId}}_HangingEmblem15.Name": "{{i18n:HangingEmblem15.name}}",
+                "{{ModId}}_HangingEmblem15.Description": "{{i18n:HangingEmblem15.description}}",
+                "{{ModId}}_QuestBoard16.Name": "{{i18n:QuestBoard16.name}}",
+                "{{ModId}}_QuestBoard16.Description": "{{i18n:QuestBoard16.description}}",
+                "{{ModId}}_ArcadeSign17.Name": "{{i18n:ArcadeSign17.name}}",
+                "{{ModId}}_ArcadeSign17.Description": "{{i18n:ArcadeSign17.description}}",
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/misc items",
+            "FromFile": "assets/misc items.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/arcadesign",
+            "FromFile": "assets/arcadesign.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/FurnitureExtensionData",
+            "Entries": {
+                "{{ModId}}_GamingConsole0": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_GamingConsole0.Description]"
+                },
+                "{{ModId}}_VideoGameConsole1": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_VideoGameConsole1.Description]"
+                },
+                "{{ModId}}_Computers2": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Computers2.Description]"
+                },
+                "{{ModId}}_Monitor3": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Monitor3.Description]"
+                },
+                "{{ModId}}_Computer4": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Computer4.Description]"
+                },
+                "{{ModId}}_HangingSword5": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_HangingSword5.Description]"
+                },
+                "{{ModId}}_SkinnedBear6": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_SkinnedBear6.Description]"
+                },
+                "{{ModId}}_Map7": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Map7.Description]"
+                },
+                "{{ModId}}_LeaningSword8": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_LeaningSword8.Description]"
+                },
+                "{{ModId}}_ProfiledComputer9": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_ProfiledComputer9.Description]"
+                },
+                "{{ModId}}_Laptop10": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Laptop10.Description]"
+                },
+                "{{ModId}}_NotBrandedMusicPlayer11": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_NotBrandedMusicPlayer11.Description]"
+                },
+                "{{ModId}}_LightComputerDesk12": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_LightComputerDesk12.Description]"
+                },
+                "{{ModId}}_DarkComputerDesk13": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_DarkComputerDesk13.Description]"
+                },
+                "{{ModId}}_ComputerDeskinProfile14": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_ComputerDeskinProfile14.Description]"
+                },
+                "{{ModId}}_HangingEmblem15": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_HangingEmblem15.Description]"
+                },
+                "{{ModId}}_QuestBoard16": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_QuestBoard16.Description]"
+                },
+                "{{ModId}}_ArcadeSign17": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_ArcadeSign17.Description]"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "{{ModId}}_ArcadeSign17": {
+                    "TargetTexture": "Mods/{{ModId}}/arcadesign",
+                    "TargetRect": {
+                        "X": 0, "Y": 0, "Width": 48, "Height": 16
+                    },
+                    "SourceTexture": "Mods/{{ModId}}/arcadesign:0..2@11"
+                }
+            }
+        }
+    ]
+}

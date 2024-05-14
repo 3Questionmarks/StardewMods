@@ -1,0 +1,12 @@
+{
+    "Name": "(CP) Customize Coffee",
+    "Author": "Kumagabear",
+    "Version": "1.0.0",
+    "Description": "Customize coffee or espresso value",
+    "UniqueID": "Kumagabear.customizecoffee",
+    "MinimumApiVersion": "3.0.0",
+    "UpdateKeys": ["Nexus:22965"],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

@@ -1,0 +1,584 @@
+{
+	"Format": "2.0.0",
+	
+	    "ConfigSchema": {
+			
+		"Exterior Recolour":
+			{ 
+				"AllowValues": "Auto, Vanilla, Earthy, Eemie, FoliageRedone, Starblue, VibrantPastoral, WittilyNamed",
+				"Default": "Auto",
+				"Description": "The exterior recolour of the greenhouse."
+			},
+		"Interior Recolour":
+			{ 
+				"AllowValues": "Auto, Vanilla, Earthy, Rustic, Light, Starblue",
+				"Default": "Auto",
+				"Description": "The interior recolour of the greenhouse."
+			},
+		"Flooring": 
+			{
+				"AllowValues": "Auto, Light",
+				"Default": "Auto",
+				"Description": "Option to use light colored flooring."
+			},
+		"Soil Recolour":
+			{
+				"AllowValues": "Auto, Vanilla, Earthy, Rustic, Starblue",
+				"Default": "Auto",
+				"Description": "The recolour version of the soil."
+			},
+		"Glass Frame": 
+			{
+				"AllowValues": "Auto, Vanilla, Earthy, Rustic, Light, Starblue",
+				"Default": "Auto",
+				"Description": "The color of the interior glass frame."
+			},
+		"Backdrop Bushes":
+			{
+				"AllowValues": "Auto, Vanilla, Earthy, Eemie, FoliageRedone, Starblue, VibrantPastoral, WittilyNamed",
+				"Default": "Auto",
+				"Description": "The recolour version of the bushes in the greenhouse backdrop."
+			},
+		"Decorations Layout": 
+			{
+				"AllowValues": "Full, No Corners, Off",
+				"Default": "Full",
+				"Description": "Fully decorated interior, empty corners, or no decorations at all."
+			},	
+		"Decorations Recolour": 
+			{
+				"AllowValues": "Auto, Vanilla, Earthy, Rustic, Starblue",
+				"Default": "Auto",
+				"Description": "The recolour version of the interior decorations."
+			},	
+		"Waterbin": 
+			{
+				"AllowValues": "Enabled, Disabled",
+				"Default": "Enabled",
+				"Description": "Option to remove the waterbin."
+			},	
+		"Waterbin Recolour": 
+			{
+				"AllowValues": "Auto, Vanilla, Earthy, Rustic, Starblue",
+				"Default": "Auto",
+				"Description": "The recolour version of the waterbin."
+			},				
+		},
+	
+	
+	"DynamicTokens": [
+	
+// Exterior
+        {
+            "Name": "ExteriorRecolour",
+            "Value": "Vanilla",
+        },
+        {
+            "Name": "ExteriorRecolour",
+            "Value": "Earthy",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyRecolour",
+            }
+		},
+        {
+            "Name": "ExteriorRecolour",
+            "Value": "Eemie",
+            "When": {
+                "HasMod": "minervamaga.CP.eemieMapRecolour",
+            }
+        },
+		{
+            "Name": "ExteriorRecolour",
+            "Value": "FoliageRedone",
+            "When":{
+                "HasMod": "stardewfoliageredone.foliageonly",
+            }
+        },
+        {
+            "Name": "ExteriorRecolour",
+            "Value": "Starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValley, Lita.StarblueValleyUnofficial",
+            }
+        },
+        {
+            "Name": "ExteriorRecolour",
+            "Value": "VibrantPastoral",
+            "When": {
+                "HasMod": "grapeponta.VibrantPastoralRecolor",
+            }
+        },
+        {
+            "Name": "ExteriorRecolour",
+            "Value": "WittilyNamed",
+            "When": {
+                "HasMod": "Acerbicon.Recolor",
+            }
+        },
+        {
+            "Name": "ExteriorRecolour",
+            "Value": "{{Exterior Recolour}}",
+            "When":{
+                "Exterior Recolour |contains=Auto": "false"
+            }
+		},
+		
+// Interior Recolour
+        {
+            "Name": "InteriorRecolour",
+            "Value": "Vanilla",
+            "When": {
+                "Interior Recolour": "Auto, Vanilla"
+            }
+        },
+		{
+            "Name": "InteriorRecolour",
+            "Value": "Earthy",
+            "When":{
+                "HasMod": "DaisyNiko.EarthyInteriors",
+                "Interior Recolour": "Auto"
+            }
+        },
+        {
+            "Name": "InteriorRecolour",
+            "Value": "Rustic",
+            "When": {
+                "HasMod": "Hesper.RusticCountrysideTownInterior",
+                "Interior Recolour": "Auto"
+            }
+        },
+        {
+            "Name": "InteriorRecolour",
+            "Value": "Starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValley, Lita.StarblueValleyUnofficial",
+                "Interior Recolour": "Auto"
+            }
+        },
+        {
+            "Name": "InteriorRecolour",
+            "Value": "{{Interior Recolour}}",
+            "When":{
+                "Interior Recolour |contains=Auto": "false"
+            }
+		},
+		
+// Soil Recolour
+        {
+            "Name": "SoilRecolour",
+            "Value": "Vanilla",
+            "When": {
+                "Soil Recolour": "Auto, Vanilla"
+            }
+        },
+		{
+            "Name": "SoilRecolour",
+            "Value": "Earthy",
+            "When":{
+                "HasMod": "DaisyNiko.EarthyInteriors",
+                "Soil Recolour": "Auto"
+            }
+        },
+        {
+            "Name": "SoilRecolour",
+            "Value": "Rustic",
+            "When": {
+                "HasMod": "Hesper.RusticCountrysideTownInterior",
+                "Soil Recolour": "Auto"
+            }
+        },
+        {
+            "Name": "SoilRecolour",
+            "Value": "Starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValley, Lita.StarblueValleyUnofficial",
+                "Soil Recolour": "Auto"
+            }
+        },
+        {
+            "Name": "SoilRecolour",
+            "Value": "{{Soil Recolour}}",
+            "When":{
+                "Soil Recolour |contains=Auto": "false"
+            }
+		},
+
+		
+// Glass Frame
+        {
+            "Name": "GlassFrame",
+            "Value": "Vanilla",
+            "When": {
+                "Glass Frame": "Auto, Vanilla"
+            }
+        },
+		{
+            "Name": "GlassFrame",
+            "Value": "Earthy",
+            "When":{
+                "HasMod":"DaisyNiko.EarthyInteriors",
+                "Glass Frame": "Auto"
+            }
+        },
+        {
+            "Name": "GlassFrame",
+            "Value": "Rustic",
+            "When": {
+                "HasMod": "Hesper.RusticCountrysideTownInterior",
+                "Glass Frame": "Auto"
+            }
+        },
+        {
+            "Name": "GlassFrame",
+            "Value": "Starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValley, Lita.StarblueValleyUnofficial",
+                "Glass Frame": "Auto"
+            }
+        },
+        {
+            "Name": "GlassFrame",
+            "Value": "{{Glass Frame}}",
+            "When":{
+                "Glass Frame |contains=Auto": "false"
+            }
+		},
+		
+// Backdrop Bushes
+        {
+            "Name": "BushesRecolour",
+            "Value": "Vanilla",
+            "When":{
+                "Backdrop Bushes": "Auto, Vanilla"
+            }
+        },
+        {
+            "Name": "BushesRecolour",
+            "Value": "Earthy",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyRecolour",
+                "Backdrop Bushes": "Auto"
+            }
+        },
+        {
+            "Name": "BushesRecolour",
+            "Value": "Eemie",
+            "When": {
+                "HasMod": "minervamaga.CP.eemieMapRecolour",
+                "Backdrop Bushes": "Auto"
+            }
+        },
+		{
+            "Name": "BushesRecolour",
+            "Value": "FoliageRedone",
+            "When":{
+                "HasMod": "stardewfoliageredone.foliageonly",
+                "Backdrop Bushes": "Auto"
+            }
+        },
+        {
+            "Name": "BushesRecolour",
+            "Value": "Starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValley, Lita.StarblueValleyUnofficial",
+                "Backdrop Bushes": "Auto"
+            }
+        },
+        {
+            "Name": "BushesRecolour",
+            "Value": "VibrantPastoral",
+            "When": {
+                "HasMod": "grapeponta.VibrantPastoralRecolor",
+                "Backdrop Bushes": "Auto"
+            }
+        },
+        {
+            "Name": "BushesRecolour",
+            "Value": "WittilyNamed",
+            "When": {
+                "HasMod": "Acerbicon.Recolor",
+                "Backdrop Bushes": "Auto"
+            }
+        },
+        {
+            "Name": "BushesRecolour",
+            "Value": "{{Backdrop Bushes}}",
+            "When":{
+                "Backdrop Bushes |contains=Auto": "false"
+            }
+		},
+		
+// Decorations Recolour
+        {
+            "Name": "DecorRecolour",
+            "Value": "Vanilla",
+            "When": {
+                "Decorations Recolour": "Auto, Vanilla"
+            }
+        },
+		{
+            "Name": "DecorRecolour",
+            "Value": "Earthy",
+            "When":{
+                "HasMod": "DaisyNiko.EarthyInteriors",
+                "Decorations Recolour": "Auto"
+            }
+        },
+        {
+            "Name": "DecorRecolour",
+            "Value": "Rustic",
+            "When": {
+                "HasMod": "Hesper.RusticCountrysideTownInterior",
+                "Decorations Recolour": "Auto"
+            }
+        },
+        {
+            "Name": "DecorRecolour",
+            "Value": "Starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValley, Lita.StarblueValleyUnofficial",
+                "Decorations Recolour": "Auto"
+            }
+        },
+        {
+            "Name": "DecorRecolour",
+            "Value": "{{Decorations Recolour}}",
+            "When":{
+                "Decorations Recolour |contains=Auto": "false"
+            }
+		},
+		
+// Waterbin Recolour
+        {
+            "Name": "WaterbinRecolour",
+            "Value": "Vanilla",
+            "When": {
+                "Waterbin Recolour": "Auto, Vanilla"
+            }
+        },
+		{
+            "Name": "WaterbinRecolour",
+            "Value": "Earthy",
+            "When":{
+                "HasMod": "DaisyNiko.EarthyInteriors",
+                "Waterbin Recolour": "Auto"
+            }
+        },
+        {
+            "Name": "WaterbinRecolour",
+            "Value": "Rustic",
+            "When": {
+                "HasMod": "Hesper.RusticCountrysideTownInterior",
+                "Waterbin Recolour": "Auto"
+            }
+        },
+        {
+            "Name": "WaterbinRecolour",
+            "Value": "Starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValley, Lita.StarblueValleyUnofficial",
+                "Waterbin Recolour": "Auto"
+            }
+        },
+        {
+            "Name": "WaterbinRecolour",
+            "Value": "{{Waterbin Recolour}}",
+            "When":{
+                "Waterbin Recolour |contains=Auto": "false"
+            }
+		}
+	],
+
+
+	"Changes": [
+	
+// Building
+	{
+	"Action": "EditData",
+	"Target": "Data/Buildings",
+		
+		"Entries": {
+			"MedievalTinyGreenhouse": {
+			"Name": "{{i18n: MedievalTinyGreenhouse.Name}}",
+			"Description": "{{i18n: MedievalTinyGreenhouse.Description}}",
+			"Texture": "Buildings/MedievalTinyGreenhouse",
+			"DrawShadow": true,
+			"UpgradeSignTile": "0, 0",
+			"Size": { "X": 3, "Y": 2 },
+			"CollisionMap": "nXXX\nXXX",
+			"FadeWhenBehind": true,
+			"Builder": "Robin",
+			"BuildDays": 2,
+			"BuildCost": 25000,
+			"BuildMaterials": [
+				{
+				"ID": "Refined Quartz",
+				"ItemID": 338,
+				"Amount": 20
+				},
+				{
+				"ID": "Iron Bar",
+				"ItemID": 335,
+				"Amount": 15
+				},
+				{
+				"ID": "Stone",
+				"ItemID": 390,
+				"Amount": 200
+				},
+				],
+			"BuildCondition": "PLAYER_FARMING_LEVEL Current 4",
+			"HumanDoor": { "X": 1, "Y": 1 },
+			"IndoorMap": "MedievalTinyGreenhouse",
+			"AllowsFlooringUnderneath": true,
+        }
+		}
+	},
+	
+// Exterior
+    {
+		"LogName": "Greenhouse exterior",
+		"Action": "Load",
+		"Target": "Buildings/MedievalTinyGreenhouse",
+		"FromFile": "Assets/Exterior/Exterior.png",
+    },
+    {
+		"LogName": "Greenhouse exterior - seasonal",
+		"Action": "EditImage",
+		"Patchmode": "Replace",
+		"Target": "Buildings/MedievalTinyGreenhouse",
+		"FromFile": "Assets/Exterior/{{Season}}_{{ExteriorRecolour}}.png",
+    },
+	
+// Indoor map and lighting
+	{
+		"LogName": "Load interior map",
+		"Action": "Load",
+		"Target": "Maps/MedievalTinyGreenhouse",
+		"FromFile": "Assets/MedievalTinyGreenhouse.tmx",
+	},
+	{
+		"LogName": "Weather lighting",
+		"Action": "EditMap",
+		"Target": "Maps/MedievalTinyGreenhouse",
+		"MapProperties": {
+		"AmbientLight":"140 120 90"
+		},
+		"When": { "Weather": "rain, storm" }
+	},
+	{
+		"LogName": "Night lighting",
+		"Action": "EditMap",
+		"Target": "Maps/MedievalTinyGreenhouse",
+		"MapProperties": {
+		"AmbientLight":"200 200 200"
+		},
+		"When": {
+		"Query: {{Time}} >= 1800": true
+		},
+		"Update": "OnLocationChange"
+	},
+	
+// Interior Recolour
+	{
+		"LogName": "Interior recolour",
+		"Action": "Load",
+		"Target": "Maps/Tiny_Interior_Vanilla",
+		"FromFile": "Assets/Interior/Tiny_Interior_{{InteriorRecolour}}.png",
+	},
+	
+// Flooring
+	{
+		"LogName": "Light flooring",
+		"Action": "EditMap",
+		"PatchMode": "Overlay",
+		"Target": "Maps/MedievalTinyGreenhouse",
+		"FromFile": "Assets/Flooring/Floor_Light.tmx",
+		"When": { "Flooring": "Light" }
+	},
+	
+// Soil Recolour
+	{
+		"LogName": "Soil",
+		"Action": "Load",
+		"Target": "Maps/Tiny_Soil_Vanilla",
+		"FromFile": "Assets/Soil/Tiny_Soil_{{SoilRecolour}}.png",
+	},
+	
+// Glass Frame
+	{
+		"LogName": "Glass frame",
+		"Action": "Load",
+		"Target": "Maps/Tiny_Frame_Vanilla",
+		"FromFile": "Assets/Frames/Tiny_Frame_{{GlassFrame}}.png",
+	},
+	
+// Seasonal Backdrop
+	{
+		"LogName": "Greenhouse backdrop",
+		"Action": "EditMap",
+		"PatchMode": "Overlay",
+		"Target": "Maps/MedievalTinyGreenhouse",
+		"FromFile": "Assets/Backdrops/{{Season}}_Backdrop.tmx",	
+		"ToArea": { "X": 1, "Y": 1, "Width": 9, "Height": 3 }
+	},	
+	{
+		"LogName": "Backdrop bushes",
+		"Action": "EditMap",
+		"PatchMode": "Overlay",
+		"Target": "Maps/MedievalTinyGreenhouse",
+		"FromFile": "Assets/Bushes/Tiny_Bushes_{{Season}}_{{BushesRecolour}}.tmx",
+		"ToArea": { "X": 1, "Y": 1, "Width": 9, "Height": 3 },
+	},
+	{
+		"LogName": "Rain backdrop",
+		"Action": "EditMap",
+		"PatchMode": "Overlay",
+		"Target": "Maps/MedievalTinyGreenhouse",
+		"FromFile": "Assets/Backdrops/Rain_Backdrop.tmx",	
+		"ToArea": { "X": 1, "Y": 1, "Width": 9, "Height": 3 },
+		"When": { "Weather": "rain, storm" }
+	},	
+	
+// InteriorDecor
+	{
+		"LogName": "Interior decor layout - full",
+		"Action": "EditMap",
+		"PatchMode": "Overlay",
+		"Target": "Maps/MedievalTinyGreenhouse",
+		"FromFile": "Assets/InteriorDecor/{{DecorRecolour}}_InteriorDecor.tmx",
+		"When": { "Decorations Layout": "Full" }	
+	},
+	{
+		"LogName": "Interior decor layout - no corners",
+		"Action": "EditMap",
+		"PatchMode": "Overlay",
+		"Target": "Maps/MedievalTinyGreenhouse",
+		"FromFile": "Assets/InteriorDecor/{{DecorRecolour}}_InteriorDecor_NoCorners.tmx",
+		"When": { "Decorations Layout": "No Corners" }	
+	},
+	
+// Waterbin
+	{
+		"LogName": "Waterbin",
+		"Action": "EditMap",
+		"PatchMode": "Overlay",
+		"Target": "Maps/MedievalTinyGreenhouse",
+		"FromFile": "Assets/InteriorDecor/{{WaterbinRecolour}}_InteriorDecor_Waterbin.tmx",
+		"MapTiles":[
+		{
+			"Layer":"Back",
+			"Position":{ "X": 5, "Y": 4 },
+			"SetProperties":{ "WaterSource": "T" }
+		},
+		{
+			"Layer":"Back",
+			"Position":{ "X": 6, "Y": 4 },
+			"SetProperties":{ "WaterSource": "T" }
+		},
+		],
+		"When": { "Waterbin": "Enabled" }	
+	},
+	
+	]
+}

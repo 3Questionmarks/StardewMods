@@ -1,0 +1,34 @@
+{
+  "$id": "1",
+  "EnableOnFestivalDays": true,
+  "LocationNotify": false,
+  "SecondsPerMinute": {
+    "$id": "2",
+    "Indoors": 3.0,
+    "Outdoors": 1.4,
+    "Mines": 1.4,
+    "SkullCavern": 1.4,
+    "VolcanoDungeon": 1.4,
+    "ByLocationName": {
+      "$id": "3"
+    }
+  },
+  "FreezeTime": {
+    "$id": "4",
+    "AnywhereAtTime": null,
+    "Indoors": false,
+    "Outdoors": false,
+    "Mines": false,
+    "SkullCavern": false,
+    "VolcanoDungeon": false,
+    "ByLocationName": [],
+    "ExceptLocationNames": []
+  },
+  "Keys": {
+    "$id": "5",
+    "FreezeTime": "OemCloseBrackets",
+    "IncreaseTickInterval": "OemOpenBrackets + OemComma",
+    "DecreaseTickInterval": "OemOpenBrackets + OemPeriod",
+    "ReloadConfig": "B"
+  }
+}

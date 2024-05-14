@@ -1,0 +1,57 @@
+{
+  "Format": "1.23.0",
+  "ConfigSchema": {
+     
+	 "CheapFurnitureCatalogue": {
+         "AllowValues": "true, false",
+         "Default": "true",
+		 "AllowMultiple": "false",
+		 "Description": "Makes the furniture catalogue cost 100G.",
+	},	
+	 "CheapWallpapperCatalogue": {
+         "AllowValues": "true, false",
+         "Default": "true",
+		 "AllowMultiple": "false",
+		 "Description": "Makes the wallpapper catalogue cost 100G.",
+	},	
+	
+   },
+  "Changes": 
+	[
+	
+
+//////////////////////////////////////////<-End Batch
+//////To make furniture catalogue cheaper
+      {
+         "Action": "EditData",
+			"When":
+				{
+				"CheapFurnitureCatalogue": "true",
+				},
+         "Target": "Data/Furniture",
+         "Fields": {
+            "1226": {
+               5: "100"
+            }
+         }
+       },
+      {
+         "Action": "EditData",
+			"When":
+				{
+				"CheapWallpapperCatalogue": "true",
+				},
+         "Target": "Data/Furniture",
+         "Fields": {
+            "1308": {
+               5: "100"
+            }
+         }
+       },	   
+	   
+	   
+	   
+	   
+	   
+    ]
+}

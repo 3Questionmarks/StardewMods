@@ -1,0 +1,24 @@
+ { //buildings
+    "Action": "EditMap",
+    "Target": "Maps/Mountain",
+	"MapProperties": {
+	  "CanBuildHere": "t",
+	  "BuildConditions": "PLAYER_HAS_MAIL Any ccCraftsRoom Received",
+	  
+	  "ValidBuildRect": "104 2 34 35",
+		},
+	"When": { 
+		"Mod Enabled": "true", 
+		"Allow Buildings": "true", 
+		//"HasFlag": "ccCraftsRoom",
+		},	
+    },
+	
+	
+	
+	
+	
+	"Allow Buildings": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},

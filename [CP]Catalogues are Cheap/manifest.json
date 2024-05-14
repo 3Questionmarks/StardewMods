@@ -1,0 +1,12 @@
+{
+  "Name": "Catalogues are Cheap",
+  "Author": "Undare",
+  "Version": "1.0.0",
+  "MinimumApiVersion": "2.5.3",
+  "Description": "Makes the furniture and wallpapper catalogues cheap as 100 gold",
+  "UniqueID": "Undare.CheapFurnitureCatalogue",
+  "UpdateKeys": ["Nexus:13204"], 
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+	  }
+}

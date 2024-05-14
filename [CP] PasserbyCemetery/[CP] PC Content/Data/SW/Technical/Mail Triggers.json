@@ -1,0 +1,157 @@
+{
+"Changes": [
+{
+"LogName": "Mail",
+"Action": "EditData",
+"Target": "data/mail",
+"Entries": {
+"{{ModID}}_Marketpalooza.Mail": "{{i18n:FC.Marketpalooza.Mail}}[#]{{i18n:FC.Marketpalooza.Title}}",
+"{{ModID}}_ChocoFruit.Mail": "{{i18n:FC.ChocoFruit.Mail}} %item quest {{ModID}}_ChocoFruit true %%[#]{{i18n:FC.ChocoFruit.Title}}",
+"{{ModID}}_YohoFruit.Mail": "{{i18n:FC.YohoFruit.Mail}} %item quest {{ModID}}_YohoFruit true %%[#]{{i18n:FC.YohoFruit.Title}}",
+"{{ModID}}_ButtonFruit.Mail": "{{i18n:FC.ButtonFruit.Mail}} %item quest {{ModID}}_ButtonFruit true %%[#]{{i18n:FC.ButtonFruit.Title}}",
+"{{ModID}}_Cloth.Mail": "{{i18n:FC.Cloth.Mail}} %item quest {{ModID}}_Cloth true %%[#]{{i18n:FC.Cloth.Title}}",
+"{{ModID}}_WalkMan.Mail": "{{i18n:FC.WalkMan.Mail}} %item quest {{ModID}}_WalkMan true %%[#]{{i18n:FC.WalkMan.Title}}",
+"{{ModID}}_BithdayInvite": "{{i18n:FC.BithdayInvite.Mail}}[#]{{i18n:FC.BithdayInvite.Mail.Title}}",
+"{{ModID}}_RefugeInvite": "{{i18n:FC.RefugeInvite.Mail}}[#]{{i18n:FC.RefugeInvite.Mail.Title}}",
+"{{ModID}}_FirstDate": "{{i18n:FC.FirstDate.Mail}}[#]{{i18n:FC.FirstDate.Mail.Title}}",
+
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Entries": {
+"{{ModID}}_FirstDate.Trigger":  {
+"Id": "{{ModID}}_FirstDate.Trigger",
+"Trigger": "DayStarted",
+"Condition": "PLAYER_NPC_RELATIONSHIP current FC.Nikolai Dating",
+"HostOnly": false,
+"Action": "AddMail Current {{ModID}}_FirstDate",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+
+{
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Entries": {
+"{{ModID}}_NikolaisBirthday.Trigger":  {
+"Id": "{{ModID}}_NikolaisBirthday.Trigger",
+"Trigger": "DayStarted",
+"Condition": "PLAYER_FRIENDSHIP_POINTS current FC.Nikolai 500,SEASON_DAY Spring 27,PLAYER_HAS_SEEN_EVENT current {{ModID}}_SavingBoxy",
+"HostOnly": false,
+"Action": "AddMail Current {{ModID}}_BithdayInvite",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Entries": {
+"{{ModID}}_RefugeInvite.Trigger":  {
+"Id": "{{ModID}}_RefugeInvite.Trigger",
+"Trigger": "DayStarted",
+"Condition": "PLAYER_FRIENDSHIP_POINTS current FC.Nikolai 750,DAY_OF_WEEK Fri",
+"HostOnly": false,
+"Action": "AddMail Current {{ModID}}_RefugeInvite",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Entries": {
+"{{ModID}}_Marketpalooza.Trigger":  {
+"Id": "{{ModID}}_Marketpalooza.Trigger",
+"Trigger": "DayStarted",
+"Condition": "SEASON_DAY Summer 27",
+"HostOnly": false,
+"Action": "AddMail Current {{ModID}}_Marketpalooza.Mail",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Entries": {
+"{{ModID}}_ChocoFruit.Trigger":  {
+"Id": "{{ModID}}_ChocoFruit.Trigger",
+"Trigger": "DayStarted",
+"Condition": "PLAYER_FRIENDSHIP_POINTS Current FC.Nikolai 250",
+"HostOnly": false,
+"Action": "AddMail Current {{ModID}}_ChocoFruit.Mail",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Entries": {
+"{{ModID}}_YohoFruit.Trigger":  {
+"Id": "{{ModID}}_YohoFruit.Trigger",
+"Trigger": "DayStarted",
+"Condition": "PLAYER_FRIENDSHIP_POINTS Current FC.Kaia 750",
+"HostOnly": false,
+"Action": "AddMail Current {{ModID}}_YohoFruit.Mail",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Entries": {
+"{{ModID}}_ButtonFruit.Trigger":  {
+"Id": "{{ModID}}_ButtonFruit.Trigger",
+"Trigger": "DayStarted",
+"Condition": "PLAYER_FRIENDSHIP_POINTS Current FC.Kaia 2000",
+"HostOnly": false,
+"Action": "AddMail Current {{ModID}}_ButtonFruit.Mail",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Entries": {
+"{{ModID}}_Cloth.Trigger":  {
+"Id": "{{ModID}}_Cloth.Trigger",
+"Trigger": "DayStarted",
+"Condition": "PLAYER_FRIENDSHIP_POINTS Current FC.Nikolai 750,SEASON Fall 20",
+"HostOnly": false,
+"Action": "AddMail Current {{ModID}}_Cloth.Mail",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Entries": {
+"{{ModID}}_WalkMan.Trigger":  {
+"Id": "{{ModID}}_WalkMan.Trigger",
+"Trigger": "DayStarted",
+"Condition": "PLAYER_FRIENDSHIP_POINTS Current FC.Nikolai 750,SEASON Winter",
+"HostOnly": false,
+"Action": "AddMail Current {{ModID}}_WalkMan.Mail",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+]
+}

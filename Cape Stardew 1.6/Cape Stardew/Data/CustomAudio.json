@@ -1,0 +1,549 @@
+{
+    "Changes": [
+        // add music cue///
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        "Guitarstrummer": {
+                            "ID": "Guitarstrummer",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/GuitarStrummer.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                        
+                        },
+                        
+                        
+                        },
+                        
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        "gentleocean": {
+                            "ID": "gentleocean",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/gentleocean.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": true
+                        },
+                        
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        "birdchirp": {
+                            "ID": "birdchirp",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/birdchirp.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": true
+                        },
+                        
+                          },
+                        
+                        
+                        },
+                        
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        "shower": {
+                            "ID": "shower",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/shower.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                        
+                          },
+                        
+                        
+                        },
+                        
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        "coolwind": {
+                            "ID": "coolwind",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/coolwind.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": true
+                        },
+                        
+                          },
+                        
+                        
+                        },
+                        
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        "mtsoundscape": {
+                            "ID": "mtsoundscape",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/mtsoundscape.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": true
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "ticktock": {
+                            "ID": "ticktock",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/ticktock.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": true
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "room": {
+                            "ID": "room",
+                            "Category": "Music",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/room.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": true
+                        },
+                          },
+                        
+                        
+                        },
+                         
+                            {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        
+                        "lofichill": {
+                            "ID": "lofichill",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/lofichill.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                        
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        
+                        "lofidrum": {
+                            "ID": "lofidrum",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/lofidrum.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                        
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        
+                        "musicbox": {
+                            "ID": "musicbox",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/musicbox.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                        
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "bassboom": {
+                            "ID": "bassboom",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/newbassboom.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "echo": {
+                            "ID": "echo",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/kickdrumecho.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        
+                        "CasioPulse": {
+                            "ID": "CasioPulse",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/CasioSk1Pulse.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "GuitarChord2": {
+                            "ID": "GuitarChord2",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/guitarchord1.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "cooldrum": {
+                            "ID": "cooldrum",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/cooldrum.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "subbeat": {
+                            "ID": "subbeat",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/subbeatnew.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "lofikick": {
+                            "ID": "lofikick",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/lofikick.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "snare": {
+                            "ID": "snare",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/snare.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        
+                        "Kicksound": {
+                            "ID": "Kicksound",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/Kicksound.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "moonbeat": {
+                            "ID": "moonbeat",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/moonbeat.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "metalpunch": {
+                            "ID": "metalpunch",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/metalpunch.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "clap": {
+                            "ID": "clap",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/clap.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                        
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        "dripcave": {
+                            "ID": "dripcave",
+                            "Category": "Music",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/dripcave.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": true
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "cavernscape": {
+                            "ID": "cavernscape",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/cavernscape.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": true
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        
+                        "seacave": {
+                            "ID": "seacave",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/seacave.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": true
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "FreshSnow": {
+                            "ID": "FreshSnow",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/FreshSnow.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "Pushobject": {
+                            "ID": "Pushobject",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/pushC.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "SetSail": {
+                            "ID": "SetSail",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/setsail.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "thumpGround": {
+                            "ID": "thumpGround",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/thump.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        
+                        "shieldSound": {
+                            "ID": "shieldSound",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/shieldsound.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                        
+                          },
+                        
+                        
+                        },
+                         {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        "knockonCabin": {
+                            "ID": "knockonCabin",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/knockoncabin.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                        
+                        
+                        
+            },
+        },
+        
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        "cRumble": {
+                            "ID": "cRumble",
+                            "Category": "Sound",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/cRumble.wav}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                        
+                        
+                        
+            },
+        },
+        
+        ]
+}

@@ -1,0 +1,330 @@
+{
+  "Changes": [
+   {
+      "LogName": "cursors",
+      "Action": "Load",
+       "Target": "Mods/CapeStardew/capewindows,",
+      "FromFile": "assets/capewindows.png",
+      },
+      
+       
+      
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "dreamy.kickitspot_jellishop": {
+          "Owners": [
+            {
+            "Name": "Jelli",
+               "Condition": "PLAYER_FRIENDSHIP_POINTS Current Jelli 250",
+              "Portrait": "Jelli",
+              
+              "Dialogues": [
+                {
+                  "Id": "dreamy.kickitspot_Jelli",
+                  "Dialogue": "Hi, need any treasures?",
+                }
+              ],
+            },
+              
+          ],
+          "Items": [
+           {
+              
+              "Id": "dreamy.kickitspot_SeaCapeWarpTotemRecipe",
+              "TradeItemId": "(O)873",
+              "Price": 0,
+              "IsRecipe": true,
+              "TradeItemAmount": 1,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_VISITED_LOCATION Current Custom_CapeIslandEntry, PLAYER_FRIENDSHIP_POINTS Current Jelli 1000",
+            },
+            
+            {
+              
+              "Id": "dreamy.kickitspot_CapeWarpTotemRecipe",
+              "TradeItemId": "(O)396",
+              "Price": 0,
+              "IsRecipe": true,
+              "TradeItemAmount": 2,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_FRIENDSHIP_POINTS Current Jelli 750",
+            },
+          
+          {
+              "ItemId": "dreamy.kickitspot_SeaCapeWarpTotem",
+              "Id": "dreamy.kickitspot_SeaCapeWarpTotem",
+              "TradeItemId": "(O)24",
+              "Price": 0,
+              "IsRecipe": false,
+              "TradeItemAmount": 2,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_VISITED_LOCATION Current Custom_CapeIslandEntry",
+            },
+            {
+              "ItemId": "dreamy.kickitspot_CapeWarpTotem",
+              "Id": "dreamy.kickitspot_CapeWarpTotem",
+              "TradeItemId": "(O)24",
+              "Price": 0,
+              "IsRecipe": false,
+              "TradeItemAmount": 1,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "ItemId": "(O)395",
+              "Id": "(O)395",
+              "TradeItemId": "(O)152",
+              "Price": 0,
+              "TradeItemAmount": 1,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "ItemId": "(O)204",
+              "Id": "(O)204",
+              "TradeItemId": "Cape.BeachStrawberry",
+              "Price": 0,
+              "TradeItemAmount": 1,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "ItemId": "(O)286",
+              "Id": "(O)286",
+              "TradeItemId": "(O)152",
+              "Price": 0,
+              "TradeItemAmount": 2,
+              "AvailableStock": 5,
+              "AvailableStockLimit": "Player"
+            },
+            {
+              "ItemId": "(O)243",
+              "Id": "(O)243",
+              "TradeItemId": "(O)86",
+              "Price": 0,
+              "TradeItemAmount": 1,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+             {
+              "ItemId": "(O)203",
+              "Id": "(O)203",
+              "TradeItemId": "(O)560",
+              "Price": 0,
+              "TradeItemAmount": 1,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player"
+            },
+             {
+              "ItemId": "(O)288",
+              "Id": "(O)288",
+              "TradeItemId": "(O)874",
+              "Price": 0,
+              "TradeItemAmount": 1,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "RANDOM 0.4 @addDailyLuck",
+            },
+             {
+              "ItemId": "(O)681",
+              "Id": "(O)681",
+              "TradeItemId": "(O)152",
+              "Price": 0,
+              "TradeItemAmount": 10,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "RANDOM 0.1 @addDailyLuck",
+            },
+         
+            
+          ],
+         "VisualTheme": [
+  {
+    "DialogueColor": "#89eb34",
+    "DialogueShadowColor": "#6134eb",
+    "ItemRowTextColor": "#89eb34",
+    "ItemRowBackgroundHoverColor": "#5F9EA0",
+    "WindowBorderTexture": "Mods\\CapeStardew\\capewindows",
+    "WindowBorderSourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 18,
+                "Height": 18
+              },
+  "PortraitBackgroundTexture": "Mods\\CapeStardew\\capewindows",
+    "PortraitBackgroundSourceRect": {
+      "X": 55,
+      "Y": 0,
+      "Width": 74,
+      "Height": 74
+    },
+    "DialogueBackgroundTexture": "Mods\\CapeStardew\\capewindows",
+    "DialogueBackgroundSourceRect": {
+      "X": 64,
+      "Y": 80,
+      "Width": 60,
+      "Height": 60
+    },
+    "ItemRowBackgroundTexture": "Mods\\CapeStardew\\capewindows",
+    "ItemRowBackgroundSourceRect": {
+      "X": 18,
+      "Y": 0,
+      "Width": 15,
+      "Height": 15
+    },
+    "ItemIconBackgroundTexture": "Mods\\CapeStardew\\capewindows",
+    "ItemIconBackgroundSourceRect": {
+      "X": 35,
+      "Y": 0,
+      "Width": 18,
+      "Height": 18
+    },
+    "ScrollUpTexture": "Mods\\CapeStardew\\capewindows",
+    "ScrollUpSourceRect": {
+      "X": 2,
+      "Y": 21,
+      "Width": 11,
+      "Height": 12
+    },
+    "ScrollDownTexture": "Mods\\CapeStardew\\capewindows",
+    "ScrollDownSourceRect": {
+      "X": 2,
+      "Y": 34,
+      "Width": 11,
+      "Height": 12
+    },
+    "ScrollBarFrontTexture": "Mods\\CapeStardew\\capewindows",
+    "ScrollBarFrontSourceRect": {
+      "X": 0,
+      "Y": 48,
+      "Width": 6,
+      "Height": 10
+    },
+    "ScrollBarBackTexture": "Mods\\CapeStardew\\capewindows",
+    "ScrollBarBackSourceRect": {
+      "X": 10,
+      "Y": 48,
+      "Width": 6,
+      "Height": 6
+    }
+    }
+    ],
+   
+              
+  }
+}
+},
+
+
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+            "HasSeenEvent |contains=14635124": "true",
+            },
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+                "Cape.StickyRiceFlour": {
+                    "Id": "Cape.StickyRiceFlour",
+                    "ItemId": "Cape.StickyRiceFlour",
+                    "Price": "200",
+                    "IsRecipe": "false",
+                },
+            },
+        },
+        
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+            "HasSeenEvent |contains=146356991": "true",
+            },
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+                "Cape.CornSilk": {
+                    "Id": "Cape.CornSilk",
+                    "ItemId": "Cape.CornSilk",
+                    "Price": "80",
+                    "IsRecipe": "false",
+                },
+            },
+        },
+        
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+            "HasSeenEvent |contains=146356991": "true",
+            },
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+                "Cape.CuachalalateBark": {
+                    "Id": "Cape.CuachalalateBark",
+                    "ItemId": "Cape.CuachalalateBark",
+                    "Price": "100",
+                    "IsRecipe": "false",
+                },
+            },
+        },
+        
+          {
+      "LogName": "desertshopShavegrass",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "DesertTrade",
+        "Items"
+      ],
+      "Entries": {
+        "Cape.Shavegrass": {
+          "Condition": "Season summer fall winter",
+          "Id": "Cape.Shavegrass",
+          "ItemId": "Cape.Shavegrass",
+          "AvailableStock": 8,
+          "AvailableStockLimit": "Global",
+          "Price": 150,
+          "MinStack": 4,
+        },
+      },
+    },
+    
+    {
+      "LogName": "DesertShopUvaUrsi",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "DesertTrade",
+        "Items"
+      ],
+      "Entries": {
+        "Cape.UvaUrsi": {
+          "Condition": "Season spring summer fall",
+          "Id": "Cape.UvaUrsi",
+          "ItemId": "Cape.UvaUrsi",
+          "AvailableStock": 4,
+          "AvailableStockLimit": "Global",
+          "Price": 140,
+          "MinStack": 2,
+        },
+      },
+    },
+        
+    
+]
+
+}

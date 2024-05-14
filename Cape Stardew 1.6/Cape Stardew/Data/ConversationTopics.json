@@ -1,0 +1,17 @@
+{
+"Changes": [
+
+	//Conversation Topics Dialogue
+
+	{
+		"LogName": "Annetta",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Annetta",
+		"Entries": {
+			"Capelakewalk": "{{i18n:Capelakewalk.convotopic}}",
+
+		},
+	},
+	
+]
+}

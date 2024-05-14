@@ -1,0 +1,1474 @@
+{
+  "$id": "1",
+  "ForageSpawnEnabled": true,
+  "LargeObjectSpawnEnabled": true,
+  "OreSpawnEnabled": true,
+  "MonsterSpawnEnabled": false,
+  "Forage_Spawn_Settings": {
+    "$id": "2",
+    "Areas": [
+      {
+        "$id": "3",
+        "SpringItemIndex": null,
+        "SummerItemIndex": null,
+        "FallItemIndex": null,
+        "WinterItemIndex": null,
+        "UniqueAreaID": "Farm forage area 1",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "162,74;24,0",
+          "22,48;2,31",
+          "75,119;0,65",
+          "82,115;0,52",
+          "161,154;73,108",
+          "137,88;137,85",
+          "138,94;138,91"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "4",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "5",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "6"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "$id": "7",
+        "SpringItemIndex": null,
+        "SummerItemIndex": null,
+        "FallItemIndex": null,
+        "WinterItemIndex": null,
+        "UniqueAreaID": "Hilltop forage",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "162,74;0,0",
+          "132,155;0,0",
+          "162,155;132,83",
+          "162,93;141,69"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "8",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "9",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "10"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "$id": "11",
+        "SpringItemIndex": [
+          404,
+          420
+        ],
+        "SummerItemIndex": [
+          404,
+          420,
+          422
+        ],
+        "FallItemIndex": [
+          404,
+          420,
+          422
+        ],
+        "WinterItemIndex": null,
+        "UniqueAreaID": "Mushroom spawns at stump area",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 4,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "162,130;0,0",
+          "90,155;0,0",
+          "162,155;127,129"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "12",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "13",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "14"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "$id": "15",
+        "SpringItemIndex": [
+          535
+        ],
+        "SummerItemIndex": [
+          535
+        ],
+        "FallItemIndex": [
+          535
+        ],
+        "WinterItemIndex": [
+          535
+        ],
+        "UniqueAreaID": "Geode Spawns",
+        "MapName": "Custom_DeepCave",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "34,21;29,16",
+          "17,32;10,25",
+          "43,34;40,30",
+          "46,30;43,27"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "16",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "17",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "18"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      },
+      {
+        "$id": "19",
+        "SpringItemIndex": [
+          535
+        ],
+        "SummerItemIndex": [
+          535
+        ],
+        "FallItemIndex": [
+          535
+        ],
+        "WinterItemIndex": [
+          535
+        ],
+        "UniqueAreaID": "DeepCave forage area 1",
+        "MapName": "Custom_DeepCave",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "34,21;29,16",
+          "17,32;10,25",
+          "43,34;40,30",
+          "46,30;43,27"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "20",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "21",
+          "Years": [
+            "3+"
+          ],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "22"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "$id": "23",
+        "SpringItemIndex": [
+          571,
+          574,
+          568,
+          542,
+          569,
+          557,
+          538,
+          552,
+          556,
+          549
+        ],
+        "SummerItemIndex": [
+          571,
+          574,
+          568,
+          542,
+          569,
+          557,
+          538,
+          552,
+          556,
+          549
+        ],
+        "FallItemIndex": [
+          571,
+          574,
+          568,
+          542,
+          569,
+          557,
+          538,
+          552,
+          556,
+          549
+        ],
+        "WinterItemIndex": [
+          571,
+          574,
+          568,
+          542,
+          569,
+          557,
+          538,
+          552,
+          556,
+          549
+        ],
+        "UniqueAreaID": "Geode Mineral Spawns",
+        "MapName": "Custom_DeepCave",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "34,21;29,16",
+          "17,32;10,25",
+          "43,34;40,30",
+          "46,30;43,27"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "24",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "25",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "26"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      },
+      {
+        "$id": "27",
+        "SpringItemIndex": [
+          544,
+          567,
+          559,
+          546,
+          541
+        ],
+        "SummerItemIndex": [
+          544,
+          567,
+          559,
+          546,
+          541
+        ],
+        "FallItemIndex": [
+          544,
+          567,
+          559,
+          546,
+          541
+        ],
+        "WinterItemIndex": [
+          544,
+          567,
+          559,
+          546,
+          541
+        ],
+        "UniqueAreaID": "Frozen Geode Mineral Spawns",
+        "MapName": "Custom_DeepCave",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "34,21;29,16",
+          "17,32;10,25",
+          "43,34;40,30",
+          "46,30;43,27"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "28",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "29",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "30"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      },
+      {
+        "$id": "31",
+        "SpringItemIndex": [
+          544,
+          567,
+          559,
+          546,
+          541
+        ],
+        "SummerItemIndex": [
+          544,
+          567,
+          559,
+          546,
+          541
+        ],
+        "FallItemIndex": [
+          544,
+          567,
+          559,
+          546,
+          541
+        ],
+        "WinterItemIndex": [
+          544,
+          567,
+          559,
+          546,
+          541
+        ],
+        "UniqueAreaID": "Frozen Geode Mineral Spawns 2",
+        "MapName": "Custom_DeepCave",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "34,21;29,16",
+          "17,32;10,25",
+          "43,34;40,30",
+          "46,30;43,27"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "32",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "33",
+          "Years": [
+            "2+"
+          ],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "34"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      },
+      {
+        "$id": "35",
+        "SpringItemIndex": [
+          578,
+          547,
+          553,
+          554
+        ],
+        "SummerItemIndex": [
+          578,
+          547,
+          553,
+          554
+        ],
+        "FallItemIndex": [
+          578,
+          547,
+          553,
+          554
+        ],
+        "WinterItemIndex": [
+          578,
+          547,
+          553,
+          554
+        ],
+        "UniqueAreaID": "Magma Geode Mineral Spawns",
+        "MapName": "Custom_DeepCave",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "34,21;29,16",
+          "17,32;10,25",
+          "43,34;40,30",
+          "46,30;43,27"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "36",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "37",
+          "Years": [
+            "2+"
+          ],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "38"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 4
+      },
+      {
+        "$id": "39",
+        "SpringItemIndex": [
+          578,
+          547,
+          553,
+          554
+        ],
+        "SummerItemIndex": [
+          578,
+          547,
+          553,
+          554
+        ],
+        "FallItemIndex": [
+          578,
+          547,
+          553,
+          554
+        ],
+        "WinterItemIndex": [
+          578,
+          547,
+          553,
+          554
+        ],
+        "UniqueAreaID": "Magma Geode Mineral Spawns 2",
+        "MapName": "Custom_DeepCave",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "34,21;29,16",
+          "17,32;10,25",
+          "43,34;40,30",
+          "46,30;43,27"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "40",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "41",
+          "Years": [
+            "3+"
+          ],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "42"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 4
+      },
+      {
+        "$id": "43",
+        "SpringItemIndex": [
+          74
+        ],
+        "SummerItemIndex": [
+          74
+        ],
+        "FallItemIndex": [
+          74
+        ],
+        "WinterItemIndex": [
+          74
+        ],
+        "UniqueAreaID": "Prismatic Shard Spawn",
+        "MapName": "Custom_DeepCave",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "31,18;31,18"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "44",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "45",
+          "Years": [
+            "3+"
+          ],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "46"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "$id": "47",
+        "SpringItemIndex": [
+          74
+        ],
+        "SummerItemIndex": [
+          74
+        ],
+        "FallItemIndex": [
+          74
+        ],
+        "WinterItemIndex": [
+          74
+        ],
+        "UniqueAreaID": "DeepCave forage area 2",
+        "MapName": "Custom_DeepCave",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "34,21;29,16",
+          "17,32;10,25",
+          "43,34;40,30",
+          "46,30;43,27"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "48",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "49",
+          "Years": [
+            "4+"
+          ],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "50"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      }
+    ],
+    "PercentExtraSpawnsPerForagingLevel": 2,
+    "SpringItemIndex": [
+      16,
+      18,
+      20,
+      22
+    ],
+    "SummerItemIndex": [
+      259,
+      396,
+      398,
+      402,
+      404,
+      420
+    ],
+    "FallItemIndex": [
+      257,
+      406,
+      410,
+      408,
+      281,
+      404,
+      420,
+      422
+    ],
+    "WinterItemIndex": [
+      283,
+      414,
+      418
+    ],
+    "CustomTileIndex": []
+  },
+  "Large_Object_Spawn_Settings": {
+    "$id": "51",
+    "Areas": [
+      {
+        "$id": "52",
+        "ObjectTypes": [
+          "Stump"
+        ],
+        "FindExistingObjectLocations": false,
+        "PercentExtraSpawnsPerSkillLevel": 0,
+        "RelatedSkill": "Foraging",
+        "UniqueAreaID": "Farm large object area 1",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 8,
+        "MaximumSpawnsPerDay": 8,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "99,140;99,140",
+          "101,136;101,136",
+          "102,142;102,142",
+          "107,138;107,138",
+          "106,145;106,145",
+          "110,141;110,141",
+          "115,144;115,144",
+          "119,142;119,142"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "53",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "54",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "55"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "$id": "56",
+        "ObjectTypes": [
+          "Meteorite"
+        ],
+        "FindExistingObjectLocations": false,
+        "PercentExtraSpawnsPerSkillLevel": 0,
+        "RelatedSkill": "Foraging",
+        "UniqueAreaID": "Farm Meteorite Block",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "77,117;77,117"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "57",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "58",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "59"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "$id": "60",
+        "ObjectTypes": [
+          "Meteorite"
+        ],
+        "FindExistingObjectLocations": false,
+        "PercentExtraSpawnsPerSkillLevel": 0,
+        "RelatedSkill": "Foraging",
+        "UniqueAreaID": "Farm Meteorites x2 - If no giant crop is present on preexisting save on day 1",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "78,99;78,99",
+          "80,100;80,100"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "61",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "62",
+          "Years": [],
+          "Seasons": [],
+          "Days": [
+            "2-28"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "63"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 2
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "$id": "64",
+        "ObjectTypes": [
+          "Giant Cauliflower"
+        ],
+        "FindExistingObjectLocations": false,
+        "PercentExtraSpawnsPerSkillLevel": 0,
+        "RelatedSkill": "Foraging",
+        "UniqueAreaID": "Farm Giant Cauliflower Spawns",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "79,99;79,99"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "65",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "66",
+          "Years": [],
+          "Seasons": [
+            "Spring"
+          ],
+          "Days": [
+            "1"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "67"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 27
+      },
+      {
+        "$id": "68",
+        "ObjectTypes": [
+          "Giant Melon"
+        ],
+        "FindExistingObjectLocations": false,
+        "PercentExtraSpawnsPerSkillLevel": 0,
+        "RelatedSkill": "Foraging",
+        "UniqueAreaID": "Farm Giant Melon Spawns",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "79,99;79,99"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "69",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "70",
+          "Years": [],
+          "Seasons": [
+            "Summer"
+          ],
+          "Days": [
+            "1"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "71"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 27
+      },
+      {
+        "$id": "72",
+        "ObjectTypes": [
+          "Giant Pumpkin"
+        ],
+        "FindExistingObjectLocations": false,
+        "PercentExtraSpawnsPerSkillLevel": 0,
+        "RelatedSkill": "Foraging",
+        "UniqueAreaID": "Farm Giant Pumpkin Spawns",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "79,99;79,99"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "73",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "74",
+          "Years": [],
+          "Seasons": [
+            "Fall"
+          ],
+          "Days": [
+            "1"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "75"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 27
+      },
+      {
+        "$id": "76",
+        "ObjectTypes": [
+          "Meteorite"
+        ],
+        "FindExistingObjectLocations": false,
+        "PercentExtraSpawnsPerSkillLevel": 0,
+        "RelatedSkill": "Foraging",
+        "UniqueAreaID": "Farm Meteorite Spawns",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "79,99;79,99"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "77",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "78",
+          "Years": [],
+          "Seasons": [
+            "Winter"
+          ],
+          "Days": [
+            "1"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "79"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 27
+      }
+    ],
+    "CustomTileIndex": []
+  },
+  "Ore_Spawn_Settings": {
+    "$id": "80",
+    "Areas": [
+      {
+        "$id": "81",
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": null,
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "Farm ore area 1",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 4,
+        "MaximumSpawnsPerDay": 10,
+        "IncludeTerrainTypes": [
+          "Quarry"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "49,153;27,137",
+          "27,148;23,137",
+          "22,144;20,137",
+          "21,144;17,137"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "82",
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "83",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "84"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 5
+      }
+    ],
+    "PercentExtraSpawnsPerMiningLevel": 1,
+    "MiningLevelRequired": {
+      "$id": "85",
+      "Stone": 0,
+      "Geode": 2,
+      "FrozenGeode": 5,
+      "MagmaGeode": 7,
+      "Gem": 6,
+      "Copper": 2,
+      "Iron": 5,
+      "Gold": 8,
+      "Iridium": 0,
+      "Mystic": 0,
+      "Diamond": 0,
+      "Ruby": 0,
+      "Jade": 0,
+      "Amethyst": 0,
+      "Topaz": 0,
+      "Emerald": 0,
+      "Aquamarine": 0
+    },
+    "StartingSpawnChance": {
+      "$id": "86",
+      "Stone": 60,
+      "Geode": 4,
+      "FrozenGeode": 3,
+      "MagmaGeode": 2,
+      "Gem": 3,
+      "Copper": 15,
+      "Iron": 7,
+      "Gold": 4,
+      "Iridium": 0,
+      "Mystic": 0,
+      "Diamond": 0,
+      "Ruby": 0,
+      "Jade": 0,
+      "Amethyst": 0,
+      "Topaz": 0,
+      "Emerald": 0,
+      "Aquamarine": 0
+    },
+    "LevelTenSpawnChance": {
+      "$id": "87",
+      "Stone": 50,
+      "Geode": 7,
+      "FrozenGeode": 4,
+      "MagmaGeode": 3,
+      "Gem": 5,
+      "Copper": 20,
+      "Iron": 15,
+      "Gold": 10,
+      "Iridium": 0,
+      "Mystic": 0,
+      "Diamond": 0,
+      "Ruby": 0,
+      "Jade": 0,
+      "Amethyst": 0,
+      "Topaz": 0,
+      "Emerald": 0,
+      "Aquamarine": 0
+    },
+    "CustomTileIndex": []
+  },
+  "Monster_Spawn_Settings": {
+    "$id": "88",
+    "Areas": [
+      {
+        "$id": "89",
+        "MonsterTypes": [
+          {
+            "$id": "90",
+            "MonsterName": "shadow brute",
+            "Settings": {
+              "$id": "91",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 8
+            }
+          },
+          {
+            "$id": "92",
+            "MonsterName": "wilderness golem",
+            "Settings": {
+              "$id": "93",
+              "SpawnWeight": 4
+            }
+          },
+          {
+            "$id": "94",
+            "MonsterName": "purple slime",
+            "Settings": {
+              "$id": "95",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "$id": "96",
+            "MonsterName": "red slime",
+            "Settings": {
+              "$id": "97",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 8,
+              "MaximumSkillLevel": 9,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "$id": "98",
+            "MonsterName": "blue slime",
+            "Settings": {
+              "$id": "99",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 4,
+              "MaximumSkillLevel": 7,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "$id": "100",
+            "MonsterName": "green slime",
+            "Settings": {
+              "$id": "101",
+              "RelatedSkill": "Combat",
+              "MaximumSkillLevel": 3,
+              "SpawnWeight": 2
+            }
+          }
+        ],
+        "UniqueAreaID": "Farm monster area 1",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 5,
+        "MaximumSpawnsPerDay": 8,
+        "IncludeTerrainTypes": [
+          "Dirt",
+          "Diggable",
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "102",
+          "StartTime": 1900,
+          "EndTime": 2550,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "103",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "104"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "$id": "105",
+        "MonsterTypes": [
+          {
+            "$id": "106",
+            "MonsterName": "iridium bat",
+            "Settings": {
+              "$id": "107",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 4
+            }
+          },
+          {
+            "$id": "108",
+            "MonsterName": "serpent",
+            "Settings": {
+              "$id": "109",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 3
+            }
+          },
+          {
+            "$id": "110",
+            "MonsterName": "lava bat",
+            "Settings": {
+              "$id": "111",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 8,
+              "SpawnWeight": 4
+            }
+          },
+          {
+            "$id": "112",
+            "MonsterName": "frost bat",
+            "Settings": {
+              "$id": "113",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 5,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "$id": "114",
+            "MonsterName": "bat",
+            "Settings": {
+              "$id": "115",
+              "SpawnWeight": 2
+            }
+          }
+        ],
+        "UniqueAreaID": "Farm monster area 2",
+        "MapName": "Farm",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Dirt",
+          "Diggable",
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "$id": "116",
+          "StartTime": 1900,
+          "EndTime": 2550,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "$id": "117",
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "$id": "118"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      }
+    ],
+    "CustomTileIndex": []
+  },
+  "QuarryTileIndex": [
+    556,
+    558,
+    583,
+    606,
+    607,
+    608,
+    630,
+    635,
+    636,
+    680,
+    681,
+    685
+  ],
+  "File_Conditions": {
+    "$id": "119",
+    "FarmTypes": [
+      "Standard"
+    ],
+    "FarmerNames": [],
+    "SaveFileNames": [],
+    "OtherMods": {
+      "$id": "120",
+      "flashshifter.immersivefarm2remastered": true,
+      "flashshifter.GrandpasFarm": false
+    }
+  }
+}

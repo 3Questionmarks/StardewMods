@@ -1,0 +1,64 @@
+{
+"Changes": [
+{
+"Action": "EditData",
+"Target": "Data/Shops",
+"Entries":
+{
+"Fellowclown.GP_Shop": {
+"Owners": [
+{
+"Name": "None",
+"Dialogues": [
+// dialogue any other time
+{
+"Id": "Fellowclown.GP_Shop",
+"Dialogue": "{{i18n:FC.GP}}"
+},
+]
+},
+],
+"Items": [
+{
+"Id": "{{ModID}}_StatueGem",
+"ItemId": "{{ModID}}_StatueGem",
+"Price": 2000,
+"AvailableStock":1,
+"AvailableStockLimit": "player"
+},
+]
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/Shops",
+"Entries":
+{
+"Fellowclown.CC_Shop": {
+"Owners": [
+{
+"Name": "FC.Maverick",
+"Dialogues": [
+// dialogue any other time
+{
+"Id": "Fellowclown.CC_Shop",
+"Dialogue": "{{i18n:FC.DodoShop}}"
+},
+]
+},
+],
+"Items": [
+{
+"Id": "{{ModId}}_FrenchDodoEgg",
+"ItemId": "{{ModID}}_FrenchDodoEgg",
+ "Price": 900,
+"AvailableStock":1,
+"AvailableStockLimit": "player"
+},
+]
+}
+}
+},
+]
+}

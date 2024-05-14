@@ -1,0 +1,166 @@
+{
+
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}_Furnace0": "{{ModId}}_Furnace0/decor/4 6/4 2/1/10000/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Furnace0.Name]/0/Mods\\{{ModId}}\\furnace",
+                "{{ModId}}_Shovel1": "{{ModId}}_Shovel1/decor/2 3/2 1/1/100/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Shovel1.Name]/8/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Chart2": "{{ModId}}_Chart2/painting/2 2/2 2/1/500/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Chart2.Name]/70/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Anvil3": "{{ModId}}_Anvil3/decor/2 2/2 1/1/1000/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Anvil3.Name]/58/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Tools4": "{{ModId}}_Tools4/painting/2 2/2 2/1/300/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Tools4.Name]/72/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_SpecificTools5": "{{ModId}}_SpecificTools5/painting/1 2/1 2/1/400/-1/[LocalizedText Strings\\Furniture:{{ModId}}_SpecificTools5.Name]/74/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_BlacksmithSign6": "{{ModId}}_BlacksmithSign6/painting/1 1/1 1/1/300/-1/[LocalizedText Strings\\Furniture:{{ModId}}_BlacksmithSign6.Name]/65/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Apron7": "{{ModId}}_Apron7/painting/1 2/1 2/1/700/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Apron7.Name]/66/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Tinymountedanvil8": "{{ModId}}_Tinymountedanvil8/decor/1 2/1 1/1/700/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Tinymountedanvil8.Name]/67/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Smallbucketofcoal9": "{{ModId}}_Smallbucketofcoal9/decor/1 1/1 1/1/200/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Smallbucketofcoal9.Name]/85/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Hammer10": "{{ModId}}_Hammer10/decor/1 1/1 1/1/100/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Hammer10.Name]/86/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Smallbucket11": "{{ModId}}_Smallbucket11/decor/1 1/1 1/1/100/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Smallbucket11.Name]/75/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Thinchains12": "{{ModId}}_Thinchains12/painting/1 2/1 2/1/700/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Thinchains12.Name]/90/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Thickchains13": "{{ModId}}_Thickchains13/painting/1 2/1 2/1/800/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Thickchains13.Name]/91/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Brush14": "{{ModId}}_Brush14/decor/1 1/1 1/1/100/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Brush14.Name]/78/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Rake15": "{{ModId}}_Rake15/decor/1 2/1 1/1/300/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Rake15.Name]/92/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Largebucketofcoal16": "{{ModId}}_Largebucketofcoal16/decor/1 2/1 1/1/900/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Largebucketofcoal16.Name]/93/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_WaterBucket17": "{{ModId}}_WaterBucket17/decor/2 2/2 1/1/600/-1/[LocalizedText Strings\\Furniture:{{ModId}}_WaterBucket17.Name]/94/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Smallwaterbucket18": "{{ModId}}_Smallwaterbucket18/decor/1 2/1 1/1/500/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Smallwaterbucket18.Name]/96/Mods\\{{ModId}}\\blacksmith",
+                "{{ModId}}_Toolrack19": "{{ModId}}_Toolrack19/decor/3 2/3 1/1/1500/-1/[LocalizedText Strings\\Furniture:{{ModId}}_Toolrack19.Name]/97/Mods\\{{ModId}}\\blacksmith"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Furniture",
+            "Entries": {
+                "{{ModId}}_Furnace0.Name": "{{i18n:Furnace0.name}}",
+                "{{ModId}}_Furnace0.Description": "{{i18n:Furnace0.description}}",
+                "{{ModId}}_Shovel1.Name": "{{i18n:Shovel1.name}}",
+                "{{ModId}}_Shovel1.Description": "{{i18n:Shovel1.description}}",
+                "{{ModId}}_Chart2.Name": "{{i18n:Chart2.name}}",
+                "{{ModId}}_Chart2.Description": "{{i18n:Chart2.description}}",
+                "{{ModId}}_Anvil3.Name": "{{i18n:Anvil3.name}}",
+                "{{ModId}}_Anvil3.Description": "{{i18n:Anvil3.description}}",
+                "{{ModId}}_Tools4.Name": "{{i18n:Tools4.name}}",
+                "{{ModId}}_Tools4.Description": "{{i18n:Tools4.description}}",
+                "{{ModId}}_SpecificTools5.Name": "{{i18n:SpecificTools5.name}}",
+                "{{ModId}}_SpecificTools5.Description": "{{i18n:SpecificTools5.description}}",
+                "{{ModId}}_BlacksmithSign6.Name": "{{i18n:BlacksmithSign6.name}}",
+                "{{ModId}}_BlacksmithSign6.Description": "{{i18n:BlacksmithSign6.description}}",
+                "{{ModId}}_Apron7.Name": "{{i18n:Apron7.name}}",
+                "{{ModId}}_Apron7.Description": "{{i18n:Apron7.description}}",
+                "{{ModId}}_Tinymountedanvil8.Name": "{{i18n:Tinymountedanvil8.name}}",
+                "{{ModId}}_Tinymountedanvil8.Description": "{{i18n:Tinymountedanvil8.description}}",
+                "{{ModId}}_Smallbucketofcoal9.Name": "{{i18n:Smallbucketofcoal9.name}}",
+                "{{ModId}}_Smallbucketofcoal9.Description": "{{i18n:Smallbucketofcoal9.description}}",
+                "{{ModId}}_Hammer10.Name": "{{i18n:Hammer10.name}}",
+                "{{ModId}}_Hammer10.Description": "{{i18n:Hammer10.description}}",
+                "{{ModId}}_Smallbucket11.Name": "{{i18n:Smallbucket11.name}}",
+                "{{ModId}}_Smallbucket11.Description": "{{i18n:Smallbucket11.description}}",
+                "{{ModId}}_Thinchains12.Name": "{{i18n:Thinchains12.name}}",
+                "{{ModId}}_Thinchains12.Description": "{{i18n:Thinchains12.description}}",
+                "{{ModId}}_Thickchains13.Name": "{{i18n:Thickchains13.name}}",
+                "{{ModId}}_Thickchains13.Description": "{{i18n:Thickchains13.description}}",
+                "{{ModId}}_Brush14.Name": "{{i18n:Brush14.name}}",
+                "{{ModId}}_Brush14.Description": "{{i18n:Brush14.description}}",
+                "{{ModId}}_Rake15.Name": "{{i18n:Rake15.name}}",
+                "{{ModId}}_Rake15.Description": "{{i18n:Rake15.description}}",
+                "{{ModId}}_Largebucketofcoal16.Name": "{{i18n:Largebucketofcoal16.name}}",
+                "{{ModId}}_Largebucketofcoal16.Description": "{{i18n:Largebucketofcoal16.description}}",
+                "{{ModId}}_WaterBucket17.Name": "{{i18n:WaterBucket17.name}}",
+                "{{ModId}}_WaterBucket17.Description": "{{i18n:WaterBucket17.description}}",
+                "{{ModId}}_Smallwaterbucket18.Name": "{{i18n:Smallwaterbucket18.name}}",
+                "{{ModId}}_Smallwaterbucket18.Description": "{{i18n:Smallwaterbucket18.description}}",
+                "{{ModId}}_Toolrack19.Name": "{{i18n:Toolrack19.name}}",
+                "{{ModId}}_Toolrack19.Description": "{{i18n:Toolrack19.description}}",
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/blacksmith",
+            "FromFile": "assets/blacksmith.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/furnace",
+            "FromFile": "assets/furnace.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/FurnitureExtensionData",
+            "Entries": {
+                "{{ModId}}_Furnace0": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Furnace0.Description]"
+                },
+                "{{ModId}}_Shovel1": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Shovel1.Description]"
+                },
+                "{{ModId}}_Chart2": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Chart2.Description]"
+                },
+                "{{ModId}}_Anvil3": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Anvil3.Description]"
+                },
+                "{{ModId}}_Tools4": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Tools4.Description]"
+                },
+                "{{ModId}}_SpecificTools5": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_SpecificTools5.Description]"
+                },
+                "{{ModId}}_BlacksmithSign6": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_BlacksmithSign6.Description]"
+                },
+                "{{ModId}}_Apron7": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Apron7.Description]"
+                },
+                "{{ModId}}_Tinymountedanvil8": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Tinymountedanvil8.Description]"
+                },
+                "{{ModId}}_Smallbucketofcoal9": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Smallbucketofcoal9.Description]"
+                },
+                "{{ModId}}_Hammer10": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Hammer10.Description]"
+                },
+                "{{ModId}}_Smallbucket11": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Smallbucket11.Description]"
+                },
+                "{{ModId}}_Thinchains12": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Thinchains12.Description]"
+                },
+                "{{ModId}}_Thickchains13": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Thickchains13.Description]"
+                },
+                "{{ModId}}_Brush14": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Brush14.Description]"
+                },
+                "{{ModId}}_Rake15": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Rake15.Description]"
+                },
+                "{{ModId}}_Largebucketofcoal16": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Largebucketofcoal16.Description]"
+                },
+                "{{ModId}}_WaterBucket17": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_WaterBucket17.Description]"
+                },
+                "{{ModId}}_Smallwaterbucket18": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Smallwaterbucket18.Description]"
+                },
+                "{{ModId}}_Toolrack19": {
+                    "DescriptionOverride": "[LocalizedText Strings\\Furniture:{{ModId}}_Toolrack19.Description]"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "{{ModId}}_Furnace0": {
+                    "TargetTexture": "Mods/{{ModId}}/furnace",
+                    "TargetRect": {
+                        "X": 0, "Y": 0, "Width": 64, "Height": 96
+                    },
+                    "SourceTexture": "Mods/{{ModId}}/furnace:0..1@20"
+                }
+            }
+        }
+    ]
+}

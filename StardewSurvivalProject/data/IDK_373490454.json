@@ -1,0 +1,26 @@
+{
+  "$id": "1",
+  "hunger": {
+    "$id": "2",
+    "value": 31.14800012129126,
+    "saturation": 0.0
+  },
+  "thirst": {
+    "$id": "3",
+    "value": 18.69149385047058
+  },
+  "bodyTemp": {
+    "$id": "4",
+    "MinComfortTemp": 17.25,
+    "MaxComfortTemp": 27.25,
+    "DefaultMinComfortTemp": 16.0,
+    "DefaultMaxComfortTemp": 26.0,
+    "value": 37.32583755439178
+  },
+  "healthPoint": 100,
+  "mood": {
+    "$id": "5",
+    "Level": "Content",
+    "Value": 50.0
+  }
+}

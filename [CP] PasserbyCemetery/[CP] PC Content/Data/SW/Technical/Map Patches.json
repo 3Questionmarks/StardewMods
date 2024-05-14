@@ -1,0 +1,21 @@
+{
+"Changes": [
+{
+            "LogName": "begone Tile",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "MapTiles": [
+                {
+                    "Position": { "X": 28, "Y":68, },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": null,
+                    },
+                },
+            ],
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP",
+            },
+        },
+]
+}

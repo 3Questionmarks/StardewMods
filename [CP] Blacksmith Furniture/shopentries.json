@@ -1,0 +1,134 @@
+{
+  "Changes": [
+
+    {
+        "LogName": "Add Misc Furniture To Robin's Shop",
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "TargetField": [ "Carpenter", "Items" ],
+        "Entries": {
+            "{{ModId}}_Furnace0": {
+                "Id": "{{ModId}}_Furnace0",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Furnace0",
+                "Price": 10000,
+            },
+            "{{ModId}}_Shovel1": {
+                "Id": "{{ModId}}_Shovel1",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Shovel1",
+                "Price": 100,
+            },
+            "{{ModId}}_Chart2": {
+                "Id": "{{ModId}}_Chart2",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Chart2",
+                "Price": 500,
+            },
+            "{{ModId}}_Anvil3": {
+                "Id": "{{ModId}}_Anvil3",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Anvil3",
+                "Price": 1000,
+            },
+            "{{ModId}}_Tools4": {
+                "Id": "{{ModId}}_Tools4",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Tools4",
+                "Price": 300,
+            },
+            "{{ModId}}_SpecificTools5": {
+                "Id": "{{ModId}}_SpecificTools5",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_SpecificTools5",
+                "Price": 400,
+            },
+            "{{ModId}}_BlacksmithSign6": {
+                "Id": "{{ModId}}_BlacksmithSign6",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_BlacksmithSign6",
+                "Price": 300,
+            },
+            "{{ModId}}_Apron7": {
+                "Id": "{{ModId}}_Apron7",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Apron7",
+                "Price": 700,
+            },
+            "{{ModId}}_Tinymountedanvil8": {
+                "Id": "{{ModId}}_Tinymountedanvil8",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Tinymountedanvil8",
+                "Price": 700,
+            },
+            "{{ModId}}_Smallbucketofcoal9": {
+                "Id": "{{ModId}}_Smallbucketofcoal9",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Smallbucketofcoal9",
+                "Price": 200,
+            },
+            "{{ModId}}_Hammer10": {
+                "Id": "{{ModId}}_Hammer10",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Hammer10",
+                "Price": 100,
+            },
+            "{{ModId}}_Smallbucket11": {
+                "Id": "{{ModId}}_Smallbucket11",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Smallbucket11",
+                "Price": 100,
+            },
+            "{{ModId}}_Thinchains12": {
+                "Id": "{{ModId}}_Thinchains12",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Thinchains12",
+                "Price": 700,
+            },
+            "{{ModId}}_Thickchains13": {
+                "Id": "{{ModId}}_Thickchains13",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Thickchains13",
+                "Price": 800,
+            },
+            "{{ModId}}_Brush14": {
+                "Id": "{{ModId}}_Brush14",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Brush14",
+                "Price": 100,
+            },
+            "{{ModId}}_Rake15": {
+                "Id": "{{ModId}}_Rake15",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Rake15",
+                "Price": 300,
+            },
+            "{{ModId}}_Largebucketofcoal16": {
+                "Id": "{{ModId}}_Largebucketofcoal16",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Largebucketofcoal16",
+                "Price": 900,
+            },
+            "{{ModId}}_WaterBucket17": {
+                "Id": "{{ModId}}_WaterBucket17",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_WaterBucket17",
+                "Price": 600,
+            },
+            "{{ModId}}_Smallwaterbucket18": {
+                "Id": "{{ModId}}_Smallwaterbucket18",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Smallwaterbucket18",
+                "Price": 500,
+            },
+            "{{ModId}}_Toolrack19": {
+                "Id": "{{ModId}}_Toolrack19",
+                "Condition": "DAY_OF_WEEK Friday",
+                "ItemId": "(F){{ModId}}_Toolrack19",
+                "Price": 1500,
+            }
+        }
+    }
+   
+  ]
+}

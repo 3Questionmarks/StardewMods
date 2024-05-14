@@ -1,0 +1,12 @@
+{
+  "Name": "Weather Totems - CP part",
+  "Author": "TheMightyAmondee",
+  "Version": "1.0.2",
+  "Description": "Add weather totem items.",
+  "UniqueID": "TheMightyAmondee.WeatherTotemsCP",
+  "UpdateKeys":["Nexus:-1"],
+  "MinimumApiVersion": "4.0.0",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

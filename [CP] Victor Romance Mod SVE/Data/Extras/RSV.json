@@ -1,0 +1,106 @@
+{
+    "Changes": [
+		{
+			"Action": "EditImage",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/WeddingReception/NPCs/Victor.png", 
+			"When": {
+				"HasMod":"Rafseazz.RSVCP",
+				"Query: '{{Spouse}}' = 'Victor'": true 
+			},
+
+			"Update": "OnLocationChange, OnTimeChange",
+		},  
+	
+		///// VICTOR /////
+		
+		/// RIDGESIDE GATHERING
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"When": {
+				"Language": "en",
+				"Hearts:Victor": "6, 7, 8",
+				"HasMod":"Rafseazz.RSVCP"
+			},
+			"Entries": {
+				"Victor": "Mmmm, those smells... Mr. Pika and Gus are at it again, huh. $1#$b# Oh, hey there, @. Say, how about you and me go grab a bite soon? $l",
+			}
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"When": {
+				"Language": "en",
+				"Relationship:Victor": "Dating, Engaged",
+				"HasMod":"Rafseazz.RSVCP"
+			},
+			"Entries": {
+				"Victor": "Not again... Who keeps giving Keahi slime, anyway? Ugh, our stall is a total mess... $2#$e# Oh, hi, love. Say, you wouldn't know where little Keahi keeps getting all that slime from, would you? $0#$b# ...Wait a sec, what's with that look on your face? @? @!? $7",
+			}
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"When": {
+				"Language": "en",
+				"Relationship:Victor": "Married",
+				"HasMod":"Rafseazz.RSVCP"
+			},
+			"Entries": {
+				"Victor": "Another year, another half-done stall... $0#$b# Oh, hey there, dear. Say, how inclined are you to buy from the boys' stall? I could give you kisses to make you consider this. $h#$b# As many as you want. $l",
+			}
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"When": {
+				"Language": "en",
+				"Relationship:Victor": "Married",
+				"HasMod":"Rafseazz.RSVCP",
+				"Year |contains=2":true
+			},
+			"Entries": {
+				"Victor": "I swear to Yoba, next year I'm getting Jeric to leave the planning to me. $0#$b# Hey there, darling, glad to see you made it! $h#$b# How about we grab something to eat and pick a spot near the stage? I'd love for us to relax together! $l#$e# Now, if you excuse me, I need to make sure the boys' stall won't crash and burn. Love you! $l",
+			}
+		},	
+			
+		/// EMBER OF RESOLUTIONS
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"When": {
+				"Language": "en",
+				"Relationship:Victor": "Dating",
+				"HasMod":"Rafseazz.RSVCP"
+			},
+			"Entries": {
+				"Victor": "Happy New Year, @! $h#$b# Hope the next year will be even better for you! $h#$b# By the way, would you mind visiting me tomorrow? The bridge's structure has inspired me to work on a draft, but I'd appreciate your company. $l",
+			}
+		},		
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"When": {
+				"Language": "en",
+				"Relationship:Victor": "Engaged",
+				"HasMod":"Rafseazz.RSVCP"
+			},
+			"Entries": {
+				"Victor": "Happy New Year, sweetheart! May all that you wish for come true! $h#$e# Oh? What I wish for? Well... It's a secret, but you might find out soon enough. *chuckle* $l",
+			}
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"When": {
+				"Language": "en",
+				"Relationship:Victor": "Married",
+				"HasMod":"Rafseazz.RSVCP"
+			},
+			"Entries": {
+				"Victor": "Happy New Year, my love! Thank you for sticking around for so long! $h#$b# Can't wait to spend even more years with you! $l",
+			}
+		},	
+    ]     
+}

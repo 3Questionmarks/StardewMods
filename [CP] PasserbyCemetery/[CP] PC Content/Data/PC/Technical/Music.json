@@ -1,0 +1,17 @@
+{
+"Changes": [
+ {
+"Action": "EditData",
+"Target": "Data/AudioChanges",
+"Entries": {
+"{{ModID}}_Dodo": {
+"ID": "{{ModID}}_Dodo",
+"Category": "Music",
+"FilePaths": [ "{{AbsoluteFilePath:Assets/Music/PC/Dodo.ogg}}" ],
+"StreamedVorbis": true,
+"Looped": false
+}
+}
+},
+]
+}

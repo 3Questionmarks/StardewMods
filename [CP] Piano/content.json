@@ -1,0 +1,21 @@
+{
+    "Format": "2.0.0",  
+    "Changes": [
+
+        //Include Furniture
+
+        {
+        "LogName": "Jokerine Piano",
+        "Action": "Include",
+        "FromFile": "furniture.json"
+        },
+
+        //Include Shop
+
+        {
+        "LogName": "Shop Entries",
+        "Action": "Include",
+        "FromFile": "shopentries.json"
+        }
+    ]
+}

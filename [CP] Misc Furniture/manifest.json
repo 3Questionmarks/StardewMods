@@ -1,0 +1,20 @@
+{
+    "Name": "[CP] Misc Furniture",
+    "Author": "Spotteddotted & CyanFire",
+    "Version": "1.0.3",
+    "Description": "Adds new misc furniture to game, CP conversion",
+    "UniqueID": "Spotteddotted.CP.MiscFurniture",
+    "UpdateKeys": [
+        "Nexus:12782"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher",
+        "MinimumVersion": "2.0.0"
+    },
+    "Dependencies": [
+    {
+      "UniqueID": "spacechase0.SpaceCore",
+      "Required": true
+    }
+  ]
+}

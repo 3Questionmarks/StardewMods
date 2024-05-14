@@ -1,0 +1,22 @@
+{
+    "Format": "2.0.0",
+    
+    "Changes": [
+
+        //Include Furniture
+
+        {
+        "LogName": "Misc Furniture",
+        "Action": "Include",
+        "FromFile": "furniture.json"
+        },
+
+        //Include Shop
+
+        {
+        "LogName": "Shop Entries",
+        "Action": "Include",
+        "FromFile": "shopentries.json"
+        }
+    ]
+}

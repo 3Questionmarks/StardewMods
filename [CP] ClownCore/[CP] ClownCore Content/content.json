@@ -1,0 +1,52 @@
+{
+"Format":"2.0.0",
+"Changes":[
+/************************************************
+Tilesheets
+************************************************/
+{
+"LogName": "Tilesheets",
+"Action": "Load",
+"Target": "Maps/FC.FountainGem,Maps/Events,Maps/Fellowclown_AnimalRefuge,Maps/spring_Fellowclown_Outdoors,Maps/summer_Fellowclown_Outdoors,Maps/fall_Fellowclown_Outdoors,Maps/winter_Fellowclown_Outdoors,Maps/spring_Fellowclown_Indoors,Maps/summer_Fellowclown_Indoors,Maps/fall_Fellowclown_Indoors,Maps/winter_Fellowclown_Indoors,",
+"FromFile": "Tilesheets/{{TargetWithoutPath}}.png",
+},
+ {
+"LogName": "PC Technical Information",
+"Action": "Include",
+"FromFile": "Buildings/Buildings.json"
+ },
+ /************************************************
+Custom Buildings
+************************************************/
+ {
+"LogName": "Tropical House Map",
+"Action": "Load",
+"Target": "Maps/FC.TropicalAnimalHouseMap",
+"FromFile": "Buildings/{{TargetWithoutPath}}.tbin",
+},
+{
+"LogName": "Tilesheets",
+"Action": "Load",
+"Target": "Buildings/FC.TropicalAnimalHouse",
+"FromFile": "Buildings/{{TargetWithoutPath}}.png",
+},
+    {
+    "Action": "EditMap",
+    "Target": "Maps/Forest-FlowerFestival,Maps/Forest-FlowerFestival2",
+    "FromFile": "Maps/FlowerFestivalEdit.tbin",
+    "ToArea": { "X":0, "Y": 9, "Width": 27, "Height":12},
+    "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+         {
+    "Action": "EditMap",
+    "Target": "Maps/Forest-FlowerFestival,Maps/Forest-FlowerFestival2",
+    "FromFile": "Maps/RSVFlowerFestivalEdit.tbin",
+    "ToArea": { "X":0, "Y": 9, "Width": 27, "Height":12},
+         "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+],
+}

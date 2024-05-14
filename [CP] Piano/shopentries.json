@@ -1,0 +1,20 @@
+{
+  "Changes": [
+
+    {
+        "LogName": "Add Piano To Robin's Shop",
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "TargetField": [ "Carpenter", "Items" ],
+        "Entries": {
+            "{{ModId}}_Piano0": {
+                "Id": "{{ModId}}_Piano0",
+                "Condition": "DAY_OF_WEEK Wednesday",
+                "ItemId": "(F){{ModId}}_Piano0",
+                "Price": 100,
+            }
+        }
+    }
+   
+  ]
+}

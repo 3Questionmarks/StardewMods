@@ -1,0 +1,51 @@
+{
+"Changes": [
+
+
+
+
+
+             {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "When": {
+            "HasMod": "spacechase0.SpaceCore",
+            },
+            "Entries": {
+                "{{ModId}}_LegacyAgedRumTrigger": {
+                    "Id": "{{ModId}}_LegacyAgedRumTrigger",
+                    "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+                    "Condition": "ITEM_CONTEXT_TAG Input Seafaring Antique",
+                    "MarkActionApplied": false,
+                    "Action": "AddItem 152",
+                }
+            }
+            },
+            
+              {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "When": {
+            "HasMod": "spacechase0.SpaceCore",
+            },
+            "Entries": {
+                "{{ModId}}_SeaCrystalFlaskTrigger": {
+                    "Id": "{{ModId}}_SeaCrystalFlaskTrigger",
+                    "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+                    "Condition": "ITEM_CONTEXT_TAG Input Seafaring Antique magic_flask",
+                    "MarkActionApplied": true,
+                    "Actions": [
+                    "spacechase0.SpaceCore_PlaySound shadowDie local",
+                    "AddMail Current essence1 received",
+                    "AddItem 859",
+                    ],
+                    
+                }
+            }
+            },
+            
+            
+            ]
+            
+            
+            }

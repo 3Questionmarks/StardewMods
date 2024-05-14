@@ -1,0 +1,410 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+		//Machine Rules
+		"Keg": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Machine Rules",
+		},
+		"Preserves Jar": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Machine Rules",
+		},
+		"Cheese Press": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Machine Rules",
+		},
+		"Loom": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Machine Rules",
+		},
+		"Oil Maker": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Machine Rules",
+		},
+		"Mayo Machine": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Machine Rules",
+		},
+		"Dehydrator": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Machine Rules",
+		},
+		"Fish Smoker": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Machine Rules",
+		},
+		//Adjustments
+		"Disable Double Output On Loom": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Adjustments",
+		},
+		//Compatibility
+		"Blue Eggs and Golden Mayo": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Compatibility",
+			"Description": "Enable for compatibility with Blue Eggs And Golden Mayo by 6480",
+		},
+		"Donkeys": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Compatibility",
+			"Description": "Enable for compatibility with Donkeys by omena007",
+		},
+	},
+	"Changes": [
+		// Keg
+		{// Beer
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Default_Wheat", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Keg": "true" },
+		},
+		{// Pale Ale
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Default_Hops", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Keg": "true" },
+		},
+		{// Tea
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Default_TeaLeaves", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Keg": "true" },
+		},
+		{// Coffee
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Default_CoffeeBeans", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Keg": "true" },
+		},
+		{// Mead
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Default_Honey", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Keg": "true" },
+		},
+		{// Vinegar
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Default_Rice", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Keg": "true" },
+		},
+		{// Juice
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Default_Juice", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Keg": "true" },
+		},
+		{// Wine
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Default_Wine", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Keg": "true" },
+		},
+		// Preserves Jar
+		{// Caviar
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)15", "OutputRules", "Default_SturgeonRoe", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Preserves Jar": "true" },
+		},
+		{// Roe
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)15", "OutputRules", "Default_Roe", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Preserves Jar": "true" },
+		},
+		{// Pickle
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)15", "OutputRules", "Default_Pickled", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Preserves Jar": "true" },
+		},
+		{// Jelly
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)15", "OutputRules", "Default_Jelly", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Preserves Jar": "true" },
+		},
+		// Cheese Press
+		{// Goat Cheese
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "Default_GoatMilk", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Cheese Press": "true" },
+		},
+		{// Large Goat Cheese
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "Default_LargeGoatMilk", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+				"MinStack": 2,
+				"MaxStack": 2,
+			},
+			"When": { "Cheese Press": "true" },
+		},
+		{// Cheese
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "Default_Milk", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Cheese Press": "true" },
+		},
+		{// Large Cheese
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "Default_LargeMilk", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+				"MinStack": 2,
+				"MaxStack": 2,
+			},
+			"When": { "Cheese Press": "true" },
+		},
+		// Loom
+		{// Wool
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)17", "OutputRules", "Default", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Loom": "true" },
+		},
+		// Oil Maker
+		{// Corn
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules", "Default_Corn", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Oil Maker": "true" },
+		},
+		{// Sunflower
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules", "Default_Sunflower", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Oil Maker": "true" },
+		},
+		{// Sunflower Seeds
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules", "Default_SunflowerSeeds", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Oil Maker": "true" },
+		},
+		{// Truffle
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules", "Default_Truffle", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Oil Maker": "true" },
+		},
+		// Mayo Machine
+		{// Ostrich Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "Default_OstrichEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Mayo Machine": "true" },
+		},
+		{// Duck Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "Default_DuckEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Mayo Machine": "true" },
+		},
+		{// Void Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "Default_VoidEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Mayo Machine": "true" },
+		},
+		{// Dino Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "Default_DinosaurEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Mayo Machine": "true" },
+		},
+		{// Golden Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "Default_GoldenEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Mayo Machine": "true" },
+		},
+		{// Large Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "Default_LargeEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+				"MinStack": 2,
+				"MaxStack": 2,
+			},
+			"When": { "Mayo Machine": "true" },
+		},
+		{// Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "Default_Egg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Mayo Machine": "true" },
+		},
+		// Dehydrator
+		{// Raisins
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Dehydrator", "OutputRules", "Raisins", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Dehydrator": "true" },
+		},
+		{// Dried Fruit
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Dehydrator", "OutputRules", "DriedFruit", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Dehydrator": "true" },
+		},
+		{// Dried Mushrooms
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Dehydrator", "OutputRules", "DriedMushrooms", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Dehydrator": "true" },
+		},
+		// Fish Smoker
+		{// Smoked Fish
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)FishSmoker", "OutputRules", "SmokedFish", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Fish Smoker": "true" },
+		},
+		//Adjustments
+		{// Loom Double Output
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)17", "OutputRules", "Default", "OutputItem", "#0" ],
+			"Entries": {
+				"StackModifiers": null,
+			},
+			"When": { "Disable Double Output On Loom": "true" },
+		},
+		//Compatibility
+		{// Blue Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "6480.blueegg_BlueEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Blue Eggs and Golden Mayo": "true" },
+			"Priority": "Late",
+		},
+		{// Gold Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "6480.blueegg_GoldenEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Blue Eggs and Golden Mayo": "true" },
+			"Priority": "Late",
+		},
+		{// Donkey Cream
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules", "birdb.CP.Donkey_donkeycream", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Donkeys": "true" },
+			"Priority": "Late",
+		},
+	]
+}

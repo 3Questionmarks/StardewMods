@@ -1,0 +1,234 @@
+{
+  "Format": "2.0",
+  "Changes": [
+//Images
+    {
+      "Logname": "Dwarvish Translation Guide",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Dwarvish Translation Guide.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
+      },
+      "ToArea": {
+        "X": 128,
+        "Y": 320,
+        "Width": 16,
+        "Height": 16
+      }
+    },
+    {
+      "Logname": "Rusty Key",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Rusty Key.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
+      },
+      "ToArea": {
+        "X": 144,
+        "Y": 320,
+        "Width": 16,
+        "Height": 16
+      }
+    },
+    {
+      "Logname": "Club Card",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Club Card.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
+      },
+      "ToArea": {
+        "X": 160,
+        "Y": 320,
+        "Width": 16,
+        "Height": 16
+      }
+    },
+    {
+      "Logname": "Special Charm",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Special Charm.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
+      },
+      "ToArea": {
+        "X": 176,
+        "Y": 320,
+        "Width": 16,
+        "Height": 16
+      }
+    },
+    {
+      "Logname": "Skull Key",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Skull Key.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
+      },
+      "ToArea": {
+        "X": 192,
+        "Y": 320,
+        "Width": 16,
+        "Height": 16
+	  }
+    },
+    {
+      "Logname": "Magnifying Glass",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Magnifying Glass.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
+      },
+      "ToArea": {
+        "X": 208,
+        "Y": 320,
+        "Width": 16,
+        "Height": 16
+      }
+    },
+    {
+      "Logname": "Dark Talisman",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Dark Talisman.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
+      },
+      "ToArea": {
+        "X": 224,
+        "Y": 320,
+        "Width": 16,
+        "Height": 16
+      }
+    },
+    {
+      "Logname": "Magic Ink",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Magic Ink.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
+      },
+      "ToArea": {
+        "X": 240,
+        "Y": 320,
+        "Width": 16,
+        "Height": 16
+      }
+    },
+    {
+      "Logname": "Bears´s Knowledge",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Bears Knowledge.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
+      },
+      "ToArea": {
+        "X": 192,
+        "Y": 336,
+        "Width": 16,
+        "Height": 16
+      }
+    },
+    {
+      "Logname": "Spring Onion Mastery",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Spring Onion Mastery.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
+      },
+      "ToArea": {
+        "X": 208,
+        "Y": 336,
+        "Width": 16,
+        "Height": 16
+      }
+    },
+    {
+      "Logname": "Key To The Town",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Key To The Town.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 608,
+        "Width": 16,
+        "Height": 16
+      }
+    },
+//Skillpages
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"SkillsPage.cs.11588": "{{i18n:RustyKey}}.",
+				"SkillsPage.cs.11589": "{{i18n:ClubCard}}",
+				"SkillsPage.cs.11590": "{{i18n:SpecialAmmulet}}",
+				"SkillsPage.cs.11591": "{{i18n:SkullKey}}",
+				"SkillsPage.cs.magnifyingglass": "{{i18n:MagnifyingGlass}}",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/1_6_Strings",
+			"Entries": {
+				"ForestMagic_Description": "{{i18n:ForestMagic}}",
+				"BearPaw_Description": "{{i18n:BearPaw}}",
+				"SpringOnionMastery_Description": "{{i18n:SpringOnionMastery}}",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/Objects",
+			"Entries": {
+				"DwarvishTranslationGuide_Description": "{{i18n:DwarvenTranslationGuide}}",
+				"DarkTalisman": "{{i18n:DarkTalisman}}",
+				"MagicInk": "{{i18n:MagicInk}}",
+			}
+		},
+	]
+}

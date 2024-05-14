@@ -1,0 +1,46 @@
+
+{
+    "Format": "1.22.0",
+
+    "ConfigSchema": {
+        "GwenGoth": {
+           "AllowValues": "More, Less",
+           "Default": "More",
+           "Description": "How goth Gwen is."
+        }
+     },
+
+    "Changes": [
+
+        {
+            "LogName": "Zuzu Portraits Edit",
+            "Action": "EditImage",
+            "Target": "Portraits/Callum, Portraits/Callum_Custom_DTZ_JojaMini, Portraits/David, Portraits/Gwen, Portraits/GwenGoth, Portraits/Kristoff, Portraits/Sadie, Portraits/Selena",
+            "FromFile": "assets/Portraits/{{TargetWithoutPath}}.png"
+
+        },
+
+
+
+    //Gwen's Portraits
+    {
+      "Action": "EditImage",
+      "Target": "Portraits/Gwen",
+      "FromFile": "assets/Portraits/Gwen.png",
+      "When": {
+        "GwenGoth": "Less" // less goth portraits
+      }
+    },
+
+
+    {
+      "Action": "EditImage",
+      "Target": "Portraits/Gwen",
+      "FromFile": "assets/Portraits/GwenGoth.png",
+      "When": {
+        "GwenGoth": "More" // more goth portraits
+      }
+    }
+
+]
+}
