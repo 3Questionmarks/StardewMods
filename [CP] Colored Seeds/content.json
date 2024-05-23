@@ -4,47 +4,63 @@
    "ConfigSchema": {
      "ChangeCoffee": {
         "AllowValues": "true, false",
-        "Default": true
+        "Default": true,
+        "Description": "Puts the coffee beans into a colored bag."
      },
      "ChangeSunflower": {
         "AllowValues": "true, false",
-        "Default": true
+        "Default": true,
+        "Description": "Puts the sunflower seeds into a colored bag."
      },
 	 "ChangeCactus": {
         "AllowValues": "false, true",
-        "Default": true
+        "Default": true,
+        "Description": "Changes the color of the cactus seed bag to yellow."
      },
 	 "ChangeAncient": {
         "AllowValues": "true, false",
-        "Default": true
+        "Default": true,
+        "Description": "Colors the bag of the ancient seed."
      },
 	 "ChangeRare": {
         "AllowValues": "true, false",
-        "Default": true
+        "Default": true,
+        "Description": "Colors the bag of the rare seed."
      },
 	 "ChangeTea": {
         "AllowValues": "true, false",
-        "Default": true
+        "Default": false,
+        "Description": "Puts the tea sapling into a colored bag."
      },
 	 "ChangeRice": {
         "AllowValues": "true, false",
-        "Default": true
+        "Default": true,
+        "Description": "Puts the rice seeds into a colored bag."
      },
      "ChangeTaro": {
         "AllowValues": "true, false",
-        "Default": true
+        "Default": true,
+        "Description": "Puts the taro tuber into a colored bag."
      },
      "ChangeQi": {
         "AllowValues": "true, false",
-        "Default": true
+        "Default": true,
+        "Description": "Puts the Qi beans into a colored bag."
      },
      "ChangeFiber": {
         "AllowValues": "true, false",
-        "Default": true
+        "Default": true,
+        "Description": "Colors the bag of the fiber seeds."
      },
      "ChangeForage": {
         "AllowValues": "true, false",
-        "Default": true
+        "Default": true,
+        "Description": "Colors the bags of the four foraged seeds."
+     },
+     "ChangeMixed": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "Puts the mixed seeds and mixed flower seeds into colored bags."
      }
    },
   
@@ -283,6 +299,30 @@
           "ToArea": { "X": 64, "Y": 160, "Width": 64, "Height": 16 },
 		  "When": {
 		  "ChangeForage": "True"
+		  }
+        },
+
+        // Mixed Seeds
+        {
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/mixed-seeds.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 32, "Y": 512, "Width": 16, "Height": 16 },
+		  "When": {
+		  "ChangeMixed": "True"
+		  }
+        },
+                {
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "TileSheets/Objects_2",
+          "FromFile": "assets/mixed-seeds.png",
+          "FromArea": { "X": 16, "Y": 0, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 0, "Y": 16, "Width": 16, "Height": 16 },
+		  "When": {
+		  "ChangeMixed": "True"
 		  }
         }
 

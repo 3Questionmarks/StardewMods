@@ -356,7 +356,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/Fox_WA",
-		"FromFile": "assets/animals/{{Random: Fox_Red, Fox_Red, FoxArctic_{{season}} |key=foxes}}.png",
+		"FromFile": "assets/animals/{{Random: Fox_Red, Fox_Red, FoxArctic_{{season}}|key=foxes}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -365,7 +365,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/FoxKit_WA",
-		"FromFile": "assets/animals/{{Random: FoxKit_Red, FoxKit_Red, FoxKitArctic_{{season}} |key=foxes}}.png",
+		"FromFile": "assets/animals/{{Random: FoxKit_Red, FoxKit_Red, FoxKitArctic_{{season}}|key=foxes}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",

@@ -6,6 +6,25 @@
 			"Target": "Data/TriggerActions",
 			"Entries": {
 				
+				//Add Roommate Flag to Prevent Dates
+				"{{ModId}}_RoommateDatePrevention": {
+					"Id": "{{ModId}}_RoommateDatePrevention",
+					"Trigger": "DayStarted",				
+					"Condition": "PLAYER_NPC_RELATIONSHIP Current {{Date}} Roommate, {{AllowRoommateDates |contains=disabled}}",
+					"HostOnly": false, 
+					"Action": "AddMail Current NoDateNight Received",
+					"MarkActionApplied": false,
+				},
+				
+				"{{ModId}}_RemoveRoommateFlag": {
+					"Id": "{{ModId}}_RemoveRoommateFlag",
+					"Trigger": "DayEnding",				
+					"Condition": "PLAYER_HAS_MAIL Current NoDateNight",
+					"HostOnly": false, 
+					"Action": "RemoveMail Current NoDateNight",
+					"MarkActionApplied": false,
+				},
+				
 				//Reset Saloon Initiation
 				"{{ModId}}_SaloonInitiation": {
 					"Id": "{{ModId}}_SaloonInitiation",

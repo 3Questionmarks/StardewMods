@@ -1,4 +1,6 @@
+
 ❀❀❀ 𝒉𝒐𝒘 𝒕𝒐 𝒖𝒔𝒆 𝒕𝒉𝒆 𝒎𝒐𝒅
+
 INSTALLATION:
 ╰─▸install the requirements: SMAPI, Alternative Textures 
 ╰─▸put the mod (and the requirements) in your Stardew Valley/Mods folder

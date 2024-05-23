@@ -1,5 +1,25 @@
 {
 	"Changes": [
+	
+		// **** Add Unique Dates ****
+		
+		{
+			"LogName": "Flag Adds for Unique Dates",
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				
+				//Add Flag for the Unique Date token to pick up. Without this, Unique Date will not be chosen. You can copy and paste this trigger action, replacing 1 with 2 and so forth, up to 20 without needing to edit the content.json.
+				"{{ModId}}_Unique1Flag": {
+					"Id": "{{ModId}}_Unique1Flag",
+					"Trigger": "DayStarted",				
+					"Condition": "TRUE", //If this file is naturally included, then the condition is already satisfied, so this is always true.
+					"HostOnly": false, 
+					"Action": "AddMail Current {{Date}}Unique1 Received",
+					"MarkActionApplied": false,
+				},
+			},
+		},
 
 		// **** UNIQUE DATE 1 ****
 		
@@ -18,7 +38,7 @@
 				"Date": "{{Date}}",
 				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
 				"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": true,
-				"UniqueDateType": "unique1",
+				"UniqueDateType": "{{Date}}Unique1",
 			},
 		},
 		

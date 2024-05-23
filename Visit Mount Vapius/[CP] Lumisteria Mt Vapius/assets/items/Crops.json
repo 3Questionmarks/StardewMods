@@ -79,8 +79,8 @@
 					"HarvestItemId": "Lumisteria.MtVapius_Rye",
 					"HarvestMethod": "Scythe",
 					"ExtraHarvestChance": 0.01,
-					"HarvestMinStack": 2,
-					"HarvestMaxStack": 2,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 1,
 					"HarvestMaxIncreasePerFarmingLevel": 0.0,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Crops",
 					"SpriteIndex": 2
@@ -830,6 +830,44 @@
 					"Texture": "Mods\\Lumisteria.MtVapius\\Crops",
 					"SpriteIndex": 0
 				},
+				"Lumisteria.MtVapius_BlueCloverSeeds": {
+					"Seasons": [
+						"spring",
+						"summer",
+						"fall"
+					],
+					"DaysInPhase": [
+						1,
+						1,
+						1,
+					],
+					"PlantableLocationRules": [
+						{
+							"Id": "Lumisteria.MtVapius_DenyNotSkilledSummer",
+							"Condition": "LOCATION_SEASON Here summer, !PLAYER_FARMING_LEVEL Current 10, !LOCATION_CONTEXT Here Island",
+							"PlantedIn": "Any",
+							"Result": "Deny",
+							"DeniedMessage": "{{i18n: MtVapiusBlueCloverSeeds_DenyMessage}}"
+						},
+						{
+							"Id": "Lumisteria.MtVapius_DenyFall",
+							"Condition": "LOCATION_SEASON Here Fall, !LOCATION_CONTEXT Here Island",
+							"PlantedIn": "Any",
+							"Result": "Deny",
+							"DeniedMessage": "{{i18n: MtVapiusBlueCloverSeeds_DenyFallMessage}}"
+						},
+					],
+					"RegrowDays": -1,
+					"IsRaised": false,
+					"HarvestItemId": "Lumisteria.MtVapius_BlueClover",
+					"HarvestMethod": "Scythe",
+					"ExtraHarvestChance": 0.0,
+					"HarvestMinStack": 1,
+					"HarvestMaxStack": 1,
+					"HarvestMaxIncreasePerFarmingLevel": 0.0,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Crops",
+					"SpriteIndex": 32
+				},
 			}
 		},
 		//Giant crops
@@ -1490,11 +1528,11 @@
 						}
 					}
 				},
-				/*"Lumisteria.MtVapius_FireBeansStarter": {
+				"Lumisteria.MtVapius_FireBeansStarter": {
 					"YieldOverrides": {
 						"5": {
 							"IgnoreDefaultDrops": false,
-							"NewPhase": 4,
+							"RegrowDays": 3,
 							"Drops": [
 								{
 									"Id": "Lumisteria.MtVapius_GreenBean",
@@ -1532,8 +1570,61 @@
 							]
 						}
 					}
-				},*/
+				},
+				"Lumisteria.MtVapius_RyeSeeds": {
+					"YieldOverrides": {
+						"4": {
+							"IgnoreDefaultDrops": false,
+							"Drops": [
+								{
+									"Id": "Lumisteria.MtVapius_Rye",
+									"ItemId": "(O)Lumisteria.MtVapius_Rye",
+									"PerItemCondition": "RANDOM 0.1",
+								},
+								{
+									"Id": "Lumisteria.MtVapius_Hay",
+									"ItemId": "(O)178",
+									"MinStack": 1,
+									"MaxStack": 2,
+									"PerItemCondition": "RANDOM 0.3",
+								},
+							]
+						}
+					}
+				},
 			}
-		}
+		},
+		{ 
+		  "Action": "EditData",
+		  "Target": "Mods/VisitMountVapius/CropExtensions",
+		  "Entries": {
+			  "Lumisteria.MtVapius_RyeSeeds": {
+				"FertilizerData": {
+					"369": 0.3,
+					// and more..
+				}
+			},
+			  "Lumisteria.MtVapius_BlueCloverSeeds": {
+				"FertilizerData": {
+					"465": 1,
+				}
+			},
+		  }
+		},
+		{ 
+		  "Action": "EditData",
+		  "Target": "Mods/VisitMountVapius/CropExtensions",
+		  "Entries": {
+			  "Lumisteria.MtVapius_BlueCloverSeeds": {
+				"FertilizerData": {
+					"466": 1,
+				}
+			},
+		  },
+			"When": {
+				"Year|contains=1": false,
+			}
+		  
+		},
 	]
 }

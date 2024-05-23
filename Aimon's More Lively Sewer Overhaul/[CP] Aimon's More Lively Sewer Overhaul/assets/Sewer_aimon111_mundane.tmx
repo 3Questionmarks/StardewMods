@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="60" height="55" tilewidth="16" tileheight="16" infinite="0" nextlayerid="42" nextobjectid="419">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="60" height="55" tilewidth="16" tileheight="16" infinite="0" nextlayerid="42" nextobjectid="421">
  <properties>
   <property name="AmbientLight" value="90 90 90"/>
   <property name="IndoorWater" value="t"/>
@@ -3284,9 +3284,14 @@
     <property name="Passable" value="t"/>
    </properties>
   </object>
-  <object id="418" name="TileData" x="320" y="416" width="16" height="16">
+  <object id="419" name="TileData" x="304" y="416" width="16" height="16">
    <properties>
-    <property name="Passable" value="t"/>
+    <property name="TouchAction" value="Warp Sewer 12 26"/>
+   </properties>
+  </object>
+  <object id="420" name="TileData" x="208" y="416" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Sewer 20 26"/>
    </properties>
   </object>
  </objectgroup>
@@ -3921,11 +3926,6 @@
    </properties>
   </object>
   <object id="409" name="TileData" x="304" y="432" width="16" height="16">
-   <properties>
-    <property name="Passable" value="t"/>
-   </properties>
-  </object>
-  <object id="410" name="TileData" x="320" y="416" width="16" height="16">
    <properties>
     <property name="Passable" value="t"/>
    </properties>

@@ -26,6 +26,31 @@
             ]
         },
         {
+            "LogName": "Egg Festival Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Nora 42 79 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Nora 21 65 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
             "LogName": "Flower Dance Position",
             "Action": "EditData",
             "Target": "Data/Festivals/spring24",
@@ -44,6 +69,31 @@
                     "Target": [
                         "Entries",
                         "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Nora 20 21 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Flower Dance Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Nora 58 43 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
                     ],
                     "Value": "Nora 20 21 2",
                     "Delimiter": "/"
@@ -76,6 +126,31 @@
             ]
         },
         {
+            "LogName": "Summer Luau Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Nora 39 12 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Nora 41 16 0",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
             "LogName": "Moonlight Jellies Position",
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
@@ -86,7 +161,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-                    "Value": "Nora 14 39 2",
+                    "Value": "Nora 96 45 2",
                     "Delimiter": "/"
                 },
                 {
@@ -95,7 +170,32 @@
                         "Entries",
                         "MainEvent_additionalCharacters"
                     ],
-                    "Value": "Nora 14 39 2",
+                    "Value": "Nora 96 45 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Moonlight Jellies Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Nora 96 45 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Nora 96 45 2",
                     "Delimiter": "/"
                 }
             ]
@@ -110,6 +210,22 @@
                     "Target": [
                         "Entries",
                         "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Nora 43 91 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "SDV Fair Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
                     ],
                     "Value": "Nora 43 91 1",
                     "Delimiter": "/"
@@ -141,15 +257,12 @@
                     "Operation": "Append",
                     "Target": [
                         "Entries",
-                        "Set-Up_additionalCharacters"
+                        "Set-Up_additionalCharacters_y2"
                     ],
                     "Value": "Nora 14 62 1",
                     "Delimiter": "/"
                 }
-            ],
-            "When": {
-                "Year": 2
-            }
+            ]
         },
         {
             "LogName": "Festival of Ice Position",
@@ -170,6 +283,31 @@
                     "Target": [
                         "Entries",
                         "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Nora 78 32 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Festival of Ice Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Nora 85 38 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
                     ],
                     "Value": "Nora 78 32 3",
                     "Delimiter": "/"
@@ -201,14 +339,39 @@
                     "Operation": "Append",
                     "Target": [
                         "Entries",
-                        "Set-Up_additionalCharacters"
+                        "Set-Up_additionalCharacters_y2"
                     ],
                     "Value": "Nora 46 61 3",
                     "Delimiter": "/"
                 }
+            ]
+        },
+        {
+            "LogName": "Winter Star Position - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Nora 46 61 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Nora 32 65 1",
+                    "Delimiter": "/"
+                }
             ],
             "When": {
-                "Year": 2
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
             }
         },
         // CUSTOM FESTIVALS 

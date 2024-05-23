@@ -1,10 +1,8 @@
 {
-  "$id": "1",
   "ReloadConfigButton": "F5",
   "ShowGlobalPlayTime": false,
   "AddGetModButton": true,
   "MenuPresence": {
-    "$id": "2",
     "State": "In Menus",
     "Details": "Mod Count: {ModCount}",
     "LargeImageText": "{Activity}",
@@ -12,7 +10,6 @@
     "ForceSmallImage": false
   },
   "GamePresence": {
-    "$id": "3",
     "ShowSeason": true,
     "ShowFarmType": true,
     "ShowWeather": true,

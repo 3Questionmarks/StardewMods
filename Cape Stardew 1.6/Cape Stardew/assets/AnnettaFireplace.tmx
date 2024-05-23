@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="2" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="21" nextobjectid="222">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="2" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="21" nextobjectid="222">
  <tileset firstgid="1" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" trans="000000" width="512" height="1088"/>
   <tile id="401">
@@ -78,11 +78,11 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="2177" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
-  <image source="walls_and_floors.png" trans="000000" width="256" height="560"/>
+ <tileset firstgid="2177" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
+  <image source="walls_and_floors.png" trans="000000" width="256" height="688"/>
  </tileset>
- <tileset firstgid="2737" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths.png" trans="000000" width="64" height="144"/>
+ <tileset firstgid="2865" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" trans="000000" width="64" height="256"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -114,13 +114,13 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="2773" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="128" columns="32">
-  <image source="townInterior_2.png" trans="000000" width="512" height="64"/>
+ <tileset firstgid="2929" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" trans="000000" width="512" height="656"/>
  </tileset>
- <tileset firstgid="2901" name="WizardHouseTiles" tilewidth="16" tileheight="16" tilecount="60" columns="4">
+ <tileset firstgid="4241" name="WizardHouseTiles" tilewidth="16" tileheight="16" tilecount="60" columns="4">
   <image source="WizardHouseTiles.png" trans="000000" width="64" height="240"/>
  </tileset>
- <tileset firstgid="2961" name="Custom_Tiles" tilewidth="16" tileheight="16" tilecount="92" columns="4">
+ <tileset firstgid="4301" name="Custom_Tiles" tilewidth="16" tileheight="16" tilecount="92" columns="4">
   <image source="Custom_Tiles.png" trans="ff00fc" width="64" height="370"/>
   <tile id="31">
    <animation>
@@ -139,7 +139,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="3053" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+ <tileset firstgid="4393" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior" width="512" height="1088"/>
   <tile id="347">
    <properties>
@@ -197,7 +197,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="5229" name="Z_Festivals" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+ <tileset firstgid="6569" name="Z_Festivals" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="Festivals.png" trans="000000" width="512" height="512"/>
   <tile id="265">
    <animation>
@@ -218,7 +218,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="6253" name="z_bathhouse_tiles" tilewidth="16" tileheight="16" tilecount="240" columns="15">
+ <tileset firstgid="7593" name="z_bathhouse_tiles" tilewidth="16" tileheight="16" tilecount="240" columns="15">
   <image source="bathhouse_tiles.png" trans="000000" width="240" height="256"/>
   <tile id="52">
    <animation>
@@ -236,7 +236,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="6493" name="Z_housesprites" tilewidth="16" tileheight="16" tilecount="72" columns="6">
+ <tileset firstgid="7833" name="Z_housesprites" tilewidth="16" tileheight="16" tilecount="72" columns="6">
   <image source="AnnettaHouseSprites.png" trans="000000" width="96" height="192"/>
   <tile id="30">
    <animation>
@@ -297,37 +297,37 @@
   <data encoding="csv">
 113,113,
 607,608,
-3691,3692
+5031,5032
 </data>
  </layer>
  <objectgroup id="11" name="Back"/>
  <layer id="5" name="Buildings" width="2" height="3">
   <data encoding="csv">
-3785,3786,
-3817,3818,
-3849,3850
+5125,5126,
+5157,5158,
+5189,5190
 </data>
  </layer>
  <objectgroup id="10" name="Buildings"/>
  <layer id="14" name="Buildings2" width="2" height="3">
   <data encoding="csv">
 0,0,
-2147490183,6535,
-2147490189,6541
+2147491523,7875,
+2147491529,7881
 </data>
  </layer>
  <objectgroup id="13" name="Buildings2"/>
  <layer id="16" name="Buildings3" width="2" height="3">
   <data encoding="csv">
 0,0,
-6523,6547,
-6529,6553
+7863,7887,
+7869,7893
 </data>
  </layer>
  <layer id="3" name="Paths" width="2" height="3">
   <data encoding="csv">
 0,0,
-2745,2745,
+0,0,
 0,0
 </data>
  </layer>

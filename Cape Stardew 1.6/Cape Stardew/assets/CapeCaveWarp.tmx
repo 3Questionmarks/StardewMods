@@ -128,8 +128,8 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="73" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths.png" trans="000000" width="64" height="144"/>
+ <tileset firstgid="73" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" trans="000000" width="64" height="256"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -161,10 +161,10 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="109" name="z_mine_dark" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+ <tileset firstgid="137" name="z_mine_dark" tilewidth="16" tileheight="16" tilecount="288" columns="16">
   <image source="Mines/mine_dark.png" trans="000000" width="256" height="288"/>
  </tileset>
- <tileset firstgid="397" name="z_cavetreasure" tilewidth="16" tileheight="16" tilecount="126" columns="6">
+ <tileset firstgid="425" name="z_cavetreasure" tilewidth="16" tileheight="16" tilecount="126" columns="6">
   <image source="cavetreasure.png" trans="000000" width="96" height="345"/>
   <tile id="4">
    <properties>
@@ -215,7 +215,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="523" name="Custom_CaveTiles" tilewidth="16" tileheight="16" tilecount="259" columns="7">
+ <tileset firstgid="551" name="Custom_CaveTiles" tilewidth="16" tileheight="16" tilecount="259" columns="7">
   <image source="Custom_CaveTiles.png" trans="000000" width="122" height="597"/>
   <tile id="21">
    <animation>
@@ -334,7 +334,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="782" name="mine_dangerous" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+ <tileset firstgid="810" name="mine_dangerous" tilewidth="16" tileheight="16" tilecount="288" columns="16">
   <image source="Mines/mine_dangerous.png" trans="000000" width="256" height="288"/>
   <tile id="137">
    <properties>
@@ -517,7 +517,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="1070" name="Zzz_CaveLitTiles" tilewidth="16" tileheight="16" tilecount="60" columns="6">
+ <tileset firstgid="1098" name="Zzz_CaveLitTiles" tilewidth="16" tileheight="16" tilecount="60" columns="6">
   <image source="CaveLitTiles.png" width="98" height="161"/>
   <tile id="0">
    <animation>
@@ -556,18 +556,18 @@
   <data encoding="csv">
 0,1,1,1,1,1,1,0,1,0,0,
 0,0,0,0,0,0,4,5,1,0,0,
-1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,0,
-1016,1016,1016,1016,986,1016,1016,1016,1017,919,14,
-919,951,922,919,919,919,919,919,919,919,14,
-919,919,919,919,935,919,919,919,919,936,919,
-919,921,919,919,919,919,919,919,919,919,919,
-14,935,919,919,949,949,949,950,919,951,919,
-14,919,948,934,947,947,947,933,950,919,14,
-14,919,964,947,963,947,963,947,933,950,14,
-14,948,934,963,963,947,963,947,963,966,14,
-14,964,965,963,963,963,947,963,963,966,919,
-0,0,0,0,947,947,947,947,0,0,0,
-0,0,0,0,947,947,947,947,0,0,0
+1028,1028,1028,1028,1028,1028,1028,1028,1028,1028,0,
+1044,1044,1044,1044,1014,1044,1044,1044,1045,947,14,
+947,979,950,947,947,947,947,947,947,947,14,
+947,947,947,947,963,947,947,947,947,964,947,
+947,949,947,947,947,947,947,947,947,947,947,
+14,963,947,947,977,977,977,978,947,979,947,
+14,947,976,962,975,975,975,961,978,947,14,
+14,947,992,975,991,975,991,975,961,978,14,
+14,976,962,991,991,975,991,975,991,994,14,
+14,992,993,991,991,991,975,991,991,994,947,
+0,0,0,0,975,975,975,975,0,0,0,
+0,0,0,0,975,975,975,975,0,0,0
 </data>
  </layer>
  <layer id="11" name="Back2" width="11" height="14">
@@ -576,7 +576,7 @@
 0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,
-0,0,418,0,0,0,0,0,0,0,0,
+0,0,446,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,
@@ -590,9 +590,9 @@
  </layer>
  <layer id="2" name="Buildings" width="11" height="14">
   <data encoding="csv">
-791,792,823,824,1,860,791,792,1,811,812,
-1,2,3,31,545,33,4,4,1070,1071,529,
-7,8,9,37,40,39,10,10,1076,1077,536,
+819,820,851,852,1,888,819,820,1,839,840,
+1,2,3,31,573,33,4,4,1098,1099,557,
+7,8,9,37,40,39,10,10,1104,1105,564,
 1,0,0,0,0,0,0,0,0,0,1,
 1,0,0,0,0,0,0,0,0,0,1,
 1,0,0,0,0,0,0,0,0,0,1,
@@ -666,22 +666,22 @@
     <property name="TouchAction" value="Warp Custom_SecretBase 3 36"/>
    </properties>
   </object>
-  <object id="20" name="TileData" x="64" y="176" width="16" height="16">
+  <object id="20" name="TileData" x="64" y="208" width="16" height="16">
    <properties>
     <property name="TouchAction" value="Warp Custom_CapeStardew 44 31"/>
    </properties>
   </object>
-  <object id="21" name="TileData" x="80" y="176" width="16" height="16">
+  <object id="21" name="TileData" x="80" y="208" width="16" height="16">
    <properties>
     <property name="TouchAction" value="Warp Custom_CapeStardew 44 31"/>
    </properties>
   </object>
-  <object id="22" name="TileData" x="96" y="176" width="16" height="16">
+  <object id="22" name="TileData" x="96" y="208" width="16" height="16">
    <properties>
     <property name="TouchAction" value="Warp Custom_CapeStardew 44 31"/>
    </properties>
   </object>
-  <object id="23" name="TileData" x="112" y="176" width="16" height="16">
+  <object id="23" name="TileData" x="112" y="208" width="16" height="16">
    <properties>
     <property name="TouchAction" value="Warp Custom_CapeStardew 44 31"/>
    </properties>

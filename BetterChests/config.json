@@ -1,7 +1,5 @@
 {
-  "$id": "1",
   "DefaultOptions": {
-    "$id": "2",
     "DisplayName": "An unknown storage type.",
     "Description": "Other",
     "AccessChest": "Location",
@@ -36,11 +34,8 @@
     "StorageName": ""
   },
   "StorageOptions": {
-    "$id": "3",
     "BigCraftables": {
-      "$id": "4",
       "130": {
-        "$id": "5",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Default",
@@ -75,7 +70,6 @@
         "StorageName": ""
       },
       "232": {
-        "$id": "6",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Default",
@@ -110,7 +104,6 @@
         "StorageName": ""
       },
       "256": {
-        "$id": "7",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Default",
@@ -145,7 +138,6 @@
         "StorageName": ""
       },
       "213": {
-        "$id": "8",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Default",
@@ -180,7 +172,6 @@
         "StorageName": ""
       },
       "248": {
-        "$id": "9",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Default",
@@ -215,7 +206,6 @@
         "StorageName": ""
       },
       "BigChest": {
-        "$id": "10",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Default",
@@ -250,7 +240,6 @@
         "StorageName": ""
       },
       "BigStoneChest": {
-        "$id": "11",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Default",
@@ -285,7 +274,6 @@
         "StorageName": ""
       },
       "165": {
-        "$id": "12",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Disabled",
@@ -320,7 +308,6 @@
         "StorageName": ""
       },
       "208": {
-        "$id": "13",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Default",
@@ -356,9 +343,7 @@
       }
     },
     "Buildings": {
-      "$id": "14",
       "Junimo Hut": {
-        "$id": "15",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Disabled",
@@ -393,7 +378,6 @@
         "StorageName": ""
       },
       "Mill": {
-        "$id": "16",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Disabled",
@@ -428,7 +412,6 @@
         "StorageName": ""
       },
       "Shipping Bin": {
-        "$id": "17",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Default",
@@ -464,9 +447,7 @@
       }
     },
     "Locations": {
-      "$id": "18",
       "FarmHouse": {
-        "$id": "19",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Default",
@@ -501,7 +482,6 @@
         "StorageName": ""
       },
       "IslandFarmHouse": {
-        "$id": "20",
         "DisplayName": "An unknown storage type.",
         "Description": "Other",
         "AccessChest": "Default",
@@ -542,7 +522,6 @@
   "CarryChestSlowAmount": -1.0,
   "CarryChestSlowLimit": 1,
   "Controls": {
-    "$id": "21",
     "AccessChests": "B",
     "AccessPreviousChest": "LeftTrigger",
     "AccessNextChest": "RightTrigger",
@@ -564,55 +543,48 @@
     "TransferItemsReverse": "LeftAlt, RightAlt"
   },
   "CraftFromChestDisableLocations": [],
+  "DebugMode": false,
   "HslColorPickerHueSteps": 29,
   "HslColorPickerSaturationSteps": 16,
   "HslColorPickerLightnessSteps": 16,
   "HslColorPickerPlacement": "Right",
   "InventoryTabList": [
     {
-      "$id": "22",
       "Icon": "furyx639.BetterChests/Clothing",
       "Label": "Clothing",
       "SearchTerm": "category_clothing category_boots category_hat"
     },
     {
-      "$id": "23",
       "Icon": "furyx639.BetterChests/Cooking",
       "Label": "Cooking",
       "SearchTerm": "category_syrup category_artisan_goods category_ingredients category_sell_at_pierres_and_marnies category_sell_at_pierres category_meat category_cooking category_milk category_egg"
     },
     {
-      "$id": "24",
       "Icon": "furyx639.BetterChests/Crops",
       "Label": "Crops",
       "SearchTerm": "category_greens category_flowers category_fruits category_vegetable"
     },
     {
-      "$id": "25",
       "Icon": "furyx639.BetterChests/Equipment",
       "Label": "Equipment",
       "SearchTerm": "category_equipment category_ring category_tool category_weapon"
     },
     {
-      "$id": "26",
       "Icon": "furyx639.BetterChests/Fishing",
       "Label": "Fish",
       "SearchTerm": "category_bait category_fish category_tackle category_sell_at_fish_shop"
     },
     {
-      "$id": "27",
       "Icon": "furyx639.BetterChests/Materials",
       "Label": "Materials",
       "SearchTerm": "category_monster_loot category_metal_resources category_building_resources category_minerals category_crafting category_gem"
     },
     {
-      "$id": "28",
       "Icon": "furyx639.BetterChests/Miscellaneous",
       "Label": "Miscellaneous",
       "SearchTerm": "category_big_craftable category_furniture category_junk"
     },
     {
-      "$id": "29",
       "Icon": "furyx639.BetterChests/Seeds",
       "Label": "Seeds",
       "SearchTerm": "category_seeds category_fertilizer"

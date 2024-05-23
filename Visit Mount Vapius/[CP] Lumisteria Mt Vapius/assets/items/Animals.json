@@ -37,7 +37,12 @@
               "Id": "Default",
               "MinimumFriendship": 0,
               "ItemId": "Lumisteria.MtVapius_SpeckledFowlEgg"
-            }
+            },
+            {
+              "Id": "Lumisteria.MtVapius_RareSpeckledFowlVoidEgg",
+              "ItemId": "Lumisteria.MtVapius_SpeckledFowlVoidEgg",
+              "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 2",
+            },
           ],
           "DeluxeProduceItemIds": [
             {
@@ -163,7 +168,7 @@
           "UnlockCondition": "!{{HamletProgress|contains={{Range: 0, 2}}}}",
           "ShopDisplayName": "{{i18n: MtVapiusEwe_Translated}}",
           "ShopDescription": "{{i18n: MtVapiusEwe_Description_Translated}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11344]",
-          "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5931]",
+          "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5950]",
           "PurchasePrice": 1100,
           "SellPrice": 4600,
           "DaysToProduce": 1,
@@ -182,6 +187,11 @@
             {
               "Condition": "ANY \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\" \"RANDOM 0.08\"",
               "ItemID": "Lumisteria.MtVapius_EweMilkExtraLarge"
+            },
+            {
+              "Id": "Lumisteria.MtVapius_RareEweMilkExtraLarge",
+              "ItemId": "Lumisteria.MtVapius_EweMilkExtraLarge",
+              "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
             },
             {
               //"Condition": null,
@@ -264,6 +274,11 @@
               "Id": "Lumisteria.MtVapius_RareEgg",
               "ItemId": "Lumisteria.MtVapius_GemPigeonEgg",
               "Condition": "RANDOM .05",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_RareCoopmasterEgg",
+              "ItemId": "Lumisteria.MtVapius_GemPigeonEgg",
+              "Condition": "RANDOM .05, PLAYER_HAS_PROFESSION Any 2",
             },
             {
               "Id": "Lumisteria.MtVapius_RareBlackGeode",
@@ -511,6 +526,11 @@
           "Condition": "ANY \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\" \"RANDOM 0.08\"",
           "ItemID": "Lumisteria.MtVapius_MilkExtraLarge"
         },
+            "Lumisteria.MtVapius_RareMilkExtraLarge":{
+              "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
+              "ItemId": "Lumisteria.MtVapius_MilkExtraLarge",
+              "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+            },
       },
     },
     {
@@ -526,6 +546,11 @@
           "Condition": "ANY \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\" \"RANDOM 0.08\"",
           "ItemID": "Lumisteria.MtVapius_MilkExtraLarge"
         },
+             "Lumisteria.MtVapius_RareMilkExtraLarge":{
+              "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
+              "ItemId": "Lumisteria.MtVapius_MilkExtraLarge",
+              "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+            },
       },
     },
     {
@@ -541,6 +566,11 @@
           "Condition": "ANY \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\" \"RANDOM 0.08\"",
           "ItemID": "Lumisteria.MtVapius_GoatMilkExtraLarge"
         },
+             "Lumisteria.MtVapius_RareMilkExtraLarge":{
+              "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
+              "ItemId": "Lumisteria.MtVapius_GoatMilkExtraLarge",
+              "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+            },
       },
     },
     /* add animal  images*/ ,

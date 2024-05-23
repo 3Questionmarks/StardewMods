@@ -118,6 +118,14 @@
       "When": {
         "Random: true, true, true, true, false": "true"
       }
-    }
+    },
+    {
+      "LogName": "Celestine Dialogue Gift Taste",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/CelestineDuboisVMV",
+      "Entries": {
+		"AcceptGift_(O)StardropTea": "{{i18n: DefaultAcceptGift_(O)StardropTea}}",
+      },
+    },
   ]
 }

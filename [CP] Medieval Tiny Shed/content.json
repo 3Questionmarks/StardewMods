@@ -153,35 +153,8 @@
 			"HumanDoor": { "X": 1, "Y": 1 },
 			"IndoorMap": "MedievalTinyShed",
 			"IndoorMapType": "StardewValley.Shed",
-			//"UpgradeSignTile": "1, 1",
 			"AllowsFlooringUnderneath": true
-			}//,
-			/* Tardis Upgrade
-			"MedievalTardisShed": {
-			"Name": "{{i18n: MedievalTardisShed.Name}}",
-			"Description": "{{i18n: MedievalTardisShed.Description}}",
-			"Texture": "Buildings/MedievalTardisShed",
-			"DrawShadow": true,
-			"Size": { "X": 3, "Y": 2 },
-			"CollisionMap": "nXXX\nXXX",
-			"FadeWhenBehind": true,
-			"Builder": "Robin",
-			"BuildDays": 2,
-			"BuildCost": 15000,
-			"BuildMaterials": [
-				{
-				"ID": "Wood",
-				"ItemID": 388,
-				"Amount": 300
-				}
-				],
-			"HumanDoor": { "X": 1, "Y": 1 },
-			"IndoorMap": "MedievalTardisShed",
-			"IndoorMapType": "StardewValley.Shed",
-			"BuildingToUpgrade": "MedievalTinyShed",
-			"AllowsFlooringUnderneath": true
-			}
-			*/
+			},
 		}
 	},
 	
@@ -189,7 +162,6 @@
     {
 		"LogName": "Load shed exterior.",
 		"Action": "Load",
-		//"Target": "Buildings/MedievalTinyShed, Buildings/MedievalTardisShed",
 		"Target": "Buildings/MedievalTinyShed",
 		"FromFile": "Assets/Exterior/Exterior.png",
     },
@@ -197,7 +169,6 @@
 		"LogName": "Shed exterior - seasonal",
 		"Action": "EditImage",
 		"Patchmode": "Replace",
-		//"Target": "Buildings/MedievalTinyShed, Buildings/MedievalTardisShed",
 		"Target": "Buildings/MedievalTinyShed",
 		"FromFile": "Assets/Exterior/{{Season}}_{{ExteriorRecolour}}.png",
     },
@@ -205,8 +176,8 @@
 //Interior Recolours
 	{
 		"Action": "Load",
-		"Target": "Maps/Vanilla",
-		"FromFile": "Assets/Tilesheets/{{InteriorRecolour}}.png",
+		"Target": "Maps/TinyShed_Vanilla",
+		"FromFile": "Assets/Tilesheets/TinyShed_{{InteriorRecolour}}.png",
 	},
 	
 // Indoor map and lighting
@@ -216,23 +187,15 @@
 		"Target": "Maps/MedievalTinyShed",
 		"FromFile": "Assets/MedievalTinyShed.tmx",
 	},
-	/*{
-		"LogName": "Load tardis interior map",
-		"Action": "Load",
-		"Target": "Maps/MedievalTardisShed",
-		"FromFile": "Assets/MedievalTardisShed.tmx",
-	},*/
 	{
 		"LogName": "Allow Casks",
 		"Action": "EditMap",
-		//"Target": "Maps/MedievalTinyShed, Maps/MedievalTardisShed",
 		"Target": "Maps/MedievalTinyShed",
 		"MapProperties": { "CanCaskHere": "t" }
 	},
 	{
 		"LogName": "Weather lighting",
 		"Action": "EditMap",
-		//"Target": "Maps/MedievalTinyShed, Maps/MedievalTardisShed",
 		"Target": "Maps/MedievalTinyShed",
 		"MapProperties": { "AmbientLight":"140 120 90" },
 		"When": {"Weather": "rain, storm"}
@@ -240,7 +203,6 @@
 	{
 		"LogName": "Night lighting",
 		"Action": "EditMap",
-		//"Target": "Maps/MedievalTinyShed, Maps/MedievalTardisShed",
 		"Target": "Maps/MedievalTinyShed",
 		"MapProperties": { "AmbientLight":"200 200 200" },
 		"When": { "Query: {{Time}} >= 1800": true },

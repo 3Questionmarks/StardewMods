@@ -13,7 +13,7 @@
 					],
 					"Fruit": [
 						{
-							"Chance": 0.3,
+							"Chance": 0.1,
 							"Condition": "LOCATION_IS_OUTDOORS Target",
 							"Id": "FrostApple",
 							"ItemId": "Lumisteria.MtVapius_FrostApple",
@@ -234,12 +234,45 @@
 					"DisplayName": "{{i18n: MtVapiusCasalotierFlower_Translated}}",
 					"Seasons": [
 						"spring",
+						"summer",
+						"fall",
+						"winter",
 					],
 					"Fruit": [
+						{
+							"Chance": 0.05,
+							"Id": "Lumisteria.MtVapius_CasalotierFlower_Rare",
+							"ItemId": "Lumisteria.MtVapius_CasalotierFlower",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
+						{
+							"Chance": 0.05,
+							"Id": "Lumisteria.MtVapius_PixieBreath_Rare",
+							"ItemId": "wildflour.ateliercrops_pixies_breath",
+							"Condition": "{{HasMod |contains=wildflour.ateliercrops}}, CAULDRON_CONFIG_VALUE FaerieGarden True",
+							"StackModifiers": [
+								{
+									"Id": "Lumisteria.MtVapius_OutdoorDouble",
+									"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+									"Modification": "Add",
+									"Amount": 1.0,
+								},
+							],
+							"StackModifierMode": "Stack",
+						},
 						{
 							"Chance": 1,
 							"Id": "Lumisteria.MtVapius_CasalotierFlower",
 							"ItemId": "Lumisteria.MtVapius_CasalotierFlower",
+							"Condition": "SEASON spring",
 							"StackModifiers": [
 								{
 									"Id": "Lumisteria.MtVapius_OutdoorDouble",

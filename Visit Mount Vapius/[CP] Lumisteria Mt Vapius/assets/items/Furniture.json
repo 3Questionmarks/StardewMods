@@ -97,6 +97,22 @@
       "Target": "Data/Furniture",
       "Entries": {
         "Lumisteria.MtVapius_FurnitureVarious_FossilDisplay": "FossilDisplay/painting/2 3/2 3/1/3000/-1/{{i18n: MtVapiusFossilDisplay_Translated}}/0/Mods\\Lumisteria.MtVapius\\FurnitureVarious",
+        "Lumisteria.MtVapius_FurnitureVarious_JunimoSatchel": "JunimoSatchel/decor/1 2/1 1/1/4000/-1/{{i18n: MtVapiusJunimoSatchel_Translated}}/2/Mods\\Lumisteria.MtVapius\\FurnitureVarious",
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/FurnitureExtensionData",
+      "Entries": {
+        "Lumisteria.MtVapius_FurnitureVarious_JunimoSatchel": {
+          "TileProperties": {
+            "0, 0": {
+              "Buildings": {
+                "Action": "vmv.linked.chest lumisteria.mtvapius_junimobundles"
+              }
+            }
+          }
+        }
       }
     },
     {

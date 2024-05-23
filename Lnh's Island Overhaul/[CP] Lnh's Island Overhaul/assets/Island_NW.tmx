@@ -5,7 +5,7 @@
   <property name="Music" value="IslandMusic"/>
   <property name="Outdoors" value="T"/>
   <property name="SeasonOverride" value="summer"/>
-  <property name="Warp" value="50 39 IslandNorth 1 60 50 40 IslandNorth 1 60 50 12 IslandNorth 2 30 50 13 IslandNorth 2 30"/>
+  <property name="Warp" value="50 12 IslandNorth 2 30 50 13 IslandNorth 2 30"/>
  </properties>
  <tileset firstgid="1" name="p" tilewidth="16" tileheight="16" tilecount="36" columns="4">
   <image source="paths.png" width="64" height="144"/>

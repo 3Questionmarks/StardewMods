@@ -483,8 +483,8 @@
 			"ToArea": { "X": 96, "Y": 608, "Width": 48, "Height": 16 },
 			"When": { "Fertilizers": true },
 		},
-	//Prismatic tools compatibility
-		{
+	//Prismatic tools compatibility - not working for now
+/*		{
 		"LogName": "Prismatic hoe",
 		"Action": "EditImage",
 			"PatchMode": "Overlay",
@@ -528,6 +528,7 @@
 			"When": { "HasMod": "iargue.PrismaticToolsContinued",
 					"WateringCans": true },
 		},
+*/
 	//Alternative Textures compatibility 
 		{
 		"LogName": "AT catalogue",

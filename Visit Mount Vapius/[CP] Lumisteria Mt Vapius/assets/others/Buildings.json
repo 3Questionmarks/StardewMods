@@ -97,7 +97,7 @@
           "FadeWhenBehind": true,
           //"AdditionalPlacementTiles": null,
           "Builder": "Robin",
-          "BuildCondition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_FruitPressMail, !BUILDINGS_CONSTRUCTED Target Lumisteria.MtVapius_AgingCave 1 255",
+          "BuildCondition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_FruitPressMail, !BUILDINGS_CONSTRUCTED Target Lumisteria.MtVapius_FruitPress 1 255",
           "BuildDays": 2,
           "BuildCost": 3000,
           "BuildMaterials": [
@@ -430,8 +430,8 @@
         },
         "Lumisteria.MtVapius_Obelisk": {
           "ID": "Lumisteria.MtVapius_Obelisk",
-          "Name": "Mount Vapius Obelisk",
-          "Description": "TODO",
+          "Name": "{{i18n: MtVapiusObelisk_Translated}}",
+          "Description": "{{i18n: MtVapiusObelisk_Description_Translated}}",
           "Texture": "Mods\\Lumisteria.MtVapius\\mtvapiusobelisk",
           "Skins": [],
           "DrawShadow": true,
@@ -443,7 +443,7 @@
           },
           "FadeWhenBehind": true,
           "Builder": "Wizard",
-          "BuildCondition": "PLAYER_HAS_MAIL Any Lumisteria.MtVapius_JunimoClearingVisited",
+          "BuildCondition": "PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_ForestJunimoClearing",
           "BuildDays": 0,
           "BuildCost": 200000,
           "BuildMaterials": [

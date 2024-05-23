@@ -126,6 +126,15 @@
                             "Weight": 1,
                             "Portrait": "{{InternalAssetKey: assets/Portraits/nora_winter_coat.png}}",
                             "Sprite": "{{InternalAssetKey: assets/Characters/nora_sprites_winter_coat}}"
+                        },
+                        // Spirit's Eve
+                        {
+                          "ID": "Spirit's Eve",
+                          "Condition": "EVENT_ID festival_fall27",
+                          "Precedence": 0,
+                          "Weight": 1,
+                          "Portrait": "{{InternalAssetKey: assets/Portraits/nora_spirits_eve.png}}",
+                          "Sprite": "{{InternalAssetKey: assets/Characters/nora_sprites_spiritseve.png}}"
                         }
                     ],
                     "SpawnIfMissing":true,
@@ -146,7 +155,7 @@
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
             "Entries": {
-                "Nora": "{{i18n:Gift.Nora.GiftReaction.Love}}/107 395 234 608 825 60 220/{{i18n:Gift.Nora.GiftReaction.Like}}/224 253 400 563 587 591/{{i18n:Gift.Nora.GiftReaction.Dislike}}/348 349 342 797 766/{{i18n:Gift.Nora.GiftReaction.Hate}}/346 812 614 414 767 814 167/{{i18n:Gift.Nora.GiftReaction.Neutral}}//"
+                "Nora": "{{i18n:Gift.Nora.GiftReaction.Love}}/107 395 234 608 825 60 220 WWWA.Book.ArcanaCatcherPrunus WWWA.Book.Goblins WWWA.Book.LunarkinTrollTales MysteriesOfTheDwarves WWWA.Book.PepperRexes WWWA.Book.TheJojaConspiracy WWWA.Book.WhyPepperRexesAreTheBest sapphicsaph_pitv.BiBerryMuffin MadDog.HashtagBearfam.SigurdPerfectRamen MadDog.HashtagBearfam.TTBrownies Fellowclown.PC_SunshineHoney/{{i18n:Gift.Nora.GiftReaction.Like}}/224 253 400 563 587 591 WWWA.Book.CrabsAndWhyIHateThem MadDog.HashtagBearfam.HoneyCakes Fellowclown.PC_MilkCoffee Fellowclown.AND_TastyPastry/{{i18n:Gift.Nora.GiftReaction.Dislike}}/348 349 342 797 766 WWWA.Book.FishingForDumbDumbs/{{i18n:Gift.Nora.GiftReaction.Hate}}/346 812 614 414 767 814 167 WWWA.Book.GuideToSculptingWithGold/{{i18n:Gift.Nora.GiftReaction.Neutral}}/WWWA.Book.ArtifactOrCutlery WWWA.Book.HerpetologyOfFerngill WWWA.Book.TheBookOfYoba WWWA.Book.TheGreatTomeOfMayo/"
             }
         },
         //PORTRAITS AND SPRITES
@@ -220,7 +229,14 @@
                     "FilePaths": [ "{{AbsoluteFilePath: assets/music/FocusOnYourself.ogg}}" ],
                     "StreamedVorbis": true,
                     "Looped": true
-                }
+                },
+                  "Bagi.RodnoraTheme": {
+                    "ID": "rodnoraTheme",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/RodnoraTheme.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                  }
             }
         },
         // NORA MAP STUFF

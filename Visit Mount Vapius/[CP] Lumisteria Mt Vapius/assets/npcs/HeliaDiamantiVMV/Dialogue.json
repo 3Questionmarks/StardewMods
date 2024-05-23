@@ -101,6 +101,14 @@
 
     },
     {
+      "LogName": "Helia Dialogue Gift Taste",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/HeliaDiamantiVMV",
+      "Entries": {
+		"AcceptGift_(O)StardropTea": "{{i18n: HeliaDialogueAcceptGift_(O)StardropTea}}",
+      },
+    },
+    {
       "LogName": "Helia Inlaw Conditional",
       "Action": "EditData",
       "Target": "Characters/Dialogue/HeliaDiamantiVMV",

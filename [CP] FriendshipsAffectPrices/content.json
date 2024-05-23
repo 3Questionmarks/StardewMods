@@ -30,7 +30,12 @@
             "AllowValues": "0, 250, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500",
 			"Default": "2500",
             "Section": "Required Friendship Level"
-		}
+		},
+        "Affect_Joja_(SVE)": {
+          "AllowValues": "true, false",
+      "Default": "false",
+            "Section": "Miscellaneous"
+}
     },
     "Changes": [
       {
@@ -66,6 +71,14 @@
         "FromFile": "code/SVEShops.json",
         "When": {
              "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        }
+      },
+      {
+        "Action": "Include",
+        "FromFile": "code/SVESJoja.json",
+        "When": {
+             "HasMod": "FlashShifter.StardewValleyExpandedCP",
+             "Affect_Joja_(SVE)": true
         }
       },
       {
@@ -108,6 +121,13 @@
         "FromFile": "code/RealMarlonShops.json",
         "When": {
              "HasMod": "Ghost.Marlon"
+        }
+      },
+      {
+        "Action": "Include",
+        "FromFile": "code/BuildableCamper.json",
+        "When": {
+             "HasMod": "Harry.BuildCamper"
         }
       }
     ]

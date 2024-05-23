@@ -368,9 +368,30 @@
 				"HasSeenEvent|contains=Lumisteria.MtVapius_Lodge_ShortcutsFixed": "true",
 			}
 		},
+		{
+			"LogName": "Woodland Shortcut Patch",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_ForestTrailWoodland",
+			"FromFile": "assets/LumisteriaMtVapiusForestTrailWoodlandShortcutPatch.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 3,
+				"Height": 4
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 10,
+				"Width": 3,
+				"Height": 4
+			},
+			"When": {
+				"HasSeenEvent|contains=Lumisteria.MtVapius_Lodge_ShortcutsFixed": "true",
+			}
+		},
 		//Pond JunimoChest Patch
 		
-		/*{
+		{
 			"LogName": "Pond JunimoChest Patch",
 			"Action": "EditMap",
 			"Target": "Maps/Lumisteria.MtVapius_ForestTrailPond",
@@ -391,8 +412,32 @@
 			"When": {
                 "HasFlag: anyPlayer": "DLX.Bundles.Lumisteria.MtVapius_StartingBundle"
 			}
-		},*/
+		},
+		//Hamlet JunimoChest Patch
 		
+		{
+			"LogName": "Pond JunimoChest Patch",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_Hamlet",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/LumisteriaMtVapiusHamletSatchelPatch.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 1,
+				"Height": 2
+			},
+			"ToArea": {
+				"X": 13,
+				"Y": 59,
+				"Width": 1,
+				"Height": 2
+			},
+			"When": {
+                "HasFlag: anyPlayer": "DLX.Bundles.Lumisteria.MtVapius_StartingBundle",
+                "HamletProgress|contains={{Range: 0, 2}}": false
+			}
+		},
 		//MuseumPatch
 		{
 			"LogName": "Museum Addition",

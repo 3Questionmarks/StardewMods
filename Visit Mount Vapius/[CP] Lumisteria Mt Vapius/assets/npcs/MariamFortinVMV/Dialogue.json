@@ -98,5 +98,14 @@
 	  "When": { "Random: true, true, true, true, false": "true"}
 
     }*/
+    {
+      "LogName": "Mariam Dialogue Gift Taste",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MariamFortinVMV",
+      "Entries": {
+		"AcceptGift_(O)StardropTea": "{{i18n: MariamDialogueAcceptGift_(O)StardropTea}}",
+		"AcceptGift_(O)GoldenMysteryBox": "{{i18n: MariamDialogueAcceptGift_(O)GoldenMysteryBox}}",
+      },
+    },
   ]
 }

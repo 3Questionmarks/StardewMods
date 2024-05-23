@@ -144,11 +144,11 @@
               "(O)770 3"
             ],
             "4": [
-              "(O)MtVapius_WoodSilkFlower 10"
+              "(O)Lumisteria.MtVapius_WoodSilkFlower 10"
             ],
             "6": [
               "(O)Lumisteria.MtVapius_Treasures_BrokenTeaCup 1",
-              "(O)MtVapius_Treasures_OldMinerLamp 1",
+              "(O)Lumisteria.MtVapius_Treasures_OldMinerLamp 1",
             ],
             "8": [
               "(O)417 1"
@@ -175,6 +175,13 @@
               "Chance": 0.07,
               "ItemID": "84",
               "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.1,
+              "ItemID": "Lumisteria.MtVapius_BlackGeode",
+              "MinQuantity": 3,
               "MaxQuantity": 5
             },
             {

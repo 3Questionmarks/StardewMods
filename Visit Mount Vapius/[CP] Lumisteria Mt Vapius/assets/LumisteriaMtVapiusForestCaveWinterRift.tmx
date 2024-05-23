@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="49" height="41" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="100">
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="49" height="41" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="103">
  <properties>
   <property name="DefaultWarpLocation" value="21 18"/>
   <property name="LocationContext" value="Lumisteria_MtVapius_Forest"/>
@@ -1804,8 +1804,8 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="3776" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths" width="64" height="144"/>
+ <tileset firstgid="3776" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -2191,6 +2191,16 @@
   <object id="98" name="TileData" x="96" y="384" width="16" height="16">
    <properties>
     <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
+  <object id="100" name="TileData" x="272" y="208" width="16" height="16">
+   <properties>
+    <property name="vmv.FruitTreeCut" value="This can't be cut."/>
+   </properties>
+  </object>
+  <object id="102" name="TileData" x="112" y="368" width="16" height="16">
+   <properties>
+    <property name="vmv.FruitTreeCut" value="This can't be cut."/>
    </properties>
   </object>
  </objectgroup>

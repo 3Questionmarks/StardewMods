@@ -1,5 +1,20 @@
   {
 "Changes": [
+  {
+    "Action": "EditData",
+    "Target": "Characters/schedules/Annetta",
+    "Entries": {
+      "spring_Fri": "610 Custom_AnnettaHouse 18 8 3 resting/700 Custom_AnnettaHouse 26 6 0 sitatpiano \"Strings\\schedules\\Annetta:spring.029\"/830 Custom_AnnettaHouse 4 27 0/1000 Beach 20 18 2 \"Strings\\schedules\\Annetta:spring.023\"/1730 Saloon 23 18 0 \"Strings\\schedules\\Annetta:spring.025\"/1800 Saloon 2 18 2 DANCER \"Strings\\schedules\\Annetta:spring.024\"/2030 Custom_AnnettaHouse 19 18 2 sitonchair \"Strings\\schedules\\Annetta:spring.018\"/2330 Custom_AnnettaHouse 9 15 2 sitonchair \"Strings\\schedules\\Annetta:spring.026\"/2410 Custom_AnnettaHouse 27 15 3 readingfaceleft \"Strings\\schedules\\Annetta:spring.008\"/2510 Custom_AnnettaHouse 18 8 3 sleep",
+
+      "winter_Fri": "610 Custom_AnnettaHouse 18 8 3 resting /630 Custom_AnnettaHouse 26 6 0 sitatpiano \"Strings\\schedules\\Annetta:winter.019\"/700 Custom_AnnettaHouse 4 27 0/800 Forest 41 8 2 readonfloor \"Strings\\schedules\\Annetta:winter.004\"/1200 Beach 41 34 2 reading \"Strings\\schedules\\Annetta:winter.009\"/1400 Saloon 30 19 2 \"Strings\\schedules\\Annetta:winter.006\"/1730 Saloon 2 18 2 DANCER \"Strings\\schedules\\Annetta:winter.007\"/2030 Custom_AnnettaHouse 19 18 2 sitonchair \"Strings\\schedules\\Annetta:spring.018\"/2330 Custom_AnnettaHouse 27 15 3 readingfaceleft \"Strings\\schedules\\Annetta:winter.008\"/2410 Custom_AnnettaHouse 18 8 3 sleep",
+
+      "fall_Fri": "610 Custom_AnnettaHouse 18 8 3 resting/800 Custom_AnnettaHouse 4 27 0/1020 ArchaeologyHouse 16 5 0 \"Strings\\schedules\\Annetta:fall.001\"/1200 ArchaeologyHouse 12 9 0 \"Strings\\schedules\\Annetta:fall.002\"/1500 ArchaeologyHouse 4 10 0/1510 Town 54 71 0/1630 Saloon 30 19 2 \"Strings\\schedules\\Annetta:fall.003\"/1800 Saloon 2 18 2 DANCER/2030 Custom_AnnettaHouse 19 18 2 sitonchair \"Strings\\schedules\\Annetta:spring.018\"/2330 Custom_AnnettaHouse 9 15 2 sitonchair \"Strings\\schedules\\Annetta:spring.026\"/2400 Custom_AnnettaHouse 27 15 3 readingfaceleft \"Strings\\schedules\\Annetta:spring.008\"/2510 Custom_AnnettaHouse 18 8 3 sleep"
+    },
+    "When": {
+      "HasMod": "Arknir.Lucikiel"
+    }
+
+  },
   
    {
    
@@ -31,7 +46,7 @@
      "Action": "EditData",
      "Target": "Characters/schedules/Annetta",
      "Entries": {
-  "fall_Fri": "610 Custom_AnnettaHouse 18 8 3 resting/800 Custom_AnnettaHouse 4 27 0/900 Custom_CapeBusStop 13 15 0/1020 ArchaeologyHouse 16 5 0 \"Strings\\schedules\\Annetta:fall.001\"/1200 ArchaeologyHouse 12 9 0 \"Strings\\schedules\\Annetta:fall.002\"/1500 ArchaeologyHouse 4 10 0/1510 Town 54 71 0/1630 Saloon 9 20 0 \"Strings\\schedules\\Annetta:fall.003\"/1800 Saloon 2 18 2 DANCER/2030 Custom_AnnettaHouse 19 18 2 sitonchair \"Strings\\schedules\\Annetta:spring.018\"/2330 Custom_AnnettaHouse 9 15 2 sitonchair \"Strings\\schedules\\Annetta:spring.026\"/2400 Custom_AnnettaHouse 27 15 3 readingfaceleft \"Strings\\schedules\\Annetta:spring.008\"/2510 Custom_AnnettaHouse 18 8 3 sleep",
+  "fall_Fri": "610 Custom_AnnettaHouse 18 8 3 resting/800 Custom_AnnettaHouse 4 27 0/900 Custom_CapeBusStop 13 15 0/1020 ArchaeologyHouse 16 5 0 \"Strings\\schedules\\Annetta:fall.001\"/1200 ArchaeologyHouse 12 9 0 \"Strings\\schedules\\Annetta:fall.002\"/1500 ArchaeologyHouse 4 10 0/1510 Town 54 71 0/1630 Saloon 23 18 2 \"Strings\\schedules\\Annetta:fall.003\"/1800 Saloon 2 18 2 DANCER/2030 Custom_AnnettaHouse 19 18 2 sitonchair \"Strings\\schedules\\Annetta:spring.018\"/2330 Custom_AnnettaHouse 9 15 2 sitonchair \"Strings\\schedules\\Annetta:spring.026\"/2400 Custom_AnnettaHouse 27 15 3 readingfaceleft \"Strings\\schedules\\Annetta:spring.008\"/2510 Custom_AnnettaHouse 18 8 3 sleep",
 	  },
 	  "When": {
                "HasFlag |contains=ccVault,jojaVault": true,
@@ -144,7 +159,7 @@
      "Entries": {
        "spring_Tue": "610 Custom_AnnettaHouse 18 8 3 resting/620 Custom_AnnettaHouse 26 6 2 phonePocket \"Strings\\schedules\\Annetta:spring.010\"/710 Custom_AnnettaHouse 26 6 0 sitatpiano \"Strings\\schedules\\Annetta:spring.001\"/800 Custom_AnnettaHouse 4 27 0/900 Custom_AnnettaHouse 21 6 0 desk \"Strings\\schedules\\Annetta:spring.002\"/1000 Forest 38 9 2 reading \"Strings\\schedules\\Annetta:spring.032\"/1400 Forest 38 9 2 reading \"Strings\\schedules\\Annetta:spring.013\"/1800 Custom_AnnettaHouse 27 15 3 readingfaceleft \"Strings\\schedules\\Annetta:spring.008\"/2000 Custom_AnnettaHouse 5 15 0/2030 Custom_AnnettaHouse 9 15 2 sitonchair \"Strings\\schedules\\Annetta:spring.026\"/2110 Custom_AnnettaHouse 18 8 3 sleep",
        
-       "winter_Fri": "610 Custom_AnnettaHouse 18 8 3 resting /630 Custom_AnnettaHouse 26 6 0 sitatpiano \"Strings\\schedules\\Annetta:winter.019\"/700 Custom_AnnettaHouse 4 27 0/800 Forest 38 9 2 reading \"Strings\\schedules\\Annetta:winter.004\"/1200 Beach 41 34 2 reading \"Strings\\schedules\\Annetta:winter.009\"/1400 Saloon 9 20 0 \"Strings\\schedules\\Annetta:winter.006\"/1730 Saloon 2 18 2 DANCER \"Strings\\schedules\\Annetta:winter.007\"/2030 Custom_AnnettaHouse 19 18 2 sitonchair \"Strings\\schedules\\Annetta:spring.018\"/2330 Custom_AnnettaHouse 27 15 3 readingfaceleft \"Strings\\schedules\\Annetta:winter.008\"/2410 Custom_AnnettaHouse 18 8 3 sleep",
+       "winter_Fri": "610 Custom_AnnettaHouse 18 8 3 resting /630 Custom_AnnettaHouse 26 6 0 sitatpiano \"Strings\\schedules\\Annetta:winter.019\"/700 Custom_AnnettaHouse 4 27 0/800 Forest 38 9 2 reading \"Strings\\schedules\\Annetta:winter.004\"/1200 Beach 41 34 2 reading \"Strings\\schedules\\Annetta:winter.009\"/1400 Saloon 17 20 0 \"Strings\\schedules\\Annetta:winter.006\"/1730 Saloon 2 18 2 DANCER \"Strings\\schedules\\Annetta:winter.007\"/2030 Custom_AnnettaHouse 19 18 2 sitonchair \"Strings\\schedules\\Annetta:spring.018\"/2330 Custom_AnnettaHouse 27 15 3 readingfaceleft \"Strings\\schedules\\Annetta:winter.008\"/2410 Custom_AnnettaHouse 18 8 3 sleep",
        
         "winter_Sat": "610 Custom_AnnettaHouse 18 8 3 resting /620 Custom_AnnettaHouse 26 6 2 phonePocket \"Strings\\schedules\\Annetta:winter.010\"/700 Custom_AnnettaHouse 26 6 0 sitatpiano \"Strings\\schedules\\Annetta:winter.001\"/800 Custom_AnnettaHouse 21 6 0 desk \"Strings\\schedules\\Annetta:winter.002\"/1130 Custom_AnnettaHouse 21 6 0 desk \"Strings\\schedules\\Annetta:winter.003\"/1200 Custom_AnnettaHouse 4 27 0/1230 Forest 38 9 2 reading \"Strings\\schedules\\Annetta:winter.004\"/1600 Custom_AnnettaHouse 19 18 2 sitonchair \"Strings\\schedules\\Annetta:spring.018\"/1920 Custom_AnnettaHouse 21 16 0 \"Strings\\schedules\\Annetta:winter.050\"/2030 Custom_AnnettaHouse 9 15 2 sitonchair \"Strings\\schedules\\Annetta:spring.011\"/2100 Custom_AnnettaHouse 27 15 3 readingfaceleft \"Strings\\schedules\\Annetta:winter.008\"/2310 Custom_AnnettaHouse 18 8 3 sleep",
 

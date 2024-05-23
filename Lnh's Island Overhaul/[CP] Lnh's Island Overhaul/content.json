@@ -53,7 +53,18 @@
         {
             "Action": "Load",
             "Target": "Maps/Island_Resort",
-            "FromFile": "assets/Island_Resort.tmx"
+            "FromFile": "assets/Island_Resort.tmx",
+            "When":{
+                "HasMod |contains=VoidWitchCult.CP.TheFishmongerNPC": false
+			}
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Island_Resort",
+            "FromFile": "assets/Island_Resort1.tmx",
+            "When":{
+                "HasMod |contains=VoidWitchCult.CP.TheFishmongerNPC": true
+			}
         },
         {
             "Action": "Load",
@@ -173,8 +184,20 @@
             "Action": "EditMap",
             "Target": "Maps/Island_N",
             "AddWarps": [
-                "0 60 Custom_Island_NW 49 39",
-                "0 61 Custom_Island_NW 49 39"
+                "-1 60 Custom_Island_NW 49 39",
+                "-1 61 Custom_Island_NW 49 39"
+                ],
+            "When": {
+                "HasFlag": "Island_UpgradeBridge"
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Island_NW",
+            "AddWarps": [
+                "50 39 IslandNorth 0 60",
+                "50 40 IslandNorth 0 60"
                 ],
             "When": {
                 "HasFlag": "Island_UpgradeBridge"
@@ -222,7 +245,7 @@
             },
             "Update": "OnLocationChange"
         },
-        //农场和西南部的路
+        //农场和西北部的路
         {
             "Action": "EditMap",
             "Target": "Maps/Custom_Island_NW",
@@ -347,6 +370,29 @@
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
 			}
 		},
+        //鱼贩兼容
+        {
+			"Action":"EditMap",
+			"Target":"Maps/Island_S",
+			"FromFile":"assets/Island_S1.tmx",
+			"ToArea":{
+				"X":24,
+				"Y":30,
+				"Width":19,
+				"Height":30
+			},
+            "When":{
+                "HasMod |contains=VoidWitchCult.CP.TheFishmongerNPC": true
+			}
+		},
+        {
+            "Action": "Load",
+            "Target": "Maps/Fishmonger_GingerIsland_Tilesheet",
+            "FromFile": "assets/Fishmonger_GingerIsland_Tilesheet.png",
+            "When":{
+                "HasMod |contains=VoidWitchCult.CP.TheFishmongerNPC": true
+			}
+        },
         //加载图块集
         {
             "Action": "Load",

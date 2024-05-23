@@ -73,10 +73,34 @@
     "DynamicTokens": [
 	
 	//Check for valid date targets
-	
 		{
 			"Name": "ValidDate",
 			"Value": "false",
+		},
+		
+		{
+			"Name": "Engagement",
+			"Value": "false",
+		},
+		
+		{
+			"Name": "Engagement",
+			"Value": "true",
+			"When": {
+				"relationship:{{Spouse}}": "engaged",
+				"HasMod |contains=aedenthorn.FreeLove": false,
+				"HasMod |contains=ApryllForever.PolyamorySweetLove": false, //If the player does NOT have a poly mod installed, remove ability to get dates while engaged for immersion.
+			},
+		},
+		
+		{
+			"Name": "Engagement",
+			"Value": "true",
+			"When": {
+				"relationship:{{Roommmate}}": "engaged",
+				"HasMod |contains=aedenthorn.FreeLove": false,
+				"HasMod |contains=ApryllForever.PolyamorySweetLove": false, //If the player does NOT have a poly mod installed, remove ability to get dates while the roommate is moving in for immersion.
+			},
 		},
 		
 		{
@@ -84,6 +108,7 @@
 			"Value": "true",
 			"When": {
 				"HasValue:{{spouse}}": "true",
+				"Engagement": "false",
 			},
 		},
 		
@@ -92,10 +117,11 @@
 			"Value": "true",
 			"When": {
 				"HasValue:{{roommate}}": "true",
+				"Engagement": "false",
 			},
 		},
 	
-	//Allow more than one spouse to ask for a date
+	//Pick the farmer's date for the day
 		
 		{
 			"Name": "Date",
@@ -198,6 +224,21 @@
 			"Name": "MinFriendship",
 			"Value": "{{Query: {{MinHeartsRequired}} * 250}}",
 		},
+		
+		//Trout Derby Check
+		
+		{
+			"Name": "Trouts",
+			"Value": "normal",
+		},
+		{
+			"Name": "Trouts",
+			"Value": "derbyday",
+			"When": {
+				"Season": "summer",
+				"Day": "20, 21",
+			},
+		},
 
 	//POSSIBLE DATES:
 
@@ -235,6 +276,7 @@
 			"When": {
 				"Weather": "Sun, Wind",
 				"Season": "Spring, Summer, Fall",
+				"Trouts": "normal",
 			},
 		},
 		
@@ -256,6 +298,26 @@
 			"Value": "{{DateTypes}}, library",
 			"When": {
 				"Season": "Winter",
+			},
+		},
+		
+			//Night Market bugfix
+			
+		{
+			"Name": "DateTypes",
+			"Value": "library, grocery",
+			"When": {
+				"Season": "Winter",
+				"Day": "15", //See below fix, but with grocery added for Monday
+			},
+		},
+		
+		{
+			"Name": "DateTypes",
+			"Value": "library",
+			"When": {
+				"Season": "Winter",
+				"Day": "16, 17", //force the only allowed date to be library on Night Market days to prevent beach fork bugs - as the only two dates in winter when not Monday are Saloon or Library, this is a valid fix to keep behavior as is.
 			},
 		},
 		
@@ -420,6 +482,29 @@
 				"HasFlag": "ccVault, jojaVault",
 			},
 		},
+		
+		{
+			"Name": "UniqueDateType",
+			"Value": "none",
+			"When": {
+				"Date": "Haley",
+				"UniqueDateType": "haleyDesert",
+				"Season": "spring",
+				"Day": "15, 16, 17",
+			},
+		},
+		
+		{
+			"Name": "UniqueDateType",
+			"Value": "none",
+			"When": {
+				"Date": "Haley",
+				"UniqueDateType": "haleyDesert",
+				"Season": "fall",
+				"Day": "8, 9, 10",
+				"HasMod": "agentlyoko.desertfest2",
+			},
+		},
 
 		//**** MARU ****
 		
@@ -431,15 +516,6 @@
 				"Date": "Maru",
 				"Day": "15",
 			},
-		},
-
-		//**** CUSTOM NPC ****
-		{
-			 "Name": "UniqueDateType",
-			 "Value": "{{Random:unique1,unique2,unique3,unique4,unique5,unique6,unique7,unique8,unique9,unique10,unique11,unique12,unique13,unique14,unique15,unique16,unique17,unique18,unique19,unique20}}", //Try and figure out a better way of doing this
-			 "When": {
-				 "HasFile:data/Custom/Unique/{{Date}}.json": true,
-			 },
 		},
 
 	//Unique Date Interest Alterations
@@ -454,17 +530,6 @@
 		},
 
 	//Evaluate Unique Date Chance config against a random number chosen - if Interest is higher than config and Unique Date type is valid (see above), fire Unique Date
-	
-		//Unique Date Template Present
-		{
-			"Name": "UniqueInterest",
-			"Value": "{{Random:1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20 , 21 , 22 , 23 , 24 , 25 , 26 , 27 , 28 , 29 , 30 , 31 , 32 , 33 , 34 , 35 , 36 , 37 , 38 , 39 , 40 , 41 , 42 , 43 , 44 , 45 , 46 , 47 , 48 , 49 , 50 , 51 , 52 , 53 , 54 , 55 , 56 , 57 , 58 , 59 , 60 , 61 , 62 , 63 , 64 , 65 , 66 , 67 , 68 , 69 , 70 , 71 , 72 , 73 , 74 , 75 , 76 , 77 , 78 , 79 , 80 , 81 , 82 , 83 , 84 , 85 , 86 , 87 , 88 , 89 , 90 , 91 , 92 , 93 , 94 , 95 , 96 , 97 , 98 , 99 , 100}}",
-			"When": {
-				"HasFile:data/Custom/Unique/{{Date}}.json": true,
-				"Query: {{UniqueDateChance}} < 100": "true",
-				"UniqueDateType |contains=none": "false",
-			},
-		},
 		
 		//Basic Unique Dates
 		
@@ -477,17 +542,19 @@
 				"UniqueDateType |contains=none": "false",
 			},
 		},
-		//If Unique Date Chance is 100%, force a Unique Date when valid
 		
+		//Unique Date Template Present
 		{
 			"Name": "UniqueInterest",
-			"Value": 0,
+			"Value": "{{Random:1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20 , 21 , 22 , 23 , 24 , 25 , 26 , 27 , 28 , 29 , 30 , 31 , 32 , 33 , 34 , 35 , 36 , 37 , 38 , 39 , 40 , 41 , 42 , 43 , 44 , 45 , 46 , 47 , 48 , 49 , 50 , 51 , 52 , 53 , 54 , 55 , 56 , 57 , 58 , 59 , 60 , 61 , 62 , 63 , 64 , 65 , 66 , 67 , 68 , 69 , 70 , 71 , 72 , 73 , 74 , 75 , 76 , 77 , 78 , 79 , 80 , 81 , 82 , 83 , 84 , 85 , 86 , 87 , 88 , 89 , 90 , 91 , 92 , 93 , 94 , 95 , 96 , 97 , 98 , 99 , 100}}",
 			"When": {
-				"HasFile:data/Custom/Unique/{{Date}}.json": true,
-				"Query: {{UniqueDateChance}} = 100": "true",
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"Query: {{UniqueDateChance}} < 100": "true",
 				"UniqueDateType |contains=none": "false",
 			},
 		},
+		
+		//If Unique Date Chance is 100%, force a Unique Date when valid
 
 		{
 			"Name": "UniqueInterest",
@@ -498,8 +565,207 @@
 				"UniqueDateType |contains=none": "false",
 			},
 		},
+		
+		{
+			"Name": "UniqueInterest",
+			"Value": 0,
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"Query: {{UniqueDateChance}} = 100": "true",
+				"UniqueDateType |contains=none": "false",
+			},
+		},
+		
+		//**** CUSTOM NPC ****
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{Date}}Unique1",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique1",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique2",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique2",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique3",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique3",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique4",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique4",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique5",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique5",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique6",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique6",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique7",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique7",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique8",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique8",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique9",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique9",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique10",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique10",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique11",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique11",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique12",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique12",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique13",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique13",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique14",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique14",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique15",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique15",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique16",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique16",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique17",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique17",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique18",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique18",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique19",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique19",
+			},
+		},
+		
+		{
+			"Name": "CustomUniqueDates",
+			"Value": "{{CustomUniqueDates}}, {{Date}}Unique20",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+				"HasFlag": "{{Date}}Unique20",
+			},
+		},
+		
+		{
+			"Name": "UniqueDateType",
+			"Value": "{{Random:{{CustomUniqueDates}} }}",
+			"When": {
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
+			},
+		},
 
-
+	//Generic Dates
 		{
 			"Name": "GenericPossible",
 			"Value": "true",
@@ -510,7 +776,7 @@
 			"Name": "GenericPossible",
 			"Value": "false",
 			"When": {
-				"HasFile:data/Custom/Unique/{{Date}}.json": true,
+				"HasFile:data/CustomDates/Unique/{{Date}}.json": true,
 				"Query: {{UniqueDateChance}} = 100": "true",
 				"UniqueDateType |contains=none": "false",
 			},
@@ -523,49 +789,6 @@
 				"Date": "Emily, Haley, Maru, Alex", //ALL SPOUSES WITH UNIQUE EVENTS
 				"Query: {{UniqueDateChance}} = 100": "true",
 				"UniqueDateType |contains=none": "false",
-			},
-		},
-	
-
-	//ROOMMATE FIXES
-
-		{
-			"Name": "DateCheck",
-			"Value": "Lewis",
-		},
-		
-		{
-			"Name": "DateCheck",
-			"Value": "{{Date}}",
-			"When": {
-				"ValidDate": "true",
-			},
-		},
-		
-		{
-			"Name": "DateInterest",
-			"Value": "101",
-			"When": {
-				"relationship:{{DateCheck}}": "roommate",
-				"AllowRoommateDates": "disabled",
-			},
-		},
-
-		{
-			"Name": "DateInterest",
-			"Value": "101",
-			"When": {
-				"Date": "{{DisabledDates}}",
-			},
-		},
-	
-		//Remove date chance if the player is somehow married on Green Rain in Year 1
-		{
-			"Name": "DateInterest",
-			"Value": "101",
-			"When": {
-				"Weather": "GreenRain",
-				"Year": "1",
 			},
 		},
 
@@ -648,7 +871,34 @@
 				"Query: {{UniqueDateChance}} >0": "true",
 			},
 		},
+		
+	//ROOMMATE FIXES
+
+		{
+			"Name": "DateInterest",
+			"Value": "101",
+			"When": {
+				"HasFlag": "NoDateNight",
+			},
+		},
+
+		{
+			"Name": "DateInterest",
+			"Value": "101",
+			"When": {
+				"Date": "{{DisabledDates}}",
+			},
+		},
 	
+		//Remove date chance if the player is somehow married on Green Rain in Year 1
+		{
+			"Name": "DateInterest",
+			"Value": "101",
+			"When": {
+				"Weather": "GreenRain",
+				"Year": "1",
+			},
+		},
 
 	//DISABLE DATES ON FESTIVAL DAYS
 

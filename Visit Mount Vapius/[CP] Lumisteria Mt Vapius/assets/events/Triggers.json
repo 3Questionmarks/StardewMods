@@ -11,6 +11,66 @@
                     "Action": "AddMail All Lumisteria.MtVapius_StoneRemoved_Flag received"
                 },
 				
+				//Gift mails
+                "Lumisteria.MtVapius_TagetesSeedsGiftTrigger": {
+                    "Id": "Lumisteria.MtVapius_TagetesSeedsGiftTrigger",
+					"Condition": "PLAYER_STAT Current daysPlayed 2, SYNCED_RANDOM day lumisteria.chanceletter04 0.5",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_TagetesSeedsMail tomorrow"
+                },
+                "Lumisteria.MtVapius_CloverSeedsGiftTrigger": {
+                    "Id": "Lumisteria.MtVapius_CloverSeedsGiftTrigger",
+					"Condition": "PLAYER_STAT Current daysPlayed 7",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_CloverSeedsMail tomorrow"
+                },
+                "Lumisteria.MtVapius_StrangeRarecrowGiftTrigger": {
+                    "Id": "Lumisteria.MtVapius_StrangeRarecrowGiftTrigger",
+					"Condition": "!{{HamletProgress|contains={{Range: 0, 5}}}}, SYNCED_RANDOM day lumisteria.chanceletter05 0.3",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_StrangeRarecrowMail tomorrow"
+                },
+				
+				//Gazette
+                "Lumisteria.MtVapius_Gazette01Trigger": {
+                    "Id": "Lumisteria.MtVapius_Gazette01Trigger",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Inn_Gazette, SEASON Summer Fall, SYNCED_RANDOM day lumisteria.chanceletter01 0.1",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_GazetteMail01 tomorrow"
+                },
+                "Lumisteria.MtVapius_Gazette03Trigger": {
+                    "Id": "Lumisteria.MtVapius_Gazette03Trigger",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Inn_Gazette, SEASON Spring Summer, SYNCED_RANDOM day lumisteria.chanceletter02 0.2",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_GazetteMail03 tomorrow"
+                },
+                "Lumisteria.MtVapius_Gazette04Trigger": {
+                    "Id": "Lumisteria.MtVapius_Gazette04Trigger",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Inn_Gazette, SYNCED_RANDOM day lumisteria.chanceletter03 0.2",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_GazetteMail04 tomorrow"
+                },
+                "Lumisteria.MtVapius_Gazette06Trigger": {
+                    "Id": "Lumisteria.MtVapius_Gazette06Trigger",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Inn_Gazette, SYNCED_RANDOM day lumisteria.chanceletter04 0.2",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_GazetteMail06 tomorrow"
+                },
+                "Lumisteria.MtVapius_Gazette07Trigger": {
+                    "Id": "Lumisteria.MtVapius_Gazette07Trigger",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Inn_Gazette, PLAYER_STAT Current daysPlayed 20, SYNCED_RANDOM day lumisteria.chanceletter05 0.2",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_GazetteMail07 tomorrow"
+                },
+                "Lumisteria.MtVapius_Gazette07Trigger": {
+                    "Id": "Lumisteria.MtVapius_Gazette08Trigger",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Inn_Gazette, PLAYER_STAT Current daysPlayed 40, SYNCED_RANDOM day lumisteria.chanceletter01 0.2",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_GazetteMail07 tomorrow"
+                },
+				
+				
+				
 				
 				//Quests
                 "Lumisteria.MtVapius_NympheaSeedsQuestTrigger": {
@@ -21,25 +81,25 @@
                 },
                 "Lumisteria.MtVapius_PurpleCupFlowerQuestTrigger": {
                     "Id": "Lumisteria.MtVapius_PurpleCupFlowerQuestTrigger",
-					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Wizard 1800, SYNCED_RANDOM day lumisteria.chanceletter01 0.2, !SEASON Fall Winter",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Wizard 1400, SYNCED_RANDOM day lumisteria.chanceletter01 0.2, !SEASON Fall Winter",
                     "Trigger": "DayStarted",
                     "Action": "AddMail Current Lumisteria.MtVapius_PurpleCupFlowerRequestMail tomorrow"
                 },
                 "Lumisteria.MtVapius_BrokenWatchQuestTrigger": {
                     "Id": "Lumisteria.MtVapius_BrokenWatchQuestTrigger",
-					"Condition": "PLAYER_FRIENDSHIP_POINTS Current George 2000, SYNCED_RANDOM day lumisteria.chanceletter02 0.1",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current George 1600, SYNCED_RANDOM day lumisteria.chanceletter02 0.1",
                     "Trigger": "DayStarted",
                     "Action": "AddMail Current Lumisteria.MtVapius_BrokenWatchRequestMail tomorrow"
                 },
                 "Lumisteria.MtVapius_PeachQuestTrigger": {
                     "Id": "Lumisteria.MtVapius_PeachQuestTrigger",
-					"Condition": "PLAYER_FRIENDSHIP_POINTS Current CelestineDuboisVMV 2000, SYNCED_RANDOM day lumisteria.chanceletter03 0.1",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current CelestineDuboisVMV 1600, SYNCED_RANDOM day lumisteria.chanceletter03 0.1",
                     "Trigger": "DayStarted",
                     "Action": "AddMail Current Lumisteria.MtVapius_PeachRequestMail tomorrow"
                 },
                 "Lumisteria.MtVapius_PrimroseSeedsGiftTrigger": {
                     "Id": "Lumisteria.MtVapius_PrimroseSeedsGiftTrigger",
-					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Evelyn 2000, SYNCED_RANDOM day lumisteria.chanceletter04 0.1, ANY \"SEASON Winter\" \"SEASON Spring, 1 2 3 4 5 6 7 8 9 10\"",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Evelyn 1600, SYNCED_RANDOM day lumisteria.chanceletter04 0.1, ANY \"SEASON Winter\" \"SEASON Spring, 1 2 3 4 5 6 7 8 9 10\"",
                     "Trigger": "DayStarted",
                     "Action": "AddMail Current Lumisteria.MtVapius_PrimroseSeedsMail tomorrow"
                 },
@@ -60,6 +120,18 @@
 					"Condition": "PLAYER_HAS_MAIL Current Lumisteria.MtVapius_GusCheeseQuestCompleteMail",
                     "Trigger": "DayStarted",
                     "Action": "AddMail Current Lumisteria.MtVapius_CheeseNightAtSaloonMail tomorrow"
+                },
+                "Lumisteria.MtVapius_ChanterelleQuestTrigger": {
+                    "Id": "Lumisteria.MtVapius_ChanterelleQuestTrigger",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Gus 600, SYNCED_RANDOM day lumisteria.chanceletter03 0.2",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_ChanterelleRequestMail tomorrow"
+                },
+                "Lumisteria.MtVapius_ButterQuestTrigger": {
+                    "Id": "Lumisteria.MtVapius_ButterQuestTrigger",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Jodi 800, PLAYER_FRIENDSHIP_POINTS Current Vincent 600, SYNCED_RANDOM day lumisteria.chanceletter04 0.2",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapiusQuestButterForJodi tomorrow"
                 },
 				
 				
@@ -138,6 +210,13 @@
                     "Action": "AddMail Current Lumisteria.MtVapius_NightMiscanthusSeedsMail tomorrow"
                 },
 				
+				//Satchel reward
+                "Lumisteria.MtVapius_JunimoSatchelGiftTrigger": {
+                    "Id": "Lumisteria.MtVapius_JunimoSatchelGiftTrigger",
+					"Condition": "!{{HamletProgress|contains={{Range: 0, 5}}}}",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_JunimoSatchelMail tomorrow"
+                },
 				
 				//Flags removal
 				
@@ -145,6 +224,7 @@
                     "Id": "Lumisteria.MtVapius_RemoveFlagSturgiantCaughtTrigger",
 					"Condition": "PLAYER_HAS_MAIL Current Lumisteria.MtVapius_SturgiantCaught, SEASON Fall Spring, DAY_OF_MONTH 1",
                     "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
                     "Action": "RemoveMail Current Lumisteria.MtVapius_SturgiantCaught all"
                 },
 				
@@ -152,6 +232,7 @@
                     "Id": "Lumisteria.MtVapius_RemoveFlagAlpineCharPrinceCaughtTrigger",
 					"Condition": "PLAYER_HAS_MAIL Current Lumisteria.MtVapius_AlpineCharPrinceCaught, SEASON Fall Spring, DAY_OF_MONTH 1",
                     "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
                     "Action": "RemoveMail Current Lumisteria.MtVapius_AlpineCharPrinceCaught all"
                 },
 				
@@ -159,6 +240,7 @@
                     "Id": "Lumisteria.MtVapius_RemoveFlagPlanetFishCaughtTrigger",
 					"Condition": "PLAYER_HAS_MAIL Current Lumisteria.MtVapius_PlanetFishCaught, SEASON Fall Spring, DAY_OF_MONTH 1",
                     "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
                     "Action": "RemoveMail Current Lumisteria.MtVapius_PlanetFishCaught all"
                 },
 				
@@ -168,6 +250,7 @@
                     "Id": "Lumisteria.MtVapius_RemoveFlagGiftReceivedFlagTrigger",
 					"Condition": "PLAYER_HAS_MAIL Current Lumisteria.MtVapius_GiftReceivedFlag, DAY_OF_MONTH 9 18 27",
                     "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
                     "Action": "RemoveMail Current Lumisteria.MtVapius_GiftReceivedFlag all"
                 },
 				
@@ -175,9 +258,23 @@
                     "Id": "Lumisteria.MtVapius_RemoveFlagFavoriteGiftFlagTrigger",
 					"Condition": "PLAYER_HAS_MAIL Current Lumisteria.MtVapius_FavoriteGiftFlag, DAY_OF_MONTH 7 21",
                     "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
                     "Action": "RemoveMail Current Lumisteria.MtVapius_FavoriteGiftFlag all"
                 },
 				
+				//Failsafe abi's Quest
+                "Lumisteria.MtVapius_FailsafeAbiQuestTrigger": {
+                    "Id": "Lumisteria.MtVapius_FailsafeAbiQuestTrigger",
+					"Condition": "!VMV.HasSeenActiveDialogueEvent Current questComplete_Lumisteria.MtVapiusQuestAmberFernForAbigail, PLAYER_HAS_MAIL Current Lumisteria.MtVapius_AmberFernMail Any",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_AmberFernMailBackup tomorrow"
+                },
+                "Lumisteria.MtVapius_FailsafeAbiQuestTrigger2": {
+                    "Id": "Lumisteria.MtVapius_FailsafeAbiQuestTrigger2",
+					"Condition": "!VMV.HasSeenActiveDialogueEvent Current questComplete_Lumisteria.MtVapiusQuestAmberFernForAbigail, PLAYER_HAS_MAIL Current Lumisteria.MtVapius_AmberFernMailBackup Any",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_AmberFernMail tomorrow"
+                },
 				
             }
         },

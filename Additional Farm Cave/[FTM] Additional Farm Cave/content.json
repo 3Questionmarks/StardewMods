@@ -1,14 +1,11 @@
 {
-  "$id": "1",
   "ForageSpawnEnabled": true,
   "LargeObjectSpawnEnabled": false,
   "OreSpawnEnabled": true,
   "MonsterSpawnEnabled": false,
   "Forage_Spawn_Settings": {
-    "$id": "2",
     "Areas": [
       {
-        "$id": "3",
         "SpringItemIndex": [
           18,
           24,
@@ -71,7 +68,6 @@
         ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "4",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -80,7 +76,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "5",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -88,16 +83,13 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "6"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 1
       },
       {
-        "$id": "7",
         "SpringItemIndex": [
           18,
           24,
@@ -160,7 +152,6 @@
         ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "8",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -169,7 +160,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "9",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -177,9 +167,7 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "10"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -209,10 +197,8 @@
     "CustomTileIndex": []
   },
   "Large_Object_Spawn_Settings": {
-    "$id": "11",
     "Areas": [
       {
-        "$id": "12",
         "ObjectTypes": [
           "Stump"
         ],
@@ -229,7 +215,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "13",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -238,7 +223,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "14",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -246,9 +230,7 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "15"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -258,10 +240,8 @@
     "CustomTileIndex": []
   },
   "Ore_Spawn_Settings": {
-    "$id": "16",
     "Areas": [
       {
-        "$id": "17",
         "MiningLevelRequired": null,
         "StartingSpawnChance": null,
         "LevelTenSpawnChance": null,
@@ -282,7 +262,6 @@
         ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "18",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -291,7 +270,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "19",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -299,16 +277,13 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "20"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "21",
         "MiningLevelRequired": null,
         "StartingSpawnChance": null,
         "LevelTenSpawnChance": null,
@@ -329,7 +304,6 @@
         ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "22",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -338,7 +312,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "23",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -346,9 +319,7 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "24"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -357,7 +328,6 @@
     ],
     "PercentExtraSpawnsPerMiningLevel": 0,
     "MiningLevelRequired": {
-      "$id": "25",
       "Stone": 0,
       "Geode": 0,
       "FrozenGeode": 0,
@@ -383,7 +353,6 @@
       "CinderShard": 0
     },
     "StartingSpawnChance": {
-      "$id": "26",
       "Stone": 66,
       "Geode": 8,
       "FrozenGeode": 0,
@@ -409,7 +378,6 @@
       "CinderShard": 0
     },
     "LevelTenSpawnChance": {
-      "$id": "27",
       "Stone": 48,
       "Geode": 2,
       "FrozenGeode": 0,
@@ -437,43 +405,33 @@
     "CustomTileIndex": []
   },
   "Monster_Spawn_Settings": {
-    "$id": "28",
     "Areas": [
       {
-        "$id": "29",
         "MonsterTypes": [
           {
-            "$id": "30",
             "MonsterName": "shadow brute",
             "Settings": {
-              "$id": "31",
               "RelatedSkill": "Combat",
               "MinimumSkillLevel": 8
             }
           },
           {
-            "$id": "32",
             "MonsterName": "wilderness golem",
             "Settings": {
-              "$id": "33",
               "SpawnWeight": 4
             }
           },
           {
-            "$id": "34",
             "MonsterName": "purple slime",
             "Settings": {
-              "$id": "35",
               "RelatedSkill": "Combat",
               "MinimumSkillLevel": 10,
               "SpawnWeight": 2
             }
           },
           {
-            "$id": "36",
             "MonsterName": "red slime",
             "Settings": {
-              "$id": "37",
               "RelatedSkill": "Combat",
               "MinimumSkillLevel": 8,
               "MaximumSkillLevel": 9,
@@ -481,10 +439,8 @@
             }
           },
           {
-            "$id": "38",
             "MonsterName": "blue slime",
             "Settings": {
-              "$id": "39",
               "RelatedSkill": "Combat",
               "MinimumSkillLevel": 4,
               "MaximumSkillLevel": 7,
@@ -492,10 +448,8 @@
             }
           },
           {
-            "$id": "40",
             "MonsterName": "green slime",
             "Settings": {
-              "$id": "41",
               "RelatedSkill": "Combat",
               "MaximumSkillLevel": 3,
               "SpawnWeight": 2
@@ -516,7 +470,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "42",
           "StartTime": 1900,
           "EndTime": 2550,
           "MinimumTimeBetweenSpawns": 10,
@@ -525,7 +478,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "43",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -533,62 +485,49 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "44"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "45",
         "MonsterTypes": [
           {
-            "$id": "46",
             "MonsterName": "iridium bat",
             "Settings": {
-              "$id": "47",
               "RelatedSkill": "Combat",
               "MinimumSkillLevel": 10,
               "SpawnWeight": 4
             }
           },
           {
-            "$id": "48",
             "MonsterName": "serpent",
             "Settings": {
-              "$id": "49",
               "RelatedSkill": "Combat",
               "MinimumSkillLevel": 10,
               "SpawnWeight": 3
             }
           },
           {
-            "$id": "50",
             "MonsterName": "lava bat",
             "Settings": {
-              "$id": "51",
               "RelatedSkill": "Combat",
               "MinimumSkillLevel": 8,
               "SpawnWeight": 4
             }
           },
           {
-            "$id": "52",
             "MonsterName": "frost bat",
             "Settings": {
-              "$id": "53",
               "RelatedSkill": "Combat",
               "MinimumSkillLevel": 5,
               "SpawnWeight": 2
             }
           },
           {
-            "$id": "54",
             "MonsterName": "bat",
             "Settings": {
-              "$id": "55",
               "SpawnWeight": 2
             }
           }
@@ -607,7 +546,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "56",
           "StartTime": 1900,
           "EndTime": 2550,
           "MinimumTimeBetweenSpawns": 10,
@@ -616,7 +554,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "57",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -624,9 +561,7 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "58"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -650,12 +585,9 @@
     685
   ],
   "File_Conditions": {
-    "$id": "59",
     "FarmTypes": [],
     "FarmerNames": [],
     "SaveFileNames": [],
-    "OtherMods": {
-      "$id": "60"
-    }
+    "OtherMods": {}
   }
 }

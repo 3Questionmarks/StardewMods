@@ -332,13 +332,13 @@
 					"ExtraItems": [
 						{
 							"ItemId": "RANDOM_ITEMS (O)",
-							"PerItemCondition": "ITEM_CONTEXT_TAG Target fossil_item, ITEM_CONTEXT_TAG Target mt_vapius",
+							"PerItemCondition": "ITEM_CONTEXT_TAG Target fossil_item, ITEM_CONTEXT_TAG Target mt_vapius, !ITEM_CONTEXT_TAG Target moonslime_artifact",
 							"Chance": 1,
 							"MaxItems": 1,
 						},
 						{
 							"ItemId": "RANDOM_ITEMS (O)",
-							"PerItemCondition": "ITEM_CONTEXT_TAG Target fossil_item,",
+							"PerItemCondition": "ITEM_CONTEXT_TAG Target fossil_item, !ITEM_CONTEXT_TAG Target moonslime_artifact",
 							"Chance": 0.05,
 							"MaxItems": 1,
 						}

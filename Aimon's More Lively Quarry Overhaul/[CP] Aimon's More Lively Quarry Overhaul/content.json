@@ -143,7 +143,7 @@
 		  "When": {
                 "Mod enabled": true,
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-				//"HasMod |contains=DaisyNiko.SVR3": false,
+				"HasMod |contains=DaisyNiko.SVR3": false,
             },		 
         },
 		
@@ -161,8 +161,7 @@
 		  "When": {
                 "Mod enabled": true,
 				"Vanilla Quarry River": "Water",
-				//"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-				//"HasMod |contains=DaisyNiko.SVR3": false,
+				
             },		 
         },
 		
@@ -176,8 +175,7 @@
                 "Mod enabled": true,
 				"Vanilla Quarry River": "Water",
 				"HasFlag": "ccCraftsRoom",
-				//"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-				//"HasMod |contains=DaisyNiko.SVR3": false,
+				
             },		 
         },
 		
@@ -192,8 +190,7 @@
 		  "When": {
                 "Mod enabled": true,
 				"Shed": false,
-				//"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-				//"HasMod |contains=DaisyNiko.SVR3": false,
+				
             },		 
         },
    

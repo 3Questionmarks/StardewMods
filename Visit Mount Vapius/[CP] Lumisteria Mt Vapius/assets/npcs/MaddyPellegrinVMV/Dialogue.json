@@ -35,6 +35,11 @@
         "Sun6": "{{i18n: MaddyDialogueSun6}}",
 		
 		
+        "Summer_20": "{{i18n: MaddyDialogueSummer_20}}",
+        "Summer_20_2": "{{i18n: MaddyDialogueSummer_20_2}}",
+        "Summer_21": "{{i18n: MaddyDialogueSummer_21}}",
+        "Summer_21_2": "{{i18n: MaddyDialogueSummer_21_2}}",
+		
 		//Resort
 		"Resort_Entering": "{{i18n: MaddyDialogueResort_Entering}}",
 		"Resort_Leaving": "{{i18n: MaddyDialogueResort_Leaving}}",
@@ -46,6 +51,7 @@
 		
 		//Conversation Topics
         "Lumisteria.MtVapius.Arrival": "{{i18n: MaddyDialogueLumisteria.MtVapius.Arrival}}",
+        "eventSeen_EnD.Dylan.01_memory_oneweek": "{{i18n: MaddyDialogueeventSeen_EnD.Dylan.01_memory_oneweek}}",
 		//Special
 		"reject_869": "{{i18n: MaddyDialogueRejectWorm}}",
 		"reject_458": "{{i18n: MaddyDialogueRejectBouquet}}",
@@ -181,6 +187,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/MaddyPellegrinVMV",
       "Entries": {
+		"AcceptGift_(O)StardropTea": "{{i18n: MaddyDialogueAcceptGift_(O)StardropTea}}",
 		"AcceptGift_(O)Lumisteria.MtVapius_Cooking_JamPie": "{{i18n: MaddyDialogueAcceptGift_(O)Lumisteria.MtVapius_Cooking_JamPie}}",
 		"AcceptGift_(O)575": "{{i18n: MaddyDialogueAcceptGift_(O)575}}",
 		"AcceptGift_(O)202": "{{i18n: MaddyDialogueAcceptGift_(O)202}}",

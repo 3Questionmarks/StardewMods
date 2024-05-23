@@ -214,6 +214,37 @@
                     "HasMod |contains=invatorzen.AspenCP": "false"
             }
     },
+
+    //Lemurkat.EastScarpNPCs.CP//
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Annetta 13 65 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Value": "Annetta 16 65 2",
+          "Delimiter": "/"
+        }
+      ],
+      
+       "When": {
+                    "HasMod |contains=Lemurkat.EastScarpNPCs.CP": "true"
+            }
+    },
     
     ///aspennpc//
     {

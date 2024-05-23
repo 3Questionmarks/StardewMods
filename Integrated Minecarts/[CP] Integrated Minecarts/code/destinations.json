@@ -407,7 +407,7 @@
                     "TargetLocation": "Custom_Ridgeside_RSVCableCar",
                     "DisplayName": "{{i18n: RSVCableCar}}",  
 					"Price": "{{PriceToRide}}",
-                    "Condition": "PLAYER_HAS_MAIL Host RSV.FixedMinecart Received",
+                    "Condition": "PLAYER_HAS_MAIL Any RSV.FixedMinecart Received",
                     "TargetTile": {
                         "X": 25,
                         "Y": 18
@@ -432,7 +432,7 @@
                     "TargetLocation": "Custom_Ridgeside_RidgesideVillage",
                     "DisplayName": "{{i18n: RSVEast}}",  
 					"Price": "{{PriceToRide}}",
-                    "Condition": "PLAYER_HAS_MAIL Host RSV.FixedMinecart Received",
+                    "Condition": "PLAYER_HAS_MAIL Any RSV.FixedMinecart Received",
                     "TargetTile": {
                         "X": 109,
                         "Y": 85
@@ -458,7 +458,7 @@
                     "TargetLocation": "Custom_Ridgeside_RidgesideVillage",
                     "DisplayName": "{{i18n: RSVNorth}}",  
 					"Price": "{{PriceToRide}}",
-                    "Condition": "PLAYER_HAS_MAIL Host RSV.FixedMinecart Received",
+                    "Condition": "PLAYER_HAS_MAIL Any RSV.FixedMinecart Received",
                     "TargetTile": {
                         "X": 69,
                         "Y": 16
@@ -483,7 +483,7 @@
                     "TargetLocation": "Custom_Ridgeside_RidgesideVillage",
                     "DisplayName": "{{i18n: RSVSouth}}",  
 					"Price": "{{PriceToRide}}",
-                    "Condition": "PLAYER_HAS_MAIL Host RSV.FixedMinecart Received",
+                    "Condition": "PLAYER_HAS_MAIL Any RSV.FixedMinecart Received",
                     "TargetTile": {
                         "X": 16,
                         "Y": 82
@@ -694,7 +694,7 @@
                     "TargetLocation": "Custom_AdventurerSummit",
                     "DisplayName": "{{i18n: AdventurersGuild}}",  
 					"Price": "{{PriceToRide}}", 
-                    "Condition": "PLAYER_VISITED_LOCATION Custom_AdventurerSummit",
+                    "Condition": "PLAYER_VISITED_LOCATION Any Custom_AdventurerSummit",
                     "TargetTile": {
                         "X": 19,
                         "Y": 16
@@ -727,7 +727,7 @@
                 },
             },
             "When": {
-                "HasFlag: hostPlayer |contains=ccPantry": "true",
+                "HasFlag: anyPlayer |contains=ccPantry": "true",
                 "EnableOasisGreenhouse": true,
                 "HasMod |contains=DaisyNiko.OasisGreenhouse": "true"
             },
@@ -899,6 +899,34 @@
                 "EnableWaFFCave": true,
                 "FarmType|contains=A_TK.FarmProjectForaging/WaFF, A_TK.FarmProjectForaging/WaFFLE": "true",
                 "HasMod |contains=A_TK.FarmProjectForaging, A_TK.FarmProjectForaging.LE": "true"
+            },
+        },
+        //WaFF Cave
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": ["Default", "Destinations", ],
+            "Fields": {
+                "WAFF_Cave_Minecart": null,
+            },
+            "When": {
+                "EnableWaFFCave": true,
+                "FarmType|contains=A_TK.FarmProjectForaging/WaFF": "true",
+                "HasMod |contains=A_TK.FarmProjectForaging": "true"
+            },
+        },
+        //WaFFLE Cave
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": ["Default", "Destinations", ],
+            "Fields": {
+                "WAFFLE_Cave_Minecart": null,
+            },
+            "When": {
+                "EnableWaFFCave": true,
+                "FarmType|contains= A_TK.FarmProjectForaging/WaFFLE": "true",
+                "HasMod |contains=A_TK.FarmProjectForaging.LE": "true"
             },
         },
         //Rename other mod's minecarts.

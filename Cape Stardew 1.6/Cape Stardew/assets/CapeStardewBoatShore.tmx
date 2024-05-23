@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="89" height="116" tilewidth="16" tileheight="16" infinite="0" nextlayerid="49" nextobjectid="511">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="89" height="116" tilewidth="16" tileheight="16" infinite="0" nextlayerid="49" nextobjectid="647">
  <properties>
   <property name="AllowGrassGrowInWinter" value="T"/>
   <property name="BrookSounds" value="61 13 0 12 73 0"/>
@@ -7405,7 +7405,7 @@
 4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296,4296
 </data>
  </layer>
- <layer id="12" name="Back2" width="89" height="116" visible="0">
+ <layer id="12" name="Back2" width="89" height="116">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,308,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,110,111,0,0,0,0,0,110,110,110,111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -7525,7 +7525,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="13" name="Back3" width="89" height="116" visible="0">
+ <layer id="13" name="Back3" width="89" height="116">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3758103907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3758103907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -7645,7 +7645,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="48" name="Back4" width="89" height="116" visible="0">
+ <layer id="48" name="Back4" width="89" height="116">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -7765,7 +7765,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="16" name="Buildings" width="89" height="116" visible="0">
+ <layer id="16" name="Buildings" width="89" height="116">
   <data encoding="csv">
 1097,1145,1146,1145,1146,1145,1146,0,0,0,1049,1146,1143,1144,1143,1144,1143,1144,1143,1144,1143,1144,1143,1144,1143,1144,5566,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5568,411,0,0,0,387,384,386,0,384,385,385,385,385,385,386,445,734,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 1097,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5598,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5600,436,0,0,0,387,0,0,0,0,0,0,0,0,0,297,470,734,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -7885,7 +7885,7 @@
 4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283,4283
 </data>
  </layer>
- <layer id="15" name="Buildings2" width="89" height="116" visible="0">
+ <layer id="15" name="Buildings2" width="89" height="116">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -8005,7 +8005,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="14" name="Buildings3" width="89" height="116" visible="0">
+ <layer id="14" name="Buildings3" width="89" height="116">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -8125,7 +8125,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="27" name="Buildings4" width="89" height="116" visible="0">
+ <layer id="27" name="Buildings4" width="89" height="116">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1610620294,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1610620294,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -8245,7 +8245,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="17" name="Paths" width="89" height="116" visible="0">
+ <layer id="17" name="Paths" width="89" height="116">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1073748868,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7060,7060,0,0,0,0,0,0,0,0,7060,0,0,0,0,0,0,0,1073748868,0,0,0,0,7060,7060,7060,0,7060,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -8365,7 +8365,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="18" name="Front" width="89" height="116" visible="0">
+ <layer id="18" name="Front" width="89" height="116">
   <data encoding="csv">
 0,0,0,0,5856,5857,5858,5859,5860,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,5888,5889,5890,5891,5892,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -8485,7 +8485,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="19" name="AlwaysFront" width="89" height="116" visible="0">
+ <layer id="19" name="AlwaysFront" width="89" height="116">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2248,2249,2250,2251,2252,2253,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2273,2274,2275,2276,2277,2278,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -8605,7 +8605,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="20" name="AlwaysFront2" width="89" height="116" visible="0">
+ <layer id="20" name="AlwaysFront2" width="89" height="116">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3173,3174,3174,3175,3174,3175,3174,3175,3198,0,0,0,0,0,0,0,0,0,0,0,2248,2249,2250,2251,2252,2253,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3198,3199,3199,3200,3199,3200,3199,3200,3224,0,0,0,0,0,0,0,0,0,0,0,2273,2274,2275,2276,2277,2278,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -8725,7 +8725,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="21" name="AlwaysFront3" width="89" height="116" visible="0">
+ <layer id="21" name="AlwaysFront3" width="89" height="116">
   <data encoding="csv">
 972,972,3172,3222,3223,0,0,0,0,3225,3201,3202,3177,3221226419,3221226419,947,997,3221226419,3222,3223,0,0,3226,3227,947,947,947,941,941,941,942,3173,3174,3174,3175,3174,3175,3174,3175,3198,0,0,0,0,0,0,0,0,0,0,0,2248,2249,2250,2251,2252,2253,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 972,972,3172,3247,3248,0,0,0,0,0,3226,3227,3177,997,997,947,947,947,3247,3248,0,0,3251,3252,947,947,972,941,941,942,3173,3198,3199,3199,3200,3199,3200,3199,3200,3224,0,0,0,0,0,0,0,0,0,0,0,2273,2274,2275,2276,2277,2278,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -8845,7 +8845,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="23" name="Back" visible="0">
+ <objectgroup id="23" name="Back">
   <object id="61" name="TileData" x="784" y="0" width="48" height="16">
    <properties>
     <property name="TouchAction" value="Warp Custom_AnnettaForest 7 37"/>
@@ -9797,10 +9797,10 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="37" name="Back2" visible="0"/>
- <objectgroup id="38" name="Back3" visible="0"/>
- <objectgroup id="47" name="Back4" visible="0"/>
- <objectgroup id="22" name="Buildings" visible="0">
+ <objectgroup id="37" name="Back2"/>
+ <objectgroup id="38" name="Back3"/>
+ <objectgroup id="47" name="Back4"/>
+ <objectgroup id="22" name="Buildings">
   <object id="57" name="TileData" x="576" y="192" width="16" height="32">
    <properties>
     <property name="Action" value="LockedDoorWarp 25 24 Custom_AnnettaHouse 900 2100 Annetta 500"/>
@@ -9831,23 +9831,693 @@
     <property name="Action" value="Message Cape.4"/>
    </properties>
   </object>
-  <object id="201" name="TileData" x="848" y="448" width="16" height="16">
-   <properties>
-    <property name="Passable" value=""/>
-   </properties>
-  </object>
   <object id="203" name="TileData" x="96" y="64" width="16" height="16">
    <properties>
     <property name="Action" value="Warp 5 10 Custom_AbandonedHauntedHouse"/>
    </properties>
   </object>
+  <object id="511" name="TileData" x="864" y="128" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="512" name="TileData" x="704" y="464" width="32" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_Cape 6 10"/>
+   </properties>
+  </object>
+  <object id="513" name="TileData" x="976" y="272" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_SeaCape 4 25"/>
+   </properties>
+  </object>
+  <object id="514" name="TileData" x="976" y="224" width="16" height="32">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_SeaCape 6 22"/>
+   </properties>
+  </object>
+  <object id="515" name="TileData" x="864" y="480" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="ChangeIntoSwimsuit"/>
+   </properties>
+  </object>
+  <object id="516" name="TileData" x="848" y="496" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="ChangeIntoSwimsuit"/>
+   </properties>
+  </object>
+  <object id="517" name="TileData" x="848" y="480" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
+   </properties>
+  </object>
+  <object id="518" name="TileData" x="832" y="496" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
+   </properties>
+  </object>
+  <object id="519" name="TileData" x="784" y="528" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="PoolExit"/>
+   </properties>
+  </object>
+  <object id="520" name="TileData" x="784" y="544" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="PoolEntrance"/>
+   </properties>
+  </object>
+  <object id="521" name="TileData" x="768" y="528" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="PoolExit"/>
+   </properties>
+  </object>
+  <object id="522" name="TileData" x="768" y="544" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="PoolEntrance"/>
+   </properties>
+  </object>
+  <object id="523" name="TileData" x="768" y="512" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="ChangeIntoSwimsuit"/>
+   </properties>
+  </object>
+  <object id="524" name="TileData" x="784" y="512" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="ChangeIntoSwimsuit"/>
+   </properties>
+  </object>
+  <object id="525" name="TileData" x="512" y="528" width="64" height="16">
+   <properties>
+    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
+   </properties>
+  </object>
+  <object id="526" name="TileData" x="880" y="128" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="527" name="TileData" x="896" y="128" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="528" name="TileData" x="864" y="144" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="529" name="TileData" x="880" y="144" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="530" name="TileData" x="896" y="144" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="531" name="TileData" x="864" y="160" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="532" name="TileData" x="896" y="160" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="533" name="TileData" x="880" y="160" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="534" name="TileData" x="880" y="176" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="535" name="TileData" x="880" y="192" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="536" name="TileData" x="880" y="208" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="537" name="TileData" x="896" y="224" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="538" name="TileData" x="880" y="224" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="539" name="TileData" x="928" y="288" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="540" name="TileData" x="896" y="320" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="541" name="TileData" x="896" y="336" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="542" name="TileData" x="880" y="336" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="543" name="TileData" x="864" y="336" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="544" name="TileData" x="864" y="352" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="545" name="TileData" x="864" y="368" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="546" name="TileData" x="864" y="384" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="547" name="TileData" x="864" y="400" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="548" name="TileData" x="816" y="416" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="549" name="TileData" x="800" y="416" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="550" name="TileData" x="784" y="416" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="551" name="TileData" x="768" y="416" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="552" name="TileData" x="752" y="416" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="553" name="TileData" x="656" y="416" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="554" name="TileData" x="672" y="416" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="555" name="TileData" x="688" y="416" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="556" name="TileData" x="704" y="416" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="557" name="TileData" x="720" y="416" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="558" name="TileData" x="736" y="416" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="559" name="TileData" x="640" y="464" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="560" name="TileData" x="624" y="480" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="561" name="TileData" x="608" y="480" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="562" name="TileData" x="592" y="496" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="563" name="TileData" x="576" y="512" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="564" name="TileData" x="752" y="512" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="565" name="TileData" x="752" y="528" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="566" name="TileData" x="752" y="544" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="567" name="TileData" x="768" y="560" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="568" name="TileData" x="784" y="560" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="569" name="TileData" x="800" y="544" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="570" name="TileData" x="800" y="528" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="571" name="TileData" x="800" y="512" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="572" name="TileData" x="816" y="560" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="573" name="TileData" x="832" y="560" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="574" name="TileData" x="848" y="560" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="575" name="TileData" x="864" y="560" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="576" name="TileData" x="880" y="560" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="577" name="TileData" x="896" y="560" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="578" name="TileData" x="896" y="544" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="579" name="TileData" x="896" y="528" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="580" name="TileData" x="896" y="512" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="581" name="TileData" x="896" y="496" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="582" name="TileData" x="896" y="480" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="583" name="TileData" x="736" y="528" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="584" name="TileData" x="736" y="512" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="585" name="TileData" x="720" y="528" width="16" height="16">
+   <properties>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="587" name="TileData" x="944" y="144" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="588" name="TileData" x="944" y="128" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="589" name="TileData" x="944" y="112" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="590" name="TileData" x="944" y="112" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="591" name="TileData" x="944" y="96" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="592" name="TileData" x="960" y="96" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="593" name="TileData" x="976" y="96" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="594" name="TileData" x="976" y="80" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="595" name="TileData" x="976" y="64" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="596" name="TileData" x="976" y="48" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="597" name="TileData" x="976" y="32" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="598" name="TileData" x="976" y="16" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="599" name="TileData" x="992" y="16" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="600" name="TileData" x="1008" y="16" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="601" name="TileData" x="1008" y="0" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="602" name="TileData" x="928" y="160" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="603" name="TileData" x="912" y="160" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="604" name="TileData" x="896" y="176" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="605" name="TileData" x="896" y="192" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="606" name="TileData" x="896" y="208" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="607" name="TileData" x="912" y="224" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="608" name="TileData" x="928" y="224" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="609" name="TileData" x="944" y="224" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="610" name="TileData" x="960" y="224" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="611" name="TileData" x="960" y="240" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="612" name="TileData" x="960" y="256" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="613" name="TileData" x="960" y="272" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="614" name="TileData" x="944" y="288" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="615" name="TileData" x="928" y="304" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="616" name="TileData" x="928" y="320" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="617" name="TileData" x="912" y="320" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="618" name="TileData" x="912" y="336" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="619" name="TileData" x="896" y="352" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="620" name="TileData" x="880" y="352" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="621" name="TileData" x="880" y="368" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="622" name="TileData" x="880" y="384" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="623" name="TileData" x="880" y="400" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="624" name="TileData" x="864" y="416" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="625" name="TileData" x="864" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="626" name="TileData" x="864" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="627" name="TileData" x="864" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="628" name="TileData" x="832" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="629" name="TileData" x="832" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="630" name="TileData" x="832" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="631" name="TileData" x="816" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="632" name="TileData" x="800" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="633" name="TileData" x="784" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="634" name="TileData" x="768" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="635" name="TileData" x="752" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="636" name="TileData" x="736" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="637" name="TileData" x="720" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="638" name="TileData" x="688" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="639" name="TileData" x="704" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="640" name="TileData" x="672" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="641" name="TileData" x="656" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="642" name="TileData" x="656" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="643" name="TileData" x="640" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="644" name="TileData" x="624" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="645" name="TileData" x="608" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
+  <object id="646" name="TileData" x="592" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value=""/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup id="33" name="Buildings2" visible="0"/>
- <objectgroup id="34" name="Buildings3" visible="0"/>
- <objectgroup id="35" name="Buildings4" visible="0"/>
- <objectgroup id="24" name="Paths" visible="0"/>
- <objectgroup id="25" name="Front" visible="0"/>
- <objectgroup id="26" name="AlwaysFront" visible="0"/>
- <objectgroup id="43" name="AlwaysFront2" visible="0"/>
- <objectgroup id="44" name="AlwaysFront3" visible="0"/>
+ <objectgroup id="33" name="Buildings2"/>
+ <objectgroup id="34" name="Buildings3"/>
+ <objectgroup id="35" name="Buildings4"/>
+ <objectgroup id="24" name="Paths"/>
+ <objectgroup id="25" name="Front"/>
+ <objectgroup id="26" name="AlwaysFront"/>
+ <objectgroup id="43" name="AlwaysFront2"/>
+ <objectgroup id="44" name="AlwaysFront3"/>
 </map>

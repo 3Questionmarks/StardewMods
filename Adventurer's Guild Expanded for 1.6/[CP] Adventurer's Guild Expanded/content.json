@@ -6,15 +6,41 @@
 "ConfigSchema": {
 
 	"AllowFestivals": {
+            "Section": "General",
             "AllowValues": "true, false",
             "Default": true,
-	     "Description": "Allow new NPCs to visit festivals. True by default, but can be disabled if there are tile conflicts.",
+	    "Description": "Allow new NPCs to visit festivals. True by default, but can be disabled if there are tile conflicts.",
         },
 
 	"FarmBasementEntrance": {
+            "Section": "Monster Basement Configuration",
             "AllowValues": "true, false",
             "Default": true,
-	     "Description": "Toggles the farmhouse entrance for the Monster Basement. I recommend turning off if you have a custom farm map.",
+	    "Description": "Toggles the farmhouse entrance for the Monster Basement. If set to off, the entrance will only be at the Bus Stop.",
+        },
+// A HUGE thank you to NoraCharles for helping me out with this config section and how it works!!
+        "FarmBasementXPosition": {
+            "Section": "Monster Basement Configuration",
+            "Default": 59, 
+	    "Description": "Configure the X position for the basement. This is for the basement entrance at your farm.",
+        },
+
+        "FarmBasementYPosition": {
+            "Section": "Monster Basement Configuration",
+            "Default": 15, 
+	    "Description": "Configure the Y position for the basement. This is for the basement entrance at your farm.",
+        },
+
+        "BusStopBasementXPosition": {
+            "Section": "Monster Basement Configuration",
+            "Default": 17, 
+	    "Description": "Configure the X position for the basement. This is for the basement entrance at the bus stop.",
+        },
+
+        "BusStopBasementYPosition": {
+            "Section": "Monster Basement Configuration",
+            "Default": 4, 
+	    "Description": "Configure the Y position for the basement. This is for the basement entrance at the bus stop.",
         },
 
     },
@@ -55,6 +81,23 @@
 	 "When": {
              "HasSeenEvent: anyPlayer |contains=8280021, 8280022": true,
          },
+  	},
+// A HUGE thank you to NoraCharles for helping me out with this config section and how it works!!
+        {
+   	 "Name": "FarmBPosX",
+    	 "Value": "{{FarmBasementXPosition}}",
+  	},
+        {
+   	 "Name": "FarmBPosY",
+    	 "Value": "{{FarmBasementYPosition}}",
+  	},
+        {
+   	 "Name": "BusStopBPosX",
+    	 "Value": "{{BusStopBasementXPosition}}",
+  	},
+        {
+   	 "Name": "BusStopBPosY",
+    	 "Value": "{{BusStopBasementYPosition}}",
   	},
 
 	//sewer map changes

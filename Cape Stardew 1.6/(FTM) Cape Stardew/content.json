@@ -81,7 +81,7 @@
             "HasFlag": "soulCalibur",
             "Query: {{DailyLuck}} >= 0.1": "true",
             "HasMod |contains=dreamy.kickitspot": "true",
-            "HasMod |contains=DreamyGloom.SoulCalibur.JA": "true"
+            "HasMod |contains=dreamygloom.customSCweapons": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -164,7 +164,7 @@
             "HasFlag": "soulCalibur",
             "Query: {{DailyLuck}} >= 0.1": "true",
             "HasMod |contains=dreamy.kickitspot": "true",
-            "HasMod |contains=DreamyGloom.SoulCalibur.JA": "true"
+            "HasMod |contains=dreamygloom.customSCweapons": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -246,7 +246,7 @@
           "CPConditions": {
             "HasFlag": "soulCalibur",
             "HasMod |contains=dreamy.kickitspot": "true",
-            "HasMod |contains=DreamyGloom.SoulCalibur.JA": "true"
+            "HasMod |contains=dreamygloom.customSCweapons": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -328,7 +328,7 @@
           "CPConditions": {
             "HasFlag": "soulCalibur",
             "HasMod |contains=dreamy.kickitspot": "true",
-            "HasMod |contains=DreamyGloom.SoulCalibur.JA": "true"
+            "HasMod |contains=dreamygloom.customSCweapons": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -410,8 +410,7 @@
           "CPConditions": {
             "HasFlag": "soulCalibur",
             "Query: {{DailyLuck}} >= 0.1": "true",
-            "HasMod |contains=dreamy.kickitspot": "true",
-            "HasMod |contains=DreamyGloom.SoulCalibur.JA": "true"
+            "HasMod |contains=dreamygloom.customSCweapons": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -492,35 +491,35 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.pokeball": "true"
+            "HasMod |contains=dreamy.AniProjectilesPoke": "true"
           },
           "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 1
+          "LimitedNumberOfSpawns": 3
         },
         "DaysUntilSpawnsExpire": 0
       },
       {
         "SpringItemIndex": [
           {
-            "Category": "Object",
+            "Category": "Weapon",
             "Name": "Ultra Ball"
           }
         ],
         "SummerItemIndex": [
           {
-            "Category": "Object",
+            "Category": "Weapon",
             "Name": "Ultra Ball"
           }
         ],
         "FallItemIndex": [
           {
-            "Category": "Object",
+            "Category": "Weapon",
             "Name": "Ultra Ball"
           }
         ],
         "WinterItemIndex": [
           {
-            "Category": "Object",
+            "Category": "Weapon",
             "Name": "Ultra Ball"
           }
         ],
@@ -552,7 +551,7 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.pokeball": "true"
+            "HasMod |contains=dreamy.AniProjectilesPoke": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -601,7 +600,7 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.pokeball": "true"
+            "HasMod |contains=dreamy.AniProjectilesPoke": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -649,7 +648,7 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.pokeball": "true"
+            "HasMod |contains=dreamy.AniProjectilesPoke": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -697,7 +696,7 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.pokeball": "true"
+            "HasMod |contains=dreamy.AniProjectilesPoke": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -777,7 +776,7 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.pokeball": "true"
+            "HasMod |contains=dreamy.AniProjectilesPoke": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -787,25 +786,25 @@
       {
         "SpringItemIndex": [
           {
-            "Category": "Object",
+            "Category": "Weapon",
             "Name": "Poké Ball"
           }
         ],
         "SummerItemIndex": [
           {
-            "Category": "Object",
+            "Category": "Weapon",
             "Name": "Poké Ball"
           }
         ],
         "FallItemIndex": [
           {
-            "Category": "Object",
+            "Category": "Weapon",
             "Name": "Poké Ball"
           }
         ],
         "WinterItemIndex": [
           {
-            "Category": "Object",
+            "Category": "Weapon",
             "Name": "Poké Ball"
           }
         ],
@@ -837,7 +836,7 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.pokeball": "true"
+            "HasMod |contains=dreamy.AniProjectilesPoke": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -4244,7 +4243,7 @@
             "Contents": [
               {
                 "Category": "Weapon",
-                "Name": "Lunar Eclipse Key"
+                "Name": "Lunar Eclipse"
               }
             ]
           }
@@ -4255,7 +4254,7 @@
             "Contents": [
               {
                 "Category": "Weapon",
-                "Name": "Lunar Eclipse Key"
+                "Name": "Lunar Eclipse"
               }
             ]
           }
@@ -4266,7 +4265,7 @@
             "Contents": [
               {
                 "Category": "Weapon",
-                "Name": "Lunar Eclipse Key"
+                "Name": "Lunar Eclipse"
               }
             ]
           }
@@ -4277,7 +4276,7 @@
             "Contents": [
               {
                 "Category": "Weapon",
-                "Name": "Lunar Eclipse Key"
+                "Name": "Lunar Eclipse"
               }
             ]
           }
@@ -4310,7 +4309,7 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.AronyredkkuKeys": "true"
+            "HasMod |contains=dreamy.Keyblades": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -4394,7 +4393,7 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.AronyredkkuKeys": "true"
+            "HasMod |contains=dreamy.Keyblades": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -4552,7 +4551,7 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.AronyredkkuKeys": "true"
+            "HasMod |contains=dreamy.Keyblades": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -4636,7 +4635,7 @@
           "CPConditions": {
             "HasFlag": "galaxySword",
             "Hearts:Annetta": "5",
-            "HasMod |contains=DreamyGloom.AronyredkkuKeys": "true"
+            "HasMod |contains=dreamy.Keyblades": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -4720,7 +4719,7 @@
           ],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.AronyredkkuKeys": "true"
+            "HasMod |contains=dreamy.Keyblades": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -4803,7 +4802,7 @@
             "Query: {{DailyLuck}} >= 0.1": "true",
             "HasFlag": "guildMember",
             "Relationship:Annetta": "Friendly",
-            "HasMod |contains=DreamyGloom.AronyredkkuKeys": "true"
+            "HasMod |contains=dreamy.Keyblades": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -4888,7 +4887,7 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.AronyredkkuKeys": "true"
+            "HasMod |contains=dreamy.Keyblades": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -5401,7 +5400,7 @@
           "WeatherTomorrow": null,
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.AronyredkkuKeys": "true"
+            "HasMod |contains=dreamy.Keyblades": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -6028,7 +6027,7 @@
             "Contents": [
               {
                 "Category": "Weapon",
-                "Name": "Metal Chocobo Key"
+                "Name": "Metal Chocobo"
               }
             ]
           }
@@ -6039,7 +6038,7 @@
             "Contents": [
               {
                 "Category": "Weapon",
-                "Name": "Metal Chocobo Key"
+                "Name": "Metal Chocobo"
               }
             ]
           }
@@ -6050,7 +6049,7 @@
             "Contents": [
               {
                 "Category": "Weapon",
-                "Name": "Metal Chocobo Key"
+                "Name": "Metal Chocobo"
               }
             ]
           }
@@ -6061,7 +6060,7 @@
             "Contents": [
               {
                 "Category": "Weapon",
-                "Name": "Metal Chocobo Key"
+                "Name": "Metal Chocobo"
               }
             ]
           }
@@ -6098,7 +6097,7 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.AronyredkkuKeys": "true"
+            "HasMod |contains=dreamy.Keyblades": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
@@ -6112,7 +6111,7 @@
             "Contents": [
               {
                 "Category": "Weapon",
-                "Name": "Fairy Harp Key"
+                "Name": "Fairy Harp"
               }
             ]
           }
@@ -6123,7 +6122,7 @@
             "Contents": [
               {
                 "Category": "Weapon",
-                "Name": "Fairy Harp Key"
+                "Name": "Fairy Harp"
               }
             ]
           }
@@ -6134,7 +6133,7 @@
             "Contents": [
               {
                 "Category": "Weapon",
-                "Name": "Fairy Harp Key"
+                "Name": "Fairy Harp"
               }
             ]
           }
@@ -6145,7 +6144,7 @@
             "Contents": [
               {
                 "Category": "Weapon",
-                "Name": "Fairy Harp Key"
+                "Name": "Fairy Harp"
               }
             ]
           }
@@ -6184,10 +6183,10 @@
           ],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasMod |contains=DreamyGloom.AronyredkkuKeys": "true"
+            "HasMod |contains=dreamy.Keyblades": "true"
           },
           "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 1
+          "LimitedNumberOfSpawns": 3
         },
         "DaysUntilSpawnsExpire": 0
       },
@@ -7766,7 +7765,7 @@
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": null,
+          "MaximumSimultaneousSpawns": 1,
           "OnlySpawnIfAPlayerIsPresent": false,
           "SpawnSound": ""
         },
@@ -7782,7 +7781,7 @@
             "HasFlag |contains=prettyStone1": "true"
           },
           "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 1
+          "LimitedNumberOfSpawns": 4
         },
         "DaysUntilSpawnsExpire": 0
       },
@@ -11569,10 +11568,6 @@
             }
           },
           {
-            "MonsterName": "Cursed Doll",
-            "Settings": {}
-          },
-          {
             "MonsterName": "Bug",
             "Settings": {
               "SpawnWeight": 1
@@ -11654,28 +11649,6 @@
             }
           },
           {
-            "MonsterName": "Cursed Doll",
-            "Settings": {
-              "HP": 250,
-              "Damage": 10,
-              "Defense": 3,
-              "DodgeChance": 5,
-              "EXP": 15,
-              "RelatedSkill": "Combat",
-              "MinimumSkillLevel": 7,
-              "PercentExtraHPPerSkillLevel": 3,
-              "PercentExtraDamagePerSkillLevel": 1,
-              "PercentExtraDefensePerSkillLevel": 1,
-              "PercentExtraDodgeChancePerSkillLevel": 2,
-              "PercentExtraEXPPerSkillLevel": 1,
-              "CurrentHP": 100,
-              "PersistentHP": true,
-              "SeesPlayersAtSpawn": false,
-              "FacingDirection": "Left",
-              "SpawnWeight": 1
-            }
-          },
-          {
             "MonsterName": "Bug",
             "Settings": {
               "SpawnWeight": 1
@@ -11740,28 +11713,6 @@
             }
           },
           {
-            "MonsterName": "Cursed Doll",
-            "Settings": {
-              "HP": 250,
-              "Damage": 10,
-              "Defense": 3,
-              "DodgeChance": 5,
-              "EXP": 15,
-              "RelatedSkill": "Combat",
-              "MinimumSkillLevel": 7,
-              "PercentExtraHPPerSkillLevel": 3,
-              "PercentExtraDamagePerSkillLevel": 1,
-              "PercentExtraDefensePerSkillLevel": 1,
-              "PercentExtraDodgeChancePerSkillLevel": 2,
-              "PercentExtraEXPPerSkillLevel": 1,
-              "CurrentHP": 100,
-              "PersistentHP": true,
-              "SeesPlayersAtSpawn": false,
-              "FacingDirection": "Left",
-              "SpawnWeight": 1
-            }
-          },
-          {
             "MonsterName": "Bug",
             "Settings": {
               "SpawnWeight": 1
@@ -11823,12 +11774,6 @@
             "MonsterName": "Cave Grub",
             "Settings": {
               "SpawnWeight": 2
-            }
-          },
-          {
-            "MonsterName": "Cursed Doll",
-            "Settings": {
-              "SpawnWeight": 5
             }
           },
           {
@@ -13070,10 +13015,6 @@
             "Settings": {}
           },
           {
-            "MonsterName": "Prismatic Slime",
-            "Settings": {}
-          },
-          {
             "MonsterName": "Iridium Crab",
             "Settings": {}
           },
@@ -13135,10 +13076,6 @@
         "MonsterTypes": [
           {
             "MonsterName": "Red Slime",
-            "Settings": {}
-          },
-          {
-            "MonsterName": "Prismatic Slime",
             "Settings": {}
           },
           {
@@ -13479,10 +13416,6 @@
       },
       {
         "MonsterTypes": [
-          {
-            "MonsterName": "Prismatic Slime",
-            "Settings": {}
-          },
           {
             "MonsterName": "Iridium Bat",
             "Settings": {}
@@ -14401,28 +14334,6 @@
             }
           },
           {
-            "MonsterName": "Cursed Doll",
-            "Settings": {
-              "HP": 250,
-              "Damage": 10,
-              "Defense": 3,
-              "DodgeChance": 5,
-              "EXP": 15,
-              "RelatedSkill": "Combat",
-              "MinimumSkillLevel": 7,
-              "PercentExtraHPPerSkillLevel": 3,
-              "PercentExtraDamagePerSkillLevel": 1,
-              "PercentExtraDefensePerSkillLevel": 1,
-              "PercentExtraDodgeChancePerSkillLevel": 2,
-              "PercentExtraEXPPerSkillLevel": 1,
-              "CurrentHP": 100,
-              "PersistentHP": true,
-              "SeesPlayersAtSpawn": false,
-              "FacingDirection": "Left",
-              "SpawnWeight": 1
-            }
-          },
-          {
             "MonsterName": "Bug",
             "Settings": {
               "SpawnWeight": 1
@@ -14495,28 +14406,6 @@
             "MonsterName": "Cave Grub",
             "Settings": {
               "SpawnWeight": 2
-            }
-          },
-          {
-            "MonsterName": "Cursed Doll",
-            "Settings": {
-              "HP": 250,
-              "Damage": 10,
-              "Defense": 3,
-              "DodgeChance": 5,
-              "EXP": 15,
-              "RelatedSkill": "Combat",
-              "MinimumSkillLevel": 7,
-              "PercentExtraHPPerSkillLevel": 3,
-              "PercentExtraDamagePerSkillLevel": 1,
-              "PercentExtraDefensePerSkillLevel": 1,
-              "PercentExtraDodgeChancePerSkillLevel": 2,
-              "PercentExtraEXPPerSkillLevel": 1,
-              "CurrentHP": 100,
-              "PersistentHP": true,
-              "SeesPlayersAtSpawn": false,
-              "FacingDirection": "Left",
-              "SpawnWeight": 1
             }
           },
           {
@@ -15372,12 +15261,6 @@
             }
           },
           {
-            "MonsterName": "Cursed Doll",
-            "Settings": {
-              "SpawnWeight": 1
-            }
-          },
-          {
             "MonsterName": "Stone Golem",
             "Settings": {
               "SpawnWeight": 7
@@ -16057,19 +15940,6 @@
       {
         "MonsterTypes": [
           {
-            "MonsterName": "Pepper Rex",
-            "Settings": {
-              "HP": 2000,
-              "Damage": 30,
-              "Defense": 5,
-              "DodgeChance": 15,
-              "RelatedSkill": "Combat",
-              "MinimumSkillLevel": 3,
-              "Sprite": "Characters/Monsters/Bad Ghost",
-              "SpawnWeight": 1
-            }
-          },
-          {
             "MonsterName": "Carbon Ghost",
             "Settings": {
               "SpawnWeight": 3
@@ -16501,10 +16371,6 @@
       {
         "MonsterTypes": [
           {
-            "MonsterName": "Cursed Doll",
-            "Settings": {}
-          },
-          {
             "MonsterName": "Haunted Skull",
             "Settings": {}
           },
@@ -16540,6 +16406,263 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Prismatic Slime",
+            "Settings": {
+              "SpawnWeight": 1
+            }
+          }
+        ],
+        "UniqueAreaID": "AreaSecretBossLvl2prismaslime",
+        "MapName": "Custom_AreaSecretBossLvl2",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "14,20/22,24"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=prismaticJellyDrop": "True",
+            "HasFlag |contains=WizardReward": "False"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Prismatic Slime",
+            "Settings": {
+              "SpawnWeight": 1
+            }
+          }
+        ],
+        "UniqueAreaID": "DarkCave3prismaslime",
+        "MapName": "Custom_DarkCave3",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "6,15/33,30"
+        ],
+        "ExcludeCoordinates": [
+          "15,36/22,40"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=prismaticJellyDrop": "True",
+            "HasFlag |contains=WizardReward": "False"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Prismatic Slime",
+            "Settings": {
+              "SpawnWeight": 1
+            }
+          }
+        ],
+        "UniqueAreaID": "AreaSecretBossLvl3prismaslime",
+        "MapName": "Custom_AreaSecretBossLvl3",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "9,5/24,14"
+        ],
+        "ExcludeCoordinates": [
+          "35,3/37,6"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=prismaticJellyDrop": "True",
+            "HasFlag |contains=WizardReward": "False"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Cursed Doll",
+            "Settings": {
+              "HP": 750,
+              "Damage": 10,
+              "Defense": 3,
+              "DodgeChance": 5,
+              "EXP": 15,
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 7,
+              "PercentExtraHPPerSkillLevel": 3,
+              "PercentExtraDamagePerSkillLevel": 1,
+              "PercentExtraDefensePerSkillLevel": 1,
+              "PercentExtraDodgeChancePerSkillLevel": 2,
+              "PercentExtraEXPPerSkillLevel": 1,
+              "CurrentHP": 100,
+              "PersistentHP": true,
+              "SeesPlayersAtSpawn": false,
+              "FacingDirection": "Left",
+              "SpawnWeight": 4
+            }
+          }
+        ],
+        "UniqueAreaID": "CursedDollSpawns",
+        "MapName": "Custom_SecretBaseRoom",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "38,28/44,41",
+          "3,5/19,15",
+          "1,32/7,41"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 620,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag": "cursed_doll"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Pepper Rex",
+            "Settings": {
+              "HP": 2000,
+              "Damage": 30,
+              "Defense": 5,
+              "DodgeChance": 15,
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 3,
+              "Sprite": "Characters/Monsters/Bad Ghost",
+              "SpawnWeight": 1
+            }
+          }
+        ],
+        "UniqueAreaID": "BridgeEnemies",
+        "MapName": "Custom_AreaSecretBossLvl4",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 4,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "13,52/15,66",
+          "10,66/17,69"
+        ],
+        "ExcludeCoordinates": [
+          "11,13;16,21"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "PLAYER_KILLED_MONSTERS Any Cursed Doll 1"
+          ],
           "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null

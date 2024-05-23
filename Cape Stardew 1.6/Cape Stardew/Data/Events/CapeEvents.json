@@ -74,7 +74,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Custom_DarkCave3",
       "Entries": {
-        "14635120/t 600 2600/i Cape.SecretCaveKey": "VolcanoMines2/-1000 -1000/farmer 19 19 0/fade unfade/viewport 15 11 true unfreeze/move farmer 0 -8 0/pause 500/faceDirection farmer left/pause 500/pause 500/addObject 18 11 Cape.SecretCaveKey/message \"{{i18n:key.cs.e.001}}\"/pause 500/move farmer 0 0 1/move farmer 0 0 0/removeObject 18 11/removeItem Cape.SecretCaveKey/removeQuest CapeQuestA/pause 500/globalFade/viewport -1000 -1000/pause 100/playSound secret1/changeLocation Custom_DarkCave3Unlock/warp farmer 19 11 True/viewport 18 9/fade unfade/addMailReceived secretcavekey/pause 500/move farmer 0 -1 0/fade unfade/pause 300/end warpOut"
+        "14635120/i Cape.SecretCaveKey": "VolcanoMines2/-1000 -1000/farmer 19 19 0/fade unfade/viewport 15 11 true unfreeze/move farmer 0 -8 0/pause 500/faceDirection farmer left/pause 500/pause 500/addObject 18 11 Cape.SecretCaveKey/message \"{{i18n:key.cs.e.001}}\"/pause 500/move farmer 0 0 1/move farmer 0 0 0/removeObject 18 11/removeItem Cape.SecretCaveKey/removeQuest CapeQuestA/pause 500/globalFade/viewport -1000 -1000/pause 100/playSound secret1/changeLocation Custom_DarkCave3Unlock/warp farmer 19 11 True/viewport 18 9/fade unfade/addMailReceived secretcavekey/pause 500/move farmer 0 -1 0/fade unfade/pause 300/end warpOut"
       },
       },
     
@@ -388,7 +388,7 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Custom_SecretBase",
 	"When": {
-	"SecretBaseMultiplayer": true,
+	"JelliLunar": true,
 	},
 			"Entries": {
 			 "14635explod": "continue/-2000 -2000/farmer -100 -100 0/fade/viewport 18 4 true/playSound cRumble/viewport move 2 -1 200/pause 2000/pause 5/viewport move -1 2 200/pause 5/viewport move -2 1 200/pause 5/viewport move -1 -2 200/pause 5/viewport move 2 1 200/pause 5 viewport move -1 2 200/pause 5/viewport move -1 2 200/pause 5/viewport move -2 1 200/pause 5/viewport move -1 -2 200/pause 5/viewport move 2 1 200/pause 5/pause 50/globalFade/viewport -1000 -1000/end",

@@ -108,7 +108,7 @@
     },
   {
       "Name": "EssenceComplete",
-      "Value": "{{HasFlag: currentPlayer, hostPlayer, anyPlayer |contains=essence1}}"
+      "Value": "{{HasFlag: anyPlayer |contains=essence1}}"
     },
   
     {
@@ -117,11 +117,11 @@
     },
     {
       "Name": "SecretBaseMultiplayer",
-      "Value": "{{HasSeenEvent: currentPlayer, hostPlayer, anyPlayer |contains=14635explod}}"
+      "Value": "{{HasSeenEvent: anyPlayer |contains=14635explod}}"
     },
     {
       "Name": "UnlockSecretBase",
-      "Value": "{{HasSeenEvent: currentPlayer, hostPlayer, anyPlayer |contains=14635333}}"
+      "Value": "{{HasSeenEvent: anyPlayer |contains=14635333}}"
     },
     {
       "Name": "PokefyCape",
@@ -129,23 +129,23 @@
     },
     {
       "Name": "SecretCaveUnlocked",
-      "Value": "{{HasSeenEvent: currentPlayer, hostPlayer, anyPlayer |contains=14635120}}"
+      "Value": "{{HasSeenEvent: anyPlayer |contains=14635120}}"
     },
     {
       "Name": "SecretCaveKeyUnlocked",
-      "Value": "{{HasFlag: currentPlayer, hostPlayer, anyPlayer |contains=secretcavekey}}"
+      "Value": "{{HasFlag: anyPlayer |contains=secretcavekey}}"
     },
     {
       "Name": "SomeoneUnlockedBoat",
-      "Value": "{{HasSeenEvent: currentPlayer, hostPlayer, anyPlayer |contains=14635104}}"
+      "Value": "{{HasSeenEvent: anyPlayer |contains=14635104}}"
     },
     {
       "Name": "JelliWarper",
-      "Value": "{{HasSeenEvent: currentPlayer, hostPlayer anyPlayer |contains=146353398}}"
+      "Value": "{{HasSeenEvent: anyPlayer |contains=146353398}}"
     },
     {
       "Name": "JWarp",
-      "Value": "{{HasFlag: currentPlayer, hostPlayer, anyPlayer |contains=Jelliwarp}}"
+      "Value": "{{HasFlag: anyPlayer |contains=Jelliwarp}}"
     },
     {
       "Name": "SeaCavernCombatant",
@@ -1159,6 +1159,10 @@
     {
       "Action": "Include",
       "FromFile": "Hats/Captains Seafarer Hat/hat.json"
+    },
+     {
+      "Action": "Include",
+      "FromFile": "Hats/Mermaids Veil/hat.json"
     },
      
         {

@@ -18,21 +18,36 @@
                 "leoValleyArrival": "{{i18n:CT.Nora.LeoArrival}}",
                 "MovieInvitation": "{{i18n:Nora.MovieInvitation}}",
                 "DumpsterDiveComment": "{{i18n:CT.Nora.DumpsterDiving}}",
+                "GreenRain": "{{i18n:CT.Nora.GreenRain.1}}",
+                "GreenRain2": "{{i18n:CT.Nora.GreenRain.2}}",
 
                 // ARV
                 "SterlingDrugs": "{{i18n:CT.Nora.SterlingDrugs}}",
                 "SterlingRelapse": "{{i18n:CT.Nora.SterlingFight}}",
 
+                // LUCICKIEL
+                "LucickielArrives": "{{i18n:CT.Nora.LucickielArrives}}",
+                "ReputationIncreased": "{{i18n:CT.Nora.ReputationIncreased}}",
+
                 // Eli & Dylan
                 "EliIntro": "{{i18n:CT.Nora.EliIntro}}",
+                "EliSaloon": "{{i18n:CT.Nora.EliSaloon}}",
+                "EliGuild": "{{i18n:CT.Nora.EliGuild}}",
+                "EliGuestRoom": "{{i18n:CT.Nora.EliGuestRoom}}",
                 "DylanIntro": "{{i18n:CT.Nora.DylanIntro}}",
                 "DylanBeach": "{{i18n:CT.Nora.DylanBeach}}",
+                "DylanTown": "{{i18n:CT.Nora.DylanTown}}",
+                "DylanSaloon": "{{i18n:CT.Nora.DylanSaloon}}",
+                "DylanLibrary": "{{i18n:CT.Nora.DylanLibrary}}",
+                "DylanLesson": "{{i18n:CT.Nora.DylanLesson}}",
+                "DylanCCAquarium": "{{i18n:CT.Nora.DylanCCAquarium}}",
+                "SootIntro": "{{i18n:CT.Nora.SootIntro}}",
 
                 // Jean & Jorts
                 "MeetTheCats": "{{i18n:CT.Nora.Jean&Jorts}}",
                 "ButteredJorts": "{{i18n:CT.Nora.ButteredJorts}}",
 
-                // Professor Jasper Thomas + Juliet and Jessie
+                // Lemur's NPCs
                 "JasperGone2": "{{i18n:CT.Nora.JasperMissing}}",
                 "JasperHomeA": "{{i18n:CT.Nora.JasperBack}}",
                 "JulietGremlin": "{{i18n:CT.Nora.JulietGremlin}}",
@@ -47,7 +62,7 @@
 
                 // Never Ending Adventure
                 "MateoConfrontation": "{{i18n:CT.Nora.MateoConfrontation}}",
-                "MateoPain": "{{i18n:CT.Nora.MateoInjured}}",
+                "MateoPain": "{{i18n:CT.Nora.MateoPain}}",
                 "GuildComplete": "{{i18n:CT.Nora.GuildComplete}}",
                 "GuildFinale": "{{i18n:CT.Nora.GuildFinale}}",
 
@@ -56,7 +71,12 @@
 
                 // Diamond in the Rought
                 "DitR_CT_ShadowPlay": "{{i18n:CT.Nora.DitR_CT_ShadowPlay}}",
-                "DitR_CT_SensFlowers": "{{i18n:CT.Nora.DitR_CT_SensFlowers}}"
+                "DitR_CT_SensFlowers": "{{i18n:CT.Nora.DitR_CT_SensFlowers}}",
+
+                // Clown's NPCs
+                "FC.JohnsArrival": "{{i18n:CT.Nora.JohnsArrival}}",
+                "FC.FaintingIncident": "{{i18n:CT.Nora.FaintingIncident}}",
+                "FC.BusFire": "{{i18n:CT.Nora.BusFire}}"
             }
         }
     ]

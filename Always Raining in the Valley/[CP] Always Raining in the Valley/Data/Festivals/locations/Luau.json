@@ -57,8 +57,65 @@
                 "Delimiter": "/"
               }
             ]
-          }
+          },
    
+          { 
+            "LogName":"Sterling Luau",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                "Value": "Sterling 52 14 1",
+                "Delimiter": "/"
+              },
+              {
+                "Operation": "Append",
+                "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                "Value": "Sterling 43 15 3",
+                "Delimiter": "/"
+              }
+            ]
+          },
+          { 
+            "LogName":"Henry Luau",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                "Value": "Henry 52 15 1",
+                "Delimiter": "/"
+              },
+              {
+                "Operation": "Append",
+                "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                "Value": "Henry 44 15 3",
+                "Delimiter": "/"
+              }
+            ]
+          },
+          { 
+            "LogName":"Mia Luau",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                "Value": "Mia 45 12 1",
+                "Delimiter": "/"
+              },
+              {
+                "Operation": "Append",
+                "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                "Value": "Mia 44 14 3",
+                "Delimiter": "/"
+              }
+            ]
+          }
    
 ]
 }

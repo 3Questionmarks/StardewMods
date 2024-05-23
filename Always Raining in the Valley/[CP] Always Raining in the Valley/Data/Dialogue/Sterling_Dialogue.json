@@ -272,7 +272,7 @@
 	"winter_Sun4": "Here farmer, Mia and I baked some Blueberry Tarts last night, it's my favorite.#$b#You should have some, let her know how you liked it. [234]",
 	"winter_Sun6": "Some hot chocolate, farmer? Don't worry, this one's not spiked with anything. [395]",
 	"winter_Sun8": "You must be exhausted, @ , because you've been running through my mind all day.#$e#Do be sure to be taking it easy.$9",
-	"winter_Sun10":"I almost headed to the saloon tonight. I guess old habits do die hard.$12#$b#Why don't we go home and cuddle up by the fire? Watch the breakfast club.$1#$e#... Hold hands under the covers...#$b#%Sterling nuzzles against your ear gently.",
+	"winter_Sun10":"I almost headed to the saloon tonight. I guess old habits do die hard.$12#$b#Why don't we go home and cuddle up by the fire? Watch the breakfast club.$1#$e#... Hold hands under the covers...#$b#%Sterling nuzzles against your ear gently."
 
 }
 		},
@@ -282,10 +282,10 @@
 					"Target": "Characters/Dialogue/Sterling",
 					"Entries": 	{
 							
-						"spring_Wed":"Hey, farmer. I didn't work today, so Mia spent the morning teaching Henry and I how to make these.{{spacechase0.JsonAssets/ObjectId:Bear Pancakes}}#$b#Cute, aren't they?$1",
-						"summer_Mon":"Oh hi, @! Be careful with the heat out there, I feel like I'm just about to melt.#$b#Mia sent me with some tasty lemonade to keep me hydrated though, here, I'll share.{{spacechase0.JsonAssets/ObjectId:Summer Pink Lemonade}}",
-						"fall_Sun":"Hey, farmer. I didn't work today, so Mia spent the morning teaching Henry and I how to make these.{{spacechase0.JsonAssets/ObjectId:Bear Pancakes}}#$b#Cute, aren't they?$1",
-						"winter_Thu":"Hey farmer, are you a cold? Cus I'd like to catch you sometime.$10#$b#Ya know, so that you don't fall and all?$1#$e#Here, this is for you.{{spacechase0.JsonAssets/ObjectId:Starshot Cappuccino}}"
+						"spring_Wed":"Hey, farmer. I didn't work today, so Mia spent the morning teaching Henry and I how to make these.[HimeTarts.ARV_Bear_Pancakes]#$b#Cute, aren't they?$1",
+						"summer_Mon":"Oh hi, @! Be careful with the heat out there, I feel like I'm just about to melt.#$b#Mia sent me with some tasty lemonade to keep me hydrated though, here, I'll share.[HimeTarts.ARV_Summer_Pink_Lemonade]",
+						"fall_Sun":"Hey, farmer. I didn't work today, so Mia spent the morning teaching Henry and I how to make these.[HimeTarts.ARV_Bear_Pancakes]#$b#Cute, aren't they?$1",
+						"winter_Thu":"Hey farmer, are you a cold? Cus I'd like to catch you sometime.$10#$b#Ya know, so that you don't fall and all?$1#$e#Here, this is for you.[HimeTarts.ARV_Starshot_Cappuccino]"
 								},
 
 						"When": {"Hearts:Sterling": "5"}
@@ -296,7 +296,7 @@
 				"Target": "Characters/Dialogue/Sterling",
 				"Entries": 	{
 						
-					"SeedShop_Entry": "{{Random:Missed me old man?++What's up, Pierre!++Good to see you Pierre!++Cry no more, Pierre. I'm here!|inputSeparator=++}}",
+					"SeedShop_Entry": "{{Random:Missed me old man?++What's up, Pierre!++Good to see you Pierre!++Cry no more, Pierre. I'm here!|inputSeparator=++}}"
 
 								},
 
@@ -323,7 +323,7 @@
 
 							},
 
-				"When": {"HasSeenEvent |contains= 40180011": true,},
+				"When": {"HasSeenEvent |contains= 40180011": true}
 	},
 	{
     "LogName": "Pierre ARV Dialogue",

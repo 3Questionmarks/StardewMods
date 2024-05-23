@@ -447,6 +447,13 @@
 					"GeodeDropsDefaultItems": true,
 					"GeodeDrops": [
 						{
+							"Chance": 0.1,
+							"Precedence": -200,
+							"Id": "Lumisteria.MtVapius_RareMissingGem",
+							"ItemId": "VMV.MISSING_ARTIFACT_OR_ITEM (O)Lumisteria.MtVapius_AmberFern --filter ITEM_CATEGORY Target -2, ITEM_ID_PREFIX Target Lumisteria.MtVapius_",
+							"MaxItems": 1,
+						},
+						{
 							"Chance": 0.2,
 							"Precedence": -100,
 							"Id": "Lumisteria.MtVapius_Tier3Gem",
@@ -792,7 +799,7 @@
 					"Type": "Basic",
 					"Price": 900,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Jewels",
-					"SpriteIndex": 22,
+					"SpriteIndex": 30,
 					"ContextTags": [
 						"mt_vapius",
 						"color_white",
@@ -824,7 +831,7 @@
 					"Type": "Basic",
 					"Price": 280,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Jewels",
-					"SpriteIndex": 24,
+					"SpriteIndex": 28,
 					"ContextTags": [
 						"mt_vapius",
 						"color_white",
@@ -1628,6 +1635,13 @@
 					"GeodeDropsDefaultItems": false,
 					"GeodeDrops": [
 						{
+							"Chance": 0.02,
+							"Precedence": -200,
+							"Id": "Lumisteria.MtVapius_RareMissingArtifact",
+							"ItemId": "VMV.MISSING_ARTIFACT_OR_ITEM (O)Lumisteria.MtVapius_Treasures_EfficientCog --filter ITEM_OBJECT_TYPE Target Arch, ITEM_ID_PREFIX Target Lumisteria.MtVapius_",
+							"MaxItems": 1,
+						},
+						{
 							"Chance": 1.0,
 							"Precedence": 0,
 							"Id": "Default",
@@ -1775,6 +1789,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_fish",
+						"trout_item",
 						"color_black",
 					],
 				},
@@ -1855,6 +1870,7 @@
 						"mt_vapius",
 						"mt_vapius_fish",
 						"color_green",
+						"trout_item",
 					],
 				},
 				"Lumisteria.MtVapius_PlanetFish": {
@@ -1898,6 +1914,7 @@
 						"mt_vapius_plant",
 						"color_orange",
 						"edible_flower_item",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_FireBeans": {
@@ -1947,6 +1964,7 @@
 						"mt_vapius_flower",
 						"mt_vapius_plant",
 						"color_blue",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_PinkMorningGlory": {
@@ -1964,6 +1982,7 @@
 						"mt_vapius_flower",
 						"mt_vapius_plant",
 						"color_pink",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_Nymphea": {
@@ -1981,6 +2000,7 @@
 						"mt_vapius_flower",
 						"mt_vapius_plant",
 						"color_purple",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_StarShapedFlower": {
@@ -2001,6 +2021,7 @@
 						"stellar_item",
 						"color_pink",
 						"edible_flower_item",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_MoonPods": {
@@ -2057,6 +2078,7 @@
 						"stellar_item",
 						"color_pink",
 						"edible_flower_item",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_GalaxyFruit": {
@@ -2140,6 +2162,8 @@
 						"mt_vapius_plant",
 						"ingredient_herb",
 						"ingredient_basil",
+						"herb_item",
+						"basil_item",
 						"color_green",
 					],
 				},
@@ -2157,6 +2181,7 @@
 						"mt_vapius",
 						"mt_vapius_plant",
 						"color_green",
+						"oliveoil_item",
 					],
 				},
 				"Lumisteria.MtVapius_VoidOlive": {
@@ -2207,6 +2232,7 @@
 						"mt_vapius_plant",
 						"mt_vapius_flower",
 						"color_blue",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_Hellebore": {
@@ -2224,6 +2250,7 @@
 						"mt_vapius_plant",
 						"mt_vapius_flower",
 						"color_purple",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_Fugacine": {
@@ -2241,6 +2268,8 @@
 						"mt_vapius_plant",
 						"mt_vapius_flower",
 						"color_orange",
+						"edible_flower_item",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_Elfcup": {
@@ -2258,6 +2287,7 @@
 						"mt_vapius_plant",
 						"mt_vapius_flower",
 						"color_cyan",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_SweetMyriadin": {
@@ -2275,6 +2305,8 @@
 						"mt_vapius_plant",
 						"mt_vapius_flower",
 						"color_blue",
+						"edible_flower_item",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_Neralbane": {
@@ -2292,6 +2324,7 @@
 						"mt_vapius_plant",
 						"mt_vapius_flower",
 						"color_black",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_RedBouquet": {
@@ -2309,6 +2342,7 @@
 						"mt_vapius_plant",
 						"mt_vapius_flower",
 						"color_red",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_BalmcreekCarillon": {
@@ -2326,6 +2360,7 @@
 						"mt_vapius_plant",
 						"mt_vapius_flower",
 						"color_yellow",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_GoblinGentian": {
@@ -2343,6 +2378,7 @@
 						"mt_vapius_plant",
 						"mt_vapius_flower",
 						"color_pink",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_VelvetIris": {
@@ -2360,6 +2396,7 @@
 						"mt_vapius_plant",
 						"mt_vapius_flower",
 						"color_purple",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_Cosmos": {
@@ -2379,6 +2416,7 @@
 						"stellar_plant",
 						"stellar_item",
 						"color_white",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_LambLettuce": {
@@ -2464,6 +2502,8 @@
 						"mt_vapius_plant",
 						"mt_vapius_flower",
 						"color_blue",
+						"edible_flower_item",
+						"flower_item",
 					],
 				},
 				"Lumisteria.MtVapius_Ringfruit": {
@@ -3039,6 +3079,21 @@
 						"mt_vapius_seeds",
 					],
 				},
+				"Lumisteria.MtVapius_BlueCloverSeeds": {
+					"Name": "Mountain Meadow Seeds",
+					"DisplayName": "{{i18n: MtVapiusBlueCloverSeeds_Translated}}",
+					"Description": "{{i18n: MtVapiusBlueCloverSeeds_Description_Translated}}",
+					"Edibility": "-300",
+					"Type": "Seeds",
+					"Category": -74,
+					"Price": 5,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Seeds",
+					"SpriteIndex": 41,
+					"ContextTags": [
+						"mt_vapius",
+						"mt_vapius_seeds",
+					],
+				},
 			}
 		},
 		/*Sapling*/
@@ -3181,6 +3236,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_forage",
+						"flower_item",
 						"color_purple",
 					],
 				},
@@ -3197,6 +3253,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_forage",
+						"flower_item",
 						"color_purple",
 					],
 				},
@@ -3230,6 +3287,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_forage",
+						"flower_item",
 						"color_pink",
 					],
 				},
@@ -3298,6 +3356,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_forage",
+						"flower_item",
 						"color_pink",
 					],
 				},
@@ -3332,7 +3391,26 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_forage",
+						"flower_item",
 						"color_grey",
+						"seedmaker_banned",
+					],
+				},
+				"Lumisteria.MtVapius_BlueClover": {
+					"Name": "Blue Clover",
+					"DisplayName": "{{i18n: MtVapiusBlueClover_Translated}}",
+					"Description": "{{i18n: MtVapiusBlueClover_Description_Translated}}",
+					"Edibility": "3",
+					"Type": "Forage",
+					"Category": -81,
+					"Price": 10,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Forage",
+					"SpriteIndex": 13,
+					"ContextTags": [
+						"mt_vapius",
+						"mt_vapius_plant",
+						"flower_item",
+						"color_blue",
 						"seedmaker_banned",
 					],
 				},
@@ -3367,7 +3445,7 @@
 					"Edibility": "-300",
 					"Type": "Basic",
 					"Category": -26,
-					"Price": 40,
+					"Price": 1600,
 					"Texture": "Mods\\Lumisteria.MtVapius\\ArtisanGoods",
 					"SpriteIndex": 1,
 					"ContextTags": [
@@ -3596,7 +3674,7 @@
 					"SpriteIndex": 7,
 					"ContextTags": [
 						"mt_vapius",
-						"ingredient_cream",
+						"cream_item",
 						"color_white",
 					],
 				},
@@ -4107,6 +4185,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
+						"mt_vapius_marketrecipe",
 						"color_white",
 					],
 					"IsDrink": false
@@ -4159,6 +4238,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
+						"mt_vapius_marketrecipe",
 						"color_white",
 					],
 					"IsDrink": false
@@ -4193,7 +4273,8 @@
 					"IsDrink": false,
 					"Buffs": [
 						{
-							"Duration": 860,
+							"Id": "Lumisteria.MtVapius_Default",
+							"Duration": 400,
 							"CustomAttributes": {
 								"FarmingLevel": 0,
 								"FishingLevel": 0,
@@ -4284,6 +4365,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
+						"mt_vapius_marketrecipe",
 						"color_brown",
 						"food_bakery",
 					],
@@ -4302,6 +4384,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
+						"mt_vapius_marketrecipe",
 						"color_brown",
 						"food_toast",
 						"food_breakfast",
@@ -4321,9 +4404,20 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
+						"mt_vapius_marketrecipe",
 						"color_brown",
 						"food_toast",
 						"food_breakfast",
+					],
+					"Buffs": [
+						{
+							"Id": "Lumisteria.MtVapius_Default",
+							"Duration": 600,
+							"CustomAttributes": {
+								"MaxStamina": 1,
+							},
+							"CustomFields": {}
+						},
 					],
 					"IsDrink": false
 				},
@@ -4414,6 +4508,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
+						"mt_vapius_marketrecipe",
 						"color_gold",
 						"food_bakery",
 					],
@@ -4451,6 +4546,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
+						"mt_vapius_marketrecipe",
 						"color_gold",
 						"food_bakery",
 					],
@@ -4487,6 +4583,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
+						"mt_vapius_marketrecipe",
 						"color_gold",
 					],
 				},
@@ -4503,6 +4600,7 @@
 					"ContextTags": [
 						"mt_vapius",
 						"mt_vapius_dish",
+						"mt_vapius_marketrecipe",
 						"color_gold",
 						"food_party",
 					],
@@ -5923,7 +6021,41 @@
 					},
 				}
 			}
-		}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [
+				"Lumisteria.MtVapius_Cooking_EggAndToast",
+				"Buffs",
+				"Lumisteria.MtVapius_Default",
+				"CustomFields",
+			],
+			"Entries": {
+                                "spacechase.SpaceCore.SkillBuff.moonslime.Cooking": "2"
+				
+			},
+			"When": {
+				"HasMod": "moonslime.CookingSkill",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [
+				"Lumisteria.MtVapius_Cooking_JamPie",
+				"Buffs",
+				"Lumisteria.MtVapius_Default",
+				"CustomFields",
+			],
+			"Entries": {
+                                "spacechase.SpaceCore.SkillBuff.moonslime.Archaeology": "2"
+				
+			},
+			"When": {
+				"HasMod": "moonslime.ArchaeologySkill",
+			}
+		},
 
 	]
 }

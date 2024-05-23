@@ -45,7 +45,7 @@
             "Target": "Maps/Farm",
             "FromFile": "assets/Maps/Trapdoor.tbin",
 	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
-            "ToArea": { "X": 59, "Y": 15, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
 	    "PatchMode": "overlay",
 	    "When": {
 		"sillyMovedIn": "true",
@@ -59,7 +59,7 @@
             "Target": "Maps/Farm_Fishing",
             "FromFile": "assets/Maps/Trapdoor.tbin",
 	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
-            "ToArea": { "X": 59, "Y": 15, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
 	    "PatchMode": "overlay",
 	    "When": {
 		"sillyMovedIn": "true",
@@ -72,7 +72,7 @@
             "Target": "Maps/Farm_Combat",
             "FromFile": "assets/Maps/Trapdoor.tbin",
 	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
-            "ToArea": { "X": 59, "Y": 15, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
 	    "PatchMode": "overlay",
 	    "When": {
 		"sillyMovedIn": "true",
@@ -85,7 +85,7 @@
             "Target": "Maps/Farm_Foraging",
             "FromFile": "assets/Maps/Trapdoor.tbin",
 	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
-            "ToArea": { "X": 59, "Y": 15, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
 	    "PatchMode": "overlay",
 	    "When": {
 		"sillyMovedIn": "true",
@@ -98,7 +98,7 @@
             "Target": "Maps/Farm_Mining",
             "FromFile": "assets/Maps/Trapdoor.tbin",
 	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
-            "ToArea": { "X": 59, "Y": 15, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
 	    "PatchMode": "overlay",
 	    "When": {
 		"sillyMovedIn": "true",
@@ -111,7 +111,7 @@
             "Target": "Maps/Farm_FourCorners",
             "FromFile": "assets/Maps/Trapdoor.tbin",
 	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
-            "ToArea": { "X": 59, "Y": 15, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
 	    "PatchMode": "overlay",
 	    "When": {
 		"sillyMovedIn": "true",
@@ -124,7 +124,7 @@
             "Target": "Maps/Farm_Island",
             "FromFile": "assets/Maps/Trapdoor.tbin",
 	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
-            "ToArea": { "X": 59, "Y": 15, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
 	    "PatchMode": "overlay",
 	    "When": {
 		"sillyMovedIn": "true",
@@ -137,7 +137,7 @@
             "Target": "Maps/Farm_Ranching",
             "FromFile": "assets/Maps/Trapdoor.tbin",
 	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
-            "ToArea": { "X": 76, "Y": 19, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
 	    "PatchMode": "overlay",
 	    "When": {
 		"sillyMovedIn": "true",
@@ -176,7 +176,7 @@
             "Target": "Maps/BusStop",
             "FromFile": "assets/Maps/Trapdoor.tbin",
 	    "FromArea": { "X": 1, "Y": 0, "Width": 1, "Height": 1},
-            "ToArea": { "X": 17, "Y": 4, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{BusStopBPosX}}}}", "Y": "{{Query:{{BusStopBPosY}}}}", "Width": 1, "Height": 1},
 	    "PatchMode": "overlay",
 	    "When": {
 		"sillyMovedIn": "true",
@@ -189,7 +189,7 @@
             "Target": "Maps/Farm",
             "FromFile": "assets/Maps/Trapdoor.tbin",
 	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
-            "ToArea": { "X": 90, "Y": 49, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
 	    "PatchMode": "overlay",
 	    "When": {
 		"sillyMovedIn": "true",
@@ -204,7 +204,7 @@
             "Target": "Maps/zanderb14_IF2Fix",
             "FromFile": "assets/Maps/Trapdoor.tbin",
 	    "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1},
-            "ToArea": { "X": 90, "Y": 49, "Width": 1, "Height": 1},
+            "ToArea": { "X": "{{Query:{{FarmBPosX}}}}", "Y": "{{Query:{{FarmBPosY}}}}", "Width": 1, "Height": 1},
 	    "PatchMode": "overlay",
 	    "When": {
 		"sillyMovedIn": "true",
@@ -261,6 +261,7 @@
 	    "FromArea": { "X": 0, "Y": 0, "Width": 7, "Height": 12},
             "ToArea": { "X": 14, "Y": 0, "Width": 7, "Height": 12},
 	    "PatchMode": "replace",
+            "Update": "OnTimeChange, OnLocationChange",
 	    "When": {
 			"HasFlag: hostPlayer |contains=choseZinnia": "true",
 		},
@@ -274,6 +275,7 @@
 	    "FromArea": { "X": 7, "Y": 0, "Width": 7, "Height": 12},
             "ToArea": { "X": 14, "Y": 0, "Width": 7, "Height": 12},
 	    "PatchMode": "replace",
+            "Update": "OnTimeChange, OnLocationChange",
 	    "When": {
 			"HasFlag: hostPlayer |contains=choseGabriel": "true",
 		},
@@ -315,11 +317,11 @@
         	 "Operation": "Append",
          	"Target": ["MapProperties", "Lights"],
          	"Value": "16 1 4 19 1 4",
-         	"Delimiter": " " // if there are already values, add a space between them and the new ones
+         	"Delimiter": " " 
       		},
    		],
 	     "When": {
-			"HasFlag: hostPlayer |contains=choseZinnia, choseGabriel": "true",
+			"HasFlag: currentPlayer |contains=choseZinnia, choseGabriel": "true",
 		},
 	},
 
@@ -535,7 +537,7 @@
      "Action": "EditData",
      "Target": "Strings/StringsFromMaps",
      "Entries": {
-		"GabeGuild.98": "{{i18n:MapStrings.GabeGuild.98}}",
+		"GabeGuild.98": "{{i18n:MapStrings.GabeGuild.98|PlayerName={{PlayerName}} }}",
 		"ZinniaRoom.1": "{{i18n:MapStrings.ZinniaRoom.1}}",
 		"ZinniaRoom.2": "{{i18n:MapStrings.ZinniaRoom.2}}",
 		"ZinniaRoom.3": "{{i18n:MapStrings.ZinniaRoom.3}}",
@@ -623,7 +625,7 @@
         	 	"Operation": "Append",
          		"Target": ["MapProperties", "NPCWarp"],
          		"Value": "20 22 Custom_GE_MonsterHouse 10 4",
-         		"Delimiter": " " // if there are already values, add a space between them and the new ones
+         		"Delimiter": " " 
       			},
    			],
 	     	},
@@ -675,10 +677,10 @@
             "Action": "EditData",
             "Target": "Mods/shekurika.EventLookup/locationnames",
             "Entries": {
-                "Custom_GE_MonsterResearchWing": "Monster Research Wing",
-		"Custom_GE_ZinniaRoom": "Gabriel and Zinnia's Room",
-		"Custom_GE_FlowerParadise": "Flower Paradise",
-		"Custom_GE_MonsterHouse": "Monster Basement",
+                "Custom_GE_MonsterResearchWing": "{{i18n:Custom_GE_MonsterResearchWing.Name}}",
+		"Custom_GE_ZinniaRoom": "{{i18n:Custom_GE_ZinniaRoom.Name}}",
+		"Custom_GE_FlowerParadise": "{{i18n:Custom_GE_FlowerParadise.Name}}",
+		"Custom_GE_MonsterHouse": "{{i18n:Custom_GE_MonsterHouse.Name}}",
             },
 	    "When": {
 		"HasMod": "shekurika.EventLookup",

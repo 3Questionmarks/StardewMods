@@ -739,10 +739,10 @@
 		
 		 {
     "Action": "EditMap",
-    "Target": "Maps/Custom_CapeCave",
+    "Target": "Maps/Custom_Cape",
     "When": {
-			"JelliWarper": true,
-                "HasFlag": "Jelliwarp",
+			"HasSeenEvent": "146353398",
+                
             },
     "Update": "OnLocationChange",
     "TextOperations": [
@@ -1161,7 +1161,55 @@
 		},
 		
 		
+		{
+			"Action":"EditMap",
+			"Target":"Maps/Custom_AnnettaHouse",
+			"When": {
+                "Season": "Winter",
+                 "Time": "{{Range: 1930, 2600}}",
+                 "Day |contains=5,12,19,26": false,
+                
+            },
+            
+            "Update": "OnLocationChange",
+                "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "20 14 5 21 14 5", 
+                    "Delimiter": " "
+                    
+                }
+            ]
+
+		},
 		
+		{
+			"Action":"EditMap",
+			"Target":"Maps/Custom_AnnettaHouse",
+			"When": {
+                "Weather": "Rain,Storm,Wind,Snow",
+                 "Time": "{{Range: 1030, 2600}}",
+            },
+            
+            "Update": "OnLocationChange",
+                "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "20 14 5 21 14 5", 
+                    "Delimiter": " "
+                    
+                }
+            ]
+
+		},
 		
     ]
 	}

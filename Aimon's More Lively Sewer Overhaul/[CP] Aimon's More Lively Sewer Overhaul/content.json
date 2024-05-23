@@ -59,6 +59,12 @@
             "Target": "Maps/z_custom_sewertiles_aimon111",
             "FromFile": "assets/tilesheets/z_custom_sewertiles_aimon111.png"
         },
+		{
+            "LogName": "z_custom_sewertiles_aimon111",
+            "Action": "Load",
+            "Target": "Maps/z_custom_sewertiles_aimon111_2",
+            "FromFile": "assets/tilesheets/z_custom_sewertiles_aimon111.png"
+        },
         {
             "LogName": "z_custom_sewertileswater_aimon111",
             "Action": "Load",

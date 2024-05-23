@@ -43,16 +43,16 @@
 			},
 		},
 //Grampleton Fields 
-		//{
-			//"Action": "EditImage",
-			//"Target": "Mods/FlashShifter.StardewValleyExpandedCP/{{Season}}_Grampletonfields",
-			//"FromFile": "assets/{{Season}}_GrampletonFields.png",
-			//"Patchmode": "Overlay",
-			//"When": {
-				//"HasMod": "flashshifter.GrampletonFields",
-				//"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
-			//},
-		//},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/{{Season}}_Grampletonfields",
+			"FromFile": "assets/{{Season}}_GrampletonFields.png",
+			"Patchmode": "Overlay",
+			"When": {
+				"HasMod": "flashshifter.GrampletonFields",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			},
+		},
 //Immersive Farm 2 Remastered
 		{
             "Action": "EditImage",
@@ -118,7 +118,7 @@
             "PatchMode": "Overlay",
 			"When": {
 				"HasMod": "FlashShifter.SVECode",
-				"HasMod": "DaisyNiko.EarthyRecolour"
+				"HasMod": "DaisyNiko.EarthyInterface",
 			},
 		},
     ]

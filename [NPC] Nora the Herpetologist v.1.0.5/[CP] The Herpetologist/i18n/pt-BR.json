@@ -127,7 +127,6 @@
 "Core.Nora.Fall.Sun.4h": "Estou me sentindo bem hoje. Motivada. Determinada.#$b#Mais um dia, mais uma vitória, certo?$1#$b#Melhor aproveitar esse foco enquanto dura. Até logo!",
 
 // 4 HEARTS WINTER
-
 "Core.Nora.Winter.Mon.4h": "A estação fria está mais uma vez sobre nós...$2#$b#Como um prenúncio de doença. Um monstro branco que visa pegar todos nós.$5#$b#Como ele continua saindo impune...$2",
 "Core.Nora.Winter.Tue.4h": "Espero que a Tori esteja bem. Eu sei que esta estação bagunça com as pessoas às vezes.$2#$b#Ela está cuidando de sua família no exterior. Estou cuidando dos slimes dela enquanto ela está fora.#$b#É para isso que os amigos servem.$1",
 "Core.Nora.Winter.Wed.4h": "A Rosa é tão querida. Ela sempre conversa comigo quando eu fico na estalagem estudando.$1#$b#É como um santuário lá dentro. Tão quente, tão aconchegante.#$b#E ela tem excelentes histórias para contar.$1",
@@ -259,7 +258,6 @@
 
 // EGG FESTIVAL
 "Festivals.Nora.EggFestival.1": "Acho que para tornar as coisas mais interessantes, deveríamos usar ovos de codorna.#$b#Eles são menores, então são mais difíceis de encontrar.#$b#Seria divertido ver a Abigail tentar encontrá-los!$1",
-
 "Festivals.Nora.EggFestival.2": "Se o Lewis me deixasse participar dessas coisas, eu ganharia.#$b#Não, quero dizer, eu te derrotaria. Destruiria você. Queimaria você até o chão-#$b#Sim, sou um pouco competitiva. Vejo isso agora. É por isso que o Lewis me impediu.",
 
 // FLOWER DANCE
@@ -284,9 +282,11 @@
 
 // ICE FESTIVAL
 "Festivals.Nora.IceFestival": "Definitivamente eu NÃO sou feita para o clima frio.$2#$b#Mas eu ainda venho todos os anos. Gosto de ver todo mundo.#$b#E tem essa fogueira aconchegante aqui, então... nem tudo está ruim, né?$1",
+"Festivals.Nora.IceFestival.2": "Então, este ano eu decidi não ficar perto do fogo e vim construir um boneco de neve! $1#$b#E agora me arrependo de cada única escolha de vida que me levou a este momento. #$b#Pode não parecer, mas estou prestes a congelar. $2",
 
 // WINTER START
 "Festivals.Nora.WinterStar": "Feliz Estrela Invernal, fazendeiro!$1^Feliz Estrela Invernal, fazendeira!$1#$b#Eu peguei alguns gorros aconchegantes para a Pinkie Pie e o Stupid como presentes. Você deveria ver como eles ficam fofos!#$b#Espero que você, também, ganhe um presente muito estiloso!$1#$b#Talvez a gente possa ter suéteres combinando...$3",
+"Festivals.Nora.WinterStar.2": "Feliz Estrela Invernal! Eu tenho um presente extra para você este ano. Uma história. #$b#Você se lembra de eu ter te contado que não sou muito fã de álcool? Pois é, você vê... #$b#Isso porque, durante o meu primeira Estrela Invernal no vale, eu bebi um pouco demais e... bem... $3#$b#Digamos que Lewis pede para as pessoas não dançarem nas mesas todo ano por minha causa. $2#$b# Não foi o meu momento de maior orgulho. $2",
 
 // NIGHT MARKET
 "NightMarket.Nora.1A": "Estou contemplando se devo ou não entrar no submarino.#$b#Agora, é a curiosidade, o senso de aventura e a pesquisadora em mim contra o medo avassalador de ser esmagada até a morte ou afogar.$3#$b#...É, talvez no próximo ano!$1",
@@ -299,16 +299,11 @@
 /// FESTIVALS DIALOGUE - CUSTOM FESTIVALS
 
 "Festivals.Nora.LoveFestival": "Atualmente, não estou procurando amor. Tenho outras prioridades e estou feliz como estou.#$b#Mas gosto de participar deste festival. É fofo ver todos os casais tão românticos.$1#$b#Você não adora o amor, @?",
-
 "Festivals.Nora.SurfingFestivals": "Talvez eu devesse tentar participar pelo menos uma vez...$3#$b#Sabe, só para ver do que se trata toda essa agitação. Mas parece meio perigoso!#$b#Quer dizer, essas ondas são realmente imprevisíveis. As pessoas poderiam se machucar seriamente!$2#$b#Dito isso, desejo boa sorte, @!$1",
-
 "Festivals.Nora.FireworksFestival": "@, você simplesmente TEM que experimentar a comida aqui.#$b#O takoyaki é incrível. E acho que o yakisoba pode ser um dos meus pratos favoritos de todos os tempos.$1#$b#Claro, os fogos de artifício também são legais. Cores brilhantes sempre fazem sucesso para mim, você sabe disso.",
-
 "Festivals.Nora.RidgesideGathering": "Eu não faço ideia do que a Maru está fazendo aqui.$2#$b#Mas ela está mexendo nisso o dia todo. Aposto que vai ser legal.#$b#Eu sou apenas a amiga de apoio emocional. Vamos, meninas!$1",
-
 "Festivals.Nora.EmberOfResolutions": "Essa fogueira é tão aconchegante todo ano... E tão brilhante...#$b#Definitivamente compensa subir tudo isso aqui nesse frio.$1#$b#Você já colocou sua tora lá, @? É algo importante, sabe?",
 "Festivals.Nora.FerngillFashionFestival": "",
-
 "Festivals.Nora.Marketpalooza": "Este realmente é o único dia em que posso comprar 6 xícaras de café em 30 minutos e ninguém pode me julgar.$1#$b#Bem, ninguém pode me julgar MUITO, é claro.$3#$b#Sabe, porque o dinheiro vai para caridade! Estou fazendo isso pela causa, eu juro!#$b#Além disso, o Nikolai está vendendo os incríveis potes de mel que ele faz. O que não há para amar neste festival?$1",
 
 /// GIFTS
@@ -333,179 +328,147 @@
 // STRINGS
 
 "Strings.Nora.ClinicAppointment.1": "Sempre que venho à clínica para a consulta, gosto de me atualizar com a Maru.#$b#Somos parceiras científicas.",
-
 "Strings.Nora.ClinicAppointment.2": "Ai, a gripe. Ela me pega todos os anos.$2#$b#Você já se vacinou, @?",
-
 "Strings.Nora.ClinicAppointment.3": "Por favor, não peça um exame de sangue. Por favor. Eu odeio agulhas.$2",
-
 "Strings.Nora.Research.1": "O problema de procurar camaleões é que eles são muito bons em se camuflar.$2#$b#Ei, me diga se você ver alguma folha com aparência estranha!",
-
 "Strings.Nora.Research.2": "Os camaleões gostam de umidade, então qual lugar melhor para fazer pesquisa do que perto do rio?$1#$b#Além disso, tenho que verificar as propriedades dessa água.$3",
-
 "Strings.Nora.Research.3": "É bom variar os locais ao fazer pesquisa também.#$b#Talvez eu esteja perdendo alguma coisa aqui.",
-
 "Strings.Nora.Research.4": "Está começando a ficar mais frio...#$b#Os camaleões devem estar fazendo camas aconchegantes agora.$1",
-
 "Strings.Nora.Saloon": "Eu tento vir ao saloon de vez em quando mesmo quando estou ocupada.#$b#É bom relaxar um pouco. E também, faço amigos.$1#$b#Aposto que você notou que gosto de conversar, né?",
-
 "Strings.Nora.Studying": "%Nora não parece te ouvir. Ela está focada.",
-
 "Strings.Nora.Gunther.1": "Gunther estava me contando sobre seus estudos.#$b#Ele tem algumas histórias muito interessantes para contar.$1",
-
 "Strings.Nora.StudyRain": "Por mais que eu gostasse de ficar em casa o dia todo, o dever me chama.#$b#Mas eu consigo ver os amigos, então é legal!$1",
-
 "Strings.Nora.Pets.1": "Ah, a Pinkie Pie é tão engraçada. Olhe para ela.$1#$b#Ela não gosta de estranhos no início, mas vai se acostumar com você, tenho certeza.",
-
 "Strings.Nora.Pets.2": "Acho que o Stupid gosta de você. Ele mostra a língua quando gosta de alguém.",
-
 "Strings.Nora.Pets.3": "Meus bichos são bem preguiçosos durante o inverno.#$b#Olha, o Stupid está tirando uma soneca. Tão fofo!$1#$b#Aposto que está bem quentinho e aconchegante lá dentro.",
-
 "Strings.Nora.TownBridge.1": "Eu gosto muito de relaxar aqui.#$b#Assisto os peixes e crio pequenas histórias para eles.$1#$b#Viu aquele vermelho? Sim, ele acabou de se divorciar.#$b#E deixe-me te dizer, a batalha pela guarda de 30 bebês está feia...$3",
-
 "Strings.Nora.TownBridge.2": "@! Ótimo, bem a tempo para a última fofoca dos peixes!$1#$b#Aquele peixinho rosa ali... ela acabou de descobrir que seu namorado estava a traindo.#$b#Ele é um canalha, né? É aquele vermelho ali. E adivinha quem era a amante?#$b#A IRMÃ dela! Isso mesmo! Aquela roxa ali fingindo que está tudo bem.$5#$b#Yoba, eu amo esse show.",
-
 "Strings.Nora.Inn.1": "É bom ter um lugar tão aconchegante bem perto da minha casa.#$b#Posso estudar e comer deliciosos doces. É o melhor dos dois mundos.$1",
-
 "Strings.Nora.Inn.2": "Só estou conversando um pouco com a Rosa.#$b#Ela está me dando uma de suas receitas para experimentar.$1#$b#Provavelmente vou falhar ao fazer isso. Mas vale a pena tentar!",
-
 "Strings.Nora.Inn.3": "O inverno é a estação perfeita para chocolate quente, não acha?$1#$b#Você deveria experimentar o da Rosa. Ela acerta em cheio!",
-
 "Strings.Nora.Reading.1": "Não há nada como uma leitura leve depois de uma semana longa.#$b#Já ouviu falar desse livro aqui, @? É um dos meus favoritos!$1",
-
 "Strings.Nora.Reading.2": "Dias chuvosos são perfeitos para ficar em casa lendo.$1#$b#O som da chuva é tão calmante... e me dá uma desculpa para carregar meu cobertor pela casa.",
-
 "Strings.Nora.Coffee.1": "Café de manhã é essencial. Não posso viver sem.$1#$b#Todos os dias, experimento uma bebida de café diferente. Depois dou uma nota de 0 a 10 no meu caderno.#$b#Talvez eu publique algo sobre isso um dia...$3",
 "Strings.Nora.Coffee.2": "Esta vai ser uma semana intensa...#$b#Tenho que tomar minhas seis doses diárias de espresso para aguentar.$1#$b#Não faça isso em casa, @.",
-
 "Strings.Nora.Busy.1": "%Nora está ocupada agora. Ela está muito concentrada.",
-
 "Strings.Nora.Busy.2": "%Nora está trabalhando em algo. Ela não pode ser incomodada.",
-
 "Strings.Nora.Coffee.3": "Estou tentando beber um pouco menos de café. Sabe, agora que consigo ir para a cama em um horário razoável.#$b#Então agora, em vez de 6 xícaras, são 3.$1",
-
 "Strings.Nora.CoffeeInn": "Este é definitivamente o melhor lugar para tomar uma bebida quente.#$b#Por favor, não conte ao Gus que eu disse isso.$1",
-
 "Strings.Nora.Library.1": "Agora que terminei meus estudos, estou tentando ler mais sobre diferentes temas.#$b#Estou pensando... em entomologia hoje!$1#$b#Ou devo ir com práticas funerárias pelo mundo?$3#$b#Oh, desculpe! Não quis ser mórbida, só estou curiosa.$1",
-
 "Strings.Nora.Library.2": "Hoje vou ler um livro sobre folclore.#$b#Não tenho certeza se realmente acredito em magia, mas gosto das histórias mesmo assim.$1#$b#Quem sabe, talvez sejam verdadeiras.",
-
 "Strings.Nora.Gunther.2": "Não tenho certeza se o Gunther gosta de ter mais tempo livre. Eu fico bombardeando ele com perguntas.$3#$b#Bom, não se pode silenciar uma alma curiosa!$1",
-
 "Strings.Nora.PinkiePie": "Oh, a Pinkie Pie parece realmente gostar de você agora!$1#$b#Não leve a dela se esconder embaixo das folhas para o lado pessoal, ela só gosta de ficar lá.",
-
 "Strings.Nora.Stupid": "Você quer tentar alimentar o Stupid algum dia? Ele gosta muito de grilos.#$b#Prometo que ele não vai morder!$1",
-
 "Strings.Nora.Beach": "Tenho tentado expandir meus horizontes... sabe, aquela coisa de sair da zona de conforto.#$b#Dito isso, ainda odeio estar na areia. Mas posso admirar a praia daqui mesmo.$1",
-
 "Strings.Nora.Reading.3": "Descobri que realmente gosto de livros de terror.#$b#A Assombração da Casa do Junimo tem que ser o meu favorito. Você pode pegar emprestado se quiser!$1",
-
 "Strings.Nora.Research": "Oh, ainda não desisti do meu plano original. Gostaria de encontrar o camaleão de cauda roxa, se possível.#$b#Só vou levar com calma, sabe?$1#$b#Você será o primeiro a saber se eu encontrar um, prometo!",
-
 "Strings.Nora.Jacob": "Oh fazendeiro, veio para um check-up em seus animais de estimação?$1^Oh fazendeira, veio para um check-up em seus animais de estimação?$1#$b#Venho aqui de vez em quando para conversar sobre cuidados com répteis com o Jacob. E para conversar também, é claro.#$b#Ele é um homem muito legal. E a Eloise também é adorável. Ela diz que eu sou uma 'adulta legal'.$1",
-
 "Strings.Nora.Pierre.1": "Mirtilos, mirtilos... Yoba, por que é tão difícil encontrar coisas com sabor de mirtilo aqui?$2#$b#Tudo bem, vou só pegar chocolate.$2",
-
 "Strings.Nora.Pierre.2": "Não. Não vou mais comprar macarrão instantâneo.$2#$b#Vou ser uma chef de verdade. Vai ser pasta aglio e olio.#$b#Não tenho certeza se falei isso certo.$3",
-
 "Strings.Nora.Saloon.2": "O Gus é um salva-vidas. Ele cozinha tão bem, eu comeria aqui todos os dias se pudesse.$2#$b#Infelizmente, sou apenas uma acadêmica, não posso realmente gastar tanto dinheiro, certo?#$b#Espera, preciso arranjar um emprego agora?$3",
-
 "Strings.Nora.Saloon.3": "Tenho tentado entender como funciona esse jogo. Até estou fazendo anotações.$1#$b#Até agora, não tenho nada.",
-
 "Strings.Nora.Inn.4": "Sinto que as pessoas estão perdendo por não virem à estalagem. Este lugar é tão adorável.#$b#E a Rosa é um encanto. Ela até aguenta minha conversa sem controle.",
 "Strings.Nora.ESLake": "Meu sonho de vida é que um sapo venha para este pequeno lago.#$b#Imagine ter um sapo como vizinho. Esse deveria ser o objetivo de todos.",
 
 // strings for after she gets a job cause I'm losing count of how many are here already
 
 "Strings.Nora.Coffee.4": "Cheguei em casa tão tarde ontem da Cidade Zuzu... Talvez precise de uma dose extra de café hoje.#$b#Fiquei distraída com a biblioteca lá. É tão grande, eu senti tanta falta dela.$1",
-
 "Strings.Nora.Working.1": "Bem, parece que tenho muito o que fazer hoje. Organizar para a pesquisa de amanhã, dar uma olhada nos arquivos antigos...$3#$b#Talvez possamos conversar em outro momento?",
-
 "Strings.Nora.Bridge.3": "Ah, aqui para a última atualização?#$b#Então, aparentemente, aquele peixe vermelho ali tem um irmão gêmeo que ele NÃO sabia.#$b#Agora eles estão brigando por aquele peixe rosa. E ele não consegue decidir qual dos irmãos quer.$1#$b#Ah sim, todos são gays.",
-
 "Strings.Nora.Researching": "Ah, ainda estou mantendo o trabalho de pesquisa também.$1#$b#Quem sabe, o Norian ainda esteja por aí, certo?",
-
 "Strings.Nora.FinishWork": "Quase terminando o dia! Quer sair depois disso, @?#$b#Vamos lá, eu te convido para jantar. Eu sou praticamente rica agora que tenho um emprego de verdade.$3#$b#Ah, estou só brincando, é claro. Mas sim, vamos fazer planos algum dia!$1",
-
 "Strings.Nora.Bridge.4": "Este episódio de Fofocas dos Peixes está ótimo até agora. Não esperava tanta confusão.$3#$b#Aquele salmão ali acabou de dizer ao marido que os bebês não são dele.#$b#Suspeito do truta ali atrás... ele certamente parece ansioso.$3",
-
 "Strings.Nora.Friday": "Bom, acho que a semana acabou!$1#$b#Você vai descansar neste fim de semana ou continuar trabalhando na fazenda?#$b#É importante também tirar um tempo para descansar, sabia?$1",
-
 "Strings.Nora.Saloon.4": "Eu adoro como isso fica animado toda sexta-feira.#$b#Ah, espera, tenho que apresentar minha ideia de bebida para o Gus. Sem álcool, com sabor de maçã verde, tema de serpente.#$b#Vai se chamar Maçã Cascavel.$1",
-
 "Strings.Nora.Jacob.2": "Ah, oi @! Espero que seus animais estejam se sentindo bem.#$b#Estou aqui só para jogar conversa fora. Uma das minhas especialidades.",
-
 "Strings.Nora.Book": "Este livro está começando a não fazer mais sentido.$3#$b#Provavelmente é hora de dormir então.",
-
 "Strings.Nora.QuietReading": "%Nora está lendo e não percebe você. O livro tem pássaros na capa.",
 
-
 "Strings.Nora.CommunityDay.1": "Tenho escondido pequenas cobras de vidro no Centro Comunitário até alguém perceber.#$b#Já estou com 37 agora. Não conte para ninguém!$1",
-
 "Strings.Nora.CommunityDay.2": "Sabe o que seria legal no Dia da Comunidade? Uma festa de mistério de assassinato!$1#$b#Eu definitivamente poderia organizar isso. Você acha que as pessoas participariam?$3",
 "Strings.Nora.CommunityDay.3": "Vou ajudar as crianças com suas fantasias de Véspera dos Espíritos este ano.$1#$b#Tenho que reunir alguma inspiração aqui!",
-
 "Strings.Nora.CommunityDay.4": "Ah, @!$1#$b#Só queria te agradecer novamente por restaurar este lugar.#$b#Tenho conhecido todo mundo muito melhor agora.#$b#Além disso, olha este livro de receitas legal que encontrei.$4",
 
 "Strings.Nora.GreenRainPinkiePie": "Ela pode sentir que algo não está certo.$3#$b#Espero que ela não esteja com muito medo!$2",
-
 "Strings.Nora.GreenRainStupid": "Sim, ele absolutamente não tem ideia do que está acontecendo.#$b#Ah, ser completamente alheio.$1",
 
 "Strings.Nora.PrideInTheValley": "Nunca pensei que teríamos um festival do orgulho no vale, mas estou tão feliz que temos!$1#$b#Você experimentou o Muffin Bi-Frutado? Posso não estar sendo ser bilateral, mas essa é a melhor comida daqui.#$b#Entendeu? Bi-lateral?#$b#Vamos lá, foi engraçado. Eu sou engraçada! E também muito gay.$1",
 
+"Strings.Nora.SpiritsEveInn.1": "Ah, que bom que você está aqui!$1#$b#O festival da cidade é ótimo, mas a Véspera dos Espíritos na Pousada tem algo especial.$b# Se divirta, fazendeiro! E cuidado com todos os monstros escondidos, é claro.^Se divirta, fazendeira! E cuidado com todos os monstros escondidos, é claro.",
+"Strings.Nora.SpiritsEveInn.2": "Eu não sou muito de leite, especialmente quando existe café, mas eu adoro latte de abóbora com especiarias.#$b#Tem o gosto exato do outono e dos horrores além da compreensão humana ao mesmo tempo. Exatamente como deve ser.$1",
+"Strings.Nora.SpiritsEveInn.3": "Ai, acho que já comi muito doce. Provavelmente vou ficar acordada a noite toda.$2#$b#Bem, agora que estou aqui, não há motivo para segurar mais, certo?$1#$b#Você pode me passar aqueles doces de milho ali, por favor? Ah, e um pouco de chocolate enquanto você faz isso",
+
 // MINI MAP
 "MiniMap.House.Name": "Casa de Tori e Nora",
 
-// GIFT REACTIONS
+// GIFT REACTIONS - VANILLA ITEMS
 
 "Gifts.Nora.Coffee": "Nossa, muito obrigada, fazendeiro!$1^Nossa, muito obrigada, fazendeira!$1#$b#Agora só falta uma xícara para minha dose diária. Você é um salva-vidas!^Agora só falta uma xícara para minha dose diária. Você é uma salva-vidas!",
-
 "Gifts.Nora.BlueberryTart": "Estou literalmente tão feliz. Esta é minha sobremesa favorita de todos os tempos!$1#$b#Você não precisava me dar isso, mas estou muito feliz que tenha feito.",
-
 "Gifts.Nora.TripleShotEspresso": "Isso é exatamente o que eu precisava antes de me aprofundar na pesquisa hoje.#$b#Você sempre sabe como me animar!$1",
-
 "Gifts.Nora.SnakeSkull": "Isso é... o que eu estou pensando que é?$2#$b#Uma descoberta tão incrível! E você está me dando isso? Sério?$1#$b#Você deve gostar muito de mim, @. Vou colocar isso em um lugar seguro.",
-
 "Gifts.Nora.ChocolateCake": "Obrigada! Como você sabia que eu estava desejando um pedaço de bolo de chocolate?$1#$b#Não há nada ruim o suficiente que um bom pedaço de bolo de chocolate não possa consertar.",
-
 "Gifts.Nora.PumpkinPie": "Isso... tem gosto exatamente de outono.$1#$b#Sobremesas com sabor de abóbora são minhas coisas favoritas sobre o outono, sabe?#$b#Bem, isso, as vibrações assustadoras e o fato de ser temporada de sapos!$1#$b#Huh, talvez eu goste do outono...$3",
-
 "Gifts.Nora.Emerald": "OLHA ISSO!! É tão bonito!$1#$b#Verde é minha cor favorita. Acredite em mim quando digo que vou guardar isso com carinho, fazendeiro.^Verde é minha cor favorita. Acredite em mim quando digo que vou guardar isso com carinho, fazendeira.",
-
 "Gifts.Nora.Strawberry": "Qualquer coisa feita com morangos tem um gosto incrível.#$b#Pena que eu não sei cozinhar, porém.$2",
-
 "Gifts.Nora.Blueberry": "Ah, fazendeiro. Se as pessoas me dessem mirtilos todos os dias, acho que seria 250% mais feliz.^Ah, fazendeira. Se as pessoas me dessem mirtilos todos os dias, acho que seria 250% mais feliz.#$b#Não que eu não seja feliz. Mas você entende o meu ponto, né?$1",
-
 "Gifts.Nora.Tulip": "Tulipas são flores tão bonitas! Obrigada, @.#$b#Vou colocá-la em um vaso imediatamente!",
-
 "Gifts.Nora.Wine": "Este parece ser um vinho muito bom, fazendeiro. Você não deveria desperdiçá-lo comigo.^Este parece ser um vinho muito bom, fazendeira. Você não deveria desperdiçá-lo comigo.#$b#Eu não sou muito de beber. Desculpe.$2#$b#O Harvey adora, porém!",
-
 "Gifts.Nora.EnergyTonic": "Ah, obrigada.$2#$b#Em casa, só usamos café para ficar acordados. Dica para a próxima.",
-
 "Gifts.Nora.Pickles": "Ah, como eu posso te dizer isso...$3#$b#Sou a garota que sempre pede sem picles no sanduíche.$2",
-
 "Gifts.Nora.Pearl": "Por mais bonitas que sejam, acho que o processo para obter uma pérola não vale a pena.$2",
-
 "Gifts.Nora.Slime": "Minha colega de quarto é literalmente um criador de slimes, fazendeiro. Posso dizer que não me importo com isso.$5^Minha colega de quarto é literalmente um criador de slimes, fazendeira. Posso dizer que não me importo com isso.$5",
-
 "Gifts.Nora.GreenTea": "Sabe, todos os chás quentes têm gosto de água fervente para mim.$2#$b#Chá gelado é muito melhor!",
-
 "Gifts.Nora.Spaghetti": "Ah, carboidratos... o maior nutriente de todos.$1#$b#Bem, pelo menos para mim. Sou uma garota dos carboidratos.",
-
 "Gifts.Nora.Beer": "Fazendeiro, eu não sou muito de beber. Eu bebo às vezes.^Fazendeira, eu não sou muito de beber. Eu bebo às vezes.#$b#Mas quando faço, não é isso. Isso tem um gosto terrível.$2",
-
 "Gifts.Nora.JojaCola": "...Sério?$2#$b#Você está me dando uma Joja Cola? Eu?$2#$b#Ok, para futuras referências: não me dê Joja Colas, @.",
-
 "Gifts.Nora.SoggyNewspaper": "Hm... quer dizer...$2#$b#O lixo de um é o tesouro de outro?$2#$b#E só para constar, eu sou o lixo. Isso é só lixo.$2",
-
 "Gift.Nora.Driftwood": "Você está me dando... madeira?$2#$b#O que exatamente você espera que eu faça com isso? Estou genuinamente curiosa.$2#$b#Novo brinquedo para o Stupid, acho.",
-
 "Gift.Nora.AnAutographedPhoto": "Oh, Rodney O'Brien! Ele é um amor.$1#$b#Vou usar isso como marcador de páginas para meus livros.",
-
 "Gift.Nora.Jasper": "Acho que jaspe é uma pedra preciosa bastante subestimada.$1#$b#É tão bonita, mas quando você a coloca ao lado de um diamante, ela facilmente é esquecida.$2#$b#Obrigada por ver a beleza disso, @.",
-
 "Gift.Nora.AmphibianFossil": "Uau, fazendeiro, onde você encontrou isso?$1^Uau, fazendeira, onde você encontrou isso?$1#$b#Você tem um verdadeiro tesouro em suas mãos. Não deixe Gunther te pegar entregando por aí!",
-
 "Gift.Nora.DinosaurEgg": "Nossa, este ovo parece estranho. Você tem certeza de que está bom?$2#$b#O quê? Um ovo de dinossauro?$7#$b#E você está me dando isso?#$b#Eu nem sei o que dizer. A comunidade científica nunca vai acreditar em mim.$3#$b#Mas eu adoro isso! Obrigada!$1",
+"Gift.Nora.Fish": "Oh, uh... wow.$2#$b#Um peixe inteiro. Só para mim.$2#$b#E nem mesmo embrulhado em jornal... Bem, uh, obrigada?$2",
+"Gift.Nora.Gems": "Fazendeiro! Onde você encontrou isso?$1^Fazendeira! Onde você encontrou isso?$1#$b#Está tão bonito! Joias são tão especiais, você não precisava!#$b#Muito obrigada mesmo!$1",
+"Gift.Nora.Flowers": "Flores? Para mim? $1#$b#Eu não esperava por isso! Você alegrou o meu dia, fazendeiro! $1^Eu não esperava por isso! Você alegrou o meu dia, fazendeira! $1#$b#Se você continuar fazendo isso, posso começar a me sentir especial.",
+
+/// GIFT REACTIONS - CUSTOM ITEMS
+
+// RODNEY'S BOOKS
+"Gift.Nora.ArcanaPrunus": "Oh, Arcana Prunus! Eu sou super fã desse livro! $1#$b#Tenho todas as edições especiais e tudo mais. Eles têm sua própria seção de estante na minha casa.#$b#Obrigada por expandir a minha coleção!$1",
+"Gift.Nora.ArtifactOrCutlery": "Vou ser honesta com você, geralmente não me aprofundo muito nesse assunto.$2#$b#Mas é o livro do Gunther, então é claro que vou pegar.$b#Precisamos apoiar nossos amigos, certo?$1",
+"Gift.Nora.CrabsAndWhyIHateThem": "Cientificamente falando, não devemos odiar nenhuma espécie local.$3#$b#Cada espécie tem seu próprio papel no equilíbrio ecológico.#$b#Mas não consigo deixar de rir com esse livro. Mateo é muito engraçade.$1#$b#Obrigada @, isso vai definitivamente alegrar meu dia.",
+"Gift.Nora.DeferenceArlington": "Sabe, comprei os primeiros volumes dessa série quando foram lançados.$b#Mas depois... eles não paravam de sair.$2#$b#Logo eram 14 volumes e eu não tenho paciência para isso.$3#$b#Tipo, no volume 4 eu já não conseguia nem lembrar o nome do protagonista.",
+"Gift.Nora.FishingForDumbDumbs": "Ah. Não sou muito de pescar, fazendeiro, desculpe.$2^Ah. Não sou muito de pescar, fazendeira, desculpe.$2#$b#E você está me chamando de burra?$5",
+"Gift.Nora.GettingChicksToLoveYou": "O QUÊ? Isso finalmente vai me ensinar como conversar com mulheres lindas? Eu entro em pânico tentando flertar.$1#$b#Ah, é sobre galinhas de verdade?$3#$b#Bem, galinhas são legais. E normalmente não gostam muito de mim também, então isso pode ajudar.",
+"Gift.Nora.Goblins": "Wow, muito obrigada! Eu amo o trabalho do Professor Jasper Thomas!$1#$b#Sua pesquisa é realmente interessante e estou sempre animada para saber de um novo livro dele.",
+"Gift.Nora.GuideToSculptingWithGold": "É, não é bem isso.$2#$b#Não acredito que Lewis teve a coragem de lançar algo assim. Ele é inacreditável às vezes.$5",
+"Gift.Nora.HerpetologyOfFerngill": "Ah, bem... obrigada? Eu acho.$3#$b#Quer dizer, esse é o meu próprio livro. Eu escrevi isso. Ainda tenho cópias na minha casa.#$b#Você não olhou a capa?",
+"Gift.Nora.LunarkinTrollTales": "Contos dos Trolls de Lunarkin! Esse é um livro ótimo.$1#$b#Lembro que costumava ler isso na faculdade sempre que tinha tempo. Isso me ajudava a relaxar depois de uma semana intensa de provas.#$b#E eu perdi minha cópia naquela época. Acho que alguém pegou emprestado e nunca devolveu.$3#$b#Muito obrigada! Mal posso esperar para ler isso de novo.",
+"Gift.Nora.MysteriesOfTheDwarves": "Outro ótimo livro do Professor Jasper! A genialidade dele continua me surpreendendo a cada vez. $1#$b#Eu deveria passar na casa dele para conversarmos sobre esses livros. Eu adoraria ouvir mais sobre as teorias dele.",
+"Gift.Nora.PepperRexes": "Tem certeza de que não quer ficar com isso?$3#$b#Este é um livro crucial se você planeja ter Pimentas Rexes na sua fazenda.#$b#Oh, eu posso ficar com isso? Bem, você não precisa me dizer duas vezes então. Eu amo Pmentas Rexes!$1",
+"Gift.Nora.TheBookOfYoba": "Oh, obrigada. Eu não sou uma pessoa religiosa, mas agradeço por ter pensado em mim com este presente.",
+"Gift.Nora.TheGreatBookOfSlimes": "Isso é interessante! Estive tentando aprender mais sobre gosmas para poder surpreender Tori.$1#$b#Isso será útil, obrigada!",
+"Gift.Nora.TheGreatTomeOfMayo": "Não consigo imaginar qual seria o propósito deste livro. E eu não falo isso com frequência.$2#$b#Mas, obrigada, eu acho.$3",
+"Gift.Nora.TheJojaConspiracy": "Este é um livro necessário! Esses idiotas da Joja têm escondido muita coisa de nós desde que chegaram a este vale!$5#$b#Normalmente, não sou do tipo que acredita em conspirações, mas a Joja está fazendo algumas coisas horríveis.$2#$b#Obrigada por isso! Precisamos avisar as pessoas!",
+"Gift.Nora.TheTarotRevealed": "Não sabia que você estava interessado nas artes místicas, fazendeiro, mas isso não me surpreende.^Não sabia que você estava interessado nas artes místicas, fazendeira, mas isso não me surpreende.#$b#Não sei se acredito nisso, mas já vi coisas mais estranhas acontecendo neste vale então...$3#$b#Não custa tentar! Quanto mais conhecimento, melhor.$1",
+"Gift.Nora.WhyPepperRexesAreTheBest": "Não poderia concordar mais com este livro.#$b#Pimenta Rexes SÃO os melhores. E se alguém disser o contrário, está MENTINDO!$5#$b#Ninguém deveria precisar de convencimento, mas se precisar, este livro é perfeito para o trabalho.$1",
+
+// PRIDE IN THE VALLEY
+"Gift.Nora.BiBerryMuffin": "Não poderia estar mais feliz com a escolha de comida para pessoas bi no festival. Me sinto tão representada.#$b#Quer dizer, você sabe que mirtilo é meu favorito. Obrigada!$1",
+
+// BEARFAM
+"Gift.Nora.SigurdPerfectRamen": "Tenho que dizer, na primeira vez que comi isso, quase desmaiei. Sig deixou bem apimentado para mim.#$b#Então, é claro, levei para o lado pessoal. E decidi aumentar minha tolerância a pimenta desde então.#$b#Agora, essa é uma das minhas receitas favoritas. Vai ser meu jantar hoje!$1",
+"Gift.Nora.HoneyCakes": "Nossa, estão com um gosto incrível! Sondra é uma ótima cozinheira.$1#$b#Obrigada, fazendeiro! Espero que tenha pegado um para você também!^Obrigada, fazendeira! Espero que tenha pegado um para você também!",
+"Gift.Nora.TTBrownies": "O quê? BROWNIES?$7#$b#Brownies são uma das minhas coisas favoritas! Como você sabia?$1#$b#Tão cremosos e ricos... Estou vivendo o sonho agora. Obrigada!",
+"Gift.Nora.PeachJoja": "Joja? Ah, não, obrigada.$2#$b#Onde você encontrou isso, no fundo do rio?$3",
+"Gift.Nora.PumpkinJoja": "Sério? Eu pensei que você soubesse como me sinto sobre a Joja a essa altura.$2#$b#Vou recusar isso, obrigada.$2",
+
+// CLOWN'S MODS
+"Gift.Nora.SunshineHoney": "Este é um dos potes de mel do Nikolai, certo?#$b#Este é meu sabor favorito. Tem um pouco de gosto de caramelo!$1#$b#E me aquece toda vez. Tenho que guardar isso para o inverno!$3",
+"Gift.Nora.HotChoco": "Chocolate quente? Ah, o fazendeiro tem um coração igualzinho ao meu!$1#$b#Isso é exatamente o que eu precisava agora. Muito obrigada!",
+"Gift.Nora.MilkCoffee": "Normalmente não coloco leite no meu café, pois parece que são dois mundos conflitantes.$3#$b#Quero dizer, o café te deixa alerta e o leite te faz dormir... então para mim, um anula o outro...$3#$b#Dito isso, tem um gosto delicioso. Obrigada por isso!",
+"Gift.Nora.TastyPastry": "Yoba, eu amo doces!$1#$b#É tudo sobre a textura. Fofinho e crocante ao mesmo tempo. Obrigada!",
 
 // MAP STRINGS
 "NoraToriBookshelf1": "É uma cópia de 'O Grande Livro dos Slimes'. Parece adequado para a casa de um criador de slimes.",
@@ -538,70 +501,52 @@
 
 /// CONVERSATIONS TOPICS
 "CT.Nora.SterlingDrugs": "Oh, Sterling é muito educado. Ele sempre foi gentil comigo.#$b#Mas seus hábitos me preocupam...$#$b#Você poderia dar uma olhada nele de vez em quando? Parece que ele realmente gosta de você.",
-
 "CT.Nora.SterlingFight": "Ouvi dizer que as coisas esquentaram na loja do Pierre com o Sterling.$2#$b#Ele é um bom homem. O vício não é brincadeira, de verdade.$2#$b#Espero que ele se recupere bem agora. Todo mundo merece uma nova chance.",
-
 "CT.Nora.SterlingRecovery": "Estou tão feliz em ver que o Sterling está melhorando.$1#$b#É um processo difícil, mas acredito que ele pode fazer isso. Fico feliz que você esteve por perto para ajudá-lo.",
-
 "CT.Nora.DylanIntro": "Ah, você conheceu o Dylan? Eu gosto muito dele, ele é um amigo muito legal.$1#$b#Quando nos conhecemos, passamos horas conversando sobre nossos interesses em comum.#$b#Bom, na verdade, eu falei a maior parte do tempo, mas ele foi gentil o suficiente para ouvir.$3#$b#Você sabia que existem cobras marinhas? Sim, descobrimos isso em um documentário.#$b#Nós gostamos de assistir documentários juntos de vez em quando. Junte-se a nós algum dia!$1",
-
 "CT.Nora.Jean&Jorts": "Eu fiquei absolutamente perplexa quando ouvi aqueles gatos falarem pela primeira vez.#$b#Eu até passei dias pesquisando para ver se havia outros registros de animais falantes...$1#$b#Nenhuma cobra ou lagartixa falante foi documentada.$2#$b#Pessoalmente, acho que é um crime de ódio contra mim.",
-
 "CT.Nora.ButteredJorts": "Ah, pobre Jorts! Por que ela teria manteiga suficiente para isso...$2#$b#Espero que a gata esteja bem!$2",
-
 "CT.Nora.Mia": "A Mia é a garota mais doce de todas!$1#$b#Estou tentando organizar para a Lorelai vir aqui e assar com ela.#$b#Eu realmente sinto que elas seriam boas amigas!$1",
-
 "CT.Nora.RodneyIntro": "Você conheceu aquele autor que mora no silo? Sim... aquele cara é realmente algo.#$b#Eu tenho a sensação de que ele não gosta de mim. Talvez eu apenas fale demais!$3#$b#Ele é estiloso, no entanto, vou dar isso a ele. E eu gosto dos livros dele!$1",
-
 "CT.Nora.CambriaIntro": "A Cambria é realmente doce, mas aquela galinha dela...$2#$b#Ela tenta comer o Stupid toda vez que o vê. Simplesmente diabólico!$5#$b#Entendo que temos toda essa coisa de cadeia alimentar, etc, etc, mas ele é meu bebê!$2#$b#Eu só cometi o erro de levá-lo à casa dela uma vez... nunca mais.$2",
-
 "CT.Nora.EliIntro": "O Eli é realmente uma das minhas pessoas favoritas.$1#$b#Ele combina com meu nível de entusiasmo sobre as coisas. E eu acho o campo de trabalho dele fascinante!#$b#Eu roubei uma das camisas xadrez dele algum tempo atrás e ele ainda não percebeu. Não conte a ele!$1",
-
+"CT.Nora.EliSaloon": "Eli me contou que vocês saíram juntos no salão! Parece ter sido uma noite divertida.$1#$b#Ele é muito atencioso. Sempre está dando presentinhos que encontra durante suas expedições para as pessoas.#$b#Eu gostaria que as pessoas vissem mais esse lado dele. Elas sempre dizem que ele é apenas estranho.$2",
+"CT.Nora.EliGuild": "Estou feliz que Eli finalmente tenha completado aquela expedição. Eu estava ficando tão preocupada.$2#$b#Eu sei que ele pode cuidar de si mesmo, mas você já esteve lá embaixo, sabe o quão perigoso é.#$b#Eu também me preocupo com você, sabia?$5",
+"CT.Nora.EliGuestRoom": "Fazendeiro, você está pálido! Algo está te preocupando?$7#$b#Ah... você viu o quarto de hóspedes na casa dos irmãos?$3#$b#Sim, isso explica. Aprendi a não fazer muitas perguntas sobre isso.#$b#Isso me ajuda a dormir melhor à noite.$2",
+"CT.Nora.DylanTown": "Ah, coitado do Dylan. Ele é absolutamente brilhante, mas suas habilidades sociais são... discutíveis.$2#$b#E suponho que Eli não facilite nada. Eles são completamente opostos.$3#$b#Mas eles se amam. E não importa o que aconteça, eles têm um ao outro.#$b#E também a mim! Esses dois nunca vão se livrar de mim.#$b#Talvez eu também não facilite as coisas para ele...$3",
+"CT.Nora.DylanSaloon": "Você não faz ideia do quanto eu pagaria para ver o Dylan bêbado ontem no salão.#$b#Isso parece um evento único na vida. E o Eli teve que levá-lo para casa?$1#$b#Eu sei que ele está morrendo de vergonha. Vou zoar ele por tanto tempo.",
+"CT.Nora.DylanLibrary": "Tenho tentado convencer o Dylan a dar uma palestra para as crianças.#$b#Eu sei que ele é natural nisso. Ele tem que acreditar mais em si mesmo!$1",
+"CT.Nora.DylanLesson": "A palestra do Dylan foi ótima, não foi? Ah, eu sei que as crianças adoraram.$1#$b#Poderíamos até formar uma dupla um dia e fazer uma palestra conjunta! Você acha que eu poderia convencê-lo?$3#$b#Ah, é cedo demais para pensar nisso. Deixe ele aproveitar esse momento, ele merece!#$b#Até tirei fotos. Estou a caminho para emoldurá-las agora mesmo!",
+"CT.Nora.DylanCCAquarium": "O Dylan fez um trabalho incrível com o aquário! Está muito melhor agora, não acha?$1#$b#Já estou pensando em fofocas de peixes para isso... Bem, corais devem ter fofocas também, certo?$3#$b#Tenho que parabenizá-lo novamente por isso. Está incrível demais!$1",
+"CT.Nora.SootIntro": "Você conheceu o Soot? Ah, ele é completamente adorável!$1#$b#Ele é muito amigo da Pinkie Pie e do Stupid. Mas principalmente do Stupid.#$b#Sinto que todos eles combinam conosco de alguma forma, sabe?#$b#Soot é o Eli, Stupid sou eu, e Pinkie Pie é o Dylan. Ela sempre parece tão cansada dos dois.",
 "CT.Nora.WillyBoatRepaired": "Então agora todos nós poderemos visitar a Ilha Gengibre?#$b#Fico imaginando quais espécies estão lá, só esperando para serem descobertas.$3#$b#O Noriano está a caminho, marque minhas palavras!",
-
 "CT.Nora.ResortOpen": "Estava pensando em tirar umas férias naquele novo resort.$3#$b#Mas acho que ficaria maluca sem nada para fazer. Já fico maluca com coisas para fazer!$2#$b#Além disso, não gosto muito da praia... Muita coisa para considerar.$3",
-
 "CT.Nora.Wedding": "Você se casou! Casou mesmo! Com anel e tudo!$1#$b#Estou realmente orgulhosa de você @. Oh, como todos crescem tão rápido.",
-
 "CT.Nora.BabyBoy": "Um bebê? SEU bebê? Ele já tem uma madrinha? Porque estou disponível!$1",
-
 "CT.Nora.BabyGirl": "Um bebê? SEU bebê? Ela já tem uma madrinha? Porque estou disponível!$1",
-
 "CT.Nora.RailroadEartquake": "Você ouviu aquele barulho ontem à noite?#$b#Estou perguntando de verdade. Todo mundo está falando desse barulho, mas eu estava morta de sono, sem os aparelhos.#$b#Não ouvi absolutamente nada.",
-
 "CT.Nora.Mateo": "MATEO? Amo elu absolutamente.$1#$b#Da primeira vez que nos encontramos, invadi a casa dilu e os peguei usando cuecas de dinossauro e comendo um picolé.$1#$b#Eu só queria ver o dinossauro dilu. Você sabe, o vivo, não o da cueca.#$b#Mas a amizade foi um bom bônus!$1",
-
 "CT.Nora.JasperMissing": "Não tenho visto o Jasper na biblioteca ultimamente durante minhas sessões de estudo, você ouviu algo sobre ele?$2#$b#Estou começando a ficar um pouco preocupada.$2",
-
 "CT.Nora.JasperBack": "Jasper finalmente voltou! Embora ele tenha mudado muito.$2#$b#Vou tentar contar para ele fatos legais sobre répteis para animá-lo. Ele sempre gosta de aprender.",
-
 "CT.Nora.LeoArrival": "Ouvi dizer que você trouxe uma criança da Ilha Gengibre, é verdade?#$b#É fácil se sentir deslocado quando você se muda para um lugar novo...$2#$b#Espero que ele se ajuste bem. Vou contar fatos extras legais para ele!$1",
-
 "CT.Nora.BookLaunchParty": "O lançamento do livro do Rodney foi tão emocionante!$1#$b#Já peguei meu exemplar. Mal posso esperar para ler hoje à noite!",
-
 "CT.Nora.RodneyPoetryReading": "A Tori disse que Rodney estava lendo poesia no meio da noite...$3#$b#Ela estava bastante irritada, na verdade. Eu não ouvi nada.#$b#A vantagem de ser meio surda, suponho?$3",
-
 "CT.Nora.MateoConfrontation": "O Gunther tem estado bastante agitado ultimamente.$3#$b#Toda vez que tento falar com ele, ele parece... estranho?$3#$b#Espero que esteja tudo bem. Ele parece realmente estressado.$2",
-
 "CT.Nora.MateoPain": "Sinto muito por Mateo. Espero que não seja nada sério e que elu volte logo.$2#$b#Você acha que elu gostaria se eu levasse um pouco de sopa quando voltarem?$3",
-
 "CT.Nora.GuildComplete": "Você viu o novo prédio na praia? É maravilhoso, não é?$1#$b#Não acredito que temos nossa própria filial da Guilda dos Aventureiros. Que emocionante!$1#$b#Espera, isso significa que vamos ter monstros na Ravina?#$b#Bom, fico feliz que tenhamos alguém para lidar com isso agora.",
-
 "CT.Nora.GuildFinale": "Quando eu te digo que NÃO CONSEGUIA acreditar que o Mateo simplesmente. Tem um dinossauro agora?$7#$b#Não sei como isso aconteceu, mas eu tive que invadir a guilda para ver com meus próprios olhos.#$b#Os peguei usando cuecas de dinossauro e comendo um picolé. Que foi, ah... uma visão.$3#$b#Eu só queria ver o dinossauro! O vivo, não o da cueca!",
-
 "CT.Nora.DylanBeach": "Ouvi dizer que você e o Dylan limparam a praia! Parabéns, fazendeiro!$1^Ouvi dizer que você e o Dylan limparam a praia! Parabéns, fazendeira!$1#$b#Depende de nós cuidar deste lugar. Afinal, é nossa casa.",
-
 "CT.Nora.NoraChameleon": "Ainda não consigo acreditar no que está acontecendo. Você acredita?$1#$b#Estou atolada de trabalho agora, mas vai valer totalmente a pena.#$b#Encontramos, @! Encontramos o camaleão de cauda roxa!",
-
 "CT.Nora.DitR_CT_ShadowPlay": "Me envolvi em um livro de terror ontem à noite e acabei lendo até tarde demais.$2#$b#E depois aquele barulho! O que foi aquilo, um urso? Foi tão assustador!$7#$b#Não estou exatamente orgulhosa do fato de que meu grito assustou ainda mais a Tori, mas foi uma cena engraçada, não vou mentir.$1",
-
 "CT.Nora.DitR_CT_SensFlowers": "Uma flor estranha nunca vista antes florescendo por toda a vale durante a noite é... estranho.$3#$b#Mas, na minha experiência, este não é um lugar comum. Então, espero que não seja nada ruim!$1#$b#E é bastante bonita, não acha?",
-
 "CT.Nora.JulietGremlin": "O filhote que a Juliet encontrou é adorável!$1#$b#Espero que ela acabe cuidando dele. Ela não acha que é capaz, mas é.#$b#E um animal de estimação sempre torna tudo melhor!$1",
-
 "CT.Nora.GreenRain.1": "Uau, você se aventurou nessa chuva?$7#$b#Não faço ideia do que causou isso, e não pretendo descobrir. Deixo isso para o Demetrius ou o Eli.$3#$b#Em vez disso, vou ficar em casa e ler um livro de terror. Parece apropriado.",
-
 "CT.Nora.GreenRain.2": "Eu estava pensando se isso ia acontecer de novo desde o ano passado.$3#$b#Aparentemente, não é nada prejudicial. Mas ainda vou aproveitar o tempo para ficar em casa e não fazer nada.",
+"CT.Nora.LucickielArrives": "I heard there was a commotion in town. Something about a newcomer?$3#$b#People sounded really scared by this guy. Did you get the chance to see him for yourself?$2#$b#People were calling him a demon, but it can't be that bad, right?$3",
+"CT.Nora.ReputationIncreased": "Então, Lucickiel vai trabalhar com o Clint a partir de agora, hein?#$b#Esta cidade... nunca deixa de me surpreender. Mas eu deveria ter previsto isso, não é mesmo?$3#$b#O vale recebe todos aqueles com boas intenções. É um refúgio para almas estranhas com bons corações.$1#$b#Fico feliz que ele tenha encontrado o seu lugar.",
+"CT.Nora.JohnsArrival": "Você viu que um cara novo se mudou? O bairro continua crescendo!$1#$b#Você acha que ele gosta de cobras? Seria tão legal se gostasse...$3#$b#Sempre é bom ver pessoas novas chegando ao vale. Este lugar é bom, mais pessoas deveriam conhecê-lo.",
+"CT.Nora.FaintingIncident": "Aquele cara novo, John, eu ouvi dizer que ele desmaiou hoje na loja do Pierre?$3#$b#Isso soa terrível, eu tinha acabado de sair da loja quando aconteceu. Espero que ele esteja bem.$3#$b#Talvez você pudesse verificar como ele está? Vocês parecem estar conversando ultimamente. Ele parece ser legal.",
+"CT.Nora.BusFire": "Obrigada a Yoba que você estava lá hoje para ajudar a Barron com o incêndio!$7#$b#Eu vi você correndo para ajudá-la, o ônibus fica bem na frente da minha casa afinal.$2#$b#Foi muito corajoso da sua parte. E fico feliz que ela esteja bem também!",
 
 /// MAIL
 "NoraPHD.1": "Meu querido fazendeiro(a),^^Normalmente prefiro discutir as coisas pessoalmente, como você já sabe. No entanto, após nossa conversa de ontem à noite em minha casa, tive uma epifania sobre o meu próximo passo.^^Também gostaria de pedir desculpas pelo meu colapso. As coisas têm sido esmagadoras ultimamente, mas estou confiante de que vou reverter essa situação.^^Estou partindo hoje para a Universidade de Zuzu para terminar o trabalho que comecei. Estarei de volta em cerca de uma semana. Até lá, certifique-se de passar no saloon em algum momento. Tenho a sensação de que estaremos celebrando!^^Beijos meus e das crianças,^^Nora.",
@@ -610,90 +555,48 @@
 ///VILLAGERS CTS FOR NORA
 
 "CT.Harvey.NoraIntro": "Nora? Oh, ela é uma mulher adorável.#$b#Embora possa ser um pouco intensa para os recém-chegados.#$b#Dê a ela uma chance, tudo bem?$1",
-
 "CT.Maru.NoraIntro": "Você conheceu a Nora? Ela é realmente inteligente.#$b#É bom ter mais mulheres na área de STEM por perto. Ela entende a luta.",
-
 "CT.Emily.NoraIntro": "Eu gosto da Nora. Ela sempre passa no saloon às sextas-feiras e conversamos.#$b#Bem, na verdade, ela conversa enquanto eu atendo os clientes. Mas é divertido de qualquer forma.$1",
-
 "CT.Haley.NoraIntro": "A garota das cobras? Sinceramente, não suporto ela.$3#$b#Quando ela começa a falar, parece que nunca mais para.$2#$b#E o jeito que ela se veste... Sem comentários.$3",
-
 "CT.Jodi.NoraIntro": "A Nora é uma boa influência para as crianças. Ela as motiva a estudar para serem como ela.#$b#O Vincent sempre adora quando a Penny a convida para uma aula.",
-
 "CT.Leah.NoraIntro": "A Nora é legal, ela gosta de passar na minha cabana quando vai para a floresta.#$b#Ela até traz algumas coisas que coleta. É muito atenciosa da parte dela.",
-
 "CT.Gunther.NoraIntro": "A Nora é uma das cientistas mais dedicadas que conheço.#$b#Estou quase certo de que ela passa mais tempo na biblioteca do que em casa.$1",
-
 "CT.Sebastian.NoraIntro": "Aquela herpetologista? Suponho que ela seja...$2#$b#Eu só tento evitar cruzar com ela quando não estou com vontade de conversar. O que é frequente.",
-
 "CT.Vincent.NoraIntro": "A Nora...?$3#$b#Ah, você quer dizer a Sra. Chambers?#$b#Ela é tão inteligente! E ela tem uma cobra e um gecko!#$b#Eles são realmente fofos.",
-
 "CT.Jas.NoraIntro": "Oh... A Sra. Chambers é realmente inteligente.$3#$b#Quem sabe um dia eu possa ser inteligente como ela.$3",
-
 "CT.Penny.NoraClass": "Estou feliz que a Nora pôde participar da aula.#$b#Trazer pessoas para discutir seus temas favoritos com as crianças pode ser muito enriquecedor para elas.",
-
 "CT.Jas.NoraClass": "A aula foi muito legal hoje.#$b#A Sra. Chambers me emprestou o livro dela!",
-
 "CT.Gunther.NoraClass": "Ter a aula na biblioteca é um deleite.#$b#As crianças estão tão ansiosas para aprender. Felizmente, elas têm muitas pessoas dispostas a ensinar!$1",
-
 "CT.Vincent.NoraClass": "Você viu como a aula da Sra. Chambers foi legal?#$b#Quando eu crescer, quero estudar animais também!#$b#Talvez eu estude cachorros! Eu gosto de cachorros!",
-
 "CT.Harvey.NoraFear": "Estou tentando ajudar a Nora a superar o medo de agulhas.#$b#Era muito, muito pior quando ela chegou ao vale.#$b#Pensei que teria que sedá-la em um momento.$2#$b#Estou feliz que tenhamos superado isso!$1",
-
 "CT.Maru.NoraFear": "Coitada da Nora... sempre é um pouco difícil para ela.$2#$b#Estou feliz que você estava por perto para ajudar, @!",
-
 "CT.Harvey.NoraSad": "Ei @, você conversou com a Nora ultimamente?#$b#Ela parece um pouco diferente... Não está sendo a sua habitual, tagarela, tenho medo.$3",
-
 "CT.Maru.NoraSad": "A Nora parece estranha para você?#$b#Ela está tão ocupada, tenho medo de que possa estar caminhando para um esgotamento.$2#$b#Dê uma olhada nela, se puder, @?",
-
 "CT.Leah.NoraSad": "A Nora está tão ocupada ultimamente que nem passa mais para trazer forragem.$2#$b#Estou preocupada com ela, para ser honesta.$3",
-
 "CT.Gunther.NoraSad": "Você sabe se algo está acontecendo com nossa querida amiga herpetologista?#$b#Tenho medo de que ela esteja estudando demais. Até as mentes mais brilhantes merecem um pouco de descanso.",
-
 "CT.Harvey.NoraBusy": "Não faço ideia do que a Nora está fazendo para estar tão ocupada assim, mas espero que esteja tudo bem com ela.#$b#Assim que ela terminar o doutorado, precisamos comemorar!$1",
-
 "CT.Maru.NoraBusy": "A Nora simplesmente desapareceu, né? Fico imaginando no que ela está trabalhando...#$b#Nada na vida acadêmica é fácil, não é mesmo?",
-
 "CT.Gunther.NoraBusy": "Bem, a Nora passou por aqui, pegou uma pilha gigantesca de livros e voltou para casa.#$b#Não tenho certeza do que ela está fazendo, mas sei que deve ser excelente.",
-
 "CT.Penny.NoraBusy": "Eu estava prestes a perguntar para a Nora se ela estava disponível para outra palestra, mas ela não tem aparecido muito pela cidade ultimamente.#$b#Espero que ela volte em breve.$1",
-
 "CT.Harvey.NoraProud": "Sinceramente, estou muito orgulhoso da Nora!$1#$b#Espero que agora ela reduza o consumo de café e refeições congeladas. Estou falando isso para ela há anos!#$b#Esse tipo de coisa definitivamente não é saudável em grande quantidade.",
-
 "CT.Maru.NoraProud": "Você acha que agora que a Nora está livre ela se importaria de me ajudar a construir um robô de dragão de Komodo?#$b#Eu adoraria alguma ajuda com a anatomia.$3",
-
 "CT.Leah.NoraProud": "É um alívio que a Nora tenha um pouco mais de tempo livre agora.#$b#O vale tem muito a oferecer e seria uma pena se ela não pudesse aproveitar tudo isso.$1#$b#Vou levá-la para forragear em algum momento.",
-
 "CT.Gunther.NoraProud": "A Nora tem um futuro brilhante pela frente.#$b#Estou muito feliz por poder ajudá-la em sua jornada.",
-
 "CT.Harvey.NoraMuseum": "Estou realmente feliz que a Nora tenha conseguido este trabalho. É uma forma de ocupar a mente.$1#$b#Só espero que ela não exagere. Isso tem sido um padrão, tenho medo.$2#$b#Se eu tiver que tirar sangue dela novamente, deseje-me sorte.",
-
-"CT.Maru.NoraMuseum": "A Nora me disse que conseguiu um emprego agora!#$b#Por um momento, pensei que ela teria que voltar para a Zuzu City para sempre.#$b#Eu definitivamente sentiria falta dela. Fico feliz que ela esteja ficando!",
-"CT.Leah.NoraMuseum": "Espera, então a Nora tem dois empregos agora?#$b#Um aqui e outro na Zuzu City?#$b#Estou feliz por ela, mas estou ainda mais feliz por poder trabalhar com minha arte.$1",
-
+"CT.Maru.NoraMuseum": "A Nora me disse que conseguiu um emprego agora!#$b#Por um momento, pensei que ela teria que voltar para a Cidade Zuzu para sempre.#$b#Eu realmente sentiria falta dela. Fico feliz que ela esteja ficando!",
+"CT.Leah.NoraMuseum": "Espera, então a Nora tem dois empregos agora?#$b#Um aqui e outro na Cidade Zuzu?#$b#Estou feliz por ela, mas estou ainda mais feliz por poder trabalhar com minha arte.$1",
 "CT.Gunther.NoraMuseum": "Ter a Nora por perto no Museu está tornando as coisas muito mais fáceis para mim.#$b#Ela é bastante prestativa. E o financiamento extra também é bem-vindo.",
-
 "CT.Elliot.NoraMuseum": "Vi que a herpetologista local conseguiu um emprego no Museu.#$b#Suponho que quanto mais pessoas dispostas a contribuir para a preservação do vale, melhor.",
-
 "CT.GuntherSilvian.NoraIntro": "Nora é uma das cientistas mais dedicadas que conheço.#$b#Estou quase certo de que ela passa mais tempo na biblioteca do que em sua própria casa.$1",
-
 "CT.GuntherSilvian.NoraClass": "Ter a aula acontecendo na biblioteca é um deleite.#$b#Essas crianças estão tão ansiosas para aprender. Felizmente, elas têm muitas pessoas dispostas a ensinar!$1",
-
 "CT.GuntherSilvian.NoraSad": "Você sabe se algo está acontecendo com nossa querida amiga herpetologista?#$b#Tenho medo de que ela esteja estudando demais. Até as mentes mais brilhantes merecem um pouco de descanso.",
-
 "CT.GuntherSilvian.NoraBusy": "Bem, a Nora passou por aqui, pegou uma pilha gigantesca de livros e voltou para casa.#$b#Não tenho certeza do que ela está fazendo, mas sei que deve ser excelente.",
-
 "CT.GuntherSilvian.NoraProud": "A Nora tem um futuro brilhante pela frente.#$b#Estou muito feliz por poder ajudá-la em sua jornada.",
-
 "CT.GuntherSilvian.NoraMuseum": "Ter a Nora por perto no Museu está tornando as coisas muito mais fáceis para mim.#$b#Ela é bastante prestativa. E o financiamento extra também é bem-vindo.",
-
 "CT.GuntherSilvian.NoraChameleon": "A Nora me disse que vocês dois encontraram o camaleão na Ilha Ginger?#$b#Quem diria que estava lá o tempo todo.$1#$b#Ela não consegue parar de falar sobre isso. E sobre você também.#$b#Ela disse que você foi crucial para a descoberta dela.$1",
-
 "CT.Harvey.NoraChameleon": "Ei, você sabe se a Nora está bem?#$b#A encontrei ontem. Ou, melhor, ela me atropelou.#$b#E digo isso literalmente. Ela estava correndo a toda velocidade e não me disse para onde estava indo.$2#$b#Quando me levantei, ela já estava longe demais.$2",
-
 "CT.Leah.NoraChameleon": "Acordei hoje com cerca de 20 mensagens da Nora.$2#$b#Uma delas era só gritaria. Ela está realmente animada com isso, né?",
-
 "CT.Maru.NoraChameleon": "Eu entendo completamente de onde vem toda essa excitação da Nora.#$b#Isso, para ela, é o que a robótica é para mim.$1#$b#Meninas acadêmicas se entendem.",
-
 "CT.Penny.NoraChameleon": "A Nora disse que está preparando uma palestra de 4 horas sobre suas últimas descobertas para as crianças.#$b#Não tenho certeza de como isso vai funcionar, mas não tive coragem de dizer a ela.$2",
 
 /// MOVIES!
@@ -878,6 +781,7 @@
 "Events.NORA.10H1.Gunther.Q1.Response.1": "Você está certo. Bem, devo ir. Preciso voltar para o museu.$1",
 "Events.NORA.10H1.Gunther.Q1.Response.2": "Oh Yoba, o que eu fiz...$2#$b#Devo voltar ao museu agora então.",
 "Events.NORA.10H1.Gunther.Q1.Response.3": "Ela é uma ótima pessoa. Provavelmente está tudo bem.#$b#Acho.$1#$b#Bem, devo voltar agora. Até outra hora, fazendeiro.^Bem, devo voltar agora. Até outra hora, fazendeira.",
+
 // 10 HEARTS PART 2
 "Events.NORA.10H2.Gunther.0": "Certo, deveríamos poder começar em breve. Como você se sente?$1",
 "Events.NORA.10H2.Nora.0": "Você está brincando? Estou ótima!$1#$b#Agora só precisamos esperar @ chegar...",
@@ -963,7 +867,7 @@
 "Events.NORA.IslandB.Nora.8": "Certo! Eu devo uma bebida a todos vocês!$1#$b#Você fique de olho no Echo, Professor. Jacob e eu vamos levar essas amostras para o laboratório.#$b#Vamos lá, pessoal, temos trabalho a fazer!$1",
 
 // EXTRA EVENT
-"Events.NORA.Extra.Nora.1": "Sagrado Yoba! Você me assustou!$7#$b#Você não deveria ficar surpreendendo as pessoas assim!$5",
+"Events.NORA.Extra.Nora.1": "Santo Yoba! Você me assustou!$7#$b#Você não deveria ficar surpreendendo as pessoas assim!$5",
 "Events.NORA.Extra.Nora.Question.1": "Por que você fez isso?",
 "Events.NORA.Extra.Nora.Q1.Answer.1": "Eu disse olá! Você não respondeu.",
 "Events.NORA.Extra.Nora.Q1.Answer.2": "Desculpe, não foi minha intenção te assustar!",
@@ -971,7 +875,11 @@
 "Events.NORA.Extra.Nora.Q1.Response.2": "Ah não, espera...$3#$b#Isso foi culpa minha, estava com meu aparelho auditivo desligado. Não é sua culpa.",
 "Events.NORA.Extra.Nora.2": "Pensei que tivesse te falado, sou surda!#$b#Bom, não totalmente, mas tenho dificuldades auditivas.$3#$b#Quando meu aparelho auditivo está desligado, normalmente consigo ler os lábios.#$b#Mas como você estava atrás de mim, eu não fazia ideia.",
 "Events.NORA.Extra.Nora.3": "Sim, sim, não se preocupe.$1#$b#Na verdade, não nasci surda. Foi uma infecção grave que tive quando criança. Coisa feia.#$b#Passei MUITO tempo no fonoaudiólogo desde então.$3#$b#Mas não precisa se sentir mal com isso. Minha vida está perfeitamente boa.$1",
-"Events.NORA.Extra.Nora.4": "De qualquer forma, da próxima vez que não responder, não leve para o pessoal, tudo bem?#$b#E por favor, não me assuste assim de novo.$1"
+"Events.NORA.Extra.Nora.4": "De qualquer forma, da próxima vez que não responder, não leve para o pessoal, tudo bem?#$b#E por favor, não me assuste assim de novo.$1",
+
+/// CROSSOVER EVENTS
+
+// RODNEY
 
 
 }

@@ -31,6 +31,7 @@
                                 "Lumisteria.MtVapius_TagetesSeeds",
                                 "Lumisteria.MtVapius_BlueMorningGloryStarter",
                                 "Lumisteria.MtVapius_PinkMorningGloryStarter",
+                                "Lumisteria.MtVapius_WildVapiusSeeds",
                                 "(O)431",
                                 "(O)770"
                             ],
@@ -83,7 +84,7 @@
                             "ID": "Lumisteria.MtVapius_LotOfTrash",
                             "Condition": "RANDOM 0.3",
                             "MinStack": 2,
-                            "MaxStack": 4,
+                            "MaxStack": 5,
                             "ItemId": "RANDOM_ITEMS (O)",
                             "PerItemCondition": "ITEM_CATEGORY Target -20",
                             "MaxItems": 1,
@@ -132,6 +133,11 @@
                             "ItemId": "RANDOM_ITEMS (O)",
                             "PerItemCondition": "ITEM_CATEGORY Target -12",
                             "MaxItems": 1,
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_OwlCarving",
+                            "Condition": "RANDOM 0.20",
+                            "ItemId": "(O)Lumisteria.MtVapius_OwlCarving",
                         },
                         {
                             "ID": "Lumisteria.MtVapius_Feather",

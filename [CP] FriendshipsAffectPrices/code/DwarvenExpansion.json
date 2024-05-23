@@ -98,6 +98,87 @@
         "When": {
           "Hearts:Marnie": "{{Range: {{Round: {{Query: {{3rd Stage Required Friendship Lvl}} / 250}}}}, 14}}"
        }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "mytigio.dwarven_expansion_BigCaveCoop": {
+          "BuildCost": "{{Round: {{Query: 12000 * {{1st Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_CaveCoop": {
+          "BuildCost": "{{Round: {{Query: 4000 * {{1st Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_CaveShed": {
+          "BuildCost": "{{Round: {{Query: 12000 * {{1st Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_DeluxeCaveCoop": {
+          "BuildCost": "{{Round: {{Query: 22000 * {{1st Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_LargeCaveShed": {
+          "BuildCost": "{{Round: {{Query: 18000 * {{1st Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_DwarvenFurnace": {
+          "BuildCost": "{{Round: {{Query: 40000 * {{1st Stage Multiplier}} }} }}"
+        }
+      },
+      "When": {
+        "Hearts:Robin": "{{Range: {{Round: {{Query: {{1st Stage Required Friendship Lvl}} / 250}}}}, 14}}"
+     }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "mytigio.dwarven_expansion_BigCaveCoop": {
+          "BuildCost": "{{Round: {{Query: 12000 * {{2nd Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_CaveCoop": {
+          "BuildCost": "{{Round: {{Query: 4000 * {{2nd Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_CaveShed": {
+          "BuildCost": "{{Round: {{Query: 12000 * {{2nd Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_DeluxeCaveCoop": {
+          "BuildCost": "{{Round: {{Query: 22000 * {{2nd Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_LargeCaveShed": {
+          "BuildCost": "{{Round: {{Query: 18000 * {{2nd Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_DwarvenFurnace": {
+          "BuildCost": "{{Round: {{Query: 40000 * {{2nd Stage Multiplier}} }} }}"
+        }
+      },
+      "When": {
+        "Hearts:Robin": "{{Range: {{Round: {{Query: {{2nd Stage Required Friendship Lvl}} / 250}}}}, 14}}"
+     }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "mytigio.dwarven_expansion_BigCaveCoop": {
+          "BuildCost": "{{Round: {{Query: 12000 * {{3rd Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_CaveCoop": {
+          "BuildCost": "{{Round: {{Query: 4000 * {{3rd Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_CaveShed": {
+          "BuildCost": "{{Round: {{Query: 12000 * {{3rd Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_DeluxeCaveCoop": {
+          "BuildCost": "{{Round: {{Query: 22000 * {{3rd Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_LargeCaveShed": {
+          "BuildCost": "{{Round: {{Query: 18000 * {{3rd Stage Multiplier}} }} }}"
+        },
+        "mytigio.dwarven_expansion_DwarvenFurnace": {
+          "BuildCost": "{{Round: {{Query: 40000 * {{3rd Stage Multiplier}} }} }}"
+        }
+      },
+      "When": {
+        "Hearts:Robin": "{{Range: {{Round: {{Query: {{3rd Stage Required Friendship Lvl}} / 250}}}}, 14}}"
+     }
     }
   ]
 }

@@ -1,14 +1,11 @@
 {
-  "$id": "1",
   "ForageSpawnEnabled": true,
   "LargeObjectSpawnEnabled": true,
   "OreSpawnEnabled": true,
   "MonsterSpawnEnabled": true,
   "Forage_Spawn_Settings": {
-    "$id": "2",
     "Areas": [
       {
-        "$id": "3",
         "SpringItemIndex": [
           16,
           20,
@@ -45,7 +42,6 @@
         ],
         "StrictTileChecking": "High",
         "SpawnTiming": {
-          "$id": "4",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -54,7 +50,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "5",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -62,16 +57,13 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "6"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "7",
         "SpringItemIndex": [
           372,
           718,
@@ -110,7 +102,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "8",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -119,7 +110,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "9",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -127,16 +117,13 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "10"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
       },
       {
-        "$id": "11",
         "SpringItemIndex": null,
         "SummerItemIndex": [
           372,
@@ -160,7 +147,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "12",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -169,7 +155,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "13",
           "Years": [],
           "Seasons": [
             "Summer"
@@ -181,16 +166,13 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "14"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "15",
         "SpringItemIndex": [
           404,
           80
@@ -221,7 +203,6 @@
         ],
         "StrictTileChecking": "High",
         "SpawnTiming": {
-          "$id": "16",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -230,7 +211,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "17",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -238,16 +218,13 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "18"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 3
       },
       {
-        "$id": "19",
         "SpringItemIndex": [
           {
             "category": "breakable",
@@ -482,7 +459,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "High",
         "SpawnTiming": {
-          "$id": "20",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -491,7 +467,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "21",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -499,16 +474,13 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "22"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 3
       },
       {
-        "$id": "23",
         "SpringItemIndex": [
           440
         ],
@@ -534,7 +506,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "24",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -543,7 +514,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "25",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -551,16 +521,13 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "26"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 2
       },
       {
-        "$id": "27",
         "SpringItemIndex": [
           152
         ],
@@ -586,7 +553,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "28",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -595,7 +561,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "29",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -603,16 +568,13 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "30"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "31",
         "SpringItemIndex": [
           {
             "Category": "Object",
@@ -649,7 +611,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "32",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -658,7 +619,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "33",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -666,16 +626,13 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "34"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
         },
         "DaysUntilSpawnsExpire": 0
       },
       {
-        "$id": "35",
         "SpringItemIndex": [
           109
         ],
@@ -700,7 +657,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "36",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -709,7 +665,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "37",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -717,9 +672,7 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "38"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
         },
@@ -742,10 +695,8 @@
     "CustomTileIndex": []
   },
   "Large_Object_Spawn_Settings": {
-    "$id": "39",
     "Areas": [
       {
-        "$id": "40",
         "ObjectTypes": [
           "Stump"
         ],
@@ -764,7 +715,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Medium",
         "SpawnTiming": {
-          "$id": "41",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -773,7 +723,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "42",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -781,9 +730,7 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "43"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -793,10 +740,8 @@
     "CustomTileIndex": []
   },
   "Ore_Spawn_Settings": {
-    "$id": "44",
     "Areas": [
       {
-        "$id": "45",
         "MiningLevelRequired": null,
         "StartingSpawnChance": null,
         "LevelTenSpawnChance": null,
@@ -814,7 +759,6 @@
         ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "46",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -823,7 +767,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "47",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -831,19 +774,15 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "48"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 3
       },
       {
-        "$id": "49",
         "MiningLevelRequired": null,
         "StartingSpawnChance": {
-          "$id": "50",
           "Stone": 65,
           "Copper": 5,
           "Iron": 5,
@@ -881,7 +820,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "51",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -890,7 +828,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "52",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -898,9 +835,7 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "53"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -909,7 +844,6 @@
     ],
     "PercentExtraSpawnsPerMiningLevel": 0,
     "MiningLevelRequired": {
-      "$id": "54",
       "Stone": 0,
       "Geode": 0,
       "FrozenGeode": 0,
@@ -935,7 +869,6 @@
       "CinderShard": 0
     },
     "StartingSpawnChance": {
-      "$id": "55",
       "Stone": 80,
       "Geode": 4,
       "FrozenGeode": 0,
@@ -961,7 +894,6 @@
       "CinderShard": 0
     },
     "LevelTenSpawnChance": {
-      "$id": "56",
       "Stone": 68,
       "Geode": 10,
       "FrozenGeode": 0,
@@ -989,24 +921,16 @@
     "CustomTileIndex": []
   },
   "Monster_Spawn_Settings": {
-    "$id": "57",
     "Areas": [
       {
-        "$id": "58",
         "MonsterTypes": [
           {
-            "$id": "59",
             "MonsterName": "Rock Crab",
-            "Settings": {
-              "$id": "60"
-            }
+            "Settings": {}
           },
           {
-            "$id": "61",
             "MonsterName": "Lava Crab",
-            "Settings": {
-              "$id": "62"
-            }
+            "Settings": {}
           }
         ],
         "UniqueAreaID": "EastScarpe monster area 1",
@@ -1023,7 +947,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "63",
           "StartTime": 1800,
           "EndTime": 2600,
           "MinimumTimeBetweenSpawns": 10,
@@ -1032,7 +955,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "64",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -1042,37 +964,25 @@
           "GameStateQueries": [
             "!PLAYER_HAS_SEEN_EVENT host 63079050"
           ],
-          "CPConditions": {
-            "$id": "65"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "66",
         "MonsterTypes": [
           {
-            "$id": "67",
             "MonsterName": "Rock Crab",
-            "Settings": {
-              "$id": "68"
-            }
+            "Settings": {}
           },
           {
-            "$id": "69",
             "MonsterName": "Wilderness Golem",
-            "Settings": {
-              "$id": "70"
-            }
+            "Settings": {}
           },
           {
-            "$id": "71",
             "MonsterName": "Bat",
-            "Settings": {
-              "$id": "72"
-            }
+            "Settings": {}
           }
         ],
         "UniqueAreaID": "Underground Monster Area",
@@ -1091,7 +1001,6 @@
         ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "73",
           "StartTime": 600,
           "EndTime": 2400,
           "MinimumTimeBetweenSpawns": 10,
@@ -1100,7 +1009,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "74",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -1108,22 +1016,17 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "75"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "76",
         "MonsterTypes": [
           {
-            "$id": "77",
             "MonsterName": "Lava Bat",
             "Settings": {
-              "$id": "78",
               "Sprite": "Characters/Monsters/ESMineBat",
               "Loot": [
                 {
@@ -1142,10 +1045,8 @@
             }
           },
           {
-            "$id": "79",
             "MonsterName": "Frost Bat",
             "Settings": {
-              "$id": "80",
               "Sprite": "Characters/Monsters/ESMineBat",
               "Loot": [
                 {
@@ -1176,10 +1077,8 @@
             }
           },
           {
-            "$id": "81",
             "MonsterName": "Bat",
             "Settings": {
-              "$id": "82",
               "Sprite": "Characters/Monsters/ESMineBatIridium",
               "HP": 300,
               "Damage": 30,
@@ -1245,7 +1144,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "83",
           "StartTime": 1800,
           "EndTime": 2600,
           "MinimumTimeBetweenSpawns": 10,
@@ -1254,7 +1152,6 @@
           "SpawnSound": "batFlap"
         },
         "ExtraConditions": {
-          "$id": "84",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -1262,44 +1159,29 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "85"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "86",
         "MonsterTypes": [
           {
-            "$id": "87",
             "MonsterName": "Green Slime",
-            "Settings": {
-              "$id": "88"
-            }
+            "Settings": {}
           },
           {
-            "$id": "89",
             "MonsterName": "Blue Slime",
-            "Settings": {
-              "$id": "90"
-            }
+            "Settings": {}
           },
           {
-            "$id": "91",
             "MonsterName": "Purple Slime",
-            "Settings": {
-              "$id": "92"
-            }
+            "Settings": {}
           },
           {
-            "$id": "93",
             "MonsterName": "Red Slime",
-            "Settings": {
-              "$id": "94"
-            }
+            "Settings": {}
           }
         ],
         "UniqueAreaID": "ESOrchard monster area 1",
@@ -1314,7 +1196,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "95",
           "StartTime": 600,
           "EndTime": 1800,
           "MinimumTimeBetweenSpawns": 10,
@@ -1323,7 +1204,6 @@
           "SpawnSound": "slime"
         },
         "ExtraConditions": {
-          "$id": "96",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -1333,72 +1213,45 @@
           "GameStateQueries": [
             "!PLAYER_HAS_SEEN_EVENT host 63078004"
           ],
-          "CPConditions": {
-            "$id": "97"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "98",
         "MonsterTypes": [
           {
-            "$id": "99",
             "MonsterName": "Green Slime",
-            "Settings": {
-              "$id": "100"
-            }
+            "Settings": {}
           },
           {
-            "$id": "101",
             "MonsterName": "Blue Slime",
-            "Settings": {
-              "$id": "102"
-            }
+            "Settings": {}
           },
           {
-            "$id": "103",
             "MonsterName": "Red Slime",
-            "Settings": {
-              "$id": "104"
-            }
+            "Settings": {}
           },
           {
-            "$id": "105",
             "MonsterName": "Purple Slime",
-            "Settings": {
-              "$id": "106"
-            }
+            "Settings": {}
           },
           {
-            "$id": "107",
             "MonsterName": "Big Green Slime",
-            "Settings": {
-              "$id": "108"
-            }
+            "Settings": {}
           },
           {
-            "$id": "109",
             "MonsterName": "Big Blue Slime",
-            "Settings": {
-              "$id": "110"
-            }
+            "Settings": {}
           },
           {
-            "$id": "111",
             "MonsterName": "Big Red Slime",
-            "Settings": {
-              "$id": "112"
-            }
+            "Settings": {}
           },
           {
-            "$id": "113",
             "MonsterName": "Big Purple Slime",
-            "Settings": {
-              "$id": "114"
-            }
+            "Settings": {}
           }
         ],
         "UniqueAreaID": "Smugglers Den",
@@ -1415,7 +1268,6 @@
         ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "115",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -1424,7 +1276,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "116",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -1432,23 +1283,17 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "117"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": 1
         },
         "DaysUntilSpawnsExpire": 0
       },
       {
-        "$id": "118",
         "MonsterTypes": [
           {
-            "$id": "119",
             "MonsterName": "Green Slime",
-            "Settings": {
-              "$id": "120"
-            }
+            "Settings": {}
           }
         ],
         "UniqueAreaID": "EastScarp_ToriSlimeBasement",
@@ -1465,7 +1310,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "121",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -1474,7 +1318,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "122",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -1482,22 +1325,17 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "123"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "124",
         "MonsterTypes": [
           {
-            "$id": "125",
             "MonsterName": "Red Slime",
             "Settings": {
-              "$id": "126",
               "Gender": "M"
             }
           }
@@ -1516,7 +1354,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "127",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -1525,7 +1362,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "128",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -1533,22 +1369,17 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "129"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "130",
         "MonsterTypes": [
           {
-            "$id": "131",
             "MonsterName": "Blue Slime",
             "Settings": {
-              "$id": "132",
               "Gender": "F"
             }
           }
@@ -1567,7 +1398,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "133",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -1576,7 +1406,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "134",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -1584,22 +1413,17 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "135"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "136",
         "MonsterTypes": [
           {
-            "$id": "137",
             "MonsterName": "Purple Slime",
             "Settings": {
-              "$id": "138",
               "Gender": "M"
             }
           }
@@ -1618,7 +1442,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "139",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -1627,7 +1450,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "140",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -1635,22 +1457,17 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "141"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "142",
         "MonsterTypes": [
           {
-            "$id": "143",
             "MonsterName": "Green Slime",
             "Settings": {
-              "$id": "144",
               "Gender": "F"
             }
           }
@@ -1669,7 +1486,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "145",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -1678,7 +1494,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "146",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -1686,22 +1501,17 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "147"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "148",
         "MonsterTypes": [
           {
-            "$id": "149",
             "MonsterName": "Prismatic Slime",
             "Settings": {
-              "$id": "150",
               "Gender": "F"
             }
           }
@@ -1720,7 +1530,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "151",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -1729,7 +1538,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "152",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -1739,22 +1547,17 @@
           "GameStateQueries": [
             "PLAYER_HAS_MAIL Any Tori.PrismaticJelly"
           ],
-          "CPConditions": {
-            "$id": "153"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
       },
       {
-        "$id": "154",
         "MonsterTypes": [
           {
-            "$id": "155",
             "MonsterName": "Green Slime",
             "Settings": {
-              "$id": "156",
               "Color": "255 127 0",
               "DodgeChance": 999,
               "Gender": "M"
@@ -1775,7 +1578,6 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
-          "$id": "157",
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
@@ -1784,7 +1586,6 @@
           "SpawnSound": ""
         },
         "ExtraConditions": {
-          "$id": "158",
           "Years": [],
           "Seasons": [],
           "Days": [],
@@ -1792,9 +1593,7 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {
-            "$id": "159"
-          },
+          "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -1818,12 +1617,9 @@
     685
   ],
   "File_Conditions": {
-    "$id": "160",
     "FarmTypes": [],
     "FarmerNames": [],
     "SaveFileNames": [],
-    "OtherMods": {
-      "$id": "161"
-    }
+    "OtherMods": {}
   }
 }

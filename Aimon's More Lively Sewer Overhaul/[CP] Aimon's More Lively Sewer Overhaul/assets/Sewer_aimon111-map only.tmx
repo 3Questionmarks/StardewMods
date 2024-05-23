@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="41" height="55" tilewidth="16" tileheight="16" infinite="0" nextlayerid="42" nextobjectid="366">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="41" height="55" tilewidth="16" tileheight="16" infinite="0" nextlayerid="42" nextobjectid="368">
  <properties>
   <property name="AmbientLight" value="160 90 90"/>
   <property name="IndoorWater" value="t"/>
@@ -2188,11 +2188,6 @@
     <property name="Passable" value="t"/>
    </properties>
   </object>
-  <object id="117" name="TileData" x="304" y="416" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="Aimon.SewerOverhaul_SewerUnderway"/>
-   </properties>
-  </object>
   <object id="118" name="TileData" x="304" y="400" width="16" height="16">
    <properties>
     <property name="Passable" value="t"/>
@@ -3038,29 +3033,19 @@
     <property name="Passable" value="t"/>
    </properties>
   </object>
-  <object id="361" name="TileData" x="208" y="416" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="Aimon.SewerOverhaul_SewerUnderway"/>
-   </properties>
-  </object>
-  <object id="362" name="TileData" x="320" y="416" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="Aimon.SewerOverhaul_SewerUnderway1"/>
-   </properties>
-  </object>
-  <object id="363" name="TileData" x="192" y="416" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="Aimon.SewerOverhaul_SewerUnderway1"/>
-   </properties>
-  </object>
   <object id="364" name="TileData" x="368" y="416" width="16" height="16">
    <properties>
     <property name="TouchAction" value="Aimon.SewerOverhaul_SewerMechanismFixed"/>
    </properties>
   </object>
-  <object id="365" name="TileData" x="320" y="416" width="16" height="16">
+  <object id="366" name="TileData" x="304" y="416" width="16" height="16">
    <properties>
-    <property name="Passable" value="t"/>
+    <property name="TouchAction" value="Warp Sewer 12 26"/>
+   </properties>
+  </object>
+  <object id="367" name="TileData" x="208" y="416" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Sewer 20 26"/>
    </properties>
   </object>
  </objectgroup>

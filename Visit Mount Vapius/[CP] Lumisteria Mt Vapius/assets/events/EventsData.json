@@ -96,7 +96,7 @@
 		end",
 
 
-        "Lumisteria.MtVapius_Hamlet_Helia4HMaddy4H/f HeliaDiamantiVMV 1000/f MaddyPellegrinVMV 1000/!d Wed/t 1000 18": "playful/56 76/farmer 58 79 0 HeliaDiamantiVMV 59 73 1 MaddyPellegrinVMV 61 75 3 AsterPellegrinVMV 51 69 2 Haley 51 80 0/skippable/pause 1000/
+        "Lumisteria.MtVapius_Hamlet_Helia4HMaddy4H/f HeliaDiamantiVMV 1000/f MaddyPellegrinVMV 1000/!d Wed/t 1000 1800": "playful/56 76/farmer 58 79 0 HeliaDiamantiVMV 59 73 1 MaddyPellegrinVMV 61 75 3 AsterPellegrinVMV 51 69 2 Haley 51 80 0/skippable/pause 1000/
 		advancedMove Haley false 0 -10/pause 1000/speak Haley \"{{i18n: HamletHelia4HMaddy4HHaley01}}\"/pause 1000/speak AsterPellegrinVMV \"{{i18n: HamletHelia4HMaddy4HAster01}}\"/speak Haley \"{{i18n: HamletHelia4HMaddy4HHaley02}}\"/advancedMove Haley false -15 0/advancedMove AsterPellegrinVMV false -15 0/
 		speak HeliaDiamantiVMV \"{{i18n: HamletHelia4HMaddy4HHelia01}}\"/advancedMove HeliaDiamantiVMV false 0 1/advancedMove farmer false 1 0 0 -2 1 10/pause 100/
 		/quickQuestion {{i18n: HamletHelia4HMaddy4HMessage01}}#{{i18n: HamletHelia4HMaddy4HAnswer01}}#{{i18n: HamletHelia4HMaddy4HAnswer02}}#{{i18n: HamletHelia4HMaddy4HAnswer03}}(break)pause 150\\friendship MaddyPellegrinVMV -15\\friendship HeliaDiamantiVMV 15\\pause 300\\speak HeliaDiamantiVMV \"{{i18n: HamletHelia4HMaddy4HBranch01Helia01}}\"\\speak MaddyPellegrinVMV \"{{i18n: HamletHelia4HMaddy4HBranch01Maddy01}}\"\\speak HeliaDiamantiVMV \"{{i18n: HamletHelia4HMaddy4HBranch01Helia02}}\"\\speak MaddyPellegrinVMV \"{{i18n: HamletHelia4HMaddy4HBranch01Maddy02}}\"\\pause 200\\emote HeliaDiamantiVMV 40\\speak MaddyPellegrinVMV \"{{i18n: HamletHelia4HMaddy4HBranch01Maddy03}}\"(break)pause 150\\friendship MaddyPellegrinVMV 25\\friendship HeliaDiamantiVMV -5\\pause 300\\speak HeliaDiamantiVMV \"{{i18n: HamletHelia4HMaddy4HBranch02Helia01}}\"\\pause 300\\speak MaddyPellegrinVMV \"{{i18n: HamletHelia4HMaddy4HBranch02Maddy01}}\"(break)pause 150\\friendship MaddyPellegrinVMV 25\\pause 300\\speak HeliaDiamantiVMV \"{{i18n: HamletHelia4HMaddy4HBranch03Helia01}}\"\\pause 300\\speak MaddyPellegrinVMV \"{{i18n: HamletHelia4HMaddy4HBranch03Maddy01}}\"
@@ -197,6 +197,23 @@ addObject 11 38 {{AsterInnFlowers}} 3/emote CelestineDuboisVMV 56/move AsterPell
 move CelestineDuboisVMV -6 0 2/pause 100/playSound axe/addObject 3 37 {{AsterInnFlowers}} 3/emote AsterPellegrinVMV 56/
 move AsterPellegrinVMV -7 0 0/pause 100/playSound axe/addObject 5 38 {{AsterInnFlowers}} 3/
 end",
+"Lumisteria.MtVapius_Inn_StellarCrops03/e Lumisteria.MtVapius_Hamlet_StellarCrops02/A eventSeen_Lumisteria.MtVapius_Hamlet_StellarCrops02/d Tue/t 800 2200": "breezy/35 7/farmer 33 11 0 MoiraDuboisVMV 39 5 2 AsterPellegrinVMV 40 6 3/skippable/
+pause 3000/playSound axe/pause 300/playSound stoneStep/pause 100/playSound axe/textAboveHead MoiraDuboisVMV \"{{i18n: InnStellarFibersOverheadMoira01}}\"/doAction 33 10/pause 200/move farmer 0 -5 0/faceDirection MoiraDuboisVMV 3/
+pause 200/move farmer 5 0 1/faceDirection MoiraDuboisVMV 2/speak MoiraDuboisVMV \"{{i18n: InnStellarFibersMoira01}}\"/pause 200/playSound axe/addObject 39 6 Lumisteria.MtVapius_NightMiscanthus 3/
+speak AsterPellegrinVMV \"{{i18n: InnStellarFibersAster01}}\"/pause 300/speak MoiraDuboisVMV \"{{i18n: InnStellarFibersMoira02}}\"/jump MoiraDuboisVMV 3/
+pause 200/playSound axe/pause 200/jump AsterPellegrinVMV 3/playSound leafrustle/pause 200/playSound axe/jump MoiraDuboisVMV 3/
+speak AsterPellegrinVMV \"{{i18n: InnStellarFibersAster02}}\"/pause 300/speak MoiraDuboisVMV \"{{i18n: InnStellarFibersMoira03}}\"/
+pause 300/jump AsterPellegrinVMV 3/playSound leafrustle/removeObject 39 6/pause 400/playSound secret1/addObject 39 6 Lumisteria.MtVapius_Fabric_NightSilk 3/
+emote AsterPellegrinVMV 16/pause 100/emote MoiraDuboisVMV 16/pause 1000/move MoiraDuboisVMV 1 0 2/pause 200/
+move MoiraDuboisVMV -2 0 2/pause 200/move MoiraDuboisVMV 1 0 2/pause 200/
+speak AsterPellegrinVMV \"{{i18n: InnStellarFibersAster03}}\"/pause 300/speak MoiraDuboisVMV \"{{i18n: InnStellarFibersMoira04}}\"/
+speak AsterPellegrinVMV \"{{i18n: InnStellarFibersAster04}}\"/pause 300/speak MoiraDuboisVMV \"{{i18n: InnStellarFibersMoira05}}\"/
+removeObject 39 6/pause 400/playSound axe/addObject 39 6 Lumisteria.MtVapius_CloudFeather 3/
+speak MoiraDuboisVMV \"{{i18n: InnStellarFibersMoira06}}\"/pause 300/speak AsterPellegrinVMV \"{{i18n: InnStellarFibersAster05}}\"/
+speak MoiraDuboisVMV \"{{i18n: InnStellarFibersMoira07}}\"/pause 300/speak AsterPellegrinVMV \"{{i18n: InnStellarFibersAster06}}\"/
+
+/end",
+
 
 		"Lumisteria.MtVapius_Inn_Helia2HCelestine2H/f CelestineDuboisVMV 500/f HeliaDiamantiVMV 500/c 1/t 1100 2000": "Orange/36 38/CelestineDuboisVMV 38 37 0 HeliaDiamantiVMV 29 41 1 farmer -100 -100 0/skippable/
 textAboveHead HeliaDiamantiVMV \"{{i18n: InnHelia2HCelestine2HHeliaOverhead01}}\"/move CelestineDuboisVMV 1 0 0/playSound clank/pause 140/playSound clank/pause 130/playSound clank/pause 400/move CelestineDuboisVMV -1 0 0/playSound clank/pause 20/playSound clank/pause 40/playSound clank/pause 30/playSound clank/textAboveHead CelestineDuboisVMV \"{{i18n: InnHelia2HCelestine2HCelestineOverhead01}}\"/
@@ -331,7 +348,7 @@ end",
 		speak GavinPommerelVMV \"{{i18n: LakeMariam2HGavin08}}\"/
 		end",
 		
-		"Lumisteria.MtVapius_Lake_Stone/Tile 7 15/n Lumisteria.MtVapius_StoneRemoved_Flag": "WizardSong/7 15/farmer 7 15 0/pause 200/message \"{{i18n: Lake_Stone_Message01}}\"/pause 600/message \"{{i18n: Lake_Stone_Message02}}\"/pause 1000/
+		"Lumisteria.MtVapius_Lake_Stone/Tile 7 15/!n Lumisteria.MtVapius_StoneRemoved_Flag": "WizardSong/7 15/farmer 7 15 0/pause 200/message \"{{i18n: Lake_Stone_Message01}}\"/pause 600/message \"{{i18n: Lake_Stone_Message02}}\"/pause 1000/
 		quickQuestion {{i18n: Lake_Stone_Message03}}#{{i18n: Lake_Stone_Option01}}#{{i18n: Lake_Stone_Option02}}(break)pause 200\\addMailReceived Lumisteria.MtVapius_StoneRemoved_Flag\\message \"{{i18n: Lake_Stone_Message04}}\"(break)pause 200\\message \"{{i18n: Lake_Stone_Message05}}\"/
 		end",
 
@@ -389,18 +406,18 @@ end",
 	
 	//Farmhouse
 	
-    {
+    /*{
       "LogName": "Events Edit",
       "Action": "EditData",
       "Target": "Data/Events/Farmhouse",
       "Entries": {
 		  
-        "Lumisteria.MtVapius_TageteGift/j 3/r 0.4/x Lumisteria.MtVapius_TagetesSeedsMail": "null",
+        //"Lumisteria.MtVapius_TageteGift/j 3/r 0.4/x Lumisteria.MtVapius_TagetesSeedsMail": "null",
 		//Magazine letters
-		"Lumisteria.MtVapius_Gazette01/e Lumisteria.MtVapius_Inn_Gazette/G SYNCED_RANDOM day lumisteria.chanceletter01 0.1/z spring/z winter/x Lumisteria.MtVapius_GazetteMail01": "null",
-		"Lumisteria.MtVapius_Gazette03/e Lumisteria.MtVapius_Inn_Gazette/G SYNCED_RANDOM day lumisteria.chanceletter02 0.2/z fall/z winter/x Lumisteria.MtVapius_GazetteMail03": "null",
-		"Lumisteria.MtVapius_Gazette04/e Lumisteria.MtVapius_Inn_Gazette/G SYNCED_RANDOM day lumisteria.chanceletter03 0.1/x Lumisteria.MtVapius_GazetteMail04": "null",
-		"Lumisteria.MtVapius_Gazette06/e Lumisteria.MtVapius_Inn_Gazette/G SYNCED_RANDOM day lumisteria.chanceletter04 0.1/z winter/x Lumisteria.MtVapius_GazetteMail06": "null",
+		//"Lumisteria.MtVapius_Gazette01/e Lumisteria.MtVapius_Inn_Gazette/G SYNCED_RANDOM day lumisteria.chanceletter01 0.1/z spring/z winter/x Lumisteria.MtVapius_GazetteMail01": "null",
+		//"Lumisteria.MtVapius_Gazette03/e Lumisteria.MtVapius_Inn_Gazette/G SYNCED_RANDOM day lumisteria.chanceletter02 0.2/z fall/z winter/x Lumisteria.MtVapius_GazetteMail03": "null",
+		//"Lumisteria.MtVapius_Gazette04/e Lumisteria.MtVapius_Inn_Gazette/G SYNCED_RANDOM day lumisteria.chanceletter03 0.1/x Lumisteria.MtVapius_GazetteMail04": "null",
+		//"Lumisteria.MtVapius_Gazette06/e Lumisteria.MtVapius_Inn_Gazette/G SYNCED_RANDOM day lumisteria.chanceletter04 0.1/z winter/x Lumisteria.MtVapius_GazetteMail06": "null",
 
 		  
         //"Lumisteria.MtVapius_NympheaSeedsQuest/r 0.2/s Lumisteria.MtVapius_Nymphea 5/x Lumisteria.MtVapius_NympheaSeedsRequestMail": "null",
@@ -425,7 +442,7 @@ end",
 		//Stellar stuff
        //"Lumisteria.MtVapius_NightMiscanthusQuest/G SYNCED_RANDOM day lumisteria.chanceletter04 0.2/n Lumisteria.MtVapius.QuestMoonPodsFlag/x Lumisteria.MtVapius_NightMiscanthusSeedsMail": "null",
       },
-    },
+    },*/
 	
 	//Mines
 	

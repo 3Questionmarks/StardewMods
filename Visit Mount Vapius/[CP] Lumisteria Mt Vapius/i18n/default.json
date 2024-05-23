@@ -269,6 +269,8 @@
 				"AsterDialogueAcceptGift_(O)Lumisteria.MtVapius_CloudFeather": "These plants are fascinating...#$b#I'm sure someone must know more about them, but who?#$b#This feels like buried knowledge, so frustrating...",
 				"AsterDialogueAcceptGift_quality_fertilizer_item": "Thanks, this is nice. With the number of plants I have, extra fertilizer is welcome.",
 				
+				"AsterDialogueAcceptGift_(O)WWWA.AutographedPhoto": "Oh, maybe I'll use it as bookmark. He's not my favorite author but he has some cool stuff.",
+				
 				"AsterDialogueAcceptGift_(O)430": "Oh, truffles... I'm sorry, I don't get the hype about those.",
 				//Marriage
 								
@@ -371,7 +373,7 @@
 				"MaddyDialogueFri": "The Red Owl Inn has some basic groceries, but I still need to get some products in other places every so often.",
 				"MaddyDialogueSat": "$query !PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_ForestCrystalLake#Granny told me that there's a lake in the forest that shimmered like crystal in the sun, until the day the water became still.#Do you think it's a tale about pollution?|I didn't know the shimmering lake in Granny's tale was real. I'd like to go fishing there one day.",
 				"MaddyDialogueSatR02": "There's crayfishes in some of the waters, but they're green so they hide pretty well on the mossy rocks of the rivers.",//To add
-				"MaddyDialogueSun": "When I was little, there was this truck driver coming here, and sometimes she was fishing when she had some free hours.#$b#She taught me the ropes of fishing, and after that, my father made me a rod with a reed for me to play.#$e#For one of my birthdays, I even asked for a new one.#$b#I still go fishing occasionally when I need to relax.",
+				"MaddyDialogueSun": "When I was little, there was this truck driver that would pass through. Sometimes she'd go fishing when she had some free time.#$b#She taught me the ropes of fishing, and after that, my father made me a rod with a reed for me to play.#$e#For one of my birthdays, I even asked for a new one.#$b#I still go fishing occasionally when I need to relax.",
 				//2
 				"MaddyDialogueMon2": "Sometimes, people come here with strange fishes with crystal on them. I wonder where they come from.",
 				"MaddyDialogueTue2": "Last time I was in Pelican Town, I saw the truck driver. Her name is Pam.#$e#Ahah, of course you already know, but I'm glad I met her again.",
@@ -418,6 +420,14 @@
 				"MaddyDialogueSat10": "TODO",
 				"MaddyDialogueSun10": "TODO",
 				
+				
+				
+				
+				"MaddyDialogueSummer_20": "Today is the trout derby! It's so cool, it's such a long time I didn't travel for something fun like that.",
+				"MaddyDialogueSummer_21": "The Fishing Sisters are so cool. They gave me some baits since I wasn't able to take them with me.",
+				"MaddyDialogueSummer_20_2": "Got any cool prizes in the derby? The coffee was quite welcome.",
+				"MaddyDialogueSummer_21_2": "We have a contest with the Fishing Sisters. A challenge inside a challenge! The one catching the biggest trout wins.#$b#It's nice, my fishing skills progressed quite a bit since last year.",
+				
 				//Resort
 				"MaddyDialogueResort_Entering": "Traveling by boat isn't familiar to me. It's quite nice once you get used to the waves.",
 				"MaddyDialogueResort_Leaving": "Willy promised he will tell me some fisher' stories on our way back.",
@@ -449,6 +459,8 @@
 				"MaddyDialogueLumisteria.MtVapius.AsterAngry": "What did you said to Aster to upset her? I hope you'll apologize.",
 				"MaddyDialogueLumisteria.MtVapius.WeddingAster": "The ceremony of the wedding was so moving. Aster looked so happy.",
 				"MaddyDialogueLumisteria.MtVapius.WeddingMoira": "What a nice ceremony. Celestine spent hours to cook the best food possible for the buffet.",
+				"MaddyDialogueeventSeen_EnD.Dylan.01_memory_oneweek": "Oh, you met Dylan? We discuss sometimes on the web. It's nice having someone who gets you, you know?",
+				"MaddyDialogueeventSeen_EnD.Dylan.01_memory_twoweeks": "I visited Point Drake once. Some cousin of my father was getting married.",
 				//Special
 				"MaddyDialogueRejectWorm": "Oh, it would make a nice bait, but I don't fish enough to make the best use of it.",
 				"MaddyDialogueRejectBouquet": "You're looking for someone to date? I'm not interested in such things, personally.",
@@ -980,7 +992,10 @@
 				"MariamGiftHateFriend": "Oh, @, don't you remember I hate this? At least now you know.",
 				
 				
+				//Gift Taste
 				"MariamDialogueAcceptGift_(O)StardropTea": "Hey, pretty rare stuff you have here. For me? It'll be perfect after a cold night patrol. Thanks, @.",
+				"MariamDialogueAcceptGift_(O)GoldenMysteryBox": "$query !PLAYER_HAS_MAIL Current Lumisteria.MtVapius_FavoriteGiftFlag Any#Oh! I wonder what's in it! *Shake shake* I'll open it later, it'll be a wonderful way to end my day.#$action AddMail Current Lumisteria.MtVapius_FavoriteGiftFlag received#$action AddFriendshipPoints MariamFortinVMV 20|Hey, thank, I love those! Oh, a prismatic sha... Kidding!",
+
 				
 				//Character Dispositions
 				"MariamDisplayName": "Mariam",
@@ -990,7 +1005,7 @@
 				"HeliaDialogueIntroduction": "Hey, didn't I see you at the market? You're @, right? The one with the farm in Pelican Town?",
 				"HeliaDialogueLumisteria.MtVapius.Arrival": "Hey, didn't I see you at the market? You're @, right? The one with the farm in Pelican Town?",
 				
-				"HeliaDialogueMon": "$query ANY \"LOCATION_NAME Here Lumisteria.MtVapius_Faycombe\" \"LOCATION_NAME Here Lumisteria.MtVapius_HeliaHouse\"#This is where I live!#It's kinda in the middle of nowhere, but it was the only place I can afford that had a workshop like I wanted and good wood supply around.|I live in Faycombe. It's not far from here.#$e#It's kinda in the middle of nowhere, but it was the only place I can afford that had a workshop like I wanted and good wood supply around.",
+				"HeliaDialogueMon": "$query ANY \"LOCATION_NAME Here Lumisteria.MtVapius_Faycombe\" \"LOCATION_NAME Here Lumisteria.MtVapius_HeliaHouse\"#This is where I live!#$b#It's kinda in the middle of nowhere, but it was the only place I can afford that had a workshop like I wanted and good wood supply around.|I live in Faycombe. It's not far from here.#$b#It's kinda in the middle of nowhere, but it was the only place I can afford that had a workshop like I wanted and good wood supply around.",
 				"HeliaDialogueTue": "Customers are weird sometimes. One bought me a machine, and wanted to return it to me one month later.#$e#I tested it and it was working perfectly fine, so I said I wouldn't take it back. They were angry and throw it into the trash can. Into the trash can, my beautiful work. Can you believe it?!",
 				"HeliaDialogueWed": "Oh, I have a distant cousin living in Pelican Town. You must know him, he's the local doctor.",
 				"HeliaDialogueThu": "What's the trend with people willing to make clothes? I feel like I see one in every place I go.#$e#And realistically, it's hard to get a steady income with that kind of job.",
@@ -2058,6 +2073,11 @@
 				"TemplateGiftDislike": "TODO",
 				"TemplateGiftHate": "TODO",
 				
+				
+				
+				"DefaultAcceptGift_(O)StardropTea": "A cup of Stardrop tea? I'll enjoy it for sure, thanks.",
+				
+				
 				//Companions
 				"RayanRandom01": "I come here every few days. The air is so fresh, and I like the view.",
 				"RayanRandom02": "I try to stay active. Hiking is one of my favorite activities for that.",
@@ -2398,6 +2418,16 @@
 				"MtVapiusQuestIronBarsForGusObjective":"Bring Gus 15 Iron Bars in one time.",
 				"MtVapiusQuestIronBarsForGusDialogue":"#$1 Lumisteria.MtVapius_GusCheeseQuestCompleteMail#Wonderful! One of my suppliers need to expand, those materials will help them with that.",
 				
+				"MtVapiusQuestButterForJodiTitle":"Butter for Jodi",
+				"MtVapiusQuestButterForJodiText":"Jodi wants butter made with the Mount Vapius method.",
+				"MtVapiusQuestButterForJodiObjective":"Bring Jodi 1 Butter.",
+				"MtVapiusQuestButterForJodiDialogue":"Thanks, @. Oh, no, I don't have any bread, I should send Sam get some quickly.",
+				
+				
+				"MtVapiusQuestOrpimentForMariamTitle":"Orpiment for Mariam",
+				"MtVapiusQuestOrpimentForMariamText":"Mariam wants to help her cousin to find material for his project.",
+				"MtVapiusQuestOrpimentForMariamObjective":"Bring Mariam 1 Orpiment.",
+				"MtVapiusQuestOrpimentForMariamDialogue":"You found one, wonderful!",
 				
 				
 				//Mails
@@ -2438,6 +2468,9 @@
 				"MtVapiusPeachRequestMail_Translated": "@,^In Mount Vapius, finding good peaches is hard. The harsh weather in the beginning of spring mean that most of the flowers are taken by the frost. Do you think you could bring me some peaches? Of course, you'll be compensated for your efforts.^^  -Célestine",
 				"MtVapiusPeachRequestMail_Title_Translated": "Célestine's Request",
 				
+				"MtVapiusChanterelleRequestMail_Translated": "@!,^I want to make omelet, but I need mushrooms. I traded some with Leah and Linus already, but there are some sort you can't find easily in the valley. If you happen to find some Chanterelles around Mount Vapius, would you bring me some? They really bring that unique flavour.^^  -Your friend, Gus",
+				"MtVapiusChanterelleRequestMail_Title_Translated": "Gus's Mushrooms Request",
+				
 				"MtVapiusMoreGuildGoalsMail_Translated": "@,^Since you reached the Lake, you have some talent for adventuring. I discussed with Gil so you can have some additional challenges to do, a collaboration between the Guild and the Lodge.^Some are warm-up for the challenge the Guild provide, a way for you to get some rewards in the way.^^Just to let you know, there are spells in some place to keep the danger level low in some areas. In the future, I may reduce them to focus on places where they're more needed, depending on the progress you make in exploring the forest of Mount Vapius.^^   -Mariam",
 				"MtVapiusMoreGuildGoalsMail_Title_Translated": "Mariam's Goals",
 				
@@ -2455,6 +2488,10 @@
 				
 				"MtVapiusEweCheeseForGusMail_Translated": "@!^I let some ideas brew a bit and got one I'm happy with. I need to set a few things and experiment a bit with recipes. Do you think you can bring me some plain Ewe Cheese? Three of them would do well.^^   -Your friend, Gus",
 				"MtVapiusEweCheeseForGusMail_Title_Translated": "Gus' Cheese Request",
+				
+				
+				"MtVapiusButterRequestMail_Translated": "Dear @,^Vincent is curious, he reads that what the cows eat and the method of production are changing the flavour and color of butter. He asked me to compare butter from Joja, and Marnie's Ranch. But he also want to try home-made butter. Apparently, you make cream and then put it in a cheese press. He told me it's how it was made in Glimsap. Do you think you can do it? We don't have this kind of material at home, it's way to expensive.^^   -Jodi",
+				"MtVapiusButterRequestMail_Title_Translated": "Jodi's Butter Request",
 				
 				//Stellar stuff
 				"MtVapiusNightMiscanthusSeedsMail_Translated": "Hi @,^Thanks for collecting some of those crescent pods for me. I collected some seeds to grow more of them, and noticed some of them were more dark and thin. I suspect they would grow something different.^Of course, I will try to grow them, but I'm curious if you'll got result too, and I'm sure you find this as fascinating as I do!^Take care of yourself and your garden.^^   -Aster",
@@ -2489,7 +2526,7 @@
 				"MtVapiusSpeckledFowlMail_Title_Translated": "Speckled Fowl For Sale!",
 				
 				
-				"MtVapiusGooseMail_Translated": "@,^I recently discussed with a farmer raising Gooses, as I needed goose down for the Inn's pillows. I figured you may be interested in raising such animals too.^You can put an order for Gooses at Marnie's Ranch.^They are big birds and don't live in a Coop as it would be quite small for them.^^   -Célestine",
+				"MtVapiusGooseMail_Translated": "@,^I recently discussed with a farmer raising geese, as I needed goose down for the Inn's pillows. I figured you may be interested in raising such animals too.^You can put an order for geese at Marnie's Ranch.^They are big birds and don't live in a Coop as it would be quite small for them.^^   -Célestine",
 				"MtVapiusGooseMail_Title_Translated": "Goose For Sale!",
 				
 				
@@ -2524,6 +2561,14 @@
 				"MtVapiusMariamMail_Title_Translated": "A Gift From Mariam",
 				"MtVapiusHeliaMail_Translated": "@,^I had some stuff lying around, and I needed to make space for a project. I figured you might be interested in those!^^Your favorite artisan.^   -Helia",
 				"MtVapiusHeliaMail_Title_Translated": "A Gift From Helia",
+				
+				
+				"MtVapiusCloverSeedsMail_Translated": "Dear member of the Stardew Valley Agricultural Network,^We are giving starting sets to farmers to move to better agrocultural practices. You'll find a package containing blue clover seeds. While they aren't valuable by themselves, they do leave ground fertilized after harvest, allowing following crops to grow faster.^Farmers reported that crops grew even faster on second year and after.^This sample is gracefully provided by Abdon Madi's farm. You can buy more from him at his market stand on Glimsap every saturday.^^   -The Stardew Valley Agricultural Network",
+				"MtVapiusCloverSeedsMail_Title_Translated": "Clover Seeds Gift.",
+				
+				
+				"MtVapiusStrangeRarecrowMail_Translated": "@,^I found this the other day. It's a weird scarecrow... I think? But Aster said she doesn't want to keep it, pretending it doesn't scare only the crows, but her too. I mean, sure, it seems to look different everyday, it's a bit weird. But I'm sure there's a reason why it changes like that! Anyway, I think you may find it useful.^^   -Maddy ",
+				"MtVapiusStrangeRarecrow_Title_Translated": "A Strange Gift From Maddy",
 			
 				"MtVapiusGazetteMail01_Translated": "Animals of our Mountains : the Fruit Bat.^Some species of Fruit Bats are migrating in mountain during summer, after hibernating in more warm areas.^Then they leave in early fall, after feasting on fruits one last time.^Foragers can sometimes find fruits they left behind in cave of mountainous areas.",
 				"MtVapiusGazetteMail01_Title_Translated": "Mountains Of Ferngill #03",
@@ -2542,6 +2587,12 @@
 				
 				"MtVapiusGazetteMail06_Translated": "Focus On : Wood Silk Flower^They grown in old forest in a soil rich in humus, and flower more strongly after a rain.^Its delicate petals are of a deep purple, and if they are indeed presenting some similarity with silk, the name comes from the past use of the flower as dye for silk fabric. Some artisans still research the plant for its purpose, even if this is now a marginal use.^Status : Not endangered. People are allowed to gather those flowers. It is still advised to cut the flower rather than digging it.",
 				"MtVapiusGazetteMail06_Title_Translated": "The Botanical Gazette #104",
+				
+				"MtVapiusGazetteMail07_Translated": "Markets of our Mountains.^^... Now we left Saltspring City's streets and the beautiful canals, and we go on our next market : Glimsap's. This small hamlet is on the main roads to travel in the mountain. As such, it was chosen to host frequent market days, and while what is sold here evolved in time, it kept some of the spirit of the past. For nearby places, it's the chance to get fresh products without having to go to town, and trade or banter with the merchands. How rural.^They even have some local coins used as money here. History lovers will surely try to get one of those coins for their collection. But, lucky readers, we have a gift for you! 5 of those coins for you to collect, trade or use.^The market is on each Tuesday and Saturday.^Tuesday features: a seed shop, a decoration shop and the Lodge's shop*.^(*For our readers, see issue #9 for an history of the Lodge, with an interview with the great warrior Ledon Pommerel.)^Saturday features : a flower seed shop, a jeweler's shop and an artisan shop.^They even have more merchands coming from special occasions.^Another noticeable market, not too far away if you continue on the Amber Road, is... ",
+				"MtVapiusGazetteMail07_Title_Translated": "Mountains Of Ferngill #14",
+				
+				"MtVapiusGazetteMail08_Translated": "'But I don't know what to do here.'^^This sentence sounds familiar? You heard it from your kids or partner when you offered them a nice visit to Glimsap? We got you covered!^Despite its small size, Glimsap has a lot to offer. There's a market twice a week, on Tuesday and Saturday. The Inn offers a local cuisine, with some invigorating food.^Maybe you prefer sweet and candies. One artisan sells candy makers, among a lot of different machines. Need a boost? What's better than coffee AND coffee candy?^^While the botanical reserve isn't accessible yet, you can still see a lot of interesting flowers and plants. There's some great mushroom spots... But I'm forbidden to give exact locations of them.^The caves are rich in gems and mineral, but most of them are in dangerous areas. It is advised to hire a Lodge member if you will to go here, unless you're yourself an adventurer. (Legal reminder : Don't bring childrens in expeditions.).^Fishers will have plenty of challenge. Some local fishers have rumors of giant fishes you can find in the local ponds. Maybe they're trying to keep the rod-selling business afloat?^Readers, what are your favorite activities here?",
+				"MtVapiusGazetteMail08_Title_Translated": "Mountains Of Ferngill #17",
 				
 				//Lodge
 				"MtVapiusmetalheads2Mail_Translated": "@^The Lodge and the Guild appreciate the efforts you provide in fighting monsters.",
@@ -2594,7 +2645,7 @@
 				
 				"InnStellarFibersOverheadMoira01": "Enter!",
 				"InnStellarFibersMoira01": "Hey, hi, @! Aster brought me some samples of the plants she grew.",
-				"InnStellarFibersAster01": "I sent some to a colleague in Saltspring, along with seeds.#$e#He told me that the Miscanthus is rich in coal-like components.",
+				"InnStellarFibersAster01": "I sent some to a colleague in Saltspring, along with seeds.#$b#He told me that the Miscanthus is rich in coal-like components.",
 				"InnStellarFibersMoira02": "I think it may also be good for textile fabrication. Look at how fiberous that is. So we wanted to give it a try!",
 				"InnStellarFibersAster02": "It's quite sturdy...",
 				"InnStellarFibersMoira03": "Yeah! But we're close!",
@@ -2602,8 +2653,10 @@
 				"InnStellarFibersMoira04": "It kept its color. There's a lot I could do with such a dark fabric...",
 				"InnStellarFibersAster04": "I'll bring you more fibers if I grow them. Maybe @ can too?",
 				"InnStellarFibersMoira05": "Oh, that would be cool!",
-				"InnStellarFibersMoira06": "Now, this one is a bit sticky but the fibers are looking great too. I wonder what would happen if we put it in a loom! Maybe we'll try next time?",
-				"InnStellarFibersAster05": "It would be fun!",
+				"InnStellarFibersMoira06": "Now, this one is a bit sticky but the fibers are looking great too.",
+				"InnStellarFibersAster05": "It IS sticky. Kinda like a candy, you know?",
+				"InnStellarFibersMoira07": "I wonder what would happen if we put it in a loom! Maybe we'll try next time?",
+				"InnStellarFibersAster06": "It would be fun!",
 				
 				"InnAsterMoira6HAsterOverhead01":"Do we have everything?",
 				"InnAsterMoira6HMoiraOverhead01":"I think so.",
@@ -3000,7 +3053,7 @@
 				"StellarCrops01Aster02": "Lewis told Demetrius about a strange plant he found in your shipping bin the other day.#$b#We think it may come from here originally, but I never saw it before, except in a book.",
 				"StellarCrops01Aster03": "$y 'Do you remember where you found it?_No_It must be an area I don't have access to. A recluse or dangerous one, maybe. Otherwise I would have spotted it in the past._Maybe in the deep of the forest_Oh it may that! I don't venture in it, it's too dangerous. Maybe one day..._Maybe it was seeds on ground._Oh! Buried seeds, interesting. So you may get living crops from it, wonderful.'",
 				"StellarCrops01Aster04": "If you find the plant again, can you bring me 5 specimens of it? It would allows me to study them.#$b#Of course, remember the good practices, just take what you need, keep the plant in place when possible, and ensure there's enough specimen left for the plant to survive.#$b#I want to study it, not contribute to put it on extinct species list.",
-				"StellarCrops01Aster05": "Oh, right, I forgot to tell you which one it was. You must ship a lot of things.#$b#It was a beige capsule the shape of a crescent. It may have contained seeds at some point.#$b#Speaking about seeds, if you find some, rather than the plant, and want to try to grow them, I have this garden pot. It may be handy.",
+				"StellarCrops01Aster05": "Oh, right, I forgot to tell you which one it was. You must ship a lot of things.#$b#It was a beige capsule the shape of a crescent. It may have contained seeds at some point.#$b#Speaking of seeds, if you find some instead of the plant itself and want to try growing them, I have this garden pot. It may be handy.",
 
 				
 				//Lumisteria.MtVapius_AsterHouse_Aster 6H
@@ -3349,6 +3402,19 @@
 				"MtVapiusMusicBandFoodMail_Translated": "@,^Hey, thanks for the food. It was good to have something new, and it was also a lot less messy than our usual pizza. Sam's mom was happier, and convincing her to accept another rehearsal will be easier.^^   -The Band",
 				"MtVapiusMusicBandFoodMail_Title_Translated": "Band's Thank You",
 				
+				
+				
+				"MtVapiusLotMonsterGoal_Name_Translated": "Mt Vapius Monster Goal",
+				"MtVapiusLotMonsterGoal_Text_Translated": "There's way too much {Monster:LocalizedName} to deal with recently. Anyone killing 70 of them will get a reward. Honestly, I don't care where you do it, near Glimsap, Pelican Town or whatever area you're in, it'll help us anyway.",
+				"MtVapiusLotMonsterGoal_Objective_0_Text_Translated": "Kill 70 {Monster:LocalizedName}",
+				"MtVapiusLotMonsterGoal_RE_Monster_0_LocalizedName_Translated": "Slimes",
+				"MtVapiusLotMonsterGoal_RE_Monster_1_LocalizedName_Translated": "Dust Sprites",
+				"MtVapiusLotMonsterGoalMail_Translated": "@,^Thanks for killing those monsters! Hopefully, it'll make stuff safer for people to travel.^Here's a reward for you. Those tickets can be exchanged for goods in some place!^^   -Mt Vapius Adventurer's Lodge",
+				"MtVapiusLotMonsterGoalMail_Title_Translated": "Monster Task's Thank you",
+				
+				
+				
+				
 				//Items
 				//Gems
 				"MtVapiusAmber_Translated": "Amber",
@@ -3470,7 +3536,7 @@
 				"MtVapiusFrostApple_Translated": "Frost Apple",
 				"MtVapiusFrostApple_Description_Translated": "A fruit rumored to appears when weather is cold.",
 				"MtVapiusWhiteGrape_Translated": "White Grape",
-				"MtVapiusWhiteGrape_Description_Translated": "Even sweeter than the usual variety.",
+				"MtVapiusWhiteGrape_Description_Translated": "Even sweeter than the usual variety. Can be matured on shelves to produce Sun Grape. Drying them is possible but less efficient.",
 				"MtVapiusSunGrape_Translated": "Sun Grape",
 				"MtVapiusSunGrape_Description_Translated": "All the sugar was concentrated by the maturing.",
 				"MtVapiusBasil_Translated": "Basil",
@@ -3512,7 +3578,7 @@
 				"MtVapiusSunroot_Translated": "Sunroot",
 				"MtVapiusSunroot_Description_Translated": "It contains components that makes digestion difficult for people.",
 				"MtVapiusCasalotierFlower_Translated": "Casalotier Flower",
-				"MtVapiusCasalotierFlower_Description_Translated": "A blue flower.TODO",
+				"MtVapiusCasalotierFlower_Description_Translated": "A blue flower. It's used in some beverages to give a pretty color, but it can be a bit bitter.",
 				"MtVapiusRingfruit_Translated": "Ringfruit",
 				"MtVapiusRingfruit_Description_Translated": "The secret of candy cane making.",
 				//Seeds
@@ -3521,7 +3587,7 @@
 				"MtVapiusFireBeansStarter_Translated": "Fire Beans Starter",
 				"MtVapiusFireBeansStarter_Description_Translated": "Plant these in spring and summer. Takes 9 days to mature, but keeps producing after that. Grows on a trellis.",
 				"MtVapiusRyeSeeds_Translated": "Rye Seeds",
-				"MtVapiusRyeSeeds_Description_Translated": "Plant these in the winter. Takes 4 days to mature.",
+				"MtVapiusRyeSeeds_Description_Translated": "Plant these in the winter. Takes 4 days to mature. Has a chance to leave ground fertilised after harvest.",
 				"MtVapiusBlueMorningGloryStarter_Translated": "Blue Morning Glory",
 				"MtVapiusBlueMorningGloryStarter_Description_Translated": "Plant these in the summer. Takes 5 days to mature, but keeps producing after that. Grows on a trellis.",
 				"MtVapiusPinkMorningGloryStarter_Translated": "Pink Morning Glory",
@@ -3594,6 +3660,8 @@
 				"MtVapiusWildVapiusSeeds_Description_Translated": "There's a little bit of everything here. Plant them and see what grows!",
 				"MtVapiusMountainMeadowSeeds_Translated": "Mountain Meadow Seeds",
 				"MtVapiusMountainMeadowSeeds_Description_Translated": "They are rare flower seeds, best to plant early in a season to ensure they have time to grow.",
+				"MtVapiusBlueCloverSeeds_Translated": "Blue Clover Seeds",
+				"MtVapiusBlueCloverSeeds_Description_Translated": "Plant them in the spring, survive in summer and fall. Takes 3 days to mature and left ground fertilised after harvest. Talented farmers can plant it in summer too.",
 				"MtVapiusLarimarSapling_Translated": "Larimar Sapling",
 				"MtVapiusLarimarSapling_Description_Translated": "Takes 28 days to produce a mature Larimar tree. Rumored to bear Larimar gems sometimes. Only grows if the 8 surrounding \"tiles\" are empty.",
 				//Forage
@@ -3621,6 +3689,8 @@
 				"MtVapiusBlackChanterelleTreeSeed_Description_Translated": "A black chanterelle with spores of unusual size, rumored to be able to produce a giant mushroom tree.",
 				"MtVapiusPixieBell_Translated": "Pixie Bell",
 				"MtVapiusPixieBell_Description_Translated": "Tales say that fairy are playing hide and seek in these. Childrens love to look into it in the hope of spotting one.",
+				"MtVapiusBlueClover_Translated": "Blue Clover",
+				"MtVapiusBlueClover_Description_Translated": "A common forage, not very valuable by itself. Farmers use it to fertilize ground.",
 				//dishes
 				"MtVapiusGratinVapius_Translated": "Gratin à la Vapius",
 				"MtVapiusGratinVapius_Description_Translated": "Crispy potatoes on the outside, tender potatoes in the inside.",
@@ -3733,7 +3803,7 @@
 				
 				
 				//Jewels
-				"MtVapiusEmeraldEarrings_Translated": "Emerald Earrings",
+				"MtVapiusEmeraldEarrings_Translated": "Gem Polished Earrings",
 				"MtVapiusEmeraldEarrings_Description_Translated": "A set of earrings.",
 				"MtVapiusAquamarineEarrings_Translated": "Aquamarine Earrings",
 				"MtVapiusAquamarineEarrings_Description_Translated": "A set of earrings.",
@@ -3996,6 +4066,9 @@
 				
 				"MtVapiusFossilDisplay_Translated": "Fossil Display",
 				
+				"MtVapiusJunimoSatchel_Translated": "Junimo Satchel",
+				
+				
 				"MtVapiusVase_Translated": "Paper Flowers in Vase",
 				
 				
@@ -4032,6 +4105,7 @@
 				"MtVapiusCandied_Translated": "Candied {0}",
 				"MtVapiusPolished_Translated": "Polished {0}",
 				"MtVapiusEarrings_Translated": "{0} Earrings",
+				"MtVapiusFan_Translated": "{0} Fan",
 				"MtVapiusGlobe_Translated": "{0} Globe",
 				"MtVapiusHoneyDrop_Translated": "{0}Drop",
 				
@@ -4045,6 +4119,8 @@
 				"MtVapiusCometRootsSeeds_DenyMessage": "Must be planted outdoors and during Spring.",
 				"MtVapiusCosmosSeeds_DenyMessage": "Must be planted in Mount Vapius.",
 				"MtVapiusPixieBellSeeds_DenyMessage": "Needs a higher foraging skill.",
+				"MtVapiusBlueCloverSeeds_DenyMessage": "Only skilled farmers can plant these in summer.",
+				"MtVapiusBlueCloverSeeds_DenyFallMessage": "Can't be planted in fall.",
 				
 				"MtVapiusAncientSeeds_DenyMessage": "Can't be planted in Mount Vapius.",
 
@@ -4062,19 +4138,31 @@
 				"MtVapiusJewelerWorkshop_Translated": "Jeweler's Workshop",
 				"MtVapiusJewelerWorkshop_Description_Translated": "Turns polished gems into earring and feathers into fans.",
 				"MtVapiusJewelerWorkshop_MissingGoldBar_Translated": "Needs 1 Gold Bar.",
+				"MtVapiusJewelerWorkshop_MissingGlassShard_Translated": "Needs 1 Glass Shard.",
 				"MtVapiusJewelerWorkshop_InvalidItem_Translated": "This can't go in Jeweler Workshop.",
 				"MtVapiusJewelerWorkshop_InvalidCount_Translated": "Requires more fruits or ingredients.",
 				"MtVapiusMaturingShelves_Translated": "Maturing Shelves",
-				"MtVapiusMaturingShelves_Description_Translated": "Mature Cheese and make Blue Cheese. Works slower when outdoor.",
+				"MtVapiusMaturingShelves_Description_Translated": "Mature Cheese, make Blue Cheese, and dry grapes. Works slower when outdoor.",
 				"MtVapiusMaturingShelves_MissingHay_Translated": "Needs 3 hay.",
 				"MtVapiusMaturingShelves_InvalidItem_Translated": "This can't go in Maturing Shelves.",
-				"MtVapiusMaturingShelves_InvalidCount_Translated": "Requires more or ingredients.",
+				"MtVapiusMaturingShelves_InvalidCount_Translated": "Requires more of ingredients.",
+				"MtVapiusMaturingShelves_InvalidGrapeCount_Translated": "Requires 5 white grapes of this variety.",
 				"MtVapiusInsectHotel_Translated": "Insect Hotel",
 				"MtVapiusInsectHotel_Description_Translated": "Insects live in here and bring flower seeds regularly. Works slower when indoor.",
 				"MtVapiusCompostBin_Translated": "Compost Bin",
 				"MtVapiusCompostBin_Description_Translated": "Change Fertilizers to the higher quality over time. Works slower when indoor.",
 				"MtVapiusCompostBin_InvalidItem_Translated": "This can't go in Compost Bin",
+				"MtVapiusCompostBin_InvalidCountPlant_Translated": "Needs 2 Rotten Plants",
+				"MtVapiusCompostBin_InvalidCountFertiliser_Translated": "Needs 5 Fertilizers of same kind",
 				"MtVapiusSeedMaker_InvalidCount_Translated": "Needs 3 Pixie Bells.",
+				"MtVapiusLoom_InvalidCount_Miscanthus_Translated": "Needs 3 Miscanthus.",
+				"MtVapiusLoom_MissingBatWings_Translated": "Needs 5 Bat Wings.",
+				"MtVapiusLoom_MissingBatWingsWool_Translated": "Needs 5 Bat Wings and 1 wool.",
+				"MtVapiusPreserveJar_MissingAnchovy_Translated": "Needs 1 Anchovy.",
+				
+				
+				"MtVapiusStrangeRarecrow_Translated": "Strange Scarecrow",
+				"MtVapiusStrangeRarecrow_Description_Translated": "Prevents crows from attacking your crops. Has a limited radius (about 12 \"tiles\"). Change appearance daily.",
 				
 				//Animals
 				"MtVapiusEwe_Translated": "Ewe",
@@ -4105,9 +4193,12 @@
 				"MtVapiusAgingCave_Description_Translated": "A place where to age cheeses and milk to obtain new cheese varieties. Only buildable in Mount Vapius.",
 				"MtVapiusOrchardHouse_Translated": "Orchard House",
 				"MtVapiusOrchardHouse_Description_Translated": "A decoratable area. Only buildable in Mount Vapius. Limited to 1.",
+				"MtVapiusObelisk_Translated": "Mount Vapius Obelisk",
+				"MtVapiusObelisk_Description_Translated": "Warps you to Glimsap in Mount Vapius",
 
 				//Location Names
 				"MtVapiusTrainStation": "Mount Vapius - Train Station",
+				"MtVapiusTrainStationIndoor": "Train Station",
 				"MtVapiusHamlet": "Mount Vapius - Glimsap Hamlet",//Hameau Clersève
 				"MtVapiusOrchard": "Mount Vapius - Orchard",
 				"MtVapiusClearing": "Mount Vapius - Clearing",
@@ -4123,6 +4214,12 @@
 				"MtVapiusForestJunimoClearing": "Mount Vapius - Serene Clearing",
 				"MtVapiusInn": "The Red Owl Inn",
 				"MtVapiusAsterHouse": "Aster and Maddy House",
+	
+				"MtVapiusDirectionForest": "Leads to the forest",
+				"MtVapiusDirectionCliffs": "Leads to the cliffs",
+				"MtVapiusTrainTicketMachine": "Ticket Machine - Book tickets to Pelican Town here",
+				
+				
 				
 				//Minecart
 				"MtVapiusOneWayOnlyWarning": "- One Way Only",
@@ -4224,7 +4321,7 @@
 				"MtVapiusInn13MessageR03": "It's a pile of letters, old and new. You look at one of them.^'Mon amour, I have to go back to the train station, I'm seeing you later. Have a nice day. -A'",
 				"MtVapiusInn13MessageR04": "It's a pile of letters, old and new. You look at one of them.^'Dear Célestine, it was a pleasure to stay at the Inn those few days. The sky here is so beautiful at night, so much clearer than in Pelican Town. I made such great observations. -Maru'",
 				"MtVapiusInn13MessageR05": "It's a pile of letters, old and new. You look at one of them.^'Ms Dubois, as the mayor of Pelican Town, I would love to know more about the approachs you used to keep tourism high in Mount Vapius. In particular, suggestions you may have for Pelican Town in that regard would be appreciated. Cordially, Mayor Lewis'",
-				"MtVapiusInn14Message": "An old notebook about cheesemaking. The author is Eusebio Dubois. 'You'll get different results putting already formed cheeses in maturing shelves or putting milk to curdle directly.'",
+				"MtVapiusInn14Message": "An old notebook about cheesemaking. The author is Eusebio Dubois. 'You'll get different results putting already formed cheeses in maturing shelves or putting milk to curdle directly.'^Another page says :'Make cream in preserve jars and put it in cheese press to make butter.'",
 				"MtVapiusInn15Message": "The journalist is providing commentary on a game of Batrounder.",
 				"MtVapiusInn16Message": "As you guessed, a book about birds.",
 				
@@ -4238,7 +4335,18 @@
 				"MtVapiusFaycombe1Message": "A pretty statue of a fairy, some elements made of gemstone. It looks like it could use some repair...",
 				"MtVapiusFaycombe1_true_Message": "A pretty statue of a fairy, some elements made of gemstone.",
 				
-				"MtVapiusNaveenHouse1Message": "Dear Naveen,^It was really nice discussing candy-making with you. Here’s some of my recipes if you want to practice.^-Grape can make Mosco Cotto, used to make Balsamic Vinegar.^-Hazelnut is used to make Praline.^-Honey for Honeydrop.^-3 Coffee Beans for Coffee Candy.^-Melon makes Calissons.^-Birchsap is used in some Berlingot recipes.^-You can make Candied Fruits, and even Candied Flowers with the edible ones.^^I experimented with the secret recipe you gave me, and made candies with the extract I obtained. They were amazing.^For our next date, I’ll bring some of my creations for you to taste.^^  -Aloïse.",
+				"MtVapiusNaveenHouse1Message": "A jar of candy, near a slightly old note. 'Dear Naveen,^It was really nice discussing candy-making with you. Here’s some of my recipes if you want to practice.^-Grape can make Mosco Cotto, used to make Balsamic Vinegar.^-Hazelnut is used to make Praline.^-Honey for Honeydrop. Bet you didn't guess that one.^-Three Coffee Beans for Coffee Candy.^-Melon makes Calissons.^-Birchsap is used in some Berlingot recipes.^-You can make Candied Fruits, and even Candied Flowers with the edible ones.^I experimented with the secret recipe you gave me, and made candies with the extract I obtained. They were amazing.^For our next date, I’ll bring some of my creations for you to taste.^  -Aloïse.'",
+				"MtVapiusNaveenHouse2Message": "A broken necklace, carefully written notes and schemas.",
+				"MtVapiusNaveenHouse3Message": "There's several family pictures on the wall. This one was taken years ago.",
+				"MtVapiusNaveenHouse4Message": "Naveen and a blond man enjoying chocolate cake together in a city. They look close and happy.",
+				"MtVapiusNaveenHouse5Message": "There's sliced veggies on a board, lot of spices in jars. Salt is out of sight.",
+				"MtVapiusNaveenHouse6Message": "There's a cake here.",
+				"MtVapiusNaveenHouse7Message": "Jewels, chains, tools, pieces of old watches, cogs.",
+				"MtVapiusNaveenHouse8Message": "An old clock.",
+				"MtVapiusNaveenHouse9Message": "A plastic tea set. Lot of the toys in the room are the kind that can be easily kept clean.",
+				"MtVapiusNaveenHouse10Message": "'Chronicle of Solarion'",
+				"MtVapiusNaveenHouse11Message": "It looks like a magic crystal. Totally different than a mundane crystal, obviously.",
+				"MtVapiusNaveenHouse12Message": "Dictionaries in various languages. Is that dwarvish?",
 
 				//Bundles
 				
@@ -4271,9 +4379,26 @@
 				"MtVapiusStartingBundleMail_Translated": "Hi, Young Adept.^^Our common friends let me know you've helped them recently in the old forest near Glimsap. Thanks for that.^I'm Luna, I'm taking care of the protection spells for Mount Vapius and its surroundings.^Maybe our paths will cross in the future.^   Luna",
 				"MtVapiusStartingBundleMail_Title_Translated": "Luna's Greetings",
 				
+				"MtVapiusJunimoSatchelMail_Translated": "Hi, Young Adept.^^Your work around Glimsap was noticed and appreciated by several people... And our common friends too.^Here's a reward for you : a magical satchel. It's linked to the other satchels that, surely, you noticed in some places in Glimsap. Hopefully it'll make your tasks here easier.^   Luna",
+				"MtVapiusJunimoSatcheleMail_Title_Translated": "Luna's Gift",
+				
+				
 				"MtVapiusStartingBundle_Event01": "Someone new...",
 				"MtVapiusStartingBundle_Event02": "Return tomorrow if you want to help. There's a lot more to do.",
 				"MtVapiusStartingBundle_Event03": "New Bundles will be unlocked tomorrow.",
 
+				//Cooking Override descriptions
 				
+				"MtVapius_Ingredients_AnyTroutAlpineChar": "Any trout or alpine char",
+				"MtVapius_Ingredients_AnyCream": "Any Cream",
+				"MtVapius_Ingredients_AnyButter": "Any Butter",
+				"MtVapius_Ingredients_AnyHotPepper": "Any Hot pepper",
+				"MtVapius_Ingredients_AnyBasil": "Any Basil",
+				"MtVapius_Ingredients_AnyCarrotSquash": "Any of Cave carrot, carrot, summer squash, zucchini",
+				"MtVapius_Ingredients_AnyEgg": "Any Egg",
+
+				//config descriptions
+				"config.RailroadMinecart.description": "There will be a minecart at the railroad.",
+				"config.TravelingLadyIsLotti.description": "The traveling lady will be named Lotti and have a portrait if enabled. Some npcs may also refers to her in dialogue.",
+				"config.ContextTagRecipes.description": "To use Spacecore feature for context tags as ingredient in recipes. Some mods may not support the feature. Disable if needed.",
 }

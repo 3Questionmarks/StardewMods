@@ -9,8 +9,8 @@
  <tileset firstgid="1" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
   <image source="walls_and_floors.png" width="256" height="688"/>
  </tileset>
- <tileset firstgid="689" name="Vanilla" tilewidth="16" tileheight="16" tilecount="2516" columns="37">
-  <image source="Vanilla.png" width="600" height="1088"/>
+ <tileset firstgid="689" name="TinyShed_Vanilla" tilewidth="16" tileheight="16" tilecount="2516" columns="37">
+  <image source="TinyShed_Vanilla.png" width="600" height="1088"/>
  </tileset>
  <layer id="1" name="Back" width="9" height="15">
   <data encoding="csv">

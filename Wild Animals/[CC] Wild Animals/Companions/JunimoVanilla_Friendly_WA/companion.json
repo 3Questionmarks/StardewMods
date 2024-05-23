@@ -2,7 +2,7 @@
 	"Name": "JunimoVanilla_Friendly_WA",
 	"Type": "Walking",
 	"EnableSpawnAtDayStart": false,
-	"EnableCharacterCollision": true,
+	"EnableCharacterCollision": false,
 	"EnableFarmerCollision": false,
 	"EnableShadow": true,
 	"TravelSpeed": 2,
@@ -113,7 +113,7 @@
 	"UpdateWhenPlayerNearby": {
 	"Name": "JunimoVanilla_Friendly_WA",
 	"Type": "Walking",
-	"EnableCharacterCollision": true,
+	"EnableCharacterCollision": false,
 	"EnableFarmerCollision": false,
 	"EnableShadow": true,
 	"TravelSpeed": 2,

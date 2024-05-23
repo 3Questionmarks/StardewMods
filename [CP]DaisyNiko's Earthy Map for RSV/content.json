@@ -1,18 +1,20 @@
 {
 	"Format": "2.0",
 	"Changes": [
+//RSV Map
 		{
-			"LogName": "Load Village Map",
+			"LogName": "Village Map",
 			"Action": "EditImage",
 			"Target": "LooseSprites/RSVMap",
-			"FromFile": "assets/RSVMap.png",
+			"FromFile": "assets/RSVMap_{{season}}.png",
 			"PatchMode": "Overlay",
 			"When": {
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+//RSV Icon
 		{
-			"LogName": "Load RSV Icon",
+			"LogName": "RSV Icon",
 			"Action": "EditImage",
 			"Target": "LooseSprites/RSVIcon",
 			"FromFile": "assets/RSVIcon.png",
@@ -21,8 +23,9 @@
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+//RSV Icon Season
 		{
-			"LogName": "Load RSV Icon",
+			"LogName": "RSV Icon",
 			"Action": "EditImage",
 			"Target": "LooseSprites/RSVIcon",
 			"FromFile": "assets/RSVIcon_{{season}}.png",
@@ -31,8 +34,9 @@
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+//RSV Worldmap
 		{
-			"LogName": "Load RSV World Map",
+			"LogName": "RSV World Map",
 			"Action": "EditImage",
 			"Target": "LooseSprites/RSVWorldMap",
 			"FromFile": "assets/RSVWorldMap.png",
@@ -41,11 +45,24 @@
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+//RSV Worldmap Season
 		{
-			"LogName": "Load RSV World Map",
+			"LogName": "RSV World Map",
 			"Action": "EditImage",
 			"Target": "LooseSprites/RSVWorldMap",
 			"FromFile": "assets/RSVWorldMap_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+//RSV Interior Shield
+		{
+			"LogName": "RSV Shield Interior",
+			"Action": "EditImage",
+			"Target": "Maps/z_rsvinterior",
+			"FromFile": "assets/Shield_{{season}}.png",
+			"ToArea": {"X": 128, "Y":469, "Width": 16, "Height": 27},
 			"PatchMode": "Overlay",
 			"When": {
 				"HasMod": "Rafseazz.RSVCP",

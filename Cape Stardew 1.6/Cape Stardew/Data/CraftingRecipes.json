@@ -5,26 +5,19 @@
             "LogName": "CraftingRecipes - custom warp totem",
             "Action": "EditData",
             "Target": "Data/CraftingRecipes",
-            
-            "When": {
-            "JAItemsOnly": "false",
-            },
             "Entries": {
-    "{{ModId}}_SeaCapeWarpTotemRecipe": "709 1 767 1 585 1/Field/dreamy.kickitspot_SeaCapeWarpTotem/false/none/{{i18n:cape-island-totem-recipe}}",
+    "SeaCapeWarpTotem": "709 1 767 1 585 1/Field/dreamy.kickitspot_SeaCapeWarpTotem/false/none/{{i18n:cape-island-totem-recipe}}",
      }
         },
     
        
         ///warptotem///
          {
-            "LogName": "CraftingRecipes - custom warp totem",
+            "LogName": "CraftingRecipes - custom warp totem 2",
             "Action": "EditData",
             "Target": "Data/CraftingRecipes",
-            "When": {
-            "JAItemsOnly": "false",
-            },
             "Entries": {
-        "{{ModId}}_CapeWarpTotemRecipe": "709 1 767 1 581 1/Field/dreamy.kickitspot_CapeWarpTotem/false/none/{{i18n:cape-totem-recipe}}",
+        "Cape Warp Totem": "709 1 767 1 581 1/Field/dreamy.kickitspot_CapeWarpTotem/false/none/{{i18n:cape-totem-recipe}}",
         }
         },
         

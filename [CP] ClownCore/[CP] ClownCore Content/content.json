@@ -4,12 +4,29 @@
 /************************************************
 Tilesheets
 ************************************************/
+ {
+"LogName": "PC Technical Information",
+ "When": {
+        "HasMod |contains=Fellowclown.PC": true
+            },
+"Action": "Include",
+"FromFile": "Data/WorldMap.json"
+ },
 {
 "LogName": "Tilesheets",
 "Action": "Load",
-"Target": "Maps/FC.FountainGem,Maps/Events,Maps/Fellowclown_AnimalRefuge,Maps/spring_Fellowclown_Outdoors,Maps/summer_Fellowclown_Outdoors,Maps/fall_Fellowclown_Outdoors,Maps/winter_Fellowclown_Outdoors,Maps/spring_Fellowclown_Indoors,Maps/summer_Fellowclown_Indoors,Maps/fall_Fellowclown_Indoors,Maps/winter_Fellowclown_Indoors,",
-"FromFile": "Tilesheets/{{TargetWithoutPath}}.png",
+"Target": "Maps/Fellowclown_mine_frost_dangerous,Maps/FC.FountainGem,Maps/Events,Maps/Fellowclown_AnimalRefuge,Maps/spring_Fellowclown_Outdoors,Maps/summer_Fellowclown_Outdoors,Maps/fall_Fellowclown_Outdoors,Maps/winter_Fellowclown_Outdoors,Maps/spring_Fellowclown_Indoors,Maps/summer_Fellowclown_Indoors,Maps/fall_Fellowclown_Indoors,Maps/winter_Fellowclown_Indoors,",
+"FromFile": "Tilesheets/Vanilla/{{TargetWithoutPath}}.png",
 },
+{
+"LogName": "Tilesheets",
+"Action": "EditImage",
+"Target": "Maps/worldmap_spring,Maps/worldmap_summer,Maps/worldmap_fall,Maps/worldmap_winter",
+"FromFile": "Tilesheets/EarthyRecolor/{{TargetWithoutPath}}.png",
+ "When": {
+        "HasMod |contains=DaisyNiko.EarthyRecolour": true
+            }
+        },
  {
 "LogName": "PC Technical Information",
 "Action": "Include",
@@ -21,13 +38,13 @@ Custom Buildings
  {
 "LogName": "Tropical House Map",
 "Action": "Load",
-"Target": "Maps/FC.TropicalAnimalHouseMap",
+"Target": "Maps/FC.TropicalAnimalHouseMapLarge,Maps/FC.TropicalAnimalHouseMapMedium,Maps/FC.TropicalAnimalHouseMapSmall",
 "FromFile": "Buildings/{{TargetWithoutPath}}.tbin",
 },
 {
 "LogName": "Tilesheets",
 "Action": "Load",
-"Target": "Buildings/FC.TropicalAnimalHouse",
+"Target": "Buildings/FC.TropicalAnimalHouseLarge,Buildings/FC.TropicalAnimalHouseMedium,Buildings/FC.TropicalAnimalHouseSmall",
 "FromFile": "Buildings/{{TargetWithoutPath}}.png",
 },
     {
@@ -36,17 +53,64 @@ Custom Buildings
     "FromFile": "Maps/FlowerFestivalEdit.tbin",
     "ToArea": { "X":0, "Y": 9, "Width": 27, "Height":12},
     "When": {
-        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+        "HasMod |contains=Rafseazz.RSVCP": false
             }
         },
          {
     "Action": "EditMap",
     "Target": "Maps/Forest-FlowerFestival,Maps/Forest-FlowerFestival2",
     "FromFile": "Maps/RSVFlowerFestivalEdit.tbin",
-    "ToArea": { "X":0, "Y": 9, "Width": 27, "Height":12},
+    "ToArea": { "X":0, "Y": 9, "Width": 27, "Height":12
+    },
+         "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+            }
+        },
+               {
+    "Action": "EditMap",
+    "Target": "Maps/Beach-Luau,Maps/Beach-Luau2",
+    "FromFile": "Maps/LuauFestivalEdit.tbin",
+    "ToArea": { "X":14, "Y": 27, "Width": 10, "Height":8},
+        },
+                    {
+    "Action": "EditMap",
+    "Target": "Maps/Beach-Jellies,Maps/Beach-Jellies2",
+    "FromFile": "Maps/BeachJellyFestivalEdit.tbin",
+    "ToArea": { "X":14, "Y": 27, "Width": 10, "Height":8},
+        },
+                        {
+    "Action": "EditMap",
+    "Target": "Maps/Beach",
+    "FromFile": "Maps/JellyFestivalEdit.tbin",
+    "ToArea": { "X":14, "Y": 27, "Width": 10, "Height":8},
+         "When": {
+        "DayEvent": "dance of the moonlight jellies"
+            }
+        },
+                            {
+    "Action": "EditMap",
+    "Target": "Maps/Forest-IceFestival,Maps/Forest-IceFestival2",
+    "FromFile": "Maps/IceFestivalEdit.tbin",
+    "ToArea": { "X":93, "Y": 12, "Width": 18, "Height":11},
+         "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+                                    {
+    "Action": "EditMap",
+    "Target": "Maps/Forest-IceFestival,Maps/Forest-IceFestival2",
+    "FromFile": "Maps/IceFestivalEditSVE.tbin",
+    "ToArea": { "X":93, "Y": 11, "Width": 18, "Height":12},
          "When": {
         "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
             }
+        },
+                                    {
+    "Action": "EditMap",
+    "Target": "Maps/Town-Fair,Town-Fair2",
+    "FromFile": "Maps/FairFestivalEdit.tbin",
+    "ToArea": { "X":57, "Y": 94, "Width": 17, "Height":12
+    },
         },
 ],
 }

@@ -7,8 +7,6 @@
       "FromFile": "assets/capewindows.png",
       },
       
-       
-      
     {
       "Action": "EditData",
       "Target": "Data/Shops",
@@ -33,25 +31,29 @@
            {
               
               "Id": "dreamy.kickitspot_SeaCapeWarpTotemRecipe",
+              "ItemId": "dreamy.kickitspot_SeaCapeWarpTotem",
               "TradeItemId": "(O)873",
               "Price": 0,
               "IsRecipe": true,
               "TradeItemAmount": 1,
               "AvailableStock": 1,
               "AvailableStockLimit": "Player",
-              "Condition": "PLAYER_VISITED_LOCATION Current Custom_CapeIslandEntry, PLAYER_FRIENDSHIP_POINTS Current Jelli 1000",
+              "Condition": "PLAYER_VISITED_LOCATION Current Custom_CapeIslandEntry, PLAYER_FRIENDSHIP_POINTS Current Jelli 1000"
+             
             },
             
             {
               
               "Id": "dreamy.kickitspot_CapeWarpTotemRecipe",
+              "ItemId": "dreamy.kickitspot_CapeWarpTotem",
               "TradeItemId": "(O)396",
               "Price": 0,
               "IsRecipe": true,
               "TradeItemAmount": 2,
               "AvailableStock": 1,
               "AvailableStockLimit": "Player",
-              "Condition": "PLAYER_FRIENDSHIP_POINTS Current Jelli 750",
+              "Condition": "PLAYER_FRIENDSHIP_POINTS Current Jelli 750"
+              
             },
           
           {
@@ -140,8 +142,17 @@
               "AvailableStockLimit": "Player",
               "Condition": "RANDOM 0.1 @addDailyLuck",
             },
-         
-            
+             {
+              "ItemId": "Cape.1463533",
+              "Id": "Cape.1463533",
+              "TradeItemId": "(O)797",
+              "Price": 0,
+              "IsRecipe": false,
+              "TradeItemAmount": 1,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Any 1463510168",
+            }
           ],
          "VisualTheme": [
   {

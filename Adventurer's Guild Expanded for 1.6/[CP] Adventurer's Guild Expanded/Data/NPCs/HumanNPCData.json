@@ -8,7 +8,7 @@
                     "HasSeenEvent: anyPlayer |contains=9280002": true },
 		"Entries": {
 			"Gabriel": {
-                             "DisplayName": "Gabriel",
+                             "DisplayName": "{{i18n:gabrielNPCnamedisplay}}",
                              "Gender": "Male",
                              "Age": "Adult",
                              "Manner": "Neutral",
@@ -26,7 +26,6 @@
                              "CanVisitIsland": true,
                              "Calendar": "HiddenUntilMet",
                              "SocialTab": "HiddenUntilMet",
-                             "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9280002",
                              "Home": [
                                      {
                                          "Id": "Default",
@@ -68,7 +67,7 @@
 
                              }, 
 			"Zinnia": {
-                             "DisplayName": "Zinnia",
+                             "DisplayName": "{{i18n:zinniaNPCnamedisplay}}",
                              "Gender": "Female",
                              "Age": "Teen",
                              "Manner": "Polite",
@@ -86,7 +85,6 @@
                              "CanVisitIsland": true,
                              "Calendar": "HiddenUntilMet",
                              "SocialTab": "HiddenUntilMet",
-                             "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9280002",
                              "Home": [
                                      {
                                          "Id": "Default",
@@ -127,6 +125,20 @@
                                              },
                                             }
 
+                             }, 
+			"Daisy": {
+                             "DisplayName": "{{i18n:daisyNPCnamedisplay}}",
+                             "CanSocialize": false,
+                             "IntroductionsQuest": false,
+                             "SocialTab": "HiddenAlways",
+                             "EndSlideShow": "Hidden",
+                             }, 
+			"Daniel": {
+                             "DisplayName": "{{i18n:danielNPCnamedisplay}}",
+                             "CanSocialize": false,
+                             "IntroductionsQuest": false,
+                             "SocialTab": "HiddenAlways",
+                             "EndSlideShow": "Hidden",
                              }, 
 
                  },
@@ -289,6 +301,7 @@
 		},
 
 //*** DAISY (NON SOCIAL NPC) ****
+
 
 		{
 			"LogName": "Daisy Sprites",

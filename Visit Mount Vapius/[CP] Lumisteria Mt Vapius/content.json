@@ -50,7 +50,11 @@
 		"TravelingLadyIsLotti": {
 			"AllowValues": "true, false",
 			"Default": true
-		}
+		},
+		"ContextTagRecipes": {
+			"AllowValues": "true, false",
+			"Default": false
+		},
 	},
 	"DynamicTokens": [
 		{
@@ -694,6 +698,14 @@
 			"FromFile": "Assets/items/CookingRecipes.json",
 		},
 		{
+			"LogName": "CookingRecipes",
+			"Action": "Include",
+			"FromFile": "Assets/items/CookingRecipesSpacecoreOverride.json",
+			"When": {
+				"ContextTagRecipes": true,
+			}
+		},
+		{
 			"LogName": "CraftingRecipes",
 			"Action": "Include",
 			"FromFile": "Assets/items/CraftingRecipes.json",
@@ -942,6 +954,11 @@
 			"Action": "Include",
 			"FromFile": "Assets/others/LocationContext.json",
 		},
+		//Locations Additions
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/LocationsAdditions.json",
+		},
 		//Appending context tags
 		/*{
 			"Action": "Include",
@@ -953,14 +970,14 @@
 			"FromFile": "Assets/others/VisualChanges.json",
 		},
 		//Companions
-		{
+		/*{
 			"Action": "Include",
 			"FromFile": "Assets/others/Companions.json",
 			"When": {
 				"HasMod |contains=PeacefulEnd.CustomCompanions": "true",
 				"HasMod |contains=Lumisteria.MtVapiusCompanions": "true"
 			}
-		},
+		},*/
 		//Mails
 		{
 			"Action": "Include",
