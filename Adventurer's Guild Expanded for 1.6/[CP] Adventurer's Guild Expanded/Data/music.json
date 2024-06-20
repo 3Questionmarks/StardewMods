@@ -11,7 +11,7 @@
                     "Category": "Music",
                     "StreamedVorbis": false, 
                     "Looped": true,
-                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Music/GabrielTheme.wav}}" ],
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Music/GabrielTheme.ogg}}" ],
                      
                 },
 
@@ -20,7 +20,7 @@
                     "Category": "Music",
                     "StreamedVorbis": false, 
                     "Looped": true,
-                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Music/ZinniaTheme.wav}}" ],
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Music/ZinniaTheme.ogg}}" ],
                 },
                     
                 "ZinniaSorrow": {
@@ -28,7 +28,7 @@
                     "Category": "Music",
                     "StreamedVorbis": false, 
                     "Looped": true,
-                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Music/ZinniaSorrow.wav}}" ],
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Music/ZinniaSorrow.ogg}}" ],
                 },
 
                 "SillyTheme": {
@@ -36,7 +36,7 @@
                     "Category": "Music",
                     "StreamedVorbis": false, 
                     "Looped": true,
-                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Music/SillyTheme.wav}}" ],
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Music/SillyTheme.ogg}}" ],
                 },
 
                 "DaisyFarewell": {
@@ -44,7 +44,7 @@
                     "Category": "Music",
                     "StreamedVorbis": false, 
                     "Looped": true,
-                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Music/DaisyFarewell.wav}}" ],
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Music/DaisyFarewell.ogg}}" ],
                 },
             }
          }

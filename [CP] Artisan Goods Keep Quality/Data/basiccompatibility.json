@@ -1,0 +1,180 @@
+{
+	"Changes": [
+		{// Blue Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "6480.blueegg_BlueEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Blue Eggs and Golden Mayo": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+		},
+		{// Blue Mayo Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "6480.blueegg_BlueEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Blue Eggs and Golden Mayo": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+		},
+		{// Gold Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "6480.blueegg_GoldenEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Blue Eggs and Golden Mayo": "true", "Reduce Quality": "false", },
+		},
+		{// Gold Mayo Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "6480.blueegg_BlueEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Blue Eggs and Golden Mayo": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+		},
+		{// Donkey Cream
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules", "birdb.CP.Donkey_donkeycream", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Donkeys": "true", "Oil Maker": "true", "Reduce Quality": "false", },
+		},
+		{// Donkey Cream Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules", "birdb.CP.Donkey_donkeycream", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Donkeys": "true", "Oil Maker": "true", "Reduce Quality": "true", },
+		},
+		{// Quail Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "QuailMayonnaise", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Mizu's Quail": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+		},
+		{// Quail Mayo Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "QuailMayonnaise", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Mizu's Quail": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+		},
+		{// Large Quail Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "QuailMayonnaiseQuailty", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+				"MinStack": 2,
+			},
+			"When": { "Mizu's Quail": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+		},
+		{// Large Quail Mayo Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "QuailMayonnaiseQuailty", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+				"MinStack": 2,
+			},
+			"When": { "Mizu's Quail": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+		},
+		{// Turkey Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "TurkeyMayonnaise", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Mizu's Turkey": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+		},
+		{// Turkey Mayo Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "TurkeyMayonnaise", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Mizu's Turkey": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+		},
+	],
+}

@@ -1,0 +1,63 @@
+{
+   "Changes": [
+     {
+            "Action": "Load",
+            "FromFile": "Assets/Maps/Tilesheets/PC_Icon.png",
+            "Target": "Mods/{{ModID}}/PC_Icon",
+            "When": {
+                "HasMod": "shekurika.worldMaps"
+            }
+        },
+{
+            "Action": "EditData",
+            "Entries": {
+                "{{ModID}}_OldGraveYard": {
+                    "Condition": "PLAYER_VISITED_LOCATION Current Fellowclown.PC_OldGraveYard",
+                    "Location": "{{ModID}}_OldGraveYard",
+                    "SpriteIndex": 0,
+                    "Texture": "Mods/{{ModID}}/PC_Icon"
+                }
+            },
+            "Target": "Mods/shekurika.Worldmaps/WorldMapData",
+            "When": {
+                 "HasMod": "shekurika.worldMaps"
+            }
+        },
+        {
+    "Action": "EditData",
+    "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+    "Entries": {
+        "FC.FakeNpc": {
+            "Exclude": true
+        }
+    },
+            "When": {
+                 "HasMod": "Bouhm.NPCMapLocations"
+            }
+},
+       {
+    "Action": "EditData",
+    "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+    "Entries": {
+        "FC.Dezerie": {
+            "Exclude": true
+        }
+    },
+            "When": {
+                 "HasSeenEvent |contains={{ModID}}_SummoningRett": true,
+            }
+},
+       {
+    "Action": "EditData",
+    "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+    "Entries": {
+        "FC.Dezerie": {
+            "Exclude": false
+        }
+    },
+            "When": {
+                 "HasSeenEvent |contains={{ModID}}_ConfessionsOfMother": true,
+            }
+}
+   ]
+}

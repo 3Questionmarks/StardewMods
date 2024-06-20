@@ -11,6 +11,11 @@
 			"Default": "false",
 			"Description": "Gives each of the seasonal roses four different colors that can be harvested. (Extra roses are excluded from perfection requirements.)"
 		},
+		"Enhanced Mixed Flower Seeds": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "With Item Extensions Framework, adds some Cornucopia flowers to vanilla mixed flower seeds."
+		},
 		"Enable Giant Crops on Ginger Island": {
 			"AllowValues": "true, false",
 			"Default": "true",

@@ -1,0 +1,17 @@
+{
+   "Name": "Seasonal Outfits for Gabriel - Adventurer's Guild Expanded",
+   "Author": "Kari and Tortart",
+   "Version": "1.0.0",
+   "Description": "Seasonal Outfits for Gabriel from AGE.",
+   "UniqueID": "kari.seasonalgabe",
+   "UpdateKeys": [ "Nexus:" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+   "Dependencies": [
+   {
+	  "UniqueID": "supert.adventureguildexpanded",
+	  "IsRequired": true
+   }
+]
+}

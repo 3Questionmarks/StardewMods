@@ -84,20 +84,20 @@
         {
             "Action": "EditMap",
             "Target": "Maps/Desert",
-            "FromFile": "assets/Desert.tmx",
+            "FromFile": "assets/DesertEntrance.tmx",
             "FromArea": {
                 "X": 0,
                 "Y": 0,
-                "Width": 2,
-                "Height": 5
+                "Width": 3,
+                "Height": 4
             },
             "ToArea": {
-                "X": 36,
+                "X": 31,
                 "Y": 39,
-                "Width": 2,
-                "Height": 5
+                "Width": 3,
+                "Height": 4
             },
-            "PatchMode": "Replace",
+            "PatchMode": "Overlay",
             "When": {
                 "EnableDesert": true,
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
@@ -109,7 +109,7 @@
             "Target": "Maps/Desert",
             "MapTiles": [{
                     "Position": {
-                        "X": "36",
+                        "X": "32",
                         "Y": "42"
                     },
                     "Layer": "Buildings",
@@ -127,18 +127,18 @@
         {
             "Action": "EditMap",
             "Target": "Maps/Desert",
-            "FromFile": "assets/SVEDesert.tmx",
+            "FromFile": "assets/DesertEntrance.tmx",
             "FromArea": {
                 "X": 0,
                 "Y": 0,
-                "Width": 2,
-                "Height": 2
+                "Width": 3,
+                "Height": 4
             },
             "ToArea": {
-                "X": 36,
-                "Y": 42,
-                "Width": 2,
-                "Height": 2
+                "X": 29,
+                "Y": 41,
+                "Width": 3,
+                "Height": 4
             },
             "PatchMode": "Overlay",
             "When": {
@@ -152,8 +152,8 @@
             "Target": "Maps/Desert",
             "MapTiles": [{
                     "Position": {
-                        "X": "36",
-                        "Y": "43"
+                        "X": "30",
+                        "Y": "44"
                     },
                     "Layer": "Buildings",
                     "SetProperties": {
@@ -252,7 +252,7 @@
                 "HasMod |contains=DaisyNiko.SVR3": "true"
             },
         },
-        //Forest SE
+        //Forest SE Vanilla
         {
             "Action": "EditMap",
             "Target": "Maps/Forest",
@@ -272,10 +272,10 @@
             "PatchMode": "Replace",
             "When": {
                 "EnableForestSE": true,
-                "HasMod |contains=DaisyNiko.SVR3": "false"
+                "HasMod |contains=DaisyNiko.SVR3,SYS.AB": "false"
             },
         },
-        //Forest SE Tile Properties
+        //Forest SE Vanilla Tile Properties 
         {
             "Action": "EditMap",
             "Target": "Maps/Forest",
@@ -292,7 +292,7 @@
             ],
             "When": {
                 "EnableForestSE": true,
-                "HasMod |contains=DaisyNiko.SVR3": "false"
+                "HasMod |contains=DaisyNiko.SVR3,SYS.AB": "false"
             },
         },
         //Forest SE SVR3
@@ -338,7 +338,49 @@
                 "HasMod |contains=DaisyNiko.SVR3": "true"
             },
         },
-		
+        //Forest SE Abandoned Bride SVE
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "FromFile": "assets/CartEntranceNarrow.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 3
+            },
+            "ToArea": {
+                "X": 104,
+                "Y": 70,
+                "Width": 1,
+                "Height": 3
+            },
+            "PatchMode": "Overlay",
+            "When": {
+                "EnableForestSE": true,
+                "HasMod |contains=SYS.AB": "true",
+            },
+        },
+        //Forest SE Abandoned Bride SVE Tile Properties
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "MapTiles": [{
+                    "Position": {
+                        "X": "104",
+                        "Y": "72"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default ForestSE",
+                    },
+                },
+            ],
+            "When": {
+                "EnableForestSE": true,
+                "HasMod |contains=SYS.AB": "true",
+            },
+        },				
         //Ginger Island North Cave
         {
             "Action": "EditMap",
@@ -419,6 +461,47 @@
             ],
             "When": {
                 "EnableGingerIslandCaldera": true,
+            },
+        },
+        //Ginger Island Farm
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Island_W",
+            "FromFile": "assets/IslandCartEntrance.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 3,
+                "Height": 4
+            },
+            "ToArea": {
+                "X": 62,
+                "Y": 40,
+                "Width": 3,
+                "Height": 4
+            },
+            "PatchMode": "Overlay",
+            "When": {
+                "EnableGingerIslandFarm": true,
+            },
+        },
+        //Ginger Island Farm Tile Properties
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Island_W",
+            "MapTiles": [{
+                    "Position": {
+                        "X": "63",
+                        "Y": "43"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default IslandFarm",
+                    },
+                },
+            ],
+            "When": {
+                "EnableGingerIslandFarm": true,
             },
         },
         //Mountain SVE
@@ -560,6 +643,48 @@
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
             },
         },
+        //SVE Aurora Vineyard
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ForestWest",
+            "FromFile": "assets/CartEntrance.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 3,
+                "Height": 3
+            },
+            "ToArea": {
+                "X": 46,
+                "Y": 10,
+                "Width": 3,
+                "Height": 3
+            },
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            },
+        },
+        //SVE Aurora Vineyard Tile Properties
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ForestWest",
+            "MapTiles": [{
+                    "Position": {
+                        "X": "47",
+                        "Y": "12"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default SVEAurora",
+                    },
+                },
+            ],
+            "When": {
+                "EnableSVEAurora": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            },
+        },
         //Quarry Tile Properties
         {
             "Action": "EditMap",
@@ -673,7 +798,7 @@
                 "Height": 2
             },
             "ToArea": {
-                "X": 48,
+                "X": 46,
                 "Y": 3,
                 "Width": 1,
                 "Height": 2
@@ -690,7 +815,7 @@
             "Target": "Maps/Woods",
             "MapTiles": [{
                     "Position": {
-                        "X": "48",
+                        "X": "46",
                         "Y": "4"
                     },
                     "Layer": "Buildings",
@@ -894,6 +1019,7 @@
             ],
             "When": {
                 "EnableEastScarp_Village": true,
+                "HasMod |contains=Polydot.PolyCarts": "false",
             },
         },
         //EastScarp_DeepMountains Tile Properties
@@ -913,6 +1039,7 @@
             ],
             "When": {
                 "EnableEastScarp_DeepMountains": true,
+                "HasMod |contains=Polydot.PolyCarts": "false",
             },
         },
 
@@ -933,6 +1060,7 @@
             ],
             "When": {
                 "EnableEastScarp_DeepDark": true,
+                "HasMod |contains=Polydot.PolyCarts": "false",
             },
         }, {
             "Action": "EditMap",
@@ -950,6 +1078,7 @@
             ],
             "When": {
                 "EnableEastScarp_DeepDark": true,
+                "HasMod |contains=Polydot.PolyCarts": "false",
             },
         },
         //East Scarp Scarp Crossing Tile Properties
@@ -1017,7 +1146,7 @@
         //Moveable Farm
         {
             "Action": "EditMap",
-            "Target": "Maps/{{FarmMap}}",
+            "Target": "Maps/{{FarmMapAsset}}",
             "FromFile": "assets/{{FarmCartStyle}}.tmx",
             "FromArea": {
                 "X": 0,
@@ -1043,6 +1172,7 @@
                 },
             ],
             "PatchMode": "Overlay",
+			"Priority": "Late",
             "When": {
                 "EnableIntegratedFarm": true,
             },
@@ -1066,7 +1196,7 @@
             },
             "PatchMode": "Overlay",
             "When": {
-                "EnableFarmCave": true,
+                "EnableLegacyFarmCave": true,
                 "HasMod |contains=Lunatyx.LegacyFarmCave": "true",
                 "HasMod |contains=flashshifter.immersivefarm2remastered": "false",
                 "FarmType": "Standard",
@@ -1083,12 +1213,12 @@
                     },
                     "Layer": "Buildings",
                     "SetProperties": {
-                        "Action": "MinecartTransport Default FarmCave",
+                        "Action": "MinecartTransport Default LegacyFarmCave",
                     },
                 },
             ],
             "When": {
-                "EnableFarmCave": true,
+                "EnableLegacyFarmCave": true,
                 "HasMod |contains=Lunatyx.LegacyFarmCave": "true",
                 "HasMod |contains=flashshifter.immersivefarm2remastered": "false",
                 "FarmType": "Standard",
@@ -1104,12 +1234,12 @@
                     },
                     "Layer": "Buildings",
                     "SetProperties": {
-                        "Action": "MinecartTransport Default FarmCave",
+                        "Action": "MinecartTransport Default LegacyFarmCave",
                     },
                 },
             ],
             "When": {
-                "EnableFarmCave": true,
+                "EnableLegacyFarmCave": true,
                 "HasMod |contains=Lunatyx.LegacyFarmCave": "true",
                 "HasMod |contains=flashshifter.immersivefarm2remastered": "false",
                 "FarmType": "Standard",
@@ -1134,7 +1264,7 @@
             },
             "PatchMode": "Overlay",
             "When": {
-                "EnableFarmCave": true,
+                "EnableLegacyFarmCave": true,
                 "HasMod |contains=Lunatyx.LegacyFarmCave": "true",
                 "FarmType |contains=Beach, FourCorners, Forest, Hilltop, Riverland, Wilderness, MeadowLandsFarm": "true",
             },
@@ -1150,12 +1280,12 @@
                     },
                     "Layer": "Buildings",
                     "SetProperties": {
-                        "Action": "MinecartTransport Default FarmCave",
+                        "Action": "MinecartTransport Default LegacyFarmCave",
                     },
                 },
             ],
             "When": {
-                "EnableFarmCave": true,
+                "EnableLegacyFarmCave": true,
                 "HasMod |contains=Lunatyx.LegacyFarmCave": "true",
                 "FarmType |contains=Beach, FourCorners, Forest, Hilltop, Riverland, Wilderness, MeadowLandsFarm": "true",
             },
@@ -1170,12 +1300,12 @@
                     },
                     "Layer": "Buildings",
                     "SetProperties": {
-                        "Action": "MinecartTransport Default FarmCave",
+                        "Action": "MinecartTransport Default LegacyFarmCave",
                     },
                 },
             ],
             "When": {
-                "EnableFarmCave": true,
+                "EnableLegacyFarmCave": true,
                 "HasMod |contains=Lunatyx.LegacyFarmCave": "true",
                 "FarmType |contains=Beach, FourCorners, Forest, Hilltop, Riverland, Wilderness, MeadowLandsFarm": "true",
             },
@@ -1279,7 +1409,7 @@
                 },
             ],
             "When": {
-                "EnableFarmCave": true,
+                "EnableGreenFarmCave": true,
                 "HasMod |contains=Kana.Grotta": "true",
             },
         }, 
@@ -1462,6 +1592,301 @@
                 "HasMod |contains=A_TK.FarmProjectForaging, A_TK.FarmProjectForaging.LE": "true"
             },
 			"Priority": "Late",
+        },
+        //Grampleton Fields West SVE
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GrampletonFields",
+            "FromFile": "assets/Cart.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 2
+            },
+            "ToArea": {
+                "X": 2,
+                "Y": 108,
+                "Width": 1,
+                "Height": 2
+            },
+            "PatchMode": "Overlay",
+            "When": {
+                "EnableGrampletonFieldsW": true,
+                "HasMod |contains=flashshifter.GrampletonFields": "true"
+            },
+        },
+        //Grampleton Fields West SVE Tile Properties
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GrampletonFields",
+            "MapTiles": [{
+                    "Position": {
+                        "X": "2",
+                        "Y": "109"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default GrampletonFieldsW",
+                    },
+                },
+            ],
+            "When": {
+                "EnableGrampletonFieldsW": true,
+                "HasMod |contains=flashshifter.GrampletonFields": "true"
+            },
+        },	
+        //Grampleton Fields East SVE
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GrampletonFields",
+            "FromFile": "assets/CartEntranceNarrow.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 3
+            },
+            "ToArea": {
+                "X": 160,
+                "Y": 41,
+                "Width": 1,
+                "Height": 3
+            },
+            "PatchMode": "Overlay",
+            "When": {
+                "EnableGrampletonFieldsE": true,
+                "HasMod |contains=flashshifter.GrampletonFields": "true"
+            },
+        },
+        //Grampleton Fields East SVE Tile Properties
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GrampletonFields",
+            "MapTiles": [{
+                    "Position": {
+                        "X": "160",
+                        "Y": "43"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default GrampletonFieldsE",
+                    },
+                },
+            ],
+            "When": {
+                "EnableGrampletonFieldsE": true,
+                "HasMod |contains=flashshifter.GrampletonFields": "true"
+            },
+        },
+        //Grampleton Fields South SVE
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GrampletonFields",
+            "FromFile": "assets/Cart.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 2
+            },
+            "ToArea": {
+                "X": 163,
+                "Y": 135,
+                "Width": 1,
+                "Height": 2
+            },
+            "PatchMode": "Overlay",
+            "When": {
+                "EnableGrampletonFieldsS": true,
+                "HasMod |contains=flashshifter.GrampletonFields": "true"
+            },
+        },
+        //Grampleton Fields South SVE Tile Properties
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GrampletonFields",
+            "MapTiles": [{
+                    "Position": {
+                        "X": "163",
+                        "Y": "136"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default GrampletonFieldsS",
+                    },
+                },
+            ],
+            "When": {
+                "EnableGrampletonFieldsS": true,
+                "HasMod |contains=flashshifter.GrampletonFields": "true"
+            },
+        },
+        //Modest Farm Cave Tile Properties
+        {
+            "Action": "EditMap",
+            "Target": "Maps/FarmCave",
+            "MapTiles": [{
+                    "Position": {
+                        "X": "15",
+                        "Y": "6"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default ModestFarmCave",
+                    },
+                },
+            ],
+            "When": {
+                "EnableModestFarmCave": true,
+                "HasMod |contains=Inkubus.ModestCave": "true",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/FarmCave",
+            "MapTiles": [{
+                    "Position": {
+                        "X": "16",
+                        "Y": "6"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default ModestFarmCave",
+                    },
+                },
+            ],
+            "When": {
+                "EnableModestFarmCave": true,
+                "HasMod |contains=Inkubus.ModestCave": "true",
+            },
+        },
+        //Walk To Desert Cave Tile Properties
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Tarniyar.CP.WalkToDesert_Cave",
+            "MapTiles": [{
+                    "Position": {
+                        "X": "11",
+                        "Y": "11"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default WTDCave",
+                    },
+                },
+            ],
+            "When": {
+                "EnableWTDCave": true,
+                "HasMod |contains=Tarniyar.CP.WalkToDesert": "true",
+                "HasFlag": "ccBoilerRoom",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Tarniyar.CP.WalkToDesert_Cave",
+            "MapTiles": [{
+                    "Position": {
+                        "X": "12",
+                        "Y": "11"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default WTDCave",
+                    },
+                },
+            ],
+            "When": {
+                "EnableWTDCave": true,
+                "HasMod |contains=Tarniyar.CP.WalkToDesert": "true",
+                "HasFlag": "ccBoilerRoom",
+            },
+        },
+        //Fostoria
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Fostoria.Stoffton_Fostoria",
+            "FromFile": "assets/CartEntranceNarrow.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 3
+            },
+            "ToArea": {
+                "X": 62,
+                "Y": 7,
+                "Width": 1,
+                "Height": 3
+            },
+            "PatchMode": "Overlay",
+            "When": {
+                "EnableFostoria": true,
+                "HasMod |contains=Fostoria.Stoffton": "true"
+            },
+        },
+        //Fostoria Tile Properties
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Fostoria.Stoffton_Fostoria",
+            "MapTiles": [{
+                    "Position": {
+                        "X": "62",
+                        "Y": "9"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default Fostoria",
+                    },
+                },
+            ],
+            "When": {
+                "EnableFostoria": true,
+                "HasMod |contains=Fostoria.Stoffton": "true"
+            },
+        },
+        //Stoffton S
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Lizzie.Stoffton_Stoffton",
+            "FromFile": "assets/CartEntranceNarrow.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 3
+            },
+            "ToArea": {
+                "X": 65,
+                "Y": 54,
+                "Width": 1,
+                "Height": 3
+            },
+            "PatchMode": "Overlay",
+            "When": {
+                "EnableStoffton": true,
+                "HasMod |contains=Lizzie.Stoffton": "true"
+            },
+        },
+        //Stoffton S Tile Properties
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Lizzie.Stoffton_Stoffton",
+            "MapTiles": [{
+                    "Position": {
+                        "X": "65",
+                        "Y": "56"
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MinecartTransport Default Stoffton",
+                    },
+                },
+            ],
+            "When": {
+                "EnableStoffton": true,
+                "HasMod |contains=Lizzie.Stoffton": "true"
+            },
         },
     ]
 }

@@ -7,6 +7,7 @@
   "MaxIdleDistance": 512,
   "MaxDistanceBeforeTeleport": -1,
   "DirectionChangeChanceWhileMoving": 0.25,
+  "EnableCharacterCollision": false,
   "IdleBehavior": "Wander",
   "IdleArguments": [
     1,

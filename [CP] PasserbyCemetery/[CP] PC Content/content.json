@@ -1,9 +1,19 @@
 {
 "Format":"2.0.0",
+// CONFIG OPTIONS
+  "ConfigSchema": {
+    "ExcludePerfection": {
+       "Description": "Excludes modded content from perfection",
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": false,
+     
+    },
+  },
 "DynamicTokens": [
        {
       "Name": "ValidNpcs",
-      "Value": "Marnie,Robin,{{PlayerName}}"
+      "Value": "{{Random:Marnie,Robin,Shane,FC.Lyell,Grady,FC.Valerie,FC.Alan,Lewis,Pierre,Abby,Sam,Alex,Pam,Sebastian,Jodi,Coraline,Marlon}},{{PlayerName}}"
    },
     
             {
@@ -12,7 +22,7 @@
    },
     {
       "Name": "RaffleResult",
-      "Value": "addItem {{Random:Fellowclown.PC_SqueakyAxe,Fellowclown.PC_SqueakyPick,Fellowclown.PC_ColorfulCan,Fellowclown.PC_SqueakyHoe,Fellowclown.PC_SqueakySword}} 1 0", //Better than [ID] because it opens a menu if your inventory is full
+      "Value": "addItem {{Random:{{ModID}}_BlueCouplesSeat,{{ModID}}_BirchCoffeeTable,{{ModID}}_SmallBirchCoffeeTable,{{ModID}}_MiniBirchCoffeeTable,{{ModID}}_TraditionalLantern,Fellowclown.PC_SqueakyAxe,Fellowclown.PC_SqueakyPick,Fellowclown.PC_SqueakyCan,Fellowclown.PC_SqueakyHoe,Fellowclown.PC_SqueakySword}} 1 0", //Better than [ID] because it opens a menu if your inventory is full
       "When": {
         "Query: '{{RaffleWinner}}' = '{{PlayerName}}'": true
       }
@@ -23,7 +33,17 @@
     "When": {
       "Query: '{{RaffleWinner}}' = '{{PlayerName}}'": false
     }
- }
+ },
+       {
+        "Name": "YearCheck",
+         "Value": ""
+        },
+       {
+    "Name": "YearCheck",
+    "Value": "_y2",
+     "When": { "Query: {{Year}} % 2 = 1": false,
+    }
+   },
     ],
 "Changes":[
 /************************************************
@@ -32,50 +52,15 @@ Technical Includes
  {
 "LogName": "PC Technical Information",
 "Action": "Include",
-"FromFile": "Data/PC/Technical/MapPatches.json,Data/PC/Technical/FarmAnimals.json,Data/PC/Technical/Fish.json,Data/PC/Technical/GhostSpawn.json,Data/PC/Technical/Loadables.json,Data/PC/Technical/Locational Maps.json,Data/PC/Technical/Mail Triggers.json,Data/PC/Technical/Music.json,Data/PC/Technical/Objects.json,Data/PC/Technical/Shops.json,Data/PC/Technical/Shops.json,Data/PC/Technical/Totems.json,Data/PC/Technical/WorldEvents.json,"
+"FromFile": "Data/Technical/ExtraDialogue.json,Data/Technical/Meep.json,Data/Technical/NonFarmAnimals.json,Data/Technical/AnimalSpawns.json,Data/Technical/Tools.json,Data/Technical/Crops.json,Data/Technical/Quest.json,Data/Technical/MapPatches.json,Data/Technical/FarmAnimals.json,Data/Technical/Fish.json,Data/Technical/Loadables.json,Data/Technical/LocationalMaps.json,Data/Technical/MailTriggers.json,Data/Technical/Music.json,Data/Technical/Objects.json,Data/Technical/Shops.json,Data/Technical/Totems.json,Data/Technical/WorldEvents.json,Data/Technical/Machines.json,Data/Technical/ExtraDialogueStrings.json,Data/Technical/Marketpalooza.json,Data/Technical/Recipes.json,Data/Technical/Trees.json,Data/Technical/UniversalGiftTaste.json,Data/Technical/ModCompact.json"
  },
-  {
-"LogName": "SW Technical Information",
-"Action": "Include",
-"FromFile": "Data/SW/Technical/Crops.json,Data/SW/Technical/Loadables.json,Data/SW/Technical/Mail Triggers.json,Data/SW/Technical/Map Patches.json,Data/SW/Technical/Marketpalooza.json,Data/SW/Technical/Meep.json,Data/SW/Technical/Mod Compact.json,Data/SW/Technical/Meep.json,Data/SW/Technical/Tools.json,Data/SW/Technical/Music.json,Data/SW/Technical/Objects.json,Data/SW/Technical/Quest.json,Data/SW/Technical/Shops.json,Data/SW/Technical/Locational Maps.json"
- },
-
  /************************************************
  Character Includes
  ************************************************/
  {
-"LogName": "Maverick Info [PC]",
+"LogName": "NPC Info [PC]",
 "Action": "Include",
-"FromFile": "Data/PC/Characters/Maverick/Dispositions.json,Data/PC/Characters/Maverick/Dialogue.json,Data/PC/Characters/Maverick/Events.json,Data/PC/Characters/Maverick/Schedules.json,Data/PC/Characters/Maverick/GiftTaste.json"
+"FromFile": "Data/Characters/Dezerie/Events.json,Data/Characters/Valerie/Festivals.json,Data/Characters/Roswell/Festivals.json,Data/Characters/Nikolai/Festivals.json,Data/Characters/Lyell/Festivals.json,Data/Characters/Kaia/Festivals.json,Data/Characters/Grady/Festivals.json,Data/Characters/Dezerie/Festivals.json,Data/Characters/Boxy/Festivals.json,Data/Characters/Alan/Festivals.json,Data/Characters/Maverick/Festivals.json,Data/Characters/Maverick/Dispositions.json,Data/Characters/Maverick/Dialogue.json,Data/Characters/Maverick/Events.json,Data/Characters/Maverick/Schedules.json,Data/Characters/Maverick/GiftTaste.json,Data/Characters/Zuuie/Dispositions.json,Data/Characters/Zuuie/Dialogue.json,Data/Characters/Zuuie/Events.json,Data/Characters/Zuuie/Schedules.json,Data/Characters/Zuuie/GiftTaste.json,Data/Characters/Nikolai/Dispositions.json,Data/Characters/Nikolai/Dialogue.json,Data/Characters/Nikolai/Events.json,Data/Characters/Nikolai/Movies.json,Data/Characters/Nikolai/Schedules.json,Data/Characters/Nikolai/GiftTaste.json,Data/Characters/Kaia/Dispositions.json,Data/Characters/Kaia/Dialogue.json,Data/Characters/Kaia/Events.json,Data/Characters/Kaia/Schedules.json,Data/Characters/Kaia/GiftTaste.json,Data/Characters/Boxy/Dispositions.json,Data/Characters/Boxy/Dialogue.json,Data/Characters/Boxy/Events.json,Data/Characters/Boxy/Schedules.json,Data/Characters/Boxy/GiftTaste.json,Data/Characters/Valerie/Dispositions.json,Data/Characters/Valerie/Dialogue.json,Data/Characters/Valerie/Movies.json,Data/Characters/Valerie/Schedules.json,Data/Characters/Valerie/GiftTaste.json,Data/Characters/Valerie/Events.json,Data/Characters/Alan/Dispositions.json,Data/Characters/Alan/Dialogue.json,Data/Characters/Alan/Movies.json,Data/Characters/Alan/Schedules.json,Data/Characters/Alan/GiftTaste.json,Data/Characters/Dezerie/Dispositions.json,Data/Characters/Dezerie/Dialogue.json,Data/Characters/Dezerie/Movies.json,Data/Characters/Dezerie/Schedules.json,Data/Characters/Dezerie/GiftTaste.json,Data/Characters/Lyell/Schedules.json,Data/Characters/Lyell/Dispositions.json,Data/Characters/Lyell/Dialogue.json,Data/Characters/Lyell/Movies.json,Data/Characters/Lyell/GiftTaste.json,Data/Characters/Lyell/Events.json,Data/Characters/Grady/Schedules.json,Data/Characters/Grady/Dispositions.json,Data/Characters/Grady/Dialogue.json,Data/Characters/Grady/Movies.json,Data/Characters/Grady/GiftTaste.json,Data/Characters/Grady/Events.json,Data/Characters/Roswell/Schedules.json,Data/Characters/Roswell/Dispositions.json,Data/Characters/Roswell/Dialogue.json,Data/Characters/Roswell/GiftTaste.json"
  },
- {
-"LogName": "Zuuie Info [PC]",
-"Action": "Include",
-"FromFile": "Data/PC/Characters/Zuuie/Dispositions.json,Data/PC/Characters/Zuuie/Dialogue.json,Data/PC/Characters/Zuuie/Events.json,Data/PC/Characters/Zuuie/Schedules.json,Data/PC/Characters/Zuuie/GiftTaste.json"
- },
- {
-"LogName": "Nikolai Info [SW]",
-"Action": "Include",
-"FromFile": "Data/SW/Characters/Nikolai/Festivals.json,Data/SW/Characters/Nikolai/Dispositions.json,Data/SW/Characters/Nikolai/Dialogue.json,Data/SW/Characters/Nikolai/Events.json,Data/SW/Characters/Nikolai/Movies.json,Data/SW/Characters/Nikolai/Schedules.json,Data/SW/Characters/Nikolai/GiftTaste.json"
- },
- {
-"LogName": "Kaia Info [SW]",
-"Action": "Include",
-"FromFile": "Data/SW/Characters/Kaia/Dispositions.json,Data/SW/Characters/Kaia/Dialogue.json,Data/SW/Characters/Kaia/Events.json,Data/SW/Characters/Kaia/Schedules.json,Data/SW/Characters/Kaia/GiftTaste.json"
- },
-  {
-"LogName": "Boxy Info [SW]",
-"Action": "Include",
-"FromFile": "Data/SW/Characters/Boxy/Dispositions.json,Data/SW/Characters/Boxy/Dialogue.json,Data/SW/Characters/Boxy/Events.json,Data/SW/Characters/Boxy/Schedules.json,Data/SW/Characters/Boxy/GiftTaste.json"
- },
-  {
-"LogName": "Technical Information",
-"Action": "Include",
- "Update": "OnTimeChange, OnLocationChange",
-"FromFile": "Data/PC/Technical/GhostSpawn.json",
-       "When": {
-      "Season": "winter",
-            },
-        }
 ],
 }

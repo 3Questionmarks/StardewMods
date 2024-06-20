@@ -50,6 +50,18 @@
 			"Description": "Enable/Disable the book cutscene section of the library date. I recommend seeing it at least once, but if you would like to cut it out to make the dates overall shorter, you can disable this after. Default set to true.",
 			"Section": "Date Tweaks",
 		},
+		"ModdedSpouseFoods": {
+			"AllowValues": "disabled, enabled",
+			"Default": "disabled",
+			"Description": "Choose whether SVE and RSV spouses use vanilla dishes or dishes from their own mods in their dates. SVE spouses will use them in both Saloon and Picnic Dates, while the RSV spouses will only use them on Picnic Dates so Gus is not suddenly preparing dishes from the Village.",
+			"Section": "Date Tweaks",
+		},
+		"DynamicPool": {
+			"AllowValues": "disabled, enabled",
+			"Default": "disabled",
+			"Description": "Choose whether your pool forks are the original mod's endings or a more dynamic approach that allows your spouse or yourself to randomly win. The first playthrough of the date will always be the original date, but if the date is repeated, there will be an equal chance the spouse or the player will win at pool.",
+			"Section": "Date Tweaks",
+		},
 		"DatesOnFestivalDays": {
 			"AllowValues": "disabled, enabled",
 			"Default": "disabled",
@@ -206,6 +218,40 @@
 				"GenderedDialogue": "enabled",
 				"PlayerGender |contains=Male,Female": "false",
 			},
+		},
+		
+		// The following tokens are only used with NPC Tokens for Content Patcher.
+		
+		{
+			"Name": "SpouseGender",
+			"Value": "",
+		},
+		
+		{
+			"Name": "SpouseGender",
+			"Value": "M",
+			"When": {
+				"GenderedDialogue": "enabled",
+				"HasMod": "siliconmodding.NPCTokens",
+				"siliconmodding.NPCTokens/NPC:{{Date}}+gender": "Male",
+				"Date |contains=Mateo, Hector": false, //Add to this blacklist if any other nonstandard gender NPCs are misgendered due to this.
+			},
+		},
+		
+		{
+			"Name": "SpouseGender",
+			"Value": "F",
+			"When": {
+				"GenderedDialogue": "enabled",
+				"HasMod": "siliconmodding.NPCTokens",
+				"siliconmodding.NPCTokens/NPC:{{Date}}+gender": "Female",
+				"Date |contains=Mateo, Hector": false, //Add to this blacklist if any other nonstandard gender NPCs are misgendered due to this.
+			},
+		},
+		
+		{
+			"Name": "Endearment",
+			"Value": "{{Random: [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4507], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4508], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4509], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4510], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4511], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4512], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4513], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4514], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4515], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4516], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4517], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4518], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4519], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4522], [LocalizedText Strings\\StringsFromCSFiles:NPC.cs.4523] }}", 
 		},
 
 	//DATE NIGHT
@@ -1064,6 +1110,52 @@
 				"Date": "Abigail, Emily, Elliott, Harvey, Maru, Sebastian, Shane"
 			},
 		},
+		
+	//Saloon Date Tokens
+	
+	{
+		"Name": "PoolWinner",
+		"Value": "{{Random:Date,Farmer}}",
+	},
+	
+	{
+		"Name": "Result",
+		"Value": "",
+	},
+	
+	{
+		"Name": "Result",
+		"Value": "Win",
+		"When": {
+			"PoolWinner": "Date",
+			"DynamicPool": "enabled",
+			"HasFlag": "PoolDate",
+		},
+	},
+	
+	{
+		"Name": "Result",
+		"Value": "Lose",
+		"When": {
+			"PoolWinner": "Farmer",
+			"DynamicPool": "enabled",
+			"HasFlag": "PoolDate",
+		},
+	},
+	
+	{
+		"Name": "PoolEnd",
+		"Value": "End",
+	},
+	
+	{
+		"Name": "PoolEnd",
+		"Value": "End.PoolFork",
+		"When": {
+			"DynamicPool": "enabled",
+			"HasFlag": "PoolDate",
+		},
+	},
 
 	//BEACH OUTFITS + SUGGESTIVE ENDINGS, supports Vanilla, SVE, and RSV
 
@@ -1209,13 +1301,13 @@
 
 		//VANILLA SPOUSES
 
-		//default, emily, shiro (RSV) - survival burger
+		// Default/Emily - Survival Burger
 		{
 			"Name": "SpouseFood",
 			"Value": "241",
 		},
 
-		//alex - salmon dinner
+		//Alex - Salmon Dinner
 		{
 			"Name": "SpouseFood",
 			"Value": "212",
@@ -1224,7 +1316,7 @@
 			},
 		},
 
-		//elliott - crab cakes
+		//Elliott - Crab Cakes
 		{
 			"Name": "SpouseFood",
 			"Value": "732",
@@ -1233,7 +1325,7 @@
 			},
 		},
 
-		//harvey - super meal
+		//Harvey - Super Meal
 		{
 			"Name": "SpouseFood",
 			"Value": "237",
@@ -1242,25 +1334,26 @@
 			},
 		},	
 
-		//krobus - void mayonaisse
-		{
-			"Name": "SpouseFood",
-			"Value": "308",
-			"When": {
-				"Date": "Krobus"
-			},
-		},
-
-		//sam, shane - pizza
+		//Sam - Pizza
 		{
 			"Name": "SpouseFood",
 			"Value": "206",
 			"When": {
-				"Date": "Sam, Shane"
+				"Date": "Sam"
+			},
+		},
+		
+		//Shane - Pepper Poppers
+		
+		{
+			"Name": "SpouseFood",
+			"Value": "215",
+			"When": {
+				"Date": "Shane"
 			},
 		},
 
-		//sebastian - pumpkin soup
+		//Sebastian - Pumpkin Soup
 		{
 			"Name": "SpouseFood",
 			"Value": "236",
@@ -1269,7 +1362,7 @@
 			},
 		},
 
-		//abigail - spicy eel
+		//Abigail - Spicy Eel
 		{
 			"Name": "SpouseFood",
 			"Value": "226",
@@ -1278,7 +1371,7 @@
 			},
 		},
 
-		//haley - fruit salad
+		//Haley - Fruit Salad
 		{
 			"Name": "SpouseFood",
 			"Value": "610",
@@ -1287,16 +1380,16 @@
 			},
 		},
 
-		//leah - salad
+		//Leah - Stir Fry
 		{
 			"Name": "SpouseFood",
-			"Value": "196",
+			"Value": "606",
 			"When": {
 				"Date": "Leah"
 			},
 		},
 
-		//maru - cheese cauliflower
+		//Maru - Cheese Cauliflower
 		{
 			"Name": "SpouseFood",
 			"Value": "197",
@@ -1305,7 +1398,7 @@
 			},
 		},
 
-		//penny - red plate
+		//Penny - Red Plate
 		{
 			"Name": "SpouseFood",
 			"Value": "230",
@@ -1313,8 +1406,20 @@
 				"Date": "Penny"
 			},
 		},
+		
+		
+		//Krobus - Void Mayo
+		{
+			"Name": "SpouseFood",
+			"Value": "308",
+			"When": {
+				"Date": "Krobus"
+			},
+		},
+		
+		//MODDED VANILLA SPOUSES
 
-		//clint - fiddlehead risotto
+		//Clint - Fiddlehead Risotto
 		{
 			"Name": "SpouseFood",
 			"Value": "649",
@@ -1323,7 +1428,7 @@
 			},
 		},
 
-		//gus - escargot
+		//Gus - Escargot
 		{
 			"Name": "SpouseFood",
 			"Value": "729",
@@ -1332,7 +1437,7 @@
 			},
 		},
 
-		//lewis - autumn's bounty
+		//Lewis - Autumn's Bounty
 		{
 			"Name": "SpouseFood",
 			"Value": "235",
@@ -1341,7 +1446,7 @@
 			},
 		},
 
-		//linus - dish o the sea
+		//Linus - Dish O' The Sea
 		{
 			"Name": "SpouseFood",
 			"Value": "242",
@@ -1350,7 +1455,7 @@
 			},
 		},
 
-		//marnie - farmer's lunch
+		//Marnie - Farmer's Lunch
 		{
 			"Name": "SpouseFood",
 			"Value": "240",
@@ -1359,7 +1464,7 @@
 			},
 		},
 
-		//pam - glazed yams
+		//Pam - Glazed Yams
 		{
 			"Name": "SpouseFood",
 			"Value": "208",
@@ -1368,7 +1473,7 @@
 			},
 		},
 
-		//sandy - mango sticky rice
+		//Sandy - Mango Sticky Rice
 		{
 			"Name": "SpouseFood",
 			"Value": "905",
@@ -1378,7 +1483,7 @@
 		},
 
 
-		//willy - baked fish
+		//Willy - Baked Fish
 		{
 			"Name": "SpouseFood",
 			"Value": "198",
@@ -1387,7 +1492,7 @@
 			},
 		},
 
-		//robin - spaghetti
+		//Robin - Spaghetti
 		{
 			"Name": "SpouseFood",
 			"Value": "204",
@@ -1396,7 +1501,7 @@
 			},
 		},
 
-		//jodi - crispy bass
+		//Jodi - Crispy Bass
 		{
 			"Name": "SpouseFood",
 			"Value": "214",
@@ -1404,8 +1509,26 @@
 				"Date": "Jodi"
 			},
 		},
+		
+		//Pierre - Fried Calamari
+		{
+			"Name": "SpouseFood",
+			"Value": "202",
+			"When": {
+				"Date": "Pierre"
+			},
+		},
+		
+		//Caroline - Fish Taco
+		{
+			"Name": "SpouseFood",
+			"Value": "213",
+			"When": {
+				"Date": "Caroline"
+			},
+		},
 
-		//wizard/magnus - purple mushroom
+		//Wizard - Purple Mushroom (sorry, code readers, but this is A) what Wizard's was initially and B) Wizard doesn't like any normal foods. If you have suggestions on foods, let me know.)
 		{
 			"Name": "SpouseFood",
 			"Value": "422",
@@ -1415,8 +1538,20 @@
 		},
 
 		//SVE Spouses
+		
+		//Magnus - Frog Legs
+		
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)FlashShifter.StardewValleyExpandedCP_Frog_Legs",
+			"When": {
+				"Date": "Wizard",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"ModdedSpouseFoods": "enabled",
+			},
+		},
 
-		//claire - bruschetta
+		//Claire - Bruschetta
 		{
 			"Name": "SpouseFood",
 			"Value": "618",
@@ -1425,8 +1560,19 @@
 				"HasMod": "FlashShifter.StardewValleyExpandedCP",
 			},
 		},
+			
+			//SVE-Specific: (Chance of) Glazed Butterfish
+		{
+			"Name": "SpouseFood",
+			"Value": "{{Random: 618, (O)FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish}}", //Leave a chance for Bruschetta, since Claire loves it and mentions it in dialogue a lot
+			"When": {
+				"Date": "Claire",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"ModdedSpouseFoods": "enabled",
+			},
+		},
 
-		//lance - tropical curry
+		//Lance - Tropical Curry (no variants as no other loved foods)
 		{
 			"Name": "SpouseFood",
 			"Value": "907",
@@ -1436,7 +1582,7 @@
 			},
 		},
 
-		//olivia - chocolate cake
+		//Olivia - Chocolate Cake
 		{
 			"Name": "SpouseFood",
 			"Value": "220",
@@ -1445,8 +1591,19 @@
 				"HasMod": "FlashShifter.StardewValleyExpandedCP",
 			},
 		},
+		
+			//SVE-Specific: Big Bark Burger (Liked)
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)FlashShifter.StardewValleyExpandedCP_Big_Bark_Burger",
+			"When": {
+				"Date": "Olivia",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"ModdedSpouseFoods": "enabled",
+			},
+		},
 
-		//victor - spaghetti
+		//Victor - Spaghetti
 		{
 			"Name": "SpouseFood",
 			"Value": "224",
@@ -1455,8 +1612,19 @@
 				"HasMod": "FlashShifter.StardewValleyExpandedCP",
 			},
 		},
+		
+			//SVE-Specific: (Chance at) Big Bark Burger
+		{
+			"Name": "SpouseFood",
+			"Value": "{{Random: 224, (O)FlashShifter.StardewValleyExpandedCP_Big_Bark_Burger}}",
+			"When": {
+				"Date": "Victor",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"ModdedSpouseFoods": "enabled",
+			},
+		},
 
-		//sophia - pink cake
+		//Sophia - Pink Cake
 		{
 			"Name": "SpouseFood",
 			"Value": "221",
@@ -1465,10 +1633,45 @@
 				"HasMod": "FlashShifter.StardewValleyExpandedCP",
 			},
 		},
+		
+			//SVE-Specific... should be obvious!
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken",
+			"When": {
+				"Date": "Sophia",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"ModdedSpouseFoods": "enabled",
+			},
+		},
 
-		//RSV Spouses
+		//RSV Spouses (slightly complicated due to the fact that Gus shouldn't make some of these foods, so restricting the ModdedSpouseFoods to Picnic only)
+		
+		//Shiro - Fruit Salad
+		
+		{
+			"Name": "SpouseFood",
+			"Value": "610",
+			"When": {
+				"Date": "Shiro",
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		
+			//RSV-specific: Snow Bowl Surprise
+			
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Snow_Bowl_Surprise",
+			"When": {
+				"Date": "Shiro",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
 
-		//ian - fish taco
+		//Ian - Fish Taco
 		{
 			"Name": "SpouseFood",
 			"Value": "213",
@@ -1477,18 +1680,65 @@
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+		
+			//RSV-specific: Ginger Arugula Fried Rice
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Ginger_Arugula_Fried_Rice",
+			"When": {
+				"Date": "Ian",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
 
-		//jeric, kiarra - spaghetti
+		//Jeric - Spaghetti
 		{
 			"Name": "SpouseFood",
 			"Value": "224",
 			"When": {
-				"Date": "Jeric, Kiarra",
+				"Date": "Jeric",
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+		
+			//RSV-Specific: Honey Ginger Whitefish
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Honey_Ginger_Whitefish",
+			"When": {
+				"Date": "Jeric",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
+		
+		//Kiarra - Super Meal
+		
+		{
+			"Name": "SpouseFood",
+			"Value": "237",
+			"When": {
+				"Date": "Kiarra",
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		
+			//RSV-Specific: Jumpy Coffee Cake
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Jumpy_Coffee_Cake",
+			"When": {
+				"Date": "Kiarra",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
 
-		//jio - plum pudding
+		//Jio - Plum Pudding
 		{
 			"Name": "SpouseFood",
 			"Value": "604",
@@ -1497,8 +1747,18 @@
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+		
+			//RSV-Specific: Kedi Delight
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Kedi_Delight",
+			"When": {
+				"Date": "Jio",
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
 
-		//kenneth - pizza
+		//Kenneth - Pizza
 		{
 			"Name": "SpouseFood",
 			"Value": "206",
@@ -1507,8 +1767,20 @@
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+			
+			//RSV-specific: Ridge Apple Cake
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Ridge_Apple_Cake",
+			"When": {
+				"Date": "Kenneth",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
 
-		//philip - trout soup
+		//Philip - Trout Soup
 		{
 			"Name": "SpouseFood",
 			"Value": "219",
@@ -1517,8 +1789,20 @@
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+		
+			//RSV-specific: Fried Fish a la Ridge
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Fried_Fish_a_la_Ridge",
+			"When": {
+				"Date": "Philip",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
 
-		//alissa - pancakes
+		//Alissa - Pancakes
 		{
 			"Name": "SpouseFood",
 			"Value": "211",
@@ -1527,18 +1811,88 @@
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+		
+			//RSV-specific: Honey Glazed Salad
+			
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Honey_Glazed_Salad",
+			"When": {
+				"Date": "Alissa",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
 
-		//corine, daia, maddie - salad
+		//Corine - Sashimi
+		{
+			"Name": "SpouseFood",
+			"Value": "227",
+			"When": {
+				"Date": "Corine",
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		
+			//RSV-specific: Clementine Cake
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Clementine_Cake",
+			"When": {
+				"Date": "Corine",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
+		
+		//Daia - Salad
 		{
 			"Name": "SpouseFood",
 			"Value": "196",
 			"When": {
-				"Date": "Corine, Daia, Maddie",
+				"Date": "Daia",
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+		
+			//RSV-Specific: Fluffy Apple Crumble
+			
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Clementine_Cake",
+			"When": {
+				"Date": "Daia",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
+		
+		//Maddie - Blackberry Cobbler
+		{
+			"Name": "SpouseFood",
+			"Value": "611",
+			"When": {
+				"Date": "Maddie",
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		
+			//RSV-specific: Autumnal Serenity
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Autumnal_Serenity",
+			"When": {
+				"Date": "Maddie",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
 
-		//flor - ice cream
+		//Flor - Ice Cream
 		{
 			"Name": "SpouseFood",
 			"Value": "233",
@@ -1547,8 +1901,20 @@
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+		
+			//RSV-specific: Ridge Fruity Plate
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Ridge_Fruity_Plate",
+			"When": {
+				"Date": "Flor",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
 
-		//ysabelle - unknown???
+		//Ysabelle - Maki Roll
 		{
 			"Name": "SpouseFood",
 			"Value": "228",
@@ -1557,8 +1923,21 @@
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+		
+			//RSV-Specific: Zesty Tuna
+			
+		{
+			"Name": "SpouseFood",
+			"Value": "228",
+			"When": {
+				"Date": "Ysabelle",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
 
-		//sean - hashbrowns
+		//Sean - Hashbrowns
 		{
 			"Name": "SpouseFood",
 			"Value": "210",
@@ -1567,10 +1946,191 @@
 				"HasMod": "Rafseazz.RSVCP",
 			},
 		},
+			
+			//RSV-Specific: Holiday Ice
+			
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Holiday_Ice",
+			"When": {
+				"Date": "Sean",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
+		
+		// June - Spicy Eel (no RSV specific due to not having an RSV dish in Love/Likes - Wild Apple Juice is a love, but that's not food)
+		{
+			"Name": "SpouseFood",
+			"Value": "226",
+			"When": {
+				"Date": "June",
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		
+		//Blair - Baked Fish
+		{
+			"Name": "SpouseFood",
+			"Value": "198",
+			"When": {
+				"Date": "Blair",
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		
+			//RSV-Specific: Fried Mountain Greens
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Fried_Mountain_Greens",
+			"When": {
+				"Date": "Blair",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
+		
+		//Anton - Shrimp Cocktail
+		{
+			"Name": "SpouseFood",
+			"Value": "733",
+			"When": {
+				"Date": "Anton",
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		
+			//RSV-specific: Springtime Primetime
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Springtime_Primetime",
+			"When": {
+				"Date": "Anton",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
+		
+		//Paula - Vegetable Medley
+		{
+			"Name": "SpouseFood",
+			"Value": "200",
+			"When": {
+				"Date": "Paula",
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		
+			//RSV-Specific: Arugula Roll
+		
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Arugula_Roll",
+			"When": {
+				"Date": "Paula",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
+		
+		//Irene - Rhubarb Pie (thank you, Wizadroid)
+		{
+			"Name": "SpouseFood",
+			"Value": "222",
+			"When": {
+				"Date": "Irene",
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		
+			//RSV-specific: Pillowsoft Cheezy Sandwich
+			
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Pillowsoft_Cheezy_Sandwich",
+			"When": {
+				"Date": "Irene",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
+		
+		//Zayne - Pink Cake
+		{
+			"Name": "SpouseFood",
+			"Value": "221",
+			"When": {
+				"Date": "Zayne",
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		
+			//RSV-specific: Ginger Rangpur Meringue
+			
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Ginger_Rangpur_Meringue",
+			"When": {
+				"Date": "Zayne",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
+		
+		//Faye - Cheese Cauliflower
+		{
+			"Name": "SpouseFood",
+			"Value": "197",
+			"When": {
+				"Date": "Faye",
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		
+			//RSV-specific: Sweet Cranberry Cheesecake
+			
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Sweet_Cranberry_Cheesecake",
+			"When": {
+				"Date": "Faye",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
+		
+		//Bryle - Survival Burger
+		{
+			"Name": "SpouseFood",
+			"Value": "241",
+			"When": {
+				"Date": "Bryle",
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		
+			//RSV-specific: Summer Mountain Blessing
+		{
+			"Name": "SpouseFood",
+			"Value": "(O)Rafseazz.RSVCP_Summer_Mountain_Blessing",
+			"When": {
+				"Date": "Bryle",
+				"HasMod": "Rafseazz.RSVCP",
+				"ModdedSpouseFoods": "enabled",
+				"DateType": "forest",
+			},
+		},
 
 		//GE Spouses
 
-		//gabriel - roots platter
+		//Gabriel - Roots Platter
 		{
 			"Name": "SpouseFood",
 			"Value": "244",
@@ -1580,7 +2140,7 @@
 			},
 		},
 
-		//zinnia - green tea
+		//Zinnia - Green Tea
 		{
 			"Name": "SpouseFood",
 			"Value": "614",
@@ -1863,6 +2423,21 @@
 				"Season": "Winter",
 			},
 		},
+		
+	//Mod Compat Tokens
+	
+	{
+		"Name": "Ornithologist",
+		"Value": "pause 1",
+	},
+	
+	{
+		"Name": "Ornithologist",
+		"Value": "changeToTemporaryMap Forest_DNR false",
+		"When": {
+			"HasMod": "Ivy.OrnithologistsGuild.CP",
+		},
+	},
 
    ],
    "Changes": [
@@ -1949,11 +2524,23 @@
 			},
 		},
 		
+		// Extra Stuff (Event Repeater replacement patch, mod compatibility patches)
 		{
-			"LogName": "Allow Dates to Repeat",
+			"LogName": "Event Repeater Replacement (Allow Dates to Repeat)",
 			"Action": "Include",
 			"FromFile": "data/Triggers.json",
 		},
+		
+		{
+			"LogName": "Allow Spouses to be referred to by their pronouns in code",
+			"Action": "Include",
+			"FromFile": "data/SpouseNouns.json",
+			"When": {
+				"HasMod": "siliconmodding.NPCTokens", //REQUIRED to obtain the necessary information - without this mod, there is no way to obtain the correct pronouns for spouses
+			},
+		},
+		
+		
 /*		
 		//Do not uncomment this out, this patch is used for testing
 		

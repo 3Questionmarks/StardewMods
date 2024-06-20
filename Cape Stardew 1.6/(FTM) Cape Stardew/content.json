@@ -2545,7 +2545,9 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "GameStateQueries": [],
+          "GameStateQueries": [
+            "RANDOM 0.05 @addDailyLuck"
+          ],
           "CPConditions": {
             "HasFlag": "secretcavekey"
           },
@@ -2568,7 +2570,7 @@
         "UniqueAreaID": "Rosa Rugosa Flower Spawn",
         "MapName": "Custom_CapeStardew",
         "MinimumSpawnsPerDay": 0,
-        "MaximumSpawnsPerDay": 3,
+        "MaximumSpawnsPerDay": 1,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -2851,6 +2853,54 @@
       },
       {
         "SpringItemIndex": [
+          "SkyOakRing"
+        ],
+        "SummerItemIndex": [
+          "SkyOakRing"
+        ],
+        "FallItemIndex": [
+          "SkyOakRing"
+        ],
+        "WinterItemIndex": [
+          "SkyOakRing"
+        ],
+        "UniqueAreaID": "UnlockSecretBase Ring",
+        "MapName": "Custom_UnlockSecretBase",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "5,9;10,13"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 610,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": null,
+          "Seasons": null,
+          "Days": null,
+          "WeatherYesterday": null,
+          "WeatherToday": null,
+          "WeatherTomorrow": null,
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "SpringItemIndex": [
           343,
           450,
           670,
@@ -3033,7 +3083,7 @@
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
-          "3,11;3,11"
+          "3,11;7,12"
         ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "High",
@@ -3041,7 +3091,7 @@
           "StartTime": 600,
           "EndTime": 610,
           "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": null,
+          "MaximumSimultaneousSpawns": 1,
           "OnlySpawnIfAPlayerIsPresent": false,
           "SpawnSound": "clank"
         },
@@ -3055,7 +3105,7 @@
           "GameStateQueries": [],
           "CPConditions": {},
           "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 1
+          "LimitedNumberOfSpawns": 2
         },
         "DaysUntilSpawnsExpire": 0
       },
@@ -3111,7 +3161,7 @@
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
-          "2,10;2,10"
+          "2,10;7,11"
         ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "High",
@@ -3119,7 +3169,7 @@
           "StartTime": 600,
           "EndTime": 610,
           "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": null,
+          "MaximumSimultaneousSpawns": 1,
           "OnlySpawnIfAPlayerIsPresent": false,
           "SpawnSound": "clank"
         },
@@ -3133,7 +3183,7 @@
           "GameStateQueries": [],
           "CPConditions": {},
           "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 1
+          "LimitedNumberOfSpawns": 2
         },
         "DaysUntilSpawnsExpire": 0
       },
@@ -3211,7 +3261,7 @@
           "GameStateQueries": [],
           "CPConditions": {},
           "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 1
+          "LimitedNumberOfSpawns": 2
         },
         "DaysUntilSpawnsExpire": 0
       },
@@ -5983,6 +6033,70 @@
           "Common Mushroom",
           343
         ],
+        "UniqueAreaID": "CapeMineCaveForage",
+        "MapName": "Custom_CapeMineCave",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "21,8;22,9",
+          "25,5;26,7"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 620,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "Query: {{DailyLuck}} > 0": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          343,
+          450,
+          670,
+          668,
+          "Common Mushroom"
+        ],
+        "SummerItemIndex": [
+          343,
+          450,
+          670,
+          668,
+          "Common Mushroom"
+        ],
+        "FallItemIndex": [
+          343,
+          "Common Mushroom",
+          450,
+          668
+        ],
+        "WinterItemIndex": [
+          76,
+          668,
+          450,
+          "Common Mushroom",
+          343
+        ],
         "UniqueAreaID": "Custom_SecretBase Forage",
         "MapName": "Custom_SecretBase",
         "MinimumSpawnsPerDay": 1,
@@ -7781,7 +7895,7 @@
             "HasFlag |contains=prettyStone1": "true"
           },
           "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 4
+          "LimitedNumberOfSpawns": 2
         },
         "DaysUntilSpawnsExpire": 0
       },
@@ -7857,7 +7971,7 @@
         "UniqueAreaID": "CapeMiniIslandForage",
         "MapName": "Custom_CapeStardew",
         "MinimumSpawnsPerDay": 0,
-        "MaximumSpawnsPerDay": 4,
+        "MaximumSpawnsPerDay": 2,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -8976,7 +9090,8 @@
           "Mussel": 1,
           "Fossil": 0,
           "Clay": 1,
-          "CinderShard": 1
+          "CinderShard": 1,
+          "Coal": 0
         },
         "StartingSpawnChance": {
           "Stone": 10,
@@ -9001,7 +9116,8 @@
           "Mussel": 0,
           "Fossil": 0,
           "Clay": 5,
-          "CinderShard": 0
+          "CinderShard": 0,
+          "Coal": 0
         },
         "LevelTenSpawnChance": {
           "Stone": 48,
@@ -9026,7 +9142,8 @@
           "Mussel": 2,
           "Fossil": 0,
           "Clay": 4,
-          "CinderShard": 0
+          "CinderShard": 0,
+          "Coal": 0
         },
         "UniqueAreaID": "Custom_SecretBase_Ore",
         "MapName": "Custom_SecretBase",
@@ -10605,7 +10722,8 @@
       "Mussel": 0,
       "Fossil": 0,
       "Clay": 0,
-      "CinderShard": 0
+      "CinderShard": 0,
+      "Coal": 0
     },
     "StartingSpawnChance": {
       "Stone": 66,
@@ -10630,7 +10748,8 @@
       "Mussel": 0,
       "Fossil": 0,
       "Clay": 5,
-      "CinderShard": 0
+      "CinderShard": 0,
+      "Coal": 0
     },
     "LevelTenSpawnChance": {
       "Stone": 48,
@@ -10655,7 +10774,8 @@
       "Mussel": 2,
       "Fossil": 0,
       "Clay": 4,
-      "CinderShard": 0
+      "CinderShard": 0,
+      "Coal": 0
     },
     "CustomTileIndex": []
   },
@@ -11591,7 +11711,7 @@
             }
           },
           {
-            "MonsterName": "Blue Squid",
+            "MonsterName": "Red Slime",
             "Settings": {
               "SpawnWeight": 3
             }
@@ -11655,7 +11775,7 @@
             }
           },
           {
-            "MonsterName": "Blue Squid",
+            "MonsterName": "Spiker",
             "Settings": {
               "SpawnWeight": 1
             }
@@ -11719,7 +11839,7 @@
             }
           },
           {
-            "MonsterName": "Blue Squid",
+            "MonsterName": "Red Slime",
             "Settings": {
               "SpawnWeight": 1
             }
@@ -11783,7 +11903,7 @@
             }
           },
           {
-            "MonsterName": "Blue Squid",
+            "MonsterName": "Red Slime",
             "Settings": {
               "SpawnWeight": 3
             }
@@ -11916,7 +12036,7 @@
             }
           },
           {
-            "MonsterName": "Ghost",
+            "MonsterName": "Spiker",
             "Settings": {}
           }
         ],
@@ -11985,7 +12105,7 @@
             }
           },
           {
-            "MonsterName": "Ghost",
+            "MonsterName": "Spiker",
             "Settings": {
               "SpawnWeight": 2
             }
@@ -12618,7 +12738,7 @@
             "Settings": {}
           },
           {
-            "MonsterName": "Iridium Bat",
+            "MonsterName": "Spiker",
             "Settings": {}
           },
           {
@@ -13254,7 +13374,7 @@
       {
         "MonsterTypes": [
           {
-            "MonsterName": "Iridium Bat",
+            "MonsterName": "Red Slime",
             "Settings": {
               "SeesPlayersAtSpawn": true
             }
@@ -13455,6 +13575,100 @@
           "MaximumSimultaneousSpawns": null,
           "OnlySpawnIfAPlayerIsPresent": false,
           "SpawnSound": "miniharp_note"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Bat",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Bug",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Iridium Bat",
+            "Settings": {}
+          }
+        ],
+        "UniqueAreaID": "CapeMineCaveMonsters",
+        "MapName": "Custom_CapeMineCave",
+        "MinimumSpawnsPerDay": 17,
+        "MaximumSpawnsPerDay": 22,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "8,14;18,18"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 10,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "Time": "{{Range: 1700, 2600}}"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Bug",
+            "Settings": {}
+          }
+        ],
+        "UniqueAreaID": "CapeMineCaveMonsters2",
+        "MapName": "Custom_CapeMineCave",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 4,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "8,14;18,18"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 620,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 10,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
         },
         "ExtraConditions": {
           "Years": [],
@@ -14351,7 +14565,7 @@
             }
           },
           {
-            "MonsterName": "Frost Bat",
+            "MonsterName": "Spiker",
             "Settings": {
               "SpawnWeight": 1
             }
@@ -14426,7 +14640,7 @@
             }
           },
           {
-            "MonsterName": "Frost Bat",
+            "MonsterName": "Spiker",
             "Settings": {
               "SpawnWeight": 1
             }
@@ -14521,7 +14735,7 @@
             }
           },
           {
-            "MonsterName": "Frost Bat",
+            "MonsterName": "Spiker",
             "Settings": {
               "SpawnWeight": 1
             }
@@ -15415,7 +15629,7 @@
           }
         ],
         "UniqueAreaID": "CapeSecretBaseRoom Krobus 10 heart",
-        "MapName": "Custom_CapeSecretBaseRoom",
+        "MapName": "\t",
         "MinimumSpawnsPerDay": 7,
         "MaximumSpawnsPerDay": 14,
         "IncludeTerrainTypes": [],
@@ -15701,7 +15915,7 @@
             }
           },
           {
-            "MonsterName": "Lava Bat",
+            "MonsterName": "Red Slime",
             "Settings": {
               "SpawnWeight": 1
             }
@@ -16057,7 +16271,7 @@
             "Settings": {}
           },
           {
-            "MonsterName": "Mutant Fly",
+            "MonsterName": "Spiker",
             "Settings": {}
           }
         ],
@@ -16579,15 +16793,15 @@
           }
         ],
         "UniqueAreaID": "CursedDollSpawns",
-        "MapName": "Custom_SecretBaseRoom",
+        "MapName": "Custom_AreaSecretBossLvl2",
         "MinimumSpawnsPerDay": 0,
         "MaximumSpawnsPerDay": 1,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
-          "38,28/44,41",
+          "29,18/33,20",
           "3,5/19,15",
-          "1,32/7,41"
+          "1,4/7,14"
         ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
@@ -16662,6 +16876,76 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [
             "PLAYER_KILLED_MONSTERS Any Cursed Doll 1"
+          ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Iridium Crab",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Iridium Bat",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Bug",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Green Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Cave Grub",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Iridium Crab",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Stone Golem",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Mutant Fly",
+            "Settings": {}
+          }
+        ],
+        "UniqueAreaID": "PrehistoricAreaExtras",
+        "MapName": "Custom_SeaCavernDepths4",
+        "MinimumSpawnsPerDay": 9,
+        "MaximumSpawnsPerDay": 14,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 20,
+          "MaximumSimultaneousSpawns": 5,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "PLAYER_COMBAT_LEVEL Any 3 10"
           ],
           "CPConditions": {},
           "EPUPreconditions": [],

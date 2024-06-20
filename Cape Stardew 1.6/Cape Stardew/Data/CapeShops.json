@@ -334,7 +334,81 @@
         },
       },
     },
-        
+    
+     {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "AdventureShop",
+        "Items"
+      ],
+      "Entries": {
+        "Cape.GoldenObsidianBlade": {
+          "Id": "Cape.GoldenObsidianBlade",
+          "ItemId": "Cape.GoldenObsidianBlade",
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Global",
+          "MinStack": 1,
+          "Condition": "PLAYER_VISITED_LOCATION Current Custom_CapeCavingArea3",
+          "Price": 15000
+        },
+        "Cape.ShadowStrikeBlade": {
+          "Id": "Cape.ShadowStrikeBlade",
+          "ItemId": "Cape.ShadowStrikeBlade",
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Global",
+          "MinStack": 1,
+          "Condition": "PLAYER_VISITED_LOCATION Current Custom_AreaSecretBossLvl2",
+          "Price": 18000
+        }
+      }
+    },
+
+{
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "dreamy.kickitspot_jellishop",
+        "Items"
+      ],
+      "Entries": {
+        "dreamy.kickitspot_MysticArcana": {
+          "Id": "dreamy.kickitspot_MysticArcana",
+          "ItemId": "dreamy.kickitspot_MysticArcana",
+         "TradeItemId": "(O)265",
+              "Price": 0,
+              "TradeItemAmount": 1,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HAS_SEEN_EVENT Any 14635fixv3",
+        },
+"dreamy.kickitspot_SilverPetal": {
+          "Id": "dreamy.kickitspot_SilverPetal",
+          "ItemId": "dreamy.kickitspot_SilverPetal",
+          "TradeItemId": "(O)456",
+              "Price": 0,
+              "TradeItemAmount": 1,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+		"Condition": "PLAYER_VISITED_LOCATION Current Custom_CapeMineForest, PLAYER_HAS_SEEN_EVENT Current {{ModId}}_RingEv1",
+              
+        },
+"dreamy.kickitspot_SkyOak": {
+          "Id": "dreamy.kickitspot_SkyOak",
+          "ItemId": "dreamy.kickitspot_SkyOak",
+          "TradeItemId": "(O)457",
+              "Price": 0,
+              "TradeItemAmount": 1,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_VISITED_LOCATION Current Custom_UnlockSecretBase",
+        },
+        },
+
+"When": {
+	"JelliLunar": true,
+},
+}
     
 ]
 

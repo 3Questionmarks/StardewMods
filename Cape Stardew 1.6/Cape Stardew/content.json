@@ -1,7 +1,7 @@
 {
   "Format": "2.0.0",
   "ConfigSchema": {
-  "BuildatBusStop": {
+  "BusStopBuildings": {
             "AllowValues": "true, false",
             "Default": "true",
 			"Description": "unlock cape BusStop as builable area"
@@ -70,12 +70,12 @@
       "AllowValues": "true, false",
       "Default": "false"
     },
+    "ShadowStrikeProjectile": {
+      "AllowValues": "on, off",
+      "Default": "on"
+    },
   },
   "DynamicTokens": [
-  {
-  "Name": "BusStopBuildings",
-  "Value": "{{BuildatBusStop: hostPlayer |contains=true}}",
-  },
   {
       "Name": "CustomOresEnabled",
       "Value": "{{Custom_Ores: currentPlayer, hostPlayer, anyPlayer |contains=true}}",
@@ -153,7 +153,7 @@
     },
     {
       "Name": "JelliLunar",
-      "Value": "{{HasFlag: currentPlayer, hostPlayer, anyPlayer |contains=prettyStone1}}"
+      "Value": "{{HasFlag: anyPlayer |contains=prettyStone1}}"
     },
       {
       "Name": "AnetSpringOrdercomplete",
@@ -167,6 +167,10 @@
   ],
   "CustomLocations": [
     /*CustomLocations///*/
+ {
+      "Name": "Custom_CapeMineForest",
+      "FromMapFile": "assets/CapeMineForest.tmx"
+    },
     {
       "Name": "Custom_forestpoolexit",
       "FromMapFile": "assets/forestpoolexit.tmx"
@@ -569,7 +573,15 @@
       "Action": "Load",
       "Target": "TileSheets/capeprojectiles",
       "FromFile": "assets/TileSheets/capeprojectiles.png"
-    }
+    },
+{
+			"Action": "EditImage",
+			"Target": "TileSheets/Projectiles",
+			 "PatchMode": "Overlay",
+			"FromFile": "assets/TileSheets/capeprojectiles.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 128, "Height": 112 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 112 },
+		}
     /*////StringsFromMaps///////*/,
     {
       "LogName": "Message",
@@ -617,6 +629,7 @@
         "Piratesnote.1": "{{i18n:Strings.Piratesnote.1}}",
         "Piratesnote.2": "{{i18n:Strings.Piratesnote.2}}",
          "Minecart1": "{{i18n:Strings.Minecart1}}",
+"MineCaveCart": "{{i18n:ringevent.002}}",
       }
     }
     /*/EventsBlanksJSON///*/,
@@ -625,6 +638,12 @@
       "Action": "Load",
       "Target": "Data/Events/Custom_CapeForest",
       "FromFile": "Data/LoadData/BlankCapeForest.json"
+    },
+{
+      "LogName": "Load Blank CapeMineForest",
+      "Action": "Load",
+      "Target": "Data/Events/Custom_CapeMineForest",
+      "FromFile": "Data/LoadData/BlankCapeMineForest.json"
     },
       {
       "LogName": "Load Blank CapeMinecart",
@@ -880,7 +899,17 @@
     "Action": "Load",
     "Target": "Maps/Custom_Capewhirlpoolbeach",
     "FromFile": "assets/Capewhirlpoolbeach.tmx",
-    }
+    },
+    {
+    "Action": "Load",
+    "Target": "Maps/Custom_CapeBusStop2patch",
+    "FromFile": "assets/CapeBusStop2patch.tmx",
+    },
+{
+    "Action": "Load",
+    "Target": "Maps/Custom_CapeMineForest",
+    "FromFile": "assets/CapeMineForest.tmx",
+    },
     
     
     /*/includedata///*/,
@@ -1220,9 +1249,28 @@
       "Action": "Include",
       "FromFile": "Objects/Sketchbook/object.json"
     },
+
+{
+      "Action": "Include",
+      "FromFile": "Objects/Mystic Arcana/object.json"
+    },
+
+{
+      "Action": "Include",
+      "FromFile": "Objects/Silver Petal/object.json"
+    },
+
+{
+      "Action": "Include",
+      "FromFile": "Objects/Sky Oak/object.json"
+    },
     
     
     //includedata//
+ { 
+            "Action": "Include",
+            "FromFile": "Data/CustomBuffs.json",
+        },
       { 
             "Action": "Include",
             "FromFile": "Data/ItemsGiftTastes.json",
@@ -1298,15 +1346,7 @@
       "FromFile": "assets/Characters/Portraits/JelliVendor.png"
     },
     
-    	{
-			"Action": "EditImage",
-			"Target": "TileSheets/Projectiles",
-			 "PatchMode": "Overlay",
-			"FromFile": "assets/TileSheets/capeprojectiles.png",
-			"FromArea": { "X": 0, "Y": 0, "Width": 128, "Height": 112 },
-			"ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 112 },
-		},
-		
+    	
 		
 		
 		

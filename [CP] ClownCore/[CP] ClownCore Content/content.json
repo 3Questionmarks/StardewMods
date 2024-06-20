@@ -50,10 +50,30 @@ Custom Buildings
     {
     "Action": "EditMap",
     "Target": "Maps/Forest-FlowerFestival,Maps/Forest-FlowerFestival2",
+    "FromFile": "Maps/FlowerFestivalEditWOLFROMRAS.tbin",
+    "ToArea": { "X":0, "Y": 9, "Width": 27, "Height":12},
+    "When": {
+        "HasMod |contains=Wolf.RomRas": true
+            }
+        },
+         {
+    "Action": "EditMap",
+    "Target": "Maps/Forest-FlowerFestival,Maps/Forest-FlowerFestival2",
+    "FromFile": "Maps/RSVFlowerFestivalEditWOLFROMRAS.tbin",
+    "ToArea": { "X":0, "Y": 9, "Width": 27, "Height":12},
+    "When": {
+        "HasMod |contains=Wolf.RomRas": true,
+        "HasMod |contains=Rafseazz.RSVCP": true
+            }
+        },
+    {
+    "Action": "EditMap",
+    "Target": "Maps/Forest-FlowerFestival,Maps/Forest-FlowerFestival2",
     "FromFile": "Maps/FlowerFestivalEdit.tbin",
     "ToArea": { "X":0, "Y": 9, "Width": 27, "Height":12},
     "When": {
-        "HasMod |contains=Rafseazz.RSVCP": false
+        "HasMod |contains=Rafseazz.RSVCP": false,
+        "HasMod |contains=Wolf.RomRas": false
             }
         },
          {
@@ -105,12 +125,14 @@ Custom Buildings
         "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
             }
         },
-                                    {
+
+                                            {
     "Action": "EditMap",
-    "Target": "Maps/Town-Fair,Town-Fair2",
+    "Target": "Maps/Town-Fair,Maps/Town-Fair2",
     "FromFile": "Maps/FairFestivalEdit.tbin",
     "ToArea": { "X":57, "Y": 94, "Width": 17, "Height":12
     },
         },
+
 ],
 }

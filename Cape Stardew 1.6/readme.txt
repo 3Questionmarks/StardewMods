@@ -2,7 +2,6 @@ Cape Stardew - for Stardew Valley 1.6
 
 **When Migrating from a previous save with Cape Stardew, please delete the old version and replace with this one. If you wish to keep Items that were added with Json Assets please download the optional Json Assets file!**
 
-
 **About:**
 Embark on an epic quest into a mysterious sea cavern, unearthing treasures and forming bonds with Annetta. Immerse yourself in a captivating narrative, seamlessly integrating with other mods. Unleash optional legendary weapons for a truly legendary farming adventure!
 

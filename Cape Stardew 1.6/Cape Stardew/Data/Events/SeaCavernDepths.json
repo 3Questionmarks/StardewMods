@@ -72,7 +72,7 @@
   "Entries": {
     "14635852/i Cape.LunarCrystalShard": "XOR/-1000 -1000/farmer 17 2 2 Jelli 17 28 1/swimming Jelli/skippable/globalFade/viewport 17 20 true freeze/playSound slosh/speed farmer 6/move farmer 0 15 2/pause 500/playSound slosh/pause 2000/viewport 17 20/speed Jelli 5/move Jelli 0 -3 0/speed Jelli 4/move Jelli 3 0 1/playSound slosh/playSound slosh/speed Jelli 6/move Jelli 0 3 2/move Jelli -2 0 3/speed Jelli 4/move Jelli 0 -8 0/move Jelli -1 0 0/pause 100/stopSwimming Jelli/speed farmer 3/question fork0 \"{{i18n:Dialogue.QuestionEvent2_Jelli}}#{{i18n:Dialogue.QuestionFork2_Response1}}#{{i18n:Dialogue.QuestionFork2_Response2}}\"/pause 200/pause 1000/fork JQuest2/pause 300/speak Jelli \"{{i18n:Dialogue.Jelli2_quest1}}\"/pause 3000/globalFade/viewport -1000 -1000/end",
     "JQuest2": "speak Jelli \"{{i18n:Dialogue.Jelli2_quest2}}\"/pause 1000/question fork1 \"{{i18n:Dialogue.QuestionEvent2_Jelli2}}#{{i18n:Dialogue.QuestionFork3_Response1}}#{{i18n:Dialogue.QuestionFork3_Response2}}\"/pause 1000/fork JQuest3/pause 300/speak Jelli \"{{i18n:Dialogue.Jelli_endquest}}\"/globalFade/viewport -1000 -1000/end",
-    "JQuest3": "stopMusic/playMusic poppy/speak Jelli \"{{i18n:Dialogue.Jelli_Lunar}}\"/removeItem (O)Lunar Crystal Shard/addMailReceived prettyStone1/removeQuest JQuestB/pause 10/removeQuest JQuestD/pause 1000/globalFade/viewport -1000 -1000/end",
+    "JQuest3": "stopMusic/playMusic poppy/speak Jelli \"{{i18n:Dialogue.Jelli_Lunar}}\"/removeItem (O)Cape.LunarCrystalShard/addMailReceived prettyStone1/removeQuest JQuestB/pause 10/removeQuest JQuestD/pause 1000/globalFade/viewport -1000 -1000/end",
     
   }
   },

@@ -1,0 +1,73 @@
+{
+	"Format": "1.19.0",
+	"DynamicTokens": [
+		{
+            "Name": "IndoorVariant", // Indoors
+            "Value": "Indoor",
+            "When":
+            {
+                "IsOutdoors": "false"
+            }
+        },
+        {
+            "Name": "IndoorVariant", // Outdoors
+            "Value": "Outdoor",
+            "When":
+            {
+                "IsOutdoors": "true"
+            }
+        }
+	],
+"Changes": [
+	{
+		"Action": "EditImage",
+        "Target": "Characters/Gabriel",
+		"FromFile": "assets/sprites/Gabriel{{Season}}.png",
+		"Update": "OnLocationChange",     
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }	
+	},
+	{
+		"Action": "EditImage",
+        "Target": "Characters/Gabriel",
+		"FromFile": "assets/sprites/Gabriel{{Season}}{{IndoorVariant}}.png",
+		"Update": "OnLocationChange",     
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }	
+	},
+//Portraits
+	{
+		"Action": "EditImage",
+        "Target": "Portraits/Gabriel",
+		"FromFile": "assets/portraits/Gabriel{{Season}}.png",
+		"Update": "OnLocationChange",     
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }	
+	},
+	{
+		"Action": "EditImage",
+        "Target": "Portraits/Gabriel",
+		"FromFile": "assets/portraits/Gabriel{{Season}}{{IndoorVariant}}.png",
+		"Update": "OnLocationChange",     
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+	},	
+	{
+		"Action": "EditImage",
+        	"Target": "Portraits/Gabriel_Beach",
+		"FromFile": "assets/portraits/Gabriel_Beach.png",   
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+	}	
+	]
+	}

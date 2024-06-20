@@ -827,7 +827,7 @@
 			"Action":"EditMap",
 			"Target":"Maps/Custom_CapeBusStop",
 			"When": {
-			"BuildatBusStop": true,
+			"BusStopBuildings": true,
                  "HasMod |contains=DLX.Bundles": "true",
         "DLX.Bundles/Purchased": "Cape.CapeForestFarm"  
             },
@@ -876,7 +876,6 @@
 			"Action":"EditMap",
 			"Target":"Maps/Custom_CapeForest",
 			"When": {
-			"BuildatBusStop": true,
                  "HasMod |contains=DLX.Bundles": "true",
         "DLX.Bundles/Purchased": "Cape.CapeForestFarm"  
             },
@@ -900,7 +899,6 @@
 			"Action":"EditMap",
 			"Target":"Maps/Custom_CapeForest",
 			"When": {
-			"BusStopBuildings": true,
                  "HasMod |contains=DLX.Bundles": "true",
         "DLX.Bundles/Purchased": "Cape.CapeForestFarm"  
             },
@@ -926,7 +924,6 @@
 			"Action":"EditMap",
 			"Target":"Maps/Custom_AnnettaForest",
 			"When": {
-			"BuildatBusStop": true,
                  "HasMod |contains=DLX.Bundles": "true",
         "DLX.Bundles/Purchased": "Cape.CapeForestFarm"  
             },
@@ -950,7 +947,6 @@
 			"Action":"EditMap",
 			"Target":"Maps/Custom_AnnettaForest",
 			"When": {
-			"BusStopBuildings": true,
                  "HasMod |contains=DLX.Bundles": "true",
         "DLX.Bundles/Purchased": "Cape.CapeForestFarm"  
             },
@@ -975,7 +971,6 @@
 			"Action":"EditMap",
 			"Target":"Maps/Custom_AnnettaForest",
 			"When": {
-			"BusStopBuildings": true,
                  "HasMod |contains=DLX.Bundles": "true",
         "DLX.Bundles/Purchased": "Cape.CapeForestFarm"  
             },
@@ -1047,7 +1042,6 @@
 			"Action":"EditMap",
 			"Target":"Maps/Custom_CapeForest",
 			"When": {
-			"BusStopBuildings": true,
                  "HasMod |contains=DLX.Bundles": "true",
         "DLX.Bundles/Purchased": "Cape.CapeForestFarm"  
             },
@@ -1084,7 +1078,7 @@
 			"Target":"Maps/Custom_CapeBusStop",
 			"Condition": "BUILDINGS_CONSTRUCTED Custom_CapeBusStop Gold Clock",
 			"When": {
-			"BuildatBusStop": true,
+			"BusStopBuildings": true,
                  "HasMod |contains=DLX.Bundles": "true",
         "DLX.Bundles/Purchased": "Cape.CapeForestFarm",
         
@@ -1111,7 +1105,6 @@
 			"Target":"Maps/Custom_CapeForest",
 			"Condition": "BUILDINGS_CONSTRUCTED Custom_CapeBusStop Gold Clock",
 			"When": {
-			"BuildatBusStop": true,
                  "HasMod |contains=DLX.Bundles": "true",
         "DLX.Bundles/Purchased": "Cape.CapeForestFarm",
         
@@ -1136,9 +1129,8 @@
 		{
 			"Action":"EditMap",
 			"Target":"Maps/Custom_AnnettaForest",
-			"Condition": "BUILDINGS_CONSTRUCTED Custom_CapeBusStop Gold Clock",
+			"Condition": "BUILDINGS_CONSTRUCTED Custom_AnnettaForest Gold Clock",
 			"When": {
-			"BuildatBusStop": true,
                  "HasMod |contains=DLX.Bundles": "true",
         "DLX.Bundles/Purchased": "Cape.CapeForestFarm",
         
@@ -1171,7 +1163,7 @@
                 
             },
             
-            "Update": "OnLocationChange",
+            "Update": "OnLocationChange,OnTimeChange",
                 "TextOperations": [
                 {
                     "Operation": "Append",
@@ -1195,7 +1187,7 @@
                  "Time": "{{Range: 1030, 2600}}",
             },
             
-            "Update": "OnLocationChange",
+            "Update": "OnLocationChange,OnTimeChange",
                 "TextOperations": [
                 {
                     "Operation": "Append",

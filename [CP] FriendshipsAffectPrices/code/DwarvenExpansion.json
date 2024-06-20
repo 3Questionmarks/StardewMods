@@ -109,6 +109,9 @@
         "mytigio.dwarven_expansion_CaveCoop": {
           "BuildCost": "{{Round: {{Query: 4000 * {{1st Stage Multiplier}} }} }}"
         },
+		"mytigio.dwarven_expansion_LargeCavern": {
+          "BuildCost": "{{Round: {{Query: 28000 * {{3rd Stage Multiplier}} }} }}"
+        },
         "mytigio.dwarven_expansion_CaveShed": {
           "BuildCost": "{{Round: {{Query: 12000 * {{1st Stage Multiplier}} }} }}"
         },
@@ -136,6 +139,9 @@
         "mytigio.dwarven_expansion_CaveCoop": {
           "BuildCost": "{{Round: {{Query: 4000 * {{2nd Stage Multiplier}} }} }}"
         },
+		"mytigio.dwarven_expansion_LargeCavern": {
+          "BuildCost": "{{Round: {{Query: 28000 * {{2nd Stage Multiplier}} }} }}"
+        },
         "mytigio.dwarven_expansion_CaveShed": {
           "BuildCost": "{{Round: {{Query: 12000 * {{2nd Stage Multiplier}} }} }}"
         },
@@ -162,6 +168,9 @@
         },
         "mytigio.dwarven_expansion_CaveCoop": {
           "BuildCost": "{{Round: {{Query: 4000 * {{3rd Stage Multiplier}} }} }}"
+        },
+		"mytigio.dwarven_expansion_LargeCavern": {
+          "BuildCost": "{{Round: {{Query: 28000 * {{3rd Stage Multiplier}} }} }}"
         },
         "mytigio.dwarven_expansion_CaveShed": {
           "BuildCost": "{{Round: {{Query: 12000 * {{3rd Stage Multiplier}} }} }}"

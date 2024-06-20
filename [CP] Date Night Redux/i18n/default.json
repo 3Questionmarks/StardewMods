@@ -50,6 +50,16 @@
 	"config.LibraryDateCutscene.values.disabled": "remove library story cutscene",
 	"config.LibraryDateCutscene.values.enabled": "use library story cutscene",
 	
+	"config.ModdedSpouseFoods.name": "Modded Spouse Foods",
+    "config.ModdedSpouseFoods.description": "Choose whether SVE and RSV spouses use vanilla dishes or dishes from their own mods in their dates. SVE spouses will use them in both Saloon and Picnic Dates, while the RSV spouses will only use them on Picnic Dates so Gus is not suddenly preparing dishes from the Village.",
+	"config.ModdedSpouseFoods.values.disabled": "use vanilla foods only",
+	"config.ModdedSpouseFoods.values.enabled": "use modded foods for RSV/SVE spouses",
+	
+	"config.DynamicPool.name": "Dynamic Pool Forks",
+    "config.DynamicPool.description": "Choose whether your pool forks are the original mod's endings or a more dynamic approach that allows your spouse or yourself to randomly win. The first playthrough of the date will always be the original date, but if the date is repeated, there will be an equal chance the spouse or the player will win at pool.",
+	"config.DynamicPool.values.disabled": "use original pool event",
+	"config.DynamicPool.values.enabled": "use dynamic pool endings",
+	
 	"config.DatesOnFestivalDays.name": "Dates on Festival Days",
     "config.DatesOnFestivalDays.description": "Enable/Disable being asked on a date on a festival day. Usually many areas are closed or off-limits on festival days, making it impossible for you to complete the date if asked. Enabling this will allow dates to be asked on a date with a festival, even if you won't be able to complete it. When disabled, dates will never be asked on every festival day (except passive festivals). Works on every vanilla festival, the Pelican Town Potluck, and the Ridgeside festivals - more can be added on request.",
 	"config.DatesOnFestivalDays.values.disabled": "no dates on festival days",
@@ -121,7 +131,7 @@
 		"SaloonDate.7": "You're the best thing to happen to me, @. I wouldn't want anything to be different.$l",
 		"SaloonDate.8": "Thanks for agreeing to this date, by the way. I know you're very busy.",
 		"SaloonDate.9": "I have your order ready, [CharacterName {{Date}}].",
-		"SaloonDate.10": "Thank you [CharacterName {{Gus}}]! I'll take it from here.", //Look into alternatives for this - translations won't translate dynamic tokens
+		"SaloonDate.10": "Thank you [CharacterName {{Gus}}]! I'll take it from here.",
 		"SaloonDate.11": "Mmm... just how I like it! [CharacterName {{Date}}] really knows me well!",
 		"SaloonDate.12": "I knew you would like it!$h", //Split into two for item giving
 		"SaloonDate.13": "We even have some extra!",
@@ -910,5 +920,78 @@
 		
 		"Alex.Gridball.26": "Come on, let's go back home.#$b#We can look at all the photos we took, haha!$h",
 		"Alex.Gridball.27": "Alex and I had the best date today. I'm so lucky to be married to him!",
-
+		
+	//2.1 Lines
+		
+	//NPC Tokens Compat
+	
+		//Make ABSOLUTELY sure these do not apply with spouses which swap gender or have a non-binary gender presentation or otherwise. Not having specific pronouns is something to fix, but the fix *cannot* be misgendering an NPC.
+	
+		//Generic Alterations
+		
+		"Pool.6.M": "[CharacterName {{Date}}] tried their hardest, but I easily beat him. What a fun night!",
+		"Pool.6.F": "[CharacterName {{Date}}] tried their hardest, but I easily beat her. What a fun night!",
+		
+		"Forest.9.M": "[CharacterName {{Date}}] really poured their heart into this date...I'm so lucky to have him!",
+		"Forest.9.F": "[CharacterName {{Date}}] really poured their heart into this date...I'm so lucky to have her!",
+		
+		"Lake.9.M": "[CharacterName {{Date}}] really poured their heart into this date...I'm so lucky to have him!",
+		"Lake.9.F": "[CharacterName {{Date}}] really poured their heart into this date...I'm so lucky to have her!",
+		
+		"Swim.19.M": "I chased [CharacterName {{Date}}] around for a long time to try and splash him back.",
+		"Swim.20.M": "After almost 5 minutes of chasing, I finally got him!",
+		"Swim.19.F": "I chased [CharacterName {{Date}}] around for a long time to try and splash her back.",
+		"Swim.20.F": "After almost 5 minutes of chasing, I finally got her!",
+		
+		//Unique Alterations (for genderbent mods)
+		
+		"Haley.DesertDate.60.M": "Haley and I had a great time at the Desert. It was nice to spend time with him.", //Haley is male
+		"Alex.Gridball.27.F": "Alex and I had the best date today. I'm so lucky to be married to her!", //Alex is female
+		
+			//More Specific Changes
+		"Haley.DesertDate.Intro.6.M": "I just got a letter from my brother.#$b#He invited me to go with him to the Desert to visit his friend Sandy.#$b#Now that the Bus is repaired, we can all go to the Desert more often.", //Emily is male
+		"Haley.DesertDate.3.M": "All right Haley, I think it went through. Hop on!", //Haley is male - "bro" doesn't quite fit here.
+		"Haley.DesertDate.16.M": "Okay Haley, me and Sandy are going to head to her store and hang out there. You have fun in the Desert with @!", //Haley is male
+		"Haley.DesertDate.26.M": "Oh, of course!$h#$b#Here, take some ice cold milk. It'll keep you refreshed in the heat.#$b#I'll give it to you free of charge, since you're the brother of my best friend!$h", //Haley is male
+		"Emily.GemDate.3.M": "*sigh*... I wish Haley wasn't so messy..$s#$b#I agreed to let him use my room after I moved out, but the least he could do is keep it clean...$s", //Haley is male
+		
+	//Small additional line fix for Abigail in Grocery Date
+	
+	"GroceryDate.13.Abigail": "Hey, dad. Here's what we'll be buying today.", //Suggested by nomorenamesleft - one line change for consistency.
+	
+	//Dynamic Pool endings
+	
+		//Pool Fork - Date Wins
+			
+		"PoolWin.1": "You want to play pool? All right!#$b#I've been practicing since the last time we played. I'm going to beat you this time!$h",
+		
+		"PoolWin.2.Gendered": "I won't be so easy to beat this time!$h#$b#Time to show my husband what I can really do...^Time to show my wife what I can really do...",
+		"PoolWin.2.Neutral": "I won't be so easy to beat this time!$h#$b#Time to show my spouse what I can really do...",
+		
+		"PoolWin.3": "Take this!",
+		"PoolWin.4": "The cue ball scatters the other balls, sinking a few of the solid colors into the pockets in the process.",
+		"PoolWin.5": "Yes!",
+		"PoolWin.6": "It was a close match, but [CharacterName {{Date}}] managed to win! I guess I better keep practicing...",
+		
+		"PoolWin.7": "I can't believe I won! I guess all my practice paid off!$h",
+		"PoolWin.8": "Hey, @. How about we go home and I show you a few of the moves I learned?$l",
+		"PoolWin.9": "Wow... That was great, @...$l#$b#Ha, I'm exhausted...$l",
+		
+		//Pool Fork - Player Wins
+		
+		"PoolLose.1": "You want to play pool? All right!#$b#I've been practicing since the last time we played. I'm going to beat you this time!$h",
+		
+		"PoolLose.2.Gendered": "I won't be so easy to beat this time!$h#$b#Time to show my husband what I can really do...^Time to show my wife what I can really do...",
+		"PoolLose.2.Neutral": "I won't be so easy to beat this time!$h#$b#Time to show my spouse what I can really do...",
+		
+		"PoolLose.3": "Take this!",
+		"PoolLose.4": "The cue ball only brushes against a few of the other billiard balls and goes into a pocket.",
+		"PoolLose.5": "Oops...",
+		"PoolLose.6": "[CharacterName {{Date}}] tried their hardest, but I managed to beat them! We had a great time playing pool together.",
+		
+		"PoolLose.7": "I'll beat you next time, honey. Just you wait!$h",
+		"PoolLose.8": "Hey, @. How about we go home and you can teach me some of your skills?$l",
+		"PoolLose.9": "Wow... That was great, @...$l#$b#Ha, I'm exhausted...$l",
+		
+		"SaloonDate.End.PoolFork": "I had a great time playing pool with you, honey. Let's do that again sometime!$l",
 }

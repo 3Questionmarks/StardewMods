@@ -9,6 +9,7 @@
 
     // generic values
     "generic.unknown": "inconnu",
+    "generic.list-separator": ", ", // text between listed values (like ", " in "A, B, C")
 
     // generic field values
     "generic.percent": "{{percent}}%",
@@ -100,31 +101,19 @@
     "data.item.box.description": "À casser pour obtenir des biens divers.",
 
     // location names
-    "location.backwoods": "forêt inexploitée",
-    "location.beach": "plage",
     "location.beach.east-pier": "plage (jetée à l'est)",
     "location.bugLand": "repaire des insectes mutants",
-    "location.busStop": "arrêt de bus",
-    "location.desert": "désert",
     "location.desert.topPond": "desert (north pond)", // TODO
-    "location.farm": "ferme",
     "location.farmCave": "grotte de la ferme",
     "location.farmHouse": "maison de ferme",
-    "location.forest": "forêt",
     "location.forest.island-tip": "rivière de la forêt (pointe sud de la grande île)",
     "location.forest.lake": "étang de la forêt",
     "location.forest.river": "rivère de la forêt",
-    "location.mountain": "montagne",
-    "location.railroad": "chemin de fer",
-    "location.sewer": "égout",
     "location.submarine": "sous-marin du marché de nuit",
-    "location.town": "ville",
     "location.town.northmost-bridge": "ville (pont le plus au nord)",
-    "location.tunnel": "tunnel de bus",
     "location.undergroundMine": "mines",
     "location.undergroundMine.level": "mine niveau {{level}}",
     "location.witchSwamp": "marais de la sorcière",
-    "location.woods": "bois secret",
 
     "location.caldera": "Île Gingembre - Caldeira",
     "location.islandEast": "Île Gingembre - Est",
@@ -136,14 +125,34 @@
     "location.islandWest.freshwater": "Île Gingembre - Est (étang)",
     "location.islandWest.ocean": "Île Gingembre - Est (océan)",
 
+    "location.fish-area": "{{locationName}} ({{areaName}})",
     "location.unknown-fish-area": "{{locationName}} (secteur de pêche {{id}})",
 
-    // context tags (e.g. for machine recipes)
+
+    /*********
+    ** Conditions & context tags
+    *********/
     // TODO
-    "context-tag.negate": "not {{tag}}",
+    "condition-or-context-tag.negate": "not {{value}}",
+
+    "condition.item-type.input": "input item",
+    "condition.item-type.target": "target item",
+
+    "condition.raw-context-tag": "context tag \"{{tag}}\"",
+    "condition.raw-condition": "query \"{{tag}}\"",
+
+    "condition.item-context-tag": "{{item}} has context tag {{tags}}",
+    "condition.item-context-tags": "{{item}} has context tags {{tags}}",
+    "condition.item-context-tag.value": "'{{tag}}'", // the format of each context tag in the list (each context tag isn't translated)
+
+    "condition.item-edibility.edible": "{{item}} is edible",
+    "condition.item-edibility.min": "{{item}} has edibility of {{min}} or more",
+    "condition.item-edibility.range": "{{item}} has edibility of {{min}} to {{max}}",
+
     "context-tag.bone": "any bone",
     "context-tag.egg": "any egg",
     "context-tag.large-egg": "any large egg",
+    "context-tag.preserved-item": "preserved {{name}}",
 
 
     /*********
@@ -551,7 +560,7 @@
 
     // values
     "puzzle.solution.solved": "Puzzle résolu!",
-    "puzzle.solution.hidden": "Les solutions de puzzle sont cachées en mode progression.",
+    "puzzle.solution.hidden": "Les solutions de puzzle sont cachées selon vos paramètres.",
 
 
     /*********
@@ -657,10 +666,21 @@
     *********/
     // main options
     "config.title.main-options": "Options principales",
-    "config.progression-mode.name": "Mode de progression",
-    "config.progression-mode.desc": "Possibilité de cacher certains contenus (par exemple, les goûts des cadeaux et les solutions des énigmes) jusqu'à ce que vous les découvriez dans le jeu.",
     "config.force-full-screen.name": "Forcer le plein écran",
     "config.force-full-screen.desc": "Si le menu doit toujours être en plein écran, au lieu d'être centré dans la fenêtre. Ceci est principalement utile lors de l'affichage des champs d'exploration de données.",
+
+    // progression mode
+    // TODO
+    "config.title.progression": "Mode de progression",
+
+    "config.progression.show-unknown-gift-tastes.name": "Show unknown gift tastes",
+    "config.progression.show-unknown-gift-tastes.desc": "Whether to show gift tastes you haven't learned about in-game yet (e.g. from dialogue text or experimenting).",
+
+    "config.progression.show-unknown-recipes.name": "Show unknown recipes",
+    "config.progression.show-unknown-recipes.desc": "Whether to show recipes you haven't learned in-game yet.",
+
+    "config.progression.show-puzzle-solutions.name": "Show puzzle solutions",
+    "config.progression.show-puzzle-solutions.desc": "Whether to show puzzle solutions.",
 
     // gift tastes
     "config.title.gift-tastes": "Goûts en matière de cadeaux",

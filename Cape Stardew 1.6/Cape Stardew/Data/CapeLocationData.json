@@ -5017,6 +5017,25 @@
 				}
 			}
 		},
+
+{
+			"LogName": "MineCaveForest",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"dreamy.kickitspot_CapeMineForest": {
+					"DisplayName": "{{i18n: Locations.MineCaveForest}}",
+					"DefaultArrivalTile": null,
+					"FormerLocationNames": [
+            "CapeMineForest"
+          ],
+					"CreateOnLoad": {
+						"MapPath": "Maps\\Custom_CapeMineForest"
+					},
+					"CanPlantHere": false,
+				}
+			}
+		},
 		
 		{
 			"LogName": "MineCart2",

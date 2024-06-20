@@ -1,7 +1,7 @@
 {
     "Name": "CapeStardew",
     "Author": "Arony/DreamyGloom",
- "Version": "6.1.8",
+ "Version": "6.2.4",
     "Description": "SeasSideCapeExpansion",
     "UniqueID": "dreamy.kickitspot",
     "UpdateKeys": ["Nexus:14635"],
@@ -10,6 +10,14 @@
     },
     
     "Dependencies": [
+ {
+      "UniqueID": "dreamy.AniProjectilesPoke",
+      "IsRequired": false,
+   },
+ {
+      "UniqueID": "dreamy.Keyblades",
+      "IsRequired": false,
+   },
  
    {
       "UniqueID": "Esca.FarmTypeManager",
@@ -83,7 +91,11 @@
  	{
  	"UniqueID": "spacechase0.SpaceCore",
  	"IsRequired": true,
- 	}
+ 	},
+{
+      "UniqueID": "mistyspring.ItemExtensions",
+      "IsRequired": true
+    }
    
    
   ]

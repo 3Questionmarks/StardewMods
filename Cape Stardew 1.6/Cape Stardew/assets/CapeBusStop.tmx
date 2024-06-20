@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="69" height="45" tilewidth="16" tileheight="16" infinite="0" nextlayerid="27" nextobjectid="123">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="69" height="45" tilewidth="16" tileheight="16" infinite="0" nextlayerid="27" nextobjectid="288">
  <editorsettings>
   <export target="CapeBusStop2.tmx" format="tmx"/>
  </editorsettings>
@@ -1741,12 +1741,792 @@
     <property name="TouchAction" value="Warp Custom_CapeBusStop2 33 18"/>
    </properties>
   </object>
+  <object id="123" name="TileData" x="528" y="256" width="16" height="16">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
+  <object id="124" name="TileData" x="512" y="256" width="16" height="16">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
+  <object id="125" name="TileData" x="496" y="256" width="16" height="16">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
+  <object id="126" name="TileData" x="480" y="256" width="16" height="16">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
+  <object id="127" name="TileData" x="464" y="256" width="16" height="16">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
+  <object id="128" name="TileData" x="448" y="256" width="16" height="16">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
+  <object id="129" name="TileData" x="432" y="256" width="16" height="16">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
+  <object id="130" name="TileData" x="416" y="256" width="16" height="16">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
+  <object id="131" name="TileData" x="400" y="256" width="16" height="16">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
+  <object id="132" name="TileData" x="384" y="256" width="16" height="16">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
+  <object id="133" name="TileData" x="368" y="256" width="16" height="16">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
+  <object id="134" name="TileData" x="352" y="256" width="16" height="16">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
+  <object id="135" name="TileData" x="352" y="272" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="136" name="TileData" x="368" y="272" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="137" name="TileData" x="384" y="272" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="138" name="TileData" x="400" y="272" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="139" name="TileData" x="416" y="272" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="140" name="TileData" x="432" y="272" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="141" name="TileData" x="464" y="272" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="142" name="TileData" x="448" y="272" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="143" name="TileData" x="480" y="272" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="144" name="TileData" x="496" y="272" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="145" name="TileData" x="512" y="272" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="146" name="TileData" x="528" y="272" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="147" name="TileData" x="352" y="288" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="148" name="TileData" x="368" y="288" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="149" name="TileData" x="384" y="288" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="150" name="TileData" x="400" y="288" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="151" name="TileData" x="416" y="288" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="152" name="TileData" x="432" y="288" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="153" name="TileData" x="448" y="288" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="154" name="TileData" x="464" y="288" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="155" name="TileData" x="480" y="288" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="156" name="TileData" x="496" y="288" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="157" name="TileData" x="512" y="288" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="158" name="TileData" x="528" y="288" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="159" name="TileData" x="352" y="304" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="160" name="TileData" x="368" y="304" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="161" name="TileData" x="384" y="304" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="162" name="TileData" x="400" y="304" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="163" name="TileData" x="416" y="304" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="164" name="TileData" x="432" y="304" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="165" name="TileData" x="464" y="304" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="166" name="TileData" x="448" y="304" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="167" name="TileData" x="480" y="304" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="168" name="TileData" x="496" y="304" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="169" name="TileData" x="512" y="304" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="170" name="TileData" x="528" y="304" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="171" name="TileData" x="352" y="320" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="172" name="TileData" x="368" y="320" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="173" name="TileData" x="384" y="320" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="174" name="TileData" x="400" y="320" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="175" name="TileData" x="416" y="320" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="176" name="TileData" x="432" y="320" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="177" name="TileData" x="448" y="320" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="178" name="TileData" x="464" y="320" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="179" name="TileData" x="480" y="320" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="180" name="TileData" x="496" y="320" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="181" name="TileData" x="512" y="320" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="182" name="TileData" x="528" y="320" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="183" name="TileData" x="352" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="184" name="TileData" x="368" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="185" name="TileData" x="384" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="186" name="TileData" x="400" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="187" name="TileData" x="416" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="188" name="TileData" x="432" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="189" name="TileData" x="464" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="190" name="TileData" x="448" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="191" name="TileData" x="480" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="192" name="TileData" x="496" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="193" name="TileData" x="512" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="194" name="TileData" x="528" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="195" name="TileData" x="352" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="196" name="TileData" x="368" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="197" name="TileData" x="384" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="198" name="TileData" x="400" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="199" name="TileData" x="416" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="200" name="TileData" x="432" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="201" name="TileData" x="448" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="202" name="TileData" x="464" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="203" name="TileData" x="480" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="204" name="TileData" x="496" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="205" name="TileData" x="512" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="206" name="TileData" x="528" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="207" name="TileData" x="80" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="208" name="TileData" x="96" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="209" name="TileData" x="112" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="210" name="TileData" x="128" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="211" name="TileData" x="144" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="212" name="TileData" x="160" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="213" name="TileData" x="192" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="214" name="TileData" x="176" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="215" name="TileData" x="208" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="216" name="TileData" x="224" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="217" name="TileData" x="240" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="218" name="TileData" x="256" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="219" name="TileData" x="80" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="220" name="TileData" x="96" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="221" name="TileData" x="112" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="222" name="TileData" x="128" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="223" name="TileData" x="144" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="224" name="TileData" x="160" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="225" name="TileData" x="176" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="226" name="TileData" x="192" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="227" name="TileData" x="208" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="228" name="TileData" x="224" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="229" name="TileData" x="240" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="230" name="TileData" x="256" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="231" name="TileData" x="272" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="232" name="TileData" x="272" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="233" name="TileData" x="288" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="234" name="TileData" x="288" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="235" name="TileData" x="304" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="236" name="TileData" x="304" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="237" name="TileData" x="320" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="238" name="TileData" x="320" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="239" name="TileData" x="336" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="240" name="TileData" x="336" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="241" name="TileData" x="352" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="242" name="TileData" x="368" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="243" name="TileData" x="384" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="244" name="TileData" x="400" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="245" name="TileData" x="416" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="246" name="TileData" x="432" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="247" name="TileData" x="448" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="248" name="TileData" x="464" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="249" name="TileData" x="480" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="250" name="TileData" x="496" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="251" name="TileData" x="512" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="252" name="TileData" x="528" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="253" name="TileData" x="80" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="254" name="TileData" x="96" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="255" name="TileData" x="112" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="256" name="TileData" x="128" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="257" name="TileData" x="144" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="258" name="TileData" x="160" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="259" name="TileData" x="176" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="260" name="TileData" x="192" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="261" name="TileData" x="208" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="262" name="TileData" x="224" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="263" name="TileData" x="240" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="264" name="TileData" x="256" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="265" name="TileData" x="272" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="266" name="TileData" x="288" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="267" name="TileData" x="304" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="268" name="TileData" x="320" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="269" name="TileData" x="336" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="279" name="TileData" x="48" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="280" name="TileData" x="64" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="281" name="TileData" x="48" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="282" name="TileData" x="64" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="283" name="TileData" x="48" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="284" name="TileData" x="64" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="285" name="TileData" x="32" y="336" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="286" name="TileData" x="32" y="352" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
+  <object id="287" name="TileData" x="32" y="368" width="16" height="16">
+   <properties>
+    <property name="Buildable" value="F"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="20" name="Back2"/>
  <objectgroup id="7" name="Buildings">
   <object id="7" name="TileData" x="464" y="384" width="16" height="16">
    <properties>
-    <property name="Action" value="Warp 12 10 BusStop"/>
+    <property name="Action" value="None"/>
    </properties>
   </object>
  </objectgroup>

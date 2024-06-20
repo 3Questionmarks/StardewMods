@@ -34,6 +34,12 @@
     "Buff.Cold.description": "Hace frío fuera...",
     "Buff.Hot": "Calor",
     "Buff.Hot.description": "¡Hace demasiado calor hoy!",
+    "Buff.BlueMoon": "Luna Azul ",
+    "Buff.BlueMoon.description": "Bajo el resplandor de la Luna Azul, la suerte encuentra su camino hacia ti.",
+    "Buff.HarvestMoon": "Luna de la Cosecha",
+    "Buff.HarvestMoon.description": "Bajo la luz de la Luna de la Cosecha, tus cultivos prosperan con fuerza renovada.",
+    "Buff.BloodMoon": "Luna de Sangre",
+    "Buff.BloodMoon.description": "Bajo la maldición de la Luna de Sangre, sientes que las sombras se agitan, empiezas a sentirte débil.",
     // Config: Weather Types
     "config.section.WeatherTypes.name": "Tipos de Clima",
     "config.Blizzard.name": "Ventisca",
@@ -58,6 +64,26 @@
     "config.section.NightlyEvents.name": "Eventos Nocturnos",
     "config.Earthquake.name": "Terremoto",
     "config.Earthquake.description": "Activa/Desactiva el evento nocturno terremotos.",
+    // Config: Lunar Events
+    "config.section.LunarEvents.name": "Eventos Lunares",
+    "config.BloodMoon.name": "Luna de Sangre",
+    "config.BloodMoon.description": "Activa/Desactiva el evento lunar Luna de Sangre.",
+    "config.BlueMoon.name": "Luna Azul",
+    "config.BlueMoon.description": "Activa/Desactiva el evento lunar Luna Azul.",
+    "config.HarvestMoon.name": "Luna de la Cosecha",
+    "config.HarvestMoon.description": "Activa/Desactiva el evento lunar Luna de la Cosecha.",
+    // Config: Astronomical Events Consequences
+    "config.section.AstronomicalEventsConsequences.name": "Consecuencias Eventos Astronómicos",
+    "config.BloodMoonSpawnMonsters.name": "Monstruos en Luna de Sangre",
+    "config.BloodMoonSpawnMonsters.description": "Activa/Desactiva la aparición de monstruos durante las Luna de Sangre.",
+    "config.BloodMoonSkillDebuff.name": "Debuff en Luna de sangre",
+    "config.BloodMoonSkillDebuff.description": "Activa/Desactiva la reducción de ataque y defensa aplicada durante la Luna de Sangre.",
+    "config.BlueMoonLuckBuff.name": "Buff en Luna Azul",
+    "config.BlueMoonLuckBuff.description": "Activa/Desactiva el aumento de suerte durante la Luna Azul.",
+    "config.HarvestMoonBoostGrow.name": "Crecimiento Aumentado en Luna de la Cosecha",
+    "config.HarvestMoonBoostGrow.description": "Activa/Desactiva el aumento de crecimiento aplicado a los cultivos, árboles y frutales durante la Luna de la Cosecha.",
+    "config.HarvestMoonSkillBuff.name": "Debuff en Luna de la Cosecha",
+    "config.HarvestMoonSkillBuff.description": "Activa/Desactiva la reducción de habilidad de cultivo y forrajeo durante la Luna de la Cosecha.",
     // Config: Weather Consequences
     "config.section.WeatherConsequences.name": "Consecuencias Climáticas",
     "config.BlizzardSlowdownPlayer.name": "Ventisca Ralentiza al Jugador",
@@ -72,16 +98,18 @@
     "config.HeatwaveMoreFireflies.description": "Activa/Desactiva las luciérnagas adicionales que aparecen durante las olas de calor.",
     "config.HeatwaveDrainsStamina.name": "Ola de Calor Drena la Energía",
     "config.HeatwaveDrainsStamina.description": "Activa/Desactiva la pérdida de energía causada por las olas de calor.",
-    "config.HeatwaveDryWater.name": "Ola de Calor Seca el Agua", //NEW
-    "config.HeatwaveDryWater.description": "Activa/Desactiva que se seque el agua de los cultivos y los cuencos de las mascotas durante las olas de calor. Los aspersores no regarán tus cultivos, tendrás que regarlos manualmente.", //NEW
-    "config.MuddyRainBoostGrow.name": "Lluvia de Barro Impulsa Cultivos",
-    "config.MuddyRainBoostGrow.description": "Activa/Desactiva el crecimiento aumentado de cultivos, árboles y árboles frutales causado por la lluvia de barro.",
+    "config.HeatwaveDryWater.name": "Ola de Calor Seca el Agua",
+    "config.HeatwaveDryWater.description": "Activa/Desactiva que se seque el agua de los cultivos y los cuencos de las mascotas durante las olas de calor. Los aspersores no regarán tus cultivos, tendrás que regarlos manualmente.",
+    "config.MuddyRainFertilizeDirt.name": "Lluvia de Barro Fertiliza la Tierra",
+    "config.MuddyRainFertilizeDirt.description": "Activa/Desactiva que la Lluvia de Barro fertilice la tierra.",
     // Config: Visuals
     "config.section.Visuals.name": "Visuales",
     "config.Wind.name": "Viento Visible",
     "config.Wind.description": "Activa/Desactiva la aparición del viento visible durante el clima ventoso.",
     "config.AlternateSnow.name": "Nieve Alternativa",
     "config.AlternateSnow.description": "Activa/Desactiva los visuales de nieve alternativos para el clima de nieve.",
+    "config.BlizzardDenser.name": "Ventisca Densa",
+    "config.BlizzardDenser.description": "Activa/Desactiva el aspecto más denso de la ventisca. Esto podría causar lag o hacer que el juego se bloquee en dispositivos de gama baja.",
     // Config: Audio
     "config.section.Audio.name": "Audio",
     "config.MistMusic.name": "Música de Niebla",
@@ -91,5 +119,13 @@
     "config.BloodMoonMusic.name": "Música de Luna de Sangre",
     "config.BloodMoonMusic.description": "Activa/Desactiva la pista de música extra que se reproduce durante las lunas de sangre.",
     "config.BloodMoonSoundEffect.name": "Efecto de Sonido de Luna de Sangre",
-    "config.BloodMoonSoundEffect.description": "Activa/Desactiva el efecto de sonido que se reproduce junto con el mensaje HUD de luna de sangre."
+    "config.BloodMoonSoundEffect.description": "Activa/Desactiva el efecto de sonido que se reproduce junto con el mensaje HUD de luna de sangre.",
+    "config.BlueMoonMusic.name": "Música de Luna Azul",
+    "config.BlueMoonMusic.description": "Activa/Desactiva la pista de música extra que se reproduce durante la Luna Azul.",
+    "config.BlueMoonSoundEffect.name": "Efecto Sonido Luna Azul",
+    "config.BlueMoonSoundEffect.description": "Activa/Desactiva el efecto de sonido que se reproduce junto con el mensaje HUD de la Luna Azul.",
+    "config.HarvestMoonMusic.name": "Música de Luna de la Cosecha",
+    "config.HarvestMoonMusic.description": "Activa/Desactiva la pista de música extra que se reproduce durante la Luna de la Cosecha.",
+    "config.HarvestMoonSoundEffect.name": "Efecto de Sonido Luna de la Cosecha",
+    "config.HarvestMoonSoundEffect.description": "Activa/Desactiva el efecto de sonido que se reproduce junto con el mensaje del HUD de la Luna de la Cosecha."
 }

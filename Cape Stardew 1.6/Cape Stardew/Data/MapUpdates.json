@@ -1676,6 +1676,71 @@
         },
          "PatchMode": "Replace",
     },
+
+{
+	 "LogName": "CapeBusStopwind",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_CapeBusStop2",
+        "FromFile": "assets/CapeBusStop2patch.tmx",
+        "ToArea": {
+            "X": 24,
+            "Y": 0,
+            "Width": 7,
+            "Height": 4
+        },
+            "When": {
+        "HasCookingRecipe": "Rosy Harmony Tea"
+        },
+         "PatchMode": "Replace",
+	"Update": "OnLocationChange",
+    },
+
+  {  
+    "Action": "EditMap",
+    "Target": "Maps/Custom_CapeMineForest",
+"When": {
+   "Query: {{DailyLuck}} > 0": true
+},
+    "MapTiles": [
+      {
+        "Position": { 
+        "X": 25, 
+        "Y": 4,
+         "Width": 1,
+          "Height": 1
+        
+        },
+        "Layer": "Buildings",
+        "SetProperties": {
+        "Action": "PlayEvent dreamy.kickitspot_RingEv1 false true Message MineCaveCart"
+      }
+    },
+    
+  ],
+},
+{  
+    "Action": "EditMap",
+    "Target": "Maps/Custom_CapeMineForest",
+"When": {
+   "Query: {{DailyLuck}} < 0": true
+},
+    "MapTiles": [
+      {
+        "Position": { 
+        "X": 25, 
+        "Y": 4,
+         "Width": 1,
+          "Height": 1
+        
+        },
+        "Layer": "Buildings",
+        "SetProperties": {
+        "Action": "Message MineCaveCart"
+      }
+    },
+    
+  ],
+},
 ]
 
 }
