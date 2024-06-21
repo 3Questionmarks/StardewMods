@@ -2,6 +2,9 @@
   "FertilizerMode": "multi-fertilizer-stack",
   "EnableAlwaysFertilizer": true,
   "EnableKeepFertilizerAcrossSeason": true,
+  "ReplaceHighTier": true,
+  "PrintDebugMode": false,
+  "FertilizerAlpha": 255,
   "FertilizerSpeedBoost": [
     0.1,
     0.25,

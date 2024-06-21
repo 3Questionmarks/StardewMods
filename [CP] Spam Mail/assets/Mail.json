@@ -28,11 +28,14 @@
 				"MakoKZ.SM_StarsAreWatching": "[letterbg 2]{{i18n: Spam.StarsAreWatching}}[#]{{i18n: Spam.StarsAreWatchingDesc}}",
 				"MakoKZ.SM_ChainLetter": "{{i18n: Spam.ChainLetter}}[#]{{i18n: Spam.ChainLetterDesc}}",
 				"MakoKZ.SM_LuckyNumbers": "{{i18n: Spam.LuckyNumbers}}[#]{{i18n: Spam.LuckyNumbersDesc}}",
+				"MakoKZ.SM_LotteryWinner": "{{i18n: Spam.LotteryWinner}} %item money 1000%%[#]{{i18n: Spam.LotteryWinnerDesc}}",
 				"MakoKZ.SM_GameTheory": "{{i18n: Spam.GameTheory}}[#]{{i18n: Spam.GameTheoryDesc}}",
 				"MakoKZ.SM_JojaAd": "[letterbg 4]{{i18n: Spam.JojaAd}}[#]{{i18n: Spam.JojaAdDesc}}",
 				"MakoKZ.SM_RaffleWinner": "{{i18n: Spam.RaffleWinner}} %item object (O)PrizeTicket 1%%[#]{{i18n: Spam.RaffleWinnerDesc}}",
 				"MakoKZ.SM_RiffraffWinner": "{{i18n: Spam.RiffraffWinner}} %item object 172 20%%[#]{{i18n: Spam.RiffraffWinnerDesc}}",
 				"MakoKZ.SM_LetterOfEncouragement": "{{i18n: Spam.LetterOfEncouragement}}[letterbg 2][#]{{i18n: Spam.LetterOfEncouragementDesc}}",
+				"MakoKZ.SM_HotPeppers": "{{i18n: Spam.HotPeppers}}[#]{{i18n: Spam.HotPeppersDesc}}",
+				"MakoKZ.SM_DatingWebsite": "{{i18n: Spam.DatingWebsite}}[#]{{i18n: Spam.DatingWebsiteDesc}}",
 				},
             },
 			//ominous mail. toggled by config
@@ -42,6 +45,8 @@
 			"Entries": {
 				"MakoKZ.SM_IsAnyoneHere": "{{i18n: Spam.IsAnyoneHere}}[letterbg Mods/MakoKZ.SpamMail/SpamMailBGs 1][textcolor white][#]{{i18n: Spam.IsAnyoneHereDesc}}",
 				"MakoKZ.SM_WeKnow": "{{i18n: Spam.WeKnow}}[letterbg Mods/MakoKZ.SpamMail/SpamMailBGs 1][textcolor white][#]{{i18n: Spam.WeKnowDesc}}",
+				"MakoKZ.SM_TrialConcluded": "{{i18n: Spam.TrialConcluded}}[#]{{i18n: Spam.TrialConcludedDesc}}",
+				"MakoKZ.SM_GoToBed": "{{i18n: Spam.GoToBed}}[#]{{i18n: Spam.GoToBedDesc}}",
 				},
 			"When": {"OminousMail": true},
 			},
@@ -59,11 +64,14 @@
 				"Custom_MakoKZ_SMStarsAreWatching/r 0.03/t 600 700/x MakoKZ.SM_StarsAreWatching": "null",
 				"Custom_MakoKZ_SMChainLetter/r 0.03/t 600 700/x MakoKZ.SM_ChainLetter": "null",
 				"Custom_MakoKZ_SMLuckyNumbers/r 0.03/t 600 700/x MakoKZ.SM_LuckyNumbers": "null",
+				//followup
+				"Custom_MakoKZ_LotteryWinner/r 0.5/t 600 700/n MakoKZ.SM_LuckyNumbers/x MakoKZ.SM_LotteryWinner": "null",
 				"Custom_MakoKZ_SMGameTheory/r 0.03/t 600 700/x MakoKZ.SM_GameTheory": "null",
 				"Custom_MakoKZ_SMJojaAd/r 0.03/t 600 700/x MakoKZ.SM_JojaAd": "null",
 				"Custom_MakoKZ_SMRaffleWinner/r 0.03/t 600 700/x MakoKZ.SM_RaffleWinner": "null",
 				"Custom_MakoKZ_SMRiffraffWinner/r 0.03/t 600 700/x MakoKZ.SM_RiffraffWinner": "null",
 				"Custom_MakoKZ_SMLetterOfEncouragement/r 0.03/t 600 700/x MakoKZ.SM_LetterOfEncouragement": "null",
+				"Custom_MakoKZ_SMHotPeppers/r 0.1/t 600 700/z spring fall winter/x MakoKZ.SM_HotPeppers": "null",
 				//cat mail series. 10% chance to get the mail after 7 in game days. each one only appears once the previous letter has been seen
 				"Custom_MakoKZ_SMCatFacts/j 7/r 0.1/t 600 700/x MakoKZ.SM_CatFacts": "null",
 				"Custom_MakoKZ_SMCatFacts1/r 0.05/t 600 700/n MakoKZ.SM_CatFacts/x MakoKZ.SM_CatFacts1": "null",
@@ -76,12 +84,21 @@
 				"Custom_MakoKZ_SMFreeEnergyAgain/r 0.03/t 600 700/n MakoKZ.SM_FreeEnergy/x MakoKZ.SM_FreeEnergyAgain": "null",
 				//i have no idea why this one likes to break sometimes when i add more conditionals. none of the other ones do. yoba help me, or maybe my json parser is just being stupid
 				"Custom_MakoKZ_FreeEnergyFinale/j 85/r 0.03/t 600 700/n MakoKZ.SM_FreeEnergyAgain/x MakoKZ.SMFreeEnergyFinale": "null",
-				//5% chance after seeing the junimo note
+				//3% chance after seeing the junimo note
 				"Custom_MakoKZ_SMJunimoMail/n seenJunimoNote/r 0.03/t 600 700/x MakoKZ.SM_JunimoMail": "null",
 				//junimo mail part 2
 				"Custom_MakoKZ_SMJunimoMailNextDay/n MakoKZ.SM_JunimoMail/x MakoKZ.SM_JunimoMailNextDay": "null",
 				},
             },
+			
+			//for letters that should be sent during the day
+			{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"Custom_MakoKZ_SMDatingWebsite/r 0.05/d Mon Tue Wed Thu Sat Sun/x MakoKZ.SM_DatingWebsite true": "null",
+				},
+			},
 			
 			//ominous mail. toggled by config
 			{
@@ -90,8 +107,20 @@
 			"Entries": {
 				"Custom_MakoKZ_SMIsAnyoneHere/r 0.03/t 600 700/x MakoKZ.SM_IsAnyoneHere": "null",
 				"Custom_MakoKZ_SMWeKnow/r 0.03/t 600 700/x MakoKZ.SM_WeKnow": "null",
+				"Custom_MakoKZ_SMTrialConcluded/r 0.03/t 600 700/x MakoKZ.SM_TrialConcluded": "null",
 				},
 			"When": {"OminousMail": true},
 			},
+				
+			//for letters that should sent during the day
+			{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"Custom_MakoKZ_GoToBed/r 0.1/t 2400 2600/x MakoKZ.SM_GoToBed true": "null",
+				},
+			"When": {"OminousMail": true},
+				},
+			
         ]
 }

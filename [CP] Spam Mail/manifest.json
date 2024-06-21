@@ -1,10 +1,10 @@
 {
     "Name": "Spam Mail",
     "Author": "MakoKZ",
-    "Version": "1.0.1",
+    "Version": "1.0.2",
     "Description": "Sometimes adds silly letters to your mailbox.",
     "UniqueID": "MakoKZ.SpamMail",
-    "UpdateKeys": [22765],
+    "UpdateKeys": ["Nexus:22765"],
     "ContentPackFor": {
         "UniqueID": "Pathoschild.ContentPatcher"
     }

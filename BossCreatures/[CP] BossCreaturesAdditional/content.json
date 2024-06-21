@@ -1,0 +1,15 @@
+{
+    "Format":"2.0.0",
+    "Changes":[
+		{
+			"Action": "Load",
+			"Target": "Characters/Monsters/PlantGirlBoss",
+			"FromFile": "assets/PlantGirlBoss.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Characters/Monsters/PlantGirlBossP",
+			"FromFile": "assets/PlantGirlBossP.png"
+		},
+    ]
+}

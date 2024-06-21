@@ -1,0 +1,15 @@
+{
+	"Name": "Boss Creatures Sprites",
+	"Author": "Greg6",
+	"Version": "1.0.0",
+	"MinimumApiVersion": "4.0.0",
+	"Description": "This mod make custom sprites for boss!",
+	"UniqueID": "Boss.sprites",
+	"ContentPackFor": {
+		"UniqueID": "Aedenthorn.BossCreatures",
+		"MinimumVersion": "1.6.3",
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "2.0.0"
+	},
+	"UpdateKeys": [ "Nexus: ????" ]
+}
