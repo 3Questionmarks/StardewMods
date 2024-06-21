@@ -60,7 +60,22 @@
                 }
             ]
         },
-        {
+       /* {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Jasper 12 39 down",
+                    "Delimiter": "/"
+                }
+            ]
+        },*/
+     {
             "Action": "EditData",
             "Target": "Data/Festivals/summer11",
             "TextOperations": [

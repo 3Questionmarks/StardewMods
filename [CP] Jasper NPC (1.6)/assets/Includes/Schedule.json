@@ -90,7 +90,7 @@
                 "HasSeenEvent:hostPlayer |contains=50709930": true
             }
         },
-        {
+       /* {
             "LogName": "Schedule - if East Scarp installed",
             "Action": "EditData",
             "Target": "Characters/schedules/Jasper",
@@ -101,7 +101,7 @@
                 "HasDialogueAnswer": "5070124",
                 "HasMod": "LemurKat.EastScarpe.CP"
             }
-        },
+        },*/
         {
             "LogName": "Schedule - vistis Guild if Dwarf room-mate",
             "Action": "EditData",

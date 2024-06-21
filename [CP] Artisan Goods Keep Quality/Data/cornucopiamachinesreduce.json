@@ -503,26 +503,26 @@
 			},
 			"When": { "Dehydrator": "true", },
 		},
-		{// Prunes
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)Dehydrator", "OutputRules", "Cornucopia_Prunes", "OutputItem", "#0" ],
-			"Entries": {
-				"QualityModifiers": [
-					{
-						"Condition": "ITEM_QUALITY Input 4 4",
-						"Modification": "Set",
-						"Amount": 2,
-					},
-					{
-						"Condition": "ITEM_QUALITY Input 2 2",
-						"Modification": "Set",
-						"Amount": 1,
-					},
-				],
-			},
-			"When": { "Dehydrator": "true", },
-		},
+//		{// Prunes
+//			"Action": "EditData",
+//			"Target": "Data/Machines",
+//			"TargetField": [ "(BC)Dehydrator", "OutputRules", "Cornucopia_Prunes", "OutputItem", "#0" ],
+//			"Entries": {
+//				"QualityModifiers": [
+//					{
+//						"Condition": "ITEM_QUALITY Input 4 4",
+//						"Modification": "Set",
+//						"Amount": 2,
+//					},
+//					{
+//						"Condition": "ITEM_QUALITY Input 2 2",
+//						"Modification": "Set",
+//						"Amount": 1,
+//					},
+//				],
+//			},
+//			"When": { "Dehydrator": "true", },
+//		},
 		{// Dried Herb
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -1450,87 +1450,87 @@
 			},
 			"When": { "Preserves Jar": "true", },
 		},
-		{// Pickled Chicken Eggs
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsChicken", "OutputItem", "#0" ],
-			"Entries": {
-				"QualityModifiers": [
-					{
-						"Condition": "ITEM_QUALITY Input 4 4",
-						"Modification": "Set",
-						"Amount": 2,
-					},
-					{
-						"Condition": "ITEM_QUALITY Input 2 2",
-						"Modification": "Set",
-						"Amount": 1,
-					},
-				],
-			},
-			"When": { "Preserves Jar": "true", },
-		},
-		{// Pickled Large Chicken Eggs
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsChickenLarge", "OutputItem", "#0" ],
-			"Entries": {
-				"QualityModifiers": [
-					{
-						"Condition": "ITEM_QUALITY Input 4 4",
-						"Modification": "Set",
-						"Amount": 2,
-					},
-					{
-						"Condition": "ITEM_QUALITY Input 2 2",
-						"Modification": "Set",
-						"Amount": 1,
-					},
-				],
-				"MinStack": 2,
-			},
-			"When": { "Preserves Jar": "true", },
-		},
-		{// Pickled Gold Eggs
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsGold", "OutputItem", "#0" ],
-			"Entries": {
-				"QualityModifiers": [
-					{
-						"Condition": "ITEM_QUALITY Input 4 4",
-						"Modification": "Set",
-						"Amount": 2,
-					},
-					{
-						"Condition": "ITEM_QUALITY Input 2 2",
-						"Modification": "Set",
-						"Amount": 1,
-					},
-				],
-			},
-			"When": { "Preserves Jar": "true", },
-		},
-		{// Pickled Ostrich Eggs
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsOstrich", "OutputItem", "#0" ],
-			"Entries": {
-				"QualityModifiers": [
-					{
-						"Condition": "ITEM_QUALITY Input 4 4",
-						"Modification": "Set",
-						"Amount": 2,
-					},
-					{
-						"Condition": "ITEM_QUALITY Input 2 2",
-						"Modification": "Set",
-						"Amount": 1,
-					},
-				],
-			},
-			"When": { "Preserves Jar": "true", },
-		},
+//		{// Pickled Chicken Eggs
+//			"Action": "EditData",
+//			"Target": "Data/Machines",
+//			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsChicken", "OutputItem", "#0" ],
+//			"Entries": {
+//				"QualityModifiers": [
+//					{
+//						"Condition": "ITEM_QUALITY Input 4 4",
+//						"Modification": "Set",
+//						"Amount": 2,
+//					},
+//					{
+//						"Condition": "ITEM_QUALITY Input 2 2",
+//						"Modification": "Set",
+//						"Amount": 1,
+//					},
+//				],
+//			},
+//			"When": { "Preserves Jar": "true", },
+//		},
+//		{// Pickled Large Chicken Eggs
+//			"Action": "EditData",
+//			"Target": "Data/Machines",
+//			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsChickenLarge", "OutputItem", "#0" ],
+//			"Entries": {
+//				"QualityModifiers": [
+//					{
+//						"Condition": "ITEM_QUALITY Input 4 4",
+//						"Modification": "Set",
+//						"Amount": 2,
+//					},
+//					{
+//						"Condition": "ITEM_QUALITY Input 2 2",
+//						"Modification": "Set",
+//						"Amount": 1,
+//					},
+//				],
+//				"MinStack": 2,
+//			},
+//			"When": { "Preserves Jar": "true", },
+//		},
+//		{// Pickled Gold Eggs
+//			"Action": "EditData",
+//			"Target": "Data/Machines",
+//			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsGold", "OutputItem", "#0" ],
+//			"Entries": {
+//				"QualityModifiers": [
+//					{
+//						"Condition": "ITEM_QUALITY Input 4 4",
+//						"Modification": "Set",
+//						"Amount": 2,
+//					},
+//					{
+//						"Condition": "ITEM_QUALITY Input 2 2",
+//						"Modification": "Set",
+//						"Amount": 1,
+//					},
+//				],
+//			},
+//			"When": { "Preserves Jar": "true", },
+//		},
+//		{// Pickled Ostrich Eggs
+//			"Action": "EditData",
+//			"Target": "Data/Machines",
+//			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsOstrich", "OutputItem", "#0" ],
+//			"Entries": {
+//				"QualityModifiers": [
+//					{
+//						"Condition": "ITEM_QUALITY Input 4 4",
+//						"Modification": "Set",
+//						"Amount": 2,
+//					},
+//					{
+//						"Condition": "ITEM_QUALITY Input 2 2",
+//						"Modification": "Set",
+//						"Amount": 1,
+//					},
+//				],
+//			},
+//			"When": { "Preserves Jar": "true", },
+//		},
 		{// Pickled Eggs
 			"Action": "EditData",
 			"Target": "Data/Machines",

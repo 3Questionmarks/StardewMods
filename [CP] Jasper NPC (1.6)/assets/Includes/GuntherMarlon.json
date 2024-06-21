@@ -14,7 +14,7 @@
 				"CanVisitIsland": "FALSE",
 			},
 			"When": {
-				"HasMod |contains=FlashShifter.StardewValleyExpandedCP,Yoshimax.BefriendMarlon,andril11.charlie, ChicoLopes.GuntherToNPC, Wolf.Gun": false,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP,Yoshimax.BefriendMarlon,andril11.charlie, ChicoLopes.GuntherToNPC, Wolf.Gun, Endwyr.ValleyNPCs": false,
 				"SocialGuntherandMarlon": "true"
 			}
 		},
@@ -31,7 +31,7 @@
 				"CanVisitIsland": "FALSE",
 			},
 			"When": {
-				"HasMod |contains=FlashShifter.StardewValleyExpandedCP,Yoshimax.BefriendMarlon, Wolf.Marlon": false,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP,Yoshimax.BefriendMarlon, Wolf.Marlon, Ghost.Marlon, Endwyr.ValleyNPCs": false,
 				"SocialGuntherandMarlon": "true"
 			}
 		},
@@ -43,7 +43,7 @@
 				"Gunther": "{{i18n:gift.love.Gun}}/226 104/{{i18n:gift.like.Gun}}/106 123 124 125 107 108 115 119 120 121 122 96 97 98 99 -2 -12/{{i18n:gift.dislike.Gun}}/78 110/{{i18n:gift.hate.Gun}}//{{i18n:gift.neutral.Gun}}/-4/"
 			},
 			"When": {
-				"HasMod |contains=FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, andril11.charlie, ChicoLopes.GuntherToNPC, Wolf.Gun": false,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, andril11.charlie, ChicoLopes.GuntherToNPC, Wolf.Gun, Endwyr.ValleyNPCs": false,
 				"SocialGuntherandMarlon": "true"
 			}
 		},
@@ -55,7 +55,7 @@
 				"Marlon": "{{i18n:gift.love.Marl}}/125 222/{{i18n:gift.like.Marl}}/109 -2/{{i18n:gift.dislike.Marl}}/-23 78/{{i18n:gift.hate.Marl}}/796/{{i18n:gift.neutral.Marl}}//"
 			},
 			"When": {
-				"HasMod |contains=FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, Wolf.Marlon": false,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, Wolf.Marlon, Ghost.Marlon, Endwyr.ValleyNPCs": false,
 				"SocialGuntherandMarlon": "true"
 			}
 		},
@@ -65,7 +65,7 @@
 			"Target": "Characters/Dialogue/Gunther",
 			"FromFile": "assets/Blank.json",
 			"When": {
-				"HasMod |contains=ChicoLopes.GuntherToNPC,FlashShifter.StardewValleyExpandedCP,Yoshimax.BefriendMarlon, andril11.charlie, Wolf.Gun": false
+				"HasMod |contains=ChicoLopes.GuntherToNPC,FlashShifter.StardewValleyExpandedCP,Yoshimax.BefriendMarlon, andril11.charlie, Wolf.Gun, Endwyr.ValleyNPCs": false
 			}
 		},
 		{
@@ -82,7 +82,7 @@
 			"Target": "Characters/Dialogue/Marlon",
 			"FromFile": "assets/Blank.json",
 			"When": {
-				"HasMod |contains=FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, Wolf.Marlon": false
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, Wolf.Marlon, Ghost.Marlon, Endwyr.ValleyNPCs": false
 			}
 		},
 		{
@@ -90,7 +90,7 @@
 			"Action": "Include",
 			"FromFile": "assets/Dialogue/Marlon.json",
 			"When": {
-				"HasMod |contains=Wolf.Marlon": false
+				"HasMod |contains=Wolf.Marlon, Ghost.Marlon, Endwyr.ValleyNPCs": false
 			}
 		},
 		//Remove obstacles from museum so you can reach Gunther
@@ -109,7 +109,7 @@
 				}
 			],
 			"When": {
-				"HasMod |contains=ChicoLopes.GuntherToNPC,Karmylla.ImmersiveMaps, andril11.charlie, FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, Wolf.Gun": false
+				"HasMod |contains=ChicoLopes.GuntherToNPC,Karmylla.ImmersiveMaps, andril11.charlie, FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, Wolf.Gun, Endwyr.ValleyNPCs": false
 			}
 		},
 		
@@ -136,7 +136,7 @@
 				}
 			],
 			"When": {
-				"HasMod |contains=ChicoLopes.GuntherToNPC,Karmylla.ImmersiveMaps, andril11.charlie, FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, Wolf.Gun": false
+				"HasMod |contains=ChicoLopes.GuntherToNPC,Karmylla.ImmersiveMaps, andril11.charlie, FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, Wolf.Gun, Endwyr.ValleyNPCs": false
 			}
 		},
 		/*{
@@ -179,7 +179,7 @@
 				"Height": 3
 			},
 			"When": {
-				"HasMod |contains=Karmylla.ImmersiveMaps, FlashShifter.StardewValleyExpandedCP, Wolf.Marlon": false
+				"HasMod |contains=Karmylla.ImmersiveMaps, FlashShifter.StardewValleyExpandedCP, Wolf.Marlon, Ghost.Marlon, Endwyr.ValleyNPCs": false
 			}
 		},
 		{
@@ -197,7 +197,7 @@
 				}
 			],
 			"When": {
-				"HasMod |contains=Karmylla.ImmersiveMaps, andril11.charlie, FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, Wolf.Marlon": false
+				"HasMod |contains=Karmylla.ImmersiveMaps, andril11.charlie, FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, Wolf.Marlon, Ghost.Marlon, Endwyr.ValleyNPCs": false
 			}
 		},
 		/*{

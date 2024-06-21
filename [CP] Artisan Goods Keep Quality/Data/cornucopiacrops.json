@@ -8,6 +8,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Keg": "true", },
+			"Priority": "Late + 10",
 		},
 		{// Porter
 			"Action": "EditData",
@@ -17,6 +18,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Keg": "true", },
+			"Priority": "Late + 10",
 		},
 		{// Sparkling Wine
 			"Action": "EditData",
@@ -26,6 +28,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Keg": "true", },
+			"Priority": "Late + 10",
 		},
 		{// Stout
 			"Action": "EditData",
@@ -35,6 +38,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Keg": "true", },
+			"Priority": "Late + 10",
 		},
 		{// Tofu
 			"Action": "EditData",
@@ -44,6 +48,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cheese Press": "true", },
+			"Priority": "Late + 10",
 		},
 		{// Cotton Cloth
 			"Action": "EditData",
@@ -53,6 +58,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Loom": "true", },
+			"Priority": "Late + 10",
 		},
 		{// Canola Flower Oil
 			"Action": "EditData",
@@ -62,6 +68,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Oil Maker": "true", },
+			"Priority": "Late + 10",
 		},
 		{// Peanut Oil
 			"Action": "EditData",
@@ -71,6 +78,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Oil Maker": "true", },
+			"Priority": "Late + 10",
 		},
 		{// Seeds Oil
 			"Action": "EditData",
@@ -80,6 +88,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Oil Maker": "true", },
+			"Priority": "Late + 10",
 		},
 		{// Olive Oil
 			"Action": "EditData",
@@ -89,6 +98,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Oil Maker": "true", },
+			"Priority": "Late + 10",
 		},
 	],
 }

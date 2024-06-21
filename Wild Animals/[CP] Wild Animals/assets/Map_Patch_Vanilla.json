@@ -281,7 +281,7 @@
          ],
 		"When": {
 			"Load Wild Otters": "true",
-			"IsCommunityCenterComplete": "true",
+			"Year |contains=1": "false",
 			"Weather": "Rain, Snow, Sun, Wind",	
 			},
 		"Update": "OnLocationChange"
@@ -1880,7 +1880,7 @@
                "Position": { "X": 47, "Y": 89 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.Crow_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Crow_WA"
                },
             },
          ],
@@ -1901,7 +1901,7 @@
                "Position": { "X": 47, "Y": 89 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Crow_WA, Crow_WA, Crow_Friendly_WA}}"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Crow_WA, Crow_WA, Crow_Friendly_WA}}"
                },
             },
          ],

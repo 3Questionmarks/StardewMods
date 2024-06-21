@@ -214,7 +214,7 @@
             "Action": "EditData",
 			"Target": "Characters/Dialogue/MarriageDialogueJasper",
 			"When": {
-				"HasSeenEvent":"5599017"
+				"HasSeenEvent": "5599017"
 			},
             "Entries": {
 				"{{AnniversarySeason}}_{{AnniversaryDayOfMonth}}": "Feliz Aniversário, @. Um pequeno símbolo do meu apreço.[578 565 553 547 347]#$e#Você acendeu uma nova luz dentro de mim, e me trouxe de volta a vida.$3#$b#Eu te amo.$4"
@@ -225,8 +225,8 @@
             "Action": "EditData",
 			"Target": "Characters/Dialogue/MarriageDialogueJasper",
 			"When": {
-				"HasSeenEvent":"5599017",
-				"Weather": "Sun, Wind"	
+				"HasSeenEvent": "5599017",
+				"Weather": "Sun, Wind"
 			},
             "Entries": {
                 "{{AnniversarySeason}}_{{AnniversaryDayOfMonth}}": "$1 Jasper_Anniversary#Feliz Aniversário meu amor. Por favor, você iria a praia comigo esta noite? Pois eu tenho algo preparado para celebrar.$4$k#$e#Feliz aniversário, @. Um pequeno símbolo do meu apreço.[578 565 553 547 347]#$e#Você acendeu uma nova luz dentro de mim, e me trouxe de volta a vida.$3#$b#eu te amo.$4"

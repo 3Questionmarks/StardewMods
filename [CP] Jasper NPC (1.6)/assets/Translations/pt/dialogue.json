@@ -143,7 +143,7 @@
                 "StrangeChild_Unknown": "Um Mistério então. Eu me pergunto se o Linus conhece. Pois eu gostaria de agradece-lo.$2",
                 "StrangeChild_Dream": "Ah, mas ele me pareceu tão real... Suas mãos geladas tocando na minha pele quente.$2",
                 "AlienCapsule": "A cápsula parece que esta pulsando... Isso é muito intrigante.",
-                "eleição": "Não tenho certeza se apoio essa última mudança de liderança, @. O prefeito Morris se apresenta bem, mas temo que suas intenções possam não ser benéficas.$2",
+                "election": "Não tenho certeza se apoio essa última mudança de liderança, @. O prefeito Morris se apresenta bem, mas temo que suas intenções possam não ser benéficas.$2",
                 "LucikielArrives": "As trevas despertaram no Vale, @. Se cuide.$2",
                 "ReputationIncreased": "Eu devo admitir, eu estava cauteloso no começo. Lucikiel certamente fez uma grande entrada de muitas formas...$2#$b#Mas Gunther e Marlon ambos falam muito bem de seus atos nas minas; ele esta trabalhando por dinheiro, meu amigo!$1#$b#Talvez as primeiras impressões podem te enganar.",
                 "AbandonedBride": "Você ouviu o grito na noite passada, @? Ele penetrou os meus sonhos e encheu meu coração com medo.",
@@ -397,7 +397,7 @@ O T H E R   C H A R A C T E R S
             "Entries": {
                 "Introduction": "Olá, você deve ser o novo Fazendeiro. Eu sou o Professor Cameron Peasbody, mas você pode me chamar de 'Cam'.^Olá, você deve ser a nova Fazendeira. Eu sou a Professora Cameron Peasbody, mas você pode me chamar de 'Cam'.",
                 "Mon": "Gunther me pediu para vir aqui sabe. Não tinha nenhum outro motivo...#$b#Bem, talvez tive algum tipo de incentivo.",
-                "Seg4": "O que você quer dizer? Eu não segui Jasper aqui! Eu vim aqui para fazer pesquisa.$5#$b#Mas sim, ele é uma vantagem adicional.$4",
+                "Mon4": "O que você quer dizer? Eu não segui Jasper aqui! Eu vim aqui para fazer pesquisa.$5#$b#Mas sim, ele é uma vantagem adicional.$4",
                 "Mon6": "Eu ainda estou um pouco apaixonado pelo Jasper. E sim, sou um completo idiota as vezes. Mas é por que eu não queria que ele se machucasse!$4^Eu ainda estou um pouco apaixonada pelo Jasper. E sim, sou uma completa idiota as vezes. Mas é por que eu não queria que ele se machucasse!$4#$b#Tudo bem, você está certo. Isso é um motivo idiota.$2",
                 "Mon8": "Jasper e eu nos conhecemos há muito tempo. Ele é tão reservado e tenso... Tentei fazer com que ele aprendesse a viver um pouco.#$b#Eu acho que isso não acabou tão bem para ele. Será que...$2",
                 // "Tue": "Sim, estou hospedado na pensão. Aquele cara do outro lado do corredor continua tocando guitarra de manhã. Dificulta a concentração.#$b#Ele tem alguns riffs muito bons!",
@@ -421,7 +421,7 @@ O T H E R   C H A R A C T E R S
                 "Sun4": "Jasper e eu sempre fomos amigos e rivais. Já estamos acostumados a ficar debatendo por horas!#$b#Eu me arrependo de ter feito ele se afastar. Você provavelmente não vai acreditar, mas eu realmente me importava - importo! - com ele...",
                 "Sun6": "Sim, Jasper tem algumas ideias malucas. É uma das coisas que eu gosto - gostei - sobre ele.$4#$b#Além disso, ele é meio gostoso se você gosta de professores nerds. E bem, eu gosto!$1",
                 "Sun10": "Às vezes, tarde da noite, a culpa me agarra, @. Se eu não o tivesse desafiado tão impiedosamente...#$b#Bem, nosso charmoso amigo professor não teria feito o que ele fez...#$b#Mas é isso que a vida é, não é? Arrependimentos pelo que você fez e pelo que você não fez... $2",
-                "Mon_InLaw_Jasper": "Eu estou feliz que as coisas deram certo para você. Eu realmente estou! Com uma inveja infernal, mas Jasper e eu? nós éramos como água e óleo.#$b#Ou possivelmente óleo e fogo...$1",
+                "Mon_inlaw_Jasper": "Eu estou feliz que as coisas deram certo para você. Eu realmente estou! Com uma inveja infernal, mas Jasper e eu? nós éramos como água e óleo.#$b#Ou possivelmente óleo e fogo...$1",
                 "Sun_inlaw_Jasper": "Bem, acho que você também gosta de professores nerds. Desejo felicidade a vocês dois!#$b#Ele continua falando sobre os anões? Achei que sim.#$b#Sinto falta dele.$2",
                 "EastScarp_Village_Mon": "Ah, East Scarpe tem uma história arqueológica interessante.#$b#Ei, devemos realizar um Dia de Diversão em Arqueologia. O que você acha?$1",
                 "EastScarp_Village_Wed": "Tenho muito interesse neste lugar. Havia todo tipo de boato, sabe... e artefatos estranhos encontrados!$1",
@@ -952,6 +952,6 @@ S T R I N G S
                 "fall_Fri": "Os seres humanos são estranhos, @. Por que Jasper Thomas usa tantas palavras para dizer a mesma coisa?",
                 "spring_Fri": "Saudações! Estou satisfeito que você pode se juntar a nós. Como vai a sua mineração?"
             }
-        }
+        },
     ]
 }

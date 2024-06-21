@@ -8,7 +8,7 @@
 "{{ModID}}_LostJournal.Mail": "{{i18n:FC.LostJournal.Mail}} %item quest {{ModID}}_LostJournal.Quest true %%[#]{{i18n:FC.LostJournal.Mail.Title}}",
 "{{ModID}}_StoneRelic.Mail": "{{i18n:FC.StoneRelic.Mail}} %item quest {{ModID}}_StoneRelic.Quest true %%[#]{{i18n:FC.StoneRelic.Mail.Title}}",
 "{{ModID}}_LostPipe.Mail": "{{i18n:FC.LostPipe.Mail}} %item quest {{ModID}}_LostPipe.Quest true %%[#]{{i18n:FC.LostPipe.Mail.Title}}",
-"{{ModID}}_AdáuulaCakes.Mail": "{{i18n:FC.AdáuulaCakes.Mail}} %item cookingRecipe {{ModID}}_AdáuulaCakes %%[#]{{i18n:FC.AdáuulaCakes.Mail.Title}}",
+"{{ModID}}_AdauulaCakes.Mail": "{{i18n:FC.AdauulaCakes.Mail}} %item cookingRecipe {{ModID}}_AdauulaCakes %%[#]{{i18n:FC.AdauulaCakes.Mail.Title}}",
 "{{ModID}}_WarpTea.Mail": "{{i18n:FC.WarpTea.Mail}} %item cookingRecipe {{ModID}}_WarpRootTea %%[#]{{i18n:FC.WarpTea.Mail.Title}}",
 "{{ModID}}_ToughenTonic.Mail": "{{i18n:FC.ToughenTonic.Mail}} %item cookingRecipe {{ModID}}_ToughenTonic %%[#]{{i18n:FC.ToughenTonic.Mail.Title}}",
 "{{ModID}}_PeircingShot.Mail": "{{i18n:FC.PeircingShot.Mail}} %item cookingRecipe {{ModID}}_PeircingShot %%[#]{{i18n:FC.PeircingShot.Mail.Title}}",
@@ -150,12 +150,12 @@
 "Action": "EditData",
 "Target": "Data/TriggerActions",
 "Entries": {
-"{{ModID}}_AdáuulaCakes.Trigger":  {
-"Id": "{{ModID}}_AdáuulaCakes.Trigger",
+"{{ModID}}_AdauulaCakes.Trigger":  {
+"Id": "{{ModID}}_AdauulaCakes.Trigger",
 "Trigger": "DayStarted",
 "Condition": "PLAYER_FRIENDSHIP_POINTS current FC.Lyell 250,SEASON Spring",
 "HostOnly": false,
-"Action": "AddMail Current {{ModID}}_AdáuulaCakes.Mail",
+"Action": "AddMail Current {{ModID}}_AdauulaCakes.Mail",
 "Actions": null,
 "CustomFields": {}
 }
@@ -285,7 +285,6 @@
 }
 }
 },
-
 {
 "Action": "EditData",
 "Target": "Data/TriggerActions",

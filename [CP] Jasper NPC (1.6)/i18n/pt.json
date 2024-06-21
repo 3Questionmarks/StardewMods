@@ -13,6 +13,7 @@
     "gift.dislike.true": "Hmm, bem, eu acho que eu consigo achar algo a fazer com isso.",
 	"gift.hate.true": "Por que você está me dando isso, @? Isso é uma piada? Isso não é engraçado!",
     "gift.neutral.true": "Obrigado!",
+    "strings.safariguy.tent": "É uma cópia surrada e danificada pela água de 'Famosa Jornada' de M. Jasper.",
     //D I A L O G U E   S T R I N G S
     "jasper.breathe": "Não se preocupe. Eu só estou parando um momento para me recompor... O escuro, a terra... isso ainda me assombra, @.",
     //Reading Strings
@@ -29,6 +30,7 @@
     "elliott.read": "Olá @! Você leu o livro do Sr. Elliot? O jeito que ele escreve é de uma forma pouco sofisticado, mas é um bom livro!",
     "rainyDay": "O som da chuva no telhado é tão relaxante, você não acha? Um bom dia para fazer quase nada.",
     //engagement dialogue
+    "jasper.engaged": "Oh @! É isso o que eu estou pensando?$4#$b#É uma honra. Verdadeiramente uma honra. Por favor, deixe-me organizar tudo. Estará tudo pronto em três dias.$1",
     "engagement0": "Eu ainda não acredito que você queira casar comigo! Ah, @! Eu estou honrado em ser o seu marido.$4#$b#Tudo está sob controle! Não precisa se preocupar!$1",
     "engagement1": "Ah @. Eu estou tão animado por começarmos uma vida juntos. Eu te amo, sabe.$4",
     //Festivals 
@@ -41,11 +43,13 @@
     "winter25.jasper.spouse.false": "Meu amor, é sempre um prazer te ver. Família e amigos... tem tanto para ser grato.$1",
     "winter25.jasper.spouse.true": "Meu amor, é sempre um prazer em te ver. Amigos e a nossa maravilhosa família...Existe tanto o que ser grato.$1",
     "winter8.jasper": "Ah, olá @! Linus estava me contando histórias dos moradores da Tundra!$1",
+    "winter8.jasper.y2": "Ah, olá @! Linus e eu estamos apenas apreciando a mudança das estações. Você pode se juntar a nós, se desejar?",
     "winter8.jasper.spouse.false": "Boa tarde meu amor,você gostaria de se juntar a nós? Linus está nos contando histórias dos moradores da Tundra!",
     "winter8.jasper.spouse.true": "Boa tarde amor! Linus está nos contando histórias dos moradores da Tundra, porém parece que aquelas orelhas não querem escutar.",
     "summer11.jasper": "Você conhece o meu bom amigo Rasmodius?",
     "summer11.jasper.spouse.false": "Por favor, venha se juntar a nos amor. Rasmodius e eu estávamos discutindo o jeito misterioso do fundo do oceano.",
     "summer11.jasper.spouse.true": "Ah papai está impossibilitado de dançar. Papai está exausto!$3#$b#Ah, meu amor. Desculpe, esse calor... aquela água esta me parecendo tentadora.$1",
+    "summer11.jasper.y2": "Olá @. Oh, Sebastian e eu não estamos conversando; estamos envolvidos em contemplação silenciosa.#$b#Acredito que ele está fingindo que eu não estou aqui.$1",
     "spring24.jasper": "Dançar não é meu forte. Dois pra esquerda, é como a minha queria mãe me descreveu uma vez.$4",
     "spring24.jasper.9914": "Uma celebração de amor e fertilidade. Eu espero que eu não tenha que dançar.$1#$b#As pessoas podem rir. Porém eu acho que posso sempre fazer o Salto-libertador!$3",
     "spring24.jasper.spouse.false": "Olá meu bem. A Primavera está no ar, e eu nunca me senti tão vivo.$1#$b#Eu te amo.$4",
@@ -55,9 +59,20 @@
     "spring13.jasper.spouse.false": "Olá meu amor! o seu sorriso sempre melhora o meu dia.$1#$b#e eu devo dizer, esse ponche está delicioso!$3",
     "spring13.jasper.spouse.true": "Ah, olá meu amor! Eu não sei o que fazer para acompanhar. %kid1 tem muita energia!",
     "fall27.jasper": "Esses esqueletos são demônios terríveis. Imagina se eles escapassem? Seria um Caos!$2",
+    "fall27.jasper.spouse.false": "Meu amor, esses não são os mais temíveis monstros? Imagine o caos se eles conseguissem escapar?#$b#Oh, mas tenho certeza de que você nos protegeria a todos, meu amor.$4",
+    "fall27.jasper.spouse.true": "Meu amor! %kid1 tem me implorado para acompanhá-lo pelo labirinto... mas não acho que meus nervos aguentariam.$2",
+    "fall27.jasper.y2": "É um festival bastante assustador, @. Seria preciso nervos de aço para atravessar o labirinto este ano, tenho receio.$2",
     "fall16.jasper": "O trabalho do Clint é maravilhoso. Uma bela espada é necessária para adentrar nas profundezas do Vale.#$b#Eu? Eu gosto da com beirada de Obsidiana.$1",
     "fall16.jasper.spouse.false": "Ah meu amor, eu estou bem aqui. Por favor, se divirta!#$b#Eu estou aguardando o Prefeito anunciar você como vencedor.$1",
     "fall16.jasper.spouse.true": "Ah meu amor, eu estou bem aqui, não se preocupe...#$b#Eu vou garantir que %kid1 se mantenha longe de encrencas!$1",
+    //RSV Festivals
+    "fall20.jasper": "Esta vila tem uma herança interessante, @. Deveria visitá-la mais frequentemente.",
+    "fall20.jasper.spouse.false": "Meu amor! Estou apenas aproveitando um pouco para apreciar a vista - e o ar fresco das montanhas.$1",
+    "fall20.jasper.spouse.true": "Meu amor! Ah, de onde eles tiram tanta energia? Deve ser o ar das montanhas.",
+    "fall20.gunther": "Bom dia, Sr.@^Bom dia, Sra.@.#$b#Uma cidadezinha adorável, não é? Embora eu não tenha certeza se entendo realmente o propósito deste festival.",
+    "winter28.jasper": "Não é este o festival mais bonito, @?#$b#Hmm... agora qual resolução devo fazer para o novo ano?",
+    "winter28.jasper.spouse.false": "Hmm... qual resolução devo fazer para o novo ano, meu amor?#$b#Já sei! Vou aspirar a fazer você se sentir amada e apreciada o ano todo... e sempre.$4",
+    "winter28.jasper.spouse.true": "Hmm... qual resolução devo fazer para o novo ano, meu amor??#$b#Já sei! Vou aspirar a fazer você se sentir amada e apreciada o ano todo... e sempre.$4",
     //M A I L
     "Jasper_Peasbody1": "Olá fazendeiro,^Nós nunca nos encontramos, mas eu estou entrando em contato com você por que estou preocupado com nosso amigo em comum, Prof. Jasper Thomas. Ele é um lunático de cabeça quente, e eu escutei rumores de que ele foi nas cavernas perseguindo um'coelho branco' - e, provavelmente, foi morto. Apesar do que ele provavelmente disse a você (uma vez que nos separamos de uma forma inadequada), eu nunca desejei a ele nenhum mal. Mas então novamente... ele sempre foi um pouco cabeça dura, e nunca deixou quieto o que deveria ser deixado!^Me desculpe, isso não é uma ameaça! É apenas uma forma de eu me expressar que estou preocupado com ele. Por favor, se você encontrar com ele - vivo ou morto - eu gostaria que você me avisasse. Por que fomos amigos uma vez e, falando a verdade, eu ainda me importo com aquele idiota cabeça de porco.^^Saudações, ^Professor Cameron Peasbody.[#]Peasbody's Letter",
     "Jasper_Home": "Saudações @,^Eu estou em dívida com você. Quem diria que você me encontraria e me traria para casa. Ou o que sobrou de mim. A infecção me transformou em uma memória do meu passado, e o dano foi pior do que eu pensava... eu espero que isso não seja um choque para você meu amigo.^^Eu devo ir para casa nos próximos dias, de uma forma que o Gunther rotulou de forma pouco caridosa\"prisão domiciliar\". Eu suspeito que eu vou conseguir escrever muito, e possivelmente ler também.^^Sua companhia, como sempre, seria agradável.^^Muitas Felicidades, Jasper.%item conversationTopic TalkJasperHome 7 %% [#]Jasper is home.",
@@ -72,10 +87,13 @@
     "Jasper_Todd": "GRADES PARA CRIANÇAS - JOJA PROTEKT!^^Mantenha seus filhos contidos com as grades para crianças Protekt patenteadas pela Joja, garantia de manter seus filhos fora de perigo enquanto você segue o seu dia!^^Disponível agora em sua distribuidora local do Mercado Joja, apenas 1500g![#]Junk Mail from JoJa",
     "Jasper_HomeB_Host": "Olá @!^Me desculpe pelo meu ânimo melancólico mais cedo. Acho que a minhas perspectivas melhoraram muito, pois acabo de receber ótimas notícias. Meus ferimentos se curaram por completo, portanto, eu devo receber uma prótese. Eu vou me tornar um homem biônico! Ah, eu estou brincando, mas eu vou ficar bom para ficar em meus dois - quero dizer, um - pé de novo.^De qualquer forma. Eu tenho certeza de que está tudo bem com você, e espero que um dia eu possa te visitar na fazenda mais uma vez. Pois embora as minas estejam proibidas para mim, tem muito mais no mundo para mim explorar.^^Passe bem, Jasper.[#]Jasper's Prosthetic.",
     "Jasper_HomeB_Hand": "Olá @!^Me desculpe pelo meu ânimo melancólico mais cedo. As memórias daquela noite ainda me assombram. Mas estou contando elas para alguém, então não se preocupe.^Eu tenho certeza de que está tudo bem com você, e espero que um dia eu possa visita-lo na sua fazenda mais uma vez. Pois embora as minas estejam proíbidas para mim, tem muito mais no mundo para mim explorar.^^Passe bem, Jasper.[#]Jasper's Melancholy.",
+    "Jasper_MineralGift": "Olá @,^Estava fazendo uma limpeza na minha coleção de minerais e encontrei esta pedra preciosa que era supérflua para as minhas necessidades, mas que talvez seja útil para você.^^Saudações, Jasper.%item object 60 1 64 1 66 1 %%[#]Um presente de Jasper",
+    "Jasper_MineralGift_Mango": "Olá @,^Estava fazendo uma limpeza na minha coleção de rochas e encontrei vários minerais que eram supérfluos para as minhas necessidades, mas que, acredito eu, serão úteis para você.^^Saudações, Jasper.%item object 570 3 %%[#]Um presente de Jasper",
+    //
     // ********* N E W ****************
-    "Parent_Letter": "Querido @ (e Jasper, é claro!),^^Obrigado por todas as fotos que vocês nos mandaram. Nosso neto esta crescendo e se tornando uma pessoa correta. Enviamos nosso amor para vocês,^^Amor, Mamãe e Papai.[#]A letter from Mom and Dad",
-    "Parent_Letter2": "Querido @ (e Jasper, é claro!),^^Obrigado por todas as fotos que vocês nos mandaram. Nosso neto está crescendo e ficando cada vez mais bonito. enviamos nosso amor para vocês,^^Amor, mamãe e Papai.%item conversationTopic Farmer_BabySleep2 28 %%[#]A letter from Mom and Dad",
-    "Parent_Letter3": "Querido @ e Jasper,^Parabéns pelo novo membro da família. Nos desculpe por não podermos visitar, Amor Mamãe e Papai.^%item conversationTopic Jasper_BabyCrib2 28 %%[#]Another letter from parents" //**** E N D   N E W ***************
+    "Parent_Letter": "Olá @ (Aqui é o Jasper, é claro!),^^Obrigado por todas as fotos que vocês nos mandaram. Nosso neto esta crescendo e se tornando uma pessoa correta. Enviamos nosso amor para vocês,^^Amor, Mamãe e Papai.[#]A letter from Mom and Dad",
+    "Parent_Letter2": "Olá @ (Aqui é o Jasper, é claro!),^^Obrigado por todas as fotos que vocês nos mandaram. Nosso neto está crescendo e ficando cada vez mais bonito. enviamos nosso amor para vocês,^^Amor, mamãe e Papai.%item conversationTopic Farmer_BabySleep2 28 %%[#]A letter from Mom and Dad",
+    "Parent_Letter3": "Olá @ e Jasper,^Parabéns pelo novo membro da família. Nos desculpe por não podermos visitar, Amor Mamãe e Papai.^%item conversationTopic Jasper_BabyCrib2 28 %%[#]Another letter from parents" //**** E N D   N E W ***************
     ,
     //E V E N T S
     //2 heart event
@@ -201,8 +219,8 @@
     "55990006.05": "O que pode ser tão importante em um livro?",
     "55990006.06": "Olá Sr. Professor!",
     "55990006.07": "Umm, Olá Criança. Você está, err, se divertindo?$3",
-    "55990006.08": "Vincent...!",
-    "55990006.09": "É verdade Sr. Professor? Monstros comeram as suas pernas? Doeu?",
+    "55990006.09": "Vincent...!",
+    "55990006.08": "É verdade Sr. Professor? Monstros comeram as suas pernas? Doeu?",
     "55990006.10": "Bem sim, doeu muito de verdade. Mas não foi um monstro que comeu a minha perna.$2#$b#Eles me atacaram sim, mas eu fugi, e cai, e...$2",
     "55990006.11": "Me desculpe. Não é uma boa memória. Eu fiquei muito machucado, e o cirurgião teve que remover minha perna para salvar a minha vida.$2",
     "55990006.12": "...$3",
@@ -242,6 +260,7 @@
     "50709933.09": "Desde aquele terrível incidente nas minas, eu tenho reavaliado minha vida.$10#$b#Eu acho,o que eu estou tentando dizer é...$11",
     "50709933.10": "Eles são... eles são...$10",
     "50709933.11": "Eles são reais!$8#$b#Eles são de verdade!$9",
+    "50709933.12": "Eles são reais!$8#$b#Eles são realmente reais!$9",
     //14 heart
     //farmhouse
     "55990002.01": "Olá? Tem alguém ai?$12",
@@ -257,6 +276,13 @@
     "55990002.q5": "Por favor, não me faça duvidar de minhas memórias. Eu definitivamente deixei em cima da mesa noite passada.$13",
     "55990002.06": "Talvez seja um sinal... é hora de eu desistir desse esforço inútil.$13#$b#Você me deu tanta coisa. De que interessa se minhas teorias são verdadeiras?$12#$b#Venha meu amor, vamos voltar para a cama.$12",
     "55990002.07": "Eu venho pensando, meu amor.#$b#Talvez eu deva escrever um livro de Ficção Científica.#$b#Eu poderia fazer o Elliot ficar para trás.",
+    //Platonic version
+    "55990002.pk14.02": "Meus óculos... onde estão meus óculos?$12",
+    "55990002.pk14.03": "Eles sumiram. Sumiram!$13",
+    "55990002.pk14.06": "Talvez isso seja um sinal... de que é hora de desistir dessa empreitada infrutífera.$13#$b#Ou talvez seja mais... uma prova de que minhas teorias são verdadeiras?$12",
+    "55990003.pk14.03": "Ouvi dizer que seu amigo havia roubado segredos do meu povo...#$b#mas esses são apenas riscos em papel. Eles não me dizem nada.",
+    "55990003.pk14.06": "Seu amigo... ele não é como os outros. Não... Ele vê o que os outros não veem.",
+    "55990003.pk14.08": "O quê? Só porque moro em um buraco no chão não significa que não ouço e vejo coisas. As pedras cantam, e a terra... bem, ela pensa muito em você.#$b#Seu amigo parece estar assentado... Apesar de sua enfermidade.",
     //Dwarf
     "55990003.00": "Essas parecem as anotações do Jasper.",
     "55990003.01": "Você pegou as anotações do Jasper!",
@@ -282,14 +308,22 @@
     "55990004.05": "É na língua de Anões... Um convite, eu acho... para nos encontrarmos, a meia noite, perto da entrada das minas.#$b#Mas quem poderia ter escrito isso? Os anões?$3#$b#E se for uma pegadinha?$2",
     "55990004.06": "Não, isso é ridículo. Cameron não seria tão baixo, mesmo quando ele tentou tirar minha credibilidade.^Não, isso é ridículo. Cameron não seria tão baixa, mesmo quando ela tentou tirar minha credibilidade.#$b#E nós já passamos disso.",
     "55990004.07": "Você viria comigo, @? Eu me sinto um idiota em admitir... que eu, um homem crescido, um cientista, estou com medo do escuro. Mas eu me sinto muito mais forte com você ao meu lado.",
+    "55990004.08": "Você virá comigo, @? Me sinto um tolo por admitir isso... que eu, um homem adulto, um cientista, tenha medo do escuro. Mas me sentirei muito mais forte com você ao meu lado.",
+    //platonic
+    "55990004.pk14.01": "...E você realmente não ouviu nada incomum durante a noite?",
+    "55990004.pk14.02": "É bastante alarmante pensar que dormimos através de uma visita misteriosa durante a noite não uma, mas duas vezes...$2",
+    "55990004.pk14.03": "Fico feliz em vê-lo. Aconteceu algo que pode ser de interesse.",
+    "55990004.pk14.04": "Meu diário foi devolvido. Com isso dentro:",
     //mountain
-    "55990005.01": "Meu amor, estou tão contente em te ver... eu tentei ser corajoso e vir sozinho... eu me sinto um idiota.$2#$b#e se isso for uma brincadeira? Eu ouvi falar que o Sam adora uma pegadinha.$1#$b#Porém eu não acredito que ele saiba escrever na linguagem dos Anões.#$b#E se os monstros estiverem me aguardando? Não... ah não...$2#$b#Ah, me desculpe, @. estou balbuciando. Nervoso. Obrigado por me encontrar.$5",
+    "55990005.01.true": "Meu amor, estou tão contente em te ver... eu tentei ser corajoso e vir sozinho... eu me sinto um idiota.$2#$b#e se isso for uma brincadeira? Eu ouvi falar que o Sam adora uma pegadinha.$1#$b#Porém eu não acredito que ele saiba escrever na linguagem dos Anões.#$b#E se os monstros estiverem me aguardando? Não... ah não...$2#$b#Ah, me desculpe, @. estou balbuciando. Nervoso. Obrigado por me encontrar.$5",
+    "55990005.01.false": "@, estou tão feliz em te ver... Tentei ser corajoso e vir sozinho... Me sinto um bobo.$2#$b#E se tudo isso for uma brincadeira? Ouvi dizer que o Sam é um verdadeiro brincalhão.$1#$b#Embora eu não imagine que ele seria capaz de escrever em anão.#$b#E se os monstros estiverem me esperando? Não... oh não...$2#$b#Oh, desculpe, @. Estou tagarelando. Nervoso. Obrigado por me encontrar.$5",
     "55990005.02": "Eu estou pronto agora. Vamos entrar.",
     "55990005.03": "Bem vindos Moradores da superfície.",
     "55990005.04": "Eu te conheço! Você... você me achou nas cavernas... quando eu estava ferido e sozinho... você me alimentou com cogumelos esmagados...$2",
     "55990005.05": "Você salvou a minha vida!$4",
     "55990005.06": "E todo esse tempo... você era.... você é...$2",
-    "55990005.07": "O seu parceiro parece um pouco... instável. Eu não quebrei ele, quebrei?",
+    "55990005.07.true": "O seu parceiro parece um pouco... instável. Eu não quebrei ele, quebrei?",
+    "55990005.07.false": "Seu amigo parece um tanto... perturbado. Espero não tê-lo desestabilizado.",
     "55990005.q0": "#Ele está animado.#Ele esta me envergonhando!#Você é um anão, não é?",
     "55990005.q1": "Animado em me encontrar? Humanos são tão estranhos, seres emocionais.",
     "55990005.q2": "Minhas desculpas, @. Eu não quis te deixar com vergonha.$5",
@@ -310,7 +344,8 @@
     "55990005.21": "Eu estava esperando, talvez, que você pudesse me ensinar, Jasper Thomas. Como você ensina os filhotes de humanos.#$b#Que talvez nós possamos aprender os segredos dos Anões... juntos?",
     "55990005.22": "E você poderia, talvez, não compartilha-los com o mundo.",
     "55990005.23": "Seria o meu maior prazer.",
-    "55990005.24": "Jasper pode demorar um pouco. Talvez devêssemos ir para casa?",
+    "55990005.24.true": "Jasper pode demorar um pouco. Talvez devêssemos ir para casa?",
+    "55990005.24.false": "Jasper parece bem agora. Talvez seja hora de voltar para casa?",
     //Dwarf Events
     "55990001.01": "Um humano! Por que você entrou no meu domínio?#$b#Ah mas é idiotice tentar falar com eles; eles não entendem.",
     "55990001.q0": "#Eu estou explorando as minas.#Mas eu entendo!#Quem é você?#O que é você?",
@@ -450,6 +485,8 @@ M A R R I A G E   F I L E
     "funReturn.DwarfFriend.fall": "$c 0.5#Ah, tantas coisas novas reveladas! Minha mente está a mil, cheia de inspiração, @. Eu posso vir a precisar de ajuda para dormir hoje a noite!$1$k#$e#Nosso amigo me mandou para casa com isso... Ele foi bem insistente. Por favor tome cuidado meu amor.$2[286 287 288]",
     "funLeave.DwarfFriend.winter": "$c 0.5#É uma dura caminhada até a montanha, mas vale a pena.$k#$e#Eu ainda não consigo acreditar que eu vou tomar chá com um Smoluanu!#$b#Tenha um dia maravilhoso meu amor.$1",
     "funReturn.DwarfFriend.winter": "$c 0.5#Ah, tantas coisas novas reveladas! Minha mente está a mil, cheia de inspiração, @. Eu posso vir a precisar de ajuda para dormir hoje a noite!$1$k#$e#Nosso amigo me mandou para casa com isso... Ele foi insistente. Por favor tenha cuidado, meu amor.$2[286 287 288]",
+    "funLeave.DwarfRoommate": "Bom dia. Irei visitar nossos amigos na Guilda hoje.#$b#O Anão pediu para trazer algo para eles, você também gostaria de algo?$3",
+    "funReturn.DwarfRoommate": "Um dia agradável passado colocando o papo em dia com velhos amigos. Marlon manda lembranças, @.#$b#Ah, e também peguei esta 'pedrinha brilhante' para você.$1[62 64 66 68]",
     //Fall 8th (Monday)
     "funLeave.birthday": "Obrigado por se lembrar do meu aniversário, meu amor.#$b#Meus planos para hoje? Apenas visitar o Ghunter!$1#$b#Eu vejo você esta tarde. Te amo.$4",
     "funReturn.birthday": "Boa Noite meu amor! Ah sim, obrigado, Eu aproveitei o meu aniversário.$3#$b#Gunther me presenteou com alguns artefatos fascinantes, e isso... Eu espero que você me ajude com ele![348]$1",
@@ -550,6 +587,8 @@ M A R R I A G E   F I L E
     "jasper.4452": "Eu estou trabalhando em uma importante dissertação. Você pode olhar as crianças?$a",
     "jasper.4455": "Eu ia fazer café da manhã para você, mas eu tive uma epifania de inspiração.$a",
     "jasper.4450": "Ah, amor. Está tão bagunçado aqui. Você andou redecorando?#$b#Eu até ajudaria você a limpar, mas a minha perna está doendo de mais.$2",
+    "jasper.4486": "O que você acha?",
+    "jasper.4488": "Eu pedi isso na semana passada e chegou esta manhã. Espero que não tenha sido muito presumido da minha parte...#$b#... Você gostou?$2",
     "jasper.birth": "Amada? O que foi? Ah! Vamos correr para o hospital!",
     "jasper.babyboy": "Qual nome devemos dar a ele, se ele for um garoto?",
     "jasper.babygirl": "Qual nome devemos dar a ela, se ela for uma garota?",
@@ -564,7 +603,7 @@ M A R R I A G E   F I L E
     //Having Child #2
     "patio.havingchild2": "Eu me sinto abençoado @, por estar vivendo nessa fazenda maravilhosa, com minha esposa charmosa, nosso lindo %kid1, e outro a caminho.#$b#eu  me sinto... completo.$4",
     "spouseroom.havingchild2": "Eu estou preparando %kid1 para seu novo irmão. Ah... eu espero que eles sejam amigos!$1",
-    "jasper.birth2": "Amor? já é a hora? Eu vou chamar uma babá, nós temos que correr para o hospital. ",
+    "jasper.birth2": "Amor? já é a hora? Eu vou chamar uma babá, nós temos que correr para o hospital.",
     //Jasper talks about the kids
     "OneKid0.kid1.sleep": "Eu gosto tanto de observar o %kid1 dormir. Me pergunto o que os bebês sonham?^Eu gosto tanto de observar a %kid1 dormir. Me pergunto o que os bebês sonham?$1",
     "OneKid1.kid1.sleep": "%kid1 certamente dorme muito... eu achei que filhos seriam mais... interativos.$2",
@@ -691,5 +730,116 @@ M O V I E S
     "summit.jasper.2b": "Foi uma longa caminhada! Mas a vista valeu a pena.",
     "summit.jasper.3": "Isso me fez pensar sobre o último %year ano...\"/pause 1000/speak spouse \"Nós passamos por tanto juntos, não é?$h",
     "summit.jasper.4": "...E ah, olha quão longe chegamos.",
-    "summit.jasper.5": "Com você, meu amor, eu encontrei a verdadeira felicidade.$4\"/pause 500/faceDirection Jasper 3/speak Jasper \"Sem você, eu ainda estaria perdido no escuro. Possivelmente literalmente.#$b#Obrigado, @. Juntos, nós podemos atingir grandes altitudes. Nós podemos atingir o nosso verdadeiro pico.$3"
+    "summit.jasper.5": "Com você, meu amor, eu encontrei a verdadeira felicidade.$4\"/pause 500/faceDirection Jasper 3/speak Jasper \"Sem você, eu ainda estaria perdido no escuro. Possivelmente literalmente.#$b#Obrigado, @. Juntos, nós podemos atingir grandes altitudes. Nós podemos atingir o nosso verdadeiro pico.$3",
+    //
+    // N E W   W I T H   2.0  B E L O W   H E R E ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    "Jasper.Locations.Museum": "Museum Apartment",
+    /*************************
+    S P E C I A L   O R D E R S
+    *************************/
+    //Clint and Geode Quest
+    "55990050.01": "Ufa, Que trabalho dificel!$2",
+    "55990050.clint.02": "Oi fazendeiro @! O Sr. Clint está quebrando geodos para nós!$1^Oi fazendeira @! O Sr. Clint está quebrando geodos para nós!$1",
+    "55990050.clarice.02": "Oi fazendeiro @! A Sra. Clarice está quebrando geodos para nós!$1^Oi fazendeira @! A Sra. Clarice está quebrando geodos para nós!$1",
+    "55990050.03": "Fazendeiro @! Fazendeiro @! Isso é tão legal!^Fazendeira @! Fazendeira @! Isso é tão legal!#$b#Eu consegui um olho de tigre! RAWR!$1",
+    "55990050.04": "E eu consegui uma pedra de fada! É realmente bonita!$1",
+    "55990050.05": "Foi @ aqui quem forneceu os geodos.",
+    "55990050.clint.06": "E obrigado por quebrá-los para nós, Sr. Clint.$1",
+    "55990050.clarice.06": "E obrigado por quebrá-los para nós, Sra. Clarice.$1",
+    "55990050.07": "De nada.",
+    "55990050.08": "Eu quero mostrar minha nova pedra para o Sam!",
+    "55990050.09": "Está tudo bem, Sr. Professor? A aula acabou?",
+    "55990050.10": "Ah, muito bem então, se você deseja.$1",
+    "55990050.11": "Mas há lição de casa!",
+    "55990050.12": "Ah...$2",
+    "55990050.clint.13": "Você tem alguma sugestão para a lição de casa deles, Clint?",
+    "55990050.clarice.13": "Você tem alguma sugestão para a lição de casa deles, Clarice?",
+    "55990050.clint.14": "Um... er... Talvez algumas, err... algo sobre minérios?$2",
+    "55990050.clarice.14": "Agora, deixe-me pensar sobre isso... algo sobre rochas. Um poema, talvez?",
+    "55990050.15": "Uma excelente sugestão!",
+    "55990050.clint.16": "Eu gostaria que ambos escrevessem cinco fatos sobre o geodo que o Clint abriu para vocês. Existem excelentes recursos na biblioteca!",
+    "55990050.clarice.16": "Eu gostaria que ambos escrevessem um poema, compartilhando cinco fatos sobre o geodo que a Clarice abriu para vocês. Existem excelentes recursos na biblioteca!",
+    "55990050.clint.17": "Ler... bah. Chato.$2",
+    "55990050.clarice.17": "Ler E um poema. Argh!$2",
+    "55990050.18": "Não se preocupe Vin, eu vou te ajudar! Vai dar tudo certo. Prometo.$4",
+    "55990050.clint.19": "Obrigado novamente, Sr. Clint!$1",
+    "55990050.clarice.19": "Obrigado novamente, Sra. Clarice!$1",
+    "55990050.20": "Obrigado!",
+    "55990050.21": "Obrigado.",
+    "55990050.22": "Eba!",
+    //Storytime in the library
+    "55990051.01": "... após muitos anos, possivelmente até séculos, de guerra, os filhos do povo do céu se separaram uns dos outros, espalhados pelo mundo...",
+    "55990051.02": "Que triste!",
+    "55990051.03": "Bom dia, Sr. @. Viemos pegar alguns livros...^Bom dia, Sra. @. Viemos pegar alguns livros...#$b#O Professor Jasper estava fazendo sua pesquisa e...",
+    "55990051.04": "Fazendeiro @! O Sr. Professor está contando uma história sobre uma nave espacial! Ela caiu no vale milhares e centenas de anos atrás.",
+    "55990051.05": "BOOM!",
+    "55990051.06": "E a explosão foi TÃO grande que perfurou direto para o mundo inferior!$3",
+    "55990051.07": "Não Vincent! É 'mundo inferior'!",
+    "55990051.08": "Havia pessoas vivendo sob a terra. Não humanos como nós, mas pessoas mesmo assim.$4#$b#E a colisão rasgou a cidade deles.$2",
+    "55990051.09": "Sim...",
+    "55990051.10": "Isso os deixou muito, muito irritados.#$b#Então eles lutaram contra os alienígenas. Houve uma grande guerra!$2#$b#Eles chamaram isso de Guerra Elemental!",
+    "55990051.11": "As Guerras Elementais. Durou centenas e centenas de anos. Quase todos os povos do céu foram mortos...$2#$b#E havia algo na nave espacial que deixou os povos sombra muito doentes.$3#$b#Então muitos deles também morreram!$2",
+    "55990051.12": "Certo crianças. Isso é suficiente por hoje.$a",
+    "55990051.13": "Vamos tirar esses livros, depois podemos sair e procurar insetos lá fora.$1",
+    "55990051.14": "Okay!",
+    "55990051.15": "Espero que os povos do céu se encontrem novamente.$2",
+    "55990051.16": "Eu também.",
+    "55990051.17": "Tenham um dia agradável.",
+    "55990051.18": "Oh céus... Eu temo ter ultrapassado meu papel e ter incomodado a Srta. Penny. Mas as crianças perguntaram...$2",
+    "55990051.19": "...",
+    "55990051.20": "Que tipo de história foi essa para contar às crianças? Você deveria ter vergonha!",
+    "55990051.21": "É ESSA a sua teoria? Parece bobagem para mim.",
+    "55990051.22": "Que enredo interessante. Você está escrevendo um romance?",
+    "55990051.23": "Essa é sua teoria? Parece realmente intrigante.",
+    "55990051.24": "Estou ansioso para discutir mais sobre isso com você. Mas por agora, acho que o café da manhã é talvez necessário.$1|Acho melhor eu sair agora. A fome tende a me deixar irritável. Talvez eu te veja mais tarde?",
+    //Jasper at Ginger Island
+    "Professor_Snail": "Professor Lesma", //**NEW***
+    "5599052.01": "Imagino para onde ele está indo?",
+    "5599052.02": "Impressionante, não é?",
+    "5599052.03": "Certamente formidável. E ativa?",
+    "5599052.04": "Oh sim",
+    "5599052.05": "Mas ela é bem-comportada, pelos padrões vulcânicos.$1",
+    "5599052.06": "Ah, que falta de educação a minha. Me chamo Lesma, Professor Lesma.",
+    "5599052.07": "Estou encantado em conhecê-lo, Professor Lesma. Sou o Professor Jasper Thomas, ao seu dispor.$1",
+    "5599052.08": "Jasper Thomas? O Jasper? Mestre Jasper?#$b#Eu sabia que tinha algo familiar sobre você!$1",
+    "5599052.09": "Bem, sim... esse era meu título uma vez... antes... bem antes das coisas mudarem.$2",
+    "5599052.10": "Eu tenho o seu livro! 'Jornadas Famosas'! Está um pouco úmido...",
+    "5599052.11": "Eu li muitas vezes!",
+    "5599052.12": "Vê aquela caverna ali?",
+    "5599052.13": "Nunca fui muito longe: está cheia de rios de lava e monstros horríveis. Bem, seria preciso um sujeito mais corajoso do que eu para se aventurar nessas profundezas!$1#$b#Mas vi indícios de uma arquitetura estranha e uma tecnologia bastante incomum.",
+    "5599052.14": "Seus estudos seguem por essas linhas, não é, rapaz?",
+    "5599052.15": "Com certeza...",
+    //New Dialogue lines
+    "giftReaction.flowers.s15": "Obrigado, querida, você é tão atenciosa. Vai ficar lindo perto do monumento.$4",
+    //Special Order Event with Sentry Bot
+    "5599055.02": "Olá @. Timing impecável! Lembra-se daqueles artefatos que adquiri de você?", //Jasper
+    "5599055.03": "De fato. Bem, a Srta. Maru e eu estamos quase terminando um pequeno projeto. Gostaria de dar o toque final?", //Jasper
+    "5599055.04": "Aqui está.", //Jasper
+    "5599055.05": "Agora, se você puder colocá-lo dentro da cavidade, por favor.", //Jasper
+    "5599055.06": "Nada está acontecendo...", //Maru
+    "5599055.07": "Paciência.", //Jasper
+    "5599055.08": "Professor Jasper.... o que exatamente essas coisas eram usadas?$2", //Maru
+    "5599055.09": "Oh! Ninguém sabe, precisamente. Mas especulo que faziam parte de um sofisticado sistema de defesa.", //Jasper
+    "5599055.10": "Acho que não gosta de mim. Você pode desativá-lo, por favor?$2", //Maru
+    "5599055.11": "Claro, certamente! Hum... escrevi as palavras de comando aqui em algum lugar...$2", //Jasper
+    "5599055.12": "Agora onde elas estão?", //Jasper
+    "5599055.13": "Ah, aqui estão!", //Jasper
+    "5599055.14": "Puotnexonu!", // Esta é uma palavra Dwarf, traduzida usando o Dwarf Translator de Kdau. Significa "Desativar". (Jasper)
+    "5599055.15": "Você está bem, Srta. Maru? Oh, me desculpe tanto!$2", //Jasper
+    "5599055.16": "Por favor, @, poderia nos fazer um pouco de chá?$2", //Jasper
+    //"Filler" event with Jasper pacing 
+    "5599028.01": "Oh Jasper... você passou a noite toda pesquisando, de novo?",
+    "5599028.02": "Não posso evitar, Gunther. O sono é evasivo quando a verdade está tão próxima.$2",
+    "5599028.03": "Você encontrou então, evidências para apoiar suas teorias? Os anões realmente são de outro planeta? Ou apenas os primos subterrâneos dos goblins, como Peasbody acredita?",
+    "5599028.04": "Peasbody...$5",
+    "5599028.05": "Ainda não... mas estou tão perto que posso quase sentir.$2",
+    "5599028.06": "Por todos os relatos, científicos e anedóticos, os anões - smouluanu - eram tecnologicamente avançados, capazes de manipular energia de uma maneira que mal podemos começar a entender.",
+    "5599028.07": "Então para onde eles foram?",
+    "5599028.08": "Será que realmente foram derrotados por uma raça tão primeva quanto os povos sombra? Ou...$2",
+    "5599028.09": "... talvez tenham retornado para seu planeta de origem?",
+    "5599028.10": "Você não está zombando de mim, está Gunther?$2",
+    "5599028.11": "Claro que não, Jasper. Mas você deve perceber...",
+    "5599028.12": "Bom dia Sr. @^Bom dia Srta. @.",
+    "5599028.13": "Perceber o quê, Gunther?$5",
+    "5599028.14": "Que você vai precisar de uma quantidade considerável de evidências irrefutáveis para convencer Peasbody.",
 }

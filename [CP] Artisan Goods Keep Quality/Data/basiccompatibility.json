@@ -8,6 +8,8 @@
 				"CopyQuality": true,
 			},
 			"When": { "Blue Eggs and Golden Mayo": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+			
+			"Priority": "Late",
 		},
 		{// Blue Mayo Reduce
 			"Action": "EditData",
@@ -28,6 +30,8 @@
 				],
 			},
 			"When": { "Blue Eggs and Golden Mayo": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+			
+			"Priority": "Late",
 		},
 		{// Gold Mayo
 			"Action": "EditData",
@@ -37,6 +41,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Blue Eggs and Golden Mayo": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
 		},
 		{// Gold Mayo Reduce
 			"Action": "EditData",
@@ -57,6 +62,7 @@
 				],
 			},
 			"When": { "Blue Eggs and Golden Mayo": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
 		},
 		{// Donkey Cream
 			"Action": "EditData",
@@ -66,6 +72,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Donkeys": "true", "Oil Maker": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
 		},
 		{// Donkey Cream Reduce
 			"Action": "EditData",
@@ -86,6 +93,7 @@
 				],
 			},
 			"When": { "Donkeys": "true", "Oil Maker": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
 		},
 		{// Quail Mayo
 			"Action": "EditData",
@@ -95,6 +103,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Mizu's Quail": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
 		},
 		{// Quail Mayo Reduce
 			"Action": "EditData",
@@ -115,6 +124,7 @@
 				],
 			},
 			"When": { "Mizu's Quail": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
 		},
 		{// Large Quail Mayo
 			"Action": "EditData",
@@ -125,6 +135,7 @@
 				"MinStack": 2,
 			},
 			"When": { "Mizu's Quail": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
 		},
 		{// Large Quail Mayo Reduce
 			"Action": "EditData",
@@ -146,6 +157,7 @@
 				"MinStack": 2,
 			},
 			"When": { "Mizu's Quail": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
 		},
 		{// Turkey Mayo
 			"Action": "EditData",
@@ -155,6 +167,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Mizu's Turkey": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
 		},
 		{// Turkey Mayo Reduce
 			"Action": "EditData",
@@ -175,6 +188,7 @@
 				],
 			},
 			"When": { "Mizu's Turkey": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
 		},
 	],
 }

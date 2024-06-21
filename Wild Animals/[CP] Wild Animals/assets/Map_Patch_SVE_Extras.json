@@ -319,21 +319,21 @@
                "Position": { "X": 18, "Y": 8 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 0, 0, 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.DustSpirit_A_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.DustSpirit_A_WA"
                },
             },
             {
                "Position": { "X": 16, "Y": 6 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 0, 0, 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.DustSpirit_B_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.DustSpirit_B_WA"
                },
             },
             {
                "Position": { "X": 21, "Y": 5 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 0, 0, 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.DustSpirit_C_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.DustSpirit_C_WA"
                },
             },
          ],
@@ -654,7 +654,7 @@
 			"Position": { "X": 26, "Y": 38 },
 			"Layer": "Back",
 			"SetProperties": {
-				"CustomCompanions": "Spawn {{Random: 0, 0, 0, 0, 0, 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Pufferchick_WA"
+				"CustomCompanions": "Spawn {{Random: 0, 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Pufferchick_WA"
 			},
 		},
 		],
