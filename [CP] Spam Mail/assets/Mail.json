@@ -36,6 +36,7 @@
 				"MakoKZ.SM_LetterOfEncouragement": "{{i18n: Spam.LetterOfEncouragement}}[letterbg 2][#]{{i18n: Spam.LetterOfEncouragementDesc}}",
 				"MakoKZ.SM_HotPeppers": "{{i18n: Spam.HotPeppers}}[#]{{i18n: Spam.HotPeppersDesc}}",
 				"MakoKZ.SM_DatingWebsite": "{{i18n: Spam.DatingWebsite}}[#]{{i18n: Spam.DatingWebsiteDesc}}",
+				"MakoKZ.SM_SplashPark": "[letterbg 4]{{i18n: Spam.SplashPark}}[#]{{i18n: Spam.SplashParkDesc}}",
 				},
             },
 			//ominous mail. toggled by config
@@ -72,6 +73,7 @@
 				"Custom_MakoKZ_SMRiffraffWinner/r 0.03/t 600 700/x MakoKZ.SM_RiffraffWinner": "null",
 				"Custom_MakoKZ_SMLetterOfEncouragement/r 0.03/t 600 700/x MakoKZ.SM_LetterOfEncouragement": "null",
 				"Custom_MakoKZ_SMHotPeppers/r 0.1/t 600 700/z spring fall winter/x MakoKZ.SM_HotPeppers": "null",
+				"Custom.MakoKZ_SMSplashPark/r 0.03/t 600 700/x MakoKZ.SM_SplashPark": "null",
 				//cat mail series. 10% chance to get the mail after 7 in game days. each one only appears once the previous letter has been seen
 				"Custom_MakoKZ_SMCatFacts/j 7/r 0.1/t 600 700/x MakoKZ.SM_CatFacts": "null",
 				"Custom_MakoKZ_SMCatFacts1/r 0.05/t 600 700/n MakoKZ.SM_CatFacts/x MakoKZ.SM_CatFacts1": "null",

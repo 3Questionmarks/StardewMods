@@ -22,7 +22,7 @@
                 "guntherorjasper": "jasper"
             },
             "Entries": {
-                "96420097/n Dwarf_Friend/o Jasper/f Dwarf 2500/t 1000 1800": "libraryTheme/15 11/Jasper 17 9 2 farmer 10 13 1 {{GuntherPosition}}/skippable/addObject 17 10 451 1/showFrame Jasper 27/move farmer 5 0 0/move farmer 0 -4 1/showFrame Jasper 0/jump Jasper 5/pause 500/faceDirection Jasper 3/textAboveHead Jasper \"{{i18n:96420097.01}}{{playername}}!\"/pause 500/speak Jasper \"{{i18n:96420097.02}}\"/emote farmer 40/speak Jasper \"{{i18n:96420097.03}}\"/emote farmer 8/move farmer 1 0 1/speak Jasper \"{{i18n:96420097.04}}\"/jump farmer 5/emote farmer 16/speak Jasper \"{{i18n:96420097.05}}\"/pause 500/question fork0 \"{{i18n:96420097.06}}#{{i18n:96420097.07}}#{{i18n:96420097.08}}#\"/fork DwarfRoommate_1/speak Jasper \"{{i18n:96420097.09}}\"/pause 500/emote farmer 60/pause 1000/end",
+                "96420097/n Dwarf_Friend/o Jasper/f Dwarf 2500/t 1000 1800": "libraryTheme/15 11/Jasper 17 9 2 farmer 10 13 1 {{GuntherPosition}}/skippable/addObject 17 10 79 1/showFrame Jasper 27/move farmer 5 0 0/move farmer 0 -4 1/showFrame Jasper 0/jump Jasper 5/pause 500/faceDirection Jasper 3/textAboveHead Jasper \"{{i18n:96420097.01}}{{playername}}!\"/pause 500/speak Jasper \"{{i18n:96420097.02}}\"/emote farmer 40/speak Jasper \"{{i18n:96420097.03}}\"/emote farmer 8/move farmer 1 0 1/speak Jasper \"{{i18n:96420097.04}}\"/jump farmer 5/emote farmer 16/speak Jasper \"{{i18n:96420097.05}}\"/pause 500/question fork0 \"{{i18n:96420097.06}}#{{i18n:96420097.07}}#{{i18n:96420097.08}}#\"/fork DwarfRoommate_1/speak Jasper \"{{i18n:96420097.09}}\"/pause 500/emote farmer 60/pause 1000/end",
                 "DwarfRoommate_1": "pause 500/addMailReceived DwarfRoommate_2/speak Jasper \"{{i18n:96420097.DwarfRoommate_1.01}}\"/emote farmer 32/pause 1000/end"
             }
         },
@@ -32,11 +32,11 @@
             "Action": "EditData",
             "Target": "Data/Events/FarmHouse",
             "When": {
-                // "HasMod": "aedenthorn.FreeLove",
+                // "HasMod": "aedenthorn.FreeLove, ApryllForever.CPPolyamorySweet",
                 "HasMod |contains=Lemurkat.NPCJasper": true
             },
             "Entries": {
-                "96420096/n Dwarf_Friend/O Jasper/f Dwarf 2500": "libraryTheme/-100 -100/Jasper 54 24 2 farmer 50 26 1/ignoreCollisions farmer/skippable/temporaryAnimatedSprite Maps\\springobjects 304 288 16 16 100 1 9999 54 27 false false 1 0.0 1 0 0 0/showFrame Jasper 27/viewport 50 24 clamp true/pause 1000/move farmer 3 0 1/showFrame Jasper 0/jump Jasper 5/pause 500/faceDirection Jasper 3/textAboveHead Jasper \"{{i18n:96420096.01}}{{playername}}!\"/pause 500/speak Jasper \"{{i18n:96420096.02}}\"/emote farmer 40/speak Jasper \"{{i18n:96420096.03}}\"/emote farmer 8/speak Jasper \"{{i18n:96420096.04}}\"/jump farmer 5/emote farmer 16/speak Jasper \"{{i18n:96420096.05}}\"/pause 500/question fork0 \"{{i18n:96420096.06}}#{{i18n:96420096.07}}#{{i18n:96420096.08}}#\"/fork DwarfRoommate_1/speak Jasper \"{{i18n:96420096.09}}\"/pause 500/emote farmer 60/pause 1000/end",
+                "96420096/A JasperMeetsDwarf/n Dwarf_Friend/O Jasper/f Dwarf 2500": "libraryTheme/-100 -100/Jasper 54 25 2 farmer 50 25 1/ignoreCollisions farmer/skippable/addObject 54 26 79 1/showFrame Jasper 27/viewport 50 24 clamp true/pause 1000/move farmer 3 0 1/showFrame Jasper 0/jump Jasper 5/pause 500/faceDirection Jasper 3/textAboveHead Jasper \"{{i18n:96420096.01}}{{playername}}!\"/pause 500/speak Jasper \"{{i18n:96420096.02}}\"/emote farmer 40/speak Jasper \"{{i18n:96420096.03}}\"/emote farmer 8/speak Jasper \"{{i18n:96420096.04}}\"/jump farmer 5/emote farmer 16/speak Jasper \"{{i18n:96420096.05}}\"/pause 500/question fork0 \"{{i18n:96420096.06}}#{{i18n:96420096.07}}#{{i18n:96420096.08}}#\"/fork DwarfRoommate_1/speak Jasper \"{{i18n:96420096.09}}\"/pause 500/emote farmer 60/pause 1000/end",
                 "DwarfRoommate_1": "pause 500/emote Jasper 32/addMailReceived DwarfRoommate_2/pause 500/speak Jasper \"{{i18n:96420096.DwarfRoommate_1.01}}\"/emote farmer 32/pause 1000/end",
             }
         },
@@ -46,11 +46,11 @@
             "Target": "Data/Events/FarmHouse",
             "When": {
                 "HasMod |contains=Lemurkat.NPCJasper": true,
-                //"HasMod": "aedenthorn.FreeLove",
+                //"HasMod": "aedenthorn.FreeLove, ApryllForever.CPPolyamorySweet",
                 "HasFlag": "DwarfRoommate_2"
             },
             "Entries": {
-                "96420094/e 96420096/O Jasper/n DwarfRoommate_2": "libraryTheme/-100 -100/Jasper 54 24 2 farmer 50 26 1/addCraftingRecipe Smoluanu_Bracer/ignoreCollisions farmer/skippabletemporaryAnimatedSprite Maps\\springobjects 304 288 16 16 100 1 9999 54 27 false false 1 0.0 1 0 0 0/viewport 45 29 clamp true/move farmer 3 0 1/faceDirection Jasper 3/jump Jasper 5/speak Jasper \"{{i18n:96420094.01}}\"/emote farmer 8/pause 500/showFrame Jasper 27/speak Jasper \"{{i18n:96420094.02}}\"/showFrame Jasper 0/faceDirection Jasper 3/speak Jasper \"{{i18n:96420094.03}}\"/pause 500/speak Jasper \"{{i18n:96420094.04}}\"/emote farmer 56/pause 1000/playSound reward/message \"{{i18n:96420094.05}}\"/pause 1000/end"
+                "96420094/e 96420096/O Jasper/n DwarfRoommate_2": "libraryTheme/-100 -100/Jasper 54 25 2 farmer 50 25 1/addCraftingRecipe Smoluanu_Bracer/ignoreCollisions farmer/skippable/addObject 54 26 79 1/viewport 50 24 clamp true/move farmer 3 0 1/faceDirection Jasper 3/jump Jasper 5/speak Jasper \"{{i18n:96420094.01}}\"/emote farmer 8/pause 500/showFrame Jasper 27/speak Jasper \"{{i18n:96420094.02}}\"/showFrame Jasper 0/faceDirection Jasper 3/speak Jasper \"{{i18n:96420094.03}}\"/pause 500/speak Jasper \"{{i18n:96420094.04}}\"/emote farmer 56/pause 1000/playSound reward/message \"{{i18n:96420094.05}}\"/pause 1000/end"
             }
         },
         {
@@ -150,6 +150,25 @@
                 }
             ]
         },
+        { //Jasper loves the bracer
+        "Action": "EditData",
+        "Target": "Data/NPCGiftTastes",
+        "When": {
+            "HasMod":"Lemurkat.NPCJasper"
+        },
+        "TextOperations": [
+            {
+                "Operation": "Append",
+                "Target": [
+                    "Fields",
+                    "Jasper",
+                    1
+                ],
+                "Value": "(O)Lemurkat_Smoluanu_Bracer",
+                "Delimiter": " "
+            }
+        ]
+    },
         {
             "LogName": "House-mate Dialogue",
             "Action": "Load",

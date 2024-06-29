@@ -8,30 +8,30 @@
 			"Target": "Characters/Dialogue/Abigail",
 			"When": {
 				"Language": "en",
-				"Relationship:Victor": "Dating"
+				"Relationship:Victor": "Dating, Engaged"
 			},
 			"Entries": {
-				"spring23": "Hey, @! My buddy, champ, pal! $h#$b# What would you say about you and Victor dancing at the upcomming Flower Dance together? Come on, you two will look great! $$0#$b# Eh? You think I'm just using you two to get away from dancing in that stupid dress?? $7#$b# Psssh, nah! What gave you the idea? $h",
-				"fall_Tue8": "Say, @. How much do you like that guy Vic? Do you just like like him or is it more serious? $-#$b# Huh, why I'm asking? I AM friends with both of you, aren't I? $1#$b# I see. $2#$b# Well... Make sure he treats you well then, okay? $0",
-				"winter_Tue8": "Not gonna lie, dude, you two look like you came straight from one of Sophia's otome games. $h#$b# Glad to see you two happy, though! $0",
+				"spring23": "{{i18n:Abigail.VictorxFarmer.01}}",
+				"fall_Tue8": "{{i18n:Abigail.VictorxFarmer.02}}",
+				"winter_Tue8": "{{i18n:Abigail.VictorxFarmer.03}}",
 			}
 		},
-		
 		{
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Abigail",
 			"When": {
 				"Language": "en",
+				"Relationship:Victor": "Married"
 			},
 			"Entries": {
-				"fall_Sat8_inlaw_Victor": "Not gonna lie, dude, you two look like you came straight from one of Sophia's otome games. $h#$b# Glad to see you two happy, though! $0",
-				"spring_Sun8_inlaw_Victor": "Not gonna lie, dude, you two look like you came straight from one of Sophia's otome games. $h#$b# Glad to see you two happy, though! $0",
-				"summer_Tue8_inlaw_Victor": "To be honest, I never thought I'd see Vic get a date so soon. Hell, I never thought he'd be the FIRST of us to get married. $0#$b# You see, he never looked like much of a romantic type. Now he rivals that Sailor Sun manga Sophia has at home. $1#$b# Well, the more you know, huh? $0",
-				"spring23": "Hey, @! My buddy, champ, pal! My dearest Egg Festival Archrival! $h#$b# What would you say about you and Victor dancing at the upcomming Flower Dance together? Come on, you two will look great! $$0#$b# Eh? You think I'm just using you two to get away from dancing in that stupid dress?? $7#$b# Psssh, nah! What gave you the idea? $h",
+				"fall_Sat8": "{{i18n:Abigail.VictorxFarmer.03}}",
+				"spring_Sun8": "{{i18n:Abigail.VictorxFarmer.03}}",
+				"summer_Tue8": "{{i18n:Abigail.VictorxFarmer.04}}",
+				"spring23": "{{i18n:Abigail.VictorxFarmer.01}}",
 			}
 		},
 		
-		
+	
 		// OLIVIA //
 		{
 			"Action": "EditData",
@@ -41,35 +41,34 @@
 					"Hearts:Victor": "6, 7, 8",
 				},	
 			"Entries": {
-				"summer_Fri4": "Hello there, dear. How are you doing? $0#$b# Say, @, what do you think of my son? We could go to the Saloon and you can tell me everything! *chuckle* $1",
+				"summer_Fri4": "{{i18n:Olivia.VictorxFarmer.01}}",
 			}
 		},
-	
 		{
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Olivia",
 			"When": {
 				"Language": "en",
-				"Relationship:Victor": "Dating"
+				"Relationship:Victor": "Dating, Engaged"
 			},
 			"Entries": {
-				"summer_Mon6": "Ah, if it isn't my future in-law. What a sight for sore eyes! $h#$b# You know, I think my boy is a bit smitten with you, dear. He's been buying more and more romance novels lately. $1#$b# I can't complain, though. I do enjoy a good read myself whenever I'm not busy. But here's the odd part... $1#$b# My little Victor had never been interested in this genre before. *chuckle* $3",
-				"fall_Wed6": "Ah, if it isn't my future in-law. What a sight for sore eyes! $h#$b# You know, I think my boy is a bit smitten with you, dear. He's been buying more and more romance novels lately. $1#$b# I can't complain, though. I do enjoy a good read myself whenever I'm not busy. But here's the odd part... $1#$b# My little Victor had never been interested in this genre before. *chuckle* $3",
+				"summer_Mon6": "{{i18n:Olivia.VictorxFarmer.02}}",
+				"fall_Wed6": "{{i18n:Olivia.VictorxFarmer.02}}",
 			}
 		},
-		
 		{
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Olivia",
 			"When": {
 				"Language": "en",
+				"Relationship:Victor": "Married"
 			},
 			"Entries": {
-				"spring_Sat8_inlaw_Victor": "Hello there, dear. How are you and my son doing? I hope you two are happy! $h#$b# How about you two visit someday for dinner? It does get rather lonely at home sometimes. $0",
-				"fall_Sat8_inlaw_Victor": "Hello there, dear. How are you and my son doing? I hope you two are happy! $h#$b# How about you two visit someday for dinner? It does get rather lonely at home sometimes. $0",
-				"summer_Thu8_inlaw_Victor": "To be fair, I didn't expect Victor to get married so early. It feels like yesterday when he graduated from Pellcar University. $0",
-				"winter_Thu8_inlaw_Victor": "To be fair, I didn't expect Victor to get married so early. It feels like yesterday when we first settled down in Pelican Town. $0",
-				"summer22_inlaw_Victor": "Hello there, dear. It's so nice to see you! $1#$b# You and Victor should come by tomorrow! We can celebrate my son's birthday together! $0#$b# Make sure to also invite my son's friends, if that's not too much trouble. $1",
+				"spring_Sat8": "{{i18n:Olivia.VictorxFarmer.03}}",
+				"fall_Sat8": "{{i18n:Olivia.VictorxFarmer.03}}",
+				"summer_Thu8": "{{i18n:Olivia.VictorxFarmer.04}}",
+				"winter_Thu8": "{{i18n:Olivia.VictorxFarmer.05}}",
+				"summer22": "{{i18n:Olivia.VictorxFarmer.06}}",
 			}
 		},
 		
@@ -80,25 +79,25 @@
 			"Target": "Characters/Dialogue/Sophia",
 			"When": {
 				"Language": "en",
-				"Relationship:Victor": "Dating"
+				"Relationship:Victor": "Dating, Engaged"
 			},
 			"Entries": {
-				"spring_Wed8": "Hey, you! $1#$b# You know, @, Victor is one of my closest friends. He's, like, one of the sweetest, gentlest guys one can ever meet. $0#$b# I know we're good friends, you! BUT if you hurt his feelings, say goodbye to your kneecaps, 'kay? $8",
-				"fall_Fri8": "Hey, you! *giggle* $8#$b# Would you and Vic like to visit someday? We could have an anime night together! $h",
-				"winter_Fri8": "Hey, you! *giggle* $8#$b# Would you and Vic like to visit someday? We could have an anime night together! $h",
+				"spring_Wed8": "{{i18n:Sophia.VictorxFarmer.01}}",
+				"fall_Fri8": "{{i18n:Sophia.VictorxFarmer.02}}",
+				"winter_Fri8": "{{i18n:Sophia.VictorxFarmer.02}}",
 			}
-		},
-		
+		},		
 		{
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Sophia",
 			"When": {
 				"Language": "en",
+				"Relationship:Victor": "Married"
 			},
 			"Entries": {
-				"spring_Sun8_inlaw_Victor": "Hey, you! $1#$b# Say, are you and Victor making an anniversary party? Will there be some delicious cake? *giggle* $8",
-				"summer_Tue8_inlaw_Victor": "Hey, you! $1#$b# Say, are you and Victor making an anniversary party? Will there be some delicious cake? *giggle* $8",
-				"fall3_inlaw_Victor": "Hey, @. $2#$b# Would... could you and Victor come by tomorrow, if it's not too much trouble? $12#$b# Thanks. $10",
+				"spring_Sun8": "{{i18n:Sophia.VictorxFarmer.03}}",
+				"summer_Tue8": "{{i18n:Sophia.VictorxFarmer.03}}",
+				"fall3": "{{i18n:Sophia.VictorxFarmer.04}}",
 			}
 		},
 		
@@ -109,26 +108,23 @@
 			"Target": "Characters/Dialogue/Sam",
 			"When": {
 				"Language": "en",
-				"Relationship:Victor": "Dating"
+				"Relationship:Victor": "Dating, Engaged"
 			},
 			"Entries": {
-				"summer_Thu6": "Oh hey, @! What's up? $1#$b# How are you and Vic doing? You know, you two look like a pretty good match! $h",
-				"fall_Thu6": "Oh hey, @! What's up? $1#$b# How are you and Vic doing? You know, you two look like a pretty good match! $h",
-				"spring_Sat8": "Hey there, @! How's it going? $0#$b# Would you and Vic like to visit for band practice someday! You two can listen on a new song we're working on! $1",
-				"summer_Sat8": "Hey there, @! How's it going? $0#$b# Would you and Vic like to visit for band practice someday! You two can listen on a new song we're working on! $1",
+				"summer_Thu6": "{{i18n:Sam.VictorxFarmer.01}}",
+				"spring_Sat8": "{{i18n:Sam.VictorxFarmer.02}}",
 			}
-		},
-		
+		},	
 		{
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Sam",
 			"When": {
 				"Language": "en",
+				"Relationship:Victor": "Married"
 			},
 			"Entries": {
-				"summer_Sun8_inlaw_Victor": "'Sup, @! $h#$b# Glad to see you and Vic happy together! $h",
-				"winter_Sun8_inlaw_Victor": "'Sup, @! $h#$b# Glad to see you and Vic happy together! $0#$b# Thank Yoba this hasn't turned into one of those romcom anime that take 300 episodes for actual progress to happen. My dude was thiiis close, though! $1",
-				"summer10_inlaw_Victor": "Hey, buddy! Ya got any fresh Anchovies? $h#$b# Oh? No reason in particular, really! $8#$e# Say, would Vic have anything against us dumping something into the potluck? $0",
+				"winter_Sun6": "{{i18n:Sam.VictorxFarmer.03}}",
+				"summer10_inlaw_Victor": "{{i18n:Sam.VictorxFarmer.04}}",
 			}
 		},
 		
@@ -139,29 +135,29 @@
 			"Target": "Characters/Dialogue/Sebastian",
 			"When": {
 				"Language": "en",
-				"Relationship:Victor": "Dating"
+				"Relationship:Victor": "Dating, Engaged"
 			},
 			"Entries": {
-				"spring_Wed4": "You're free to join us whenever we're playing Solarion Chronicles. Whatever. $0#$b# Just don't make out with Victor in the middle of the session. $0",
-				"fall_Wed4": "You're free to join us whenever we're playing Solarion Chronicles. Whatever. $0#$b# Just don't make out with Victor in the middle of the session. $0",
-				"summer_Fri6": "Not gonna lie, never thought Vic would get someone the fastest from all of us. $1#$b# He just didn't seem like someone all that much interested in a relationship, you know? $0#$b# Glad my friend is happy, though. $h",
-				"winter_Fri6": "Not gonna lie, never thought Vic would get someone the fastest from all of us. $1#$b# He just didn't seem like someone all that much interested in a relationship, you know? $0#$b# Glad my friend is happy, though. $h",
+				"fall_Wed4": "{{i18n:Sebastian.VictorxFarmer.01}}",
+				"summer_Fri6": "{{i18n:Sebastian.VictorxFarmer.02}}",
+				"winter_Fri6": "{{i18n:Sebastian.VictorxFarmer.02}}",
 			}
-		},
-		
+		},	
 		{
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Sebastian",
 			"When": {
 				"Language": "en",
+				"Relationship:Victor": "Married"
 			},
 			"Entries": {
-				"winter9_inlaw_Victor": "Hey, @. Would you mind if I stole Victor from you for a bit? $0#$b# Oh, no worries. Just need someone to go with me to Zuzu City and help me pick a new dice set. $1",
-				"fall_Mon8_inlaw_Victor": "So, how are you and Vic doing since you two got hitched? $0#$e# That's great to hear! You go and take care of my friend, 'kay? $1",
-				"spring_Mon8_inlaw_Victor": "So, how are you and Vic doing since you two got hitched? $0#$e# That's great to hear! You go and take care of my friend, 'kay? $1",
+				"winter9": "{{i18n:Sebastian.VictorxFarmer.03}}",
+				"spring_Mon8": "{{i18n:Sebastian.VictorxFarmer.04}}",
 			}
 		},
 		
+		
+		//// Outside the Friend Group ////
 		
 		// MARU //
 		{
@@ -171,8 +167,7 @@
 				"Language": "en",
 			},
 			"Entries": {
-				"spring_Sat4_inlaw_Victor": "Oh, hi @! How you're doing? $1#$b# Victor came by yesterday for one of my brother's tabletop gaming sessions. He's been gushing about you. $0#$e# Not gonna lie, it was pretty cute. $4",
-				"summer_Sat8_inlaw_Victor": "Oh, hi @! How you're doing? $1#$b# Victor came by yesterday for one of my brother's tabletop gaming sessions. He's been gushing about you. $0#$e# Not gonna lie, it was pretty cute. $4",
+				"summer_Sat8": "{{i18n:Maru.VictorxFarmer.01}}"
 			}
 		},
 		
@@ -183,11 +178,11 @@
 			"Target": "Characters/Dialogue/Marnie",
 			"When": {
 				"Language": "en",
+				"Relationship:Victor": "Married"
 			},
 			"Entries": {
-				"spring23_inlaw_Victor": "You know, hun, I sometimes envy you. You have now a husband who's pretty much head over heels for you. $3#$e# *sigh* And the one I like still doesn't want to go public... $2#$b# O-oh! You didn't hear that, did'ya hun? $4",
-				"fall_Sun6_inlaw_Victor": "I wish and and Victor many years of happy marriage! You two looks so cute together! $h",
-				"winter_Sun_inlaw_Victor": "I wish and and Victor many years of happy marriage! You two looks so cute together! $h",
+				"spring23_inlaw_Victor": "{{i18n:Marnie.VictorxFarmer.01}}",
+				"married_Victor": "{{i18n:Marnie.VictorxFarmer.02}}",
 			}
 		},
 		
@@ -200,8 +195,7 @@
 				"Language": "en",
 			},
 			"Entries": {
-				"spring_Fri6_inlaw_Victor": "Ah, hello there, @. It's nice to see you. $0#$b# How are you and that young lad Victor doing? I hope you two will be happy together for years to come. $1#$e# *sigh* Though I sometimes wish the lad had picked someone less... problematic. $2",
-				"summer_Wed_inlaw_Victor": "Ah, hello there, @. It's nice to see you. $0#$b# How are you and that young lad Victor doing? I hope you two will be happy together for years to come. $1#$e# *sigh* Though I sometimes wish the lad had picked someone less... problematic. $2",
+				"married_Victor": "{{i18n:Lewis.VictorxFarmer.01}}"
 			}
 		},
 		
@@ -214,8 +208,7 @@
 				"Language": "en",
 			},
 			"Entries": {
-				"fall_Sat_inlaw_Victor": "If you and Victor would like to have a romantic dinner at the Saloon, just say so. I'll take care of all the preparations! $1",
-				"spring_Sat8_inlaw_Victor": "If you and Victor would like to have a romantic dinner at the Saloon, just say so. I'll take care of all the preparations! $1",
+				"married_Victor": "{{i18n:Gus.VictorxFarmer.01}}"
 			}
 		},
 		
@@ -228,8 +221,7 @@
 				"Language": "en",
 			},
 			"Entries": {
-				"summer_Thu_inlaw_Victor": "I still remember how happy Olivia was when Victor first told her about the wedding. It was right when the three of of had our usual meeting. $0#$b# It was honestly so sweet! $1#$b# *sigh* I wish Abby would find someone one day. $2",
-				"winter6_inlaw_Victor": "I wish you and Victor many happy years together! $h",
+				"married_Victor": "{{i18n:Caroline.VictorxFarmer.01}}"
 			}
 		},
 		
@@ -242,8 +234,7 @@
 				"Language": "en",
 			},
 			"Entries": {
-				"winter_Thu4_inlaw_Victor": "Ah, hello there, my dear. $0#$b# I baked some cookies for you and Victor. I hope you two will enjoy them! $1#$b# Feel free to come by for some tea and cookies, you two. [223 223 223 223] $1",
-				"fall_Sun_inlaw_Victor": "Ah, hello there, my dear. $0#$b# I baked some cookies for you and Victor. I hope you two will enjoy them! $1#$b# Feel free to come by for some tea and cookies, you two. [223 223 223 223] $1",
+				"married_Victor": "{{i18n:Evelyn.VictorxFarmer.01}}"
 			}
 		},
 		
@@ -256,20 +247,7 @@
 				"Language": "en",
 			},
 			"Entries": {
-				"spring_Wed_inlaw_Victor": "Olivia is always beaming with happiness whenever she talks about you and Victor. $0#$b# You two looks like such a cute couple! *chuckle* $h",
-			}
-		},
-		
-		
-		// ELLIOTT //
-		{
-			"Action": "EditData",
-			"Target": "Characters/Dialogue/Elliott",
-			"When": {
-				"Language": "en",
-			},
-			"Entries": {
-				"fall_Mon8_inlaw_Victor": "Ah, good to see you, @. How are you and Victor faring? $0#$b# Does he like the books I borrowed him? Well have to meet up at the library someday. $1#$e# ...To be fair, I've heard from Sebastian that the lad wasn't really interested in romance novels before. $2#$b# I wonder what changed. $1",
+				"married_Victor": "{{i18n:Jodi.VictorxFarmer.01}}"
 			}
 		},
 		
@@ -282,8 +260,7 @@
 				"Language": "en",
 			},
 			"Entries": {
-				"summer_Sun6_inlaw_Victor": "Say, @, do you have any tips on how to attract someone? $2#$b# It's just that you got marriedso soon after moving to the valley! Please tell me your secrets... $0",
-				"winter_Sat_inlaw_Victor": "Say, @, do you have any tips on how to attract someone? $2#$b# It's just that you got marriedso soon after moving to the valley! Please tell me your secrets... $0",
+				"married_Victor": "{{i18n:Clint.VictorxFarmer.01}}"
 			}
 		},
 		
@@ -296,8 +273,7 @@
 				"Language": "en",
 			},
 			"Entries": {
-				"summer_Wed_inlaw_Victor": "Hey, @! Feel free to drop by the Saloon with Victor anytime! $1#$b# You guys could have a cute date night! And besides, it would be a good opportunity to wind down, relax with a cocktail and just catch up, you know? $1",
-				"fall15_inlaw_Victor": "Oh, @, are you going to show up at the fair tomorrow? $1#$b# Guess Victor will be happy that you're taking time off! $h",
+				"married_Victor": "{{i18n:Emily.VictorxFarmer.01}}"
 			}
 		},
 		
@@ -310,48 +286,7 @@
 				"Language": "en",
 			},
 			"Entries": {
-				"fall_Mon8_inlaw_Victor": "Thanks for letting me be the wedding photographer, @! It was so sweet of you! $1",
-				"summer_Sat8_inlaw_Victor": "Feel free to drop by anytime, @! $0#$b# Let's hang out and gossip with the other girls. Would be good to catch up! $h#$b# Oh, and I also tried this recipe for pink cake and I want you to be my taste tester! $h",
-			}
-		},
-		
-		
-		// PENNY //
-		{
-			"Action": "EditData",
-			"Target": "Characters/Dialogue/Penny",
-			"When": {
-				"Language": "en",
-			},
-			"Entries": {
-				"spring_Thu4_inlaw_Victor": "Hello, @. It's nice to see you on this lovely day. $0#$b# How are you doing lately? I hope you and Victor are happy. $1",
-				"fall_Thu8_inlaw_Victor": "Hello, @. It's nice to see you on this lovely day. $0#$b# How are you doing lately? I hope you and Victor are happy. $1",
-			}
-		},
-		
-		
-		// JAS //
-		{
-			"Action": "EditData",
-			"Target": "Characters/Dialogue/Jas",
-			"When": {
-				"Language": "en",
-			},
-			"Entries": {
-				"summer_Wed6_inlaw_Victor": "Mister @, why can't you and mister Victor have a wedding every week? ^ Miss @, why can't you and mister Victor have a wedding every week? $0#$b# I wanna eat Gus's special Pink Cake again! Honestly, it would be the bestest thing ever!! $1",
-			}
-		},
-		
-		
-		// VINCENT //
-		{
-			"Action": "EditData",
-			"Target": "Characters/Dialogue/Vincent",
-			"When": {
-				"Language": "en",
-			},
-			"Entries": {
-				"spring_Fri_inlaw_Victor": "Mister @, why wont you and Victor have another wedding? ^ Miss @, why won't you and Victor have another wedding? $0#$b# Everyone was having so much fun! And there was lots and lots of cake! $1#$b# Why not repeat it? $0",
+				"married_Victor": "{{i18n:Haley.VictorxFarmer.01}}"
 			}
 		},
 	]

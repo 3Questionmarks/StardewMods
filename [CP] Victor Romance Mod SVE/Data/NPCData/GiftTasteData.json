@@ -1,0 +1,17 @@
+{
+	"Changes": [
+		//// VICTOR ////
+		{
+			"LogName": "Gift tastes - Victor",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Update": "OnLocationChange, OnTimeChange",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+			},
+			"Entries": {
+				"Victor": "{{i18n:gifts.victor.love}}/224 787 444 551 FlashShifter.StardewValleyExpandedCP_Butterfish FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine Rafseazz.RSVCP_Ridge_Wild_Apple Rafseazz.RSVCP_Autumn_Drop_Berry FlashShifter.StardewValleyExpandedCP_Ancient_Fiber FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine Rafseazz.RSVCP_Summer_Mountain_Blessing/{{i18n:gifts.victor.like}}/254 346 348 349 392 394 Rafseazz.RSVCP_Ridge_Cherry Rafseazz.RSVCP_Mountain_Chico Rafseazz.RSVCP_Frost_Clump_Berry Rafseazz.RSVCP_Ridgeside_Clementine/{{i18n:gifts.victor.dislike}}/18 16 20 22 24 408 80 416 414 412 296 398 410 152 396 397 399/{{i18n:gifts.victor.hate}}/205 404 420 422 609 610 196 213 218 219 225 403 FlashShifter.StardewValleyExpandedCP_Super_Joja_Cola FlashShifter.StardewValleyExpandedCP_Mushroom_Colony FlashShifter.StardewValleyExpandedCP_Green_Mushroom Rafseazz.RSVCP_Ridge_Fruity_Plate Rafseazz.RSVCP_Honey_Glazed_Salad Rafseazz.RSVCP_Arugula_Roll Rafseazz.RSVCP_Zesty_Tuna Rafseazz.RSVCP_Highland_Chard/{{i18n:gifts.victor.neutral}}/184 186 180 182 174 176 424 426 Rafseazz.RSVCP_Mountain_Arugula/"
+			},
+		},
+	]
+}

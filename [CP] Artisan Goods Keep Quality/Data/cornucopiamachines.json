@@ -9,7 +9,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Alembic": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Essential Oil
 			"Action": "EditData",
@@ -19,7 +18,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Alembic": "true", },
-			"Priority": "Late + 10",
 		},
 		// Butter Churn
 		{// Butter
@@ -30,7 +28,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Large Butter
 			"Action": "EditData",
@@ -41,7 +38,6 @@
 				"MinStack": 2,
 			},
 			"When": { "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Goat Butter
 			"Action": "EditData",
@@ -51,7 +47,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Large Goat Butter
 			"Action": "EditData",
@@ -62,7 +57,6 @@
 				"MinStack": 2,
 			},
 			"When": { "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Coconut Butter
 			"Action": "EditData",
@@ -72,7 +66,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Cookie Butter
 			"Action": "EditData",
@@ -82,7 +75,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Honey Butter
 			"Action": "EditData",
@@ -92,7 +84,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Maple Butter
 			"Action": "EditData",
@@ -102,7 +93,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Margarine
 			"Action": "EditData",
@@ -112,7 +102,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Sun Butter
 			"Action": "EditData",
@@ -122,7 +111,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Nut Butter
 			"Action": "EditData",
@@ -132,7 +120,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Butter Default
 			"Action": "EditData",
@@ -142,7 +129,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		// Cheese Press
 		{// Nut Cheese
@@ -153,7 +139,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cheese Press": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Nut Cheese Default
 			"Action": "EditData",
@@ -163,7 +148,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cheese Press": "true", },
-			"Priority": "Late + 10",
 		},
 		// Compact Mill
 		{// Applesauce
@@ -174,7 +158,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Chili Powder
 			"Action": "EditData",
@@ -184,7 +167,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Gelling Powder
 			"Action": "EditData",
@@ -194,7 +176,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Orange Zest
 			"Action": "EditData",
@@ -204,7 +185,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Pine Nuts
 			"Action": "EditData",
@@ -214,7 +194,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Saffron
 			"Action": "EditData",
@@ -224,7 +203,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Salt
 			"Action": "EditData",
@@ -234,7 +212,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Shrimp Paste
 			"Action": "EditData",
@@ -244,7 +221,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
 		// Dehydrator
 		{// Hay
@@ -255,18 +231,7 @@
 				"CopyQuality": true,
 			},
 			"When": { "Dehydrator": "true", },
-			"Priority": "Late + 10",
 		},
-//		{// Prunes
-//			"Action": "EditData",
-//			"Target": "Data/Machines",
-//			"TargetField": [ "(BC)Dehydrator", "OutputRules", "Cornucopia_Prunes", "OutputItem", "#0" ],
-//			"Entries": {
-//				"CopyQuality": true,
-//			},
-//			"When": { "Dehydrator": "true", },
-//			"Priority": "Late + 10",
-//		},
 		{// Dried Herb
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -275,7 +240,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Dehydrator": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Dried Flower
 			"Action": "EditData",
@@ -285,7 +249,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Dehydrator": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Dried Vegetable
 			"Action": "EditData",
@@ -295,7 +258,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Dehydrator": "true", },
-			"Priority": "Late + 10",
 		},
 		// Deluxe Smoker
 		{// Dried Squid
@@ -306,7 +268,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Deluxe Smoker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Roasted Garlic
 			"Action": "EditData",
@@ -316,7 +277,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Deluxe Smoker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Roasted Sunflower
 			"Action": "EditData",
@@ -326,7 +286,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Deluxe Smoker": "true" },
-			"Priority": "Late + 10",
 		},
 		{// Roasted Pumpkin
 			"Action": "EditData",
@@ -336,7 +295,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Deluxe Smoker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Smoked Cheese
 			"Action": "EditData",
@@ -346,7 +304,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Deluxe Smoker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Smoked Small Egg
 			"Action": "EditData",
@@ -356,7 +313,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Deluxe Smoker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Smoked Large Egg
 			"Action": "EditData",
@@ -367,7 +323,6 @@
 				"MinStack": 2,
 			},
 			"When": { "Deluxe Smoker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Smoked Golden Egg
 			"Action": "EditData",
@@ -377,7 +332,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Deluxe Smoker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Smoked Ostrich Egg
 			"Action": "EditData",
@@ -387,7 +341,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Deluxe Smoker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Smoked Egg
 			"Action": "EditData",
@@ -397,7 +350,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Deluxe Smoker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Smoked Meat
 			"Action": "EditData",
@@ -407,7 +359,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Deluxe Smoker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Smoked Salmon
 			"Action": "EditData",
@@ -417,7 +368,6 @@
 				"CopyQuality": true,
 			},
 			"Priority": "Late + 10",
-			"When": { "Deluxe Smoker": "true", },
 		},
 		{// Smoked Fish
 			"Action": "EditData",
@@ -427,7 +377,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Deluxe Smoker": "true", },
-			"Priority": "Late + 10",
 		},
 		// Drying Rack
 		{// Hay
@@ -438,7 +387,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Drying Rack": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Dried Flower
 			"Action": "EditData",
@@ -448,7 +396,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Drying Rack": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Dried Herb
 			"Action": "EditData",
@@ -458,7 +405,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Drying Rack": "true", },
-			"Priority": "Late + 10",
 		},
 		// Extruder
 		{// Beeswax
@@ -468,8 +414,6 @@
 			"Entries": {
 				"CopyQuality": true,
 			},
-			"When": { "Extruder": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Glass Noodles
 			"Action": "EditData",
@@ -479,7 +423,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Extruder": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Rice Noodles
 			"Action": "EditData",
@@ -489,7 +432,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Extruder": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Wheat Noodles
 			"Action": "EditData",
@@ -499,28 +441,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Extruder": "true", },
-			"Priority": "Late + 10",
-		},
-		// Fish Smoker
-		{// Dried Squid
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)FishSmoker", "OutputRules", "Cornucopia_DriedSquid", "OutputItem", "#0" ],
-			"Entries": {
-				"CopyQuality": true,
-			},
-			"When": { "Fish Smoker": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Smoked Salmon
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)FishSmoker", "OutputRules", "Cornucopia_SmokedSalmon", "OutputItem", "#0" ],
-			"Entries": {
-				"CopyQuality": true,
-			},
-			"When": { "Fish Smoker": "true", },
-			"Priority": "Late + 10",
 		},
 		// Juicer
 		{// Juice
@@ -531,7 +451,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Juicer": "true", },
-			"Priority": "Late + 10",
 		},
 		// Keg
 		{// Coconut Milk
@@ -542,7 +461,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Keg": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Nut Milk
 			"Action": "EditData",
@@ -552,134 +470,64 @@
 				"CopyQuality": true,
 			},
 			"When": { "Keg": "true", },
-			"Priority": "Late + 10",
 		},
 		// Mayo Machine
-		{// Garlic Mayo Large Brown Egg
+		{// Garlic Mayo Large Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseLargeBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseLargeEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 				"MinStack": 2,
 			},
 			"When": { "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Garlic Mayo Small Brown Egg
+		{// Garlic Mayo Small Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseSmallBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseSmallEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 			},
 			"When": { "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Garlic Mayo Large White Egg
+		{// Spicy Mayo Large Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseLargeWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-				"MinStack": 2,
-			},
-			"When": { "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Garlic Mayo Small White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseSmallWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-			},
-			"When": { "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Spicy Mayo Large Brown Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseLargeBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseLargeEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 				"MinStack": 2,
 			},
 			"When": { "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Spicy Mayo Small Brown Egg
+		{// Spicy Mayo Small Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseSmallBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseSmallEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 			},
 			"When": { "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Spicy Mayo Large White Egg
+		{// Truffle Mayo Large Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseLargeWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-				"MinStack": 2,
-			},
-			"When": { "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Spicy Mayo Small White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseSmallWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-			},
-			"When": { "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Truffle Mayo Large Brown Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseLargeBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseLargeEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 				"MinStack": 2,
 			},
 			"When": { "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Truffle Mayo Small Brown Egg
+		{// Truffle Mayo Small Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseSmallBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseSmallEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 			},
 			"When": { "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Truffle Mayo Large White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseLargeWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-				"MinStack": 2,
-			},
-			"When": { "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Truffle Mayo Small White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseSmallWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-			},
-			"When": { "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
 		// Oil Maker
 		{// Chili Oil
@@ -690,7 +538,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Oil Maker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Coconut Oil
 			"Action": "EditData",
@@ -700,7 +547,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Oil Maker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Fish Oil
 			"Action": "EditData",
@@ -710,7 +556,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Oil Maker": "true", },
-			"Priority": "Late + 10",
 		},
 		// Preserves Jar
 		{// Century Egg
@@ -721,7 +566,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Preserves Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Fish Sauce
 			"Action": "EditData",
@@ -731,7 +575,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Preserves Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Garum
 			"Action": "EditData",
@@ -741,49 +584,44 @@
 				"CopyQuality": true,
 			},
 			"When": { "Preserves Jar": "true", },
-			"Priority": "Late + 10",
 		},
-//		{// Pickled Chicken Eggs (these need their id fixed on the other end, keeping for when the next update drops)
-//			"Action": "EditData",
-//			"Target": "Data/Machines",
-//			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsChicken", "OutputItem", "#0" ],
-//			"Entries": {
-//				"CopyQuality": true,
-//			},
-//			"When": { "Preserves Jar": "true", },
-//			"Priority": "Late + 10",
-//		},
-//		{// Pickled Large Chicken Eggs
-//			"Action": "EditData",
-//			"Target": "Data/Machines",
-//			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsChickenLarge", "OutputItem", "#0" ],
-//			"Entries": {
-//				"CopyQuality": true,
-//				"MinStack": 2,
-//			},
-//			"When": { "Preserves Jar": "true", },
-//			"Priority": "Late + 10",
-//		},
-//		{// Pickled Gold Eggs
-//			"Action": "EditData",
-//			"Target": "Data/Machines",
-//			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsGold", "OutputItem", "#0" ],
-//			"Entries": {
-//				"CopyQuality": true,
-//			},
-//			"When": { "Preserves Jar": "true", },
-//			"Priority": "Late + 10",
-//		},
-//		{// Pickled Ostrich Eggs
-//			"Action": "EditData",
-//			"Target": "Data/Machines",
-//			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsOstrich", "OutputItem", "#0" ],
-//			"Entries": {
-//				"CopyQuality": true,
-//			},
-//			"When": { "Preserves Jar": "true", },
-//			"Priority": "Late + 10",
-//		},
+		{// Pickled Chicken Eggs
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsChicken", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Preserves Jar": "true", },
+		},
+		{// Pickled Large Chicken Eggs
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsChickenLarge", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+				"MinStack": 2,
+			},
+			"When": { "Preserves Jar": "true", },
+		},
+		{// Pickled Gold Eggs
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsGold", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Preserves Jar": "true", },
+		},
+		{// Pickled Ostrich Eggs
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_PickledEggsOstrich", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Preserves Jar": "true", },
+		},
 		{// Pickled Eggs
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -792,7 +630,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Preserves Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Pickled Fish
 			"Action": "EditData",
@@ -802,7 +639,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Preserves Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Sauerkraut
 			"Action": "EditData",
@@ -812,7 +648,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Preserves Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		// Vinegar Keg
 		{// Vinegar
@@ -823,7 +658,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Vinegar Keg": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Vinegar Unmilled Rice
 			"Action": "EditData",
@@ -833,7 +667,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Vinegar Keg": "true", },
-			"Priority": "Late + 10",
 		},
 		// Wax Barrel
 		{// Snack Cheese
@@ -844,7 +677,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Wax Barrel": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Wax Melts
 			"Action": "EditData",
@@ -854,7 +686,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Wax Barrel": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Candles
 			"Action": "EditData",
@@ -864,7 +695,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Wax Barrel": "true", },
-			"Priority": "Late + 10",
 		},
 		// Yogurt Jar
 		{// Gold Yogurt
@@ -876,7 +706,6 @@
 				"MinStack": 2,
 			},
 			"When": { "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Goat Yogurt
 			"Action": "EditData",
@@ -886,7 +715,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Goat Gold Yogurt
 			"Action": "EditData",
@@ -897,7 +725,6 @@
 				"MinStack": 3,
 			},
 			"When": { "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Yogurt
 			"Action": "EditData",
@@ -907,7 +734,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Wild Honey Yogurt Iridium
 			"Action": "EditData",
@@ -917,7 +743,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Wild Honey Yogurt Gold
 			"Action": "EditData",
@@ -927,7 +752,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Wild Honey Yogurt
 			"Action": "EditData",
@@ -937,7 +761,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Flavored Honey Yogurt Iridium
 			"Action": "EditData",
@@ -947,7 +770,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Flavored Honey Yogurt Gold
 			"Action": "EditData",
@@ -957,7 +779,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Flavored Honey Yogurt
 			"Action": "EditData",
@@ -967,7 +788,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Flavored Yogurt Iridium
 			"Action": "EditData",
@@ -977,7 +797,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Flavored Yogurt Gold
 			"Action": "EditData",
@@ -987,7 +806,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Flavored Yogurt
 			"Action": "EditData",
@@ -997,7 +815,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		// Cornucopia Essential Crops
 		{// Cocoa Butter
@@ -1008,7 +825,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Peanut Butter
 			"Action": "EditData",
@@ -1018,7 +834,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Soy Butter
 			"Action": "EditData",
@@ -1028,7 +843,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Miso Paste
 			"Action": "EditData",
@@ -1038,7 +852,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Paprika
 			"Action": "EditData",
@@ -1048,7 +861,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Pepper
 			"Action": "EditData",
@@ -1058,7 +870,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Zoodles
 			"Action": "EditData",
@@ -1068,7 +879,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Extruder": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Soy Milk
 			"Action": "EditData",
@@ -1078,133 +888,63 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Keg": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Avocado Mayo Large Brown Egg
+		{// Avocado Mayo Large Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseLargeBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseLargeEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 				"MinStack": 2,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Avocado Mayo Small Brown Egg
+		{// Avocado Mayo Small Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseSmallBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseSmallEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Avocado Mayo Large White Egg
+		{// Black Pepper Mayo Large Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseLargeWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-				"MinStack": 2,
-			},
-			"When": { "Cornucopia Essential Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Avocado Mayo Small White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseSmallWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-			},
-			"When": { "Cornucopia Essential Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Black Pepper Mayo Large Brown Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseLargeBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseLargeEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 				"MinStack": 2,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Black Pepper Mayo Small Brown Egg
+		{// Black Pepper Mayo Small Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseSmallBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseSmallEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Black Pepper Mayo Large White Egg
+		{// Olive Oil Mayo Large Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseLargeWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-				"MinStack": 2,
-			},
-			"When": { "Cornucopia Essential Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Black Pepper Mayo Small White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseSmallWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-			},
-			"When": { "Cornucopia Essential Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Olive Oil Mayo Large Brown Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseLargeBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseLargeEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 				"MinStack": 2,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Olive Oil Mayo Small Brown Egg
+		{// Olive Oil Mayo Small Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseSmallBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseSmallEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Olive Oil Mayo Large White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseLargeWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-				"MinStack": 2,
-			},
-			"When": { "Cornucopia Essential Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Olive Oil Mayo Small White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseSmallWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-			},
-			"When": { "Cornucopia Essential Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Avocado Oil
 			"Action": "EditData",
@@ -1214,7 +954,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Oil Maker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Brined Olives
 			"Action": "EditData",
@@ -1224,7 +963,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Preserves Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Pickle Spears
 			"Action": "EditData",
@@ -1234,7 +972,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Preserves Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Soy Sauce
 			"Action": "EditData",
@@ -1244,7 +981,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Preserves Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Stinky Tofu
 			"Action": "EditData",
@@ -1254,7 +990,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Preserves Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Chocolate Yogurt Iridium
 			"Action": "EditData",
@@ -1264,7 +999,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Chocolate Yogurt Gold
 			"Action": "EditData",
@@ -1274,7 +1008,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Chocolate Yogurt
 			"Action": "EditData",
@@ -1284,7 +1017,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Essential Crops": "true", "Yogurt Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		// Cornucopia Extended Crops
 		{// Granola Butter
@@ -1295,7 +1027,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Extended Crops": "true", "Butter Churn": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Buckwheat Noodles
 			"Action": "EditData",
@@ -1305,7 +1036,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Extended Crops": "true", "Extruder": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Semolina Noodles
 			"Action": "EditData",
@@ -1315,7 +1045,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Extended Crops": "true", "Extruder": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Whole Grain Noodles
 			"Action": "EditData",
@@ -1325,7 +1054,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Extended Crops": "true", "Extruder": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Oat Milk
 			"Action": "EditData",
@@ -1335,49 +1063,25 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Extended Crops": "true", "Keg": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Wasabi Mayo Large Brown Egg
+		{// Wasabi Mayo Large Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseLargeBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseLargeEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 				"MinStack": 2,
 			},
 			"When": { "Cornucopia Extended Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Wasabi Mayo Small Brown Egg
+		{// Wasabi Mayo Small Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseSmallBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseSmallEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Extended Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Wasabi Mayo Large White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseLargeWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-				"MinStack": 2,
-			},
-			"When": { "Cornucopia Extended Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Wasabi Mayo Small White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseSmallWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-			},
-			"When": { "Cornucopia Extended Crops": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Kimchi
 			"Action": "EditData",
@@ -1387,7 +1091,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Extended Crops": "true", "Preserves Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		// Cornucopia Extended Trees
 		{// Lemon Zest
@@ -1398,7 +1101,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Extended Trees": "true", "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Lime Zest
 			"Action": "EditData",
@@ -1408,7 +1110,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Extended Trees": "true", "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Chewing Gum
 			"Action": "EditData",
@@ -1418,7 +1119,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Extended Trees": "true", "Extruder": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Umeboshi
 			"Action": "EditData",
@@ -1428,7 +1128,6 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Extended Trees": "true", "Preserves Jar": "true", },
-			"Priority": "Late + 10",
 		},
 		// Cornucopia Herbs
 		{// Aloe Gel
@@ -1439,49 +1138,25 @@
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Herbs": "true", "Compact Mill": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Dill Mayo Large Brown Egg
+		{// Dill Mayo Large Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseLargeBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseLargeEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 				"MinStack": 2,
 			},
 			"When": { "Cornucopia Herbs": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
-		{// Dill Mayo Small Brown Egg
+		{// Dill Mayo Small Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseSmallBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseSmallEgg" ],
 			"Entries": {
 				"CopyQuality": true,
 			},
 			"When": { "Cornucopia Herbs": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Dill Mayo Large White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseLargeWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-				"MinStack": 2,
-			},
-			"When": { "Cornucopia Herbs": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
-		},
-		{// Dill Mayo Small White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseSmallWhiteEgg" ],
-			"Entries": {
-				"CopyQuality": true,
-			},
-			"When": { "Cornucopia Herbs": "true", "Mayo Machine": "true", },
-			"Priority": "Late + 10",
 		},
 	],
 }

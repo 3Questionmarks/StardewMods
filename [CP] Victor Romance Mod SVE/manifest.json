@@ -1,8 +1,8 @@
 {
 	"Name": "[CP] Victor Romance Mod SVE",
 	"Author": "VeronaLuna",
-	"Version": "1.4.6",
-	"Description": "Adds more romantic pre-marriage dialogue for Victor.",
+	"Version": "1.4.7",
+	"Description": "Adds more romantic pre-marriage and festival dialogue for Victor.",
 	"UniqueID": "VeronaLuna.Victor",
 	"ContentPackFor": {
 		"UniqueID": "Pathoschild.ContentPatcher",
@@ -12,7 +12,7 @@
 	"Dependencies": [
 	   {
 		  "UniqueID": "FlashShifter.StardewValleyExpandedCP",
-		  "MinimumVersion": "1.14.41",
+		  "MinimumVersion": "1.14.46",
 	   },
 	]
 }

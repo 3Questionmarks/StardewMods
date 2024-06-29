@@ -165,6 +165,11 @@
             "Target": "Characters/Dwarf",
             "FromFile": "assets/sprites/Dwarf.png"
         },
+       /* {
+            "Action": "Load",
+            "Target": "Characters/schedules/Dwarf",
+            "FromFile": "assets/schedule.json"
+        },*/
         {
             "LogName": "New lines of dialogue",
             "Action": "Include",

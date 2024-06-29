@@ -19,7 +19,6 @@
 				],
 			},
 			"When": { "Keg": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Porter Reduce
 			"Action": "EditData",
@@ -40,7 +39,6 @@
 				],
 			},
 			"When": { "Keg": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Sparkling Wine Reduce
 			"Action": "EditData",
@@ -61,7 +59,6 @@
 				],
 			},
 			"When": { "Keg": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Stout Reduce
 			"Action": "EditData",
@@ -82,7 +79,6 @@
 				],
 			},
 			"When": { "Keg": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Tofu Reduce
 			"Action": "EditData",
@@ -103,7 +99,6 @@
 				],
 			},
 			"When": { "Cheese Press": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Cotton Cloth Reduce
 			"Action": "EditData",
@@ -124,7 +119,6 @@
 				],
 			},
 			"When": { "Loom": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Canola Flower Oil Reduce
 			"Action": "EditData",
@@ -145,7 +139,6 @@
 				],
 			},
 			"When": { "Oil Maker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Peanut Oil Reduce
 			"Action": "EditData",
@@ -166,7 +159,6 @@
 				],
 			},
 			"When": { "Oil Maker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Seeds Oil Reduce
 			"Action": "EditData",
@@ -187,7 +179,6 @@
 				],
 			},
 			"When": { "Oil Maker": "true", },
-			"Priority": "Late + 10",
 		},
 		{// Olive Oil Reduce
 			"Action": "EditData",
@@ -208,7 +199,6 @@
 				],
 			},
 			"When": { "Oil Maker": "true", },
-			"Priority": "Late + 10",
 		},
 	],
 }

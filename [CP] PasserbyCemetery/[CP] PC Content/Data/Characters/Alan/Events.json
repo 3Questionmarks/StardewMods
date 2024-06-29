@@ -1,12 +1,20 @@
 {
 "Changes": [
 /************************************************
-Introduction 
-************************************************/
-/************************************************
 One Heart
 ************************************************/ 
+{
+            "Action": "EditData",
+            "Target": "Data/Events/Mountain",
+            "Entries": {
+                "{{ModID}}_TheTwins/t 1200 1600/f FC.Alan 250/e {{ModID}}_StoneIntroduction/!A FC.ClearEntrance": "breezy/-1000 -1000/farmer 48 7 1 FC.Alan 53 7 1 FC.Boxy 59 9 2 FC.Zuuie 57 1 2/viewport 54 7 clamp true/skippable/addConversationTopic FC.TheTwins 6/showFrame FC.Zuuie 16/showFrame FC.Boxy 16/addTemporaryActor FC.Mellie 16 16 55 6 3 false Character/addTemporaryActor FC.Twinkle 16 16 56 7 3 false Character/changeName FC.Mellie Mellie/changeName FC.Twinkle Twinkle/advancedMove farmer false 3 0 1 10000 0 1 1 1800 3 0 4 10/pause 1000/playSound junimoMeep1/pause 250/playSound junimoMeep1/jump FC.Twinkle/pause 350/textAbovehead FC.Mellie \"{{i18n:TheTwins.00}}\"/pause 350/playsound junimoMeep1/jump FC.Twinkle/pause 700/speak FC.Alan \"{{i18n:TheTwins.01}}\"/pause 600/emote FC.Mellie 28/pause 600/textAbovehead FC.Twinkle \"{{i18n:TheTwins.02}}\"/pause 750/speak FC.Mellie \"{{i18n:TheTwins.03}}\"/pause 1000/faceDirection FC.Alan 2/jump FC.Alan 5/speak FC.Alan \"{{i18n:TheTwins.04}}\"/pause 350/faceDirection FC.Alan 1/pause 350/faceDirection FC.Alan 2/pause 300/speak FC.Alan \"{{i18n:TheTwins.05}}\"/pause 1000/question fork1 \"{{i18n:TheTwins.06}}\"/fork FC.EmbarrassAlan/jump FC.Alan 5/pause 350/speak FC.Alan \"{{i18n:TheTwins.07}}\"/pause 350/faceDirection FC.Alan 1/faceDirection farmer 1/pause 400/playSound junimoMeep1/speak FC.Alan \"{{i18n:TheTwins.08}}\"/pause 1000/emote FC.Mellie 28/pause 350/speak FC.Mellie \"{{i18n:TheTwins.09}}\"/pause 400/advancedMove FC.Boxy false 0 -1 1 10 4 0 1 10 0 3 1 10 14 0 2 10/quickQuestion {{i18n:TheTwins.10}}(break)speak FC.Twinkle \"{{i18n:TheTwins.11}}\"\\friendship FC.Alan 3(break)speak FC.Mellie \"{{i18n:TheTwins.12}}\"\\friendship FC.Alan 3/pause 400/playSound junimoMeep1/speak FC.Twinkle \"{{i18n:TheTwins.13}}\"/pause 500/textAbovehead FC.Alan \"{{i18n:TheTwins.14}}\"/faceDirection farmer 0/pause 450/speak FC.Alan \"{{i18n:TheTwins.15}}\"/pause 350/move FC.Alan 0 -1 1/move FC.Alan 1 0 1/showFrame FC.Alan 36/pause 300/speak FC.Alan \"{{i18n:TheTwins.16}}\"/pause 250/speak FC.Mellie \"{{i18n:TheTwins.17}}\"/pause 200/pause 1000/playSound healSound/pause 250/move FC.Alan -1 0 1/textAbovehead FC.Alan \"{{i18n:TheTwins.18}}\"/pause 350/speak FC.Alan \"{{i18n:TheTwins.19}}\"/pause 350/speak FC.Mellie \"{{i18n:TheTwins.20}}\"/pause 350/playSound junimoMeep1/jump FC.Twinkle 5/playSound junimoMeep1/pause 250/playSound junimoMeep1/faceDirection FC.Alan 2/speak FC.Alan \"{{i18n:TheTwins.21}}\"/faceDirection FC.Zuuie 2/emote FC.Zuuie 40/friendship FC.Alan 10/pause 200/viewport move 1 -1 6000000/globalFade/viewport -1000 -1000/end",
 
+                "FC.EmbarrassAlan": "addConversationTopic FC.LieToAlan 12/pause 1000/emote FC.Alan 12/jump FC.Alan 5/pause 350/speak FC.Alan \"{{i18n:TheTwins.22}}\"/pause 350/faceDirection FC.Alan 1/pause 350/emote FC.Twinkle 12/pause 350/speak FC.Twinkle \"{{i18n:TheTwins.23}}\"/pause 350/faceDirection FC.Alan 2/pause 350/speak FC.Alan \"{{i18n:TheTwins.24}}\"/pause 350/speak FC.Mellie \"{{i18n:TheTwins.25}}\"/faceDirection FC.Mellie 2/quickQuestion {{i18n:TheTwins.26}}(break)speak FC.Alan \"{{i18n:TheTwins.27}}\"\\friendship FC.Alan -3(break)speak FC.Alan \"{{i18n:TheTwins.28}}\"\\friendship FC.Alan 2/pause 400/playSound junimoMeep1/speak FC.Twinkle \"J{{i18n:TheTwins.29}}\"/pause 500/textAbovehead FC.Alan \"{{i18n:TheTwins.30}}\"/faceDirection farmer 1/faceDirection FC.Alan 1/pause 450/jump FC.Alan 5/speak FC.Alan \"{{i18n:TheTwins.31}}\"/pause 350/move FC.Alan 0 -1 1/move FC.Alan 1 0 1/showFrame FC.Alan 36/pause 300/speak FC.Alan \"{{i18n:TheTwins.32}}\"/pause 250/speak FC.Mellie \"{{i18n:TheTwins.33}}\"/pause 200/pause 1000/playSound healSound/pause 250/move FC.Alan -1 0 1/textAbovehead FC.Alan \"{{i18n:TheTwins.34}}\"/pause 350/speak FC.Alan \"{{i18n:TheTwins.35}}\"/pause 350/speak FC.Mellie \"{{i18n:TheTwins.36}}\"/pause 350/playSound junimoMeep1/jump FC.Twinkle 5/playSound junimoMeep1/pause 250/playSound junimoMeep1/faceDirection FC.Alan 2/speak FC.Alan \"{{i18n:TheTwins.37}}\"/faceDirection FC.Zuuie 2/emote FC.Zuuie 40/friendship FC.Alan -10/pause 200/viewport move 1 -1 6000000/globalFade/viewport -1000 -1000/end",
+             },
+                "When": {
+    "HasFlag|contains=canReadJunimoText": true,
+             }
+        }, 
 /************************************************
 2 Hearts
 ************************************************/

@@ -2,7 +2,7 @@
   "Name": "Passerby Cemetery",
    "Author": "Fellowclown",
    "Description": "Fellowclown's expansion mod",
-   "Version": "1.43.0", ///Version of your mod
+   "Version": "1.48.0", ///Version of your mod
    "UniqueID": "Fellowclown.PC", 
  
    "ContentPackFor": {
@@ -41,6 +41,9 @@
         },
             {
             "UniqueID": "shekurika.worldMaps",  "IsRequired": false 
+        },
+             {
+            "UniqueID": "selph.ExtraAnimalConfig",  "IsRequired": false 
         },
     ]
 }
