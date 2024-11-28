@@ -3,13 +3,13 @@
 				//Botanist. Loves flowers, video games. Friend with Moira, Haley.
 				"AsterDialogueIntroduction": "Hi, I'm Aster! Nice to meet you.#$b#I conduct botanical studies here in Mount Vapius. There are many interesting kinds of flora, and some plants only grow here.",
 				"AsterDialogueMon": "We don't have a lot of people living here, but I like the serenity. And with the internet I'm still connected to the world!",
-				"AsterDialogueTue": "I like planting seeds. It's hard to wait, but seeing the small sprout is so satisfying.",
-				"AsterDialogueTueR02": "Demetrius sent me some data I have to review, so I can compare the results to mine.#$b#It's interesting, but numbers aren't my strong suit. Still, they come with the job...",//To add
+				"AsterDialogueTueR01": "I like planting seeds. It's hard to wait, but seeing the small sprout is so satisfying.",
+				"AsterDialogueTueR02": "Demetrius sent me some data I have to review, so I can compare the results to mine.#$b#It's interesting, but numbers aren't my strong suit. Still, they come with the job...",
 				"AsterDialogueWed": "Do you like re-reading books? I like a new book every now and then, but there's something comforting about reading a familiar book again.#$b#Like a moment with an old friend.",
 				"AsterDialogueThu": "I should tidy my bedroom. There're books everywhere.",
 				"AsterDialogueFri": "I like walking. I can think without being overwhelmed, and a change of scenery helps me when I'm stuck.",
-				"AsterDialogueSat": "I have a stall at the market. Mostly, I sell the seeds of flowers I grow.",
-				"AsterDialogueSatR02": "$query WEATHER Here Rain#Plants need rain, but I admit it's not my favorite market day's weather.|Sometimes we still have snow here during spring.",//To add
+				"AsterDialogueSatR01": "I have a stall at the market. Mostly, I sell the seeds of flowers I grow.",
+				"AsterDialogueSatR02": "$query WEATHER Here Rain#Plants need rain, but I admit it's not my favorite market day's weather.|Sometimes we still have snow here during spring.",
 				"AsterDialogueSun": "My job is something I don't do on specific days, so at least the approach of Monday isn't too bad.",
 				//2
 				"AsterDialogueMon2": "When I don't have energy, Maddy often does more work to compensate, but I try to find a way to balance things.#$b#Chores shouldn't become a burden for one person to carry alone.#$e#The other day, I told Haley that maybe she could put forth some effort in that area.#$b#She wasn't happy, but I think she'll think about it... Maybe not soon, though.",
@@ -18,13 +18,13 @@
 				"AsterDialogueWed2": "Storms here can be pretty intense. I still remember one summer storm when I was here alone for the first time.", 
 				"AsterDialogueThu2": "I need to send some documents about my research to Professor Livreau and Demetrius, but my internet is wonky today.",
 				"AsterDialogueFri2": "$query !PLAYER_HAS_MAIL Current Lumisteria.MtVapius_GiftReceivedFlag Any, SEASON Spring#Hey, look! I found a wild primrose! My grandpa painted some for me when I was younger.#Watching him spending so much time on the details was fascinating.[Lumisteria.MtVapius_Primrose]#$action AddMail Current Lumisteria.MtVapius_GiftReceivedFlag received|Wild primroses grow around here during spring. My grandpa painted some for me when I was younger.#Watching him spending so much time on the details was fascinating.",
-				"AsterDialogueSat2": "I have family still living not far from here. One of my grandmother's sisters lives in Willow-Upon-Icine.#$b#Granny has a lot of siblings.",
-				"AsterDialogueSat2R02": "It was a great opportunity to work in the Reserve. Before that, I worked in various places, but not as big at this one.",//To add
+				"AsterDialogueSat2R01": "I have family still living not far from here. One of my grandmother's sisters lives in Willow-Upon-Icine.#$b#Granny has a lot of siblings.",
+				"AsterDialogueSat2R02": "It was a great opportunity to work in the Reserve. Before that, I worked in various places, but not as big at this one.",
 				"AsterDialogueSun2": "Moïra is always getting her nails painted. She offered to paint mine, but gardening is quite harsh on them sometimes.",
 				//4
 				"AsterDialogueMon4": "My grandparents used to live here, but they had to move to the city recently.#$b#They have easier access to medical care.#$e#But they worried about the house, so that's why Maddy and I live here now.",
-				"AsterDialogueTue4": "I buy seed packets myself too, for the flowers I don't have seeds for yet. They're like small treasures, full of promise.#$b#However, I probably buy too many of these.",
-				"AsterDialogueTue4R02": "How many time do someone can forget to take the trash out during a day? Because I feel like I can get a local record.",//To add
+				"AsterDialogueTue4R01": "I buy seed packets myself too, for the flowers I don't have seeds for yet. They're like small treasures, full of promise.#$b#However, I probably buy too many of these.",
+				"AsterDialogueTue4R02": "How many time do someone can forget to take the trash out during a day? Because I feel like I can get a local record.",
 				"AsterDialogueWed4": "What am I reading? 'Tapestry of Wonder' -- it's a collection of fantasy novels about ordinary people encountering magical situations.#$e#I find it refreshing not having princes or nobles or secret heirs.",
 				"AsterDialogueThu4": "I found this old magazine when cleaning my room.#$b#So of course I stopped cleaning to read it.",
 				"AsterDialogueFri4": "Moïra loves those delicate silk flowers that grow in the forest.%revealtaste:MoiraDuboisVMV:Lumisteria.MtVapius_WoodSilkFlower#$b#She's making dye out of them, a practice that was lost for a while. Isn't it cool she's revived it?",//gift taste //Logo - if the tradition/practice was lost, she couldn't be keeping it alive, she'd have to revive it.
@@ -63,7 +63,14 @@
 				"AsterDialogueFri10": "TODO",
 				"AsterDialogueSat10": "TODO",
 				"AsterDialogueSun10": "TODO",
-				
+				//10 Romantic
+				"AsterDialogueMon10Romantic": "It's nice seeing you. I missed our discussions.",
+				"AsterDialogueTue10Romantic": "%Aster puts a flower behind your ear. [597]#$b#This looks good on you.",
+				"AsterDialogueWed10Romantic": "I'm quite happy today. I learned to enjoy when that happens.",
+				"AsterDialogueThu10Romantic": "TODO",
+				"AsterDialogueFri10Romantic": "I have a bit more energy than usual recently. Would you like to go on a walk with me?",
+				"AsterDialogueSat10Romantic": "I cleaned my greenhouse and sowed some seeds. And you, anything nice to tell?",
+				"AsterDialogueSun10Romantic": "TODO",
 				
 				
 				//Spring
@@ -104,7 +111,7 @@
 				"AsterDialoguefall_Tue6": "I saw a pretty moss just a moment ago. There's so much we don't know about them yet.",
 				"AsterDialoguefall_Fri6": "Chilly wind today reminds me of one night in Calico Desert, during one of my investigations.#$b#Professor Livreau and I needed to study a flower that blossomed only during the new moon.",
 				"AsterDialoguefall_Mon8": "$query {{ForageProgress}}#I spotted some Red Bouquets in the prairie of the Reserve the other day.|At regular intervals, my colleagues of the Reserve and I are doing a count of the specimens of plants.",
-				"AsterDialoguefall_Wed8": "Mariam gave me some songs from Li to add to my dance routine playlist. Any suggestion?",//to add
+				"AsterDialoguefall_Wed8": "Mariam gave me some songs from Li to add to my dance routine playlist. And you, do you have any suggestion?",
 				//Winter
 				
 				"AsterDialoguewinter_Tue": "There's still plants to observe during winter. Often they slow down or stop growing, but some bear flowers or fruits.",
@@ -209,6 +216,22 @@
 				"AsterScheduleHaleyVisitingHamletPond000": "Oh, Haley, if I forget, I should send you this link to the latest song by Li, she posted it online.",
 
 
+				"AsterScheduleJobMountain_spring000": "I'm helping Demetrius with some projects, for time to time. Collecting samples or data.",
+				"AsterScheduleJobMountain_spring001": "The spring in the valley starts earlier than in Glimsap.#$e#I note the time of blossom of plants that grows both here and in Glimsap to compare them.",
+				"AsterScheduleJobMountain_spring002": "I believe the reason some plants grow only in Glimsap is related to the mycorrhiza you can find in the soil.#$e#But there's still so much to discover!",
+				"AsterScheduleJobMountain_spring003": "It's cool being here, I can see Haley more often.",
+				"AsterScheduleJobMountain_summer000": "I like the perfume of summer flowers in the evening.",
+				"AsterScheduleJobMountain_summer001": "The amount of knowledge Demetrius has on plants is impressive.",
+				"AsterScheduleJobMountain_summer002": "When I work in Pelican Town, Evelyn often offers me tea.",
+				"AsterScheduleJobMountain_summer003": "Evelyn's gardens are nice to watch pollinators' work.",
+				"AsterScheduleJobMountain_fall000": "The loss of chlorophyll in leaves in autumn is what reveal the other pigments, but they were alreade here.",
+				"AsterScheduleJobMountain_fall001": "Some plants propagate by having animals eating their fruits. Their seeds are sturdy enough to survive the digestion.",
+				"AsterScheduleJobMountain_fall002": "What we see about mushrooms is like the top of the iceberg. Most fungal life is invisible.#$e#I have a friend that specialize in studying those.#$e#Her anecdotes are fascinating.",
+				"AsterScheduleJobMountain_fall003": "Sebastian isn't chatty, but he knows this lake pretty well.#$e#He helped me spot a specific plants the other day.",
+				"AsterScheduleJobMountain_winter000": "Demetrius always have a thermos of coffee for us on cold days.",
+				"AsterScheduleJobMountain_winter001": "I'm studying the way plants adapted to cold.#$e#Some are modifying the content of the water in their cells so they take longer to freeze.",
+				"AsterScheduleJobMountain_winter002": "Some areas like the Reserve are protected from any kind of gathering.#$e#We can see the difference with areas when human presence modify the landscape.#$e#It's not always detrimental, when it's done with harmony in mind.",
+				"AsterScheduleJobMountain_winter003": "The snow here isn't as deep than in Glimsap.",
 
 				//CT + Special
 				"AsterDialogueLumisteria.MtVapius.Arrival": "Hi! I'm Aster, nice to meet you.#$b#I conduct botanical study here in Mount Vapius. It has many interesting flora.",
@@ -223,8 +246,12 @@
 				"AsterDialoguequestComplete_Lumisteria.MtVapiusQuestMoonPodsForAster_memory_fourweeks":"Hey, about those seeds, remember the book I mentioned about them? I found the page about it again.#$b#It was found growing near some metal scraps with nonsense inscriptions on it.",
 				"AsterDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Moira2H_memory_oneday":"The other day, Moïra looked a bit upset.$s#$b#She needs a bit of time still to feel better. I should invite her for a coffee or a girl night.",
 				"AsterDialogueeventSeen_Lumisteria.MtVapius_Inn_AsterMoira6H_memory_oneweek":"I don't have that much tolerance for spiceness, but Moïra and I really had fun with the testing the other week.$h#$b#She knows so much about foraging and food people used to make.",
+				"AsterDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Odalis2H_memory_oneday": "I'm glad Odalis shared those memories with us the other day.#$b#It was quite helpful to put some stuff into perspective.",
+				"AsterDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "Maddy is pretty happy, her fishes were super good, and even Naveen tasted her salad.#$action AddFriendshipPoints AsterPellegrinVMV 5",
+
 
 				"AsterDialogueGreenRain": "We have unusual weather here sometimes, but I never see anything like that! I wonder if there's something in a book about it.",
+				"AsterDialogueGreenRain_2": "What we know about this rain is so little compared to what we don't know! It's an incredible opportunity to learn more about how plants react to it.",
 				//Festival
 				"AsterDialogueFestival": "Festivals are always full of beautiful things to see.",
 				"AsterDialoguespring_23": "Of all the festivals Pelican Town has, this is the one I'm the most interested in.", // Day before the Flower Dance
@@ -366,32 +393,39 @@
 			
 				"MaddyDialogueMon": "$query PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_Clearing#So you visited the old forest? It's a place full of monsters.#Mariam sometimes brought interesting stuff from there however.|Did you go near the old forest? It's a place full of monsters.#Mariam sometimes brought interesting stuff from there however.",
 				"MaddyDialogueTueR01": "If you want, Aster can speak for hours about how the flora here is pretty unique.",
-				"MaddyDialogueTueR02": "$query !PLAYER_HAS_MAIL Current Lumisteria.MtVapius_GiftReceivedFlag Any#I took some Jam Pie for desert. Hey, you should take a part.[Lumisteria.MtVapius_Cooking_JamPie]#$action AddMail Current Lumisteria.MtVapius_GiftReceivedFlag received|Maybe I'll buy a meal for tonight at the market.",
-				"MaddyDialogueTueR03": "$query {{TravelingLadyIsLotti}}#I love looking at Lotti's products, and imagining where they come from.#Sometimes the actual story is even more wild.|I like looking at a shop stock, you often makes nice discoveries.",//To add
+				"MaddyDialogueTueR02": "$query !PLAYER_HAS_MAIL Current Lumisteria.MtVapius_GiftReceivedFlag Any#I took some Jam Pie for dessert. Hey, you should take a part.[Lumisteria.MtVapius_Cooking_JamPie]#$action AddMail Current Lumisteria.MtVapius_GiftReceivedFlag received|Maybe I'll buy a meal for tonight at the market.",
+				"MaddyDialogueTueR03": "$query {{TravelingLadyIsLotti}}#I love looking at Lotti's products, and imagining where they come from.#Sometimes the actual story is even more wild.|I like looking at a shop stock, you often makes nice discoveries.",
+				"MaddyDialogueTueR04": "I wonder if distance with my parents will do good to our relationship. Emily miss her's.",
 				"MaddyDialogueWed": "I had to move here to live with Aster because I don't have a job.#$b#It's a bit hard to adapt to such change, for her and me.",
-				"MaddyDialogueThu": "Do you have a favorite TV show? I like fashion shows, and mystery shows.",
+				"MaddyDialogueThu": "$query !PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_Hamlet#I live in Glimsap, but I come here for some products that I can't find there.|Do you have a favorite TV show? I like fashion shows, and mystery shows.",
+				"MaddyDialogueThuR02": "I'm amazed at Caroline ability to manage so many things to keep the store working.",//To add
 				"MaddyDialogueFri": "The Red Owl Inn has some basic groceries, but I still need to get some products in other places every so often.",
-				"MaddyDialogueSat": "$query !PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_ForestCrystalLake#Granny told me that there's a lake in the forest that shimmered like crystal in the sun, until the day the water became still.#Do you think it's a tale about pollution?|I didn't know the shimmering lake in Granny's tale was real. I'd like to go fishing there one day.",
-				"MaddyDialogueSatR02": "There's crayfishes in some of the waters, but they're green so they hide pretty well on the mossy rocks of the rivers.",//To add
+				"MaddyDialogueSatR01": "$query !PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_ForestCrystalLake#Granny told me that there's a lake in the forest that shimmered like crystal in the sun, until the day the water became still.#Do you think it's a tale about pollution?|I didn't know the shimmering lake in Granny's tale was real. I'd like to go fishing there one day.",
+				"MaddyDialogueSatR02": "There's crayfishes in some of the waters, but they're green so they hide pretty well on the mossy rocks of the rivers.",
+				"MaddyDialogueSatR03": "I heard that there were dinosaurs in the past higher in the mountain. There's so much to discover around us.",
 				"MaddyDialogueSun": "When I was little, there was this truck driver that would pass through. Sometimes she'd go fishing when she had some free time.#$b#She taught me the ropes of fishing, and after that, my father made me a rod with a reed for me to play.#$e#For one of my birthdays, I even asked for a new one.#$b#I still go fishing occasionally when I need to relax.",
 				//2
 				"MaddyDialogueMon2": "Sometimes, people come here with strange fishes with crystal on them. I wonder where they come from.",
 				"MaddyDialogueTue2": "Last time I was in Pelican Town, I saw the truck driver. Her name is Pam.#$e#Ahah, of course you already know, but I'm glad I met her again.",
+				"MaddyDialogueTue2R02": "My mother is calling us on the phone nearly every week.#$b#It's like she's having a hard time to believe we can take care of ourselves.",//To add
 				"MaddyDialogueWed2": "$query {{TravelingLadyIsLotti}}#Lotti always have a story or another about her travel.#She makes a lot of stuff sounds funny, but some stuff she faces are harsh.|I quite like listening to people's stories. Some people are making even the smallest things fascinating.",
 				"MaddyDialogueThu2": "$query !PLAYER_HAS_MAIL Current Lumisteria.MtVapius_GiftReceivedFlag Any#Hey, look, I found this statuette. The animal doesn't really exist, it was just a story for credulous visitors. [Lumisteria.MtVapius_Treasures_DahuStatuette]#$action AddMail Current Lumisteria.MtVapius_GiftReceivedFlag received|I studied history. Archeology is a fascinating field, don't you think?",
 				"MaddyDialogueFri2": "I'm glad Aster and I have a better relationship than Emily and Haley.#$b#They obviously care about each other, I think they just miss some opportunity to see how much they have in common sometimes.",
-				"MaddyDialogueSat2": "$query !PLAYER_HAS_MAIL Current Lumisteria.MtVapius_GiftReceivedFlag Any#I fished a broken watch. I wonder how it ended in the pond.[Lumisteria.MtVapius_Treasures_BrokenWatch]#You may use the piece for some machineries, I heard?#$action AddMail Current Lumisteria.MtVapius_GiftReceivedFlag received|One day I fished a broken watch. I wonder how it ended in the pond.",
-				"MaddyDialogueSat2R02": "The show I'm watching has a lot of cliffhangers. They work pretty well on me, I must say.",//To add
+				"MaddyDialogueSat2R01": "$query !PLAYER_HAS_MAIL Current Lumisteria.MtVapius_GiftReceivedFlag Any#I fished a broken watch. I wonder how it ended in the pond.[Lumisteria.MtVapius_Treasures_BrokenWatch]#You may use the piece for some machineries, I heard?#$action AddMail Current Lumisteria.MtVapius_GiftReceivedFlag received|One day I fished a broken watch. I wonder how it ended in the pond.",
+				"MaddyDialogueSat2R02": "The show I'm watching has a lot of cliffhangers. They work pretty well on me, I must say.",
+				"MaddyDialogueSat2R03": "I love shows about solving mystery, I just prefer when they aren't about death. There's so much more cooler mystery to solve than finding who is the killer.",
 				"MaddyDialogueSun2": "I found this ring one day, it had a strange energy. Mariam looked very interested when I told her that, so I offered it to her for studying.%revealtaste:MaddyPellegrinVMV:575#$b#In return, she offered me a fragment of obsidian she found. It's a fascinating stone, don't you think?",
 				//4
 				"MaddyDialogueMon4": "My parents are worried about me, but it's just adding to my own stress rather than helping, you know?#$b#I'm lucky I had a chance to come here and escape that a bit.",
-				"MaddyDialogueTue4": "The statue of an owl, near the Inn, do you feel something strange about it?#$b#Like if... You would be able to find it when lost? I don't know. It's weird and quite reassuring at the same time.",
+				"MaddyDialogueTue4R01": "The statue of an owl, near the Inn, do you feel something strange about it?#$b#Like if... You would be able to find it when lost? I don't know. It's weird and quite reassuring at the same time.",
+				"MaddyDialogueTue4R02": "I wish I could discuss with my mother, but she's treating me like a child still.#$b#She sees me not getting a job as a failure that deny me the right to be considered an adult.",
 				"MaddyDialogueWed4": "It's difficult, being unemployed, but it would be easier without all the pressure society is adding.#$b#But things are changing recently, with some political groups acting for a change. I'm a member of an association that ask for a better system.",
 				"MaddyDialogueThu4": "Mariam is following their parent's footstep, protecting the hamlet. It's not an easy job, but she loves it.",
 				"MaddyDialogueFri4": "The show I'm watching ended the season with a cliffhanger. Ah, I'm so impatient for what's coming next.",
 				"MaddyDialogueSat4R01": "I met Emily because my sister is friend with her sister.#$b#Haley's nice when you know her, but she was kinda rude at first. Emily is more friendly.",
 				"MaddyDialogueSat4R02": "Aster loves Maki Rolls, but it's the kind of things that's hours of work and so quick to eat.%revealtaste:AsterPellegrinVMV:228#$b#It's not too bad when we're making it together, we can chat.",//gift taste
 				"MaddyDialogueSat4R03": "Emily is always happy to get cloth and wool, she loves experimenting with those.%revealtaste:Emily:428#$b#She showed me the result of some dyes she made, the other day.",//gift taste
+				"MaddyDialogueSat4R04": "I wonder if my sister and Haley would have been friend if they didn't share a birthday.#$b#Friendship sometimes start on the smallest things.",
 				"MaddyDialogueSun4R01": "I still associate vacations with the smell of my grandpa's painting material.",
 				"MaddyDialogueSun4R02": "I found this earlier, isn't it interesting? [Lumisteria.MtVapius_Treasures_FossilisedStarfish Lumisteria.MtVapius_Treasures_BrokenWatch Lumisteria.MtVapius_Treasures_PetrifiedFlower Lumisteria.MtVapius_Treasures_CopperFibula Lumisteria.MtVapius_Treasures_FragmentMask 96 97 98 99 106 122]",
 				//6
@@ -455,12 +489,17 @@
 				"MaddyDialogueScheduleSaloon04": "Maybe I'll order a pizza with extra cheese...",	
 				
 				
+				//Conversation topics	
 				"MaddyDialogueLumisteria.MtVapius.Arrival": "Hi, I'm Maddy. Don't ask me what I do in my life, because I hate this question with passion.",	
-				"MaddyDialogueLumisteria.MtVapius.AsterAngry": "What did you said to Aster to upset her? I hope you'll apologize.",
+				"MaddyDialogueeventSeen_Lumisteria.MtVapius_AsterHouse_Aster2H_memory_oneday": "$query !PLAYER_HAS_CONVERSATION_TOPIC Current Lumisteria.MtVapius.AsterAngry#My sister said discussing with you helped, the other day.#$action AddFriendshipPoints MaddyPellegrinVMV 5|What did you said to Aster to upset her? I hope you'll apologize.#$action AddFriendshipPoints MaddyPellegrinVMV -5",
+				//"MaddyDialogueLumisteria.MtVapius.AsterAngry": "What did you said to Aster to upset her? I hope you'll apologize.",
 				"MaddyDialogueLumisteria.MtVapius.WeddingAster": "The ceremony of the wedding was so moving. Aster looked so happy.",
 				"MaddyDialogueLumisteria.MtVapius.WeddingMoira": "What a nice ceremony. Celestine spent hours to cook the best food possible for the buffet.",
 				"MaddyDialogueeventSeen_EnD.Dylan.01_memory_oneweek": "Oh, you met Dylan? We discuss sometimes on the web. It's nice having someone who gets you, you know?",
 				"MaddyDialogueeventSeen_EnD.Dylan.01_memory_twoweeks": "I visited Point Drake once. Some cousin of my father was getting married.",
+				"MaddyDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory_oneday": "Helia called yesterday. She borrowed Naveen's phone. We chatted for a bit after she apologised.",
+				"MaddyDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "My favorite part in making tomato salad is tearing the basil. It smells so good.#$action AddFriendshipPoints MaddyPellegrinVMV 5",
+								
 				//Special
 				"MaddyDialogueRejectWorm": "Oh, it would make a nice bait, but I don't fish enough to make the best use of it.",
 				"MaddyDialogueRejectBouquet": "You're looking for someone to date? I'm not interested in such things, personally.",
@@ -488,7 +527,7 @@
 				
 				"MaddyDialogueAcceptGift_(O)StardropTea": "Oh! I heard of this drink. I'm so lucky to have a chance to taste it!",
 				
-				"MaddyDialogueAcceptGift_(O)Lumisteria.MtVapius_Cooking_JamPie": "$query !PLAYER_HAS_MAIL Current Lumisteria.MtVapius_FavoriteGiftFlag Any#Oh, what a nice present. I used to cook jam pie with my grandma. It's memory in the sweetest form. Let me offer you something in turn [Lumisteria.MtVapius_Treasures_ArtifactTrove Lumisteria.MtVapius_BlackGeode Lumisteria.MtVapius_BlueAgathe Lumisteria.MtVapius_Treasures_DahuStatuette]#$action AddMail Current Lumisteria.MtVapius_FavoriteGiftFlag received#$action AddFriendshipPoints NPC 20|Oh, it's so nice, thanks! I love Jam Pie.",
+				"MaddyDialogueAcceptGift_(O)Lumisteria.MtVapius_Cooking_JamPie": "$query !PLAYER_HAS_MAIL Current Lumisteria.MtVapius_FavoriteGiftFlag Any#Oh, what a nice present. I used to cook jam pie with my grandma. It's memory in the sweetest form. Let me offer you something in turn [Lumisteria.MtVapius_Treasures_ArtifactTrove Lumisteria.MtVapius_BlackGeode Lumisteria.MtVapius_BlueAgathe Lumisteria.MtVapius_Treasures_DahuStatuette]#$action AddMail Current Lumisteria.MtVapius_FavoriteGiftFlag received#$action AddFriendshipPoints MaddyPellegrinVMV 20|Oh, it's so nice, thanks! I love Jam Pie.",
 				"MaddyDialogueAcceptGift_(O)575": "Oh, I love this stone. When the light hits it just right, there's kind of rainbow inside it.",
 				"MaddyDialogueAcceptGift_(O)202": "Thanks, I like it. I'll eat that out of Aster's view however, just seeing it disgust her.%revealtaste:AsterPellegrinVMV:202",
 				"MaddyDialogueAcceptGift_prehistoric_item": "Thanks, I like it. There's so much we still don't know about the past, isn't it fascinating?",
@@ -513,7 +552,7 @@
 				//10
 				"AdelaideDialogueMon2": "I received a package from {{RandomPlaceName}} yesterday. It had a %noun stamp. I like collectioning them.",
 				"AdelaideDialogueTue2": "People are reuniting to save the Fort Josa train line. It may serve for touristic purpose mainly. I love this kind of efforts.",
-				"AdelaideDialogueWed2": "$query {{HasSBV}}#Célestine and I traveled a bit together in the past years. It's quite not easy for her to take vacation.#We visited the most charming village. The place is named Sunberry.|Célestine and I traveled a bit together in the past years. It's quite not easy for her to take vacation.",//To add
+				"AdelaideDialogueWed2": "$query {{HasSBV}}#Célestine and I traveled a bit together in the past years. It's quite not easy for her to take vacation.#We visited the most charming village. The place is named Sunberry.|Célestine and I traveled a bit together in the past years. It's quite not easy for her to take vacation.",
 				"AdelaideDialogueThu2": "My dad told me the minecart system used to connect a lot of various places, including the Lodge. It allowed the members to come and help miners pretty quickly.#$b#I heard some retired miners keep some parts of it working.",
 				"AdelaideDialogueFri2": "I heard that Mrs Fischer isn't feeling too well lately and it's why she's not coming to the market those days.#$b#The Fischer family makes delicious breads and candies.",
 				"AdelaideDialogueSat2": "It's pretty rare to see the Governor here. He usually send the young Claretie in case of problem.#$b#I have nothing against them, but it's obvious dealing with complains isn't their strong suit.",
@@ -590,7 +629,8 @@
 				"AdelaideDialogueLumisteria.MtVapius.PennyVisit": "How sweet it was to see Penny again. She was always so serious, it's good to see her enjoying more light-hearted things now.",
 				"AdelaideDialogueLumisteria.MtVapius.PamVisit": "I'm glad Pam came to me when she needed it. Some days here will be good for her.",
 				"AdelaideDialoguecc_Complete": "Oh, your community center is restaured? What a great news, such places are so important for the life of small towns.#$b#Here, I believe the Inn is what would be the closest to play this kind of role.",
-				
+				"AdelaideDialogueeventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneweek": "It's precious to me that Célestine would come to me when she needs help.#$b#That she trust me like this, it's something I cherish.",
+
 				
 				"AdelaideDialogueGreenRain": "My father knew an old tale about a green rain...",
 				
@@ -692,7 +732,7 @@
 				"CelestineDialogueThu10": "Adélaïde and I may not live together, but there's plenty of romance and shared moments.",
 				"CelestineDialogueFri10": "I want to do another trip to Larimar Shores, from where a branch of my family come from. Maybe in a couple of years.",
 				"CelestineDialogueSat10": "Did you know that some birds contribute to wild trees propagation, in the same way than squirrels do? Jays are doing that a lot with acorns.",
-				"CelestineDialogueSun10": "$query {{HasSBV}}#Adélaïde and I visited Sunberry Village together some time ago. It's rumored to be good luck for couple of women to visit together.|Adélaïde and I traveled together some time ago. It was quite romantic.",//to add
+				"CelestineDialogueSun10": "$query {{HasSBV}}#Adélaïde and I visited Sunberry Village together some time ago. It's rumored to be good luck for couple of women to visit together.|Adélaïde and I traveled together some time ago. It was quite romantic.",
 				
 				//Summer
 				"CelestineDialoguesummer_Sat2": "Maru come here a few time each summer so we can watch star together.#$e#It's great to have someone you can share your passion with.",
@@ -733,7 +773,15 @@
 				//Conversation topics	
 				"CelestineDialogueLumisteria.MtVapius.Arrival": "$query PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_TrainStation#Welcome here. I'm Célestine, owner of the Inn.#$b#It's been a family business for two generations.|Welcome here. I'm Célestine, owner of the Inn.#$b#It's been a family business for two generations.#$b#If you search the train station, go on the well on the main place, go down and pass under the wooden arch.",
 				"CelestineDialogueLumisteria.MtVapius.Orchard": "The orchard was a nice place to play as kids. My brother and I played hide-and-seek with the owner's daughter, Béatrice.",	
-				"CelestineDialogueLumisteria.MtVapius.PennyVisit": "Isn't the daughter of Pam, the truck driver that I saw in the hamlet? What was her name already?",	
+				"CelestineDialogueLumisteria.MtVapius.PennyVisit": "Isn't the daughter of Pam, the truck driver that I saw in the hamlet? What was her name already?",
+				"CelestineDialogueLumisteria.MtVapius.OdalisArriving":"This young Odalis looks full of energy. My sister practically raised him, you know?#$b#I feel Moïra wasn't in a good mood about his arrival, however...$s",
+				"CelestineDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneday": "I'm happy to see the new generation still caring about this place.",
+				"CelestineDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneweek": "Odalis likes my cooking, but he's barely eating some days.",
+				"CelestineDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_twoweeks": "With Odalis being around, I have more time to read the newspapers in the morning.",
+				"CelestineDialogueeventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneday": "I hope to get some time to discuss with Adélaïde later today, she always have helpful advices.",
+				"CelestineDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "How was the barbecue the other day? What a joy to see the place so lively.#$action AddFriendshipPoints CelestineDuboisVMV 5",
+
+				
 				//Special
 				"CelestineDialogueRejectTomatoSalt": "Tomato salt? It has an interesting taste, for sure, but my spices' rack is full.",
 				"CelestineDialogueRejectBouquet": "Oh, I remember the day Adélaïde offered me one. Such a sweet memory. I wish you the same happiness that we share.",
@@ -832,12 +880,12 @@
 				"MoiraDialogueWed8R01": "Grandma and Gus met some years ago at some food event. They've kept in contact since.",
 				"MoiraDialogueWed8R02": "My aunt Iris sent me a collection of vintage buttons she found on a flea market.",
 				"MoiraDialogueThu8R01": "Do you like wearing makeup, @? We could paint each other's nails one day?",
-				"MoiraDialogueThu8R02": "TODO",
+				"MoiraDialogueThu8R02": "Oh, I spent too many time looking at my project without any progress. I need a change of scenery, or looking at this under another angle.",
 				"MoiraDialogueFri8R01": "Suddenly I have a craving for a good spicy dish. Maybe I'll cook something later today.",
 				"MoiraDialogueFri8R02": "I saw a flock of geese the other day. I get why Grandma loves this place for birdwatching.",
-				"MoiraDialogueSat8R01": "TODO",
+				"MoiraDialogueSat8R01": "I got a mail from my group of friends. I wish we could be together around a drink.#$b#Maybe I could plan a trip to Saltspring City to get supplies and see them.",
 				"MoiraDialogueSat8R02": "Ouch, I burned myself yesterday when cooking. I quickly put it under running water and it helped a lot, but it's still a bit painful.",
-				"MoiraDialogueSun8R01": "TODO",
+				"MoiraDialogueSun8R01": "My grandma doesn't drive anymore, but she told me how important it was to be able to, even if I don't like it.#$b#She's right, here it's not like the city. If you can't drive, you are often stuck.#$b#When I can, I do the trips I need with Helia, she loves driving.",
 				"MoiraDialogueSun8R02": "My cousin Alexis is a fan of those model trains. He's often drawing layouts for them.#$b#We share a love for small details.",
 				//10
 				"MoiraDialogueMon10": "Maribel sent me a lotion she's making herself. It smells amazing.",
@@ -868,6 +916,13 @@
 				//Conversation topics	
 				"MoiraDialogueLumisteria.MtVapius.Arrival": "Hi, I'm Moira. I just returned here to help grandma Célestine with the Inn.",
 				"MoiraDialoguecc_Bus": "We're lucky to have trains and bus coming here regularly. Some of my friends in smaller places have one bus a day.#$b#Better not miss it.",
+				"MoiraDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisIntroduction_memory_oneday":"Hu, did you hear Odalis? Business, business, business.#$b#I know his mother has a successful hotel chain business, but it's not the vibe here. Don't he get that?",
+				"MoiraDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Odalis2H_memory_oneday": "I didn't know all this about Odalis' life with his Lita. Guess he didn't got the rich heir life I pictured.",
+				"MoiraDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Odalis2H_memory_oneweek": "I feel maybe I was a bit judgemental on Aster the other day.#$b#It's true, what Odalis said, sometimes, when you're too close, you're not good at helping.",
+				"MoiraDialogueeventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneday": "I wonder if Grandma still sees me as a child, sometimes.",
+				"MoiraDialogueeventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneweek": "I appreciate that Grandma wants me to have options about what I'll do with my life. I just wish this would happen without removing choices from me.",
+				"MoiraDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "It was fun using the barbecue the other day. It's not worth it for just a few people.#$action AddFriendshipPoints MoiraDuboisVMV 5",
+
 
 				//Inlaw
 				
@@ -893,7 +948,72 @@
 				
 				//Gift Taste
 				"MoiraDialogueAcceptGift_(O)StardropTea": "Is that... Stardrop Tea? Wow, even in the city it was a rarity. Hmm, I smell spices. Thanks.",
-				"MoiraDialogueAcceptGift_(O)204": "$query !PLAYER_HAS_MAIL Current Lumisteria.MtVapius_FavoriteGiftFlag Any#Oh, such a lovely attention, @. Lucky lunch never miss to bring all the nice memories of the city.#$action AddMail Current Lumisteria.MtVapius_FavoriteGiftFlag received#$action AddFriendshipPoints NPC 20|What a nice surprise! I love this dish.",
+				"MoiraDialogueAcceptGift_(O)204": "$query !PLAYER_HAS_MAIL Current Lumisteria.MtVapius_FavoriteGiftFlag Any#Oh, such a lovely attention, @. Lucky lunch never miss to bring all the nice memories of the city.#$action AddMail Current Lumisteria.MtVapius_FavoriteGiftFlag received#$action AddFriendshipPoints MoiraDuboisVMV 20|What a nice surprise! I love this dish.",
+				"MoiraDialogueAcceptGift_(O)106": "What a lovely present. I love those. You can say that I'm a fan.",
+				"MoiraDialogueAcceptGift_jewel_fan": "What a lovely present. I love those. You can say that I'm a fan.",
+				
+								//Marriage
+								
+				  "MoiraDialogueMarriageRainy_Day_0": "I like to capture the mood of a day in creations. The coziness you feel when inside with a cup of tea.#$b#The freedom of walking under a light rain. The gloomy feeling of loneliness in a city's street.",
+				  "MoiraDialogueMarriageRainy_Day_1": "Sounds like a good day to snuggle under a plaid.",
+				  "MoiraDialogueMarriageRainy_Day_2": "TODO",
+				  "MoiraDialogueMarriageRainy_Day_3": "TODO",
+				  "MoiraDialogueMarriageRainy_Day_4": "TODO",
+				  "MoiraDialogueMarriagepatio_MoiraR01": "TODO",
+				  "MoiraDialogueMarriagepatio_MoiraR02": "TODO",
+				  "MoiraDialogueMarriagepatio_MoiraR03": "TODO",
+				  "MoiraDialogueMarriagepatio_MoiraR04": "TODO",
+				  "MoiraDialogueMarriageRainy_Day_Moira": "TODO",
+				  "MoiraDialogueMarriageRainy_Night_0": "TODO",
+				  "MoiraDialogueMarriageRainy_Night_1": "TODO",
+				  "MoiraDialogueMarriageRainy_Night_2": "TODO",
+				  "MoiraDialogueMarriageRainy_Night_3": "TODO",
+				  "MoiraDialogueMarriageRainy_Night_4": "TODO",
+				  "MoiraDialogueMarriageRainy_Night_5": "TODO",
+				  "MoiraDialogueMarriageRainy_Night_Moira": "TODO",
+				  "MoiraDialogueMarriageIndoor_Day_0": "TODO",
+				  "MoiraDialogueMarriageIndoor_Day_1": "TODO",
+				  "MoiraDialogueMarriageIndoor_Day_2": "TODO",
+				  "MoiraDialogueMarriageIndoor_Day_3": "TODO",
+				  "MoiraDialogueMarriageIndoor_Day_4": "TODO",
+				  "MoiraDialogueMarriageIndoor_Day_Moira": "TODO",
+				  "MoiraDialogueMarriageIndoor_Night_Moira": "TODO",
+				  "MoiraDialogueMarriageOutdoor_0": "TODO",
+				  "MoiraDialogueMarriageOutdoor_2": "TODO",
+				  "MoiraDialogueMarriageOutdoor_3": "TODO",
+				  "MoiraDialogueMarriageOutdoor_4": "TODO",
+				  "MoiraDialogueMarriageOutdoor_Moira": "TODO",
+				  "MoiraDialogueMarriagefunLeave_MoiraR01": "TODO",
+				  "MoiraDialogueMarriagefunReturn_MoiraR01": "TODO",
+				  "MoiraDialogueMarriagefunLeave_MoiraR02": "TODO",
+				  "MoiraDialogueMarriagefunReturn_MoiraR02": "TODO",
+				  "MoiraDialogueMarriagefunLeave_MoiraR03": "TODO",
+				  "MoiraDialogueMarriagefunReturn_MoiraR03": "TODO",
+				  "MoiraDialogueMarriagefunLeave_MoiraR04": "TODO",
+				  "MoiraDialogueMarriagefunReturn_MoiraR04": "TODO",
+				  "MoiraDialogueMarriageOneKid_1": "TODO",
+				  "MoiraDialogueMarriageOneKid_3": "TODO",
+				  "MoiraDialogueMarriageTwoKids_2": "TODO",
+				  "MoiraDialogueMarriageTwoKids_3": "TODO",
+				  "MoiraDialogueMarriagespring_1": "TODO",
+				  "MoiraDialogueMarriagespring_2": "TODO",
+				  "MoiraDialogueMarriagespring_23": "TODO",
+				  "MoiraDialogueMarriagesummer_3": "TODO",
+				  "MoiraDialogueMarriagesummer_15": "TODO",
+				  "MoiraDialogueMarriagefall_1": "TODO",
+				  "MoiraDialogueMarriagefall_2": "TODO",
+				  "MoiraDialogueMarriagewinter_2": "With the sea so close, winter here is warmer than in Glimsap.",
+				  "MoiraDialogueMarriagewinter_14": "TODO",
+				  "MoiraDialogueMarriagespring_Moira": "TODO",
+				  "MoiraDialogueMarriagesummer_Moira": "TODO",
+				  "MoiraDialogueMarriagefall_Moira": "TODO",
+				  "MoiraDialogueMarriagewinter_Moira": "TODO",
+				  "MoiraDialoguespouseRoom_MoiraR01": "TODO",
+				  "MoiraDialoguespouseRoom_MoiraR02": "TODO",
+				  "MoiraDialoguespouseRoom_MoiraR03": "TODO",
+				  "MoiraDialoguespouseRoom_MoiraR04": "TODO",
+				  
+				  
 				
 				//Character Dispositions
 				"MoiraDisplayName": "Moïra",
@@ -958,7 +1078,7 @@
 				"MariamDialogueSat8": "There was some monsters causing trouble in {{RandomPlaceName}} recently.#$e#Managing who get to be sent where is a whole job. We usually do it in turn.",//Note : insert token
 				"MariamDialogueSun8": "I got a nice discussion with Gil on the phone the other day.#$e#I promised I'll send him one of my balm for his back pain.",
 				//10
-				"MariamDialogueMon10": "$query PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_ForestJunimoClearing#The clearing at the core of the forest... It's a wonderful place. I love how peaceful it is.|There's a place in the core of the forest. Monsters roam close but don't go there. Ancient spells protect it.",//to add
+				"MariamDialogueMon10": "$query PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_ForestJunimoClearing#The clearing at the core of the forest... It's a wonderful place. I love how peaceful it is.|There's a place in the core of the forest. Monsters roam close but don't go there. Ancient spells protect it.",
 				"MariamDialogueTue10": "TODO",
 				"MariamDialogueWed10": "TODO",
 				"MariamDialogueThu10": "TODO",
@@ -971,6 +1091,7 @@
 				//CT + Special
 				"MariamDanceRejection": "Maybe another time, I need to be sure you know the right moves.",
 				"MariamDivorced": "Another loss. I... I'll recover. But why, @?",
+				"MariamDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "Next time we do such a gathering, I'll bring some radio.#$action AddFriendshipPoints MariamFortinVMV 5",
 				//Festival
 				"MariamFlowerDanceY2": "Ah, I didn't want to miss the opportunity to dance this one again. It's so cute, don't you think?",
 				"MariamFlowerDanceY3": "This festival is so relaxed, and it's good to visit Pelican Town again.",
@@ -1010,7 +1131,9 @@
 				"HeliaDialogueWed": "Oh, I have a distant cousin living in Pelican Town. You must know him, he's the local doctor.",
 				"HeliaDialogueThu": "What's the trend with people willing to make clothes? I feel like I see one in every place I go.#$e#And realistically, it's hard to get a steady income with that kind of job.",
 				"HeliaDialogueFri": "$y 'Do you love tinkering with stuff, @?_Yes, I do._Me too, it's so fun._Not really._Ah, well, to each their own._I like decorating._You should meet Djamel, then, he sells cool stuff.'",
-				"HeliaDialogueSat": "Naveen's a good neighboor, but he's not really chatty.",//Lapidaire.
+				"HeliaDialogueSatR01": "Naveen's a good neighboor, but he's not really chatty.",//Lapidaire.
+				"HeliaDialogueSatR02": "I like speaking with different people. It's one of the reason I like my jobs.",
+				"HeliaDialogueSatR03": "I am glad I can rely on my van. It was the one thing I still had when everything was going wrong.",
 				"HeliaDialogueSun": "I don't have phone in my house. Internet? A distant dream. The company should come for repair in the next week.#$b#As they should have one month ago. And the one before that.",
 				//2
 				"HeliaDialogueMon2R01": "I had a date with a guy from %place last night. He kept explaining me stuff about %noun. All. Night. Long.",
@@ -1037,13 +1160,15 @@
 				"HeliaDialogueFri4R02": "My last date was a disaster in a way that will probably make some funny stories in some time.#$e#But right now, I don't think I'm in the mood for more dates.",
 				"HeliaDialogueSat4R01": "I like Maru's enthusiasm when it comes to making things. It renews mine when I'm discouraged.",
 				"HeliaDialogueSat4R02": "Chandra is super sensitive about food texture, did you know? She hates mushy textures.",
+				"HeliaDialogueSat4R03": "Any new gossip to share? Pelican Town must be quite lively compared to here.",
+				"HeliaDialogueSat4R04": "Aster said that she may come to Faycombe once to study some flower that is hard to find elsewhere.#$b#I don't share her enthusiasm for plants, but it's cool to witness.",
 				"HeliaDialogueSun4R01": "Most of the small hamlets around have no shop, outside of what some farms sell directly to the customers.#$e#So markets, travelling merchants, and the grocery store the Red Owl Inn has take a lot of importance in their daily lives.",
 				"HeliaDialogueSun4R02": "My Dad and my Papa are a bit worried about me being so far from them. When I had to live in my van, they were helpless.#$e#They wish that I had a phone at least so we can discuss more easily.",
 				//6
 				"HeliaDialogueMon6R01": "It's funny to see Naveen near a chocolate cake. He can't resist those.#$b#Sometimes when we go together to Saltspring City, we stop in a bakery and he order small portions of different cakes.",//gift taste todo
 				"HeliaDialogueMon6R02": "Don't get me started on wine. I hate how they are advertising that it's not an alcohol like the others.#$b#Small place like ours need to find other stuff to promote than wine!#$e#It's one thing I admire in Célestine : she doesn't sell any alcohol, despite the cost it has for her.",//gift taste
-				"HeliaDialogueTue6": "Yesterday I got an idea. It was 2am, but I still noted it.#$b#I didn't want it to escape me. It's so great feeling inspired again.",
-				"HeliaDialogueTue6R02": "I met Su-Hyeon once or twice. I don't think he's feeling super at ease here.#$b#Even so, I think he said more words in one afternoon than Naveen in a week.",//to add
+				"HeliaDialogueTue6R01": "Yesterday I got an idea. It was 2am, but I still noted it.#$b#I didn't want it to escape me. It's so great feeling inspired again.",
+				"HeliaDialogueTue6R02": "I met Su-Hyeon, Naveen and Chandra's brother, once or twice. I don't think he's feeling super at ease here.#$b#Even so, I think he said more words in one afternoon than Naveen in a week.",
 				"HeliaDialogueWed6R01": "I heard Pelican Town has a ice cream stand open during summer.#$b#It could be a nice trip one day for me and Chandra, it's her favorite. Especially the swirly ones with lot of topping.",//gift taste todo
 				"HeliaDialogueWed6R02": "It's funny how I have plenty of ideas, but suddenly as soon as I have to write them they disappear like mist under the sun. And I try to gather the remaining shreds of them.",
 				"HeliaDialogueThu6R01": "Yesterday I worked pretty late without finding the solution of my issue.#$b#I forced myself to drop the stuff and go to sleep, and today I made a lot of progress.#$b#It's not easy to stop when I feel close of the solution to a problem, but I know rest is a pretty crucial thing.",
@@ -1052,6 +1177,9 @@
 				"HeliaDialogueFri6R02": "One of my client still didn't pay the other half of the bill.#$b#If I don't have news in one more week, I'll trigger the 'Administrative Mode'. You do not want to see me in 'Administrative Mode'. They don't either, believe me.",
 				"HeliaDialogueSat6R01": "I met Aloïse in Saltspring City the other day, and he gave me some free pastries from his parents' shop.",
 				"HeliaDialogueSat6R02": "There's a manifestation for right of the unemployed soon. Maddy and I plan to go together.",
+				"HeliaDialogueSat6R03": "Naveen's family seem to find their balance again after the health issue Rajeev got.#$b#The first months were quite rough for them.",
+				"HeliaDialogueSat6R04": "Sometimes, I buy fragrant herbs or flowers on the market to put them in my bathroom. It makes my shower so much more relaxing.#$b#Months without being able to shower whenever I wanted make me appreciate the luxury a lot more.",
+				"HeliaDialogueSat6R05": "Odalis was kind to me, when we met. I think his grandmother taught him a great deal about empathy, and helping those in need.#$b#I know Moïra is a bit wary of the change he may bring. But sometimes, change is what you need. Getting stuck sucks.",
 				"HeliaDialogueSun6R01": "Djamel and I did some projects together in the past. We may again, if we got a nice idea.#$b#But we don't get often the opportunity to discuss projects.",
 				"HeliaDialogueSun6R02": "My usual supplier of glue is changing the formula. Do you know how hard it is to deal with a new product, see how it reacts?#$b#This means I'll have to do stock of the old ones. Another expense...",
 				//8
@@ -1064,6 +1192,8 @@
 				"HeliaDialogueFri8": "The other day, Maru's mother and I crafted stuff together and exchanged tips.#$b#She's familiar with a lot of the stuff I have to deal with.",
 				"HeliaDialogueSat8R01": "I got one commission from %place. Paid entirely in advance. It's a bit of custom work, so it's challenging.",
 				"HeliaDialogueSat8R02": "I got one commission from {{RandomPlaceName}}. Paid entirely in advance. It's a bit of custom work, so it's challenging.",
+				"HeliaDialogueSat8R03": "My cousin is frustrated he wasn't able to help me, some years ago, but he was in medical school. This stuff is expensive.",
+				"HeliaDialogueSat8R04": "Papa and I chatted a bit earlier today. How nice is it to finally have a phone.#$b#I still miss the city and all the people you cross path with, but it's great.",
 				"HeliaDialogueSun8": "I had to live in my van for quite some time in the past. My family already had their own troubles and weren't able to help at the time.#$b#Finding a place in Faycombe was a relief, despite the isolation.",
 				//10
 				"HeliaDialogueMon10": "TODO",
@@ -1079,6 +1209,7 @@
 				"HeliaDialoguefall_Sat6": "I arrived to Faycombe a day like this. It was a new start for me, after some harsh months.#$b#I may complain about where I live, but it's still a home. And I made a lot of improvement to it.",
 
 				"HeliaDialoguewinter_Tue6": "It was very important for me to own my home.#$b#I got into a lot of troubles because of a landlord that evicted me.#$b#So when I got both the opportunity and the money to get a place where my work would be safe, I did it.",
+				"HeliaDialoguesummer_Fri6": "I have a space behind my home for showering outside in the summer.#$b#The fresh water, the cool air, the damp hairs that keep me refreshed... It's amazing.",
 				
 
 				//Resort
@@ -1100,6 +1231,11 @@
 				"HeliaDialogueFri2_inlaw_Harvey": "I may send packages to my family now that my situation is more stable. My Papa would love a box of Calisson.%revealtaste:Harvey:Lumisteria.MtVapius_Cooking_Tapenade#$b#Maybe I should send some Tapenade to cousin Harvey while I'm at it. He does love the stuff.#$b#When family was gathering, you could be sure he would go for tapenade toast if there was any. And the jar of pickle, of course.",
 
 
+				//Conversation topics	
+				"HeliaDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisIntroduction_memory_oneday":"So, Odalis is finally coming here. Maybe I'll get him some welcome gift.#$b#Is Moïra reacting well?",
+				"HeliaDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory_oneday": "I feel better, now that I apologised to Maddy.#$b#MShe's very nice and pretty forgiving. But I don't want to take that for granted.",
+				"HeliaDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory_oneweek": "I wish I could relax more about money. But... I can't really.",
+				"HeliaDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "Free food, fun, friends, and then more free food? How course it was an amazing moment.#$action AddFriendshipPoints HeliaDiamantiVMV 5",
 				
 				//festivals
 				"HeliaDialoguesummer_10": "It must be fun to have a big gathering and sharing a common dish.", // Day before the Luau
@@ -1122,6 +1258,7 @@
 				"HeliaGiftHateFriend": "@? Are you ok? You don't remember I hate that?",
 				
 				"HeliaDialogueAcceptGift_(O)StardropTea": "*sip* It reminds me of our family gathering. Thanks, @, it's really nice.",
+				//"HeliaDialogueAcceptGift_(O)809": "$query PLAYER_HAS_CONVERSATION_TOPIC Current eventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory#Wow... Thanks, @. It's... I didn't expect that.#$action AddFriendshipPoints HeliaDiamantiVMV 30|It's nice, thanks.",
 				
 				//Naveen. NaveenFaycombeSereneVMV
 				//Calm, a bit old-fashioned. Friend with Mariam. Acquaintance of Helia
@@ -1133,15 +1270,19 @@
 				"NaveenDialogueWed": "%Naveen politely salutes you.",
 				"NaveenDialogueThu": "I have a sister, younger than me, and an older brother, but we're quite estranged.#$b#Do you have any sibling, @?",
 				"NaveenDialogueFri": "Do you visit Mount Vapius market?#$b#I occasionnaly sell some things here.",
-				"NaveenDialogueSat": "%Naveen is humming, drawing some pattern.#$b#My latest project. Do you have any currently?",
+				"NaveenDialogueSatR01": "%Naveen is humming, drawing some pattern.#$b#My latest project. Do you have any currently?",
+				"NaveenDialogueSatR02": "$query {{HasSBV}}, RANDOM 0.3#I should plan a trip to visit Amina.|I want to visit family more often.",
+				"NaveenDialogueSatR03": "$query LOCATION_NAME Here Lumisteria.MtVapius_Hamlet#%Naveen is working on some project while waiting for customers.|Market days are so busy.",
+				"NaveenDialogueSatR04": "$query TIME 1400 1900#It's a good time for a cup of tea. [614]|I have a sudden craving for candies.",
 				"NaveenDialogueSun": "This region is rich in unique minerals.#$b#They are the foundations of my work.",
 				//2
 				"NaveenDialogueMon2": "My eomma is pretty busy, so she can't be home as often as she would like.",
-				"NaveenDialogueTue2": "I mainly see my brother Su-Hyeon on family reunions. My sister saw him more often when she still lived in Zuzu City.",//to add
+				"NaveenDialogueTue2": "I mainly see my brother Su-Hyeon on family reunions. My sister saw him more often when she still lived in Zuzu City.",
 				"NaveenDialogueWed2": "TODO",//to add
-				"NaveenDialogueTue2": "My attention to details is something my father taught me. He was a talented clockmaker.#$b#He isn't working anymore, but when I need an advice, he is always eager to assist.",
+				"NaveenDialogueThu2": "My attention to details is something my father taught me. He was a talented clockmaker.#$b#He isn't working anymore, but when I need an advice, he is always eager to assist.",
 				"NaveenDialogueFri2": "I collect most of the gems myself. I hire Mariam to come with me in the most dangerous places.",
-				"NaveenDialogueSat2": "TODO",//to add
+				"NaveenDialogueSat2R01": "Don't play prank on my sister. She hates surprises. Even good ones are not her thing.",
+				"NaveenDialogueSat2R02": "The coins you can find here are pretty mysterious.",
 				"NaveenDialogueSun2": "What's your favorite place around here?",
 				
 				//4
@@ -1165,10 +1306,11 @@
 				"NaveenDialogueThu6R01": "Some objects are imbued with magic energy. My eomma taught me how to perceive it.",
 				"NaveenDialogueThu6R02": "Mariam wants me and my eomma to see if the chiseling used on some old rings' stones is amplifying their magic.#$b#It would be useful for the Lodge, especially if the protection spell can last longer this way.#$b#Eomma may get home more often if yes.",
 				"NaveenDialogueFri6": "%Naveen stays silent, but is happy to see you.",
-				"NaveenDialogueSat6": "I'm always looking forward to a movie night with Mariam.",
-				"NaveenDialogueSat6R02": "Cordelia wanted a sea-themed jewel. She's working with my eomma, but one day she'll be on her own.#$b#She may have her own symbol then.",//To add
+				"NaveenDialogueSat6R01": "I'm always looking forward to a movie night with Mariam.",
+				"NaveenDialogueSat6R02": "Cordelia wanted a sea-themed jewel. She's working with my eomma, but one day she'll be on her own.#$b#She may have her own symbol then.",
+				"NaveenDialogueSat6R03": "When my father got sick, I didn't really understood how much of this stress would lasts.#$b#It's like having to run a marathon after a sprint.#$b#Taking care of someone else can't be done if you don't keep room to take care of yourself.",//to add
 				"NaveenDialogueSun6": "It took me a lot of time to finally do one jewelry for Chandra.#$b#She teases me saying I made her waiting on purpose, but she knows inspiration isn't something you control.",
-				"NaveenDialogueSun6": "My siblings both love Mango Bingsu.#$b#We had it as kids during summer. It's a nice memory.",//gift taste todo. To add
+				"NaveenDialogueSun6R02": "My siblings both love Mango Bingsu.#$b#We had it as kids during summer. It's a nice memory.",//gift taste todo. To add
 				//8
 				"NaveenDialogueMon8R01": "I have to get the meds for my father. My sister and I are taking care of that in turn.",
 				"NaveenDialogueMon8R02": "My father want me to get him some dish at the Inn. I'll ask Célestine to make it extra spicy.#$e#She likes making dishes tasty, but some customers aren't familiar with that so too often she has to tone stuff down, sadly.",
@@ -1191,6 +1333,9 @@
 				//CT + Special
 				"NaveenDanceRejection": "Oh, I appreciate the intention. Maybe we can watch the dance together instead.",
 				"NaveenDivorced": "Ah, well... I will not persist in fixing stuff that you chose to break.",
+				"NaveenDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Moira3H_memory_oneweek": "My sister has some sensory issues. Like the texture of some dishes, or the fabric on some clothes.",
+				"NaveenDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Moira3H_memory_twoweeks": "Chandra works in translation, mainly ancient texts. She's fascinated by dwarvish mysteries.",
+				"NaveenDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "It was a fun gathering the other day. Maddy is always having nice idea to bring all of us together.#$action AddFriendshipPoints NaveenFaycombeSereneVMV 5",
 				
 				//festivals
 				"NaveenDialoguefall_15": "Helia is a bit upset, she really hoped to go to the Fair tomorrow.#$b#It's disappointing for sure.", // Day before the Stardew Fair
@@ -1291,7 +1436,7 @@
 				"GavinDialogueSat": "I quite dislike venturing in the caves themselves. I usually take the shortcuts and just ensure nothing is going too wrong.#$b#I... Don't feel well inside, so Mariam decided to limit the amount of patrol of this kind I'll have.",
 				"GavinDialogueSun": "Luna is the one in charge of most of the protecting spells.#$b#Cordelia is assisting her but has her own duty.",	
 				//2
-				"GavinDialogueMon2": "My uncle taught me swordmanship. My father prefers maces, they fit more his temperament.",
+				"GavinDialogueMon2": "My uncle taught me swordmanship. My father prefers maces, they fit more his temperament. I tried axe. Not my thing... It's a long story.",
 				"GavinDialogueTue2": "TODO",
 				"GavinDialogueWed2": "Alon, Mariam's parent, did a lot of work in keeping the Lodge in working shape.#$b#When they died, Luna took the lead on her shoulder, but she was too busy to really make the daily decisions needed.#$b#So Mariam now deals with that. She didn't inherit her position by blood, but because she was capable.#$b#Of course, you could argue that she still had the network and opportunity to get this spot.",
 				"GavinDialogueThu2": "TODO",
@@ -1299,16 +1444,16 @@
 				"GavinDialogueSat2": "TODO",
 				"GavinDialogueSun2": "TODO",				
 				//4
-				"GavinDialogueMon4": "TODO",
+				"GavinDialogueMon4": "I hate mushrooms. It reminds me of hours of danger when you eat whatever you can gather to recover some strenght.",
 				"GavinDialogueTue4": "TODO",
 				"GavinDialogueWed4": "My father wanted me to lead the Lodge. We argued about it.#$b#He said that Luna would even let the full power in my hands. It is possible that he was right.#$b#I might have done it... If I felt it was the best for the Lodge.",
 				"GavinDialogueThu4": "TODO",
 				"GavinDialogueFri4": "TODO",
 				"GavinDialogueSat4": "TODO",
-				"GavinDialogueSun4": "TODO",							
+				"GavinDialogueSun4": "When I was younger, I spent some months working in an orchard.#$b#I did various jobs back then, until my father decided I should focus on swordmanship alone.",							
 				//6
 				"GavinDialogueMon6": "TODO",
-				"GavinDialogueTue6": "TODO",
+				"GavinDialogueTue6": "I admit I love napping under a tree, with the gentle caress of the sun filtered by leaves. And the colors... Always changing.",
 				"GavinDialogueWed6": "TODO",
 				"GavinDialogueThu6": "TODO",
 				"GavinDialogueFri6": "TODO",
@@ -1396,7 +1541,8 @@
 				"ChandraDialogueWed": "My ex-husband and I were starting to take different roads even before I considered moving here.#$b#We are still in amicable terms, and he cares a lot about Priya.",
 				"ChandraDialogueThu": "When my father got sick, Naveen and me tried to make plans to have the two of us taking care of him.#$b#Su-Hyeon, who is working in that field, told us it was a pretty bad idea to carry all the burden ourselves.#$b#So we got occasional help. It was a good advice.",
 				"ChandraDialogueFri": "I love running and biking. I even entered some events in Zuzu.#$b#I also did some of the local 'Bike and Hike'.",
-				"ChandraDialogueSat": "TODO",
+				"ChandraDialogueSat": "There's so much we still have to learn about dwarves. What did their home planet looked like?",
+				"ChandraDialogueSatR02": "The museum asked me to translate what they believe is some document in dwarvish about plants.#$b#It's hard to say however. This drawing here, it looks like a comet, and this one like a cloud.",
 				"ChandraDialogueSun": "Priya made another hole in her trousers... I'll ask Naveen to bring them to Moïra, she'll repair them.#$b#It'll be less expensive than buying yet another pair.#$b#Especially to see it destroyed by yet another Batrounder game with friends that end in the bushes to recover the ball.#$b#Or climbing a tree to get walnuts.",		
 				//2
 				"ChandraDialogueMon2": "Priya has to take the bus to go to the closest school.#$b#I was quite stressed the first few times, even when knowing the Governor's office is employing someone to watch on the kids in addition to the driver.#$b#It's better now.",
@@ -1415,7 +1561,7 @@
 				"ChandraDialogueSat4": "TODO",
 				"ChandraDialogueSun4": "My eomma's family cut ties with her when she was young.#$b#She made decisions they didn't like, and they wanted to keep control on her.",							
 				//6
-				"ChandraDialogueMon6": "TODO",
+				"ChandraDialogueMon6": "Someone thinks they discovered trace of Dwarvish writing in Mount Skyshard.#$b#Every sample we got help us understands the language better. How exciting.",
 				"ChandraDialogueTue6": "TODO",
 				"ChandraDialogueWed6": "TODO",
 				"ChandraDialogueThu6": "TODO",
@@ -1704,46 +1850,48 @@
 				
 				"ChloeDialogueAcceptGift_(O)StardropTea": "That's amazing! Even the purple star restaurants don't have this!",
 				
-				//Odalis, Odalis???, 
+				//Odalis, OdalisDuboisVelezVMV, 
 				"OdalisDialogueLumisteria.MtVapius.Arrival": "TODO",
 				"OdalisDialogueMon": "My lita practically raised me. My parents were always traveling for my mother's business.",
-				"OdalisDialogueTue": "Ok, I'm biaised, but the food is amazing. The spices...",
+				"OdalisDialogueTue": "Ok, I'm biaised, but the food at the inn is amazing. The spices...",
 				"OdalisDialogueWed": "I know a lot of stories about this place. It's quite like a home for me.",
-				"OdalisDialogueThu": "TODO",
+				"OdalisDialogueThu": "Of course there's stuff I miss from the city.#$b#But when I'm in the city, there's stuff I miss too.",
 				"OdalisDialogueFri": "I get why my cousin Moïra doesn't want things to change.#$b#But change can be good, too.",
 				"OdalisDialogueSat": "Oh, Helia is having a stand in this market? I met her some years ago.#$b#She made quite an impression on me.#$b#Good memories, overall.",
 				"OdalisDialogueSun": "Célestine should be able to retire, would she want that.#$b#It's quite a physical work.",
 				//2
 				"OdalisDialogueMon2": "I read the account books of the Inn, some stuff isn't making sense.",
-				"OdalisDialogueTue2": "TODO",
-				"OdalisDialogueWed2": "TODO",
-				"OdalisDialogueThu2": "TODO",
-				"OdalisDialogueFri2": "TODO",
-				"OdalisDialogueSat2": "TODO",
-				"OdalisDialogueSun2": "TODO",
+				"OdalisDialogueTue2": "My parents are both in love and good partners in affair. It's not always an easy balance, but they manage it well.",
+				"OdalisDialogueWed2": "I asked Chloe some advices about promoting the Inn's on the net.#$b#It has a solid 'no alcohol' history that may be trending.",
+				"OdalisDialogueThu2": "It's so great to have a market right next to the Inn.#$b#It makes sense that it happened that way, of course.",
+				"OdalisDialogueFri2": "I wonder if we could install a telescope for tourists.#$b#Celestine is right, the sky here is wonderful, nearly no light pollution.",
+				"OdalisDialogueSat2": "I didn't really ate well recently. There's room for improvement.",
+				"OdalisDialogueSun2": "I'm glad to hear Helia found a place to live.#$b#She deserves some peace of mind.",
 				//4
-				"OdalisDialogueMon4": "TODO",
-				"OdalisDialogueTue4": "TODO",
-				"OdalisDialogueWed4": "TODO",
+				"OdalisDialogueMon4": "My lita taught me some dancing steps. I'm ok at Bachata, and a bit better at Salsa.",
+				"OdalisDialogueTue4R01": "I know Claretie for a long time. I wish they would come out of their shell more.#$b#They already started a bit, it's really pleasant to see.",
+				"OdalisDialogueTue4R02": "I am so furious. My dish burnt earlier today.$s#$b#What a waste...",
+				"OdalisDialogueWed4": "Accounting is really really not my favorite part.#$b#What is my favorite part? Coming with new ideas to improve stuff.",
 				"OdalisDialogueThu4": "Moïra isn't only a creative person, she has a lot of practical knowledge about past things.",
-				"OdalisDialogueFri4": "TODO",
-				"OdalisDialogueSat4": "TODO",
+				"OdalisDialogueFri4": "Did you know Abdon is a talented tactical card games player? Once I was at a convention and saw him and his grandson competing.#$b#Funny, hu?",
+				"OdalisDialogueSat4R01": "My best friend, Maëlle, is driving the Book Bus, an initiative to go in places without libraries.#$b#Isn't that an amazing project?",
+				"OdalisDialogueSat4R02": "With more vendors around, more people are coming too.",
 				"OdalisDialogueSun4": "I discussed with Claretie, the Governor representative, and the Inn may be eligible to some taxe write-off.",
 				//6
-				"OdalisDialogueMon6": "TODO",
-				"OdalisDialogueTue6": "TODO",
+				"OdalisDialogueMon6": "I think Moïra is warming toward me a bit.#$b#Maybe thanks to the Revoltillo I make for breakfast on a regular basis.",
+				"OdalisDialogueTue6": "I don't have siblings. Sometimes, I wonder, 'what if'.#$b#I have examples of good and bad relationships around me.",
 				"OdalisDialogueWed6": "I saw my lita exhaust herself in harsh work. It's why I don't want her sister to follow the same path.#$b#Staying active is great. Breaking your back carrying heavy sheets is quite not the same thing.",
-				"OdalisDialogueThu6": "TODO",
-				"OdalisDialogueFri6": "TODO",
+				"OdalisDialogueThu6": "I should see if Alix and Felicity can deliver some spice to us.#$b#It's always so hard to find some products here.",
+				"OdalisDialogueFri6": "I was raised in the city, so I don't know half of the plants you can find in the wild.",
 				"OdalisDialogueSat6": "I never liked the busy places that much.#$b#It always meant less time spent with people I liked, because there were always things for them to take care of.",
 				"OdalisDialogueSun6": "Célestine cooking... It's my childhood food, but done by a master at it.",
 				//8
-				"OdalisDialogueMon8": "TODO",
-				"OdalisDialogueTue8": "TODO",
+				"OdalisDialogueMon8": "Sometimes, my parents would come randomly to take me on some fancy vacation.#$b#It was nice but also so hectic.",
+				"OdalisDialogueTue8": "Market days are busy days. I like this energy. I also enjoy that it's not always like that.#$b#Maybe I don't need to have the same pace in my life than my parents had.#$b#I need my own rythm.",
 				"OdalisDialogueWed8": "TODO",
 				"OdalisDialogueThu8": "TODO",
 				"OdalisDialogueFri8": "TODO",
-				"OdalisDialogueSat8": "TODO",
+				"OdalisDialogueSat8": "I cook breakfast for Célestine and Adélaïde sometimes.#$b#Coming here allowed Célestine to get more free time to enjoy.",
 				"OdalisDialogueSun8": "TODO",
 				//10
 				"OdalisDialogueMon10": "TODO",
@@ -1757,12 +1905,21 @@
 				"OdalisDisplayName": "Odalis",
 				
 				//gift
-				"OdalisGiftLoved": "TODO",
-				"OdalisGiftLiked": "TODO",
-				"OdalisGiftNeutral": "TODO",
-				"OdalisGiftDislike": "TODO",
-				"OdalisGiftHate": "TODO",
+				"OdalisGiftLoved": "Oh, I'm touched by such a nice attention.",
+				"OdalisGiftLiked": "Oh, that is nice. Thanks.",
+				"OdalisGiftNeutral": "Thanks.",
+				"OdalisGiftDislike": "I prefer to avoid those.",
+				"OdalisGiftHate": "Ah. They say that it's the thought that count, but...",
 				
+				"OdalisDialogueAcceptGift_(O)StardropTea": "It's so warm and spicy. I feel like in my lita's kitchen.",
+				"OdalisDialogueAcceptGift_(O)Lumisteria.MtVapius_ArtisanGoods_SeaBuckthornBerryOil": "What a nice attention. I use it for skincare after my workout.",
+				"OdalisDialogueAcceptGift_(O)Lumisteria.MtVapius_Treasures_Cyanotype": "$c 0.5#I love those. I made some with my lita, one day. We gathered foliages together.#Isn't it fascinating to see how those are created? I love it, thanks.",
+				
+				//Conversation topics	
+				"OdalisDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneweek": "Helia gave me a welcome gift : she took me for a tour of the nearby farms and places I should know about.#$b#It's really a cool idea!",
+				"OdalisDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_twoweeks":"I feel Moïra is warming a bit toward me.#$b#This place is important to her, so she was a bit protective.#$b#But she gets that I care, now.",
+				"OdalisDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "Doing the dish after the gathering wasn't that annoying with Naveen's contribution. It's the kind of task that a friendly presence help making more bearable.#$action AddFriendshipPoints OdalisDuboisVelezVMV 5",
+
 				
 				//Charline, CharlineClochertonVMV, 
 				"CharlineDialogueLumisteria.MtVapius.Arrival": "TODO",
@@ -1956,36 +2113,36 @@
 				//Su-Hyeong, SuHyeonFaycombeSereneVMV, 
 				"SuHyeonDialogueLumisteria.MtVapius.Arrival": "Glimsap? My family lives in Faycombe, not far from here. Say hi to them from me!",
 				"SuHyeonDialogueMon": "$query {{HasSBV}}#Sunberry kinda reminds me of home, in a good way. It's less isolated however.#My home was pretty recluse.|The place I live in currently kinda reminds me of home, in a good way. It's less isolated however.#My home was pretty recluse.",
-				"SuHyeonDialogueTue": "Mr Mullner sometimes wonder why I'm here, saying they don't need my help, but the young Alex is more relax since I'm around.",
-				"SuHyeonDialogueWed": "$query {{HasSBV}}, RANDOM 0.4#It's my cousin that told me Sunberry may be a good place to go. It's close to Pelican Town and some other places where I can work.#His daughter lives here, little Amina.|",
-				"SuHyeonDialogueThu": "I really like Karaoke. It's one of the thing I miss from the city.#$b#Singing from hours with friends.",
-				"SuHyeonDialogueFri": "I was hired by Pelican Town mayor to help the Mullner.#$b#The governor finally made that easier for small cities to have their own program to take care of our elders.",
+				"SuHyeonDialogueTue": "Mr. Mullner sometimes wonder why I'm here, saying they don't need my help.#$b#The young Alex is more relax since I'm around, and Mrs. Mullner is also less worried.",
+				"SuHyeonDialogueWed": "$query {{HasSBV}}, RANDOM 0.4#It's my cousin that told me Sunberry may be a good place to go. It's close to Pelican Town and some other places where I can work.#His daughter lives here, little Amina.|The contrast between the city and here, it was really hard at first.#$b#Like, 'resisting to drive all evening to get in a big place and return in the middle of the night' kind of hard.",
+				"SuHyeonDialogueThu": "I really like Karaoke. It's one of the thing I miss from the city.#$b#Singing for hours with friends.",
+				"SuHyeonDialogueFri": "I was hired by Pelican Town mayor to help the Mullner.#$b#The governor finally made that easier for small cities to have their own program to take care of our elders and those in need.",
 				"SuHyeonDialogueSat": "Each time I pass near the Mayor's house, I wonder how his car ended up here.",
 				"SuHyeonDialogueSun": "$query {{HasSBV}}, RANDOM 0.4#Miyoung will teach me some cooking recipe.#Dad did most of the cooking, because even then, my eomma was away a lot.#I'm very happy to get a chance to learn the recipe of her culture.|I found a book with some cooking recipes I'd like to try. Honestly most of the days I don't cook, I take something at the saloon on the way home.",
 				//2
 				"SuHyeonDialogueMon2": "The hardest part of working for the Mullners? The amazing smell of cookies in the oven.#$b#If I even look a little hungry, Ms Mullner would offer me some. And then, what I am supposed to even do? I'm only human.",
 				"SuHyeonDialogueTue2": "It feels good to have a nice sleep routine again. It was one of the reasons I decided to move.#$b#I was staying up a good part of the night and rushing to not arrive late at work way to often.",
-				"SuHyeonDialogueWed2": "I get news of family mainly by my mother, especially now that my sister is back in Faycombe and myself not in the Zune anymore.",
+				"SuHyeonDialogueWed2": "I get news of family mainly by my Eomma, especially now that my sister is back in Faycombe and myself not in the Zune anymore.",
 				"SuHyeonDialogueThu2": "The saloon in Pelican Town is far more reasonable for me. I play a bit of pool, maybe get a drink, share the latest news and walk home.#$b#It's not like the pursuit of the next thing I had in the Zune. Next drink, dance, song, trend, food... There was always something.",
 				"SuHyeonDialogueFri2": "My brother doesn't like coffee.#$b#To be fair, it's an acquired taste.",//gift taste todo.
-				"SuHyeonDialogueSat2": "There are barriers between me and my siblings. I felt... Different when I was younger. Now I see more how we resemble each other.#$b#But those barriers aren't easy to bring down. When we met, we fall into old habits pretty quickly.",
-				"SuHyeonDialogueSun2": "Me and my sister were running together when we were younger. She is pretty fast.#$b#I kinda lost the habit, but now I try to run on my way back to work, to get a bit of practice again.",
+				"SuHyeonDialogueSat2": "There are barriers between me and my siblings. I felt... Different when I was younger. Now I see more how we resemble each other.#$b#But those barriers aren't easy to bring down. When we meet, we fall into old habits pretty quickly.",
+				"SuHyeonDialogueSun2": "Me and my sister were running together when we were younger. She is pretty fast.#$b#I kinda lost the habit, but now I try to run on my way back from work, to get a bit of practice again.",
 				//4
 				"SuHyeonDialogueMon4": "I never was as talented as Chandra with language, or as Naveen with my hands.#$b#My father put a bit of pressure on me, as I was the eldest. He was learning how to be a parent, and did mistake.#$b#It wasn't really a good combination.",
-				"SuHyeonDialogueTue4": "TODO",
+				"SuHyeonDialogueTue4": "$query FALSE, RANDOM 0.4#Mrs. Pam initially didn't want me to work for her.#$b#She's ashamed of the state of her house and life.#$b#But it's obvious she wants to do better.|I can do grocery trips for the people I work for. Money is a delicate topic for a lot of them. You have to be trustworthy.",
 				"SuHyeonDialogueWed4": "People I work for aren't 'life lesson'. People in dire situations aren't 'life lesson'.#$b#It's important to appreciate what we have and all that, but not by making others some tools for your personal growth.",
-				"SuHyeonDialogueThu4": "TODO",
-				"SuHyeonDialogueFri4": "TODO",
-				"SuHyeonDialogueSat4": "I left my home in the hope of finding my place. Instead, I met the city and all its distractions.",
+				"SuHyeonDialogueThu4": "My back hurts a bit today. I should get a muscle remedy from Dr. Harvey.",//gift taste todo.
+				"SuHyeonDialogueFri4": "I love singing. I'm not like, super good at it, but that's what keeps it fun.#$b#Someone once told me you should keep some things at pure hobbies. Be careful about not making every of your hobbies something you should be good at, or productive at.",
+				"SuHyeonDialogueSat4": "Years ago, I left my home in the hope of finding my place. Instead, I met the city and all its distractions.",
 				"SuHyeonDialogueSun4": "TODO",
 				//6
 				"SuHyeonDialogueMon6": "I can admit it now, I resented my siblings for their 'success'.#$b#Especially since my job isn't valued or seen by people as qualified.#$b#Now I care less about this kind of judgement, I know that what I do is important.#$b#I also try to detach myself of the conceptions that our works is giving us worth. But I still have progress to do, obviously.",
 				"SuHyeonDialogueTue6": "TODO",
-				"SuHyeonDialogueWed6": "TODO",
+				"SuHyeonDialogueWed6": "My sister sometimes struggled to be accepted in a group, outside of our family circle.#$b#On the contrary, it was easy for me to bond with others : my problem was getting along with family.#$b#Now that people gets her, it's finally easier for her.",
 				"SuHyeonDialogueThu6": "TODO",
 				"SuHyeonDialogueFri6": "TODO",
-				"SuHyeonDialogueSat6": "TODO",
-				"SuHyeonDialogueSun6": "TODO",
+				"SuHyeonDialogueSat6": "Years ago, I was smoking. It was quite a journey to stop.#$b#Moving here was... Now my life feels quite empty with all the city's distractions gone. And my brain wanting to fill this void. So, quite a struggle.#$b#For the moment I still manage.",
+				"SuHyeonDialogueSun6": "My job is important, but there's still days when I return home and all I have the energy to do is to sit in front of the tv.#$b#The worst part is that I know I'm lucky, because it's only some days. For some people I know, it's the daily life.",
 				//8
 				"SuHyeonDialogueMon8": "TODO",
 				"SuHyeonDialogueTue8": "TODO",
@@ -2003,7 +2160,7 @@
 				"SuHyeonDialogueSat10": "TODO",
 				"SuHyeonDialogueSun10": "TODO",
 				
-				"SuHyeonDisplayName": "Ayo",
+				"SuHyeonDisplayName": "Su-Hyeon",
 				
 				//gift
 				"SuHyeonGiftLoved": "Oh, that's the stuff good memories are made of.",
@@ -2091,7 +2248,7 @@
 				"ChloeRandom04": "I wish I could come here more often. But I'm often at the other end of the country.",
 				"ChloeRandom05": "I love tasting different foods. The latest trend, the country cuisine, the fancy dining, there's discoveries everywhere.",
 				"ChloeRandom06": "Moïra is the one that designed my purple dress. It's my favorite.",
-				"ChloeRandom05": "TODO",
+				"ChloeRandom07": "TODO",
 				
 				
 				"VivianRandom01": "I'm coming here to paint when I can. The place is relaxing.",
@@ -2144,6 +2301,14 @@
 				"EmilyeventSeen_Lumisteria.MtVapius_Hamlet_ClintMeetMariam_memory_oneweek":"Clint looked almost satisfied the other day. He spoke about some new project for work.#$b#It's rare he's the one engaging discussion. It's good, however.",
 				
 				
+				
+				"JodiDialogueeventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_oneday": "Oh, the woman visiting the doctor the other day is his cousin?",
+				"HarveyDialogueeventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_oneday": "It was good to see Helia again.",
+				"HarveyDialogueeventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_oneweek": "The pickles Helia gave me were amazing.",
+				"HarveyDialogueeventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_onemonth": "I wonder if I can convince Helia to do some pickles for me again...",
+				"MaruDialogueeventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_oneweek": "Dr. Harvey tried to convince me to test some homemade pickles, saying they were amazing.%revealtaste:Harvey:342%revealtaste:Maru:342#$b#I told him he would enjoy them far more than I would ever.#$b#Sure, homemade stuff can be way better, but it's still pickle.",
+								
+				
 				"WillyDialoguefishCaught_Lumisteria.MtVapius_Sturgiant_oneweek": "Sturgeons can reach impressive size, but the one you caught deserve a picture in a fisher's magazine.",
 				"WillyDialoguefishCaught_Lumisteria.MtVapius_AlpineCharPrince_oneweek": "I heard you caught an Alpine char of an unusual size!#$b#These fishes usually migrate when summer comes.#$b#This one probably was big enough to not feel the need.",
 				"WillyDialoguefishCaught_Lumisteria.MtVapius_PlanetFish_oneweek": "Each area has their own legend, tales that are passed on by generation. You caught one of those. Planet fish, uh? I can see why it got that name.",
@@ -2191,7 +2356,9 @@
 				
 				
 				//Haley
-				"HaleyDialogueLumisteria.MtVapius.AsterAngry": "My friend Aster had to deal with annoying people today.*Sigh*#$b#I'm a bit away to help more than by listening.",
+				
+				"HaleyDialogueeventSeen_Lumisteria.MtVapius_AsterHouse_Aster2H_memory_oneday": "$query !PLAYER_HAS_CONVERSATION_TOPIC Current Lumisteria.MtVapius.AsterAngry#My friend Aster had to deal with someone annoying the other day.*Sigh*$u#$b#I'm a bit away to help more than by listening. It's good you were here.#$action AddFriendshipPoints Haley 5|My friend Aster had to deal with annoying people the other day.*Sigh*$u#$b#I'm a bit away to help more than by listening.$u#$action AddFriendshipPoints Haley -5",
+				//"HaleyDialogueLumisteria.MtVapius.AsterAngry": "My friend Aster had to deal with annoying people today.*Sigh*#$b#I'm a bit away to help more than by listening.",
 				"HaleyDialogueTue6": "I challenge myself to take at least a picture when I go to Mount Vapius.#$b#Anything : a landscape, a flower, a detail of the train... I want to start a new project.",
 				"HaleyDialoguesummer_Sat6": "Some time ago, Aster needed help to start a chore, so I did a support call. It worked pretty well, and I even managed to clean the living room. So now and then, we do that together.#$b#Emily is also pretty happy about this new habit.",
 				
@@ -2229,9 +2396,35 @@
 				"Clintsummer_Fri6": "One of the friends of Maddy told me some museum in Saltspring City was interested in ordering a few items made with old techniques.#$b#They would put them near the old ones with some explanations.#$b#So people would get to understand the process better. And maybe manipulate the ones I made, to get how they work and all.",
 				"Clintfall_Mon8": "I started studying this minecart system.#$b#Last time I was in Glimsap, an old miner named Suha mentioned her group is maintaining their minecart system.#$b#I don't want to rely on some lucky event for those in Pelican Town to continue working.",		
 				"Clintfall_Mon10": "Now that I have a better grasp of the way those minecarts are working, I asked Lewis to extend some funds to their maintainance.#$b#He wasn't really happy about it, but he agreed that it's better to spend now to keep stuff in state than to have to pay way more to repair them later.",		
-				//Clint dialogue changes post event 3 + CT ended.
+				"ClintThu8": "I discussed with one of Maddy's friend. He saw that I was often seeing things in a negative way.#$b#He challenged me to try to see some positing things in daily life.#$b#It feels strange... To have someone wanting things to improve for me.",
+				
+				"ClintGreenRain_2": "I asked Harvey to explain me some of the basic first care things.#$b#I feel he was happy I asked.#$b#If I want to find purpose, I have to try learning new things. I can't wait for it to fall from the sky.",
+				
+				"ClintResort": "I tried to engage conversation with Willy. I don't know lot of stuff about fishes, so I mostly listened.",
+				"ClintResort_Shore": "It's good to change scenery. I'm sometimes stuck in my routine.",
+				"ClintResort_Bar": "I'm hungry. I wonder what to choose.",
+
+				
+				"ClintAcceptGift_(O)StardropTea": "You're giving this... to me? You're making my day.",
+
+				"Clintmarried_Emily": "If there's one person that deserves to be happy, that's Emily.",
+				
+				//Clint dialogue changes post event 3
+				"ClintsummerTue8R01": "I discussed with Maddy's sister, Aster.#$b#It was a bit akward for both of us. She's not super at ease with others either.",
+				"ClintsummerTue8R02": "I brought Gus some fresh basil the other day when returning from Mount Vapius.#$b#He made me a fresh salad with some on top.",
+				"ClintsummerTue8R03": "Somehow, I discuss with more people in a week now than I did in months before.",
+				
+				"Clint_Mon8R01": "Today, I opened one of my grandfather's notebook.#$b#I realise that I have a lot of anger toward my father. But I still want to keep a connection with the work my family did.",
+				"Clint_Mon8R02": "It's hard to not dwell in the 'what if', sometimes.#$b#What if my father was a better person? What if I found my calling?",
+				"Clint_Mon8R03": "I wonder if I should learn more stuff about first care. I know a lot about burns already.",
+
+				
+				//Clint dialogue changes post event 4 + CT ended.
 				"ClintTue8": "Emily had an issue with her sewing machine. I was able to fix it.#$b#Luckily it's not one of those full of electronics.",
 				"Clintfall_Fri6": "%Clint is humming to himself.#$b#I was humming? Guess it's because Mariam is always singing. Must have caught the habit.",
+				
+				
+				"Clintdivorced_Emily": "Emily needed someone to speak to. I am glad I was here for her. Not like a certain someone.",
 
 				
 				
@@ -2278,6 +2471,8 @@
 				"AbdonShop06": "If you want flower seeds, Aster sells those.",
 				"AbdonShop07": "I'm proud of keeping some local varieties alive.",
 				"AbdonShop08": "My wife loves fishes, so sometimes I buy them for her.",
+				"AbdonShopOpenSoon": "'Get your seeds here, directly from the source. I open in a moment.'",
+				"AbdonShopClosed": "'I'll be here next Tuesday.'",
 							
 				"AsterShopRain": "Tomorrow, the flowers will look so vibrant.",
 				"AsterShop01": "I sell mostly seeds of local flowers.",
@@ -2287,6 +2482,8 @@
 				"AsterShop05": "Welcome! Interested in something? Maybe some [SuggestedItem]?",
 				"AsterShop06": "Who don't need more flowers in their life?",
 				"AsterShop07": "Flowers make great gift, why not growing some?",
+				"AsterShopOpenSoon": "Botanical Reserve's seeds. Fund Nature's protection.",
+				"AsterShopClosed": "Closed - Open next Saturday, 9 to 18.",
 
 				"DjamelShopRain": "Why not make your interior more cosy? A nice place to stay warm.",
 				"DjamelShop01": "Bring color in your life! Bring a [SuggestedItem] home!",
@@ -2306,6 +2503,8 @@
 				"HeliaShop05": "Abdon uses my seedmakers, he's pretty happy of them.",
 				"HeliaShop06": "I have limited stocks : crafting those machines takes time.",
 				"HeliaShop07": "Limited stocks, limited offers! Don't miss them.",
+				"HeliaShopOpenSoon": "'Finishing my coffee! I open at 9.'",
+				"HeliaShopClosed": "'I'll be back next saturday'",
 				
 				"NaveenShop01": "A pair of earrings would look good on you.",
 				"NaveenShop02": "I sell some things in exchange for local coins.",
@@ -2352,6 +2551,31 @@
 				"AloiseShop05": "We make all our products ourselves.",
 				"AloiseShop06": "When I do a break, I love looking at the traveling cart's stock.",
 				"AloiseShop07": "Candies are a great gift. Having someone in mind for one?",
+				"AloiseShopOpenSoon": "Hi, I have a few things to prepare still.",
+				"AloiseShopClosed": "I come in Glimsap every 9 and 23 of the months.",
+				
+				"FelicityShopDiscount": "I'm closing soon! Look at the discounts.",
+				"FelicityShopRain": "I'm glad you faced the weather to come. Welcome.",
+				"FelicityShop01": "I come once a month here.",
+				"FelicityShop02": "Look at my fresh [SuggestedItem].",
+				"FelicityShop03": "I have a small shop in Saltspring City, too.",
+				"FelicityShop04": "Freshs products, full of vitamines!",
+				"FelicityShop05": "Hi! May I help you?",
+				"FelicityShop06": "Did you see the jewels sold on this market? How pretty they are.",
+				"FelicityShop07": "I don't look forward to carry the crate back into the van.",
+				"FelicityShopOpenSoon": "Hi, I'm opening at 9, just have a few things to set!",
+				"FelicityShopClosed": "Sorry, we're closed. See you next month.",
+				
+				"MaelleShopRain": "Hopefully the books will not get too damp.",
+				"MaelleShop01": "We are funded by Ferngill Education Fund.",
+				"MaelleShop02": "Aster come regularly here to trade books.",
+				"MaelleShop03": "I come in places without a library.",
+				"MaelleShop04": "We use the reeds for some book repair on our oldest stock.",
+				"MaelleShop05": "I hate driving on small roads, but the job's important.",
+				"MaelleShop06": "So, what's your favorite genre?",
+				"MaelleShop07": "When you buy books, you contribute to providing free books for others.",
+				"MaelleShopOpenSoon": "The shop is opening soon. How are you?",
+				"MaelleShopClosed": "I'm closed, but I'll be back next month.",
 				
 				"TravelerShop01": "The air is fresher here, don't you think?",
 				"TravelerShop02": "It's a nice change to be on a marketplace. I can share a coffee cup with colleagues.",
@@ -2427,7 +2651,14 @@
 				"MtVapiusQuestOrpimentForMariamTitle":"Orpiment for Mariam",
 				"MtVapiusQuestOrpimentForMariamText":"Mariam wants to help her cousin to find material for his project.",
 				"MtVapiusQuestOrpimentForMariamObjective":"Bring Mariam 1 Orpiment.",
-				"MtVapiusQuestOrpimentForMariamDialogue":"You found one, wonderful!",
+				"MtVapiusQuestOrpimentForMariamDialogue":"You found one, wonderful! With what I got myself, Djamel should have enough, hopefully.#$b#Here's some extra reward! #$action AddItem (O)Lumisteria.MtVapius_WeirdCoins 20",
+				
+				
+				"MtVapiusQuestMyriadinTeaForPamTitle":"Myriadin Tea For Pam",
+				"MtVapiusQuestMyriadinTeaForPamText":"Pam wants to drink again a Myriadin Tea.",
+				"MtVapiusQuestMyriadinTeaForPamObjective":"Bring Pam 1 Myriadin Tea.",
+				"MtVapiusQuestMyriadinTeaForPamDialogue":"Thanks. *sip* Hey, that's nice.#$b#It's a shame it's so expensive...",
+				
 				
 				
 				//Mails
@@ -2490,8 +2721,15 @@
 				"MtVapiusEweCheeseForGusMail_Title_Translated": "Gus' Cheese Request",
 				
 				
-				"MtVapiusButterRequestMail_Translated": "Dear @,^Vincent is curious, he reads that what the cows eat and the method of production are changing the flavour and color of butter. He asked me to compare butter from Joja, and Marnie's Ranch. But he also want to try home-made butter. Apparently, you make cream and then put it in a cheese press. He told me it's how it was made in Glimsap. Do you think you can do it? We don't have this kind of material at home, it's way to expensive.^^   -Jodi",
+				"MtVapiusButterRequestMail_Translated": "Dear @,^Vincent is curious, he reads that what the cows eat and the method of production are changing the flavour and color of butter. He asked me to compare butter from Joja, and Marnie's Ranch. But he also want to try home-made butter. Apparently, you make cream and then put it in a cheese press. He told me it's how it was made in Glimsap. Do you think you can do it? We don't have this kind of material at home, it's way too expensive.^^   -Jodi",
 				"MtVapiusButterRequestMail_Title_Translated": "Jodi's Butter Request",
+				
+				"MtVapiusOrpimentRequestMail_Translated": "Hi @,^My cousin Djamel wants some orpiment for a project he's having.^Naveen told me he'll let me know if he find any, and I collected a few sample myself. If you find one, bring it to me and I'll pay for it.^^   -Mariam",
+				"MtVapiusOrpimentRequestMail_Title_Translated": "Mariam's Orpiment Request",
+				
+				"MtVapiusMyriadinTeaRequestMail_Translated": "Hey,^I remember tasting a blue tea once in Glimsap, brought by a fellow fisher. It was pretty relaxing.^Myriadin tea, it's called. Think you can find me a cup?^^   -Pam",
+				"MtVapiusMyriadinTeaRequestMail_Title_Translated": "Pam's Blue Tea Request",
+				
 				
 				//Stellar stuff
 				"MtVapiusNightMiscanthusSeedsMail_Translated": "Hi @,^Thanks for collecting some of those crescent pods for me. I collected some seeds to grow more of them, and noticed some of them were more dark and thin. I suspect they would grow something different.^Of course, I will try to grow them, but I'm curious if you'll got result too, and I'm sure you find this as fascinating as I do!^Take care of yourself and your garden.^^   -Aster",
@@ -2501,6 +2739,8 @@
 				"MtVapiusDwarfCosmosSeedsMail_Translated": "@,^I put your name on this package and then in the nearest box. Surely it will find you now. I heard this 'Mail' sending system is named the 'Past', so it may be quite some time since we discussed.^Remember the plant you were curious about? Before, we grew them, alongside others. I found the seeds of a different one. I attached it to this letter so you can try growing them yourself.^Your gift awakened memories... I remember we grew stars, they were my favorites.",
 				"MtVapiusDwarfCosmosSeedsMail_Title_Translated": "Dwarf Package",
 				
+				"MtVapiusLivreauRootsMail_Translated": "Dear @,^I was informed by my colleague, Mr. Demetrius, that you both worked on a project involving samples from Mount Vapius.^I'm just back from a trip at Mount Skyshard, not too far from here. You'll find in this package two roots freshly gathered there.^I have more here, growing them in different substrates, including soil taken at the site.^Please note that I will NOT send more of them. Sending them to someone that may ignore the proper scientific method is an experiment I do not intent to repeat in case of failure.^However, I have to acknowledge that in order to get more data, collaborating with other fields (ha!) should at least be attempted.^   -Professor Livreau",
+				"MtVapiusLivreauRootsMail_Title_Translated": "Skyshard Package",
 				
 				//Unlock
 				"MtVapiusImprovedWellMail_Translated": "@,^An artisan of Faycombe, Helia Diamanti, contacted me with some design ideas for buildings.^One of her ideas is to allow a Well to provide water for nearby paddy crops, allowing them to grow faster. If you are interested, come by the shop, it should be a simple enough improvement to add. Just bring 3 Iron Bars and 500g.^^   -Robin",
@@ -2546,6 +2786,8 @@
 				"MtVapiusMariamCookingMail_Title_Translated": "Mariam's Recipe",
 				"MtVapiusNaveenCookingMail_Translated": "@,^Here's a recipe of fish curry that is pretty successful during our family gathering. The original asked for spice blends we can't find here, but spice berry ended being an acceptable substitute.^^   -Naveen",
 				"MtVapiusNaveenCookingMail_Title_Translated": "Naveen's Recipe",
+				"MtVapiusOdalisCookingMail_Translated": "@,^This is a recipe I do for breakfast. It's a great way to use eggs and extra mushrooms you may have.^Take care.^^   -Odalis",
+				"MtVapiusOdalisCookingMail_Title_Translated": "Odalis's Recipe",
 				
 				"MtVapiusAsterMail_Translated": "@,^I have those seed packages in extra, and you may want to grow more flowers on your farm.^Take care of yourself and your garden.^^   -Aster ",
 				"MtVapiusAsterMail_Title_Translated": "A Gift From Aster",
@@ -2561,6 +2803,9 @@
 				"MtVapiusMariamMail_Title_Translated": "A Gift From Mariam",
 				"MtVapiusHeliaMail_Translated": "@,^I had some stuff lying around, and I needed to make space for a project. I figured you might be interested in those!^^Your favorite artisan.^   -Helia",
 				"MtVapiusHeliaMail_Title_Translated": "A Gift From Helia",
+				"MtVapiusOdalisMail_Translated": "@,^Eating healthy is important, but life's so busy. Here's something to help with that.^Looking forward to cross path with you soon. Take care.^   -Odalis",
+				"MtVapiusOdalisMail_Title_Translated": "A Gift From Odalis",
+				
 				
 				
 				"MtVapiusCloverSeedsMail_Translated": "Dear member of the Stardew Valley Agricultural Network,^We are giving starting sets to farmers to move to better agrocultural practices. You'll find a package containing blue clover seeds. While they aren't valuable by themselves, they do leave ground fertilized after harvest, allowing following crops to grow faster.^Farmers reported that crops grew even faster on second year and after.^This sample is gracefully provided by Abdon Madi's farm. You can buy more from him at his market stand on Glimsap every saturday.^^   -The Stardew Valley Agricultural Network",
@@ -2598,12 +2843,44 @@
 				"MtVapiusmetalheads2Mail_Translated": "@^The Lodge and the Guild appreciate the efforts you provide in fighting monsters.",
 				"MtVapiusmetalheads2Mail_Title_Translated": "Eradication Goal : Metal Heads reward.",
 				
+				
+				//Post-event
+				"MtVapiusChandraCandyMail_Translated": "Dear @^Naveen asked me to write this on his behalf, as he shouldn't at the moment.^He wanted you to have some candies as a thank-you for the other day.^^   -Chandra",
+				"MtVapiusChandraCandyMail_Title_Translated": "Candies Gift.",
+				
+				
+				
+				//Special Order Related
+				"MtVapiusAdelaideBalsamicVinegarTipsMail_Translated": "Dear @^So you may be willing to provide the goods I'm looking for? I appreciate the willingness to help an old lady.^^Here's some tips you may already know, but I love sharing those anyway.^Balsamic Vinegar is made by putting Mosco Cotto in a Keg. Mosco Cotto is grape cooked slowly, which you usually obtain by putting some in a candy maker.^You can even age Balsamic Vinegar over time, the best ones are selling for as much as some wines. Of course, for my little order, you will not get time to age them.^But if you decide to produce more, it's a nice thing to do.^^   -Adélaïde",
+				"MtVapiusAdelaideBalsamicVinegarTipsMail_Title_Translated": "Balsamic Vinegar Tips",
+				
+				
+				
+				//notes
+				"MtVapiusNoteGeneric_Description_Translated": " This note seems to come from Mount Vapius.",
+				"MtVapiusCreamAndStrawberriesRecipe_Translated": "^When you get good products, sometimes the best way to make them shine is simplicity.^This recipe focus on strawberries and cream.",
+				"MtVapiusCreamAndStrawberriesRecipe_Title_Translated": "Mount Vapius - Recipe",
+				"MtVapiusNotePicnicMemo_Translated": "^Aster loves a good coleslaw.^Maddy's favorite is Jam Pie.^Odalis prefers empanadas, with extra spicy filling.^For me, obviously, Lucky Lunch.%revealtaste:AsterPellegrinVMV:648%revealtaste:MaddyPellegrinVMV:Lumisteria.MtVapius_Cooking_JamPie%revealtaste:OdalisDuboisVelezVMV:Lumisteria.MtVapius_Cooking_Empanadas%revealtaste:MoiraDuboisVMV:204",
+				"MtVapiusNotePicnicMemo_Title_Translated": "Mount Vapius - My picnic memo",
+				"MtVapiusNoteSummerList_Translated": "^Eat Ice cream with Amma.^Pick poppies.^Make poppies dolls.^Get rainbow candies for Mama Naveen.^Search treasures in the ground. (Amma told me Mama Su-Hyeon once found a large mask, and she found a fossil once)^Write letter to everyone.%revealtaste:TODO:TODO",
+				"MtVapiusNoteSummerList_Title_Translated": "What I want to do this summer.",
+				"MtVapiusNoteMarketDays_Translated": "^Tuesday :^Moïra, cheese products and recipes.^Mariam : adventuring supplies.^Djamel : furniture.^Abdon : vegetables and fruit seeds.^Saturday :^Moïra, clothes.^Helia : machines.^Naveen : Gems.^Aster : flower seeds.^Specials :^Maëlle : book trades, once market is attracting more people.^Felicity : vegetables, fruits, forage.^Aloïse : candies.",
+				"MtVapiusNoteMarketDays_Title_Translated": "Market Days At Glimsap",
+				"MtVapiusNoteCheeseMaking_Translated": "^I smoked my first batch of cheese today. I like to think grandpa would be proud.^I remembered to put some milk in the preserve jar so I have enough cream to make butter later, when my cheese press will be empty.^Right now, I'm experimenting making 'cheese' with Woodgoat mushroom.^I will return to Saltspring City soon, so I want to try as much things as possible before that.",
+				"MtVapiusNoteCheeseMaking_Title_Translated": "Cheese Making",
+				"MtVapiusNoteStickyMemory_Translated": "^^No one on the surface has the plant I want. Maybe it doesn't grow around this place.^I crave its sugary taste... We made candy with it.",
+				"MtVapiusNoteStickyMemory_Title_Translated": "Sticky Memory",
+				"MtVapiusNoteCogsAndGears_Translated": "^I haven't found a way to disarm those explosive heads, but I now get a better understanding of the mechanical parts involved.^The Lodge may be able to get more useful resources out of them.^Maybe it'll be at least a consolation...",
+				"MtVapiusNoteCogsAndGears_Title_Translated": "Cogs And Gears",
+				
+				
+				
 				//Events
 				//Lumisteria.MtVapius_Arrival
 				"ArrivalOverheadAdelaide01": "...lovely, as always.",
 				"ArrivalOverheadCelestine01": "Oh, there's someone. Hi.",
 				"ArrivalAdelaide01": "Hi, welcome to Mount Vapius. I see Pelican Train Station is accessible again. What a good news.$1",
-				"ArrivalCelestine01": "I'm Celestine, owner of the Inn.#$b#Most of our rooms are taken, but just so you know, there's always a couch available if you can't make it in time to wherever you're heading.",
+				"ArrivalCelestine01": "I'm Célestine, owner of the Inn.#$b#Most of our rooms are taken, but just so you know, there's always a couch available if you can't make it in time to wherever you're heading.",
 				"ArrivalAdelaide02": "And we can arrange travel to your destination in the early morning if needed.#$b#I'm Adélaïde. I'm the station master.#$b#We have lines with Pelican Town. Just use the machine to get a ticket when you want to leave#$b#Mount Vapius is a small station, but there're tourists visiting, and they need someone to welcome them properly.",
 				"ArrivalCelestine02": "Glimsap is well known for its market, every Tuesday and Saturday. There're places to hike, but also some where monsters roam, so be careful.",
 				"ArrivalAdelaide03": "Enjoy your visit here.#$b#Ah, what a pleasure to know everything is back in order.",
@@ -2612,7 +2889,7 @@
 				"ArrivalMagicMessage01": "On arrival, you nearly stumble on a 'Totem' hidden behind the statue.",
 				"ArrivalMagicOverheadCelestine01": "Oh, there's someone. Hi.",
 				"ArrivalMagicAdelaide01": "$query LOCATION_ACCESSIBLE Railroad#Hi, welcome to Mount Vapius.#$b#I'm Adélaïde. I'm the train station master.#$b#You'll find it just under the village. We have lines with Pelican Town. Just use the machine to get a ticket when you want to leave.#$b#It's a small station, but there're tourists visiting, and they need someone to welcome them properly.|Hi, welcome to Mount Vapius.#$b#I'm Adélaïde. I'm the train station master.#$b#You'll find it just under the village, but some of our lines are still out of order.#$b#*Mumbling* What is Pelican Town doing, not clearing the access, I wonder...#$b#We'll find a solution so you can return to it, don't worry. Just use the machine to get a ticket when you want to leave.#$b#Mount Vapius is a small station, but there're tourists visiting, and they need someone to welcome them properly.",
-				"ArrivalMagicCelestine01": "I'm Celestine, owner of the Inn.#$b#Most of our rooms are taken, but just so you know, there's always a couch available if you can't make it in time to wherever you're heading.",
+				"ArrivalMagicCelestine01": "I'm Célestine, owner of the Inn.#$b#Most of our rooms are taken, but just so you know, there's always a couch available if you can't make it in time to wherever you're heading.",
 				"ArrivalMagicAdelaide02": "And we can arrange travel to your destination in early morning if needed.",
 				"ArrivalMagicCelestine02": "Glimsap is well known for its market, every Tuesday and Saturday. There're places to hike, but also some where monsters roam, so be careful.",
 				"ArrivalMagicAdelaide03": "Enjoy your visit here.",
@@ -2633,7 +2910,7 @@
 				//Inn
 				
 				"InnGazetteOverheadCelestine01": "Welcome.",
-				"InnGazetteCelestine01": "Hi, @. It's nice to see you around.#$b#Adelaïde and I discussed and we thought you may be interested in some of the magazines we receive.#$b#They are a great way to know more about the region, and some even contain gifts.",
+				"InnGazetteCelestine01": "Hi, @. It's nice to see you around.#$b#Adelaïde and I were discussing about various stuff, and we thought you may be interested in some of the magazines we receive.#$b#They are a great way to know more about the region, and some even contain gifts.",
 				"InnGazetteMessage01": "You will now receive magazines in the mail.",	
 				
 				"InnStellarSecretOverheadCelestine01": "A what?",
@@ -2774,6 +3051,149 @@
 				"InnAster2HCelestine2HAsterOverhead02":"Sure!",
 				
 				
+				"InnOdalisIntroductionCelestineOverhead01":"Welcome.",
+				"InnOdalisIntroductionOdalisOverhead01":"Hello!",
+				"InnOdalisIntroductionOdalis01":"Mrs Dubois, you may not remember me, as it's a long time since we saw each other.#$b#I'm Odalis.",
+				"InnOdalisIntroductionCelestine01":"Oh, of course I remember you, you're my sister's grandson. How tall you are now.#$b#What a pleasure to see you again.$h",
+				"InnOdalisIntroductionMoiraOverhead01":"Yeah, what a pleasure...",
+				"InnOdalisIntroductionOdalis02":"I'm glad to hear that. I know we discussed this topic before by mail, but I wanted to come in person before setting things in motion.$3#$b#My lita's... Her will was that I'd come here, see if I liked the place.$3#$b#Would this work for you? As you know, I'm familiar with the business.$3",
+				"InnOdalisIntroductionMoiraOverhead02":"*Mumble* In big hotels, not small inns.",
+				"InnOdalisIntroductionCelestine02":"I'd be happy to have you here.$h#$b#But what about you? Are you coming here out of obligation?$s",
+				"InnOdalisIntroductionOdalis03":"No! No, I assure you I'm not.#$b#Of course, it'd be premature to make any long term plans yet, but I'm eager to be here, work in the place my lita spoke so much about.$h#$b#And contribute to our family's business.",
+				"InnOdalisIntroductionCelestine03":"Then we'll prepare a room for you.$h#$b#Moïra, we'll have to put it in the second floor, as the other rooms are regularly booked. You'll give me a hand with the shelves?",
+				"InnOdalisIntroductionMoiraOverhead03":"*sigh* Sure...",
+				"InnOdalisIntroductionOdalis04":"Please, I do not want to cause trouble. I can definitively set things myself.",
+				"InnOdalisIntroductionCelestineOverhead02":"But...",
+				"InnOdalisIntroductionCelestine04":"It wouldn't be right to make you do all this tedious work on the day you arrive...$s",
+				"InnOdalisIntroductionOdalis05":"Let me help at least, so I can start learning how you do things.#$b#I'm coming here to work after all!",
+				"InnOdalisIntroductionMoira01":"And those shelves are way too heavy for you anyway, grandma.$a",
+				"InnOdalisIntroductionCelestine05":"Ah, the energy of the youth! Well, if you insist... Let me know when you'll come here so we can plan.",
+				"InnOdalisIntroductionOdalis06":"I'll do. Thanks for having me here. It's a pleasure to see you again, and you, cousin Moïra.$h",
+				"InnOdalisIntroductionOdalis07":"I have some things to settle but it shouldn't take long. A bit less than a week, I'd say. I'm really impatient to be back.$h",
+
+				
+				"InnOdalisArrivalCelestineOverhead01":"Oh, yes...",
+				"InnOdalisArrivalCelestine01":"I forgot how massive this one was...$s",
+				"InnOdalisArrivalMoiraOverhead01":"Let's do it.",
+				"InnOdalisArrivalMoira01":"First, moving all those books.",
+				"InnOdalisArrivalCelestine02":"It may be a good time to donate some of them. I'll put them in a crate and see if Adélaïde wants some for the Train Station.",
+				"InnOdalisArrivalMoira02":"Just do everyone a favor and don't offer them to Aster.#$b#She will not be able to resist, and she wants to clear stuff, not get more.#$b#Maybe you want some, @?$h",
+				"InnOdalisArrivalMessage01":"Take some books?",
+				"InnOdalisArrivalAnswer01":"Books of farming.",
+				"InnOdalisArrivalAnswer02":"Books of foraging.",
+				"InnOdalisArrivalAnswer03":"Books of mining.",
+				"InnOdalisArrivalAnswer04":"Books of fishing.",
+				"InnOdalisArrivalAnswer05":"Books of combat.",
+				"InnOdalisArrivalAnswer06":"You aren't interested.",
+				"InnOdalisArrivalDeclineMoiraOverhead01":"As you want.",
+				"InnOdalisArrivalOdalis01":"Let me get the ones on the top shelves. I can reach them better.",
+				"InnOdalisArrivalOdalis02":"I will have some errands to do once we're done here, so I'll be back tomorrow.",
+				"InnOdalisArrivalMoira03":"Hmmm... We should have finished soon. Once it's moved, you will get access to the second floor, @. You should come see how it is.",
+				
+				
+				"InnOdalisSettledMoiraOverhead01":"Where's Odalis?",
+				"InnOdalisSettledCelestine01":"Doing some errand. He's looking at pipes with Helia to replace the old ones.",
+				"InnOdalisSettledMoira01":"Good.",
+				"InnOdalisSettledCelestineOverhead01":"Moïra?",
+				"InnOdalisSettledMoiraOverhead02":"What?",
+				"InnOdalisSettledCelestine02":"Will you finally tell me what annoys you?$s",
+				"InnOdalisSettledMoira02":"... Ok.$s#$b#...$s#$b#Why are you so welcoming of him? He is coming to change everything!$a",
+				"InnOdalisSettledCelestine03":"And that would be a bad thing?$s",
+				"InnOdalisSettledMoira03":"Of course!$a#$b#It's the family Inn, we can't change things like that!$s",
+				"InnOdalisSettledCelestine04":"But my dear, this place is always changing. It has to.#$b#It's partly why it's still here.",
+				"InnOdalisSettledMoira04":"He's bringing changes based on what it is in his mom business! It's nothing like our Inn.$s",
+				"InnOdalisSettledCelestine05":"I agree. For example, he suggested we install one of this lift so we don't have to carry the sheets from the laundry room anymore.",
+				"InnOdalisSettledMoira05":"Yeah, exactly! I don't see the point. We can carry some sheets. It's no big deal.",
+				"InnOdalisSettledCelestine06":"Hmm, hmm. Sure. You remember when you came from vacation, one winter, and your Grandpa was staying in bed the whole time? Albert had to help me with pretty much everything.$s",
+				"InnOdalisSettledMoira06":"Hu? Yeah, I remember, of course. Grandpa was healing from his... back injury...$s",
+				"InnOdalisSettledMoiraOverhead03":"Oh. Oh!",
+				"InnOdalisSettledMoira07":"Oh, I'm sorry, Grandma, I was being selfish.$s",
+				"InnOdalisSettledCelestine07":"No harm done, my dear. I don't go without thinking in this.#$b#Listen, I know you're worried, but lot of those changes don't need to be permanent.#$b#In some time, we may see which ones are good to keep and which ones aren't.#$b#I was planning to discuss the biggest ones with both of you soon anyway.#$b#And for the others... Consider them as an experiment. Try them honestly, and keep the same honesty when we'll discuss what we keep or don't.",
+				"InnOdalisSettledMoira08":"I can do that.#$b#I will do that.$h",
+				"InnOdalisSettledCelestineOverhead02":"My dear...",
+				
+				
+				
+				
+				"InnMoiraCelestineMeetingMoira01":"This idea didn't work however. But I admit that one is pretty good..",
+				"InnMoiraCelestineMeetingCelestine01":"I'm glad to hear. So... What do you think, now?$h",
+				"InnMoiraCelestineMeetingMoira02":"He is bringing efficient solutions. Some are planned for hotels way larger however, so we don't really need them.",
+				"InnMoiraCelestineMeetingCelestine02":"That is a pretty good analysis. I'd like we discuss that with Odalis directly, next time, however.$h",
+				"InnMoiraCelestineMeetingMoira03":"Ugh, Grandma, you're acting like that again!$a",
+				"InnMoiraCelestineMeetingCelestineOverhead01":"Like what?",
+				"InnMoiraCelestineMeetingMoira04":"Like you would be happier to see him take the Inn after you.$s",
+				"InnMoiraCelestineMeetingCelestine03":"Just less worried, that's all.$s",
+				"InnMoiraCelestineMeetingMoiraOverhead01":"What?!",
+				"InnMoiraCelestineMeetingCelestine04":"Ah! Let me explain, please.$s#$b#Odalis... Well, his mother may expect him to take her business one day.#$b#He knows all the work such a place involves, and he is ready for it.#$b#So far, he likes being here too.",
+				"InnMoiraCelestineMeetingMoiraOverhead02":"Me too!",
+				"InnMoiraCelestineMeetingCelestine05":"But you only worked here for some summers, and you don't do everything.#$b#It was always a part time thing for you.",
+				"InnMoiraCelestineMeetingCelestine06":"It can be such a burden, you know? You're such a creative person, Moïra.$s#$b#And I'm so proud of what you do.$h#$b#I would hate seeing you stuck somewhere you didn't choose.$s",
+				"InnMoiraCelestineMeetingMoira05":"It is how it feels for you? A burden?$a",
+				"InnMoiraCelestineMeetingCelestine07":"Sometimes. Not as much, recently, somehow, but... Yes, there was some harsh times.$s#$b#My children decided to work in other things because they saw how this could be and didn't want that for themselves or their kids.#$b#And I'm not sure either this is what I want for you.",
+				"InnMoiraCelestineMeetingMoira06":"But shouldn't I have a say in this?$a",
+				//emote ...
+				"InnMoiraCelestineMeetingCelestine08":"Ah.. You're right. I wanted to protect you, but I shouldn't do it by removing your choice.$6#$b#I will involve you more.$s",
+				"InnMoiraCelestineMeetingCelestine09":"Can we continue this discussion another time? It's a lot to think about.",
+				"InnMoiraCelestineMeetingMoira07":"Of course. But we DO need to discuss things like this, Grandma.",
+				"InnMoiraCelestineMeetingCelestine10":"We'll do.",
+				
+				
+				"InnHelia2HNaveen2HHelia01":"Anyway, second date, he makes jokes, I laugh. I make jokes, he seems to be unhappy about it.#$b#Well, ok, maybe my flavor of humor takes time to really be appreciated.",
+				"InnHelia2HNaveen2HOverheadNaveen01":"Took me months...",
+				"InnHelia2HNaveen2HHelia02":"I heard you, Naveen.#$b#We have nice dinner, discuss hobbies, my work, his work, the usual.#$b#He then ask me, would you ever believe it...",
+				"InnHelia2HNaveen2HOverheadMariam01":"What?",
+				"InnHelia2HNaveen2HHelia03":"%Helia waits for suspenseful effect.#$b#I quote : 'It'll be good if you change job, or even stop working. I prefer softer hands, yours are all rough'.",
+				"InnHelia2HNaveen2HOverheadNaveen02":"The poor fool...",
+				"InnHelia2HNaveen2HOverheadMoira01":"Yuck...",
+				"InnHelia2HNaveen2HAster01":"Oh, hey, @! We were sharing some dating anecdote. Not that I have a lot.",
+				"InnHelia2HNaveen2HMariam01":"Well, and then? What happened? Enough with the suspense!",
+				"InnHelia2HNaveen2HHelia04":"Ok, ok! Well, I left, of course. His pride too disappeared somewhere that night.#$b#Funny, somehow I never saw him again in that place.",
+				"InnHelia2HNaveen2HOverheadMariam02":"Well done.",
+				"InnHelia2HNaveen2HHelia05":"The audacity of thinking I would ever leave my job for such a reason.#$b#Not that I would consider leaving my job at all.",
+				"InnHelia2HNaveen2HMoira01":"You're so right on that. Why make yourself smaller for someone else benefit?#$b#About date, I remember this time when I was pretty nervous, ready to ask out my friend's roommate.#$b#So, I manage to tell her that I really find her nice and I'd like to invite her.",
+				"InnHelia2HNaveen2HOverheadHAster01":"I remember this one.",
+				"InnHelia2HNaveen2HOverheadHelia01":"What did she says?",
+				"InnHelia2HNaveen2HMoira02":"She looked at me, confusion in her eyes - quite charming by the way - and said 'Aren't we dating already? It's the third time we've gone to something together'",
+				"InnHelia2HNaveen2HOverheadMariam03":"Ahah!",
+				"InnHelia2HNaveen2HOverheadNaveen03":"Classic...",
+				"InnHelia2HNaveen2HHelia06":"By the way, Naveen, did you know Aloïse is coming at the market, now?",
+				"InnHelia2HNaveen2HNaveen01":"I heard... How... How is he?$s#$b#%Naveen seems pretty nervous about the answer.",
+				"InnHelia2HNaveen2HOverheadHelia02":"Tired.",
+				"InnHelia2HNaveen2HOverheadAster01":"Very tired.",
+				"InnHelia2HNaveen2HHelia07":"He told me that with his mother being sick, he kinda gets how it was for you with your father.",
+				"InnHelia2HNaveen2HOverheadNaveen04":"Oh.",
+				"InnHelia2HNaveen2HHelia08":"Maybe you should go see him.",
+				"InnHelia2HNaveen2HOverheadNaveen05":"Maybe...",
+				"InnHelia2HNaveen2HAster02":"At least he doesn't seem to be dating someone yet. Give you some time to figure stuff out.",
+				"InnHelia2HNaveen2HMariam02":"No jealousy too.",
+				"InnHelia2HNaveen2HHelia09":"You're the jealous one, Mar'. We all know it.",
+				"InnHelia2HNaveen2HMariam03":"Careful of what you say, Helia. Remember I know a few stories you didn't get a chance to tell yet.",
+				"InnHelia2HNaveen2HHelia10":"Well, everyone, it was a nice night, but Mar' and I have to go.#$b#What do you want for your silence? Needing some repair in this old house of your?",
+				"InnHelia2HNaveen2HOverheadMariam04":"Byye!",
+				"InnHelia2HNaveen2HOverheadHelia03":"See you!",
+				
+				
+				
+				
+				
+				//Inn Second floor
+				//InnSecondFloorBed
+				"InnSecondFloorBedMoiraOverhead01":"Come here!",
+				"InnSecondFloorBedCelestine01":"So... What do you think?",
+				"InnSecondFloorBedMessage01":"What do you answer?",
+				"InnSecondFloorBedAnswer01":"It looks nice.",
+				"InnSecondFloorBedAnswer02":"It looks empty.",
+				"InnSecondFloorBedAnswer03":"Where's Odalis stuff?",
+				"InnSecondFloorBedAnswer04":"I don't really care.",
+				"InnSecondFloorBedBranch03Odalis01":"In the other room.",
+				"InnSecondFloorBedBranch04MoïraOverhead01":"Oh...",
+				
+				"InnSecondFloorBedCelestine02":"We prepared this room for you.",
+				"InnSecondFloorBedMoira01":"While we were at it, we figured you may like having a room here.$h",
+				"InnSecondFloorBedOdalis01":"And it's free. Moïra and Célestine told me you're quite helpful around here, so it's our reward.",
+				"InnSecondFloorBedOdalis02":"I have some errands to do but I'll be here tomorrow.",
+				
+				
 				//OwlCarving
 				"HamletOwlCarvingMessage01": "You examine the statue. It's picturing one of those small red owls that are common in this place.",
 				"HamletOwlCarvingMessage02": "Something is happening?!",
@@ -2831,7 +3251,7 @@
 				"OrchardUnlockCelestine01": "Hi, @, it was you I was hoping to see! Remember when I told you about the old orchard?",
 				"OrchardUnlockOverheadAdelaide01": "Such a pleasant news.",
 				"OrchardUnlockOverheadAster01": "It's exciting!",
-				"OrchardUnlockCelestine02": "I got a call from the old owner. They received a letter from some of your customers praising you for the wonderful bundles they received.#$b#He saw with the Governor representative so you have right to use the Orchard as you see fit. You don't have to become officially owner or anything.",
+				"OrchardUnlockCelestine02": "I got a call from the old owner. They received a letter from some of your customers praising you for the wonderful bundles they received.#$b#She saw with the Governor representative so you have right to use the Orchard as you see fit. You don't have to become officially owner or anything.",
 				"OrchardUnlockOverheadAdelaide02": "Some beehouses, maybe...",
 				"OrchardUnlockOverheadAster02": "Or flowers!",
 				"OrchardUnlockOverheadMoïra01": "Raising animals.",
@@ -2852,7 +3272,112 @@
 				"OrchardUnlockMessage01": "Everyone laugh and groups depart slowly, after congratulating you one last time for the good news.",
 
 
+				//Lumisteria.MtVapius_Hamlet_Helia5H
+				"HamletHelia5HOverheadHelia01": "I'm so bored...",
+				"HamletHelia5HHelia01": "I wish I could go see a movie...$s",
+				"HamletHelia5HMariam01": "You could come to my house with Naveen and me to watch something?$h",
+				"HamletHelia5HHelia02": "No offense, I meant a movie that is not seven years old.$u",
+				"HamletHelia5HMariam02": "I'll have you know I have movies way older than seven years old. Those are rookie numbers.$7",
+				"HamletHelia5HHelia03": "I just want something fresh. A bit of change. You know?",
+				"HamletHelia5HOverheadMariam01": "I do.",
+				"HamletHelia5HNaveen01": "We could go watch something together next time we're in Saltspring City, if you like?$h",
+				"HamletHelia5HOverheadHelia02": "It's just...",
+				//Emotes ?
+				"HamletHelia5HMaddy01": "Just what?",
+				"HamletHelia5HHelia04": "Things are so expensive in the city! Paying that kind of price for just two hours...$6",
+				"HamletHelia5HOverheadMariam02": "Yeah...",
+				"HamletHelia5HOverheadMaddy02": "But...",
+				"HamletHelia5HMaddy02": "It's still important to spend some money on yourself and enjoy things.$h",
+				"HamletHelia5HHelia05": "'Spend' it's the key word here!$6#$b#I can't afford to just throw money out the window.$a#$b#You don't know how that is!$6",
+				"HamletHelia5HMaddy03": "I don't know how that is?#$b#You're being unfair. It's because I know that I'm telling you that.$s",
+				"HamletHelia5HHelia06": "Ugh! Let's stop here. I'm not in the mood for a lecture.$a",
+				"HamletHelia5HMaddy04": "...#$b#I should leave too. See you later.$s",
+				"HamletHelia5HBranch01FarmerQuestion": "What do you do?",
+				"HamletHelia5HBranch01FarmerAnswer01": "(Go speak with Helia.)",
+				"HamletHelia5HBranch01FarmerAnswer02": "(Go speak with Maddy.)",
+				"HamletHelia5HBranch01FarmerAnswer03": "(Stay here.)",
+				
+				"HamletHelia5HBranchHeliaOverheadHelia01": "...",
+				"HamletHelia5HBranchHeliaHelia01": "I hope you're not here to tell me I was rude.$a",
+				"HamletHelia5HBranchHeliaHelia02": "Because I know that already.$s#$b#I'll apologize later. It's just... a sensitive topic, you know?$6",
+				"HamletHelia5HBranchHeliaNaveen01": "Hey, Helia, mind the company?",
+				"HamletHelia5HBranchHeliaHelia03": "It's fine. Sorry about earlier, is Maddy ok?$s",
+				"HamletHelia5HBranchHeliaNaveen02": "Mariam is checking on her. I think she'll be all right.",
+				"HamletHelia5HBranchHeliaHelia04": "Good. Good.$6#$b#Can I borrow your phone tonight?$6",
+				"HamletHelia5HBranchHeliaNaveen03": "Sure thing.",
+				"HamletHelia5HBranchHeliaHelia05": "Thanks, Naveen. Thanks, @.",
+				
+				"HamletHelia5HBranchHeliaOverheadMaddy01": "Hey!",
+				"HamletHelia5HBranchMaddyMaddy01": "Thanks for checking on me. It's nice of you.",
+				"HamletHelia5HBranchMaddyMaddy02": "I'm just worried about her.$s#$b#She has reasons to be cautious, after what happened. But... Sometimes I feel she's saving money, sure, but it's costing her in other ways$s",
+				"HamletHelia5HBranchMaddyMariam01": "Maddy, you're ok?$s",
+				"HamletHelia5HBranchMaddyMaddy03": "Mostly. Just a bit frustrated, you know? But... Aster would say it's like sowing seeds, some stuff takes time.#$b#I'll go make myself some tea. Maybe go fishing to clear my mind. Helia know where to find me when she'll be ready to discuss.#$b#See you both another time.$h",
+				
+				
+				"HamletHelia5HBranchStayOverheadMariam01": "Well, that got awkward.",
+				"HamletHelia5HBranchStayNaveen01": "Money is a sensitive topic for Helia.$s#$b#I'm sure she'll apologize to Maddy soon.$s",
+				"HamletHelia5HBranchStayNaveen02": "I wonder... last time at the bakery.... Maybe I should make a picnic for us next time.",
+				"HamletHelia5HBranchStayMariam01": "I'll go check on Maddy. You go see Helia?",
+				"HamletHelia5HBranchStayOverheadNaveen01": "Sure thing.",
+				"HamletHelia5HBranchStayMariam02": "See you later, @!",
 
+				//Lumisteria.MtVapius_Hamlet_Moira4H
+				"HamletMoira4HOverheadCelestine01": "Yes?",
+				"HamletMoira4HClaretie01": "Greetings, Mrs. Dubois.#$b#I have a message for Ms. Dubois and our informations are that she's residing here at the moment. Is she here?",
+				"HamletMoira4HCelestine01": "I'll let her know you're here.",
+				"HamletMoira4HOverheadCelestine02": "Moïra, for you!",
+				"HamletMoira4HOverheadMoira01": "Oh, hi Claretie.",
+				"HamletMoira4HMoira01": "What brings you here?",
+				"HamletMoira4HClaretie02": "Greetings, Ms. Dubois.",
+				"HamletMoira4HOverheadMoira02": "Ms. Dubois?",
+				"HamletMoira4HMoira02": "Why are you so formal suddenly?$s",
+				"HamletMoira4HClaretie03": "I... * clear throat *$u#$b#As a member of the Governor Office, I'm here to inform you that you're being told to appear in court.$s#$b#You'll need to sign here and here.",
+				"HamletMoira4HMoira03": "Oh!$8",
+				"HamletMoira4HOverheadClaretie01": "Moïra? You're ok?",
+				"HamletMoira4HMoira04": "Just caught by surprise, that's all.$8#$b#I just didn't expect it to be announced like this. I thought it would be a mail.$s#$b#Here. Is all in order?$s",
+				"HamletMoira4HClaretie04": "It's the process in cases like yours.#$b#Yes, everything is in order.#$b#I wish you a good day. Farewell.",
+				"HamletMoira4HOverheadMoira03": "Bye!",
+				"HamletMoira4HMoira05": "Hey, @.$s#$b#What all of this was about? Maybe I'll tell you another time. It's quite enough emotions for today.$s#$b#But I'll be ok, thanks.",
+				
+				
+				
+				"HamletMoira4HFollowUpMoira01": "Hey, @!#$b#So, you know, about the letter i received the other day...",
+				"HamletMoira2HFollowUpMoira02": "It's about my ex. We were working together in Saltspring City.#$b#And since the shop was his, he was supposed to report to the government that we were working together.#$b#It's an insurance thing to protect the partner of a shopowner in case they break up at some point.",
+				"HamletMoira2HFollowUpMoira03": "He told me he was working on it, and we were both pretty busy, so there was a lot more to deal with, and I trusted him.#$b#But recently he was having more and more money to spend, somehow.#$b#Turns out, he never went through with the report.",
+				"HamletMoira4HFollowUpMoira04": "Hence the court thing.",
+				"HamletMoira4HFollowUpOverheadMoira01": "*sigh*",
+				"HamletMoira4HFollowUpMoira05": "It's pretty stressful, but it's important.",
+				
+				
+				//Lumisteria.MtVapius_Hamlet_Moira3H
+				"HamletMoira3HMoira01": "And I made this one using silk flower for the dye.#$b#I'm pretty happy with how it turned out.",
+				"HamletMoira3HChandra01": "Very nice shade.#$b#It's the old recipe you told me about some time ago, right?",
+				"HamletMoira3HMoira02": "Yes. Thanks for the books the other day, by the way.",
+				"HamletMoira3HChandra02": "Sure! Can I take a picture?",
+				"HamletMoira3HOverheadCMoira01": "Of course!",
+				"HamletMoira3HChandra03": "My colleague is researching examples of contemporary applications of traditional crafts, he will love seeing that.#$b#He said that they may do something for school at some point.#$b#Oh, you should totally show them some of your stuff. I'll mail you the address later today.",
+				"HamletMoira3HOverheadChandra01": "On another topic...",
+				"HamletMoira3HChandra04": "I wanted to order you another piece.#$b#I need a new scarf.#$b#You know how it is... It's so hard to find a fabric I can tolerate.",
+				"HamletMoira3HMoira03": "Sure. Do you have a bit of time next week? I'll bring some samples here.#$b#I remember the kind of fabric you like, so I'll get a nice selection for you to choose from.",
+				"HamletMoira3HOverheadChandra02": "Perfect.",
+				"HamletMoira3HOverheadCMoira02": "See ya.",
+				
+				
+				//Lumisteria.MtVapius_Hamlet_Moira7H
+				"HamletMoira7HMoira01": "Let's see the mail today...",
+				"HamletMoira7HMoira02": "Hi, @!#$b#I like to sit here sometimes to read the mail. Grandma does that too with the newspapers.#$b#It's a nice spot. When mails are bad, it helps, too.",
+				"HamletMoira7HOverheadCMoira01": "Bills...",
+				"HamletMoira7HOverheadCMoira02": "Advertising...",
+				"HamletMoira7HOverheadCMoira03": "Oh, my parents.",
+				"HamletMoira7HOverheadCMoira04R01": "Hey, a discount!",
+				"HamletMoira7HOverheadCMoira04R02": "My order!",
+				"HamletMoira7HOverheadCMoira05": "What is this one?",
+				"HamletMoira7HMoira03": "Oh, it's from the museum Chandra works for sometimes.",
+				"HamletMoira7HOverheadCMoira06": "Oh!",
+				"HamletMoira7HMoira04": "It's a job offer! I can't believe it.",
+				"HamletMoira7HMoira05": "@, read this! They want me to make reproduction of pieces they feature in the museums so school students can interact with them and all.#$b#See how the dye looked back then, touch fabrics to feel the texture.#$b#It says here that they work with artisans sometimes, and that they really liked the picture I sent them.",
+				"HamletMoira7HMoira06": "$query PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Inn_Moira6H#You know, maybe my hobby staying a hobby is ok, now, if I have those commissions to fund it.|They say they can commission several pieces a year.",
+				"HamletMoira7HMoira07": "I have to go, I MUST tell grandma and then call Chandra to thank her.",
 				
 				
 				//Generic Killed
@@ -2913,7 +3438,12 @@
 				"HamletNaveen6HMoira04": "She's visiting patients at home...$s#$b#I'll grab you that. And don't worry about what's left, I'll ask Mariam to come and we'll put that in the Inn until you're back.",
 				"HamletNaveen6HNaveen03": "Check if the.. Ow, ow... Clock is fine, please.",
 				"HamletNaveen6HHelia06": "She looks better that your wrist at the moment.#$b#Ok, we'll go to Pelican Town then. My cousin is the local doctor. He'll take good care of you, Naveen.",
-				
+				"HamletNaveen6HMessage01": "(What do you do?)",
+				"HamletNaveen6HAnswer01": "Go with Naveen for moral support.",
+				"HamletNaveen6HAnswer02": "Help Moïra to clean stuff.",
+				"HamletNaveen6HAnswer03": "Do nothing.",
+				"HamletNaveen6HMessageSupport": "While Helia focus on driving, you help Naveen to have something else than pain to think about.",
+				"HamletNaveen6HMessageClean": "The cleaning go faster and Moïra is grateful for your help.",
 				
 
 				
@@ -2972,6 +3502,123 @@
 				"HamletHelia4HMaddy4HMaddy03": "See? I think Haley may need support, but not the kind you would have needed. And maybe the goal isn't to make everyone productive, you know?",
 				"HamletHelia4HMaddy4HHelia05": "Grmbl... Do you have to be so right everytime? It's annoying.",
 				"HamletHelia4HMaddy4HMaddy04": "Hmm, hmm. It's the support you needed right now, apparently.$h",
+				
+				
+				
+				
+				"HamletOdalis2HOverheadAster01": "Oh no...",
+				"HamletOdalis2HOverheadMoira01": "What happened?",
+				"HamletOdalis2HAster01": "Lot of clients, and I was quite overwhelmed.$s",
+				"HamletOdalis2HOdalis01": "Do you want some help?",
+				"HamletOdalis2HOverheadAster02": "Sure!",
+				"HamletOdalis2HMessage01": "(Do you help too?)",
+				"HamletOdalis2HAnswer01": "Yes.",
+				"HamletOdalis2HAnswer02": "No.",
+				//emote moira ...
+				"HamletOdalis2HMoira01": "Why do you keep empty seed packets?",
+				//emote aster confused
+				"HamletOdalis2HAster02": "They can be reused.",
+				"HamletOdalis2HMoira02": "Do you actually reuse them?",
+				//emote aster ...
+				"HamletOdalis2HAster03": "No...$s",
+				//emote moira ?
+				"HamletOdalis2HMoira03": "Then why do you keep them?",
+				"HamletOdalis2HAster04": "It's... I don't know, force of habit.$s#$b#How I always saw my mom do. She keep everything 'just in case'.$s",
+				"HamletOdalis2HOdalis02": "My lita was the same.",
+				//emote ?
+				"HamletOdalis2HOdalis03": "She raised me, and she was quite stubborn.$h#$b#We lived in a tiny appartment, filled with memories, books and things.#$b#She took care of me, then over time, it was my turn to take care of her.",
+				"HamletOdalis2HOdalis04": "And she had the tendency to keep everything, too. It became worse over time.$s#$b#When I was younger, I tried to urge her to clean and put some order into things, but... She didn't react well to the pressure.$s",
+				"HamletOdalis2HOdalis05": "Thanks to some advice I got, I finally understood she needed to do that at her own rythm.#$b#With help, sometimes, but the help of someone who would accept her pace. And accept the moments when she would decide to keep what looked like trash.#$b#And sometimes, because I was so close to her, I wasn't the best to help.",
+				"HamletOdalis2HOverheadOdalis01": "Anyway...",
+				"HamletOdalis2HOdalis06": "If you need help in the future, Aster, let me know. At your own pace.",
+				"HamletOdalis2HOverheadAster03": "Thanks!",
+				"HamletOdalis2HAster05": "I will consider it.",
+				"HamletOdalis2HOverheadOdalis02": "No rush.",
+				//emote :)
+				"HamletOdalis2HAster06": "I kept more from my mom than I thought. This is a lot to think about...",
+				"HamletOdalis2HAster07": "Thanks for the help everyone!",
+				
+				
+				"HamletMaddy4HOverheadAster01": "... Smells amazing.",
+				"HamletMaddy4HOverheadMoira01": "Almost ready!",
+				"HamletMaddy4HOverheadNaveen01": "What's in it?",
+				"HamletMaddy4HMaddy01": "Just tomatoes, fresh basil and cheese. It's because it's simple it's so good.",
+				"HamletMaddy4HMessage01": "You learned how to cook tomato salad.",
+				"HamletMaddy4HNaveen01": "Oh! Hmm, cheese isn't my thing, but I'll try a bite.",
+				"HamletMaddy4HOverheadMaddy01": "Hi!",
+				"HamletMaddy4HAster01": "We're having some barbecue. Maddy caught more fishes than the two of us would eat.",
+				"HamletMaddy4HOdalis01": "Oh, I see some coleslaw, let me try that.",
+				"HamletMaddy4HOverheadHelia01": "It looks amazing!",
+				"HamletMaddy4HHelia01": "I'll take some extra lemons with my fish, please.",
+				"HamletMaddy4HOverheadMoira02": "Of course!",
+				
+				"HamletMaddy4HHelia02": "It's delicious. What a cool idea.",
+				"HamletMaddy4HMoira01": "We should do that more often.",
+				"HamletMaddy4HOdalis02": "Maybe even have that for the clients once in a while...",
+				"HamletMaddy4HAster02": "I must say, meals taste even better when I don't have to do the dishes.",
+				"HamletMaddy4HOverheadHelia02": "Who will?",
+				"HamletMaddy4HOverheadNaveen02": "Me!",
+				"HamletMaddy4HOverheadOdalis01": "Me too!",
+				"HamletMaddy4HNaveen02": "I didn't bring anything, so it's my way to contribute.",
+				"HamletMaddy4HHelia03": "I didn't bring anything either.",
+				"HamletMaddy4HMoira02": "You installed and started the barbecue, however.#$b#And it was quite a task.",
+				"HamletMaddy4HOverheadHelia03": "True.",
+				
+				"HamletMaddy4HOverheadHelia04": "I'm stuffed.",
+				"HamletMaddy4HMaddy02": "Well, it was nice. Who wants to take some leftovers?",
+				"HamletMaddy4HOverheadNaveen03": "Enough food at home.",
+				"HamletMaddy4HOverheadMoira03": "We're good.",
+				"HamletMaddy4HOverheadHelia05": "I'll do.",
+				"HamletMaddy4HMessage02": "(Do you want something?)",
+				"HamletMaddy4HAnswer01": "The tomato salad.",
+				"HamletMaddy4HAnswer02": "The fish.",
+				"HamletMaddy4HAnswer03": "The coleslaw.",
+				"HamletMaddy4HAnswer04": "No.",
+				"HamletMaddy4HHelia05": "I'll take whatever you guys don't want.",
+				
+				
+                "HamletMaddy5HClint5HOverheadClint01": "Thanks...",
+                "HamletMaddy5HClint5HClint01": "It was nice being invited for dinner. I can't remember the last time it happened.",
+                "HamletMaddy5HClint5HMaddy01": "Sure! You had a lot of questions, I felt it would be better than answering them over a phone call, since you need to come for the Lodge stuff anyway.#$b#You seem to life a pretty isolated life.",
+                "HamletMaddy5HClint5HClint02": "I only have one friend in Pelican Town... And... I didn't... I didn't treat her well.$s",
+                "HamletMaddy5HClint5HMaddy02": "Well, you know what to do!",
+                "HamletMaddy5HClint5HClint03": "No, I kinda don't. It's the issue, you see. I'm not good with people.$s",
+				//Maddy ...
+                "HamletMaddy5HClint5HMaddy03": "I meant, you should apologize.",
+				//Clint ...
+                "HamletMaddy5HClint5HClint04": "%Clint looks at his shoes. They don't deserve the attention, they aren't even his festival shoes.#$b#I don't know how to do that. I mean, how to properly do that.$s#$b#My mother only apologized to keep peace in the house and my father... I never saw him even say 'sorry'. Everything was everyone's else fault.$u",
+                "HamletMaddy5HClint5HOverheadMaddy01": "Sounds familiar...",
+				//Clint ?
+                "HamletMaddy5HClint5HMaddy04": "My mother is like that too. Aster on the other hand tend to apologize a bit too much, like she has to overcompensate. She's working on it.$s",
+                "HamletMaddy5HClint5HOverheadMaddy02": "Anyway...",
+                "HamletMaddy5HClint5HMaddy05": "If you can tell me that you weren't a good friend for her, then you kinda know what to apologize for. That's a start.#$b#Apologies are better with your own words anyway.#$b#%She raise a hand as to prevent a protest.#$b#Yes, even yours. Your friend, she would tell what's genuine and what isn't anyway, right?",
+                "HamletMaddy5HClint5HClint05": "She would. She's pretty good with people.#$b#She's...$s",
+				//Clint ...
+				"HamletMaddy5HClint5HClint06": "%He is looking at his shoes again. They haven't changed.#$b#What I wish I would be. Vibrant. Exciting. Always knowing what to say.#$b#And I'm just a jerk, and boring, with that...$s",
+                "HamletMaddy5HClint5HOverheadMaddy03": "Oh, it's Emily you speak about!",
+                "HamletMaddy5HClint5HMaddy06": "Well... It's good to have some degree of awareness and do some self-introspection for time to time, can't say I haven't wished my mother would do that at least once.#$b#But you seem to try to improve, so it's also good to...",
+				"HamletMaddy5HClint5HClint07": "Not drown in self-pity? I heard that before...",
+                "HamletMaddy5HClint5HMaddy07": "Be kind to yourself.",
+				//pause, walk in silence.
+                "HamletMaddy5HClint5HClint08": "I'll think about it. It's all I can say.$s",
+                "HamletMaddy5HClint5HMaddy08": "Well, I can give you reminder if you need them.#$b#The first time I told Aster she better not speak of my sister like that, she looked at me all confused.#$b#But now she gets better at catching herself when she's self-devaluating.$h",
+
+
+
+				//Lumisteria.MtVapius_Hamlet_OrchardHints
+				"OrchardHintsOverheadOdalis01": "Hi!",
+				"OrchardHintsOverheadCelestine01": "More tea?",
+				"OrchardHintsOverheadAdelaide01": "With pleasure.",
+				"OrchardHintsCelestine01": "Oh, hi, @! How are you?#$b#Oh, this remind me, we were discussing the orchard the other day.",
+				"OrchardHintsAdelaide01": "Oh, this place... So charming. What about it, Céleste dear?$h",
+				"OrchardHintsCelestine02": "The owner wanted to find someone to take care of it.",
+				"OrchardHintsAdelaide02": "Who owns the place, now? Béa?",
+				"OrchardHintsCelestine03": "Yes. She's still attached to the place, but... It's hard work, and she accepted that her kids may be happier doing something else.$s#$b#Now she wants to ensure the place will be in good hands.",
+				"OrchardHintsAdelaide03": "Which means?",
+				"OrchardHintsCelestine04": "I'm not sure. I know it's not a question of money. She even mentioned the idea of donating it.#$b#She wants someone that will have a connection to Glimsap and do things for its community.#$b#Now you know as much as I do, @.",
+				"OrchardHintsAdelaide04": "It's understandable. One of her biggest regrets was not being around when the place fall apart.#$b#It would bring her some peace of mind to be able to 'fix' that somehow.",
+				"OrchardHintsMessage01": "The orchard will be unlocked once the set of 'Farming' bundles is completed.",
+				
 				
 				//Train Station Indoor
 				//Lumisteria.MtVapius_PennyVisiting
@@ -3036,6 +3683,34 @@
 				"AsterHouseAster2HBranchBadAster01": "Hu.. Why not starting to be nice yourself? Well, see you another time I guess.$a",
 				
 				
+				//Lumisteria.MtVapius_AsterHouse_MaddyDown
+				"AsterHouseMaddyDownOverheadMaddy01": "Snif...",
+				"AsterHouseMaddyDownMaddy01": "...$6#$b#How messed up my life must be. Crying because a friend received good news...$6",
+				"AsterHouseMaddyDownMaddy02": "Hey, @. I am happy for Moïra, truly. She deserves all the good news she can get.$6#$b#It's just...$s",
+				"AsterHouseMaddyDownOverheadMaddy02": "Sigh...",
+				"AsterHouseMaddyDownMaddy03": "I need to face my own feelings.$s#$b#I'm jealous. Jealous she can get a job when I'm still here, unemployed.#$b#Jealous she can work in a field I love so much.#$b#Jealous she has such a supportive family, when my mother...$s",
+				"AsterHouseMaddyDownOverheadMaddy03": "Well.",
+				"AsterHouseMaddyDownMaddy04": "She is what she is.$s#$b#%Maddy takes a deep breath.#$b#I hoped I was more resilient in face of the pressure. I'm dealing with that since quite a time now.",
+				"AsterHouseMaddyDownOverheadAster01": "Hey Maddy!",
+				"AsterHouseMaddyDownAster01": "Did you hear the good news? Moïra got a...#$b#Oh!$s",
+				"AsterHouseMaddyDownOverheadAster02": "Here...",
+				"AsterHouseMaddyDownOverheadMaddy04": "Thanks...",
+				"AsterHouseMaddyDownMaddy05": "We should prepare something to celebrate.",
+
+				"AsterHouseMaddyDownMessage01": "(What do you say?)",
+				"AsterHouseMaddyDownAnswer01": "You're so strong.",
+				"AsterHouseMaddyDownAnswer02": "You're so insincere.",
+				"AsterHouseMaddyDownAnswer03": "You should be honest with Moïra.",
+				"AsterHouseMaddyDownAnswer04": "Take care of yourself too.",
+				"AsterHouseMaddyDownBranchStrongMaddy01": "Yeah, I feel very strong right now.#$b#%She laughs feebly.",
+				"AsterHouseMaddyDownBranchInsincereMaddy01": "I can accept my emotions without letting them ruin the joy of others.#$b#Besides, it's not about burying what I feel. I just don't throw my raw feelings to people they can hurt.",
+				"AsterHouseMaddyDownBranchBeHonestMaddy01": "Yes, but I believe I can be honest with her without raining on her parade.#$b#There's a time and place for everything.",
+				"AsterHouseMaddyDownBranchTakeCareMaddy01": "I will, don't worry. Thanks.",
+				
+				"AsterHouseMaddyDownAster02": "We'll organise something, but let's take care of you first, Maddy.#$b#Comfort food tonight? Pasta? With lot of cheese?",
+				"AsterHouseMaddyDownMaddy06": "Sounds good. I'll phone one friend of the association too.#$b#After all, it's what support is for.",
+				"AsterHouseMaddyDownOverheadAster03": "Good idea.",
+				"AsterHouseMaddyDownAster03": "Well, @, thanks for stopping by. See you next time.",
 				
 				
 				//Lumisteria.MtVapius_AsterHouse_AsterHouseAster2H
@@ -3127,6 +3802,34 @@
 				"Lake_Stone_Message04": "The stone will disappear soon...",
 				"Lake_Stone_Message05": "The passage stays closed for now.",
 
+
+				//Lumisteria.MtVapius_Lake_MariamPatrol
+				
+				"LakeMariamPatrolMariam01": "Oh, @. It's you.#$b#Nearly no one ventures here outside of the guild.#$b#I'm doing one late patrol to ensure everything is right.",
+				"LakeMariamPatrolMariam02": "Night patrols are mainly for me.#$b#Gavin deals with a lot of the daily stuff.#$b#There's more than us two, the others are mainly working on different places. To be fair, some more members wouldn't hurt.$s#$b#When Gavin was resting, we kinda had hard time to deal with everything.$s",
+				"LakeMariamPatrolMariam03": "Anyway, you probably are heading home right now, I don't want to slow you down. Here's a small boost for you if you need one. [395]",
+				"LakeMariamPatrolHOverheadMariam01": "Night!",
+				
+				
+				//Lumisteria.MtVapius_JunimoClearing_Mariam4H
+				
+				"JunimoClearingMariam4HMariam01": "...$8#$b#%Mariam takes a deep breath.#$b#...$8",
+				"JunimoClearingMariam4HMariam02": "Oh. Hi, @.$8#$b#%She keeps her eyes closed a bit longer.",
+				"JunimoClearingMariam4HMariam03": "I was...$8",
+				"JunimoClearingQuestion01": "(Say something?)",
+				"JunimoClearingAnswer01": "Speaking with Junimos?",
+				"JunimoClearingAnswer02": "Meditating?",
+				"JunimoClearingAnswer03": "(Stay silent and listen)",
+				"JunimoClearingMariam4HBranchJunimoMariam01": "You know about them?",
+				//!
+				"JunimoClearingMariam4HBranchJunimoMariam02": "You can see them? Oh! Well, I can't, but I know they here.",
+				"JunimoClearingMariam4HBranchMedidatingMariam01": "Hmm... Sort of. There's spirits here.",
+				"JunimoClearingMariam4HBranchMedidatingMariam02": "I can't see them, but I know they're here.",
+				"JunimoClearingMariam4HBranchSilentMariam01": "Connecting to the spirits here, you can say. I can't see them, but I know they're here.",
+				"JunimoClearingMariam4HMariam04": "They are like the wind : I don't need to see it. I know it's here.#$b#Luna can see them. But she also has a special connection to this place.#$b#I know that not all magic users can see them, and apparently, not all people that see them are magic users.",
+				"JunimoClearingMariam4HMariam05": "I am content with not seeing them. I don't need that to feel a connection, and...#$b#There's areas in my life when I wish I could change things.$s#$b#So I rejoice that, on some, I can simply enjoy things as they are.$8",
+				"JunimoClearingMariam4HMariam06": "I'll stay a bit longer here.$8",
+				"JunimoClearingMariam4HOverheadMariam01": "See you around.",
 				
 				
 				//Lumisteria.MtVapius_Cliff_ForageReturn 6H
@@ -3255,6 +3958,86 @@
 				"SaloonGusBrainstormingOverheadGus05": "Come take a bite too, Emily.",
 				"SaloonGusBrainstormingOverheadChloe03": "Yum!",
 				
+				//Town
+				
+				//HeliaVisitsHarvey
+				"TownHeliaVisitsHarveyOverheadHarvey01": "Yes? OH!",
+				"TownHeliaVisitsHarveyHarvey01": "$query PLAYER_HAS_SEEN_EVENT Current Lumisteria.MtVapius_Hamlet_Naveen6H#Helia! Another emergency?#$b#No? Great. How are you?|Helia! What a surprise. How are you?",
+				"TownHeliaVisitsHarveyHelia01": "Fine, and you? I brought something for you.",
+				"TownHeliaVisitsHarveyHarvey02": "Oh! How thoughtful of you.#$b#Do you have time for a cup of coffee? We can go to the saloon.$h#$b#Let me just grab that.",
+				"TownHeliaVisitsHarveyHelia02": "Sure! I have to travel back, so better get some rest before that.$h",
+				"TownHeliaVisitsHarveyOverheadHarvey02": "Maru? I'll be at the Saloon if you need me.",
+				
+				"TownHeliaVisitsHarveyHarvey03": "So... Your parents told me your situation improved?",
+				"TownHeliaVisitsHarveyHelia03": "Yeah! It's quite a long story, but I live in Faycombe, now.",
+				"TownHeliaVisitsHarveyHarvey04": "Faycombe?",
+				"TownHeliaVisitsHarveyHelia04": "It's a very small place. Kinda lost in the middle of nowhere, to be frank.#$b#But it's my home, and it's honestly such a relief.",
+				//...
+				"TownHeliaVisitsHarveyHarvey05": "Ah... I'm sorry I wasn't able to help, back then.$s",
+				"TownHeliaVisitsHarveyHelia05": "That's life. You had your own financial worries at the time.$s#$b#Papa and Dad weren't able to help either, not as much as they liked.$6#$b#And you helped, just not with money.#$b#The contact you had in Saltspring City was precious to navigate some awful administrative stuff.",
+				"TownHeliaVisitsHarveyHarvey06": "Well, it's good to know. The clinic doesn't have a lot of patients, but my situation is better now, would you ever need help again.",
+				//...
+				"TownHeliaVisitsHarveyHelia06": "Let's hope it will not come to that.$6",
+				"TownHeliaVisitsHarveyOverheadHarvey03": "Of course!",
+				"TownHeliaVisitsHarveyHarvey07": "I meant...$s",
+				"TownHeliaVisitsHarveyHelia07": "I know what you meant. I appreciate your support!#$b#And you, how it is here?",
+				"TownHeliaVisitsHarveyHarvey08": "It's a rewarding job, but also lot of stress.#$b#I really love the idea of holistic approach, but it's also a lot of pressure to have patients depending of you so much.",
+				"TownHeliaVisitsHarveyHelia08": "And outside of job? Anything nice to share?",
+				"TownHeliaVisitsHarveyHarvey09": "Will you gossip about it?",
+				"TownHeliaVisitsHarveyOverheadHelia01": "Hey!",
+				"TownHeliaVisitsHarveyHarvey10": "$query PLAYER_HAS_SEEN_EVENT Current 58#Ahah! You can't really deny it, I see. I joined the aerobic class. I'm kinda proud of myself.|Ahah! You can't really deny it, I see. I consider joining the aerobic class one day.",
+				"TownHeliaVisitsHarveyOverheadHelia02": "That's nice.",
+				"TownHeliaVisitsHarveyHelia09": "$query PLAYER_HAS_SEEN_EVENT Current 58#But what's so secret about it? If it's a class, surely half the town knows already.$u|Hey, it's great. You should totally do it.$u",
+				//...
+				"TownHeliaVisitsHarveyHarvey11": "$query PLAYER_HAS_SEEN_EVENT Current 58#...#$b#I guess... But they kinda get I want to keep it private for now.|I should! I will!",
+				"TownHeliaVisitsHarveyHarvey12": "I need to return to work. But we should do that again another time. It's the closest I got of our family gathering in years, and I kinda miss them.#$b#Do you want to spend the night here? I can arrange something.",
+				"TownHeliaVisitsHarveyHelia10": "Thanks, I'll be fine. It's a bit long but I saw worse.",
+				"TownHeliaVisitsHarveyHarvey13": "Be cautious and do regular brea... Oops!#$b#Force of habit. See you soon, then.$h",
+
+				//SeedShop_Maddy2H
+				"SeedShopMaddy2HMaddy01": "Thanks for having my order prepared! I'm a bit more busy today, I need to go see Mrs. Mullner and pick some books for Aster.",
+				"SeedShopMaddy2HCaroline01": "But of course, Madgalena.#$b#Will you tell Mrs. Mullner that her own order is ready and will be delivered today?",
+				"SeedShopMaddy2HSterling01": "Should be soon, by the way, I just need to finish dealing with those boxes before going.",
+				"SeedShopMaddy2HMaddy02": "I can take it myself, if you want. I know you're pretty busy.",
+				"SeedShopMaddy2HCaroline02": "Well... Why not.#$b#I still have some suppliers to call about deliveries that should have arrived. I appreciate that.",
+				"SeedShopMaddy2HSterling02": "Just don't do my job better than me. Don't feel like getting chewed out by Pierre later. $10#$b#See you later, Mads",
+				"SeedShopMaddy2HOverheadMaddy01": "Of course. Goodbye!",
+				"SeedShopMaddy2HMaddy03": "Hi, Mrs Mullner.",
+				"SeedShopMaddy2HEvelyn01": "Miss Madgalena! I'm in the kitchen, come here.",
+				"SeedShopMaddy2HEvelyn02": "#What a pleasure to see you.#$b#Oh, but you brought our groceries. You shouldn't have! Thanks you.",
+				"SeedShopMaddy2HMaddy04": "Oh, it was no big deal, I was buying groceries at Pierre's, and Aster wanted me to drop by to give you some seeds, in thanks for the last time.",
+				"SeedShopMaddy2HEvelyn03": "Oh, so thoughtful of her. How is she? Doing better?",
+				"SeedShopMaddy2HMaddy05": "A bit.#$b#There's still bad days, but they feel less frequent.",
+				"SeedShopMaddy2HEvelyn04": "I'm glad to hear. I have a letter for her that I was planning to send soon, do you want to have it?",
+				"SeedShopMaddy2HOverheadMaddy02": "Sure.",
+				"SeedShopMaddy2HEvelyn05": "Do you want to stay for tea?",
+				"SeedShopMaddy2HMaddy06": "Maybe next time, I still have a few things I need to go today.",
+				"SeedShopMaddy2HEvelyn06": "Then wait just a second...",
+				"SeedShopMaddy2HOverheadEvelyn01": "Here.",
+				"SeedShopMaddy2HEvelyn07": "Cookies, still warm from the oven. You can share them with your sister and your friends.",
+				"SeedShopMaddy2HOverheadMaddy03": "Thanks!",
+				"SeedShopMaddy2HMaddy07": "Oh, hi, @. Can you remind me where's the Museum? I need to pick some books for Aster.",
+				"SeedShopMaddy2HMaddy08": "Thanks! I got some cookies from Evelyn. Here's one for you! [223]#$b#Have a nice day!",
+
+
+				//Sam House
+				"SamHouseJodiVacationJodi01": "Oh, look at this! One of my cooking recipes was featured in the magazine.#$b#I won a free trip to the Red Owl Inn in Glimsap.#$b#For two people.",
+				"SamHouseJodiVacationKent01": "Congratulation! So you'll go with...",
+				"SamHouseJodiVacationOverheadKent01": "Caroline?",
+				"SamHouseJodiVacationOverheadJodi01": "Caroline.",
+				"SamHouseJodiVacationKent02": "I remember you and her wanted to do that since quite a time.",
+				"SamHouseJodiVacationJodi02": "I'm happy you do.#$b#Is it a good time, however?$s",
+				"SamHouseJodiVacationKent03": "Now is the time to enjoy things.",
+				"SamHouseJodiVacationKent04": "$query PLAYER_NPC_RELATIONSHIP Any Sam Married#I'm back, Vincent can do more stuff by himself each day, and Sam's married now.|I'm back, Vincent can do more stuff by himself each day, and Sam can learn to do a bit more in the house for a few days.#$b#And it'll be a good occasion for me to bond with the boys.",
+				"SamHouseJodiVacationJodi03": "You're right.",
+				"SamHouseJodiVacationVincent01": "Mom will leave? Will she have to go in the same dangerous place than Dad?$s#$b#I don't want Mom to go!$s",
+				//Emote sad		
+				"SamHouseJodiVacationKent05": "Don't worry, buddy.#$b#Mom's going on a nice place. And if she likes it enough, maybe we'll go there for a week-end one day, all of us.",
+				"SamHouseJodiVacationVincent02": "Will we take a train? I want to go on a train!",
+				"SamHouseJodiVacationOverheadKent02": "Maybe.",
+				//Emote :)
+				
+
 				//Wedding
 
 				"WeddingLewis01MPartOfTown": "It was such a joy to see @ joining this town, contributing to restauring %farm Farm and bonding with the community.#$b#Now, his marriage with %spouse that we're celebrating today is bringing even more life into this town!$h#$b#Welcome in Pelican Town, %spouse!$h",				
@@ -3381,15 +4164,6 @@
 				"MtVapiusJelliesMail_Translated": "@,^As a thanks for your help, in addition of my payment, here's a coffee machine I don't need anymore. People usually appreciate a cup of coffee with jam pie. I hope you're one of them.^^   -Célestine",
 				"MtVapiusJelliesMail_Title_Translated": "Mt Vapius Jellies Order Thank You",
 
-				"DyeMoira_Name_Translated": "Dye for Moira Order",
-				"DyeMoira_Text_Translated": "Can someone bring me some material?",
-				"DyeMoira_Objective_0_Text_Translated": "Gather 15 {Dye:TextPlural}",
-				"DyeMoira_Objective_1_Text_Translated": "Place 15 {Dye:TextPlural} into Mt Vapius Inn's box.",
-				"DyeMoira_Objective_2_Text_Translated": "Place 10 {color:Text} items into Mt Vapius Inn's box.",
-				"DyeMoira_RE_Text_0_Translated": "I want to experiment with dye on different fabrics.",
-				"DyeMoira_RE_Text_1_Translated": "My latest project is involving colorful patterns.",
-				"DyeMoiraMail_Translated": "@,^TODO",
-				"DyeMoiraMail_Title_Translated": "Dye for Moira Order Thank You",
 
 				"MtVapiusMusicBandFood_Name_Translated": "Menu For Musicians",
 				"MtVapiusMusicBandFood_Text_Translated": "We are rehearsing regularly, but we are kinda tired of the classic pizza and want some changes. If someone can bring the items listed, we'll be grateful. Deliver them to Robin's shop, Sebastian will bring them next time.",
@@ -3402,8 +4176,6 @@
 				"MtVapiusMusicBandFoodMail_Translated": "@,^Hey, thanks for the food. It was good to have something new, and it was also a lot less messy than our usual pizza. Sam's mom was happier, and convincing her to accept another rehearsal will be easier.^^   -The Band",
 				"MtVapiusMusicBandFoodMail_Title_Translated": "Band's Thank You",
 				
-				
-				
 				"MtVapiusLotMonsterGoal_Name_Translated": "Mt Vapius Monster Goal",
 				"MtVapiusLotMonsterGoal_Text_Translated": "There's way too much {Monster:LocalizedName} to deal with recently. Anyone killing 70 of them will get a reward. Honestly, I don't care where you do it, near Glimsap, Pelican Town or whatever area you're in, it'll help us anyway.",
 				"MtVapiusLotMonsterGoal_Objective_0_Text_Translated": "Kill 70 {Monster:LocalizedName}",
@@ -3412,7 +4184,87 @@
 				"MtVapiusLotMonsterGoalMail_Translated": "@,^Thanks for killing those monsters! Hopefully, it'll make stuff safer for people to travel.^Here's a reward for you. Those tickets can be exchanged for goods in some place!^^   -Mt Vapius Adventurer's Lodge",
 				"MtVapiusLotMonsterGoalMail_Title_Translated": "Monster Task's Thank you",
 				
+				"MtVapiusStellarCrops_Name_Translated": "Mysterious crops",
+				"MtVapiusStellarCrops_Text_Translated": "I am trying to get more data on the crescent pods and black miscanthus found in Mount Vapius. I believe they're part of a larger 'family'. I want sample of any plants that can be part of it.",
+				"MtVapiusStellarCrops_Objective_0_Text_Translated": "Harvest or gather 20 Mt Vapius's Stellar Crops.",
+				"MtVapiusStellarCrops_Objective_1_Text_Translated": "Ship 20 Mt Vapius's Stellar Crops.",
+				"MtVapiusStellarCropsMail_Translated": "@,^The collected datas confirm that those plants are sharing striking similarities, despite all the form they take.^They look like foreign plants that adapted to grow in Mount Vapius' environment, showing obvious signs of adaptation.^But foreign from where? None of my colleague can agree on it, as there's no region that has more primitive versions of them.^We have specimens of plants close to this that grew in Pelican Town near the mine, the volcano in Ginger Island, a grotto in Larimar Shores, but without living specimen found so far.^A theory is that they came from elsewhere and didn't adapt quick or well enough.^I need to write more mails. Surely someone has more information about all this somewhere and will inform us.^   -Demetrius",
+				"MtVapiusStellarCropsMail_Title_Translated": "Mysterious crops : Datas",
 				
+				
+				"MtVapiusMineralsAndFish_Name_Translated": "Mt Vapius Cross Study Order",
+				"MtVapiusMineralsAndFish_RE_Text_0_Translated": "We are working on a cross study involving minerals and fishes. ",
+				"MtVapiusMineralsAndFish_RE_Text_1_Translated": "We want to study the way some fishes grow minerals. ",
+				"MtVapiusMineralsAndFish_Text_Translated": "We need samples to compare them.",
+				"MtVapiusMineralsAndFish_Objective_0_Text_Translated": "Gather 10 gems or minerals.",
+				"MtVapiusMineralsAndFish_Objective_1_Text_Translated": "Place 10 gems or minerals in the drop box at the museum counter.",
+				"MtVapiusMineralsAndFish_Objective_2_Text_Translated": "Fish 5 Crystal Fish (small or giant).",
+				"MtVapiusMineralsAndFish_Objective_3_Text_Translated": "Place 5 Crystal Fish in the drop box at the museum counter.",
+				"MtVapiusMineralsAndFishMail_Translated": "@,^This particular specie of fish is fascinating. They grew in a mineral rich environment, and adapted to it.^They don't grow the crystal themselves but produce components attracting creatures that will, in turn, grow the crystal.^The symbiosis in the work is fascinating.^We believe the richness in mineral deposit in some of our rivers may come for the place those fishes are found.^I joined some of the documentation we worked with.^   -Gunther",
+				"MtVapiusMineralsAndFishMail_Title_Translated": "Mt Vapius Cross Study Order Thank You",
+
+				
+				"FancyGoods_Name_Translated": "Fancy Goods",
+				"FancyGoods_Text_Translated": "Deliveries can be made in front of the Inn. Reward include seeds of a plant making a very relaxing tea.",
+				"FancyGoods_Objective_0_Text_Translated": "Harvest or gather 2 jars of Honey.",
+				"FancyGoods_Objective_1_Text_Translated": "Place 2 jars of Honey into Mt Vapius Inn's box.",
+				"FancyGoods_Objective_2_Text_Translated": "Harvest or gather 2 bottles of Balsamic Vinegar.",
+				"FancyGoods_Objective_3_Text_Translated": "Place 2 bottles of Balsamic Vinegar into Mt Vapius Inn's box.",
+				"FancyGoods_RE_Text_0_Translated": "I am in search of the finest products. ",
+				"FancyGoods_RE_Text_1_Translated": "I want to splurge on quality goods. ",
+				
+
+				"CraftingMaterials_Name_Translated": "Crafting Materials",
+				"CraftingMaterials_Text_Translated": "Here's a list of what I need. Put the stuff in the box in front of my house in Faycombe. I'll give you some useful gears in return.",
+				"CraftingMaterials_Objective_0_Text_Translated": "Harvest or gather 20 logs of Hardwood.",
+				"CraftingMaterials_Objective_1_Text_Translated": "Place 20 logs of Hardwood into Faycombe's box.",
+				"CraftingMaterials_Objective_2_Text_Translated": "Harvest or gather 2 units of Pine Tar.",
+				"CraftingMaterials_Objective_3_Text_Translated": "Place 2 units of Pine Tar into Faycombe's box.",
+				"CraftingMaterials_Objective_4_Text_Translated": "Craft or gather 5 {Metal:TextPlural}.",
+				"CraftingMaterials_Objective_5_Text_Translated": "Place 5 {Metal:TextPlural} into Faycombe's box.",
+				"CraftingMaterials_RE_Text_0_Translated": "I need materials for my latest project. ",
+				"CraftingMaterials_RE_Text_1_Translated": "My supplies are running low. ",
+				
+				
+				"JewelMaterials_Name_Translated": "Jewel Materials",
+				"JewelMaterials_Text_Translated": "Deposit the items listed in the box in Faycombe in the box front of Helia's house.",
+				"JewelMaterials_Objective_0_Text_Translated": "Harvest or gather 1 {RareGems:Text}.",
+				"JewelMaterials_Objective_1_Text_Translated": "Place 1 {RareGems:Text} into Faycombe's box.",
+				"JewelMaterials_Objective_2_Text_Translated": "Harvest or gather 2 {Gems:TextPlural}.",
+				"JewelMaterials_Objective_3_Text_Translated": "Place 2 {Gems:TextPlural} into Faycombe's box.",
+				"JewelMaterials_Objective_4_Text_Translated": "Craft or gather 3 {Material:TextPlural}.",
+				"JewelMaterials_Objective_5_Text_Translated": "Place 3 {Material:TextPlural} into Faycombe's box..",
+				"JewelMaterials_RE_Text_0_Translated": "I would appreciate someone providing material for me. ",
+				"JewelMaterials_RE_Text_1_Translated": "I got some more commissions recently and need more supplies than usual. ",
+				
+				"DyeMoira_Name_Translated": "Dye for Moira Order",
+				"DyeMoira_Text_Translated": "Can someone bring me some material?",
+				"DyeMoira_Objective_0_Text_Translated": "Gather 3 {Dye:TextPlural}",
+				"DyeMoira_Objective_1_Text_Translated": "Place 3 {Dye:TextPlural} into Mt Vapius Inn's box.",
+				"DyeMoira_Objective_2_Text_Translated": "Gather 10 {Color:Text} items",
+				"DyeMoira_Objective_3_Text_Translated": "Place 10 {Color:Text} items into Mt Vapius Inn's box.",
+				"DyeMoira_RE_Text_0_Translated": "I want to experiment with dye on different fabrics.",
+				"DyeMoira_RE_Text_1_Translated": "My latest project is involving colorful patterns.",
+				"DyeMoira_RE_Color_Text_0": "green",
+				"DyeMoira_RE_Color_Text_1": "red or orange",
+				"DyeMoira_RE_Color_Text_2": "blue",
+				
+				"LocalCuisine_Name_Translated": "Local Cuisine",
+				"LocalCuisine_Text_Translated": " Give our local dishes to people so they know about them! They must like it, I know people say that 'any publicity is good publicity', but that's not the spirit here!",
+				"LocalCuisine_Objective_0_Text_Translated": "Gift 16 dishes of Mount Vapius to people that likes them.",
+				"LocalCuisine_RE_Text_0_Translated": "I want more people to know about the local food we have here. ",
+				"LocalCuisine_RE_Text_1_Translated": "I'm having a little advertising going on. ",
+				
+				
+				//Order todo
+				"MtVapiusCheeseBoard_Name_Translated": "Cheese Board",
+				"MtVapiusCheeseBoard_Text_Translated": "I want to make picture of those fancy cheese boards, but I need ingredients for it. Can someone bring me an assortment of products to make one?",
+				"MtVapiusCheeseBoard_Objective_0_Text_Translated": "Deliver 2 (basic cheese).",
+				"MtVapiusCheeseBoard_Objective_1_Text_Translated": "Deliver 1 (random fancy cheese).",
+				"MtVapiusCheeseBoard_Objective_2_Text_Translated": "Deliver 1 (random smoked cheese).",
+				"MtVapiusCheeseBoard_Objective_3_Text_Translated": "Deliver 5 fruit/honey.",
+				"MtVapiusCheeseBoardMail_Translated": "@,^Thanks for the products you delivered! Emily brought a bottle of wine from the saloon, Leah helped me find some foraging greens and Aster gave me advice on what flowers were edibles. I made amazing pictures, and enjoyed a nice meal.^^   -Haley",
+				"MtVapiusCheeseBoardMail_Title_Translated": "Haley's Thank You",
 				
 				
 				//Items
@@ -3480,7 +4332,7 @@
 				"MtVapiusLarimar_Translated": "Larimar",
 				"MtVapiusLarimar_Description_Translated": "A blue gem named after some distant shores.",
 				"MtVapiusLarimar_Polished_Translated": "Polished Larimar",
-				"MtVapiusLarimar_Polished_Description_Translated": "It reminds of foam on the sea.",
+				"MtVapiusLarimar_Polished_Description_Translated": "It reminds you of foam on the sea.",
 				"MtVapiusBlueAgathe_Translated": "Blue Agathe",
 				"MtVapiusBlueAgathe_Description_Translated": "Its layers make it a popular choice for carving.",
 				"MtVapiusBlueAgathe_Polished_Translated": "Polished Blue Agathe",
@@ -3637,7 +4489,7 @@
 				"MtVapiusVelvetIrisRhizome_Translated": "Velvet Iris Rhizome",
 				"MtVapiusVelvetIrisRhizome_Description_Translated": "Plant these in the summer. Takes 6 days to mature.",
 				"MtVapiusCosmosSeeds_Translated": "Cosmos Seeds",
-				"MtVapiusCosmosSeeds_Description_Translated": "Plant these in the fall. Takes 13 days to mature.",
+				"MtVapiusCosmosSeeds_Description_Translated": "Plant these in the fall. Takes 13 days to mature. Yield additional crops in Mount Vapius.",
 				"MtVapiusLambLettuceSeeds_Translated": "Lamb's Lettuce Seeds",
 				"MtVapiusLambLettuceSeeds_Description_Translated": "Plant these in the winter. Takes 10 days to mature, but keeps producing after that.",
 				"MtVapiusConstellatedWatermelonSeeds_Translated": "Constellated Watermelon Seeds",
@@ -3691,6 +4543,10 @@
 				"MtVapiusPixieBell_Description_Translated": "Tales say that fairy are playing hide and seek in these. Childrens love to look into it in the hope of spotting one.",
 				"MtVapiusBlueClover_Translated": "Blue Clover",
 				"MtVapiusBlueClover_Description_Translated": "A common forage, not very valuable by itself. Farmers use it to fertilize ground.",
+				"MtVapiusRosemary_Translated": "Rosemary",
+				"MtVapiusRosemary_Description_Translated": "Fragrant and very strong in taste.",
+				"MtVapiusSeaBuckthornBerry_Translated": "Sea Buckthorn Berry",
+				"MtVapiusSeaBuckthornBerry_Description_Translated": "The berries of a sturdy bush used to harsh growing conditions. It can be processed into oil.",
 				//dishes
 				"MtVapiusGratinVapius_Translated": "Gratin à la Vapius",
 				"MtVapiusGratinVapius_Description_Translated": "Crispy potatoes on the outside, tender potatoes in the inside.",
@@ -3736,6 +4592,12 @@
 				"MtVapiusGemCoffee_Description_Translated": "It's not even a drink anymore, it's... Something else. The flavours don't go together. Who would make such a mix just to get a bit more boost?",
 				"MtVapiusCreamAndStrawberries_Translated": "Cream and Strawberries",
 				"MtVapiusCreamAndStrawberries_Description_Translated": "Whipped cream, and fresh fruits. Delicious in its simplicity.",
+				"MtVapiusMangoBingsu_Translated": "Mango Bingsu",
+				"MtVapiusMangoBingsu_Description_Translated": "Shaved ice, condensed milk, mangoes.",
+				"MtVapiusRevoltillo_Translated": "Revoltillo",
+				"MtVapiusRevoltillo_Description_Translated": "A dish of eggs. This version use mushrooms.",
+				"MtVapiusTomatoSalad_Translated": "Tomato Salad",
+				"MtVapiusTomatoSalad_Description_Translated": "A refreshing salad in summer.",
 				//candy
 				
 				"MtVapiusCottonCandy_Translated": "Cotton Candy",
@@ -3800,6 +4662,8 @@
 				"MtVapiusOwlCarving_Translated": "Owl Carving",
 				"MtVapiusOwlCarving_Description_Translated": "A delicate wooden carving.",
 				"MtVapiusOwlCarving_true_Description_Translated": "A delicate wooden carving. Warp directly to Glimsap in Mount Vapius. Consumed on use.",
+				"MtVapiusJunimoCarving_Translated": "Junimo Carving",
+				"MtVapiusJunimoCarving_Description_Translated": "A delicate wooden carving. Warp directly to the hearth of the Forest in Mount Vapius. Consumed on use.",
 				
 				
 				//Jewels
@@ -3912,13 +4776,15 @@
 				"MtVapiusBalsamicVinegar_Description_Translated": "A luxury product when properly aged.",
 				"MtVapiusOrangeBlossomWater_Translated": "Orange Blossom Water",
 				"MtVapiusOrangeBlossomWater_Description_Translated": "It's flavoring pastries and rumored to help sleeping.",
+				"MtVapiusSeaBuckthornBerryOil_Translated": "Sea Buckthorn Berry Oil",
+				"MtVapiusSeaBuckthornBerryOil_Description_Translated": "It is used by the cosmetic industry.",
 				//Animal Products
 				"MtVapiusGooseEgg_Translated": "Goose Egg",
 				"MtVapiusGooseEgg_Description_Translated": "A tall, white egg. It's too big to go in a coop incubator. It would need to hatch in a barn.",
 				"MtVapiusGooseDown_Translated": "Goose Down",
 				"MtVapiusGooseDown_Description_Translated": "Very soft, they are used in quality pillows.",
 				"MtVapiusStellarGooseEgg_Translated": "Stellar Goose Egg",
-				"MtVapiusStellarGooseEgg_Description_Translated": "The pattern on this egg kinda looks like a starry sky.",
+				"MtVapiusStellarGooseEgg_Description_Translated": "The pattern on this egg kinda looks like a starry sky. It's too big to go in a coop incubator. It would need to hatch in a barn.",
 				"MtVapiusEweMilk_Translated": "Ewe Milk",
 				"MtVapiusEweMilk_Description_Translated": "The milk of an ewe.",
 				"MtVapiusEweMilkLarge_Translated": "Large Ewe Milk",
@@ -3967,6 +4833,8 @@
 				"MtVapiusGemPigeonEgg_Description_Translated": "A geode shaped like an egg.",
 				"MtVapiusGemPigeonFeather_Translated": "Gem Pigeon Feather",
 				"MtVapiusGemPigeonFeather_Description_Translated": "A feather of vivid colors.",
+				"MtVapiusVoidFeather_Translated": "Void Feather",
+				"MtVapiusVoidFeather_Description_Translated": "It absorbs the light in a way making it barely visible.",
 				"MtVapiusEmbertin_Translated": "Embertin",
 				"MtVapiusEmbertin_Description_Translated": "A popular cheese melted on potatoes.",
 				"MtVapiusSmokedGoatCheese_Translated": "Smoked Goat Cheese",
@@ -3992,7 +4860,7 @@
 				"MtVapiusMorningGloryCrown_Description_Translated": "Children like making them for playing",
 				"MtVapiusNevarilHat_Translated": "Nevaril",
 				"MtVapiusNevarilHat_Description_Translated": "A dried flower used as hair decoration.",
-				"MtVapiusStrippedHat_Translated": "Stripped Hat",
+				"MtVapiusStrippedHat_Translated": "Striped Hat",
 				"MtVapiusStrippedHat_Description_Translated": "A black and white hat.",
 				"MtVapiusBeret_Translated": "Béret",
 				"MtVapiusBeret_Description_Translated": "A hat with a tartan pattern.",
@@ -4047,7 +4915,7 @@
 				"MtVapiusRedSetBookcase_Translated": "Red Wood Bookcase",
 				"MtVapiusRedSetArmchair_Translated": "Red Wood Armchair",
 				"MtVapiusRedSetChair_Translated": "Red Wood Chair",
-				"MtVapiusRedSetCouch_Translated": "Red Wood Pouch",
+				"MtVapiusRedSetCouch_Translated": "Red Wood Couch",
 				"MtVapiusClearSetTallKitchenCabinet_Translated": "Clear Wood Tall Kitchen Cabinet",
 				"MtVapiusClearSetTable01_Translated": "Clear Wood Table",
 				"MtVapiusClearSetShelf_Translated": "Clear Wood Shelf",
@@ -4062,7 +4930,7 @@
 				"MtVapiusClearSetBookcase_Translated": "Clear Wood Bookcase",
 				"MtVapiusClearSetArmchair_Translated": "Clear Wood Armchair",
 				"MtVapiusClearSetChair_Translated": "Clear Wood Chair",
-				"MtVapiusClearSetCouch_Translated": "Clear Wood Pouch",
+				"MtVapiusClearSetCouch_Translated": "Clear Wood Couch",
 				
 				"MtVapiusFossilDisplay_Translated": "Fossil Display",
 				
@@ -4086,6 +4954,7 @@
 				"MtVapiusDeluxeSetCouch_Translated": "Deluxe Couch",
 				"MtVapiusDeluxeSetClock_Translated": "Deluxe Clock",
 				"MtVapiusDeluxeSetPiano_Translated": "Deluxe Piano",
+				"MtVapiusDeluxeSetRug_Translated": "Deluxe Rug",
 				
 				
 				"MtVapiusDarkDeluxeSetKitchenStove_Translated": "Dark Deluxe Kitchen Stove",
@@ -4100,6 +4969,7 @@
 				"MtVapiusDarkDeluxeSetCouch_Translated": "Dark Deluxe Couch",
 				"MtVapiusDarkDeluxeSetClock_Translated": "Dark Deluxe Clock",
 				"MtVapiusDarkDeluxeSetPiano_Translated": "Dark Deluxe Piano",
+				"MtVapiusDarkDeluxeSetRug_Translated": "Dark Deluxe Rug",
 				
 				//Display Names
 				"MtVapiusCandied_Translated": "Candied {0}",
@@ -4107,7 +4977,7 @@
 				"MtVapiusEarrings_Translated": "{0} Earrings",
 				"MtVapiusFan_Translated": "{0} Fan",
 				"MtVapiusGlobe_Translated": "{0} Globe",
-				"MtVapiusHoneyDrop_Translated": "{0}Drop",
+				"MtVapiusHoneyDrop_Translated": "{0} Drop",
 				
 				"MtVapiusMushroom": "Mushroom",
 				"MtVapiusHerb": "Herb",
@@ -4188,7 +5058,7 @@
 				"MtVapiusImprovedWell_Translated": "Improved Well",
 				"MtVapiusImprovedWell_Description_Translated": "Count as a water source for paddy ponds.",
 				"MtVapiusFruitPress_Translated": "Fruit Press",
-				"MtVapiusFruitPress_Description_Translated": "A good way to press great quantities of fruit or vegetable, but the wine or juice obtained is an average one. Best for low-value products.",
+				"MtVapiusFruitPress_Description_Translated": "A good way to press great quantities of fruit or vegetable, but provide generic flavour of wine or juice. Best for low-value products.",
 				"MtVapiusAgingCave_Translated": "Aging Cave",
 				"MtVapiusAgingCave_Description_Translated": "A place where to age cheeses and milk to obtain new cheese varieties. Only buildable in Mount Vapius.",
 				"MtVapiusOrchardHouse_Translated": "Orchard House",
@@ -4347,6 +5217,8 @@
 				"MtVapiusNaveenHouse10Message": "'Chronicle of Solarion'",
 				"MtVapiusNaveenHouse11Message": "It looks like a magic crystal. Totally different than a mundane crystal, obviously.",
 				"MtVapiusNaveenHouse12Message": "Dictionaries in various languages. Is that dwarvish?",
+				
+				"MtVapiusNaveenHouseMangoBingsuMessage": "There's a recipe on the fridge. You learned Mango Bingsu.",
 
 				//Bundles
 				

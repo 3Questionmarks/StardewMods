@@ -4,32 +4,25 @@
             "Action": "EditData",
             "Target": "Data/Machines",
             "Entries": {
-                "(BC)moonslime.Archaeology.restoration_table": {
+                "(BC)moonslime.Archaeology.water_shifter": {
                     "HasInput": false,
                     "HasOutput": false,
                     "InteractMethod": null,
                     "OutputRules": [
                         {
-                            "Id": "fossil_item",
+                            "Id": "default",
                             "Triggers": [
                                 {
                                     "Id": "ItemPlacedInMachine",
                                     "Trigger": "ItemPlacedInMachine",
-                                    "RequiredItemId": null,
-                                    "RequiredTags": [
-                                        "type_Arch"
-                                    ],
-                                    "RequiredCount": 1,
-                                    "Condition": null
+                                    "RequiredItemId": "(O)771",
+                                    "RequiredCount": 1
                                 }
                             ],
                             "UseFirstValidOutput": false,
                             "OutputItem": [
                                 {
-                                    "CustomData": {
-                                        "AgingMultiplier": "1"
-                                    },
-                                    "OutputMethod": "ArchaeologySkill.Objects.Restoration_Table.RestorationTable, ArchaeologySkillCode: OutputCask",
+                                    "OutputMethod": "ArchaeologySkill.Objects.Water_Shifter.WaterShifter, ArchaeologySkill: OutputCask",
                                     "CopyColor": false,
                                     "CopyPrice": false,
                                     "CopyQuality": false,
@@ -74,6 +67,98 @@
                     "InvalidItemMessage": null,
                     "InvalidItemMessageCondition": null,
                     "InvalidCountMessage": null,
+                    "LoadEffects": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Sounds": [
+                                {
+                                    "Id": "fishingRodBend",
+                                    "Delay": 0
+                                }
+                            ],
+                            "Interval": 100,
+                            "Frames": null,
+                            "ShakeDuration": -1,
+                            "TemporarySprites": null
+                        }
+                    ],
+                    "StatsToIncrementWhenLoaded": [
+                        {
+                            "StatName": "moonslime.ArchaeologySkill.water_shifter"
+                        }
+                    ]
+                },
+                "(BC)moonslime.Archaeology.restoration_table": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "InteractMethod": null,
+                    "OutputRules": [
+                        {
+                            "Id": "fossil_item",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": null,
+                                    "RequiredTags": [
+                                        "type_Arch"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": {
+                                        "AgingMultiplier": "1"
+                                    },
+                                    "OutputMethod": "ArchaeologySkill.Objects.Restoration_Table.RestorationTable, ArchaeologySkill: OutputCask",
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": false,
+                                    "PreserveType": null,
+                                    "PreserveId": null,
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": null,
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "Default",
+                                    "ItemId": null,
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": -1,
+                                    "MaxStack": -1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": null,
+                                    "ObjectDisplayName": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": null,
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": null,
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "MinutesUntilReady": -1,
+                            "DaysUntilReady": -1,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        }
+                    ],
+                    "AdditionalConsumedItems": null,
+                    "WobbleWhileWorking": true,
+                    "ShowNextIndexWhileWorking": true,
+                    "ShowNextIndexWhenReady": true,
+                    "PreventTimePass": null,
+                    "ReadyTimeModifiers": null,
+                    "ReadyTimeModifierMode": "Stack",
+                    "InvalidItemMessage": null,
+                    "InvalidItemMessageCondition": null,
+                    "InvalidCountMessage": null,
                     "StatsToIncrementWhenLoaded": [
                         {
                             "StatName": "moonslime.ArchaeologySkill.Restoration_Table"
@@ -106,7 +191,7 @@
                     ],
                     "AdditionalConsumedItems": [
                         {
-                            "ItemId": "(O)350",
+                            "ItemId": "(O)419",
                             "RequiredCount": 1,
                             "InvalidCountMessage": "{{i18n: moonslime.Archaeology.ancient_battery.need_item}}"
                         }
@@ -1189,7 +1274,7 @@
                                 {
                                     "Id": "ItemPlacedInMachine",
                                     "Trigger": "ItemPlacedInMachine",
-                                    "RequiredItemId": "(O)392",
+                                    "RequiredItemId": "(O)586",
                                     "RequiredCount": 1
                                 }
                             ],
@@ -1913,7 +1998,7 @@
                                 {
                                     "Id": "ItemPlacedInMachine",
                                     "Trigger": "ItemPlacedInMachine",
-                                    "RequiredItemId": "(O)114",
+                                    "RequiredItemId": "(O)113",
                                     "RequiredCount": 1
                                 }
                             ],
@@ -2375,7 +2460,7 @@
                                 {
                                     "Id": "ItemPlacedInMachine",
                                     "Trigger": "ItemPlacedInMachine",
-                                    "RequiredItemId": "(O)392",
+                                    "RequiredItemId": "(O)586",
                                     "RequiredCount": 1
                                 }
                             ],

@@ -108,9 +108,19 @@
         "Mon": "{{i18n: AsterDialogueMon}}",
         //Conversation Topics
         "Lumisteria.MtVapius.Arrival": "{{i18n: HaleyDialogueLumisteria.MtVapius.Arrival}}",
-        "Lumisteria.MtVapius.AsterAngry": "{{i18n: HaleyDialogueLumisteria.MtVapius.AsterAngry}}",
+        "eventSeen_Lumisteria.MtVapius_AsterHouse_Aster2H_memory_oneday": "{{i18n: HaleyDialogueeventSeen_Lumisteria.MtVapius_AsterHouse_Aster2H_memory_oneday}}",
 		//Gift Taste
         "AcceptGift_(O)Lumisteria.MtVapius_Morganite": "{{i18n: HaleyDialogueAcceptGift_(O)Lumisteria.MtVapius_Morganite}}",
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Harvey",
+      "Entries": {
+		//Conversation Topic
+        "eventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_oneday": "{{i18n: HarveyDialogueeventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_oneday}}",
+        "eventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_oneweek": "{{i18n: HarveyDialogueeventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_oneweek}}",
+        "eventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_onemonth": "{{i18n: HarveyDialogueeventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_onemonth}}",
       }
     },
     {
@@ -125,6 +135,8 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Jodi",
       "Entries": {
+		//Conversation Topic
+        "eventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_oneday": "{{i18n: JodiDialogueeventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_oneday}}",
 		//Gift Taste
         "AcceptGift_(O)Lumisteria.MtVapius_Candy_Praline": "{{i18n: JodiDialogueAcceptGift_(O)Lumisteria.MtVapius_Candy_Praline}}",
       }
@@ -151,6 +163,7 @@
       "Entries": {
         //Conversation Topics
         "eventSeen_Lumisteria.MtVapius.Arrival_memory_oneweek": "{{i18n: MaruDialogueeventSeen_Lumisteria.MtVapius.Arrival_memory_oneweek}}",
+        "eventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_oneweek": "{{i18n: MaruDialogueeventSeen_Lumisteria.MtVapius_Town_HeliaVisitsHarvey_memory_oneweek}}",
       }
     },
     {
@@ -204,13 +217,41 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Clint",
       "Entries": {
+        "spring_Wed10": "{{i18n: Clintspring_Wed10}}",
+        "spring_Fri6": "{{i18n: Clintspring_Fri6}}",
+        "summer_Mon6": "{{i18n: Clintsummer_Mon6}}",
+        "fall_Sun8": "{{i18n: Clintfall_Sun8}}",
+        "winter_Tue8": "{{i18n: Clintwinter_Tue8}}",
+        "fall_Mon8": "{{i18n: Clintfall_Mon8}}",
+      },
+      "When": {
+		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Hamlet_ClintMeetMariam",
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Clint",
+      "Entries": {
         "Tue6": "{{i18n: ClintTue6}}",
         "Sat6": "{{i18n: ClintSat6}}",
         "Fri8": "{{i18n: ClintFri8}}",
         "Sun8": "{{i18n: ClintSun8}}",
         "summer_Fri6": "{{i18n: Clintsummer_Fri6}}",
         "fall_Mon8": "{{i18n: Clintfall_Mon8}}",
+        "Thu8": "{{i18n: ClintThu8}}",
         "fall_Mon10": "{{i18n: Clintfall_Mon10}}",
+        "fall_Mon10": "{{i18n: Clintfall_Mon10}}",
+		
+		
+        "GreenRain_2": "{{i18n: ClintGreenRain_2}}",
+        "Resort": "{{i18n: ClintResort}}",
+        "Resort_Shore": "{{i18n: ClintResort_Shore}}",
+        "Resort_Bar": "{{i18n: ClintResort_Bar}}",
+		
+        "married_Emily": "{{i18n: Clintmarried_Emily}}",
+		
+		
+        "AcceptGift_(O)StardropTea": "{{i18n: ClintAcceptGift_(O)StardropTea}}",
       },
       "When": {
 		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Hamlet_ClintMeetMaddy",

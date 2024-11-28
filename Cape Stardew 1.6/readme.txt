@@ -1,6 +1,18 @@
-Cape Stardew - for Stardew Valley 1.6
+Cape Stardew - for Stardew Valley 1.6.9+
 
-**When Migrating from a previous save with Cape Stardew, please delete the old version and replace with this one. If you wish to keep Items that were added with Json Assets please download the optional Json Assets file!**
+*6.4.9*
+-Added new Front Facing portraits by DximAfe
+-Added Config to switch between portraits works with Generic Mod Config menu
+
+*6.4.8*Changes*
+-Fixed special order not accepting some items that potentially qualify.
+-edited special order dialogue
+
+*6.4.7*
+-Fixed Cape Stardew Mineral items so they identify as vanilla Minerals.
+-Removed obsolete tilesheet dependency 
+-Lowered the speed attribute on the Golden Obsidian blade for balance purposes.
+
 
 **About:**
 Embark on an epic quest into a mysterious sea cavern, unearthing treasures and forming bonds with Annetta. Immerse yourself in a captivating narrative, seamlessly integrating with other mods. Unleash optional legendary weapons for a truly legendary farming adventure!
@@ -11,7 +23,8 @@ Embark on an epic quest into a mysterious sea cavern, unearthing treasures and f
 - Esca.FarmTypeManager
 - SpaceCore
 - UnlockableBundles
-- Event Repeater(Optional)
+- Event Repeater
+- Item Extensions
 
 
 **Features:**

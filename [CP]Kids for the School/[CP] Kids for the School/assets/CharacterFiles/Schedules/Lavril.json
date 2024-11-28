@@ -1,0 +1,40 @@
+{
+        "Changes": [
+//Lavril go to School
+        {      
+            "Action": "EditData",
+            "Target": "Characters/schedules/Lavril",
+            "Priority": "Late",
+            "When": {
+                "HasMod| contains=Arknir27.Lavril": "true",
+                "HasMod| contains=Xiddav.LittleRedSchoolHouse": "true",
+                "HasSeenEvent |contains=63070012": "true",
+                "HasSeenEvent |contains=9695002": "true"
+            },
+            "Entries": {
+                "Tue": "0 Town 108 72 1/630 Custom_SchoolHouse 20 17 3/750 Custom_SchoolHouse 19 16 3/820 Custom_SchoolHouse 19 16 3 lavril_read \"Strings\\schedules\\Lavril:Lread.000\"/1130 Town 20 14 square_6_1/1240 Custom_SchoolHouse 20 17 3/1300 Custom_SchoolHouse 19 16 3 lavril_read \"Strings\\schedules\\Lavril:Lread.000\"/1530 Town 83 97 3/1620 Town 17 91 3/1750 AnimalShop 3 5 0",
+                "Wed": "0 Town 108 72 1/630 Custom_SchoolHouse 20 17 3/750 Custom_SchoolHouse 19 16 3/820 Custom_SchoolHouse 19 16 3 lavril_read \"Strings\\schedules\\Lavril:Lread.000\"/1130 Town 20 14 square_6_1/1240 Custom_SchoolHouse 20 17 3/1300 Custom_SchoolHouse 19 16 3 lavril_read \"Strings\\schedules\\Lavril:Lread.000\"/1530 Town 83 97 3/1640 EastScarp_Village 20 67 2/1800 EastScarp_OrchardHouse 7 5 2/1900 EastScarp_OrchardHouse 7 5 2 lavril_read/2040 EastScarp_OrchardHouse 2 4 2/2050 EastScarp_OrchardHouse 3 4 2/2100 EastScarp_OrchardHouse 3 4 2 lavril_sleep",
+                "Fri": "GOTO Wed",
+            }
+        },
+//Void go to School
+        {      
+            "Action": "EditData",
+            "Target": "Characters/schedules/Void",
+            "Priority": "Late",
+            "When": {
+                "HasMod| contains=Arknir27.Lavril": "true",
+                "HasMod| contains=Xiddav.LittleRedSchoolHouse": "true",
+                "HasSeenEvent |contains=63070012": "true",
+                "HasSeenEvent |contains=9695002": "true"
+            },
+            "Entries": {
+                "Tue": "0 Town 109 72 3/630 Custom_SchoolHouse 17 16 1/750 Custom_SchoolHouse 17 17 1 void_read \"Strings\\schedules\\Void:Vread.000\"/1000 Custom_SchoolHouse 20 5 0/1130 Town 24 14 square_2_1/1240 Custom_SchoolHouse 7 5 0 void_read \"Strings\\schedules\\Void:Vread.000\"/1300 Custom_SchoolHouse 17 16 1/1530 Town 83 98 3/1620 Town 18 91 3/1750 AnimalShop 2 5 0",
+                "Wed": "0 Town 109 72 3/630 Custom_SchoolHouse 17 16 1/750 Custom_SchoolHouse 17 17 1 void_read \"Strings\\schedules\\Void:Vread.000\"/1000 Custom_SchoolHouse 20 5 0/1130 Town 24 14 square_2_1/1240 Custom_SchoolHouse 7 5 0 void_read \"Strings\\schedules\\Void:Vread.000\"/1300 Custom_SchoolHouse 17 16 1/1530 Town 83 98 3/1640 EastScarp_Village 20 68 0/1800 EastScarp_Orchard 31 10 0",
+                "Fri": "GOTO Wed"
+            },
+        },
+    ]
+}
+
+//(0 = up, 1 = right, 2 = down, 3 = left)

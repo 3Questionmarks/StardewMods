@@ -194,6 +194,49 @@
 				"Day": "9, 23",
 			}
 		},
+		{
+			"LogName": "Shop Maelle",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_Hamlet",
+			"FromFile": "assets/LumisteriaMtVapiusShopStall10.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 7,
+				"Height": 4
+			},
+			"ToArea": {
+				"X": 41,
+				"Y": 89,
+				"Width": 7,
+				"Height": 4
+			},
+			"When": {
+				"Day": "2",
+                "HamletProgress|contains={{Range: 0, 4}}": false
+			}
+		},
+		{
+			"LogName": "Shop Felicity",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_Hamlet",
+			"FromFile": "assets/LumisteriaMtVapiusShopStall11.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 4,
+				"Height": 7
+			},
+			"ToArea": {
+				"X": 42,
+				"Y": 87,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"Day": "6",
+			}
+		},
 		//Travelling cart
 		{
 			"LogName": "Travelling Cart",
@@ -250,6 +293,28 @@
             {   
 			"HasSeenEvent": "Lumisteria.MtVapius_Hamlet_OrderBoard",
             }
+		},
+		{
+			"LogName": "Inn Bookshelves",
+			"Action": "EditMap",
+			"Target": "Maps/Lumisteria.MtVapius_Inn",
+			"FromFile": "assets/LumisteriaMtVapiusInnPatch.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 2,
+				"Height": 3
+			},
+			"ToArea": {
+				"X": 13,
+				"Y": 8,
+				"Width": 2,
+				"Height": 3
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+			"When": {
+				"HasSeenEvent|contains=Lumisteria.MtVapius_Inn_OdalisArrival": "false",
+			}
 		},
 		//Lake Seal
 		{
@@ -586,5 +651,18 @@
 				}
 			]
 		},*/
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Lumisteria.MtVapius_NaveenHouse",
+            "MapTiles": [
+                {
+                    "Position": { "X": 21, "Y": 24 },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "spacechase0.SpaceCore_TriggerAction Lumisteria.MtVapius_LearnMangoBingsuRecipe"
+                    }
+                }
+            ]
+        },
 	]
 }

@@ -1,7 +1,7 @@
 {
     "Name": "Friendships Affect Prices",
     "Author": "weissnicht01",
-    "Version": "1.4.4",
+    "Version": "1.4.6",
     "Description": "Your friendship level with store owners affects their prices.",
     "UniqueID": "weissnicht01.FriendshipsAffectsPrices",
     "UpdateKeys": ["Nexus:20648"],
@@ -37,6 +37,10 @@
         {
          "UniqueID": "Ghost.Marlon",
          "IsRequired": false
+        },
+        {
+        "UniqueID": "Wolf.Marlon",
+        "IsRequired": false
         },
         {
          "UniqueID": "Harry.BuildCamper",

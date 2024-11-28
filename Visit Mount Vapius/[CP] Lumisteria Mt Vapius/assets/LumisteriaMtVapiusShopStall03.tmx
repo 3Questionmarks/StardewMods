@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="6" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="93">
- <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths.png" width="64" height="144"/>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -33,7 +33,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="37" name="spring_lumi_outdoors" tilewidth="16" tileheight="16" tilecount="1800" columns="25">
+ <tileset firstgid="65" name="spring_lumi_outdoors" tilewidth="16" tileheight="16" tilecount="1800" columns="25">
   <image source="spring_lumisteria_mtvapius_c_outdoors.png" width="400" height="1152"/>
   <tile id="440">
    <properties>
@@ -262,7 +262,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="1837" name="mtvapiusoutdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+ <tileset firstgid="1865" name="mtvapiusoutdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="spring_lumisteria_mtvapius_v_outdoorsTileSheet.png" width="400" height="1264"/>
   <tile id="150">
    <properties>
@@ -1730,31 +1730,31 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="3812" name="z_mtvapius_custom_buildings" tilewidth="16" tileheight="16" tilecount="1800" columns="25">
+ <tileset firstgid="3840" name="z_mtvapius_custom_buildings" tilewidth="16" tileheight="16" tilecount="1800" columns="25">
   <image source="spring_lumisteria_mtvapius_c_buildings.png" width="400" height="1152"/>
  </tileset>
- <tileset firstgid="5612" name="spring_lumisteria_mtvapius_v_outdoorsTileSheet2" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+ <tileset firstgid="5640" name="spring_lumisteria_mtvapius_v_outdoorsTileSheet2" tilewidth="16" tileheight="16" tilecount="256" columns="16">
   <image source="spring_lumisteria_mtvapius_v_outdoorsTileSheet2.png" width="256" height="256"/>
  </tileset>
- <tileset firstgid="5868" name="z_mtvapius_vendors" tilewidth="16" tileheight="16" tilecount="20" columns="10">
+ <tileset firstgid="5896" name="z_mtvapius_vendors" tilewidth="16" tileheight="16" tilecount="20" columns="10">
   <image source="lumisteria_mtvapius_vendors.png" width="160" height="32"/>
  </tileset>
  <layer id="1" name="Back" width="6" height="5">
   <data encoding="csv">
-636,2112,54,2064,2014,2039,
-2112,2012,79,1990,2013,1990,
-2012,79,2063,2064,2063,2064,
-79,1990,2013,1990,2013,1990,
-75,2064,2063,2064,2063,1990
+664,2140,82,2092,2042,2067,
+2140,2040,107,2018,2041,2018,
+2040,107,2091,2092,2091,2092,
+107,2018,2041,2018,2041,2018,
+103,2092,2091,2092,2091,2018
 </data>
  </layer>
  <layer id="2" name="Buildings" width="6" height="5">
   <data encoding="csv">
 0,0,0,0,0,0,
-2281,0,0,0,0,0,
-2147484123,4955,0,0,4958,4959,
-4979,4980,0,0,4983,4984,
-5004,5005,5006,5007,5008,5009
+2309,0,0,0,0,0,
+2147484151,4983,0,0,4986,4987,
+5007,5008,0,0,5011,5012,
+5032,5033,5034,5035,5036,5037
 </data>
  </layer>
  <layer id="3" name="Paths" width="6" height="5">
@@ -1769,16 +1769,16 @@
  <layer id="4" name="Front" width="6" height="5">
   <data encoding="csv">
 0,0,0,0,0,0,
-4929,0,0,0,0,4934,
-4954,0,0,0,0,0,
-0,0,4981,4982,0,0,
+4957,0,0,0,0,4962,
+4982,0,0,0,0,0,
+0,0,5009,5010,0,0,
 0,0,0,0,0,0
 </data>
  </layer>
  <layer id="5" name="AlwaysFront" width="6" height="5">
   <data encoding="csv">
-0,4905,4906,4907,4908,4909,
-0,4930,4931,4932,4933,4934,
+0,4933,4934,4935,4936,4937,
+0,4958,4959,4960,4961,4962,
 0,0,0,0,0,0,
 0,0,0,0,0,0,
 0,0,0,0,0,0
@@ -1788,7 +1788,7 @@
  <objectgroup id="7" name="Buildings">
   <object id="90" name="TileData" x="48" y="64" width="16" height="16">
    <properties>
-    <property name="Action" value="OpenShop Lumisteria.MtVapius_HeliaShop down 900 1800 40 85 3 3"/>
+    <property name="Action" value="OpenShop Lumisteria.MtVapius_HeliaShop down 600 2600 40 85 3 3"/>
    </properties>
   </object>
  </objectgroup>

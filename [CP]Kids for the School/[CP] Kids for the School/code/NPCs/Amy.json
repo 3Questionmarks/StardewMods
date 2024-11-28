@@ -1,0 +1,94 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Amy": {
+                "DisplayName": "Amy",
+                "BirthSeason": "Spring",
+                "BirthDay": 6,
+                "HomeRegion": "Other",
+                "Gender": "Female",
+                "Age": "Child",
+                "Manner": "Polite",
+                "Optimism": "Negative",
+                "SocialAnxiety": "Outgoing",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "CanReceiveGifts": true,
+                "Calendar": "AlwaysShown",
+                "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9695002",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_WarpRoom",
+                        "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        }
+                    ],
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Amy": "{{i18n:gifts.Amy.love}}/72 91/{{i18n:gifts.Amy.like}}/90/{{i18n:gifts.Amy.dislike}}/130 131/{{i18n:gifts.Amy.hate}}/147/{{i18n:gifts.Amy.neutral}}/192 206 213/"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Amy",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Amy/Amy.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Amy",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Amy/Amy_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "amy_read_right": "17/17/17",
+                "amy_sit_backward": "18/18/18",	
+            },
+        },
+//NPC Strings
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.10": "{{i18n:Seat_Amy}}"},
+        },
+//When Adrian is in the School (SKE)
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.10": "{{i18n:Seat_Amy_Adrian}}"},
+            "When": {
+                "HasMod": "BURAKMESE.SKE"
+            },
+        },
+//AntiSocial Flag
+        {
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Amy": true
+            },
+            "When": {
+                "Amy": "true"
+            },
+        },
+    ]
+}

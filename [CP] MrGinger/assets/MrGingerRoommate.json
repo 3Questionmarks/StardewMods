@@ -3,27 +3,59 @@
         {
             "Action": "EditData",
             "Target": "Data/Objects",
-            "Fields": {
-                "163": {
-                    "ContextTags": [
-                        "propose_roommate_misterginger",
-                        "color_green",
-                        "fish_legendary",
-                        "fish_pond_ignore"
-                    ]
-                },
-                "160": {
-                    "ContextTags": [
-                        "propose_roommate_misterginger",
-                        "color_yellow",
-                        "fish_legendary",
-                        "fish_pond_ignore",
-                        "fish_upright"
-                    ]
-                }
+            "TargetField": [
+                "900",
+                "ContextTags"
+            ],
+            "Entries": {
+                "propose_roommate_misterginger": "propose_roommate_misterginger"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [
+                "899",
+                "ContextTags"
+            ],
+            "Entries": {
+                "propose_roommate_misterginger":"propose_roommate_misterginger"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [
+                "898",
+                "ContextTags"
+            ],
+            "Entries": {
+                "propose_roommate_misterginger":"propose_roommate_misterginger"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [
+                "901",
+                "ContextTags"
+            ],
+            "Entries": {
+                "propose_roommate_misterginger": "propose_roommate_misterginger"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [
+                "902",
+                "ContextTags"
+            ],
+            "Entries": {
+                "propose_roommate_misterginger":"propose_roommate_misterginger"
             }
         },
-       /* {
+        /* {
             "Action": "EditData",
             "Target": "Data/ObjectContextTags",
             "TextOperations": [
@@ -134,19 +166,18 @@
                 "MovieInvite_NoTheater": "Nope, not in the mood. Maybe another day. What? I like to leave my options open, okay?"
             }
         },*/
-        //Spouse Room
+        //Spouse Patio
         {
-            "Action": "EditData",
-            "Target": "Data/SpouseRooms",
-            "Entries": {
-                "MisterGinger": "Lemurkat_MrGinger_SpouseRoom/0"
-            }
+            "Action": "Load",
+            "Target": "Maps/Lemurkat_MrGinger_SpousePatio",
+            "FromFile": "assets/SpousePatioMrGinger.tmx",
+            "When":{"HasSeenEvent |contains=5295000": false}
         },
         {
             "Action": "Load",
             "Target": "Maps/Lemurkat_MrGinger_SpouseRoom",
             "FromFile": "assets/SpouseRoomMrGingerRev.tmx",
-            //"When":{"HasSeenEvent |contains=5295000": false}
+            "When":{"HasSeenEvent |contains=5295000": false}
         }
     ]
 }

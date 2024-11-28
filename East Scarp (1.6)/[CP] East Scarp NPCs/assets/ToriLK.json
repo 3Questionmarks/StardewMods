@@ -67,22 +67,6 @@
             }
         },
         {
-            "Action": "EditMap",
-            "Target": "Maps/EastScarp_ToriSlimeBasement",
-            "MapTiles": [
-                {
-                    "Position": {
-                        "X": 5,
-                        "Y": 16
-                    },
-                    "Layer": "Back",
-                    "SetProperties": {
-                        "CustomCompanions": "Spawn 1 LemurKat.EastScarpeCompanions.HappySlime"
-                    }
-                }
-            ]
-        },
-        {
             "Action": "EditData",
             "Target": "Data/Events/Saloon",
             "Entries": {

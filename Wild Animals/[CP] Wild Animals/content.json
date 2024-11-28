@@ -9,17 +9,12 @@
         "Animal Abundance Level": {
             "AllowValues": "High, Low, Vanilla",
             "Default": "Vanilla",
-			"Description": "Determines how many animals can appear and whether there should be certain conditions to be met. High: Any animal can show up without requirements and will almost always appear, Low: Animals don't need require any conditions to appear but still have a chance of not showing up on random days, Vanilla: Some animals have certain conditions that need to be met before they start appearing."
+			"Description": "Determines how many animals can appear and whether there should be certain conditions to be met. High and Low: Does not have any unlock conditions and slightly affects spawn chances, Vanilla: Some animals have certain conditions that need to be met before they start appearing."
 		},
-        "Allow Bonus Animals": {
+        "Allow Custom Events": {
             "AllowValues": "true, false",
             "Default": "true",
-			"Description": "A collection of random creatures that are added in just for fun . Most (if not all) have a smaller chance of spawning in the random, somewhat hidden places chosen for them."
-		},
-        "Allow Festive Animals": {
-            "AllowValues": "true, false",
-            "Default": "true",
-			"Description": "Certain animals have a chance to spawn in certain maps depending on the near festival dates if enabled."
+			"Description": "A small chance for custom nightly events that either spawn random objects in your farm or give the player custom buffs if enabled."
 		},
         "Allow Junimo sprite changes": {
             "AllowValues": "true, false",
@@ -41,202 +36,289 @@
             "Default": "Vanilla",
 			"Description": "Chooses the color of the raccoons spawned from this mod. 'Vanilla' matches the raccoons in the vanilla game, while 'Original' is the old colors that Wild Animals' raccoons came with."
 		},
-        "Load Wild Armadillos": {
+
+// ANIMAL TOGGLES
+        "Allow Bonus Animals": {
             "AllowValues": "true, false",
-            "Default": "true"
+            "Default": "true",
+			"Description": "A collection of random creatures that are added in just for fun . Most (if not all) have a smaller chance of spawning in the random, somewhat hidden places chosen for them.",
+			"Section": "Animal Toggles"
 		},
-        "Load Wild Badgers + Wolverines": {
+        "Allow Festive Animals": {
             "AllowValues": "true, false",
-            "Default": "true"
+            "Default": "true",
+			"Description": "Certain animals have a chance to spawn in certain maps depending on the near festival dates if enabled.",
+			"Section": "Animal Toggles"
 		},
-        "Load Wild Bears": {
+        "Allow Wild Animals In Farm": {
             "AllowValues": "true, false",
-            "Default": "true"
+            "Default": "true",
+			"Description": "Certain animals have a 30% chance to spawn in your farm if enabled.",
+			"Section": "Animal Toggles"
 		},
-        "Load Wild Beavers": {
+
+        "Allow Wild Animals In Island Farm": {
             "AllowValues": "true, false",
-            "Default": "true"
+            "Default": "true",
+			"Description": "Certain animals may spawn in your island farm if enabled.",
+			"Section": "Animal Toggles"
 		},
-        "Load Wild Boars": {
-            "AllowValues": "true, false",
-            "Default": "true"
+
+// INDIVIDUAL ANIMAL TOGGLES
+		"Load Wild Animals": {
+			"AllowValues": "Armadillos, Badgers + Wolverines, Bears, Beavers, Boars, Bobcats, Coyotes, Crows, Deers, Dolphins, Ducks, Fennec Foxes, Foxes, Geese, Gembirds, Horses, Lemurs, Meerkats, Monkeys, MoonlightJellies, Ostriches, Owls, Peafowls, Pelicans + Seagulls, Platypuses, Quails, Quokkas, Raccoons, Otters, Skunks, Swans, Tortoises, Turtles, Wolves, Wombats",
+			"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "Armadillos, Badgers + Wolverines, Bears, Beavers, Boars, Bobcats, Coyotes, Crows, Deers, Dolphins, Ducks, Fennec Foxes, Foxes, Geese, Gembirds, Horses, Lemurs, Meerkats, Monkeys, MoonlightJellies, Ostriches, Owls, Peafowls, Pelicans + Seagulls, Platypuses, Quails, Quokkas, Raccoons, Otters, Skunks, Swans, Tortoises, Turtles, Wolves, Wombats",
+			"Section": "Individual Animal Toggles"
 		},
-        "Load Wild Bobcats": {
-            "AllowValues": "true, false",
-            "Default": "true"
+		"Load Wild Critters": {
+			"AllowValues": "Beetles, Chinchillas, Crabs, Frogs + Toads, Grasshoppers, Hedgehogs, Lizards, Opossums, Pine Martens, Rabbits, Rats, Roaches, Snails, Squirrels + Chipmunks, Weasels + Ferrets",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Default": "Beetles, Chinchillas, Crabs, Frogs + Toads, Grasshoppers, Hedgehogs, Lizards, Opossums, Pine Martens, Rabbits, Rats, Roaches, Snails, Squirrels + Chipmunks, Weasels + Ferrets",
+			"Section": "Individual Small Critters Toggles"
 		},
-        "Load Wild Chinchilla": {
-            "AllowValues": "true, false",
-            "Default": "true"
+
+// WILD ANIMALS FARM VISITORS SETTINGS
+        "Coordinates (Backwoods)": {
+            "AllowValues": "Standard, Beach, Meadowlands, Custom",
+            "Default": "Standard",
+			"Description": "Sets the coordinates of the wild animals visiting the farm near the backwoods.",
+			"Section": "Wild Animal Visitors"
 		},
-        "Load Wild Coyotes": {
-            "AllowValues": "true, false",
-            "Default": "true"
+        "Coordinates (BusStop)": {
+            "AllowValues": "Standard, Beach, Meadowlands, Custom",
+            "Default": "Standard",
+			"Description": "Sets the coordinates of the wild animals visiting the farm near the bus stop.",
+			"Section": "Wild Animal Visitors"
 		},
-        "Load Wild Crabs": {
-            "AllowValues": "true, false",
-            "Default": "true"
+        "Coordinates (Forest)": {
+            "AllowValues": "Standard, Beach, Meadowlands, Custom",
+            "Default": "Standard",
+			"Description": "Sets the coordinates of the wild animals visiting the farm near the forest.",
+			"Section": "Wild Animal Visitors"
 		},
-        "Load Wild Crows": {
-            "AllowValues": "true, false",
-            "Default": "true"
+
+        "X Coordinates (Backwoods, Custom)": {
+            "Default": "40",
+			"Section": "Wild Animal Visitors"
 		},
-        "Load Wild Deers": {
-            "AllowValues": "true, false",
-            "Default": "true"
+        "Y Coordinates (Backwoods, Custom)": {
+            "Default": "8",
+			"Section": "Wild Animal Visitors"
 		},
-        "Load Wild Ducks": {
-            "AllowValues": "true, false",
-            "Default": "true"
+        "X Coordinates (BusStop, Custom)": {
+            "Default": "76",
+			"Section": "Wild Animal Visitors"
 		},
-        "Load Wild Fennec Foxes": {
-            "AllowValues": "true, false",
-            "Default": "true"
+        "Y Coordinates (BusStop, Custom)": {
+            "Default": "17",
+			"Section": "Wild Animal Visitors"
 		},
-        "Load Wild Foxes": {
-            "AllowValues": "true, false",
-            "Default": "true"
+        "X Coordinates (Forest, Custom)": {
+            "Default": "61",
+			"Section": "Wild Animal Visitors"
 		},
-        "Load Wild Frogs": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Geese": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Gembirds": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-         "Load Wild Hedgehogs": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Lemurs": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Meerkats": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Monkeys": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild MoonlightJellies": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Opossums": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Ostriches": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Owls": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Peafowls": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Pelicans + Seagulls": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Pine Martens": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Platypuses": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Quails": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Rabbits": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Raccoons": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Rats": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Otters": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Skunks": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Squirrels + Chipmunks": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Swans": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Tortoises": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Turtles": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Weasels": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Wolves": {
-            "AllowValues": "true, false",
-            "Default": "true"
-		},
-        "Load Wild Wombats": {
-            "AllowValues": "true, false",
-            "Default": "true"
+        "Y Coordinates (Forest, Custom)": {
+            "Default": "40",
+			"Section": "Wild Animal Visitors"
 		},
 	},
+	"DynamicTokens": [
+		{
+			"Name": "AnimalAbundanceToken",
+			"Value": "1",
+			"When": { "Animal Abundance Level": "High" }
+		},
+		{
+			"Name": "AnimalAbundanceToken",
+			"Value": "0",
+			"When": { "Animal Abundance Level": "Low" }
+		},
+
+		{
+			"Name": "FVXCoordinatesToken_BW",
+			"Value": "40",
+			"When": { "Coordinates (Backwoods)": "Standard" }
+		},
+		{
+			"Name": "FVYCoordinatesToken_BW",
+			"Value": "8",
+			"When": { "Coordinates (Backwoods)": "Standard" }
+		},
+		{
+			"Name": "FVXCoordinatesToken_BS",
+			"Value": "76",
+			"When": { "Coordinates (BusStop)": "Standard" }
+		},
+		{
+			"Name": "FVYCoordinatesToken_BS",
+			"Value": "17",
+			"When": { "Coordinates (BusStop)": "Standard" }
+		},
+		{
+			"Name": "FVXCoordinatesToken_F",
+			"Value": "40",
+			"When": { "Coordinates (Forest)": "Standard" }
+		},
+		{
+			"Name": "FVYCoordinatesToken_F",
+			"Value": "61",
+			"When": { "Coordinates (Forest)": "Standard" }
+		},
+
+		{
+			"Name": "FVXCoordinatesToken_BW",
+			"Value": "40",
+			"When": { "Coordinates (Backwoods)": "Beach" }
+		},
+		{
+			"Name": "FVYCoordinatesToken_BW",
+			"Value": "8",
+			"When": { "Coordinates (Backwoods)": "Beach" }
+		},
+		{
+			"Name": "FVXCoordinatesToken_BS",
+			"Value": "76",
+			"When": { "Coordinates (BusStop)": "Beach" }
+		},
+		{
+			"Name": "FVYCoordinatesToken_BS",
+			"Value": "17",
+			"When": { "Coordinates (BusStop)": "Beach" }
+		},
+		{
+			"Name": "FVXCoordinatesToken_F",
+			"Value": "81",
+			"When": { "Coordinates (Forest)": "Beach" }
+		},
+		{
+			"Name": "FVYCoordinatesToken_F",
+			"Value": "96",
+			"When": { "Coordinates (Forest)": "Beach" }
+		},
+
+		{
+			"Name": "FVXCoordinatesToken_BW",
+			"Value": "63",
+			"When": { "Coordinates (Backwoods)": "Meadowlands" }
+		},
+		{
+			"Name": "FVYCoordinatesToken_BW",
+			"Value": "11",
+			"When": { "Coordinates (Backwoods)": "Meadowlands" }
+		},
+		{
+			"Name": "FVXCoordinatesToken_BS",
+			"Value": "91",
+			"When": { "Coordinates (BusStop)": "Meadowlands" }
+		},
+		{
+			"Name": "FVYCoordinatesToken_BS",
+			"Value": "22",
+			"When": { "Coordinates (BusStop)": "Meadowlands" }
+		},
+		{
+			"Name": "FVXCoordinatesToken_F",
+			"Value": "52",
+			"When": { "Coordinates (Forest)": "Meadowlands" }
+		},
+		{
+			"Name": "FVYCoordinatesToken_F",
+			"Value": "66",
+			"When": { "Coordinates (Forest)": "Meadowlands" }
+		},
+
+		{
+			"Name": "FVXCoordinatesToken_BW",
+			"Value": "{{X Coordinates (Backwoods, Custom)}}",
+			"When": { "Coordinates (Backwoods)": "Custom" }
+		},
+		{
+			"Name": "FVYCoordinatesToken_BW",
+			"Value": "{{Y Coordinates (Backwoods, Custom)}}",
+			"When": { "Coordinates (Backwoods)": "Custom" }
+		},
+		{
+			"Name": "FVXCoordinatesToken_BS",
+			"Value": "{{X Coordinates (BusStop, Custom)}}",
+			"When": { "Coordinates (BusStop)": "Custom" }
+		},
+		{
+			"Name": "FVYCoordinatesToken_BS",
+			"Value": "{{Y Coordinates (BusStop, Custom)}}",
+			"When": { "Coordinates (BusStop)": "Custom" }
+		},
+		{
+			"Name": "FVXCoordinatesToken_F",
+			"Value": "{{X Coordinates (Forest, Custom)}}",
+			"When": { "Coordinates (Forest)": "Custom" }
+		},
+		{
+			"Name": "FVYCoordinatesToken_F",
+			"Value": "{{Y Coordinates (Forest, Custom)}}",
+			"When": { "Coordinates (Forest)": "Custom" }
+		},
+
+		{
+			"Name": "FarmMap",
+			"Value": "Farm",
+			"When": { "FarmType": "Standard"}
+		},
+		{
+			"Name": "FarmMap",
+			"Value": "Farm_Island",
+			"When": { "FarmType": "Beach" }
+		},
+		{
+			"Name": "FarmMap",
+			"Value": "Farm_Foraging",
+			"When": { "FarmType": "Forest" }
+		},
+		{
+			"Name": "FarmMap",
+			"Value": "Farm_FourCorners",
+			"When": { "FarmType": "FourCorners" }
+		},
+		{
+			"Name": "FarmMap",
+			"Value": "Farm_Mining",
+			"When": { "FarmType": "Hilltop" }
+		},
+		{
+			"Name": "FarmMap",
+			"Value": "Farm_Fishing",
+			"When": { "FarmType": "Riverland" }
+		},
+		{
+			"Name": "FarmMap",
+			"Value": "Farm_Combat",
+			"When": { "FarmType": "Wilderness" }
+		},
+		{
+			"Name": "FarmMap",
+			"Value": "Farm_Ranching",
+			"When": { "FarmType": "MeadowlandsFarm" }
+		},
+	],
 
 	"Changes": [
 
 // Vanilla Map Patches
 	{
 		"Action": "Include",
-		"FromFile": "assets/Map_Patch_High.json",
+		"FromFile": "data/Map_Patch_Unlocked.json",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
-			"Animal Abundance Level": "High",
+			"Animal Abundance Level": "High, Low",
 			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
 		}
 	},
 	{
 		"Action": "Include",
-		"FromFile": "assets/Map_Patch_Low.json",
-		"Update": "OnLocationChange",
-		"When": {
-			"Enable mod?": "true",
-			"Animal Abundance Level": "Low",
-			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-		}
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/Map_Patch_Vanilla.json",
+		"FromFile": "data/Map_Patch_Vanilla.json",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -246,7 +328,7 @@
 	},
 	{
 		"Action": "Include",
-		"FromFile": "assets/Map_Patch_Extras.json",
+		"FromFile": "data/Map_Patch_Extras.json",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -254,27 +336,29 @@
 			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
 		}
 	},
+
 	{
 		"Action": "Include",
-		"FromFile": "assets/Map_Patch_Island_High.json",
+		"FromFile": "data/Map_Patch_Farm.json",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
-			"Animal Abundance Level": "High",
+			"Allow Wild Animals In Farm": "true",
+		}
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "data/Map_Patch_Island_Unlocked.json",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+			"Animal Abundance Level": "High, Low",
 		}
 	},
 	{
 		"Action": "Include",
-		"FromFile": "assets/Map_Patch_Island_Low.json",
-		"Update": "OnLocationChange",
-		"When": {
-			"Enable mod?": "true",
-			"Animal Abundance Level": "Low",
-		}
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/Map_Patch_Island_Vanilla.json",
+		"FromFile": "data/Map_Patch_Island_Vanilla.json",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -283,7 +367,7 @@
 	},
 	{
 		"Action": "Include",
-		"FromFile": "assets/Map_Patch_Island.json",
+		"FromFile": "data/Map_Patch_Island.json",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -293,7 +377,7 @@
 // Lnh Ginger Island Overhaul Map Patches
 	{
 		"Action": "Include",
-		"FromFile": "assets/Map_Patch_LGIO_Island.json",
+		"FromFile": "data/Map_Patch_LGIO_Island.json",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -304,27 +388,17 @@
 // SVE Map Patches
 	{
 		"Action": "Include",
-		"FromFile": "assets/Map_Patch_SVE_High.json",
+		"FromFile": "data/Map_Patch_SVE_Unlocked.json",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
-			"Animal Abundance Level": "High",
+			"Animal Abundance Level": "High, Low",
 			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
 		}
 	},
 	{
 		"Action": "Include",
-		"FromFile": "assets/Map_Patch_SVE_Low.json",
-		"Update": "OnLocationChange",
-		"When": {
-			"Enable mod?": "true",
-			"Animal Abundance Level": "Low",
-			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-		}
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/Map_Patch_SVE_Vanilla.json",
+		"FromFile": "data/Map_Patch_SVE_Vanilla.json",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -334,7 +408,7 @@
 	},
 	{
 		"Action": "Include",
-		"FromFile": "assets/Map_Patch_SVE_Extras.json",
+		"FromFile": "data/Map_Patch_SVE_Extras.json",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -344,19 +418,60 @@
 	},
 	{
 		"Action": "Include",
-		"FromFile": "assets/Map_Patch_SVE_Custom.json",
+		"FromFile": "data/Map_Patch_SVE_Custom_Unlocked.json",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
+			"Animal Abundance Level": "High, Low",
 			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
 		}
 	},
+	{
+		"Action": "Include",
+		"FromFile": "data/Map_Patch_SVE_Custom.json",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+			"Animal Abundance Level": "Vanilla",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+		}
+	},
+
+//	CUSTOM EVENTS
+	{
+		"Action": "Include",
+		"FromFile": "data/Events/NightEvents.json",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+			"Allow Custom Events": "true",
+			"HasMod |contains=leclair.morenightlyevents": true,
+		}
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "data/Buffs.json",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Mods/SmolHooman.WildAnimalsLite/BuffsIcons",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+    },
 
 // ANIMAL SPRITES
 	{
 		"Action": "Load",
 		"Target": "Characters/Fox_WA",
-		"FromFile": "assets/animals/{{Random: Fox_Red, Fox_Red, FoxArctic_{{season}}|key=foxes}}.png",
+		"FromFile": "assets/Animals/{{Random: Fox_Red, Fox_Red, FoxArctic_{{season}}|key=foxes}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -365,7 +480,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/FoxKit_WA",
-		"FromFile": "assets/animals/{{Random: FoxKit_Red, FoxKit_Red, FoxKitArctic_{{season}}|key=foxes}}.png",
+		"FromFile": "assets/Animals/{{Random: FoxKit_Red, FoxKit_Red, FoxKitArctic_{{season}}|key=foxes}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -373,8 +488,26 @@
 	},
 	{
 		"Action": "Load",
-		"Target": "Characters/Frog_WA",
-		"FromFile": "assets/animals/{{Random: Frog_Brown, Frog_Green, Frog_Yellow}}.png",
+		"Target": "Characters/Horse_A_WA",
+		"FromFile": "assets/Animals/{{Random: Horse_Black, Horse_DarkBrown, Horse_DarkBrown, Horse_LightBrown, Horse_LightBrown, Horse_Vanilla, Horse_White}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Horse_B_WA",
+		"FromFile": "assets/Animals/{{Random: Horse_Black, Horse_DarkBrown, Horse_DarkBrown, Horse_LightBrown, Horse_LightBrown, Horse_Vanilla, Horse_White}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Horse_C_WA",
+		"FromFile": "assets/Animals/{{Random: Horse_Black, Horse_DarkBrown, Horse_DarkBrown, Horse_LightBrown, Horse_LightBrown, Horse_Vanilla, Horse_White}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -383,7 +516,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/Owl_WA",
-		"FromFile": "assets/animals/{{Random: Owl_Horned, Owl_Horned, Owl_Barn}}.png",
+		"FromFile": "assets/Animals/{{Random: Owl_Horned, Owl_Horned, Owl_Barn}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -393,7 +526,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/Owl_WA",
-		"FromFile": "assets/animals/{{Random: Owl_Horned, Owl_Horned, Owl_Barn, Owl_Snowy}}.png",
+		"FromFile": "assets/Animals/{{Random: Owl_Horned, Owl_Horned, Owl_Barn, Owl_Snowy}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -402,17 +535,8 @@
 	},
 	{
 		"Action": "Load",
-		"Target": "Characters/Rabbit_WA",
-		"FromFile": "assets/animals/{{Random: SnowshoeHare_{{season}}, SnowshoeHare_{{season}}, SnowshoeHare_{{season}}, Rabbit_Gray, Rabbit_Gray}}.png",
-		"Update": "OnLocationChange",
-		"When": {
-			"Enable mod?": "true",
-		}
-	},
-	{
-		"Action": "Load",
 		"Target": "Characters/Raccoon_WA",
-		"FromFile": "assets/animals/Raccoon_Vanilla.png",
+		"FromFile": "assets/Animals/Raccoon_Vanilla.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -422,7 +546,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/Raccoon_WA",
-		"FromFile": "assets/animals/Raccoon_WA.png",
+		"FromFile": "assets/Animals/Raccoon_WA.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -431,26 +555,8 @@
 	},
 	{
 		"Action": "Load",
-		"Target": "Characters/Rat_WA",
-		"FromFile": "assets/animals/{{Random: Rat_Brown, Rat_Brown, Rat_Brown, Rat_Gray, Rat_Gray, Rat_Black}}.png",
-		"Update": "OnLocationChange",
-		"When": {
-			"Enable mod?": "true",
-		}
-	},
-	{
-		"Action": "Load",
-		"Target": "Characters/Squirrel_WA",
-		"FromFile": "assets/animals/{{Random: Squirrel_Brown, Squirrel_Brown, Squirrel_Gray}}.png",
-		"Update": "OnLocationChange",
-		"When": {
-			"Enable mod?": "true",
-		}
-	},
-	{
-		"Action": "Load",
 		"Target": "Characters/Swan_WA",
-		"FromFile": "assets/animals/{{Random: Swan_White, Swan_White, Swan_Black}}.png",
+		"FromFile": "assets/Animals/{{Random: Swan_White, Swan_White, Swan_Black}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -459,7 +565,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/Turtle_WA",
-		"FromFile": "assets/animals/Turtle_Green.png",
+		"FromFile": "assets/Animals/Turtle_Green.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -468,7 +574,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/TurtleHatchling_WA",
-		"FromFile": "assets/animals/TurtleHatchling_Green.png",
+		"FromFile": "assets/Animals/TurtleHatchling_Green.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -477,7 +583,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/Weasel_WA",
-		"FromFile": "assets/animals/Weasel_{{season}}.png",
+		"FromFile": "assets/Animals/Weasel_{{season}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -486,7 +592,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/Wolf_WA",
-		"FromFile": "assets/animals/Wolf_Gray.png",
+		"FromFile": "assets/Animals/Wolf_Gray.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -495,7 +601,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/WolfPup_WA",
-		"FromFile": "assets/animals/WolfPup_Gray.png",
+		"FromFile": "assets/Animals/WolfPup_Gray.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -503,12 +609,159 @@
 	},
 
 
+// SMALL CRITTER SPRITES
+
+	{
+		"Action": "Load",
+		"Target": "Characters/Beetle_A_WA",
+		"FromFile": "assets/Animals/{{Random: Beetle_Black, Beetle_Brown, Beetle_DarkBrown, Beetle_Gray, Beetle_Green, Beetle_Periwinkle, Beetle_Spotted, Beetle_Yellow, Beetle_YellowGreen}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Beetle_B_WA",
+		"FromFile": "assets/Animals/{{Random: Beetle_Black, Beetle_Brown, Beetle_DarkBrown, Beetle_Gray, Beetle_Green, Beetle_Periwinkle, Beetle_Spotted, Beetle_Yellow, Beetle_YellowGreen}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Beetle_C_WA",
+		"FromFile": "assets/Animals/{{Random: Beetle_Black, Beetle_Brown, Beetle_DarkBrown, Beetle_Gray, Beetle_Green, Beetle_Periwinkle, Beetle_Spotted, Beetle_Yellow, Beetle_YellowGreen}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Frog_WA",
+		"FromFile": "assets/Animals/{{Random: Frog_Brown, Frog_Green, Frog_Yellow}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Grasshopper_A_WA",
+		"FromFile": "assets/Animals/{{Random: Grasshopper_Brown, Grasshopper_Green, Grasshopper_Yellow}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Grasshopper_B_WA",
+		"FromFile": "assets/Animals/{{Random: Grasshopper_Brown, Grasshopper_Green, Grasshopper_Yellow}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Lizard_A_WA",
+		"FromFile": "assets/Animals/{{Random: Lizard_Black, Lizard_Brown, Lizard_Green}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Lizard_B_WA",
+		"FromFile": "assets/Animals/{{Random: Lizard_Black, Lizard_Brown, Lizard_Green, Lizard_Red, Lizard_Yellow}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Lizard_C_WA",
+		"FromFile": "assets/Animals/{{Random: Lizard_Black, Lizard_Brown}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Rabbit_WA",
+		"FromFile": "assets/Animals/{{Random: SnowshoeHare_{{season}}, SnowshoeHare_{{season}}, SnowshoeHare_{{season}}, Rabbit_Gray, Rabbit_Gray}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Rat_WA",
+		"FromFile": "assets/Animals/{{Random: Rat_Brown, Rat_Brown, Rat_Brown, Rat_Gray, Rat_Gray, Rat_Black}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Roach_WA",
+		"FromFile": "assets/Animals/Roach_Brown.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Snail_A_WA",
+		"FromFile": "assets/Animals/{{Random: Snail_Brown, Snail_DarkGreen, Snail_Gray, Snail_LightBrown, Snail_YellowGreen}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Snail_B_WA",
+		"FromFile": "assets/Animals/{{Random: Snail_Brown, Snail_DarkGreen, Snail_Gray, Snail_LightBrown, Snail_YellowGreen}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Squirrel_WA",
+		"FromFile": "assets/Animals/{{Random: Squirrel_Brown, Squirrel_Brown, Squirrel_Gray}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Toad_WA",
+		"FromFile": "assets/Animals/{{Random: Toad_Brown, Toad_DarkBrown, Toad_Yellow}}.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+
 // OTHER SPRITES
 
 	{
 		"Action": "Load",
 		"Target": "Characters/DustSpirit_A_WA",
-		"FromFile": "assets/special/{{Random: DustSpirit_Normal, DustSpirit_Arms, DustSpirit_Green, DustSpirit_Pink, DustSpirit_White, DustSpirit_Yellow}}.png",
+		"FromFile": "assets/Special/{{Random: DustSpirit_Normal, DustSpirit_Arms, DustSpirit_Green, DustSpirit_Pink, DustSpirit_White, DustSpirit_Yellow}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -517,7 +770,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/DustSpirit_B_WA",
-		"FromFile": "assets/special/{{Random: DustSpirit_Normal, DustSpirit_Arms, DustSpirit_Green, DustSpirit_Pink, DustSpirit_White, DustSpirit_Yellow}}.png",
+		"FromFile": "assets/Special/{{Random: DustSpirit_Normal, DustSpirit_Arms, DustSpirit_Green, DustSpirit_Pink, DustSpirit_White, DustSpirit_Yellow}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -526,7 +779,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/DustSpirit_C_WA",
-		"FromFile": "assets/special/{{Random: DustSpirit_Normal, DustSpirit_Arms, DustSpirit_Green, DustSpirit_Pink, DustSpirit_White, DustSpirit_Yellow}}.png",
+		"FromFile": "assets/Special/{{Random: DustSpirit_Normal, DustSpirit_Arms, DustSpirit_Green, DustSpirit_Pink, DustSpirit_White, DustSpirit_Yellow}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -535,7 +788,7 @@
 	{
 		"Action": "EditImage",
 		"Target": "Characters/Junimo_WA",
-		"FromFile": "assets/accessories/Leaf_Umbrella_{{season}}.png",
+		"FromFile": "assets/Accessories/Leaf_Umbrella_{{season}}.png",
 		"PatchMode": "Overlay",
 		"Update": "OnLocationChange",
 			"When": {
@@ -548,7 +801,7 @@
 	{
 		"Action": "EditImage",
 		"Target": "Characters/JunimoMarshmallow_WA",
-		"FromFile": "assets/accessories/Smores_Hat.png",
+		"FromFile": "assets/Accessories/Smores_Hat.png",
 		"PatchMode": "Overlay",
 		"Update": "OnLocationChange",
 			"When": {
@@ -561,7 +814,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/Junimo_WA",
-		"FromFile": "assets/special/{{Random: Junimo_Vanilla, Junimo_Vanilla, Junimo_Vanilla, Junimo_Mushroom, Junimo_Mushroom, Junimo_Flower}}.png",
+		"FromFile": "assets/Special/{{Random: Junimo_Vanilla, Junimo_Vanilla, Junimo_Vanilla, Junimo_Mushroom, Junimo_Mushroom, Junimo_Flower}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -571,7 +824,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/Junimo",
-		"FromFile": "assets/special/{{Random: Junimo_Vanilla, Junimo_Vanilla, Junimo_Vanilla, Junimo_Mushroom, Junimo_Mushroom, Junimo_Flower}}.png",
+		"FromFile": "assets/Special/{{Random: Junimo_Vanilla, Junimo_Vanilla, Junimo_Vanilla, Junimo_Mushroom, Junimo_Mushroom, Junimo_Flower}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -581,7 +834,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/JunimoMarshmallow_WA",
-		"FromFile": "assets/special/Junimo_Marshmallow.png",
+		"FromFile": "assets/Special/Junimo_Marshmallow.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -590,7 +843,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/LalaThePenguin_WA",
-		"FromFile": "assets/special/{{Random: LalaThePenguin_NoBackpack, LalaThePenguin_NoBackpack, LalaThePenguin_Backpack}}.png",
+		"FromFile": "assets/Special/{{Random: LalaThePenguin_NoBackpack, LalaThePenguin_NoBackpack, LalaThePenguin_Backpack}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -599,7 +852,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/Platypus_WA",
-		"FromFile": "assets/special/{{Random: Platypus_Normal, Platypus_Normal, Platypus_Normal, Platypus_Normal, Platypus_Normal, Platypus_Normal, Platypus_Normal, Platypus_P, Platypus_AgentP}}.png",
+		"FromFile": "assets/Special/{{Random: Platypus_Normal, Platypus_Normal, Platypus_Normal, Platypus_Normal, Platypus_Normal, Platypus_Normal, Platypus_Normal, Platypus_P, Platypus_AgentP}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -609,7 +862,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/Platypus_WA",
-		"FromFile": "assets/special/Platypus_Normal.png",
+		"FromFile": "assets/Special/Platypus_Normal.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
@@ -619,7 +872,7 @@
 	{
 		"Action": "Load",
 		"Target": "Characters/RabbitSpring_WA",
-		"FromFile": "assets/special/{{Random: RabbitSpring_Vest, RabbitSpring_Basket, RabbitSpring_Plain}}.png",
+		"FromFile": "assets/Special/{{Random: RabbitSpring_Vest, RabbitSpring_Basket, RabbitSpring_Plain}}.png",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",

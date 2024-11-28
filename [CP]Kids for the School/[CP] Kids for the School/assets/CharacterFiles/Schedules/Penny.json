@@ -1,0 +1,50 @@
+{
+//Penny goes to work on all weekends except festival days and weekends
+    "Changes": [
+        { 
+            "Action": "EditData",	 
+            "Target": "Characters/Schedules/Penny",
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LittleRedSchoolHouse": "true",
+            },
+            "Entries": {  
+
+                "Mon": "0 Town 23 53 3/610 Town 10 14 2/740 Custom_SchoolHouse 15 7 2/1020 Custom_SchoolHouse 8 10 0/1040 Custom_SchoolHouse 15 7 2/1120 Custom_SchoolHouse 13 4 0/1140 Custom_SchoolHouse 13 4 2/1230 Custom_SchoolHouse 15 7 2/1420 Custom_SchoolHouse 22 15 0/1500 Custom_SchoolHouse 15 7 2/1550 BusStop 19 11 3/1730 BusStop 19 11 3 penny_wave_left/1740 BusStop 19 11 3 penny_wave_left/1750 BusStop 19 11 3 penny_wave_left/1800 Trailer 4 9 1 penny_sleep",
+                "Tue": "0 Town 23 53 3/610 Town 10 14 2/740 Custom_SchoolHouse 15 7 2/1020 Custom_SchoolHouse 8 10 0/1040 Custom_SchoolHouse 15 7 2/1140 Town 12 13 1/1300 Custom_SchoolHouse 15 7 2/1420 Custom_SchoolHouse 19 10 0/1500 Custom_SchoolHouse 15 7 2/1550 Town 17 90 3 penny_wave_left/1750 Forest 92 20 3 penny_wave_left/1830 Trailer 4 9 1 penny_sleep",
+                "Wed": "0 Town 23 53 3/610 Town 10 14 2/740 Custom_SchoolHouse 15 7 2/1020 Custom_SchoolHouse 8 10 0/1040 Custom_SchoolHouse 15 7 2/1120 Custom_SchoolHouse 13 4 0/1140 Custom_SchoolHouse 13 4 2/1230 Custom_SchoolHouse 15 7 2/1420 Custom_SchoolHouse 22 15 0/1500 Custom_SchoolHouse 15 7 2/1550 BusStop 19 11 3/1730 BusStop 19 11 3 penny_wave_left/1740 BusStop 19 11 3 penny_wave_left/1750 BusStop 19 11 3 penny_wave_left/1800 Trailer 4 9 1 penny_sleep",
+                "Thu": "0 Town 23 53 3/610 Town 10 14 2/740 Custom_SchoolHouse 15 7 2/1020 Custom_SchoolHouse 8 10 0/1040 Custom_SchoolHouse 15 7 2/1140 Town 12 13 1/1300 Custom_SchoolHouse 15 7 2/1420 Custom_SchoolHouse 19 10 0/1500 Custom_SchoolHouse 15 7 2/1550 Town 17 90 3 penny_wave_left/1750 Forest 92 20 3 penny_wave_left/1830 Trailer 4 9 1 penny_sleep",
+                "Fri": "0 Town 23 53 3/610 Town 10 14 2/740 Custom_SchoolHouse 15 7 2/1020 Custom_SchoolHouse 8 10 0/1040 Custom_SchoolHouse 15 7 2/1120 Custom_SchoolHouse 13 4 0/1140 Custom_SchoolHouse 13 4 2/1230 Custom_SchoolHouse 15 7 2/1420 Custom_SchoolHouse 22 15 0/1500 Custom_SchoolHouse 15 7 2/1550 BusStop 19 11 3/1730 BusStop 19 11 3 penny_wave_left/1740 BusStop 19 11 3 penny_wave_left/1750 BusStop 19 11 3 penny_wave_left/1800 Trailer 4 9 1 penny_sleep",           
+                "rain": "GOTO Mon",               
+                "rain2": "GOTO Tue",                
+                "GreenRain": "0 Town 104 89 2/800 ArchaeologyHouse 5 10 0/900 ArchaeologyHouse 13 9 1/930 ArchaeologyHouse 15 16 0/1200 ArchaeologyHouse 37 8 2/1300 ArchaeologyHouse 28 5 2/1400 BusStop 19 11 3/1500 bed",
+                "winter_15": "GOTO Mon",
+            },
+        },
+        { 
+            "Action": "EditData",	 
+            "Target": "Characters/Schedules/Penny",
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "Spouse |contains=Penny": "true",
+                "HasMod| contains=Xiddav.LittleRedSchoolHouse": "true",
+
+            },
+            "Entries": {  
+                "Mon": "610 Town 23 53 3/630 Town 10 14 2/740 Custom_SchoolHouse 15 7 2/1020 Custom_SchoolHouse 8 10 0/1040 Custom_SchoolHouse 15 7 2/1120 Custom_SchoolHouse 13 4 0/1140 Custom_SchoolHouse 13 4 2/1230 Custom_SchoolHouse 15 7 2/1420 Custom_SchoolHouse 22 15 0/1500 Custom_SchoolHouse 15 7 2/1550 BusStop 19 11 3/1730 BusStop 19 11 3 penny_wave_left/1740 BusStop 19 11 3 penny_wave_left/1750 BusStop 19 11 3 penny_wave_left/2030 bed",
+                "Tue": "610 Town 23 53 3/630 Town 10 14 2/740 Custom_SchoolHouse 15 7 2/1020 Custom_SchoolHouse 8 10 0/1040 Custom_SchoolHouse 15 7 2/1140 Town 12 13 1/1300 Custom_SchoolHouse 15 7 2/1420 Custom_SchoolHouse 19 10 0/1500 Custom_SchoolHouse 15 7 2/1550 Town 17 90 3 penny_wave_left/1750 Forest 92 20 3 penny_wave_left/2030 bed",
+                "Wed": "610 Town 23 53 3/630 Town 10 14 2/740 Custom_SchoolHouse 15 7 2/1020 Custom_SchoolHouse 8 10 0/1040 Custom_SchoolHouse 15 7 2/1120 Custom_SchoolHouse 13 4 0/1140 Custom_SchoolHouse 13 4 2/1230 Custom_SchoolHouse 15 7 2/1420 Custom_SchoolHouse 22 15 0/1500 Custom_SchoolHouse 15 7 2/1550 BusStop 19 11 3/1730 BusStop 19 11 3 penny_wave_left/1740 BusStop 19 11 3 penny_wave_left/1750 BusStop 19 11 3 penny_wave_left/2030 bed",
+                "Thu": "610 Town 23 53 3/630 Town 10 14 2/740 Custom_SchoolHouse 15 7 2/1020 Custom_SchoolHouse 8 10 0/1040 Custom_SchoolHouse 15 7 2/1140 Town 12 13 1/1300 Custom_SchoolHouse 15 7 2/1420 Custom_SchoolHouse 19 10 0/1500 Custom_SchoolHouse 15 7 2/1550 Town 17 90 3 penny_wave_left/1750 Forest 92 20 3 penny_wave_left/2030 bed",
+                "Fri": "610 Town 23 53 3/630 Town 10 14 2/740 Custom_SchoolHouse 15 7 2/1020 Custom_SchoolHouse 8 10 0/1040 Custom_SchoolHouse 15 7 2/1120 Custom_SchoolHouse 13 4 0/1140 Custom_SchoolHouse 13 4 2/1230 Custom_SchoolHouse 15 7 2/1420 Custom_SchoolHouse 22 15 0/1500 Custom_SchoolHouse 15 7 2/1550 BusStop 19 11 3/1730 BusStop 19 11 3 penny_wave_left/1740 BusStop 19 11 3 penny_wave_left/1750 BusStop 19 11 3 penny_wave_left/2030 bed",
+                "marriageJob": "GOTO Fri",
+                "marriage_Mon": "GOTO Mon",
+                "rain": "GOTO Mon",               
+                "rain2": "GOTO Tue",                
+                "GreenRain": "610 Town 23 53 3/630 Town 104 89 2/800 ArchaeologyHouse 5 10 0/900 ArchaeologyHouse 13 9 1/930 ArchaeologyHouse 15 16 0/1200 ArchaeologyHouse 37 8 2/1300 ArchaeologyHouse 28 5 2/1500 bed",
+                "winter_15": "GOTO Mon",
+            },
+        },
+    ]
+}

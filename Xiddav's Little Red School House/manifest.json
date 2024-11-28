@@ -1,7 +1,7 @@
 {
   "Name": "Xiddav's Little Red School House",
   "Author": "Xiddav",
-  "Version": "1.6.6",
+  "Version": "1.7.1",
   "Description": "Adds a School to town that needs to be fixed up.",
   "UniqueID": "Xiddav.LittleRedSchoolHouse",
   "MinimumApiVersion": "3.0",
@@ -23,4 +23,7 @@
    {    	"UniqueID": "Rafseazz.RSVCP",
       "IsRequired": false},
    {    	"UniqueID": "LemurKat.CommunityCenter.CP",
-      "IsRequired": false} ]}
+      "IsRequired": false} ,
+   {    	"UniqueID": "BURAKMESE.SKE",
+      "IsRequired": false} ,  
+  ]}

@@ -1,0 +1,85 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Beng": {
+                "DisplayName": "Beng",
+                "BirthSeason": "Summer",
+                "BirthDay": 18,
+                "HomeRegion": "Other",
+                "Gender": "Male",
+                "Age": "Child",
+                "Manner": "Rude",
+                "Optimism": "Negative",
+                "SocialAnxiety": "Outgoing",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "CanReceiveGifts": true,
+                "Calendar": "AlwaysShown",
+                "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9695002",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_WarpRoom",
+                        "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        }
+                    ],
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Beng": "{{i18n:gifts.Beng.love}}/74/{{i18n:gifts.Beng.like}}/233/{{i18n:gifts.Beng.dislike}}/260/{{i18n:gifts.Beng.hate}}/444/{{i18n:gifts.Beng.neutral}}/426/"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Beng",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Beng/Beng.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Beng",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Beng/Beng_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "beng_read_left": "20/21 21 21 22 22/20",
+                "beng_sit_wake": "20/20 20 20 20 21/20",
+            },
+        },
+//NPC Strings
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.15": "{{i18n:Seat_Beng}}" },
+        },
+//AntiSocial Flag
+        {
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Beng": true
+            },
+            "When": {
+                "Beng": "true"
+            },
+        },
+    ]
+}

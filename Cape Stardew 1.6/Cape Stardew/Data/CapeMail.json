@@ -3,6 +3,16 @@
 
 
  ///maildata///
+
+{
+"LogName": "PrettystoneSpecialorderdatamail",
+"Action": "EditData",
+"Target": "Data/mail",
+"Entries": 
+{
+"PretStneDeliverd": "{{i18n:Mail.Dialogue.PrettyStoneDelivered}} %item object oceantreasure 1 %% [#]PretStneDeliverd",
+},
+},
 		 {
             "LogName": "Letters - explored cave",
             "Action": "EditData",
@@ -10,6 +20,17 @@
             "Entries":
             {
                     "secretcavekey": "{{i18n:Mail.Dialogue.CaveKey}} [#]secretcavekey",
+            },
+
+        },
+
+{
+            "LogName": "Dummyflag",
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries":
+            {
+                    "dummyflag1": "null [#]dummyflag1",
             },
 
         },
@@ -172,6 +193,17 @@
             },
 
         },
+
+ {
+            "LogName": "ReachedCapeKeyMaze",
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries":
+            {
+                    "reachedCapeKey": "null [#]reachedCapeKey",
+            },
+
+        },
         
         
          {
@@ -180,7 +212,7 @@
             "Target": "Data/mail",
             "Entries":
             {
-                    "prettyStone1": "{{i18n:Jelli_lunar_completion}}[#]prettyStone1",
+                    "prettyStone1": "{{i18n:Jelli_lunar_completion}} [#]prettyStone1",
             },
 
         },

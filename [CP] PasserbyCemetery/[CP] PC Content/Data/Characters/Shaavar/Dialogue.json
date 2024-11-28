@@ -1,0 +1,78 @@
+{
+"Changes": [
+   /************************************************
+ **  Dialogues
+ ************************************************/ 
+ {
+  "Action": "EditData",
+  "Target": "Characters/Dialogue/FC.Shaavar",
+  "Entries": {
+// Special Keys
+"Introduction": "{{i18n:Introduction.Shaavar}}",
+"AcceptGift_(O)StardropTea": "{{i18n:AcceptGift_StardropTea.Shaavar}}",
+"AcceptBirthdayGift_Loved": "{{i18n:AcceptBirthdayGift_Loved.Shaavar}}",
+"AcceptBirthdayGift_Liked": "{{i18n:AcceptBirthdayGift_Liked.Shaavar}}",
+"AcceptBirthdayGift_Disliked": "{{i18n:AcceptBirthdayGift_Disliked.Shaavar}}",
+"AcceptBirthdayGift_Hated": "{{i18n:AcceptBirthdayGift_Hated.Shaavar}}",
+"AcceptBirthdayGift_Neutral": "{{i18n:AcceptBirthdayGift_Neutral.Shaavar}}",
+"HitBySlingshot": "{{i18n:HitBySlingshot.Shaavar}}",
+"DumpsterDiveComment": "{{i18n:DumpsterDiveComment.Shaavar}}",
+"AcceptGift_(O)WWWA.AutographedPhoto": "{{i18n:Shaavar.AcceptGift_(O)WWWA.AutographedPhoto}}",
+"RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:RejectMovieTicket_AlreadyInvitedBySomeoneElse.Shaavar}}",
+"RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:RejectMovieTicket_AlreadyWatchedThisWeek.Shaavar}}",
+"RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:RejectMovieTicket_DontWantToSeeThatMovie.Shaavar}}",
+"MovieInvitation": "{{i18n:MovieInvitation.Shaavar}}",
+"FC.ShaavarIntro": "{{i18n:FC.ShaavarIntro}}",
+"GreenRainFinished": "{{i18n:GreenRainFinished.Shaavar}}",
+"GreenRain": "{{i18n:GreenRain.Shaavar}}",
+"GreenRain_2": "{{i18n:GreenRain_2.Shaavar}}",
+  }
+},
+
+       {
+            "LogName": "Dialogue - 0-4",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/FC.Shaavar",
+            "Entries":     { 
+              ///Main Dialogue
+"Mon": "{{i18n:Mon.Shaavar.LowHeart.{{season}}}}",
+"Tue": "{{i18n:Tue.Shaavar.LowHeart.{{season}}}}",
+"Wed": "{{i18n:Wed.Shaavar.LowHeart.{{season}}}}",
+"Thu": "{{i18n:Thu.Shaavar.LowHeart.{{season}}}}",
+"Fri": "{{i18n:Fri.Shaavar.LowHeart.{{season}}}}",
+"Sat": "{{i18n:Sat.Shaavar.LowHeart.{{season}}}}",
+"Sun": "{{i18n:Sun.Shaavar.LowHeart.{{season}}}}",
+},
+"When": {
+"Hearts:FC.Shaavar": "{{Range: 0, 4}}" 
+}
+},
+  {
+            "LogName": "Dialogue - 5-8",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/FC.Shaavar",
+            "Entries":     { 
+              ///Main Dialogue
+"Mon": "{{i18n:Mon.Shaavar.MidHeart.{{season}}}}",
+"Tue": "{{i18n:Tue.Shaavar.MidHeart.{{season}}}}",
+"Wed": "{{i18n:Wed.Shaavar.MidHeart.{{season}}}}",
+"Thu": "{{i18n:Thu.Shaavar.MidHeart.{{season}}}}",
+"Fri": "{{i18n:Fri.Shaavar.MidHeart.{{season}}}}",
+"Sat": "{{i18n:Sat.Shaavar.MidHeart.{{season}}}}",
+"Sun": "{{i18n:Sun.Shaavar.MidHeart.{{season}}}}",
+},
+"When": {
+"Hearts:FC.Shaavar": "{{Range: 5, 10}}" 
+}
+},
+  {
+"LogName": "Festival dialogue",
+"Action": "EditData",
+"Target": "Data/Festivals/spring13,Data/Festivals/spring24,Data/Festivals/summer11,Data/Festivals/summer28,Data/Festivals/fall3,Data/Festivals/fall16,Data/Festivals/fall27,Data/Festivals/fall27,Data/Festivals/winter8,Data/Festivals/winter3,Data/Festivals/winter25",
+"Entries": {
+// show the first translation found from 'spring13.dating', 'spring13', or 'festival-default'
+"FC.Shaavar{{YearCheck}}": "{{i18n:Shaavar.{{TargetWithoutPath}}.{{Relationship:FC.Shaavar}} |default={{i18n:Shaavar.{{TargetWithoutPath}} |default={{i18n:Shaavar.festival-default}} }} }}",
+} 
+ },
+]
+}

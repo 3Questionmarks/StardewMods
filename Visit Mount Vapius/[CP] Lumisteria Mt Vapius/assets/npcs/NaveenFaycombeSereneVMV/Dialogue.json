@@ -10,15 +10,15 @@
         "Wed": "{{i18n: NaveenDialogueWed}}",
         "Thu": "{{i18n: NaveenDialogueThu}}",
         "Fri": "{{i18n: NaveenDialogueFri}}",
-        "Sat": "{{i18n: NaveenDialogueSat}}",
+        "Sat": "{{i18n: NaveenDialogueSat{{Random:R01, R02, R03}}|HasSBV={{HasMod |contains=skellady.SBVCP}}}}",
         "Sun": "{{i18n: NaveenDialogueSun}}",
 		//2
         "Mon4": "{{i18n: NaveenDialogueMon2}}",
         "Tue2": "{{i18n: NaveenDialogueTue2}}",
         //"Wed2": "{{i18n: NaveenDialogueWed2}}",
-        //"Thu2": "{{i18n: NaveenDialogueThu2}}",
+        "Thu2": "{{i18n: NaveenDialogueThu2}}",
         "Fri2": "{{i18n: NaveenDialogueFri2}}",
-        //"Sat2": "{{i18n: NaveenDialogueSat2}}",
+        "Sat2": "{{i18n: NaveenDialogueSat2{{Random:R01, R02}}}}",
         "Sun2": "{{i18n: NaveenDialogueSun2}}",
 		//4
         "Mon4": "{{i18n: NaveenDialogueMon4}}",
@@ -34,13 +34,16 @@
         "Wed6": "{{i18n: NaveenDialogueWed6{{Random:R01, R02}}}}",
         "Thu6": "{{i18n: NaveenDialogueThu6{{Random:R01, R02}}}}",
         "Fri6": "{{i18n: NaveenDialogueFri6}}",
-        "Sat6": "{{i18n: NaveenDialogueSat6}}",
+        "Sat6": "{{i18n: NaveenDialogueSat6{{Random:R01, R02}}}}",
         "Sun6": "{{i18n: NaveenDialogueSun6}}",
 		
 		//Resort
 		"Resort": "{{i18n: NaveenDialogueResort}}",
 		//Conversation Topics
         "Lumisteria.MtVapius.Arrival": "{{i18n: NaveenDialogueLumisteria.MtVapius.Arrival}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Moira3H_memory_oneweek": "{{i18n: NaveenDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Moira3H_memory_oneweek}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Moira3H_memory_twoweeks": "{{i18n: NaveenDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Moira3H_memory_twoweeks}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "{{i18n: NaveenDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday}}",
       }
     },
     /*{

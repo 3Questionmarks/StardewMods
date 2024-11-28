@@ -6,25 +6,25 @@
       "Entries": {
         //"Introduction": "{{i18n: MaddyDialogueIntroduction}}",
         "Mon": "{{i18n: MaddyDialogueMon}}",
-        "Tue": "{{i18n: MaddyDialogueTue{{Random:R01, R02, R03}}|TravelingLadyIsLotti={{TravelingLadyIsLotti}}}}",
+        "Tue": "{{i18n: MaddyDialogueTue{{Random:R01, R02, R03, R04}}|TravelingLadyIsLotti={{TravelingLadyIsLotti}}}}",
         "Wed": "{{i18n: MaddyDialogueWed}}",
         "Thu": "{{i18n: MaddyDialogueThu}}",
         "Fri": "{{i18n: MaddyDialogueFri}}",
-        "Sat": "{{i18n: MaddyDialogueSat}}",
+        "Sat": "{{i18n: MaddyDialogueSat{{Random:R01, R02, R03}}}}",
         "Sun": "{{i18n: MaddyDialogueSun}}",
         "Mon2": "{{i18n: MaddyDialogueMon2}}",
         "Tue2": "{{i18n: MaddyDialogueTue2}}",
         "Wed2": "{{i18n: MaddyDialogueWed2|TravelingLadyIsLotti={{TravelingLadyIsLotti}}}}",
         "Thu2": "{{i18n: MaddyDialogueThu2}}",
         "Fri2": "{{i18n: MaddyDialogueFri2}}",
-        "Sat2": "{{i18n: MaddyDialogueSat2}}",
+        "Sat2": "{{i18n: MaddyDialogueSat2{{Random:R01, R02, R03}}}}",
         "Sun2": "{{i18n: MaddyDialogueSun2}}",
         "Mon4": "{{i18n: MaddyDialogueMon4}}",
-        "Tue4": "{{i18n: MaddyDialogueTue4}}",
+        "Tue4": "{{i18n: MaddyDialogueTue4{{Random:R01, R02}}}}",
         "Wed4": "{{i18n: MaddyDialogueWed4}}",
         "Thu4": "{{i18n: MaddyDialogueThu4}}",
         "Fri4": "{{i18n: MaddyDialogueFri4}}",
-        "Sat4": "{{i18n: MaddyDialogueSat4{{Random:R01, R02, R03}}}}",
+        "Sat4": "{{i18n: MaddyDialogueSat4{{Random:R01, R02, R03, R04}}}}",
         "Sun4": "{{i18n: MaddyDialogueSun4{{Random:R01, R02}}}}",
         "Mon6": "{{i18n: MaddyDialogueMon6}}",
         "Tue6": "{{i18n: MaddyDialogueTue6}}",
@@ -35,10 +35,10 @@
         "Sun6": "{{i18n: MaddyDialogueSun6}}",
 		
 		
-        "Summer_20": "{{i18n: MaddyDialogueSummer_20}}",
-        "Summer_20_2": "{{i18n: MaddyDialogueSummer_20_2}}",
-        "Summer_21": "{{i18n: MaddyDialogueSummer_21}}",
-        "Summer_21_2": "{{i18n: MaddyDialogueSummer_21_2}}",
+        "summer_20": "{{i18n: MaddyDialogueSummer_20}}",
+        "summer_20_2": "{{i18n: MaddyDialogueSummer_20_2}}",
+        "summer_21": "{{i18n: MaddyDialogueSummer_21}}",
+        "summer_21_2": "{{i18n: MaddyDialogueSummer_21_2}}",
 		
 		//Resort
 		"Resort_Entering": "{{i18n: MaddyDialogueResort_Entering}}",
@@ -51,7 +51,11 @@
 		
 		//Conversation Topics
         "Lumisteria.MtVapius.Arrival": "{{i18n: MaddyDialogueLumisteria.MtVapius.Arrival}}",
+        "eventSeen_Lumisteria.MtVapius_AsterHouse_Aster2H_memory_oneday": "{{i18n: MaddyDialogueeventSeen_Lumisteria.MtVapius_AsterHouse_Aster2H_memory_oneday}}",
         "eventSeen_EnD.Dylan.01_memory_oneweek": "{{i18n: MaddyDialogueeventSeen_EnD.Dylan.01_memory_oneweek}}",
+        "eventSeen_EnD.Dylan.01_memory_twoweeks": "{{i18n: MaddyDialogueeventSeen_EnD.Dylan.01_memory_twoweeks}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory_oneday": "{{i18n: MaddyDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Helia5H_memory_oneday}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "{{i18n: MaddyDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday}}",
 		//Special
 		"reject_869": "{{i18n: MaddyDialogueRejectWorm}}",
 		"reject_458": "{{i18n: MaddyDialogueRejectBouquet}}",

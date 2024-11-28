@@ -1,0 +1,241 @@
+{
+    "Changes": [
+{
+			"LogName": "CottonsBundles",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/Bundles",
+		"Entries": {
+				"{{ModID}}_CottonsBundle": {
+					"Location": "{{ModID}}_SecretCave",
+					"BundleName": "{{i18n:FC.CottonsBundle}}",
+					"BundleIconAsset": "Mods/{{ModID}}/CottonsBundleIcon",
+					"JunimoNoteTexture": "Mods/{{ModID}}/CottonsBundleBackgroundImage",
+					"ShopPosition": "7, 6",
+					"ShopEvent": "XOR/-1000 -1000/farmer 7 7 0 FC.Cotton -3000 -3000 2/pause 1000/viewport 10 9 clamp true/addConversationTopic FC.CottonsFreedom 7/pause 1000/warp FC.Cotton 10 6/move FC.Cotton -2 0 3/pause 1000/faceDirection FC.Cotton 2/speak FC.Cotton \"{{i18n:TheBridge.00}}\"/pause 400/speak FC.Cotton \"{{i18n:TheBridge.01}}\"/move FC.Cotton -1 0 2/pause 200/pause 300/speak FC.Cotton \"{{i18n:TheBridge.02}}\"/pause 300/speak FC.Cotton \"{{i18n:TheBridge.03}}\"/pause 600 true/viewport move 1 -1 6000000/globalFade/viewport -1000 -1000/end warpOut",
+					"ShopType": "CCBundle",
+					"DrawQuestionMark": false, 
+					"BundleSlots": 2, 
+					"InstantShopRemoval": false,
+					"Price": {
+						"{{ModID}}_FemaleWarrior": 1,
+						"{{ModID}}_MaleWarrior": 1,
+					},
+						"EditMap": "Maps/{{ModID}}_Bridge",
+						"EditMapLocation": "{{ModID}}_SecretCave",
+						"EditMapPosition": "8,2",
+						"EditMapMode": "ReplaceByLayer",
+					},
+				},
+			},
+{
+			"LogName": "Exhibit Bundles",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/Bundles",
+		"Entries": {
+				"{{ModID}}_ExhibitBundle1": {
+					"Location": "{{ModID}}_ExhibitSecondFloor",
+					"BundleName": "{{i18n:FC.ExhibitSecondFloorBundle1}}",
+					"BundleIconAsset": "Mods/{{ModID}}/ExhibitBundleIcon",
+					"JunimoNoteTexture": "Mods/{{ModID}}/ExhibitBundleBackgroundImage",
+					"ShopPosition": "3,9",
+					"ShopEvent": null,
+					"ShopType": "CCBundle",
+					"DrawQuestionMark": false, 
+					"BundleSlots": 2, 
+					"InstantShopRemoval": true,
+					"Price": {
+						"{{ModID}}_Pot1": 1,
+						"{{ModID}}_Pot2": 1,
+						
+					},
+					"BundleReward": {
+                    "money": 250,
+                     },
+						"EditMap": "Maps/{{ModID}}_ExhibitBundle1",
+						"EditMapLocation": "{{ModID}}_ExhibitSecondFloor",
+						"EditMapPosition": "2,3",
+						"EditMapMode": "ReplaceByLayer",
+						"BundleCompletedActions": [
+                        "AddConversationTopic FC.ExhibitBundle1 5"],
+					},
+				},
+			},
+			{
+			"LogName": "Exhibit Bundles",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/Bundles",
+		"Entries": {
+				"{{ModID}}_ExhibitBundle2": {
+					"Location": "{{ModID}}_ExhibitSecondFloor",
+					"BundleName": "{{i18n:FC.ExhibitSecondFloorBundle2}}",
+					"BundleIconAsset": "Mods/{{ModID}}/ExhibitBundleIcon",
+					"JunimoNoteTexture": "Mods/{{ModID}}/ExhibitBundleBackgroundImage",
+					"ShopPosition": "5,9",
+					"ShopEvent":  null,
+					"ShopType": "CCBundle",
+					"DrawQuestionMark": false, 
+					"BundleSlots": 5, 
+					"InstantShopRemoval": true,
+					"Price": {
+
+						"{{ModID}}_AluuaTablet": 1,
+						"{{ModID}}_LipheumTablet": 1,
+						"{{ModID}}_ArahTablet": 1,
+						"{{ModID}}_LifeTablet": 1,
+						"{{ModID}}_FamilyTablet": 1,
+					},
+					"BundleReward": {
+                    "money": 550,
+                     },
+						"EditMap": "Maps/{{ModID}}_ExhibitBundle2",
+						"EditMapLocation": "{{ModID}}_ExhibitSecondFloor",
+						"EditMapPosition": "1,3",
+						"EditMapMode": "ReplaceByLayer",
+						"BundleCompletedActions": [
+                        "AddConversationTopic FC.ExhibitBundle2 5"],
+					},
+				},
+			},
+		{
+			"LogName": "Exhibit Bundles",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/Bundles",
+		"Entries": {
+				"{{ModID}}_ExhibitBundle3": {
+					"Location": "{{ModID}}_ExhibitSecondFloor",
+					"BundleName": "{{i18n:FC.ExhibitSecondFloorBundle3}}",
+					"BundleIconAsset": "Mods/{{ModID}}/ExhibitBundleIcon",
+					"JunimoNoteTexture": "Mods/{{ModID}}/ExhibitBundleBackgroundImage",
+					"ShopPosition": "7,9",
+					"ShopEvent":  null,
+					"ShopType": "CCBundle",
+					"DrawQuestionMark": false, 
+					"BundleSlots": 4, 
+					"InstantShopRemoval": true,
+					"Price": {
+					"{{ModID}}_Necklace1": 1,
+						"{{ModID}}_Necklace2": 1,
+						"{{ModID}}_Hairclip": 1,
+                         "{{ModID}}_GemmedCuff": 1,
+						
+					},
+					"BundleReward": {
+                    "money": 420,
+                     },
+						"EditMap": "Maps/{{ModID}}_ExhibitBundle3",
+						"EditMapLocation": "{{ModID}}_ExhibitSecondFloor",
+						"EditMapPosition": "7,3",
+						"EditMapMode": "ReplaceByLayer",
+						"BundleCompletedActions": [
+                        "AddConversationTopic FC.ExhibitBundle3 5"],
+					},
+				},
+			},
+				{
+			"LogName": "Exhibit Bundles",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/Bundles",
+		"Entries": {
+				"{{ModID}}_ExhibitBundle4": {
+					"Location": "{{ModID}}_ExhibitSecondFloor",
+					"BundleName": "{{i18n:FC.ExhibitSecondFloorBundle4}}",
+					"BundleIconAsset": "Mods/{{ModID}}/ExhibitBundleIcon",
+					"JunimoNoteTexture": "Mods/{{ModID}}/ExhibitBundleBackgroundImage",
+					"ShopPosition": "3,11",
+					"ShopEvent":  null,
+					"ShopType": "CCBundle",
+					"DrawQuestionMark": false, 
+					"BundleSlots": 3, 
+					"InstantShopRemoval": true,
+					"Price": {
+						"{{ModID}}_Guardian1": 1,
+						"{{ModID}}_Guardian2": 1,
+						"{{ModID}}_Guardian3": 1,
+						
+					},
+					"BundleReward": {
+                    "money": 350,
+                     },
+						"EditMap": "Maps/{{ModID}}_ExhibitBundle4",
+						"EditMapLocation": "{{ModID}}_ExhibitSecondFloor",
+						"EditMapPosition": "3,7",
+						"EditMapMode": "ReplaceByLayer",
+						"BundleCompletedActions": [
+                        "AddConversationTopic FC.ExhibitBundle4 5"],
+					},
+				},
+			},
+						{
+			"LogName": "Exhibit Bundles",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/Bundles",
+		"Entries": {
+				"{{ModID}}_ExhibitBundle5": {
+					"Location": "{{ModID}}_ExhibitSecondFloor",
+					"BundleName": "{{i18n:FC.ExhibitSecondFloorBundle5}}",
+					"BundleIconAsset": "Mods/{{ModID}}/ExhibitBundleIcon",
+					"JunimoNoteTexture": "Mods/{{ModID}}/ExhibitBundleBackgroundImage",
+					"ShopPosition": "5,11",
+					"ShopEvent":  null,
+					"ShopType": "CCBundle",
+					"DrawQuestionMark": false, 
+					"BundleSlots": 3, 
+					"InstantShopRemoval": true,
+					"Price": {
+							"{{ModID}}_MiniphantFigure": 1,
+				           "{{ModID}}_ShevitFigure": 1,
+				           "{{ModID}}_Rattler": 1,
+						
+					},
+					"BundleReward": {
+                    "money": 300,
+                     },
+						"EditMap": "Maps/{{ModID}}_ExhibitBundle5",
+						"EditMapLocation": "{{ModID}}_ExhibitSecondFloor",
+						"EditMapPosition": "9,6",
+						"EditMapMode": "ReplaceByLayer",
+                        "BundleCompletedActions": [
+                        "AddConversationTopic FC.ExhibitBundle5 5"],
+					},
+				},
+			},
+									{
+			"LogName": "Exhibit Bundles",
+			"Action": "EditData",
+			"Target": "UnlockableBundles/Bundles",
+		"Entries": {
+				"{{ModID}}_ExhibitBundle6": {
+					"Location": "{{ModID}}_ExhibitSecondFloor",
+					"BundleName": "{{i18n:FC.ExhibitSecondFloorBundle6}}",
+					"BundleIconAsset": "Mods/{{ModID}}/ExhibitBundleIcon",
+					"JunimoNoteTexture": "Mods/{{ModID}}/ExhibitBundleBackgroundImage",
+					"ShopPosition": "7,11",
+					"ShopEvent":  null,
+					"ShopType": "CCBundle",
+					"DrawQuestionMark": false, 
+					"BundleSlots": 2, 
+					"InstantShopRemoval": true,
+					"Price": {
+							"{{ModID}}_HammerAndPick": 1,
+							"{{ModID}}_OldShoes": 1,
+						
+					},
+					"BundleReward": {
+                    "money": 200,
+                     },
+						"EditMap": "Maps/{{ModID}}_ExhibitBundle6",
+						"EditMapLocation": "{{ModID}}_ExhibitSecondFloor",
+						"EditMapPosition": "1,10",
+						"EditMapMode": "ReplaceByLayer",
+						"BundleCompletedActions": [
+                                 "AddConversationTopic FC.ExhibitBundle6 5"],
+					},
+				},
+			},
+		{ //Loading the map file into a map asset
+"Action": "Load",
+"Target": "Maps/{{ModID}}_Bridge,Maps/{{ModID}}_ExhibitBundle1,Maps/{{ModID}}_ExhibitBundle2,Maps/{{ModID}}_ExhibitBundle3,Maps/{{ModID}}_ExhibitBundle4,Maps/{{ModID}}_ExhibitBundle5,Maps/{{ModID}}_ExhibitBundle6", //This and "EditMap" need to be the same!
+"FromFile": "Assets/Maps/Map Patches/{{TargetWithoutPath}}.tbin"
+},
+		    ]
+}

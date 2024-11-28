@@ -1,0 +1,190 @@
+{
+"Changes": [
+
+ {
+"LogName": "Shaavar Dispositions",
+"Action": "EditData",
+"Target": "Data/Characters",
+"Entries": {
+"FC.Shaavar": {
+///Basic Info
+"DisplayName":"{{i18n:FC.Shaavar}}",
+"Language":"Default",
+"Gender":"Female",
+"Age":"Adult",
+"Manner":"Rude",
+"SociShaavarxiety":"Shy",
+"Optimism":"Positive",
+"BirthSeason":"Fall",
+"BirthDay":2,
+"HomeRegion":"Other",
+"IsDarkSkinned":true,
+///Social Features
+"CanSocialize":true,
+"CanBeRomanced":false,
+"CanReceiveGifts":true,
+"CanCommentOnPurchasedShopItems":false,
+"CanGreetNearbyCharacters":true,
+"CanVisitIsland":false,
+"LoveInterest":null,
+"Calendar": "HiddenUntilMet",
+"SocialTab":"UnknownUntilMet",
+"SpouseAdopts":null,
+"SpouseWantsChildren":null,
+"SpouseGiftJealousy":null,
+"SpouseGiftJealousyFriendshipChange":-1,
+"SpouseRoom": {
+"MapAsset": null,
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 6,
+"Height": 9
+}
+},
+"SpousePatio": {
+"MapAsset": null,
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 4,
+"Height": 4
+}
+},
+"SpouseFloors": [],
+"SpouseWallpapers": [],
+"IntroductionsQuest":false,
+"ItemDeliveryQuests":true,
+"PerfectionScore":false,
+"EndSlideShow":"TrailingGroup",
+"FriendsAndFamily":null,
+///Dumpster Diving
+"DumpsterDiveEmote":28,
+"DumpsterDiveFriendshipEffect":-3,
+///Festivals
+"FlowerDanceCanDance":false,
+"WinterStarParticipant":true,
+"WinterStarGifts": [],
+//Spawn Rules
+"UnlockConditions":null,
+"SpawnIfMissing":true,
+"Home": [
+   {
+"Id": "Default",
+"Condition": null,
+"Location": "{{ModID}}_GuardianHome",
+"Tile": {
+"X": 12,
+"Y": 10
+},
+"Direction": "right"
+},
+],
+///Appearance & Sprites
+"TextureName":null,
+ "Appearance": [
+{
+"ID": "{{ModID}}.Shaavar_spring",
+"Season": "spring",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Shaavar/FC.Shaavar_spring.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Shaavar/FC.Shaavar_spring.png}}"
+},
+{
+"ID": "{{ModID}}.Shaavar_summer",
+"Season": "summer",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Shaavar/FC.Shaavar_summer.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Shaavar/FC.Shaavar_summer.png}}"
+},
+{
+"ID": "{{ModID}}.Shaavar_fall",
+"Season": "fall",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Shaavar/FC.Shaavar_fall.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Shaavar/FC.Shaavar_fall.png}}"
+},
+{
+"ID": "{{ModID}}.Shaavar_winter",
+"Season": "winter",
+"Portrait": "{{InternalAssetKey:Assets/Npcs/Portraits/FC.Shaavar/FC.Shaavar_winter.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Shaavar/FC.Shaavar_winter.png}}"
+},
+{
+"ID": "{{ModID}}.Shaavar_eggfestival",
+"Condition": "EVENT_ID festival_spring13",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Shaavar/Festivals/egg festival.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Shaavar/Festivals/egg festival.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Shaavar_flowerfestival",
+"Condition": "EVENT_ID festival_spring24",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Shaavar/Festivals/flower dance.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Shaavar/Festivals/flower dance.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Shaavar_luaufestival",
+"Condition": "EVENT_ID festival_summer11",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Shaavar/Festivals/luau.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Shaavar/Festivals/luau.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Shaavar_jellyfestival",
+"Condition": "EVENT_ID festival_summer28",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Shaavar/Festivals/dance of the moonlight jellies.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Shaavar/Festivals/dance of the moonlight jellies.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Shaavar_Fairfestival",
+"Condition": "EVENT_ID festival_fall16",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Shaavar/Festivals/stardew valley fair.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Shaavar/Festivals/stardew valley fair.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Shaavar_spiritseve",
+"Condition": "EVENT_ID festival_fall27",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Shaavar/Festivals/spirit's eve.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Shaavar/Festivals/spirit's eve.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Shaavar_icefestival",
+"Condition": "EVENT_ID festival_winter8",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Shaavar/Festivals/festival of ice.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Shaavar/Festivals/festival of ice.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Shaavar_winterstarfestival",
+"Condition": "EVENT_ID festival_winter25",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Shaavar/Festivals/feast of the winter star.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Shaavar/Festivals/feast of the winter star.png}}",
+"Precedence": -10,
+},
+    ],
+"MugShotSourceRect": { "X": 0, "Y": 0, "Width": 16, "Height": 24 },
+ "Size": { "X": 16, "Y": 32 },
+"Breather":false,
+"BreathChestRect":null,
+"BreathChestPosition":null,
+"Shadow":{ "Visible": true },
+"EmoteOffset":{},
+"ShakePortraits":[5],
+"KissSpriteIndex":"42",
+"KissSpriteFacingDirection":null,
+///Hidden Gift Log Emote
+"HiddenProfileEmoteSound":null,
+"HiddenProfileEmoteDuration":-1,
+"HiddenProfileEmoteStartFrame":16,
+"HiddenProfileEmoteFrameCount":4,
+"HiddenProfileEmoteFrameDuration":200.0,
+///Advanced
+"CustomFields":{},
+"FormerCharacterNames": [],
+}
+}
+}
+]
+}

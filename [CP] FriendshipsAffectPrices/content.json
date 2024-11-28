@@ -125,6 +125,13 @@
       },
       {
         "Action": "Include",
+        "FromFile": "code/MakeMarlonRealShop.json",
+        "When": {
+             "HasMod": "Wolf.Marlon"
+        }
+      },
+      {
+        "Action": "Include",
         "FromFile": "code/BuildableCamper.json",
         "When": {
              "HasMod": "Harry.BuildCamper"

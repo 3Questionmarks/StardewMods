@@ -22,7 +22,6 @@
                         "Condition": "PLAYER_FRIENDSHIP_POINTS Current Marnie {{3rd Stage Required Friendship Lvl}}"
                     }
                 ],
-                
                 "PriceModifierMode": "Minimum"
             }
         },
@@ -465,7 +464,8 @@
                     {
                         "Id": "DefaultMarkup",
                         "Modification": "Multiply",
-                        "Amount": 1.0
+                        "Amount": "{{1st Stage Multiplier}}",
+                        "Condition": "PLAYER_FRIENDSHIP_POINTS Current Pierre {{1st Stage Required Friendship Lvl}}"
                     },
                     {
                         "Modification": "Multiply",

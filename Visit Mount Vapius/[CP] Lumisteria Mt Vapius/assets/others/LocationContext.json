@@ -112,6 +112,17 @@
 							}
 						},
 					],
+					"PassOutLocations": [
+					  {
+						"Id": "Default",
+						"Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_InnSecondFloor_Bed",
+						"Location": "Lumisteria.MtVapius_InnSecondFloor",
+						"Position": {
+						  "X": 6,
+						  "Y": 35
+						}
+					  }
+					],
 					"MaxPassOutCost": 0,
 					"PassOutMail": [
 					  {

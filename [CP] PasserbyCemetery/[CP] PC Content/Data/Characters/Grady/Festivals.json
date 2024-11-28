@@ -43,7 +43,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Grady 11 16 2",
+                    "Value": "FC.Grady 11 17 3",
                     "Delimiter": "/"
                 },
                      {
@@ -52,7 +52,7 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Grady 11 16 2",
+                    "Value": "FC.Grady 11 17 3",
                     "Delimiter": "/",
         },
         ]
@@ -71,7 +71,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Grady 19 30 2",
+                    "Value": "FC.Grady 19 27 3",
                     "Delimiter": "/"
                 },
                      {
@@ -80,7 +80,7 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Grady 19 30 2",
+                    "Value": "FC.Grady 19 27 3",
                     "Delimiter": "/"
                 },
         ]
@@ -99,7 +99,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Grady 19 32 2",
+                    "Value": "FC.Grady 19 27 3",
                     "Delimiter": "/",
                 },
                      {
@@ -108,14 +108,14 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Grady 19 32 2",
+                    "Value": "FC.Grady 19 27 2",
                     "Delimiter": "/"
                 },
         ]
     },
     {
             "Action": "EditData",
-            "Target": "Data/Festivals/fall3",
+            "Target": "Data/Festivals/fall3,Data/Festivals/winter3",
        "When": {
       "HasFlag|contains=landslideDone": true,
       "HasSeenEvent |contains={{ModID}}_GradyReunitesWithLyell": true,
@@ -141,6 +141,26 @@
                 },
         ]
     },
+            {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+       "HasSeenEvent |contains={{ModID}}_GradyReunitesWithLyell": true,
+
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Grady 33 80 1",
+                    "Delimiter": "/"
+                },
+        ]
+    },
       {
             "Action": "EditData",
             "Target": "Data/Festivals/fall16",
@@ -155,7 +175,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Grady 65 96 3",
+                    "Value": "FC.Grady 66 96 3",
                     "Delimiter": "/"
                 },
                      {
@@ -164,7 +184,7 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Grady 65 96 3",
+                    "Value": "FC.Grady 66 96 3",
                     "Delimiter": "/"
                 },
         ]

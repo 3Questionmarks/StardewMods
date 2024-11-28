@@ -1,0 +1,13 @@
+{   
+        "Changes": [
+        {	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.12": "{{i18n:Seat_Trinnie}}" },
+            "When": {
+                "HasSeenEvent": "9695002",
+                "HasMod": "Rafseazz.RSVCP",
+            },
+        },
+    ]
+}

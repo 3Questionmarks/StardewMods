@@ -1,98 +1,228 @@
 {
 "Changes": [
-{
+ {
 "LogName": "Grady Dispositions",
 "Action": "EditData",
 "Target": "Data/Characters",
 "Entries": {
 "FC.Grady": {
-"DisplayName": "{{i18n:FC.Grady}}",
-"BirthSeason": "fall",
-"BirthDay": 23,
-"HomeRegion": "Other",
-"Language": "Default",
-"Gender": "Male",
-"Age": "Adult",
-"Manner": "Polite",
-"SocialAnxiety": "Outgoing",
-"Optimism": "Positive",
-"CanSocialize": true,
-"IsDarkSkinned": false,
-"CanBeRomanced": false,
-"FlowerDanceCanDance ": false,
-"LoveInterest": "FC.Lyell",
-"Calendar": "AlwaysShown",
-"SocialTab": "UnknownUntilMet",
-"SocialTabIconSourceRect": null,
-"SocializeConditions": null,
-"CanVisitIslandCondition": true,
-"IntroductionsQuest":"{{ExcludePerfection}}",
-"PerfectionScore":"{{ExcludePerfection}}",
-"ItemDeliveryQuests":true,
-"EndSlideShow": "TrailingGroup",
-"SpouseRoom": {},
-"SpousePatio":{},
+///Basic Info
+"DisplayName":"{{i18n:FC.Grady}}",
+"Language":"Default",
+"Gender":"Male",
+"Age":"Adult",
+"Manner":"Polite",
+"SociGradyxiety":"Outgoing",
+"Optimism":"Positive",
+"BirthSeason":"Fall",
+"BirthDay":23,
+"HomeRegion":"Town",
+"IsDarkSkinned":false,
+///Social Features
+"CanSocialize":true,
+"CanBeRomanced":false,
+"CanReceiveGifts":true,
+"CanCommentOnPurchasedShopItems":false,
+"CanGreetNearbyCharacters":true,
+"CanVisitIsland": true,
+"LoveInterest":null,
+"Calendar": "HiddenUntilMet",
+"SocialTab":"UnknownUntilMet",
+"SpouseAdopts":null,
+"SpouseWantsChildren":false,
+"SpouseGiftJealousy":false,
+"SpouseGiftJealousyFriendshipChange":-10,
+"SpouseRoom": {
+"MapAsset": null,
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 6,
+"Height": 9
+}
+},
+"SpousePatio": {
+"MapAsset": null,
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 4,
+"Height": 4
+}
+},
 "SpouseFloors": [],
 "SpouseWallpapers": [],
+"IntroductionsQuest":"{{IncludeIntro}}",
+"ItemDeliveryQuests":false,
+"PerfectionScore":"{{IncludePerfection}}",
+"EndSlideShow":"TrailingGroup",
 "FriendsAndFamily":null,
-"WinterStarGifts": [],
-"WinterStarParticipant": true,
-"UnlockConditions": null,
-"SpawnIfMissing": true,
+///Dumpster Diving
+"DumpsterDiveEmote":12,
+"DumpsterDiveFriendshipEffect":-2,
+///Festivals
+"FlowerDanceCanDance":false,
+"WinterStarParticipant":true,
+"WinterStarGifts": [
+{
+"Condition": null,
+"Id": "{{ModID}}_WinterStarGifts",
+"ItemId": "RANDOM_ITEMS (O)",
+"RandomItemId": null,
+"MaxItems": null,
+"MinStack": -1,
+"MaxStack": -1,
+"Quality": -1,
+"ObjectInternalName": null,
+"ObjectDisplayName": null,
+"ToolUpgradeLevel": -1,
+"IsRecipe": false,
+"StackModifiers": null,
+"StackModifierMode": "Stack",
+"QualityModifiers": null,
+"QualityModifierMode": "Stack",
+"ModData": null,
+"PerItemCondition": null
+},
+],
+//Spawn Rules
+"UnlockConditions":null,
+"SpawnIfMissing":true,
 "Home": [
 {
 "Id": "Default",
-"Condition": null,
+"Condition": "!PLAYER_HAS_SEEN_EVENT Current Fellowclown.PC_GradyReunitesWithLyell",
+"Location": "{{ModID}}_GradysRoom",
+"Tile": {
+"X": -3000,
+"Y": -3000
+},
+"Direction": "right"
+},
+{
+"Id": "Default",
+"Condition":"PLAYER_HAS_SEEN_EVENT Current Fellowclown.PC_GradyReunitesWithLyell",
 "Location": "{{ModID}}_GradysRoom",
 "Tile": {
 "X": 4,
 "Y": 4
 },
+
 "Direction": "right"
 }
 ],
-"Breather": false,
-"ShakePortraits": [
-  11,14
-],
-"KissSpriteIndex": 28,
-"KissSpriteFacingRight": 28,
-"HiddenProfileEmoteSound": null,
-"HiddenProfileEmoteDuration": -1,
-"HiddenProfileEmoteStartFrame": 37,
-"HiddenProfileEmoteFrameCount": 3,
-"HiddenProfileEmoteFrameDuration": 360.0,
+///Appearance & Sprites
+"TextureName":null,
 "Appearance": [
-
- {
-"ID": "spring",
-"Condition": "SEASON Spring",
+{
+"ID": "{{ModID}}.Grady_spring",
+"Season": "spring",
 "Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Grady/FC.Grady_spring.png}}",
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Grady/FC.Grady_spring.png}}"
 },
 {
-"ID": "winter",
-"Condition": "SEASON Winter",
-"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Grady/FC.Grady_winter.png}}",
+"ID": "{{ModID}}.Grady_summer",
+"Season": "summer",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Grady/FC.Grady_summer.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Grady/FC.Grady_summer.png}}"
+},
+{
+"ID": "{{ModID}}.Grady_fall",
+"Season": "fall",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Grady/FC.Grady_fall.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Grady/FC.Grady_fall.png}}"
+},
+{
+"ID": "{{ModID}}.Grady_winter",
+"Season": "winter",
+"Portrait": "{{InternalAssetKey:Assets/Npcs/Portraits/FC.Grady/FC.Grady_winter.png}}",
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Grady/FC.Grady_winter.png}}"
 },
 {
-"ID": "flowerfestival",
+"ID": "{{ModID}}.Grady_SwimWear",
+"IsIslandAttire": true,
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Grady/FC.Grady_SwimWear.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Grady/FC.Grady_SwimWear.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Grady_eggfestival",
+"Condition": "EVENT_ID festival_spring13",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Grady/Festivals/egg festival.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Grady/Festivals/egg festival.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Grady_flowerfestival",
 "Condition": "EVENT_ID festival_spring24",
 "Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Grady/Festivals/flower dance.png}}",
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Grady/Festivals/flower dance.png}}",
 "Precedence": -10,
 },
 {
-"ID": "spiritseve",
-"Condition": "EVENT_ID festival_fall3",
+"ID": "{{ModID}}.Grady_luaufestival",
+"Condition": "EVENT_ID festival_summer11",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Grady/Festivals/luau.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Grady/Festivals/luau.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Grady_jellyfestival",
+"Condition": "EVENT_ID festival_summer28",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Grady/Festivals/dance of the moonlight jellies.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Grady/Festivals/dance of the moonlight jellies.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Grady_Fairfestival",
+"Condition": "EVENT_ID festival_fall16",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Grady/Festivals/stardew valley fair.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Grady/Festivals/stardew valley fair.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Grady_spiritseve",
+"Condition": "EVENT_ID festival_fall27",
 "Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Grady/Festivals/spirit's eve.png}}",
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Grady/Festivals/spirit's eve.png}}",
 "Precedence": -10,
 },
-],
-}
-}
+{
+"ID": "{{ModID}}.Grady_icefestival",
+"Condition": "EVENT_ID festival_winter8",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Grady/Festivals/festival of ice.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Grady/Festivals/festival of ice.png}}",
+"Precedence": -10,
 },
+{
+"ID": "{{ModID}}.Grady_winterstarfestival",
+"Condition": "EVENT_ID festival_winter25",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Grady/Festivals/feast of the winter star.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Grady/Festivals/feast of the winter star.png}}",
+"Precedence": -10,
+},
+],
+"MugShotSourceRect": { "X": 0, "Y": 0, "Width": 16, "Height": 24 },
+"Size": { "X": 16, "Y": 32 },
+"Breather":false,
+"BreathChestRect":null,
+"BreathChestPosition":null,
+"Shadow":{ "Visible": true },
+"EmoteOffset": {},
+"ShakePortraits":[],
+"KissSpriteIndex":"28",
+"KissSpriteFacingDirection":null,
+///Hidden Gift Log Emote
+"HiddenProfileEmoteSound":null,
+"HiddenProfileEmoteDuration":-1,
+"HiddenProfileEmoteStartFrame":0,
+"HiddenProfileEmoteFrameCount":4,
+"HiddenProfileEmoteFrameDuration":200.0,
+///Advanced
+"CustomFields":{},
+"FormerCharacterNames": [],
+}
+}
+}
 ]
 }

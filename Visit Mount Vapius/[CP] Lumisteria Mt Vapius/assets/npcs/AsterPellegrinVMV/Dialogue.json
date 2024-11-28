@@ -6,21 +6,21 @@
       "Entries": {
         //"Introduction": "{{i18n: AsterDialogueIntroduction}}",
         "Mon": "{{i18n: AsterDialogueMon}}",
-        "Tue": "{{i18n: AsterDialogueTue}}",
+        "Tue": "{{i18n: AsterDialogueTue{{Random:R01, R02}}}}",
         "Wed": "{{i18n: AsterDialogueWed}}",
         "Thu": "{{i18n: AsterDialogueThu}}",
         "Fri": "{{i18n: AsterDialogueFri}}",
-        "Sat": "{{i18n: AsterDialogueSat}}",
+        "Sat": "{{i18n: AsterDialogueSat{{Random:R01, R02}}}}",
         "Sun": "{{i18n: AsterDialogueSun}}",
         "Mon2": "{{i18n: AsterDialogueMon2}}",
         "Tue2": "{{i18n: AsterDialogueTue2{{Random:R01, R02}}}}",
         "Wed2": "{{i18n: AsterDialogueWed2}}",
         "Thu2": "{{i18n: AsterDialogueThu2}}",
         "Fri2": "{{i18n: AsterDialogueFri2}}",
-        "Sat2": "{{i18n: AsterDialogueSat2}}",
+        "Sat2": "{{i18n: AsterDialogueSat2{{Random:R01, R02}}}}",
         "Sun2": "{{i18n: AsterDialogueSun2}}",
         "Mon4": "{{i18n: AsterDialogueMon4}}",
-        "Tue4": "{{i18n: AsterDialogueTue4}}",
+        "Tue4": "{{i18n: AsterDialogueTue4{{Random:R01, R02}}}}",
         "Wed4": "{{i18n: AsterDialogueWed4}}",
         "Thu4": "{{i18n: AsterDialogueThu4}}",
         "Fri4": "{{i18n: AsterDialogueFri4}}",
@@ -65,6 +65,9 @@
         "eventSeen_Lumisteria.MtVapius_Hamlet_Moira2H_memory_oneday": "{{i18n: AsterDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Moira2H_memory_oneday}}",
         "eventSeen_Lumisteria.MtVapius_Inn_AsterMoira6H_memory_oneweek": "{{i18n: AsterDialogueeventSeen_Lumisteria.MtVapius_Inn_AsterMoira6H_memory_oneweek}}",
         "GreenRain": "{{i18n: AsterDialogueGreenRain}}",
+        "GreenRain_2": "{{i18n: AsterDialogueGreenRain_2}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Odalis2H_memory_oneday": "{{i18n: AsterDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Odalis2H_memory_oneday}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "{{i18n: AsterDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday}}",
         //Special
         "FlowerDance_Accept_Spouse": "{{i18n: AsterDialogueFlowerDance_Accept_Spouse}}",
         "FlowerDance_Accept": "{{i18n: AsterDialogueFlowerDance_Accept}}",
@@ -102,8 +105,6 @@
         "fall_Mon4": "{{i18n: AsterDialoguefall_Mon4}}",
         "fall_Tue6": "{{i18n: AsterDialoguefall_Tue6}}",
         "fall_Fri6": "{{i18n: AsterDialoguefall_Fri6}}",
-        "fall_Mon8": "{{i18n: AsterDialoguefall_Mon8|ForageProgress={{ForageProgress}}}}",
-        "fall_Wed8": "{{i18n: AsterDialoguefall_Wed8}}",
         //"winter_Mon": "{{i18n: AsterDialoguewinter_Mon}}",
         "winter_Tue": "{{i18n: AsterDialoguewinter_Tue}}",
         //"winter_Wed": "{{i18n: AsterDialoguewinter_Wed}}",
@@ -159,6 +160,8 @@
         //"summer_Fri8": "{{i18n: AsterDialoguesummer_Fri8{{Random:R01, R02}}}}",
         "summer_Sat8": "{{i18n: AsterDialoguesummer_Sat8}}",
         //"summer_Sun8": "{{i18n: AsterDialoguesummer_Sun8{{Random:R01, R02}}}}",
+        "fall_Mon8": "{{i18n: AsterDialoguefall_Mon8|ForageProgress={{ForageProgress}}}}",
+        "fall_Wed8": "{{i18n: AsterDialoguefall_Wed8}}",
         //"winter_Mon8": "{{i18n: AsterDialoguewinter_Mon8{{Random:R01, R02, R03}}}}",
         "winter_Tue8": "{{i18n: AsterDialoguewinter_Tue8}}",
         //"winter_Wed8": "{{i18n: AsterDialoguewinter_Wed8}}",
@@ -181,6 +184,22 @@
       },
       "When": {
         "Random: true, true, true, true, false": "true"
+      }
+    },
+    {
+      "LogName": "Aster 10 Heart Romantic Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/AsterPellegrinVMV",
+      "Entries": {
+        "Mon10": "{{i18n: AsterDialogueMon10Romantic}}",
+        "Tue10": "{{i18n: AsterDialogueTue10Romantic}}",
+        "Wed10": "{{i18n: AsterDialogueWed10Romantic}}",
+        "Fri10": "{{i18n: AsterDialogueFri10Romantic}}",
+        "Sat10": "{{i18n: AsterDialogueSat10Romantic}}",
+      },
+      "When": {
+        "Random: true, true, true, false": "true",
+        "Query: {{Random: {{Range:1,101}} }} <= {{DepressedChance}}": false
       }
     },
     {

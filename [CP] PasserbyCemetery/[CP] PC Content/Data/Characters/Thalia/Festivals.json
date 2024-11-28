@@ -1,0 +1,249 @@
+{
+    "Changes": [
+    {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "When": {
+ "HasFlag|contains=landslideDone": true,
+   "HasSeenEvent |contains={{ModID}}_ThaliaIntroduction": true,
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 42 88 0",
+                    "Delimiter": "/"
+                },
+                     {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 42 88 0",
+                    "Delimiter": "/"
+                },
+        ]
+    },
+
+            {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+   "HasSeenEvent |contains={{ModID}}_ThaliaIntroduction": true,
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 13 19 2",
+                    "Delimiter": "/"
+                },
+                     {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 13 19 2",
+                    "Delimiter": "/",
+        },
+        ]
+    },
+            {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+   "HasSeenEvent |contains={{ModID}}_ThaliaIntroduction": true,
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 20 34 2",
+                    "Delimiter": "/"
+                },
+                     {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 20 34 2",
+                    "Delimiter": "/"
+                },
+        ]
+    },  
+            {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+   "HasSeenEvent |contains={{ModID}}_ThaliaIntroduction": true,
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 20 34 2",
+                    "Delimiter": "/",
+                },
+                     {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 20 34 2",
+                    "Delimiter": "/"
+                },
+        ]
+    },
+    {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall3,Data/Festivals/winter3",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+   "HasSeenEvent |contains={{ModID}}_ThaliaIntroduction": true,
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 23 28 2",
+                    "Delimiter": "/"
+                },
+                     {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 14 27 1",
+                    "Delimiter": "/"
+                },
+        ]
+    },
+       {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+   "HasSeenEvent |contains={{ModID}}_ThaliaIntroduction": true,
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 73 96 3",
+                    "Delimiter": "/"
+                },
+                     {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 73 96 3",
+                    "Delimiter": "/"
+                },
+        ]
+    },
+                    {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+    "HasSeenEvent |contains={{ModID}}_ShaavarIntroduction": true,
+
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 30 82 3",
+                    "Delimiter": "/"
+                },
+        ]
+    },
+       {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+   "HasSeenEvent |contains={{ModID}}_ThaliaIntroduction": true,
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 96 20 3",
+                    "Delimiter": "/"
+                },
+                     {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 96 20 3",
+                    "Delimiter": "/"
+                },
+        ]
+    },
+       {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+   "HasSeenEvent |contains={{ModID}}_ThaliaIntroduction": true,
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 54 96 2",
+                    "Delimiter": "/"
+                },
+                     {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Thalia 54 96 2",
+                    "Delimiter": "/"
+                 },
+        ]
+    },
+  ]
+}

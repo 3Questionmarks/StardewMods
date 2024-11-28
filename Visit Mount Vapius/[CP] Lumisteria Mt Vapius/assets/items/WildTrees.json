@@ -124,9 +124,9 @@
               ],
             },
             {
-              "Condition": "SYNCED_CHOICE day lumisteria.wildtreenest 1 10 1, RANDOM 0.7, PLAYER_HAS_PROFESSION Current 12",
+              "Condition": "SYNCED_CHOICE day lumisteria.wildtreenest 1 10 1, RANDOM 0.3, PLAYER_HAS_PROFESSION Current 12",
               "Chance": 1,
-              "Id": "Lumisteria.MtVapius_NestContent",
+              "Id": "Lumisteria.MtVapius_NestContentForester",
               "RandomItemId": [
                 "(O)174",
                 "(O)176",
@@ -136,9 +136,9 @@
               ],
             },
             {
-              "Condition": "SYNCED_CHOICE day lumisteria.wildtreenest 1 10 1, RANDOM 0.4",
+              "Condition": "SYNCED_CHOICE day lumisteria.wildtreenest 1 10 1, RANDOM 0.2",
               "Chance": 1,
-              "Id": "Lumisteria.MtVapius_NestContent",
+              "Id": "Lumisteria.MtVapius_NestContentRare",
               "RandomItemId": [
                 "(O)174",
                 "(O)176",

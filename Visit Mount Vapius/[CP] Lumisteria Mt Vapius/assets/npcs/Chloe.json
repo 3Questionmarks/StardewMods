@@ -7,8 +7,8 @@
       "Entries": {
         "ChloeRosierLindVMV": {
           "DisplayName": "{{i18n: ChloeDisplayName}}",
-          "BirthSeason": "Fall",
-          "BirthDay": 17,
+          "BirthSeason": "spring",
+          "BirthDay": 1,
           "HomeRegion": "Other",
           "Gender": "Female",
           "Age": "Adult",
@@ -66,14 +66,14 @@
       "Action": "Include",
       "FromFile": "assets/npcs/ChloeRosierLindVMV/Schedule.json"
     },
-    {
+    /*{
       "LogName": "Gift Taste",
       "Action": "EditData",
       "Target": "Data/NPCGiftTastes",
       "Entries": {
         "ChloeRosierLindVMV": "{{i18n: ChloeGiftLoved}}/687 635 424 575 Lumisteria.MtVapius_Cooking_JamPie/{{i18n: ChloeGiftLiked}}/-12 72 82 84 prehistoric_item/{{i18n: ChloeGiftDislike}}/-5 -6 -81 2 16/{{i18n: ChloeGiftHate}}/766 412/{{i18n: ChloeGiftNeutral}}/330/",
       },
-    },
+    },*/
     {
       "LogName": "Dialogue",
       "Action": "Load",

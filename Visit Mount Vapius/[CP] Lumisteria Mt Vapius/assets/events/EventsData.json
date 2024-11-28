@@ -1,5 +1,16 @@
 {
   "Changes": [
+  
+		//temp animated sprites
+		
+		{
+			"LogName": "Lumisteria Mt Vapius Temp Sprites",
+			"Action": "Load",
+			"Target": "Mods/Lumisteria.MtVapius/TempAnimatedSprites",
+			"FromFile": "assets/images/{{TargetWithoutPath}}.png",
+		},
+  
+  
     //Train Station
     {
       "LogName": "Events Load",
@@ -60,14 +71,34 @@
       "Target": "Data/Events/Lumisteria.MtVapius_Hamlet",
       "Entries": {
 		"Lumisteria.MtVapius_Arrival/m 10": "breezy/11 19/farmer 16 61 2 AdelaideRosierVMV 15 69 1 CelestineDuboisVMV 16 69 3/viewport 16 65/skippable/textAboveHead AdelaideRosierVMV \"{{i18n: ArrivalMagicOverheadAdelaide01}}\"/pause 1200/message \"{{i18n: ArrivalMagicMessage01}}\"/addItem (O)689/emote CelestineDuboisVMV 20/pause 500/move farmer 0 4 2/viewport move -1 0 4000/pause 2000/textAboveHead CelestineDuboisVMV \"{{i18n: ArrivalMagicOverheadCelestine01}}\"/pause 700/emote AdelaideRosierVMV 32/faceDirection CelestineDuboisVMV 0/faceDirection AdelaideRosierVMV 0/pause 100/speak AdelaideRosierVMV \"{{i18n: ArrivalMagicAdelaide01}}\"/pause 100/speed AdelaideRosierVMV 1/move AdelaideRosierVMV 0 -1 0/pause 400/speed CelestineDuboisVMV 1/move CelestineDuboisVMV 0 -1 0/speak CelestineDuboisVMV \"{{i18n: ArrivalMagicCelestine01}}\"/speak AdelaideRosierVMV \"{{i18n: ArrivalMagicAdelaide02}}\"/speak CelestineDuboisVMV \"{{i18n: ArrivalMagicCelestine02}}\"/speak AdelaideRosierVMV \"{{i18n: ArrivalMagicAdelaide03}}\"/addConversationTopic Lumisteria.MtVapius.Arrival 8/emote farmer 32/end",
-		"Lumisteria.MtVapius_Hamlet_MoiraArrival/j 42/t 1200 2400": "playful/41 63/CelestineDuboisVMV 41 64 2/addTemporaryActor MoiraDuboisVMV 16 32 41 68 0 true {{i18n: MoiraDisplayName}}/skippable/viewport move 0 1 2000/textAboveHead MoiraDuboisVMV \"{{i18n: MoiraArrivalOverheadMoira01}}\"/pause 500/textAboveHead CelestineDuboisVMV \"{{i18n: MoiraArrivalOverheadCelestine01}}\"/pause 1000/textAboveHead CelestineDuboisVMV \"{{i18n: MoiraArrivalOverheadCelestine02}}\"/pause 1000/move MoiraDuboisVMV 0 -3 0/pause 200/positionOffset MoiraDuboisVMV 0 -32/animate MoiraDuboisVMV false false 2000 16/pause 2000/speak MoiraDuboisVMV \"{{i18n: MoiraArrivalMoira01}}\"/positionOffset MoiraDuboisVMV 0 32/speak CelestineDuboisVMV \"{{i18n: MoiraArrivalCelestine01}}\"/speak MoiraDuboisVMV \"{{i18n: MoiraArrivalMoira02}}\"/emote CelestineDuboisVMV 20/pause 500/speak CelestineDuboisVMV \"{{i18n: MoiraArrivalCelestine02}}\"/globalFade/end",
-		"Lumisteria.MtVapius_Hamlet_Moira2H/f MoiraDuboisVMV 500/t 800 2000": "Frost_Ambient/32 40/farmer 39 44 3 MoiraDuboisVMV 30 42 2/addConversationTopic Lumisteria.MtVapius_Moira2H 8/skippable/addTemporaryActor Ewe02VMV 32 32 26 42 2/addTemporaryActor Ewe01VMV 32 32 31 43 2/move farmer -2 0 3/pause 200/move MoiraDuboisVMV 0 1 2/shake MoiraDuboisVMV 5000/pause 600/emote MoiraDuboisVMV 28/pause 100/textAboveHead MoiraDuboisVMV \"{{i18n: Moira2HOverheadMoira01}}\"/pause 100/speak MoiraDuboisVMV \"{{i18n: Moira2HMoira01}}\"/pause 100/textAboveHead MoiraDuboisVMV \"{{i18n: Moira2HOverheadMoira02}}\"/pause 500/speak MoiraDuboisVMV \"{{i18n: Moira2HMoira02}}\"/pause 200/jump MoiraDuboisVMV 6/pause 100/speak MoiraDuboisVMV \"{{i18n: Moira2HMoira03}}\"/question fork1 \"{{i18n: Moira2HFarmerQuestion01}}#{{i18n: Moira2HFarmerAnswer01}}#{{i18n: Moira2HFarmerAnswer02}}\"/fork Lumisteria.MtVapius_Moira2HBranch02/speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01Moira01}}\"/pause 2500/quickQuestion {{i18n: Moira2HBranch01FarmerQuestion}}#{{i18n: Moira2HBranch01FarmerAnswer01}}#{{i18n: Moira2HBranch01FarmerAnswer02}}#{{i18n: Moira2HBranch01FarmerAnswer03}}#{{i18n: Moira2HBranch01FarmerAnswer04}}(break)stopMusic\\pause 200\\playMusic breezy\\speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01MoiraEwe01}}\"\\pause 200\\speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01MoiraEwe02}}\"(break)stopMusic\\pause 200\\playMusic breezy\\speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01MoiraHamlet01}}\"\\pause 200\\speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01MoiraHamlet02}}\"(break)stopMusic\\pause 200\\playMusic breezy\\textAboveHead MoiraDuboisVMV \"{{i18n: Moira2HOverheadMoiraJoke01}}\"\\pause 200(break)speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01MoiraNoTopic01}}\"\\pause 200/emote MoiraDuboisVMV 56/pause 500/speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01Moira02}}\"/friendship MoiraDuboisVMV 50/globalFade/viewport -1000 -1000/end",
+		"Lumisteria.MtVapius_Hamlet_MoiraArrival/j 12/A eventSeen_Lumisteria.MtVapius_Arrival/t 1200 2400": "playful/41 63/CelestineDuboisVMV 41 64 2/addTemporaryActor MoiraDuboisVMV 16 32 41 68 0 true {{i18n: MoiraDisplayName}}/skippable/viewport move 0 1 2000/textAboveHead MoiraDuboisVMV \"{{i18n: MoiraArrivalOverheadMoira01}}\"/pause 500/textAboveHead CelestineDuboisVMV \"{{i18n: MoiraArrivalOverheadCelestine01}}\"/pause 1000/textAboveHead CelestineDuboisVMV \"{{i18n: MoiraArrivalOverheadCelestine02}}\"/pause 1000/move MoiraDuboisVMV 0 -3 0/pause 200/positionOffset MoiraDuboisVMV 0 -32/animate MoiraDuboisVMV false false 2000 16/pause 2000/speak MoiraDuboisVMV \"{{i18n: MoiraArrivalMoira01}}\"/positionOffset MoiraDuboisVMV 0 32/speak CelestineDuboisVMV \"{{i18n: MoiraArrivalCelestine01}}\"/speak MoiraDuboisVMV \"{{i18n: MoiraArrivalMoira02}}\"/emote CelestineDuboisVMV 20/pause 500/speak CelestineDuboisVMV \"{{i18n: MoiraArrivalCelestine02}}\"/globalFade/end",
+		"Lumisteria.MtVapius_Hamlet_Moira2H/f MoiraDuboisVMV 500/t 800 2000": 
+		"Frost_Ambient/32 40/farmer 39 44 3 MoiraDuboisVMV 30 42 2/addConversationTopic Lumisteria.MtVapius_Moira2H 8/skippable/addTemporaryActor Ewe02VMV 32 32 26 42 2/
+		addTemporaryActor Ewe01VMV 32 32 31 43 1/move farmer -2 0 3/pause 200/move MoiraDuboisVMV 0 1 2/shake MoiraDuboisVMV 5000/pause 600/emote MoiraDuboisVMV 28/pause 100/
+		textAboveHead MoiraDuboisVMV \"{{i18n: Moira2HOverheadMoira01}}\"/pause 100/speak MoiraDuboisVMV \"{{i18n: Moira2HMoira01}}\"/pause 100/textAboveHead MoiraDuboisVMV \"{{i18n: Moira2HOverheadMoira02}}\"/
+		pause 500/speak MoiraDuboisVMV \"{{i18n: Moira2HMoira02}}\"/pause 200/jump MoiraDuboisVMV 6/pause 100/speak MoiraDuboisVMV \"{{i18n: Moira2HMoira03}}\"/
+		advancedmove Ewe02VMV true 2 0 0 1 -1 0 0 -2 1 0 0 2 -2 0 0 -1/
+		question fork1 \"{{i18n: Moira2HFarmerQuestion01}}#{{i18n: Moira2HFarmerAnswer01}}#{{i18n: Moira2HFarmerAnswer02}}\"/fork Lumisteria.MtVapius_Moira2HBranch02/
+		speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01Moira01}}\"/pause 2500/
+		quickQuestion {{i18n: Moira2HBranch01FarmerQuestion}}#{{i18n: Moira2HBranch01FarmerAnswer01}}#{{i18n: Moira2HBranch01FarmerAnswer02}}#{{i18n: Moira2HBranch01FarmerAnswer03}}#{{i18n: Moira2HBranch01FarmerAnswer04}}
+		(break)stopMusic\\pause 200\\playMusic breezy\\speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01MoiraEwe01}}\"\\pause 200\\speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01MoiraEwe02}}\"\\pause 600
+		(break)stopMusic\\pause 200\\playMusic breezy\\speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01MoiraHamlet01}}\"\\pause 200\\speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01MoiraHamlet02}}\"\\pause 600
+		(break)stopMusic\\pause 200\\playMusic breezy\\textAboveHead MoiraDuboisVMV \"{{i18n: Moira2HOverheadMoiraJoke01}}\"\\animate MoiraDuboisVMV false false 400 17 18 17 18\\pause 600
+		(break)speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01MoiraNoTopic01}}\"\\pause 600/
+		emote MoiraDuboisVMV 56/pause 500/speak MoiraDuboisVMV \"{{i18n: Moira2HBranch01Moira02}}\"/friendship MoiraDuboisVMV 50/globalFade/viewport -1000 -1000/end",
 		"Lumisteria.MtVapius_Moira2HBranch02": "speak MoiraDuboisVMV \"{{i18n: Moira2HBranch02Moira01}}\"/viewport -1000 -1000/end",
 		"Lumisteria.MtVapius_Hamlet_OrderBoard/G {{HasMod |contains=Esca.EMP}}/G !{{HamletProgress|contains={{Range: 0, 1}}}}": "playful/41 63/farmer 41 69 0 CelestineDuboisVMV 41 64 2 AdelaideRosierVMV 44 67 3/skippable/viewport move 0 1 2000/pause 2000/move farmer 0 -2 0/pause 100/emote CelestineDuboisVMV 20/pause 100/textAboveHead CelestineDuboisVMV \"{{i18n: OrderBoardOverheadCelestine01}}!\"/pause 200/textAboveHead AdelaideRosierVMV \"{{i18n: OrderBoardOverheadAdelaide01}}\"/emote farmer 8/pause 500/speak CelestineDuboisVMV \"{{i18n: OrderBoardCelestine01}}\"/pause 300/textAboveHead AdelaideRosierVMV \"{{i18n: OrderBoardOverheadAdelaide02}}\"/speak CelestineDuboisVMV \"{{i18n: OrderBoardCelestine02}}\"/textAboveHead AdelaideRosierVMV \"{{i18n: OrderBoardOverheadAdelaide03}}\"/pause 500/speak CelestineDuboisVMV \"{{i18n: OrderBoardCelestine03}}\"/pause 200/speak AdelaideRosierVMV \"{{i18n: OrderBoardAdelaide01}}\"/end",
         "PlayerKilled": "none/-100 -100/farmer 49 77 2 CelestineDuboisVMV 51 78 3/pause 1500/showFrame 5/message \"{{i18n: EventPlayerKilled01}}\"/pause 1000/message \"{{i18n: EventPlayerKilled02}}\"/viewport 49 77 true/pause 1000/speak CelestineDuboisVMV \"{{i18n: EventPlayerKilledCelestine01}}\"/showFrame 0/pause 1000/emote farmer 28/minedeath/end",
-        "Lumisteria.MtVapius_Hamlet_StellarCrops02/n Lumisteria.MtVapius_QuestNightMiscanthusFlag/f MariamFortinVMV 10/!d Tue/c 1/t 800 2000": "MarlonsTheme/22 66/farmer 27 72 0 AsterPellegrinVMV 21 67 1 MariamFortinVMV 22 65 2/addItem (O)Lumisteria.MtVapius_CloudFeatherSeeds 3/skippable/viewport move 0 1 2000/pause 2000/move farmer 0 -4 0/pause 400/textAboveHead MariamFortinVMV \"{{i18n: StellarCrops02OverheadMariam01}}\"/pause 200/emote AsterPellegrinVMV 8/pause 100/move AsterPellegrinVMV 1 0 1/facedirection AsterPellegrinVMV 0/speak MariamFortinVMV \"{{i18n: StellarCrops02Mariam01}}\"/pause 100/speak AsterPellegrinVMV \"{{i18n: StellarCrops02Aster01}}\"/speak MariamFortinVMV \"{{i18n: StellarCrops02Mariam02}}\"/speak AsterPellegrinVMV \"{{i18n: StellarCrops02Aster02}}\"/emote farmer 8/pause 500/move farmer -4 0 0/pause 100/move farmer 0 -1 0/pause 500/speak AsterPellegrinVMV \"{{i18n: StellarCrops02Aster03}}\"/speak MariamFortinVMV \"{{i18n: StellarCrops02Mariam03}}\"/speak AsterPellegrinVMV \"{{i18n: StellarCrops02Aster04}}\"/emote AsterPellegrinVMV 20/pause 500/end",
+        "Lumisteria.MtVapius_Hamlet_StellarCrops02/n Lumisteria.MtVapius_QuestNightMiscanthusFlag/f MariamFortinVMV 10/!d Tue/c 1/t 800 2000":
+		"MarlonsTheme/22 66/farmer 27 72 0 AsterPellegrinVMV 21 67 1 MariamFortinVMV 22 65 2/addItem (O)Lumisteria.MtVapius_CloudFeatherSeeds 3/skippable/viewport move 0 1 2000/pause 2000/
+		move farmer 0 -4 0/pause 400/textAboveHead MariamFortinVMV \"{{i18n: StellarCrops02OverheadMariam01}}\"/pause 200/emote AsterPellegrinVMV 8/pause 100/move AsterPellegrinVMV 1 0 1/
+		faceDirection AsterPellegrinVMV 0/speak MariamFortinVMV \"{{i18n: StellarCrops02Mariam01}}\"/pause 100/speak AsterPellegrinVMV \"{{i18n: StellarCrops02Aster01}}\"/
+		speak MariamFortinVMV \"{{i18n: StellarCrops02Mariam02}}\"/speak AsterPellegrinVMV \"{{i18n: StellarCrops02Aster02}}\"/
+		emote farmer 8/pause 500/move farmer -4 0 0/pause 100/move farmer 0 -1 0/pause 500/speak AsterPellegrinVMV \"{{i18n: StellarCrops02Aster03}}\"/
+		speak MariamFortinVMV \"{{i18n: StellarCrops02Mariam03}}\"/speak AsterPellegrinVMV \"{{i18n: StellarCrops02Aster04}}\"/emote AsterPellegrinVMV 20/pause 500/end",
         "Lumisteria.MtVapius_Hamlet_ClintMeetMariam/f MariamFortinVMV 500/f Clint 500/!d Tue/t 800 2000": "MarlonsTheme/22 66/farmer 27 72 0 Clint 27 67 3 MariamFortinVMV 22 65 2/addConversationTopic Lumisteria.MtVapius.LodgePraise 4/skippable/viewport move 0 1 2000/pause 2000/move farmer 0 -3 0/pause 400/move Clint -4 0 3/textAboveHead MariamFortinVMV \"{{i18n: HamletClintMeetMariamOverheadMariam01}}\"/pause 200/emote Clint 8/pause 100/facedirection Clint 0/speak Clint \"{{i18n: HamletClintMeetMariamClint01}}\"/pause 100/speak MariamFortinVMV \"{{i18n: HamletClintMeetMariamMariam01}}\"/pause 100/jump Clint 6/textAboveHead Clint \"{{i18n: HamletClintMeetMariamOverheadClint01}}\"/pause 200/faceDirection Clint 3/pause 800/faceDirection Clint 1/pause 200/faceDirection Clint 3/emote Clint 8/pause 500/faceDirection Clint 0/speak MariamFortinVMV \"{{i18n: HamletClintMeetMariamMariam02}}\"/speak Clint \"{{i18n: HamletClintMeetMariamClint02}}\"/emote farmer 8/pause 500/move farmer -3 0 0/pause 500/quickQuestion {{i18n: HamletClintMeetMariamQuestionReaction}}#{{i18n: HamletClintMeetMariamReactionMocking}}#{{i18n: HamletClintMeetMariamReactionSupport}}#{{i18n: HamletClintMeetMariamReactionConfused}}(break)emote farmer 56\\friendship Clint -10\\friendship MariamFortinVMV -5\\pause 500\\emote Clint 12\\emote MariamFortinVMV 12(break)emote farmer 12\\friendship Clint 10\\pause 500\\emote Clint 60\\emote MariamFortinVMV 32(break)emote farmer 8/pause 200/speak MariamFortinVMV \"{{i18n: HamletClintMeetMariamMariam03}}\"/pause 200/speak MariamFortinVMV \"{{i18n: HamletClintMeetMariamMariam04}}\"/addObject 22 65 109 3/stopMusic/pause 300/textAboveHead Clint \"{{i18n: HamletClintMeetMariamOverheadClint02}}\"/pause 300/emote farmer 16/playMusic wavy/speak Clint \"{{i18n: HamletClintMeetMariamClint03}}\"/pause 300/speak MariamFortinVMV \"{{i18n: HamletClintMeetMariamMariam05}}\"/pause 200/speak Clint \"{{i18n: HamletClintMeetMariamClint04}}\"/emote Clint 56/pause 500/textAboveHead Clint \"{{i18n: HamletClintMeetMariamOverheadClint03}}\"/emote MariamFortinVMV 56/end",
-        "Lumisteria.MtVapius_Hamlet_Naveen6H/f NaveenFaycombeSereneVMV 1500/!d Sat/t 1500 2000": "playful/40 90/farmer 50 83 0 HeliaDiamantiVMV 40 80 3 MoiraDuboisVMV 40 78 2 NaveenFaycombeSereneVMV 23 67 2/skippable/
+        "Lumisteria.MtVapius_Hamlet_Naveen6H/f NaveenFaycombeSereneVMV 1500/!d Sat/t 1500 2000": 
+		"playful/40 90/farmer 50 83 0 HeliaDiamantiVMV 40 80 3 MoiraDuboisVMV 39 78 2 NaveenFaycombeSereneVMV 23 67 2/skippable/
 		addObject 43 81 599 2/addObject 43 82 599 2/addObject 44 82 645 2/addObject 37 82 923 2/addObject 39 80 924 2/viewport move 0 -2 4200/pause 2000/
 		move farmer 0 -6 0/pause 400/textAboveHead MoiraDuboisVMV \"{{i18n: HamletNaveen6HOverheadMoira01}}\"/pause 200/speak MoiraDuboisVMV \"{{i18n: HamletNaveen6HMoira01}}\"/playSound clank/
 		faceDirection HeliaDiamantiVMV 0/speak HeliaDiamantiVMV \"{{i18n: HamletNaveen6HHelia01}}\"/
@@ -75,8 +106,8 @@
 		viewport move -2 -2 3000/playSound clank/stopMusic/pause 100/playSound treecrack/pause 100/playSound hammer/
 		pause 300/playSound ow/emote HeliaDiamantiVMV 16/pause 100/emote MoiraDuboisVMV 8/playSound ow/pause 200/playMusic desolate/emote farmer 16/pause 300/
 		textAboveHead NaveenFaycombeSereneVMV \"{{i18n: HamletNaveen6HOverheadNaveen01}}\"/pause 200/speed HeliaDiamantiVMV 5/move HeliaDiamantiVMV 0 -6 3/
-		textAboveHead HeliaDiamantiVMV \"{{i18n: HamletNaveen6HOverheadHelia01}}\"/speed HeliaDiamantiVMV 5/move HeliaDiamantiVMV -5 0 3/speed HeliaDiamantiVMV 6/move HeliaDiamantiVMV 0 -1 3/pause 200/
-		speed MoiraDuboisVMV 4/move MoiraDuboisVMV 0 -5 3/viewport move -2 -2 3000/speed HeliaDiamantiVMV 5/move HeliaDiamantiVMV 0 -6 3/
+		textAboveHead HeliaDiamantiVMV \"{{i18n: HamletNaveen6HOverheadHelia01}}\"/speed HeliaDiamantiVMV 5/move HeliaDiamantiVMV -4 0 3/speed HeliaDiamantiVMV 6/move HeliaDiamantiVMV 0 -1 3/move HeliaDiamantiVMV -1 0 3/pause 200/
+		speed MoiraDuboisVMV 5/move MoiraDuboisVMV 1 0 3/move MoiraDuboisVMV 0 -4 3/viewport move -2 -2 3000/speed HeliaDiamantiVMV 5/move HeliaDiamantiVMV 0 -5 3/
 		textAboveHead MoiraDuboisVMV \"{{i18n: HamletNaveen6HOverheadMoira02}}\"/move MoiraDuboisVMV 0 -1 3/move MoiraDuboisVMV -4 0 3/
 		speed HeliaDiamantiVMV 4/move HeliaDiamantiVMV -10 0 3/speed MoiraDuboisVMV 4/move MoiraDuboisVMV -6 0 3/speed farmer 4/move farmer -15 0 3/
 		speak HeliaDiamantiVMV \"{{i18n: HamletNaveen6HHelia03}}\"/speak MoiraDuboisVMV \"{{i18n: HamletNaveen6HMoira03}}\"/
@@ -84,7 +115,10 @@
 		emote NaveenFaycombeSereneVMV 16/pause 300/
 		speak NaveenFaycombeSereneVMV \"{{i18n: HamletNaveen6HNaveen02}}\"/speak HeliaDiamantiVMV \"{{i18n: HamletNaveen6HHelia05}}\"/speak MoiraDuboisVMV \"{{i18n: HamletNaveen6HMoira04}}\"/
 		speak NaveenFaycombeSereneVMV \"{{i18n: HamletNaveen6HNaveen03}}\"/speak HeliaDiamantiVMV \"{{i18n: HamletNaveen6HHelia06}}\"/
-		pause 300/fade/viewport -1000 -1000/playSound busDriveOff/pause 400/
+		quickQuestion {{i18n: HamletNaveen6HMessage01}}#{{i18n: HamletNaveen6HAnswer01}}#{{i18n: HamletNaveen6HAnswer02}}#{{i18n: HamletNaveen6HAnswer03}}
+		(break)friendship NaveenFaycombeSereneVMV 40\\mail Lumisteria.MtVapius_ChandraCandyMail\\pause 300\\fade\\viewport -1000 -1000\\playSound busDriveOff\\message \"{{i18n: HamletNaveen6HMessageSupport}}\"\\pause 400
+		(break)friendship MoiraDuboisVMV 20\\mail Lumisteria.MtVapius_ChandraCandyMail\\pause 300\\fade\\viewport -1000 -1000\\playSound busDriveOff\\message \"{{i18n: HamletNaveen6HMessageClean}}\"\\pause 400
+		(break)pause 300\\fade\\viewport -1000 -1000\\playSound busDriveOff\\pause 400/pause 200/
 		
 		end",
 		"Lumisteria.MtVapius_Hamlet_OwlCarving/a 16 62/c 1": "WizardSong/16 61/farmer 16 61 0/addItem (O)Lumisteria.MtVapius_OwlCarving 3/skippable/
@@ -122,6 +156,165 @@
 		advancedMove MaddyPellegrinVMV false 1 0 0 -5 2 0 4 20/speed Clint 3/advancedMove Clint false 4 0 0 -5 2 0 4 20/pause 1400/
 		end",
 
+
+		"Lumisteria.MtVapius_Hamlet_Helia5H/f HeliaDiamantiVMV 1250/!d Sat/t 1100 1600": 
+		"breezy/47 92/farmer 43 88 0 HeliaDiamantiVMV 31 85 1 MariamFortinVMV 33 85 2 NaveenFaycombeSereneVMV 31 87 1 MaddyPellegrinVMV 37 87 3/skippable/
+		temporaryAnimatedSprite Mods\\Lumisteria.MtVapius\\TempAnimatedSprites 64 0 64 48 30000 1 500 32 87 false false 1 0 1 0 0 0/
+		viewport move -1 -2 3400/pause 2000/move farmer -8 0 3/viewport move -2 0 2400/pause 400/textAboveHead HeliaDiamantiVMV \"{{i18n: HamletHelia5HOverheadHelia01}}\"/pause 200/emote NaveenFaycombeSereneVMV 8/pause 100/
+		speak HeliaDiamantiVMV \"{{i18n: HamletHelia5HHelia01}}\"/pause 100/speak MariamFortinVMV \"{{i18n: HamletHelia5HMariam01}}\"/pause 100/
+		speak HeliaDiamantiVMV \"{{i18n: HamletHelia5HHelia02}}\"/pause 500/jump MariamFortinVMV 4/emote MariamFortinVMV 16/pause 200/speak MariamFortinVMV \"{{i18n: HamletHelia5HMariam02}}\"/pause 100/
+		emote NaveenFaycombeSereneVMV 32/emote MaddyPellegrinVMV 56/pause 300/emote HeliaDiamantiVMV 32/pause 2000/
+		speak HeliaDiamantiVMV \"{{i18n: HamletHelia5HHelia03}}\"/textAboveHead MariamFortinVMV \"{{i18n: HamletHelia5HOverheadMariam01}}\"/pause 600/
+		speak NaveenFaycombeSereneVMV \"{{i18n: HamletHelia5HNaveen01}}\"/pause 500/textAboveHead HeliaDiamantiVMV \"{{i18n: HamletHelia5HOverheadHelia02}}\"/
+		pause 2000/emote NaveenFaycombeSereneVMV 8/emote MariamFortinVMV 8/emote MaddyPellegrinVMV 8/speak MaddyPellegrinVMV \"{{i18n: HamletHelia5HMaddy01}}\"/pause 600/
+		speak HeliaDiamantiVMV \"{{i18n: HamletHelia5HHelia04}}\"/textAboveHead MariamFortinVMV \"{{i18n: HamletHelia5HOverheadMariam02}}\"/pause 500/textAboveHead MaddyPellegrinVMV \"{{i18n: HamletHelia5HOverheadMaddy02}}\"/
+		pause 1200/speak MaddyPellegrinVMV \"{{i18n: HamletHelia5HMaddy02}}\"/speak HeliaDiamantiVMV \"{{i18n: HamletHelia5HHelia05}}\"/pause 200/jump MaddyPellegrinVMV 5/emote MaddyPellegrinVMV 16/speak MaddyPellegrinVMV \"{{i18n: HamletHelia5HMaddy03}}\"/
+		pause 500/playSound furnace/emote HeliaDiamantiVMV 12/faceDirection HeliaDiamantiVMV 3/speak HeliaDiamantiVMV \"{{i18n: HamletHelia5HHelia06}}\"/speak MaddyPellegrinVMV \"{{i18n: HamletHelia5HMaddy04}}\"/
+		move HeliaDiamantiVMV -5 0 3/move MaddyPellegrinVMV 5 0 1/pause 3000/emote NaveenFaycombeSereneVMV 40/emote MariamFortinVMV 28/
+		quickQuestion {{i18n: HamletHelia5HBranch01FarmerQuestion}}#{{i18n: HamletHelia5HBranch01FarmerAnswer01}}#{{i18n: HamletHelia5HBranch01FarmerAnswer02}}#{{i18n: HamletHelia5HBranch01FarmerAnswer03}}
+		(break)friendship HeliaDiamantiVMV 40\\viewport move -3 0 4000\\move farmer 0 -2 3\\move farmer -5 0 3\\pause 200\\move farmer -1 0 3\\emote farmer 8\\textAboveHead HeliaDiamantiVMV \"{{i18n: HamletHelia5HBranchHeliaOverheadHelia01}}\"\\pause 600\\speak HeliaDiamantiVMV \"{{i18n: HamletHelia5HBranchHeliaHelia01}}\"\\pause 300\\emote HeliaDiamantiVMV 28\\pause 300\\speak HeliaDiamantiVMV \"{{i18n: HamletHelia5HBranchHeliaHelia02}}\"\\move MariamFortinVMV 3 0 1\\move NaveenFaycombeSereneVMV -1 0 3\\speak NaveenFaycombeSereneVMV \"{{i18n: HamletHelia5HBranchHeliaNaveen01}}\"\\speak HeliaDiamantiVMV \"{{i18n: HamletHelia5HBranchHeliaHelia03}}\"\\speak NaveenFaycombeSereneVMV \"{{i18n: HamletHelia5HBranchHeliaNaveen02}}\"\\speak HeliaDiamantiVMV \"{{i18n: HamletHelia5HBranchHeliaHelia04}}\"\\speak NaveenFaycombeSereneVMV \"{{i18n: HamletHelia5HBranchHeliaNaveen03}}\"\\speak HeliaDiamantiVMV \"{{i18n: HamletHelia5HBranchHeliaHelia05}}\"
+		(break)friendship MaddyPellegrinVMV 20\\viewport move 3 0 3000\\viewport move 2 1 1400\\move farmer 5 0 1\\pause 200\\move farmer 0 -1 1\\emote farmer 8\\faceDirection MaddyPellegrinVMV 3\\textAboveHead MaddyPellegrinVMV \"{{i18n: HamletHelia5HBranchHeliaOverheadMaddy01}}\"\\pause 600\\speak MaddyPellegrinVMV \"{{i18n: HamletHelia5HBranchMaddyMaddy01}}\"\\pause 500\\speak MaddyPellegrinVMV \"{{i18n: HamletHelia5HBranchMaddyMaddy02}}\"\\move MariamFortinVMV 2 0 1\\move NaveenFaycombeSereneVMV -1 0 3\\move MariamFortinVMV 0 2 1\\move MariamFortinVMV 2 0 1\\pause 200\\speak MariamFortinVMV \"{{i18n: HamletHelia5HBranchMaddyMariam01}}\"\\pause 200\\speak MaddyPellegrinVMV \"{{i18n: HamletHelia5HBranchMaddyMaddy03}}\"
+		(break)textAboveHead MariamFortinVMV \"{{i18n: HamletHelia5HBranchStayOverheadMariam01}}\"\\pause 600\\speak NaveenFaycombeSereneVMV \"{{i18n: HamletHelia5HBranchStayNaveen01}}\"\\pause 300\\move NaveenFaycombeSereneVMV 1 0 1\\pause 200\\move NaveenFaycombeSereneVMV -1 0 1\\speak NaveenFaycombeSereneVMV \"{{i18n: HamletHelia5HBranchStayNaveen02}}\"\\speak MariamFortinVMV \"{{i18n: HamletHelia5HBranchStayMariam01}}\"\\textAboveHead NaveenFaycombeSereneVMV \"{{i18n: HamletHelia5HBranchStayOverheadNaveen01}}\"\\move MariamFortinVMV 2 0 1\\move NaveenFaycombeSereneVMV -1 0 3\\speak MariamFortinVMV \"{{i18n: HamletHelia5HBranchStayMariam02}}\"\\move MariamFortinVMV 0 1 1\\move NaveenFaycombeSereneVMV 0 -1 3\\pause 300/
+		
+		end",
+
+
+		"Lumisteria.MtVapius_Hamlet_Odalis2H/f OdalisDuboisVelezVMV 500/!d Sat/t 1600 2000": 
+		"playful/47 68/farmer 55 72 1 OdalisDuboisVelezVMV 54 69 1 MoiraDuboisVMV 54 68 1 AsterPellegrinVMV 66 68 2/skippable/
+		addObject 60 67 923 0/addObject 59 71 924 0/addObject 60 68 429 0/addObject 59 72 453 0/addObject 69 69 923 0/addObject 61 72 172 0/addObject 58 68 168 0/addObject 69 70 923 0/pause 100/move farmer 2 0 1/
+		emote MoiraDuboisVMV 8/viewport move 2 0 4300/pause 1500/textAboveHead AsterPellegrinVMV \"{{i18n: HamletOdalis2HOverheadAster01}}\"/pause 200/
+		move MoiraDuboisVMV 3 0 1/textAboveHead MoiraDuboisVMV \"{{i18n: HamletOdalis2HOverheadMoira01}}\"/pause 200/
+		speak AsterPellegrinVMV \"{{i18n: HamletOdalis2HAster01}}\"/pause 100/speak OdalisDuboisVelezVMV \"{{i18n: HamletOdalis2HOdalis01}}\"/pause 100/move OdalisDuboisVelezVMV 2 0 1/
+		textAboveHead AsterPellegrinVMV \"{{i18n: HamletOdalis2HOverheadAster02}}\"/pause 600/move OdalisDuboisVelezVMV 1 0 1/pause 200/playSound pickUpItem/removeObject 58 68/
+		quickQuestion {{i18n: HamletOdalis2HMessage01}}#{{i18n: HamletOdalis2HAnswer01}}#{{i18n: HamletOdalis2HAnswer02}}#
+		(break)friendship OdalisDuboisVelezVMV 10\\friendship AsterPellegrinVMV 5\\move farmer 1 0 1\\playSound pickUpItem\\removeObject 59 72\\pause 200\\move farmer 1 0 1\\playSound pickUpItem\\removeObject 61 72
+		(break)pause 200/pause 200/
+		move MoiraDuboisVMV 2 0 1/emote MoiraDuboisVMV 40/viewport move 2 0 1000/pause 200/speak MoiraDuboisVMV \"{{i18n: HamletOdalis2HMoira01}}\"/playSound pickUpItem/removeObject 60 68/
+		emote AsterPellegrinVMV 60/pause 200/move AsterPellegrinVMV 3 0 2/playSound pickUpItem/removeObject 69 69/move AsterPellegrinVMV 0 1 2/pause 100/speak AsterPellegrinVMV \"{{i18n: HamletOdalis2HAster02}}\"/
+		speak MoiraDuboisVMV \"{{i18n: HamletOdalis2HMoira02}}\"/emote AsterPellegrinVMV 40/pause 100/speak AsterPellegrinVMV \"{{i18n: HamletOdalis2HAster03}}\"/
+		move OdalisDuboisVelezVMV 1 0 1/viewport move 2 0 1000/speak MoiraDuboisVMV \"{{i18n: HamletOdalis2HMoira03}}\"/emote AsterPellegrinVMV 40/pause 100/speak AsterPellegrinVMV \"{{i18n: HamletOdalis2HAster04}}\"/
+		speak OdalisDuboisVelezVMV \"{{i18n: HamletOdalis2HOdalis02}}\"/pause 100/emote AsterPellegrinVMV 8/emote MoiraDuboisVMV 8/pause 500/
+		speak OdalisDuboisVelezVMV \"{{i18n: HamletOdalis2HOdalis03}}\"/pause 500/emote OdalisDuboisVelezVMV 32/pause 300/speak OdalisDuboisVelezVMV \"{{i18n: HamletOdalis2HOdalis04}}\"/pause 500/
+		emote OdalisDuboisVelezVMV 40/pause 300/speak OdalisDuboisVelezVMV \"{{i18n: HamletOdalis2HOdalis05}}\"/pause 500/textAboveHead OdalisDuboisVelezVMV \"{{i18n: HamletOdalis2HOverheadOdalis01}}\"/
+		pause 200/speak OdalisDuboisVelezVMV \"{{i18n: HamletOdalis2HOdalis06}}\"/pause 500/textAboveHead AsterPellegrinVMV \"{{i18n: HamletOdalis2HOverheadAster03}}\"/pause 200/
+		speak AsterPellegrinVMV \"{{i18n: HamletOdalis2HAster05}}\"/textAboveHead OdalisDuboisVelezVMV \"{{i18n: HamletOdalis2HOverheadOdalis02}}\"/
+		pause 800/emote AsterPellegrinVMV 32/emote OdalisDuboisVelezVMV 32/pause 300/move OdalisDuboisVelezVMV 1 0 1/viewport move 2 0 1000/move OdalisDuboisVelezVMV 0 1 1/playSound pickUpItem/removeObject 59 71/
+		move MoiraDuboisVMV 1 0 1/playSound pickUpItem/removeObject 60 67/
+		pause 200/removeObject 69 70/speak AsterPellegrinVMV \"{{i18n: HamletOdalis2HAster06}}\"/pause 1000/speak AsterPellegrinVMV \"{{i18n: HamletOdalis2HAster07}}\"/pause 2000/
+		
+		end",
+		
+		"Lumisteria.MtVapius_Hamlet_Moira4H/f MoiraDuboisVMV 500/t 1000 1500": 
+		"sweet/41 66/farmer 34 67 2 CelestineDuboisVMV -1000 -1000 2 MoiraDuboisVMV -1000 -1001 2/addTemporaryActor ClaretieLivreauVMV 16 32 41 64 0 true {{i18n: ClaretieDisplayName}}/skippable/pause 700/
+		playSound axe/pause 100/playSound stoneStep/pause 200/playSound axe/move ClaretieLivreauVMV 0 2 0/pause 500/playSound Cowboy_Footstep/pause 200/playSound doorOpen/warp CelestineDuboisVMV 41 64/
+		textAboveHead CelestineDuboisVMV \"{{i18n: HamletMoira4HOverheadCelestine01}}\"/pause 200/
+		speak ClaretieLivreauVMV \"{{i18n: HamletMoira4HClaretie01}}\"/pause 100/speak CelestineDuboisVMV \"{{i18n: HamletMoira4HCelestine01}}\"/pause 100/faceDirection CelestineDuboisVMV 0/
+		textAboveHead CelestineDuboisVMV \"{{i18n: HamletMoira4HOverheadCelestine02}}\"/pause 600/playSound doorOpen/warp CelestineDuboisVMV -1000 -1000/pause 100/playSound Cowboy_Footstep/pause 2000/playSound Cowboy_Footstep/
+		pause 200/playSound doorOpen/pause 100/warp MoiraDuboisVMV 41 64/textAboveHead MoiraDuboisVMV \"{{i18n: HamletMoira4HOverheadMoira01}}\"/speak MoiraDuboisVMV \"{{i18n: HamletMoira4HMoira01}}\"/pause 400/
+		speak ClaretieLivreauVMV \"{{i18n: HamletMoira4HClaretie02}}\"/pause 100/stopMusic/textAboveHead MoiraDuboisVMV \"{{i18n: HamletMoira4HOverheadMoira02}}\"/pause 300/
+		speak MoiraDuboisVMV \"{{i18n: HamletMoira4HMoira02}}\"/pause 600/playMusic desolate/emote ClaretieLivreauVMV 40/pause 300/speak ClaretieLivreauVMV \"{{i18n: HamletMoira4HClaretie03}}\"/
+		speak MoiraDuboisVMV \"{{i18n: HamletMoira4HMoira03}}\"/positionOffset MoiraDuboisVMV 0 -6/pause 200/positionOffset MoiraDuboisVMV 0 4/pause 100/positionOffset MoiraDuboisVMV 0 -4/pause 200/positionOffset MoiraDuboisVMV 0 6/pause 400/
+		emote ClaretieLivreauVMV 16/move farmer 4 0 1/pause 300/textAboveHead ClaretieLivreauVMV \"{{i18n: HamletMoira4HOverheadClaretie01}}\"/
+		speak MoiraDuboisVMV \"{{i18n: HamletMoira4HMoira04}}\"/speak ClaretieLivreauVMV \"{{i18n: HamletMoira4HClaretie04}}\"/pause 300/textAboveHead MoiraDuboisVMV \"{{i18n: HamletMoira4HOverheadMoira03}}\"/
+		move farmer 0 -2 1/move ClaretieLivreauVMV 0 8 2/emote ClaretieLivreauVMV 28/move farmer 2 0 1/pause 300/emote farmer 8/pause 300/speak MoiraDuboisVMV \"{{i18n: HamletMoira4HMoira05}}\"/
+		end",
+		
+		"Lumisteria.MtVapius_Hamlet_Moira3H/f MoiraDuboisVMV 750/t 1000 1700/!d Sat": 
+		"summer2/39 78/farmer -100 -100 0 ChandraFaycombeSereneVMV 37 76 0 MoiraDuboisVMV 37 74 2/addConversationTopic Lumisteria.MtVapius.MoiraMuseum 18/skippable/pause 2000/playSound axe/pause 100/
+		speak MoiraDuboisVMV \"{{i18n: HamletMoira3HMoira01}}\"/pause 100/speak ChandraFaycombeSereneVMV \"{{i18n: HamletMoira3HChandra01}}\"/
+		speak MoiraDuboisVMV \"{{i18n: HamletMoira3HMoira02}}\"/pause 100/speak ChandraFaycombeSereneVMV \"{{i18n: HamletMoira3HChandra02}}\"/
+		textAboveHead MoiraDuboisVMV \"{{i18n: HamletMoira3HOverheadCMoira01}}\"/positionOffset ChandraFaycombeSereneVMV 0 -10/animate ChandraFaycombeSereneVMV false false 3000 16/pause 400/playSound cameraNoise/
+		pause 200/playSound cameraNoise/pause 500/positionOffset ChandraFaycombeSereneVMV 0 10/speak ChandraFaycombeSereneVMV \"{{i18n: HamletMoira3HChandra03}}\"/pause 500/
+		textAboveHead ChandraFaycombeSereneVMV \"{{i18n: HamletMoira3HOverheadChandra01}}\"/pause 500/speak ChandraFaycombeSereneVMV \"{{i18n: HamletMoira3HChandra04}}\"/
+		pause 100/speak MoiraDuboisVMV \"{{i18n: HamletMoira3HMoira03}}\"/pause 100/textAboveHead ChandraFaycombeSereneVMV \"{{i18n: HamletMoira3HOverheadChandra02}}\"/pause 700/
+		textAboveHead MoiraDuboisVMV \"{{i18n: HamletMoira3HOverheadCMoira02}}\"/pause 700/
+				end",
+
+		"Lumisteria.MtVapius_Hamlet_Moira7H/f MoiraDuboisVMV 1750/t 900 1700/A Lumisteria.MtVapius.MoiraMuseum/e Lumisteria.MtVapius_Hamlet_Moira3H": 
+		"starshoot/38 70/farmer 33 66 2 MoiraDuboisVMV -1000 -1000 2 MaddyPellegrinVMV -1000 -1001 2//skippable/positionOffset farmer 0 8/pause 2000/
+		playSound doorOpen/warp MoiraDuboisVMV 41 64/speak MoiraDuboisVMV \"{{i18n: HamletMoira7HMoira01}}\"/move MoiraDuboisVMV 0 3 2/move MoiraDuboisVMV -7 0 2/move MoiraDuboisVMV 0 -1 2/
+		positionOffset MoiraDuboisVMV 0 8/pause 300/speak MoiraDuboisVMV \"{{i18n: HamletMoira7HMoira02}}\"/
+		pause 400/textAboveHead MoiraDuboisVMV \"{{i18n: HamletMoira7HOverheadCMoira01}}\"/pause 400/textAboveHead MoiraDuboisVMV \"{{i18n: HamletMoira7HOverheadCMoira01}}\"/pause 600/
+		textAboveHead MoiraDuboisVMV \"{{i18n: HamletMoira7HOverheadCMoira01}}\"/pause 800/textAboveHead MoiraDuboisVMV \"{{i18n: HamletMoira7HOverheadCMoira02}}\"/pause 1000/
+		textAboveHead MoiraDuboisVMV \"{{i18n: HamletMoira7HOverheadCMoira03}}\"/pause 2200/emote MoiraDuboisVMV 20/pause 600/
+		textAboveHead MoiraDuboisVMV \"{{i18n: HamletMoira7HOverheadCMoira04{{Random:R01, R02}}}}\"/pause 2200/emote MoiraDuboisVMV 56/pause 2200/
+		emote MoiraDuboisVMV 8/pause 1000/textAboveHead MoiraDuboisVMV \"{{i18n: HamletMoira7HOverheadCMoira05}}\"/
+		warp MaddyPellegrinVMV 45 57/move MaddyPellegrinVMV 0 3 2/speak MoiraDuboisVMV \"{{i18n: HamletMoira7HMoira03}}\"/
+		speed MaddyPellegrinVMV 2/move MaddyPellegrinVMV 0 5 2/positionOffset MoiraDuboisVMV 0 -8/jump MoiraDuboisVMV 7/textAboveHead MoiraDuboisVMV \"{{i18n: HamletMoira7HOverheadCMoira06}}\"/pause 800/
+		speak MoiraDuboisVMV \"{{i18n: HamletMoira7HMoira04}}\"/emote farmer 32/pause 300/speak MoiraDuboisVMV \"{{i18n: HamletMoira7HMoira05}}\"/pause 300/
+		speak MoiraDuboisVMV \"{{i18n: HamletMoira7HMoira06}}\"/pause 300/speed MoiraDuboisVMV 6/move MoiraDuboisVMV 0 1 0/speed MoiraDuboisVMV 5/move MoiraDuboisVMV 2 0 3/
+		speak MoiraDuboisVMV \"{{i18n: HamletMoira7HMoira07}}\"/pause 300/speed MoiraDuboisVMV 5/move MoiraDuboisVMV 5 0 1/speed MoiraDuboisVMV 5/move MoiraDuboisVMV 0 -3 0/playSound doorOpen/warp MoiraDuboisVMV -1000 -1000/
+		emote MaddyPellegrinVMV 40/pause 400/emote MaddyPellegrinVMV 28/speed MaddyPellegrinVMV 1/move MaddyPellegrinVMV 0 -5 0/pause 400/
+				end",
+				
+		"Lumisteria.MtVapius_Hamlet_Maddy4H/f MaddyPellegrinVMV 1000/t 1100 1600/w sunny": 
+		"breezy/57 82/farmer 49 80 0 HeliaDiamantiVMV 41 71 1 MariamFortinVMV 41 73 1 NaveenFaycombeSereneVMV 51 72 1 MaddyPellegrinVMV 51 73 1 AsterPellegrinVMV 52 74 0 MoiraDuboisVMV 45 71 0 OdalisDuboisVelezVMV? 53 74 0 ChandraFaycombeSereneVMV 46 67 2 PriyaFaycombeSereneVMV 49 68 0/
+		addCookingRecipe Lumisteria.MtVapius_Cooking_TomatoSalad/skippable/
+		friendship MaddyPellegrinVMV 20/
+		temporaryAnimatedSprite Mods\\Lumisteria.MtVapius\\TempAnimatedSprites 0 0 32 48 30000 1 500 45 68 false false 1 0 1 0 0 0/
+		temporaryAnimatedSprite Mods\\Lumisteria.MtVapius\\TempAnimatedSprites 32 0 32 32 30000 1 500 52 72 false false 1 0 1 0 0 0/
+		temporaryAnimatedSprite Mods\\Lumisteria.MtVapius\\TempAnimatedSprites 64 0 64 48 30000 1 500 51 67 false false 1 0 1 0 0 0/
+		pause 1200/viewport move -4 -4 3200/pause 3000/advancedMove PriyaFaycombeSereneVMV true 1 0 1 500 0 -2 4 500 -1 0 3 500 0 2 2 500 /
+		advancedMove MoiraDuboisVMV true 1 0 4 5000 -1 0 4 3000/advancedMove MariamFortinVMV true 1 0 1 15000 0 -1 1 15000 -1 0 1 15000 0 1 1 15000/
+		textAboveHead AsterPellegrinVMV \"{{i18n: HamletMaddy4HOverheadAster01}}\"/pause 300/textAboveHead MoiraDuboisVMV \"{{i18n: HamletMaddy4HOverheadMoira01}}\"/pause 700/
+		speak NaveenFaycombeSereneVMV \"{{i18n: HamletMaddy4HOverheadNaveen01}}\"/pause 300/speak MaddyPellegrinVMV \"{{i18n: HamletMaddy4HMaddy01}}\"/
+		pause 400/message \"{{i18n: HamletMaddy4HMessage01}}\"/pause 100/playSound getNewSpecialItem/
+		speak NaveenFaycombeSereneVMV \"{{i18n: HamletMaddy4HNaveen01}}\"/advancedMove farmer false 0 -8 -2 0 4 3000/playSound eat/pause 200/
+		textAboveHead MaddyPellegrinVMV \"{{i18n: HamletMaddy4HOverheadMaddy01}}\"/pause 300/
+		speak AsterPellegrinVMV \"{{i18n: HamletMaddy4HAster01}}\"/pause 400/jump HeliaDiamantiVMV 5/textAboveHead HeliaDiamantiVMV \"{{i18n: HamletMaddy4HOverheadHelia01}}\"/
+		pause 1000/speak HeliaDiamantiVMV \"{{i18n: HamletMaddy4HHelia01}}\"/pause 600/textAboveHead MoiraDuboisVMV \"{{i18n: HamletMaddy4HOverheadMoira02}}\"/pause 700/
+		advancedMove HeliaDiamantiVMV false 3 0 1 5000 -3 0 1 5000/pause 3000/playSound eat/pause 200/playSound eat/pause 200/
+		speak HeliaDiamantiVMV \"{{i18n: HamletMaddy4HHelia02}}\"/emote HeliaDiamantiVMV 56/speak MoiraDuboisVMV \"{{i18n: HamletMaddy4HMoira01}}\"/
+		speak AsterPellegrinVMV \"{{i18n: HamletMaddy4HAster02}}\"/pause 400/textAboveHead HeliaDiamantiVMV \"{{i18n: HamletMaddy4HOverheadHelia02}}\"/pause 600/
+		textAboveHead NaveenFaycombeSereneVMV \"{{i18n: HamletMaddy4HOverheadNaveen02}}\"/pause 1400/textAboveHead OdalisDuboisVelezVMV? \"{{i18n: HamletMaddy4HOverheadOdalis01}}\"/
+		pause 800/speak NaveenFaycombeSereneVMV \"{{i18n: HamletMaddy4HNaveen02}}\"/pause 300/speak HeliaDiamantiVMV \"{{i18n: HamletMaddy4HHelia03}}\"/
+		speak MoiraDuboisVMV \"{{i18n: HamletMaddy4HMoira02}}\"/pause 400/textAboveHead HeliaDiamantiVMV \"{{i18n: HamletMaddy4HOverheadHelia03}}\"/
+		pause 800/globalFade 0.007 true/pause 400/globalFadeToClear 0.007 true/
+		textAboveHead HeliaDiamantiVMV \"{{i18n: HamletMaddy4HOverheadHelia04}}\"/pause 200/speak MoiraDuboisVMV \"{{i18n: HamletMaddy4HMaddy02}}\"/pause 300/
+		textAboveHead NaveenFaycombeSereneVMV \"{{i18n: HamletMaddy4HOverheadNaveen03}}\"/pause 100/textAboveHead MoiraDuboisVMV \"{{i18n: HamletMaddy4HOverheadMoira03}}\"/pause 400/
+		textAboveHead HeliaDiamantiVMV \"{{i18n: HamletMaddy4HOverheadHelia05}}\"/pause 200/
+		quickQuestion {{i18n: HamletMaddy4HMessage02}}#{{i18n: HamletMaddy4HAnswer01}}#{{i18n: HamletMaddy4HAnswer02}}#{{i18n: HamletMaddy4HAnswer03}}#{{i18n: HamletMaddy4HAnswer04}}#
+		(break)playSound give_gift\\pause 200\\addItem (O)Lumisteria.MtVapius_Cooking_TomatoSalad\\pause 200
+		(break)playSound give_gift\\pause 200\\addItem (O)198\\pause 200
+		(break)playSound give_gift\\pause 200\\addItem (O)648\\pause 200
+		(break)pause 200/pause 200/
+		
+		
+		end",
+
+
+		"Lumisteria.MtVapius_Hamlet_Maddy5HClint5H/e Lumisteria.MtVapius_Hamlet_ClintMeetMaddy/A eventSeen_Lumisteria.MtVapius.MtVapius_Hamlet_ClintMeetMaddy/d Tue/t 1800 2000/f MaddyPellegrinVMV 1250/f Clint 1250":
+		"MarlonsTheme/70 23/farmer -1000 -1000 0 Clint -1001 -1000 2 MaddyPellegrinVMV -1000 -1001 2/skippable/
+		playSound doorOpen/warp Clint 70 23/advancedMove Clint false -2 0 0 2 4 2300/pause 300/warp MaddyPellegrinVMV 70 23/advancedMove MaddyPellegrinVMV false -2 0 0 1 2 2000/viewport move -1 0 2000/
+		textAboveHead Clint \"{{i18n: HamletMaddy5HClint5HOverheadClint01}}\"/pause 600/speak Clint \"{{i18n: HamletMaddy5HClint5HClint01}}\"/pause 400/
+		pause 400/speak MaddyPellegrinVMV \"{{i18n: HamletMaddy5HClint5HMaddy01}}\"/pause 400/viewport move -1 0 2000/
+		advancedMove Clint false -15 0 0 15 2 2000/advancedMove MaddyPellegrinVMV false 0 1 -14 0 0 14 2 2000/viewport move -1 1 7000/
+		speak Clint \"{{i18n: HamletMaddy5HClint5HClint02}}\"/pause 400/speak MaddyPellegrinVMV \"{{i18n: HamletMaddy5HClint5HMaddy02}}\"/pause 400/viewport move -1 1 2000/
+		speak Clint \"{{i18n: HamletMaddy5HClint5HClint03}}\"/pause 100/emote MaddyPellegrinVMV 40/pause 400/speak MaddyPellegrinVMV \"{{i18n: HamletMaddy5HClint5HMaddy03}}\"/pause 400/viewport move 0 1 6000/
+		jump Clint 7/emote Clint 40/pause 200/speak Clint \"{{i18n: HamletMaddy5HClint5HClint04}}\"/pause 300/textAboveHead MaddyPellegrinVMV \"{{i18n: HamletMaddy5HClint5HOverheadMaddy01}}\"/pause 1000/
+		emote Clint 8/speak MaddyPellegrinVMV \"{{i18n: HamletMaddy5HClint5HMaddy04}}\"/pause 200/textAboveHead MaddyPellegrinVMV \"{{i18n: HamletMaddy5HClint5HOverheadMaddy02}}\"/pause 200/
+		speak MaddyPellegrinVMV \"{{i18n: HamletMaddy5HClint5HMaddy05}}\"/pause 200/viewport move 0 1 4000/speak Clint \"{{i18n: HamletMaddy5HClint5HClint05}}\"/pause 400/emote Clint 40/speak Clint \"{{i18n: HamletMaddy5HClint5HClint06}}\"/pause 400/
+		textAboveHead MaddyPellegrinVMV \"{{i18n: HamletMaddy5HClint5HOverheadMaddy03}}\"/pause 200/speak MaddyPellegrinVMV \"{{i18n: HamletMaddy5HClint5HMaddy06}}\"/pause 200/
+		speak Clint \"{{i18n: HamletMaddy5HClint5HClint07}}\"/pause 100/emote MaddyPellegrinVMV 40/pause 100/speak MaddyPellegrinVMV \"{{i18n: HamletMaddy5HClint5HMaddy07}}\"/pause 400/emote Clint 40/viewport move 0 1 4000/
+		advancedMove Clint false 0 2 2 0 0 3 -1 0 2 2000/advancedMove MaddyPellegrinVMV false 0 2 2 0 0 3 -1 0 2 2000/pause 500/
+		speak Clint \"{{i18n: HamletMaddy5HClint5HClint08}}\"/pause 100/speak MaddyPellegrinVMV \"{{i18n: HamletMaddy5HClint5HMaddy08}}\"/pause 500/viewport move 0 2 4000/
+		
+		end",
+
+		"Lumisteria.MtVapius_Hamlet_OrchardHints/e Lumisteria.MtVapius_Orchard/A eventSeen_Lumisteria.MtVapius.MtVapius_Orchard/!e Lumisteria.MtVapius_Hamlet_OrchardUnlock/t 700 2100/w sunny":
+		"breezy/48 63/farmer 50 68 0 CelestineDuboisVMV 45 54 1 AdelaideRosierVMV 47 54 3 OdalisDuboisVelezVMV? 52 57 2/
+		temporaryAnimatedSprite Mods\\Lumisteria.MtVapius\\TempAnimatedSprites 128 0 16 32 30000 1 500 46 53 false false 1 0 1 0 0 0/skippable/
+		advancedMove OdalisDuboisVelezVMV? false 0 20 4 2300/pause 200/advancedMove farmer false 0 -8 4 2000/viewport move 0 -2 3000/pause 1000/textAboveHead OdalisDuboisVelezVMV? \"{{i18n: OrchardHintsOverheadOdalis01}}\"/pause 2500/
+		textAboveHead CelestineDuboisVMV \"{{i18n: OrchardHintsOverheadCelestine01}}\"/pause 1400/textAboveHead AdelaideRosierVMV \"{{i18n: OrchardHintsOverheadAdelaide01}}\"/pause 1000/
+		faceDirection CelestineDuboisVMV 2/faceDirection AdelaideRosierVMV 2/pause 200/emote CelestineDuboisVMV 400/advancedMove farmer false 0 -4 -3 0 4 2000/
+		speak CelestineDuboisVMV \"{{i18n: OrchardHintsCelestine01}}\"/pause 400/emote AdelaideRosierVMV 8/pause 400/speak AdelaideRosierVMV \"{{i18n: OrchardHintsAdelaide01}}\"/pause 200/
+		speak CelestineDuboisVMV \"{{i18n: OrchardHintsCelestine02}}\"/emote AdelaideRosierVMV 16/pause 300/speak AdelaideRosierVMV \"{{i18n: OrchardHintsAdelaide02}}\"/pause 400/
+		speak CelestineDuboisVMV \"{{i18n: OrchardHintsCelestine03}}\"/pause 200/speak AdelaideRosierVMV \"{{i18n: OrchardHintsAdelaide03}}\"/pause 300/
+		speak CelestineDuboisVMV \"{{i18n: OrchardHintsCelestine04}}\"/pause 300/faceDirection CelestineDuboisVMV 1/faceDirection AdelaideRosierVMV 3/pause 300/speak AdelaideRosierVMV \"{{i18n: OrchardHintsAdelaide04}}\"/pause 200/
+		message \"{{i18n: OrchardHintsMessage01}}\"/
+		end",
+
+				
 		},
     },
     {
@@ -159,7 +352,13 @@ end",
       "Action": "EditData",
       "Target": "Data/Events/Lumisteria.MtVapius_AsterHouse",
       "Entries": {
-        "Lumisteria.MtVapius_AsterHouse_Aster2H/f AsterPellegrinVMV 500/c 1/t 800 2300": "Frost_Ambient/19 17/farmer 15 20 0 AsterPellegrinVMV 19 12 2/skippable/doAction 19 14/move AsterPellegrinVMV 0 4 2/pause 100/playSound furnace/emote AsterPellegrinVMV 12/pause 100/emote farmer 8/move farmer 1 0 0/pause 400/textAboveHead AsterPellegrinVMV \"{{i18n: AsterHouseAster2HOverheadAster01}}\"/pause 100/speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HAster01}}\"/pause 100/emote AsterPellegrinVMV 16/pause 100/speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HAster02}}\"/pause 200/question fork2 \"{{i18n: AsterHouseAster2HAster03}}#{{i18n: AsterHouseAster2HFarmerAnswer01}}#{{i18n: AsterHouseAster2HFarmerAnswer02}}#{{i18n: AsterHouseAster2HFarmerAnswer03}}\"/fork Lumisteria.MtVapius_Aster2HRudeAnswer/speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HBranchGoodAster01}}\"/globalFade/playSound doorClose/viewport -1000 -1000/pause 600/message \"{{i18n: AsterHouseAster2HBranchGoodMessage}}\"/pause 1000/globalFade/pause 100/globalFadeToClear .005 true/viewport 19 17/pause 200/speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HBranchGoodAster02}}\"/pause 200/addItem {{AsterSeedGift2H}}/playSound pickUpItem/speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HBranchGoodAster03}}\"/friendship AsterPellegrinVMV 50/playSound doorClose/end",
+        "Lumisteria.MtVapius_AsterHouse_Aster2H/f AsterPellegrinVMV 500/c 1/t 800 2300": 
+		"Frost_Ambient/19 17/farmer 15 20 0 AsterPellegrinVMV 19 12 2/skippable/doAction 19 14/move AsterPellegrinVMV 0 4 2/pause 100/playSound furnace/emote AsterPellegrinVMV 12/pause 100/emote farmer 8/move farmer 1 0 0/pause 400/
+		textAboveHead AsterPellegrinVMV \"{{i18n: AsterHouseAster2HOverheadAster01}}\"/pause 100/speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HAster01}}\"/pause 100/emote AsterPellegrinVMV 16/pause 100/
+		speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HAster02}}\"/pause 200/
+		question fork2 \"{{i18n: AsterHouseAster2HAster03}}#{{i18n: AsterHouseAster2HFarmerAnswer01}}#{{i18n: AsterHouseAster2HFarmerAnswer02}}#{{i18n: AsterHouseAster2HFarmerAnswer03}}\"/fork Lumisteria.MtVapius_Aster2HRudeAnswer/
+		stopMusic/speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HBranchGoodAster01}}\"/
+		globalFade/playSound doorClose/viewport -1000 -1000/pause 600/message \"{{i18n: AsterHouseAster2HBranchGoodMessage}}\"/pause 1000/globalFade/pause 100/globalFadeToClear .005 true/viewport 19 17/playMusic breezy/pause 200/speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HBranchGoodAster02}}\"/pause 200/addItem {{AsterSeedGift2H}}/playSound pickUpItem/speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HBranchGoodAster03}}\"/friendship AsterPellegrinVMV 50/playSound doorClose/end",
         "Lumisteria.MtVapius_Aster2HRudeAnswer": "emote AsterPellegrinVMV 12/shake AsterPellegrinVMV 5000/speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HBranchBadAster01}}\"/addConversationTopic Lumisteria.MtVapius_AsterAngry 4/globalFade/playSound doorClose/viewport -1000 -1000/friendship AsterPellegrinVMV -100/end warpOut",
         "Lumisteria.MtVapius_AsterHouse_StellarCrops01/f AsterPellegrinVMV 25/s Lumisteria.MtVapius_MoonPods 1/c 1": "libraryTheme/19 17/farmer 15 20 0 AsterPellegrinVMV 19 14 2/addQuest Lumisteria.MtVapiusQuestMoonPodsForAster/addItem (BC)62 1/skippable/move AsterPellegrinVMV 0 1 2/textAboveHead AsterPellegrinVMV \"{{i18n: StellarCrops01OverheadAster01}}{{PlayerName}}!\"/move AsterPellegrinVMV 0 2 2/pause 100/speak AsterPellegrinVMV \"{{i18n: StellarCrops01Aster01}}\"/pause 200/move farmer 0 -2 0/speak AsterPellegrinVMV \"{{i18n: StellarCrops01Aster02}}\"/move farmer 2 0 1/pause 100/emote farmer 16/speak AsterPellegrinVMV \"{{i18n: StellarCrops01Aster03}}\"/speak AsterPellegrinVMV \"{{i18n: StellarCrops01Aster04}}\"/pause 400/emote AsterPellegrinVMV 8/pause 400/speak AsterPellegrinVMV \"{{i18n: StellarCrops01Aster05}}\"/End",
         "Lumisteria.MtVapius_AsterHouse_Aster2HMoira2H/f AsterPellegrinVMV 500/f MoiraDuboisVMV 500/G {{Query: {{Random: {{Range:1,101}} }} <= {{DepressedChance}}}}/t 1600 2200": "desolate/19 17/MoiraDuboisVMV 16 22 0 AsterPellegrinVMV 19 12 2/
@@ -169,6 +368,31 @@ speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HMoira2HAster01}}\"/move Moira
 move AsterPellegrinVMV 0 3 3/playMusic breezy/pause 300/speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HMoira2HAster02}}\"/emote MoiraDuboisVMV 32/move AsterPellegrinVMV -4 0 3/
 speak AsterPellegrinVMV \"{{i18n: AsterHouseAster2HMoira2HAster03}}\"/pause 200/textAboveHead MoiraDuboisVMV \"{{i18n: AsterHouseAster2HMoira2HOverheadMoira02}}\"/pause 800/
 end",
+
+
+        "Lumisteria.MtVapius_AsterHouse_MaddyDown/t 800 2300/e Lumisteria.MtVapius_Hamlet_Moira7H/!A eventSeen_Lumisteria.MtVapius_Hamlet_Moira7H": 
+		"Frost_Ambient/19 17/farmer 16 23 1 MaddyPellegrinVMV 22 22 3 AsterPellegrinVMV -1000 -1000 0/skippable/pause 800/playSound doorOpen/pause 400/move farmer 0 -1 1/emote farmer 8/
+		pause 300/animate MaddyPellegrinVMV false true 250 28 28 28 29 29 29 28 28 29 29/
+		textAboveHead MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownOverheadMaddy01}}\"/pause 300/speak MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownMaddy01}}\"/
+		pause 300/move farmer 3 0 1/speak MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownMaddy02}}\"/stopAnimation MaddyPellegrinVMV/
+		pause 500/textAboveHead MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownOverheadMaddy02}}\"/pause 500/
+		pause 300/speak MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownMaddy03}}\"/pause 200/textAboveHead MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownOverheadMaddy03}}\"/pause 200/
+		pause 300/speak MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownMaddy04}}\"/playSound doorOpen/pause 100/warp AsterPellegrinVMV 16 23/move AsterPellegrinVMV 0 -1 0/pause 100/
+		textAboveHead AsterPellegrinVMV \"{{i18n: AsterHouseMaddyDownOverheadAster01}}\"/pause 500/move AsterPellegrinVMV 2 0 1/speak AsterPellegrinVMV \"{{i18n: AsterHouseMaddyDownAster01}}\"/pause 400/
+		/speed AsterPellegrinVMV 5/move AsterPellegrinVMV 0 1 1/speed AsterPellegrinVMV 5/move AsterPellegrinVMV 3 0 1/positionOffset AsterPellegrinVMV 20 -16/positionOffset MaddyPellegrinVMV -6 6/
+		animate AsterPellegrinVMV false false 1000 32 33 32 33 32 33/animate MaddyPellegrinVMV false false 1000 30/
+		pause 400/textAboveHead AsterPellegrinVMV \"{{i18n: AsterHouseMaddyDownOverheadAster02}}\"/pause 1000/positionOffset AsterPellegrinVMV -16 16/positionOffset MaddyPellegrinVMV 6 -6/pause 600/
+		textAboveHead MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownOverheadMaddy04}}\"/pause 1000/emote MaddyPellegrinVMV 40/pause 1000/speak MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownMaddy05}}\"/
+		
+		quickQuestion {{i18n: AsterHouseMaddyDownMessage01}}#{{i18n: AsterHouseMaddyDownAnswer01}}#{{i18n: AsterHouseMaddyDownAnswer02}}#{{i18n: AsterHouseMaddyDownAnswer03}}#{{i18n: AsterHouseMaddyDownAnswer04}}
+		(break)friendship MaddyPellegrinVMV 30\\pause 200\\speak MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownBranchStrongMaddy01}}\"\\pause 200
+		(break)friendship MaddyPellegrinVMV -10\\friendship AsterPellegrinVMV -5\\emote AsterPellegrinVMV 12\\pause 200\\speak MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownBranchInsincereMaddy01}}\"\\pause 200
+		(break)pause 200\\speak MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownBranchBeHonestMaddy01}}\"\\pause 200
+		(break)friendship MaddyPellegrinVMV 30\\pause 200\\speak MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownBranchTakeCareMaddy01}}\"\\pause 200/pause 300/
+		speak AsterPellegrinVMV \"{{i18n: AsterHouseMaddyDownAster02}}\"/pause 400/speak MaddyPellegrinVMV \"{{i18n: AsterHouseMaddyDownMaddy06}}\"/
+		textAboveHead AsterPellegrinVMV \"{{i18n: AsterHouseMaddyDownOverheadAster03}}\"/faceDirection AsterPellegrinVMV 3/pause 400/
+		speak AsterPellegrinVMV \"{{i18n: AsterHouseMaddyDownAster03}}\"/pause 400/
+		end",
 
       },
     },
@@ -232,13 +456,133 @@ playSound getNewSpecialItem/message \"{{i18n: InnGazetteMessage01}}\"/
 end",
 
 		
-"Lumisteria.MtVapius_Inn_StellarSecret/G !{{HamletProgress|contains={{Range: 0, 9}}}}/t 800 2000": "breezy/25 38/farmer 23 41 0 CelestineDuboisVMV 21 38 1 MoiraDuboisVMV 25 38 3/skippable/
+"Lumisteria.MtVapius_Inn_StellarSecret/G !{{HamletProgress|contains={{Range: 0, 9}}}}/t 800 2000": 
+"breezy/25 38/farmer 23 41 0 CelestineDuboisVMV 21 38 1 MoiraDuboisVMV 25 38 3/skippable/
 textAboveHead CelestineDuboisVMV \"{{i18n: InnStellarSecretOverheadCelestine01}}\"/pause 1200/speak MoiraDuboisVMV \"{{i18n: InnStellarSecretMoira01}}\"/pause 400/move farmer 0 -1 0/
 speak CelestineDuboisVMV \"{{i18n: InnStellarSecretCelestine01}}\"/pause 100/speak MoiraDuboisVMV \"{{i18n: InnStellarSecretMoira02}}\"/pause 100/move farmer 0 -1 0/
 emote MoiraDuboisVMV 16/speak MoiraDuboisVMV \"{{i18n: InnStellarSecretMoira03}}\"/
 playSound getNewSpecialItem/message \"{{i18n: InnStellarSecretMessage01}}\"/
 end",
 
+"Lumisteria.MtVapius_Inn_OdalisIntroduction/G !{{HamletProgress|contains={{Range: 0, 1}}}}/e Lumisteria.MtVapius_Hamlet_MoiraArrival/A eventSeen_Lumisteria.MtVapius_Hamlet_MoiraArrival/t 800 2000": 
+"breezy/25 38/farmer 18 36 3 CelestineDuboisVMV 28 38 2 MoiraDuboisVMV 16 36 1/addTemporaryActor OdalisDuboisVelezVMV 16 32 23 42 0 true ???/addConversationTopic Lumisteria.MtVapius.OdalisArriving 4/pause 600/
+skippable/textAboveHead CelestineDuboisVMV \"{{i18n: InnOdalisIntroductionCelestineOverhead01}}\"/pause 200/move OdalisDuboisVelezVMV 0 -1 1/pause 400/textAboveHead OdalisDuboisVelezVMV \"{{i18n: InnOdalisIntroductionOdalisOverhead01}}\"/pause 1600/
+emote CelestineDuboisVMV 16/pause 500/emote farmer 8/faceDirection farmer 2/pause 300/emote MoiraDuboisVMV 8/faceDirection MoiraDuboisVMV 2/
+move OdalisDuboisVelezVMV 0 -2 1/speak OdalisDuboisVelezVMV \"{{i18n: InnOdalisIntroductionOdalis01}}\"/pause 100/pause 200/move MoiraDuboisVMV 0 1 2/move MoiraDuboisVMV 2 0 2/changeName OdalisDuboisVelezVMV {{i18n: OdalisDisplayName}}/
+move CelestineDuboisVMV 0 -1 3/move CelestineDuboisVMV -3 0 3/pause 100/speak CelestineDuboisVMV \"{{i18n: InnOdalisIntroductionCelestine01}}\"/pause 100/textAboveHead MoiraDuboisVMV \"{{i18n: InnOdalisIntroductionMoiraOverhead01}}\"/
+faceDirection CelestineDuboisVMV 3/pause 200/emote CelestineDuboisVMV 60/faceDirection CelestineDuboisVMV 2/
+speak OdalisDuboisVelezVMV \"{{i18n: InnOdalisIntroductionOdalis02}}\"/pause 100/textAboveHead MoiraDuboisVMV \"{{i18n: InnOdalisIntroductionMoiraOverhead02}}\"/pause 300/speak CelestineDuboisVMV \"{{i18n: InnOdalisIntroductionCelestine02}}\"/
+emote OdalisDuboisVelezVMV 16/pause 600/speak OdalisDuboisVelezVMV \"{{i18n: InnOdalisIntroductionOdalis03}}\"/pause 300/move CelestineDuboisVMV 0 1 2/speak CelestineDuboisVMV \"{{i18n: InnOdalisIntroductionCelestine03}}\"/
+textAboveHead MoiraDuboisVMV \"{{i18n: InnOdalisIntroductionMoiraOverhead03}}\"/move MoiraDuboisVMV 0 1 2/emote OdalisDuboisVelezVMV 16/move OdalisDuboisVelezVMV 0 -1 0/
+speak OdalisDuboisVelezVMV \"{{i18n: InnOdalisIntroductionOdalis04}}\"/pause 700/textAboveHead CelestineDuboisVMV \"{{i18n: InnOdalisIntroductionCelestineOverhead02}}\"/pause 1200/speak CelestineDuboisVMV \"{{i18n: InnOdalisIntroductionCelestine04}}\"/
+pause 700/speak OdalisDuboisVelezVMV \"{{i18n: InnOdalisIntroductionOdalis05}}\"/speak MoiraDuboisVMV \"{{i18n: InnOdalisIntroductionMoira01}}\"/pause 300/speak CelestineDuboisVMV \"{{i18n: InnOdalisIntroductionCelestine05}}\"/speak OdalisDuboisVelezVMV \"{{i18n: InnOdalisIntroductionOdalis06}}\"/
+pause 500/speak OdalisDuboisVelezVMV \"{{i18n: InnOdalisIntroductionOdalis07}}\"/pause 1000/
+end",
+
+"Lumisteria.MtVapius_Inn_OdalisArrival/e Lumisteria.MtVapius_Inn_OdalisIntroduction/A Lumisteria.MtVapius.OdalisArriving/t 700 2200": 
+"breezy/13 12/farmer 13 21 0 CelestineDuboisVMV 14 14 0 MoiraDuboisVMV 13 11 0/addTemporaryActor OdalisDuboisVelezVMV 16 32 15 12 0 true Odalis/pause 600/
+skippable/textAboveHead CelestineDuboisVMV \"{{i18n: InnOdalisArrivalCelestineOverhead01}}\"/pause 200/move farmer 0 -4 0/speak CelestineDuboisVMV \"{{i18n: InnOdalisArrivalCelestine01}}\"/
+textAboveHead MoiraDuboisVMV \"{{i18n: InnOdalisArrivalMoiraOverhead01}}\"/pause 400/speak MoiraDuboisVMV \"{{i18n: InnOdalisArrivalMoira01}}\"/
+emote CelestineDuboisVMV 60/pause 400/speak CelestineDuboisVMV \"{{i18n: InnOdalisArrivalCelestine02}}\"/
+pause 600/speak MoiraDuboisVMV \"{{i18n: InnOdalisArrivalMoira02}}\"/
+		quickQuestion {{i18n: InnOdalisArrivalMessage01}}#{{i18n: InnOdalisArrivalAnswer01}}#{{i18n: InnOdalisArrivalAnswer02}}#{{i18n: InnOdalisArrivalAnswer03}}#{{i18n: InnOdalisArrivalAnswer04}}#{{i18n: InnOdalisArrivalAnswer05}}#{{i18n: InnOdalisArrivalAnswer06}}
+		(break)addItem SkillBook_0\\addItem (O)Lumisteria.MtVapius_FarmingBook02\\pause 200
+		(break)addItem SkillBook_2\\addItem (O)Lumisteria.MtVapius_ForagingBook02\\pause 200
+		(break)addItem SkillBook_3\\addItem (O)Lumisteria.MtVapius_MiningBook02\\pause 200
+		(break)addItem SkillBook_1\\addItem (O)Lumisteria.MtVapius_FishingBook02\\pause 200
+		(break)addItem SkillBook_4\\addItem (O)Lumisteria.MtVapius_CombatBook02\\pause 200
+		(break)textAboveHead MoiraDuboisVMV \"{{i18n: InnOdalisArrivalDeclineMoiraOverhead01}}\"/move OdalisDuboisVelezVMV 0 -1 3/
+pause 1000/speak OdalisDuboisVelezVMV \"{{i18n: InnOdalisArrivalOdalis01}}\"/animate OdalisDuboisVelezVMV false true 250 20 21 22 22 21 20 21/
+pause 400/speak OdalisDuboisVelezVMV \"{{i18n: InnOdalisArrivalOdalis02}}\"/pause 300/
+speak MoiraDuboisVMV \"{{i18n: InnOdalisArrivalMoira03}}\"/pause 2000/emote CelestineDuboisVMV 32/emote OdalisDuboisVelezVMV 32/
+end",
+
+"Lumisteria.MtVapius_Inn_OdalisSettled/e Lumisteria.MtVapius_Inn_OdalisArrival/A eventSeen_Lumisteria.MtVapius_Inn_OdalisArrival/t 700 2200": 
+"starshoot/34 38/farmer -100 -100 0 MoiraDuboisVMV 33 37 1 CelestineDuboisVMV 38 39 3/skippable/
+move MoiraDuboisVMV 0 2 1/pause 300/move MoiraDuboisVMV 2 0 1/textAboveHead MoiraDuboisVMV \"{{i18n: InnOdalisSettledMoiraOverhead01}}\"/pause 200/speak CelestineDuboisVMV \"{{i18n: InnOdalisSettledCelestine01}}\"/
+speak MoiraDuboisVMV \"{{i18n: InnOdalisSettledMoira01}}\"/pause 200/emote CelestineDuboisVMV 40/pause 400/
+textAboveHead CelestineDuboisVMV \"{{i18n: InnOdalisSettledCelestineOverhead01}}\"/pause 400/textAboveHead MoiraDuboisVMV \"{{i18n: InnOdalisSettledMoiraOverhead02}}\"/
+speak CelestineDuboisVMV \"{{i18n: InnOdalisSettledCelestine02}}\"/pause 200/stopMusic/faceDirection MoiraDuboisVMV 3/pause 200/stopMusic/faceDirection MoiraDuboisVMV 1/speak MoiraDuboisVMV \"{{i18n: InnOdalisSettledMoira02}}\"/
+speak CelestineDuboisVMV \"{{i18n: InnOdalisSettledCelestine03}}\"/pause 200/speak MoiraDuboisVMV \"{{i18n: InnOdalisSettledMoira03}}\"/
+speak CelestineDuboisVMV \"{{i18n: InnOdalisSettledCelestine04}}\"/pause 200/speak MoiraDuboisVMV \"{{i18n: InnOdalisSettledMoira04}}\"/
+speak CelestineDuboisVMV \"{{i18n: InnOdalisSettledCelestine05}}\"/pause 200/speak MoiraDuboisVMV \"{{i18n: InnOdalisSettledMoira05}}\"/
+pause 200/emote CelestineDuboisVMV 40/pause 400/speak CelestineDuboisVMV \"{{i18n: InnOdalisSettledCelestine06}}\"/pause 200/speak MoiraDuboisVMV \"{{i18n: InnOdalisSettledMoira06}}\"/
+jump MoiraDuboisVMV 6/textAboveHead MoiraDuboisVMV \"{{i18n: InnOdalisSettledMoiraOverhead03}}\"/
+speak MoiraDuboisVMV \"{{i18n: InnOdalisSettledMoira07}}\"/pause 400/playMusic starshoot/speak CelestineDuboisVMV \"{{i18n: InnOdalisSettledCelestine07}}\"/
+pause 300/emote MoiraDuboisVMV 16/pause 600/emote MoiraDuboisVMV 40/speak MoiraDuboisVMV \"{{i18n: InnOdalisSettledMoira08}}\"/pause 400/
+move CelestineDuboisVMV 0 -2 3/move CelestineDuboisVMV -3 0 2/move CelestineDuboisVMV 0 1 2/positionOffset MoiraDuboisVMV 0 -32/animate MoiraDuboisVMV false false 2000 16/pause 300/
+textAboveHead CelestineDuboisVMV \"{{i18n: InnOdalisSettledCelestineOverhead02}}\"/pause 800/
+end",
+
+"Lumisteria.MtVapius_Inn_MoiraCelestineMeeting/e Lumisteria.MtVapius_Inn_OdalisSettled/A eventSeen_Lumisteria.MtVapius_Inn_OdalisSettled/t 700 2200/": 
+"starshoot/34 38/farmer -100 -100 0 MoiraDuboisVMV 35 39 1 CelestineDuboisVMV 38 39 3/skippable/
+pause 500/speak MoiraDuboisVMV \"{{i18n: InnMoiraCelestineMeetingMoira01}}\"/pause 200/speak CelestineDuboisVMV \"{{i18n: InnMoiraCelestineMeetingCelestine01}}\"/pause 400/
+speak MoiraDuboisVMV \"{{i18n: InnMoiraCelestineMeetingMoira02}}\"/pause 500/speak CelestineDuboisVMV \"{{i18n: InnMoiraCelestineMeetingCelestine02}}\"/pause 200/
+emote MoiraDuboisVMV 12/pause 100/speak MoiraDuboisVMV \"{{i18n: InnMoiraCelestineMeetingMoira03}}\"/pause 100/textAboveHead CelestineDuboisVMV \"{{i18n: InnMoiraCelestineMeetingCelestineOverhead01}}\"/pause 300/
+speak MoiraDuboisVMV \"{{i18n: InnMoiraCelestineMeetingMoira04}}\"/pause 200/speak CelestineDuboisVMV \"{{i18n: InnMoiraCelestineMeetingCelestine03}}\"/pause 100/
+jump MoiraDuboisVMV 6/playSound furnace/emote MoiraDuboisVMV 12/pause 200/textAboveHead MoiraDuboisVMV \"{{i18n: InnMoiraCelestineMeetingMoiraOverhead01}}\"/pause 200/
+speak CelestineDuboisVMV \"{{i18n: InnMoiraCelestineMeetingCelestine04}}\"/stopMusic/pause 100/
+textAboveHead MoiraDuboisVMV \"{{i18n: InnMoiraCelestineMeetingMoiraOverhead02}}\"/pause 200/speak CelestineDuboisVMV \"{{i18n: InnMoiraCelestineMeetingCelestine05}}\"/pause 400/
+speak CelestineDuboisVMV \"{{i18n: InnMoiraCelestineMeetingCelestine06}}\"/pause 100/
+emote MoiraDuboisVMV 40/pause 300/speak MoiraDuboisVMV \"{{i18n: InnMoiraCelestineMeetingMoira05}}\"/pause 200/speak CelestineDuboisVMV \"{{i18n: InnMoiraCelestineMeetingCelestine07}}\"/pause 100/
+speak MoiraDuboisVMV \"{{i18n: InnMoiraCelestineMeetingMoira06}}\"/pause 400/emote CelestineDuboisVMV 40/pause 700/emote CelestineDuboisVMV 40/pause 200/speak CelestineDuboisVMV \"{{i18n: InnMoiraCelestineMeetingCelestine08}}\"/pause 100/playMusic starshoot/pause 500/
+speak CelestineDuboisVMV \"{{i18n: InnMoiraCelestineMeetingCelestine09}}\"/speak MoiraDuboisVMV \"{{i18n: InnMoiraCelestineMeetingMoira07}}\"/pause 200/speak CelestineDuboisVMV \"{{i18n: InnMoiraCelestineMeetingCelestine10}}\"/
+
+end",
+
+		"Lumisteria.MtVapius_Inn_Helia2HNaveen2H/f NaveenFaycombeSereneVMV 500/f HeliaDiamantiVMV 500/!f NaveenFaycombeSereneVMV 1500/!f HeliaDiamantiVMV 1750/t 2000 2400":
+		"Orange/24 37/NaveenFaycombeSereneVMV 21 35 2 HeliaDiamantiVMV 24 35 2 MoiraDuboisVMV 23 35 2 farmer 22 41 0 AsterPellegrinVMV 23 38 0 MariamFortinVMV 21 38 0/skippable/
+		speak HeliaDiamantiVMV \"{{i18n: InnHelia2HNaveen2HHelia01}}\"/pause 100/textAboveHead NaveenFaycombeSereneVMV \"{{i18n: InnHelia2HNaveen2HOverheadNaveen01}}\"/
+		faceDirection HeliaDiamantiVMV 3/pause 300/faceDirection HeliaDiamantiVMV 2/speak HeliaDiamantiVMV \"{{i18n: InnHelia2HNaveen2HHelia02}}\"/pause 600/
+		textAboveHead MariamFortinVMV \"{{i18n: InnHelia2HNaveen2HOverheadMariam01}}\"/pause 600/
+		speak HeliaDiamantiVMV \"{{i18n: InnHelia2HNaveen2HHelia03}}\"/pause 200/textAboveHead NaveenFaycombeSereneVMV \"{{i18n: InnHelia2HNaveen2HOverheadNaveen02}}\"/pause 300/
+		textAboveHead MoiraDuboisVMV \"{{i18n: InnHelia2HNaveen2HOverheadMoira01}}\"/move farmer 0 -3 0/speak AsterPellegrinVMV \"{{i18n: InnHelia2HNaveen2HAster01}}\"/pause 100/
+		speak MariamFortinVMV \"{{i18n: InnHelia2HNaveen2HMariam01}}\"/pause 300/speak HeliaDiamantiVMV \"{{i18n: InnHelia2HNaveen2HHelia04}}\"/pause 400/
+		textAboveHead MariamFortinVMV \"{{i18n: InnHelia2HNaveen2HOverheadMariam02}}\"/animate MoiraDuboisVMV false false 400 17 18 17 18 17 18 17 18/pause 600/
+		speak HeliaDiamantiVMV \"{{i18n: InnHelia2HNaveen2HHelia05}}\"/pause 200/speak MoiraDuboisVMV \"{{i18n: InnHelia2HNaveen2HMoira01}}\"/pause 200/
+		faceDirection AsterPellegrinVMV 3/textAboveHead AsterPellegrinVMV \"{{i18n: InnHelia2HNaveen2HOverheadHAster01}}\"/pause 200/faceDirection AsterPellegrinVMV 0/
+		faceDirection HeliaDiamantiVMV 3/textAboveHead HeliaDiamantiVMV \"{{i18n: InnHelia2HNaveen2HOverheadHelia01}}\"/pause 200/faceDirection HeliaDiamantiVMV 2/
+		speak MoiraDuboisVMV \"{{i18n: InnHelia2HNaveen2HMoira02}}\"/pause 200/
+		textAboveHead MariamFortinVMV \"{{i18n: InnHelia2HNaveen2HOverheadMariam03}}\"/pause 100/textAboveHead NaveenFaycombeSereneVMV \"{{i18n: InnHelia2HNaveen2HOverheadNaveen03}}\"/pause 700/
+		speak HeliaDiamantiVMV \"{{i18n: InnHelia2HNaveen2HHelia06}}\"/pause 300/speak NaveenFaycombeSereneVMV \"{{i18n: InnHelia2HNaveen2HNaveen01}}\"/pause 200/
+		textAboveHead HeliaDiamantiVMV \"{{i18n: InnHelia2HNaveen2HOverheadHelia02}}\"/pause 100/textAboveHead AsterPellegrinVMV \"{{i18n: InnHelia2HNaveen2HOverheadAster01}}\"/pause 200/
+		speak HeliaDiamantiVMV \"{{i18n: InnHelia2HNaveen2HHelia07}}\"/pause 300/textAboveHead NaveenFaycombeSereneVMV \"{{i18n: InnHelia2HNaveen2HOverheadNaveen04}}\"/pause 400/
+		speak HeliaDiamantiVMV \"{{i18n: InnHelia2HNaveen2HHelia08}}\"/pause 300/textAboveHead NaveenFaycombeSereneVMV \"{{i18n: InnHelia2HNaveen2HOverheadNaveen05}}\"/pause 500/
+		speak AsterPellegrinVMV \"{{i18n: InnHelia2HNaveen2HAster02}}\"/pause 100/speak MariamFortinVMV \"{{i18n: InnHelia2HNaveen2HMariam02}}\"/pause 300/
+		speak HeliaDiamantiVMV \"{{i18n: InnHelia2HNaveen2HHelia09}}\"/pause 300/speak MariamFortinVMV \"{{i18n: InnHelia2HNaveen2HMariam03}}\"/pause 300/
+		advancedMove HeliaDiamantiVMV false 0 4 -3 0 3 5000/pause 300/speak HeliaDiamantiVMV \"{{i18n: InnHelia2HNaveen2HHelia10}}\"/pause 300/animate MoiraDuboisVMV false false 400 17 18 17 18 17 18 17 18/
+		advancedMove MariamFortinVMV false 0 2 1 0 0 2/advancedMove HeliaDiamantiVMV false 0 2 1 0 0 2/
+		textAboveHead MariamFortinVMV \"{{i18n: InnHelia2HNaveen2HOverheadMariam04}}\"/pause 100/textAboveHead HeliaDiamantiVMV \"{{i18n: InnHelia2HNaveen2HOverheadHelia03}}\"/pause 1000/
+		
+		
+end",
+
+
+      },
+    },
+    //Second Floor
+    {
+      "LogName": "Events Load",
+      "Action": "Load",
+      "Target": "Data/Events/Lumisteria.MtVapius_InnSecondFloor",
+      "FromFile": "assets/events/BlankEvent.json"
+    },
+    {
+      "LogName": "Events Edit",
+      "Action": "EditData",
+      "Target": "Data/Events/Lumisteria.MtVapius_InnSecondFloor",
+      "Entries": {
+        "Lumisteria.MtVapius_InnSecondFloor_bed/e Lumisteria.MtVapius_Inn_OdalisArrival": "SettlingIn/13 34/farmer 13 36 0 CelestineDuboisVMV 2 33 1 MoiraDuboisVMV 10 33 2/addTemporaryActor OdalisDuboisVelezVMV 16 32 4 30 2 true Odalis/
+		pause 1600/move farmer 0 -1 0/pause 500/textAboveHead MoiraDuboisVMV \"{{i18n: InnSecondFloorBedMoiraOverhead01}}\"/doAction 10 34/pause 100/emote farmer 8/pause 100/move farmer -3 0 0/move MoiraDuboisVMV 0 -2 2/move MoiraDuboisVMV -7 0 1/pause 100/
+		move farmer 0 -4 0/move farmer -5 0 0/viewport move -2 0 3000/pause 600/faceDirection farmer 2/emote farmer 8/speak CelestineDuboisVMV \"{{i18n: InnSecondFloorBedCelestine01}}\"/
+		quickQuestion {{i18n: InnSecondFloorBedMessage01}}#{{i18n: InnSecondFloorBedAnswer01}}#{{i18n: InnSecondFloorBedAnswer02}}#{{i18n: InnSecondFloorBedAnswer03}}#{{i18n: InnSecondFloorBedAnswer04}}
+		(break)emote MoiraDuboisVMV 32
+		(break)emote OdalisDuboisVelezVMV 32\\pause 200
+		(break)pause 200\\speak OdalisDuboisVelezVMV \"{{i18n: InnSecondFloorBedBranch03Odalis01}}\"\\emote farmer 8\\emote MoiraDuboisVMV 32
+		(break)emote OdalisDuboisVelezVMV 28\\textAboveHead MoiraDuboisVMV \"{{i18n: InnSecondFloorBedBranch04MoïraOverhead01}}\"\\pause 200/pause 500/
+		speak CelestineDuboisVMV \"{{i18n: InnSecondFloorBedCelestine02}}\"/speak MoiraDuboisVMV \"{{i18n: InnSecondFloorBedMoira01}}\"/
+		pause 500/speak OdalisDuboisVelezVMV \"{{i18n: InnSecondFloorBedOdalis01}}\"/pause 300/emote CelestineDuboisVMV 32/pause 600/
+		end",
       },
     },
     //Cliff
@@ -352,7 +696,40 @@ end",
 		quickQuestion {{i18n: Lake_Stone_Message03}}#{{i18n: Lake_Stone_Option01}}#{{i18n: Lake_Stone_Option02}}(break)pause 200\\addMailReceived Lumisteria.MtVapius_StoneRemoved_Flag\\message \"{{i18n: Lake_Stone_Message04}}\"(break)pause 200\\message \"{{i18n: Lake_Stone_Message05}}\"/
 		end",
 
-
+		"Lumisteria.MtVapius_Lake_MariamPatrol/f MariamFortinVMV 750/t 2100 2530/G PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_ForestCaveLong/c 1": 
+		"none/22 14/farmer 6 16 1 MariamFortinVMV 22 15 2/skippable/addLantern 735 21 9 2/move farmer 0 1 1/move farmer 1 0 1/pause 200/
+		emote MariamFortinVMV 8/pause 200/move farmer 9 0 1/speak MariamFortinVMV \"{{i18n: LakeMariamPatrolMariam01}}\"/pause 300/
+		speak MariamFortinVMV \"{{i18n: LakeMariamPatrolMariam02}}\"/pause 300/speak MariamFortinVMV \"{{i18n: LakeMariamPatrolMariam03}}\"/
+		textAboveHead MariamFortinVMV \"{{i18n: LakeMariamPatrolHOverheadMariam01}}\"/animate MariamFortinVMV false false 250 16 17 16 17 16 17 16/pause 1000/move MariamFortinVMV 0 -5 0/pause 100/warp MariamFortinVMV -1000 -1000/
+		end",
+		
+      },
+    },
+    //Junimo Clearing
+    {
+      "LogName": "Events Load",
+      "Action": "Load",
+      "Target": "Data/Events/Lumisteria.MtVapius_ForestJunimoClearing",
+      "FromFile": "assets/events/BlankEvent.json"
+    },
+    {
+      "LogName": "Events Edit",
+      "Action": "EditData",
+      "Target": "Data/Events/Lumisteria.MtVapius_ForestJunimoClearing",
+      "Entries": {
+        "Lumisteria.MtVapius_JunimoClearing_Mariam4H/A Lumisteria.MtVapius.JunimoClearingVisited/G SYNCED_RANDOM day lumisteria.chanceevent02 0.3/f MariamFortinVMV 1000/t 1900 2530":
+		"junimoStarSong/19 19/farmer 21 17 2 MariamFortinVMV 8 25 1/friendship MariamFortinVMV 20/skippable/addLantern 735 7 26 1/
+		animate MariamFortinVMV false false 28000 20/viewport move -1 1 7000/pause 1000/speed farmer 2/move farmer -3 0 3/move farmer 0 5 3/move farmer -5 0 3/move farmer 0 2 3/pause 3000/
+		speak MariamFortinVMV \"{{i18n: JunimoClearingMariam4HMariam01}}\"/pause 300/speak MariamFortinVMV \"{{i18n: JunimoClearingMariam4HMariam02}}\"/
+		pause 200/speak MariamFortinVMV \"{{i18n: JunimoClearingMariam4HMariam03}}\"/
+		quickQuestion {{i18n: JunimoClearingQuestion01}}#{{i18n: JunimoClearingAnswer01}}#{{i18n: JunimoClearingAnswer02}}#{{i18n: JunimoClearingAnswer03}}
+		(break)speak MariamFortinVMV \"{{i18n: JunimoClearingMariam4HBranchJunimoMariam01}}\"\\pause 200\\emote MariamFortinVMV 16\\pause 400\\speak MariamFortinVMV \"{{i18n: JunimoClearingMariam4HBranchJunimoMariam02}}\"
+		(break)speak MariamFortinVMV \"{{i18n: JunimoClearingMariam4HBranchMedidatingMariam01}}\"\\pause 400\\speak MariamFortinVMV \"{{i18n: JunimoClearingMariam4HBranchMedidatingMariam02}}\"
+		(break)speak MariamFortinVMV \"{{i18n: JunimoClearingMariam4HBranchSilentMariam01}}\"\\pause 400/pause 200/
+		speak MariamFortinVMV \"{{i18n: JunimoClearingMariam4HMariam04}}\"/pause 300/speak MariamFortinVMV \"{{i18n: JunimoClearingMariam4HMariam05}}\"/pause 300/animate MariamFortinVMV false false 10000 20/
+		emote MariamFortinVMV 56/pause 300/speak MariamFortinVMV \"{{i18n: JunimoClearingMariam4HMariam06}}\"/pause 300/textAboveHead MariamFortinVMV \"{{i18n: JunimoClearingMariam4HOverheadMariam01}}\"/pause 1000/
+		
+		end",
       },
     },
     //Amber Mine
@@ -466,15 +843,17 @@ end dialogue Dwarf \"{{i18n: MineCloudFeatherGift_Dwarf03}}\"",
       "Target": "Data/Events/Saloon",
       "Entries": {
 		  
-  "Lumisteria.MtVapius_Saloon_PamMissing/e Lumisteria.MtVapius_PamVisiting/G SYNCED_RANDOM day lumisteria.chanceevent01 0.5/A Lumisteria.MtVapius.PamVisit/p Gus": "jaunty/10 21/farmer -100 -100 0 Gus 10 21 2/skippable/pause 200/emote Gus 28/pause 500/playSound doorClose/warp farmer 14 24/pause 500/faceDirection Gus 1 true/move farmer 0 -3 3/
-  speak Gus \"{{i18n: SaloonPamMissingGus01}}\"/pause 500/faceDirection Gus 2/move farmer -3 0 2/pause 800/faceDirection farmer 3/pause 400/emote farmer 8/pause 700/speak Gus \"{{i18n: SaloonPamMissingGus02}}\"/
-  emote farmer 40/pause 1000/textAboveHead Gus \"{{i18n: SaloonPamMissingOverheadGus01}}\"/pause 1000/textAboveHead Gus \"{{i18n: SaloonPamMissingOverheadGus02}}\"/speak Gus \"{{i18n: SaloonPamMissingGus03}}\"/
-  /quickQuestion {{i18n: SaloonPamMissingQuestion}}#{{i18n: SaloonPamMissingAnswer01}}#{{i18n: SaloonPamMissingAnswer02}}#{{i18n: SaloonPamMissingAnswer03}}(break)emote Gus 40\\pause 500\\speak Gus \"{{i18n: SaloonPamMissingAnswer01Gus01}}\"\\friendship Gus 5\\emote farmer 40\\pause 500\\speak Gus \"{{i18n: SaloonPamMissingAnswer01Gus02}}\"(break)emote Gus 12\\pause 400\\speak Gus \"{{i18n: SaloonPamMissingAnswer02Gus01}}\"\\friendship Gus -50\\playSound doorClose\\end warpOut(break)emote Gus 40\\pause 500\\speak Gus \"{{i18n: SaloonPamMissingAnswer03Gus01}}\"\\pause 500\\speak Gus \"{{i18n: SaloonPamMissingAnswer03Gus02}}\"/
-end",
+  "Lumisteria.MtVapius_Saloon_PamMissing/e Lumisteria.MtVapius_PamVisiting/G SYNCED_RANDOM day lumisteria.chanceevent01 0.5/A Lumisteria.MtVapius.PamVisit/p Gus": 
+	"jaunty/10 21/farmer -100 -100 0 Gus 10 21 2/skippable/pause 200/emote Gus 28/pause 500/playSound doorClose/warp farmer 14 24/pause 500/faceDirection Gus 1 true/move farmer 0 -3 3/
+	speak Gus \"{{i18n: SaloonPamMissingGus01}}\"/pause 500/faceDirection Gus 2/move farmer -3 0 2/pause 800/faceDirection farmer 3/pause 400/emote farmer 8/pause 700/speak Gus \"{{i18n: SaloonPamMissingGus02}}\"/
+	emote farmer 40/pause 1000/textAboveHead Gus \"{{i18n: SaloonPamMissingOverheadGus01}}\"/pause 1000/textAboveHead Gus \"{{i18n: SaloonPamMissingOverheadGus02}}\"/speak Gus \"{{i18n: SaloonPamMissingGus03}}\"/
+	/quickQuestion {{i18n: SaloonPamMissingQuestion}}#{{i18n: SaloonPamMissingAnswer01}}#{{i18n: SaloonPamMissingAnswer02}}#{{i18n: SaloonPamMissingAnswer03}}(break)emote Gus 40\\pause 500\\speak Gus \"{{i18n: SaloonPamMissingAnswer01Gus01}}\"\\friendship Gus 5\\emote farmer 40\\pause 500\\speak Gus \"{{i18n: SaloonPamMissingAnswer01Gus02}}\"(break)emote Gus 12\\pause 400\\speak Gus \"{{i18n: SaloonPamMissingAnswer02Gus01}}\"\\friendship Gus -50\\playSound doorClose\\end warpOut(break)emote Gus 40\\pause 500\\speak Gus \"{{i18n: SaloonPamMissingAnswer03Gus01}}\"\\pause 500\\speak Gus \"{{i18n: SaloonPamMissingAnswer03Gus02}}\"/
+	end",
 
 
-  "Lumisteria.MtVapius_Saloon_ChloeHelpGus/e Lumisteria.MtVapius_Saloon_PamMissing/G SYNCED_RANDOM day lumisteria.chanceevent02 0.5/p Gus/t 1400 2200": "playful/11 20/farmer -100 -100 0 ChloeRosierLindVMV 14 24 0 Gus 14 18 1 Emily 15 18 3/skippable/playSound doorClose/move ChloeRosierLindVMV 0 -3 3/faceDirection Emily 2 true/
-  advancedMove ChloeRosierLindVMV false -3 0/pause 500/faceDirection Gus 2 true/pause 500/textAboveHead Emily \"{{i18n: SaloonGusBrainstormingOverheadEmily01}}\"/faceDirection Emily 3 true/speed Emily 1/advancedMove Emily true 3 0 -3 0/
+  "Lumisteria.MtVapius_Saloon_ChloeHelpGus/e Lumisteria.MtVapius_Saloon_PamMissing/G SYNCED_RANDOM day lumisteria.chanceevent02 0.5/p Gus/t 1400 2200": 
+  "playful/11 20/farmer -100 -100 0 ChloeRosierLindVMV 14 24 0 Gus 14 18 1 Emily 15 18 3 Nova.Dylan? 3 19 2/skippable/playSound doorClose/move ChloeRosierLindVMV 0 -3 3/faceDirection Emily 2 true/faceDirection Nova.Dylan? 1 true/
+  advancedMove ChloeRosierLindVMV false -3 0/pause 500/faceDirection Gus 2 true/pause 500/textAboveHead Emily \"{{i18n: SaloonGusBrainstormingOverheadEmily01}}\"/faceDirection Emily 3 true/speed Emily 1/advancedMove Emily true 3 0 -3 0/faceDirection Nova.Dylan? 2 true/
   textAboveHead ChloeRosierLindVMV \"{{i18n: SaloonGusBrainstormingOverheadChloe01}}\"/pause 2000/emote Gus 16/speed Gus 4/advancedMove Gus false 0 -1 -7 0 0 4 2 0/pause 500/textAboveHead Gus \"{{i18n: SaloonGusBrainstormingOverheadGus01}}\"/
   faceDirection ChloeRosierLindVMV 2/advancedMove ChloeRosierLindVMV false -1 0/pause 1000/faceDirection Gus 1/faceDirection ChloeRosierLindVMV 3/
   speak Gus \"{{i18n: SaloonGusBrainstormingGus01}}\"/pause 1500/emote ChloeRosierLindVMV 32/speak ChloeRosierLindVMV \"{{i18n: SaloonGusBrainstormingChloe01}}\"/pause 500/
@@ -488,6 +867,107 @@ end",
   textAboveHead Gus \"{{i18n: SaloonGusBrainstormingOverheadGus04}}\"/speed Gus 3/advancedMove Gus false -3 0 0 -3 -2 0 0 -2/pause 1500/textAboveHead Gus \"{{i18n: SaloonGusBrainstormingOverheadGus05}}\"/speed Emily 3/advancedMove Emily false -7 0/
   textAboveHead ChloeRosierLindVMV \"{{i18n: SaloonGusBrainstormingOverheadChloe03}}\"/pause 1500/
 end",
+      },
+    },
+
+    {
+      "LogName": "Events Edit",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+		  
+  "Lumisteria.MtVapius_Town_HeliaVisitsHarvey/e Lumisteria.MtVapius_Inn_Helia2HCelestine2H/G SYNCED_RANDOM day lumisteria.chanceevent01 0.2/t 1000 1500": 
+  "summer2/36 59/farmer -1001 -1000 0 HeliaDiamantiVMV 36 56 0 Harvey -1000 -1001 2 Gus -1001 -1001 2 Pam -1001 -1002 1 Nova.Eli? -1002 -1002 3/skippable/pause 700/
+playSound axe/pause 100/playSound stoneStep/pause 200/playSound axe/move HeliaDiamantiVMV 0 2 0/pause 500/playSound Cowboy_Footstep/pause 200/playSound doorOpen/warp Harvey 36 56/
+textAboveHead Harvey \"{{i18n: TownHeliaVisitsHarveyOverheadHarvey01}}\"/pause 400/emote HeliaDiamantiVMV 32/pause 200/speak Harvey \"{{i18n: TownHeliaVisitsHarveyHarvey01}}\"/pause 300/
+speak HeliaDiamantiVMV \"{{i18n: TownHeliaVisitsHarveyHelia01}}\"/pause 300/playSound axe/addObject 35 57 342 1/pause 100/playSound axe/addObject 35 58 342 1/pause 200/playSound axe/addObject 37 57 342 1/
+speak Harvey \"{{i18n: TownHeliaVisitsHarveyHarvey02}}\"/pause 300/removeObject 35 57/removeObject 35 58/removeObject 37 57/playSound give_gift/
+speak HeliaDiamantiVMV \"{{i18n: TownHeliaVisitsHarveyHelia02}}\"/pause 300/faceDirection Harvey 0/textAboveHead Harvey \"{{i18n: TownHeliaVisitsHarveyOverheadHarvey02}}\"/pause 500/faceDirection Harvey 2/pause 1200/move HeliaDiamantiVMV 0 3 0/move Harvey 0 3 2/
+globalFade 0.007 true/viewport -2000 -1000/
+pause 1000/changeLocation Saloon/addObject 10 21 253 2/addObject 11 21 253 2/warp farmer 17 20/warp Harvey 12 22/warp Gus 17 18/warp HeliaDiamantiVMV 9 21/warp Pam 7 18/warp Nova.Eli? 20 18/pause 500/
+viewport 14 20/faceDirection HeliaDiamantiVMV 1/faceDirection Harvey 3/pause 200/
+speak Harvey \"{{i18n: TownHeliaVisitsHarveyHarvey03}}\"/pause 100/speak HeliaDiamantiVMV \"{{i18n: TownHeliaVisitsHarveyHelia03}}\"/pause 400/
+speak Harvey \"{{i18n: TownHeliaVisitsHarveyHarvey04}}\"/pause 200/speak HeliaDiamantiVMV \"{{i18n: TownHeliaVisitsHarveyHelia04}}\"/pause 200/
+emote Harvey 40/pause 300/emote Harvey 28/speak Harvey \"{{i18n: TownHeliaVisitsHarveyHarvey05}}\"/pause 100/speak HeliaDiamantiVMV \"{{i18n: TownHeliaVisitsHarveyHelia05}}\"/pause 300/
+speak Harvey \"{{i18n: TownHeliaVisitsHarveyHarvey06}}\"/emote HeliaDiamantiVMV 40/pause 300/
+speak HeliaDiamantiVMV \"{{i18n: TownHeliaVisitsHarveyHelia06}}\"/pause 300/textAboveHead Harvey \"{{i18n: TownHeliaVisitsHarveyOverheadHarvey03}}\"/
+pause 600/speak Harvey \"{{i18n: TownHeliaVisitsHarveyHarvey07}}\"/pause 100/speak HeliaDiamantiVMV \"{{i18n: TownHeliaVisitsHarveyHelia07}}\"/pause 300/
+pause 600/speak Harvey \"{{i18n: TownHeliaVisitsHarveyHarvey08}}\"/pause 100/speak HeliaDiamantiVMV \"{{i18n: TownHeliaVisitsHarveyHelia08}}\"/pause 300/
+pause 600/speak Harvey \"{{i18n: TownHeliaVisitsHarveyHarvey09}}\"/pause 100/jump HeliaDiamantiVMV 3/emote HeliaDiamantiVMV 16/pause 300/textAboveHead HeliaDiamantiVMV \"{{i18n: TownHeliaVisitsHarveyOverheadHelia01}}\"/pause 400/
+speak Harvey \"{{i18n: TownHeliaVisitsHarveyHarvey10}}\"/pause 300/textAboveHead HeliaDiamantiVMV \"{{i18n: TownHeliaVisitsHarveyOverheadHelia02}}\"/pause 400/
+speak HeliaDiamantiVMV \"{{i18n: TownHeliaVisitsHarveyHelia09}}\"/pause 200/emote Harvey 16/pause 300/speak Harvey \"{{i18n: TownHeliaVisitsHarveyHarvey11}}\"/pause 100/
+speak Harvey \"{{i18n: TownHeliaVisitsHarveyHarvey12}}\"/pause 100/emote HeliaDiamantiVMV 32/pause 500/
+speak HeliaDiamantiVMV \"{{i18n: TownHeliaVisitsHarveyHelia10}}\"/pause 200/speak Harvey \"{{i18n: TownHeliaVisitsHarveyHarvey13}}\"/pause 600/
+
+  end",
+
+
+      },
+    },
+    {
+      "LogName": "Events Edit",
+      "Action": "EditData",
+      "Target": "Data/Events/SeedShop",
+      "Entries": {
+		  
+  "Lumisteria.MtVapius_SeedShop_Maddy2H/!d Thu/t 1000 1500/f MaddyPellegrinVMV 500": 
+  "50s/7 25/farmer -1001 -1000 2 MaddyPellegrinVMV 6 24 0 Caroline 7 23 3 Sterling? 2 25 2 Gus 10 20 1 George -1001 -1002 0 Evelyn -1002 -1002 2/skippable/
+  addObject 7 24 923 0/addObject 7 27 924 0/pause 2000/advancedMove Gus true 4 0 -4 0/
+  advancedMove Sterling? true 0 -5 0 5/speak MaddyPellegrinVMV \"{{i18n: SeedShopMaddy2HMaddy01}}\"/pause 300/removeObject 7 24/playSound pickUpItem/
+  speak Caroline \"{{i18n: SeedShopMaddy2HCaroline01}}\"/pause 200/
+  speak MaddyPellegrinVMV \"{{i18n: SeedShopMaddy2HMaddy02}}\"/pause 300/
+  speak Caroline \"{{i18n: SeedShopMaddy2HCaroline02}}\"/pause 200/stopAdvancedMoves/
+  textAboveHead MaddyPellegrinVMV \"{{i18n: SeedShopMaddy2HOverheadMaddy01}}\"/move MaddyPellegrinVMV 0 3 2/removeObject 7 27/playSound pickUpItem/move MaddyPellegrinVMV 0 1 2/stopMusic/
+globalFade 0.007 true/viewport -2000 -1000/
+pause 1000/changeLocation JoshHouse/warp Evelyn 3 19/warp George 15 21/warp MaddyPellegrinVMV 9 23/faceDirection MaddyPellegrinVMV 0/warp Caroline -1000 -1000/warp Gus -1001 -1000/warp Sterling? -1000 -1001/pause 500/
+viewport 8 16/playMusic jaunty/
+
+  speak MaddyPellegrinVMV \"{{i18n: SeedShopMaddy2HMaddy03}}\"/pause 200/speak Evelyn \"{{i18n: SeedShopMaddy2HEvelyn01}}\"/pause 400/
+  move MaddyPellegrinVMV 0 -4 3/facedirection Evelyn 1/move MaddyPellegrinVMV -2 0 3/addObject 6 18 924 0/playSound throwDownITem/move MaddyPellegrinVMV -3 0 3/
+  pause 200/speak Evelyn \"{{i18n: SeedShopMaddy2HEvelyn02}}\"/pause 400/
+  speak MaddyPellegrinVMV \"{{i18n: SeedShopMaddy2HMaddy04}}\"/pause 200/speak Evelyn \"{{i18n: SeedShopMaddy2HEvelyn03}}\"/pause 300/
+  speak MaddyPellegrinVMV \"{{i18n: SeedShopMaddy2HMaddy05}}\"/pause 500/speak Evelyn \"{{i18n: SeedShopMaddy2HEvelyn04}}\"/pause 400/
+  textAboveHead MaddyPellegrinVMV \"{{i18n: SeedShopMaddy2HOverheadMaddy02}}\"/pause 700/playSound give_gift/pause 200/speak Evelyn \"{{i18n: SeedShopMaddy2HEvelyn05}}\"/pause 400/
+  speak MaddyPellegrinVMV \"{{i18n: SeedShopMaddy2HMaddy06}}\"/pause 500/speak Evelyn \"{{i18n: SeedShopMaddy2HEvelyn06}}\"/pause 200/
+  move Evelyn 0 -2 0/pause 200/playSound doorOpen/pause 200/playSound clank/pause 100/playSound doorClose/
+  textAboveHead Evelyn \"{{i18n: SeedShopMaddy2HOverheadEvelyn01}}\"/pause 500/move Evelyn 0 2 1/pause 200/
+  playSound give_gift/speak Evelyn \"{{i18n: SeedShopMaddy2HEvelyn07}}\"/pause 200/
+  textAboveHead MaddyPellegrinVMV \"{{i18n: SeedShopMaddy2HOverheadMaddy03}}\"/pause 400/move MaddyPellegrinVMV 3 0 1/
+  globalFade 0.007 true/viewport -2000 -1000/pause 400/changeLocation Town/warp Evelyn -1003 -1000/
+  warp George -1003 -1001/warp MaddyPellegrinVMV -1003 -1002/warp farmer 47 61/faceDirection MaddyPellegrinVMV 2/pause 500/
+  viewport 50 64/advancedmove farmer false 0 3 2 1000/pause 200/playSound doorOpen/pause 100/warp MaddyPellegrinVMV 57 64/advancedmove MaddyPellegrinVMV false -8 0 2 2000/advancedmove farmer false 0 3 2 2000/
+  pause 3000/speak MaddyPellegrinVMV \"{{i18n: SeedShopMaddy2HMaddy07}}\"/pause 300/emote farmer 40/advancedmove farmer false 0 3 2 2000/pause 1000/advancedmove MaddyPellegrinVMV false 0 3 2 2000/pause 2000/
+  speak MaddyPellegrinVMV \"{{i18n: SeedShopMaddy2HMaddy08}}\"/advancedmove MaddyPellegrinVMV false 0 3 2 2000/pause 1200/
+  
+  end",
+  
+  
+//speak Sterling? \"{{i18n: SeedShopMaddy2HSterling01}}\"/pause 400/
+//speak Sterling? \"{{i18n: SeedShopMaddy2HSterling02}}\"/pause 400/
+      },
+    },
+
+    {
+      "LogName": "Events Edit",
+      "Action": "EditData",
+      "Target": "Data/Events/SamHouse",
+      "Entries": {
+		  
+  "Lumisteria.MtVapius_SamHouse_JodiVacationStart/e Lumisteria.MtVapius_Inn_OdalisArrival/y 2/f Jodi 1000/f Kent 250/G FALSE": 
+  "50s/4 18/farmer -1001 -1000 2 Jodi -1000 -1000 0 Kent 3 17 1 Vincent 4 14 2/skippable/pause 600/playSound doorOpen/
+  animate Vincent false false 2000 23 22 23 22 23 22 23 23 22 22 23 22 23 22/
+  warp Jodi 4 22/move Jodi 0 -2 0/pause 600/emote Jodi 16/pause 300/move Jodi 0 -2 0/speak Jodi \"{{i18n: SamHouseJodiVacationJodi01}}\"/pause 200/
+  speak Kent \"{{i18n: SamHouseJodiVacationKent01}}\"/pause 200/textAboveHead Kent \"{{i18n: SamHouseJodiVacationOverheadKent01}}\"/
+  pause 1000/textAboveHead Jodi \"{{i18n: SamHouseJodiVacationOverheadJodi01}}\"/pause 100/
+  speak Kent \"{{i18n: SamHouseJodiVacationKent02}}\"/pause 300/speak Jodi \"{{i18n: SamHouseJodiVacationJodi02}}\"/pause 200/
+  speak Kent \"{{i18n: SamHouseJodiVacationKent03}}\"/pause 200/speak Kent \"{{i18n: SamHouseJodiVacationKent04}}\"/pause 300/speak Jodi \"{{i18n: SamHouseJodiVacationJodi03}}\"/pause 200/
+  jump Vincent 6/speed Vincent 6/move Vincent 0 3 2/jump Vincent 4/pause 100/speak Vincent \"{{i18n: SamHouseJodiVacationVincent01}}\"/pause 200/
+  emote Kent 28/emote Jodi 28/faceDirection Jodi 3/positionOffset Kent 10 0/pause 300/faceDirection Jodi 0/pause 100/positionOffset Jodi 0 -10/
+  speak Kent \"{{i18n: SamHouseJodiVacationKent05}}\"/pause 400/faceDirection Vincent 3/speak Vincent \"{{i18n: SamHouseJodiVacationVincent02}}\"/globalFade 0.003 true/pause 200/
+  textAboveHead Kent \"{{i18n: SamHouseJodiVacationOverheadKent02}}\"/emote Jodi 32/pause 600/
+  
+  end",
+  
       },
     },
 	

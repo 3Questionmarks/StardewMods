@@ -1,5 +1,5 @@
 {
-    "Format": "2.0.0",
+    "Format": "2.4.0",
     "ConfigSchema": {
         "Sewer Steam Overlay": {
             "AllowValues": "Default, Less",
@@ -13,6 +13,25 @@
         }
     },
     "Changes": [
+	
+	   {
+            "Action": "Include",
+            "FromFile": "assets/code/Events.json",
+            "When": {
+                "Relationship:Krobus": "Friendly"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/code/mapedits_compat.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/code/newgarbage.json"
+        },
+		
+		
+		
         {
             "Action": "EditMap",
             "Target": "Maps/Sewer",
@@ -46,6 +65,7 @@
             "Target": "Data/Events/Aimon111.MoreLivelySewerOverhaul_Custom_Aimon_SewerSecret",
             "FromFile": "assets/code/blank.json"
         },
+		
         {
             "LogName": "Add Blacksmith for events",
             "Action": "Load",
@@ -243,20 +263,6 @@
             },
             "Update": "OnTimeChange"
         },
-        {
-            "Action": "Include",
-            "FromFile": "assets/code/Events.json",
-            "When": {
-                "Relationship:Krobus": "Friendly"
-            }
-        },
-        {
-            "Action": "Include",
-            "FromFile": "assets/code/mapedits_compat.json"
-        },
-        {
-            "Action": "Include",
-            "FromFile": "assets/code/newgarbage.json"
-        }
+     
     ]
 }

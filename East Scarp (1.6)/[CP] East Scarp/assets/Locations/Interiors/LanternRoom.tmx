@@ -2,7 +2,7 @@
 <map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="11" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="16">
  <properties>
    <property name="LocationContext" value="Lemurkat_EastScarp"/>
-  <property name="Warp" value="10 11 Custom_ESLighthouse 18 4"/>
+  <property name="Warp" value="10 11 EastScarp_Lighthouse 18 4"/>
  </properties>
  <tileset firstgid="1" name="Lighthouse Tiles New" tilewidth="16" tileheight="16" tilecount="270" columns="10">
   <image source="Lighthouse Tiles New.png" width="160" height="432"/>
@@ -248,7 +248,7 @@
   </object>
   <object id="2" name="TileData" x="16" y="96" width="16" height="16">
    <properties>
-    <property name="Action" value="Warp 18 3 Custom_ESLighthouse"/>
+    <property name="Action" value="Warp 18 4 EastScarp_Lighthouse"/>
    </properties>
   </object>
   <object id="3" name="TileData" x="80" y="176" width="16" height="16">

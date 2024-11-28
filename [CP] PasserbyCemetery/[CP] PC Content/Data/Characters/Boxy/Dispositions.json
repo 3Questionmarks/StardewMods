@@ -3,71 +3,74 @@
 /************************************************
 Dispositions 
 ************************************************/
-   {
+  
+ {
 "LogName": "Boxy Dispositions",
 "Action": "EditData",
 "Target": "Data/Characters",
 "Entries": {
 "FC.Boxy": {
+///Basic Info
 "DisplayName":"{{i18n:FC.Boxy}}",
-"Breather": false,
 "Language":"Default",
 "Gender":"Male",
-"Age":"Adult",
+"Age":"Child",
 "Manner":"Rude",
-"SocialAnxiety":"Shy",
+"SociBoxyxiety":"shy",
 "Optimism":"Negative",
-"BirthSeason":"fall",
-"Birthday":"16",
+"BirthSeason":"Fall",
+"BirthDay":16,
 "HomeRegion":"Town",
 "IsDarkSkinned":false,
+///Social Features
 "CanSocialize":true,
 "CanBeRomanced":false,
 "CanReceiveGifts":true,
 "CanCommentOnPurchasedShopItems":false,
 "CanGreetNearbyCharacters":false,
-"CanVisitIsland":true,
+"CanVisitIsland": false,
 "LoveInterest":null,
-"Calendar":"HiddenUntilMet",
-"SocialTab":"HiddenUntilMet",
-"SocialTabIconSourceRect":null,
+"Calendar": "HiddenUntilMet",
+"SocialTab":"UnknownUntilMet",
 "SpouseAdopts":null,
 "SpouseWantsChildren":null,
-"SpouseGiftJealousy":false,
-"IntroductionsQuest":"{{ExcludePerfection}}",
-"PerfectionScore":"{{ExcludePerfection}}",
-"ItemDeliveryQuests":false,
-"EndSlideShow":"TrailingGroup",
-"DumpsterDiveEmote":"28",
-"DumpsterDiveFriendshipEffect":"0",
-"FlowerDanceCanDance":false,
-"KissSpriteIndex": 28,
-"HiddenProfileEmoteSound": null,
-"HiddenProfileEmoteDuration": -1,
-"HiddenProfileEmoteStartFrame": 37,
-"HiddenProfileEmoteFrameCount": 3,
-"HiddenProfileEmoteFrameDuration": 360.0,
-"ShakePortraits": [
-   7
-],
+"SpouseGiftJealousy":null,
+"SpouseGiftJealousyFriendshipChange":-1,
 "SpouseRoom": {
 "MapAsset": null,
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 6,
+"Height": 9
+}
 },
-"SpousePatio":{
+"SpousePatio": {
 "MapAsset": null,
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 4,
+"Height": 4
+}
 },
-
-"SpouseFloors": [ 
-    ],
+"SpouseFloors": [],
 "SpouseWallpapers": [],
-"FriendsAndFamily": null,
-"WinterStarGifts": [
-],
-"WinterStarParticipant": false,
-"UnlockConditions": null,
-"SpawnIfMissing": true,
-"EmoteOffset": { "X": 0, "Y": 45 },
-"MugShotSourceRect": { "X": 0, "Y": 144, "Width": 16, "Height": 16 },
+"IntroductionsQuest":"{{IncludeIntro}}",
+"ItemDeliveryQuests":false,
+"PerfectionScore":"{{IncludePerfection}}",
+"EndSlideShow":"TrailingGroup",
+"FriendsAndFamily":null,
+///Dumpster Diving
+"DumpsterDiveEmote":20,
+"DumpsterDiveFriendshipEffect":2,
+///Festivals
+"FlowerDanceCanDance":false,
+"WinterStarParticipant":false,
+"WinterStarGifts": [],
+//Spawn Rules
+"UnlockConditions":null,
+"SpawnIfMissing":true,
 "Home": [
 {
 "Id": "Default",
@@ -90,8 +93,10 @@ Dispositions
 "Direction": "right"
 }
 ],
+///Appearance & Sprites
+"TextureName":null,
 "Appearance": [
-  {
+{
 "ID": "{{ModID}}.Boxy_spring",
 "Season": "spring",
 "Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Boxy/FC.Boxy_spring.png}}",
@@ -116,29 +121,97 @@ Dispositions
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Boxy/FC.Boxy_winter.png}}"
 },
 {
-"ID": "{{ModID}}.Boxy_rainy",
-"Condition": "WEATHER Target Rain",
-"Portrait": "{{InternalAssetKey:Assets/Npcs/Portraits/FC.Boxy/FC.Boxy_rainy.png}}",
-"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Boxy/FC.Boxy_rainy.png}}",
+"ID": "{{ModID}}.Boxy_SwimWear",
+"IsIslandAttire": true,
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Boxy/FC.Boxy_SwimWear.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Boxy/FC.Boxy_SwimWear.png}}",
 "Precedence": -10,
 },
 {
-"ID": "{{ModID}}.BoxyAssetFlowerFestival",
+"ID": "{{ModID}}.Boxy_eggfestival",
+"Condition": "EVENT_ID festival_spring13",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Boxy/Festivals/egg festival.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Boxy/Festivals/egg festival.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Boxy_flowerfestival",
 "Condition": "EVENT_ID festival_spring24",
 "Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Boxy/Festivals/flower dance.png}}",
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Boxy/Festivals/flower dance.png}}",
 "Precedence": -10,
 },
 {
-"ID": "{{ModID}}.BoxyAssetSpiritseve",
-"Condition": "EVENT_ID festival_fall3",
+"ID": "{{ModID}}.Boxy_luaufestival",
+"Condition": "EVENT_ID festival_summer11",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Boxy/Festivals/luau.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Boxy/Festivals/luau.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Boxy_jellyfestival",
+"Condition": "EVENT_ID festival_summer28",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Boxy/Festivals/dance of the moonlight jellies.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Boxy/Festivals/dance of the moonlight jellies.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Boxy_Fairfestival",
+"Condition": "EVENT_ID festival_fall16",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Boxy/Festivals/stardew valley fair.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Boxy/Festivals/stardew valley fair.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Boxy_spiritseve",
+"Condition": "EVENT_ID festival_fall27",
 "Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Boxy/Festivals/spirit's eve.png}}",
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Boxy/Festivals/spirit's eve.png}}",
 "Precedence": -10,
 },
-],
-}
-}
+{
+"ID": "{{ModID}}.Boxy_icefestival",
+"Condition": "EVENT_ID festival_winter8",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Boxy/Festivals/festival of ice.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Boxy/Festivals/festival of ice.png}}",
+"Precedence": -10,
 },
+{
+"ID": "{{ModID}}.Boxy_winterstarfestival",
+"Condition": "EVENT_ID festival_winter25",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Boxy/Festivals/feast of the winter star.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Boxy/Festivals/feast of the winter star.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Boxy_rainy",
+"Condition": "WEATHER Target Rain",
+"Portrait": "{{InternalAssetKey:Assets/Npcs/Portraits/FC.Boxy/FC.Boxy_rainy.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Boxy/FC.Boxy_rainy.png}}",
+"Precedence": -10,
+},
+],
+"MugShotSourceRect": { "X": 2, "Y":9, "Width": 16, "Height": 24 },
+"Size": { "X": 16, "Y": 32 },
+"Breather":false,
+"BreathChestRect":null,
+"BreathChestPosition":null,
+"Shadow":{ "Visible": true },
+"EmoteOffset": { "X": 0, "Y": 45 },
+"ShakePortraits":[],
+"KissSpriteIndex":"28",
+"KissSpriteFacingDirection":null,
+///Hidden Gift Log Emote
+"HiddenProfileEmoteSound":null,
+"HiddenProfileEmoteDuration":-1,
+"HiddenProfileEmoteStartFrame":37,
+"HiddenProfileEmoteFrameCount":3,
+"HiddenProfileEmoteFrameDuration":200.0,
+///Advanced
+"CustomFields":{},
+"FormerCharacterNames": [],
+}
+}
+}
 ]
 }

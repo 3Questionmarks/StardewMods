@@ -1,11 +1,25 @@
 {
     "Changes": [
+{
+            "LogName": "CookingRecipes - Sticky Rice flour",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "When": {
+            
+            "HasCookingRecipe |contains=Green Tea Mochi": true,
+            
+            },
+            "Entries": {
+                "Sticky Rice Flour": "Cape.GumiSweetRice 1/25 5/Cape.StickyRiceFlour/none/"
+            }
+        },
+
         {
             "LogName": "CookingRecipes - Annetta Recipe",
             "Action": "EditData",
             "Target": "Data/CookingRecipes",
             "When": {
-            "JAItemsOnly": "false",
+            
             "HasMod |contains=DreamyGloom.Aronyredkku": false,
             
             },
@@ -18,7 +32,7 @@
             "Action": "EditData",
             "Target": "Data/CookingRecipes",
             "When": {
-            "JAItemsOnly": "false",
+            
             "HasMod |contains=DreamyGloom.Aronyredkku": false,
             },
             "Entries": {
@@ -30,7 +44,7 @@
             "Action": "EditData",
             "Target": "Data/CookingRecipes",
             "When": {
-            "JAItemsOnly": "false",
+            
             "HasMod |contains=DreamyGloom.Aronyredkku": false,
             },
             "Entries": {
@@ -44,7 +58,7 @@
             
             "When": {
                 "HasFlag": "AnetCoastalOrder",
-            "JAItemsOnly": "false",
+            
             "HasMod |contains=DreamyGloom.Aronyredkku": false,
             },
             "Entries": {

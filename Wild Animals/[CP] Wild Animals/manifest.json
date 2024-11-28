@@ -1,7 +1,7 @@
 {
 	"Name": "SmolHooman's Wild Animals",
 	"Author": "plurffle",
-	"Version": "1.2.5",
+	"Version": "1.2.6",
 	"Description": "Spawns more wild animals in your game.",
 	"UniqueID": "SmolHooman.WildAnimals",
 	"UpdateKeys": [ "Nexus:9063" ],		
@@ -13,6 +13,10 @@
 	   {
 		"UniqueID": "PeacefulEnd.CustomCompanions",
 		"IsRequired": true,
+	   },
+	   {
+		"UniqueID": "leclair.morenightlyevents",
+		"IsRequired": false,
 	   },
 	   {
 		"UniqueID": "FlashShifter.StardewValleyExpandedCP",

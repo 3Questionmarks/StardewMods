@@ -360,6 +360,9 @@
         <member name="P:DaLion.Professions.Framework.CustomSkill.ProfessionPairByRoot">
             <inheritdoc />
         </member>
+        <member name="P:DaLion.Professions.Framework.CustomSkill.Loaded">
+            <summary>Gets the currently loaded <see cref="T:DaLion.Professions.Framework.CustomSkill"/>s.</summary>
+        </member>
         <member name="M:DaLion.Professions.Framework.CustomSkill.GetFromSpaceCore(SpaceCore.Skills.Skill)">
             <summary>Gets the <see cref="T:DaLion.Professions.Framework.CustomSkill"/> equivalent to the specified <see cref="T:SpaceCore.Skills.Skill"/>.</summary>
             <param name="scSkill">The <see cref="T:SpaceCore.Skills.Skill"/>.</param>
@@ -389,9 +392,6 @@
         <member name="M:DaLion.Professions.Framework.CustomSkill.ToSpaceCore">
             <summary>Gets the <see cref="T:SpaceCore.Skills.Skill"/> equivalent to this <see cref="T:DaLion.Professions.Framework.CustomSkill"/>.</summary>
             <returns>The equivalent <see cref="T:SpaceCore.Skills.Skill"/>.</returns>
-        </member>
-        <member name="P:DaLion.Professions.Framework.CustomSkill.Loaded">
-            <summary>Gets the currently loaded <see cref="T:DaLion.Professions.Framework.CustomSkill"/>s.</summary>
         </member>
         <member name="M:DaLion.Professions.Framework.CustomSkill.Initialize(System.String)">
             <summary>Initializes the custom SpaceCore skill with specified <see cref="T:System.String"/> <paramref name="id"/>.</summary>
@@ -450,9 +450,6 @@
         </member>
         <member name="M:DaLion.Professions.Framework.Events.Content.ProfessionAssetRequestedEvent.EditObjectsData(StardewModdingAPI.IAssetData)">
             <summary>Patches new mayo objects.</summary>
-        </member>
-        <member name="M:DaLion.Professions.Framework.Events.Content.ProfessionAssetRequestedEvent.Edit_1_6_Strings(StardewModdingAPI.IAssetData)">
-            <summary>Removes reference to quality preservation from Fish Smoker.</summary>
         </member>
         <member name="M:DaLion.Professions.Framework.Events.Content.ProfessionAssetRequestedEvent.ProvideSkillBars">
             <summary>Provides the correct skill bars texture path.</summary>
@@ -1168,17 +1165,6 @@
         <member name="M:DaLion.Professions.Framework.Events.Multiplayer.PeerDisconnected.PrestigeTreasureHuntPeerDisconnectedEvent.OnPeerDisconnectedImpl(System.Object,StardewModdingAPI.Events.PeerDisconnectedEventArgs)">
             <inheritdoc />
         </member>
-        <member name="T:DaLion.Professions.Framework.Events.Player.LevelChanged.CombatLevelChangedEvent">
-            <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Events.Player.LevelChanged.CombatLevelChangedEvent"/> class.</summary>
-            <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
-        </member>
-        <member name="M:DaLion.Professions.Framework.Events.Player.LevelChanged.CombatLevelChangedEvent.#ctor(DaLion.Shared.Events.EventManager)">
-            <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Events.Player.LevelChanged.CombatLevelChangedEvent"/> class.</summary>
-            <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
-        </member>
-        <member name="M:DaLion.Professions.Framework.Events.Player.LevelChanged.CombatLevelChangedEvent.OnLevelChangedImpl(System.Object,StardewModdingAPI.Events.LevelChangedEventArgs)">
-            <inheritdoc />
-        </member>
         <member name="T:DaLion.Professions.Framework.Events.Player.LevelChanged.RestoreForgottenRecipesLevelChangedEvent">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Events.Player.LevelChanged.RestoreForgottenRecipesLevelChangedEvent"/> class.</summary>
             <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
@@ -1890,6 +1876,16 @@
             <param name="scale">The projectile's starting scale.</param>
             <returns>A new instance of a Quincy projectile.</returns>
         </member>
+        <member name="T:DaLion.Professions.Framework.Integrations.IItemExtensionsApi">
+            <summary>The public interface for the ItemExtensions mod API.</summary>
+        </member>
+        <member name="M:DaLion.Professions.Framework.Integrations.IItemExtensionsApi.IsResource(System.String,System.Nullable{System.Int32}@,System.String@)">
+            <summary>Checks for resource data in the mod.</summary>
+            <param name="id">Qualified item ID.</param>
+            <param name="health">MinutesUntilReady value.</param>
+            <param name="itemDropped">Item dropped by ore.</param>
+            <returns>Whether the object has resource data.</returns>
+        </member>
         <member name="T:DaLion.Professions.Framework.Integrations.ItemExtensionsIntegration">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Integrations.ItemExtensionsIntegration"/> class.</summary>
         </member>
@@ -1911,11 +1907,10 @@
         </member>
         <member name="M:DaLion.Professions.Framework.Integrations.SpaceCoreIntegration.GetNewLevels">
             <summary>Gets SpaceCore's internal list of unrealized new levels.</summary>
-            <returns>A <see cref="T:System.Collections.Generic.List`1"/> of <see cref="T:System.Collections.Generic.KeyValuePair`2"/>s with <see cref="T:SpaceCore.Skills.Skill"/> ID <see cref="T:System.String"/> keys and <see cref="T:System.Int32"/> level values.</returns>
+            <returns>A <see cref="T:System.Collections.Generic.List`1"/> of <see cref="T:System.Collections.Generic.KeyValuePair"/>s with <see cref="T:SpaceCore.Skills.Skill"/> ID <see cref="T:System.String"/> keys and <see cref="T:System.Int32"/> level values.</returns>
         </member>
         <member name="M:DaLion.Professions.Framework.Integrations.SpaceCoreIntegration.SetNewLevels(System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.Int32}})">
             <summary>Sets SpaceCore's internal list of unrealized new levels.</summary>
-            <param name="newLevels">A <see cref="T:System.Collections.Generic.KeyValuePair`2"/> of <see cref="T:System.String"/> skill ID keys and corresponding <see cref="T:System.Int32"/> new level.</param>
         </member>
         <member name="M:DaLion.Professions.Framework.Integrations.SpaceCoreIntegration.RegisterImpl">
             <inheritdoc />
@@ -3055,15 +3050,19 @@
         <member name="M:DaLion.Professions.Framework.Patchers.Fishing.CrabPotDrawPatcher.CrabPotDrawPrefix(StardewValley.Objects.CrabPot,Microsoft.Xna.Framework.Vector2,System.Single@,Microsoft.Xna.Framework.Graphics.SpriteBatch,System.Int32,System.Int32)">
             <summary>Patch to draw weapons in Luremaster crabpots.</summary>
         </member>
+        <member name="M:DaLion.Professions.Framework.Patchers.Fishing.CrabPotNeedsBaitPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.Fishing.CrabPotNeedsBaitPatcher"/> class.</summary>
+            <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
+        </member>
+        <member name="M:DaLion.Professions.Framework.Patchers.Fishing.CrabPotNeedsBaitPatcher.CrabPotNeedsBaitPostfix(StardewValley.Objects.CrabPot,System.Boolean@)">
+            <summary>Patch to allow Conservationist to place bait.</summary>
+        </member>
         <member name="M:DaLion.Professions.Framework.Patchers.Fishing.CrabPotPerformObjectDropInActionPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.Fishing.CrabPotPerformObjectDropInActionPatcher"/> class.</summary>
             <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
         </member>
         <member name="M:DaLion.Professions.Framework.Patchers.Fishing.CrabPotPerformObjectDropInActionPatcher.CrabPotPerformObjectDropInActionPrefix(StardewValley.Objects.CrabPot,System.Boolean@)">
             <summary>Fixes an issue when collecting trash while holding bait as Conservationist.</summary>
-        </member>
-        <member name="M:DaLion.Professions.Framework.Patchers.Fishing.CrabPotPerformObjectDropInActionPatcher.CrabPotPerformObjectDropInActionTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
-            <summary>Patch to allow Conservationist to place bait.</summary>
         </member>
         <member name="M:DaLion.Professions.Framework.Patchers.Fishing.FarmerHasOrWillReceiveMailPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.Fishing.FarmerHasOrWillReceiveMailPatcher"/> class.</summary>
@@ -3082,9 +3081,6 @@
         <member name="M:DaLion.Professions.Framework.Patchers.Fishing.FishingRodDoDoneFishingPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.Fishing.FishingRodDoDoneFishingPatcher"/> class.</summary>
             <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
-        </member>
-        <member name="M:DaLion.Professions.Framework.Patchers.Fishing.FishingRodDoDoneFishingPatcher.FishingRodDoDoneFishingPostfix(StardewValley.Tools.FishingRod,System.Boolean)">
-            <summary>Patch to consume Angler tackle uses.</summary>
         </member>
         <member name="M:DaLion.Professions.Framework.Patchers.Fishing.FishingRodDoDoneFishingPatcher.FishingRodDoDoneFishingTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
             <summary>Patch to record Angler tackle uses.</summary>
@@ -3252,6 +3248,23 @@
         <member name="M:DaLion.Professions.Framework.Patchers.Foraging.Game1GetWeatherModificationsForDatePatcher.Game1GetWeatherModificationsForDatePostfix(System.String@)">
             <summary>Patch for Prestiged Arborist Green Rain chance.</summary>
         </member>
+        <member name="M:DaLion.Professions.Framework.Patchers.Foraging.GameLocationCheckActionPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.Foraging.GameLocationCheckActionPatcher"/> class.</summary>
+            <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
+        </member>
+        <member name="M:DaLion.Professions.Framework.Patchers.Foraging.GameLocationCheckActionPatcher.GameLocationCheckActionTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.Emit.ILGenerator,System.Reflection.MethodBase)">
+            <summary>Patch for prestiged Forager double forage.</summary>
+        </member>
+        <member name="M:DaLion.Professions.Framework.Patchers.Foraging.GameLocationGetHarvestSpawnedObjectQualityPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.Foraging.GameLocationGetHarvestSpawnedObjectQualityPatcher"/> class.</summary>
+            <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
+        </member>
+        <member name="M:DaLion.Professions.Framework.Patchers.Foraging.GameLocationGetHarvestSpawnedObjectQualityPatcher.GameLocationGetHarvestSpawnedObjectQualityPrefix(StardewValley.GameLocation,System.Int32@,StardewValley.Farmer,System.Boolean,Microsoft.Xna.Framework.Vector2,System.Random)">
+            <summary>
+                Patch to nerf Ecologist forage quality + add quality to foraged minerals for Gemologist + increment respective
+                mod data fields.
+            </summary>
+        </member>
         <member name="M:DaLion.Professions.Framework.Patchers.Foraging.GameLocationSpawnObjectsPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.Foraging.GameLocationSpawnObjectsPatcher"/> class.</summary>
             <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
@@ -3314,16 +3327,6 @@
         </member>
         <member name="M:DaLion.Professions.Framework.Patchers.Game1DrawHudPatcher.Game1DrawHUDTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
             <summary>Patch for Scavenger and Prospector to track different stuff.</summary>
-        </member>
-        <member name="M:DaLion.Professions.Framework.Patchers.GameLocationCheckActionPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
-            <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.GameLocationCheckActionPatcher"/> class.</summary>
-            <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
-        </member>
-        <member name="M:DaLion.Professions.Framework.Patchers.GameLocationCheckActionPatcher.GameLocationCheckActionTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.Emit.ILGenerator,System.Reflection.MethodBase)">
-            <summary>
-                Patch to nerf Ecologist forage quality + add quality to foraged minerals for Gemologist + increment respective
-                mod data fields.
-            </summary>
         </member>
         <member name="M:DaLion.Professions.Framework.Patchers.IClickableMenuDrawHoverTextPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.IClickableMenuDrawHoverTextPatcher"/> class.</summary>
@@ -3454,10 +3457,7 @@
             <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
         </member>
         <member name="M:DaLion.Professions.Framework.Patchers.Mining.MineShaftLoadLevelPatcher.MineShaftCheckStoneForItemsTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
-            <summary>
-                Patch for Spelunker ladder down chance bonus + remove Geologist paired gem chance + remove Excavator double
-                geode chance + remove Prospector double coal chance.
-            </summary>
+            <summary>Patch for Prestiged Spelunker bonus treasure room chance.</summary>
         </member>
         <member name="M:DaLion.Professions.Framework.Patchers.Mining.ObjectPlaceInMachinePatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.Mining.ObjectPlaceInMachinePatcher"/> class.</summary>
@@ -4267,8 +4267,6 @@
         </member>
         <member name="M:DaLion.Professions.Framework.UI.MasteryWarningBox.#ctor(StardewValley.GameLocation,StardewValley.Menus.MasteryTrackerMenu)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.UI.MasteryWarningBox"/> class.</summary>
-            <param name="location">The <see cref="T:StardewValley.GameLocation"/>.</param>
-            <param name="masteryTrackerMenu">The <see cref="T:StardewValley.Menus.MasteryTrackerMenu"/>.</param>
         </member>
         <member name="M:DaLion.Professions.Framework.UI.MasteryWarningBox.draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
             <inheritdoc />
@@ -4564,56 +4562,6 @@
             <param name="farmer">The player.</param>
             <returns>A percentage between 0 and 1.</returns>
         </member>
-        <member name="M:DaLion.Professions.IProfessionsApi.IsHuntActive(StardewValley.Farmer)">
-            <summary>Checks whether any <see cref="T:DaLion.Professions.Framework.TreasureHunts.ITreasureHunt"/> instance is currently active for the <paramref name="farmer"/>.</summary>
-            <param name="farmer">The <see cref="T:StardewValley.Farmer"/>.</param>
-            <returns><see langword="true"/> if the <paramref name="farmer"/> is currently searching for either Prospector or Scavenger treasure, otherwise <see langword="false"/>.</returns>
-        </member>
-        <member name="M:DaLion.Professions.IProfessionsApi.RegisterTreasureHuntStartedEvent(System.Action{System.Object,DaLion.Professions.Framework.TreasureHunts.Events.ITreasureHuntStartedEventArgs})">
-            <summary>Registers a new instance of an event raised when a <see cref="T:DaLion.Professions.Framework.TreasureHunts.ITreasureHunt"/> begins.</summary>
-            <param name="callback">The delegate that will be called when the event is triggered.</param>
-            <returns>A new <see cref="T:DaLion.Shared.Events.IManagedEvent"/> instance which encapsulates the specified <paramref name="callback"/>.</returns>
-        </member>
-        <member name="M:DaLion.Professions.IProfessionsApi.RegisterTreasureHuntEndedEvent(System.Action{System.Object,DaLion.Professions.Framework.TreasureHunts.Events.ITreasureHuntEndedEventArgs})">
-            <summary>Registers a new instance of an event raised when a <see cref="T:DaLion.Professions.Framework.TreasureHunts.ITreasureHunt"/> ends.</summary>
-            <param name="callback">The delegate that will be called when the event is triggered.</param>
-            <returns>A new <see cref="T:DaLion.Shared.Events.IManagedEvent"/> instance which encapsulates the specified <paramref name="callback"/>.</returns>
-        </member>
-        <member name="M:DaLion.Professions.IProfessionsApi.GetLimitBreakId(StardewValley.Farmer)">
-            <summary>Gets the <paramref name="farmer"/>'s currently registered <see cref="T:DaLion.Professions.Framework.Limits.ILimitBreak"/>, if any.</summary>
-            <param name="farmer">The <see cref="T:StardewValley.Farmer"/>.</param>
-            <returns>The <paramref name="farmer"/>'s <see cref="T:DaLion.Professions.Framework.Limits.ILimitBreak"/>'s technical name, or the local player's if supplied null.</returns>
-        </member>
-        <member name="M:DaLion.Professions.IProfessionsApi.RegisterLimitActivatedEvent(System.Action{System.Object,DaLion.Professions.Framework.Limits.Events.ILimitActivatedEventArgs})">
-            <summary>Registers a new instance of an event raised when the player's <see cref="T:DaLion.Professions.Framework.Limits.ILimitBreak"/> is activated.</summary>
-            <param name="callback">The delegate that will be called when the event is triggered.</param>
-            <returns>A new <see cref="T:DaLion.Shared.Events.IManagedEvent"/> instance which encapsulates the specified <paramref name="callback"/>.</returns>
-        </member>
-        <member name="M:DaLion.Professions.IProfessionsApi.RegisterLimitDeactivatedEvent(System.Action{System.Object,DaLion.Professions.Framework.Limits.Events.ILimitDeactivatedEventArgs})">
-            <summary>Registers a new instance of an event raised when the player's <see cref="T:DaLion.Professions.Framework.Limits.ILimitBreak"/> is deactivated.</summary>
-            <param name="callback">The delegate that will be called when the event is triggered.</param>
-            <returns>A new <see cref="T:DaLion.Shared.Events.IManagedEvent"/> instance which encapsulates the specified <paramref name="callback"/>.</returns>
-        </member>
-        <member name="M:DaLion.Professions.IProfessionsApi.RegisterLimitChargeInitiatedEvent(System.Action{System.Object,DaLion.Professions.Framework.Limits.Events.ILimitChargeInitiatedEventArgs})">
-            <summary>Registers a new instance of an event raised when the player's <see cref="T:DaLion.Professions.Framework.Limits.ILimitBreak"/> gains charge from zero.</summary>
-            <param name="callback">The delegate that will be called when the event is triggered.</param>
-            <returns>A new <see cref="T:DaLion.Shared.Events.IManagedEvent"/> instance which encapsulates the specified <paramref name="callback"/>.</returns>
-        </member>
-        <member name="M:DaLion.Professions.IProfessionsApi.RegisterLimitChargeIncreasedEvent(System.Action{System.Object,DaLion.Professions.Framework.Limits.Events.ILimitChargeChangedEventArgs})">
-            <summary>Registers a new instance of an event raised when the player's <see cref="T:DaLion.Professions.Framework.Limits.ILimitBreak"/> charge increases.</summary>
-            <param name="callback">The delegate that will be called when the event is triggered.</param>
-            <returns>A new <see cref="T:DaLion.Shared.Events.IManagedEvent"/> instance which encapsulates the specified <paramref name="callback"/>.</returns>
-        </member>
-        <member name="M:DaLion.Professions.IProfessionsApi.RegisterLimitFullyChargedEvent(System.Action{System.Object,DaLion.Professions.Framework.Limits.Events.ILimitFullyChargedEventArgs})">
-            <summary>Registers a new instance of an event raised when the player's <see cref="T:DaLion.Professions.Framework.Limits.ILimitBreak"/> reaches full charge.</summary>
-            <param name="callback">The delegate that will be called when the event is triggered.</param>
-            <returns>A new <see cref="T:DaLion.Shared.Events.IManagedEvent"/> instance which encapsulates the specified <paramref name="callback"/>.</returns>
-        </member>
-        <member name="M:DaLion.Professions.IProfessionsApi.RegisterLimitEmptiedEvent(System.Action{System.Object,DaLion.Professions.Framework.Limits.Events.ILimitEmptiedEventArgs})">
-            <summary>Registers a new instance of an event raised when the player's <see cref="T:DaLion.Professions.Framework.Limits.ILimitBreak"/> returns to zero charge.</summary>
-            <param name="callback">The delegate that will be called when the event is triggered.</param>
-            <returns>A new <see cref="T:DaLion.Shared.Events.IManagedEvent"/> instance which encapsulates the specified <paramref name="callback"/>.</returns>
-        </member>
         <member name="M:DaLion.Professions.IProfessionsApi.GetConfig">
             <summary>Gets the mod's current config schema.</summary>
             <returns>The current <see cref="T:DaLion.Professions.ProfessionsConfig"/> instance.</returns>
@@ -4637,36 +4585,6 @@
             <inheritdoc />
         </member>
         <member name="M:DaLion.Professions.ProfessionsApi.GetDesperadoOvercharge(StardewValley.Farmer)">
-            <inheritdoc />
-        </member>
-        <member name="M:DaLion.Professions.ProfessionsApi.IsHuntActive(StardewValley.Farmer)">
-            <inheritdoc />
-        </member>
-        <member name="M:DaLion.Professions.ProfessionsApi.RegisterTreasureHuntStartedEvent(System.Action{System.Object,DaLion.Professions.Framework.TreasureHunts.Events.ITreasureHuntStartedEventArgs})">
-            <inheritdoc />
-        </member>
-        <member name="M:DaLion.Professions.ProfessionsApi.RegisterTreasureHuntEndedEvent(System.Action{System.Object,DaLion.Professions.Framework.TreasureHunts.Events.ITreasureHuntEndedEventArgs})">
-            <inheritdoc />
-        </member>
-        <member name="M:DaLion.Professions.ProfessionsApi.GetLimitBreakId(StardewValley.Farmer)">
-            <inheritdoc />
-        </member>
-        <member name="M:DaLion.Professions.ProfessionsApi.RegisterLimitActivatedEvent(System.Action{System.Object,DaLion.Professions.Framework.Limits.Events.ILimitActivatedEventArgs})">
-            <inheritdoc />
-        </member>
-        <member name="M:DaLion.Professions.ProfessionsApi.RegisterLimitDeactivatedEvent(System.Action{System.Object,DaLion.Professions.Framework.Limits.Events.ILimitDeactivatedEventArgs})">
-            <inheritdoc />
-        </member>
-        <member name="M:DaLion.Professions.ProfessionsApi.RegisterLimitChargeInitiatedEvent(System.Action{System.Object,DaLion.Professions.Framework.Limits.Events.ILimitChargeInitiatedEventArgs})">
-            <inheritdoc />
-        </member>
-        <member name="M:DaLion.Professions.ProfessionsApi.RegisterLimitChargeIncreasedEvent(System.Action{System.Object,DaLion.Professions.Framework.Limits.Events.ILimitChargeChangedEventArgs})">
-            <inheritdoc />
-        </member>
-        <member name="M:DaLion.Professions.ProfessionsApi.RegisterLimitFullyChargedEvent(System.Action{System.Object,DaLion.Professions.Framework.Limits.Events.ILimitFullyChargedEventArgs})">
-            <inheritdoc />
-        </member>
-        <member name="M:DaLion.Professions.ProfessionsApi.RegisterLimitEmptiedEvent(System.Action{System.Object,DaLion.Professions.Framework.Limits.Events.ILimitEmptiedEventArgs})">
             <inheritdoc />
         </member>
         <member name="M:DaLion.Professions.ProfessionsApi.GetConfig">
@@ -4852,6 +4770,1042 @@
         </member>
         <member name="F:DaLion.Professions.I18n.Translations">
             <summary>The mod's translation helper.</summary>
+        </member>
+        <member name="T:DaLion.Professions.I18n.Keys">
+            <summary>A lookup of available translation keys.</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Harvester_Title_Male">
+            <summary>The unique key for a translation equivalent to "Harvester".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Harvester_Title_Female">
+            <summary>The unique key for a translation equivalent to "Harvester".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Harvester_Desc">
+            <summary>The unique key for a translation equivalent to "10% chance for extra yield from harvested crops.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Harvester_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "10% &gt;&gt; 20% chance for extra yield from harvested crops.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Agriculturist_Title_Male">
+            <summary>The unique key for a translation equivalent to "Agriculturist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Agriculturist_Title_Female">
+            <summary>The unique key for a translation equivalent to "Agriculturist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Agriculturist_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Cropwhisperer".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Agriculturist_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Cropwhisperer".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Agriculturist_Desc">
+            <summary>The unique key for a translation equivalent to "Crops grow 10% faster. Can harvest best-quality crops organically without fertilizer.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Agriculturist_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Crops grow 10% &gt;&gt; 20% faster and can survive the first day out-of-season.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Artisan_Title_Male">
+            <summary>The unique key for a translation equivalent to "Artisan".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Artisan_Title_Female">
+            <summary>The unique key for a translation equivalent to "Artisan".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Artisan_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Industrialist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Artisan_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Industrialist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Artisan_Desc">
+            <summary>The unique key for a translation equivalent to "All artisan machines work 10% faster. Machine output quality can be as good as input ingredient quality.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Artisan_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Hopper-automated machines work 25% faster. Machine output quality is always as good as input ingredient quality.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Rancher_Title_Male">
+            <summary>The unique key for a translation equivalent to "Rancher".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Rancher_Title_Female">
+            <summary>The unique key for a translation equivalent to "Rancher".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Rancher_Desc">
+            <summary>The unique key for a translation equivalent to "Befriend animals 2x quicker.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Rancher_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Befriend animals 2x &gt;&gt; 3x quicker.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Breeder_Title_Male">
+            <summary>The unique key for a translation equivalent to "Breeder".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Breeder_Title_Female">
+            <summary>The unique key for a translation equivalent to "Breeder".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Breeder_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Progenitor".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Breeder_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Progenitor".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Breeder_Desc">
+            <summary>The unique key for a translation equivalent to "Incubation 2x faster and animal pregnancy 3x more likely. Friendly animals are valued significantly higher.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Breeder_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Hatched or bred animals are always worth maximum value. Deluxe Barn capacity +2.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Producer_Title_Male">
+            <summary>The unique key for a translation equivalent to "Producer".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Producer_Title_Female">
+            <summary>The unique key for a translation equivalent to "Producer".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Producer_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Yieldmeister".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Producer_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Yieldmeister".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Producer_Desc">
+            <summary>The unique key for a translation equivalent to "Happy animals produce 2x as frequently. Produce is worth 5% more for every full barn or coop.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Producer_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Happy animals produce 2x &gt;&gt; 3x as frequently. Deluxe Coop capacity +2.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Forager_Title_Male">
+            <summary>The unique key for a translation equivalent to "Forager".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Forager_Title_Female">
+            <summary>The unique key for a translation equivalent to "Forager".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Forager_Desc">
+            <summary>The unique key for a translation equivalent to "20% chance for double yield of foraged items.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Forager_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "20% &gt;&gt; 40% chance for double yield of foraged items.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Ecologist_Title_Male">
+            <summary>The unique key for a translation equivalent to "Ecologist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Ecologist_Title_Female">
+            <summary>The unique key for a translation equivalent to "Ecologist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Ecologist_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Bioharmonist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Ecologist_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Bioharmonist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Ecologist_Desc">
+            <summary>The unique key for a translation equivalent to "Foraged items restore 50% more health and energy. The quality of foraged items increases as new varieties are uncovered.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Ecologist_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Foraged items restore 50% &gt;&gt; 100% more health and energy and also afford buffs.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Scavenger_Title_Male">
+            <summary>The unique key for a translation equivalent to "Scavenger".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Scavenger_Title_Female">
+            <summary>The unique key for a translation equivalent to "Scavenger".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Scavenger_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Relicseeker".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Scavenger_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Relicseeker".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Scavenger_Desc">
+            <summary>The unique key for a translation equivalent to "Reveals the locations of forageable items. Occasionally detect buried treasures.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Scavenger_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Time freezes during Scavenger Hunts. Find increasingly more forageables on a high streak.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Scavenger_HuntStarted">
+            <summary>The unique key for a translation equivalent to "Your Scavenger senses are tingling...".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Scavenger_HuntFailed">
+            <summary>The unique key for a translation equivalent to "The tingling stops.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Lumberjack_Title_Male">
+            <summary>The unique key for a translation equivalent to "Lumberjack".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Lumberjack_Title_Female">
+            <summary>The unique key for a translation equivalent to "Lumberjack".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Lumberjack_Desc">
+            <summary>The unique key for a translation equivalent to "Felled trees yield 25% more wood.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Lumberjack_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Felled trees yield 25% &gt;&gt; 50% more wood.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Arborist_Title_Male">
+            <summary>The unique key for a translation equivalent to "Arborist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Arborist_Title_Female">
+            <summary>The unique key for a translation equivalent to "Arborist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Arborist_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Silviculturist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Arborist_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Silviculturist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Arborist_Desc">
+            <summary>The unique key for a translation equivalent to "Planted trees grow 25% faster. All trees have a chance to drop hardwood.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Arborist_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "All trees can drop even more hardwood. The Green Rain may fall in any season if Green Rain Trees are grown on the farm.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Tapper_Title_Male">
+            <summary>The unique key for a translation equivalent to "Tapper".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Tapper_Title_Female">
+            <summary>The unique key for a translation equivalent to "Tapper".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Tapper_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Syrupwright".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Tapper_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Syrupwright".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Tapper_Desc">
+            <summary>The unique key for a translation equivalent to "Tappers are cheaper to craft. Tapped trees give syrup 25% faster.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Tapper_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Tapped trees give syrup 25% &gt;&gt; 50% faster. Double yield from recipes that consume syrups.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Miner_Title_Male">
+            <summary>The unique key for a translation equivalent to "Miner".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Miner_Title_Female">
+            <summary>The unique key for a translation equivalent to "Miner".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Miner_Desc">
+            <summary>The unique key for a translation equivalent to "+1 ore per vein.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Miner_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "+1 &gt;&gt; +2 ores per vein.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Spelunker_Title_Male">
+            <summary>The unique key for a translation equivalent to "Spelunker".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Spelunker_Title_Female">
+            <summary>The unique key for a translation equivalent to "Spelunker".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Spelunker_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Cavewarden".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Spelunker_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Cavewarden".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Spelunker_Desc">
+            <summary>The unique key for a translation equivalent to "Chance to find ladders and shafts increases as you mine deeper without resurfacing. Restore some health and energy when you reach a safe room.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Spelunker_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Greatly increased chance of finding safe rooms. Chance to resurface unclaimed mining debris.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Spelunker_Buff_Desc">
+            <summary>The unique key for a translation equivalent to "Ladder chance +{{ladderChance}}.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prospector_Title_Male">
+            <summary>The unique key for a translation equivalent to "Prospector".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prospector_Title_Female">
+            <summary>The unique key for a translation equivalent to "Prospector".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prospector_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Archaeologist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prospector_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Archaeologist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prospector_Desc">
+            <summary>The unique key for a translation equivalent to "Reveals the locations of ladders and mining nodes. Occasionally detect mineral treasures.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prospector_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Time freezes during Prospector Hunts. Find increasingly more mining nodes on a high streak.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prospector_HuntStarted">
+            <summary>The unique key for a translation equivalent to "Your Prospector sj enses are tingling...".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prospector_HuntFailed">
+            <summary>The unique key for a translation equivalent to "The tingling stops.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Blaster_Title_Male">
+            <summary>The unique key for a translation equivalent to "Blaster".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Blaster_Title_Female">
+            <summary>The unique key for a translation equivalent to "Blaster".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Blaster_Desc">
+            <summary>The unique key for a translation equivalent to "Craft twice as many explosives. Exploded rocks yield 2x as much coal.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Blaster_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Exploded rocks yield 2x &gt;&gt; 3x as much coal.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Demolitionist_Title_Male">
+            <summary>The unique key for a translation equivalent to "Demolitionist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Demolitionist_Title_Female">
+            <summary>The unique key for a translation equivalent to "Demolitionist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Demolitionist_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Pyrotechnician".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Demolitionist_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Pyrotechnician".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Demolitionist_Desc">
+            <summary>The unique key for a translation equivalent to "Explosion radius +1. 50% chance to yield additional resources from exploded rocks.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Demolitionist_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Explosions cause chain reactions. Double the lasting power of coal used for fueling machines.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Demolitionist_Buff_Desc">
+            <summary>The unique key for a translation equivalent to "Adrenaline Rush".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gemologist_Title_Male">
+            <summary>The unique key for a translation equivalent to "Gemologist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gemologist_Title_Female">
+            <summary>The unique key for a translation equivalent to "Gemologist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gemologist_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Crystallographer".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gemologist_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Crystallographer".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gemologist_Desc">
+            <summary>The unique key for a translation equivalent to "Chance for gems to appear in pairs. The quality of mined gemstones increases as new mineral varieties are uncovered.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gemologist_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Chance for gems to appear in triplets. Crystalaria produce perfect replicas.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Fisher_Title_Male">
+            <summary>The unique key for a translation equivalent to "Fisher".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Fisher_Title_Female">
+            <summary>The unique key for a translation equivalent to "Fisher".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Fisher_Desc">
+            <summary>The unique key for a translation equivalent to "Baits are 2x more effective when fishing.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Fisher_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Baits are 2x &gt;&gt; 3x more effective when fishing.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Angler_Title_Male">
+            <summary>The unique key for a translation equivalent to "Angler".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Angler_Title_Female">
+            <summary>The unique key for a translation equivalent to "Angler".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Angler_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Rodmancer".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Angler_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Rodmancer".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Angler_Desc">
+            <summary>The unique key for a translation equivalent to "Fish are 1% more valuable for every unique max-sized species caught. Fully-expending a tackle causes it's effects to linger on the fishing rod.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Angler_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Up to two tackle effects can linger on the fishing rod. Can re-encounter legendary fish.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Aquarist_Title_Male">
+            <summary>The unique key for a translation equivalent to "Aquarist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Aquarist_Title_Female">
+            <summary>The unique key for a translation equivalent to "Aquarist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Aquarist_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Ichthyologist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Aquarist_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Ichthyologist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Aquarist_Desc">
+            <summary>The unique key for a translation equivalent to "Fish pond max capacity +2. Catching bar decreases slower for every unique fish species raised in a Fish Pond.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Aquarist_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Fish pond max capacity +2 &gt;&gt; +4. Fish species raised to max pond capacity are reeled instantly.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Trapper_Title_Male">
+            <summary>The unique key for a translation equivalent to "Trapper".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Trapper_Title_Female">
+            <summary>The unique key for a translation equivalent to "Trapper".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Trapper_Desc">
+            <summary>The unique key for a translation equivalent to "Crab pots are cheaper to craft. Can trap higher-quality fish.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Trapper_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Increased minimum quality of trapped fish.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Luremaster_Title_Male">
+            <summary>The unique key for a translation equivalent to "Luremaster".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Luremaster_Title_Female">
+            <summary>The unique key for a translation equivalent to "Luremaster".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Luremaster_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Baitweaver".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Luremaster_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Baitweaver".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Luremaster_Desc">
+            <summary>The unique key for a translation equivalent to "Baited crab pots can trap 2x per day. Unlock new bait effects.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Luremaster_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Baited crab pots can trap 2x &gt;&gt; 3x per day. Double yield from machines which produce bait.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Conservationist_Title_Male">
+            <summary>The unique key for a translation equivalent to "Conservationist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Conservationist_Title_Female">
+            <summary>The unique key for a translation equivalent to "Conservationist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Conservationist_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Oceanographer".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Conservationist_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Oceanographer".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Conservationist_Desc">
+            <summary>The unique key for a translation equivalent to "Crab pots without bait can trap junk. Clean the Valley's waters to earn the village's favor and merit tax deductions.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Conservationist_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Crab pots without bait can also trap fish. Special conditions apply during rainy weathers and full-moon tides.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Conservationist_Mail">
+            <summary>The unique key for a translation equivalent to "Department of the Treasury^Ferngill Revenue Service^^^{{honorific}} Taxpayer,^^We are pleased to inform you that, upon review of your environmentalist activities, we have determined that you qualify for an income tax deduction of {{taxBonus}} as per section 501(c)(3) of the Ferngill Revenue Code. As such, all taxable income for {{farm}} farm will be increased by the aforementioned amount, effective until the 28th of {{season}}.^^Please keep this letter in your permanent records should you nee...".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Conservationist_Mail_Max">
+            <summary>The unique key for a translation equivalent to "Department of the Treasury^Ferngill Revenue Service^^^{{honorific}} Taxpayer,^^We are pleased to inform you that, upon review of your environmentalist activities, we have determined that you qualify for the maximum income tax deduction of {{taxBonus}} as per section 501(c)(3) of the Ferngill Revenue Code. As such, all taxable income for {{farm}} farm will be increased by the aforementioned amount, effective until the 28th of {{season}}.^^Please keep this letter in your permanent records shoul...".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Fighter_Title_Male">
+            <summary>The unique key for a translation equivalent to "Fighter".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Fighter_Title_Female">
+            <summary>The unique key for a translation equivalent to "Fighter".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Fighter_Desc">
+            <summary>The unique key for a translation equivalent to "Damage +10%. +15 HP.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Fighter_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Damage +10% &gt;&gt; +15%.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Brute_Title_Male">
+            <summary>The unique key for a translation equivalent to "Brute".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Brute_Title_Female">
+            <summary>The unique key for a translation equivalent to "Amazon".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Brute_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Wildheart".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Brute_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Wildheart".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Brute_Desc">
+            <summary>The unique key for a translation equivalent to "Become enraged as you take damage, gradually increasing your own damage and attack speed. +25 HP.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Brute_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Stay enraged for twice as long. Rage can be expended to perform a special move while on cooldown.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Brute_Buff_Name">
+            <summary>The unique key for a translation equivalent to "Rage".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Brute_Buff_Desc">
+            <summary>The unique key for a translation equivalent to "Damage +{{damage}}. Attack Speed +{{speed}}.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Poacher_Title_Male">
+            <summary>The unique key for a translation equivalent to "Bushwhacker".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Poacher_Title_Female">
+            <summary>The unique key for a translation equivalent to "Bushwhacker".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Poacher_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Saboteur".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Poacher_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Saboteur".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Poacher_Desc">
+            <summary>The unique key for a translation equivalent to "Crit. chance +50%. Chance to poach an item from the enemy with each attack.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Poacher_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Enemies can be poached twice. Inflict deadly poison with each successful poach.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Rascal_Title_Male">
+            <summary>The unique key for a translation equivalent to "Rascal".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Rascal_Title_Female">
+            <summary>The unique key for a translation equivalent to "Rascal".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Rascal_Desc">
+            <summary>The unique key for a translation equivalent to "Gain one additional ammo slot. 35% chance to recover certain ammo.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Rascal_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "35% &gt;&gt; 55% chance to recover certain ammo. Can fire both ammo slots at once.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Desperado_Title_Male">
+            <summary>The unique key for a translation equivalent to "Desperado".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Desperado_Title_Female">
+            <summary>The unique key for a translation equivalent to "Desperada".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Desperado_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Deadeye".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Desperado_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Deadeye".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Desperado_Desc">
+            <summary>The unique key for a translation equivalent to "Damage +50% from hip-fired shots that hit a new target within 0.8 seconds of the last. Can overcharge the slingshot.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Desperado_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "Hip-fired shots can ricochet. Double damage from rebound or pierced shots.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Desperado_Buff_Name">
+            <summary>The unique key for a translation equivalent to "Chain Action".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Desperado_Buff_Desc">
+            <summary>The unique key for a translation equivalent to "+50% ammo damage against a different target.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Piper_Title_Male">
+            <summary>The unique key for a translation equivalent to "Slimed Piper".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Piper_Title_Female">
+            <summary>The unique key for a translation equivalent to "Slimed Siren".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Piper_Title_Prestiged_Male">
+            <summary>The unique key for a translation equivalent to "Slime Conductor".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Piper_Title_Prestiged_Female">
+            <summary>The unique key for a translation equivalent to "Slime Enchantress".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Piper_Desc">
+            <summary>The unique key for a translation equivalent to "Slimes are not immediately aggressive and may follow you in combat. Slime Hutch capacity +50%.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Piper_Desc_Prestiged">
+            <summary>The unique key for a translation equivalent to "One additional Slime may follow you in combat. Obtain special colored items from Slime Balls.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Piper_Buff">
+            <summary>The unique key for a translation equivalent to "Slimed".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_First">
+            <summary>The unique key for a translation equivalent to "-Statue Of Transcendence-^The statue can reset a skill's level while retaining all acquired professions.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Forget">
+            <summary>The unique key for a translation equivalent to "^All associated recipes will be forgotten.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Offer">
+            <summary>The unique key for a translation equivalent to "^Make an offering?".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Which">
+            <summary>The unique key for a translation equivalent to "Which skill would you like to reset?".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Cost">
+            <summary>The unique key for a translation equivalent to "({{cost}}g)".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Dismiss">
+            <summary>The unique key for a translation equivalent to "Come back tomorrow.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Transcendance">
+            <summary>The unique key for a translation equivalent to "-Statue Of Transcendence-^...".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Vanilla">
+            <summary>The unique key for a translation equivalent to "-Statue Of Uncertainty-^...".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Respec">
+            <summary>The unique key for a translation equivalent to "I want to change my prestige choices".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Change">
+            <summary>The unique key for a translation equivalent to "I want to change my Limit Break".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Replace">
+            <summary>The unique key for a translation equivalent to "Currently using {{profession}}'s {{limitBreak}}. Replace?".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Choose">
+            <summary>The unique key for a translation equivalent to "You have not yet chosen a Limit Break. Please choose:".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Choice">
+            <summary>The unique key for a translation equivalent to "{{profession}}'s {{limitBreak}}".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Describe">
+            <summary>The unique key for a translation equivalent to "Choose this limit break?".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Fledged">
+            <summary>The unique key for a translation equivalent to "*woof* *woof* (You are now a fully-fledged {{profession}}).".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_DogStatue_Cancel">
+            <summary>The unique key for a translation equivalent to "I changed my mind...".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_SkillPage_Tooltip">
+            <summary>The unique key for a translation equivalent to "{{count}}/6 professions acquired:".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_LevelUp_Tooltip5">
+            <summary>The unique key for a translation equivalent to "Already acquired all professions in this branch.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_LevelUp_Tooltip10">
+            <summary>The unique key for a translation equivalent to "Already acquired this profession.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_LevelUp_Choose">
+            <summary>The unique key for a translation equivalent to "Choose a profession to prestige:".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_LevelUp_Single">
+            <summary>The unique key for a translation equivalent to "Gained Prestige".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_Mastery_Warning">
+            <summary>The unique key for a translation equivalent to "Mastering this skill will prevent it from being reset. Continue?".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_Mastery_Unlocked">
+            <summary>The unique key for a translation equivalent to "Can now develop the {{skill}} skill further.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestiged_Title">
+            <summary>The unique key for a translation equivalent to "Master ".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Brute_Limit_Title_Male">
+            <summary>The unique key for a translation equivalent to "Undying Frenzy".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Brute_Limit_Title_Female">
+            <summary>The unique key for a translation equivalent to "Undying Frenzy".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Brute_Limit_Desc">
+            <summary>The unique key for a translation equivalent to "Double rage accumulation. Cannot be knocked out.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Brute_Limit_Explain">
+            <summary>The unique key for a translation equivalent to "Unleash your inner fury for 15s. During this time, gain double rage accumulation and your health cannot drop below 1. When the effect ends, recover 5% max health for every enemy slain during the frenzy.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Poacher_Limit_Title_Male">
+            <summary>The unique key for a translation equivalent to "Ambuscade".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Poacher_Limit_Title_Female">
+            <summary>The unique key for a translation equivalent to "Ambuscade".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Poacher_Limit_Desc_Hidden">
+            <summary>The unique key for a translation equivalent to "Hidden.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Poacher_Limit_Desc_Revealed">
+            <summary>The unique key for a translation equivalent to "Crit. power x2.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Poacher_Limit_Explain">
+            <summary>The unique key for a translation equivalent to "Become invisible and untargetable for 30s. Attacking an enemy forfeits the invisibility, but crit. power is doubled for twice the leftover invisibility duration. Slaying an enemy within 0.5s of gaining the latter effect immediately recovers 50% Limit charge.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Desperado_Limit_Title_Male">
+            <summary>The unique key for a translation equivalent to "Deadly Blossom".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Desperado_Limit_Title_Female">
+            <summary>The unique key for a translation equivalent to "Deadly Blossom".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Desperado_Limit_Desc">
+            <summary>The unique key for a translation equivalent to "Auto-fire in eight cardinal directions at once.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Desperado_Limit_Explain">
+            <summary>The unique key for a translation equivalent to "For 15s, you can auto-fire and all shots fire in eight simultaneous cardinal directions at no additional ammo cost.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Piper_Limit_Title_Male">
+            <summary>The unique key for a translation equivalent to "Hamelin Concerto".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Piper_Limit_Title_Female">
+            <summary>The unique key for a translation equivalent to "Pheromonious Fever".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Piper_Limit_Desc">
+            <summary>The unique key for a translation equivalent to "Enthrall and empower all nearby Slimes for 15s.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Piper_Limit_Explain">
+            <summary>The unique key for a translation equivalent to "Charm all nearby Slimes for 15s, empowering and turning them into allies.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Ulti_Canteat">
+            <summary>The unique key for a translation equivalent to "Can't do that right now.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_Mastery_Choose">
+            <summary>The unique key for a translation equivalent to "Choose your Limit Break".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Prestige_Mastery_Cant">
+            <summary>The unique key for a translation equivalent to "Profession not acquired.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.TreasureHunt_Broadcast_Started">
+            <summary>The unique key for a translation equivalent to "{{player}} is hunting for treasure!".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.TreasureHunt_Broadcast_Ended_Success">
+            <summary>The unique key for a translation equivalent to "{{player}} has found the treasure!".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.TreasureHunt_Broadcast_Ended_Failure">
+            <summary>The unique key for a translation equivalent to "{{player}} failed to find the treasure...".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Objects_Goldenmayo_Name">
+            <summary>The unique key for a translation equivalent to "Shiny Mayonnaise".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Objects_Goldenmayo_Desc">
+            <summary>The unique key for a translation equivalent to "Perfect for King Midas' sandwiches.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Objects_Ostrichmayo_Name">
+            <summary>The unique key for a translation equivalent to "Delight Mayonnaise".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Objects_Ostrichmayo_Desc">
+            <summary>The unique key for a translation equivalent to "This is an absolutely absurd amount of mayonnaise...".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_Pages_Prfs">
+            <summary>The unique key for a translation equivalent to "Professions".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_Pages_Prfs_Skills">
+            <summary>The unique key for a translation equivalent to "Skill Settings".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_Pages_Prfs_Masteries">
+            <summary>The unique key for a translation equivalent to "Mastery Settings".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_Sections_Prfs_General">
+            <summary>The unique key for a translation equivalent to "General Profession Settings".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ModKey_Title">
+            <summary>The unique key for a translation equivalent to "Mod Key".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ModKey_Desc">
+            <summary>The unique key for a translation equivalent to "The key used to enable active effects for some professions (used by Prospector, Scavenger and Rascal).".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_LaxOwnershipRequirements_Title">
+            <summary>The unique key for a translation equivalent to "Lax Ownership Requirements".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_LaxOwnershipRequirements_Desc">
+            <summary>The unique key for a translation equivalent to "If enabled, machine and building ownership will be ignored when determining whether to apply certain profession bonuses (only relevant in multiplayer).".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ShouldJunimosInheritProfessions_Title">
+            <summary>The unique key for a translation equivalent to "Should Junimos Inherit Professions".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ShouldJunimosInheritProfessions_Desc">
+            <summary>The unique key for a translation equivalent to "Whether Junimo harvesters should apply profession perks, such as from Harvester and Agriculturist.".</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:DaLion.Professions.I18n.Keys.Gmcm_Sections_Prfs_ArtisanProducer" -->
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ArtisanMachines_Title">
+            <summary>The unique key for a translation equivalent to "Artisan Machines".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ArtisanMachines_Desc">
+            <summary>The unique key for a translation equivalent to "Machines typically used to make artisan goods. Add to this list the *qualified ID* of artisan machines from other mods you are using in order to make them compatible with Artisan profession perks. Qualified machine IDs should begin with "(BC)".".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_AnimalDerivedGoods_Title">
+            <summary>The unique key for a translation equivalent to "Animal-Derived Goods".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_AnimalDerivedGoods_Desc">
+            <summary>The unique key for a translation equivalent to "Artisan goods derived from animal products (like dairy or cloth). Add to this list the *qualified ID* of items from other mods you are using which derive from animal products, in order to make them compatible with Producer profession perks. Qualified produce IDs should begin with "(O)".".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_BeesAreAnimals_Title">
+            <summary>The unique key for a translation equivalent to "Bees Are Animals".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_BeesAreAnimals_Desc">
+            <summary>The unique key for a translation equivalent to "Whether Bee House and derived products should be affected by Producer profession perks.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_EnableGoldenOstrichMayo_Title">
+            <summary>The unique key for a translation equivalent to "Enable Golden and Ostrich Mayo".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_EnableGoldenOstrichMayo_Desc">
+            <summary>The unique key for a translation equivalent to "Whether to add new Golden and Ostrich Mayonnaise items to the game in order to make Artisan produce more consistent.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ImmersiveDairyYield_Title">
+            <summary>The unique key for a translation equivalent to "Immersive Dairy Yields".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ImmersiveDairyYield_Desc">
+            <summary>The unique key for a translation equivalent to "Causes one large egg or milk to produce two mayonnaise or cheese but at regular quality, instead of one at gold quality. This makes the Artisan profession perk more consistent. If Ostrich Mayo is not enabled, Ostrich Eggs still yield 10 mayonnaise but do not retain input quality. If Golden Mayo is not enabled, a Gold Egg will yield a single mayonnaise, but always at the highest quality.".</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:DaLion.Professions.I18n.Keys.Gmcm_Sections_Prfs_EcologistGemologist" -->
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ForagesNeededForBestQuality_Title">
+            <summary>The unique key for a translation equivalent to "Forages Needed for Best Quality".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ForagesNeededForBestQuality_Desc">
+            <summary>The unique key for a translation equivalent to "Ecologists must forage this many different items to achieve iridium quality. By default this is balanced for vanilla; you should increase this number if using mods which add many new forageables. Settings to zero restores the vanilla Botanist behavior.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_MineralsNeededForBestQuality_Title">
+            <summary>The unique key for a translation equivalent to "Minerals Needed for Best Quality".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_MineralsNeededForBestQuality_Desc">
+            <summary>The unique key for a translation equivalent to "Gemologists must mine this many different minerals to achieve iridium quality. By default this is balanced for vanilla; you should increase this number if using mods which add many new gems or minerals.".</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:DaLion.Professions.I18n.Keys.Gmcm_Sections_Prfs_ScavengerProspector" -->
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_TreasureHuntStartChanceMultiplier_Title">
+            <summary>The unique key for a translation equivalent to "Treasure Hunt Start Chance Multiplier".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_TreasureHuntStartChanceMultiplier_Desc">
+            <summary>The unique key for a translation equivalent to "Multiplies the base chance that your Scavenger or Prospector hunt senses will start to tingle.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_AllowScavengerHuntsOnFarm_Title">
+            <summary>The unique key for a translation equivalent to "Allow Scavenger Hunts on Farm".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_AllowScavengerHuntsOnFarm_Desc">
+            <summary>The unique key for a translation equivalent to "Whether a Scavenger Hunt can trigger while on the farm map.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ScavengerDetectionDistance_Title">
+            <summary>The unique key for a translation equivalent to "Scavenger Detection Distance".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ScavengerDetectionDistance_Desc">
+            <summary>The unique key for a translation equivalent to "How close you must be to the treasure tile to reveal it's location, in tiles.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ScavengerHuntHandicap_Title">
+            <summary>The unique key for a translation equivalent to "Scavenger Hunt Handicap".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ScavengerHuntHandicap_Desc">
+            <summary>The unique key for a translation equivalent to "Increase this number if you find that Scavenger hunts end too quickly.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ProspectorDetectionDistance_Title">
+            <summary>The unique key for a translation equivalent to "Prospector Detection Distance".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ProspectorDetectionDistance_Desc">
+            <summary>The unique key for a translation equivalent to "How close you must be to the treasure tile to hear the sound cue, in tiles.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ProspectorHuntHandicap_Title">
+            <summary>The unique key for a translation equivalent to "Prospector Hunt Handicap".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ProspectorHuntHandicap_Desc">
+            <summary>The unique key for a translation equivalent to "Increase this number if you find that Prospector hunts end too quickly.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_TrackingPointerScale_Title">
+            <summary>The unique key for a translation equivalent to "Tracking Pointer Scale".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_TrackingPointerScale_Desc">
+            <summary>The unique key for a translation equivalent to "Changes the size of the pointer used to track objects by Prospector and Scavenger professions.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_TrackingPointerBobRate_Title">
+            <summary>The unique key for a translation equivalent to "Tracking Pointer Bob Rate".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_TrackingPointerBobRate_Desc">
+            <summary>The unique key for a translation equivalent to "Changes the size of the pointer used to track objects by Prospector and Scavenger professions.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_DisableAlwaysTrack_Title">
+            <summary>The unique key for a translation equivalent to "Disable Constant Tracking Arrows".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_DisableAlwaysTrack_Desc">
+            <summary>The unique key for a translation equivalent to "If enabled, Prospector and Scavenger will only track off-screen objects while Mod Key is held.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_UseLegacyProspectorHunt_Title">
+            <summary>The unique key for a translation equivalent to "Use Legacy Prospector Hunt".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_UseLegacyProspectorHunt_Desc">
+            <summary>The unique key for a translation equivalent to "Enable to restore the legacy purple arrow for Prospector Hunts, instead of the new audio cues. This is an accessible option for the hearing-impaired.".</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:DaLion.Professions.I18n.Keys.Gmcm_Sections_Prfs_AnglerAquarist" -->
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_AnglerPriceBonusCeiling_Title">
+            <summary>The unique key for a translation equivalent to "Angler Price Bonus Ceiling".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_AnglerPriceBonusCeiling_Desc">
+            <summary>The unique key for a translation equivalent to "The highest number that will be added to your other price multipliers; each unique max-sized fish adds 0.005, up to this number. Adjust this if you mave multiple new fish mods installed.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_AquaristFishPondCeiling_Title">
+            <summary>The unique key for a translation equivalent to "Aquarist Fishing Bonus Ceiling".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_AquaristFishPondCeiling_Desc">
+            <summary>The unique key for a translation equivalent to "The maximum number of Fish Ponds that will be counted for Aquarist's fishing bonus. If you like raising dozens of fish species, you may use this to limit how easy the fishing minigame will become.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ShowFishCollectionMaxIcon_Title">
+            <summary>The unique key for a translation equivalent to "Show 'MAX' Icon in Fish Collection".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ShowFishCollectionMaxIcon_Desc">
+            <summary>The unique key for a translation equivalent to "Toggles whether or not to display the 'Max' icon below fish caught at max size.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_Sections_Prfs_Conservationist">
+            <summary>The unique key for a translation equivalent to "Conservationist".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ConservationistTrashNeededPerTaxDeduction_Title">
+            <summary>The unique key for a translation equivalent to "Trash per Tax Deduction %".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ConservationistTrashNeededPerTaxDeduction_Desc">
+            <summary>The unique key for a translation equivalent to "Conservationists must collect this much trash for every 1% tax deduction the following season.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ConservationistTrashNeededPerFriendshipPoint_Title">
+            <summary>The unique key for a translation equivalent to "Trash per Friendship Point".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ConservationistTrashNeededPerFriendshipPoint_Desc">
+            <summary>The unique key for a translation equivalent to "Conservationists must collect this much trash for every 1 friendship point towards villagers.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ConservationistTaxDeductionCeiling_Title">
+            <summary>The unique key for a translation equivalent to "Tax Deduction Ceiling".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ConservationistTaxDeductionCeiling_Desc">
+            <summary>The unique key for a translation equivalent to "The maximum tax deduction allowed by the Ferngill Revenue Service, in percentage (ignored if Taxes mod is installed).".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_Sections_Prfs_Tapper">
+            <summary>The unique key for a translation equivalent to "Tapper".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ImmersiveHeavyTapperYield_Title">
+            <summary>The unique key for a translation equivalent to "Immersive Heavy Tapper Yield".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ImmersiveHeavyTapperYield_Desc">
+            <summary>The unique key for a translation equivalent to "Causes Heavy Tapper to double syrup output stack instead of halving the production frequency. This makes it more consistent with the new Heavy Furnance and less redundant with the Tapper profession.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_AgingTreesQualitySyrups_Title">
+            <summary>The unique key for a translation equivalent to "Quality Syrups From Aging Trees".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_AgingTreesQualitySyrups_Desc">
+            <summary>The unique key for a translation equivalent to "Causes regular trees to age like Fruit Trees, which will increase the quality of produced syrups by 1 per year.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_Sections_Prfs_Rascal">
+            <summary>The unique key for a translation equivalent to "Rascal".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ShowEquippedAmmo_Title">
+            <summary>The unique key for a translation equivalent to "Show Equipped Ammo".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ShowEquippedAmmo_Desc">
+            <summary>The unique key for a translation equivalent to "Whether to draw the currently equipped ammo over the slingshot's tooltip.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_Sections_Prfs_SkillReset">
+            <summary>The unique key for a translation equivalent to "Skill Reset".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_EnableSkillReset_Title">
+            <summary>The unique key for a translation equivalent to "Enable Skill Reset".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_EnableSkillReset_Desc">
+            <summary>The unique key for a translation equivalent to "Whether the player can reset their skills to gain a new profession.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_SkillResetCostMultiplier_Title">
+            <summary>The unique key for a translation equivalent to "Skill Reset Cost Multiplier".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_SkillResetCostMultiplier_Desc">
+            <summary>The unique key for a translation equivalent to "Multiplies the base cost for reseting skills. Set to 0 to reset for free.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ForgetRecipesOnSkillReset_Title">
+            <summary>The unique key for a translation equivalent to "Forget Recipes on Skill Reset".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ForgetRecipesOnSkillReset_Desc">
+            <summary>The unique key for a translation equivalent to "Disable this to keep all skill recipes upon skill reseting.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_AllowMultipleResets_Title">
+            <summary>The unique key for a translation equivalent to "Allow Multiple Skill Resets per Day".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_AllowMultipleResets_Desc">
+            <summary>The unique key for a translation equivalent to "Whether the player can reset multiple skills pers day. NOTE: This causes the game to freeze overnight for some people.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_SkillExpMultiplierPerReset_Title">
+            <summary>The unique key for a translation equivalent to "Skill Exp Multiplier Per Reset".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_SkillExpMultiplierPerReset_Desc">
+            <summary>The unique key for a translation equivalent to "A multiplier applied to a skill's experience gain after each reset. This can make it permanently easier or harder to level-up thereafter.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ResetRibbonStyle_Title">
+            <summary>The unique key for a translation equivalent to "Ribbon Style".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ResetRibbonStyle_Desc">
+            <summary>The unique key for a translation equivalent to "Determines the style of the sprite that appears next to skill bars, and is used for indicating the skill reset progression.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_RibbonStyle_StackedStars">
+            <summary>The unique key for a translation equivalent to "Stacked Stars".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_RibbonStyle_Gen3Ribbons">
+            <summary>The unique key for a translation equivalent to "Gen 3 Ribbons".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_RibbonStyle_Gen4Ribbons">
+            <summary>The unique key for a translation equivalent to "Gen 4 Ribbons".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_Sections_Prfs_SkillExp">
+            <summary>The unique key for a translation equivalent to "Experience Multipliers".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_SkillExpMultipliers_Title">
+            <summary>The unique key for a translation equivalent to "Base {{skill}} Exp Multiplier".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_SkillExpMultipliers_Desc">
+            <summary>The unique key for a translation equivalent to "Multiplies all {{skill}} experience gained from the start of the game.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_Sections_Prfs_LimitBreak">
+            <summary>The unique key for a translation equivalent to "Limit Break".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_EnableLimitBreaks_Title">
+            <summary>The unique key for a translation equivalent to "Enable Limit Breaks".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_EnableLimitBreaks_Desc">
+            <summary>The unique key for a translation equivalent to "Whether the player can use their combat profession Limit Break after mastering the combat skill.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_LimitBreakKey_Title">
+            <summary>The unique key for a translation equivalent to "Limit Activation Key".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_LimitBreakKey_Desc">
+            <summary>The unique key for a translation equivalent to "The key used to activate the Limit Break.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_HoldKeyToLimitBreak_Title">
+            <summary>The unique key for a translation equivalent to "Hold-To-Activate".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_HoldKeyToLimitBreak_Desc">
+            <summary>The unique key for a translation equivalent to "If enabled, the Limit Break will be activated by holding the Activation Key for a short interval, instead of activating immediately.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_HoldDelayMilliseconds_Title">
+            <summary>The unique key for a translation equivalent to "Limit Activation Delay".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_HoldDelayMilliseconds_Desc">
+            <summary>The unique key for a translation equivalent to "How long the key should be held before the Limit Break is activated, in milliseconds.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_LimitGainFactor_Title">
+            <summary>The unique key for a translation equivalent to "Gain Factor".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_LimitGainFactor_Desc">
+            <summary>The unique key for a translation equivalent to "Affects the rate at which one builds the Limit Break gauge (higher is faster).".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_LimitDrainFactor_Title">
+            <summary>The unique key for a translation equivalent to "Drain Factor".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_LimitDrainFactor_Desc">
+            <summary>The unique key for a translation equivalent to "Affects the rate at which the Limit Break gauge depletes while activated (higher is faster).".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_LimitRespecCost_Title">
+            <summary>The unique key for a translation equivalent to "Cost of Limit Break Respec".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_LimitRespecCost_Desc">
+            <summary>The unique key for a translation equivalent to "The gold cost of changing the chosen Limit Break at the Statue of Prestige. Set to 0 to change for free.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_LimitGaugeOffset_Title">
+            <summary>The unique key for a translation equivalent to "Limit Gauge Offset".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_LimitGaugeOffset_Desc">
+            <summary>The unique key for a translation equivalent to "Use this to adjust the X and Y coordinates of the Limit Gauge if using other mods which also add HUD bars.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_Sections_Prfs_Prestige">
+            <summary>The unique key for a translation equivalent to "Prestige Progression".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_EnablePrestigeLevels_Title">
+            <summary>The unique key for a translation equivalent to "Enable Prestige Levels".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_EnablePrestigeLevels_Desc">
+            <summary>The unique key for a translation equivalent to "Whether the player can continue gaining levels up to 20 after achieving skill mastery.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ExpPerPrestigeLevel_Title">
+            <summary>The unique key for a translation equivalent to "Required Exp per Extended Level".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ExpPerPrestigeLevel_Desc">
+            <summary>The unique key for a translation equivalent to "How much skill experience is required for each level-up above level 10.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_PrestigeRespecCost_Title">
+            <summary>The unique key for a translation equivalent to "Cost of Prestige Respec".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_PrestigeRespecCost_Desc">
+            <summary>The unique key for a translation equivalent to "Monetary cost of respecing prestige profession choices for a skill. Set to 0 to respec for free.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_PrestigeProfessionIconStyle_Title">
+            <summary>The unique key for a translation equivalent to "Prestiged Profession Icon Style".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_PrestigeProfessionIconStyle_Desc">
+            <summary>The unique key for a translation equivalent to "Determines the style of the sprite used for Prestige Professions.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ProfessionIconStyle_MetallicGold">
+            <summary>The unique key for a translation equivalent to "Metallic Gold".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_ProfessionIconStyle_PosisterGold">
+            <summary>The unique key for a translation equivalent to "Posister Gold".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_MasteredSkillIconStyle_Title">
+            <summary>The unique key for a translation equivalent to "Mastered Skill Icon Style".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_MasteredSkillIconStyle_Desc">
+            <summary>The unique key for a translation equivalent to "Determines the style of the sprite used for Mastered skills.".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_SkillIconStyle_SiliconGold">
+            <summary>The unique key for a translation equivalent to "Silicon Gold".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_SkillIconStyle_KawaiiRoseGold">
+            <summary>The unique key for a translation equivalent to "Kawaii Rose Gold".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_GoTo_Prfs_Skills">
+            <summary>The unique key for a translation equivalent to "Go to Skill Settings".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_GoTo_Prfs_Mastery">
+            <summary>The unique key for a translation equivalent to "Go to Mastery Settings".</summary>
+        </member>
+        <member name="F:DaLion.Professions.I18n.Keys.Gmcm_BackTo_Prfs">
+            <summary>The unique key for a translation equivalent to "Back to Profession settings".</summary>
         </member>
         <member name="M:DaLion.Professions.I18n.Init(StardewModdingAPI.ITranslationHelper)">
             <summary>Construct an instance.</summary>
@@ -5918,6 +6872,7 @@
             <summary>Get a translation by its key.</summary>
             <param name="key">The translation key.</param>
             <param name="tokens">An object containing token key/value pairs. This can be an anonymous object (like <c>new { value = 42, name = "Cranberries" }</c>), a dictionary, or a class instance.</param>
+            <remarks>You should usually use a strongly-typed method like <see cref="M:DaLion.Professions.I18n.Harvester_Title_Male" /> instead.</remarks>
         </member>
         <member name="T:NetEscapades.EnumGenerators.EnumExtensionsAttribute">
             <summary>

@@ -40,6 +40,7 @@
         {
             "LogName": "aimon_sewersecret5",
             "Action": "EditData",
+			 "Update": "OnTimeChange",
             "Target": "Data/Events/Sewer",
             "Entries": {
                 "19405005/e 194050011/a 44 46": "Upper_Ambient/-1000 -1000/farmer 44 46 2/pause 1000/viewport 44 46 true/pause 1000/showFrame farmer 96/emote farmer 40/pause 1300/globalFade/viewport -1000 -1000/faceDirection farmer 2/playSound rabbit/pause 500/playSound rabbit/pause 900/playSound rabbit/pause 1100/playSound fishingRodBend/pause 900/playSound fishingRodBend/pause 1000/message \"{{i18n:i18n_key_87}}\"/pause 1000/end position 44 46"

@@ -1,0 +1,34 @@
+{
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SchoolHouse",
+            "When": {
+                "HasSeenEvent": "9695002",
+            },
+            "FromFile": "code/MapPatches/Seat.tmx",
+            "ToArea": {
+                "X": 1, 
+                "Y": 5,
+                "Width": 1,
+                "Height": 1,
+            "Patchmode": "Overlay",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SchoolHouse",
+            "When": {
+                "HasSeenEvent": "9695002",
+            },
+            "FromFile": "code/MapPatches/Seat.tmx",
+            "ToArea": {
+                "X": 2, 
+                "Y": 4,
+                "Width": 1,
+                "Height": 1,
+            "Patchmode": "Overlay",
+            },
+        },
+    ]
+}

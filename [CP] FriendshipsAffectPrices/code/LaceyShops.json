@@ -57,7 +57,32 @@
               "LocationName": "Temp"
             },
             "Update": "OnLocationChange"
-          }
+          },
+          {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["ichortower.HatMouseLacey_Lacey_SpouseRoom"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": "{{1st Stage Multiplier}}",
+                        "Condition": "PLAYER_FRIENDSHIP_POINTS Current ichortower.HatMouseLacey_Lacey {{1st Stage Required Friendship Lvl}}"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": "{{2nd Stage Multiplier}}",
+                        "Condition": "PLAYER_FRIENDSHIP_POINTS Current ichortower.HatMouseLacey_Lacey {{2nd Stage Required Friendship Lvl}}"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": "{{3rd Stage Multiplier}}",
+                        "Condition": "PLAYER_FRIENDSHIP_POINTS Current ichortower.HatMouseLacey_Lacey {{3rd Stage Required Friendship Lvl}}"
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        }
     ]
 }
 

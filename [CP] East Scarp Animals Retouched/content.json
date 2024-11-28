@@ -24,7 +24,7 @@
 			"FromFile": "Assets/{{TargetWithoutPath}}.png",
 			"When":
 			{
-				"HasMod |contains= Lemurkat.JacobEloise.CP": true
+				"HasMod |contains= Lemurkat.JacobEloise.CP, Lemurkat.EastScarpNPCs.CP": true
 			},
 		},
 		{
@@ -34,7 +34,7 @@
 			"FromFile": "Assets/{{TargetWithoutPath}}_{{MunchingtonColour}}.png",
 			"When":
 			{
-				"HasMod |contains= Lemurkat.JacobEloise.CP": true
+				"HasMod |contains= Lemurkat.JacobEloise.CP, Lemurkat.EastScarpNPCs.CP": true
 			},
 		},
 		{

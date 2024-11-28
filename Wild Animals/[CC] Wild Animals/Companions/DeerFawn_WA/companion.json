@@ -23,23 +23,23 @@
 		"Duration": 3000,
 		},
 		{
-		"Frame": 24,
+		"Frame": 20,
 		"Duration": 250,
 		},
 		{
-		"Frame": 25,
+		"Frame": 21,
 		"Duration": 250,
 		},
 		{
-		"Frame": 26,
+		"Frame": 22,
 		"Duration": 250,
 		},
 		{
-		"Frame": 25,
+		"Frame": 21,
 		"Duration": 250,
 		},
 		{
-		"Frame": 24,
+		"Frame": 20,
 		"Duration": 250,
 		},
 		{
@@ -47,23 +47,23 @@
 		"Duration": 250,
 		},
 		{
-		"Frame": 24,
+		"Frame": 20,
 		"Duration": 250,
 		},
 		{
-		"Frame": 25,
+		"Frame": 21,
 		"Duration": 250,
 		},
 		{
-		"Frame": 26,
+		"Frame": 22,
 		"Duration": 250,
 		},
 		{
-		"Frame": 25,
+		"Frame": 21,
 		"Duration": 250,
 		},
 		{
-		"Frame": 24,
+		"Frame": 20,
 		"Duration": 250,
 		},
 		],
@@ -81,47 +81,47 @@
 		"Duration": 3000,
 		},
 		{
-		"Frame": 20,
+		"Frame": 16,
 		"Duration": 100,
 		},
 		{
-		"Frame": 21,
+		"Frame": 17,
 		"Duration": 100,
 		},
 		{
-		"Frame": 22,
+		"Frame": 18,
 		"Duration": 500,
 		},
 		{
-		"Frame": 23,
+		"Frame": 19,
 		"Duration": 500,
 		},
 		{
-		"Frame": 22,
+		"Frame": 18,
 		"Duration": 500,
 		},
 		{
-		"Frame": 23,
+		"Frame": 19,
 		"Duration": 500,
 		},
 		{
-		"Frame": 22,
+		"Frame": 18,
 		"Duration": 500,
 		},
 		{
-		"Frame": 23,
+		"Frame": 19,
 		"Duration": 500,
 		},
 		{
-		"Frame": 22,
+		"Frame": 18,
 		"Duration": 500,
 		},
 		{
-		"Frame": 21,
+		"Frame": 17,
 		"Duration": 100,
 		},
 		{
-		"Frame": 20,
+		"Frame": 16,
 		"Duration": 100,
 		},
 		],
@@ -129,9 +129,28 @@
 	},
 	// This plays when the companion travels left
 	"LeftAnimation": {
-		"StartingFrame": 12,
-		"NumberOfFrames": 4,
-		"Duration": 100,
+		"ManualFrames": [
+		{
+		"Frame": 4,
+		"Duration": 150,
+		"Flip": true
+		},
+		{
+		"Frame": 5,
+		"Duration": 150,
+		"Flip": true
+		},
+		{
+		"Frame": 6,
+		"Duration": 150,
+		"Flip": true
+		},
+		{
+		"Frame": 7,
+		"Duration": 150,
+		"Flip": true
+		}
+		],
 	"IdleAnimation": {
 		"ManualFrames": [
 		{
@@ -140,57 +159,57 @@
 		"Flip": true
 		},
 		{
-		"Frame": 16,
+		"Frame": 12,
 		"Duration": 100,
 		"Flip": true
 		},
 		{
-		"Frame": 17,
+		"Frame": 13,
 		"Duration": 100,
 		"Flip": true
 		},
 		{
-		"Frame": 18,
+		"Frame": 14,
 		"Duration": 500,
 		"Flip": true
 		},
 		{
-		"Frame": 19,
+		"Frame": 15,
 		"Duration": 500,
 		"Flip": true
 		},
 		{
-		"Frame": 18,
+		"Frame": 14,
 		"Duration": 500,
 		"Flip": true
 		},
 		{
-		"Frame": 19,
+		"Frame": 15,
 		"Duration": 500,
 		"Flip": true
 		},
 		{
-		"Frame": 18,
+		"Frame": 14,
 		"Duration": 500,
 		"Flip": true
 		},
 		{
-		"Frame": 19,
+		"Frame": 15,
 		"Duration": 500,
 		"Flip": true
 		},
 		{
-		"Frame": 18,
+		"Frame": 14,
 		"Duration": 500,
 		"Flip": true
 		},
 		{
-		"Frame": 17,
+		"Frame": 13,
 		"Duration": 100,
 		"Flip": true
 		},
 		{
-		"Frame": 16,
+		"Frame": 12,
 		"Duration": 100,
 		"Flip": true
 		},
@@ -207,49 +226,50 @@
 		{
 		"Frame": 4,
 		"Duration": 3000,
+		"Flip": true
 		},
 		{
-		"Frame": 16,
+		"Frame": 12,
 		"Duration": 100,
 		},
 		{
-		"Frame": 17,
+		"Frame": 13,
 		"Duration": 100,
 		},
 		{
-		"Frame": 18,
+		"Frame": 14,
 		"Duration": 500,
 		},
 		{
-		"Frame": 19,
+		"Frame": 15,
 		"Duration": 500,
 		},
 		{
-		"Frame": 18,
+		"Frame": 14,
 		"Duration": 500,
 		},
 		{
-		"Frame": 19,
+		"Frame": 15,
 		"Duration": 500,
 		},
 		{
-		"Frame": 18,
+		"Frame": 14,
 		"Duration": 500,
 		},
 		{
-		"Frame": 19,
+		"Frame": 15,
 		"Duration": 500,
 		},
 		{
-		"Frame": 18,
+		"Frame": 14,
 		"Duration": 500,
 		},
 		{
-		"Frame": 17,
+		"Frame": 13,
 		"Duration": 100,
 		},
 		{
-		"Frame": 16,
+		"Frame": 12,
 		"Duration": 100,
 		},
 		],

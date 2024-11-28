@@ -1,0 +1,109 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Meha": {
+                "DisplayName": "Meha",
+                "BirthSeason": "Fall",
+                "BirthDay": 16,
+                "HomeRegion": "Other",
+                "Gender": "Male",
+                "Age": "Child",
+                "Manner": "Polite",
+                "Optimism": "Negative",
+                "SocialAnxiety": "Outgoing",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "CanReceiveGifts": true,
+                "Calendar": "AlwaysShown",
+                "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9695002",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_WarpRoom",
+                        "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        }
+                    ],
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Meha": "{{i18n:gifts.Meha.love}}/241/{{i18n:gifts.Meha.like}}/62 72/{{i18n:gifts.Meha.dislike}}/91/{{i18n:gifts.Meha.hate}}/149 167/{{i18n:gifts.Meha.neutral}}/234/"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Meha",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Meha/Meha.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Meha",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Meha/Meha_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "meha_read_right": "17/17/17",
+            },
+        },
+//NPC Strings
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.18": "{{i18n:Seat_Meha}}"},
+        },
+//When Your Child (GrowingValey) go to School
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.18": "{{i18n:Seat_Meha_YourChild {{FirstbornTokenPass}} }}"},
+            "When": {
+                "HasValue:{{ChildGenders|valueAt=0}}": true,
+                "HasMod |contains=Candidus42.LittleNPCs": "true",
+                "HasMod |contains=siliconmodding.GVChildNPCs": "true",
+                "HasMod |contains=siliconmodding.GVChildrenSMAPI": "true",
+            },
+        },
+//When Your Child (The Farmer's Children) go to School
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.18": "{{i18n:Seat_Meha_YourChild2}}"},
+             "When": {
+                "HasValue:{{ChildGenders|valueAt=0}}": true,
+                "HasMod |contains=Candidus42.LittleNPCs": "true",
+                "HasMod |contains=xiddav.NPCChildren": "true",
+            },
+        },
+//AntiSocial Flag
+        {
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Meha": true
+            },
+            "When": {
+                "Meha": "true"
+            },
+        },
+    ]
+}

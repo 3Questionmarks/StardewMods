@@ -1,0 +1,53 @@
+{
+        "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Kitty",
+            "Entries": { 
+                "Mon": "0 Custom_WarpRoom 1 3 3/610 BusStop 24 24 1/620 Custom_SchoolHouse 20 17 3/700 Custom_SchoolHouse 19 17 3 kitty_read_left/710 Custom_SchoolHouse 19 17 3 kitty_read_left/1130 Town 7 20 1/1230 Custom_SchoolHouse 20 17 3/1250 Custom_SchoolHouse 19 17 3 kitty_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Tue": "0 Custom_WarpRoom 1 3 3/610 BusStop 24 24 1/620 Custom_SchoolHouse 20 17 3/700 Custom_SchoolHouse 19 17 3 kitty_read_left/710 Custom_SchoolHouse 19 17 3 kitty_read_left/1130 Town 7 20 1/1230 Custom_SchoolHouse 20 17 3/1250 Custom_SchoolHouse 19 17 3 kitty_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Wed": "0 Custom_WarpRoom 1 3 3/610 BusStop 24 24 1/620 Custom_SchoolHouse 20 17 3/700 Custom_SchoolHouse 19 17 3 kitty_read_left/710 Custom_SchoolHouse 19 17 3 kitty_read_left/1130 Town 7 20 1/1230 Custom_SchoolHouse 20 17 3/1250 Custom_SchoolHouse 19 17 3 kitty_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Thu": "0 Custom_WarpRoom 1 3 3/610 BusStop 24 24 1/620 Custom_SchoolHouse 20 17 3/700 Custom_SchoolHouse 19 17 3 kitty_read_left/710 Custom_SchoolHouse 19 17 3 kitty_read_left/1130 Town 7 20 1/1230 Custom_SchoolHouse 20 17 3/1250 Custom_SchoolHouse 19 17 3 kitty_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Fri": "0 Custom_WarpRoom 1 3 3/610 BusStop 24 24 1/620 Custom_SchoolHouse 20 17 3/700 Custom_SchoolHouse 19 17 3 kitty_read_left/710 Custom_SchoolHouse 19 17 3 kitty_read_left/1130 Town 7 20 1/1230 Custom_SchoolHouse 20 17 3/1250 Custom_SchoolHouse 19 17 3 kitty_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sat": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sun": "0 Custom_DayEnd_WarpRoom 3 3 0",
+
+//Festivals School is closed
+                "spring_13": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "spring_24": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "fall_16": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_8": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_25": "0 Custom_DayEnd_WarpRoom 3 3 0",
+            },
+        },
+// Schedule when Lavril and Void are in the school.
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Kitty",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasSeenEvent |contains=63070012": "true",
+                "HasMod |contains=Arknir27.Lavril": "true"
+                },
+            "Entries": {
+                "Mon": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 23 0/620 Custom_SchoolHouse 20 17 3/700 Custom_SchoolHouse 19 17 3 kitty_read_left/710 Custom_SchoolHouse 19 17 3 Kitty_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Tue": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 23 0/620 Custom_SchoolHouse 2 4 2 kitty_sit_front/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Wed": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 23 0/620 Custom_SchoolHouse 2 4 2 kitty_sit_front/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Thu": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 23 0/620 Custom_SchoolHouse 20 17 3/700 Custom_SchoolHouse 19 17 3 kitty_read_left/710 Custom_SchoolHouse 19 17 3 Kitty_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Fri": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 23 0/620 Custom_SchoolHouse 2 4 2 kitty_sit_front/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sat": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sun": "0 Custom_DayEnd_WarpRoom 3 3 0",
+
+//Festivals School is closed
+                "spring_13": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "spring_24": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "fall_16": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_8": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_25": "0 Custom_DayEnd_WarpRoom 3 3 0",
+            },
+        },
+    ]
+}
+
+
+//(0 = up, 1 = right, 2 = down, 3 = left)

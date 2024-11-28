@@ -149,7 +149,7 @@
                         {
                             "Id": "Lumisteria.MtVapius_ForestCrystalLake",
                             "DisplayName": "[LocationName Lumisteria.MtVapius_ForestCrystalLake]",
-                            "Condition": "!LOCATION_CONTEXT Here Lumisteria_MtVapius_Main, PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_ForestCrystalLake",
+                            "Condition": "ANY \"!LOCATION_CONTEXT Here Lumisteria_MtVapius_Main\" \"PLAYER_HAS_MAIL Any Lumisteria.MtVapius_MineCartRepairedMail\", PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_ForestCrystalLake",
                             "TargetLocation": "Lumisteria.MtVapius_ForestCrystalLake",
                             "TargetTile": {
                                 "X": 23,
@@ -171,7 +171,7 @@
                         {
                             "Id": "Lumisteria.MtVapius_RandomRoom",
                             "DisplayName": "[LocationName {{Random:Lumisteria.MtVapius_ForestCaveMoonPond, Lumisteria.MtVapius_ForestCaveMarsh, Lumisteria.MtVapius_ForestCaveWinterRift, Lumisteria.MtVapius_ForestCaveAmber|key=Lumisteria.MtVapius_RandomRoom}}]",
-                            "Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Lodge_ShortcutsFixed, PLAYER_LOCATION_NAME Current Lumisteria.MtVapius_ForestCaveShortcut",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Lodge_ShortcutsFixed",
                             "TargetLocation": "{{Random:Lumisteria.MtVapius_ForestCaveMoonPond, Lumisteria.MtVapius_ForestCaveMarsh, Lumisteria.MtVapius_ForestCaveWinterRift, Lumisteria.MtVapius_ForestCaveAmber|key=Lumisteria.MtVapius_RandomRoom}}",
                             "TargetTile": {
                                 "X": 7,
@@ -182,7 +182,7 @@
                         {
                             "Id": "Lumisteria.MtVapius_ForestCaveShortcut",
                             "DisplayName": "[LocationName Lumisteria.MtVapius_ForestCaveShortcut]",
-                            "Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Lodge_ShortcutsFixed, !LOCATION_CONTEXT Here Lumisteria_MtVapius_Main",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Lodge_ShortcutsFixed",
                             "TargetLocation": "Lumisteria.MtVapius_ForestCaveShortcut",
                             "TargetTile": {
                                 "X": 36,

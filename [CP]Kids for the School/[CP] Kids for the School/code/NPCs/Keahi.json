@@ -1,0 +1,13 @@
+{   
+        "Changes": [
+        {	        
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.4": "{{i18n:Seat_Keahi}}" },
+            "When": {
+                "HasSeenEvent": "9695002",
+                "HasMod": "Rafseazz.RSVCP",
+            },
+        },
+    ]
+}

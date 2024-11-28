@@ -115,7 +115,7 @@
 
         "altBranch": "resetVariable/speak Annetta \"{{i18n:annetta.cabin.event.011}}#$b#{{i18n:annetta.cabin.event.011ex}}\"/pause 400/question fork1 \"{{i18n:annetta.cabin.event.012}}#{{i18n:annetta.cabin.event.012.answers.take_walk}}#{{i18n:annetta.cabin.event.012.answers.not_today}}\"/fork relaxCabin/pause 300/switchEvent lakeWalk",
         
-        "lakeWalk": "pause 300/faceDirection farmer 1 true/faceDirection Annetta 2 true/pause 800/addConversationTopic Capelakewalk 1/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.033}}\"/move Annetta 0 2 2/playSound doorOpen/warp Annetta -10 -10 True/move farmer 1 0 2/move farmer 0 1 2/warp farmer -2 -2 True/playSound doorClose/pause 800/globalFade/viewport -1000 -1000/warp farmer -100 -100 True/stopMusic/playMusic New Snow/faceDirection farmer 2 true/warp Annetta 35 26 True/showFrame Annetta 44/positionOffset Annetta 0 -9/pause 400/ambientLight 200 100 80/changeToTemporaryMap forest/fade/warp farmer 34 25 True/faceDirection farmer 2 true/viewport 35 26/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.036}}\"/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.lake1}}\"/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.lake2}}\"/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.038}}\"/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.039}}\"/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.040}}\"/pause 100/faceDirection farmer 1/emote farmer 32 true/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.041}}\"/faceDirection farmer 2/pause 1000/globalFade/viewport -1000 -1000/stopMusic/addMailReceived lakewalkgift/end dialogue Annetta \"{{i18n:annetta.cabin.event.044}}\"",
+        "lakeWalk": "pause 300/faceDirection farmer 1 true/faceDirection Annetta 2 true/pause 800/addConversationTopic Capelakewalk 1/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.033}}\"/move Annetta 0 2 2/playSound doorOpen/warp Annetta -10 -10 True/move farmer 1 0 2/move farmer 0 1 2/warp farmer -2 -2 True/playSound doorClose/pause 800/globalFade/viewport -1000 -1000/warp farmer -100 -100 True/stopMusic/playMusic New Snow/faceDirection farmer 2 true/warp Annetta 35 26 True/showFrame Annetta 44/positionOffset Annetta 0 -9/pause 400/ambientLight 200 100 80/changeToTemporaryMap forest/fade/warp farmer 34 25 True/faceDirection farmer 2 true/viewport 35 26/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.036}}\"/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.lake1}}\"/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.lake2}}\"/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.038}}\"/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.039}}\"/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.040}}\"/pause 100/faceDirection farmer 1/emote farmer 32 true/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.041}}\"/faceDirection farmer 2/pause 1000/globalFade/viewport -1000 -1000/stopMusic/mail lakewalkgift/end dialogue Annetta \"{{i18n:annetta.cabin.event.044}}\"",
         
         
         "relaxCabin": "speak Annetta \"{{i18n:annetta.cabin.event.013}}\"/pause 800/speak Annetta \"{{i18n:annetta.cabin.event.014}}\"/question fork0 \"#{{i18n:annetta.cabin.event.014.answers.adventures_yes}}#{{i18n:annetta.cabin.event.014.answers.adventures_no}}\"/fork busyF2/pause 300/switchEvent adventures",
@@ -125,14 +125,23 @@
  },
  
  
- 
-  {
-      "Action": "EditData",
-      "Target": "Data/Events/Custom_CapeStardew",
-      "Entries": {
-        "1463510168/t 600 2600/e 146353398/f Annetta 1500/p Annetta": "EmilyDream/-1000 -1000/farmer -100 -100 2 Annetta 34 27 2 Jelli -300 -300 0/fade unfade/viewport 40 36 true/pause 400/viewport move 0 2 1000/move Annetta 0 13 2/move Annetta 4 0 2/pause 100/animate Annetta false true 500 56 57 58 59/pause 500/warp farmer 35 21 True/pause 5000/warp Jelli 56 38 True/playSound slosh/swimming Jelli/move Jelli -11 0 3/playSound slosh/emote Jelli 56/pause 400/move farmer 0 15 2/faceDirection farmer 1/pause 500/faceDirection farmer 2/emote Jelli 32/addTemporaryActor JelliSpell1 18 18 38 40 2 false/playSound cowboy_powerup/animate JelliSpell1 false true 100 0 1 2 3 4 5 6/pause 1500/stopAnimation JelliSpell1/warp JelliSpell1 -100 -100 True/pause 200/stopAnimation Annetta 56/speak Annetta \"{{i18n:Annetta.special.event.001}}\"/faceDirection Annetta 1/pause 200/faceDirection Annetta 0/speak Annetta \"{{i18n:Annetta.special.event.002}}\"/pause 500/warp Jelli -30 -30 True/playSound fishBite_alternate_2/faceDirection Annetta 1/pause 200/speak Annetta \"{{i18n:Annetta.special.event.003}}\"/emote farmer 32/pause 500/end"
-      },
-      },
+
+
+
+///newAnnettaPrettyStoneUnlock//
+
+{
+  "Action": "EditData",
+  "Target": "Data/Events/Custom_CapeStardew",
+  "When": {
+    "HasFlag": "prettyStone1"
+  },
+  "Entries": {
+    "1463510168/f Annetta 1500": "kindadumbautumn/-1000 -1000/farmer -100 -100 2 Annetta 34 27 2 Jelli -300 -300 0/fade unfade/viewport 40 36 true/pause 400/viewport move 0 2 1000/move Annetta 0 13 2/move Annetta 4 0 2/pause 100/animate Annetta false true 500 56 57 58 59/pause 500/warp farmer 35 21 True/pause 5000/warp Jelli 56 38 True/playSound slosh/swimming Jelli/move Jelli -11 0 3/playSound slosh/emote Jelli 56/pause 400/move farmer 0 15 2/faceDirection farmer 1/pause 500/faceDirection farmer 2/emote Jelli 32/addTemporaryActor JelliSpell1 18 18 38 40 2 false/playSound cowboy_powerup/animate JelliSpell1 false true 100 0 1 2 3 4 5 6/pause 1500/stopAnimation JelliSpell1/warp JelliSpell1 -100 -100 True/pause 200/stopAnimation Annetta 56/speak Annetta \"{{i18n:Annetta.special.event.001}}\"/faceDirection Annetta 1/pause 200/faceDirection Annetta 0/speak Annetta \"{{i18n:Annetta.special.event.002}}\"/pause 500/warp Jelli -30 -30 True/playSound fishBite_alternate_2/faceDirection Annetta 1/pause 200/speak Annetta \"{{i18n:Annetta.special.event.003}}\"/emote farmer 32/pause 500/quickQuestion \"{{i18n:Annetta.quickquestion.001}}#{{i18n:Annetta.quickquestion.yes}}#{{i18n:Annetta.quickquestion.no}}\"(break)playSound smallSelect\\message \"{{i18n:Annetta.quickquestion.002}}\"\\move Annetta -3 0 0\\faceDirection Annetta 0\\speak Annetta \"{{i18n:Annetta.quickquestion.003}}\"\\friendship Annetta 50\\addConversationTopic CapeStardew.AnnettaJelliEncounter.yes 30(break)playSound smallSelect\\message \"{{i18n:Annetta.quickquestion.004}}\"\\speak Annetta \"{{i18n:Annetta.quickquestion.005}}\"\\friendship Annetta -25\\addConversationTopic CapeStardew.AnnettaJelliEncounter.no 10/pause 100/end"
+  }
+},
+
+
     
 //revitaliteaevent///
   {
@@ -159,6 +168,18 @@
 },
 
 },
+//AnnettaPositiveConversationTopicEvent//
+{
+  "Action": "EditData",
+  "Target": "Data/Events/Custom_CapeStardew",
+  "When": {
+    "HasConversationTopic": "CapeStardew.AnnettaJelliEncounter.yes",
+  },
+  "Entries": {
+    "1463510170/t 600 2600/p Annetta": "Pink Petals/-1000 -1000/farmer -100 -100 2 Annetta 43 36 1/fade unfade/viewport 40 36 true/pause 400/viewport move 0 2 1000/move Annetta 1 0 1/animate Annetta false true 2500 4 5 4 4 4/playSound slosh/pause 500/warp farmer 35 21 True/move farmer 0 17 1/move farmer 8 0 1/pause 3000/emote Annetta 16 true/stopAnimation Annetta 4/faceDirection Annetta 2/speak Annetta \"{{i18n:Annetta.new.event.001}}\"/faceDirection Annetta 1/pause 200/speak Annetta \"{{i18n:Annetta.new.event.002}}\"/pause 500/speak Annetta \"{{i18n:Annetta.new.event.003}}\"/emote farmer 32/pause 500/faceDirection Annetta 2/speak Annetta \"{{i18n:Annetta.new.event.004}}\"/faceDirection Annetta 1/pause 300/fade unfade/pause 150/end"
+  }
+}
+
       
   ]
 }

@@ -155,7 +155,16 @@
 							"Height": 9
 						}
 					},
-					"FlowerDanceCanDance":true,
+					"SpousePatio": {
+						"MapAsset": "Lemurkat_MrGinger_SpousePatio",
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 4,
+							"Height": 4
+						}
+					},
+					"FlowerDanceCanDance": true,
 					"WinterStarGifts": [
 						{
 							"Condition": null,
@@ -218,7 +227,7 @@
 			"Target": "Data/animationDescriptions",
 			"Entries": {
 				"MrG_Grooming": "24 25 26/23 23 29 29 30 30 31 31 30 30 23 23 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 56 56 57 57 58 58 59 59 58 58 56 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27/26 25 24",
-				"MrG_Sleep": "36/36 36 36 36 36 36 36 36 37 37 37 37 37 37 37 37/36",
+				"MrG_Sleep": "36/36 36 36 36 36 36 36 36 37 37 37 37 37 37 37 37/36//laying_down",
 				"MrG_Door": "16 17/18 19/17 16",
 				"MrG_Floop": "32 33 34/35/34 33 32",
 				"misterginger_sleep": "22/22/22"
@@ -374,10 +383,7 @@
 		{
 			"Action": "Load",
 			"Target": "Characters/VoidGolem",
-			"FromFile": "assets/Images/VoidGolem.png",
-			"When": {
-				"HasMod |contains=lemurkat.MarnieRanchPack.CP": false
-			}
+			"FromFile": "assets/Images/VoidGolem.png"
 		},
 		//Events	
 		{
@@ -432,7 +438,7 @@
 			"Action": "EditData",
 			"Target": "Data/Events/WizardHouse",
 			"Entries": {
-				"50706121/f MisterGinger 1500/t 1800 2400/Hl Tristan_Returns/n Wizard_CatTalk/i 769": "WizardSong/-1000 -1000/farmer -100 -100 0 Wizard 3 17 2 MisterGinger 2 17 1/removeItem 769/removeQuest 15070/skippable/viewport 8 19 true/pause 1000/faceDirection Wizard 3/speak Wizard \"{{i18n:6hearts.{{wizard}}.1}}\"/pause 500/playSound cat/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.2}}\"/pause 500/playSound cat/pause 1000/playSound cat/speak Wizard \"{{i18n:6hearts.{{wizard}}.3}}\"/playSound cat/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.4}}\"/pause 500/playSound stoneStep/faceDirection MisterGinger 2/faceDirection Wizard 2/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.5}}\"/pause 500/playSound doorOpen/{{6heartwarp}}/move farmer 0 -4 0/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.6}}\"/move farmer -2 0 3/move farmer 0 -3 3/pause 500/playSound cat/pause 250/faceDirection Wizard 3/speak Wizard \"{{i18n:6hearts.{{wizard}}.7}}\"/pause 500/faceDirection Wizard 1/speak Wizard \"{{i18n:6hearts.{{wizard}}.8}}\"/pause 500/{{6heartmove}}/pause 250/playSound coin/speak Wizard \"{{i18n:6hearts.{{wizard}}.9}}\"/move Wizard 0 2 2/faceDirection farmer 2/faceDirection MisterGinger 1/pause 500/speak Wizard \"{{i18n:6hearts.{{wizard}}.10}}\"/pause 250/playSound cat/speak Wizard \"{{i18n:6hearts.{{wizard}}.11}}\"/pause 500/playSound dropItemInWater/move farmer 0 2 2/pause 250/showFrame Wizard 18/showFrame 96/pause 1000/speak Wizard \"{{i18n:6hearts.{{wizard}}.12}}\"/pause 800/emote farmer 28/faceDirection MisterGinger 1/playSound cat/pause 500/showFrame Wizard 19/pause 800/showFrame farmer 90/faceDirection Wizard 2/pause 1000/farmerEat 184/pause 4000/playSound gulp/move farmer 0 -1 2/animate farmer false true 350 104 105/pause 4000/globalFade .008/viewport -1000 -1000/stopAnimation farmer/faceDirection farmer 2/warp MisterGinger 5 18/warp Wizard 3 18 1/faceDirection Wizard 1/faceDirection MisterGinger 3/playMusic none/pause 500/viewport 8 19 true/pause 500/speak MisterGinger \"{{i18n:6hearts.13}}\"/pause 500/speak MisterGinger \"{{i18n:6hearts.14}}\"/pause 500/emote Wizard 8/pause 500/speak MisterGinger \"{{i18n:6hearts.15}}\"/pause 250/quickQuestion {{i18n:6hearts.{{wizard}}.16}}(break)emote Wizard 40\\speak Wizard \"{{i18n:6hearts.{{wizard}}.17}}\"(break)speak MisterGinger \"{{i18n:6hearts.{{wizard}}.18}}\"(break)speak MisterGinger \"{{i18n:6hearts.{{wizard}}.19}}\"(break)speak Wizard \"{{i18n:6hearts.{{wizard}}.20}}\"/pause 500/faceDirection farmer 1/pause 500/emote farmer 16/speak MisterGinger \"{{i18n:6hearts.21}}\"/pause 250/emote Wizard 12/pause 500/speak Wizard \"{{i18n:6hearts.{{wizard}}.22}}\"/pause 250/speak MisterGinger \"{{i18n:6hearts.{{wizard}}.23}}\"/emote farmer 32/pause 1000/end dialogue MisterGinger \"{{i18n:6hearts.24}}\""
+				"50706121/f MisterGinger 1500/t 1800 2400/Hl Tristan_Returns/n Wizard_CatTalk/i 769": "WizardSong/-1000 -1000/farmer -100 -100 0 Wizard 3 17 2 MisterGinger 2 17 1/removeItem 769/removeQuest 15070/skippable/viewport 8 19 true/pause 1000/faceDirection Wizard 3/speak Wizard \"{{i18n:6hearts.{{wizard}}.1}}\"/pause 500/playSound cat/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.2}}\"/pause 500/playSound cat/pause 1000/playSound cat/speak Wizard \"{{i18n:6hearts.{{wizard}}.3}}\"/playSound cat/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.4}}\"/pause 500/playSound stoneStep/faceDirection MisterGinger 2/faceDirection Wizard 2/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.5}}\"/pause 500/playSound doorOpen/{{6heartwarp}}/move farmer 0 -4 0/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.6}}\"/move farmer -2 0 3/move farmer 0 -3 3/pause 500/playSound cat/pause 250/faceDirection Wizard 3/speak Wizard \"{{i18n:6hearts.{{wizard}}.7}}\"/pause 500/faceDirection Wizard 1/speak Wizard \"{{i18n:6hearts.{{wizard}}.8}}\"/pause 500/{{6heartmove}}/pause 250/playSound coin/speak Wizard \"{{i18n:6hearts.{{wizard}}.9}}\"/move Wizard 0 2 2/faceDirection farmer 2/faceDirection MisterGinger 1/pause 500/speak Wizard \"{{i18n:6hearts.{{wizard}}.10}}\"/pause 250/playSound cat/speak Wizard \"{{i18n:6hearts.{{wizard}}.11}}\"/pause 500/playSound dropItemInWater/move farmer 0 2 2/pause 250/showFrame Wizard 18/showFrame 96/pause 1000/speak Wizard \"{{i18n:6hearts.{{wizard}}.12}}\"/pause 800/emote farmer 28/faceDirection MisterGinger 1/playSound cat/pause 500/showFrame Wizard 19/pause 800/showFrame farmer 90/faceDirection Wizard 2/pause 1000/farmerEat 184/pause 4000/playSound gulp/move farmer 0 -1 2/animate farmer false true 350 104 105/pause 4000/globalFade .008/viewport -1000 -1000/stopAnimation farmer/faceDirection farmer 2/warp MisterGinger 5 18/warp Wizard 3 18/faceDirection Wizard 1/faceDirection MisterGinger 3/playMusic none/pause 500/viewport 8 19 true/pause 500/speak MisterGinger \"{{i18n:6hearts.13}}\"/pause 500/speak MisterGinger \"{{i18n:6hearts.14}}\"/pause 500/emote Wizard 8/pause 500/speak MisterGinger \"{{i18n:6hearts.15}}\"/pause 250/quickQuestion {{i18n:6hearts.{{wizard}}.16}}(break)emote Wizard 40\\speak Wizard \"{{i18n:6hearts.{{wizard}}.17}}\"(break)speak MisterGinger \"{{i18n:6hearts.{{wizard}}.18}}\"(break)speak MisterGinger \"{{i18n:6hearts.{{wizard}}.19}}\"(break)speak Wizard \"{{i18n:6hearts.{{wizard}}.20}}\"/pause 500/faceDirection farmer 1/pause 500/emote farmer 16/speak MisterGinger \"{{i18n:6hearts.21}}\"/pause 250/emote Wizard 12/pause 500/speak Wizard \"{{i18n:6hearts.{{wizard}}.22}}\"/pause 250/speak MisterGinger \"{{i18n:6hearts.{{wizard}}.23}}\"/emote farmer 32/pause 1000/end dialogue MisterGinger \"{{i18n:6hearts.24}}\""
 			},
 			"When": {
 				"HasMod |contains=Ran.HarvestGoddess": false
@@ -443,7 +449,7 @@
 			"Action": "EditData",
 			"Target": "Data/Events/WizardHouse",
 			"Entries": {
-				"50706121/f MisterGinger 1500/t 1800 2400/Hl Tristan_Returns/n Wizard_CatTalk/i 768": "WizardSong/-1000 -1000/farmer -100 -100 0 Wizard 3 17 2 MisterGinger 2 17 1/removeItem 768/skippable/viewport 8 19 true/pause 1000/faceDirection Wizard 3/speak Wizard \"{{i18n:6hearts.{{wizard}}.1}}\"/pause 500/playSound cat/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.2}}\"/pause 500/playSound cat/pause 1000/playSound cat/speak Wizard \"{{i18n:6hearts.{{wizard}}.3}}\"/playSound cat/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.4}}\"/pause 500/playSound stoneStep/faceDirection MisterGinger 2/faceDirection Wizard 2/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.5}}\"/pause 500/playSound doorOpen/{{6heartwarp}}/move farmer 0 -4 0/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.6}}\"/move farmer -2 0 3/move farmer 0 -3 3/pause 500/playSound cat/pause 250/faceDirection Wizard 3/speak Wizard \"{{i18n:6hearts.{{wizard}}.7}}\"/pause 500/faceDirection Wizard 1/speak Wizard \"{{i18n:6hearts.{{wizard}}.8}}\"/pause 500/{{6heartmove}}/pause 250/playSound coin/speak Wizard \"{{i18n:6hearts.{{wizard}}.9}}\"/move Wizard 0 2 2/faceDirection farmer 2/faceDirection MisterGinger 1/pause 500/speak Wizard \"{{i18n:6hearts.{{wizard}}.10}}\"/pause 250/playSound cat/speak Wizard \"{{i18n:6hearts.{{wizard}}.11}}\"/pause 500/playSound dropItemInWater/move farmer 0 2 2/pause 250/showFrame Wizard 18/showFrame 96/pause 1000/speak Wizard \"{{i18n:6hearts.{{wizard}}.12}}\"/pause 800/emote farmer 28/faceDirection MisterGinger 1/playSound cat/move farmer 0 -1 2/pause 500/pause 4000/globalFade .008/viewport -1000 -1000/speak Wizard \"{{i18n:6hearts.{{wizard}}.13}}\"/faceDirection farmer 2/warp MisterGinger 5 18/warp Wizard 3 18 1/faceDirection Wizard 1/faceDirection MisterGinger 3/playMusic none/pause 500/viewport 8 19 true/pause 500/speak MisterGinger \"{{i18n:6hearts.13}}@? @!$2\"/pause 500/speak MisterGinger \"{{i18n:6hearts.14}}\"/pause 500/emote Wizard 8/pause 500/speak MisterGinger \"{{i18n:6hearts.15}}@? Are you okay?\"/pause 250/quickQuestion {{i18n:6hearts.{{wizard}}.16}}(break)emote Wizard 40\\speak Wizard \"{{i18n:6hearts.{{wizard}}.17}}\"(break)speak MisterGinger \"{{i18n:6hearts.{{wizard}}.18}}\"(break)speak Wizard \"{{i18n:6hearts.{{wizard}}.20}}\"/pause 500/faceDirection farmer 1/pause 500/emote farmer 16/speak MisterGinger \"{{i18n:6hearts.{{wizard}}.21}}\"/pause 250/emote Wizard 60/pause 500/speak Wizard \"{{i18n:6hearts.{{wizard}}.22}}\"/pause 250/faceDirection farmer 3/speak MisterGinger \"{{i18n:6hearts.{{wizard}}.23}}\"/pause 500/speak Wizard \"{{i18n:6hearts.{{wizard}}.24}}\"/pause 500/faceDirection farmer 1/emote farmer 32/pause 1000/end dialogue MisterGinger \"{{i18n:6hearts.24}}Anyone can talk to animals, but it takes a special kind of person to _listen_ to them.#$b#Yes, that's a compliment. Don't get used to them. I've got a reputation to withhold, you know.\""
+				"50706121/f MisterGinger 1500/t 1800 2400/Hl Tristan_Returns/n Wizard_CatTalk/i 768": "WizardSong/-1000 -1000/farmer -100 -100 0 Wizard 3 17 2 MisterGinger 2 17 1/removeItem 768/skippable/viewport 8 19 true/pause 1000/faceDirection Wizard 3/speak Wizard \"{{i18n:6hearts.{{wizard}}.1}}\"/pause 500/playSound cat/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.2}}\"/pause 500/playSound cat/pause 1000/playSound cat/speak Wizard \"{{i18n:6hearts.{{wizard}}.3}}\"/playSound cat/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.4}}\"/pause 500/playSound stoneStep/faceDirection MisterGinger 2/faceDirection Wizard 2/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.5}}\"/pause 500/playSound doorOpen/{{6heartwarp}}/move farmer 0 -4 0/pause 250/speak Wizard \"{{i18n:6hearts.{{wizard}}.6}}\"/move farmer -2 0 3/move farmer 0 -3 3/pause 500/playSound cat/pause 250/faceDirection Wizard 3/speak Wizard \"{{i18n:6hearts.{{wizard}}.7}}\"/pause 500/faceDirection Wizard 1/speak Wizard \"{{i18n:6hearts.{{wizard}}.8}}\"/pause 500/{{6heartmove}}/pause 250/playSound coin/speak Wizard \"{{i18n:6hearts.{{wizard}}.9}}\"/move Wizard 0 2 2/faceDirection farmer 2/faceDirection MisterGinger 1/pause 500/speak Wizard \"{{i18n:6hearts.{{wizard}}.10}}\"/pause 250/playSound cat/speak Wizard \"{{i18n:6hearts.{{wizard}}.11}}\"/pause 500/playSound dropItemInWater/move farmer 0 2 2/pause 250/showFrame Wizard 18/showFrame 96/pause 1000/speak Wizard \"{{i18n:6hearts.{{wizard}}.12}}\"/pause 800/emote farmer 28/faceDirection MisterGinger 1/playSound cat/move farmer 0 -1 2/pause 500/pause 4000/globalFade .008/viewport -1000 -1000/speak Wizard \"{{i18n:6hearts.{{wizard}}.13}}\"/faceDirection farmer 2/warp MisterGinger 5 18/warp Wizard 3 18/faceDirection Wizard 1/faceDirection MisterGinger 3/playMusic none/pause 500/viewport 8 19 true/pause 500/speak MisterGinger \"{{i18n:6hearts.13}}@? @!$2\"/pause 500/speak MisterGinger \"{{i18n:6hearts.14}}\"/pause 500/emote Wizard 8/pause 500/speak MisterGinger \"{{i18n:6hearts.15}}@? Are you okay?\"/pause 250/quickQuestion {{i18n:6hearts.{{wizard}}.16}}(break)emote Wizard 40\\speak Wizard \"{{i18n:6hearts.{{wizard}}.17}}\"(break)speak MisterGinger \"{{i18n:6hearts.{{wizard}}.18}}\"(break)speak Wizard \"{{i18n:6hearts.{{wizard}}.20}}\"/pause 500/faceDirection farmer 1/pause 500/emote farmer 16/speak MisterGinger \"{{i18n:6hearts.{{wizard}}.21}}\"/pause 250/emote Wizard 60/pause 500/speak Wizard \"{{i18n:6hearts.{{wizard}}.22}}\"/pause 250/faceDirection farmer 3/speak MisterGinger \"{{i18n:6hearts.{{wizard}}.23}}\"/pause 500/speak Wizard \"{{i18n:6hearts.{{wizard}}.24}}\"/pause 500/faceDirection farmer 1/emote farmer 32/pause 1000/end dialogue MisterGinger \"{{i18n:6hearts.24}}Anyone can talk to animals, but it takes a special kind of person to _listen_ to them.#$b#Yes, that's a compliment. Don't get used to them. I've got a reputation to withhold, you know.\""
 			},
 			"When": {
 				"HasMod |contains=Ran.HarvestGoddess": true
@@ -481,27 +487,20 @@
 			"Action": "EditData",
 			"Target": "Data/Events/BusStop",
 			"Entries": {
-				"50706133/e 50706132/t 0600 1200/Hl Tristan_Returns/w sunny": "MarlonsTheme/24 23/farmer 17 23 1 Marlon 24 20 2 MisterGinger -100 -100 2/skippable/pause 1000/move farmer 2 0 1/pause 500/showFrame Marlon 12/pause 1000/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.1}}\"/showFrame Marlon 0/move farmer 6 0 0/emote farmer 40/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.2}}\"/pause 500/move farmer 0 -2 3/emote farmer 8/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.3}}\"/warp MisterGinger 10 23/move MisterGinger 7 0 1/pause 500/speak MisterGinger \"{{i18n:10hearts.2.4}}\"/pause 500/{{marlon5}}/move MisterGinger 7 0 0/move MisterGinger 0 -2 0/{{marlon4}}/speak MisterGinger \"{{i18n:10hearts.2.5}}$1\"/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.6}}\"/faceDirection MisterGinger 1/pause 500/speak MisterGinger \"{{i18n:10hearts.2.7}}\"/faceDirection MisterGinger 0/pause 500/speak MisterGinger \"{{i18n:10hearts.2.8}}\"/pause 500/faceDirection MisterGinger 1/pause 500/speak MisterGinger \"{{i18n:10hearts.2.9}}\"/emote farmer 40/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.10}}\"/pause 500/emote MisterGinger 8/faceDirection MisterGinger 0/speak MisterGinger \"{{i18n:10hearts.2.11}}\"/pause 500/showFrame Marlon 0/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.12}}\"/pause 500/emote MisterGinger 12/pause 500/faceDirection MisterGinger 0/speak MisterGinger \"{{i18n:10hearts.2.13}}\"/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.14}}\"/pause 500/emote MisterGinger 16/jump MisterGinger 3/pause 500/speak MisterGinger \"{{i18n:10hearts.2.15}}\"/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.16}}\"/pause 500/faceDirection MisterGinger 1/speak MisterGinger \"{{i18n:10hearts.2.17}}\"/quickQuestion {{i18n:10hearts.2.18}}(break)speak MisterGinger \"{{i18n:10hearts.2.19}}\"(break)speak MisterGinger \"{{i18n:10hearts.2.20}}\"(break)speak MisterGinger \"{{i18n:10hearts.2.21}}\"(break)speak MisterGinger \"{{i18n:10hearts.2.22}}\"/pause 1000/emote Marlon 8/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.23}}\"/pause 500/faceDirection MisterGinger 0/pause 500/showFrame MisterGinger 40/pause 500/playSound cat/pause 500/{{marlon4}}/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.24}}\"/pause 500/playSound cat/pause 500/showFrame MisterGinger 41/showFrame MisterGinger 42/pause 500/showFrame MisterGinger 43/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.25}}\"/pause 500/playSound cat/pause 500/showFrame MisterGinger 42/pause 500/showFrame MisterGinger 43/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.26}}\"/pause 500/playSound cat/pause 500/showFrame MisterGinger 42/pause 500/showFrame MisterGinger 43/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.27}}\"/pause 500/showFrame MisterGinger 17/pause 500/showFrame MisterGinger 18/pause 500/speak MisterGinger \"{{i18n:10hearts.2.28}}\"/pause 500/showFrame MisterGinger 25/animate MisterGinger false true 300 29 30 31 30 30 30 30/pause 500/emote Marlon 8/pause 500/emote farmer 32/pause 2000/end"
+				"50706133/e 50706132/t 0600 1200/Hl Tristan_Returns/w sunny": "MarlonsTheme/24 23/farmer 15 23 1 Marlon 22 20 2 MisterGinger -100 -100 2/skippable/pause 1000/move farmer 2 0 1/pause 500/showFrame Marlon 12/pause 1000/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.1}}\"/showFrame Marlon 0/move farmer 6 0 0/emote farmer 40/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.2}}\"/pause 500/move farmer 0 -2 3/emote farmer 8/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.3}}\"/warp MisterGinger 10 23/move MisterGinger 5 0 1/pause 500/speak MisterGinger \"{{i18n:10hearts.2.4}}\"/pause 500/{{marlon5}}/move MisterGinger 7 0 0/move MisterGinger 0 -2 0/{{marlon4}}/speak MisterGinger \"{{i18n:10hearts.2.5}}$1\"/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.6}}\"/faceDirection MisterGinger 1/pause 500/speak MisterGinger \"{{i18n:10hearts.2.7}}\"/faceDirection MisterGinger 0/pause 500/speak MisterGinger \"{{i18n:10hearts.2.8}}\"/pause 500/faceDirection MisterGinger 1/pause 500/speak MisterGinger \"{{i18n:10hearts.2.9}}\"/emote farmer 40/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.10}}\"/pause 500/emote MisterGinger 8/faceDirection MisterGinger 0/speak MisterGinger \"{{i18n:10hearts.2.11}}\"/pause 500/showFrame Marlon 0/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.12}}\"/pause 500/emote MisterGinger 12/pause 500/faceDirection MisterGinger 0/speak MisterGinger \"{{i18n:10hearts.2.13}}\"/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.14}}\"/pause 500/emote MisterGinger 16/jump MisterGinger 3/pause 500/speak MisterGinger \"{{i18n:10hearts.2.15}}\"/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.16}}\"/pause 500/faceDirection MisterGinger 1/speak MisterGinger \"{{i18n:10hearts.2.17}}\"/quickQuestion {{i18n:10hearts.2.18}}(break)speak MisterGinger \"{{i18n:10hearts.2.19}}\"(break)speak MisterGinger \"{{i18n:10hearts.2.20}}\"(break)speak MisterGinger \"{{i18n:10hearts.2.21}}\"(break)speak MisterGinger \"{{i18n:10hearts.2.22}}\"/pause 1000/emote Marlon 8/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.23}}\"/pause 500/faceDirection MisterGinger 0/pause 500/showFrame MisterGinger 40/pause 500/playSound cat/pause 500/{{marlon4}}/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.24}}\"/pause 500/playSound cat/pause 500/showFrame MisterGinger 41/showFrame MisterGinger 42/pause 500/showFrame MisterGinger 43/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.25}}\"/pause 500/playSound cat/pause 500/showFrame MisterGinger 42/pause 500/showFrame MisterGinger 43/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.26}}\"/pause 500/playSound cat/pause 500/showFrame MisterGinger 42/pause 500/showFrame MisterGinger 43/pause 500/speak Marlon \"{{i18n:10hearts.2.{{marlon}}.27}}\"/pause 500/showFrame MisterGinger 17/pause 500/showFrame MisterGinger 18/pause 500/speak MisterGinger \"{{i18n:10hearts.2.28}}\"/pause 500/showFrame MisterGinger 25/animate MisterGinger false true 300 29 30 31 30 30 30 30/pause 500/emote Marlon 8/pause 500/emote farmer 32/pause 2000/end"
 			}
 		},
 		{
 			"LogName": "Birthday Gift Dialogue",
 			"Action": "EditData",
-			"Target": "Strings/StringsFromCSFiles",
+			"Target": "Characters/Dialogue/MisterGinger",
 			"Entries": {
-				"NPC.cs.4274": "{{i18n:birthday.love1.{{CatTalk}}}}",
-				"NPC.cs.4275": "{{i18n:birthday.love1.{{CatTalk}}}}",
-				"NPC.cs.4276": "{{i18n:birthday.like1.{{CatTalk}}}}",
-				"NPC.cd.4277": "{{i18n:birthday.like2.{{CatTalk}}}}",
-				"NPC.cs.4278": "{{i18n:birthday.dislike1.{{CatTalk}}}}",
-				"NPC.cs.4279": "{{i18n:birthday.dislike3.{{CatTalk}}}}",
-				"NPC.cs.4280": "{{i18n:birthday.neutral1.{{CatTalk}}}}",
-				"NPC.cs.4281": "{{i18n:birthday.neutral1.{{CatTalk}}}}?"
+				"AcceptBirthdayGift_Loved": "{{i18n:birthday.love1.{{CatTalk}}}}",
+				"AcceptBirthdayGift_Liked": "{{i18n:birthday.like1.{{CatTalk}}}}",
+				"AcceptBirthdayGift_Hated": "{{i18n:birthday.dislike1.{{CatTalk}}}}",
+				"AcceptBirthdayGift_Disliked": "{{i18n:birthday.dislike3.{{CatTalk}}}}",
+				"AcceptBirthdayGift_Neutral": "{{i18n:birthday.neutral1.{{CatTalk}}}}"
 			},
-			"When": {
-				"Season": "summer",
-				"Day": "20"
-			}
 		},
 		{
 			"LogName": "Birthday Gift Dialogue",
@@ -643,17 +642,6 @@
 			}
 		},
 		{
-			"LogName": "Just a nightmare",
-			"Action": "EditData",
-			"Target": "Data/Events/Farm",
-			"Entries": {
-				"50706131/e 5295000": "none/64 15/MisterGinger 65 16 2 farmer 64 16 2/skippable/pause 500/animate MisterGinger false true 250 24 25 26 27 23 29 30 31 30/pause 1500/emote farmer 40/pause 1500/faceDirection MisterGinger 3/stopAnimation MisterGinger/pause 500/emote MisterGinger 8/pause 500/speak MisterGinger \"{{i18n:50706131.1.{{housemate}}}}\"/pause 400/quickQuestion {{i18n:50706131.2}}(break)jump MisterGinger 3\\speak MisterGinger \"{{i18n:50706131.3}}\"(break)speak MisterGinger \"{{i18n:50706131.4}}\"(break)speak MisterGinger \"{{i18n:50706131.5}}\"/pause 500/speak MisterGinger \"{{i18n:50706131.6}}\"/quickQuestion {{i18n:50706131.7}}(break)speak MisterGinger \"{{i18n:50706131.8}}\"(break)speak MisterGinger \"{{i18n:50706131.9}}\"(break)speak MisterGinger \"{{i18n:50706131.10}}\"/pause 500/speak MisterGinger \"{{i18n:50706131.11}}\"/pause 500/emote MisterGinger 20/emote farmer 32/pause 1000/end"
-			},
-			"When": {
-				"HasMod |contains=Lemurkat.Tristan.CP": false
-			}
-		},
-		{
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/MisterGinger",
 			"Entries": {
@@ -667,9 +655,9 @@
 		{
 			"Action": "Include",
 			"FromFile": "assets/MrGingerRoommate.json",
-			/*"When": {
+			"When": {
 				"HasMod |contains=Lemurkat.Tristan.CP": false
-			}*/
+			}
 		},
 		{
 			"LogName": "Dialogue",

@@ -283,10 +283,71 @@
 			},
 			"When": { "Butter Churn": "true", },
 		},
-		{// Nut Cheese
+		// Cheese Press
+		{// Pine Nut Milk
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)16", "OutputRules", "Cornucopia_NutCheese_NutMilk", "OutputItem", "#0" ],
+			"TargetField": [ "(BC)16", "OutputRules", "Cornucopia_NutCheese_NutMilk", "OutputItem", "CornucopiaPineNutMilk" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Cheese Press": "true", },
+		},
+		{// Soy Milk
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "Cornucopia_NutCheese_NutMilk", "OutputItem", "CornucopiaSoyMilk" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Cheese Press": "true", },
+		},
+		{// Oat Milk
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "Cornucopia_NutCheese_NutMilk", "OutputItem", "CornucopiaOatMilk" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Cheese Press": "true", },
+		},
+		{// Default
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "Cornucopia_NutCheese_NutMilk", "OutputItem", "Default" ],
 			"Entries": {
 				"QualityModifiers": [
 					{
@@ -323,6 +384,7 @@
 			},
 			"When": { "Cheese Press": "true", },
 		},
+		// Compact Mill
 		{// Applesauce
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -483,6 +545,7 @@
 			},
 			"When": { "Compact Mill": "true", },
 		},
+		// Dehydrator
 		{// Hay
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -563,6 +626,7 @@
 			},
 			"When": { "Dehydrator": "true", },
 		},
+		// Deluxe Smoker
 		{// Dried Squid
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -824,6 +888,7 @@
 			},
 			"When": { "Deluxe Smoker": "true", },
 		},
+		// Drying Rack
 		{// Hay
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -884,6 +949,7 @@
 			},
 			"When": { "Drying Rack": "true", },
 		},
+		// Extruder
 		{// Beeswax
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -964,6 +1030,7 @@
 			},
 			"When": { "Extruder": "true", },
 		},
+		// Juicer
 		{// Juice
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -984,6 +1051,7 @@
 			},
 			"When": { "Juicer": "true", },
 		},
+		// Keg
 		{// Coconut Milk
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -1004,10 +1072,10 @@
 			},
 			"When": { "Keg": "true", },
 		},
-		{// Nut Milk
+		{// Pine Nut Milk
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)12", "OutputRules", "Cornucopia_NutMilk", "OutputItem", "#0" ],
+			"TargetField": [ "(BC)12", "OutputRules", "Cornucopia_NutMilk", "OutputItem", "NutMilkPineNuts" ],
 			"Entries": {
 				"QualityModifiers": [
 					{
@@ -1024,10 +1092,31 @@
 			},
 			"When": { "Keg": "true", },
 		},
-		{// Garlic Mayo Large Brown Egg
+		{// Default Nut Milk
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseLargeBrownEgg" ],
+			"TargetField": [ "(BC)12", "OutputRules", "Cornucopia_NutMilk", "OutputItem", "Default" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Keg": "true", },
+		},
+		// Mayo Machine
+		{// Garlic Mayo Large Egg
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseLargeEgg" ],
 			"Entries": {
 				"QualityModifiers": [
 					{
@@ -1045,10 +1134,10 @@
 			},
 			"When": { "Mayo Machine": "true", },
 		},
-		{// Garlic Mayo Small Brown Egg
+		{// Garlic Mayo Small Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseSmallBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseSmallEgg" ],
 			"Entries": {
 				"QualityModifiers": [
 					{
@@ -1065,51 +1154,10 @@
 			},
 			"When": { "Mayo Machine": "true", },
 		},
-		{// Garlic Mayo Large White Egg
+		{// Spicy Mayo Large Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseLargeWhiteEgg" ],
-			"Entries": {
-				"QualityModifiers": [
-					{
-						"Condition": "ITEM_QUALITY Input 4 4",
-						"Modification": "Set",
-						"Amount": 2,
-					},
-					{
-						"Condition": "ITEM_QUALITY Input 2 2",
-						"Modification": "Set",
-						"Amount": 1,
-					},
-				],
-				"MinStack": 2,
-			},
-			"When": { "Mayo Machine": "true", },
-		},
-		{// Garlic Mayo Small White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseSmallWhiteEgg" ],
-			"Entries": {
-				"QualityModifiers": [
-					{
-						"Condition": "ITEM_QUALITY Input 4 4",
-						"Modification": "Set",
-						"Amount": 2,
-					},
-					{
-						"Condition": "ITEM_QUALITY Input 2 2",
-						"Modification": "Set",
-						"Amount": 1,
-					},
-				],
-			},
-			"When": { "Mayo Machine": "true", },
-		},
-		{// Spicy Mayo Large Brown Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseLargeBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseLargeEgg" ],
 			"Entries": {
 				"QualityModifiers": [
 					{
@@ -1127,10 +1175,10 @@
 			},
 			"When": { "Mayo Machine": "true", },
 		},
-		{// Spicy Mayo Small Brown Egg
+		{// Spicy Mayo Small Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseSmallBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseSmallEgg" ],
 			"Entries": {
 				"QualityModifiers": [
 					{
@@ -1147,51 +1195,10 @@
 			},
 			"When": { "Mayo Machine": "true", },
 		},
-		{// Spicy Mayo Large White Egg
+		{// Truffle Mayo Large Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseLargeWhiteEgg" ],
-			"Entries": {
-				"QualityModifiers": [
-					{
-						"Condition": "ITEM_QUALITY Input 4 4",
-						"Modification": "Set",
-						"Amount": 2,
-					},
-					{
-						"Condition": "ITEM_QUALITY Input 2 2",
-						"Modification": "Set",
-						"Amount": 1,
-					},
-				],
-				"MinStack": 2,
-			},
-			"When": { "Mayo Machine": "true", },
-		},
-		{// Spicy Mayo Small White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseSmallWhiteEgg" ],
-			"Entries": {
-				"QualityModifiers": [
-					{
-						"Condition": "ITEM_QUALITY Input 4 4",
-						"Modification": "Set",
-						"Amount": 2,
-					},
-					{
-						"Condition": "ITEM_QUALITY Input 2 2",
-						"Modification": "Set",
-						"Amount": 1,
-					},
-				],
-			},
-			"When": { "Mayo Machine": "true", },
-		},
-		{// Truffle Mayo Large Brown Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseLargeBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseLargeEgg" ],
 			"Entries": {
 				"QualityModifiers": [
 					{
@@ -1209,10 +1216,10 @@
 			},
 			"When": { "Mayo Machine": "true", },
 		},
-		{// Truffle Mayo Small Brown Egg
+		{// Truffle Mayo Small Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseSmallBrownEgg" ],
+			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseSmallEgg" ],
 			"Entries": {
 				"QualityModifiers": [
 					{
@@ -1229,47 +1236,7 @@
 			},
 			"When": { "Mayo Machine": "true", },
 		},
-		{// Truffle Mayo Large White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseLargeWhiteEgg" ],
-			"Entries": {
-				"QualityModifiers": [
-					{
-						"Condition": "ITEM_QUALITY Input 4 4",
-						"Modification": "Set",
-						"Amount": 2,
-					},
-					{
-						"Condition": "ITEM_QUALITY Input 2 2",
-						"Modification": "Set",
-						"Amount": 1,
-					},
-				],
-				"MinStack": 2,
-			},
-			"When": { "Mayo Machine": "true", },
-		},
-		{// Truffle Mayo Small White Egg
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseSmallWhiteEgg" ],
-			"Entries": {
-				"QualityModifiers": [
-					{
-						"Condition": "ITEM_QUALITY Input 4 4",
-						"Modification": "Set",
-						"Amount": 2,
-					},
-					{
-						"Condition": "ITEM_QUALITY Input 2 2",
-						"Modification": "Set",
-						"Amount": 1,
-					},
-				],
-			},
-			"When": { "Mayo Machine": "true", },
-		},
+		// Oil Maker
 		{// Chili Oil
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -1330,6 +1297,7 @@
 			},
 			"When": { "Oil Maker": "true", },
 		},
+		// Preserves Jar
 		{// Century Egg
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -1511,10 +1479,10 @@
 			},
 			"When": { "Preserves Jar": "true", },
 		},
-		{// Sauerkraut
+		{// Double Sauerkraut
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_Sauerkraut", "OutputItem", "#0" ],
+			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_Sauerkraut", "OutputItem", "Double Sauerkraut" ],
 			"Entries": {
 				"QualityModifiers": [
 					{
@@ -1531,6 +1499,27 @@
 			},
 			"When": { "Preserves Jar": "true", },
 		},
+		{// Sauerkraut
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_Sauerkraut", "OutputItem", "#1" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Preserves Jar": "true", },
+		},
+		// Vinegar Mill
 		{// Vinegar
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -1571,6 +1560,7 @@
 			},
 			"When": { "Vinegar Keg": "true", },
 		},
+		// Wax Barrel
 		{// Snack Cheese
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -1631,6 +1621,7 @@
 			},
 			"When": { "Wax Barrel": "true", },
 		},
+		// Yogurt Jar
 		{// Gold Yogurt
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -1753,6 +1744,26 @@
 			},
 			"When": { "Yogurt Jar": "true", },
 		},
+		{// Wild Honey Yogurt Silver
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Cornucopia_YogurtJar", "OutputRules", "Cornucopia_WildHoneyYogurt", "OutputItem", "Cornucopia_FlavoredYogurtSilver" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Yogurt Jar": "true", },
+		},
 		{// Wild Honey Yogurt
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -1813,6 +1824,26 @@
 			},
 			"When": { "Yogurt Jar": "true", },
 		},
+		{// Flavored Honey Yogurt Silver
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Cornucopia_YogurtJar", "OutputRules", "Cornucopia_FlavoredHoneyYogurt", "OutputItem", "Cornucopia_FlavoredYogurtSilver" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Yogurt Jar": "true", },
+		},
 		{// Flavored Honey Yogurt
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -1857,6 +1888,26 @@
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": [ "(BC)Cornucopia_YogurtJar", "OutputRules", "Cornucopia_FlavoredYogurt", "OutputItem", "Cornucopia_FlavoredYogurtGold" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Yogurt Jar": "true", },
+		},
+		{// Flavored Yogurt Silver
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Cornucopia_YogurtJar", "OutputRules", "Cornucopia_FlavoredYogurt", "OutputItem", "Cornucopia_FlavoredYogurtSilver" ],
 			"Entries": {
 				"QualityModifiers": [
 					{

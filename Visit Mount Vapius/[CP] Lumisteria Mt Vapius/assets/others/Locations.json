@@ -171,6 +171,13 @@
               "ItemId": "(O)698",
             },
             {
+              "Chance": 0.2,
+              "Id": "Lumisteria.MtVapius_SturgeonFall",
+              "Condition": "LOCATION_SEASON Here fall, TIME 1100 1700",
+              "IgnoreFishDataRequirements": true,
+              "ItemId": "(O)698",
+            },
+            {
               "Chance": 1.0,
               "Id": "Lumisteria.MtVapius_Walleye",
               "Condition": "LOCATION_SEASON Here fall winter",
@@ -691,6 +698,13 @@
               "Precedence": 0,
               "Id": "(O)698",
               "Condition": "LOCATION_SEASON Here summer winter",
+              "ItemId": "(O)698",
+            },
+            {
+              "Chance": 0.3,
+              "Id": "Lumisteria.MtVapius_SturgeonFall",
+              "Condition": "LOCATION_SEASON Here fall, TIME 1100 1700",
+              "IgnoreFishDataRequirements": true,
               "ItemId": "(O)698",
             },
             {
@@ -1283,6 +1297,13 @@
               "ItemId": "(O)698",
             },
             {
+              "Chance": 0.2,
+              "Id": "Lumisteria.MtVapius_SturgeonFall",
+              "Condition": "LOCATION_SEASON Here fall, TIME 1100 1700",
+              "IgnoreFishDataRequirements": true,
+              "ItemId": "(O)698",
+            },
+            {
               "Chance": 1.0,
               "MinFishingLevel": 0,
               "MinDistanceFromShore": 0,
@@ -1403,25 +1424,9 @@
             {
               "Chance": 0.3,
               "MinFishingLevel": 0,
-              "MinDistanceFromShore": 0,
-              "MaxDistanceFromShore": -1,
-              "ApplyDailyLuck": false,
-              "CuriosityLureBuff": -1.0,
-              "CatchLimit": -1,
-              "SetFlagOnCatch": null,
-              "RequireMagicBait": false,
-              "Precedence": 0,
-              "IgnoreFishDataRequirements": false,
-              "ChanceModifiers": null,
-              "ChanceModifierMode": "Stack",
               "Id": "PipSpring",
               "ItemId": "(O)161",
               "Condition": "LOCATION_SEASON Here spring",
-              "IsRecipe": false,
-              "StackModifiers": null,
-              "StackModifierMode": "Stack",
-              "QualityModifiers": null,
-              "QualityModifierMode": "Stack"
             },
             {
               "Chance": 0.6,
@@ -1568,6 +1573,12 @@
               "ItemId": "(O)418",
             },
             {
+              "Chance": 0.3,
+              "Season": "summer",
+              "Id": "Lumisteria.MtVapius_Rosemary",
+              "ItemId": "(O)Lumisteria.MtVapius_Rosemary",
+            },
+            {
               "Chance": 0.02,
               "Season": "fall",
               "Condition": "!PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Cliff_ForageReturn",
@@ -1593,6 +1604,14 @@
               "ItemId": "(O)396",
               "MinStack": -1,
               "MaxStack": -1,
+            },
+            {
+              "Chance": 0.2,
+              "Season": "fall",
+              "Id": "Lumisteria.MtVapius_SeaBuckthornBerry",
+              "ItemId": "(O)Lumisteria.MtVapius_SeaBuckthornBerry",
+              "MinStack": -1,
+              "MaxStack": 2,
             },
             {
               "Chance": 0.6,
@@ -1939,6 +1958,13 @@
               "ItemId": "(O)698",
             },
             {
+              "Chance": 0.2,
+              "Id": "Lumisteria.MtVapius_SturgeonFall",
+              "Condition": "LOCATION_SEASON Here fall, TIME 1100 1700",
+              "IgnoreFishDataRequirements": true,
+              "ItemId": "(O)698",
+            },
+            {
               "Chance": 1.0,
               "MinFishingLevel": 0,
               "MinDistanceFromShore": 0,
@@ -2161,8 +2187,8 @@
               "Chance": 0.01,
               "Season": "fall",
               "Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Pond_RareForageReturn",
-              "Id": "Lumisteria.MtVapius_ElfCup",
-              "ItemId": "(O)Lumisteria.MtVapius_ElfCup",
+              "Id": "Lumisteria.MtVapius_Elfcup",
+              "ItemId": "(O)Lumisteria.MtVapius_Elfcup",
             },
             {
               "Chance": 0.05,
@@ -2430,8 +2456,8 @@
               "Chance": 0.01,
               "Season": "summer",
               "Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Pond_RareForageReturn",
-              "Id": "Lumisteria.MtVapius_ElfCup",
-              "ItemId": "(O)Lumisteria.MtVapius_ElfCup",
+              "Id": "Lumisteria.MtVapius_Elfcup",
+              "ItemId": "(O)Lumisteria.MtVapius_Elfcup",
             },
             {
               "Chance": 0.05,
@@ -2745,8 +2771,8 @@
               "Chance": 0.01,
               "Season": "summer",
               "Condition": "PLAYER_HAS_SEEN_EVENT Any Lumisteria.MtVapius_Pond_RareForageReturn",
-              "Id": "Lumisteria.MtVapius_ElfCup",
-              "ItemId": "(O)Lumisteria.MtVapius_ElfCup",
+              "Id": "Lumisteria.MtVapius_Elfcup",
+              "ItemId": "(O)Lumisteria.MtVapius_Elfcup",
             },
             {
               "Chance": 0.05,
@@ -3392,139 +3418,6 @@
             }
           },
           "Fish": [
-            {
-              "Chance": 0.01,
-              "MinFishingLevel": 6,
-              "MinDistanceFromShore": 3,
-              "ApplyDailyLuck": true,
-              "Precedence": -50,
-              "Id": "(O)Lumisteria.MtVapius_Treasures_RustyChest",
-              "ItemId": "(O)Lumisteria.MtVapius_Treasures_RustyChest",
-            },
-            {
-              "Chance": 0.05,
-              "MinFishingLevel": 4,
-              "ApplyDailyLuck": true,
-              "Id": "Lumisteria.MtVapius_ArtifactsFishing",
-              "RandomItemId": [
-                "(O)Lumisteria.MtVapius_Treasures_BrokenWatch",
-                "(O)Lumisteria.MtVapius_Treasures_BrokenTeaCup",
-                "(O)Lumisteria.MtVapius_Treasures_OldMinerLamp",
-                "(O)Lumisteria.MtVapius_Treasures_RustyRing",
-              ],
-            },
-            {
-              "Chance": 0.1,
-              "MinFishingLevel": 4,
-              "ApplyDailyLuck": true,
-              "Id": "Lumisteria.MtVapius_ArtifactsFishingUncommon",
-              "RandomItemId": [
-                "(O)Lumisteria.MtVapius_Treasures_CopperFibula",
-                "(O)Lumisteria.MtVapius_Treasures_EfficientCog",
-                "(O)Lumisteria.MtVapius_Treasures_BlueCameo",
-                "(O)Lumisteria.MtVapius_Treasures_BrokenSundial",
-              ],
-            },
-            {
-              "Chance": 1.0,
-              "Id": "Lumisteria.MtVapius_LargemouthBass",
-              "ItemId": "(O)136",
-            },
-            {
-              "Chance": 1.0,
-              "Id": "Lumisteria.MtVapius_Algae",
-              "ItemId": "(O)153",
-            },
-            {
-              "Chance": 1.0,
-              "Id": "Lumisteria.MtVapius_Chub",
-              "ItemId": "(O)702",
-            },
-            {
-              "Chance": 1.0,
-              "Id": "Lumisteria.MtVapius_Bullhead",
-              "ItemId": "(O)700",
-            },
-            {
-              "Chance": 1.0,
-              "Season": "summer",
-              "Id": "Lumisteria.MtVapius_RainbowTrout",
-              "ItemId": "(O)138",
-            },
-            {
-              "Chance": 1.0,
-              "Id": "Lumisteria.MtVapius_Sturgeon",
-              "Condition": "LOCATION_SEASON Here summer winter",
-              "ItemId": "(O)698",
-            },
-            {
-              "Chance": 1.0,
-              "IgnoreFishDataRequirements": true,
-              "Id": "Lumisteria.MtVapius_WalleyeSummer",
-              "Condition": "LOCATION_SEASON Here summer, !WEATHER Here Sun, !WEATHER Here Festival, TIME 1200 2600",
-              "ItemId": "(O)140",
-            },
-            {
-              "Chance": 1.0,
-              "Id": "Lumisteria.MtVapius_Walleye",
-              "Condition": "LOCATION_SEASON Here fall winter",
-              "ItemId": "(O)140",
-            },
-            {
-              "Chance": 1.0,
-              "Precedence": 0,
-              "Id": "Lumisteria.MtVapius_MidnightCarp",
-              "Condition": "LOCATION_SEASON Here fall winter",
-              "ItemId": "(O)269",
-            },
-            {
-              "Chance": 1.0,
-              "Season": "winter",
-              "Id": "Lumisteria.MtVapius_Perch",
-              "ItemId": "(O)141",
-            },
-            {
-              "Chance": 1.0,
-              "Season": "winter",
-              "Id": "Lumisteria.MtVapius_Lindcod",
-              "ItemId": "(O)707",
-            },
-            {
-              "Chance": 0.5,
-              "Id": "Lumisteria.MtVapius_PipWinter",
-              "ItemId": "(O)161",
-              "Condition": "LOCATION_SEASON Here winter",
-            },
-            {
-              "Chance": 0.3,
-              "Id": "Lumisteria.MtVapius_PipSpring",
-              "ItemId": "(O)161",
-              "Condition": "LOCATION_SEASON Here spring",
-            },
-            {
-              "Chance": 0.6,
-              "Precedence": -50,
-              "Id": "Lumisteria.MtVapius_WhiteVendace",
-              "ItemId": "Lumisteria.MtVapius_WhiteVendace",
-            },
-            {
-              "Chance": 0.6,
-              "Precedence": -50,
-              "Id": "Lumisteria.MtVapius_VapiusRoach",
-              "ItemId": "Lumisteria.MtVapius_VapiusRoach",
-            },
-            {
-              "Chance": 0.4,
-              "Precedence": -50,
-              "Id": "Lumisteria.MtVapius_AlpineChar",
-              "ItemId": "Lumisteria.MtVapius_AlpineChar",
-            },
-            {
-              "Chance": 0.2,
-              "Precedence": 0,
-              "Id": "Lumisteria.MountainFishes",
-              "ItemId": "LOCATION_FISH Mountain BOBBER_X BOBBER_Y WATER_DEPTH",
-            },
           ],
           "Forage": [ //Woodland
             {
@@ -3602,6 +3495,16 @@
             },
 			*/
             /*
+            {
+              "Chance": 0.3,
+              "Id": "RandomMushroomRain",
+              "Condition": "WEATHER Here rain",
+              "RandomItemId": [
+                "(O)404",
+                "(O)281",
+                "(O)257",
+              ],
+            },
             {
               "Chance": 0.6,
               "Id": "Lumisteria.MtVapius_LaceFlower",
@@ -3715,7 +3618,7 @@
             }*/
           ],
           "MinDailyForageSpawn": 1,
-          "MaxDailyForageSpawn": 3,
+          "MaxDailyForageSpawn": 5,
           "MaxSpawnedForageAtOnce": 12,
           "CustomFields": {
             "mistyspring.ItemExtensions/ClumpRemovalDays": 6,
@@ -3923,6 +3826,13 @@
               "Chance": 1.0,
               "Id": "Lumisteria.MtVapius_Sturgeon",
               "Condition": "LOCATION_SEASON Here summer winter",
+              "ItemId": "(O)698",
+            },
+            {
+              "Chance": 0.2,
+              "Id": "Lumisteria.MtVapius_SturgeonFall",
+              "Condition": "LOCATION_SEASON Here fall, TIME 1100 1700",
+              "IgnoreFishDataRequirements": true,
               "ItemId": "(O)698",
             },
             {
@@ -4225,7 +4135,7 @@
             }
           ],
           "MinDailyForageSpawn": 1,
-          "MaxDailyForageSpawn": 3,
+          "MaxDailyForageSpawn": 5,
           "MaxSpawnedForageAtOnce": 8,
           "CustomFields": {
             "mistyspring.ItemExtensions/ClumpRemovalDays": 6,
@@ -5295,7 +5205,7 @@
             },
           ],
           "MinDailyForageSpawn": 1,
-          "MaxDailyForageSpawn": 3,
+          "MaxDailyForageSpawn": 5,
           "MaxSpawnedForageAtOnce": 10,
           "CustomFields": {
             "mistyspring.ItemExtensions/ClumpRemovalDays": 6,
@@ -5438,7 +5348,7 @@
             },
           ],
           "MinDailyForageSpawn": 1,
-          "MaxDailyForageSpawn": 3,
+          "MaxDailyForageSpawn": 5,
           "MaxSpawnedForageAtOnce": 10,
           "CustomFields": {
             "mistyspring.ItemExtensions/ClumpRemovalDays": 6,
@@ -5581,7 +5491,7 @@
             },
           ],
           "MinDailyForageSpawn": 1,
-          "MaxDailyForageSpawn": 3,
+          "MaxDailyForageSpawn": 5,
           "MaxSpawnedForageAtOnce": 10,
           "CustomFields": {
             "mistyspring.ItemExtensions/ClumpRemovalDays": 6,
@@ -5927,7 +5837,7 @@
             },
           ],
           "MinDailyForageSpawn": 2,
-          "MaxDailyForageSpawn": 3,
+          "MaxDailyForageSpawn": 5,
           "MaxSpawnedForageAtOnce": 10,
           "CustomFields": {
             "mistyspring.ItemExtensions/ClumpRemovalDays": 6,
@@ -6171,7 +6081,7 @@
             },
           ],
           "MinDailyForageSpawn": 1,
-          "MaxDailyForageSpawn": 2,
+          "MaxDailyForageSpawn": 5,
           "MaxSpawnedForageAtOnce": 6,
           "CustomFields": {
             "mistyspring.ItemExtensions/ClumpRemovalDays": 6,
@@ -6489,7 +6399,7 @@
             },
           ],
           "MinDailyForageSpawn": 1,
-          "MaxDailyForageSpawn": 2,
+          "MaxDailyForageSpawn": 5,
           "MaxSpawnedForageAtOnce": 6,
           "CustomFields": {
             "mistyspring.ItemExtensions/ClumpRemovalDays": 6,
@@ -6699,7 +6609,7 @@
             },
           ],
           "MinDailyForageSpawn": 2,
-          "MaxDailyForageSpawn": 3,
+          "MaxDailyForageSpawn": 5,
           "MaxSpawnedForageAtOnce": 8,
           "CustomFields": {
             "mistyspring.ItemExtensions/ClumpRemovalDays": 6,
@@ -7059,7 +6969,7 @@
             }
           ],
           "MinDailyForageSpawn": 2,
-          "MaxDailyForageSpawn": 3,
+          "MaxDailyForageSpawn": 5,
           "MaxSpawnedForageAtOnce": 8,
           "CustomFields": {
             "mistyspring.ItemExtensions/ClumpRemovalDays": 6,
@@ -7517,7 +7427,7 @@
             }
           ],
           "MinDailyForageSpawn": 2,
-          "MaxDailyForageSpawn": 3,
+          "MaxDailyForageSpawn": 5,
           "MaxSpawnedForageAtOnce": 8,
           "CustomFields": {
             "mistyspring.ItemExtensions/ClumpRemovalDays": 6,
@@ -7768,6 +7678,9 @@
               "ItemId": "(O)283",
             }
           ],
+          "MinDailyForageSpawn": 1,
+          "MaxDailyForageSpawn": 5,
+          "MaxSpawnedForageAtOnce": 16,
           "CustomFields": {
             "mistyspring.ItemExtensions/ClumpRemovalDays": 6,
             "mistyspring.ItemExtensions/NodeRemovalDays": 6,
@@ -8036,6 +7949,13 @@
               "Precedence": 0,
               "Id": "(O)698",
               "Condition": "LOCATION_SEASON Here summer winter",
+              "ItemId": "(O)698",
+            },
+            {
+              "Chance": 0.2,
+              "Id": "Lumisteria.MtVapius_SturgeonFall",
+              "Condition": "LOCATION_SEASON Here fall, TIME 1100 1700",
+              "IgnoreFishDataRequirements": true,
               "ItemId": "(O)698",
             },
             {
@@ -8742,6 +8662,16 @@
           "ContinueOnDrop": true,
           "Id": "Lumisteria.MtVapius_OwlCarving",
           "ItemId": "(O)Lumisteria.MtVapius_OwlCarving",
+        },
+        "Lumisteria.MtVapius_JunimoCarving": {
+          "Chance": 0.01,
+          "ApplyGenerousEnchantment": true,
+          "OneDebrisPerDrop": true,
+          "Precedence": -100,
+          "Condition": "!{{HamletProgress|contains={{Range: 0, 2}}}}",
+          "ContinueOnDrop": true,
+          "Id": "Lumisteria.MtVapius_JunimoCarving",
+          "ItemId": "(O)Lumisteria.MtVapius_JunimoCarving",
         },
       }
     },

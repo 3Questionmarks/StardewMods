@@ -90,5 +90,23 @@
 			},
 			"When": { "Oil Maker": "true", },
 		},
+		{// Dried Fruit Fix
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Dehydrator", "OutputRules", "Cornucopia_DriedFruitFix", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Dehydrator": "true", },
+		},
+		{// Dried Mushroom Fix
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Dehydrator", "OutputRules", "Cornucopia_DriedMushroomFix", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Dehydrator": "true", },
+		},
 	],
 }

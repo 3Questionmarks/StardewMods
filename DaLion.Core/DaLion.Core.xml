@@ -108,8 +108,23 @@
         <member name="P:DaLion.Core.CoreConfig.CropWitherChance">
             <summary>Gets the chance a crop may wither per day left un-watered.</summary>
         </member>
+        <member name="P:DaLion.Core.CoreConfig.UseRationalMitigationFormula">
+            <summary>Gets a value indicating whether to replace the linear damage mitigation formula with a rational formula that gives more impactful but diminishing returns from the defense stat.</summary>
+        </member>
         <member name="P:DaLion.Core.CoreConfig.DebugKey">
             <summary>Gets the key used to engage Debug Mode.</summary>
+        </member>
+        <member name="M:DaLion.Core.CoreConfigMenu.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Core.CoreConfigMenu"/> class.</summary>
+        </member>
+        <member name="M:DaLion.Core.CoreConfigMenu.BuildMenu">
+            <inheritdoc />
+        </member>
+        <member name="M:DaLion.Core.CoreConfigMenu.ResetConfig">
+            <inheritdoc />
+        </member>
+        <member name="M:DaLion.Core.CoreConfigMenu.SaveAndApply">
+            <inheritdoc />
         </member>
         <member name="T:DaLion.Core.CoreMod">
             <summary>The mod entry point.</summary>
@@ -255,9 +270,6 @@
             <param name="location">The <see cref="T:StardewValley.GameLocation"/>.</param>
             <param name="firer">The <see cref="T:StardewValley.Farmer"/> who fired the shot.</param>
         </member>
-        <member name="M:DaLion.Core.Framework.Enchantments.BaseSlingshotEnchantment._OnFire(StardewValley.Tools.Slingshot,StardewValley.Projectiles.BasicProjectile,StardewValley.GameLocation,StardewValley.Farmer)">
-            <inheritdoc cref="M:DaLion.Core.Framework.Enchantments.BaseSlingshotEnchantment.OnFire(StardewValley.Tools.Slingshot,StardewValley.Projectiles.BasicProjectile,StardewValley.GameLocation,StardewValley.Farmer)"/>
-        </member>
         <member name="T:DaLion.Core.Framework.Events.BleedAnimationRenderedWorldEvent">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Core.Framework.Events.BleedAnimationRenderedWorldEvent"/> class.</summary>
             <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
@@ -325,6 +337,17 @@
             <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
         </member>
         <member name="M:DaLion.Core.Framework.Events.CoreDayEndingEvent.OnDayEndingImpl(System.Object,StardewModdingAPI.Events.DayEndingEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="T:DaLion.Core.Framework.Events.CoreGameLaunchedEvent">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Core.Framework.Events.CoreGameLaunchedEvent"/> class.</summary>
+            <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
+        </member>
+        <member name="M:DaLion.Core.Framework.Events.CoreGameLaunchedEvent.#ctor(DaLion.Shared.Events.EventManager)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Core.Framework.Events.CoreGameLaunchedEvent"/> class.</summary>
+            <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
+        </member>
+        <member name="M:DaLion.Core.Framework.Events.CoreGameLaunchedEvent.OnGameLaunchedImpl(System.Object,StardewModdingAPI.Events.GameLaunchedEventArgs)">
             <inheritdoc />
         </member>
         <member name="T:DaLion.Core.Framework.Events.CoreReturnedToTitleEvent">
@@ -621,6 +644,14 @@
         <member name="M:DaLion.Core.Framework.Events.TrackMonstersWarpedEvent.OnWarpedImpl(System.Object,StardewModdingAPI.Events.WarpedEventArgs)">
             <inheritdoc />
         </member>
+        <member name="T:DaLion.Core.Framework.Extensions.BuffManagerExtensions">
+            <summary>Extensions for the <see cref="T:StardewValley.Buffs.BuffManager"/> class.</summary>
+        </member>
+        <member name="M:DaLion.Core.Framework.Extensions.BuffManagerExtensions.FloatingDefense(StardewValley.Buffs.BuffManager)">
+            <summary>Gets the combined buff to the player's defense as <see cref="T:System.Single"/>.</summary>
+            <param name="manager">The <see cref="T:StardewValley.Buffs.BuffManager"/>.</param>
+            <returns>The combined buff to the player's defense as <see cref="T:System.Single"/>.</returns>
+        </member>
         <member name="T:DaLion.Core.Framework.Extensions.FarmerExtensions">
             <summary>Extensions for the <see cref="T:StardewValley.Farmer"/> class.</summary>
         </member>
@@ -816,6 +847,19 @@
             <param name="monster">The <see cref="T:StardewValley.Monsters.Monster"/>.</param>
             <returns>The X and Y offsets as a <see cref="T:Microsoft.Xna.Framework.Vector2"/>.</returns>
         </member>
+        <member name="T:DaLion.Core.Framework.Extensions.SpriteBatchExtensions">
+            <summary>Extensions for the <see cref="T:Microsoft.Xna.Framework.Graphics.SpriteBatch"/> class.</summary>
+        </member>
+        <member name="M:DaLion.Core.Framework.Extensions.SpriteBatchExtensions.DrawCooldownIcon(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Vector2)">
+            <summary>Draws special move cooldown icon.</summary>
+            <param name="batch">The <see cref="T:Microsoft.Xna.Framework.Graphics.SpriteBatch"/>.</param>
+            <param name="position">The <see cref="T:Microsoft.Xna.Framework.Vector2"/> position.</param>
+        </member>
+        <member name="M:DaLion.Core.Framework.Extensions.SpriteBatchExtensions.DrawLightIcon(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Vector2)">
+            <summary>Draws light-bulb icon.</summary>
+            <param name="batch">The <see cref="T:Microsoft.Xna.Framework.Graphics.SpriteBatch"/>.</param>
+            <param name="position">The <see cref="T:Microsoft.Xna.Framework.Vector2"/> position.</param>
+        </member>
         <member name="T:DaLion.Core.Framework.Extensions.StringExtensions">
             <summary>Extensions for the <see cref="T:System.Int32"/> primitive type.</summary>
         </member>
@@ -860,6 +904,9 @@
         </member>
         <member name="M:DaLion.Core.Framework.Patchers.FarmerTakeDamagePatcher.FarmerTakeDamagePostfix(StardewValley.Farmer)">
             <summary>Reset seconds-out-of-combat.</summary>
+        </member>
+        <member name="M:DaLion.Core.Framework.Patchers.FarmerTakeDamagePatcher.FarmerTakeDamageTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.Emit.ILGenerator,System.Reflection.MethodBase)">
+            <summary>Overhaul for farmer defense.</summary>
         </member>
         <member name="M:DaLion.Core.Framework.Patchers.GameLocationDamageMonsterPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Core.Framework.Patchers.GameLocationDamageMonsterPatcher"/> class.</summary>
@@ -929,6 +976,13 @@
         </member>
         <member name="M:DaLion.Core.Framework.Patchers.ObjectDrawPatcher.ObjectDrawPrefix(StardewValley.Object,Microsoft.Xna.Framework.Graphics.SpriteBatch,System.Int32,System.Int32,System.Single)">
             <summary>Patch to draw colored Slime Balls.</summary>
+        </member>
+        <member name="M:DaLion.Core.Framework.Patchers.ObjectMinutesElapsedPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Core.Framework.Patchers.ObjectMinutesElapsedPatcher"/> class.</summary>
+            <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
+        </member>
+        <member name="M:DaLion.Core.Framework.Patchers.ObjectMinutesElapsedPatcher.ObjectMinutesElapsedPostfix(StardewValley.Object)">
+            <summary>Patch to make Hopper actually useful.</summary>
         </member>
         <member name="M:DaLion.Core.Framework.Patchers.ObjectOnReadyForHarvestPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Core.Framework.Patchers.ObjectOnReadyForHarvestPatcher"/> class.</summary>
@@ -1002,7 +1056,7 @@
             <summary>The public interface for the Core mod API.</summary>
         </member>
         <member name="M:DaLion.Core.ICoreApi.Bleed(StardewValley.Monsters.Monster,StardewValley.Farmer,System.Int32,System.Int32,System.Int32)">
-            <summary>Causes bleeding on the <paramref name="monster"/> for the specified <paramref name="duration"/> and with the specified <paramref name="intensity"/>.</summary>
+            <summary>Causes bleeding on the <paramref name="monster"/> for the specified <paramref name="duration"/>.</summary>
             <param name="monster">The <see cref="T:StardewValley.Monsters.Monster"/>.</param>
             <param name="bleeder">The <see cref="T:StardewValley.Farmer"/> who caused the bleeding.</param>
             <param name="duration">The duration in milliseconds.</param>
@@ -1093,7 +1147,7 @@
             <returns><see langword="true"/> if the <paramref name="monster"/> has non-zero freeze stacks, otherwise <see langword="false"/>.</returns>
         </member>
         <member name="M:DaLion.Core.ICoreApi.Poison(StardewValley.Monsters.Monster,StardewValley.Farmer,System.Int32,System.Int32,System.Int32)">
-            <summary>Poisons the <paramref name="monster"/> for the specified <paramref name="duration"/> and with the specified <paramref name="intensity"/>.</summary>
+            <summary>Poisons the <paramref name="monster"/> for the specified <paramref name="duration"/>.</summary>
             <param name="monster">The <see cref="T:StardewValley.Monsters.Monster"/>.</param>
             <param name="poisoner">The <see cref="T:StardewValley.Farmer"/> who inflicted the poison.</param>
             <param name="duration">The duration in milliseconds.</param>
@@ -1110,7 +1164,7 @@
             <returns><see langword="true"/> if the <paramref name="monster"/> has non-zero poison stacks, otherwise <see langword="false"/>.</returns>
         </member>
         <member name="M:DaLion.Core.ICoreApi.Slow(StardewValley.Monsters.Monster,System.Int32,System.Single)">
-            <summary>Slows the <paramref name="monster"/> for the specified <paramref name="duration"/> and with the specified <paramref name="intensity"/>.</summary>
+            <summary>Slows the <paramref name="monster"/> for the specified <paramref name="duration"/>.</summary>
             <param name="monster">The <see cref="T:StardewValley.Monsters.Monster"/>.</param>
             <param name="duration">The duration in milliseconds.</param>
             <param name="intensity">The intensity of the slow effect; i.e. the percentage by which the target will be slowed.</param>
@@ -1171,6 +1225,14 @@
         </member>
         <member name="P:DaLion.Shared.Attributes.ModRequirementAttribute.Version">
             <summary>Gets the minimum required version.</summary>
+        </member>
+        <member name="T:DaLion.Shared.Extensions.Stardew.BuffEffectsExtensions">
+            <summary>Extensions for the <see cref="T:StardewValley.Buffs.BuffEffects"/> class.</summary>
+        </member>
+        <member name="M:DaLion.Shared.Extensions.Stardew.BuffEffectsExtensions.CountValues(StardewValley.Buffs.BuffEffects)">
+            <summary>Counts the number of non-zero stat values in the specified <paramref name="effects"/>.</summary>
+            <param name="effects">The <see cref="T:StardewValley.Buffs.BuffEffects"/>.</param>
+            <returns>The number of non-zero stat values in the specified <paramref name="effects"/>.</returns>
         </member>
         <member name="T:DaLion.Shared.Extensions.Stardew.NpcExtensions">
             <summary>Extensions for the <see cref="T:StardewValley.Character"/> class.</summary>
@@ -1249,7 +1311,7 @@
             </summary>
             <typeparam name="T">The target type.</typeparam>
             <param name="building">The <see cref="T:StardewValley.Buildings.Building"/>.</param>
-            <param name="candidates">The candidate <see cref="!:T"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="T"/>s, if already available.</param>
             <param name="getPosition">A delegate to retrieve the tile coordinates of <typeparamref name="T"/>.</param>
             <param name="distance">The actual tile distance to the closest candidate found.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
@@ -1262,7 +1324,7 @@
             </summary>
             <typeparam name="TBuilding">A subtype of <see cref="T:StardewValley.Buildings.Building"/>.</typeparam>
             <param name="building">The <see cref="T:StardewValley.Buildings.Building"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TBuilding"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TBuilding"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.Buildings.Building"/> of type <typeparamref name="TBuilding"/> with the minimal distance to <paramref name="building"/>.</returns>
             <remarks>
@@ -1277,7 +1339,7 @@
             </summary>
             <typeparam name="TCharacter">A subtype of <see cref="T:StardewValley.Character"/>.</typeparam>
             <param name="building">The <see cref="T:StardewValley.Buildings.Building"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TCharacter"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TCharacter"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.Character"/> of type <typeparamref name="TCharacter"/> with the minimal distance to <paramref name="building"/>.</returns>
             <remarks>
@@ -1306,7 +1368,7 @@
             </summary>
             <typeparam name="TObject">A subtype of <see cref="T:StardewValley.Object"/>.</typeparam>
             <param name="building">The <see cref="T:StardewValley.Buildings.Building"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TObject"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TObject"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.Object"/> of type <typeparamref name="TObject"/> with the minimal distance to <paramref name="building"/>.</returns>
             <remarks>
@@ -1321,7 +1383,7 @@
             </summary>
             <typeparam name="TTerrainFeature">A subtype of <see cref="T:StardewValley.TerrainFeatures.TerrainFeature"/>.</typeparam>
             <param name="building">The <see cref="T:StardewValley.Buildings.Building"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TTerrainFeature"/>, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TTerrainFeature"/>, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.TerrainFeatures.TerrainFeature"/> of type <typeparamref name="TTerrainFeature"/> with the minimal distance to <paramref name="building"/>.</returns>
             <remarks>
@@ -1364,7 +1426,7 @@
             </summary>
             <typeparam name="T">The target type.</typeparam>
             <param name="character">The <see cref="T:StardewValley.Character"/>.</param>
-            <param name="candidates">The candidate <see cref="!:T"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="T"/>s, if already available.</param>
             <param name="getPosition">A delegate to retrieve the pixel coordinates of <typeparamref name="T"/>.</param>
             <param name="distance">The actual tile distance to the closest candidate found.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
@@ -1377,7 +1439,7 @@
             </summary>
             <typeparam name="TBuilding">A subtype of <see cref="T:StardewValley.Buildings.Building"/>.</typeparam>
             <param name="character">The <see cref="T:StardewValley.Character"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TBuilding"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TBuilding"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.Buildings.Building"/> of type <typeparamref name="TBuilding"/> with the minimal distance to <paramref name="character"/>.</returns>
         </member>
@@ -1388,7 +1450,7 @@
             </summary>
             <typeparam name="TCharacter">A subtype of <see cref="T:StardewValley.Character"/>.</typeparam>
             <param name="character">The <see cref="T:StardewValley.Character"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TCharacter"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TCharacter"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.Character"/> of type <typeparamref name="TCharacter"/> with the minimal distance to <paramref name="character"/>.</returns>
         </member>
@@ -1410,7 +1472,7 @@
             </summary>
             <typeparam name="TObject">A subtype of <see cref="T:StardewValley.Object"/>.</typeparam>
             <param name="character">The <see cref="T:StardewValley.Character"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TObject"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TObject"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.Object"/> of type <typeparamref name="TObject"/> with the minimal distance to <paramref name="character"/>.</returns>
         </member>
@@ -1421,7 +1483,7 @@
             </summary>
             <typeparam name="TTerrainFeature">A subtype of <see cref="T:StardewValley.TerrainFeatures.TerrainFeature"/>.</typeparam>
             <param name="character">The <see cref="T:StardewValley.Character"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TTerrainFeature"/>s if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TTerrainFeature"/>s if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.TerrainFeatures.TerrainFeature"/> of type <typeparamref name="TTerrainFeature"/> with the minimal distance to <paramref name="character"/>.</returns>
         </member>
@@ -1568,18 +1630,6 @@
         <member name="T:DaLion.Shared.Extensions.Stardew.SpriteBatchExtensions">
             <summary>Extensions for the <see cref="T:Microsoft.Xna.Framework.Graphics.SpriteBatch"/> class.</summary>
         </member>
-        <member name="M:DaLion.Shared.Extensions.Stardew.SpriteBatchExtensions.DrawFarmingTooltip(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Vector2,System.Single,System.String)">
-            <summary>Draws the Farming buff icon and text.</summary>
-            <param name="batch">The <see cref="T:Microsoft.Xna.Framework.Graphics.SpriteBatch"/>.</param>
-            <param name="position">The <see cref="T:Microsoft.Xna.Framework.Vector2"/> position.</param>
-            <param name="value">The magnitude of the buff.</param>
-            <param name="overrideText">Optional <see cref="T:System.String"/> with which to override the vanilla tooltip text.</param>
-        </member>
-        <member name="M:DaLion.Shared.Extensions.Stardew.SpriteBatchExtensions.DrawFishingIcon(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Vector2)">
-            <summary>Draws the Fishing buff icon.</summary>
-            <param name="batch">The <see cref="T:Microsoft.Xna.Framework.Graphics.SpriteBatch"/>.</param>
-            <param name="position">The <see cref="T:Microsoft.Xna.Framework.Vector2"/> position.</param>
-        </member>
         <member name="M:DaLion.Shared.Extensions.Stardew.SpriteBatchExtensions.DrawAttackIcon(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Vector2)">
             <summary>Draws attack icon.</summary>
             <param name="batch">The <see cref="T:Microsoft.Xna.Framework.Graphics.SpriteBatch"/>.</param>
@@ -1621,7 +1671,7 @@
             <param name="position">The <see cref="T:Microsoft.Xna.Framework.Vector2"/> position.</param>
         </member>
         <member name="M:DaLion.Shared.Extensions.Stardew.SpriteBatchExtensions.DrawEnchantmentIcon(Microsoft.Xna.Framework.Graphics.SpriteBatch,Microsoft.Xna.Framework.Vector2)">
-            <summary>Draws magnetism icon.</summary>
+            <summary>Draws enchantment icon.</summary>
             <param name="batch">The <see cref="T:Microsoft.Xna.Framework.Graphics.SpriteBatch"/>.</param>
             <param name="position">The <see cref="T:Microsoft.Xna.Framework.Vector2"/> position.</param>
         </member>
@@ -1776,7 +1826,7 @@
             <returns><see langword="true"/> if the <paramref name="monster"/> is not in an invincible state, otherwise <see langword="false"/>.</returns>
         </member>
         <member name="M:DaLion.Shared.Extensions.Stardew.MonsterExtensions.IsCharacterWithinThreshold(StardewValley.Monsters.Monster,StardewValley.Character)">
-            <summary>Determines whether the specified <paramref name="character"/> is within the moving threshold of this <paramref name="monster"/>.</summary>
+            <summary>Determines whether the specified <paramref name="monster"/> is within the moving threshold of this <paramref name="monster"/>.</summary>
             <param name="monster">The <see cref="T:StardewValley.Monsters.Monster"/>.</param>
             <param name="other">The target <see cref="T:StardewValley.Character"/>.</param>
             <returns><see langword="true"/> if the <paramref name="monster"/>'s distance to the <paramref name="other"/> is less than it's aggro threshold, otherwise <see langword="false"/>.</returns>
@@ -1821,7 +1871,7 @@
             </summary>
             <typeparam name="T">The target type.</typeparam>
             <param name="terrainFeature">The <see cref="T:StardewValley.TerrainFeatures.TerrainFeature"/>.</param>
-            <param name="candidates">The candidate <see cref="!:T"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="T"/>s, if already available.</param>
             <param name="getPosition">A delegate to retrieve the tile coordinates of <typeparamref name="T"/>.</param>
             <param name="distance">The actual tile distance to the closest candidate found.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
@@ -1834,7 +1884,7 @@
             </summary>
             <typeparam name="TBuilding">A subtype of <see cref="T:StardewValley.Buildings.Building"/>.</typeparam>
             <param name="terrainFeature">The <see cref="T:StardewValley.TerrainFeatures.TerrainFeature"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TBuilding"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TBuilding"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.Buildings.Building"/> of type <typeparamref name="TBuilding"/> with the minimal distance to <paramref name="terrainFeature"/>.</returns>
         </member>
@@ -1845,7 +1895,7 @@
             </summary>
             <typeparam name="TCharacter">A subtype of <see cref="T:StardewValley.Character"/>.</typeparam>
             <param name="terrainFeature">The <see cref="T:StardewValley.TerrainFeatures.TerrainFeature"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TCharacter"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TCharacter"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.Character"/> of type <typeparamref name="TCharacter"/> with the minimal distance to <paramref name="terrainFeature"/>.</returns>
         </member>
@@ -1866,7 +1916,7 @@
             </summary>
             <typeparam name="TObject">A subtype of <see cref="T:StardewValley.Object"/>.</typeparam>
             <param name="terrainFeature">The <see cref="T:StardewValley.TerrainFeatures.TerrainFeature"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TObject"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TObject"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.Object"/> of type <typeparamref name="TObject"/> with the minimal distance to <paramref name="terrainFeature"/>.</returns>
         </member>
@@ -1877,7 +1927,7 @@
             </summary>
             <typeparam name="TTerrainFeature">A subtype of <see cref="T:StardewValley.Object"/>.</typeparam>
             <param name="terrainFeature">The <see cref="T:StardewValley.TerrainFeatures.TerrainFeature"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TTerrainFeature"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TTerrainFeature"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.TerrainFeatures.TerrainFeature"/> of type <typeparamref name="TTerrainFeature"/> with the minimal distance to <paramref name="terrainFeature"/>.</returns>
         </member>
@@ -1932,7 +1982,7 @@
             </summary>
             <typeparam name="T">The target type.</typeparam>
             <param name="object">The <see cref="T:StardewValley.Object"/>.</param>
-            <param name="candidates">The candidate <see cref="!:T"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="T"/>s, if already available.</param>
             <param name="getPosition">A delegate to retrieve the tile coordinates of <typeparamref name="T"/>.</param>
             <param name="distance">The actual tile distance to the closest candidate found.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
@@ -1945,7 +1995,7 @@
             </summary>
             <typeparam name="TBuilding">A subtype of <see cref="T:StardewValley.Buildings.Building"/>.</typeparam>
             <param name="object">The <see cref="T:StardewValley.Object"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TBuilding"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TBuilding"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.Buildings.Building"/> of type <typeparamref name="TBuilding"/> with the minimal distance to <paramref name="object"/>.</returns>
         </member>
@@ -1956,7 +2006,7 @@
             </summary>
             <typeparam name="TCharacter">A subtype of <see cref="T:StardewValley.Character"/>.</typeparam>
             <param name="object">The <see cref="T:StardewValley.Object"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TCharacter"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TCharacter"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.Character"/> of type <typeparamref name="TCharacter"/> with the minimal distance to <paramref name="object"/>.</returns>
         </member>
@@ -1978,7 +2028,7 @@
             </summary>
             <typeparam name="TObject">A subtype of <see cref="T:StardewValley.Object"/>.</typeparam>
             <param name="object">The <see cref="T:StardewValley.Object"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TObject"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TObject"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.Object"/> of type <typeparamref name="TObject"/> with the minimal distance to <paramref name="object"/>.</returns>
         </member>
@@ -1989,7 +2039,7 @@
             </summary>
             <typeparam name="TTerrainFeature">A subtype of <see cref="T:StardewValley.TerrainFeatures.TerrainFeature"/>.</typeparam>
             <param name="object">The <see cref="T:StardewValley.Object"/>.</param>
-            <param name="candidates">The candidate <see cref="!:TTerrainFeature"/>s, if already available.</param>
+            <param name="candidates">The candidate <typeparamref name="TTerrainFeature"/>s, if already available.</param>
             <param name="predicate">An optional condition with which to filter out candidates.</param>
             <returns>The <see cref="T:StardewValley.TerrainFeatures.TerrainFeature"/> of type <typeparamref name="TTerrainFeature"/> with the minimal distance to <paramref name="object"/>.</returns>
         </member>
@@ -2023,6 +2073,24 @@
             <param name="tool">The <see cref="T:StardewValley.Tool"/>.</param>
             <param name="enchantmentTypes">The candidate <see cref="T:StardewValley.Enchantments.BaseEnchantment"/> types to search for.</param>
             <returns><see langword="true"/> if the <paramref name="tool"/> contains at least one enchantment of the specified <paramref name="enchantmentTypes"/>, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="M:DaLion.Shared.Extensions.Stardew.ToolExtensions.HasAnyEnchantmentOf``1(StardewValley.Tool)">
+            <summary>Determines whether the specified <paramref name="tool"/> contains any <see cref="T:StardewValley.Enchantments.BaseEnchantment"/> of the specified <typeparamref name="TEnchantment"/> type.</summary>
+            <typeparam name="TEnchantment">A <see cref="T:StardewValley.Enchantments.BaseEnchantment"/> type.</typeparam>
+            <param name="tool">The <see cref="T:StardewValley.Tool"/>.</param>
+            <returns><see langword="true"/> if the <paramref name="tool"/> contains at least one enchantment of the specified <typeparamref name="TEnchantment"/> type, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="M:DaLion.Shared.Extensions.Stardew.ToolExtensions.CountEnchantmentsOfType(StardewValley.Tool,System.Type)">
+            <summary>Counts the number of enchantments in the <paramref name="tool"/> which correspond to the specified <paramref name="enchantmentType"/>.</summary>
+            <param name="tool">The <see cref="T:StardewValley.Tool"/>.</param>
+            <param name="enchantmentType">The <see cref="T:System.Type"/>.</param>
+            <returns>The number of <see cref="T:StardewValley.Enchantments.BaseEnchantment"/>s in <paramref name="tool"/> whith the specified <paramref name="enchantmentType"/>.</returns>
+        </member>
+        <member name="M:DaLion.Shared.Extensions.Stardew.ToolExtensions.CountEnchantmentsOfType``1(StardewValley.Tool)">
+            <summary>Counts the number of enchantments in the <paramref name="tool"/> which correspond to the specified <typeparamref name="TEnchantment"/> type.</summary>
+            <typeparam name="TEnchantment">A <see cref="T:StardewValley.Enchantments.BaseEnchantment"/> type.</typeparam>
+            <param name="tool">The <see cref="T:StardewValley.Tool"/>.</param>
+            <returns>The number of <see cref="T:StardewValley.Enchantments.BaseEnchantment"/>s in <paramref name="tool"/> with the specified <typeparamref name="TEnchantment"/> type.</returns>
         </member>
         <member name="T:DaLion.Shared.Extensions.Stardew.Vector2Extensions">
             <summary>Extensions for the <see cref="T:Microsoft.Xna.Framework.Vector2"/> struct.</summary>
@@ -3154,6 +3222,48 @@
         <member name="T:DaLion.Shared.Extensions.ArrayExtensions">
             <summary>Extensions for generic arrays of objects.</summary>
         </member>
+        <member name="M:DaLion.Shared.Extensions.ArrayExtensions.ElementwiseAdd(System.Int32[],System.Int32[])">
+            <summary>Performs element-wise addition.</summary>
+            <param name="a">The first <see cref="T:System.Array"/>.</param>
+            <param name="b">The second <see cref="T:System.Array"/>.</param>
+            <returns>A new array whose elements are the sum of the corresponding elements from <paramref name="a"/> and <paramref name="b"/>.</returns>
+            <exception cref="T:System.InvalidOperationException">If <paramref name="a"/> and <paramref name="b"/> are not equal in length.</exception>
+        </member>
+        <member name="M:DaLion.Shared.Extensions.ArrayExtensions.ElementwiseAdd(System.Single[],System.Single[])">
+            <summary>Performs element-wise addition.</summary>
+            <param name="a">The first <see cref="T:System.Array"/>.</param>
+            <param name="b">The second <see cref="T:System.Array"/>.</param>
+            <returns>A new array whose elements are the sum of the corresponding elements from <paramref name="a"/> and <paramref name="b"/>.</returns>
+            <exception cref="T:System.InvalidOperationException">If <paramref name="a"/> and <paramref name="b"/> are not equal in length.</exception>
+        </member>
+        <member name="M:DaLion.Shared.Extensions.ArrayExtensions.ElementwiseAdd(System.Double[],System.Double[])">
+            <summary>Performs element-wise addition.</summary>
+            <param name="a">The first <see cref="T:System.Array"/>.</param>
+            <param name="b">The second <see cref="T:System.Array"/>.</param>
+            <returns>A new array whose elements are the sum of the corresponding elements from <paramref name="a"/> and <paramref name="b"/>.</returns>
+            <exception cref="T:System.InvalidOperationException">If <paramref name="a"/> and <paramref name="b"/> are not equal in length.</exception>
+        </member>
+        <member name="M:DaLion.Shared.Extensions.ArrayExtensions.ElementwiseMultiply(System.Int32[],System.Int32[])">
+            <summary>Performs element-wise multiplication.</summary>
+            <param name="a">The first <see cref="T:System.Array"/>.</param>
+            <param name="b">The second <see cref="T:System.Array"/>.</param>
+            <returns>A new array whose elements are the product of the corresponding elements from <paramref name="a"/> and <paramref name="b"/>.</returns>
+            <exception cref="T:System.InvalidOperationException">If <paramref name="a"/> and <paramref name="b"/> are not equal in length.</exception>
+        </member>
+        <member name="M:DaLion.Shared.Extensions.ArrayExtensions.ElementwiseMultiply(System.Single[],System.Single[])">
+            <summary>Performs element-wise multiplication.</summary>
+            <param name="a">The first <see cref="T:System.Array"/>.</param>
+            <param name="b">The second <see cref="T:System.Array"/>.</param>
+            <returns>A new array whose elements are the product of the corresponding elements from <paramref name="a"/> and <paramref name="b"/>.</returns>
+            <exception cref="T:System.InvalidOperationException">If <paramref name="a"/> and <paramref name="b"/> are not equal in length.</exception>
+        </member>
+        <member name="M:DaLion.Shared.Extensions.ArrayExtensions.ElementwiseMultiply(System.Double[],System.Double[])">
+            <summary>Performs element-wise multiplication.</summary>
+            <param name="a">The first <see cref="T:System.Array"/>.</param>
+            <param name="b">The second <see cref="T:System.Array"/>.</param>
+            <returns>A new array whose elements are the product of the corresponding elements from <paramref name="a"/> and <paramref name="b"/>.</returns>
+            <exception cref="T:System.InvalidOperationException">If <paramref name="a"/> and <paramref name="b"/> are not equal in length.</exception>
+        </member>
         <member name="M:DaLion.Shared.Extensions.ArrayExtensions.SortDescending``1(``0[])">
             <summary>Sorts the <paramref name="array"/> in reverse order.</summary>
             <typeparam name="T">The type of elements in the <paramref name="array"/>. <paramref name="T"/> must be <see cref="T:System.IComparable`1"/>.</typeparam>
@@ -3541,6 +3651,7 @@
         </member>
         <member name="M:DaLion.Shared.Pathfinding.MTDStarLite.UpdateEdges(StardewValley.GameLocation,Microsoft.Xna.Framework.Point)">
             <summary>Updates the edges which connect to the <see cref="T:DaLion.Shared.Pathfinding.MTDStarLite.State"/> at the specified <paramref name="position"/>.</summary>
+            <param name="location">The <see cref="T:StardewValley.GameLocation"/>.</param>
             <param name="position">The <see cref="T:DaLion.Shared.Pathfinding.MTDStarLite.State"/>'s position as a <see cref="T:Microsoft.Xna.Framework.Point"/>.</param>
         </member>
         <member name="M:DaLion.Shared.Pathfinding.MTDStarLite.Initialize(Microsoft.Xna.Framework.Point,Microsoft.Xna.Framework.Point)">
@@ -3568,7 +3679,7 @@
         </member>
         <member name="M:DaLion.Shared.Pathfinding.MTDStarLite.ReconstructPath">
             <summary>Reconstructs the optimal poth from <see cref="P:DaLion.Shared.Pathfinding.MTDStarLite.Start"/> to <see cref="P:DaLion.Shared.Pathfinding.MTDStarLite.Goal"/>.</summary>
-            <returns>The reconstructed path as a <see cref="!:Stack&lt;T"/> of <see cref="T:DaLion.Shared.Pathfinding.MTDStarLite.State"/> instances.</returns>
+            <returns>The reconstructed path as a <see cref="T:System.Collections.Generic.Stack`1"/> of <see cref="T:DaLion.Shared.Pathfinding.MTDStarLite.State"/> instances.</returns>
         </member>
         <member name="T:DaLion.Shared.Pathfinding.MTDStarLite.Key">
             <summary>Represents a two-value priority key.</summary>
@@ -3948,6 +4059,7 @@
                 Provides a tree data structure in which each internal (non-leaf) node has exactly four children, useful
                 for 2D spatial information queries.
             </summary>
+            <typeparam name="TSpatialEntity">A type with spatial properties.</typeparam>
         </member>
         <member name="M:DaLion.Shared.Classes.Quadtree`1.#ctor(Microsoft.Xna.Framework.Rectangle,System.Func{`0,Microsoft.Xna.Framework.Rectangle})">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Shared.Classes.Quadtree`1"/> class.</summary>
@@ -4314,6 +4426,9 @@
         </member>
         <member name="T:DaLion.Shared.Enums.ObjectCategory">
             <summary>A <see cref="T:StardewValley.Object"/> category.</summary>
+        </member>
+        <member name="F:DaLion.Shared.Enums.ObjectCategory.None">
+            <summary>No particular category.</summary>
         </member>
         <member name="F:DaLion.Shared.Enums.ObjectCategory.Gems">
             <summary>The category for gemstones.</summary>
@@ -7074,10 +7189,11 @@
             <param name="index">The index to move to.</param>
             <returns>The <see cref="T:DaLion.Shared.Harmony.ILHelper"/> instance.</returns>
         </member>
-        <member name="M:DaLion.Shared.Harmony.ILHelper.Insert(HarmonyLib.CodeInstruction[],System.Reflection.Emit.Label[])">
+        <member name="M:DaLion.Shared.Harmony.ILHelper.Insert(HarmonyLib.CodeInstruction[],System.Reflection.Emit.Label[],HarmonyLib.ExceptionBlock[])">
             <summary>Inserts the given <paramref name="instructions"/> at the currently pointed index.</summary>
             <param name="instructions">The <see cref="T:HarmonyLib.CodeInstruction"/>s to insert.</param>
             <param name="labels">Some <see cref="T:System.Reflection.Emit.Label"/>s to add at the start of the insertion.</param>
+            <param name="blocks">Some <see cref="T:HarmonyLib.ExceptionBlock"/>s to add to the inserted instructions.</param>
             <returns>The <see cref="T:DaLion.Shared.Harmony.ILHelper"/> instance.</returns>
             <remarks>
                 The instruction at the current address is pushed forward, such that the instruction pointer continues to point to
@@ -7140,8 +7256,8 @@
         <member name="M:DaLion.Shared.Harmony.ILHelper.RemoveUntil(HarmonyLib.CodeInstruction[],DaLion.Shared.Harmony.ILHelper.SearchOption,System.Int32)">
             <summary>
                 Removes the <see cref="T:HarmonyLib.CodeInstruction"/>s from current pointer index up to and including the first
-                occurrence of the specified <paramref name="pattern"/> in the active <see cref="T:HarmonyLib.CodeInstruction"/>
-                list according to the specified <see cref="T:DaLion.Shared.Harmony.ILHelper.SearchOption"/>.
+                instructions in the first occurrence of the specified <paramref name="pattern"/> in the active
+                <see cref="T:HarmonyLib.CodeInstruction"/> list according to the specified <see cref="T:DaLion.Shared.Harmony.ILHelper.SearchOption"/>.
             </summary>
             <param name="pattern">A pattern of <see cref="T:HarmonyLib.CodeInstruction"/>s to match.</param>
             <param name="option">The <see cref="T:DaLion.Shared.Harmony.ILHelper.SearchOption"/>.</param>
@@ -7192,6 +7308,23 @@
         </member>
         <member name="M:DaLion.Shared.Harmony.ILHelper.StripLabels">
             <summary>Removes all <see cref="T:System.Reflection.Emit.Label"/>s from the <see cref="T:HarmonyLib.CodeInstruction"/> at the currently pointed index.</summary>
+            <returns>The <see cref="T:DaLion.Shared.Harmony.ILHelper"/> instance.</returns>
+        </member>
+        <member name="M:DaLion.Shared.Harmony.ILHelper.GetBlocks(HarmonyLib.ExceptionBlock[]@)">
+            <summary>
+                Gets a copy of the <see cref="T:HarmonyLib.ExceptionBlock"/>s from the <see cref="T:HarmonyLib.CodeInstruction"/> at the currently pointed
+                index.
+            </summary>
+            <param name="blocks">The copied <see cref="T:HarmonyLib.ExceptionBlock"/>s.</param>
+            <returns>The <see cref="T:DaLion.Shared.Harmony.ILHelper"/> instance.</returns>
+        </member>
+        <member name="M:DaLion.Shared.Harmony.ILHelper.SetBlocks(HarmonyLib.ExceptionBlock[])">
+            <summary>Replaces the <see cref="T:HarmonyLib.ExceptionBlock"/>s of the <see cref="T:HarmonyLib.CodeInstruction"/> at the currently pointed index.</summary>
+            <param name="blocks">The new <see cref="T:HarmonyLib.ExceptionBlock"/>s to set.</param>
+            <returns>The <see cref="T:DaLion.Shared.Harmony.ILHelper"/> instance.</returns>
+        </member>
+        <member name="M:DaLion.Shared.Harmony.ILHelper.StripBlocks">
+            <summary>Removes all <see cref="T:HarmonyLib.ExceptionBlock"/>s from the <see cref="T:HarmonyLib.CodeInstruction"/> at the currently pointed index.</summary>
             <returns>The <see cref="T:DaLion.Shared.Harmony.ILHelper"/> instance.</returns>
         </member>
         <member name="M:DaLion.Shared.Harmony.ILHelper.StripLabels(System.Reflection.Emit.Label[]@)">
@@ -7410,10 +7543,17 @@
         <member name="T:DaLion.Shared.Integrations.GMCM.Attributes.GMCMRangeAttribute">
             <summary>Sets the minimum and maximum parameters of a GMCM numeric property.</summary>
         </member>
-        <member name="M:DaLion.Shared.Integrations.GMCM.Attributes.GMCMRangeAttribute.#ctor(System.Single,System.Single)">
+        <member name="M:DaLion.Shared.Integrations.GMCM.Attributes.GMCMRangeAttribute.#ctor(System.Single,System.Single,System.Single)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Shared.Integrations.GMCM.Attributes.GMCMRangeAttribute"/> class.</summary>
             <param name="min">The minimum value.</param>
             <param name="max">The maximum value.</param>
+            <param name="step">The interval step.</param>
+        </member>
+        <member name="M:DaLion.Shared.Integrations.GMCM.Attributes.GMCMRangeAttribute.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Shared.Integrations.GMCM.Attributes.GMCMRangeAttribute"/> class.</summary>
+            <param name="min">The minimum value.</param>
+            <param name="max">The maximum value.</param>
+            <param name="step">The interval step.</param>
         </member>
         <member name="P:DaLion.Shared.Integrations.GMCM.Attributes.GMCMRangeAttribute.Min">
             <summary>Gets the minimum value.</summary>
@@ -7421,14 +7561,7 @@
         <member name="P:DaLion.Shared.Integrations.GMCM.Attributes.GMCMRangeAttribute.Max">
             <summary>Gets the maximum value.</summary>
         </member>
-        <member name="T:DaLion.Shared.Integrations.GMCM.Attributes.GMCMStepAttribute">
-            <summary>Sets the step parameter of a GMCM numeric property.</summary>
-        </member>
-        <member name="M:DaLion.Shared.Integrations.GMCM.Attributes.GMCMStepAttribute.#ctor(System.Single)">
-            <summary>Initializes a new instance of the <see cref="T:DaLion.Shared.Integrations.GMCM.Attributes.GMCMStepAttribute"/> class.</summary>
-            <param name="step">The step value.</param>
-        </member>
-        <member name="P:DaLion.Shared.Integrations.GMCM.Attributes.GMCMStepAttribute.Step">
+        <member name="P:DaLion.Shared.Integrations.GMCM.Attributes.GMCMRangeAttribute.Step">
             <summary>Gets the interval value.</summary>
         </member>
         <member name="T:DaLion.Shared.Integrations.GMCM.DynamicListOption">
@@ -7456,6 +7589,9 @@
             <param name="setValues">A delegate for setting the target list given a list of string items.</param>
             <param name="getColumnsFromWidth">Gets the number of columns based on the width of the menu.</param>
             <param name="id">An optional id for this field.</param>
+        </member>
+        <member name="T:DaLion.Shared.Integrations.GMCM.DynamicKeyValuePairListOptionRenderedActiveMenuEvent">
+            <summary>Draws the hover text over a <see cref="T:DaLion.Shared.Integrations.GMCM.DynamicKeyValuePairListOption"/>.</summary>
         </member>
         <member name="M:DaLion.Shared.Integrations.GMCM.DynamicKeyValuePairListOptionRenderedActiveMenuEvent.#ctor(DaLion.Shared.Events.EventManager)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Shared.Integrations.GMCM.DynamicKeyValuePairListOptionRenderedActiveMenuEvent"/> class.</summary>
@@ -8419,9 +8555,6 @@
                 <see langword="null"/> even if a mod config menu is shown (e.g. because the mod doesn't have pages).
             </param>
             <returns>Returns whether a mod config menu is being shown.</returns>
-        </member>
-        <member name="T:DaLion.Shared.Integrations.CustomResourceClumps.ICustomResourceClumpsApi">
-            <summary>The API provided by Custom Ore Nodes.</summary>
         </member>
         <member name="T:DaLion.Shared.Integrations.ModIntegration`1">
             <summary>The base implementation for a mod integration.</summary>
@@ -9464,9 +9597,6 @@
             <summary>
                 Un-register an inventory provider.
             </summary>
-        </member>
-        <member name="T:DaLion.Shared.Integrations.CustomOreNodes.ICustomOreNodesApi">
-            <summary>The API provided by Custom Ore Nodes.</summary>
         </member>
         <member name="T:DaLion.Shared.Integrations.IModIntegration">
             <summary>Handles integration with a given mod.</summary>

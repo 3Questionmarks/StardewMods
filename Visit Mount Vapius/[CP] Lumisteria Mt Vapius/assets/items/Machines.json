@@ -2599,6 +2599,28 @@
 					//"InvalidCountMessage": null,
 					"RecalculateOnCollect": false
 				},
+				"Lumisteria.MtVapius_OilMakerSeaBuckthornBerryOil": {
+					"Id": "Lumisteria.MtVapius_OilMakerSeaBuckthornBerryOil",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_SeaBuckthornBerry",
+							"RequiredCount": 5,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"IncrementMachineParentSheetIndex": 0,
+							"Id": "Lumisteria.MtVapius_ArtisanGoods_SeaBuckthornBerryOil",
+							"ItemId": "(O)Lumisteria.MtVapius_ArtisanGoods_SeaBuckthornBerryOil",
+						}
+					],
+					"MinutesUntilReady": 360,
+					"DaysUntilReady": -1,
+					//"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
 			},
 		},
 		{
@@ -2651,7 +2673,7 @@
 							"MaxStack": 4,
 						}
 					],
-					"MinutesUntilReady": 10000,
+					"MinutesUntilReady": 2400,
 					"DaysUntilReady": -1,
 					//"InvalidCountMessage": null,
 					"RecalculateOnCollect": false
@@ -3355,6 +3377,32 @@
 							"ItemId": "(O)Lumisteria.MtVapius_EweCheese",
 							"MinStack": 1,
 							"MaxStack": 1,
+							"QualityModifiers": [
+								{
+									"Id": "Kedi.VPP.Pastoralism.None",
+									"Amount": 0,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 0"
+								},
+								{
+									"Id": "Kedi.VPP.Pastoralism.Silver",
+									"Amount": 1,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 1"
+								},
+								{
+									"Id": "Kedi.VPP.Pastoralism.Gold",
+									"Amount": 2,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 2"
+								},
+								{
+									"Id": "Kedi.VPP.Pastoralism.Iridium",
+									"Amount": 4,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 4"
+								},
+							],
 						}
 					],
 					"MinutesUntilReady": 200,
@@ -3393,12 +3441,26 @@
 								},
 								{
 									"Id": "DoubleIridiumQuality",
-									"Condition": "ITEM_QUALITY Input 4, !ITEM_QUALITY Input 5, RANDOM 0.5",
+									"Condition": "ITEM_QUALITY Input 4, RANDOM 0.5",
 									"Modification": "Add",
 									"Amount": 1.0,
+								},
+								{
+									"Id": "Kedi.VPP.Bio-Engineering",
+									"Amount": 2.0,
+									"Modification": "Add",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Bio-Engineering Received"
 								}
 							],
 							"StackModifierMode": "Stack",
+							"QualityModifiers": [
+								{
+									"Id": "Kedi.VPP.Pastoralism.Iridium",
+									"Amount": 4,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 4"
+								}
+							],
 						}
 					],
 					"MinutesUntilReady": 200,
@@ -3438,13 +3500,27 @@
 								},
 								{
 									"Id": "DoubleIridiumQuality",
-									"Condition": "ITEM_QUALITY Input 4, !ITEM_QUALITY Input 5, RANDOM 0.5",
+									"Condition": "ITEM_QUALITY Input 4, RANDOM 0.5",
 									"Modification": "Add",
 									"Amount": 1.0,
 									"RandomAmount": null
+								},
+								{
+									"Id": "Kedi.VPP.Bio-Engineering",
+									"Amount": 2.0,
+									"Modification": "Add",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Bio-Engineering Received"
 								}
 							],
 							"StackModifierMode": "Stack",
+							"QualityModifiers": [
+								{
+									"Id": "Kedi.VPP.Pastoralism.Iridium",
+									"Amount": 4,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 4"
+								}
+							],
 						}
 					],
 					"MinutesUntilReady": 200,
@@ -3484,13 +3560,27 @@
 								},
 								{
 									"Id": "DoubleIridiumQuality",
-									"Condition": "ITEM_QUALITY Input 4, !ITEM_QUALITY Input 5, RANDOM 0.5",
+									"Condition": "ITEM_QUALITY Input 4, RANDOM 0.5",
 									"Modification": "Add",
 									"Amount": 1.0,
 									"RandomAmount": null
+								},
+								{
+									"Id": "Kedi.VPP.Bio-Engineering",
+									"Amount": 2.0,
+									"Modification": "Add",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Bio-Engineering Received"
 								}
 							],
 							"StackModifierMode": "Stack",
+							"QualityModifiers": [
+								{
+									"Id": "Kedi.VPP.Pastoralism.Iridium",
+									"Amount": 4,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 4"
+								}
+							],
 						}
 					],
 					"MinutesUntilReady": 200,
@@ -3538,6 +3628,14 @@
 								}
 							],
 							"StackModifierMode": "Stack",
+							"QualityModifiers": [
+								{
+									"Id": "Kedi.VPP.Pastoralism.Iridium",
+									"Amount": 4,
+									"Modification": "Set",
+									"Condition": "PLAYER_HAS_MAIL Current Farming_Pastoralism Received, ITEM_QUALITY Input 4"
+								}
+							],
 						}
 					],
 					"MinutesUntilReady": 200,
@@ -4281,6 +4379,30 @@
 							},
 							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
 							"Id": "Lumisteria.MtVapius_Cheeses",
+						}
+					],
+					"MinutesUntilReady": -1,
+					"DaysUntilReady": -1,
+					"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				},
+				"Lumisteria.MtVapius_CaskBalsamicVinegar": {
+					"Id": "Lumisteria.MtVapius_CaskBalsamicVinegar",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Lumisteria.MtVapius_ArtisanGoods_BalsamicVinegar",
+							"RequiredCount": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+							"Id": "Lumisteria.MtVapius_CaskBalsamicVinegar",
 						}
 					],
 					"MinutesUntilReady": -1,

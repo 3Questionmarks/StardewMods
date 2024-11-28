@@ -5,7 +5,7 @@
             "Target": "Data/Festivals/spring13",
              "When": {
       "HasFlag|contains=landslideDone": true,
-     "HasSeenEvent |contains={{ModID}}_LyellIntroduction": true,
+    
              },
             "TextOperations": [
                 {
@@ -34,7 +34,7 @@
             "Target": "Data/Festivals/spring24",
              "When": {
       "HasFlag|contains=landslideDone": true,
-     "HasSeenEvent |contains={{ModID}}_LyellIntroduction": true,
+    
              },
             "TextOperations": [
                 {
@@ -55,6 +55,17 @@
                     "Value": "FC.Lyell 10 16 2",
                     "Delimiter": "/",
         },
+           {
+             "Operation": "Append",
+             "Target": ["Fields", "set-up{{YearCheck}}", 5],
+             "Value": "/positionOffset FC.Lyell -30 0"
+            },
+            {
+             "Operation": "Append",
+             "Target": ["Fields", "mainEvent{{YearCheck}}", 5],
+             "Value": "/positionOffset FC.Lyell -30 0",
+      
+        },
         ]
     },
             {
@@ -62,7 +73,7 @@
             "Target": "Data/Festivals/summer11",
              "When": {
       "HasFlag|contains=landslideDone": true,
-     "HasSeenEvent |contains={{ModID}}_LyellIntroduction": true,
+    
              },
             "TextOperations": [
                 {
@@ -71,7 +82,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Lyell 18 31 1",
+                    "Value": "FC.Lyell 17 27 1",
                     "Delimiter": "/"
                 },
                      {
@@ -80,9 +91,10 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Lyell 18 31 1",
+                    "Value": "FC.Lyell 17 27 1",
                     "Delimiter": "/"
                 },
+
         ]
     },  
             {
@@ -90,7 +102,7 @@
             "Target": "Data/Festivals/summer28",
              "When": {
       "HasFlag|contains=landslideDone": true,
-     "HasSeenEvent |contains={{ModID}}_LyellIntroduction": true,
+    
              },
             "TextOperations": [
                 {
@@ -99,7 +111,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Lyell 18 33 2",
+                    "Value": "FC.Lyell 17 27 1",
                     "Delimiter": "/",
                 },
                      {
@@ -108,17 +120,16 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Lyell 18 33 2",
+                    "Value": "FC.Lyell 17 27 2",
                     "Delimiter": "/"
                 },
         ]
     },
     {
             "Action": "EditData",
-            "Target": "Data/Festivals/fall3",
+            "Target": "Data/Festivals/fall3,Data/Festivals/winter3",
              "When": {
       "HasFlag|contains=landslideDone": true,
-     "HasSeenEvent |contains={{ModID}}_LyellIntroduction": true,
              },
             "TextOperations": [
                 {
@@ -146,7 +157,7 @@
             "Target": "Data/Festivals/fall16",
              "When": {
       "HasFlag|contains=landslideDone": true,
-     "HasSeenEvent |contains={{ModID}}_LyellIntroduction": true,
+    
              },
             "TextOperations": [
                 {
@@ -169,12 +180,30 @@
                 },
         ]
     },
+            {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Lyell 35 80 3",
+                    "Delimiter": "/"
+                },
+        ]
+    },
        {
             "Action": "EditData",
             "Target": "Data/Festivals/winter8",
              "When": {
       "HasFlag|contains=landslideDone": true,
-     "HasSeenEvent |contains={{ModID}}_LyellIntroduction": true,
+    
              },
             "TextOperations": [
                 {
@@ -202,7 +231,7 @@
             "Target": "Data/Festivals/winter25",
              "When": {
       "HasFlag|contains=landslideDone": true,
-     "HasSeenEvent |contains={{ModID}}_LyellIntroduction": true,
+    
              },
             "TextOperations": [
                 {

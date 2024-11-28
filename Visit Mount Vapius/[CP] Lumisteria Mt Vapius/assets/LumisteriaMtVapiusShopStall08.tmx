@@ -6,8 +6,8 @@
   <property name="Outdoors" value="T"/>
   <property name="Warp" value="48 94 Lumisteria.MtVapius_TrainStation 2 1 49 94 Lumisteria.MtVapius_TrainStation 2 1 50 94 Lumisteria.MtVapius_TrainStation 2 1 84 65 Lumisteria.MtVapius_Cliff 1 10 84 66 Lumisteria.MtVapius_Cliff 1 10 84 67 Lumisteria.MtVapius_Cliff 1 10"/>
  </properties>
- <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths.png" width="64" height="144"/>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -39,8 +39,8 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="37" name="spring_lumi_outdoors" tilewidth="16" tileheight="16" tilecount="1500" columns="25">
-  <image source="spring_lumisteria_mtvapius_c_outdoors.png" width="400" height="960"/>
+ <tileset firstgid="65" name="spring_lumi_outdoors" tilewidth="16" tileheight="16" tilecount="1800" columns="25">
+  <image source="spring_lumisteria_mtvapius_c_outdoors.png" width="400" height="1152"/>
   <tile id="440">
    <properties>
     <property name="Passable" value="T"/>
@@ -293,7 +293,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="1537" name="mtvapiusoutdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+ <tileset firstgid="1865" name="mtvapiusoutdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="spring_lumisteria_mtvapius_v_outdoorsTileSheet.png" width="400" height="1264"/>
   <tile id="150">
    <properties>
@@ -1761,19 +1761,19 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="3512" name="z_mtvapius_custom_buildings" tilewidth="16" tileheight="16" tilecount="1450" columns="25">
-  <image source="spring_lumisteria_mtvapius_c_buildings.png" width="400" height="928"/>
+ <tileset firstgid="3840" name="z_mtvapius_custom_buildings" tilewidth="16" tileheight="16" tilecount="1800" columns="25">
+  <image source="spring_lumisteria_mtvapius_c_buildings.png" width="400" height="1152"/>
  </tileset>
- <tileset firstgid="4962" name="spring_lumisteria_mtvapius_v_outdoorsTileSheet2" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+ <tileset firstgid="5640" name="spring_lumisteria_mtvapius_v_outdoorsTileSheet2" tilewidth="16" tileheight="16" tilecount="256" columns="16">
   <image source="spring_lumisteria_mtvapius_v_outdoorsTileSheet2.png" width="256" height="256"/>
  </tileset>
  <layer id="1" name="Back" width="4" height="5">
   <data encoding="csv">
-1713,1690,1713,1690,
-1763,1764,1763,103,
-1713,1690,1713,153,
-1763,1764,1763,1764,
-1713,1690,1713,1690
+2041,2018,2041,2018,
+2091,2092,2091,131,
+2041,2018,2041,181,
+2091,2092,2091,2092,
+2041,2018,2041,2018
 </data>
  </layer>
  <layer id="2" name="Buildings" width="4" height="5">
@@ -1782,7 +1782,7 @@
 0,0,0,0,
 0,0,0,0,
 0,0,0,0,
-4358,4359,4360,4361
+4686,4687,4688,4689
 </data>
  </layer>
  <layer id="13" name="Back+1" width="4" height="5">
@@ -1817,15 +1817,15 @@
 0,0,0,0,
 0,0,0,0,
 0,0,0,0,
-4333,4334,4335,4336,
+4661,4662,4663,4664,
 0,0,0,0
 </data>
  </layer>
  <layer id="5" name="AlwaysFront" width="4" height="5">
   <data encoding="csv">
-4258,4259,4260,4261,
-4283,4284,4285,4286,
-4308,4309,4310,4311,
+4586,4587,4588,4589,
+4611,4612,4613,4614,
+4636,4637,4638,4639,
 0,0,0,0,
 0,0,0,0
 </data>
@@ -1834,7 +1834,7 @@
  <objectgroup id="7" name="Buildings">
   <object id="79" name="TileData" x="32" y="64" width="16" height="16">
    <properties>
-    <property name="Action" value="OpenShop Lumisteria.MtVapius_MoiraShop down 900 1800 37 74 3 3"/>
+    <property name="Action" value="OpenShop Lumisteria.MtVapius_MoiraShop down 600 2600 37 74 3 3"/>
    </properties>
   </object>
  </objectgroup>

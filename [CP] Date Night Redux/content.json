@@ -40,7 +40,7 @@
 		},
 		"SuggestiveEndings": {
 			"AllowValues": "disabled, enabled",
-			"Default": "enabled",
+			"Default": "disabled",
 			"Description": "Enable/Disable suggestive endings to the date events. The endings are not NSFW, but can be disabled if you would rather keep it PG.",
 			"Section": "Date Tweaks",
 		},
@@ -48,6 +48,12 @@
 			"AllowValues": "disabled, enabled",
 			"Default": "enabled",
 			"Description": "Enable/Disable the book cutscene section of the library date. I recommend seeing it at least once, but if you would like to cut it out to make the dates overall shorter, you can disable this after. Default set to true.",
+			"Section": "Date Tweaks",
+		},
+		"DateReminders": {
+			"AllowValues": "disabled, enabled",
+			"Default": "disabled",
+			"Description": "Choose whether you are given a reminder for your date night. You will get only one date reminder per day if enabled.",
 			"Section": "Date Tweaks",
 		},
 		"ModdedSpouseFoods": {
@@ -168,6 +174,16 @@
 			"When": {
 				"FreeLovePatch": "enabled",
 				"HasMod": "ApryllForever.PolyamorySweetLove",
+				"ValidDate": "true",
+			},
+		},
+		
+		{
+			"Name": "Date",
+			"Value": "{{Random:{{EnderTedi.Polyamory/PlayerSpouses}} }}",
+			"When": {
+				"FreeLovePatch": "enabled",
+				"HasMod": "EnderTedi.Polyamory",
 				"ValidDate": "true",
 			},
 		},
@@ -375,6 +391,13 @@
 				"ValidDate": "true"
 			},
 		},
+		
+		//Debug Token. If the following is actually enabled (e.g. the comment things aren't around it), *immediately* put a bug report on the mod page!
+		
+		/*{
+			"Name": "DateType",
+			"Value": "saloon",
+		},*/
 
 	//VANILLA MODDED SPOUSE FIXES
 
@@ -978,6 +1001,16 @@
 				"DayEvent": "Pelican Town Potluck",
 				"DatesOnFestivalDays": "disabled",
 				"HasMod": "LenneDalben.PelicanTownPotluck",
+			},
+		},
+		
+		//Elliott Tour Date Prevention
+		{
+			"Name": "DateInterest",
+			"Value": "101",
+			"When": {
+				"Date": "Elliott",
+				"HasConversationTopic": "elliottGone", //Removes Elliott dates if he's on tour
 			},
 		},
 
@@ -2424,22 +2457,38 @@
 			},
 		},
 		
-	//Mod Compat Tokens
-	
-	{
-		"Name": "Ornithologist",
-		"Value": "pause 1",
-	},
-	
-	{
-		"Name": "Ornithologist",
-		"Value": "changeToTemporaryMap Forest_DNR false",
-		"When": {
-			"HasMod": "Ivy.OrnithologistsGuild.CP",
+		//Mod Compat Tokens
+		
+		{
+			"Name": "Ornithologist",
+			"Value": "pause 1",
 		},
-	},
+		
+		{
+			"Name": "Ornithologist",
+			"Value": "changeToTemporaryMap Forest_DNR false",
+			"When": {
+				"HasMod": "Ivy.OrnithologistsGuild.CP",
+			},
+		},
+		
+		//Token Check for if a date will happen that day - put in for forward notice
 
-   ],
+		{
+			"Name": "DateEvaluate",
+			"Value": "false",
+		},
+		
+		{
+			"Name": "DateEvaluate",
+			"Value": "true",
+			"When": {
+				"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+			},
+		},
+
+	],
+	
    "Changes": [
 	
 		//Load Invisible Actors For Certain Events

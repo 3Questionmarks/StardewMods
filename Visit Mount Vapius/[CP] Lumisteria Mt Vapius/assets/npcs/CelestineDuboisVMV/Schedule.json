@@ -19,6 +19,7 @@
         "Wed": "700 Lumisteria.MtVapius_Inn 12 37 2/a930 Lumisteria.MtVapius_Hamlet 46 67 2/a940 Lumisteria.MtVapius_Hamlet 46 66 2 CelestineDuboisVMV_sitAdelaide/1100 Lumisteria.MtVapius_Inn 29 38 2/1400 Lumisteria.MtVapius_TrainStation 13 15 2 CelestineDuboisVMV_sitAdelaide/1800 Lumisteria.MtVapius_Inn 38 37 0/2000 Lumisteria.MtVapius_Inn 13 40 3/2330 Lumisteria.MtVapius_Inn 39 23 3",
         "Thu": "700 Lumisteria.MtVapius_Inn 29 38 2/a930 Lumisteria.MtVapius_Hamlet 46 67 2/a940 Lumisteria.MtVapius_Hamlet 46 66 2 CelestineDuboisVMV_sitAdelaide/1000 Lumisteria.MtVapius_Hamlet 46 67 2/1100 Lumisteria.MtVapius_Inn 29 38 2/1400 Lumisteria.MtVapius_TrainStation 13 15 2 CelestineDuboisVMV_sitAdelaide/1800 Lumisteria.MtVapius_Inn 38 37 0/2000 Lumisteria.MtVapius_Inn 35 39 1/2330 Lumisteria.MtVapius_Inn 39 23 3",
         "Sat": "700 Lumisteria.MtVapius_Inn 29 38 2/a1400 Lumisteria.MtVapius_TrainStation 13 15 2 CelestineDuboisVMV_sitAdelaide/1800 Lumisteria.MtVapius_Inn 38 37 0/2000 Lumisteria.MtVapius_Inn 13 40 3/2330 Lumisteria.MtVapius_Inn 39 23 3",
+        "Sun": "630 Lumisteria.MtVapius_Hamlet 33 66 2 CelestineDuboisVMV_read/a930 Lumisteria.MtVapius_Hamlet 46 67 2/a940 Lumisteria.MtVapius_Hamlet 46 66 2 CelestineDuboisVMV_sitAdelaide/1000 Lumisteria.MtVapius_Hamlet 46 67 2/1100 Lumisteria.MtVapius_Inn 29 38 2/a1430 Lumisteria.MtVapius_TrainStation 13 15 2 CelestineDuboisVMV_sitAdelaide/1900 Lumisteria.MtVapius_Inn 38 37 0/2100 Lumisteria.MtVapius_Inn 13 40 3/2330 Lumisteria.MtVapius_Inn 39 23 3",
         "spring": "700 Lumisteria.MtVapius_Inn 29 38 2/a930 Lumisteria.MtVapius_Hamlet 46 67 2/a940 Lumisteria.MtVapius_Hamlet 46 66 2 CelestineDuboisVMV_sitAdelaide/1000 Lumisteria.MtVapius_Hamlet 46 67 2/1100 Lumisteria.MtVapius_Inn 29 38 2/a1430 Lumisteria.MtVapius_TrainStation 13 15 2 CelestineDuboisVMV_sitAdelaide/1800 Lumisteria.MtVapius_Inn 38 37 0/2000 Lumisteria.MtVapius_Inn 13 40 3/2330 Lumisteria.MtVapius_Inn 39 23 3",
         "summer": "700 Lumisteria.MtVapius_Inn 29 38 2/a930 Lumisteria.MtVapius_Hamlet 46 67 2/a940 Lumisteria.MtVapius_Hamlet 46 66 2 CelestineDuboisVMV_sitAdelaide/1000 Lumisteria.MtVapius_Hamlet 46 67 2/1100 Lumisteria.MtVapius_Inn 29 38 2/a1430 Lumisteria.MtVapius_TrainStation 13 15 2 CelestineDuboisVMV_sitAdelaide/1900 Lumisteria.MtVapius_Inn 38 37 0/2100 Lumisteria.MtVapius_Inn 13 40 3/2330 Lumisteria.MtVapius_Inn 39 23 3",
       }
@@ -48,6 +49,20 @@
       {   
 		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Hamlet_MoiraArrival",
 		"HasMod": "LemurKat.EastScarpe.CP",
+      }
+    },
+    {
+      "LogName": "Odalis Returned Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/CelestineDuboisVMV",
+      "Entries": {
+		"Tue": "630 Lumisteria.MtVapius_Hamlet 33 66 2 CelestineDuboisVMV_read/a1400 Lumisteria.MtVapius_TrainStation 13 15 2 CelestineDuboisVMV_sitAdelaide/1800 Lumisteria.MtVapius_Inn 38 37 0/2000 Lumisteria.MtVapius_Inn 13 40 3/2330 Lumisteria.MtVapius_Inn 39 23 3",
+        "rain": "700 Lumisteria.MtVapius_Inn 23 34 2 CelestineDuboisVMV_read/900 Lumisteria.MtVapius_Inn 35 39 1/1100 Lumisteria.MtVapius_Inn 29 38 2/1800 Lumisteria.MtVapius_Inn 38 37 0",
+
+      },
+      "When":
+      {   
+		"HasSeenEvent: anyPlayer": "Lumisteria.MtVapius_Inn_OdalisArrival",
       }
     },
   ]

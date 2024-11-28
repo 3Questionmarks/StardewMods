@@ -39,14 +39,104 @@
         }
       }
     },
+
+
+{ //Equip/Uneqip Buffs
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+
+		"{{ModId}}_EndlessEmberRingEquip": {
+                    "Id": "{{ModId}}_EndlessEmberRingEquip",
+                    "ItemId": "{{ModId}}_EndlessEmberRing",
+                    "Trigger": "dreamy.kickitspot_OnRingEndlessEmberEquip",
+                    "MarkActionApplied": false,
+                    "Actions": [
+                        "AddBuff {{ModId}}_AshenPromise",
+
+                    ]
+                },
+                "{{ModId}}_EndlessEmberRingUnequip": {
+                    "Id": "{{ModId}}_EndlessEmberRingUnequip",
+                    "ItemId": "{{ModId}}_EndlessEmberRing",
+                    "Trigger": "dreamy.kickitspot_OnRingEndlessEmberUnequip",
+                    "MarkActionApplied": false,
+                    "Actions": [
+                        "RemoveBuff {{ModId}}_AshenPromise"
+                    ]
+                },
+                "{{ModId}}_SilverPetalRingEquip": {
+                    "Id": "{{ModId}}_SilverPetalRingEquip",
+                    "ItemId": "{{ModId}}_SilverPetalRing",
+                    "Trigger": "dreamy.kickitspot_OnRingSilverPetalEquip",
+                    "MarkActionApplied": false,
+                    "Actions": [
+                        "AddBuff {{ModId}}_PetalGrace"
+                    ]
+                },
+                "{{ModId}}_SilverPetalRingUnequip": {
+                    "Id": "{{ModId}}_SilverPetalRingUnequip",
+                    "ItemId": "{{ModId}}_SilverPetalRing",
+                    "Trigger": "dreamy.kickitspot_OnRingSilverPetalUnequip",
+                    "MarkActionApplied": false,
+                    "Actions": [
+                        "RemoveBuff {{ModId}}_PetalGrace"
+                    ]
+                },
+                "{{ModId}}_SkyOakEquip": {
+                    "Id": "{{ModId}}_SkyOakEquip",
+                    "ItemId": "{{ModId}}_SkyOak",
+                    "Trigger": "dreamy.kickitspot_OnRingSkyOakEquip",
+                    "MarkActionApplied": false,
+                    "Actions": [
+                        "AddBuff {{ModId}}_OakBlessing"
+                    ]
+                },
+                "{{ModId}}_SkyOakUnequip": {
+                    "Id": "{{ModId}}_SkyOakUnequip",
+                    "ItemId": "{{ModId}}_SkyOak",
+                    "Trigger": "dreamy.kickitspot_OnRingSkyOakUnequip",
+                    "MarkActionApplied": false,
+                    "Actions": [
+                        "RemoveBuff {{ModId}}_OakBlessing"
+                    ]
+                },
+ "{{ModId}}_MysticArcanaEquip": {
+                    "Id": "{{ModId}}_MysticArcanaEquip",
+                    "ItemId": "{{ModId}}_MysticArcana",
+                    "Trigger": "dreamy.kickitspot_OnRingMysticArcanaEquip",
+                    "MarkActionApplied": false,
+                    "Actions": [
+                        "AddBuff {{ModId}}_ArcaneCharm"
+                    ]
+                },
+                "{{ModId}}_MysticArcanaUnequip": {
+                    "Id": "{{ModId}}_MysticArcanaUnequip",
+                    "ItemId": "{{ModId}}_MysticArcana",
+                    "Trigger": "dreamy.kickitspot_OnRingMysticArcanaEquip",
+                    "MarkActionApplied": false,
+                    "Actions": [
+                        "RemoveBuff {{ModId}}_ArcaneCharm"
+                    ]
+                },
+}
+},
+
 ///rings//
 {
   "Action": "EditData",
   "Target": "Mods/mistyspring.ItemExtensions/Data",
-"When": {
-"HasMod |contains=PeacefulEnd.CustomCompanions": false,
-},
   "Entries": {
+"(O)dreamy.kickitspot_EndlessEmber": {
+      "OnEquip": {
+        "Message": "{{i18n:equip.endless_ember_ring}}",
+        "TriggerAction": "AddBuff dreamy.kickitspot_AshenPromise"
+      },
+      "OnUnequip": {
+        "Message": "{{i18n:unequip.endless_ember_ring}}",
+        "TriggerAction": "RemoveBuff dreamy.kickitspot_AshenPromise"
+      }
+    },
     "(O)dreamy.kickitspot_MysticArcana": {
       "OnEquip": {
         "Message": "{{i18n:equip.mystic_arcana_ring}}",
@@ -79,14 +169,13 @@
     }
   }
 },
-
 //alternaterings//
 
 {
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "When": {
-"HasMod |contains=spacechase0.SpaceCore,PeacefulEnd.CustomCompanions": true,
+"UnequippedActiveRings": true,
       },
       "Entries": {
         "{{ModId}}_SilverPetalTrigger": {
@@ -109,6 +198,16 @@
           "Condition": "PLAYER_HAS_ITEM Current {{ModId}}_MysticArcana 1 1",
           "MarkActionApplied": false,
           "Action": "AddBuff dreamy.kickitspot_ArcaneCharm"
+        },
+"{{ModId}}_EndlessEmberTrigger": {
+          "Id": "{{ModId}}_EndlessEmberTrigger",
+          "Trigger": "LocationChanged",
+          "Condition": "PLAYER_HAS_ITEM Current {{ModId}}_EndlessEmber 1 1",
+          "MarkActionApplied": false,
+          "Actions": [
+"AddBuff dreamy.kickitspot_AshenPromise",
+
+],
         }
       }
     },
@@ -118,7 +217,7 @@
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "When": {
-"HasMod |contains=spacechase0.SpaceCore,PeacefulEnd.CustomCompanions": true,
+"UnequippedActiveRings": true,
       },
       "Entries": {
         "{{ModId}}_SilverPetalOffTrigger": {
@@ -141,10 +240,16 @@
           "Condition": "PLAYER_HAS_ITEM Current {{ModId}}_MysticArcana 0 0, PLAYER_HAS_BUFF Current dreamy.kickitspot_ArcaneCharm",
           "MarkActionApplied": false,
           "Action": "RemoveBuff dreamy.kickitspot_ArcaneCharm"
+        },
+"{{ModId}}_EndlessEmberOffTrigger": {
+          "Id": "{{ModId}}_EndlessEmberOffTrigger",
+          "Trigger": "LocationChanged",
+          "Condition": "PLAYER_HAS_ITEM Current {{ModId}}_EndlessEmber 0 0, PLAYER_HAS_BUFF Current dreamy.kickitspot_AshenPromise",
+          "MarkActionApplied": false,
+          "Action": "RemoveBuff dreamy.kickitspot_AshenPromise"
         }
       }
-    }
-
+    },
 
   ]
 }

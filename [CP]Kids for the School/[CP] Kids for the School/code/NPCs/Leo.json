@@ -1,0 +1,45 @@
+{
+//Leo
+        "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Characters/ParrotBoy",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Leo/{{Season}}_Leo.png",
+            "When": {
+                "HasSeenEvent": "9695002",
+                "HasSeenEvent": "6497428",
+            },
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/ParrotBoy",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Leo/{{Season}}_portrait_Leo.png",
+            "When": {
+                "HasSeenEvent": "9695002",
+                "HasSeenEvent": "6497428",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "leo_sit": "27/27/27",
+                "leo_sleep": "23/23/23",
+                "leo_sit_up": "24/24/24",
+            },
+            "When": {
+                "HasSeenEvent": "9695002",
+                "HasSeenEvent": "6497428",
+            },
+        },
+        {	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.7": "{{i18n:Seat_Leo}}" },
+            "When": {
+                "HasSeenEvent": "9695002",
+                "HasSeenEvent": "6497428",
+            },
+        },
+    ]
+}

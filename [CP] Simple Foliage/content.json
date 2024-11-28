@@ -346,6 +346,7 @@
 			"When": {"Bushes": "true"}
 		},
 		//End 1.6 assets
+
 		{
 			"LogName": "Desert Palm Tilesheet a",
 			"Action": "EditImage",
@@ -1096,6 +1097,59 @@
 			"ToArea": {"X":32, "Y":96, "Width":32, "Height":32},
 			"When": {"Bushes": "true",
 					"BushFlowers": "true"}
+		},
+
+
+		
+
+
+
+		//SVE Patches
+		{
+			"LogName": "SVE 1.6 Tree Tilesheets",
+			"Action": "EditImage",
+            "Priority": "Late",
+			"Target": "Mods\\FlashShifter.StardewValleyExpandedCP/{{season}}_SVE_Tilesheet2",
+			"FromFile": "assets/{{Recolor}}/SVE/{{season}}_SVE_Tilesheet2_SF.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":0, "Y":0, "Width":240, "Height":96},
+			"ToArea": {"X":96, "Y":96, "Width":240, "Height":96},
+			"When": {"Trees": "true", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
+		},
+		{
+			"LogName": "SVE Fruit Tree Tilesheets",
+			"Action": "EditImage",
+            "Priority": "Late",
+			"Target": "Maps/{{season}}_z_extras",
+			"FromFile": "assets/{{Recolor}}/SVE/{{season}}_z_extras_Fruit_SF.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":0, "Y":0, "Width":192, "Height":240},
+			"ToArea": {"X":176, "Y":1520, "Width":192, "Height":240},
+			"When": {"Trees": "true", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
+		},
+		//NOTE: We only use Spring for the Nexus tree as it's always Spring in the Enchanted Grove
+		{
+			"LogName": "SVE Nexus Tree (part 1)",
+			"Action": "EditImage",
+            "Priority": "Late",
+			"Target": "Maps/spring_z_extras",
+			"FromFile": "assets/{{Recolor}}/SVE/spring_z_extras_Nexus1_SF.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":0, "Y":0, "Width":112, "Height":96},
+			"ToArea": {"X":112, "Y":3104, "Width":112, "Height":96},
+			"When": {"Trees": "true", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
+		},
+		{
+			"LogName": "SVE Nexus Tree (part 2)",
+			"Action": "EditImage",
+            "Priority": "Late",
+			"Target": "Maps/spring_z_extras",
+			"FromFile": "assets/{{Recolor}}/SVE/spring_z_extras_Nexus2_SF.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":0, "Y":0, "Width":48, "Height":16},
+			"ToArea": {"X":144, "Y":3200, "Width":48, "Height":16},
+			"When": {"Trees": "true", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
 		}
+		//End SVE Patches
 	] 
 }

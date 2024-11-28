@@ -14,7 +14,7 @@
     "Action": "EditData",
     "Target": "Data/MoviesReactions",
     "Entries": {
-"Alan": { //Substitute with your NPC's internal name.
+"FC.Alan": { //Substitute with your NPC's internal name.
     "NPCName": "FC.Alan", //Substitute with your NPC's internal name.
     "Reactions": [
 {
@@ -204,11 +204,58 @@
 }
 },
 "ID": "winter0_4",
+    },
+
+ {
+"Tag": "{{ModID}}_SpiritOfLife", //Spirit Of Life
+"Response": "love",
+"Whitelist": [],
+"SpecialResponses": {
+"BeforeMovie": {
+"ResponsePoint": null,
+"Script": null,
+"Text": "{{i18n:Alan.movies.8.before}}"
+},
+"DuringMovie": {
+"ResponsePoint": null,
+"Script": "/message \"{{i18n:Alan.movies.8.during}}\"/",
+"Text": null
+},
+"AfterMovie": {
+"ResponsePoint": null,
+"Script": null,
+"Text": "{{i18n:Alan.movies.8.after}}"
+}
+},
+"ID": "winter0_4",
+    },
+              {
+"Tag": "{{ModID}}_BeyondGotoro", //_BeyondGotoro
+"Response": "love",
+"Whitelist": [],
+"SpecialResponses": {
+"BeforeMovie": {
+"ResponsePoint": null,
+"Script": null,
+"Text": "{{i18n:Alan.movies.9.before}}"
+},
+"DuringMovie": {
+"ResponsePoint": null,
+"Script": "/message \"{{i18n:Alan.movies.9.during}}\"/",
+"Text": null
+},
+"AfterMovie": {
+"ResponsePoint": null,
+"Script": null,
+"Text": "{{i18n:Alan.movies.9.after}}"
+}
+},
+"ID": "fall0_3",
     }
  ]
   }
 }
-}, 
+},
          {
 "Action": "EditData",
 "Target": "Data/ConcessionTastes",

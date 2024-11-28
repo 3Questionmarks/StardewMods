@@ -1,5 +1,5 @@
 {
-	"Format": "2.0.0",
+	"Format": "2.3.0",
 	"ConfigSchema": {
 		//Adjustments
 		"Reduce Quality": {
@@ -36,6 +36,24 @@
 			"Default": "false",
 			"Section": "Compatibility",
 			"Description": "Enable for compatibility with Mizu's Turkey by MizuJakkaru",
+		},
+		"Large Void Egg": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Compatibility",
+			"Description": "Enable for compatibility with Large Void Egg 2 by strobel1ght",
+		},
+		"Wildflour Floral": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Compatibility",
+			"Description": "Enable for compatibility with Wildflour's Atelier Goods - Florist by Wildflourmods",
+		},
+		"Wildflour Gourmand": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Compatibility",
+			"Description": "Enable for compatibility with Wildflour's Atelier Goods - Gourmand by Wildflourmods",
 		},
 		"Cornucopia Crops": {
 			"AllowValues": "true, false",
@@ -218,6 +236,30 @@
 			"Action": "Include",
 			"FromFile": "Data/cornucopiamachinesreduce.json",
 			"When": { "Cornucopia Crops": "true", "Reduce Quality": "true", },
+		},
+		{
+			"LogName": "load wildflour florist",
+			"Action": "Include",
+			"FromFile": "Data/wildflourflorist.json",
+			"When": { "Wildflour Floral": "true", "Reduce Quality": "true", },
+		},
+		{
+			"LogName": "load wildflour florist reduced",
+			"Action": "Include",
+			"FromFile": "Data/wildflourfloristreduce.json",
+			"When": { "Wildflour Floral": "true", "Reduce Quality": "true", },
+		},
+		{
+			"LogName": "load wildflour gourmand",
+			"Action": "Include",
+			"FromFile": "Data/wildflourflorist.json",
+			"When": { "Wildflour Gourmand": "true", "Reduce Quality": "true", },
+		},
+		{
+			"LogName": "load wildflour gourmand reduced",
+			"Action": "Include",
+			"FromFile": "Data/wildflourfloristreduce.json",
+			"When": { "Wildflour Gourmand": "true", "Reduce Quality": "true", },
 		},
 	],
 }

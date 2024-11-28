@@ -1,0 +1,79 @@
+{
+        "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Amy",
+            "Entries": {
+                "Mon": "0 Custom_WarpRoom 1 3 3/610 BusStop 19 24 0/620 Custom_SchoolHouse 10 8 1/700 Custom_SchoolHouse 11 8 1 amy_read_right/1130 Town 26 15 2/1230 Custom_SchoolHouse 10 8 1/1250 Custom_SchoolHouse 11 8 1 amy_read_right/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Tue": "0 Custom_WarpRoom 1 3 3/610 BusStop 19 24 0/620 Custom_SchoolHouse 10 8 1/700 Custom_SchoolHouse 11 8 1 amy_read_right/1130 Town 26 15 2/1230 Custom_SchoolHouse 10 8 1/1250 Custom_SchoolHouse 11 8 1 amy_read_right/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Wed": "0 Custom_WarpRoom 1 3 3/610 BusStop 19 24 0/620 Custom_SchoolHouse 10 8 1/700 Custom_SchoolHouse 11 8 1 amy_read_right/1130 Town 26 15 2/1230 Custom_SchoolHouse 10 8 1/1250 Custom_SchoolHouse 11 8 1 amy_read_right/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Thu": "0 Custom_WarpRoom 1 3 3/610 BusStop 19 24 0/620 Custom_SchoolHouse 10 8 1/700 Custom_SchoolHouse 11 8 1 amy_read_right/1130 Town 26 15 2/1230 Custom_SchoolHouse 10 8 1/1250 Custom_SchoolHouse 11 8 1 amy_read_right/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Fri": "0 Custom_WarpRoom 1 3 3/610 BusStop 19 24 0/620 Custom_SchoolHouse 10 8 1/700 Custom_SchoolHouse 11 8 1 amy_read_right/1130 Town 26 15 2/1230 Custom_SchoolHouse 10 8 1/1250 Custom_SchoolHouse 11 8 1 amy_read_right/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sat": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sun": "0 Custom_DayEnd_WarpRoom 3 3 0",
+
+//Festivals School is closed
+                "spring_13": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "spring_24": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "fall_16": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_8": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_25": "0 Custom_DayEnd_WarpRoom 3 3 0",
+            },
+        },
+//When Adrian is in the School (SKE)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Amy",
+            "When": {
+                "HasSeenEvent": "9695002",
+                "HasMod": "BURAKMESE.SKE"
+                },
+            "Entries": {
+                "Mon": "0 Custom_WarpRoom 1 3 3/610 BusStop 19 24 0/620 Custom_SchoolHouse 10 8 1/700 Custom_SchoolHouse 11 8 1 amy_read_right/1130 Town 26 15 2/1230 Custom_SchoolHouse 10 8 1/1250 Custom_SchoolHouse 11 8 1 amy_read_right/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Tue": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 23 0/620 Custom_SchoolHouse 1 6 1 amy_read_right/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Wed": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 23 0/620 Custom_SchoolHouse 1 6 1 amy_read_right/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Thu": "0 Custom_WarpRoom 1 3 3/610 BusStop 19 24 0/620 Custom_SchoolHouse 10 8 1/700 Custom_SchoolHouse 11 8 1 amy_read_right/1130 Town 26 15 2/1230 Custom_SchoolHouse 10 8 1/1250 Custom_SchoolHouse 11 8 1 amy_read_right/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Fri": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 23 0/620 Custom_SchoolHouse 1 6 1 amy_read_right/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sat": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sun": "0 Custom_DayEnd_WarpRoom 3 3 0",
+
+//Festivals School is closed
+                "spring_13": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "spring_24": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "fall_16": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_8": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_25": "0 Custom_DayEnd_WarpRoom 3 3 0",
+            },
+        },
+//When your Second Child is on the School
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Amy",
+            "When": {
+                "HasSeenEvent": "9695002",
+                "HasMod |contains=BURAKMESE.SKE": "true",
+				"HasMod |contains=siliconmodding.GVChildNPCs": "true",
+				"HasMod |contains=Candidus42.LittleNPCs": "true",
+                },
+            "Entries": {
+                "Mon": "0 Custom_WarpRoom 1 3 3/610 BusStop 19 24 0/620 Custom_SchoolHouse 10 8 1/700 Custom_SchoolHouse 11 8 1 amy_read_right/1130 Town 26 15 2/1230 Custom_SchoolHouse 10 8 1/1250 Custom_SchoolHouse 11 8 1 amy_read_right/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Tue": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 23 0/620 Custom_SchoolHouse 3 7 0 amy_sit_backward/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Wed": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 23 0/620 Custom_SchoolHouse 3 7 0 amy_sit_backward/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Thu": "0 Custom_WarpRoom 1 3 3/610 BusStop 19 24 0/620 Custom_SchoolHouse 10 8 1/700 Custom_SchoolHouse 11 8 1 amy_read_right/1130 Town 26 15 2/1230 Custom_SchoolHouse 10 8 1/1250 Custom_SchoolHouse 11 8 1 amy_read_right/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Fri": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 23 0/620 Custom_SchoolHouse 3 7 0 amy_sit_backward/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sat": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sun": "0 Custom_DayEnd_WarpRoom 3 3 0",
+
+//Festivals School is closed
+                "spring_13": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "spring_24": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "fall_16": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_8": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_25": "0 Custom_DayEnd_WarpRoom 3 3 0",
+            },
+        },
+    ]
+}
+
+
+//(0 = up, 1 = right, 2 = down, 3 = left)

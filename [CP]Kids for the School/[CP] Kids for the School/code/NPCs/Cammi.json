@@ -1,0 +1,94 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Cammi": {
+                "DisplayName": "Cammi",
+                "BirthSeason": "Spring",
+                "BirthDay": 18,
+                "HomeRegion": "Other",
+                "Gender": "Female",
+                "Age": "Child",
+                "Manner": "Polite",
+                "Optimism": "Negative",
+                "SocialAnxiety": "Outgoing",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "CanReceiveGifts": true,
+                "Calendar": "AlwaysShown",
+                "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9695002",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_WarpRoom",
+                        "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        }
+                    ],
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Cammi": "{{i18n:gifts.Cammi.love}}/206 221/{{i18n:gifts.Cammi.like}}/198 64/{{i18n:gifts.Cammi.dislike}}/222/{{i18n:gifts.Cammi.hate}}/211/{{i18n:gifts.Cammi.neutral}}/216/"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Cammi",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Cammi/Cammi.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Cammi",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Cammi/Cammi_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "cammi_read_right": "16/19/16"	
+            },
+        },
+//NPC Strings
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.9": "{{i18n:Seat_Cammi}}"},
+        },
+//When Your Child (The Farmer's Children) go to School
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.9": "{{i18n:Seat_Cammi_YourChild3}}"},
+            "When": {
+                "HasMod |contains=Candidus42.LittleNPCs": "true",
+                "HasMod |contains=xiddav.NPCChildren": "true",
+            },
+        },
+//AntiSocial Flag
+        {
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Cammi": true
+            },
+            "When": {
+                "Cammi": "true"
+            },
+        },
+    ]
+}

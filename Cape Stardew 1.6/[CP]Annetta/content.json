@@ -1,6 +1,15 @@
 {
-  "Format": "2.0.0",
-  
+  "Format": "2.3.0",
+  "ConfigSchema": {
+    "AnnettaPortraitStyle": {
+      "AllowValues": "Front, AlternativeFront, 3/4(original)",
+      "Default": "Front",
+
+      "Description": "Switch the default portrait for Annetta"
+    },
+
+
+  },
   
   
  "DynamicTokens": [

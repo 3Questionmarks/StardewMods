@@ -1,0 +1,19 @@
+{
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SchoolHouse",
+            "When": {
+                "HasSeenEvent": "9695002",
+            },
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Ahmad/SchoolHouse_Table.tmx",
+            "ToArea": {
+                "X": 9, 
+                "Y": 6,
+                "Width": 1,
+                "Height": 2,
+            "Patchmode": "Overlay",
+            },
+        },
+    ]
+}

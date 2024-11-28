@@ -28,7 +28,7 @@
             "Target": "Data/CraftingRecipes",
             
             "When": {
-            "JAItemsOnly": "false",
+            
             "HasMod |contains=DreamyGloom.Aronyredkku": "true",
             "HasMod |contains=spacechase0.JsonAssets": "true",
             },

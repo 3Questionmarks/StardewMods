@@ -1,0 +1,40 @@
+{
+    "Changes": [
+        {
+			"LogName": "Add Little Red School House schedule for Leah's daughter as secondborn.",
+			"Action": "EditData",
+			"Target": "Characters/schedules/{{SecondbornName}}",
+			"Priority": "Late",
+			"Entries": {
+				"Tue": "a800 Custom_SchoolHouse 1 6 1 {{SecondbornName}}_read \"Strings\\schedules\\{{SecondbornName}}:Schoolhouse.000\"/1130 Town 58 38 1 \"Strings\\schedules\\{{SecondbornName}}:Schoolhouse.001\"/1210 Custom_SchoolHouse 1 6 1 {{SecondbornName}}_read/1550 Town 94 26 3 square_1_5_3/1820 bed",
+				"Wed": "GOTO Tue",
+				"Thu": "MAIL beenToWoods/GOTO Tue_normal/730 Woods 12 18 2 \"Strings\\schedules\\{{SecondbornName}}:Tue.000\"/1700 bed",
+				"Fri": "GOTO Tue",
+			},
+			"When": {
+                "HasSeenEvent": "9695002",
+				"HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+				"HasMod |contains=siliconmodding.GVChildNPCs": "true",
+				"HasMod |contains=Candidus42.LittleNPCs": "true",
+				"LRSH_NoSchoolDay": false,
+			},
+		},
+		{
+			"LogName": "Add Little Red School House schedule for Leah's daughter as secondborn (rain).",
+			"Action": "EditData",
+			"Target": "Characters/schedules/{{SecondbornName}}",
+			"Priority": "Late",
+			"Entries": {
+				"rain": "a800 Custom_SchoolHouse 1 6 1 {{SecondbornName}}_read \"Strings\\schedules\\{{SecondbornName}}:Schoolhouse.000\"/1130 Custom_SchoolHouse 10 17 3 \"Strings\\schedules\\{{SecondbornName}}:Schoolhouse.002\"/a1250 Custom_SchoolHouse 1 6 1 {{SecondbornName}}_read/1550 Town 46 32 2/1730 bed",
+			},
+			"When": {
+                "HasSeenEvent": "9695002",
+				"DayOfWeek": "Tuesday, Wednesday, Friday",
+				"HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+				"HasMod |contains=siliconmodding.GVChildNPCs": "true",
+				"HasMod |contains=Candidus42.LittleNPCs": "true",
+				"LRSH_NoSchoolDay": false,
+			},
+		},
+    ]
+}

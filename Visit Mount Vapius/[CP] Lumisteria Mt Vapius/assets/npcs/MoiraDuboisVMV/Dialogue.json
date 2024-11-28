@@ -49,6 +49,12 @@
 		"Resort": "{{i18n: MoiraDialogueResort}}",
 		//Conversation Topics
         "Lumisteria.MtVapius.Arrival": "{{i18n: MoiraDialogueLumisteria.MtVapius.Arrival}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_OdalisIntroduction_memory_oneday": "{{i18n: MoiraDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisIntroduction_memory_oneday}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneday": "{{i18n: MoiraDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneday}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneweek": "{{i18n: MoiraDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneweek}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneday": "{{i18n: MoiraDialogueeventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneday}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneweek": "{{i18n: MoiraDialogueeventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneweek}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "{{i18n: MoiraDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday}}",
       }
     },
     {
@@ -116,8 +122,10 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/MoiraDuboisVMV",
       "Entries": {
-		"AcceptGift_(O)StardropTea": "{{i18n: DefaultAcceptGift_(O)StardropTea}}",
+		"AcceptGift_(O)StardropTea": "{{i18n: MoiraDialogueAcceptGift_(O)StardropTea}}",
         "AcceptGift_(O)204": "{{i18n: MoiraDialogueAcceptGift_(O)204}}",
+        "AcceptGift_(O)106": "{{i18n: MoiraDialogueAcceptGift_(O)106}}",
+        "AcceptGift_jewel_fan": "{{i18n: MoiraDialogueAcceptGift_jewel_fan}}",
       },
     },
   ]

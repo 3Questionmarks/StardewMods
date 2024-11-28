@@ -22,20 +22,6 @@ NoneChangingDialogue
 "Fair_Judged":"{{i18n:Fair_Judged.Maverick}}",
 "HitBySlingshot":"{{i18n:HitBySlingshot.Maverick}}",
 "DumpsterDiveComment":"{{i18n:DumpsterDiveComment.Maverick}}",
-"cc_Complete":"{{i18n:cc_Complete.Maverick}}",
-"cc_Boulder":"{{i18n:cc_Boulder.Maverick}}",
-"cc_Bridge":"{{i18n:cc_Bridge.Maverick}}",
-"cc_Bus":"{{i18n:cc_Bus.Maverick}}",
-"cc_Greenhouse":"{{i18n:cc_Greenhouse.Maverick}}",
-"cc_Minecart":"{{i18n:cc_Minecart.Maverick}}",
-"joja_Begin":"{{i18n:joja_Begin.Maverick}}",
-"movieTheater":"{{i18n:movieTheater.Maverick}}",
-"dumped_Guys":"{{i18n:dumped_Guys.Maverick}}",
-"secondChance_Guys":"{{i18n:secondChance_Guys.Maverick}}",
-"dumped_Girls":"{{i18n:dumped_Girls.Maverick}}",
-"secondChance_Girls":"{{i18n:secondChance_Girls.Maverick}}",
-"pamHouseUpgrade":"{{i18n:pamHouseUpgrade.Maverick}}",
-"pamHouseUpgradeAnonymous":"{{i18n:pamHouseUpgradeAnonymous.Maverick}}",
 "WipedMemory":"{{i18n:WipedMemory.Maverick}}",
 "reject_{{ModID}}_StatueGem":"{{i18n:reject_StatueGem.Maverick}}",
 "GreenRainFinished": "{{i18n:GreenRainFinished.Maverick}}",
@@ -92,7 +78,7 @@ MiscDialogue
 {
 "LogName":"Festivaldialogue",
 "Action":"EditData",
-"Target":"Data/Festivals/fall3,Data/Festivals/fall16",
+"Target":"Data/Festivals/spring13,Data/Festivals/spring24,Data/Festivals/summer11,Data/Festivals/summer28,Data/Festivals/fall3,Data/Festivals/fall16,Data/Festivals/fall27,Data/Festivals/winter8,Data/Festivals/winter3,Data/Festivals/winter25",
 "Entries":{
 "FC.Maverick":"{{i18n:Maverick.{{TargetWithoutPath}}.{{Relationship:FC.Maverick}}|default={{i18n:Maverick.{{TargetWithoutPath}}|default={{i18n:Maverick.festival-default}}}}}}",
 }
@@ -103,8 +89,8 @@ MiscDialogue
 "Target":"Data/IncomingPhoneCalls",
 "Entries":{
 "{{ModID}}_PhoneMaverick":{
-"TriggerCondition":null,
-"RingCondition":null,
+"TriggerCondition":"PLAYER_HAS_SEEN_EVENT Current {{ModID}}_{{ModID}}_TheStatue",
+"RingCondition":"PLAYER_HAS_SEEN_EVENT Current {{ModID}}_{{ModID}}_TheStatue,PLAYER_HEARTS Current FC.Maverick 750 3000",
 "FromNpc":"FC.Maverick",
 "FromPortrait":null,
 "FromDisplayName":null,

@@ -557,35 +557,7 @@
             }
         },
         //*********************************************************************************************
-        //Loads void chick
-        {
-            "Action": "EditMap",
-            "Target": "Maps/EastScarp_VillageInn",
-            "When": {
-                "HasConversationTopic": "AbyssRoosterGrow",
-            },
-            "MapTiles": [
-                {
-                    "Position": {
-                        "X": 14,
-                        "Y": 11
-                    },
-                    "Layer": "Back",
-                    "SetProperties": {
-                        "CustomCompanions": "Spawn 1 LemurKat.EastScarpeCompanions.VoidChick"
-                    }
-                }
-            ]
-        },
-        {
-            "Action": "EditData",
-            "Target": "{{PeacefulEnd.CustomCompanions/Companions:LemurKat.EastScarpeCompanions.VoidChick}}",
-            "Entries": {
-                "Companion": {
-                    "InspectionDialogue": "{{i18n:VoidChick.{{Random:01,02,03,04,05}}}}"
-                }
-            }
-        },
+       
         //Abyss schedule
         { //Abyss
             "LogName": "Abyss",

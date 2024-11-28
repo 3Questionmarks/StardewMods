@@ -131,10 +131,37 @@
 			"When": { "Butter Churn": "true", },
 		},
 		// Cheese Press
-		{// Nut Cheese
+		{// Pine Nut Milk
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)16", "OutputRules", "Cornucopia_NutCheese_NutMilk", "OutputItem", "#0" ],
+			"TargetField": [ "(BC)16", "OutputRules", "Cornucopia_NutCheese_NutMilk", "OutputItem", "CornucopiaPineNutMilk" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Cheese Press": "true", },
+		},
+		{// Soy Milk
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "Cornucopia_NutCheese_NutMilk", "OutputItem", "CornucopiaSoyMilk" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Cheese Press": "true", },
+		},
+		{// Oat Milk
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "Cornucopia_NutCheese_NutMilk", "OutputItem", "CornucopiaOatMilk" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Cheese Press": "true", },
+		},
+		{// Default
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "Cornucopia_NutCheese_NutMilk", "OutputItem", "Default" ],
 			"Entries": {
 				"CopyQuality": true,
 			},
@@ -462,10 +489,19 @@
 			},
 			"When": { "Keg": "true", },
 		},
-		{// Nut Milk
+		{// Pine Nut Milk
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)12", "OutputRules", "Cornucopia_NutMilk", "OutputItem", "#0" ],
+			"TargetField": [ "(BC)12", "OutputRules", "Cornucopia_NutMilk", "OutputItem", "NutMilkPineNuts" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Keg": "true", },
+		},
+		{// Default Nut Milk
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Cornucopia_NutMilk", "OutputItem", "Default" ],
 			"Entries": {
 				"CopyQuality": true,
 			},
@@ -640,10 +676,19 @@
 			},
 			"When": { "Preserves Jar": "true", },
 		},
+		{// Double Sauerkraut
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_Sauerkraut", "OutputItem", "Double Sauerkraut" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Preserves Jar": "true", },
+		},
 		{// Sauerkraut
 			"Action": "EditData",
 			"Target": "Data/Machines",
-			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_Sauerkraut", "OutputItem", "#0" ],
+			"TargetField": [ "(BC)15", "OutputRules", "Cornucopia_Sauerkraut", "OutputItem", "#1" ],
 			"Entries": {
 				"CopyQuality": true,
 			},
@@ -753,6 +798,15 @@
 			},
 			"When": { "Yogurt Jar": "true", },
 		},
+		{// Wild Honey Yogurt Silver
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Cornucopia_YogurtJar", "OutputRules", "Cornucopia_WildHoneyYogurt", "OutputItem", "Cornucopia_FlavoredYogurtSilver" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Yogurt Jar": "true", },
+		},
 		{// Wild Honey Yogurt
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -780,6 +834,15 @@
 			},
 			"When": { "Yogurt Jar": "true", },
 		},
+		{// Flavored Honey Yogurt Silver
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Cornucopia_YogurtJar", "OutputRules", "Cornucopia_FlavoredHoneyYogurt", "OutputItem", "Cornucopia_FlavoredYogurtSilver" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Yogurt Jar": "true", },
+		},
 		{// Flavored Honey Yogurt
 			"Action": "EditData",
 			"Target": "Data/Machines",
@@ -802,6 +865,15 @@
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": [ "(BC)Cornucopia_YogurtJar", "OutputRules", "Cornucopia_FlavoredYogurt", "OutputItem", "Cornucopia_FlavoredYogurtGold" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Yogurt Jar": "true", },
+		},
+		{// Flavored Yogurt Silver
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Cornucopia_YogurtJar", "OutputRules", "Cornucopia_FlavoredYogurt", "OutputItem", "Cornucopia_FlavoredYogurtSilver" ],
 			"Entries": {
 				"CopyQuality": true,
 			},

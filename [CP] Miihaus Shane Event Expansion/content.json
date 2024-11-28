@@ -4,6 +4,13 @@
 
 {
     "Format": "2.0.0",
+    "ConfigSchema": {
+        "CustomPortraitForEvent1": {
+            "AllowValues": "true, false",
+            "Default": true
+        },
+
+    },
     // add the in-game location
     "CustomLocations": [
     {
@@ -14,6 +21,17 @@
 
 //DynamicTokes that add compatibility with SVE
 "DynamicTokens": [
+    {
+        "Name": "Miihau.CustomPortrait",
+        "Value": "changePortrait Shane Joja/"
+    },
+    {
+        "Name": "Miihau.CustomPortrait",
+        "Value": "pause 100/",
+        "When":{
+            "CustomPortraitForEvent1":false
+        }
+    },
     {
         "Name": "Miihau.ShaneEE.01.positioning",
         "Value": "farmer 88 53 1 Shane 10 18 2 Morris -301 -301 2"
@@ -42,7 +60,7 @@
     },
     { 
         "Name": "Miihau.ShaneEE.02.move0",
-        "Value": "move Jas -9 0 3 farmer 0 -2 0 Penny -9 0 3",
+        "Value": "move Jas -9 0 3 farmer 0 -1 0 Penny -9 0 3",
         "When": { 
             "HasMod": "FlashShifter.StardewValleyExpandedCP"
         }
@@ -91,7 +109,10 @@
     {
         "Action":"Load",
         "Target":"Portraits/Shane_Joja",
-        "FromFile":"assets/Shane_Joja.png"
+        "FromFile":"assets/Shane_Joja.png",
+        "When":{
+            "CustomPortraitForEvent1":true
+        }
     },
     {
         "Action":"Load",

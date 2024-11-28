@@ -1,5 +1,477 @@
 {
   "Changes": [
+  {
+      "LogName": "WhiteTruffleOil",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)19",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_WhiteTruffle": {
+          "Id": "{{ModID}}_WhiteTruffle",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_WhiteTruffle",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "Id": "{{ModID}}_WhiteTruffleOil",
+              "ItemId": "{{ModID}}_WhiteTruffleOil"
+            }
+          ],
+          "MinutesUntilReady": 180
+        },
+      },
+        
+      "MoveEntries": [
+        {
+          "Id": "{{ModID}}_WhiteTruffle",
+          "BeforeId": "Default_Truffle"
+        },
+      ]
+    },
+    {
+      "LogName": "smoked Gem Bird",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)FishSmoker",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_GemBirdMeat": {
+          "Id": "{{ModID}}_GemBirdMeat",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_GemBirdMeat",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "Id": "{{ModID}}_SmokedGemBirdMeat",
+              "ItemId": "{{ModID}}_SmokedGemBirdMeat"
+            }
+          ],
+          "MinutesUntilReady": 180
+        },
+      },
+        
+      "MoveEntries": [
+        {
+          "Id": "{{ModID}}_GemBirdMeat",
+          "BeforeId": "SmokedFish"
+        },
+      ]
+    },
+      {
+      "LogName": "TropaWine",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)12",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_VoidMilk": {
+          "Id": "{{ModID}}_VoidMilk",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_VoidFruit",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+            "Id": "{{ModID}}_VoidMilk",
+            "ItemId": "{{ModID}}_VoidMilk",
+        
+          }
+        ],
+        "MinutesUntilReady": -1,
+        "DaysUntilReady": 5,
+        "InvalidCountMessage": null,
+        "RecalculateOnCollect": false
+  }
+},
+    "MoveEntries": [
+        {
+          "Id": "{{ModID}}_VoidMilk",
+          "BeforeId": "Default_Wine"
+        }
+      ]
+    },
+       {
+      "LogName": "refined tropa wine",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)163",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_RefinedTropaWine": {
+          "Id": "{{ModID}}_RefinedTropaWine",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_TropaWine",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+            "Id": "{{ModID}}_RefinedTropaWine",
+            "ItemId": "{{ModID}}_RefinedTropaWine",
+        
+          }
+        ],
+        "MinutesUntilReady": -1,
+        "DaysUntilReady": 5,
+        "InvalidCountMessage": null,
+        "RecalculateOnCollect": false
+  }
+},
+    "MoveEntries": [
+        {
+          "Id": "{{ModID}}_RefinedTropaWine",
+          "BeforeId": "Wine"
+        }
+      ]
+    },
+    {
+      "LogName": "TropaWine",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)12",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_TropaWine": {
+          "Id": "{{ModID}}_TropaWine",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_TropaFruit",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+            "Id": "{{ModID}}_TropaWine",
+            "ItemId": "{{ModID}}_TropaWine",
+        
+          }
+        ],
+        "MinutesUntilReady": -1,
+        "DaysUntilReady": 5,
+        "InvalidCountMessage": null,
+        "RecalculateOnCollect": false
+  }
+},
+    "MoveEntries": [
+        {
+          "Id": "{{ModID}}_TropaWine",
+          "BeforeId": "Default_Wine"
+        }
+      ]
+    },
+   {
+      "LogName": "aged Gouud Large Cheese",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)163",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_AgedLargeGouudCheese": {
+          "Id": "{{ModID}}_AgedLargeGouudCheese",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_LargeGouudCheese",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+            "Id": "{{ModID}}_AgedLargeGouudCheese",
+            "ItemId": "{{ModID}}_AgedLargeGouudCheese",
+        
+          }
+        ],
+        "MinutesUntilReady": -1,
+        "DaysUntilReady": 5,
+        "InvalidCountMessage": null,
+        "RecalculateOnCollect": false
+  }
+},
+    "MoveEntries": [
+        {
+          "Id": "{{ModID}}_AgedLargeGouudCheese",
+          "BeforeId": "Wine"
+        }
+      ]
+    },
+{
+      "LogName": "aged Gouud Small Cheese",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)163",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_AgedSmallGouudCheese": {
+          "Id": "{{ModID}}_AgedSmallGouudCheese",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_SmallGouudCheese",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+            "Id": "{{ModID}}_AgedSmallGouudCheese",
+            "ItemId": "{{ModID}}_AgedSmallGouudCheese",
+        
+          }
+        ],
+        "MinutesUntilReady": -1,
+        "DaysUntilReady": 5,
+        "InvalidCountMessage": null,
+        "RecalculateOnCollect": false
+  }
+},
+    "MoveEntries": [
+        {
+          "Id": "{{ModID}}_AgedSmallGouudCheese",
+          "BeforeId": "Wine"
+        }
+      ]
+  },
+        {
+      "LogName": "Gouud Large Cheese",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)16",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_SmallGouudCheese": {
+          "Id": "{{ModID}}_SmallGouudCheese",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_SmallArcaGoatMilk",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "Id": "{{ModID}}_SmallGouudCheese",
+              "ItemId": "{{ModID}}_SmallGouudCheese"
+            }
+          ],
+          "MinutesUntilReady": 1800
+        }
+      },
+      "MoveEntries": [
+        {
+          "Id": "{{ModID}}_SmallGouudCheese",
+          "BeforeId": "Default_LargeGoatMilk"
+        }
+      ]
+    },
+    {     
+     "LogName": "Gouud Large Cheese",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)16",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_LargeGouudCheese": {
+          "Id": "{{ModID}}_LargeGouudCheese",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_LargeArcaGoatMilk",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "Id": "{{ModID}}_LargeGouudCheese",
+              "ItemId": "{{ModID}}_LargeGouudCheese"
+            }
+          ],
+          "MinutesUntilReady": 1800
+        }
+      },
+      "MoveEntries": [
+        {
+          "Id": "{{ModID}}_LargeGouudCheese",
+          "BeforeId": "Default_LargeGoatMilk"
+        }
+      ]
+    },
+    {
+      "LogName": "aged Galeabison Large Cheese",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)163",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_AgedLargeGaleabisonCheese": {
+          "Id": "{{ModID}}_AgedLargeGaleabisonCheese",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_LargeGaleabisonCheese",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+            "Id": "{{ModID}}_AgedLargeGaleabisonCheese",
+            "ItemId": "{{ModID}}_AgedLargeGaleabisonCheese",
+        
+          }
+        ],
+        "MinutesUntilReady": -1,
+        "DaysUntilReady": 5,
+        "InvalidCountMessage": null,
+        "RecalculateOnCollect": false
+  }
+},
+    "MoveEntries": [
+        {
+          "Id": "{{ModID}}_AgedLargeGaleabisonCheese",
+          "BeforeId": "Wine"
+        }
+      ]
+    },
+{
+      "LogName": "aged Galeabison Small Cheese",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)163",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_AgedSmallGaleabisonCheese": {
+          "Id": "{{ModID}}_AgedSmallGaleabisonCheese",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_SmallGaleabisonCheese",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+            "Id": "{{ModID}}_AgedSmallGaleabisonCheese",
+            "ItemId": "{{ModID}}_AgedSmallGaleabisonCheese",
+        
+          }
+        ],
+        "MinutesUntilReady": -1,
+        "DaysUntilReady": 5,
+        "InvalidCountMessage": null,
+        "RecalculateOnCollect": false
+  }
+},
+    "MoveEntries": [
+        {
+          "Id": "{{ModID}}_AgedSmallGaleabisonCheese",
+          "BeforeId": "Wine"
+        }
+      ]
+  },
+        {
+      "LogName": "Galeabison Large Cheese",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)16",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_SmallGaleabisonCheese": {
+          "Id": "{{ModID}}_SmallGaleabisonCheese",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_SmallGaleabisonMilk",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "Id": "{{ModID}}_SmallGaleabisonCheese",
+              "ItemId": "{{ModID}}_SmallGaleabisonCheese"
+            }
+          ],
+          "MinutesUntilReady": 1800
+        }
+      },
+      "MoveEntries": [
+        {
+          "Id": "{{ModID}}_SmallGaleabisonCheese",
+          "BeforeId": "Default_LargeGoatMilk"
+        }
+      ]
+    },
+    {     
+     "LogName": "Galeabison Large Cheese",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)16",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_LargeGaleabisonCheese": {
+          "Id": "{{ModID}}_LargeGaleabisonCheese",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_LargeGaleabisonMilk",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "Id": "{{ModID}}_LargeGaleabisonCheese",
+              "ItemId": "{{ModID}}_LargeGaleabisonCheese"
+            }
+          ],
+          "MinutesUntilReady": 1800
+        }
+      },
+      "MoveEntries": [
+        {
+          "Id": "{{ModID}}_LargeGaleabisonCheese",
+          "BeforeId": "Default_LargeGoatMilk"
+        }
+      ]
+    },
     {
       "LogName": "Movorator Mayo",
       "Action": "EditData",
@@ -24,7 +496,7 @@
               "ItemId": "{{ModID}}_MovoraptorMayo"
             }
           ],
-          "MinutesUntilReady": 180
+          "MinutesUntilReady": 1800
         }
       },
       "MoveEntries": [
@@ -58,7 +530,7 @@
               "ItemId": "{{ModID}}_DodoMayo"
             }
           ],
-          "MinutesUntilReady": 180
+          "MinutesUntilReady": 1800
         }
       },
       "MoveEntries": [
@@ -67,6 +539,34 @@
           "BeforeId": "Default_Egg"
         }
       ]
+    },
+    {
+      "LogName": "Dried Heavious Root",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)Dehydrator",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_HeavyRoot": {
+          "Id": "{{ModID}}_HeavyRoot",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_HeavyRoot",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "Id": "{{ModID}}_HeaviousSeed",
+              "ItemId": "{{ModID}}_HeaviousSeed"
+            }
+          ],
+          "MinutesUntilReady": 1800
+        }
+      }
     },
     {
       "LogName": "Dried Draga Fruit",
@@ -92,7 +592,7 @@
               "ItemId": "FLAVORED_ITEM DriedFruit DROP_IN_ID"
             }
           ],
-          "MinutesUntilReady": 180
+          "MinutesUntilReady": 1800
         }
       }
     },
@@ -120,7 +620,7 @@
               "ItemId": "FLAVORED_ITEM DriedFruit DROP_IN_ID"
             }
           ],
-          "MinutesUntilReady": 180
+          "MinutesUntilReady": 1800
         }
       }
     },
@@ -148,7 +648,7 @@
               "ItemId": "FLAVORED_ITEM DriedFruit DROP_IN_ID"
             }
           ],
-          "MinutesUntilReady": 180
+          "MinutesUntilReady": 1800
         }
       }
     },
@@ -176,7 +676,7 @@
               "ItemId": "FLAVORED_ITEM DriedFruit DROP_IN_ID"
             }
           ],
-          "MinutesUntilReady": 180
+          "MinutesUntilReady": 1800
         }
       }
     },
@@ -204,7 +704,7 @@
               "ItemId": "FLAVORED_ITEM DriedFruit DROP_IN_ID"
             }
           ],
-          "MinutesUntilReady": 180
+          "MinutesUntilReady": 1800
         }
       }
     },
@@ -232,7 +732,7 @@
               "ItemId": "FLAVORED_ITEM DriedFruit DROP_IN_ID"
             }
           ],
-          "MinutesUntilReady": 180
+          "MinutesUntilReady": 1800
         }
       }
     },
@@ -260,7 +760,7 @@
               "ItemId": "{{ModID}}_DragaWhiskey"
             }
           ],
-          "MinutesUntilReady": 180
+          "MinutesUntilReady": 1800
         }
       },
       "MoveEntries": [
@@ -294,7 +794,7 @@
               "ItemId": "{{ModID}}_IceBerryWine"
             }
           ],
-          "MinutesUntilReady": 180
+          "MinutesUntilReady": 1800
         }
       },
       "MoveEntries": [
@@ -325,10 +825,10 @@
           "OutputItem": [
             {
               "Id": "{{ModID}}_TropaWine",
-              "ItemId": "Default_Wine"
+              "ItemId": "{{ModID}}_TropaWine"
             }
           ],
-          "MinutesUntilReady": 180
+          "MinutesUntilReady": 1800
         }
       },
       "MoveEntries": [
@@ -345,8 +845,8 @@
       "Entries": {
         "{{ModID}}_ExtractorMachine": {
           "Name": "{{ModID}}_ExtractorMachine",
-          "DisplayName": "{{i18n:ExtractorMachine}}",
-          "Description": "{{i18n:ExtractorMachine.Desc}}",
+          "DisplayName": "{{i18n:FC.ExtractorMachine}}",
+          "Description": "{{i18n:FC.ExtractorMachine.Desc}}",
           "Texture": "Mods/{{ModID}}/Machines",
           "SpriteIndex": 0
         }
@@ -531,6 +1031,40 @@
           "WobbleWhileWorking": true
         }
       }
-    }
+    },
+   {
+      "LogName": "Roast Reuu Nut",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)13",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModID}}_ReuuNut": {
+          "Id": "{{ModID}}_ReuuNut",
+          "Triggers": [
+            {
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModID}}_ReuuNut",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "Id": "{{ModID}}_RoastedReuuNut",
+              "ItemId": "{{ModID}}_RoastedReuuNut"
+            }
+          ],
+          "MinutesUntilReady": 550
+        }
+      },
+      "MoveEntries": [
+        {
+          "Id": "{{ModID}}_ReuuNut",
+          "BeforeId": "Default_CopperOre"
+        }
+      ]
+    },
   ]
 }

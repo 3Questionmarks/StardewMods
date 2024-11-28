@@ -1,0 +1,229 @@
+{
+"Changes": [
+ 
+ {
+"LogName": "Phoebe Dispositions",
+"Action": "EditData",
+"Target": "Data/Characters",
+"Entries": {
+"FC.Phoebe": {
+///Basic Info
+"DisplayName":"{{i18n:FC.Phoebe}}",
+"Language":"Default",
+"Gender":"Female",
+"Age":"Adult",
+"Manner":"Rude",
+"SociPhoebexiety":"Outgoing",
+"Optimism":"Positive",
+"BirthSeason":"Summer",
+"BirthDay":6,
+"HomeRegion":"Town",
+"IsDarkSkinned":true,
+///Social Features
+"CanSocialize":true,
+"CanBeRomanced":false,
+"CanReceiveGifts":true,
+"CanCommentOnPurchasedShopItems":false,
+"CanGreetNearbyCharacters":true,
+"CanVisitIsland": "DAY_OF_WEEK Saturday",
+"LoveInterest":null,
+"Calendar": "HiddenUntilMet",
+"SocialTab":"UnknownUntilMet",
+"SpouseAdopts":null,
+"SpouseWantsChildren":true,
+"SpouseGiftJealousy":true,
+"SpouseGiftJealousyFriendshipChange":-1,
+"SpouseRoom": {
+"MapAsset": null,
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 6,
+"Height": 9
+}
+},
+"SpousePatio": {
+"MapAsset": null,
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 4,
+"Height": 4
+}
+},
+"SpouseFloors": [],
+"SpouseWallpapers": [],
+"IntroductionsQuest":"{{IncludeIntro}}",
+"ItemDeliveryQuests":true,
+"PerfectionScore":"{{IncludePerfection}}",
+"EndSlideShow":"TrailingGroup",
+"FriendsAndFamily":null,
+///Dumpster Diving
+"DumpsterDiveEmote":12,
+"DumpsterDiveFriendshipEffect":-5,
+///Festivals
+"FlowerDanceCanDance":false,
+"WinterStarParticipant":true,
+"WinterStarGifts": [
+{
+"Condition": null,
+"Id": "{{ModID}}_WinterStarGifts",
+"ItemId": "RANDOM_ITEMS (O)",
+"RandomItemId": null,
+"MaxItems": null,
+"MinStack": -1,
+"MaxStack": -1,
+"Quality": -1,
+"ObjectInternalName": null,
+"ObjectDisplayName": null,
+"ToolUpgradeLevel": -1,
+"IsRecipe": false,
+"StackModifiers": null,
+"StackModifierMode": "Stack",
+"QualityModifiers": null,
+"QualityModifierMode": "Stack",
+"ModData": null,
+"PerItemCondition": null
+},
+],
+//Spawn Rules
+"UnlockConditions":null,
+"SpawnIfMissing":true,
+"Home": [
+{
+"Id": "WaitingRoomDefault",
+"Condition": "!PLAYER_HAS_SEEN_EVENT Current {{ModID}}_PhoebesIntroduction",
+"Location": "{{ModID}}_TravelingTrailer",
+"Tile": {
+"X": -3000,
+"Y": -3000
+},
+"Direction": "right"
+},
+{
+"Id": "DefaultHome",
+"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_PhoebesIntroduction",
+"Location": "{{ModID}}_TravelingTrailerDecker",
+"Tile": {
+"X": 23,
+"Y": 16
+},
+"Direction": "right"
+}
+],
+///Appearance & Sprites
+"TextureName":null,
+"Appearance": [
+   {
+"ID": "{{ModID}}.Phoebe_spring",
+"Season": "spring",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Phoebe/FC.Phoebe_spring.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Phoebe/FC.Phoebe_spring.png}}"
+},
+{
+"ID": "{{ModID}}.Phoebe_summer",
+"Season": "summer",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Phoebe/FC.Phoebe_summer.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Phoebe/FC.Phoebe_summer.png}}"
+},
+{
+"ID": "{{ModID}}.Phoebe_fall",
+"Season": "fall",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Phoebe/FC.Phoebe_fall.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Phoebe/FC.Phoebe_fall.png}}"
+},
+{
+"ID": "{{ModID}}.Phoebe_winter",
+"Season": "winter",
+"Portrait": "{{InternalAssetKey:Assets/Npcs/Portraits/FC.Phoebe/FC.Phoebe_winter.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Phoebe/FC.Phoebe_winter.png}}"
+},
+{
+"ID": "{{ModID}}.Phoebe_SwimWear",
+"IsIslandAttire": true,
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Phoebe/FC.Phoebe_SwimWear.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Phoebe/FC.Phoebe_SwimWear.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Phoebe_eggfestival",
+"Condition": "EVENT_ID festival_spring13",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Phoebe/Festivals/egg festival.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Phoebe/Festivals/egg festival.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Phoebe_flowerfestival",
+"Condition": "EVENT_ID festival_spring24",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Phoebe/Festivals/flower dance.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Phoebe/Festivals/flower dance.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Phoebe_luaufestival",
+"Condition": "EVENT_ID festival_summer11",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Phoebe/Festivals/luau.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Phoebe/Festivals/luau.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Phoebe_jellyfestival",
+"Condition": "EVENT_ID festival_summer28",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Phoebe/Festivals/dance of the moonlight jellies.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Phoebe/Festivals/dance of the moonlight jellies.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Phoebe_Fairfestival",
+"Condition": "EVENT_ID festival_fall16",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Phoebe/Festivals/stardew valley fair.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Phoebe/Festivals/stardew valley fair.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Phoebe_spiritseve",
+"Condition": "EVENT_ID festival_fall27",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Phoebe/Festivals/spirit's eve.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Phoebe/Festivals/spirit's eve.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Phoebe_icefestival",
+"Condition": "EVENT_ID festival_winter8",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Phoebe/Festivals/festival of ice.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Phoebe/Festivals/festival of ice.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Phoebe_winterstarfestival",
+"Condition": "EVENT_ID festival_winter25",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Phoebe/Festivals/feast of the winter star.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Phoebe/Festivals/feast of the winter star.png}}",
+"Precedence": -10,
+},
+],
+"MugShotSourceRect": { "X": 0, "Y": 5, "Width": 16, "Height": 24 },
+"Size": { "X": 16, "Y": 32 },
+"Breather":false,
+"BreathChestRect":null,
+"BreathChestPosition":null,
+"Shadow":{ "Visible": true },
+"EmoteOffset": {},
+"ShakePortraits":[],
+"KissSpriteIndex":"28",
+"KissSpriteFacingDirection":null,
+///Hidden Gift Log Emote
+"HiddenProfileEmoteSound":null,
+"HiddenProfileEmoteDuration":-1,
+"HiddenProfileEmoteStartFrame":0,
+"HiddenProfileEmoteFrameCount":4,
+"HiddenProfileEmoteFrameDuration":200.0,
+///Advanced
+"CustomFields":{
+},
+"FormerCharacterNames": [],
+}
+}
+}
+]
+}

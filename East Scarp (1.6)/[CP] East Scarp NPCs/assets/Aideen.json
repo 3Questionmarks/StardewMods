@@ -91,7 +91,7 @@
             "Action": "Include",
             "FromFile": "assets/RivalHearts/AideenMateo.json",
             "When": {
-                "HasMod |contains=DestyNova.Mateo.CP, DN.SnS.CP, DN.SnS":true,
+                "HasMod |contains=DestyNova.Mateo.CP, DN.SnS.CP, DN.SnS": true,
                 "RivalHearts |contains=AideenMateo": true
             }
         },
@@ -225,102 +225,6 @@
             "When": {
                 "Relationship:Aideen": "Engaged"
             }
-        },
-        {
-            "Action": "EditData",
-            "Target": "{{PeacefulEnd.CustomCompanions/Companions:LemurKat.EastScarpeCompanions.Munchboi}}",
-            "Entries": {
-                "Companion": {
-                    "InspectionDialogue": "{{i18n:Munchboi.{{Random:01,02,03,04,05}}}}"
-                }
-            }
-        },
-        {
-            "Action": "EditMap",
-            "Target": "Maps/EastScarp_House1",
-            "Update": "OnLocationChange",
-            "When": {
-                "Relationship:Aideen |contains=Married": false,
-                "MunchieLocation": "bedroom",
-                "Time": "{{Range: 0600, 1800}}",
-            },
-            "MapTiles": [
-                {
-                    "Position": {
-                        "X": 4,
-                        "Y": 10
-                    },
-                    "Layer": "Back",
-                    "SetProperties": {
-                        "CustomCompanions": "Spawn 1 LemurKat.EastScarpeCompanions.Munchboi"
-                    }
-                }
-            ]
-        },
-        {
-            "Action": "EditMap",
-            "Target": "Maps/EastScarp_House1",
-            "Update": "OnLocationChange",
-            "When": {
-                "Relationship:Aideen |contains=Married": false,
-                "MunchieLocation": "livingroom",
-                "Time": "{{Range: 0600, 1800}}",
-            },
-            "MapTiles": [
-                {
-                    "Position": {
-                        "X": 12,
-                        "Y": 19
-                    },
-                    "Layer": "Back",
-                    "SetProperties": {
-                        "CustomCompanions": "Spawn 1 LemurKat.EastScarpeCompanions.Munchboi"
-                    }
-                }
-            ]
-        },
-        {
-            "Action": "EditMap",
-            "Target": "Maps/EastScarp_Village",
-            "Update": "OnLocationChange",
-            "When": {
-                "Relationship:Aideen |contains=Married": false,
-                "MunchieLocation": "garden",
-                "Time": "{{Range: 0600, 1800}}",
-            },
-            "MapTiles": [
-                {
-                    "Position": {
-                        "X": 19,
-                        "Y": 51
-                    },
-                    "Layer": "Back",
-                    "SetProperties": {
-                        "CustomCompanions": "Spawn 1 LemurKat.EastScarpeCompanions.Munchboi"
-                    }
-                }
-            ]
-        },
-        {
-            "Action": "EditMap",
-            "Target": "Maps/EastScarp_House1",
-            "Update": "OnLocationChange",
-            "When": {
-                "Relationship:Aideen |contains=Married": false,
-                "Time": "{{Range: 1820, 2600}}"
-            },
-            "MapTiles": [
-                {
-                    "Position": {
-                        "X": 6,
-                        "Y": 11
-                    },
-                    "Layer": "Back",
-                    "SetProperties": {
-                        "CustomCompanions": "Spawn 1 LemurKat.EastScarpeCompanions.MunchboiSleepy"
-                    }
-                }
-            ]
         },
     ]
 }

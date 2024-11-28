@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="1" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="2">
+ <tileset firstgid="1" name="table" tilewidth="16" tileheight="16" tilecount="3" columns="1">
+  <image source="table.png" width="16" height="48"/>
+ </tileset>
+ <layer id="1" name="Buildings" width="1" height="2">
+  <data encoding="csv">
+2,
+3
+</data>
+ </layer>
+ <objectgroup id="2" name="Buildings">
+  <object id="1" name="TileData" x="0" y="0" width="16" height="32">
+   <properties>
+    <property name="Action" value="Message &quot;Desk.14&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

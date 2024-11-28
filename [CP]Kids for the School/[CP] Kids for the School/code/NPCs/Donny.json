@@ -1,0 +1,92 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Donny": {
+                "DisplayName": "Donny",
+                "BirthSeason": "Fall",
+                "BirthDay": 5,
+                "HomeRegion": "Other",
+                "Gender": "Male",
+                "Age": "Child",
+                "Manner": "Polite",
+                "Optimism": "Negative",
+                "SocialAnxiety": "Outgoing",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "CanReceiveGifts": true,
+                "Calendar": "AlwaysShown",
+                "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9695002",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_WarpRoom",
+                        "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        }
+                    ],
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Donny": "{{i18n:gifts.Donny.love}}/206/{{i18n:gifts.Donny.like}}/254/{{i18n:gifts.Donny.dislike}}/248/{{i18n:gifts.Donny.hate}}/276/{{i18n:gifts.Donny.neutral}}/274/"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Donny",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Donny/Donny.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Donny",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Donny/Donny_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "donny_read_left": "17/17/17"	
+            },
+        },
+//NPC Strings
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.2": "{{i18n:Seat_Donny}}"},
+        },
+        {	 
+        "Action": "EditData",
+        "Target": "Strings/StringsFromMaps",
+        "Entries": { "Desk.2":  "{{i18n:Seat_Donny_Vanessa}}"},
+        "When": {
+            "HasMod": "BURAKMESE.SKE"
+            },
+        },
+//AntiSocial Flag
+        {
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Donny": true
+            },
+            "When": {
+                "Donny": "true"
+            },
+        },
+    ]
+}

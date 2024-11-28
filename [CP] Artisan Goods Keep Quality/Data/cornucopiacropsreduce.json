@@ -200,5 +200,45 @@
 			},
 			"When": { "Oil Maker": "true", },
 		},
+		{// Dried Fruit Fix
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Dehydrator", "OutputRules", "Cornucopia_DriedFruitFix", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Dehydrator": "true", },
+		},
+		{// Dried Mushroom Fix
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Dehydrator", "OutputRules", "Cornucopia_DriedMushroomFix", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Dehydrator": "true", },
+		},
 	],
 }

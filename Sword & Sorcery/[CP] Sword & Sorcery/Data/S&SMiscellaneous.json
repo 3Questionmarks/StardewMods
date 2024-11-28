@@ -1,0 +1,165 @@
+{
+  "Changes": [
+    // SPECIAL ORDER BOARD
+    {
+      "LogName": "Loads Order Board Emoji",
+      "Action": "Load",
+      "Target": "LooseSprites/CAGemojis",
+      "FromFile": "assets/CAGemojis.png"
+    },
+    // SECRET NOTE
+    {
+      "LogName": "Loads Mateo's Secret Note Image",
+      "Action": "EditImage",
+      "Target": "TileSheets/SecretNotesImages",
+      "FromFile": "assets/Photo1.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 64,
+        "Height": 64
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 256,
+        "Width": 64,
+        "Height": 64
+      }
+    },
+    {
+      "LogName": "Loads Mateo's Secret Note",
+      "Action": "EditData",
+      "Target": "Data/SecretNotes",
+      "Entries": {
+        "113": "!image 16",
+      }
+    },
+    // REMOVES HECTOR'S MARRIAGE SCHEDULE - and separate datability
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/NpcExtensionData",
+      "Entries": {
+        "Hector": {
+          "IgnoreMarriageSchedule": true,
+          "SeparateDatability": true
+        }
+      }
+    },
+    // Other separate datability
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/NpcExtensionData",
+      "Entries": {
+        "Mateo": {
+          "SeparateDatability": true
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/NpcExtensionData",
+      "Entries": {
+        "Cirrus": {
+          "SeparateDatability": true
+        }
+      }
+    },
+    // HECTOR POLYAMORY DATA
+    {
+      "Action": "EditData",
+      "Target": "EnderTedi.Polyamory/PolyamoryData",
+      "Entries": {
+        "Hector": {
+          "IsPolyamorous": false
+        }
+      }
+    },
+    // DISPOSITION CHANGES FOR MOVIES 
+    {
+      "LogName": "Disposition Change (Movie Theater) - Hector",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Fields": {
+        "Mateo": {
+          "Gender": "undefined"
+        }
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "MovieTheater"
+      }
+    },
+    {
+      "LogName": "Disposition Change (Movie Theater) - Hector",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Fields": {
+        "Hector": {
+          "Gender": "undefined"
+        }
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "MovieTheater"
+      }
+    },
+    // BLANK SPOUSE ROOM
+    {
+      "Action": "Load",
+      "Target": "Maps/SpouseRoomEmpty",
+      "FromFile": "Assets/Maps/SpouseRoomEmpty.tmx",
+    },
+    // BLANK SPOUSE PATIO 
+    {
+      "Action": "Load",
+      "Target": "Maps/SpousePatioEmpty",
+      "FromFile": "assets/Maps/SpousePatioEmpty.tmx",
+    },
+    // REMOVES ENGAGEMENT EVENTS FROM EVENT LOOKUP 
+    {
+      "Action": "EditData",
+      "Target": "Mods/shekurika.EventLookup/blocklist",
+      "Entries": {
+        "SnS.Ch3.Cirrus.15": "T",
+        "SnS.Ch1.Mateo.19": "T",
+        "SnS.Ch2.Hector.17": "T"
+      },
+      "When": {
+        "HasMod": "shekurika.EventLookup",
+      },
+    },
+    // VIBRANT PASTORAL COMPAT
+    {
+      "Action": "Load",
+      "Target": "Maps/Lumisteria_Extras",
+      "FromFile": "Assets/VPRCompat/Lumisteria_Extras.png",
+      "When": {
+        "HasMod |contains=grapeponta.VibrantPastoralRecolor": false,
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/Lumisteria_Extras",
+      "FromFile": "Assets/VPRCompat/Lumisteria_Extras_VP.png",
+      "When": {
+        "HasMod |contains=grapeponta.VibrantPastoralRecolor": true,
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/FlashShifter_Extras",
+      "FromFile": "Assets/VPRCompat/FlashShifter_Extras.png",
+      "When": {
+        "HasMod |contains=grapeponta.VibrantPastoralRecolor": false,
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/FlashShifter_Extras",
+      "FromFile": "Assets/VPRCompat/FlashShifter_Extras_VP.png",
+      "When": {
+        "HasMod |contains=grapeponta.VibrantPastoralRecolor": true,
+      }
+    },
+  ]
+}

@@ -1,0 +1,96 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Kitty": {
+                "DisplayName": "Kitty",
+                "BirthSeason": "Winter",
+                "BirthDay": 5,
+                "HomeRegion": "Other",
+                "Gender": "Female",
+                "Age": "Child",
+                "Manner": "Polite",
+                "Optimism": "Negative",
+                "SocialAnxiety": "Outgoing",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "CanReceiveGifts": true,
+                "Calendar": "AlwaysShown",
+                "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9695002",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_WarpRoom",
+                        "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        }
+                    ],
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Kitty": "{{i18n:gifts.Kitty.love}}/276 70/{{i18n:gifts.Kitty.like}}/265/{{i18n:gifts.Kitty.dislike}}/220/{{i18n:gifts.Kitty.hate}}/82 88 90/{{i18n:gifts.Kitty.neutral}}/68/"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Kitty",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Kitty/Kitty.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Kitty",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Kitty/Kitty_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "kitty_read_left": "17/17/17",
+                "kitty_read_right": "18/18/18",
+                "kitty_sit_front": "16/16/16",	
+            },
+        },
+//NPC Strings
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.8": "{{i18n:Seat_Kitty}}"},
+        },
+//When Lavril and Void going to School
+        {	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.8":  "{{i18n:Seat_Kitty_Lavril}}"},
+            "When": {
+                "HasSeenEvent": "63070012",
+                "HasMod": "Arknir27.Lavril"
+            },
+        },
+//AntiSocial Flag
+        {
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Kitty": true
+            },
+            "When": {
+                "Kitty": "true"
+            },
+        },
+    ]
+}

@@ -1,0 +1,45 @@
+{
+//Flor
+        "Changes": [
+        {   
+            "Action": "EditData",	 
+            "Target": "Characters/Schedules/Flor",
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod |contains=Rafseazz.RSVCP": "true",
+                "HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+            },
+            "Entries": {     
+                "Wed": "0 Town 6 12 2/610 Town 6 12 2/740 Custom_SchoolHouse 11 4 2/1120 Town 13 13 2/1300 Custom_SchoolHouse 6 13 1/1550 Town 17 90 3/1750 Forest 92 20 3/1800 Custom_Ridgeside_LogCabinHotel2ndFloor 2 9 1/2200 Custom_Ridgeside_LogCabinHotel2ndFloor 3 5 0 flor_sleep",
+                "Fri": "0 Town 6 12 2/610 Town 6 12 2/740 Custom_SchoolHouse 6 13 1/1120 Town 13 13 2/1300 Custom_SchoolHouse 6 13 1/1550 Town 17 90 3/1750 Forest 92 20 3/1800 Custom_Ridgeside_LogCabinHotel2ndFloor 2 9 1/2200 Custom_Ridgeside_LogCabinHotel2ndFloor 3 5 0 flor_sleep",
+                "summer_5": "GOTO Fri",
+                "rain": "GOTO Wed",
+                "rain2": "GOTO Fri",
+                "GreenRain": "GOTO Wed",
+            },
+        },
+        {   
+            "Action": "EditData",	 
+            "Target": "Characters/Schedules/Flor",
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod |contains=Rafseazz.RSVCP": "true",
+                "HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+                "Spouse |contains=Flor": "true",
+            },
+            "Entries": {     
+                "Wed": "610 Town 6 12 2/740 Custom_SchoolHouse 11 4 2/1120 Town 13 13 2/1300 Custom_SchoolHouse 6 13 1/1550 Town 17 90 3/1750 Forest 92 20 3/2030 bed",
+                "Fri": "610 Town 6 12 2/740 Custom_SchoolHouse 6 13 1/1120 Town 13 13 2/1300 Custom_SchoolHouse 6 13 1/1550 Town 17 90 3/1750 Forest 92 20 3/2030 bed",
+                "marriage_Wed": "610 Town 6 12 2/740 Custom_SchoolHouse 11 4 2/1120 Town 13 13 2/1300 Custom_SchoolHouse 6 13 1/1550 Town 17 90 3/1750 Forest 92 20 3/2030 bed",
+                "marriage_Fri": "610 Town 6 12 2/740 Custom_SchoolHouse 5 13 1/1120 Town 13 13 2/1300 Custom_SchoolHouse 6 13 1/1550 Town 17 90 3/1750 Forest 92 20 3/2030 bed",
+                "marriageJob": "GOTO Wed",
+                "summer_5": "GOTO Fri",
+                "rain": "GOTO Wed",
+                "rain2": "GOTO Fri",
+                "GreenRain": "GOTO Wed",
+            },
+        },
+    ]
+}

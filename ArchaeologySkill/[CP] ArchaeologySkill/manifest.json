@@ -1,13 +1,15 @@
 ﻿{
     "Name": "[CP] Archaeology Skill",
     "Author": "moonslime",
-    "Version": "2.10.3",
+    "Version": "2.12.1",
     "Description": "Archaeology Skill Content Patcher",
     "UniqueID": "moonslime.ArchaeologySkill.CP",
     "ContentPackFor": {
         "UniqueID": "Pathoschild.ContentPatcher"
     },
-    "UpdateKeys": [],
+    "UpdateKeys": [
+        "Nexus:-1"
+    ],
     "Dependencies": [
         {
             "UniqueID": "moonslime.ArchaeologySkill"

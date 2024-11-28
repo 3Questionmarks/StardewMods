@@ -34,7 +34,7 @@
           "HarvestType": "DropOvernight",
           "ProduceItemIds": [
             {
-              "Id": "Default",
+              "Id": "Lumisteria.MtVapius_Default",
               "MinimumFriendship": 0,
               "ItemId": "Lumisteria.MtVapius_SpeckledFowlEgg"
             },
@@ -55,7 +55,13 @@
               "Id": "Lumisteria.MtVapius_Default",
               "MinimumFriendship": 0,
               "ItemId": "Lumisteria.MtVapius_SpeckledFowlFeather"
-            }
+            },
+            {
+              "Id": "Lumisteria.MtVapius_BaseEgg",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_SpeckledFowlEgg",
+              "Condition": "RANDOM .01",
+            },
           ],
           "ProduceOnMature": false,
           "FriendshipForFasterProduce": -1,
@@ -121,10 +127,22 @@
           ],
           "DeluxeProduceItemIds": [
             {
+              "Id": "Lumisteria.MtVapius_VoidFeather",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_VoidFeather",
+              "Condition": "RANDOM .05",
+            },
+            {
+              "Id": "Lumisteria.MtVapius_SpeckledFowlVoidFeather",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_SpeckledFowlVoidFeather",
+              "Condition": "RANDOM .01",
+            },
+            {
               "Id": "Default",
               "MinimumFriendship": 0,
               "ItemId": "Lumisteria.MtVapius_SpeckledFowlVoidEgg"
-            }
+            },
           ],
           "ProduceOnMature": false,
           "FriendshipForFasterProduce": -1,
@@ -210,7 +228,7 @@
           "HarvestType": "HarvestWithTool",
           "Texture": "Mods\\Lumisteria.MtVapius\\animals\\ewe",
           "BabyTexture": "Mods\\Lumisteria.MtVapius\\animals\\ewebaby",
-          "UseFlippedRightForLeft": false,
+          "UseFlippedRightForLeft": true,
           "House": "Barn",
           "SpriteWidth": 32,
           "SpriteHeight": 32,
@@ -403,7 +421,7 @@
           "HarvestType": "DropOvernight",
           "Texture": "Mods\\Lumisteria.MtVapius\\animals\\goose",
           "BabyTexture": "Mods\\Lumisteria.MtVapius\\animals\\goosebaby",
-          "UseFlippedRightForLeft": false,
+          "UseFlippedRightForLeft": true,
           "House": "Barn",
           "SpriteWidth": 32,
           "SpriteHeight": 32,
@@ -454,7 +472,7 @@
           "HarvestType": "DropOvernight",
           "Texture": "Mods\\Lumisteria.MtVapius\\animals\\stellargoose",
           "BabyTexture": "Mods\\Lumisteria.MtVapius\\animals\\stellargoosebaby",
-          "UseFlippedRightForLeft": false,
+          "UseFlippedRightForLeft": true,
           "House": "Barn",
           "SpriteWidth": 32,
           "SpriteHeight": 32,
@@ -526,11 +544,11 @@
           "Condition": "ANY \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\" \"RANDOM 0.08\"",
           "ItemID": "Lumisteria.MtVapius_MilkExtraLarge"
         },
-            "Lumisteria.MtVapius_RareMilkExtraLarge":{
-              "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
-              "ItemId": "Lumisteria.MtVapius_MilkExtraLarge",
-              "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
-            },
+        "Lumisteria.MtVapius_RareMilkExtraLarge": {
+          "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
+          "ItemId": "Lumisteria.MtVapius_MilkExtraLarge",
+          "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+        },
       },
     },
     {
@@ -546,11 +564,11 @@
           "Condition": "ANY \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\" \"RANDOM 0.08\"",
           "ItemID": "Lumisteria.MtVapius_MilkExtraLarge"
         },
-             "Lumisteria.MtVapius_RareMilkExtraLarge":{
-              "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
-              "ItemId": "Lumisteria.MtVapius_MilkExtraLarge",
-              "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
-            },
+        "Lumisteria.MtVapius_RareMilkExtraLarge": {
+          "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
+          "ItemId": "Lumisteria.MtVapius_MilkExtraLarge",
+          "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+        },
       },
     },
     {
@@ -566,10 +584,27 @@
           "Condition": "ANY \"LOCATION_CONTEXT Target Lumisteria_MtVapius_Main\" \"RANDOM 0.08\"",
           "ItemID": "Lumisteria.MtVapius_GoatMilkExtraLarge"
         },
-             "Lumisteria.MtVapius_RareMilkExtraLarge":{
-              "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
-              "ItemId": "Lumisteria.MtVapius_GoatMilkExtraLarge",
-              "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+        "Lumisteria.MtVapius_RareMilkExtraLarge": {
+          "Id": "Lumisteria.MtVapius_RareMilkExtraLarge",
+          "ItemId": "Lumisteria.MtVapius_GoatMilkExtraLarge",
+          "Condition": "RANDOM .01, PLAYER_HAS_PROFESSION Any 3",
+        },
+      },
+    },
+    {
+      "LogName": "Animal Products",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "TargetField": [
+        "Void Chicken",
+        "DeluxeProduceItemIds"
+      ],
+      "Entries": {
+        "Lumisteria.MtVapius_VoidFeather": {
+              "Id": "Lumisteria.MtVapius_VoidFeather",
+              "MinimumFriendship": 0,
+              "ItemId": "Lumisteria.MtVapius_VoidFeather",
+              "Condition": "RANDOM .025",
             },
       },
     },

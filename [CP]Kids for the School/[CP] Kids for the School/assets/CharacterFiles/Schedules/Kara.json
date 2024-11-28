@@ -1,0 +1,102 @@
+{
+//Kara Schedule before there is no school or school is not repaired (Vanilla)
+        "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Kara",
+            "Entries": {
+                "Mon": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 13 9 0/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 28 12 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Tue": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 13 9 0/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 28 12 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Wed": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 13 9 0/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 28 12 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Thu": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 13 9 0/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 28 12 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Fri": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 13 9 0/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 28 12 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sat": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 13 9 0/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 28 12 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sun": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Town 23 10 2/800 Town 20 14 0/1200 Town 28 21 2 kara_sit_forward/1430 Town 15 13 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+
+//Festivals Kara do not travel to Pelican
+                "spring_13": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "spring_24": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "fall_16": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_8": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_25": "0 Custom_DayEnd_WarpRoom 3 3 0",
+            },
+        },
+//Kara Schedule when the School is repaired (Vanilla)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Kara",
+            "When": {
+                "HasSeenEvent": "9695002"
+            },
+            "Entries": {
+                "Mon": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Custom_SchoolHouse 23 13 3/700 Custom_SchoolHouse 22 13 3 kara_read_left/1130 Town 8 19 2 kara_sit_forward/1230 Custom_SchoolHouse 23 13 3/1250 Custom_SchoolHouse 22 13 3 kara_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Tue": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Custom_SchoolHouse 23 13 3/700 Custom_SchoolHouse 22 13 3 kara_read_left/1130 Town 8 19 2 kara_sit_forward/1230 Custom_SchoolHouse 23 13 3/1250 Custom_SchoolHouse 22 13 3 kara_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Wed": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Custom_SchoolHouse 23 13 3/700 Custom_SchoolHouse 22 13 3 kara_read_left/1130 Town 8 19 2 kara_sit_forward/1230 Custom_SchoolHouse 23 13 3/1250 Custom_SchoolHouse 22 13 3 kara_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Thu": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Custom_SchoolHouse 23 13 3/700 Custom_SchoolHouse 22 13 3 kara_read_left/1130 Town 8 19 2 kara_sit_forward/1230 Custom_SchoolHouse 23 13 3/1250 Custom_SchoolHouse 22 13 3 kara_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Fri": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Custom_SchoolHouse 23 13 3/700 Custom_SchoolHouse 22 13 3 kara_read_left/1130 Town 8 19 2 kara_sit_forward/1230 Custom_SchoolHouse 23 13 3/1250 Custom_SchoolHouse 22 13 3 kara_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sat": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 13 9 0/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 28 12 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sun": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Town 23 10 2/800 Town 20 14 0/1200 Town 28 21 2 kara_sit_forward/1430 Town 14 61 3/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+
+//Festivals Kara do not travel to Pelican
+                "spring_13": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "spring_24": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "fall_16": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_8": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_25": "0 Custom_DayEnd_WarpRoom 3 3 0",
+            },
+        },
+///////////////////////////////////////////////////////SVE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//Kara Schedule before there is no school or school is not repaired (SVE)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Kara",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            },
+            "Entries": {
+                "Mon": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 7 16 3/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 39 18 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Tue": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 7 16 3/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 39 18 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Wed": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 7 16 3/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 39 18 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Thu": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 7 16 3/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 39 18 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Fri": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 7 16 3/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 39 18 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sat": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 7 16 3/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 39 18 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sun": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Town 23 10 2/800 Town 20 14 0/1200 Town 26 22 2 kara_sit_forward/1430 Town 15 13 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                
+//Festivals Kara do not travel to Pelican
+                "spring_13": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "spring_24": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "fall_16": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_8": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_25": "0 Custom_DayEnd_WarpRoom 3 3 0",
+            },
+        },
+//Kara Schedule when the School is repaired (SVE)
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Kara",
+            "When": {
+                "HasSeenEvent": "9695002",
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            },
+            "Entries": {
+                "Mon": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Custom_SchoolHouse 23 13 3/700 Custom_SchoolHouse 22 13 3 kara_read_left/1130 Town 8 19 2 kara_sit_forward/1230 Custom_SchoolHouse 23 13 3/1250 Custom_SchoolHouse 22 13 3 kara_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Tue": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Custom_SchoolHouse 23 13 3/700 Custom_SchoolHouse 22 13 3 kara_read_left/1130 Town 8 19 2 kara_sit_forward/1230 Custom_SchoolHouse 23 13 3/1250 Custom_SchoolHouse 22 13 3 kara_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Wed": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Custom_SchoolHouse 23 13 3/700 Custom_SchoolHouse 22 13 3 kara_read_left/1130 Town 8 19 2 kara_sit_forward/1230 Custom_SchoolHouse 23 13 3/1250 Custom_SchoolHouse 22 13 3 kara_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Thu": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Custom_SchoolHouse 23 13 3/700 Custom_SchoolHouse 22 13 3 kara_read_left/1130 Town 8 19 2 kara_sit_forward/1230 Custom_SchoolHouse 23 13 3/1250 Custom_SchoolHouse 22 13 3 kara_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Fri": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Custom_SchoolHouse 23 13 3/700 Custom_SchoolHouse 22 13 3 kara_read_left/1130 Town 8 19 2 kara_sit_forward/1230 Custom_SchoolHouse 23 13 3/1250 Custom_SchoolHouse 22 13 3 kara_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sat": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 ArchaeologyHouse 7 16 3/1000 ArchaeologyHouse 19 10 3 kara_read_left/1200 ArchaeologyHouse 35 14 2/1330 ArchaeologyHouse 16 10 1 kara_read_right/1500 ArchaeologyHouse 44 9 0/1600 ArchaeologyHouse 39 18 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sun": "0 Custom_WarpRoom 1 3 3/610 BusStop 21 23 1/620 Town 23 10 2/800 Town 20 14 0/1200 Town 26 22 2 kara_sit_forward/1430 Town 15 13 0/1700 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+
+//Festivals Kara do not travel to Pelican
+                "spring_13": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "spring_24": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "fall_16": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_8": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_25": "0 Custom_DayEnd_WarpRoom 3 3 0",
+            },
+        },
+    ]
+}
+
+
+//(0 = up, 1 = right, 2 = down, 3 = left)

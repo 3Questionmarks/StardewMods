@@ -1,0 +1,40 @@
+{
+    "Changes": [
+        {
+			"LogName": "Add Little Red School House schedule for Penny's daughter as firstborn.",
+			"Action": "EditData",
+			"Target": "Characters/schedules/{{FirstbornName}}",
+			"Priority": "Late",
+			"Entries": {
+				"Tue": "a800 Custom_SchoolHouse 8 16 1 {{FirstbornName}}_read \"Strings\\schedules\\{{FirstbornName}}:Schoolhouse.000\"/1130 Town 11 13 2 \"Strings\\schedules\\{{FirstbornName}}:Schoolhouse.001\"/a1250 Custom_SchoolHouse 8 16 1 {{FirstbornName}}_read/1550 Town 18 91 3/1750 Forest 92 21 3/1820 bed",
+				"Wed": "GOTO Tue",
+				"Fri": "GOTO Tue",
+			},
+			"When": {
+                "HasSeenEvent": "9695002",
+				"HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+				"HasMod |contains=siliconmodding.GVChildNPCs": "true",
+				"HasMod |contains=Candidus42.LittleNPCs": "true",
+				"LRSH_NoSchoolDay": false,
+			},
+		},
+		{
+			"LogName": "Add Little Red School House schedule for Penny's daughter as firstborn (rain).",
+			"Action": "EditData",
+			"Target": "Characters/schedules/{{FirstbornName}}",
+			"Priority": "Late",
+			"Entries": {
+				"rain": "a800 Custom_SchoolHouse 8 16 1 {{FirstbornName}}_read \"Strings\\schedules\\{{FirstbornName}}:Schoolhouse.000\"/1130 Custom_SchoolHouse 8 16 1 {{FirstbornName}}_sit \"Strings\\schedules\\{{FirstbornName}}:Schoolhouse.002\"/a1250 Custom_SchoolHouse 8 16 1 {{FirstbornName}}_read/1550 Town 18 91 3/1750 Forest 92 21 3/1820 bed",
+				"rain2": "GOTO rain",
+			},
+			"When": {
+                "HasSeenEvent": "9695002",
+				"DayOfWeek": "Tuesday, Wednesday, Friday",
+				"HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+				"HasMod |contains=siliconmodding.GVChildNPCs": "true",
+				"HasMod |contains=Candidus42.LittleNPCs": "true",
+				"LRSH_NoSchoolDay": false,
+			},
+		},
+    ]
+}

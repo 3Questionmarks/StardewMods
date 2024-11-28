@@ -71,7 +71,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Dezerie 15 30 3",
+                    "Value": "FC.Dezerie 22 31 3",
                     "Delimiter": "/"
                 },
                      {
@@ -80,7 +80,7 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Dezerie 15 30 3",
+                    "Value": "FC.Dezerie 22 31 3",
                     "Delimiter": "/"
                 },
         ]
@@ -99,7 +99,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Dezerie 15 30 3",
+                    "Value": "FC.Dezerie 22 31 3",
                     "Delimiter": "/",
                 },
                      {
@@ -108,17 +108,16 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Dezerie 15 30 3",
+                    "Value": "FC.Dezerie 22 31 2",
                     "Delimiter": "/"
                 },
         ]
     },
     {
             "Action": "EditData",
-            "Target": "Data/Festivals/fall3",
+            "Target": "Data/Festivals/fall3,Data/Festivals/winter3",
                         "When": {
  "HasFlag|contains=landslideDone": true,
- "HasSeenEvent |contains={{ModID}}_StoneIntroduction": true,
 },
             "TextOperations": [
                 {
@@ -127,7 +126,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Dezerie 17 27 1",
+                    "Value": "FC.Dezerie 17 27 3",
                     "Delimiter": "/"
                 },
                      {
@@ -137,6 +136,24 @@
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
                     "Value": "FC.Dezerie 17 25 1",
+                    "Delimiter": "/"
+                },
+        ]
+    },
+            {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Dezerie 24 76 2",
                     "Delimiter": "/"
                 },
         ]

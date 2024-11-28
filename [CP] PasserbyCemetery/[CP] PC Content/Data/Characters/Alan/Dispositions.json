@@ -9,109 +9,212 @@ Dispositions
 "Target": "Data/Characters",
 "Entries": {
 "FC.Alan": {
+///Basic Info
 "DisplayName":"{{i18n:FC.Alan}}",
-"Breather": false,
 "Language":"Default",
 "Gender":"Male",
 "Age":"Adult",
 "Manner":"Polite",
-"SocialAnxiety":"Outgoing",
+"SocialAnxiety":"Shy",
 "Optimism":"Positive",
-"BirthSeason":"summer",
-"Birthday":"13",
+"BirthSeason":"Summer",
+"BirthDay":13,
 "HomeRegion":"Town",
 "IsDarkSkinned":false,
+///Social Features
 "CanSocialize":true,
-"CanBeRomanced":false,
+"CanBeRomanced":true,
 "CanReceiveGifts":true,
-"CanCommentOnPurchasedShopItems":true,
+"CanCommentOnPurchasedShopItems":false,
 "CanGreetNearbyCharacters":true,
 "CanVisitIsland":"DAY_OF_WEEK Monday",
 "LoveInterest":null,
-"Calendar":"HiddenUntilMet",
-"SocialTab":"HiddenUntilMet",
-"SocialTabIconSourceRect":null,
+"Calendar": "HiddenUntilMet",
+"SocialTab":"UnknownUntilMet",
 "SpouseAdopts":null,
-"SpouseWantsChildren":false,
-"SpouseGiftJealousy":false,
-"IntroductionsQuest":"{{ExcludePerfection}}",
-"PerfectionScore":"{{ExcludePerfection}}",
-"ItemDeliveryQuests":true,
-"EndSlideShow":"TrailingGroup",
-"DumpsterDiveEmote":"28",
-"DumpsterDiveFriendshipEffect":"-1",
-"FlowerDanceCanDance":false,
-"KissSpriteIndex": 28,
-"HiddenProfileEmoteSound": null,
-"HiddenProfileEmoteDuration": -1,
-"HiddenProfileEmoteStartFrame": 37,
-"HiddenProfileEmoteFrameCount": 3,
-"HiddenProfileEmoteFrameDuration": 360.0,
-"ShakePortraits": [
-   3,5
-],
+"SpouseWantsChildren":true,
+"SpouseGiftJealousy":true,
+"SpouseGiftJealousyFriendshipChange":-3,
 "SpouseRoom": {
+"MapAsset": "{{ModID}}_AlanSpouseRoom",
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 6,
+"Height": 9
+}
 },
-"SpousePatio":{
+"SpousePatio": {
+"MapAsset": "{{ModID}}_AlanPatio",
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 4,
+"Height": 4
+}
 },
-
-"SpouseFloors": [ ],
+"SpouseFloors": [],
 "SpouseWallpapers": [],
+"IntroductionsQuest":"{{IncludeIntro}}",
+"ItemDeliveryQuests":true,
+"PerfectionScore":"{{IncludePerfection}}",
+"EndSlideShow":"TrailingGroup",
 "FriendsAndFamily":null,
+///Dumpster Diving
+"DumpsterDiveEmote":12,
+"DumpsterDiveFriendshipEffect":-3,
+///Festivals
+"FlowerDanceCanDance":true,
+"WinterStarParticipant":true,
 "WinterStarGifts": [
-],
-"WinterStarParticipant": true,
-"UnlockConditions": null,
-"SpawnIfMissing": true,
-"Home": [
 {
+"Condition": null,
+"Id": "{{ModID}}_WinterStarGifts",
+"ItemId": "RANDOM_ITEMS (O)",
+"RandomItemId": null,
+"MaxItems": null,
+"MinStack": -1,
+"MaxStack": -1,
+"Quality": -1,
+"ObjectInternalName": null,
+"ObjectDisplayName": null,
+"ToolUpgradeLevel": -1,
+"IsRecipe": false,
+"StackModifiers": null,
+"StackModifierMode": "Stack",
+"QualityModifiers": null,
+"QualityModifierMode": "Stack",
+"ModData": null,
+"PerItemCondition": null
+},
+],
+//Spawn Rules
+"UnlockConditions":null,
+"SpawnIfMissing":true,
+"Home": [
+      {
 "Id": "Default",
 "Condition": null,
 "Location": "{{ModID}}_AlansRoom",
 "Tile": {
-"X": 10,
-"Y":6
+"X":11,
+"Y":7,
 },
-"Direction": "right"
-}
-],
-"Appearance": [
-  {
-"ID": "{{ModID}}.Alan_SwimWear",
-"IsIslandAttire": true,
-"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/SwimWear.png}}",
-"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/SwimWear.png}}",
-"Precedence": -10,
-},    
+"Direction": "left"
+      }
+    ],
+///Appearance & Sprites
+"TextureName":null,
+ "Appearance": [
  {
-"ID": "spring",
-"Condition": "SEASON Spring",
+"ID": "{{ModID}}.Alan_spring",
+"Season": "spring",
 "Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/FC.Alan_spring.png}}",
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/FC.Alan_spring.png}}"
 },
 {
-"ID": "winter",
-"Condition": "SEASON Winter",
-"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/FC.Alan_winter.png}}",
-"Sprite": "{{InternalAssetKey: assets/Npcs/Characters/FC.Alan/FC.Alan_winter.png}}"
+"ID": "{{ModID}}.Alan_summer",
+"Season": "summer",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/FC.Alan_summer.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/FC.Alan_summer.png}}"
 },
 {
-"ID": "flowerfestival",
+"ID": "{{ModID}}.Alan_fall",
+"Season": "fall",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/FC.Alan_fall.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/FC.Alan_fall.png}}"
+},
+{
+"ID": "{{ModID}}.Alan_winter",
+"Season": "winter",
+"Portrait": "{{InternalAssetKey:Assets/Npcs/Portraits/FC.Alan/FC.Alan_winter.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/FC.Alan_winter.png}}"
+},
+{
+"ID": "{{ModID}}.Alan_SwimWear",
+"IsIslandAttire": true,
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/FC.Alan_SwimWear.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/FC.Alan_SwimWear.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Alan_eggfestival",
+"Condition": "EVENT_ID festival_spring13",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/Festivals/egg festival.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/Festivals/egg festival.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Alan_flowerfestival",
 "Condition": "EVENT_ID festival_spring24",
 "Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/Festivals/flower dance.png}}",
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/Festivals/flower dance.png}}",
 "Precedence": -10,
 },
 {
-"ID": "spiritseve",
-"Condition": "EVENT_ID festival_fall3",
+"ID": "{{ModID}}.Alan_luaufestival",
+"Condition": "EVENT_ID festival_summer11",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/Festivals/luau.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/Festivals/luau.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Alan_jellyfestival",
+"Condition": "EVENT_ID festival_summer28",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/Festivals/dance of the moonlight jellies.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/Festivals/dance of the moonlight jellies.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Alan_Fairfestival",
+"Condition": "EVENT_ID festival_fall16",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/Festivals/stardew valley fair.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/Festivals/stardew valley fair.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Alan_spiritseve",
+"Condition": "EVENT_ID festival_fall27",
 "Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/Festivals/spirit's eve.png}}",
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/Festivals/spirit's eve.png}}",
 "Precedence": -10,
 },
-],
-}
-}
+{
+"ID": "{{ModID}}.Alan_icefestival",
+"Condition": "EVENT_ID festival_winter8",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/Festivals/festival of ice.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/Festivals/festival of ice.png}}",
+"Precedence": -10,
 },
+{
+"ID": "{{ModID}}.Alan_winterstarfestival",
+"Condition": "EVENT_ID festival_winter25",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Alan/Festivals/feast of the winter star.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Alan/Festivals/feast of the winter star.png}}",
+"Precedence": -10,
+},
+    ],
+"MugShotSourceRect": { "X": 0, "Y": 0, "Width": 16, "Height": 24 },
+ "Size": { "X": 16, "Y": 32 },
+"Breather":false,
+"BreathChestRect":null,
+"BreathChestPosition":null,
+"Shadow":{ "Visible": true },
+"EmoteOffset":{},
+"ShakePortraits":[11,14],
+"KissSpriteIndex":"39",
+"KissSpriteFacingDirection":null,
+///Hidden Gift Log Emote
+"HiddenProfileEmoteSound":null,
+"HiddenProfileEmoteDuration":-1,
+"HiddenProfileEmoteStartFrame":16,
+"HiddenProfileEmoteFrameCount":4,
+"HiddenProfileEmoteFrameDuration":200.0,
+///Advanced
+"CustomFields":{},
+"FormerCharacterNames": [],
+}
+}
+}
 ]
 }

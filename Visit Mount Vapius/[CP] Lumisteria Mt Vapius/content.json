@@ -55,6 +55,10 @@
 			"AllowValues": "true, false",
 			"Default": false
 		},
+		"StarfruitRegrowDayCompat": {
+			"AllowValues": "7, 8, 9, 10, 11, 12",
+			"Default": "12"
+		},
 	},
 	"DynamicTokens": [
 		{
@@ -223,6 +227,13 @@
 			"Value": "{{query: {{HamletProgress}} + 1}}",
 			"When": {
 				"HasFlag: anyPlayer": "Lumisteria.MtVapius_MoreGuildGoalsMail",
+			}
+		},
+		{
+			"Name": "HamletProgress",
+			"Value": "{{query: {{HamletProgress}} + 1}}",
+			"When": {
+				"HasFlag: anyPlayer": "Lumisteria.MtVapius_JunimoClearingVisitedMail",
 			}
 		},
 		{
@@ -726,6 +737,11 @@
 			"FromFile": "Assets/items/FishPond.json",
 		},
 		{
+			"LogName": "Fishing Panning Treasures",
+			"Action": "Include",
+			"FromFile": "Assets/items/FishingPanningTreasures.json",
+		},
+		{
 			"LogName": "Monsters",
 			"Action": "Include",
 			"FromFile": "Assets/items/Monsters.json",
@@ -891,6 +907,21 @@
 			"Action": "Include",
 			"FromFile": "Assets/npcs/Chandra.json",
 		},
+		//Felicity FelicityMossVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Felicity.json",
+		},
+		//Odalis OdalisDuboisVelezVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Odalis.json",
+		},
+		//Claretie ClaretieLivreauVMV
+		{
+			"Action": "Include",
+			"FromFile": "Assets/npcs/Claretie.json",
+		},
 		//Temp actors
 		{
 			"LogName": "Ewe01",
@@ -1003,6 +1034,23 @@
 			"Action": "Include",
 			"FromFile": "Assets/Music/Music.json",
 		},
+		//Bushes
+		{
+			"Action": "Include",
+			"FromFile": "Assets/others/Bushes.json",
+			"When": {
+				"HasMod |contains=NCarigon.BushBloomMod": "true",
+			}
+		},
+		//Notes
+		{
+			"Action": "Include",
+			"FromFile": "Assets/items/SecretNotes.json",
+			"When": {
+				"HasMod |contains=ichortower.SecretNoteFramework": "true",
+			}
+		},
+		
 		//Location data (ex : fishes)
 		/*{
 			"LogName": "Location Datas",

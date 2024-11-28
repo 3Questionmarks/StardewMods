@@ -12,7 +12,7 @@
 					"FilePaths": [
 						"{{AbsoluteFilePath: assets/BloodMoonMusic.ogg}}"
 					],
-					"StreamedVorbis": true,
+					"StreamedVorbis": false,
 					"Looped": false
 				}
 			}
@@ -28,7 +28,7 @@
 					"FilePaths": [
 						"{{AbsoluteFilePath: assets/BloodMoonSoundEffect.ogg}}"
 					],
-					"StreamedVorbis": true,
+					"StreamedVorbis": false,
 					"Looped": false
 				}
 			},

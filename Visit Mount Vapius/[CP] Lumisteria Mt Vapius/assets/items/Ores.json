@@ -568,6 +568,61 @@
 						},
 					]
 				},
+				"{{ModId}}_Node_DwarfTreasureStone": {
+					"Name": "{{ModId}}_Node_DwarfTreasureStone",
+					"SpriteIndex": 27,
+					"Texture": "Mods\\{{ModId}}\\Ores",
+					"ContextTags": [
+						"mt_vapius",
+						"lumisteria.orenode_tier_3",
+						"lumisteria.dwarvishnode",
+					],
+					"Health": 13,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"ItemDropped": "(O)390", 
+					"Tool": "pickaxe",
+					"MinToolLevel": 2,
+					"MinDrops": 3,
+					"MaxDrops": 2,
+					"ExtraItems": [
+						{
+							"Id": "{{ModId}}_DwarvishTreasures",
+							"RandomItemId": [
+								"(O)Lumisteria.MtVapius_Treasures_EfficientCog",
+								"(O)Lumisteria.MtVapius_Treasures_DwarvishDevice",
+								"(O)Lumisteria.MtVapius_Treasures_Medallion",
+								"(O)Lumisteria.MtVapius_Treasures_ArtifactTrove",
+								"(O)121",
+								"(O)122",
+							],
+							"Chance": 1
+						},
+						{
+							"Id": "{{ModId}}_DwarvishScroll",
+							"RandomItemId": [
+								"(O)96",
+								"(O)97",
+								"(O)98",
+								"(O)99",
+							],
+							"Chance": 0.2
+						},
+						{
+							"Id": "{{ModId}}_Ores",
+							"RandomItemId": [
+								"(O)378",
+								"(O)380",
+								"(O)382",
+								"(O)384",
+								"(O)386",
+							],
+							"MinStack": 3,
+							"MaxStack": 5,
+							"Chance": 0.8
+						},
+					]
+				},
 				"{{ModId}}_Node_DwarfTreasureHardwoodStump": {
 					"Name": "{{ModId}}_Node_DwarfTreasureHardwoodStump",
 					"SpriteIndex": 28,
@@ -688,6 +743,51 @@
 								"(O)Lumisteria.MtVapius_MoonPodsSeeds",
 							],
 							"MaxStack": 3,
+						},
+					]
+				},
+				"{{ModId}}_Node_DwarfGearStone": {
+					"Name": "{{ModId}}_Node_DwarfGearStone",
+					"SpriteIndex": 37,
+					"Texture": "Mods\\{{ModId}}\\Ores",
+					"ContextTags": [
+						"mt_vapius",
+						"lumisteria.orenode_tier_2",
+						"lumisteria.dwarvishnode",
+					],
+					"Health": 13,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"ItemDropped": "(O)390", 
+					"Tool": "pickaxe",
+					"MinToolLevel": 2,
+					"MinDrops": 3,
+					"MaxDrops": 2,
+					"ExtraItems": [
+						{
+							"Id": "{{ModId}}_DwarvishTreasures",
+							"RandomItemId": [
+								"(O)Lumisteria.MtVapius_Treasures_EfficientCog",
+								"(O)112",
+								"(O)334",
+								"(O)335",
+								"(O)336",
+								"(O)Lumisteria.MtVapius_Treasures_BrokenWatch",
+							],
+							"Chance": 1
+						},
+						{
+							"Id": "{{ModId}}_Ores",
+							"RandomItemId": [
+								"(O)378",
+								"(O)380",
+								"(O)382",
+								"(O)384",
+								"(O)386",
+							],
+							"MinStack": 3,
+							"MaxStack": 5,
+							"Chance": 0.2
 						},
 					]
 				},
@@ -878,6 +978,92 @@
 						}
 					]
 				},
+				"{{ModId}}_Clump_HeliodorCrystal": {
+					"Name": "{{ModId}}_Clump_HeliodorCrystal",
+					"SpriteIndex": 24,
+					"Texture": "Mods\\{{ModId}}\\Clumps",
+					"Width": 2,
+					"Height": 2,
+					"ContextTags": [
+						"mt_vapius",
+						"lumisteria.rockclump_tier_3",
+					],
+					"Health": 20,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"ItemDropped": "(O){{ModId}}_Heliodor",
+					"Tool": "pickaxe",
+					"MinToolLevel": 2,
+					"MinDrops": 1,
+					"MaxDrops": 2,
+					"ExtraItems": [
+						{
+							"ItemId": "(O){{ModId}}_Heliodor",
+							"MinStack": 1,
+							"MaxStack": 3,
+							"Chance": 1
+						},
+						{
+							"ItemId": "(O){{ModId}}_Heliodor",
+							"MinStack": 1,
+							"MaxStack": 3,
+							"Chance": 0.5
+						},
+						{
+							"ItemId": "(O){{ModId}}_Heliodor",
+							"MinStack": 1,
+							"MaxStack": 2,
+							"Chance": 0.1
+						},
+						{
+							"ItemId": "(O){{ModId}}_BlackGeode",
+							"Chance": 0.01
+						}
+					]
+				},
+				"{{ModId}}_Clump_LarimarRock": {
+					"Name": "{{ModId}}_Clump_LarimarRock",
+					"SpriteIndex": 44,
+					"Texture": "Mods\\{{ModId}}\\Clumps",
+					"Width": 2,
+					"Height": 2,
+					"ContextTags": [
+						"mt_vapius",
+						"lumisteria.rockclump_tier_1",
+					],
+					"Health": 20,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"ItemDropped": "(O)390",
+					"Tool": "pickaxe",
+					"MinToolLevel": 2,
+					"MinDrops": 5,
+					"MaxDrops": 10,
+					"ExtraItems": [
+						{
+							"ItemId": "(O){{ModId}}_Larimar",
+							"MinStack": 2,
+							"MaxStack": 3,
+							"Chance": 1
+						},
+						{
+							"ItemId": "(O){{ModId}}_Larimar",
+							"MinStack": 1,
+							"MaxStack": 2,
+							"Chance": 0.5
+						},
+						{
+							"ItemId": "(O){{ModId}}_Larimar",
+							"MinStack": 1,
+							"MaxStack": 2,
+							"Chance": 0.1
+						},
+						{
+							"ItemId": "(O){{ModId}}_BlackGeode",
+							"Chance": 0.01
+						}
+					]
+				},
 				"{{ModId}}_Clump_BlueAgatheRock": {
 					"Name": "{{ModId}}_Clump_BlueAgatheRock",
 					"SpriteIndex": 46,
@@ -971,9 +1157,9 @@
 						}
 					]
 				},
-				"{{ModId}}_Clump_Big_BlackGeodeRock": {
-					"Name": "{{ModId}}_Clump_Big_BlackGeodeRock",
-					"SpriteIndex": 80,
+				"{{ModId}}_Clump_BigBlackGeodeRock": {
+					"Name": "{{ModId}}_Clump_BigBlackGeodeRock",
+					"SpriteIndex": 84,
 					"Texture": "Mods\\{{ModId}}\\Clumps",
 					"Width": 2,
 					"Height": 2,
@@ -998,8 +1184,80 @@
 						},
 						{
 							"ItemId": "(O){{ModId}}_BlackGeode",
+							"MinStack": 1,
+							"Chance": 0.1
+						},
+						{
+							"ItemId": "(O){{ModId}}_BlackGeode",
+							"MaxStack": 3,
 							"Chance": 0.01
 						}
+					]
+				},
+				"{{ModId}}_Clump_BoneRock": {
+					"Name": "{{ModId}}_Clump_BoneRock",
+					"SpriteIndex": 180,
+					"Texture": "Mods\\{{ModId}}\\Clumps",
+					"Width": 2,
+					"Height": 2,
+					"ContextTags": [
+						"mt_vapius",
+						"lumisteria.rockclump_tier_2",
+					],
+					"Health": 12,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"ItemDropped": "(O)390",
+					"Tool": "pickaxe",
+					"MinToolLevel": 1,
+					"MinDrops": 5,
+					"MaxDrops": 6,
+					"ExtraItems": [
+						{
+							"ItemId": "RANDOM_ITEMS (O)",
+							"PerItemCondition": "ITEM_CONTEXT_TAG Target bone_item, ANY \"ITEM_ID_PREFIX Target Lumisteria.MtVapius\" \"ITEM_NUMERIC_ID Target 1 589\"",
+							"Chance": 1,
+							"MaxItems": 1,
+						},
+						{
+							"ItemId": "RANDOM_ITEMS (O)",
+							"PerItemCondition": "ITEM_CONTEXT_TAG Target bone_item, ANY \"ITEM_ID_PREFIX Target Lumisteria.MtVapius\" \"ITEM_NUMERIC_ID Target 1 589\"",
+							"Chance": 0.2,
+							"MaxItems": 1,
+						},
+					]
+				},
+				"{{ModId}}_Clump_MineralRock": {
+					"Name": "{{ModId}}_Clump_MineralRock",
+					"SpriteIndex": 180,
+					"Texture": "Mods\\{{ModId}}\\Clumps",
+					"Width": 2,
+					"Height": 2,
+					"ContextTags": [
+						"mt_vapius",
+						"lumisteria.rockclump_tier_1",
+					],
+					"Health": 12,
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"ItemDropped": "(O)390",
+					"Tool": "pickaxe",
+					"MinToolLevel": 0,
+					"MinDrops": 5,
+					"MaxDrops": 6,
+					"ExtraItems": [
+						{
+							"ItemId": "RANDOM_ITEMS (O)",
+							"PerItemCondition": "ITEM_CATEGORY Target -12, ANY \"ITEM_ID_PREFIX Target Lumisteria.MtVapius\" \"ITEM_NUMERIC_ID Target 1\"",
+							"Chance": 1,
+							"MaxItems": 1,
+						},
+						{
+							"ItemId": "RANDOM_ITEMS (O)",
+							"PerItemCondition": "ITEM_CATEGORY Target -12, ANY \"ITEM_ID_PREFIX Target Lumisteria.MtVapius\" \"ITEM_NUMERIC_ID Target 1\"",
+							"Chance": 0.2,
+							"MaxItems": 1,
+						},
 					]
 				},
 				"{{ModId}}_Clump_AmberLog": {
@@ -1160,6 +1418,54 @@
 							"ItemId": "(O){{ModId}}_Treasures_FossilisedFern",
 							"Chance": 0.1
 						}
+					]
+				},
+				"{{ModId}}_Clump_LaceFlowerStump": {
+					"Name": "{{ModId}}_Clump_LaceFlowerStump",
+					"SpriteIndex": 144,
+					"Texture": "Mods\\{{ModId}}\\Clumps",
+					"Width": 2,
+					"Height": 2,
+					"ContextTags": [
+						"mt_vapius",
+						"lumisteria.stumpclump_tier_1",
+					],
+					"Health": 12,
+					"Sound": "axe",
+					"BreakingSound": "treethud",
+					"ItemDropped": "(O)709",
+					"Tool": "Axe",
+					"MinToolLevel": 1,
+					"MinDrops": 5,
+					"MaxDrops": 6,
+					"ExtraItems": [
+						{
+							"ID": "Lumisteria.MtVapius_LaceFlower",
+							"ItemId": "(O)Lumisteria.MtVapius_LaceFlower",
+							"MinStack": 2,
+							"MaxStack": 3,
+							"Chance": 1
+						},
+						{
+							"ID": "Lumisteria.MtVapius_LaceFlowerBonus",
+							"ItemId": "(O)Lumisteria.MtVapius_LaceFlower",
+							"MaxStack": 1,
+							"Chance": 0.5
+						},
+						{
+							"ID": "Lumisteria.MtVapius_LaceFlowerBonusRare",
+							"ItemId": "(O)Lumisteria.MtVapius_LaceFlower",
+							"MinStack": 2,
+							"MaxStack": 3,
+							"Chance": 0.1
+						},
+						{
+							"ID": "Lumisteria.MtVapius_Moss",
+							"ItemId": "(O)Moss",
+							"MinStack": 1,
+							"MaxStack": 2,
+							"Chance": 1
+						},
 					]
 				},
 				"{{ModId}}_Clump_BarrelLog": {
@@ -1325,6 +1631,39 @@
 						{
 							"Id": "{{ModId}}_BlackChanterelleTreeSeed",
 							"ItemId": "(O){{ModId}}_BlackChanterelleTreeSeed",
+							"Chance": 0.1
+						},
+					]
+				},
+				"{{ModId}}_Clump_Porchini": {
+					"Name": "{{ModId}}_Clump_BlackChanterelleLog",
+					"SpriteIndex": 124,
+					"Texture": "Mods\\{{ModId}}\\Clumps",
+					"Width": 2,
+					"Height": 2,
+					"ContextTags": [
+						"mt_vapius",
+						"lumisteria.stumpclump_tier_2",
+					],
+					"Health": 15,
+					"Sound": "axe",
+					"BreakingSound": "treethud",
+					"ItemDropped": "(O){{ModId}}_Porchini",
+					"Tool": "Axe",
+					"MinToolLevel": 1,
+					"MinDrops": 1,
+					"MaxDrops": 2,
+					"ExtraItems": [
+						{
+							"Id": "{{ModId}}_Porchini",
+							"ItemId": "(O){{ModId}}_Porchini",
+							"MinStack": 2,
+							"MaxStack": 4,
+							"Chance": 1
+						},
+						{
+							"Id": "{{ModId}}_Porchini",
+							"ItemId": "(O){{ModId}}_Porchini",
 							"Chance": 0.1
 						},
 					]

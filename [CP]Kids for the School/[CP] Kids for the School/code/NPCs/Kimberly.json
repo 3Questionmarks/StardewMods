@@ -1,0 +1,85 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Kimberly": {
+                "DisplayName": "Kimberly",
+                "BirthSeason": "Fall",
+                "BirthDay": 3,
+                "HomeRegion": "Other",
+                "Gender": "Female",
+                "Age": "Child",
+                "Manner": "Polite",
+                "Optimism": "Negative",
+                "SocialAnxiety": "Outgoing",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "CanReceiveGifts": true,
+                "Calendar": "AlwaysShown",
+                "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9695002",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_WarpRoom",
+                        "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        }
+                    ],
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Kimberly": "{{i18n:gifts.Kimberly.love}}//{{i18n:gifts.Kimberly.like}}//{{i18n:gifts.Kimberly.dislike}}//{{i18n:gifts.Kimberly.hate}}//{{i18n:gifts.Kimberly.neutral}}//"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Kimberly",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Kimberly/Kimberly.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Kimberly",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Kimberly/Kimberly_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "kimberly_read_right": "17/17/17",
+                "kimberly_read_left": "19/19/19"	
+            },
+        },
+//NPC Strings
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.13": "{{i18n:Seat_Kimberly}}"},
+        },
+//AntiSocial Flag
+        {
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Kimberly": true
+            },
+            "When": {
+                "Kimberly": "true"
+            },
+        },
+    ]
+}

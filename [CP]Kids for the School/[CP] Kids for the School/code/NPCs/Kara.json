@@ -1,0 +1,109 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Kara": {
+                "DisplayName": "Kara",
+                "BirthSeason": "Fall",
+                "BirthDay": 22,
+                "HomeRegion": "Other",
+                "Gender": "Female",
+                "Age": "Child",
+                "Manner": "Neutral",
+                "Optimism": "Positive",
+                "SocialAnxiety": "Shy",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "CanReceiveGifts": true,
+                "Calendar": "AlwaysShown",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_WarpRoom",
+                         "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        },
+                    ],
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Kara": "{{i18n:gifts.Kara.love}}/300 400 417 724/{{i18n:gifts.Kara.like}}/233 595/{{i18n:gifts.Kara.dislike}}/721 720 719 718/{{i18n:gifts.Kara.hate}}/728 202/{{i18n:gifts.Kara.neutral}}/909 910 548 552 557 560/"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Kara",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Kara/{{Season}}_Kara.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Kara",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Kara/Kara_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "kara_read_left": "17/17 17 17 17 22 23/17",
+                "kara_read_right": "19/19 19 19 19 30 31/19",
+                "kara_books": "18/18/18",
+                "kara_hamster": "21/21 21 21 21 21 21 21 20/21",
+	            "kara_change": "24/24/24",
+	            "kara_UpUpNAway": "24/25 25 25 26 26 26/26",
+	            "kara_Gone": "27/27/27",
+                "kara_sit_forward": "16/16/16"
+            },
+        },
+//NPC Strings
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.3": "{{i18n:Seat_Kara}}"},
+        },
+//Kara joins Winter 8, Ice Festival
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Kara 56 51 left",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Main-Event_additionalCharacters"],
+                    "Value": "Kara 56 51 left",
+                    "Delimiter": "/"
+                },
+            ],
+        },
+//AntiSocial Flag
+        {
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Kara": true
+            },
+            "When": {
+                "Kara": "true"
+            },
+        },
+    ]
+}

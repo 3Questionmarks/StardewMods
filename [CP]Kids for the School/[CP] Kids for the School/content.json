@@ -1,0 +1,211 @@
+{
+    "Format": "2.3.0",
+    "CustomLocations": [
+//SpawnRoom MapLoad
+        {
+            "Name": "Custom_WarpRoom",
+            "FromMapFile": "code/NPCSpawnRoom/WarpRoom.tmx",
+            "MigrateLegacyNames": [
+                "WarpRoom"
+            ],
+        },
+    ],
+//Little NPC's
+    "AliasTokenNames": {
+        "FirstbornName": "Candidus42.LittleNPCs/FirstLittleNPCName",
+		"SecondbornName": "Candidus42.LittleNPCs/SecondLittleNPCName",
+        "FirstLittleNPCDN": "Candidus42.LittleNPCs/FirstLittleNPCDisplayName",
+        "SecondLittleNPCDN": "Candidus42.LittleNPCs/SecondLittleNPCDisplayName",
+    },
+    "DynamicTokens": [
+//Little Red School House
+        {
+            "Name": "LRSH_NoSchoolDay",
+            "Value": false,
+        },
+        {
+            "Name": "LRSH_NoSchoolDay",
+            "Value": true,
+            "When": {
+               "day": "9, 23"
+            }
+        },
+//Firstborn Name
+        {
+            "Name": "FirstbornDisplayName",
+            "Value": "{{siliconmodding.GVChildrenSMAPI/FirstbornNameErrorMessage}}",
+            "When": {
+            "HasValue: {{ChildGenders|valueAt=0}}": false,
+            "HasMod |contains=siliconmodding.GVChildrenSMAPI": true,
+            "HasMod |contains=Candidus42.LittleNPCs": true,
+            }
+        },
+        {
+            "Name": "FirstbornDisplayName",
+            "Value": "{{ChildNames|valueAt=0}}",
+            "When": {
+            "HasValue: {{ChildGenders|valueAt=0}}": true,
+            "HasMod |contains=siliconmodding.GVChildrenSMAPI": true,
+            "HasMod |contains=Candidus42.LittleNPCs": true,
+            }
+        },
+        {
+            "Name": "FirstbornDisplayName",
+            "Value": "{{Candidus42.LittleNPCs/FirstLittleNPCDisplayName}}",
+            "When": {
+            "HasValue: {{Candidus42.LittleNPCs/FirstLittleNPCDisplayName}}": true,
+            "HasMod |contains=siliconmodding.GVChildrenSMAPI": true,
+            "HasMod |contains=Candidus42.LittleNPCs": true,
+            }
+        },
+        {
+			"Name": "FirstbornTokenPass",
+			"Value": "|DisplayName={{FirstbornDisplayName}}",
+		},
+    ],
+    "ConfigSchema": {
+//AntiSocialNPCs
+        "Ahmad": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "AntiSocialNPCs"
+            },
+        "Amy": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "AntiSocialNPCs"
+            },
+        "Beng": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "AntiSocialNPCs"
+            },
+        "Cammi": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "AntiSocialNPCs"
+            },
+        "Donny": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "AntiSocialNPCs"
+            },
+        "Kara": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "AntiSocialNPCs"
+            },
+        "Kimberly": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "AntiSocialNPCs"
+            },
+        "Kitty": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "AntiSocialNPCs"
+            },
+        "Meha": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "AntiSocialNPCs"
+            },
+        "Muthu": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "AntiSocialNPCs"
+            },
+        "Peter": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "AntiSocialNPCs"
+            },
+        "Teela": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "AntiSocialNPCs"
+            },
+        },
+    "Changes": [
+//DayEnd MapLoad
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Maps/Custom_DayEnd_WarpRoom",
+            "FromFile": "code/NPCSpawnRoom/DayEnd_WarpRoom.tmx",
+            "MigrateLegacyNames": [
+                "DayEnd_WarpRoom"
+            ],
+        },
+//NPC Sprites
+        {
+            "Action": "Include",
+            "FromFile": "code/NPCs/Ahmad.json, code/NPCs/Amy.json, code/NPCs/Beng.json, code/NPCs/Cammi.json, code/NPCs/Donny.json, code/NPCs/Kara.json, code/NPCs/Kimberly.json, code/NPCs/Kitty.json, code/NPCs/Meha.json, code/NPCs/Muthu.json, code/NPCs/Peter.json, code/NPCs/Teela.json, code/NPCs/Leo.json, code/NPCs/Keahi.json, code/NPCs/Trinnie.json, code/NPCs/Eloise.json,"
+        },
+//NPC Dialogue Blank Load
+        {
+            "LogName": "NPC Dialogue Blank Loads",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Ahmad, Characters/Dialogue/Amy, Characters/Dialogue/Beng, Characters/Dialogue/Cammi, Characters/Dialogue/Donny, Characters/Dialogue/Kara, Characters/Dialogue/Kimberly, Characters/Dialogue/Kitty, Characters/Dialogue/Meha, Characters/Dialogue/Muthu, Characters/Dialogue/Peter, Characters/Dialogue/Teela",
+            "FromFile": "assets/blank.json",
+        },
+//NPC Dialogue
+        {
+            "LogName": "NPC Dialogue Loads",
+            "Action": "Include",
+            "FromFile": "assets/CharacterFiles/Dialogue/Ahmad.json, assets/CharacterFiles/Dialogue/Amy.json, assets/CharacterFiles/Dialogue/Beng.json, assets/CharacterFiles/Dialogue/Cammi.json, assets/CharacterFiles/Dialogue/Donny.json, assets/CharacterFiles/Dialogue/Kara.json, assets/CharacterFiles/Dialogue/Kimberly.json, assets/CharacterFiles/Dialogue/Kitty.json, assets/CharacterFiles/Dialogue/Meha.json, assets/CharacterFiles/Dialogue/Muthu.json, assets/CharacterFiles/Dialogue/Peter.json, assets/CharacterFiles/Dialogue/Teela.json",
+        },
+//NPC Schedule Blank Load
+        {
+            "LogName": "NPC Dialogue Blank Loads",
+            "Action": "Load",
+            "Target": "Characters/Schedules/Ahmad, Characters/Schedules/Amy, Characters/Schedules/Beng, Characters/Schedules/Cammi, Characters/Schedules/Donny, Characters/Schedules/Kara, Characters/Schedules/Kimberly, Characters/Schedules/Kitty, Characters/Schedules/Meha, Characters/Schedules/Muthu, Characters/Schedules/Peter, Characters/Schedules/Teela",
+            "FromFile": "assets/blank.json",
+        },
+//NPC Schedules
+        {
+            "LogName": "NPC Schedules Loads",
+            "Action": "Include",
+            "FromFile": "assets/CharacterFiles/Schedules/Ahmad.json, assets/CharacterFiles/Schedules/Amy.json, assets/CharacterFiles/Schedules/Beng.json, assets/CharacterFiles/Schedules/Cammi.json, assets/CharacterFiles/Schedules/Donny.json, assets/CharacterFiles/Schedules/Kara.json, assets/CharacterFiles/Schedules/Kimberly.json, assets/CharacterFiles/Schedules/Kitty.json, assets/CharacterFiles/Schedules/Meha.json, assets/CharacterFiles/Schedules/Muthu.json, assets/CharacterFiles/Schedules/Peter.json, assets/CharacterFiles/Schedules/Teela.json, assets/CharacterFiles/Schedules/Jas.json, assets/CharacterFiles/Schedules/Vincent.json, assets/CharacterFiles/Schedules/LeoMainland.json, assets/CharacterFiles/Schedules/Keahi.json, assets/CharacterFiles/Schedules/Trinnie.json, assets/CharacterFiles/Schedules/Yuuma.json, assets/CharacterFiles/Schedules/Lavril.json, assets/CharacterFiles/Schedules/Eloise.json, assets/CharacterFiles/Schedules/Penny.json, assets/CharacterFiles/Schedules/Flor Teaching Assistant.json"
+        },
+//NPC Map Location Tracking
+        {
+            "Action": "Include",
+            "FromFile": "code/NPCMapLocation/NPCMapLocationTracking.json"
+        },
+//SchoolHouse
+        {
+            "Action": "Include",
+            "FromFile": "code/MapPatches/SchoolHouse_Table.json, code/MapPatches/Seat.json"
+        },
+//Compatibility Outfit Load
+        {  
+			"Action": "Include",
+			"FromFile": "code/Compatibilitys/SeasonalCuteCharacters/Leo.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": true,
+			}
+		},
+        {  
+			"Action": "Include",
+			"FromFile": "code/Compatibilitys/GrowingValley/Leo/Leo.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+                "HasMod |contains=siliconmodding.GVGrowthSpurt": true,
+			}
+		},
+//Compatibility Growing Valley
+        {
+            "Action": "Include",
+            "FromFile": "code/Compatibilitys/GrowingValley/Alex/FirstBorn.json, code/Compatibilitys/GrowingValley/Alex/SecondBorn.json, code/Compatibilitys/GrowingValley/Elliott/FirstBorn.json, code/Compatibilitys/GrowingValley/Elliott/SecondBorn.json, code/Compatibilitys/GrowingValley/Emily/FirstBorn.json, code/Compatibilitys/GrowingValley/Emily/SecondBorn.json, code/Compatibilitys/GrowingValley/Farmer/FirstBorn.json, code/Compatibilitys/GrowingValley/Farmer/SecondBorn.json, code/Compatibilitys/GrowingValley/Leah/FirstBorn.json, code/Compatibilitys/GrowingValley/Leah/SecondBorn.json, code/Compatibilitys/GrowingValley/Penny/FirstBorn.json, code/Compatibilitys/GrowingValley/Penny/SecondBorn.json, code/Compatibilitys/GrowingValley/Sebastian/FirstBorn.json, code/Compatibilitys/GrowingValley/Sebastian/SecondBorn.json",
+            "When": 
+            {
+                "HasMod |contains=siliconmodding.GVChildNPCs": true,
+                "HasMod |contains=Candidus42.LittleNPCs": true,
+            },
+        },
+    ]
+}

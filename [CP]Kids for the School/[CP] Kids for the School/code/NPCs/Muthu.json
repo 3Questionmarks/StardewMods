@@ -1,0 +1,84 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Muthu": {
+                "DisplayName": "Muthu",
+                "BirthSeason": "Summer",
+                "BirthDay": 4,
+                "HomeRegion": "Other",
+                "Gender": "Male",
+                "Age": "Child",
+                "Manner": "Rude",
+                "Optimism": "Negative",
+                "SocialAnxiety": "Outgoing",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "CanReceiveGifts": true,
+                "Calendar": "AlwaysShown",
+                "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9695002",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_WarpRoom",
+                        "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        }
+                    ],
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Muthu": "{{i18n:gifts.Muthu.love}}/74/{{i18n:gifts.Muthu.like}}/233/{{i18n:gifts.Muthu.dislike}}/260/{{i18n:gifts.Muthu.hate}}/444/{{i18n:gifts.Muthu.neutral}}/426/"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Muthu",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Muthu/Muthu.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Muthu",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Muthu/Muthu_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "muthu_read_right": "19/19/19",
+                "muthu_sit_right": "19/19/19",
+            },
+        },
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.11": "{{i18n:Seat_Muthu}}"},
+        },
+//AntiSocial Flag
+        {
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Muthu": true
+            },
+            "When": {
+                "Muthu": "true"
+            },
+        },
+    ]
+}

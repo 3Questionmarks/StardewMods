@@ -171,6 +171,61 @@
 					"RewardItemCount": 1,
 					"FlagOnCompletion": true,
 				},
+				"Lumisteria.MtVapius_40VapiusItems": {
+					"TargetContextTags": [
+						{
+							"Tag": "mt_vapius",
+							"Count": 40
+						},
+					],
+					"RewardItemId": "(O)PrizeTicket",
+					"RewardItemCount": 2,
+					"FlagOnCompletion": true,
+				},
+				"Lumisteria.MtVapius_100Total": {
+					"TargetContextTags": [
+						{
+							"Tag": "",
+							"Count": 100
+						},
+					],
+					"RewardItemId": "(O)PrizeTicket",
+					"RewardItemCount": 2,
+					"FlagOnCompletion": true,
+				},
+				"Lumisteria.MtVapius_110Total": {
+					"TargetContextTags": [
+						{
+							"Tag": "",
+							"Count": 110
+						},
+					],
+					"RewardItemId": "(O)PrizeTicket",
+					"RewardItemCount": 1,
+					"FlagOnCompletion": true,
+				},
+				"Lumisteria.MtVapius_120Total": {
+					"TargetContextTags": [
+						{
+							"Tag": "",
+							"Count": 120
+						},
+					],
+					"RewardItemId": "(O)PrizeTicket",
+					"RewardItemCount": 1,
+					"FlagOnCompletion": true,
+				},
+				"Lumisteria.MtVapius_130Total": {
+					"TargetContextTags": [
+						{
+							"Tag": "",
+							"Count": 130
+						},
+					],
+					"RewardItemId": "(O)PrizeTicket",
+					"RewardItemCount": 1,
+					"FlagOnCompletion": true,
+				},
 			},
 		}
 	]

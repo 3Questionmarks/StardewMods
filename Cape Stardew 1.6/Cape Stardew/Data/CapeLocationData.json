@@ -3068,7 +3068,138 @@
         }
       }
     },
- 
+ {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      
+      "Entries": {
+        "Custom_RealSecretBase2": {
+          "DisplayName": "Real Secret Base 2",
+          "DefaultArrivalTile": null,
+          "ExcludeFromNpcPathfinding": false,
+          "CreateOnLoad": {
+            "MapPath": "Maps\\Custom_RealSecretBase2"
+          },
+          "FormerLocationNames": [
+            "RealSecretBase2"
+          ],
+         "ArtifactSpots": [
+    {
+        "Chance": 0.15,
+        "Season": null,
+        "Id": "(O)102",
+        "ItemId": "(O)102"
+    },
+    {
+        "Chance": 0.25,
+        "Season": null,
+        "Id": "(O)390",
+        "ItemId": "(O)390"
+    },
+    {
+        "Chance": 1,
+        "Season": null,
+        "Id": "(O)330",
+        "ItemId": "(O)330"
+    }
+],
+          "FishAreas": {},
+          "Fish": [
+           {
+              "Chance": 1.0,
+              "Season": null,
+              "FishAreaId": null,
+              "BobberPosition": null,
+              "PlayerPosition": null,
+              "MinFishingLevel": 0,
+              "MinDistanceFromShore": 0,
+              "MaxDistanceFromShore": -1,
+              "ApplyDailyLuck": false,
+              "CuriosityLureBuff": -1.0,
+              "CatchLimit": -1,
+              "IsBossFish": false,
+              "SetFlagOnCatch": null,
+              "RequireMagicBait": false,
+              "Precedence": 0,
+              "IgnoreFishDataRequirements": false,
+              "CanBeInherited": true,
+              "ChanceModifiers": null,
+              "ChanceModifierMode": "Stack",
+              "Condition": "{{Enable Legendary Fish Cape |contains=True}},",
+              "Id": "(O)161",
+              "ItemId": "(O)161",
+              "RandomItemId": null,
+              "MaxItems": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1,
+              "ObjectInternalName": null,
+              "ObjectDisplayName": null,
+              "ToolUpgradeLevel": -1,
+              "IsRecipe": false,
+              "StackModifiers": null,
+              "StackModifierMode": "Stack",
+              "QualityModifiers": null,
+              "QualityModifierMode": "Stack",
+              "PerItemCondition": null
+            },
+    {
+        "Chance": -1,
+        "Season": "Spring",
+        "Id": "(O)161",
+        "ItemId": "(O)161"
+    },
+    {
+        "Chance": -1,
+        "Season": "Spring",
+        "Id": "(O)156",
+        "ItemId": "(O)156"
+    },
+    {
+        "Chance": -1,
+        "Season": "Spring",
+        "Id": "(O)158",
+        "ItemId": "(O)158"
+    },
+    {
+        "Chance": -1,
+        "Season": "Spring",
+        "Id": "(O)153",
+        "ItemId": "(O)153"
+    },
+    {
+        "Chance": -1,
+        "Season": "Spring",
+        "Id": "(O)157",
+        "ItemId": "(O)157"
+    },
+
+],
+          "Forage": [],
+          "MinDailyWeeds": -1,
+          "MaxDailyWeeds": -1,
+          "FirstDayWeedMultiplier": -1,
+          "MinDailyForageSpawn": -1,
+          "MaxDailyForageSpawn": -1,
+          "MaxSpawnedForageAtOnce": -1,
+          "ChanceForClay": -1,
+          "Music": [],
+          "MusicDefault": null,
+          "MusicContext": "Default",
+          "MusicIgnoredInRain": false,
+          "MusicIgnoredInSpring": false,
+          "MusicIgnoredInSummer": false,
+          "MusicIgnoredInFall": false,
+          "MusicIgnoredInWinter": false,
+          "MusicIgnoredInFallDebris": false,
+          "MusicIsTownTheme": false,
+         "Advanced": {
+      "CustomFields": null,
+    }
+        }
+      }
+    },
+
 {
       "Action": "EditData",
       "Target": "Data/Locations",
@@ -3976,7 +4107,7 @@
     "Custom_AreaSecretBossLvl4": {
       "DisplayName": "AreaSecretBossLevel4",
       "DefaultArrivalTile": null,
-      "ExcludeFromNpcPathfinding": false,
+      "ExcludeFromNpcPathfinding": true,
       "CreateOnLoad": {
             "MapPath": "Maps\\Custom_AreaSecretBossLvl4"
           },
@@ -4411,6 +4542,67 @@
   }
 },
 
+{
+  "Action": "EditData",
+  "Target": "Data/Locations",
+ 
+  "Entries": {
+    "Custom_SeaCavernDepths6": {
+      "DisplayName": "SeaCavern Depths6",
+      "DefaultArrivalTile": null,
+      "ExcludeFromNpcPathfinding": false,
+     "CreateOnLoad": {
+            "MapPath": "Maps\\Custom_SeaCavernDepths6"
+          },
+      "FormerLocationNames": [
+        "SeaCavernDepths6"
+      ],
+       "ArtifactSpots": [
+    {
+        "Chance": 0.11,
+        "Season": null,
+        "Id": "(O)102",
+        "ItemId": "(O)102"
+    },
+    {
+        "Chance": 0.15,
+        "Season": null,
+        "Id": "(O)390",
+        "ItemId": "(O)390"
+    },
+    {
+        "Chance": 0.9,
+        "Season": null,
+        "Id": "(O)330",
+        "ItemId": "(O)330"
+    }
+],
+      "FishAreas": {},
+      "Fish": [],
+      "Forage": [],
+      "MinDailyWeeds": -1,
+      "MaxDailyWeeds": -1,
+      "FirstDayWeedMultiplier": -1,
+      "MinDailyForageSpawn": -1,
+      "MaxDailyForageSpawn": -1,
+      "MaxSpawnedForageAtOnce": -1,
+      "ChanceForClay": -1,
+      "Music": [],
+      "MusicDefault": null,
+      "MusicContext": "Default",
+      "MusicIgnoredInRain": false,
+      "MusicIgnoredInSpring": false,
+      "MusicIgnoredInSummer": false,
+      "MusicIgnoredInFall": false,
+      "MusicIgnoredInWinter": false,
+      "MusicIgnoredInFallDebris": false,
+      "MusicIsTownTheme": false,
+     "Advanced": {
+      "CustomFields": null,
+    }
+    }
+  }
+},
     
     {
   "Action": "EditData",
@@ -4683,7 +4875,7 @@
     "Custom_CapeIslandEntry": {
       "DisplayName": "CapeIslandEntry",
       "DefaultArrivalTile": null,
-      "ExcludeFromNpcPathfinding": false,
+      "ExcludeFromNpcPathfinding": true,
       "CreateOnLoad": {
             "MapPath": "Maps\\Custom_CapeIslandEntry"
           },
@@ -4998,6 +5190,46 @@
     }
   }
 },
+{
+			"LogName": "CapeKeyMazefirst",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"Custom_CapeKeyMaze": {
+					"DisplayName": "{{i18n: Locations.CapeKeyMaze1}}",
+					"DefaultArrivalTile": null,
+					"FormerLocationNames": [
+            					"CapeKeyMaze"
+          					],
+					"CreateOnLoad": {
+						"MapPath": "Maps\\Custom_CapeKeyMaze",
+						"Type": "CapeStardewCode.CustomLavaLogic, CapeStardewCode"
+
+},
+					},
+				}
+			
+		},
+{
+			"LogName": "CapeKeyMazEnd",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"Custom_CapeKeyMaze3": {
+					"DisplayName": "{{i18n: Locations.CapeKeyMaze3}}",
+					"DefaultArrivalTile": null,
+					"FormerLocationNames": [
+            					"CapeKeyMaze3"
+          					],
+					"CreateOnLoad": {
+						"MapPath": "Maps\\Custom_CapeKeyMaze3",
+						"Type": "CapeStardewCode.CustomLavaLogic, CapeStardewCode"
+
+},
+					},
+				}
+			
+		},
 
 {
 			"LogName": "Minecart1",
@@ -5119,7 +5351,24 @@
 			}
 		},
 
- 
+ {
+			"LogName": "SCD6",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"Custom_SeaCavernDepths6": {
+					"DisplayName": "SCD6",
+					"DefaultArrivalTile": null,
+					"FormerLocationNames": [
+            "SeaCavernDepths6"
+          ],
+					"CreateOnLoad": {
+						"MapPath": "Maps\\Custom_SeaCavernDepths6"
+					},
+					"CanPlantHere": false,
+				}
+			}
+		},
 
 
  ],

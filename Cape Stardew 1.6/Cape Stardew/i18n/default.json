@@ -1,16 +1,17 @@
 {
+  "Orb_Translated": "Orb of the Tides",
+  "Orb_Description_Translated": "A mystical artifact pulsing with ancient power. Right-click to create a portal at your current location, and left-click to instantly teleport back to it.",
+
+
+"UB.RealSecretBase2": "Secret Falls Bundle",
+
 "junimo.mail001": "Hi @!^^ We, the Junimos, are so happy! Thank you for giving us your best maple syrup.^^As a big thank you, we've cleared a space in the forest just for you! You can do anything you want with it!^^Thanks again, @! You're the best!^^With love,^^The Junimos",
 
 "ghost.mail001": "^^^^In the heart of the cabin, where time whispers its secrets, a new chapter begins.^^^^Feel the shift in the air, the gentle sigh of transformation.^^^The Silent Spirit^^^",
 
 
 "annetta_spring_order": "Hello @,^^I wanted to extend my heartfelt thanks for your assistance with my recent request. Your contribution has truly sparked my imagination and led to the creation of a new painting that I'm immensely proud of. Please accept this humble gift as a token of my appreciation.^^With gratitude,^^Annetta",
-//AnnettaSpring//
 
-"Annetta_Spring_Name": "Spring Inspiration",
-"Annetta_Spring_Text": "I've just finished up a new painting, and I'm already on the hunt for my next inspiration! I'm looking for something special to incorporate into my next masterpiece, something in hues of yellow or gold.",
-"Annetta_Spring_Objective_0_Text": "Find a rare item in hues of yellow or gold for Annetta's new painting.",
-"Annetta_Spring_Objective_0_Message": "Oh, how delightful! This is just the inspiration I needed. Thank you so much, @",
 
 ///other//
 
@@ -22,7 +23,8 @@
   "LocationName.CapeIslandBottle": "CapeIsland",
   
  
- 
+ //stringsfromcsfiles//
+"Strings.CapeRescue.001": "As your vision fades, you feel a strange, otherworldly presence lift you from the water. ",
 
 
 
@@ -55,7 +57,7 @@
 
 "Strings.Annettahouse.17": "It's a small bookcase, adorned with a rainbow shell. As you examine further, your eyes catch the glimmer of vibrant shells, weathered ancient tomes with faded runes hinting at forgotten knowledge, delicate crystal figurines capturing the play of light, and an assortment of other fascinating objects, each carefully placed in between the shelves' vacant spaces.", 
 
-"Strings.Annettahouse.19": "A notepad, with a list of potential painting ideas, Mysticl Forest at Dusk, Whimsical Waves and Moonlit Serenade by the Sea.",
+"Strings.Annettahouse.19": "A notepad, with a list of potential painting ideas, Mystical Forest at Dusk, Whimsical Waves and Moonlit Serenade by the Sea.",
 
 "Strings.Annettaupstairs.1": " -It's a hummingbird painting done with acrylic-",
 
@@ -66,6 +68,8 @@
 "Strings.Annettaupstairs.4": " -Some of the most renowned coming-of-age novels ever written-",
        
 "Strings.Annettahouse.30": "-It's Annetta's favorite dessert Green Tea Mochi-",
+
+"Strings.Annettahouse.alt": "Annetta's dinner looks tasty. ",
        
 "Strings.AnnettaForest.1": "-The forest is too dense here-",
        
@@ -76,6 +80,8 @@
 "Strings.Cape.2": "You've reached the southwesternmost point of Stardew Valley",
 
 "Strings.Cape.3": "-Cindersap Forest-",
+
+"Strings.CapeMinehint.1": "Caution: Beyond this point lies the Old Forest Mine. Last serviced in Pelican Town's early years.",
 
 "Strings.Cape.current": "The current is pushing you back.",
 
@@ -135,6 +141,7 @@
 
 "Mail.Dialogue.DiscoveryCave": "Hello @!^^Find anything interesting in the sea cave lately?^ -Marlon",
 
+"Mail.Dialogue.PrettyStoneDelivered": "Thank you once again for helping me with my request. ^^ I've been thinking a lot about my dreams, and this painting felt like the right way to express it all. ^ There's something about the sea that calls to me, something hidden beneath the waves like treasure. It feels like a good reminder of what we might discover. ^^ I hope you enjoy the painting. It's a bit of my heart, in a way. You've been so kind, and I appreciate your friendship more than words can say.  ^^                                    -Annetta",
 
 //Descriptions//
 
@@ -229,7 +236,7 @@
 
 "Annetta_quest.objective": "Bring Annetta 5 blackberries.",
 
-"Annetta_quest.reaction": "Oh! One of my favorite fruits, Thank you for delivering them. They look nice and fresh.",
+
 
 ///Lostitem//
 
@@ -239,7 +246,7 @@
 
 "Annetta_quest2.objective": "Find Annetta's Sketchbook",
 
-"Annetta_quest2.reaction": "Oh, thank goodness! I thought all my sketches were gone forever. It looks like all the pages are still in good condition. Thank You!",
+
 
 ///StarFruitOrder///
 
@@ -249,7 +256,7 @@
 
 "Annetta_quest3.objective": "Bring 2 Starfruits to Annetta Residence.",
 
-"Annetta_quest3.reaction": "WOO! They look just like a star.$h #$b# Now for the taste test. #$b# .... #$b# MMM. Oh Wow! It's slightly sweet and a little sour. Kind of like an apple!$h",
+
 
 "dmttext.001": "What's That?",
 
@@ -263,7 +270,7 @@
 
 ///secretnotes//
 
-"Strings.Piratesnote.1": "January 15th, 18XX ^^Ahoy, Today be a day to mark in me log, for I stumbled upon a hidden gem amidst this treacherous sea. Me ship narrowly escaped the clutches of those dastardly enemy pirates. To safeguard me precious treasure, I found meself a sanctuary hidden away in the depths of a sea cavern.^^^^With the tide at its lowest and the moon casting a Mysticl glow upon the waters, I cautiously made me way into the cavern, guided only by a flickering torch. The air was thick with the scent of salt and adventure, and the sound of waves crashing against the cavern walls echoed in me ears. The anticipation of the unknown stirred me pirate heart, for I knew this place held secrets untold.^^^^As I ventured deeper into the cavern, the dim light danced upon the walls, revealing glimmers of gold, silver, and precious gems. It was a true treasure trove, a sight to behold!^^^^Yet, as I gazed upon the riches that lay before me, a cold wind blew through the cavern, whispering tales of the misfortune that befell those who dared to covet these treasures. Stories of lost souls and cherished memories echoed in me mind.^^^^Word be spreadin' that the king's fleet be on our trail. They've caught wind o' our recent escapades, and we be needin' to disappear into the mist afore they lay their eyes on us. I concealed some of me recent plunder behind a formidable rock wall, turned me back, and made me hasty retreat. Avast ye! I swear on me timbers, I be swearin' to sail back to this marvellous cave one day, but should I be snared by the scurvy dogs, to the soul who lays eyes on this parchment, me booty be hidden in the cavern nearest to the mighty briny deep. Look for a telltale mark on the cavern wall, And mind ye, only the mightiest of pickaxes can break through. May the wind be at yer back, and the stars guide ye to the riches concealed within.^^^^- Captain Black Siren",
+"Strings.Piratesnote.1": "January 15th, 18XX ^^Ahoy, Today be a day to mark in me log, for I stumbled upon a hidden gem amidst this treacherous sea. Me ship narrowly escaped the clutches of those dastardly enemy pirates. To safeguard me precious treasure, I found meself a sanctuary hidden away in the depths of a sea cavern.^^^^With the tide at its lowest and the moon casting a Mystical glow upon the waters, I cautiously made me way into the cavern, guided only by a flickering torch. The air was thick with the scent of salt and adventure, and the sound of waves crashing against the cavern walls echoed in me ears. The anticipation of the unknown stirred me pirate heart, for I knew this place held secrets untold.^^^^As I ventured deeper into the cavern, the dim light danced upon the walls, revealing glimmers of gold, silver, and precious gems. It was a true treasure trove, a sight to behold!^^^^Yet, as I gazed upon the riches that lay before me, a cold wind blew through the cavern, whispering tales of the misfortune that befell those who dared to covet these treasures. Stories of lost souls and cherished memories echoed in me mind.^^^^Word be spreadin' that the king's fleet be on our trail. They've caught wind o' our recent escapades, and we be needin' to disappear into the mist afore they lay their eyes on us. I concealed some of me recent plunder behind a formidable rock wall, turned me back, and made me hasty retreat. Avast ye! I swear on me timbers, I be swearin' to sail back to this marvellous cave one day, but should I be snared by the scurvy dogs, to the soul who lays eyes on this parchment, me booty be hidden in the cavern nearest to the mighty briny deep. Look for a telltale mark on the cavern wall, And mind ye, only the mightiest of pickaxes can break through. May the wind be at yer back, and the stars guide ye to the riches concealed within.^^^^- Captain Black Siren",
 
 "Strings.Piratesnote.2": " January 15th, 18XX^^^^Today, I find myself drawn to this mysterious cavern, where secrets and memories intertwine like the waves upon the shore. 'Tis a place where me past and me present collide, and the weight of me choices bears down upon me.^^In this enchanted realm, a touch of magic cradles me very soul, and a feeling of being watched fills me senses. Not by mortal eyes, but by an enigmatic presence that dwells within these cavern walls.^^It brings to mind the choices I've made, the paths I've taken, and the treasures I've sought. Oh, how the past haunts me still. The name, Captain Black Siren, carries with it the heavy weight of me past self, and I wonder if redemption can ever truly be found.^^The sea and the wind call me back to the ship with an urgency I cannot ignore. I must set sail, leaving the mysteries of this cavern behind for now.^^^^-Captain Black Siren",
 
@@ -319,7 +326,7 @@
 
 "UB.title5": "Cave Delights",
 
-"UB.title6": "Mysticl Flora Finds",
+"UB.title6": "Mystical Flora Finds",
 
 "UB.title.summer": "Summer Splendor",
 
@@ -382,7 +389,7 @@
 
 ///AnnettaCoastalOrder//
 "Annetta.CollectionOrder.Name": "Luau Request",
-"Annetta.Collection.Text": "As the summer sun graces Pelican Town, I'm crafting something special for the upcoming Luau. I need your help collecting 5 coastal items Can I count on you? With gratitude, Annetta",
+"Annetta.Collection.Text": "As the summer sun graces Pelican Town, I'm crafting something special for the upcoming Luau. I need your help collecting 5 coastal items Can I count on you? Please deliver them to me personally. With gratitude, Annetta",
 "Annetta.Objective.Text": "Collect a coastal item and deliver them to Annetta to complete this special order.",
 
 "Annetta.Objective.Message": "Oh, marvelous! You've brought the coastal item I needed. Your generosity will be remembered by everyone attending. Thank you for your contribution!",
@@ -395,10 +402,13 @@
 
 ///Culinaryspecialorder//
 "Annetta_Name": "Culinary Delights",
-"Annetta_Text": "Hey! I'm working on a culinary project to infuse my place at the cape with the flavors of the ocean. I'm in search of unique ingredients to add a touch of magic to my dishes. Can you help me by finding some exquisite items? Your culinary skills and sense of adventure would be perfect for this.                -Annetta",
+"Annetta_Text": "Hey! I'm working on a culinary project to infuse my place at the cape with the flavors of the ocean. I'm in search of unique ingredients to add a touch of magic to my dishes. Can you help me by finding some exquisite items? Your culinary skills and sense of adventure would be perfect for this. Please deliver them to me personally.               -Annetta",
+
 "Annetta_Objective_0_Text": "To capture the essence of the sea, seek out items like seafood, oceanic fish, or anything that embodies the flavors of the ocean",
+
 "Annetta_Objective_1_Text": "For a delightful harvest medley, consider bringing fresh vegetables, forage items, or quality produce that showcases the bounties of nature.",
 "Annetta_Objective_2_Text": "Infuse the essence of nature by selecting items like fruits, berries.",
+
 "Annetta_Objective_3_Text": "Master the art of bread by choosing items like baked goods, artisan bread, or anything that reflects the craftsmanship of fine bakery items.",
 "Annetta_Objective_4_Text": "Craft a sweet symphony by selecting items like desserts, sweet treats, or anything that tempts the taste buds with indulgent delights.",
 
@@ -418,7 +428,7 @@
 
 
   "Annetta_Fall_Name": "Spirit's Eve Culinary Contributions",
-  "Annetta_Fall_Text": "Greetings! As we approach the enchanting Spirit's Eve festival on the 27th of Fall, I'm seeking assistance in collecting special food items to contribute to the festivities. Can you help me gather the best fall items?                -Annetta",
+  "Annetta_Fall_Text": "Greetings! As we approach the enchanting Spirit's Eve festival on the 27th of Fall, I'm seeking assistance in collecting special food items to contribute to the festivities. Can you help me gather the best fall items? Please hand deliver them to me, Thank you!               -Annetta",
   "Annetta_Fall_Objective_0_Text": "To kick off the celebration, I'm looking for items that embody the essence of the season. Items like blackberries, wild plum, or pomegranate would be perfect.",
   "Annetta_Fall_Objective_1_Text": "Let's infuse the Spirit's Eve feast with the sweetness of fruits. Find fruits that resonate with the autumn spirit.",
   "Annetta_Fall_Objective_2_Text": "To add a touch of warmth and color to our culinary contributions, I need items in shades of orange and brown. Seek sweet treats or bakery items that capture the festive atmosphere.",
@@ -443,11 +453,11 @@
 
 "annetta.cooking.mail": "Hi @,^^I'm truly grateful for your help!^As a token of appreciation, please accept this exclusive recipe. I hope it inspires and enhances your own culinary journey. Enjoy creating and savoring the flavors!^^-Annetta",
 
-
+///snowygourmetfeast///
   "Annetta_Winter_Name": "Snowy Gourmet Feast",
-  "Annetta_Winter_Text": "Hey! I'm working on a culinary project to bring warmth to my place at the cape during the winter. I'm in search of unique winter ingredients to add a touch of magic to my dishes. Can you help me by finding some exquisite winter items? Your culinary skills and sense of adventure would be perfect for this.                -Annetta",
-  "Annetta_Winter_Objective_0_Text": "To capture the essence of winter, seek out vegetables, winter forage, or anything that embodies the flavors of the season.",
-  "Annetta_Winter_Objective_1_Text": "For a delightful winter feast, bring winter fruits, berries, or anything that resonates with the season.",
+  "Annetta_Winter_Text": "Hey! I'm working on a culinary project to bring warmth to my place at the cape during the winter. I'm in search of unique ingredients to add a touch of magic to my dishes. Can you help me by finding some exquisite items? Your culinary skills and sense of adventure would be perfect for this. Please deliver them to me directly, Thanks!                 -Annetta",
+  "Annetta_Winter_Objective_0_Text": "To capture the essence of winter, seek out vegetables, winter fish, or anything that embodies the flavors of the season.",
+  "Annetta_Winter_Objective_1_Text": "For a delightful winter feast, bring fruits, berries, or anything that might resonate with the feast.",
   "Annetta_Winter_Objective_2_Text": "select items like snow-themed desserts, winter sweets, or anything that reflects the season's charm! For example, the colors white and blue.",
   "Annetta_Winter_Objective_3_Text": "Craft a winter symphony by selecting items like winter soups, hearty stews, or anything that warms the soul during the chilly season.",
   "Annetta_Winter_Objective_4_Text": "Celebrate the winter festivities with items like winter beverages, and cozy drinks.",
@@ -459,6 +469,25 @@
 
 "annetta_winter_culinary_completion": "Hello @,^^I'm truly grateful for your help. Your dedication to collecting those winter items added a touch of magic to my dishes. As a token of appreciation, I've included a special gift for you.^^Looking forward to more collaborations in the future.^^With warm regards,^^-Annetta",
 
+//spring//
+//AnnettaSpring//
+
+"Annetta_Spring_Name": "Spring Inspiration",
+"Annetta_Spring_Text": "I've just finished up a new painting, and I'm already on the hunt for my next inspiration! I'm looking for something special to incorporate into my next masterpiece, something in hues of yellow or gold.",
+"Annetta_Spring_Objective_0_Text": "Find a rare item in hues of yellow or gold for Annetta's new painting.",
+"Annetta_Spring_Objective_0_Message": "Oh, how delightful! This is just the inspiration I needed. Thank you so much, @",
+
+//prettystonespecialorder//
+
+"Annetta_PrettyStone_Name": "Stone Collection",
+  "Annetta_PrettyStone_Text": "I keep having these weird dreams lately... about a beautiful stone under the water. It's smooth and shiny, almost like it's calling to me. I don't know what it means, but if anyone finds a stone like this, I'd love to have it for my collection. Maybe it's nothing but it feels important somehow. - Annetta",
+  
+  "Annetta_PrettyStone_Objective_Text": "Search Cape Stardew for a special stone and deliver to Annetta.",
+  "Annetta_PrettyStone_Objective_Message": "Thank you so much for bringing this, A pretty stone! It's even more beautiful than I imagined. Your contribution is invaluable to me.",
+
+//oceantreasure//
+
+"oceantreasure_Translated": "A painting crafted by Annetta.",
 
 //jellidialogue//
  "Jelli.Rain.001": "Rain is like nature's song, playing a gentle tune for the earth.#$b#Each drop is like a little message from the clouds, reminding us how everything fits together, just like a puzzle!#$b#So, when it rains, it's like the earth is getting a big, cozy hug, and all the plants and creatures dance with joy!#$b#Let it sprinkle on you, washing away worries and filling you with the magic of nature's melody! And always remember, even in the wildest storms, there's something beautiful waiting to be discovered.",
@@ -466,8 +495,8 @@
 "Jelli.GreenRain.001": "Ah, green rain... Nature's enigma, a puzzle to ponder.#$b#In the heart of summer, when life blooms and thrives, why does the earth weep emerald tears?#$b#Perhaps it is a whisper from the depths, a reminder that even in abundance, the land seeks renewal.#$b#Or maybe it is simply the dance of the elements, a symphony of chaos and harmony.#$b#Who can truly say? Nature's secrets are as deep as the ocean itself.",
 
 
-//Quest1MysticlCavernExploration//
-"Quest.Dialogue.001": "Mysticl Cavern Exploration",
+//Quest1MysticalCavernExploration//
+"Quest.Dialogue.001": "Mystical Cavern Exploration",
 "Quest.Dialogue.002": "Jelli senses a mysterious aura emanating from the depths of the cavern. Explore the area to uncover its secrets.",
 "Quest.Dialogue.003": "Investigate the caverns",
 "Quest.Dialogue.004": "Unlocks a new quest",
@@ -489,7 +518,9 @@
 
 "Dialogue.Jelli_quest2": "Thank you for agreeing to help! Ahead lies a sea cavern echoing with menacing snarls and growls. Investigate, and if you must defend yourself, don't hesitate to take down at least three. It might drive them to retreat further into the cave",
 
-"Dialogue.Jelli_quest3": "Ah, raptors lurking in the depths? How intriguing! It seems they've ventured from the mines into our realm. You've dispatched three of them. With any luck, they'll retreat, bringing tranquility back to the sea cavern",
+"Dialogue.Jelli_quest3": "Ah, raptors lurking in the depths? It seems they've ventured from the mines into our realm. So you've dispatched three of them? That's great! With any luck, they'll retreat, bringing tranquility back to the sea cavern.",
+
+"Dialogue.Jelli_quest4": "As a token of gratitude, here is 1000 gold for your bravery.",
   
   
 ///Monstereradication///
@@ -573,7 +604,7 @@
 
 "Quest.Dialogue3.003": "Find your way back to Jelli.",
 
-"Quest.Dialogue3.004": "Jelli needs these clams for some Mysticl purpose.",
+"Quest.Dialogue3.004": "Jelli needs these clams for some Mystical purpose.",
 
 
 "Quest2.ItemDelivery.Response": "Ah, adventurer! Your collection of Shells is truly splendid. These shells, when combined with the magical essence of the Nectar Crystal, create a mesmerizing spectacle in the cavern. Let me enlighten you about the enchanting synergy between these elements. #$b# The Shells, aglow with radiant energy, serve as conduits for the ethereal forces of the sea. When infused with the essence of the Nectar Crystal, a magical reaction unfolds, illuminating the cavern in a vibrant dance of colors. It's a sight to behold, a celebration of the sea's wonders!",
@@ -637,6 +668,10 @@
 
     "Sticky-Rice-Flour_Translated": "Sticky Rice Flour",
     "Sticky-Rice-Flour_Description_Translated": "Made from Glutinous rice. It's appearance is like wheat flour, but the result is more chewy. It's grown in lands to the East and used as an ingredient.",
+
+ "Gummi-Sweet-Rice_Translated": "Gumi Sweet Rice",
+  "Gumi-Sweet-Rice_Description_Translated": "High-quality glutinous rice perfect for making Sticky Rice Flour and traditional dishes.",
+
 
     "Blue-Diamond_Translated": "Blue Diamond",
     "Blue-Diamond_Description_Translated": "A diamond with a dazzaling aura.",
@@ -808,11 +843,16 @@
 	
 	"cape-totem-recipe": "Cape: Warp Totem Recipe",
 	
-	"Capelakewalk.convotopic": "Last night's walk to the lake was as if the moon itself decided to dance with us, shining so brightly, don't you think",
+	
 	
 	"Sea-Mask_Description_Translated": "A mask of oceanic hues with a radiant green gem, said to hold the sea's secrets. Adorned with a starfish and seaweed ties, it whispers of ancient underwater magic.",
 	
 	"Sea-Mask_Translated": "Mermaid's Veil",
+
+"Endless-Ember_Name": "Endless Ember",
+"Endless-Ember_Description": "This ring radiates a warm glow, a protective promise against the flames.",
+"Ashen-Promise-Buff_Name": "Ashen Promise",
+"Ashen-Promise-Buff_Description": "A vow of safety amidst the blaze",
 
 
     "Mystic-Arcana_Name": "Mystic Arcana",
@@ -829,7 +869,10 @@
   "Silver-Petal-Ring_Description": "A silver band crowned with a radiant pink gem, adorned with delicate silver petals, exuding the grace of nature",
   "Sky-Oak-Ring_Name": "Sky Oak",
   "Sky-Oak-Ring_Description": "A ring made from the wood of a celestial oak, granting the wearer the blessing of the heavens.",
-"event.wallCrack": "The wall crumbled, revealing a hidden passage!",
+"event.wallCrack": "An earthquake?",
+
+"event.wallCrack2": "The wall crumbled, revealing a hidden passage!",
+
 
  "ringevent.001": "You sift through the coal and find something glimmering. It's a beautiful ring!",
 "ringevent.002": "You sift through the coal and find nothing.",
@@ -842,17 +885,28 @@
 
 "Flask-Hud-Message": "An ancient aura emanates from the flask. Inside, you find a Lucky Ring!",
 
-
+"equip.endless_ember_ring": "Equipped Endless Ember Ring!",
+  "unequip.endless_ember_ring": "Unequipped Endless Ember Ring!",
 "equip.mystic_arcana_ring": "Equipped Mystic Arcana Ring!",
   "unequip.mystic_arcana_ring": "Unequipped Mystic Arcana Ring!",
   "equip.silver_petal_ring": "Equipped Silver Petal Ring!",
   "unequip.silver_petal_ring": "Unequipped Silver Petal Ring!",
   "equip.sky_oak_ring": "Equipped Sky Oak Ring!",
-  "unequip.sky_oak_ring": "Unequipped Sky Oak Ring!"
+  "unequip.sky_oak_ring": "Unequipped Sky Oak Ring!",
 
 
+"Annetta_quest.reaction": "Oh! One of my favorite fruits, Thank you for delivering them. They look nice and fresh.",
 
+"Annetta_quest2.reaction": "Oh, thank goodness! I thought all my sketches were gone forever. It looks like all the pages are still in good condition. Thank You!",
 
+"Annetta_quest3.reaction": "WOO! They look just like a star.$h #$b# Now for the taste test. #$b# .... #$b# MMM. Oh Wow! It's slightly sweet and a little sour. Kind of like an apple!$h",
+
+//conversationtopic//
+"Capelakewalk.convotopic": "Last night's walk to the lake was as if the moon itself decided to dance with us, shining so brightly, don't you think",
+
+	
+	"Annetta.Jelli.Encounter.yes": "You know, ever since you told me about that sea spirit, I've been thinking about it a lot. It's amazing to think there's so much we don't know about the ocean.",
+	"Annetta.Jelli.Encounter.no": "I've been thinking about that splash in the water. It's all so mysterious. What could it have been? The ocean holds so many secrets.",
 
 
 }

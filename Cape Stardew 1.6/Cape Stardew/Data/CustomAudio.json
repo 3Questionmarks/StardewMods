@@ -1,6 +1,38 @@
 {
     "Changes": [
         // add music cue///
+{
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        "shoesMyca": {
+                            "ID": "shoesbyMyca",
+                            "Category": "Music",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/shoes.ogg}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                        
+                        },
+                        
+                        
+                        },
+{
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                        "totheunkown": {
+                            "ID": "totheunknown",
+                            "Category": "Music",
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/totheunknown.ogg}}" ],
+                            "StreamedVorbis": false,
+                            "Looped": false
+                        },
+                        
+                        },
+                        
+                        
+                        },
         {
             "Action": "EditData",
             "Target": "Data/AudioChanges",
@@ -8,7 +40,7 @@
                         "Guitarstrummer": {
                             "ID": "Guitarstrummer",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/GuitarStrummer.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/GuitarStrummer.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -25,7 +57,7 @@
                         "gentleocean": {
                             "ID": "gentleocean",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/gentleocean.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/gentleocean.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": true
                         },
@@ -41,7 +73,7 @@
                         "birdchirp": {
                             "ID": "birdchirp",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/birdchirp.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/birdchirp.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": true
                         },
@@ -58,7 +90,7 @@
                         "shower": {
                             "ID": "shower",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/shower.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/shower.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -75,7 +107,7 @@
                         "coolwind": {
                             "ID": "coolwind",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/coolwind.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/coolwind.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": true
                         },
@@ -92,7 +124,7 @@
                         "mtsoundscape": {
                             "ID": "mtsoundscape",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/mtsoundscape.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/mtsoundscape.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": true
                         },
@@ -108,7 +140,7 @@
                         "ticktock": {
                             "ID": "ticktock",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/ticktock.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/ticktock.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": true
                         },
@@ -124,7 +156,7 @@
                         "room": {
                             "ID": "room",
                             "Category": "Music",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/room.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/room.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": true
                         },
@@ -142,7 +174,7 @@
                         "lofichill": {
                             "ID": "lofichill",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/lofichill.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/lofichill.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -160,7 +192,7 @@
                         "lofidrum": {
                             "ID": "lofidrum",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/lofidrum.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/lofidrum.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -178,7 +210,7 @@
                         "musicbox": {
                             "ID": "musicbox",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/musicbox.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/musicbox.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -195,7 +227,7 @@
                         "bassboom": {
                             "ID": "bassboom",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/newbassboom.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/newbassboom.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -211,7 +243,7 @@
                         "echo": {
                             "ID": "echo",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/kickdrumecho.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/kickdrumecho.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -228,7 +260,7 @@
                         "CasioPulse": {
                             "ID": "CasioPulse",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/CasioSk1Pulse.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/CasioSk1Pulse.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -244,7 +276,7 @@
                         "GuitarChord2": {
                             "ID": "GuitarChord2",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/guitarchord1.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/guitarchord1.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -260,7 +292,7 @@
                         "cooldrum": {
                             "ID": "cooldrum",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/cooldrum.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/cooldrum.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -276,7 +308,7 @@
                         "subbeat": {
                             "ID": "subbeat",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/subbeatnew.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/subbeatnew.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -292,7 +324,7 @@
                         "lofikick": {
                             "ID": "lofikick",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/lofikick.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/lofikick.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -308,7 +340,7 @@
                         "snare": {
                             "ID": "snare",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/snare.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/snare.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -325,7 +357,7 @@
                         "Kicksound": {
                             "ID": "Kicksound",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/Kicksound.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/Kicksound.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -341,7 +373,7 @@
                         "moonbeat": {
                             "ID": "moonbeat",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/moonbeat.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/moonbeat.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -357,7 +389,7 @@
                         "metalpunch": {
                             "ID": "metalpunch",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/metalpunch.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/metalpunch.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -373,7 +405,7 @@
                         "clap": {
                             "ID": "clap",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/clap.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/clap.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -389,7 +421,7 @@
                         "dripcave": {
                             "ID": "dripcave",
                             "Category": "Music",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/dripcave.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/dripcave.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": true
                         },
@@ -405,7 +437,7 @@
                         "cavernscape": {
                             "ID": "cavernscape",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/cavernscape.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/cavernscape.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": true
                         },
@@ -422,7 +454,7 @@
                         "seacave": {
                             "ID": "seacave",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/seacave.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/seacave.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": true
                         },
@@ -438,7 +470,7 @@
                         "FreshSnow": {
                             "ID": "FreshSnow",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/FreshSnow.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/FreshSnow.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -454,7 +486,7 @@
                         "Pushobject": {
                             "ID": "Pushobject",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/pushC.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/pushC.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -470,7 +502,7 @@
                         "SetSail": {
                             "ID": "SetSail",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/setsail.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/setsail.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -486,7 +518,7 @@
                         "thumpGround": {
                             "ID": "thumpGround",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/thump.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/thump.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -502,7 +534,7 @@
                         "shieldSound": {
                             "ID": "shieldSound",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/shieldsound.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/shieldsound.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -518,7 +550,7 @@
                         "knockonCabin": {
                             "ID": "knockonCabin",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/knockoncabin.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/knockoncabin.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -535,7 +567,7 @@
                         "cRumble": {
                             "ID": "cRumble",
                             "Category": "Sound",
-                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/cRumble.wav}}" ],
+                            "FilePaths": [ "{{AbsoluteFilePath: assets/audio/cRumble.ogg}}" ],
                             "StreamedVorbis": false,
                             "Looped": false
                         },
@@ -544,6 +576,10 @@
                         
             },
         },
+
+
+
+
         
         ]
 }

@@ -1,0 +1,21 @@
+{
+    "Changes": [
+        {
+			"LogName": "Add Little Red School House schedule for Alex's daughter as secondborn.",
+			"Action": "EditData",
+			"Target": "Characters/schedules/{{SecondbornName}}",
+			"Priority": "Late",
+			"Entries": {
+				"Tue": "a800 Custom_SchoolHouse 1 6 1 {{SecondbornName}}_read \"Strings\\schedules\\{{SecondbornName}}:Schoolhouse.000\"/1130 Town 18 89 1 \"Strings\\schedules\\{{SecondbornName}}:trash.000/1600 Town 38 78 2 {{SecondbornName}}_spin \"Strings\\schedules\\{{SecondbornName}}:spin.000/1730 bed",
+				"Wed": "a800 Custom_SchoolHouse 1 6 1 {{SecondbornName}}_read \"Strings\\schedules\\{{SecondbornName}}:Schoolhouse.000\"/1130 Town 51 63 1 \"Strings\\schedules\\{{SecondbornName}}:trash.001/1600 Town 38 78 2 {{SecondbornName}}_spin \"Strings\\schedules\\{{SecondbornName}}:spin.000/1730 bed",
+			},
+			"When": {
+                "HasSeenEvent": "9695002",
+				"HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+				"HasMod |contains=siliconmodding.GVChildNPCs": "true",
+				"HasMod |contains=Candidus42.LittleNPCs": "true",
+				"LRSH_NoSchoolDay": false,
+			},
+		},
+    ]
+}

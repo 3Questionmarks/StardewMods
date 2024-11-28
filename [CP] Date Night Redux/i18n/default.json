@@ -55,6 +55,11 @@
 	"config.ModdedSpouseFoods.values.disabled": "use vanilla foods only",
 	"config.ModdedSpouseFoods.values.enabled": "use modded foods for RSV/SVE spouses",
 	
+	"config.DateReminders.name": "Date Reminders",
+    "config.DateReminders.description": "Choose whether you are given a reminder for your date night. You will get only one date reminder per day if enabled. Does nothing without SpaceCore installed.",
+	"config.DateReminders.values.disabled": "do not use date reminders",
+	"config.DateReminders.values.enabled": "use date reminders",
+	
 	"config.DynamicPool.name": "Dynamic Pool Forks",
     "config.DynamicPool.description": "Choose whether your pool forks are the original mod's endings or a more dynamic approach that allows your spouse or yourself to randomly win. The first playthrough of the date will always be the original date, but if the date is repeated, there will be an equal chance the spouse or the player will win at pool.",
 	"config.DynamicPool.values.disabled": "use original pool event",
@@ -243,7 +248,7 @@
 		"PicnicDate.Suggestive.1": "Hey, @...$l",
 		"PicnicDate.Suggestive.2": "Wanna have some fun in these bushes before we go back?$l",
 		"PicnicDate.Suggestive.3": "Haha, I'm just kidding!$h",
-		"PicnicDate.Suggestive.4": "Let's go the farmhouse instead...$l",
+		"PicnicDate.Suggestive.4": "Let's go to the farmhouse instead...$l",
 		"PicnicDate.Suggestive.5": "That was fun, @!$l#$b#Let's do that again sometime...$l",
 		
 		"PicnicDate.End": "Thanks for coming, dear.$l",
@@ -633,7 +638,7 @@
 		"Stars.1": "Stargazing? That sounds romantic!$h#$b#Let's do it, honey.$l",
 		"Stars.2": "Wow... it's beautiful!",
 		"Stars.3": "There's so much out there... the universe is so much bigger than we could ever imagine, @.$l#$b#You and I are just tiny specks in the entirety of the galaxy...$l",
-		"Stars.4": "It's kind of amazing, isn't it, @?#$b#Out of the trillions of things in this universe...#$b#We were brought togther...$l",
+		"Stars.4": "It's kind of amazing, isn't it, @?#$b#Out of the trillions of things in this universe...#$b#We were brought together...$l",
 		"Stars.5": "I'll be eternally thankful for meeting you, honey.$l",
 		
 		"Stars.6.Suggestive": "Hey, @...",
@@ -994,4 +999,25 @@
 		"PoolLose.9": "Wow... That was great, @...$l#$b#Ha, I'm exhausted...$l",
 		
 		"SaloonDate.End.PoolFork": "I had a great time playing pool with you, honey. Let's do that again sometime!$l",
+		
+	//Date Reminders!
+		
+		"SaloonReminder": "[CharacterName {{Date}}] is waiting for you at the Saloon...",
+		"PicnicReminder": "[CharacterName {{Date}}] is waiting for you in the Forest...",
+		"LibraryReminder": "[CharacterName {{Date}}] is waiting for you at the Museum...",
+		"BeachReminder": "[CharacterName {{Date}}] is waiting for you in the Beach...",
+		"GroceryReminder": "[CharacterName {{Date}}] is waiting for you at the general store...",
+		"CampingReminder": "[CharacterName {{Date}}] is waiting for you in the Forest! Make sure to finish your farmwork before going...",
+		"EmilyReminder.": "[CharacterName {{Date}}] is waiting for you in at their old home...",
+		"EmilyReminder.F": "[CharacterName {{Date}}] is waiting for you in at her old home...",
+		"EmilyReminder.M": "[CharacterName {{Date}}] is waiting for you in at his old home...",
+		"HaleyReminder": "[CharacterName {{Date}}] is waiting for you at the Bus Stop...",
+		"AlexReminder": "[CharacterName {{Date}}] is waiting for you at the Bus Stop...",
+		"MaruReminder": "[CharacterName {{Date}}] is waiting for you in the Backwoods! Make sure to finish your farmwork before going...",
+		
+		"MissedPicnic": "You missed your picnic date with [CharacterName {{Date}}]!",
+		"MissedBeach": "You missed your beach date with [CharacterName {{Date}}]!",
+		"MissedGrocery": "You missed your grocery date with [CharacterName {{Date}}]!",
+		"MissedHaley": "You missed your Desert date with [CharacterName {{Date}}]!",
+		"MissedAlex": "You missed your Gridball date with [CharacterName {{Date}}]!",
 }

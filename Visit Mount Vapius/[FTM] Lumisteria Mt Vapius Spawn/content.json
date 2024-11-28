@@ -987,6 +987,325 @@
             "Name": "Lumisteria.MtVapius_Node_ShinyHardwoodStump"
           }
         ],
+        "UniqueAreaID": "Mt Vapius Faycombe Meadow Node Spawn",
+        "MapName": "Lumisteria.MtVapius_FaycombeMeadow",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "15,5/38,25"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [
+            "3",
+            "4",
+            "9",
+            "13",
+            "17",
+            "22",
+            "25",
+            "27"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "mistyspring.ItemExtensions"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Porchini"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_WoodSilkFlower"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_LaceFlower"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_WoodgoatMushroom"
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_BlackChanterelle"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_LaceFlower"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_WoodgoatMushroom"
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Porchini"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_BlackChanterelle"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_WoodSilkFlower"
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "category": "Object",
+            "Name": "Crocus"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Nevaril"
+          }
+        ],
+        "UniqueAreaID": "Mt Vapius Faycombe Meadow Forage Spawn",
+        "MapName": "Lumisteria.MtVapius_FaycombeMeadow",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "3,39/13,43",
+          "40,39/46,42"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [
+            "1",
+            "5",
+            "10",
+            "15",
+            "16",
+            "20",
+            "24",
+            "28"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Rosemary"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_LaceFlower"
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_LaceFlower"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_SeaBuckthornBerry"
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_LaceFlower"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_SeaBuckthornBerry"
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Rosemary"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Nevaril"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_SeaBuckthornBerry"
+          }
+        ],
+        "UniqueAreaID": "Mt Vapius Faycombe Meadow Forage Bush Spawn",
+        "MapName": "Lumisteria.MtVapius_FaycombeMeadow",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "9,21/15,26",
+          "29,19/32,22",
+          "39,12/43,16",
+          "41,38/46,43"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [
+            "3",
+            "6",
+            "14",
+            "25"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_HardwoodStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_BirchwoodStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_BigHardwoodStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_WoodgoatStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_ShinyHardwoodStump"
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_HardwoodStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_BirchwoodStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_BigHardwoodStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_WoodgoatStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_ShinyHardwoodStump"
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_HardwoodStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_BirchwoodStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_BigHardwoodStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_WoodgoatStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_ShinyHardwoodStump"
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_HardwoodStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_BirchwoodStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_BigHardwoodStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_WoodgoatStump"
+          },
+          {
+            "category": "Object",
+            "Name": "Lumisteria.MtVapius_Node_ShinyHardwoodStump"
+          }
+        ],
         "UniqueAreaID": "Mt Vapius Clearing Node Spawn",
         "MapName": "Lumisteria.MtVapius_Clearing",
         "MinimumSpawnsPerDay": 1,
@@ -3938,7 +4257,93 @@
     ]
   },
   "Large_Object_Spawn_Settings": {
-    "Areas": [],
+    "Areas": [
+      {
+        "ObjectTypes": [
+          "Lumisteria.MtVapius_MediumPoppy"
+        ],
+        "FindExistingObjectLocations": false,
+        "PercentExtraSpawnsPerSkillLevel": 0,
+        "RelatedSkill": "Foraging",
+        "UniqueAreaID": "Junimo Clearing Flowers",
+        "MapName": "Lumisteria.MtVapius_ForestJunimoClearing",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "33,26/45,32"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [
+            "3",
+            "17"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 27
+      },
+      {
+        "ObjectTypes": [
+          "Lumisteria.MtVapius_GiantConstellatedWatermelon"
+        ],
+        "FindExistingObjectLocations": false,
+        "PercentExtraSpawnsPerSkillLevel": 0,
+        "RelatedSkill": "Foraging",
+        "UniqueAreaID": "Marsh Watermelon",
+        "MapName": "Lumisteria.MtVapius_ForestCaveMarsh",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "56,56/65,65"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [
+            "6"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 27
+      }
+    ],
     "CustomTileIndex": []
   },
   "Ore_Spawn_Settings": {
@@ -4577,7 +4982,10 @@
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "7,58/10,68",
+          "12,0/17,3"
+        ],
         "StrictTileChecking": "High",
         "SpawnTiming": {
           "StartTime": 600,
@@ -4898,7 +5306,10 @@
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "7,28/12,30",
+          "94,13/97,17"
+        ],
         "StrictTileChecking": "High",
         "SpawnTiming": {
           "StartTime": 600,
@@ -5221,7 +5632,10 @@
         "IncludeCoordinates": [
           "25,13/44,25"
         ],
-        "ExcludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "4,31/8,34",
+          "45,0/50,15"
+        ],
         "StrictTileChecking": "High",
         "SpawnTiming": {
           "StartTime": 600,
@@ -5463,7 +5877,10 @@
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "10,17/17,22",
+          "76,0/78,12"
+        ],
         "StrictTileChecking": "High",
         "SpawnTiming": {
           "StartTime": 600,
@@ -5770,7 +6187,10 @@
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "3,68/7,71",
+          "22,0/28,7"
+        ],
         "StrictTileChecking": "High",
         "SpawnTiming": {
           "StartTime": 600,

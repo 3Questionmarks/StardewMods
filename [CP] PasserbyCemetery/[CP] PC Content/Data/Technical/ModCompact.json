@@ -1,5 +1,41 @@
 {
    "Changes": [
+          {
+         "Action":"EditData",
+         "Target":"UnlockableBundles/WalletCurrencies",
+              "When": {
+                "HasMod": "DLX.Bundles"
+            },
+         "Entries":{
+            "{{ModID}}_ArcaCoin":{
+               "Shared":false,
+               "HoldItemUpOnDiscovery":false,
+               "DrawOverheadPickupAnimation":true,
+               "OverheadPickupTexture":"Mods/{{ModID}}/Objects",
+               "OverheadPickupAnimation":"0@800",
+               "OverheadPickupTextureWidth":16,
+               "BillboardTexture":"Mods/{{ModID}}/Wallet",
+               "BillboardAnimation":"0@800",
+               "BillboardTextureWidth":16,
+               "BillboardDigits":4,
+               "PlayMoneyRollSound":true,
+               "Items":[
+                  {
+                     "ItemId":"(O){{ModID}}_ArcaCoin",
+                     "Value":1
+                  }
+               ],
+               "PowersData":{
+                  "DisplayName":"{{i18n:FC.Ancient.ArcaCoin}}",
+                  "TexturePath":"Mods/{{ModID}}/Wallet",
+                  "TexturePosition":{
+                     "X":0,
+                     "Y":0
+                  }
+               }
+            }
+         }
+      },
      {
             "Action": "Load",
             "FromFile": "Assets/Maps/Tilesheets/PC_Icon.png",
@@ -28,6 +64,12 @@
     "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
     "Entries": {
         "FC.FakeNpc": {
+            "Exclude": true
+        },
+          "FC.Mellie": {
+            "Exclude": true
+        },
+          "FC.Twinkle": {
             "Exclude": true
         }
     },
@@ -58,6 +100,48 @@
             "When": {
                  "HasSeenEvent |contains={{ModID}}_ConfessionsOfMother": true,
             }
-}
+},
+{
+    "Action": "EditData",
+    "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+     "When": {
+           "HasMod |contains=Bouhm.NPCMapLocations": true
+            },
+    "Entries": {
+        "FC.Lyell": {
+            "MarkerCropOffset": 480,
+        },
+         "FC.Roswell": {
+            "MarkerCropOffset": 327,
+        },
+         "FC.Alan": {
+            "MarkerCropOffset": 5,
+        },
+         "FC.Dezerie": {
+            "MarkerCropOffset": 5,
+        },
+          "FC.Thalia": {
+            "MarkerCropOffset": 4,
+        },
+              "FC.Barron": {
+            "MarkerCropOffset": 320,
+        },
+         "FC.Jinx": {
+            "MarkerCropOffset": 224,
+        },
+         "FC.Jinx": {
+            "MarkerCropOffset": 160,
+        },
+         "FC.Popper": {
+            "MarkerCropOffset": 16,
+        },
+          "FC.Phoebe": {
+            "MarkerCropOffset": 5,
+        },
+             "FC.Boxy": {
+            "MarkerCropOffset": 15,
+        },
+    }
+},
    ]
 }

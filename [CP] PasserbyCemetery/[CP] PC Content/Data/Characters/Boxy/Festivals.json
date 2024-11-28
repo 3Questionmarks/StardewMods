@@ -5,7 +5,7 @@
             "Target": "Data/Festivals/spring13",
                         "When": {
  "HasFlag|contains=landslideDone": true,
-   "HasSeenEvent |contains={{ModID}}_LeslaIntroduction": true,
+  
 },
             "TextOperations": [
                 {
@@ -34,7 +34,7 @@
             "Target": "Data/Festivals/spring24",
                         "When": {
  "HasFlag|contains=landslideDone": true,
-   "HasSeenEvent |contains={{ModID}}_LeslaIntroduction": true,
+  
 },
             "TextOperations": [
                 {
@@ -62,7 +62,7 @@
             "Target": "Data/Festivals/summer11",
                         "When": {
  "HasFlag|contains=landslideDone": true,
-   "HasSeenEvent |contains={{ModID}}_LeslaIntroduction": true,
+  
 },
             "TextOperations": [
                 {
@@ -71,7 +71,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Boxy 17 28 2",
+                    "Value": "FC.Boxy 17 33 2",
                     "Delimiter": "/"
                 },
                      {
@@ -80,7 +80,7 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Boxy 17 28 2",
+                    "Value": "FC.Boxy 17 33 2",
                     "Delimiter": "/"
                 },
                  {
@@ -100,7 +100,7 @@
             "Target": "Data/Festivals/summer28",
                         "When": {
  "HasFlag|contains=landslideDone": true,
-   "HasSeenEvent |contains={{ModID}}_LeslaIntroduction": true,
+  
 },
             "TextOperations": [
                 {
@@ -109,7 +109,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Boxy 21 28 2",
+                    "Value": "FC.Boxy 17 33 2",
                     "Delimiter": "/",
                 },
                      {
@@ -118,17 +118,27 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Boxy 21 28 2",
+                    "Value": "FC.Boxy 17 33 2",
                     "Delimiter": "/"
                 },
+                     {
+             "Operation": "Append",
+             "Target": ["Fields", "set-up{{YearCheck}}", 5],
+             "Value": "/animate FC.Boxy false true 360 32 32 33 33 34 34 33 33"
+            },
+            {
+             "Operation": "Append",
+             "Target": ["Fields", "mainEvent{{YearCheck}}", 5],
+             "Value": "/animate FC.Boxy false true 360 32 32 33 33 34 34 33 33"
+            },
         ]
     },
     {
             "Action": "EditData",
-            "Target": "Data/Festivals/fall3",
+            "Target": "Data/Festivals/fall3,Data/Festivals/winter3",
                         "When": {
  "HasFlag|contains=landslideDone": true,
-   "HasSeenEvent |contains={{ModID}}_LeslaIntroduction": true,
+  
 },
             "TextOperations": [
                 {
@@ -156,7 +166,7 @@
             "Target": "Data/Festivals/fall16",
                         "When": {
  "HasFlag|contains=landslideDone": true,
-   "HasSeenEvent |contains={{ModID}}_LeslaIntroduction": true,
+  
 },
             "TextOperations": [
                 {
@@ -179,12 +189,30 @@
                 },
         ]
     },
+            {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Boxy 22 78 1",
+                    "Delimiter": "/"
+                },
+        ]
+    },
        {
             "Action": "EditData",
             "Target": "Data/Festivals/winter8",
                         "When": {
  "HasFlag|contains=landslideDone": true,
-   "HasSeenEvent |contains={{ModID}}_LeslaIntroduction": true,
+  
 },
             "TextOperations": [
                 {
@@ -212,7 +240,7 @@
             "Target": "Data/Festivals/winter25",
                         "When": {
  "HasFlag|contains=landslideDone": true,
-   "HasSeenEvent |contains={{ModID}}_LeslaIntroduction": true,
+  
 },
             "TextOperations": [
                 {

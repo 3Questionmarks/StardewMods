@@ -14,12 +14,33 @@
       "Target": "Characters/Annetta",
       "FromFile": "assets/img/spritesheet.png"
     },
+
+///NPCPortraitconfig///
     {
       "LogName": "NPC Portrait",
       "Action": "Load",
+"When": { "AnnettaPortraitStyle |contains=3/4(original)": true },
       "Target": "Portraits/Annetta",
       "FromFile": "assets/img/portrait.png"
     },
+ {
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+"When": { "AnnettaPortraitStyle |contains=Front": true },
+      "Target": "Portraits/Annetta",
+      "FromFile": "assets/img/portrait2.png"
+    },
+
+{
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+"When": { "AnnettaPortraitStyle |contains=AlternativeFront": true },
+      "Target": "Portraits/Annetta",
+      "FromFile": "assets/img/portrait3.png"
+    },
+
+
+/////////
     {
       "LogName": "Schedule",
       "Action": "Load",

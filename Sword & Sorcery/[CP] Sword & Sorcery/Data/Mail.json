@@ -1,0 +1,180 @@
+{
+    "Changes": [
+        // LETTERS
+        {
+            "LogName": "Letter from the Hospital",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "MateoHospital":"{{i18n:Mail.Mateo.Letter1}}",
+            }
+        },
+        {
+            "LogName": "Date in the Mines",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "MineDateInvite":"{{i18n:Mail.Mateo.Letter2}}"
+            }
+        },
+        {
+            "LogName": "Autumnal Stew Recipe",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "MateoAutumnalStew":"{{i18n:Mail.Mateo.Letter3}}"
+            }
+        },
+        {
+            "LogName": "Salish Bourbon Recipe",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "MateoSalishBourbon":"{{i18n:Mail.Mateo.Letter4}}"
+            }
+        },
+        {
+            "LogName": "From the mysterious 'B'",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "HectorIntroLetter":"{{i18n:Mail.Hector.Letter0}}"
+            }
+        },
+        {
+            "LogName": "From the mysterious 'B'",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "AetherQuest":"{{i18n:Mail.Hector.Letter1}}"
+            }
+        },
+        {
+            "LogName": "From the mysterious 'B'",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "AetherQuest2":"{{i18n:Mail.Hector.Letter2}}"
+            }
+        },
+        {
+            "LogName": "Dandelion Greens Recipe",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "DandelionGreensThanks":"{{i18n:Mail.Dandelion.Letter1}}"
+            }
+        },
+        {
+            "LogName": "Mateo's Hoodie",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "MateoHoodie":"{{i18n:Mail.Mateo.Letter5}}"
+            }
+        },
+        {
+            "LogName": "Hector's Hoodie",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "HectorHoodie":"{{i18n:Mail.Hector.Letter3}}"
+            }
+        },
+        {
+            "LogName": "Cirrus' Hoodie",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "CirrusHoodie":"{{i18n:Mail.Cirrus.Letter0}}"
+            }
+        },
+
+        // TRIGGER ACTIONS
+        {
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModID}}_AutumnalStew": {
+					"Id": "{{ModID}}_AutumnalStew",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.4",
+					"Actions": [
+						"AddMail Current MateoAutumnalStew tomorrow",
+					]
+				}
+			}
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModID}}_SalishBourbon": {
+					"Id": "{{ModID}}_SalishBourbon",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.11",
+					"Actions": [
+						"AddMail Current MateoSalishBourbon tomorrow",
+					]
+				}
+			}
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModID}}_DandelionGreens": {
+					"Id": "{{ModID}}_DandelionGreens",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.6",
+					"Actions": [
+						"AddMail Current DandelionGreensThanks tomorrow",
+					]
+				}
+			}
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModID}}_Mateo_Hoodie": {
+					"Id": "{{ModID}}_Mateo_Hoodie",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.19",
+					"Actions": [
+						"AddMail Current MateoHoodie tomorrow",
+					]
+				}
+			}
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModID}}_Hector_Hoodie": {
+					"Id": "{{ModID}}_Hector_Hoodie",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.17",
+					"Actions": [
+						"AddMail Current HectorHoodie tomorrow",
+					]
+				}
+			}
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModID}}_Cirrus_Hoodie": {
+					"Id": "{{ModID}}_Cirrus_Hoodie",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.15",
+					"Actions": [
+						"AddMail Current CirrusHoodie tomorrow",
+					]
+				}
+			}
+		},
+        
+    ]
+}

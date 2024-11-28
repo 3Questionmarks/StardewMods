@@ -190,5 +190,38 @@
 			"When": { "Mizu's Turkey": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
 			"Priority": "Late",
 		},
+		{// Void Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "Strobe.largevoidegg_LargeVoidEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+				"MinStack": 2,
+			},
+			"When": { "Large Void Egg": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Void Mayo Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "Strobe.largevoidegg_LargeVoidEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+				"MinStack": 2,
+			},
+			"When": { "Large Void Egg": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
 	],
 }

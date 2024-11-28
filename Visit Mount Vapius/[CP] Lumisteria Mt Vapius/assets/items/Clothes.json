@@ -99,6 +99,19 @@
 					"CanChooseDuringCharacterCustomization": false,
 					"CustomFields": {}
 				},
+				"Lumisteria.MtVapius_Pants006": {
+					"Name": "Lumisteria.MtVapius_Pants006",
+					"DisplayName": "[LocalizedText Strings\\Pants:Skirt_Name]",
+					"Description": "[LocalizedText Strings\\Pants:Skirt_Description]",
+					"Price": 50,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Pants",
+					"SpriteIndex": 6,
+					"DefaultColor": "255 255 255",
+					"CanBeDyed": false,
+					"IsPrismatic": false,
+					"CanChooseDuringCharacterCustomization": false,
+					"CustomFields": {}
+				},
 			}
 		},
 		{
@@ -1084,6 +1097,19 @@
 					"Price": 50,
 					"Texture": "Mods\\Lumisteria.MtVapius\\Shirts",
 					"SpriteIndex": 61,
+					"CanBeDyed": false,
+					"IsPrismatic": false,
+					"HasSleeves": true,
+					"CanChooseDuringCharacterCustomization": false,
+					"CustomFields": {}
+				},
+				"Lumisteria.MtVapius_Shirt062": {
+					"Name": "Lumisteria.MtVapius_Shirt062",
+					"DisplayName": "{{i18n: MtVapiusShirt0000_Translated}}",
+					"Description": "{{i18n: MtVapiusShirt0000_Description_Translated}}",
+					"Price": 50,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Shirts",
+					"SpriteIndex": 62,
 					"CanBeDyed": false,
 					"IsPrismatic": false,
 					"HasSleeves": true,

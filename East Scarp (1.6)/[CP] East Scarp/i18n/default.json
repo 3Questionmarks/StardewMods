@@ -13,6 +13,7 @@
     "config.farmcave_trapdoory.description": "Y coordinate placement of where you would like a trapdoor to be placed in your farmcave",
     "config.farmcave_exitx.description": "X coordinate placement of where you would like the trapdoor to exit in your farmcave (suggested, same X as the placement above)",
     "config.farmcave_exity.description": "Y coordinate placement of where you would like the trapdoor to be exit in your farmcave (suggested, Y + 1 from the placement above)",
+    
     //Location Names for Event LookUp
     //*******************************
     "EastScarp.Locations.EastScarp": "East Scarp",
@@ -49,7 +50,6 @@
     "EastScarp.Locations.SlimeBasement": "Tori's Slime Hutch",
     "EastScarp.Locations.HenryWarp": "Somewhere Out of Town",
     "EastScarp.Locations.underwater": "Somewhere Out to Sea",
-
     //Location Names For NPC Map 
     //************************************
     "LocationName.EastScarp": "East Scarp",
@@ -60,8 +60,8 @@
     "Obelisk.name": "Scarp Obelisk",
     "Obelisk.desc": "Warps you to East Scarp.",
     //CJB Cheats
-    "CJB.EastScarp_DeepMountains_DeepLake":"Deep Lake",
-    "CJB.EastScarp_DeepMountains_Pond":"Deep Mountains Pond",
+    "CJB.EastScarp_DeepMountains_DeepLake": "Deep Lake",
+    "CJB.EastScarp_DeepMountains_Pond": "Deep Mountains Pond",
     //Locational Messages
     //*******************
     "Strings.GrampletonES.00": "Grampleton Fields >",
@@ -267,7 +267,7 @@
     "Strings.ToriDresser": "Tori has made some effort at folding her clothes, but without a great deal of success.",
     "Strings.ToriTrash": "It's a trashcan, it's filled with trash. What were you expecting?",
     "Strings.ToriBonsai": "What a cute little tree; it's made of tiny plastic bricks.",
-    "Strings.NoraToriFridge":"There's lots of fruit and vegetables in here, some looking a little past their prime.",
+    "Strings.NoraToriFridge": "There's lots of fruit and vegetables in here, some looking a little past their prime.",
     //plaque
     "aideen.scrappaper": "It's an old newspaper article, faded until it's almost unreadable, you can make out a few words: it seems to relate to the opening of the Community Center.",
     //Spirit's Eve
@@ -354,12 +354,12 @@
     "object.furniture.stonegoat": "Goat Figurine",
     "object.furniture.lemurpainting": "A Badly Painted Lemur",
     "object.furniture.jasperportrait": "Jasper Portrait",
-    "object.furniture.jacobportrait":"Portrait of Dr. Jacob Trenton, DVM",
+    "object.furniture.jacobportrait": "Portrait of Dr. Jacob Trenton, DVM",
     "object.furniture.mrgingerportrait": "Portrait of his regalness, Mr. Ginger",
     "object.furniture.katarynaportrait": "Kataryna Portrait",
     "object.furniture.julietportrait": "Juliet Portrait... or possibly a mugshot?",
     "object.furniture.aideenportrait": "Aideen Portrait",
-    "object.furniture.duckloveportrait":"Our favorite royal family",
+    "object.furniture.duckloveportrait": "Our favorite royal family",
     //Shops
     "LexiShop.dialogue": "Exchange sweet things for treasures from deep, yes?",
     "LexiShop.closed": "Lexi is not trading today.",
@@ -373,5 +373,5 @@
     //FruitTrees
     "EastScarpe.FruitTreeShake": "This is not yours",
     "EastScarpe.FruitTreeCut": "You feel as though something is watching you. Better not chop this tree.",
-    "EastScarpe.FruitTreeCut.Luma":"We would recommend you not chop the trees. You do not want to make us angry!$a"
+    "EastScarpe.FruitTreeCut.Luma": "We would recommend you not chop the trees. You do not want to make us angry!$a"
 }

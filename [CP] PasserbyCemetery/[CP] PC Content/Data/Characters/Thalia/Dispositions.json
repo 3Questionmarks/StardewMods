@@ -1,0 +1,222 @@
+{
+"Changes": [
+/************************************************
+Dispositions 
+************************************************/
+
+ {
+"LogName": "Thalia Dispositions",
+"Action": "EditData",
+"Target": "Data/Characters",
+"Entries": {
+"FC.Thalia": {
+///Basic Info
+"DisplayName":"{{i18n:FC.Thalia}}",
+"Language":"Default",
+"Gender":"Female",
+"Age":"Adult",
+"Manner":"Polite",
+"SociThaliaxiety":"Outgoing",
+"Optimism":"Positive",
+"BirthSeason":"Summer",
+"BirthDay":7,
+"HomeRegion":"Town",
+"IsDarkSkinned":true,
+///Social Features
+"CanSocialize":true,
+"CanBeRomanced":true,
+"CanReceiveGifts":true,
+"CanCommentOnPurchasedShopItems":false,
+"CanGreetNearbyCharacters":true,
+"CanVisitIsland": true,
+"LoveInterest":null,
+"Calendar": "HiddenUntilMet",
+"SocialTab":"UnknownUntilMet",
+"SpouseAdopts":null,
+"SpouseWantsChildren":true,
+"SpouseGiftJealousy":false,
+"SpouseGiftJealousyFriendshipChange":0,
+"SpouseRoom": {
+"MapAsset": "{{ModID}}_ThaliaSpouseRoom",
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 6,
+"Height": 9
+}
+},
+"SpousePatio": {
+"MapAsset": "{{ModID}}_ThaliaPatio",
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 4,
+"Height": 4
+}
+},
+"SpouseFloors": [],
+"SpouseWallpapers": [],
+"IntroductionsQuest":"{{IncludeIntro}}",
+"ItemDeliveryQuests":true,
+"PerfectionScore":"{{IncludePerfection}}",
+"EndSlideShow":"TrailingGroup",
+"FriendsAndFamily":null,
+///Dumpster Diving
+"DumpsterDiveEmote":28,
+"DumpsterDiveFriendshipEffect":-5,
+///Festivals
+"FlowerDanceCanDance":true,
+"WinterStarParticipant":true,
+"WinterStarGifts": [
+{
+"Condition": null,
+"Id": "{{ModID}}_WinterStarGifts",
+"ItemId": "RANDOM_ITEMS (O)",
+"RandomItemId": null,
+"MaxItems": null,
+"MinStack": -1,
+"MaxStack": -1,
+"Quality": -1,
+"ObjectInternalName": null,
+"ObjectDisplayName": null,
+"ToolUpgradeLevel": -1,
+"IsRecipe": false,
+"StackModifiers": null,
+"StackModifierMode": "Stack",
+"QualityModifiers": null,
+"QualityModifierMode": "Stack",
+"ModData": null,
+"PerItemCondition": null
+},
+],
+//Spawn Rules
+"UnlockConditions":null,
+"SpawnIfMissing":true,
+"Home": [
+{
+"Id": "Default",
+"Condition": null,
+"Location": "{{ModID}}_Exhibit",
+"Tile": {
+"X": 13,
+"Y":8
+},
+"Direction": "down"
+}
+],
+///Appearance & Sprites
+"TextureName":null,
+"Appearance": [
+ {
+"ID": "{{ModID}}.Thalia_spring",
+"Season": "spring",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Thalia/FC.Thalia_spring.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Thalia/FC.Thalia_spring.png}}"
+},
+{
+"ID": "{{ModID}}.Thalia_summer",
+"Season": "summer",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Thalia/FC.Thalia_summer.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Thalia/FC.Thalia_summer.png}}"
+},
+{
+"ID": "{{ModID}}.Thalia_fall",
+"Season": "fall",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Thalia/FC.Thalia_fall.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Thalia/FC.Thalia_fall.png}}"
+},
+{
+"ID": "{{ModID}}.Thalia_winter",
+"Season": "winter",
+"Portrait": "{{InternalAssetKey:Assets/Npcs/Portraits/FC.Thalia/FC.Thalia_winter.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Thalia/FC.Thalia_winter.png}}"
+},
+{
+"ID": "{{ModID}}.Thalia_SwimWear",
+"IsIslandAttire": true,
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Thalia/FC.Thalia_SwimWear.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Thalia/FC.Thalia_SwimWear.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Thalia_eggfestival",
+"Condition": "EVENT_ID festival_spring13",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Thalia/Festivals/egg festival.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Thalia/Festivals/egg festival.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Thalia_flowerfestival",
+"Condition": "EVENT_ID festival_spring24",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Thalia/Festivals/flower dance.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Thalia/Festivals/flower dance.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Thalia_luaufestival",
+"Condition": "EVENT_ID festival_summer11",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Thalia/Festivals/luau.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Thalia/Festivals/luau.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Thalia_jellyfestival",
+"Condition": "EVENT_ID festival_summer28",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Thalia/Festivals/dance of the moonlight jellies.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Thalia/Festivals/dance of the moonlight jellies.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Thalia_Fairfestival",
+"Condition": "EVENT_ID festival_fall16",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Thalia/Festivals/stardew valley fair.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Thalia/Festivals/stardew valley fair.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Thalia_spiritseve",
+"Condition": "EVENT_ID festival_fall27",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Thalia/Festivals/spirit's eve.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Thalia/Festivals/spirit's eve.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Thalia_icefestival",
+"Condition": "EVENT_ID festival_winter8",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Thalia/Festivals/festival of ice.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Thalia/Festivals/festival of ice.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Thalia_winterstarfestival",
+"Condition": "EVENT_ID festival_winter25",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Thalia/Festivals/feast of the winter star.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Thalia/Festivals/feast of the winter star.png}}",
+"Precedence": -10,
+},
+],
+"MugShotSourceRect": { "X": 0, "Y": 0, "Width": 16, "Height": 24 },
+"Size": { "X": 16, "Y": 32 },
+"Breather":false,
+"BreathChestRect":null,
+"BreathChestPosition":null,
+"Shadow":{ "Visible": true },
+"EmoteOffset": {},
+"ShakePortraits":[],
+"KissSpriteIndex":"28",
+"KissSpriteFacingDirection":null,
+///Hidden Gift Log Emote
+"HiddenProfileEmoteSound":null,
+"HiddenProfileEmoteDuration":-1,
+"HiddenProfileEmoteStartFrame":0,
+"HiddenProfileEmoteFrameCount":4,
+"HiddenProfileEmoteFrameDuration":200.0,
+///Advanced
+"CustomFields":{
+},
+"FormerCharacterNames": [],
+}
+}
+}
+]
+}

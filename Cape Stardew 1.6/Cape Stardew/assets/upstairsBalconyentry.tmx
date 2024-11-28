@@ -117,10 +117,7 @@
  <tileset firstgid="2929" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
   <image source="townInterior_2.png" trans="000000" width="512" height="656"/>
  </tileset>
- <tileset firstgid="4241" name="WizardHouseTiles" tilewidth="16" tileheight="16" tilecount="60" columns="4">
-  <image source="WizardHouseTiles.png" trans="000000" width="64" height="240"/>
- </tileset>
- <tileset firstgid="4301" name="Custom_Tiles" tilewidth="16" tileheight="16" tilecount="92" columns="4">
+ <tileset firstgid="4241" name="Custom_Tiles" tilewidth="16" tileheight="16" tilecount="92" columns="4">
   <image source="Custom_Tiles.png" trans="ff00fc" width="64" height="370"/>
   <tile id="31">
    <animation>
@@ -139,7 +136,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="4393" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+ <tileset firstgid="4333" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior" width="512" height="1088"/>
   <tile id="347">
    <properties>
@@ -199,10 +196,10 @@
  </tileset>
  <layer id="4" name="Back" width="3" height="5">
   <data encoding="csv">
-4999,5000,4999,
-5031,5032,5031,
-4999,5000,4999,
-5031,5032,5031,
+4939,4940,4939,
+4971,4972,4971,
+4939,4940,4939,
+4971,4972,4971,
 0,0,0
 </data>
  </layer>

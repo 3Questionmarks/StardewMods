@@ -1,0 +1,33 @@
+{
+//Keahi RSV full day school schedule
+        "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Keahi",
+            "When": {
+                "HasSeenEvent": "9695002",
+            },
+            "Entries": { 
+                "Mon": "0 Custom_Ridgeside_RSVCableCar 20 13 2/610 Custom_SchoolHouse 23 17 3/620 Custom_SchoolHouse 22 16 3 keahi_read/1130 Town 19 14 2 keahi_dance/1250 Custom_SchoolHouse 23 17 3/1300 Custom_SchoolHouse 22 16 3 keahi_read/1550 Custom_Ridgeside_RidgesideVillage 98 38 2/1800 Custom_Ridgeside_PikaHouse 7 10 3/2200 Custom_Ridgeside_PikaHouse 26 5 0 keahi_sleep",	
+                "Tue": "0 Custom_Ridgeside_RSVCableCar 20 13 2/610 Custom_SchoolHouse 23 17 3/620 Custom_SchoolHouse 22 16 3 keahi_read/1130 Town 19 14 2 keahi_dance/1250 Custom_SchoolHouse 23 17 3/1300 Custom_SchoolHouse 22 16 3 keahi_read/1550 Custom_Ridgeside_RidgesideVillage 98 38 2/1800 Custom_Ridgeside_PikaHouse 7 10 3/2200 Custom_Ridgeside_PikaHouse 26 5 0 keahi_sleep",
+                "Wed": "0 Custom_Ridgeside_RSVCableCar 20 13 2/610 Custom_SchoolHouse 23 17 3/620 Custom_SchoolHouse 22 16 3 keahi_read/1130 Town 19 14 2 keahi_dance/1250 Custom_SchoolHouse 23 17 3/1300 Custom_SchoolHouse 22 16 3 keahi_read/1550 Custom_Ridgeside_RidgesideVillage 98 38 2/1800 Custom_Ridgeside_PikaHouse 7 10 3/2200 Custom_Ridgeside_PikaHouse 26 5 0 keahi_sleep",
+                "Thu": "0 Custom_Ridgeside_RSVCableCar 20 13 2/610 Custom_SchoolHouse 23 17 3/620 Custom_SchoolHouse 22 16 3 keahi_read/1130 Town 19 14 2 keahi_dance/1250 Custom_SchoolHouse 23 17 3/1300 Custom_SchoolHouse 22 16 3 keahi_read/1550 Custom_Ridgeside_RidgesideVillage 98 38 2/1800 Custom_Ridgeside_PikaHouse 7 10 3/2200 Custom_Ridgeside_PikaHouse 26 5 0 keahi_sleep",
+                "Fri": "0 Custom_Ridgeside_RSVCableCar 20 13 2/610 Custom_SchoolHouse 23 17 3/620 Custom_SchoolHouse 22 16 3 keahi_read/1130 Town 19 14 2 keahi_dance/1250 Custom_SchoolHouse 23 17 3/1300 Custom_SchoolHouse 22 16 3 keahi_read/1550 Custom_Ridgeside_RidgesideVillage 98 38 2/1800 Custom_Ridgeside_PikaHouse 7 10 3/2200 Custom_Ridgeside_PikaHouse 26 5 0 keahi_sleep",
+                "summer_19": "610 Custom_Ridgeside_PikaHouse 7 10 3/a1200 Custom_Ridgeside_PaulaClinic 18 5 3 \"Strings\\schedules\\Keahi:checkup\"/1330 Custom_Ridgeside_PaulaClinic 15 6 0 \"Strings\\schedules\\Keahi:checkup_waiting\"/1420 Custom_Ridgeside_PaulaClinic 17 6 0 keahi_jump/1450 Custom_Ridgeside_PaulaClinic 14 6 2 \"Strings\\schedules\\Keahi:checkup_waiting_2\"/1530 Custom_Ridgeside_PikaHouse 7 10 3/2200 Custom_Ridgeside_PikaHouse 19 15 0 keahi_sleep",
+                "winter_15": "610 Custom_Ridgeside_PikaHouse 7 10 3/800 Custom_Ridgeside_RidgesideVillage 98 38 2/1200 Beach 13 22 0/2600 Custom_Ridgeside_PikaHouse 19 15 0 keahi_sleep",
+                "Sun": "610 Custom_Ridgeside_PikaHouse 7 10 3/800 Custom_Ridgeside_RidgesideVillage 98 38 2/1100 Custom_Ridgeside_RidgesideVillage 74 42 3 keahi_jump/1800 Custom_Ridgeside_PikaHouse 7 10 3/2200 Custom_Ridgeside_PikaHouse 19 15 0 keahi_sleep",
+            },
+        },
+//Greenhouse schedule
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Keahi",
+            "When": {
+                "HasFlag: hostPlayer |contains=GH1letter": true,
+            },
+            "Entries": {
+                "Sat": "610 Custom_Ridgeside_PikaHouse 7 10 3/900 Custom_Ridgeside_RidgesideVillage 98 38 2/1200 Custom_Ridgeside_RSVGreenhouse1 24 9 1 keahi_jump/1600 Custom_Ridgeside_PikaHouse 7 10 3/2200 Custom_Ridgeside_PikaHouse 19 15 0 keahi_sleep",
+            },
+        },
+    ]
+}

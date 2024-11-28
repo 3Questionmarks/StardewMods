@@ -8,7 +8,7 @@
             ],
             "Entries": {
                 "Lumisteria.MtVapius_Aster": {
-                    "BaseChance": 0.3,
+                    "BaseChance": 0.4,
                     "Items": [
                         {
                             "ID": "Lumisteria.MtVapius_GardenPot",
@@ -39,7 +39,7 @@
                     ]
                 },
                 "Lumisteria.MtVapius_Inn01": {
-                    "BaseChance": 0.5,
+                    "BaseChance": 0.6,
                     "Items": [
                         {
                             "ID": "Lumisteria.MtVapius_Dish",
@@ -92,15 +92,15 @@
                         {
                             "ID": "Lumisteria.MtVapius_Newspapers",
                             "Condition": "RANDOM 0.3",
-                            "MinStack": 3,
-                            "MaxStack": 4,
+                            "MinStack": 4,
+                            "MaxStack": 7,
                             "ItemId": "172",
                             "MaxItems": 1,
                         },
                     ]
                 },
                 "Lumisteria.MtVapius_Inn02": {
-                    "BaseChance": 0.4,
+                    "BaseChance": 0.5,
                     "Items": [
                         {
                             "ID": "Lumisteria.MtVapius_RandomMtVapiusGem",
@@ -163,7 +163,7 @@
                     ]
                 },
                 "Lumisteria.MtVapius_MarketDay": {
-                    "BaseChance": 0.6,
+                    "BaseChance": 0.8,
                     "Items": [
                         {
                             "ID": "Lumisteria.MtVapius_MarketMtVapiusGem",
@@ -182,14 +182,21 @@
                             "ID": "Lumisteria.MtVapius_MarketGem",
                             "Condition": "RANDOM 0.1 @addDailyLuck",
                             "ItemId": "RANDOM_ITEMS (O)",
-                            "PerItemCondition": "ITEM_CATEGORY Target -2, !ITEM_ID_PREFIX Target Lumisteria.MtVapius",
+                            "PerItemCondition": "ITEM_CATEGORY Target -2, ITEM_NUMERIC_ID Target 2 789",
+                            "MaxItems": 1,
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_MarketMtVapiusArtifact",
+                            "Condition": "RANDOM 0.2 @addDailyLuck",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CATEGORY Target -12, ITEM_ID_PREFIX Target Lumisteria.MtVapius_",
                             "MaxItems": 1,
                         },
                         {
                             "ID": "Lumisteria.MtVapius_MarketArtifact",
                             "Condition": "RANDOM 0.2 @addDailyLuck",
                             "ItemId": "RANDOM_ITEMS (O)",
-                            "PerItemCondition": "ITEM_CATEGORY Target -12",
+                            "PerItemCondition": "ITEM_CATEGORY Target -12, ITEM_NUMERIC_ID Target 2 789",
                             "MaxItems": 1,
                         },
                         {
@@ -201,6 +208,17 @@
                                 "(BC)13",
                                 "(BC)15",
                                 "(BC)20",
+                            ],
+                        },
+                        {
+                            "ID": "Lumisteria.MtVapius_MarketMixedSeeds",
+                            "MinStack": 4,
+                            "MaxStack": 5,
+                            "Condition": "RANDOM 0.25",
+                            "RandomItemId": [
+                                "Lumisteria.MtVapius_WildVapiusSeeds",
+                                "Lumisteria.MtVapius_MountainMeadowSeeds",
+                                "Lumisteria.MtVapius_BlueCloverSeeds",
                             ],
                         },
                         {

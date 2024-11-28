@@ -1,0 +1,96 @@
+{
+    "Format": "2.0.0",
+    "Changes": 
+	[
+        // add items
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": 
+			{
+                "{{ModId}}_MagicAltar": 
+				{
+                    "Name": "{{ModId}}_MagicAltar", // best practice to match the ID, since it's sometimes used as an alternate ID (e.g. in Data/CraftingRecipes)
+                    "Displayname": "{{i18n:big_craftable.magic_altar.name}}",
+                    "Description": "{{i18n:big_craftable.magic_altar.description}}",
+                    "Type": "Crafting",
+                    "Category": -9 ,
+                    "Price": 1000,
+                    "Texture": "Mods/{{ModId}}/BigCraftables",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+			{
+				"{{ModId}}_ManaElixir": 
+				{
+                    "Name": "{{ModId}}_ManaElixir", // best practice to match the ID, since it's sometimes used as an alternate ID (e.g. in Data/CraftingRecipes)
+                    "Displayname": "{{i18n:object.mana_elixir.name}}",
+                    "Description": "{{i18n:object.mana_elixir.description}}",
+					"Edibility" : 30,
+                    "Type": "Basic",
+                    "Category": -7 ,
+                    "Price": 1000,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 0,
+					"CustomFields": 
+					{
+						"{{ModId}}/Mana": "350"
+					}
+				}
+            }
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": 
+			{
+                "{{ModId}}_MagicAltar": "390 10 768 5 66 1/Field/{{ModId}}_MagicAltar 1/true/none/{{i18n:big_craftable.magic_altar.name}}"
+				
+			}
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries":
+            {
+                "{{ModId}}_ManaElixir": "773 1 422 1/11 11/{{ModId}}_ManaElixir 1/none/{{i18n:object.mana_elixir.name}}"
+            }
+        },
+		//Edit Shops
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AdventureShop",
+                "Items"
+            ],
+            "Entries": 
+			{
+                "{{ModId}}_ManaElixir": 
+				{
+                    "Id": "{{ModId}}_ManaElixir",
+                    "ItemId": "{{ModId}}_ManaElixir",
+                    "Price": "3000",
+                    "IsRecipe": "true",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Any 9918172"
+                }
+            },
+        },
+        // add item images
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/BigCraftables",
+            "FromFile": "assets/magic_altar.png"
+        },
+		{
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Objects",
+            "FromFile": "assets/mana_elixir.png"
+        }
+    ]
+}

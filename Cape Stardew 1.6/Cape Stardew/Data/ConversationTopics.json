@@ -12,6 +12,26 @@
 
 		},
 	},
+
+{
+  "LogName": "ConversationTopicsAnnettaYes",
+  "Action": "EditData",
+  "Target": "Characters/Dialogue/Annetta",
+  "Entries": {
+    "CapeStardew.AnnettaJelliEncounter.yes": "{{i18n:Annetta.Jelli.Encounter.yes}}"
+  }
+},
+
+
+{
+	"LogName": "ConversationTopicsAnnettaNo",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Annetta",
+	"Entries": {
+	"CapeStardew.AnnettaJelliEncounter.no": "{{i18n:Annetta.Jelli.Encounter.no}}",
+}
+},
+
 	
 ]
 }

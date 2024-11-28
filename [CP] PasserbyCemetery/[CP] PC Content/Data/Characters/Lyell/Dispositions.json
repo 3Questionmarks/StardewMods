@@ -10,127 +10,215 @@ NPCSPAWNS
 "Target": "Data/Characters",
 "Entries": {
 "FC.Lyell": {
-    "DisplayName": "{{i18n:FC.Lyell}}",
-    "BirthSeason": "Winter",
-    "BirthDay": 6,
-    "HomeRegion": "Town",
-    "Language": "Default",
-    "Gender": "Male",
-    "Age": "Adult",
-    "Manner": "Polite",
-    "SocialAnxiety": "Shy",
-    "Optimism": "Neutral",
-    "IsDarkSkinned": true,
-    "CanBeRomanced": true,
-    "FlowerDanceCanDance": true,
-    "LoveInterest": null,
-    "Calendar": "AlwaysShown",
-    "SocialTab": "UnknownUntilMet",
-    "SocialTabIconSourceRect": null,
-    "CanSocialize": true,
-    "CanReceiveGifts": true,
-    "CanGreetNearbyCharacters": true,
-    "CanCommentOnPurchasedShopItems": true,
-    "CanVisitIsland": true,
-"IntroductionsQuest":"{{ExcludePerfection}}",
-"PerfectionScore":"{{ExcludePerfection}}",
-    "ItemDeliveryQuests": true,
-    "PerfectionScore": true,
-    "EndSlideShow": "TrailingGroup",
-    "SpouseRoom": {
-      "MapAsset": "{{ModID}}_LyellSpouseRoom",
-      "MapSourceRect": {
-        "X": 0,
-        "Y": 0,
-        "Width": 6,
-        "Height": 9
-      }
-    },
-    "SpousePatio": {
-      "MapAsset": "{{ModID}}_LyellPatio",
-      "MapSourceRect": {
-      },
-      "SpriteAnimationFrames": [],
-      "SpriteAnimationPixelOffset": {}
-    },
-    "SpouseFloors": [],
-    "SpouseWallpapers": [],
-    "FriendsAndFamily": null,
-    "WinterStarGifts": [],
-    "WinterStarParticipant": true,
-    "UnlockConditions": null,
-    "SpawnIfMissing": true,
-    "Home": [
+///Basic Info
+"DisplayName":"{{i18n:FC.Lyell}}",
+"Language":"Default",
+"Gender":"Male",
+"Age":"Adult",
+"Manner":"Polite",
+"SociLyellxiety":"Shy",
+"Optimism":"Neutral",
+"BirthSeason":"Winter",
+"BirthDay":6,
+"HomeRegion":"Town",
+"IsDarkSkinned":true,
+///Social Features
+"CanSocialize":true,
+"CanBeRomanced":true,
+"CanReceiveGifts":true,
+"CanCommentOnPurchasedShopItems":false,
+"CanGreetNearbyCharacters":true,
+"CanVisitIsland":true,
+"LoveInterest":null,
+"Calendar": "HiddenUntilMet",
+"SocialTab":"UnknownUntilMet",
+"SpouseAdopts":null,
+"SpouseWantsChildren":true,
+"SpouseGiftJealousy":true,
+"SpouseGiftJealousyFriendshipChange":-3,
+
+"SpouseRoom": {
+"MapAsset": "{{ModID}}_LyellSpouseRoom",
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 6,
+"Height": 9
+}
+},
+"SpousePatio": {
+"MapAsset": "{{ModID}}_LyellPatio",
+"MapSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 4,
+"Height": 4
+}
+},
+"SpouseFloors": [],
+"SpouseWallpapers": [],
+"IntroductionsQuest":"{{IncludeIntro}}",
+"ItemDeliveryQuests":true,
+"PerfectionScore":"{{IncludePerfection}}",
+"EndSlideShow":"TrailingGroup",
+"FriendsAndFamily":null,
+///Dumpster Diving
+"DumpsterDiveEmote":28,
+"DumpsterDiveFriendshipEffect":-3,
+///Festivals
+"FlowerDanceCanDance":true,
+"WinterStarParticipant":true,
+"WinterStarGifts": [
+{
+"Condition": null,
+"Id": "{{ModID}}_WinterStarGifts",
+"ItemId": "RANDOM_ITEMS (O)",
+"RandomItemId": null,
+"MaxItems": null,
+"MinStack": -1,
+"MaxStack": -1,
+"Quality": -1,
+"ObjectInternalName": null,
+"ObjectDisplayName": null,
+"ToolUpgradeLevel": -1,
+"IsRecipe": false,
+"StackModifiers": null,
+"StackModifierMode": "Stack",
+"QualityModifiers": null,
+"QualityModifierMode": "Stack",
+"ModData": null,
+"PerItemCondition": null
+},      
+],
+//Spawn Rules
+"UnlockConditions":null,
+"SpawnIfMissing":true,
+"Home": [
       {
-        "Id": "Default",
-        "Condition": null,
-        "Location": "{{ModID}}_LyellsHouse",
-        "Tile": {
-          "X": 13,
-          "Y":10
-        },
-        "Direction": "left"
+"Id": "Default",
+"Condition": null,
+"Location": "{{ModID}}_LyellsHouse",
+"Tile": {
+"X":12,
+"Y":10,
+},
+"Direction": "left"
       }
     ],
-      "Size": { "X": 16, "Y": 32 },
-                    "CustomFields": {
-                       
-                    },
-    "TextureName": null,
-    "Appearance": [
-      
-{
-"ID": "spring",
-"Condition": "SEASON Spring",
+///Appearance & Sprites
+"TextureName":null,
+ "Appearance": [
+ {
+"ID": "{{ModID}}.Lyell_spring",
+"Season": "spring",
 "Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Lyell/FC.Lyell_spring.png}}",
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Lyell/FC.Lyell_spring.png}}"
 },
 {
-"ID": "winter",
-"Condition": "SEASON Winter",
-"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Lyell/FC.Lyell_winter.png}}",
+"ID": "{{ModID}}.Lyell_summer",
+"Season": "summer",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Lyell/FC.Lyell_summer.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Lyell/FC.Lyell_summer.png}}"
+},
+{
+"ID": "{{ModID}}.Lyell_fall",
+"Season": "fall",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Lyell/FC.Lyell_fall.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Lyell/FC.Lyell_fall.png}}"
+},
+{
+"ID": "{{ModID}}.Lyell_winter",
+"Season": "winter",
+"Portrait": "{{InternalAssetKey:Assets/Npcs/Portraits/FC.Lyell/FC.Lyell_winter.png}}",
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Lyell/FC.Lyell_winter.png}}"
 },
 {
-"ID": "flowerfestival",
+"ID": "{{ModID}}.Lyell_SwimWear",
+"IsIslandAttire": true,
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Lyell/FC.Lyell_SwimWear.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Lyell/FC.Lyell_SwimWear.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Lyell_eggfestival",
+"Condition": "EVENT_ID festival_spring13",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Lyell/Festivals/egg festival.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Lyell/Festivals/egg festival.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Lyell_flowerfestival",
 "Condition": "EVENT_ID festival_spring24",
 "Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Lyell/Festivals/flower dance.png}}",
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Lyell/Festivals/flower dance.png}}",
 "Precedence": -10,
 },
 {
-"ID": "spiritseve",
-"Condition": "EVENT_ID festival_fall3",
+"ID": "{{ModID}}.Lyell_luaufestival",
+"Condition": "EVENT_ID festival_summer11",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Lyell/Festivals/luau.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Lyell/Festivals/luau.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Lyell_jellyfestival",
+"Condition": "EVENT_ID festival_summer28",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Lyell/Festivals/dance of the moonlight jellies.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Lyell/Festivals/dance of the moonlight jellies.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Lyell_Fairfestival",
+"Condition": "EVENT_ID festival_fall16",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Lyell/Festivals/stardew valley fair.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Lyell/Festivals/stardew valley fair.png}}",
+"Precedence": -10,
+},
+{
+"ID": "{{ModID}}.Lyell_spiritseve",
+"Condition": "EVENT_ID festival_fall27",
 "Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Lyell/Festivals/spirit's eve.png}}",
 "Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Lyell/Festivals/spirit's eve.png}}",
 "Precedence": -10,
 },
-    ],
-    "Breather": false,
-    "ShakePortraits": [
-      11,14
-    ],
-    "KissSpriteIndex": 42,
-    "KissSpriteFacingRight": 52,
-    "HiddenProfileEmoteSound": null,
-    "HiddenProfileEmoteDuration": -1,
-    "HiddenProfileEmoteStartFrame": 16,
-    "HiddenProfileEmoteFrameCount": 4,
-    "HiddenProfileEmoteFrameDuration": 200.0,
-}
-}
+{
+"ID": "{{ModID}}.Lyell_icefestival",
+"Condition": "EVENT_ID festival_winter8",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Lyell/Festivals/festival of ice.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Lyell/Festivals/festival of ice.png}}",
+"Precedence": -10,
 },
 {
-"Action": "EditData",
-"Target": "Data/Characters",
-"Update": "OnTimeChange, OnLocationChange",
-"Entries": {
-"FC.Lyell": {
-"CanBeRomanced": false,
-}
+"ID": "{{ModID}}.Lyell_winterstarfestival",
+"Condition": "EVENT_ID festival_winter25",
+"Portrait": "{{InternalAssetKey: Assets/Npcs/Portraits/FC.Lyell/Festivals/feast of the winter star.png}}",
+"Sprite": "{{InternalAssetKey: Assets/Npcs/Characters/FC.Lyell/Festivals/feast of the winter star.png}}",
+"Precedence": -10,
 },
-"When": {
-"HasSeenEvent: |contains=FC.LyellLyellDate": true,
+    ],
+"MugShotSourceRect":{ "X": 8, "Y": 1, "Width": 16, "Height": 24 },
+"Size": { "X": 32, "Y": 38 },
+"Breather":false,
+"BreathChestRect":null,
+"BreathChestPosition":null,
+"Shadow":{ "Visible": true },
+"EmoteOffset":{ "X": 35, "Y": 20 },
+"ShakePortraits":[11,14],
+"KissSpriteIndex":"42",
+"KissSpriteFacingDirection":null,
+///Hidden Gift Log Emote
+"HiddenProfileEmoteSound":null,
+"HiddenProfileEmoteDuration":-1,
+"HiddenProfileEmoteStartFrame":0,
+"HiddenProfileEmoteFrameCount":4,
+"HiddenProfileEmoteFrameDuration":200.0,
+///Advanced
+"CustomFields":{
+"poohnhi.PoohCore/WideCharacter": "true",
+"poohnhi.PoohCore/HighCharacter": "true"
+},
+"FormerCharacterNames": [ "Lyell" ],
+}
 }
 },
 ]

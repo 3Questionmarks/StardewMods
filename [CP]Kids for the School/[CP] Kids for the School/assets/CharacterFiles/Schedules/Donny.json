@@ -1,0 +1,52 @@
+{
+        "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Donny",
+            "Entries": {
+                "Mon": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 22 1/620 Custom_SchoolHouse 23 11 3/700 Custom_SchoolHouse 22 11 3 donny_read_left/1130 Town 16 19 1/1230 Custom_SchoolHouse 23 11 3/1250 Custom_SchoolHouse 22 11 3 donny_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Tue": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 22 1/620 Custom_SchoolHouse 23 11 3/700 Custom_SchoolHouse 22 11 3 donny_read_left/1130 Town 16 19 1/1230 Custom_SchoolHouse 23 11 3/1250 Custom_SchoolHouse 22 11 3 donny_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Wed": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 22 1/620 Custom_SchoolHouse 23 11 3/700 Custom_SchoolHouse 22 11 3 donny_read_left/1130 Town 16 19 1/1230 Custom_SchoolHouse 23 11 3/1250 Custom_SchoolHouse 22 11 3 donny_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Thu": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 22 1/620 Custom_SchoolHouse 23 11 3/700 Custom_SchoolHouse 22 11 3 donny_read_left/1130 Town 16 19 1/1230 Custom_SchoolHouse 23 11 3/1250 Custom_SchoolHouse 22 11 3 donny_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Fri": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 22 1/620 Custom_SchoolHouse 23 11 3/700 Custom_SchoolHouse 22 11 3 donny_read_left/1130 Town 16 19 1/1230 Custom_SchoolHouse 23 11 3/1250 Custom_SchoolHouse 22 11 3 donny_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sat": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sun": "0 Custom_DayEnd_WarpRoom 3 3 0",
+
+//Festivals School is closed
+                "spring_13": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "spring_24": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "fall_16": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_8": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_25": "0 Custom_DayEnd_WarpRoom 3 3 0",
+            },
+        },
+//If SKE is installed Donny will move to the top left seating area when Vanessa is in school.
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Donny",
+            "When": {
+                "HasSeenEvent": "9695002",
+                "HasMod": "BURAKMESE.SKE"
+                },
+            "Entries": {
+                "Mon": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 22 1/620 Custom_SchoolHouse 23 11 3/700 Custom_SchoolHouse 22 11 3 donny_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Tue": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 22 1/620 Custom_SchoolHouse 5 6 3 donny_read_left/1130 Town 24 18 3/1240 Custom_SchoolHouse 5 6 3 donny_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Wed": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 22 1/620 Custom_SchoolHouse 5 6 3 donny_read_left/1130 Town 24 18 3/1240 Custom_SchoolHouse 5 6 3 donny_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Thu": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 22 1/620 Custom_SchoolHouse 23 11 3/700 Custom_SchoolHouse 22 11 3 donny_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Fri": "0 Custom_WarpRoom 1 3 3/610 BusStop 16 22 1/620 Custom_SchoolHouse 5 6 3 donny_read_left/1130 Town 24 18 3/1240 Custom_SchoolHouse 5 6 3 donny_read_left/1600 BusStop 12 8 0/1900 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sat": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "Sun": "0 Custom_DayEnd_WarpRoom 3 3 0",
+    
+//Festivals School is closed
+                "spring_13": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "spring_24": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "fall_16": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_8": "0 Custom_DayEnd_WarpRoom 3 3 0",
+                "winter_25": "0 Custom_DayEnd_WarpRoom 3 3 0",
+            },
+        },
+    ]
+}
+
+
+//(0 = up, 1 = right, 2 = down, 3 = left)

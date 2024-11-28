@@ -322,9 +322,23 @@
 				"Fruit"
 			],
 			"Entries": {
+				"Lumisteria.MtVapius_OrangeBlossomRare": {
+					"Chance": 0.1,
+					"Id": "Lumisteria.MtVapius_OrangeBlossomRare",
+					"ItemId": "(O)Lumisteria.MtVapius_OrangeBlossom",
+					"StackModifiers": [
+						{
+							"Id": "Lumisteria.MtVapius_OutdoorDouble",
+							"Condition": "LOCATION_IS_OUTDOORS Target, RANDOM .3, !LOCATION_CONTEXT Target Island",
+							"Modification": "Add",
+							"Amount": 1.0,
+						},
+					],
+					"StackModifierMode": "Stack",
+				},
 				"Lumisteria.MtVapius_OrangeBlossom": {
 					"Season": "spring",
-					"Chance": 0.3,
+					"Chance": 0.25,
 					"Id": "Lumisteria.MtVapius_OrangeBlossom",
 					"ItemId": "(O)Lumisteria.MtVapius_OrangeBlossom",
 					"StackModifiers": [
@@ -337,7 +351,13 @@
 					],
 					"StackModifierMode": "Stack",
 				}
-			}
+			},
+			"MoveEntries": [
+				{
+					"ID": "Lumisteria.MtVapius_OrangeBlossomRare",
+					"BeforeId": "Default"
+				},
+			]
 		},
 		{
 			"LogName": "Orange Trees Summer Produces",

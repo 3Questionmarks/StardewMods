@@ -18,6 +18,12 @@
                     "Trigger": "DayStarted",
                     "Action": "AddMail Current Lumisteria.MtVapius_TagetesSeedsMail tomorrow"
                 },
+                "Lumisteria.MtVapius_AsterWelcomeTrigger": {
+                    "Id": "Lumisteria.MtVapius_AsterWelcomeTrigger",
+					"Condition": "!PLAYER_STAT Current daysPlayed 50, PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_Hamlet, SYNCED_RANDOM day lumisteria.chanceletter03 0.2",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_AsterWelcomeMail tomorrow"
+                },
                 "Lumisteria.MtVapius_CloverSeedsGiftTrigger": {
                     "Id": "Lumisteria.MtVapius_CloverSeedsGiftTrigger",
 					"Condition": "PLAYER_STAT Current daysPlayed 7",
@@ -99,7 +105,7 @@
                 },
                 "Lumisteria.MtVapius_PrimroseSeedsGiftTrigger": {
                     "Id": "Lumisteria.MtVapius_PrimroseSeedsGiftTrigger",
-					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Evelyn 1600, SYNCED_RANDOM day lumisteria.chanceletter04 0.1, ANY \"SEASON Winter\" \"SEASON Spring, 1 2 3 4 5 6 7 8 9 10\"",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Evelyn 1600, SYNCED_RANDOM day lumisteria.chanceletter04 0.1, ANY \"SEASON Winter\" \"SEASON Spring, DAY_OF_MONTH 1 2 3 4 5 6 7 8 9 10\"",
                     "Trigger": "DayStarted",
                     "Action": "AddMail Current Lumisteria.MtVapius_PrimroseSeedsMail tomorrow"
                 },
@@ -131,8 +137,21 @@
                     "Id": "Lumisteria.MtVapius_ButterQuestTrigger",
 					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Jodi 800, PLAYER_FRIENDSHIP_POINTS Current Vincent 600, SYNCED_RANDOM day lumisteria.chanceletter04 0.2",
                     "Trigger": "DayStarted",
-                    "Action": "AddMail Current Lumisteria.MtVapiusQuestButterForJodi tomorrow"
+                    "Action": "AddMail Current Lumisteria.MtVapius_ButterRequestMail tomorrow"
                 },
+                "Lumisteria.MtVapius_OrpimentQuestTrigger": {
+                    "Id": "Lumisteria.MtVapius_OrpimentQuestTrigger",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Mariam 400, SYNCED_RANDOM day lumisteria.chanceletter05 0.2",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_OrpimentRequestMail tomorrow"
+                },
+                "Lumisteria.MtVapius_MyriadinTeaQuestTrigger": {
+                    "Id": "Lumisteria.MtVapius_MyriadinTeaQuestTrigger",
+					"Condition": "DAYS_PLAYED 60, SYNCED_RANDOM day lumisteria.chanceletter01 0.2",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_MyriadinTeaRequestMail tomorrow"
+                },
+				
 				
 				
 				
@@ -209,6 +228,12 @@
                     "Trigger": "DayStarted",
                     "Action": "AddMail Current Lumisteria.MtVapius_NightMiscanthusSeedsMail tomorrow"
                 },
+                "Lumisteria.MtVapius_LivreauRootTrigger": {
+                    "Id": "Lumisteria.MtVapius_LivreauRootTrigger",
+					"Condition": "PLAYER_HAS_MAIL Current Lumisteria.MtVapiusSpecialOrders.MtVapiusStellarCropsMail, !PLAYER_HAS_CONVERSATION_TOPIC Current Lumisteria.MtVapius.StellarCropsOrder",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_LivreauRootsMail tomorrow"
+                },
 				
 				//Satchel reward
                 "Lumisteria.MtVapius_JunimoSatchelGiftTrigger": {
@@ -217,6 +242,19 @@
                     "Trigger": "DayStarted",
                     "Action": "AddMail Current Lumisteria.MtVapius_JunimoSatchelMail tomorrow"
                 },
+				
+				//Visited place
+                "Lumisteria.MtVapius_JunimoClearingVisited": {
+                    "Id": "Lumisteria.MtVapius_JunimoClearingVisited",
+					"Condition": "PLAYER_VISITED_LOCATION Current Lumisteria.MtVapius_ForestJunimoClearing",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "AddConversationTopic Lumisteria.MtVapius.JunimoClearingVisited 6",
+                        "AddMail Current Lumisteria.MtVapius_JunimoClearingVisitedMail received"
+                    ]
+                },
+				
+				
 				
 				//Flags removal
 				
@@ -274,6 +312,29 @@
 					"Condition": "!VMV.HasSeenActiveDialogueEvent Current questComplete_Lumisteria.MtVapiusQuestAmberFernForAbigail, PLAYER_HAS_MAIL Current Lumisteria.MtVapius_AmberFernMailBackup Any",
                     "Trigger": "DayStarted",
                     "Action": "AddMail Current Lumisteria.MtVapius_AmberFernMail tomorrow"
+                },
+				
+				
+				//Learn Recipe
+				
+                "Lumisteria.MtVapius_LearnMangoBingsuRecipe": {
+                    "Id": "Lumisteria.MtVapius_LearnMangoBingsuRecipe",
+					"Condition": "!PLAYER_HAS_COOKING_RECIPE Current Lumisteria.MtVapius_Cooking_MangoBingsu",
+                    "Trigger": "Manual",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current Lumisteria.MtVapius_Cooking_MangoBingsu",
+                        "spacechase0.SpaceCore_ShowHudMessage \"{{i18n: MtVapiusNaveenHouseMangoBingsuMessage}}\""
+                    ]
+                },
+				
+				//SO related
+				
+				
+                "Lumisteria.MtVapius_AdelaideBalsamicVinegarTipsTrigger": {
+                    "Id": "Lumisteria.MtVapius_AdelaideBalsamicVinegarTipsTrigger",
+					"Condition": "PLAYER_SPECIAL_ORDER_ACTIVE Current Lumisteria.MtVapiusSpecialOrders.FancyGoods",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Lumisteria.MtVapius_AdelaideBalsamicVinegarTipsMail tomorrow"
                 },
 				
             }

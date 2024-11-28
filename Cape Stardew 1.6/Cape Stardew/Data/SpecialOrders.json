@@ -1,5 +1,7 @@
 {
   "Changes": [
+
+///strings//
   { 
       "Action": "EditData",
       "Target": "Strings/SpecialOrderStrings",
@@ -61,6 +63,8 @@
         
       }
     },
+
+
  ///AnnettaLuauRequest//
    {
   "LogName": "SpecialOrderAnnettaSummerLuau",
@@ -180,7 +184,7 @@
             "Text": "[Annetta_Objective_0_Text]",
             "RequiredCount": "1",
             "Data": {
-                "AcceptedContextTags": "flower_item/food_seafood/fish_ocean/food_soup/food_salad",
+                "AcceptedContextTags": "!season_winter, flower_item/food_seafood/fish_ocean/food_soup/food_salad",
                 "Message": "[Annetta_Objective_1_Message]",
 
                 "TargetName": "Annetta"
@@ -191,7 +195,7 @@
             "Text": "[Annetta_Objective_1_Text]",
             "RequiredCount": "1",
             "Data": {
-                "AcceptedContextTags": "category_vegetable/category_fruit",
+                "AcceptedContextTags": "category_vegetable/category_fruit/forage_item !season_winter, !forage_item_beach",
                 "Message": "[Annetta_Objective_2_Message]",
 
                 "TargetName": "Annetta"
@@ -202,7 +206,7 @@
             "Text": "[Annetta_Objective_2_Text]",
             "RequiredCount": "1",
             "Data": {
-                "AcceptedContextTags": "fruit_item/fruit_tree_item",
+                "AcceptedContextTags": "color_red/color_blue/color_dark_blue/color_yellow/color_green/color_purple/color_white/color_orange/color_dark_pink, forage_item/fruit_item/fruit_tree_item, !forage_item_mines, !slime_item, !flower_item, !forage_item_secret, !edible_mushroom, !milk_item, !egg_item, !alcohol_item, !fertilizer_item !quality_fertilizer_item, !ring_item !prehistoric_item, !fossil_item ,!marine_item, !food_pasta, !forage_item_cave",
                 "Message": "[Annetta_Objective_3_Message]",
 
                 "TargetName": "Annetta"
@@ -213,7 +217,7 @@
             "Text": "[Annetta_Objective_3_Text]",
             "RequiredCount": "1",
             "Data": {
-                "AcceptedContextTags": "color_yellow/color_brown, food_sweet/food_bakery/food_cake",
+                "AcceptedContextTags": "category_cooking, color_yellow/color_brown, food_sweet/food_bakery/food_cake, !forage_item, !forage_item_cave",
                 "Message": "[Annetta_Objective_4_Message]",
 
                 "TargetName": "Annetta"
@@ -224,7 +228,7 @@
             "Text": "[Annetta_Objective_4_Text]",
             "RequiredCount": "1",
             "Data": {
-                "AcceptedContextTags": "food_sweet/fruit_item/fruit_tree_item",
+                "AcceptedContextTags": "food_salad/food_sweet/food_breakfast/fruit_item/fruit_tree_item/food pasta",
                 "Message": "[Annetta_Objective_5_Message]",
 
                 "TargetName": "Annetta"
@@ -285,7 +289,7 @@
           "Text": "[Annetta_Fall_Objective_0_Text]",
           "RequiredCount": "1",
           "Data": {
-            "AcceptedContextTags": "season_fall, forage_item/fruit_item, color_dark_blue/color_dark_purple/color_dark_pink",
+            "AcceptedContextTags": "season_fall, forage_item/fruit_item/fruit_tree_item, color_dark_blue/color_dark_purple/color_dark_pink, !forage_item_cave",
             "Message": "[Annetta_Fall_Objective_1_Message]",
             "TargetName": "Annetta"
           }
@@ -295,7 +299,7 @@
           "Text": "[Annetta_Fall_Objective_1_Text]",
           "RequiredCount": "1",
           "Data": {
-            "AcceptedContextTags": "fruit_item/fruit_tree_item",
+            "AcceptedContextTags": "forage_item/fruit_item/fruit_tree_item, !forage_item_mines, !slime_item, !flower_item, !forage_item_secret, !edible_mushroom, !milk_item, !egg_item, !alcohol_item, !fertilizer_item !quality_fertilizer_item, !ring_item !prehistoric_item, !fossil_item ,!marine_item, !food_pasta, !forage_item_cave",
             "Message": "[Annetta_Fall_Objective_2_Message]",
             "TargetName": "Annetta"
           }
@@ -305,7 +309,7 @@
           "Text": "[Annetta_Fall_Objective_2_Text]",
           "RequiredCount": "1",
           "Data": {
-            "AcceptedContextTags": "color_orange/color_brown, food_sweet/food_bakery/food_cake",
+            "AcceptedContextTags": "color_orange/color_brown, food_sweet/food_bakery/food_cake/season_fall, !flower_item, !forage_item_secret, !edible_mushroom, !milk_item, !egg_item, !alcohol_item, !fertilizer_item !quality_fertilizer_item, !ring_item !prehistoric_item, !fossil_item ,!marine_item, !food_pasta, !forage_item_cave",
             "Message": "[Annetta_Fall_Objective_3_Message]",
             "TargetName": "Annetta"
           }
@@ -325,7 +329,7 @@
           "Text": "[Annetta_Fall_Objective_4_Text]",
           "RequiredCount": "1",
           "Data": {
-            "AcceptedContextTags": "!forage_item, category_vegetable",
+            "AcceptedContextTags": "!forage_item, category_vegetable/season_fall, !flower_item, !forage_item_secret, !edible_mushroom, !milk_item, !egg_item, !alcohol_item, !fertilizer_item !quality_fertilizer_item, !ring_item !prehistoric_item, !fossil_item ,!marine_item, !food_pasta, !forage_item_cave",
             "Message": "[Annetta_Fall_Objective_5_Message]",
             "TargetName": "Annetta"
           }
@@ -382,7 +386,7 @@
               "Text": "[Annetta_Winter_Objective_0_Text]",
               "RequiredCount": "1",
               "Data": {
-                "AcceptedContextTags": "season_winter, category_vegetable/forage_item",
+                "AcceptedContextTags": "!flower_item, season_winter, category_vegetable/forage_item/fish_river/fish_ocean",
                 "Message": "[Annetta_Winter_Objective_1_Message]",
                 "TargetName": "Annetta"
               }
@@ -412,7 +416,7 @@
               "Text": "[Annetta_Winter_Objective_3_Text]",
               "RequiredCount": "1",
               "Data": {
-                "AcceptedContextTags": "food_soup",
+                "AcceptedContextTags": "food_soup, category_cooking",
                 "Message": "[Annetta_Winter_Objective_4_Message]",
                 "TargetName": "Annetta"
               }
@@ -422,7 +426,7 @@
               "Text": "[Annetta_Winter_Objective_4_Text]",
               "RequiredCount": "1",
               "Data": {
-                "AcceptedContextTags": "drink_item",
+                "AcceptedContextTags": "drink_item/coffee_item",
                 "Message": "[Annetta_Winter_Objective_5_Message]",
                 "TargetName": "Annetta"
               }
@@ -481,7 +485,7 @@
               "Text": "[Annetta_Spring_Objective_0_Text]",
               "RequiredCount": "1",
               "Data": {
-                "AcceptedContextTags": "!forage_item, !category_vegetable, !category_fruit, color_yellow/color_gold",
+                "AcceptedContextTags": "!forage_item, !category_fish !category_vegetable, color_yellow/color_gold, elvish_item/category_fruit/marine_item/doll_item/category_minerals/golden_relic_item",
                 "Message": "[Annetta_Spring_Objective_0_Message]",
                 "TargetName": "Annetta"
               }
@@ -514,6 +518,78 @@
         }
       }
     },
+
+{
+  "LogName": "SpecialOrderAnnettaSummerLuau",
+  "Action": "EditData",
+  "Target": "Data/SpecialOrders",
+  "Entries": {
+    "AnnettaStone": {
+      "Name": "[Annetta_PrettyStone_Name]",
+      "Requester": "Annetta",
+      "Duration": "TwoWeeks",
+      "Repeatable": "True",
+      "RequiredTags": "season_summer, knows_Annetta, event_1463510168",
+      "OrderType": "",
+      "SpecialRule": "",
+      "Text": "[Annetta_PrettyStone_Text]",
+      "ItemToRemoveOnEnd": null,
+      "MailToRemoveOnEnd": null,
+      "RandomizedElements": null,
+      "Objectives": [
+        {
+              "Type": "Deliver",
+              "Text": "[Annetta_PrettyStone_Objective_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "AcceptedContextTags": "prettystone_item, color_gray",
+                "Message": "[Annetta_PrettyStone_Objective_Message]",
+                "TargetName": "Annetta"
+              }
+            },
+      ],
+      "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "500",
+                "Multiplier": "6"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "PretStneDeliverd",
+                "NoLetter": "true"
+              }
+            },
+            {
+            "Type": "Friendship",
+"Data": {
+    "Amount": "100", 
+    "TargetName": "Annetta" 
+}
+},
+          ]
+      
+    }
+  }
+},
+
+
+{
+  "Action": "EditData",
+  "Target": "Strings/SpecialOrderStrings",
+  "Entries": {
+    "Annetta_PrettyStone_Name": "{{i18n:Annetta_PrettyStone_Name}}",
+    "Annetta_PrettyStone_Text": "{{i18n:Annetta_PrettyStone_Text}}",
+    "Annetta_PrettyStone_Objective_Text": "{{i18n:Annetta_PrettyStone_Objective_Text}}",
+    "Annetta_PrettyStone_Objective_Message": "{{i18n:Annetta_PrettyStone_Objective_Message}}",
+    "Annetta_PrettyStone_Completion_Message": "{{i18n:Annetta_PrettyStone_Completion_Message}}",
+    "Annetta_PrettyStone_Completion": "{{i18n:Annetta_PrettyStone_Completion}}"
+  }
+}
+
  
   ]
   }

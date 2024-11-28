@@ -2,6 +2,33 @@
 "Changes": [
 
  /////MusicChanges/////     
+
+{
+            "Action": "EditMap",
+            "Target": "Maps/Custom_CapeKeyMaze",
+            "MapProperties": {
+                "Music": "shoesbyMyca"
+            },
+            
+            "When": {
+            "Time": "{{range:1000, 1800}}",
+            },
+            "Update": "OnTimeChange",
+        },
+
+{
+            "Action": "EditMap",
+            "Target": "Maps/Custom_CapeKeyMaze3",
+            "MapProperties": {
+                "Music": "shoesbyMyca"
+            },
+            
+            "When": {
+            "Time": "{{range:1000, 1700}}",
+
+            },
+            "Update": "OnTimeChange",
+        },
  
          {
             "Action": "EditMap",

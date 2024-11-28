@@ -1,0 +1,23 @@
+{
+//Jas full day school schedule
+        "Changes": [
+        { 
+            "Action": "EditData",	 
+            "Target": "characters/schedules/Jas",
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LittleRedSchoolHouse": "true",
+            },
+            "Entries": {     
+                "Mon": "0 Forest 111 25 1/610 Custom_SchoolHouse 20 8 3/730 Custom_SchoolHouse 19 8 3 jas_read/1130 Town 24 12 jas_jumprope/1250 Custom_SchoolHouse 20 8 3/1300 Custom_SchoolHouse 19 8 3 jas_read/1550 Town 16 91 0/1750 AnimalShop 1 7 3 jas_sleep", 
+                "Tue": "0 Forest 111 25 1/610 Custom_SchoolHouse 20 8 3/730 Custom_SchoolHouse 19 8 3 jas_read/1130 Town 24 12 jas_jumprope/1250 Custom_SchoolHouse 20 8 3/1300 Custom_SchoolHouse 19 8 3 jas_read/1550 Town 16 91 0/1750 AnimalShop 1 7 3 jas_sleep",  
+                "Wed": "0 Forest 111 25 1/610 Custom_SchoolHouse 20 8 3/730 Custom_SchoolHouse 19 8 3 jas_read/1130 Town 24 12 jas_jumprope/1250 Custom_SchoolHouse 20 8 3/1300 Custom_SchoolHouse 19 8 3 jas_read/1550 Town 16 91 0/1750 AnimalShop 1 7 3 jas_sleep",
+                "Thu": "0 Forest 111 25 1/610 Custom_SchoolHouse 20 8 3/730 Custom_SchoolHouse 19 8 3 jas_read/1130 Town 24 12 jas_jumprope/1250 Custom_SchoolHouse 20 8 3/1300 Custom_SchoolHouse 19 8 3 jas_read/1550 Town 16 91 0/1750 AnimalShop 1 7 3 jas_sleep",
+                "Fri": "0 Forest 111 25 1/610 Custom_SchoolHouse 20 8 3/730 Custom_SchoolHouse 19 8 3 jas_read/1130 Town 24 12 jas_jumprope/1250 Custom_SchoolHouse 20 8 3/1300 Custom_SchoolHouse 19 8 3 jas_read/1550 Town 16 91 0/1750 AnimalShop 1 7 3 jas_sleep",
+                "9": "0 Forest 111 25 1/610 Custom_SchoolHouse 20 8 3/730 Custom_SchoolHouse 19 8 3 jas_read/1130 Town 24 12 jas_jumprope/1250 Custom_SchoolHouse 20 8 3/1300 Custom_SchoolHouse 19 8 3 jas_read/1550 Town 16 91 0/1750 AnimalShop 1 7 3 jas_sleep",
+                "26": "0 Forest 111 25 1/610 Custom_SchoolHouse 20 8 3/730 Custom_SchoolHouse 19 8 3 jas_read/1130 Town 24 12 jas_jumprope/1250 Custom_SchoolHouse 20 8 3/1300 Custom_SchoolHouse 19 8 3 jas_read/1550 Town 16 91 0/1750 AnimalShop 1 7 3 jas_sleep",
+            },
+        },
+    ]
+}

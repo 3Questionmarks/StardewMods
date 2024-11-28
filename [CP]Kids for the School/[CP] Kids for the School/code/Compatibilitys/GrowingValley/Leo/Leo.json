@@ -1,0 +1,27 @@
+{
+//Outfit Loads when use GrowthSpurt from Growing Valley
+        "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Leo_GrowthSpurt_{{Season}}, Characters/Leo_GrowthSpurt",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Leo/{{Season}}_Leo.png",
+            "When": {
+                "HasSeenEvent": "9695002",
+                "HasSeenEvent": "6497428",
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=siliconmodding.GVGrowthSpurt": true,
+            },
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Leo_GrowthSpurt_{{Season}}, Portraits/Leo_GrowthSpurt",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Leo/{{Season}}_portrait_Leo.png",
+            "When": {
+                "HasSeenEvent": "9695002",
+                "HasSeenEvent": "6497428",
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=siliconmodding.GVGrowthSpurt": true,
+            },
+        },
+    ]
+}

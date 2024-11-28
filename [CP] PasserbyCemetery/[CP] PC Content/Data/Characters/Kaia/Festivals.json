@@ -71,7 +71,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Kaia 20 33 2",
+                    "Value": "FC.Kaia 22 32 3",
                     "Delimiter": "/"
                 },
                      {
@@ -80,7 +80,7 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Kaia 20 33 2",
+                    "Value": "FC.Kaia 22 32 3",
                     "Delimiter": "/"
                 },
             
@@ -100,7 +100,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Kaia 16 33 2",
+                    "Value": "FC.Kaia 17 29 2",
                     "Delimiter": "/",
                 },
                      {
@@ -109,14 +109,14 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Kaia 16 33 2",
+                    "Value": "FC.Kaia 17 29 2",
                     "Delimiter": "/"
                 },
         ]
     },
     {
             "Action": "EditData",
-            "Target": "Data/Festivals/fall3",
+            "Target": "Data/Festivals/fall3,Data/Festivals/winter3",
                         "When": {
  "HasFlag|contains=landslideDone": true,
    "HasSeenEvent |contains={{ModID}}_LeslaIntroduction": true,
@@ -170,6 +170,24 @@
                 },
         ]
     },
+            {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Kaia 28 81 1",
+                    "Delimiter": "/"
+                },
+        ]
+    },
        {
             "Action": "EditData",
             "Target": "Data/Festivals/winter8",
@@ -212,7 +230,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Kaia 24 74 0",
+                    "Value": "FC.Kaia 46 89 1",
                     "Delimiter": "/"
                 },
                      {
@@ -221,7 +239,7 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Kaia 24 74 0",
+                    "Value": "FC.Kaia 46 89 1",
                     "Delimiter": "/"
                  },
         ]

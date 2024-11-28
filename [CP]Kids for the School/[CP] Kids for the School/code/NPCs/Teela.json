@@ -1,0 +1,92 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Teela": {
+                "DisplayName": "Teela",
+                "BirthSeason": "Summer",
+                "BirthDay": 16,
+                "HomeRegion": "Other",
+                "Gender": "Female",
+                "Age": "Child",
+                "Manner": "Polite",
+                "Optimism": "Negative",
+                "SocialAnxiety": "Outgoing",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "CanReceiveGifts": true,
+                "Calendar": "AlwaysShown",
+                "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9695002",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_WarpRoom",
+                        "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        }
+                    ],
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Teela": "{{i18n:gifts.Teela.love}}/768 769/{{i18n:gifts.Teela.like}}/773 766 767/{{i18n:gifts.Teela.dislike}}/772/{{i18n:gifts.Teela.hate}}/613 634 635 636 638/{{i18n:gifts.Teela.neutral}}/787/"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Teela",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Teela/Teela.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Teela",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Teela/Teela_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "teela_read_left": "17/17/17"	
+            },
+        },
+//NPC Strings
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.1": "{{i18n:Seat_Teela}}"},
+        },
+        {	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.1":  "{{i18n:Seat_Teela_Tina}}"},
+            "When": {
+                "HasMod": "BURAKMESE.SKE"
+            },
+        },
+//AntiSocial Flag
+        {
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Teela": true
+            },
+            "When": {
+                "Teela": "true"
+            },
+        },
+    ]
+}

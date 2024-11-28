@@ -18,11 +18,12 @@
 
       "Name": "Pretty Stone",
       "Description": "{{i18n:Pretty-Stone_Description_Translated}}",
-      "Category": -2,
-      "Type": "Mineral",
+      "Category": -12,
+      "Type": "Minerals",
       "CanSell": true,
       "Price": 500,
       "IsColored": false,
+ "ContextTags": ["prettystone_item, color_gray"]
     
     }
   }

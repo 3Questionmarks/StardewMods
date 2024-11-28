@@ -1,0 +1,71 @@
+{
+    "Changes": [
+//NPC MAP LOCATIONS TRACKING
+        {
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "Entries": {
+                "Kara": {
+                    "MarkerCropOffset": 8
+                },
+                "Muthu": {
+                    "MarkerCropOffset": 8
+                },
+                "Ahmad": {
+                    "MarkerCropOffset": 8
+                },
+                "Beng": {
+                    "MarkerCropOffset": 8
+                },
+                "Teela": {
+                    "MarkerCropOffset": 8
+                },
+                "Donny": {
+                    "MarkerCropOffset": 10
+                },
+                "Kitty": {
+                    "MarkerCropOffset": 8
+                },
+                "Cammi": {
+                    "MarkerCropOffset": 8
+                },
+                "Amy": {
+                    "MarkerCropOffset": 8
+                },
+                "Kimberly": {
+                    "MarkerCropOffset": 10
+                },
+                "Peter": {
+                    "MarkerCropOffset": 8
+                },
+                "Meha": {
+                    "MarkerCropOffset": 8
+                },
+                "Lavril": {
+                    "MarkerCropOffset": 8
+                },
+                "Void": {
+                    "MarkerCropOffset": 12
+                },
+                "Adrian": {
+                    "MarkerCropOffset": 8
+                },
+                "Tina": {
+                    "MarkerCropOffset": 8
+                },
+                "Douglas": {
+                    "MarkerCropOffset": 8
+                },
+                "James": {
+                    "MarkerCropOffset": 8
+                },
+                "Vanessa": {
+                    "MarkerCropOffset": 8
+                },
+            },
+            "When": {
+                "HasMod": "Bouhm.NPCMapLocations"
+            },
+        },
+    ]
+}

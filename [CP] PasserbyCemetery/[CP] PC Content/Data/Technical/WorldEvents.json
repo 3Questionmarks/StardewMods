@@ -1,5 +1,12 @@
 {
 "Changes": [
+       {
+            "Action": "EditData",
+            "Target": "Data/Events/{{ModID}}_OldGraveYard",
+            "Entries": {
+                "{{ModID}}_TheAmulet/t 1900 2600/w sunny/i {{ModID}}_LostAmulet/e {{ModID}}_RettVisits": "none/-1000 -1000/farmer 37 83 0/skippable/viewport 54 107 clamp true/addConversationTopic FC.TheAmulet 12/addTemporaryActor FC.River 32 32 27 84 2 false Character/addTemporaryActor FC.Objects 16 16 32 80 2 false Character/showFrame FC.Objects 16/pause 1000/move farmer 0 -1 3/move farmer -4 0 0/move farmer 0 -2 3/itemAboveHead {{ModID}}_FireSnapper/warp FC.Objects -3000 -3000/playSound pickUpItem/pause 2000/faceDirection farmer 0/pause 250/playSound leafrustle/faceDirection farmer 3/pause 450/playSound {{ModID}}_Dodo/pause 300/faceDirection farmer 2/pause 350/move FC.River 0 -4 1/faceDirection farmer 3/pause 360/emote farmer 8/move farmer -1 0 3/emote farmer 8/pause 200/playSound {{ModID}}_Dodo/jump farmer 5/pause 200/speed FC.River 4/move FC.River 4 0 1/pause 50/showFrame FC.River 16/pause 50/showFrame FC.River 17/pause 50/showFrame FC.River 18/pause 50/showFrame FC.River 19/pause 50/showFrame FC.River 4/playSound ow/positionOffset farmer 20 0/damageFarmer 25/faceDirection farmer 2/showFrame farmer 5 true/showFrame FC.Objects 12/warp FC.Objects 32 79/playSound throwDownITem/positionOffset FC.Objects 0 -30/pause 100/positionOffset FC.Objects -30 0/pause 100/positionOffset FC.Objects -30 0/pause 100/positionOffset FC.Objects -30 0/pause 100/positionOffset FC.Objects 0 30/pause 100/positionOffset FC.Objects 0 30/pause 360/faceDirection FC.River 3/emote farmer 12/move FC.River -1 0 3/playsound Pickup_Coin15/warp FC.Objects -3000 -3000/pause 200/faceDirection FC.River 2/pause 200/speed FC.River 6/move FC.River 0 4 2/playSound leafrustle/removeItem {{ModID}}_LostAmulet/end",
+}
+        }, 
 	{
 "LogName": "Unlock Lyell's animals, will be sold at Marnies",
 "Action": "EditData",
@@ -15,8 +22,48 @@
 "Target": "Data/Events/{{ModID}}_OldGraveYard",
 "Entries": {
 "{{ModID}}_AltarOffering": "none/-1000 -1000/farmer 17 49 2/viewport 17 49 clamp true/pause 900/question fork0 \"{{i18n:BlessedFruitEvent.1}}#{{i18n:BlessedFruitEvent.2}}#{{i18n:BlessedFruitEvent.3}}#\"/fork FC.YesFruit/end position 17 49",
-"FC.YesFruit": "showFrame farmer 3/playSound stardrop/glow 00 255 4000/farmerEat {{ModID}}_SpeedFruit/message \"{{i18n:BlessedFruitEvent.4}}\"/action addmoney -200/end position 17 49",
+"FC.YesFruit": "showFrame farmer 3/playSound stardrop/glow 00 255 4000/action spacechase0.SpaceCore_ApplyBuff {{ModID}}_YobasBlessing.Buff \"{{i18n:FC.YobasBlessing.Buff}}\"/message \"{{i18n:BlessedFruitEvent.4}}\"/action addmoney -200/end position 17 49",
 }, 
+},
+{
+"Action": "EditData",
+"Target": "Data/Events/{{ModID}}_AncientGraveYard",
+"Entries": {
+"{{ModID}}_ArahOffering": "none/-1000 -1000/farmer 33 15 2/viewport 33 15 clamp true/pause 900/question fork0 \"{{i18n:ArahOffering.00}}\"/fork FC.YesArah/end position 23 30",
+"FC.YesArah": "showFrame farmer 3/playSound stardrop/glow 220 20 60/action spacechase0.SpaceCore_ApplyBuff {{ModID}}_ArahsBlessing.Buff \"{{i18n:FC.ArahsBlessing.Buff}}\"/message \"{{i18n:ArahOffering.01}}\"/action addmoney -300/end position 33 15",
+}, 
+},
+///Heart 3
+          {
+"Action": "EditData",
+"Target": "Data/Events/{{ModID}}_LyellsProperty",
+"Entries": {
+ "{{ModID}}_UnlockTropaTree/w sunny/GameStateQuery PLAYER_HAS_MAIL Host ccPantry Received/t 600 2600/n {{ModID}}_UnlockTropaTree.Mail": "woodsTheme/-1000 -1000/farmer 28 41 2 FC.Lyell 23 44 3 FC.Grady 23 46 3/skippable/addTemporaryActor FC.RoswellSwim 32 32 17 49 2 false Character/showFrame FC.RoswellSwim 57/viewport 25 45 clamp true/addConversationTopic UnlockTropaTree 7/move FC.RoswellSwim 3 0 1/move FC.RoswellSwim  -3 0 3/move FC.RoswellSwim  0 -2 0/move FC.RoswellSwim 0 2 1/pause 400/showFrame FC.RoswellSwim 24/pause 100/showFrame FC.RoswellSwim 25/pause 100/showFrame FC.RoswellSwim 26/pause 100/showFrame FC.RoswellSwim 25/pause 100/showFrame FC.RoswellSwim 24 true/pause 1000/textAbovehead FC.Grady \"{{i18n:UnlockTropaTree.00}}\"/pause 1000/advancedMove FC.RoswellSwim true 3 0 1 1000 -3 0 3 1000 0 -2 4 1000 0 2 1 1000 3 0 1 1000 -3 0 3 1000/pause 300/faceDirection FC.Grady 1/faceDirection FC.Lyell 1/emote FC.Lyell 20/advancedMove farmer false 0 4 3 10 -2 0 3 16000 0 -1 3 10 -3 0 3 10/pause 300/speak FC.Grady \"{{i18n:UnlockTropaTree.01}}\"/pause 100/emote FC.Lyell 8/faceDirection FC.Lyell 3/move FC.Grady 1 0 1/pause 400/speak FC.Lyell \"{{i18n:UnlockTropaTree.02}}\"/pause 200/move FC.Lyell -3 0 2 true/faceDirection FC.Grady 0/pause 200/speak FC.Lyell \"{{i18n:UnlockTropaTree.03}}\"/pause 200/speak FC.Grady \"{{i18n:UnlockTropaTree.04}}\"/move FC.Lyell 1 0 1/pause 200/faceDirection FC.Lyell 1/pause 200/speak FC.Lyell \"{{i18n:UnlockTropaTree.05}}\"/pause 200/move FC.Grady -1 0 0/speak FC.Grady \"{{i18n:UnlockTropaTree.06}}\"/pause 600/emote FC.Lyell 12/pause 400/faceDirection FC.Lyell 2/speak FC.Lyell \"{{i18n:UnlockTropaTree.07}}\"/pause 400/speak FC.Grady \"{{i18n:UnlockTropaTree.08}}\"/faceDirection FC.Lyell 1/pause 200/speak FC.Lyell \"{{i18n:UnlockTropaTree.09}}\"/pause 300/speak FC.Grady \"{{i18n:UnlockTropaTree.10}}\"/pause 500/speak FC.Lyell \"{{i18n:UnlockTropaTree.11}}\"/pause 300/move FC.Lyell 0 -3 1/move FC.Lyell 3 0 0 true/textAbovehead FC.Lyell \"{{i18n:UnlockTropaTree.12}}\"/pause 200/move FC.Grady 4 0 0 true/textAbovehead FC.Grady \"{{i18n:UnlockTropaTree.13}}\"/pause 600 true/viewport move 1 -1 6000000/globalFade/viewport -1000 -1000/addItem {{ModID}}_TropaTreeSapling 1/end",
+  }, 
+ },
+ {
+"Action": "EditData",
+"Target": "Data/Events/{{ModID}}_OldGraveYard",
+"Entries": {
+"{{ModID}}_TheCreature/t 2200 2600/r 0.3": "communityCenter/-1000 -1000/farmer 10 78 0/pause 1000/viewport 11 72 clamp true/addConversationTopic FC.TheCreature 7/removeTile 3 71 Buildings/removeTile 4 71 Buildings/removeTile  3 72 Buildings/removeTile 4 72 Buildings/removeTile 3 73 Buildings/removeTile 4 73 Buildings/removeTile 3 70 Front/removeTile 4 70 Front/skippable/addTemporaryActor FC.Coffin 48 64 3 72 2 false Character/hideShadow FC.Coffin true/positionOffset FC.Coffin -50 0/positionOffset FC.Coffin 0 50/move farmer 0 -5 0/pause 200/playSound grunt/faceDirection farmer 3/pause 200/emote farmer 8/pause 1000/showFrame FC.Coffin 1/pause 300/showFrame FC.Coffin 2/pause 300/showFrame FC.Coffin 3/addTemporaryActor FC.Monster 32 32 5 71 2 false Character/pause 100/playSound rockGolemSpawn/jump farmer 6/startJittering/pause 1000/speed FC.Monster 5/move FC.Monster -8 0 2/pause 1000/playSound grunt/message \"{{i18n:TheCreature.00}}\"/pause 1000/end warpOut",
+
+}, 
+},
+    {
+"LogName": "The Exhibit",
+"Action": "EditData",
+"Target": "Data/Events/{{ModID}}_Exhibit",
+"Entries": {
+ "{{ModID}}_TheExhibit/e {{ModID}}_CaveBlockUnlock/t 700 2300": "breezy/-1000 -1000/farmer 5 13 0 FC.Thalia 15 9 3 FC.Lyell 13 9 1 FC.Grady 8 6 1 FC.Barron 2 7 3/viewport 10 7 clamp true/positionOffset FC.Lyell -30 0/skippable/pause 1000/advancedMove FC.Grady true 0 3 1 9000 0 -3 1 3000/pause 2000/advancedMove FC.Barron true 0 4 3 4000 0 -4 3 6000/advancedMove farmer false 0 -1 1 10 4 0 4 10 0 -2 1 1000 5 0 4 10/pause 300/speak FC.Lyell \"{{i18n:TheExhibit.00}}\"/pause 300/emote FC.Thalia 32/pause 250/speak FC.Thalia \"{{i18n:TheExhibit.01}}\"/pause 250/speak FC.Lyell \"{{i18n:TheExhibit.02}}\"/pause 250/faceDirection FC.Thalia 2/pause 100/emote FC.Thalia 8/pause 250/faceDirection FC.Thalia 3/pause 150/speak FC.Thalia \"{{i18n:TheExhibit.03}}\"/pause 200/faceDirection FC.Lyell 2/pause 150/speak FC.Lyell \"{{i18n:TheExhibit.04}}\"/pause 250/faceDirection FC.Thalia 2/faceDirection FC.Thalia 3/faceDirection FC.Thalia 2/pause 200/speak FC.Thalia \"{{i18n:TheExhibit.05}}\"/pause 250/speak FC.Lyell \"{{i18n:TheExhibit.06}}\"/pause 250/textAbovehead FC.Grady \"{{i18n:TheExhibit.07}}\"/pause 300/emote FC.Lyell 16/pause 150/speak FC.Lyell \"{{i18n:TheExhibit.08}}\"/pause 250/speak FC.Thalia \"{{i18n:TheExhibit.09}}\"/pause 250/speak FC.Thalia \"{{i18n:TheExhibit.10}}\"/pause 300/advancedMove FC.Thalia false 0 -3 3 10 -3 0 4 10 0 -1 4 10/pause 5000/warp FC.Thalia -3000 -3000/pause 150/faceDirection FC.Lyell 1/faceDirection FC.Lyell 2/pause 250/speak FC.Lyell \"{{i18n:TheExhibit.11}}\"/pause 250/advancedMove FC.Lyell false -1 0 2 10 0 1 3 10 -5 0 3 10/pause 1000/viewport move 1 -1 6000000/globalFade/viewport -1000 -1000/end",
+  }
+},
+    {
+"LogName": "Unlock Arcanian Dog",
+"Action": "EditData",
+"Target": "Data/Events/Farm",
+"Entries": {
+ "{{ModID}}_UnlockPetArcaDog/m 1000/e {{ModID}}_LyellIntroduction/t 600 2200/w sunny/h {{ModID}}_ArcanianDog/H": "continue/64 15/farmer 64 15 2 FC.Lyell 65 16 0 pet 63 16 2/skippable/faceDirection PetActor 2/pause 500/animate PetActor false false 120 16 17 18 18/pause 480/animate PetActor false true 120 18/pause 2000/speak FC.Lyell \"{{i18n:ArcaDog.00}}\"/faceDirection FC.Lyell 3/pause 400/showFrame PetActor 18/playPetSound dog_pant/pause 1200/faceDirection FC.Lyell 0/speak FC.Lyell \"{{i18n:ArcaDog.01}}\"/showFrame PetActor 19/pause 500/showFrame PetActor 18/playPetSound dog_pant/shake PetActor 150/pause 1500/speak FC.Lyell \"{{i18n:ArcaDog.02}}\"/catQuestion/pause 1000/faceDirection FC.Lyell 3/speak FC.Lyell \"{{i18n:ArcaDog.03}}\"/pause 500/showFrame PetActor 19/shake PetActor 100/playPetSound dog_pant/pause 800/animate PetActor false false 120 20 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23/pause 200/globalFade/viewport -1000 -1000/end",
+  }
 },
 ]
 }

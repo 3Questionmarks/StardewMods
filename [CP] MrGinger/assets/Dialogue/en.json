@@ -16,7 +16,7 @@
                 "Resort_Bar": "Hmm, I wonder if Gus'd make me one of those fancy cocktails...",
                 "Resort": "Sun and the world's largest litterbox - I can't think of anywhere better to spend my day!",
                 "FlowerDance_Accept":"You want to dance with me? Sure, sounds fun.",
-                "danceRejection": "Don't believe what that book says. Cats don't dance.",
+                "FlowerDance_Decline": "Don't believe what that book says. Cats don't dance.",
                 "divorced": "...Murrrr...$5",
                 "22":"How do I feel about Mondays? I'm pretty much indifferent to them really. A day's a day.$1",
                 "breakUp": "Well, fine. Abigail gives better head scritches anyway.$2",
@@ -82,7 +82,7 @@
                 "spring_Sun_inlaw_Abigail": "Abigail's much happier now she's no longer being stifled by Mr. and Mrs. Boring.$1#$b#Tell her I say 'hi!'$4",
                 "spring_Sun_inlaw_Sebastian": "Does the gloomy crowman make you happy? Well, there's no accounting for taste.",
                 "spring_Sun_inlaw_Sam": "Does Samson remind you of a golden retriever? All eager and bouncing and happy for praise?#$b#Or is it just me?",
-                "spring_Sun_inlaw_Elliot": "Has Mr. Pretentious written you a poem yet? I could write a poem too, you know.#$b#Roses are blue, and violets are too...#$b#What? Yeh, I'm colorblind. But can you see in the dark? Thought not!",
+                "spring_Sun_inlaw_Elliot": "Has Mr. Pretentious written you a poem yet? I could write a poem too, you know.#$b#Roses are blue, and violets are too...$1#$b#What? Yeh, I'm colorblind. But can you see in the dark? Thought not!",
                 "spring_Sun_inlaw_Penny": "Hah, little Vinny is so jealous you married Penny! Humans are silly.",
                 "spring_Sun_inlaw_Maru": "Science girl hasn't managed to burn your house down yet? That's good.#$b#You wanna keep an eye on her. She smells like strawberries and cold metal, and that's just weird.",
                 "spring_Sun_inlaw_Krobus": "There's an interesting scent around you, @. Like shadows and...#$b#...is that a hint of the void? And... sewage? What have you been up to?",
@@ -124,8 +124,10 @@
                 "refusal_knownB": "Move in with you? And what would Marnie and Jas do without me?#$b#Why not give it to stinky chicken-man instead?",
                 "refusal_botherA": "You're really starting to annoy me now...$5",
                 "refusal_botherB": "Go wave that in someone else's face. I don't want to play with you today.",
-                "Event.cs.1501": "Hey there, I found this piece of paper blowing in the wind. Guess your giftee dropped it.$2#$b#Anyhow, figured you should get something, so go on - open it!$1",
-                "Event.cs.1504": "Yeh, I know. Best. Gift. Ever. I'm so thoughtful. You can thank me later, in head scritches and cheese.$4",
+                "WinterStar_GiveGift_Before": "Hey there, I found this piece of paper blowing in the wind. Guess your giftee dropped it.$2#$b#Anyhow, figured you should get something, so go on - open it!$1",
+                "WinterStar_GiveGift_After": "Yeh, I know. Best. Gift. Ever. I'm so thoughtful. You can thank me later, in head scritches and cheese.$4",
+                "WinterStar_ReceiveGift":"Oooh, a present? For me? I could get used to this kind of pampering.$1",
+                "AcceptGift_(O)StardropTea": "Oooh, is this catnip tea?$1"
             }
         },
         {

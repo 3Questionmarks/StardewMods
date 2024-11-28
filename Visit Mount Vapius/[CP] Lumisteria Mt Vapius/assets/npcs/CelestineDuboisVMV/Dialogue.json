@@ -15,7 +15,7 @@
 		//2
         "Mon2": "{{i18n: CelestineDialogueMon2}}",
         "Tue2": "{{i18n: CelestineDialogueTue2|TravelingLadyIsLotti={{TravelingLadyIsLotti}}}}",
-        "Wed2": "{{i18n: CelestineDialogueWed2}}",
+        "Wed2": "{{i18n: CelestineDialogueWed2|HasSBV={{HasMod |contains=skellady.SBVCP}}}}",
         "Thu2": "{{i18n: CelestineDialogueThu2}}",
         "Fri2": "{{i18n: CelestineDialogueFri2}}",
         "Sat2": "{{i18n: CelestineDialogueSat2{{Random:R01, R02}}}}",
@@ -57,6 +57,13 @@
 		//Conversation Topics
         "Lumisteria.MtVapius.Arrival": "{{i18n: CelestineDialogueLumisteria.MtVapius.Arrival}}",
         "Lumisteria.MtVapius.PennyVisit": "{{i18n: CelestineDialogueLumisteria.MtVapius.PennyVisit}}",
+        "Lumisteria.MtVapius.OdalisArriving": "{{i18n: CelestineDialogueLumisteria.MtVapius.OdalisArriving}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneday": "{{i18n: CelestineDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneday}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneweek": "{{i18n: CelestineDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_oneweek}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_twoweeks": "{{i18n: CelestineDialogueeventSeen_Lumisteria.MtVapius_Inn_OdalisArrival_memory_twoweeks}}",
+        "eventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneday": "{{i18n: CelestineDialogueeventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneday}}",
+        "eventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "{{i18n: CelestineDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday}}",
+
 		//Special
 		"reject_865": "{{i18n: CelestineDialogueRejectTomatoSalt}}",
 		"reject_458": "{{i18n: CelestineDialogueRejectBouquet}}",

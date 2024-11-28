@@ -1,0 +1,27 @@
+{
+  "Name": "Kids for the School",
+  "Author": "N3cro_92",
+  "Version": "1.1.5",
+  "Description": "Kids for the School",
+  "UniqueID": "N3cro_92.KidsfortheSchool",
+  "MinimumApiVersion": "4.0.7",
+  "UpdateKeys": [ "Nexus:29295" ],
+  "ContentPackFor": {
+  "UniqueID": "Pathoschild.ContentPatcher",
+   },
+  "Dependencies": [
+      {
+        "UniqueID": "Poltergeister.SeasonalCuteCharacters",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "siliconmodding.GVChildrenSMAPI",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "SuperAardvark.AntiSocial",
+        "IsRequired": false
+      },
+   ]
+}
+

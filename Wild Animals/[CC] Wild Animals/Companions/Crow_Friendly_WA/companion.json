@@ -632,8 +632,7 @@
 	"UpdateWhenPlayerNearby": {
 	"Name": "Crow_Friendly_WA",
 	"Type": "Walking",
-	"Scale": 0.8,
-	"TravelSpeed": 2,
+	"TravelSpeed": 3,
 	"EnableCharacterCollision": false,
 	"EnableFarmerCollision": false,
 	"MaxIdleDistance": -1,

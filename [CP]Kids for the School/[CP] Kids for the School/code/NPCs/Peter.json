@@ -1,0 +1,94 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Peter": {
+                "DisplayName": "Peter",
+                "BirthSeason": "Spring",
+                "BirthDay": 12,
+                "HomeRegion": "Other",
+                "Gender": "Male",
+                "Age": "Child",
+                "Manner": "Polite",
+                "Optimism": "Negative",
+                "SocialAnxiety": "Outgoing",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "CanReceiveGifts": true,
+                "Calendar": "AlwaysShown",
+                "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9695002",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_WarpRoom",
+                        "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        }
+                    ],
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Peter": "{{i18n:gifts.Peter.love}}/233 220 60/{{i18n:gifts.Peter.like}}/6 198 126 127 103/{{i18n:gifts.Peter.dislike}}/96 97 98 99/{{i18n:gifts.Peter.hate}}/348 350/{{i18n:gifts.Peter.neutral}}/684 614/"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Peter",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Peter/Peter.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Peter",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Peter/Peter_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "peter_read_right": "19/19/19",
+                "peter_sit_backward": "18/18/18"
+            },
+        },
+//NPC Strings
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.17": "{{i18n:Seat_Peter}}"},
+        },
+//When James is on the School
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.17": "{{i18n:Seat_Peter_James}}"},
+            "When": {
+                "HasMod": "BURAKMESE.SKE"
+            },
+        },
+//AntiSocial Flag
+        {
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Peter": true
+            },
+            "When": {
+                "Peter": "true"
+            },
+        },
+    ]
+}

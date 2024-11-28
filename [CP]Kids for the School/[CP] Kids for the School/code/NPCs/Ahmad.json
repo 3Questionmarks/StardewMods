@@ -1,0 +1,84 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Ahmad": {
+                "DisplayName": "Ahmad",
+                "BirthSeason": "Summer",
+                "BirthDay": 16,
+                "HomeRegion": "Other",
+                "Gender": "Male",
+                "Age": "Child",
+                "Manner": "Neutral",
+                "Optimism": "Negative",
+                "SocialAnxiety": "Outgoing",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "CanReceiveGifts": true,
+                "Calendar": "AlwaysShown",
+                "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9695002",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_WarpRoom",
+                        "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        }
+                    ],
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Ahmad": "{{i18n:gifts.Ahmad.love}}/233 220 60/{{i18n:gifts.Ahmad.like}}/6 198 126 127 103/{{i18n:gifts.Ahmad.dislike}}/96 97 98 99/{{i18n:gifts.Ahmad.hate}}/348 350/{{i18n:gifts.Ahmad.neutral}}/684 614/"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Ahmad",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Ahmad/Ahmad.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Ahmad",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Ahmad/Ahmad_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "ahmad_read_right": "19/19/19"	
+            },
+        },
+//NPC Strings
+        {	    
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.14": "{{i18n:Seat_Ahmad}}"},
+        },
+//AntiSocial Flag
+        {
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Ahmad": true
+            },
+            "When": {
+                "Ahmad": "true"
+            },
+        },
+    ]
+}

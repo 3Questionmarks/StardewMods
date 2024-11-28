@@ -162,25 +162,7 @@
 				"Lexi_crystal": "{{i18n:strings.lexi.CS101}}"
 			}
 		},
-		{
-			"Action": "EditMap",
-			"Target": "Maps/EastScarp_SeaCave",
-			"When": {
-				"HasSeenEvent": "57872011"
-			},
-			"MapTiles": [
-				{
-					"Position": {
-						"X": 26,
-						"Y": 7
-					},
-					"Layer": "Back",
-					"SetProperties": {
-						"CustomCompanions": "Spawn 1 LemurKat.EastScarpeCompanions.FriendGull"
-					}
-				}
-			]
-		},
+	
 		{
             "LogName": "Lexi Fashion Show Portraits",
             "Action": "Load",

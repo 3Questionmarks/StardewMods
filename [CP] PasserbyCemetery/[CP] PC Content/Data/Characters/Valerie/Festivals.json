@@ -5,7 +5,7 @@
             "Target": "Data/Festivals/spring13",
             "When": {
  "HasFlag|contains=landslideDone": true,
- "HasSeenEvent |contains={{ModID}}_StoneIntroduction": true,
+
 },
             "TextOperations": [
                 {
@@ -34,7 +34,7 @@
             "Target": "Data/Festivals/spring24",
                         "When": {
  "HasFlag|contains=landslideDone": true,
- "HasSeenEvent |contains={{ModID}}_StoneIntroduction": true,
+
 },
             "TextOperations": [
                 {
@@ -43,7 +43,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Valerie 12 17 1",
+                    "Value": "FC.Valerie 13 17 1",
                     "Delimiter": "/"
                 },
                      {
@@ -52,7 +52,7 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Valerie 12 17 1",
+                    "Value": "FC.Valerie 13 17 1",
                     "Delimiter": "/",
         },
         ]
@@ -62,7 +62,7 @@
             "Target": "Data/Festivals/summer11",
                         "When": {
  "HasFlag|contains=landslideDone": true,
- "HasSeenEvent |contains={{ModID}}_StoneIntroduction": true,
+
 },
             "TextOperations": [
                 {
@@ -71,7 +71,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Valerie 15 33 1",
+                    "Value": "FC.Valerie 22 26 2",
                     "Delimiter": "/"
                 },
                      {
@@ -80,7 +80,7 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Valerie 15 33 1",
+                    "Value": "FC.Valerie 22 26 2",
                     "Delimiter": "/"
                 },
         ]
@@ -90,7 +90,7 @@
             "Target": "Data/Festivals/summer28",
                         "When": {
  "HasFlag|contains=landslideDone": true,
- "HasSeenEvent |contains={{ModID}}_StoneIntroduction": true,
+
 },
             "TextOperations": [
                 {
@@ -99,7 +99,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Valerie 17 31 2",
+                    "Value": "FC.Valerie 22 26 2",
                     "Delimiter": "/",
                 },
                      {
@@ -108,17 +108,17 @@
                         "Entries",
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
-                    "Value": "FC.Valerie 17 31 2",
+                    "Value": "FC.Valerie 22 26 2",
                     "Delimiter": "/"
                 },
         ]
     },
     {
             "Action": "EditData",
-            "Target": "Data/Festivals/fall3",
+            "Target": "Data/Festivals/fall3,Data/Festivals/winter3",
                         "When": {
  "HasFlag|contains=landslideDone": true,
- "HasSeenEvent |contains={{ModID}}_StoneIntroduction": true,
+
 },
             "TextOperations": [
                 {
@@ -137,6 +137,24 @@
                         "MainEvent_additionalCharacters{{YearCheck}}"
                     ],
                     "Value": "FC.Valerie 4 15 2",
+                    "Delimiter": "/"
+                },
+        ]
+    },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+                        "When": {
+ "HasFlag|contains=landslideDone": true,
+},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters{{YearCheck}}"
+                    ],
+                    "Value": "FC.Valerie 26 75 2",
                     "Delimiter": "/"
                 },
         ]
@@ -146,7 +164,7 @@
             "Target": "Data/Festivals/fall16",
                         "When": {
  "HasFlag|contains=landslideDone": true,
- "HasSeenEvent |contains={{ModID}}_StoneIntroduction": true,
+
 },
             "TextOperations": [
                 {
@@ -174,7 +192,7 @@
             "Target": "Data/Festivals/winter8",
                         "When": {
  "HasFlag|contains=landslideDone": true,
- "HasSeenEvent |contains={{ModID}}_StoneIntroduction": true,
+
 },
             "TextOperations": [
                 {
@@ -202,7 +220,7 @@
             "Target": "Data/Festivals/winter25",
                         "When": {
  "HasFlag|contains=landslideDone": true,
- "HasSeenEvent |contains={{ModID}}_StoneIntroduction": true,
+
 },
             "TextOperations": [
                 {
