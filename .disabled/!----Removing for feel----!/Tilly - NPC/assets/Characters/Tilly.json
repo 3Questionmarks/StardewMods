@@ -1,0 +1,660 @@
+{
+	"Changes": [	
+	{
+	  // Loading Image Assets 
+      "LogName": "Tilly Sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}.Tilly",
+      "FromFile": "assets/img/TillySheet.png"
+    },
+	
+    {
+      "LogName": "Tilly Portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}.Tilly",
+      "FromFile": "assets/img/TillyPortrait.png"
+    },
+	
+	//Summer Load
+	{
+      "LogName": "Tilly Portrait Summer",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}.Tilly_Summer",
+      "FromFile": "assets/img/TillyPortraitSummer.png"
+    },
+	{
+      "LogName": "Tilly Sprite Summer",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}.Tilly_Summer",
+      "FromFile": "assets/img/TillySheetSummer.png"
+    },
+	
+	//Fall Load
+	{
+      "LogName": "Tilly Portrait Fall",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}.Tilly_Fall",
+      "FromFile": "assets/img/TillyPortraitFall.png"
+    },
+	{
+      "LogName": "Tilly Sprite Summer",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}.Tilly_Fall",
+      "FromFile": "assets/img/TillySheetFall.png"
+    },
+	
+	//Winter Load
+	{
+      "LogName": "Tilly Portrait Winter",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}.Tilly_Winter",
+      "FromFile": "assets/img/TillyPortraitWinter.png"
+    },
+	{
+      "LogName": "Tilly Sprite Winter",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}.Tilly_Winter",
+      "FromFile": "assets/img/TillySheetWinter.png"
+    },
+	
+	//Beach Load 
+	{
+      "LogName": "Tilly Portrait Beach",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}.Tilly_Beach",
+      "FromFile": "assets/img/TillyPortrait_Beach.png"
+    },
+	
+	{
+      "LogName": "Tilly Sprite Beach",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}.Tilly_Beach",
+      "FromFile": "assets/img/TillySheet_Beach.png"
+    },
+	
+	//Costume Load
+	{
+      "LogName": "Tilly Sprite Costume",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}.Tilly_Costume",
+      "FromFile": "assets/img/TillySheetCostume.png"
+    },
+	
+	//LNY Load
+	{
+      "LogName": "Tilly Portrait LNY",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}.Tilly_LNY",
+      "FromFile": "assets/img/TillyPortraitLNY.png"
+    },
+	{
+      "LogName": "Tilly Sprite LNY",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}.Tilly_LNY",
+      "FromFile": "assets/img/TillySheetLNY.png"
+    },
+	
+	//Loading Map Assets
+	
+	{ // Spouse Room
+		"Action": "EditData",
+		"Target": "Data/SpouseRooms",
+		"Entries": {
+			"{{ModId}}.Tilly": "{{ModId}}.TillySpouseRoom/0"
+		}
+	},
+	{ 
+		"Action": "Load",
+		"Target": "Maps/{{ModId}}.TillySpouseRoom",
+		"FromFile": "assets/Maps/TillySpouseRoom.tmx"
+	},
+	{ // Spouse Patio
+		"Action": "EditData",
+		"Target": "Data/SpousePatios",
+		"Entries": {
+			"{{ModId}}.Tilly": "{{ModId}}.TillySpousePatio/0"
+		}
+	},
+	{ 
+		"Action": "Load",
+		"Target": "Maps/{{ModId}}.TillySpousePatio",
+		"FromFile": "assets/Maps/TillyPatio.tmx"
+	},
+	
+	
+	{ // Manifest NPC
+	  "LogName": "NPC Manifestation",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "{{ModId}}.Tilly": {
+			"DisplayName": "{{i18n:Wem.Bundle.Tilly_TillyDisplayName}}",
+			"BirthSeason": "Summer",
+			"BirthDay": 12,
+			"HomeRegion": "Town",
+			"Gender": "Female",
+			"Age": "Adult",
+			"Manner": "Neutral",
+			"SocialAnxiety": "Neutral",
+			"Optimism": "Negative",
+			"CanSocialize": true,
+			"CanBeRomanced": true,
+			"CanReceiveGifts": true,
+			"Calendar": "HiddenUntilMet",
+			"SocialTab": "UnknownUntilMet",
+			"IntroductionsQuest": true,
+			"FlowerDanceCanDance": true,
+			"WinterStarParticipant": true,
+			"CanVisitIsland": true,
+			"SpouseRoom": {
+                "MapAsset": "{{ModId}}.TillySpouseRoom",
+                "MapSourceRect": {
+                  "X": 0,
+                  "Y": 0,
+                  "Width": 6,
+                  "Height": 9
+                }
+              },
+			 "SpousePatio": {
+                "MapAsset": "{{ModId}}.TillySpousePatio",
+                "MapSourceRect": {
+                  "X": 0,
+                  "Y": 0,
+                  "Width": 4,
+                  "Height": 4
+                },
+				"SpriteAnimationFrames": [
+					[80, 5000], 
+					[81, 5000],
+				],
+              },
+			"Home": [
+				{
+					"Id": "Default",
+					"Location": "{{ModId}}.Tilly_TillyHouse",
+					"Tile": { "X": 3, "Y": 4 },
+					"Direction": "Left"
+				}
+			],
+			
+			"Appearance": [
+				{ 
+					"Id": "Default",
+					"Portrait": "Portraits/{{ModId}}.Tilly",
+					"Sprite": "Characters/{{ModId}}.Tilly",
+					"Precedence": 1
+				},
+				{ // Must be named _Beach
+				"Id": "Ginger_Island_Attire",
+				"Portrait": "Portraits/{{ModId}}.Tilly_Beach",
+				"Sprite": "Characters/{{ModId}}.Tilly_Beach",
+				"IsIslandAttire": true,
+				"Precedence": 0		
+				},
+				
+				{ // Summer Appearance
+				"Id": "Summer_Attire",
+				"Season": "summer",
+				"Indoors": true,
+				"Portrait": "Portraits/{{ModId}}.Tilly_Summer",
+				"Sprite": "Characters/{{ModId}}.Tilly_Summer", 
+				"Precedence": 0,
+				},
+				
+				{ // Fall Appearance
+				"Id": "Fall_Attire",
+				"Season": "fall",
+				"Indoors": true,
+				"Portrait": "Portraits/{{ModId}}.Tilly_Fall",
+				"Sprite": "Characters/{{ModId}}.Tilly_Fall", 
+				"Precedence": 0,
+				},
+				
+				{ // Winter Appearance
+				"Id": "Winter_Attire",
+				"Season": "winter",
+				"Indoors": false,
+				"Portrait": "Portraits/{{ModId}}.Tilly_Winter",
+				"Sprite": "Characters/{{ModId}}.Tilly_Winter", 
+				"Precedence": 0,
+				},
+				
+				{ // Spirit's Eve Appearance
+				"Id": "Spirit's_Eve_Attire",
+				"Condition": "IS_EVENT festival_fall27",
+				"Indoors": false,
+				"Sprite": "Characters/{{ModId}}.Tilly_Costume", 
+				"Precedence": -1,
+				},
+				
+				{ //Island Picnic
+				"Id": "Island_Picnic_Attire",
+				"Portrait": "Portraits/{{ModId}}.Tilly_Beach",
+				"Sprite": "Characters/{{ModId}}.Tilly_Beach",
+				"Condition": "IS_EVENT {{ModId}}.Tilly_IslandPicnic",
+				"Precedence": 0		
+				},
+				
+				{ //LNY
+				"Id": "LNY",
+				"Portrait": "Portraits/{{ModId}}.Tilly_LNY",
+				"Sprite": "Characters/{{ModId}}.Tilly_LNY",
+				"Season": "spring",
+				"Condition": "DAY_OF_MONTH 8",
+				"Precedence": 0		
+				},
+			]
+		}
+      },
+    },
+
+	{
+	  // Gift Tastes 
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "{{ModId}}.Tilly": "{{i18n:Wem.Bundle.GiftTaste.Tilly.love}}/340 636 210 341 100 348 797 106 445 424 428 459 614 447 228 724 202 216 251 730 731 903 832 834 70 907 {{ModId}}.Tilly_HoneyCake {{ModId}}.Tilly_TeaCake {{ModId}}.Tilly_MatchaTiramisu {{ModId}}.Tilly_ElliottBook {{ModId}}.Tilly_JTea {{ModId}}.Tilly_MatchLatte {{ModId}}.Tilly_MasalaChai {{ModId}}.Tilly_SakuraTea {{ModId}}.Tilly_MousseCake PurpleBook SkillBook_0 Book_Roe Book_Friendship Book_Void Book_Speed Book_QueenOfSauce Book_Diamonds Book_Mystery {{ModId}}.Tilly_EggTart {{ModId}}.Tilly_SesameBalls {{ModId}}.Tilly_SweetRiceCake {{ModId}}.Tilly_RedBeanSoup/{{i18n:Wem.Bundle.GiftTaste.Tilly.like}}/-103 220 400 904 905 648 223 232 233 236 213 84 70 426 430 432 342 395 577 241 category_flowers Book_Crabbing Book_AnimalCatalogue Book_Speed2 {{ModId}}.Tilly_LFog {{ModId}}.Tilly_MatchaLatte/{{i18n:Wem.Bundle.GiftTaste.Tilly.dislike}}/303 346 238 SkillBook_3 Book_Woodcutting Book_Defense Book_Marlon/{{i18n:Wem.Bundle.GiftTaste.Tilly.hate}}/167/{{i18n:Wem.Bundle.GiftTaste.Tilly.neutral}}/221 SkillBook_2 SkillBook_1 SkillBook_4 Book_Trash Book_Bombs Book_WildSeeds Book_PriceCatalogue"
+      }
+    },
+	
+	
+	//Load Blanks
+	{
+		"LogName": "Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/{{ModId}}.Tilly, Characters/Dialogue/MarriageDialogue{{ModId}}.Tilly, Characters/schedules/{{ModId}}.Tilly, Strings/schedules/{{ModId}}.Tilly, Data/Locations/{{ModId}}.Tilly_TillyHouse, Data/Locations/{{ModId}}.Tilly_TillyShop, Data/Events/{{ModId}}.Tilly_TillyHouse, Data/Events/{{ModId}}.Tilly_TillyShop",
+		"FromFile": "blank.json",
+	},
+
+	{
+	  // Tilly Dialogue - CC Route
+      "LogName": "Tilly Dialogue - CC Route",
+      "Action": "Include",
+      "FromFile": "assets/dialogue/DialogueTilly.json",
+	  "When": {
+		  "HasSeenEvent | contains = 502261": false,
+		  "IsJojaMartComplete": false,
+	  },
+    },
+	
+	{
+	  // Dialogue - Joja Route Not Finished
+      "LogName": "Dialogue - Joja Route",
+      "Action": "Include",
+      "FromFile": "assets/dialogue/DialogueJoja.json",
+	  "When": {
+		  "HasSeenEvent | contains = 502261": true,
+		  "IsJojaMartComplete": true,
+		  "HasSeenEvent | contains = {{ModId}}.Tilly_JojaPlans": false,
+	  },
+    },
+	
+	{
+	  // Tilly Dialogue - Joja Route Finished
+      "LogName": "Tilly Dialogue - CC Route",
+      "Action": "Include",
+      "FromFile": "assets/dialogue/DialogueTilly.json",
+	  "When": {
+		  "HasSeenEvent | contains = 502261": true,
+		  "IsJojaMartComplete": true,
+		  "HasSeenEvent | contains = {{ModId}}.Tilly_JojaPlans": true,
+	  },
+    },
+	
+	{
+	  // Marriage Dialogue - Tilly
+      "LogName": "Marriage Dialogue - Tilly",
+      "Action": "Include",
+      "FromFile": "assets/dialogue/MarriageDialogueTilly.json",
+    },
+	
+	// Schedule
+	{
+
+		  "LogName": "Schedule, ABOVE BLACKSMITH",
+		  "Action": "Include",
+		  "FromFile": "assets/schedules/scheduleTilly.json",
+		  "When": {
+			  "Tilly's House Location": "Above Blacksmith",
+		  },
+	},
+	{
+
+		  "LogName": "Schedule, BELOW PENNY",
+		  "Action": "Include",
+		  "FromFile": "assets/schedules/scheduleTillyV2.json",
+		  "When": {
+			  "Tilly's House Location": "Below Penny",
+		  },
+	},
+	
+	//Platonic Route 
+	{
+
+		  "LogName": "Schedule, ABOVE BLACKSMITH",
+		  "Action": "Include",
+		  "FromFile": "assets/schedules/scheduleTillyShopPlatonic.json",
+		  "When": {
+			  "Tilly's House Location": "Above Blacksmith",
+			  "Tilly's Route": "Platonic",
+			  "HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+		  },
+	},
+	{
+
+		  "LogName": "Schedule, BELOW PENNY",
+		  "Action": "Include",
+		  "FromFile": "assets/schedules/scheduleTillyShopPlatonicV2.json",
+		  "When": {
+			  "Tilly's House Location": "Below Penny",
+			  "Tilly's Route": "Platonic",
+			  "HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+		  },
+	},
+	
+	//Joja Route
+	{
+
+		  "LogName": "Schedule, ABOVE BLACKSMITH",
+		  "Action": "Include",
+		  "FromFile": "assets/schedules/scheduleTillyShopPlatonic.json",
+		  "When": {
+			  "Tilly's House Location": "Above Blacksmith",
+			  "Tilly's Route": "Joja",
+			  "HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+		  },
+	},
+	{
+
+		  "LogName": "Schedule, BELOW PENNY",
+		  "Action": "Include",
+		  "FromFile": "assets/schedules/scheduleTillyShopPlatonicV2.json",
+		  "When": {
+			  "Tilly's House Location": "Below Penny",
+			  "Tilly's Route": "Joja",
+			  "HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+		  },
+	},
+	
+	
+	//Schedule strings
+	{
+		"LogName": "Include sched strings",
+		"Action": "Include",
+		"FromFile": "assets/schedules/TillyScheduleStrings.json",
+	},
+	
+	//Festivals
+	{
+		"LogName": "Include festival data",
+		"Action": "Include",
+		"FromFile": "assets/Festivals/festivalsTilly.json",
+		"When": {
+			"HasMod | contains = FlashShifter.StardewValleyExpandedCP": false,
+		}
+	},
+	
+	//Festivals
+	{
+		"LogName": "Include festival data",
+		"Action": "Include",
+		"FromFile": "assets/Festivals/festivalsTillySVE.json",
+		"When": {
+			"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+		}
+	},
+	
+	//Load Object Image 
+	{
+		"LogName": "Load Object Image Assets",
+		"Action": "Load",
+		"Target": "{{ModId}}.Tilly/Objects",
+		"FromFile": "assets/Objects/objectsTilly.png",
+	},
+
+	//Include Objects Data
+	{
+		"Action": "Include",
+		"FromFile": "assets/Objects/objectsTilly.json",
+	},
+
+	//Include Events
+	{
+		"Action": "Include",
+		"FromFile": "assets/Events/eventsTilly.json",
+	},
+	
+	//Include Quests and Mail
+	{
+		"Action": "Include",
+		"FromFile": "assets/Misc/QuestsTilly.json, assets/Misc/mailTilly.json",
+	},
+	
+		//Movie Data
+	{
+		"LogName": "Include Movie data",
+		"Action": "Include",
+		"FromFile": "assets/Movies/moviesTilly.json",
+	},
+	
+	//Load Mail Image
+	{
+		"LogName": "Load Mail Image Asset",
+		"Action": "Load",
+		"Target": "{{ModId}}.Tilly/MailPaper",
+		"FromFile": "assets/Misc/MailPaper.png",
+	},
+
+	//NYAPU-STYLE PORTRAITS
+	{
+		"LogName": "Edit Tilly's's Default Portraits",
+		"Action": "EditImage",
+		"Priority": "Late + 3",
+		"Target": "Portraits/{{ModId}}.Tilly",
+		"FromFile": "assets/img/TillyNyapu.png",
+		"When": {
+				"Nyapu-style Portraits": true,
+			},		
+	},
+	{
+		"LogName": "Edit Tilly's's Default Summer Portraits",
+		"Action": "EditImage",
+		"Priority": "Late + 3",
+		"Target": "Portraits/{{ModId}}.Tilly_Summer",
+		"FromFile": "assets/img/TillyNyapuSummer.png",
+		"When": {
+				"Nyapu-style Portraits": true,
+			},		
+	},
+	{
+		"LogName": "Edit Tilly's's Default Fall Portraits",
+		"Action": "EditImage",
+		"Priority": "Late + 3",
+		"Target": "Portraits/{{ModId}}.Tilly_Fall",
+		"FromFile": "assets/img/TillyNyapuFall.png",
+		"When": {
+				"Nyapu-style Portraits": true,
+			},		
+	},
+	{
+		"LogName": "Edit Tilly's's Default Winter Portraits",
+		"Action": "EditImage",
+		"Priority": "Late + 3",
+		"Target": "Portraits/{{ModId}}.Tilly_Winter",
+		"FromFile": "assets/img/TillyNyapuWinter.png",
+		"When": {
+				"Nyapu-style Portraits": true,
+			},		
+	},
+	{
+		"LogName": "Edit Tilly's's Default Beach Portraits",
+		"Action": "EditImage",
+		"Priority": "Late + 5",
+		"Target": "Portraits/{{ModId}}.Tilly_Beach",
+		"FromFile": "assets/img/TillyNyapuBeach.png",
+		"When": {
+				"Nyapu-style Portraits": true,
+			},		
+	},
+	{
+		"LogName": "Edit Tilly's's Default LNY Portraits",
+		"Action": "EditImage",
+		"Priority": "Late + 5",
+		"Target": "Portraits/{{ModId}}.Tilly_LNY",
+		"FromFile": "assets/img/TillyNyapuLNY.png",
+		"When": {
+				"Nyapu-style Portraits": true,
+			},		
+	},
+	
+	//KID REPLACEMENT
+	{
+		"LogName": "Baby - Lighter Skin",
+		"Action": "EditImage",
+		"Target": "Characters/Baby",
+		"FromFile": "assets/img/Kid/TillyBaby.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Spouse": "{{ModId}}.Tilly",
+		},
+	},
+	{
+		"LogName": "Baby - Darker Skin",
+		"Action": "EditImage",
+		"Target": "Characters/Baby_dark",
+		"FromFile": "assets/img/Kid/TillyBabyDarkerSkin.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Spouse": "{{ModId}}.Tilly",
+		},
+	},
+	{
+		"LogName": "Girl - Lighter Skin, Straight Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_girl, Characters/Toddler",
+		"FromFile": "assets/img/Kid/TillyGirl.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Hair Type - Girl": "Straight Hair",
+		},
+	},
+	{
+		"LogName": "Girl - Darker Skin, Straight Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_girl_dark, Characters/Toddler_dark",
+		"FromFile": "assets/img/Kid/TillyGirlDarkerSkin1.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Hair Type - Girl": "Straight Hair",
+		},
+	},
+	
+	{
+		"LogName": "Boy - Lighter Skin, Straight Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_boy",
+		"FromFile": "assets/img/Kid/TillyBoy.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Hair Type - Boy": "Straight Hair",
+		},
+	},
+	{
+		"LogName": "Boy - Darker Skin, Straight Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_boy_dark",
+		"FromFile": "assets/img/Kid/TillyBoyDarkerSkin1.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Hair Type - Boy": "Straight Hair",
+		},
+	},
+	
+	{
+		"LogName": "Girl - Lighter Skin, Curly Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_girl, Characters/Toddler",
+		"FromFile": "assets/img/Kid/TillyGirl2.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Hair Type - Girl": "Curly Hair",
+		},
+	},
+	{
+		"LogName": "Girl - Darker Skin, Curly Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_girl_dark, Characters/Toddler_dark",
+		"FromFile": "assets/img/Kid/TillyGirlDarkerSkin2.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Hair Type - Girl": "Curly Hair",
+		},
+	},
+	
+	{
+		"LogName": "Boy - Lighter Skin, Curly Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_boy",
+		"FromFile": "assets/img/Kid/TillyBoy2.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Hair Type - Girl": "Curly Hair",
+		},
+	},
+	{
+		"LogName": "Boy - Darker Skin, Curly Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_boy_dark",
+		"FromFile": "assets/img/Kid/TillyBoyDarkerSkin2.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Hair Type - Boy": "Curly Hair",
+		},
+	},
+	
+	{
+		"LogName": "Girl - Darker Skin, Coily Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_girl_dark, Characters/Toddler_dark",
+		"FromFile": "assets/img/Kid/TillyGirlDarkerSkin3.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Hair Type - Girl": "Coily Hair",
+		},
+	},
+	{
+		"LogName": "Boy - Darker Skin, Coily Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_boy_dark,",
+		"FromFile": "assets/img/Kid/TillyBoyDarkerSkin3.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Hair Type - Boy": "Coily Hair",
+		},
+	},
+	
+	//Failsafe for Lighter Skin, Coily Hair
+	{
+		"LogName": "Girl - Lighter Skin, Coily Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_girl, Characters/Toddler",
+		"FromFile": "assets/img/Kid/TillyGirl2.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Hair Type - Girl": "Coily Hair",
+		},
+	},
+	{
+		"LogName": "Boy - Lighter Skin, Coily Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_boy",
+		"FromFile": "assets/img/Kid/TillyBoy2.png",
+		"PatchMode": "Replace",
+		"When": {
+			"Hair Type - Boy": "Coily Hair",
+		},
+	},
+
+	]
+}

@@ -1,7 +1,7 @@
 ﻿{
   "Name": "[CP] Additional Farm Cave",
   "Author": "Tikamin557",
-  "Version": "2.9",
+  "Version": "4.0",
   "Description": "Additional Farm Cave.",
   "UniqueID": "Tikamin557.CP.AdditionalFarmCave",
   "UpdateKeys": [ "Nexus:14109" ],
@@ -14,6 +14,10 @@
       { "UniqueID": "acearohippo.PCFCVariety", "IsRequired": false },
       { "UniqueID": "Aimon.MoreLivelyFarmCave", "IsRequired": false },
       { "UniqueID": "neuralwiles.HiddenSpringFarmCave", "IsRequired": false },
-      { "UniqueID": "Kanjinuma.PersonalFarmCave", "IsRequired": false }
+      { "UniqueID": "Kanjinuma.PersonalFarmCave", "IsRequired": false },
+      { "UniqueID": "Wildflour.Hippo_Cliffside_FarmCave", "IsRequired": false },
+      { "UniqueID": "Kurimiu.PlantableFarmcave", "IsRequired": false },
+      { "UniqueID": "crystalinerose.FarmCaves", "IsRequired": false },
+      { "UniqueID": "Xiddav.FarmCave", "IsRequired": false }
   ]
 }

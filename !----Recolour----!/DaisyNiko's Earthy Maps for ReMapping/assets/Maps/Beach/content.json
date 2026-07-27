@@ -1,0 +1,52 @@
+{
+  "Changes": [
+//BeachAdditionalStorage
+    {
+      "LogName": "(Earthy) Recolor Remapping (Beach.Additional)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Beach.Additional",
+      "FromFile": "assets/Maps/Beach/Beach.Additional_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+        "RMP Enable (Earthy) Recolour": "ON"
+      }
+    },
+//Boat Journey
+    {
+      "LogName": "Remapping (Earthy) Recolor Beach.Additional Boat Journey SVE",
+      "Action": "EditImage",
+      "Target": "Minigames/{{season}}_boatJourneyMap",
+      "FromFile": "assets/Maps/Beach/Beach.AdditionalBJ_{{season}}.png",
+      "ToArea": {"X": 277, "Y": 64, "Width": 9, "Height": 9},
+      "PatchMode": "Overlay",
+      "When": {
+        "HasMod: |contains=Tikamin557.BeachAdditionalStorageSpaceArea": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+      }
+    },
+//BeachExtensionForCrab
+    {
+      "LogName": "(Earthy) Recolor Remapping (Beach.Extension)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Beach.Extension",
+      "FromFile": "assets/Maps/Beach/Beach.Extension_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+        "RMP Enable (Earthy) Recolour": "ON"
+       }
+    },
+//Boat Journey
+    {
+      "LogName": "Remapping (Earthy) Recolor Beach.Extension Boat Journey SVE",
+      "Action": "EditImage",
+      "Target": "Minigames/{{season}}_boatJourneyMap",
+      "FromFile": "assets/Maps/Beach/Beach.Extension_{{season}}.png",
+      "ToArea": {"X": 260, "Y": 52, "Width": 30, "Height": 15},
+      "PatchMode": "Overlay",
+      "When": {
+        "HasMod: |contains=Tikamin557.BeachExtensionForCrabPod": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+      }
+    }
+  ]
+}

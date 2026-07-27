@@ -1,0 +1,180 @@
+{
+  "Format": "2.8.0",
+
+  "ConfigSchema": {
+//Setting to enable or disable the mod
+
+		"RMP Enable (Earthy) Recolour":
+		{
+			"AllowValues": "ON, OFF",
+			"Default": "ON",
+			"Section": "RMP.ENABLE"
+		}
+	},
+
+  "DynamicTokens": [
+//SOURCE - Activates Vanilla style if Stardew Valley Expanded is NOT installed
+		{
+      "Name": "RMP.Source",
+      "Value": "Vanilla",
+      "When": { 
+        "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+       }
+    },
+		{
+      "Name": "RMP.Source",
+      "Value": "SVE",
+      "When": { 
+        "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+
+//SEASONS - Default season to prevent main menu errors
+	   {
+      "Name": "RMP.Season",
+      "Value": "spring"
+    },
+	  {
+      "Name": "RMP.Season",
+      "Value": "spring",
+      "When": { 
+        "Season": "spring"
+      }
+    },
+		{
+      "Name": "RMP.Season",
+      "Value": "summer",
+      "When": { 
+        "Season": "summer"
+      }
+    },
+		{
+      "Name": "RMP.Season",
+      "Value": "fall",
+      "When": { 
+        "Season": "fall"
+      }
+    },
+		{
+      "Name": "RMP.Season",
+      "Value": "winter",
+      "When": { 
+        "Season": "winter"
+      }
+    },
+
+//DEFENSE DIVISION - Identify the current property condition
+	  {
+      "Name": "RMP.DD.House",
+      "Value": "Cx",
+      "When": { 
+			  "HasSeenEvent |contains=61743015": false,
+			  "HasSeenEvent |contains=61743017": false,
+			  "HasMod: |contains=DD.DefenseDivision": true
+      }
+    },
+	  {
+      "Name": "RMP.DD.House",
+      "Value": "Loja.Comu.Cx",
+      "When": {
+			  "HasSeenEvent |contains=61743015": true,
+			  "HasMod: |contains=DD.DefenseDivision": true
+      }
+    },
+	  {
+      "Name": "RMP.DD.House",
+      "Value": "Loja.Joja.Cx",
+      "When": { 
+			  "HasSeenEvent |contains=61743017": true,
+			  "HasMod: |contains=DD.DefenseDivision": true
+      }
+    },
+
+//HALEY BAKERY - Identify the current property condition (old or new)
+	  {
+      "Name": "RMP.HaleyBakery.State",
+      "Value": "Velho",
+      "When": { 
+			  "HasMod: |contains=kabulla.bakery": true
+      }
+    },
+	  {
+      "Name": "RMP.HaleyBakery.State",
+      "Value": "Velho",
+      "When": { 
+			  "HasMod: |contains=kabulla.bakery": true,
+        "HasSeenEvent: anyPlayer|contains=80801010": false
+      }
+    },
+	  {
+      "Name": "RMP.HaleyBakery.State",
+      "Value": "Novo",
+      "When": {
+			  "HasMod: |contains=kabulla.bakery": true,
+        "HasSeenEvent: anyPlayer|contains=80801010": true
+      }
+    },
+
+//FIASA - Identify which type of relationship was chosen
+	  {
+      "Name": "RMP.FIASA.Bond",
+      "Value": "Platonic",
+      "When": { 
+        "HasMod: |contains=CC.Koda.Platonic": true
+      }
+    },
+	  {
+      "Name": "RMP.FIASA.Bond",
+      "Value": "Romance",
+      "When": { 
+        "HasMod: |contains=CC.Koda.Romance": true
+      }
+    }
+  ],
+
+  "Changes": [
+    { "Action": "Include", "FromFile": "assets/Maps/Aspen/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Ayeisha/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Backwood Hill/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Beach/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Bridge to Blue Moon/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Cape Stardew/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Dam/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/DeadBoy Detectives/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Defense Devision/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Desert Shortcut/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Downhill/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Ecosystem/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Fiasa Platonic.Romance/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Fishing Pond/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Fishing Trawler/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Fishmonger/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Garden Village/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Gem.Sea/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Haley Bakery/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Isla/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Jane/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Joseph Seed Shop/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Juliet and Jessie/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Juna/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Law and Order/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Little Red School House/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Louis Garage/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Louvier Fromagerie Store/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Lunna Astray/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Mineral Town/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/My Submarine/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Northwest Coast/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Ornithologists Guild/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Paisley Bridal Boutique/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Ranger Taro/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Ridgeside Village/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Shopkeeper Leela/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Stray Catfe/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Sunberry Village/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Sydney/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Therapist/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Walk to Desert/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Wilford/content.json" }
+  ]
+}

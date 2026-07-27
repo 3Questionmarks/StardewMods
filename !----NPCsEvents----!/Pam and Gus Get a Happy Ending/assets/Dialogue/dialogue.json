@@ -1,0 +1,71 @@
+{
+    "Changes": [
+        {
+            "LogName": "Pam Conversation Topics",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pam",
+            "Entries": {
+                "PamGus01": "{{i18n:{{ModId}}_ConversationTopics.Pam.PamGus01}}",
+                "PamGus02": "{{i18n:{{ModId}}_ConversationTopics.Pam.PamGus02}}",
+                "PamGus05": "{{i18n:{{ModId}}_ConversationTopics.Pam.PamGus05}}",
+                "PamGus061": "{{i18n:{{ModId}}_ConversationTopics.Pam.PamGus061}}",
+                "PamGus062": "{{i18n:{{ModId}}_ConversationTopics.Pam.PamGus062}}",
+                "PamGus07": "{{i18n:{{ModId}}_ConversationTopics.Pam.PamGus07}}",
+                "PamGus08": "{{i18n:{{ModId}}_ConversationTopics.Pam.PamGus08}}",
+                "PamGus101": "{{i18n:{{ModId}}_ConversationTopics.Pam.PamGus101}}",
+                "PamGus102a": "{{i18n:{{ModId}}_ConversationTopics.Pam.PamGus102a}}",
+                "PamGus102b": "{{i18n:{{ModId}}_ConversationTopics.Pam.PamGus102b}}",
+                "PamGus103a": "{{i18n:{{ModId}}_ConversationTopics.Pam.PamGus103a}}",
+                "PamGus103b": "{{i18n:{{ModId}}_ConversationTopics.Pam.PamGus103b}}"
+            }
+        },
+        {
+            "LogName": "Gus Conversation Topics",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gus",
+            "Entries": {
+                "PamGus01": "{{i18n:{{ModId}}_ConversationTopics.Gus.PamGus01}}",
+                "PamGus02": "{{i18n:{{ModId}}_ConversationTopics.Gus.PamGus02}}",
+                "PamGus05": "{{i18n:{{ModId}}_ConversationTopics.Gus.PamGus05}}",
+                "PamGus061": "{{i18n:{{ModId}}_ConversationTopics.Gus.PamGus061}}",
+                "PamGus062": "{{i18n:{{ModId}}_ConversationTopics.Gus.PamGus062}}",
+                "PamGus07": "{{i18n:{{ModId}}_ConversationTopics.Gus.PamGus07}}",
+                "PamGus08": "{{i18n:{{ModId}}_ConversationTopics.Gus.PamGus08}}",
+                "PamGus101": "{{i18n:{{ModId}}_ConversationTopics.Gus.PamGus101}}",
+                "PamGus102a": "{{i18n:{{ModId}}_ConversationTopics.Gus.PamGus102a}}",
+                "PamGus102b": "{{i18n:{{ModId}}_ConversationTopics.Gus.PamGus102b}}",
+                "PamGus103a": "{{i18n:{{ModId}}_ConversationTopics.Gus.PamGus103a}}",
+                "PamGus103b": "{{i18n:{{ModId}}_ConversationTopics.Gus.PamGus103b}}"
+            }
+        },
+        {
+            "LogName": "Penny Conversation Topics",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries": {
+                "PamGus02": "{{i18n:{{ModId}}_ConversationTopics.Penny.PamGus02}}",
+                "PamGus08": "{{i18n:{{ModId}}_ConversationTopics.Penny.PamGus08}}",
+                "PamGus103a": "{{i18n:{{ModId}}_ConversationTopics.Penny.PamGus103a}}",
+                "PamGus103b": "{{i18n:{{ModId}}_ConversationTopics.Penny.PamGus103b}}"
+            }
+        },
+        {
+            "LogName": "Emily Conversation Topics",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries": {
+                "PamGus103a": "{{i18n:{{ModId}}_ConversationTopics.Emily.PamGus103a}}",
+                "PamGus103b": "{{i18n:{{ModId}}_ConversationTopics.Emily.PamGus103b}}"
+            }
+        },
+        {
+            "LogName": "Lewis Conversation Topics",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Lewis",
+            "Entries": {
+                "PamGus103a": "{{i18n:{{ModId}}_ConversationTopics.Lewis.PamGus103a}}",
+                "PamGus103b": "{{i18n:{{ModId}}_ConversationTopics.Lewis.PamGus103b}}"
+            }
+        }
+    ]
+}

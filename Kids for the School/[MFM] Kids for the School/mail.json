@@ -1,0 +1,50 @@
+[
+	{
+		"Id": "PennyFullTime.Salary",
+		"Title": "Pennys_Payslip", 
+		"Text": "Pennys_Text", 
+          	"Repeatable": "true",
+		"FriendshipConditions": 
+		[
+			{
+				"NpcName": "Penny",
+				"FriendshipLevel": 12,
+				"FriendshipStatus": ["Married"]
+			}
+		],
+		"EventsSeen": [9695002],
+		"Days": [28],
+   	},
+    {
+		"Id": "FlorFullTime.Salary",
+		"Title": "Flors_Payslip", 
+		 "Text": "Flors_Text", 
+            "Repeatable": "true",
+		"FriendshipConditions": 
+		[
+			{
+				"NpcName": "Flor",
+				"FriendshipLevel": 12,
+				"FriendshipStatus": ["Married"]
+			}
+		],
+		"EventsSeen": [9695002],
+		"Days": [28],
+    },
+	{
+		"Id": "LeahPartTime.Salary",
+		"Title": "Leahs_Payslip", 
+		 "Text": "Leahs_Text", 
+            "Repeatable": "true",
+		"FriendshipConditions": 
+		[
+			{
+				"NpcName": "Leah",
+				"FriendshipLevel": 12,
+				"FriendshipStatus": ["Married"]
+			}
+		],
+		"EventsSeen": [9695002],
+		"Days": [28],
+    },
+]

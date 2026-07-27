@@ -1,0 +1,59 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Fiasa)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Fiasa",
+      "FromFile": "assets/Maps/Fiasa Platonic.Romance/Fiasa_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+//Boat Journey
+    {	
+		  "LogName": "Remapping (Earthy) Recolor Fiasa Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Fiasa Platonic.Romance/Fiasa_{{season}}.png", 
+		  "ToArea": {"X": 252, "Y": 58, "Width": 12, "Height": 8},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=CC.Koda.{{RMP.FIASA.Bond}}": true,
+			  "Season": "summer, winter",
+			  "DayofWeek": "Sunday, Monday, Tuesday, Thursday, Friday",
+			  "Weather": "Sun, Snow, Wind",
+			  "DayEvent |contains=dance of the moonlight jellies": false,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+    {
+		  "LogName": "Remapping (Earthy) Recolor Fiasa Ecosystem Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Fiasa Platonic.Romance/Fiasa_{{season}}.png", 
+		  "ToArea": {"X": 220, "Y": 51, "Width": 12, "Height": 8},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=cajcbell.ESE": true,
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			  "DayofWeek": "Monday, Tuesday, Wednesday, Thursday, Friday",
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {
+		  "LogName": "Remapping (Earthy) Recolor Fiasa Ecosystem Boat Journey SVE",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Fiasa Platonic.Romance/Fiasa_{{season}}.png", 
+		  "ToArea": {"X": 215, "Y": 60, "Width": 12, "Height": 8},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=cajcbell.ESE": true,
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			  "DayofWeek": "Monday, Tuesday, Wednesday, Thursday, Friday",
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  }
+  ]
+}

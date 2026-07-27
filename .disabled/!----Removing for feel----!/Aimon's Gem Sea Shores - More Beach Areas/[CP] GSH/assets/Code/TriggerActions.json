@@ -1,0 +1,20 @@
+{
+    "Changes": [
+//FLAGS
+	
+	{
+            "LogName": "Add Flower Festival Bridge",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+			  "Aimon_Flag_FF_Bridge": { 
+                    "Id": "Aimon_Flag_FF_Bridge",
+                    "Trigger": "DayStarted",
+                    "Condition": "IS_EVENT festival_spring_23",
+		//"Condition": "PLAYER_HAS_MAIL Current spring_23",
+                    "Action": "AddMail Current Aimon_Flag_FF_Bridge received"
+						},
+			},
+		},	
+    ]
+}

@@ -1,0 +1,217 @@
+{
+	"Changes": [
+	//Main Events
+		//2 Hearts - Graveyard
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Railroad",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"Entries": {
+				"95790300/f Faust 500/t 2100 2530": "continue/15 21/Faust 15 21 0 farmer 24 27 0/addLantern 931 15 21 2/showFrame Faust 18/skippable/addConversationTopic Faust2HeartEvent 1/move farmer 0 -3 0/move farmer -9 0 3/move farmer 0 -1 0/pause 500/showFrame Faust 16/pause 500/speak Faust \"{{i18n:Events.Grave.1}}\"/pause 500/emote farmer 8/pause 500/speak Faust \"{{i18n:Events.Grave.2}}\"/pause 500/quickQuestion {{i18n:Events.Grave.3}}(break)friendship Faust -5\\speak Faust \"{{i18n:Events.Grave.4.1}}\"(break)speak Faust \"{{i18n:Events.Grave.4.2}}\"/pause 250/speak Faust \"{{i18n:Events.Grave.5}}\"/pause 500/speak Faust \"{{i18n:Events.Grave.6}}\"/pause 500/quickQuestion {{i18n:Events.Grave.7}}(break)speak Faust \"{{i18n:Events.Grave.8.1}}\"(break)friendship Faust 10\\speak Faust \"{{i18n:Events.Grave.8.2}}\"(break)friendship Faust 15\\speak Faust \"{{i18n:Events.Grave.8.3}}\"/pause 750/emote Faust 28/pause 750/speak Faust \"{{i18n:Events.Grave.9}}\"/pause 500/showFrame Faust 17/shake Faust 250/emote Faust 40/pause 450/showFrame Faust 16/pause 50/speak Faust \"{{i18n:Events.Grave.10}}\"/pause 500/emote farmer 56/pause 500/globalFade/viewport 1000 1000/stopMusic/end"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Town",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"Entries": {
+				"95790300/f Faust 500/t 2000 2400": "continue/47 89/Faust 47 89 2 farmer 54 92 2/addLantern 931 47 89 2/showFrame Faust 18/skippable/addConversationTopic Faust2HeartEvent 1/move farmer 0 3 0/move farmer -7 0 3/move farmer 0 -4 0/pause 500/showFrame Faust 16/pause 500/speak Faust \"{{i18n:Events.Grave.1}}\"/pause 500/emote farmer 8/pause 500/speak Faust \"{{i18n:Events.Grave.2}}\"/pause 500/quickQuestion {{i18n:Events.Grave.3.NoSVE}}(break)friendship Faust -5\\speak Faust \"{{i18n:Events.Grave.4.1}}\"(break)speak Faust \"{{i18n:Events.Grave.4.2.NoSVE}}\"/pause 250/speak Faust \"{{i18n:Events.Grave.5}}\"/pause 500/speak Faust \"{{i18n:Events.Grave.6}}\"/pause 500/quickQuestion {{i18n:Events.Grave.7}}(break)speak Faust \"{{i18n:Events.Grave.8.1.NoSVE}}\"(break)friendship Faust 10\\speak Faust \"{{i18n:Events.Grave.8.2.NoSVE}}\"(break)friendship Faust 15\\speak Faust \"{{i18n:Events.Grave.8.3.NoSVE}}\"/pause 750/emote Faust 28/pause 750/speak Faust \"{{i18n:Events.Grave.9.NoSVE}}\"/pause 500/showFrame Faust 17/shake Faust 250/emote Faust 40/pause 450/showFrame Faust 16/pause 50/speak Faust \"{{i18n:Events.Grave.10}}\"/pause 500/emote farmer 56/pause 500/globalFade/viewport 1000 1000/stopMusic/end"
+			}
+		},
+		//4 Hearts - Insomnia
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/FaustHouse",
+			"Entries": {
+				"95790301/f Faust 1000": "shaneTheme/14 8/farmer 18 14 0 Faust 13 7 2/animate Faust false true 480 22 23/skippable/playSound doorClose/pause 500/move farmer 0 -4 0/move farmer -5 0 3/move farmer 0 -1 0/pause 500/emote farmer 40/pause 750/move farmer 0 -1 0/pause 1000/stopAnimation Faust/animate Faust false false 120 21 20 20 20 20 20 20 21 21 21 21 21 21 20 20 20 20 20 20 20 20 20 20 20 0/pause 3150/stopAnimation Faust/showFrame Faust 36/jump Faust/emote Faust 16/pause 250/showFrame Faust 0/speak Faust \"{{i18n:Events.Insomnia.1}}\"/pause 500/emote farmer 8/pause 500/speak Faust \"{{i18n:Events.Insomnia.2}}\"/pause 500/speak Faust \"{{i18n:Events.Insomnia.3}}\"/pause 500/question null \"{{i18n:Events.Insomnia.4}}\"/speak Faust \"{{i18n:Events.Insomnia.5}}\"/pause 1000/emote Faust 40/pause 500/faceDirection Faust 1/pause 500/showFrame Faust 25/textAboveHead Faust \"{{i18n:Events.Insomnia.6}}\"/pause 2750/showFrame Faust 24/pause 500/speak Faust \"{{i18n:Events.Insomnia.7}}\"/pause 500/speak Faust \"{{i18n:Events.Insomnia.8}}\"/pause 1000/showFrame Faust 0/pause 500/speak Faust \"{{i18n:Events.Insomnia.9}}\"/pause 500/quickQuestion {{i18n:Events.Insomnia.10}}(break)speak Faust \"{{i18n:Events.Insomnia.11.1}}\"(break)friendship Faust -15\\speak Faust \"{{i18n:Events.Insomnia.11.2}}\"/pause 500/speak Faust \"{{i18n:Events.Insomnia.12}}\"/pause 2000/showFrame Faust 4/pause 1000/showFrame Faust 0/pause 750/speak Faust \"{{i18n:Events.Insomnia.13}}\"/pause 500/emote farmer 32/pause 750/faceDirection farmer 1/move Faust 6 0 1/faceDirection Faust 0/pause 750/globalFade/viewport 1000 1000/addItem 395 1 0/stopMusic/end"
+			}
+		},
+		//5 Hearts - Mom
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Mine",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"Entries": {
+				"95790302/f Faust 1250/w rainy": "none/20 9/farmer -999 -999 0 Faust 21 9 1/showFrame Faust 25/skippable/addConversationTopic Faust5HeartEvent 3/pause 1000/emote Faust 40/pause 750/emote Faust 28/pause 1500/warp farmer 18 13/move farmer 0 -4 0/faceDirection farmer 1/pause 500/showFrame Faust 12/pause 500/speak Faust \"{{i18n:Events.Mom.1}}\"/pause 500/emote farmer 40/pause 500/speak Faust \"{{i18n:Events.Mom.2}}\"/pause 500/emote farmer 8/pause 500/showFrame Faust 4/pause 500/showFrame Faust 25/pause 500/speak Faust \"{{i18n:Events.Mom.3}}\"/pause 1000/showFrame Faust 12/pause 500/speak Faust \"{{i18n:Events.Mom.4}}\"/pause 500/move Faust 0 1 2/move Faust -3 0 3/faceDirection farmer 2/move Faust 0 4 2/warp Faust -999 -999/pause 250/move farmer 0 4 2 true/globalFade/viewport -9999 -9999/pause 500/changeLocation Railroad/warp Faust 4 34/faceDirection Faust 0/warp farmer 5 34/faceDirection farmer 3/viewport 10 33/globalFadeToClear/playMusic desolate/pause 500/speak Faust \"{{i18n:Events.Mom.5}}\"/pause 500/speak Faust \"{{i18n:Events.Mom.6}}\"/pause 500/faceDirection Faust 1/pause 500/speak Faust \"{{i18n:Events.Mom.7}}\"/pause 500/ speak Faust \"{{i18n:Events.Mom.8}}\"/pause 500/emote farmer 28/pause 500/globalFade/viewport 1000 1000/stopMusic/end"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Mine",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"Entries": {
+				"95790302/f Faust 1250/w rainy": "none/20 9/farmer -999 -999 0 Faust 21 9 1/showFrame Faust 25/skippable/addConversationTopic Faust5HeartEvent 3/pause 1000/emote Faust 40/pause 750/emote Faust 28/pause 1500/warp farmer 18 13/move farmer 0 -4 0/faceDirection farmer 1/pause 500/showFrame Faust 12/pause 500/speak Faust \"{{i18n:Events.Mom.1}}\"/pause 500/emote farmer 40/pause 500/speak Faust \"{{i18n:Events.Mom.2.NoSVE}}\"/pause 500/emote farmer 8/pause 500/showFrame Faust 4/pause 500/showFrame Faust 25/pause 500/speak Faust \"{{i18n:Events.Mom.3}}\"/pause 1000/showFrame Faust 12/pause 500/speak Faust \"{{i18n:Events.Mom.4}}\"/pause 500/move Faust 0 1 2/move Faust -3 0 3/faceDirection farmer 2/move Faust 0 4 2/warp Faust -999 -999/pause 250/move farmer 0 4 2 true/globalFade/viewport -9999 -9999/pause 500/changeLocation Town/warp Faust 43 90/faceDirection Faust 3/warp farmer 45 90/faceDirection farmer 3/viewport 45 90/globalFadeToClear/playMusic desolate/pause 500/speak Faust \"{{i18n:Events.Mom.5}}\"/pause 500/speak Faust \"{{i18n:Events.Mom.6}}\"/pause 500/faceDirection Faust 1/pause 500/speak Faust \"{{i18n:Events.Mom.7.NoSVE}}\"/pause 500/ speak Faust \"{{i18n:Events.Mom.8}}\"/pause 500/emote farmer 28/pause 500/globalFade/viewport 1000 1000/stopMusic/end"
+			}
+		},
+		//6 Hearts - Drowning
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Saloon",
+			"Entries": {
+				"95790303/f Faust 1500/t 1200 1600/e 95790302": "shaneTheme/15 19/Faust 16 20 0 farmer -999 -999 0/showFrame Faust 26/skippable/pause 500/warp farmer 14 24/playSound doorClose/pause 500/emote farmer 8/pause 1000/showFrame Faust 28/pause 500/speak Faust \"{{i18n:Events.Drown.1}}\"/pause 500/move farmer 0 -3 0/move farmer 2 0 1/faceDirection farmer 0/pause 500/question null \"{{i18n:Events.Drown.2}}\"/pause 500/speak Faust \"{{i18n:Events.Drown.3}}\"/pause 500/emote Faust 40/pause 500/showFrame Faust 26/pause 500/move farmer 1 0 1/move farmer 0 -1 0/animate Faust false true 120 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 27 27 27 27 27 27 27 26 26 26 26 26 26 26/pause 2000/speak Faust \"{{i18n:Events.Drown.4}}\"/pause 500/speak Faust \"{{i18n:Events.Drown.5}}\"/pause 500/question fork1 \"{{i18n:Events.Drown.6}}\"/fork Advise_Therapy/friendship Faust 25/addConversationTopic Faust6HeartEvent_Regular 5/pause 500/speak Faust \"{{i18n:Events.Drown.7.1}}\"/pause 500/emote Faust 28/pause 500/speak Faust \"{{i18n:Events.Drown.8.1}}\"/pause 500/speak Faust \"{{i18n:Events.Drown.9.1}}\"/pause 500/emote farmer 32/pause 500/speak Faust \"{{i18n:Events.Drown.10.1}}\"/pause 750/emote Faust 40/pause 500/stopAnimation Faust/showFrame Faust 8/pause 500/speak Faust \"{{i18n:Events.Drown.11.1}}\"/pause 500/faceDirection Faust 1/pause 250/faceDirection farmer 3/pause 500/speak Faust \"{{i18n:Events.Drown.12}}\"/pause 500/move Faust 0 1 2/move Faust -2 0 3/move Faust 0 3 2/faceDirection farmer 2/pause 500/warp Faust -9999 -9999/playSound doorClose/pause 750/globalFade/viewport 1000 1000/stopMusic/end",
+				"Advise_Therapy": "friendship Faust -50/addConversationTopic Faust6HeartEvent_Therapy 3/pause 500/emote Faust 12/pause 500/speak Faust \"{{i18n:Events.Drown.7.2}}\"/pause 500/speak Faust \"{{i18n:Events.Drown.8.2}}\"/pause 750/speak Faust \"{{i18n:Events.Drown.9.2}}\"/pause 1000/speak Faust \"{{i18n:Events.Drown.10.2}}\"/pause 500/emote farmer 28/pause 500/globalFade/viewport 1000 1000/pause 500/message \"{{i18n:Events.Drown.11.2}}\"/pause 500/stopMusic/end"
+			}
+		},
+		//8 Hearts - Opening Up
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Railroad",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"Entries": {
+				"95790304/f Faust 2000/t 800 1800/e 95790303": "none/23 40/farmer 28 48 0 Faust 19 41 1/skippable/advancedMove Faust true 4 0 1 1000 -4 0 3 1000/pause 2000/emote Faust 12/pause 2000/speak Faust \"{{i18n:Events.Open.1}}\"/pause 500/move farmer 0 -7 1/faceDirection farmer 3/pause 500/stopAdvancedMoves/pause 250/showFrame Faust 4/emote Faust 16/pause 500/speak Faust \"{{i18n:Events.Open.2}}\"/pause 500/emote farmer 36/pause 500/faceDirection Faust 2/pause 250/showFrame Faust 24/textAboveHead Faust \"{{i18n:Events.Open.3}}\"/pause 2500/move farmer -3 0 3/pause 500/showFrame Faust 4/pause 500/speak Faust \"{{i18n:Events.Open.4}}\"/pause 500/emote farmer 8/pause 500/speak Faust \"{{i18n:Events.Open.5}}\"/pause 500/showFrame Faust 25/pause 1000/playMusic echos/shake Faust 1000/pause 1250/speak Faust \"{{i18n:Events.Open.6}}\"/pause 500/speak Faust \"{{i18n:Events.Open.7}}\"/pause 500/emote farmer 40/pause 750/showFrame Faust 4/pause 500/speak Faust \"{{i18n:Events.Open.8}}\"/pause 500/quickQuestion {{i18n:Events.Open.9}}(break)friendship Faust 15\\speak Faust \"{{i18n:Events.Open.10.1}}\"(break)friendship Faust -125\\speak Faust \"{{i18n:Events.Open.10.2}}\"/pause 500/faceDirection Faust 2/pause 250/emote Faust 40/pause 500/speak Faust \"{{i18n:Events.Open.11}}\"/pause 1000/faceDirection Faust 1/pause 500/speak Faust \"{{i18n:Events.Open.12}}\"/pause 500/globalFade/viewport 1000 1000/stopMusic/end",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Railroad",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"Entries": {
+				"95790304/f Faust 2000/t 800 1800/e 95790303": "none/32 52/farmer 30 61 0 Faust 33 52 1/skippable/advancedMove Faust true 4 0 1 1000 -4 0 3 1000/pause 2000/emote Faust 12/pause 2000/speak Faust \"{{i18n:Events.Open.1}}\"/move farmer 0 -9 1/faceDirection farmer 1/pause 250/stopAdvancedMoves/pause 250/showFrame Faust 12/emote Faust 16/pause 500/speak Faust \"{{i18n:Events.Open.2}}\"/pause 500/emote farmer 36/pause 500/faceDirection Faust 2/pause 250/showFrame Faust 24/textAboveHead Faust \"{{i18n:Events.Open.3}}\"/pause 2500/pause 500/showFrame Faust 12/pause 500/speak Faust \"{{i18n:Events.Open.4}}\"/pause 500/emote farmer 8/pause 500/speak Faust \"{{i18n:Events.Open.5}}\"/pause 500/showFrame Faust 25/pause 1000/playMusic echos/shake Faust 1000/pause 1250/speak Faust \"{{i18n:Events.Open.6}}\"/pause 500/speak Faust \"{{i18n:Events.Open.7}}\"/pause 500/emote farmer 40/pause 750/showFrame Faust 4/pause 500/speak Faust \"{{i18n:Events.Open.8}}\"/pause 500/quickQuestion {{i18n:Events.Open.9}}(break)friendship Faust 15\\speak Faust \"{{i18n:Events.Open.10.1}}\"(break)friendship Faust -125\\speak Faust \"{{i18n:Events.Open.10.2}}\"/pause 500/faceDirection Faust 2/pause 250/emote Faust 40/pause 500/speak Faust \"{{i18n:Events.Open.11}}\"/pause 1000/faceDirection Faust 3/pause 500/speak Faust \"{{i18n:Events.Open.12}}\"/pause 500/globalFade/viewport 1000 1000/stopMusic/end",
+			}
+		},
+		//8 Hearts - Opening Up Continuation
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Town",
+			"Entries": {
+				"95790305/t 800 1800/e 95790304": "kindadumbautumn/101 91/farmer -999 -999 0 Faust 90 94 1 Elliott -999 -999 0/skippable/addConversationTopic Faust8HeartEvent 5/move Faust 11 0 1/move Faust 0 -3 0/pause 500/speak Faust \"{{i18n:Events.Open.13}}\"/pause 500/emote Faust 40/pause 1000/move Faust 0 -1 0/pause 250/warp Faust -999 -999/playSound doorClose/pause 500/globalFade/viewport -9999 -9999/pause 500/changeLocation ArchaeologyHouse/warp Elliott 17 5/warp Faust 8 11/viewport 16 5/globalFadeToClear/move Faust 0 -6 0/faceDirection Faust 1/pause 500/shake Faust 500/emote Faust 28/pause 500/speed Faust 2/move Faust 5 0 1/faceDirection Faust 0/pause 3000/speed Faust 1/move Faust 2 0 0/pause 1000/emote Faust 60/pause 2500/faceDirection Faust 1/pause 750/speak Faust \"{{i18n:Events.Open.14}}\"/pause 250/faceDirection Elliott 3/emote Elliott 16/pause 500/speak Elliott \"{{i18n:Events.Open.15}}\"/pause 500/speak Elliott \"{{i18n:Events.Open.16}}\"/pause 500/speak Faust \"{{i18n:Events.Open.17}}\"/pause 500/speak Elliott \"{{i18n:Events.Open.18}}\"/pause 500/speak Faust \"{{i18n:Events.Open.19}}\"/pause 500/speak Elliott \"{{i18n:Events.Open.20}}\"/pause 500/speak Faust \"{{i18n:Events.Open.21}}\"/pause 500/speak Elliott \"{{i18n:Events.Open.22}}\"/pause 500/speak Faust \"{{i18n:Events.Open.23}}\"/pause 150/emote Faust 56 true/emote Elliott 56/pause 500/globalFade/viewport 1000 1000/pause 250/message \"{{i18n:Events.Open.24}}\"/pause 500/stopMusic/end",
+			}
+		},
+		//10 Hearts - Bridge
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Custom_ShearwaterBridge",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"Entries": {
+				"95790306/f Faust 2500/t 1900 2400/n Faust_10Heart_Req": "none/29 21/farmer 14 21 1 Faust 30 21 1/showFrame Faust 25/skippable/move farmer 14 0 1 true/pause 1000/emote Faust 40/pause 500/speak Faust \"{{i18n:Events.Bridge.1}}\"/pause 500/showFrame Faust 12/pause 250/emote Faust 16/pause 500/speak Faust \"{{i18n:Events.Bridge.2}}\"/pause 1000/faceDirection Faust 2/pause 500/move Faust 0 1 2/faceDirection farmer 2/pause 500/showFrame Faust 24/pause 500/speak Faust \"{{i18n:Events.Bridge.3}}\"/pause 50/showFrame farmer 94/jump farmer/emote farmer 16/faceDirection farmer 2/speed farmer 4/move farmer 0 1 2/speed farmer 4/move farmer 1 0 1/pause 100/emote farmer 28/pause 250/showFrame Faust 12/pause 500/speak Faust \"{{i18n:Events.Bridge.4}}\"/pause 500/faceDirection Faust 2/pause 250/playMusic echos/pause 250/speak Faust \"{{i18n:Events.Bridge.5}}\"/pause 500/speak Faust \"{{i18n:Events.Bridge.6}}\"/pause 500/faceDirection Faust 3/pause 500/speak Faust \"{{i18n:Events.Bridge.7}}\"/pause 500/quickQuestion {{i18n:Events.Bridge.8}}(break)pause 500\\speak Faust \"{{i18n:Events.Bridge.9.1}}\"\\pause 500\\speak Faust \"{{i18n:Events.Bridge.10.1}}\"(break)friendship Faust -25\\emote Faust 16\\pause 500\\speak Faust \"{{i18n:Events.Bridge.9.2}}\"\\pause 500\\faceDirection Faust 2\\pause 250\\showFrame Faust 24\\speak Faust \"{{i18n:Events.Bridge.10.2}}\"/pause 500/question null \"{{i18n:Events.Bridge.11}}\"/pause 250/showFrame Faust 12/pause 250/speak Faust \"{{i18n:Events.Bridge.12}}\"/pause 1000/speak Faust \"{{i18n:Events.Bridge.13}}\"/pause 1000/showFrame Faust 0/pause 500/emote Faust 40/pause 500/speak Faust \"{{i18n:Events.Bridge.14}}\"/pause 1500/stopMusic/faceDirection Faust 3/pause 500/speak Faust \"{{i18n:Events.Bridge.15}}\"/pause 500/positionOffset Faust -1 0/pause 250/positionOffset Faust -1 0/pause 250/positionOffset Faust -1 0/pause 250/positionOffset Faust -1 0/pause 500/emote Faust 60/pause 500/question fork1 \"{{i18n:Events.Bridge.16}}\"/fork Refuse_Kiss/addConversationTopic Faust10HeartEvent_Regular 3/pause 500/showFrame Faust 36/positionOffset Faust -1 0 true/showFrame farmer 101/positionOffset farmer 5 0/shake Faust 500/playSound dwop/specificTemporarySprite heart 30 21/pause 1000/showFrame Faust 30/pause 3000/showFrame Faust 12/faceDirection farmer 1/positionOffset Faust 1 0 true/positionOffset farmer -1 0 true/pause 50/positionOffset Faust 1 0 true/positionOffset farmer -1 0 true/pause 50/positionOffset Faust 1 0 true/positionOffset farmer -1 0 true/pause 50/positionOffset Faust 1 0 true/positionOffset farmer -1 0 true/pause 50/positionOffset Faust 1 0 true/positionOffset farmer -1 0 true/pause 1250/speak Faust \"{{i18n:Events.Bridge.17.1}}\"/pause 500/emote Faust 60/pause 500/speak Faust \"{{i18n:Events.Bridge.18.1}}\"/pause 250/move Faust 0 -1 0/faceDirection farmer 0 true/speed Faust 4/move Faust -20 0 3 true/emote farmer 8/pause 500/globalFade/viewport 1000 1000/end",
+				"Refuse_Kiss": "addConversationTopic Faust10HeartEvent_Refuse 2/friendship Faust -250/pause 250/playSound crit/showFrame Faust 36/positionOffset Faust 1 0/pause 50/positionOffset Faust 1 0/pause 50/positionOffset Faust 1 0/pause 50/positionOffset Faust 1 0/pause 500/showFrame Faust 24/pause 250/speak Faust \"{{i18n:Events.Bridge.17.2}}\"/pause 500/shake Faust 250/pause 500/speak Faust \"{{i18n:Events.Bridge.18.2}}\"/pause 250/move Faust 0 -1 0/faceDirection farmer 0 true/speed Faust 4/move Faust -20 0 3 true/emote Faust 28 true/pause 300/emote farmer 40/pause 200/globalFade/viewport 1000 1000/end",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Forest",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"Entries": {
+				"95790306/f Faust 2500/t 1900 2400/n Faust_10Heart_Req": "none/34 25/farmer 35 14 3 Faust 35 25 2/showFrame Faust 24/skippable/move farmer -2 0 3/move farmer 0 8 2 true/emote Faust 40/pause 500/speak Faust \"{{i18n:Events.Bridge.1}}\"/pause 500/showFrame Faust 8/pause 250/emote Faust 16/pause 500/speak Faust \"{{i18n:Events.Bridge.2}}\"/pause 1000/faceDirection Faust 2/pause 500/pause 500/showFrame Faust 24/pause 500/speak Faust \"{{i18n:Events.Bridge.3.NoSVE}}\"/pause 50/showFrame farmer 94/jump farmer/emote farmer 16/faceDirection farmer 2/speed farmer 4/move farmer 0 3 2/speed farmer 4/move farmer 1 0 1/pause 100/emote farmer 28/pause 250/showFrame Faust 12/pause 500/speak Faust \"{{i18n:Events.Bridge.4.NoSVE}}\"/pause 500/faceDirection Faust 2/pause 250/playMusic echos/pause 250/speak Faust \"{{i18n:Events.Bridge.5}}\"/pause 500/speak Faust \"{{i18n:Events.Bridge.6}}\"/pause 500/faceDirection Faust 3/pause 500/speak Faust \"{{i18n:Events.Bridge.7}}\"/pause 500/quickQuestion {{i18n:Events.Bridge.8}}(break)pause 500\\speak Faust \"{{i18n:Events.Bridge.9.1}}\"\\pause 500\\speak Faust \"{{i18n:Events.Bridge.10.1}}\"(break)friendship Faust -25\\emote Faust 16\\pause 500\\speak Faust \"{{i18n:Events.Bridge.9.2}}\"\\pause 500\\faceDirection Faust 2\\pause 250\\showFrame Faust 24\\speak Faust \"{{i18n:Events.Bridge.10.2}}\"/pause 500/question null \"{{i18n:Events.Bridge.11}}\"/pause 250/showFrame Faust 12/pause 250/speak Faust \"{{i18n:Events.Bridge.12}}\"/pause 1000/speak Faust \"{{i18n:Events.Bridge.13}}\"/pause 1000/showFrame Faust 0/pause 500/emote Faust 40/pause 500/speak Faust \"{{i18n:Events.Bridge.14}}\"/pause 1500/stopMusic/faceDirection Faust 3/pause 500/speak Faust \"{{i18n:Events.Bridge.15}}\"/pause 500/positionOffset Faust -1 0/pause 250/positionOffset Faust -1 0/pause 250/positionOffset Faust -1 0/pause 250/positionOffset Faust -1 0/pause 500/emote Faust 60/pause 500/question fork1 \"{{i18n:Events.Bridge.16}}\"/fork Refuse_Kiss/addConversationTopic Faust10HeartEvent_Regular 3/pause 500/showFrame Faust 36/positionOffset Faust -1 0 true/showFrame farmer 101/positionOffset farmer 5 0/shake Faust 500/playSound dwop/specificTemporarySprite heart 34 25/pause 1000/showFrame Faust 30/pause 3000/showFrame Faust 12/faceDirection farmer 1/positionOffset Faust 1 0 true/positionOffset farmer -1 0 true/pause 50/positionOffset Faust 1 0 true/positionOffset farmer -1 0 true/pause 50/positionOffset Faust 1 0 true/positionOffset farmer -1 0 true/pause 50/positionOffset Faust 1 0 true/positionOffset farmer -1 0 true/pause 50/positionOffset Faust 1 0 true/positionOffset farmer -1 0 true/pause 1250/speak Faust \"{{i18n:Events.Bridge.17.1}}\"/pause 500/emote Faust 60/pause 500/speak Faust \"{{i18n:Events.Bridge.18.1}}\"/pause 250/faceDirection farmer 0 true/speed Faust 4/move Faust 0 -8 0/speed Faust 4/move Faust 18 0 1 true/emote farmer 8/pause 500/globalFade/viewport 1000 1000/end",
+				"Refuse_Kiss": "addConversationTopic Faust10HeartEvent_Refuse 2/friendship Faust -250/pause 250/playSound crit/showFrame Faust 36/positionOffset Faust 1 0/pause 50/positionOffset Faust 1 0/pause 50/positionOffset Faust 1 0/pause 50/positionOffset Faust 1 0/pause 500/showFrame Faust 24/pause 250/speak Faust \"{{i18n:Events.Bridge.17.2}}\"/pause 500/shake Faust 250/pause 500/speak Faust \"{{i18n:Events.Bridge.18.2}}\"/pause 250/faceDirection farmer 0 true/speed Faust 4/move Faust 0 -8 0/emote Faust 28 true/speed Faust 4/move Faust 18 0 1 true/pause 300/emote farmer 40/pause 200/globalFade/viewport 1000 1000/end",
+			}
+		},
+		//14 Hearts -
+		//{
+		//	"Action": "EditData",
+		//	"Target": "Data/Events/",
+		//	"Entries": {
+		//		"95790307/f Faust 3500": "null",
+		//	}
+		//},
+		
+	//Extra Events
+		//Friend Event - Beach
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Beach",
+			"Entries": {
+				"95790308/f Elliott 500/w sunny/p Elliott/e 95790305": "kindadumbautumn/24 34/farmer 25 8 2 Faust 24 34 3 Elliott 24 33 3/skippable/addConversationTopic FaustExtraEvent1 5/pause 1000/move farmer 0 23 2 true/speak Faust \"{{i18n:Events.Beach.1}}\"/pause 500/speak Elliott \"{{i18n:Events.Beach.2}}\"/pause 500/speak Faust \"{{i18n:Events.Beach.3}}\"/pause 500/faceDirection Elliott 2/pause 150/emote farmer 40 true/pause 100/speak Elliott \"{{i18n:Events.Beach.4}}\"/pause 250/move farmer 0 -23 2 true/pause 250/faceDirection Faust 0/pause 250/speak Faust \"{{i18n:Events.Beach.5}}\"/pause 500/emote Elliott 28/speak Elliott \"{{i18n:Events.Beach.6}}\"/pause 500/faceDirection Faust 3/pause 500/speak Faust \"{{i18n:Events.Beach.7}}\"/pause 500/emote Elliott 56 true/pause 450/emote Faust 12/pause 500/globalFade/viewport 1000 1000/end",
+			}
+		},
+		//Easter Egg Event - Disturbance
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Railroad",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true, "HasMod: |contains=ImGonnaEatArgenti": true },
+			"Entries": {
+				"95790309/f Faust 500/f Argenti 500/w sunny/t 600 1000": "50s/21 20/farmer 999 999 0 Faust 18 40 0 Argenti 21 20 2/skippable/showFrame Argenti 18/pause 100/playSound doorClose/advancedMove Faust false 0 1 5 0 0 -13/pause 1500/playSound Ocarina-1/pause 2000/showFrame Argenti 17/pause 250/showFrame Argenti 16/pause 500/emote Argenti 12/speak Argenti \"{{i18n:Events.Disturbance.1}}\"/pause 750/speak Faust \"{{i18n:Events.Disturbance.2}}\"/pause 250/emote Argenti 16 true/move Faust 0 -3 0/move Faust -2 0 3/move Faust 0 -2 0/pause 500/speak Argenti \"{{i18n:Events.Disturbance.3}}\"/pause 500/speak Faust \"{{i18n:Events.Disturbance.4}}\"/pause 500/shake Argenti 500/textAboveHead Argenti \"{{i18n:Events.Disturbance.5}}\"/pause 2500/emote Faust 40/pause 500/textAboveHead Faust \"{{i18n:Events.Disturbance.6}}\"/pause 2500/speak Faust \"{{i18n:Events.Disturbance.7}}\"/pause 500/move Faust 3 0 1/move Faust 0 10 2 true/pause 250/textAboveHead Argenti \"{{i18n:Event.Disturbance.8}}\"/pause 500/globalFade/viewport 1000 1000/end"
+			}
+		},
+		//Extra Event - Anniversary
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Railroad",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"Entries": {
+				"957903010/z winter/u 12/p Faust/e 95790302": "none/10 33/farmer 5 30 2 Faust 4 34 0/skippable/move farmer 0 4 2/faceDirection farmer 3/pause 500/speak Faust \"{{i18n:Events.Anniversary.1}}\"/pause 500/question null \"{{i18n:Events.Anniversary.2}}\"/pause 500/shake Faust 500/emote Faust 40/pause 250/playMusic echos/pause 250/speak Faust \"{{i18n:Events.Anniversary.3}}\"/pause 500/speak Faust \"{{i18n:Events.Anniversary.4}}\"/pause 500/quickQuestion {{i18n:Events.Anniversary.5}}(break)speak Faust \"{{i18n:Events.Anniversary.6.1}}\"(break)friendship Faust -25\\speak Faust \"{{i18n:Events.Anniversary.6.2}}\"/pause 500/speak Faust \"{{i18n:Events.Anniversary.7}}\"/pause 250/emote farmer 16/pause 500/speak Faust \"{{i18n:Events.Anniversary.8}}\"/pause 750/shake Faust 1000/textAboveHead Faust \"{{i18n:Events.Anniversary.9}}\"/pause 2500/speak Faust \"{{i18n:Events.Anniversary.10}}\"/pause 500/emote farmer 40/pause 500/globalFade/viewport 1000 1000/end",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Town",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"Entries": {
+				"957903010/z winter/u 12/p Faust/e 95790302": "none/44 90/farmer 46 93 0 Faust 43 90 3/skippable/move farmer 0 -3 0/move farmer -1 0 3/pause 500/speak Faust \"{{i18n:Events.Anniversary.1}}\"/pause 500/question null \"{{i18n:Events.Anniversary.2}}\"/pause 500/shake Faust 500/emote Faust 40/pause 250/playMusic echos/pause 250/speak Faust \"{{i18n:Events.Anniversary.3}}\"/pause 500/speak Faust \"{{i18n:Events.Anniversary.4}}\"/pause 500/quickQuestion {{i18n:Events.Anniversary.5}}(break)speak Faust \"{{i18n:Events.Anniversary.6.1}}\"(break)friendship Faust -25\\speak Faust \"{{i18n:Events.Anniversary.6.2}}\"/pause 500/speak Faust \"{{i18n:Events.Anniversary.7}}\"/pause 250/emote farmer 16/pause 500/speak Faust \"{{i18n:Events.Anniversary.8}}\"/pause 750/shake Faust 1000/textAboveHead Faust \"{{i18n:Events.Anniversary.9}}\"/pause 2500/speak Faust \"{{i18n:Events.Anniversary.10}}\"/pause 500/emote farmer 40/pause 500/globalFade/viewport 1000 1000/end",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Railroad",
+			"When": { "Relationship:Faust": "Married", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"Entries": {
+				"957903010/z winter/u 12/t 2200 2600/e 95790302": "none/10 33/farmer 5 30 2 Faust 4 34 0/skippable/move farmer 0 4 2/faceDirection farmer 3/pause 500/speak Faust \"{{i18n:Events.Anniversary.1.Married}}\"/pause 500/question null \"{{i18n:Events.Anniversary.2.Married}}\"/pause 500/shake Faust 500/emote Faust 40/pause 250/playMusic echos/pause 250/speak Faust \"{{i18n:Events.Anniversary.3}}\"/pause 500/speak Faust \"{{i18n:Events.Anniversary.4}}\"/pause 500/quickQuestion {{i18n:Events.Anniversary.5}}(break)speak Faust \"{{i18n:Events.Anniversary.6.1}}\"(break)friendship Faust -25\\speak Faust \"{{i18n:Events.Anniversary.6.2}}\"/pause 500/speak Faust \"{{i18n:Events.Anniversary.7}}\"/pause 250/emote farmer 16/pause 500/speak Faust \"{{i18n:Events.Anniversary.8.Married}}\"/pause 750/shake Faust 1000/textAboveHead Faust \"{{i18n:Events.Anniversary.9}}\"/pause 2500/speak Faust \"{{i18n:Events.Anniversary.10.Married}}\"/pause 500/emote farmer 40/pause 500/globalFade/viewport 1000 1000/end",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Town",
+			"When": { "Relationship:Faust": "Married", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"Entries": {
+				"957903010/z winter/u 12/t 2200 2600/e 95790302": "none/44 90/farmer 46 93 0 Faust 43 90 3/skippable/move farmer 0 -3 0/move farmer -1 0 3/pause 500/speak Faust \"{{i18n:Events.Anniversary.1.Married}}\"/pause 500/question null \"{{i18n:Events.Anniversary.2.Married}}\"/pause 500/shake Faust 500/emote Faust 40/pause 250/playMusic echos/pause 250/speak Faust \"{{i18n:Events.Anniversary.3}}\"/pause 500/speak Faust \"{{i18n:Events.Anniversary.4}}\"/pause 500/quickQuestion {{i18n:Events.Anniversary.5}}(break)speak Faust \"{{i18n:Events.Anniversary.6.1}}\"(break)friendship Faust -25\\speak Faust \"{{i18n:Events.Anniversary.6.2}}\"/pause 500/speak Faust \"{{i18n:Events.Anniversary.7}}\"/pause 250/emote farmer 16/pause 500/speak Faust \"{{i18n:Events.Anniversary.8.Married}}\"/pause 750/shake Faust 1000/textAboveHead Faust \"{{i18n:Events.Anniversary.9}}\"/pause 2500/speak Faust \"{{i18n:Events.Anniversary.10.Married}}\"/pause 500/emote farmer 40/pause 500/globalFade/viewport 1000 1000/end",
+			}
+		},
+		//Friend Event -
+		//{
+		//	"Action": "EditData",
+		//	"Target": "Data/Events/filler",
+		//	"Entries": {
+		//		"957903011/": "",
+		//	}
+		//},
+		
+	
+	//Post-Heart Event Dialogue
+		{//Faust
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Faust",
+			"Entries": {
+				"Faust2HeartEvent": "{{i18n:Faust.PostGrave}}",
+				"Faust5HeartEvent": "{{i18n:Faust.PostMom}}",
+				"Faust6HeartEvent_Regular": "{{i18n:Faust.PostDrown_Regular}}",
+				"Faust6HeartEvent_Therapy": "{{i18n:Faust.PostDrown_Therapy}}",
+				"Faust8HeartEvent": "{{i18n:Faust.PostOpen}}",
+				"Faust10HeartEvent_Regular": "{{i18n:Faust.PostBridge_Regular}}",
+				"Faust10HeartEvent_Refuse": "{{i18n:Faust.PostBridge_Refuse}}",
+			}
+		},
+		{//Elliott
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries": {
+				"Faust8HeartEvent": "{{i18n:Elliott.PostOpen}}",
+				"FaustExtraEvent1": "{{i18n:Elliott.PostBeach}}",
+			}
+		},
+		
+	//Letters
+		{//Letter contents
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"Entries": {
+				"Faust_10Heart_Req": "{{i18n:Letter.Faust.TalkInvite}}"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"Entries": {
+				"Faust_10Heart_Req": "{{i18n:Letter.Faust.TalkInvite_NoSVE}}"
+			}
+		},
+		{//Send letters
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"95791301/f Faust 2500/x Faust_10Heart_Req": "null"
+			}
+		}
+	]
+}

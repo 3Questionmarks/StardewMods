@@ -1,0 +1,62 @@
+{
+    // Objects
+    "AdventurersPack.name": "冒险家背包",
+    "AdventurersPack.description": "在黑暗的地牢和洞穴里搜寻珍宝！可在掌上打开，不能放在地上，自动收集古物、矿物和怪物战利品。带着这个袋子在黑暗的地牢和洞穴里搜寻珍宝吧！",
+    "CigarBox.name": "雪茄盒",
+    "CigarBox.description": "用于存放贵重物品的小木箱。",
+    "DimensionalPortal.name": "口袋维度门",
+    "DimensionalPortal.description": "可以在口袋维度中存储物品。可以在手上打开，十分方便~",
+    "IceCooler.name": "便携式冰箱",
+    "IceCooler.description": "可容纳农作物、鱼类、食品、手工艺品、动物产品的小冰箱，使易腐烂的食材保持新鲜！",
+    "LumberPile.name": "便携料堆",
+    "LumberPile.description": "坚固的架子，用于存放建筑材料。（收容木材、石材、矿物等）",
+    "MiniStorageShed.name": "小型储藏室",
+    "MiniStorageShed.description": "一个用于放东西的小型储藏室。",
+    "WoodenCabinet.name": "木柜子",
+    "WoodenCabinet.description": "高大的硬木橱柜，里面有宽阔的空间。",
+    "WroughtIronCellar.name": "锻铁地窖",
+    "WroughtIronCellar.description": "楼梯通向一个地下室，有宽敞的空间存放物品。",
+  
+    // Config
+    "config.section.AdventurersPack.name": "启用冒险家背包",
+    "config.section.AdventurersPack.description": "在游戏中加入冒险家背包。",
+    //"config.AdventurersPackEnabled.name": "Enabled",
+    //"config.AdventurersPackCapacity.name": "Capacity",
+  
+    "config.section.CigarBox.name": "启用雪茄盒",
+    "config.section.CigarBox.description": "在游戏中加入雪茄盒。",
+    //"config.CigarBoxEnabled.name": "Enabled",
+    //"config.CigarBoxCapacity.name": "Capacity",
+  
+    "config.section.DimensionalPortal.name": "启用口袋维度门",
+    "config.section.DimensionalPortal.description": "在游戏中加入口袋维度门。",
+    //"config.DimensionalPortalEnabled.name": "Enabled",
+    //"config.DimensionalPortalCapacity.name": "Capacity",
+  
+    "config.section.IceCooler.name": "启用便携式冰箱",
+    "config.section.IceCooler.description": "在游戏中加入便携式冰箱。",
+    //"config.IceCoolerEnabled.name": "Enabled",
+    //"config.IceCoolerCapacity.name": "Capacity",
+  
+    "config.section.LumberPile.name": "启用料堆",
+    "config.section.LumberPile.description": "在游戏中加入料堆。",
+    //"config.LumberPileEnabled.name": "Enabled",
+    //"config.LumberPileCapacity.name": "Capacity",
+  
+    "config.section.MiniStorageShed.name": "启用小型储藏室",
+    "config.section.MiniStorageShed.description": "在游戏中加入小型储藏室。",
+    //"config.MiniStorageShedEnabled.name": "Enabled",
+    //"config.MiniStorageShedCapacity.name": "Capacity",
+  
+    "config.section.WoodenCabinet.name": "启用木柜子",
+    "config.section.WoodenCabinet.description": "在游戏中加入木柜子。",
+    //"config.WoodenCabinetEnabled.name": "Enabled",
+    //"config.WoodenCabinetCapacity.name": "Capacity",
+  
+    "config.section.WroughtIronCellar.name": "启用锻铁地窖",
+    "config.section.WroughtIronCellar.description": "在游戏中加入锻铁地窖。",
+    //"config.WroughtIronCellarEnabled.name": "Enabled",
+    //"config.WroughtIronCellarCapacity.name": "Capacity",
+  
+    "$schema": "https://smapi.io/schemas/i18n.json",
+  }

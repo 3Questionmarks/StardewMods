@@ -1,0 +1,381 @@
+{
+  "Format": "2.0",
+
+
+
+    "ConfigSchema": {
+
+        "Enable this mod": {
+            "AllowValues": "true,false",
+            "Default": "true",
+        },
+        "Fountain Appearance": {
+            "AllowValues": "Vanilla,ProjectYellogTownOverhaul",
+            "Default": "Vanilla",
+        },
+        "Seasonal Appearance": {
+            "AllowValues": "true,false",
+            "Default": "true", 
+        },
+        "Treat same other obelisks": {
+            "AllowValues": "true,false",
+            "Default": "false", 
+        },
+        "Remove Build Restrictions": {
+            "AllowValues": "true,false",
+            "Default": "false",
+        },
+        "Free to Build": {
+            "AllowValues": "true,false",
+            "Default": "false",
+        },
+        "Immediate Build Finish": {
+            "AllowValues": "true,false",
+            "Default": "false",
+        },
+        "Warp Front Only": {
+            "AllowValues": "true,false",
+            "Default": "false",
+        },
+        "No Warp Function": {
+            "AllowValues": "true,false",
+            "Default": "false",
+        },
+        "Building Over Flooring": {
+            "AllowValues": "true,false",
+            "Default": "false",
+        },
+
+    },//▼"ConfigSchema"の終了▼
+
+
+
+    "DynamicTokens": [
+        {
+          "Name": "MC_Seasonal Appearance",
+          "Value": "NA",
+          "When": { "Seasonal Appearance": "false" }
+        },
+        {
+          "Name": "MC_Seasonal Appearance",
+          "Value": "SA",
+          "When": { "Seasonal Appearance": "true" }
+        },
+    ],//▼"DynamicTokens"の終了▼
+
+
+
+    "Changes": [
+
+
+
+//■■■タイルシートの読み込み■■■
+      {
+        "Action": "Load",
+        "Target": "Buildings/{{ModId}}_PelicanTownObelisk",
+        "FromFile": "assets/PelicanTownObelisk_{{MC_Seasonal Appearance}}_{{Fountain Appearance}}.png",
+        "When": { "Enable this mod": "true" },
+      },
+
+
+
+//■■■エディット■■■
+
+  //★★★ビルドデータ追加★★★
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "Entries": {
+            "{{ModId}}_PelicanTownObelisk": {
+                "Name": "{{i18n:PelicanTownObelisk_Name}}",
+                "Description": "{{i18n:PelicanTownObelisk_Description}}",
+                "Texture": "Buildings\\{{ModId}}_PelicanTownObelisk",
+                "DrawShadow": false,
+                "Size": { "X": 5, "Y": 4 },
+                "SourceRect": { "X": 0, "Y": 0, "Width": 96, "Height": 96 },
+                "SeasonOffset": { "X": 96, "Y": 0 },
+                "DrawLayers": [
+                    {
+                      "Id": "Mannaka_Ryuusui",//真ん中の流水
+                      "SourceRect": { "X": 0, "Y": 128, "Width": 16, "Height": 32 },
+                      "DrawPosition": "32, 16",
+                      "DrawInBackground": false,//背景に描写するかどうか
+                      "FrameDuration": 100,
+                      "FrameCount": 6,
+                      "FramesPerRow": -1,
+                    },
+                    {
+                      "Id": "Hidari_Ryuusui",//左の流水
+                      "SourceRect": { "X": 0, "Y": 208, "Width": 16, "Height": 16 },
+                      "DrawPosition": "16, 16",
+                      "DrawInBackground": false,//背景に描写するかどうか
+                      "FrameDuration": 100,
+                      "FrameCount": 4,
+                      "FramesPerRow": -1,
+                    },
+                    {
+                      "Id": "Migi_Ryuusui",//右の流水
+                      "SourceRect": { "X": 0, "Y": 240, "Width": 16, "Height": 16 },
+                      "DrawPosition": "48, 16",
+                      "DrawInBackground": false,//背景に描写するかどうか
+                      "FrameDuration": 100,
+                      "FrameCount": 4,
+                      "FramesPerRow": -1,
+                    },
+                    {
+                      "Id": "Mannaka_Tyakusuiten",//真ん中の着水点
+                      "SourceRect": { "X": 0, "Y": 176, "Width": 16, "Height": 16 },
+                      "DrawPosition": "32, 48",
+                      "DrawInBackground": false,//背景に描写するかどうか
+                      "FrameDuration": 95,
+                      "FrameCount": 6,
+                      "FramesPerRow": -1,
+                    },
+                    {
+                      "Id": "Hidari_Tyakusuiten",//左の着水点
+                      "SourceRect": { "X": 0, "Y": 272, "Width": 16, "Height": 16 },
+                      "DrawPosition": "16, 32",
+                      "DrawInBackground": false,//背景に描写するかどうか
+                      "FrameDuration": 95,
+                      "FrameCount": 6,
+                      "FramesPerRow": -1,
+                    },
+                    {
+                      "Id": "Migi_Tyakusuiten",//右の着水点
+                      "SourceRect": { "X": 0, "Y": 272, "Width": 16, "Height": 16 },
+                      "DrawPosition": "48, 32",
+                      "DrawInBackground": false,//背景に描写するかどうか
+                      "FrameDuration": 95,
+                      "FrameCount": 6,
+                      "FramesPerRow": -1,
+                    },
+                    {
+                      "Id": "No_Anime_Migikara_1_Retume",// 噴水の影 歩行干渉しないフロアの部分
+                      "SourceRect": { "X": 0, "Y": 96, "Width": 80, "Height": 16 },
+                      "DrawPosition": "0, 96",
+                      "DrawInBackground": false,//背景に描写するかどうか
+                    },
+                ],
+                "DefaultAction": "ObeliskWarp Town 26 29 false",
+                "TileProperties": [
+                    {
+                      "Id": "WaterSource",
+                      "Name": "WaterSource",
+                      "Value": "T",
+                      "Layer": "Back",
+                      "TileArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 }
+                    },
+                ],
+                "BuildCondition": "PLAYER_HAS_MAIL Any {{ModId}}_PelicanTownObelisk_Mail Received",
+                "BuildCost": 3000,
+                "BuildDays": 2,
+                "Builder": "Robin", //(Robin, Wizard)
+                "BuildMaterials": [
+                    {
+                      "Id": "(O)390",
+                      "ItemId": "(O)390", //石
+                      "Amount": 200
+                    },
+                    {
+                      "Id": "(O)768",
+                      "ItemId": "(O)768", //光の結晶
+                      "Amount": 1
+                    },
+                    {
+                      "Id": "(O)769",
+                      "ItemId": "(O)769", //闇の結晶
+                      "Amount": 1
+                    }
+                ],
+                "FadeWhenBehind": true,
+                "AllowsFlooringUnderneath": false,//床敷けるか
+            }
+        },
+        "When": { "Enable this mod": "true" },
+      },
+
+
+
+  //★★★メール関係★★★
+
+    //●メールデータ
+      {
+        "Action": "EditData",
+        "Target": "Data/Mail",
+        "Entries": {
+            "{{ModId}}_PelicanTownObelisk_Mail": "{{i18n:PelicanTownObelisk.Mail_Text}}[#]{{i18n:PelicanTownObelisk.Mail_Title}}",
+        },
+        "When": { "Enable this mod": "true" },
+      },
+
+    //●トリガーアクション
+      {
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+            "{{ModId}}_PelicanTownObelisk_SendMail": {
+                "Id": "{{ModId}}_PelicanTownObelisk_SendMail",
+                "Trigger": "DayStarted",
+                "Actions": [
+                    "AddMail Current {{ModId}}_PelicanTownObelisk_Mail now"
+                ],
+                "Condition": "PLAYER_FRIENDSHIP_POINTS Current Lewis 750,PLAYER_FRIENDSHIP_POINTS Current Robin 750",
+            }
+        },
+        "When": {
+            "Enable this mod": "true",
+            "Treat same other obelisks": "false",
+            "HasFlag |contains={{ModId}}_PelicanTownObelisk_Mail": "false"
+        }
+      },
+
+
+
+  //★★★ModConfigでの建物データの変更★★★
+
+    //●他のオベリスクと仕様を同じにする(他の変更が後に来るようにこの項目は最上位へ)
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "TargetField": [
+            "{{ModId}}_PelicanTownObelisk"
+        ],
+        "Entries": {
+            "BuildCondition": "YEAR 1",
+            "BuildCost": "500000",
+            "BuildDays": "0",
+            "Builder": "Wizard",
+            "BuildMaterials": [
+                {
+                  "Id": "(O)337",
+                  "ItemId": "(O)337", //イリジウムのべ棒
+                  "Amount": 5
+                },
+                {
+                  "Id": "(O)768",
+                  "ItemId": "(O)768", //光の結晶
+                  "Amount": 10
+                },
+                {
+                  "Id": "(O)769",
+                  "ItemId": "(O)769", //闇の結晶
+                  "Amount": 10
+                }
+            ],
+            "MagicalConstruction": "true"
+        },
+        "When": {
+            "Enable this mod": "true",
+            "Treat same other obelisks": "true"
+        }
+      },
+
+    //●建築制限を消す
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "TargetField": [
+            "{{ModId}}_PelicanTownObelisk"
+        ],
+        "Entries": {
+            "BuildCondition": "YEAR 1",
+        },
+        "When": {
+            "Enable this mod": "true",
+            "Remove Build Restrictions": "true"
+        }
+      },
+
+    //●建築費用と素材無し
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "TargetField": [
+            "{{ModId}}_PelicanTownObelisk"
+        ],
+        "Entries": {
+            "BuildCost": "0",
+            "BuildMaterials": [],
+        },
+        "When": {
+            "Enable this mod": "true",
+            "Free to Build": "true"
+        }
+      },
+
+    //●即建設終了
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "TargetField": [
+            "{{ModId}}_PelicanTownObelisk"
+        ],
+        "Entries": {
+            "BuildDays": "0",
+        },
+        "When": {
+            "Enable this mod": "true",
+            "Immediate Build Finish": "true"
+        }
+      },
+
+    //●ワープを正面のみにする
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "TargetField": [
+            "{{ModId}}_PelicanTownObelisk"
+        ],
+        "Entries": {
+            "DefaultAction": null,
+            "ActionTiles": [
+                {
+                  "Id": "Syoumen_Warp",
+                  "Tile": { "X": 2, "Y": 3 },
+                  "Action": "ObeliskWarp Town 26 29 false"
+                }
+            ]
+        },
+        "When": {
+            "Enable this mod": "true",
+            "Warp Front Only": "true"
+        }
+      },
+
+    //●ワープ機能を削除
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "TargetField": [
+            "{{ModId}}_PelicanTownObelisk"
+        ],
+        "Entries": {
+            "DefaultAction": null,
+            "ActionTiles": [],
+        },
+        "When": {
+            "Enable this mod": "true",
+            "No Warp Function": "true"
+        }
+      },
+
+    //●建物の下に床を敷けるように
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "TargetField": [
+            "{{ModId}}_PelicanTownObelisk"
+        ],
+        "Entries": {
+            "AllowsFlooringUnderneath": true
+        },
+        "When": {
+            "Enable this mod": "true",
+            "Building Over Flooring": "true"
+        }
+      }
+
+
+
+    ] //▼"Changes"の終了▼
+}

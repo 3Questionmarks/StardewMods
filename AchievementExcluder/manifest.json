@@ -1,0 +1,13 @@
+{
+  "Name": "Achievement Excluder",
+  "Author": "Legolukas",
+  "Version": "1.0.0",
+  "Description": "Allows excluding specific mods/items from achievement checks (e.g., Full Shipment).",
+  "UniqueID": "Legolukas.AchievementExcluder",
+  "EntryDll": "AchievementExcluder.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [],
+  "Dependencies": [
+    { "UniqueID": "spacechase0.GenericModConfigMenu", "IsRequired": false }
+  ]
+}

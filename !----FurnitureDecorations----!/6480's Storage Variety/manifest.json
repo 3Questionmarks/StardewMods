@@ -1,0 +1,26 @@
+{
+  "Name": "6480's Storage Variety",
+  "Author": "6480",
+  "Version": "4.1.0",
+  "Description": "Adds more storage items to the game.",
+  "UniqueID": "6480.StorageVariety",
+  "UpdateKeys": [
+    "Nexus:7807"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "furyx639.ExpandedStorage",
+      "IsRequired": true,
+      "MinimumVersion": "3.2.0"
+    },
+    {
+      "UniqueID": "furyx639.BetterChests",
+      "IsRequired": false,
+      "MinimumVersion": "2.9.0"
+    }
+  ],
+  "$schema": "https://smapi.io/schemas/manifest.json",
+}

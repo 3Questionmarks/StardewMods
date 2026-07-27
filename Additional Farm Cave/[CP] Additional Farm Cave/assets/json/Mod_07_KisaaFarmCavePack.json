@@ -1,0 +1,105 @@
+{
+
+
+    "Changes": [
+
+
+//■■■ Kisaa's Farm Cave Pack■■■
+
+
+  //★★★ FarmCave側の編集 ★★★
+
+    //●AFCへの入り口を制御
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/tmx/Mod_07_KisaaFarmCavePack/TsAFC_KisaaFCP_{{KisaaFCP_CaveType}}_{{DT_Entrance}}.tmx",
+        "ToArea": { "X": "{{DT_KisaaFCP_FC_ToArea_X}}", "Y": "{{DT_KisaaFCP_FC_ToArea_Y}}", "Width": "{{DT_KisaaFCP_FC_ToArea_Width}}", "Height": "{{DT_KisaaFCP_FC_ToArea_Height}}" },
+        "When": {
+          "LocationName": "FarmCave"
+        },
+        "Update": "OnLocationChange"
+      },
+
+    //●AFCへのワープ追加
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Warp"],
+            "Value": "{{DT_KisaaFCP_FC_WarpIN}} {{DT_AddFarmCaveName}} 9 14",
+            "Delimiter": " "
+          }
+        ]
+      },
+
+    //●( Green 時のみ)ライト光削除
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "TextOperations": [
+          {
+            "Operation": "RemoveDelimited",
+            "Target": ["MapProperties", "Light"],
+            "Search": "6 2 4",
+            "Delimiter": " "
+          }
+        ],
+        "When": {
+          "KisaaFCP_CaveType": "Green"
+        }
+      },
+
+    //●( Fantasy 時のみ)カメラ制限で入り口見えずらい問題解決の為MAP広げる
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/tmx/Mod_07_KisaaFarmCavePack/TsAFC_KisaaFCP_Fantasy_Blank.tmx",
+        "ToArea": { "X": 33, "Y": 0, "Width": 4, "Height": 16 },
+        "When": {
+          "KisaaFCP_CaveType": "Fantasy"
+        }
+      },
+
+
+  //★★★ AddFarmCave側の編集 ★★★
+
+    //●AFCの見た目を合わせる
+      {
+        "Action": "EditMap",
+        "Target": "Maps/{{DT_AddFarmCaveName}}",
+        "FromFile": "assets/tmx/Mod_07_KisaaFarmCavePack/TsAFC_KisaaFCP_{{KisaaFCP_CaveType}}_AFC.tmx",
+        "When": {
+          "KisaaFCP_CaveType": "Green, Springs, Cove, Fantasy"
+        }
+      },
+
+    //●( Fantasy 時のみ)FCへのワープ変更
+      {
+        "Action": "EditMap",
+        "Target": "Maps/{{DT_AddFarmCaveName}}",
+        "MapProperties": { "Warp": "9 15 FarmCave 29 7 9 4 Custom_AdditionalFarmCave_2ndArea 9 14" },
+        "When": {
+          "KisaaFCP_CaveType": "Fantasy"
+        }
+      },
+
+    //●2ndエリア解放まで奥の入り口を封鎖
+      {
+        "Action": "EditMap",
+        "Target": "Maps/{{DT_AddFarmCaveName}}",
+        "FromFile": "assets/tmx/{{DT_KisaaFCP_AFC_Close_FromFile}}.tmx",
+        "ToArea": { "X": 8, "Y": 2, "Width": 3, "Height": 4 },
+        "When": {
+          "OpenImmediately_2nd": "false",
+          "HasSeenEvent |contains=1410977501": "false",
+          "LocationName": "{{DT_AddFarmCaveName}}"
+        },
+        "Update": "OnLocationChange"
+      }
+
+
+    ]//▼▼"Changes"の終了▼▼
+}

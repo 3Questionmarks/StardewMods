@@ -1,0 +1,40 @@
+{
+    "Changes": [
+
+//------------>Immersion<-------------------//
+//Flower fest bridge repair
+
+	//temp for now
+	 {
+	 "LogName": "GSH - Flower fest bridge repair",
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+	"When": { "HasReadLetter": "spring_23"     },	
+	 // "Update": "OnDayStart",
+      "Entries": {
+
+  "Aimon_GSH-BridgeRepair": "Lava_Ambient/-1000 -1000/farmer -100 -100 0/skippable/pause 500/end"
+      },
+    }, 
+
+
+//Aimon.BA_FFBridgeRepairSVE
+
+//Aimon.BA_BeachWestVisit
+
+//Aimon.BA_SummerSwim
+
+//Aimon.BA_BoatRepair
+//Aimon.BA_LeahStump
+
+//Aimon.BA_LinusTrashGone
+
+
+
+//------------>Cosmetic<-------------------//
+
+
+//Aimon.BA_SebSamNight
+//Aimon.BA_VincentLost
+    ]
+}

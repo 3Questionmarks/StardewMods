@@ -1,0 +1,33 @@
+{
+    "Changes": [
+        {
+            "LogName": "Pam Marriage Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pam",
+            "Entries": {
+                "Sun": "{{i18n:{{ModId}}_YobaDialogue.Pam.Sun.{{Random: 1, 2}}}}",
+                "Mon": "{{i18n:{{ModId}}_YobaDialogue.Pam.Mon}}",
+                "Tue": "{{i18n:{{ModId}}_YobaDialogue.Pam.Tue}}",
+                "Thu": "{{i18n:{{ModId}}_YobaDialogue.Pam.Thu}}",
+                "Thu4": "{{i18n:{{ModId}}_YobaDialogue.Pam.Thu4}}",
+                "summer_Thu4": "{{i18n:{{ModId}}_YobaDialogue.Pam.summer_Thu4}}",
+                "Fri": "{{i18n:{{ModId}}_YobaDialogue.Pam.Fri}}",
+                "Fri2": "{{i18n:{{ModId}}_YobaDialogue.Pam.Fri2}}",
+                "fall_Fri": "{{i18n:{{ModId}}_YobaDialogue.Pam.fall_Fri}}",
+                "Saloon6": "{{i18n:{{ModId}}_YobaDialogue.Pam.Saloon6}}",
+                "Saloon_Entry": "{{i18n:{{ModId}}_YobaDialogue.Pam.Saloon_Entry.{{Random: 1, 2, 3}}}}",
+                "Pam.Saloon": "{{i18n:{{ModId}}_YobaDialogue.Pam.Saloon.{{Random: 1, 2, 3}}}}",
+                "Trailer_Entry": "{{i18n:{{ModId}}_YobaDialogue.Pam.Trailer_Entry.{{Random: 1, 2, 3, 4}}}}",
+                "Saloon_Tue": "{{i18n:{{ModId}}_YobaDialogue.Pam.Saloon_Tue}}",
+                "Saloon_Thu": "{{i18n:{{ModId}}_YobaDialogue.Pam.Saloon_Thu}}",
+                "Saloon_Fri": "{{i18n:{{ModId}}_YobaDialogue.Pam.Saloon_Fri}}",
+                "Saloon_Sat": "{{i18n:{{ModId}}_YobaDialogue.Pam.Saloon_Sat}}",
+                "fall_2": "{{i18n:{{ModId}}_YobaDialogue.Pam.fall_2}}",
+                "summer_8": "{{i18n:{{ModId}}_YobaDialogue.Pam.summer_8}}",
+                "spring_18": "{{i18n:{{ModId}}_YobaDialogue.Pam.spring_18}}",
+                "Resort_Bar": "{{i18n:{{ModId}}_YobaDialogue.Pam.Resort_Bar}}",
+                "GreenRain_2": "{{i18n:{{ModId}}_YobaDialogue.Pam.GreenRain_2.{{Random: 1, 2}}}}"
+            }
+        }
+    ]
+}

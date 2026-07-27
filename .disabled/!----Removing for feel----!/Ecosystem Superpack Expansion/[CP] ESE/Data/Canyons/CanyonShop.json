@@ -1,0 +1,70 @@
+{// 0 = up, 1 = right, 2 = down, 3 = left
+    "Changes": [
+	 {
+        "LogName": "Load Shop Portraits",
+        "Action": "Load",
+        "Target": "Portraits/FlamShop",
+        "FromFile": "assets/Canyons/FlamShop.png"
+    },
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "FlamShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+							"PurchaseSound": "Ostrich",
+							 "Id": "Flamingo",
+                        "Portrait": "Portraits/FlamShop",
+                            "Dialogues": [
+               
+                                {
+                                    "Id": "FlamingoDefault",
+                                    "Dialogue": "Ohh? Trade me with?"
+                                }
+                            ]
+                        }
+                    ],
+
+                    "Items": [
+							{
+                    "Id": "CC_Tortoiseegg",
+                    "ItemId": "CC_Tortoiseegg",
+                   "TradeItemID": "CC_Rainpuff",
+                        "TradeItemAmount": 50,
+                    "IsRecipe": false
+                },
+					{
+                    "Id": "CC_Turtegg",
+                    "ItemId": "CC_Turtegg",
+                   "TradeItemID": "CC_Rainpuff",
+                        "TradeItemAmount": 50,
+                    "IsRecipe": false
+                },
+				{
+                    "Id": "Hairpin_Recipe",
+                    "ItemId": "CC_Hairpin",
+                   "TradeItemID": "CC_Rainpuff",
+                        "TradeItemAmount": 50,
+                    "IsRecipe": true
+                },
+                       
+                  {
+                    "Id": "CC_Spicedtea",
+                    "ItemId": "CC_Spicedtea",
+                   "TradeItemID": "CC_Rainpuff",
+                        "TradeItemAmount": 50,
+                    "IsRecipe": true
+                },
+		
+					
+							 
+                    ]
+                }
+            }
+		},
+
+    ]
+}   
+

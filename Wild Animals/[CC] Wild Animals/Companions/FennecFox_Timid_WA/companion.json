@@ -358,10 +358,10 @@
 
 "Sounds": [
 	{
-	"SoundName": "dustMeep",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.2
+	"SoundName": "Fox_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.3
 	}
 ]  
 }

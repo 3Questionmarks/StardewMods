@@ -1,0 +1,42 @@
+{
+  "Changes": [
+    // Add Object
+    {
+      "LogName": "Load Ice Cooler Object",
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "6480.StorageVariety_IceCooler": {
+          "Name": "Ice Cooler",
+          "DisplayName": "{{i18n: IceCooler.name}}",
+          "Description": "{{i18n: IceCooler.description}}",
+          "Texture": "{{InternalAssetKey: assets/IceCooler.png}}",
+          "CustomFields": {
+            // Expanded Storage Data
+            "furyx639.ExpandedStorage/Enabled": "true",
+            "furyx639.ExpandedStorage/Frames": "5",
+            "furyx639.ExpandedStorage/IsFridge": "true",
+            "furyx639.ExpandedStorage/PlayerColor": "true",
+            "furyx639.ExpandedStorage/TintOverride": "#FF5733,#33FF57,#5733FF,#FF33A8,#33FFC1,#C133FF,#33A8FF,#FFC133,#A833FF,#FFD133,#33FFA8,#C1FF33,#5733A8,#FF33C1,#33FF33,#A8FF33,#FFA833,#C1C133,#C1FF57,#000000",
+            // Better Chests Data
+            "furyx639.BetterChests/AutoCreateChest": "Enabled",
+            "furyx639.BetterChests/FilterItemsList": "category_fish,category_egg,category_milk,category_cooking,category_meat,category_sell_at_pierres,category_sell_at_pierres_and_marnies,item_joja_cola,category_bait,category_sell_at_fish_shop,category_ingredients,category_artisan_goods,category_syrup,category_vegetable,category_fruits,category_flowers,category_greens",
+            "furyx639.BetterChests/HslColorPicker": "Disabled",
+            "furyx639.BetterChests/OpenHeldChest": "Enabled",
+            "furyx639.BetterChests/ResizeChest": "Small",
+            "furyx639.BetterChests/ResizeChestCapacity": "9"
+          }
+        }
+      }
+    },
+    // Add Crafting Recipe
+    {
+      "LogName": "Load Ice Cooler Crafting Recipe",
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "IceCooler": "167 1 390 20/Home/6480.StorageVariety_IceCooler/true/{{UnlockIceCooler}}/{{i18n: IceCooler.name}}"
+      }
+    }
+  ]
+}

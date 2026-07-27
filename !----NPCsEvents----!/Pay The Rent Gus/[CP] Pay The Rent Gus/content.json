@@ -1,0 +1,17 @@
+{
+	"Format": "1.24.0",
+	"Changes":
+	[
+		{   
+			"LogName": "Intro",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {	 
+				"11611200/w sunny": "continue/64 15/farmer 64 16 2 Gus 64 18 0/addConversationTopic ResortBarRental_0 28/addConversationTopic ResortBarRental_1 1/pause 500/speak Gus \"{{i18n:ResortBarRental.1}}\"/pause 500/speak Gus \"{{i18n:ResortBarRental.2}}\"/emote Gus 40/speak Gus \"{{i18n:ResortBarRental.3}}\"/pause 500/speak Gus \"{{i18n:ResortBarRental.4}}\"/emote farmer 56/speak Gus \"{{i18n:ResortBarRental.5}}\"/pause 500/end",
+			},
+			"When": {
+				"HasFlag": "Island_Resort"
+			}
+		}
+	]
+}

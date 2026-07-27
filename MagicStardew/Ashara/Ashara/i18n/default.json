@@ -1,0 +1,508 @@
+{
+  //Objects
+  "Ashara_name": "Ashara",
+  "no_description": "???",
+  "MagicStardew_Bean_Box_Displayname": "Beans Box",
+  "MagicStardew_Dead_Bean_Box_Displayname": "Dead Beans Box",
+  "MagicStardew_Ashara_Hat": "Ashara Hat",
+
+  //ORDERS
+  "SO_MAGICSTARDEW1name": "Ashara Order",
+  "SO_MAGICSTARDEW1text": "Ashara needs rare materials for her studies. Place them in the chest near the stairs to the basement.",
+  "SO_MAGICSTARDEW1text.deliver1": "Deliver 3 Void Essence",
+  "SO_MAGICSTARDEW1text.deliver2": "Deliver 3 Solar Essence",
+
+
+  // 1 Heart Event
+  "event.1heart.0": "Oh, @! I didn't hear you come in.$8#$b#Sorry for the mess. I was just... 'cleaning' my shelves. And by cleaning, I mean arguing with my own library.$7",
+  "event.1heart.1": "One of my books has decided to hide from me. It's incredibly frustrating when they do that.$9",
+  // ZMIANA: Druga opcja to teraz grzeczne "tylko wpadłem się przywitać"
+  "event.1heart.question": "What brings you here? Did you need something, or do you have a moment to spare?#Sure, I'd be glad to help you!#Sorry, I just came by to say hello. I'll leave you to it.",
+  // Opcja 2 (Gracz odchodzi)
+  "event.1heart.leave": "Oh, that is sweet of you. Well, hello then!$1#$b#I suppose I'll have to threaten the bookcase with a campfire to find it myself. See you later, @.$8",
+  // Opcja 1 (Gracz pomaga)
+  "event.1heart.help.0": "Thank you! I appreciate it. Two pairs of eyes are better than one.$1#$b#Let's check the lower shelves over there.$0",
+  "event.1heart.help.1": "So... you are probably wondering what is so important about this particular book.$0",
+  "event.1heart.help.2": "I was speaking with an old friend recently... and he mentioned a very specific, long-forgotten fruit.$7",
+  "event.1heart.help.3": "He claims it possessed extraordinary properties. Not quite magic, but close enough to pique my interest.$1#$b#I just had to know more. Curiosity is a witch's greatest weakness, after all.$8",
+  //Książka na najwyższej półce, schowana za inną
+  "event.1heart.help.4": "Ah! There it is! It sneaked all the way up to the highest shelf and hid right behind encyclopedias.$1#$b#No wonder I couldn't spot it from down here!$11",
+  "event.1heart.help.5": "Thank you for the company, @. I owe you one.$0#$b#Next time you need to find a lost chicken, let me know. I might have a spell for that.$3",
+
+
+
+  // 2 Heart Event
+  "event.2heart.yawn": "*Yawn*... What time is it...?",
+  "event.2heart.0": "Oh! @! I... I didn't hear you come in.$8",
+  "event.2heart.1": "Please excuse me, I must have dozed off. I was up half the night reading an incredibly dense tome about ancient local flora.$7#$b#But the lack of sleep was entirely worth it!",
+  "event.2heart.2": "It turns out that this very valley sits exactly on the historical coordinates where a... let's call it an 'extraordinary fruit', used to grow.$0",
+  "event.2heart.3": "I won't share the name just yet. Mostly because the ancient runes describing it are notoriously difficult to translate without a headache.$8",
+  "event.2heart.4": "However, to even begin searching for its remnants, I need to craft a magical resonance focus. And for that, I require a catalyst of immense, pure energy.$7",
+  "event.2heart.5": "I need a crystal that captures the entire spectrum of light... something shimmering with the colors of a rainbow. A truly prismatic artifact.$1",
+  "event.2heart.6": "If you ever come across something like that in your mining expeditions, please bring it to me. It could unlock a mystery older than this town itself.$0",
+  // 2 Heart Quest: Prismatic Shard
+  "quest.2heart.title": "A Rainbow something",
+  "quest.2heart.desc": "Ashara is researching a long-forgotten, extraordinary fruit that once grew in the valley. To track its remnants, she needs a catalyst of immense, pure energy to craft a magical resonance focus.",
+  "quest.2heart.objective": "Bring Ashara a Rainbow... Shard?",
+  "quest.2heart.complete": "You actually found one! The energy radiating from this shard is absolutely incredible... it's almost humming in my hands.$1#$b#Thank you, @. This will serve perfectly as the core for my resonance focus.$0#$b#I still need to decipher a few more ancient runes before we can pinpoint the exact location of the fruit, so we will definitely return to this later.$7#$b#For now, keep an eye out for anything... unusual.$3",
+
+
+  // 3 Heart Event - The Statue
+  "event.3heart.0": "@! Are you alright?! I teleported as fast as I could. I felt a sudden, massive disturbance in the magical weave...$7",
+  "event.3heart.1": "It was so quick, almost fleeting... but I would recognize that energy signature anywhere. I haven't felt it in years.$9",
+  "event.3heart.2": "The stasis lock... it shifted. Pat... were you trying to reach out...?$8",
+  "event.3heart.3": "Let's go inside, @.$0#$b#I need you to tell me exactly what just happened... and I suppose I owe you an explanation.$7",
+
+  "event.3heart.msg.1": "Over a warm cup of tea, Ashara told you the story of her oldest companion.",
+  "event.3heart.msg.2": "The statue outside wasn't just a carving. It was Patrick, the very first creature she met when she arrived in the valley.",
+  "event.3heart.msg.3": "He was her guide and her first true friend here. Though she didn't explain why he was now frozen in stone...",
+
+  // 4 Heart Event - Bathhouse
+  "event.4heart.0": "Oh, @. I am starting to think you have a sixth sense that tells you exactly when I need to rest.$8#$b#Or perhaps you are just following me.$3",
+  "event.4heart.question": "So tell me honestly... Did you come here just to soak your tired muscles, or were you secretly hoping to run into me here?#Honestly? I was hoping you'd be here.#I just had a long day on the farm. I came to rest.#I was just thinking about how awkward it is to run into you here.",
+  // Odpowiedź 1 (+200 Punktów)
+  "event.4heart.ans1": "Oh... I see.$8#$b#Well, in that case... I am glad you came. The water was starting to get a bit boring anyway.$1",
+  "event.4heart.ans1_extra": "Come closer, @. The water is warmest right by the vent.$1#$b#It is nice... not being alone for once.$4",
+  // Odpowiedź 2 (+50 Punktów)
+  "event.4heart.ans2": "*Sigh*... Always the pragmatic farmer, aren't you?$1#$b#Fine, you may share my corner of the pool. But try not to splash.$8",
+  "event.4heart.ans2_extra": "Just close your eyes and let the heat do its work. You've earned a moment of peace.$0",
+  // Odpowiedź 3 (-100 Punktów)
+  "event.4heart.ans3": "Excuse me?$9#$b#If my presence makes you so uncomfortable, the exit is right behind you.$10",
+
+  // 5 Heart Event - The Sword
+  "event.5heart.msg": "Inside the glass case rests a beautifully crafted sword. It pulses with a faint, ancient energy...",
+  "event.5heart.0": "Oh, @. Admiring my collection, I see.$1",
+  "event.5heart.1": "That blade... it brings back quite a few memories. Most of them involving me almost getting killed.$8",
+  "event.5heart.2": "It was a gift from my mentor. Or rather, a 'reward' for surviving her twisted idea of a exam.$7",
+  "event.5heart.3": "We traveled to a forgotten, crumbling dungeon. The goal was to retrieve an ancient crystal to forge this very sword. The catch? I had to do it entirely alone, while she just... watched.$0",
+  "event.5heart.4": "There was an ancient beast guarding the crystal. I fought with everything I had. I was bleeding, exhausted, completely out of mana... I barely managed to strike the final blow.$9",
+  "event.5heart.5": "And my mentor? She just stood in the corner, leaning against a pillar, laughing at me.$10",
+  "event.5heart.6": "At the time, I was furious. But looking back now... *chuckles* I can't help but laugh too. I was so incredibly weak back then. But that day, I learned how to survive.$3",
+  "event.5heart.7": "You have a look in your eyes, @. The same look I had when I first saw that crystal.$1",
+  "event.5heart.8": "I cannot forge an exact replica for you... the materials I used back then are lost to time.$7",
+  "event.5heart.9": "However... if you are willing to gather the right components, I can teach you how to create an echo of this blade.$0",
+  "event.5heart.10": "It won't possess the exact same world-shattering power, but it will be a formidable weapon nonetheless. A 'lesser' counterpart, if you will.$1",
+  "event.5heart.11": "I will need a strong magical foundation to build upon. A Galaxy Sword will serve as the perfect vessel.$7",
+  "event.5heart.12": "To bind the new energy, you must also bring me a precise combination of resonant gems: three Fairy Stones, three Prismatic Shards, three Star Shards, and three Rubies.$0",
+  "event.5heart.13": "It is not an easy list to fulfill, I know.$8#$b#When you are ready, place everything inside the chest near the stairs to my basement.$3",
+  // Special Order: 5 Heart Event (Sword)
+  "MagicStardew_Hearts_MagicStardew_5Event_name": "An Echo of Power",
+  "MagicStardew_Hearts_MagicStardew_5Event_text": "To forge an echo of my sword, you must gather a precise combination of resonant materials. Use a Galaxy Sword as the foundation, and bind it with 3 Fairy Stones, 3 Prismatic Shards, 3 Star Shards, and 3 Rubies. Place them all in the chest in my cellar.",
+  "MagicStardew_Hearts_MagicStardew_5Event_text.deliver1": "Deliver 1 Galaxy Sword",
+  "MagicStardew_Hearts_MagicStardew_5Event_.deliver2": "Deliver 3 Fairy Stones",
+  "MagicStardew_Hearts_MagicStardew_5Event_.deliver3": "Deliver 3 Prismatic Shards",
+  "MagicStardew_Hearts_MagicStardew_5Event_.deliver4": "Deliver 3 Star Shards",
+  "MagicStardew_Hearts_MagicStardew_5Event_.deliver5": "Deliver 3 Rubies",
+  // Weapon: Infused Red Galaxy Sword
+  "Infused_Red_Galaxy_Sword_Name": "Crimson Echo Blade",
+  "Infused_Red_Galaxy_Sword_Description": "An echo of a legendary witch's sword, forged from celestial steel and resonant gems. It pulses with ancient warmth.",
+
+// 5 Heart Event - Part 2 (Forging)
+  "event.5heart_p2.0": "Ah, @. You actually managed to gather everything. The resonance coming from the chest is overwhelming.$1",
+  "event.5heart_p2.1": "Step back. I need to take these materials to the forge. Binding raw prismatic energy to celestial steel is... volatile.$7",
+  "event.5heart_p2.1b": "Wait for me down in the cellar. I cannot let you watch this process... not yet.$7#$b#Someday, I will teach you how to weave this kind of magic yourself. You will be able to forge artifacts far beyond a simple blade.$1#$b#But for now, the raw energy would simply be too much for your aura to withstand. Go on.$8",
+  "event.5heart_p2.msg1": "You examine the ancient tome resting on the pedestal. The shifting runes make your head spin, and you cannot decipher a single word...",
+  "event.5heart_p2.msg2": "You wait in the quiet cellar for what feels like hours...",
+  "event.5heart_p2.2": "It is done.$1",
+  "event.5heart_p2.3": "The binding was a success. It does not carry the exact world-shattering weight of my blade, but it is a masterpiece in its own right.$0",
+  "event.5heart_p2.4": "Take it, @. Wield it carefully... it is eager to strike.$8",
+
+
+
+
+  // 6 Heart Event - The Cliff
+  "event.6heart.0": "Huh... You always know exactly where to find me, don't you, @?$7",
+  "event.6heart.1": "I came up here to think... to listen to the quiet hum of the valley.$7",
+  "event.6heart.2": "But I can't seem to calm my mind tonight.$9",
+  "event.6heart.3": "I had a dream... a bad one. Or maybe a good one? I'm not sure anymore.$7",
+  "event.6heart.4": "I dreamt of the time I was still an apprentice. When my mentor took me in from the orphanage.$9",
+  "event.6heart.5": "She didn't do it because she pitied me. She just... smelled the raw magical potential on me.$7",
+  "event.6heart.6": "She wasn't perfect, but she was always there... in her own, extremely harsh way.$7",
+  "event.6heart.7": "Whenever the training became too much to bear, her cat, Felix... he always came to comfort me.$9",
+  "event.6heart.q1": "Ashara pauses, lost in thought...#Try to comfort her.#... (Say nothing, just listen)",
+  "event.6heart.bad_narrator": "You gently try to offer some words of comfort...",
+  "event.6heart.bad_response": "Stop. I didn't come here for pity, @. I don't need to be comforted. Get out of here...$10",
+  "event.6heart.8": "Since I moved to this valley... I have never gone back to visit her.$9",
+  "event.6heart.9": "We... parted on very bad terms.$9",
+  "event.6heart.q2": "She grips the edge of the cliff tightly...#Try to comfort her.#Why did you part on bad terms?#... (Say nothing, just listen)",
+  "event.6heart.q2_why": "That is a story for another time... Let's just say we had fundamentally different views on my future.$7#$b#We fought over the vision of what kind of sorceress I should become. She thought I would be just like her... a typical 'witch'.$7#$b#She told me people should fear me. That I must be terrifying and powerful...$9#$b#But I... I just wanted a sliver of an ordinary life. A life I was never allowed to have.$9",
+  "event.6heart.10": "When I first set foot in this village, I was terrified. My hands were shaking.$9",
+  "event.6heart.11": "I planned to find a dark cave, conjure a simple cot, and just hide from the world.$7",
+  "event.6heart.12": "But in the middle of the night, I saw something strange. A little creature made of forest magic. A Junimo.$6",
+  "event.6heart.13": "It was Patrick. I followed him into the deep woods... right to where my house stands today.$7",
+  "event.6heart.14": "He was living there in a makeshift hut woven from leaves and branches... I couldn't believe it.$9",
+  "event.6heart.14a": "I decided to stay and help him build a real home. Everything you see around my house... I wove it entirely from magic.$0",
+  "event.6heart.14b": "I made it for him... for us.$7#$b#...$7#$b#I used my power to create something beautiful... instead of destroying.$1",
+  "event.6heart.15": "Forgive me... I didn't mean to ramble. I hope I haven't completely ruined this lovely evening.$9",
+  "event.6heart.q3": "Ashara looks at you, waiting for a response.#I'm glad I could be here to help you calm down.#Pull yourself together. You're a great witch, act like it.",
+  "event.6heart.q3_good": "Thank you, @... Your presence here means more to me than I like to admit.$4#$b#...$1#$b#I feel much better now. Truly. Thank you for staying with me.$1#$b#If you don't mind, could you leave me alone for just a little while? I think I am finally ready to just sit and listen to the sounds of the night.$0",
+  "event.6heart.q3_bad1": "Excuse me?!$10",
+  "event.6heart.q3_bad2": "So what?! Does being a witch mean I am not allowed to feel anything?!$10#$b#Get out of my sight!$9",
+  "event.6heart.hospital_msg": "Ashara blasted you with a volatile spell in her anger. You wake up with a terrible headache...",
+
+  // 6 Heart Event - Conversation Topics (Good)
+  "topic.6heart.good.1": "Felix was a sweet little cat. He was a Persian, a cute little black kitten. I still miss him sometimes.$1",
+  "topic.6heart.good.2": "Patrick helped me decorate this entire house. The lower wing, meant for resting, was his idea.$0#$b#We often sat there together and read old historical and cultural books. He wanted to know more about us... about humans.$1",
+  "topic.6heart.good.3": "I don't know my parents. I lived in the orphanage for as long as I can remember.$7#$b#But it doesn't hurt me much. I had many friends there, even if I can't remember most of their faces anymore.$0",
+  "topic.6heart.good.4": "Did you know my hair isn't actually red?$3#$b#I mean, it is now, but I was born a brunette. The color of my hair is the result of some... poorly cast spells in my youth.$8",
+  // 6 Heart Event - Conversation Topics (Bad)
+  "topic.6heart.bad": "Just leave me alone, @. I really don't want to talk right now.$9",
+
+  // 7 Heart Event - The Tree
+  "event.7heart.0": "Up here, @! No, higher. Among the leaves!$1",
+  "event.7heart.1": "Careful where you step, I might accidentally drop an acorn on your head.$8",
+  "event.7heart.2": "You know, I was just sitting here observing the valley... and my thoughts drifted to you.$0",
+  "event.7heart.3": "I knew from the moment you touched my spellbook that your aura was extraordinary. But I honestly didn't expect you to be so... stubbornly endearing.$1",
+  "event.7heart.4": "Between you helping me find my moon earrings, casually lugging around Mega Bombs, and indulging my endless monologues about energy... you've really grown on me.$1",
+  "event.7heart.5": "I used to think my forest sanctuary was perfect because it was completely empty. But honestly? My days are much more interesting with you in them.$4",
+  "event.7heart.6": "Thank you, @. For being my absolute favorite kind of chaos.$3",
+
+
+
+
+
+// Event: Living Chest Spell
+  "event.Spell_LivingChest.0": "Ah, @. I took the liberty of bringing out the chest and the Void Essences you left in the cellar.$1",
+  "event.Spell_LivingChest.1": "Void energy is incredibly dense. It has a natural... hunger. We are going to feed it to this ordinary wood.$7",
+  "event.Spell_LivingChest.2": "We must weave the magic carefully. We want a loyal companion that follows your aura, not a wooden mimic with a bad temper.$0",
+  "event.Spell_LivingChest.3": "Stand back. The first breath of a new construct is always a bit... dramatic.$7",
+  "event.Spell_LivingChest.4": "Fascinating... the binding is stable. It is breathing, in its own wooden way.$1",
+  "event.Spell_LivingChest.5": "It will now shadow your steps like a faithful hound.$0#$b#Just... try not to store your lunch in it. I cannot guarantee it hasn't retained a bit of that Void hunger.$8",
+
+  // Event: Seeker's Eye 
+  "event.Spell_SeekerEye.0": "Where has the Mayor wandered off to...?",
+  "event.Spell_SeekerEye.1": "I need a word with him. The Seeker's Eye should locate his aura.",
+  "event.Spell_SeekerEye.2": "Oh... Yoba.",
+  "event.Spell_SeekerEye.3": "It seems he is... heavily preoccupied. I will speak to him another time.",
+
+  // Event: Heal Field (Critical HP in Mines)
+  "eventt.Spell_HealField.0": "Hold on! Don't move!$5#$b#By Yoba... look at you. You are bleeding everywhere.$9",
+  "eventt.Spell_HealField.1": "I felt your life force flickering like a dying candle. Listen to me! Look at my eyes. $5#$b#I need to stabilize the area around you. Concentrate, @!$5#$b#Stay inside the circle. Do not step out.$7",
+  "eventt.Spell_HealField.2": "There... see? The pain is fading.$3#$b#This spell creates a sanctuary. As long as you stand your ground, the magic will sustain you.$1",
+
+
+  // Event: Spell Firefly (Finding Earrings)
+  "Spell_Firefly.0": "It has to be here somewhere...$7#$b#Ugh, this darkness is inconvenient.$9#$b#...$10",
+  "Spell_Firefly.1": "Spirits of the hollow... weave the light.$7#$b#Now, little wisp, show me what the shadows are hiding.$0",
+  "Spell_Firefly.2": "Oh! @.$6#$b#You walk quietly. I almost mistook you for a forest spirit.$5#$b#Don't worry, it's harmless. It's not a real firefly, just a construct of pure light.$1#$b#Nature is full of eyes, if you know how to borrow them.$1#$b#I dropped my earrings... heavy gold, shaped like crescent moons.$8#$b#They are essential for my... aesthetics. And my rituals.#$b#Would you help me look? With two pairs of eyes - and one wisp - we should find them quickly.$8",
+
+  // Event: Spell Earthquake (Quarry Unlock)
+  "event.Spell_Earthquake.0": "The bridge is mended... just as the spirits whispered.$0#$b#I am proud of you, @. The Junimos do not lend their aid to just anyone.$3#$b#Since you have proven you respect the earth, I deem you ready to command it.$0#$b#There is a spell—heavy, ancient—that shakes the very foundations of the soil.$0",
+  "event.Spell_Earthquake.1": "Stand back. Solid rock is just sand waiting to be freed.$7",
+  "event.Spell_Earthquake.2": "Fast and Efficient.$3#$b#I have inscribed the Earthquake spell into your book.$1#$b#Use it to clear your path... just be careful not to shake your own house down.$8",
+
+
+  // Event: Skull Cavern Unlock (Pathfinder Spell)
+  "event.Spell_Pathfinder.0": "Hold your step!$7#$b#Do you have any idea how deep this abyss goes?$9",
+  "event.Spell_Pathfinder.1": "The air here... tastes of chaotic magic. It twists space itself.$7#$b#If you walk blindly into the dark, you may never find the path back.$9#$b#I cannot stop you from risking your life... but I can ensure you have a lifeline.$7#$b#I will teach you the Pathfinder's Mark spell.$1#$b#Listen closely to the mechanics.$0#$b#First, cast the spell to scribe a glowing rune upon the ground. That is your anchor.$7#$b#When you need to return, cast the spell a second time.$1#$b#The magic will collapse the distance and pull you instantly back to your rune.$0#$b#But be warned, the recall consumes yours mana and rune burns out after one trip.$8#$b#You must mark your ground anew each time.$7#$b#Now go. Establish your anchor before you descend.$3",
+
+
+  // Order MagicStardew_Spell_LivingChest
+  "Spell_LivingChest_name": "Living Chest Spell",
+  "Spell_LivingChest_text": "The book reveals a spell to create a loyal, wooden companion. To weave this magic, I need a physical vessel and a source of raw, hungry energy. Bring a standard Chest and 5 Void Essences and place them in the box in my cellar.",
+  "Spell_LivingChest_deliver1": "Deliver 1 Chest",
+  "Spell_LivingChest_deliver2": "Deliver 5 Void Essence",
+
+  //Orders for spells
+  "Spell_Haste_name": "Coffe Essence",//temp
+  "Spell_Haste_text": "I need to gather 100 Coffee Beans to learn this spell. Place them in the chest near the stairs to the basement.",//temp
+  "Spell_Haste_deliver": "Deliver 100 Coffe Beans",//temp
+
+  //Order MagicStardew_Spell_FarmToFarm
+  "Spell_WarmToFarm_name": "Farm Warp Spell",
+  "Spell_WarmToFarm_text": "The pages reveal a spell for warping home. It seems I need a physical anchor to fully understand it. I should bring a Warp Totem: Farm to Ashara — she will know how to unlock its magic for me.",
+  "Spell_WarmToFarm_collect": "Bring 1 Warp Totem: Farm to Ashara House",
+  "SpecialOrder_Deliver_MagicStardew_Spell_WarmToFarm": "Ah, excellent. The book guided you well.$1#$b#This totem... it hums with the memory of your home. It is a crude vessel, but it holds the exact magical structure we need.$0#$b#I am ready to show you how to weave this spell yourself.$0#$b#Meet me in the basement.$1",
+
+  //Order MagicStardew_Spell_MagneticSkin
+  "Spell_MagneticSkin_name": "Magnetic Skin Spell",
+  "Spell_MagneticSkin_text": "The pages pulsate with a faint attractive force. It describes a spell to pull items towards you effortlessly. To master it, I need a catalyst that already holds this power. A Magnet Ring would be perfect. I should bring one to Ashara so she can transfer its magic into the book.",
+  "Spell_MagneticSkin_collect": "Bring 1 Magnet Ring to Ashara House",
+  "event.MagicStardew_Spell_MagneticSkin.0": "You found a Magnet Ring? Excellent.$1#$b#It is a crude little trinket, mostly used by miners, but the enchantment inside is pure.$0#$b#I will extract the magnetic essence from the metal and bind it directly to your aura.$7#$b#Why wear the magic on your finger when you can carry it in your blood?$3#$b#Ready? This might tingle a bit.$8",
+
+  //Order MagicStardew_Spell_Explosive_Hammer
+  "Spell_MagicStardew_Spell_Explosive_Hammer_name": "Explosive Hammer Spell",
+  "Spell_MagicStardew_Spell_Explosive_Hammer_text": "The pages here are scorched and smell faintly of sulfur. It details a spell to infuse tools with explosive kinetic energy. To master this volatile magic, I need a catalyst that understands pure destruction. A Mega Bomb should suffice. I need to bring one to Ashara—very carefully.",
+  "Spell_MagicStardew_Spell_Explosive_Hammer_collect": "Bring 1 Mega Bomb to Ashara House",
+  //Event MagicStardew_Spell_Explosive_Hammer
+  "event.Spell_ExplosiveHammer.00": "Oh, @! You're here.$1#$b#Did you manage to find the catalyst for the next spell?$0",
+  "event.Spell_ExplosiveHammer.01": "By Yoba, don't just pull it out like that!$10#$b#Is that a Mega Bomb? In my house?!$9#$b#Put it away, right now! Follow me outside. We are NOT doing this in here before you blow up my entire basement.$10",
+  "event.Spell_ExplosiveHammer.02": "Alright... the mountains. Solid bedrock, no flammable scrolls nearby, and mostly empty.$1#$b#If something goes wrong up here, at least we won't vaporize my tea collection.$8",
+
+  // Event: Learning Water Cloud
+ "event.Spell_WaterCloud.0": "Good morning, @! Did you sleep well? I hope the sound of the rain didn't keep you awake all night.$1#$b#I know the weather is a bit gloomy today, but a downpour like this carries a very specific, raw energy. It is exactly what we need.$0",
+  "event.Spell_WaterCloud.1": "Put your watering can down. I want to teach you something. Stand still and close your eyes.$0",
+  "event.Spell_WaterCloud.2": "Feel the raindrops hitting your skin. Don't just feel the wetness... feel the weight of the cloud it fell from.$7#$b#The condensation, the pressure, the electric hum in the air. Gather that memory in your hands.$11",
+  "event.Spell_WaterCloud.3": "There. Do you feel that chill? That is the essence of the Water Cloud.$1#$b#I have inscribed the spell into your book. You can now summon a little cloud to water your crops whenever you need to.$0#$b#It is incredibly useful for those dry, hot summer days. Just remember that gathering a cloud from thin air requires a fair amount of mana, so use it wisely.$7",
+  "event.Spell_WaterCloud.4": "Now, if you'll excuse me, I am going back to my dry, warm cellar.$0",
+
+  // Event: Learning Farm Warp
+  "event.FarmWarpLearn.0": "The preparations are complete.$0#$b#Now, place the totem here. I am going to unravel its physical form.$7#$b#We do not need the wood or the honey binder... we only need the *echo* inside it.$3",
+  "event.FarmWarpLearn.1": "Close your eyes.$8#",
+  "event.FarmWarpLearn.2": "Feel the pull? That specific vibration? That is the signature of your home.$0#$b#The totem was just a crutch. You are the anchor now.$7",
+  "event.FarmWarpLearn.3": "There. It is done.$0#$b#The totem is gone, but the path remains open in your mind.$1",
+  "event.FarmWarpLearn.4": "I have transcribed the incantation into your book.$1#$b#You can now warp home whenever you wish... provided you have enough magical energy.$8#$b#",
+
+  // Event: Heal Field (Critical HP in Mines)
+  "event.Spell_HealField.0": "Hold on! Don't move!$10#$b#By Yoba... you are bleeding everywhere.$9",
+  "event.Spell_HealField.1": "I felt your life force flickering like a dying candle. I got here just in time.$8#$b#Drink this... no, wait, there is no time for potions.$7",
+  "event.Spell_HealField.2": "I need to stabilize the area around you. Concentrate, @!$10#$b#Draw energy from the earth beneath your feet. It wants to heal you, you just have to let it.$0",
+  "event.Spell_HealField.3": "I am casting a Restoration Field.$1#$b#Stay inside the circle. The light will knit your wounds back together.$7",
+  "event.Spell_HealField.4": "See? The pain is fading.$3#$b#This spell creates a sanctuary. As long as you stand your ground, the magic will sustain you.$1",
+  "event.Spell_HealField.5": "I have taught your spirit how to weave this field.$0#$b#Don't be so reckless next time. I might not be watching.$8",
+  
+  //events
+  "event.FarmMeet.0": "Ah, so you’re the new farmer I’ve heard about!$1#$b#It’s nice to finally see you in person.$3",
+  "event.FarmMeet.2": "Ah—sorry, you’re right!$8#$b#I may have let my excitement slip out a bit.$8#$b#My name is Ashara, and I’d like you to visit my — there’s something important we must discuss.$3#$b#It may seem sudden, but I can feel it... you’re the one I’ve been searching for.$1#$b#I live in the forest, south-east of your farm.$11#$b#At the cliff’s end there’s a narrow, hidden passage leading to my house — it reveals itself only to those meant to find it.$0#$b#I should go now. See you soon @.$3",
+  "event.FarmMeet.3": "It was strange, but I should probably stop by when I have the time. How did she even know my name? And those clothes?",
+
+  "event.Event1.0": "Oh, @! You came!$3#$b#Sorry I didn't notice you. This book pulled me in - I didn't realise you were here! Anyway, I'm glad you came!$8#$b#Let's go inside.$1",
+  "event.Event1.1": "There’s something I’d like you to bring me. I’ve written everything down on this list.$8#$b#Here, take a look.",
+  "event.Event1.2": "You might not realize it yet, but our little valley hides a certain kind of magic.$7#$b#It’s what I doing here, and I need these items for my 'research'.$7#$b#I could gather them myself, of course... but I want to see if you have that 'something' as well.$7#$b#I hope you won’t let me down, @.$3#$b#When you’ve collected everything, place it inside the chest near the stairs to my basement.$1",
+
+  "event.Event2.0": "Perfect timing, @.$0#$b#Just as I promised, I have something for you... something quietly magical.$3#$b#Come with me.$0",
+  "event.Event2.1": "This is my little nest. I don't get many visitors here, few have ever found their way here...$7#$b# As you can probably guess, I'm a witch, but you're probably wondering what that has to do with you...$8#$b# There’s magic sleeping within you!$0#$b# And I can't let it go to waste, I intend to help you use it... properly!$1",
+  "event.Event2.2": "Now let's make use of those items you brought.$3",
+  "event.Event2.3": "Take it.$8",
+  "event.Event2.4": "This is your secret book. It holds the knowledge of spells you can cast.$1#$b# Each spell will inscribe itself upon these pages the moment you learn it.$3",
+  "event.Event2.5": "'Every time you learn a new spell, it will appear unlocked in the book. Some spells you can unlock yourself by following the hints, and some you will have to unlock with Ashara's help.'",
+  "event.Event2.6": "Come closer... and look upon the book resting on the pedestal.$7",
+  "event.Event2.7": "This is my book. Look closely - its pages hold many spells.$0#$b# Some of them you can learn on your own, while others will require special items... and my guidance.$7#$b# Don't be surprised if the spell you seek does not appear within these pages.$7#$b# The power that flows through us reveals only what we are meant to see and what we are ready to learn.$3",
+  "event.Event2.8": "'It's worth coming here sometimes and checking what the book has to offer for you.'",
+  "event.Event2.9": "From now on, you may enter my cellar whenever you need something.$1#$b# Just... don’t drink anything from the cauldron without telling me first.$8",
+
+
+  
+  //gifttase
+  "gifttase.love": "Thank you. It’s my favorite - and not just for its looks. There’s something special about it, isn’t there?$4",
+  "gifttase.like": "How thoughtful of you. I truly appreciate this.$1",
+  "gifttase.dislike": "That’s... not quite to my liking, but thank you anyway$2",
+  "gifttase.hated": "That's... certainly something. Perhaps next time, trust your instincts less.$5",
+  "gifttase.neutral": "Thank you. It’s kind of you to bring me something.$1",
+
+
+
+
+
+  //festivlas
+  "Ashara_desert_festival": "Speed Rooster is my favourite - he's so cute! I hope he wins!$3",
+  "Ashara.Luau": "Oh! @. I was hoping you would come.$3#$b#...$0#$b#...$7#$b#Why are you looking at me like that?$8#$b#Do you like my dance?$3",
+
+
+  //schedule dialogues
+  "Ashara_couch_reads_1": "The day has just begun!$0#$b#I don't feel like doing anything today, I'll probably read few books today.$3",
+  "Ashara_kitchen_spring_1": "I'm trying to decide what to have for dinner today. I’d love some spaghetti$3#$b#But I don’t quite feel like cooking it right now - perhaps another day.$8#$b#",
+  "Ashara_sad_1": "Sorry, I'm not in the mood$9",
+  "Forest_spring_Tue_1": "I like sitting here sometimes. The forest has its own music, you just have to listen. Even silence can be full of life.$1",
+  "Beach_spring_Tue_1": "The night air feels gentle by the sea. I like how the waves seem endless it makes my worries feel smaller.$3",
+  "Ashara_seat_up_1": "I’m in the middle of something... could we talk later?$8",
+  "Ashara_BathHouse_1": "Oh?$6#b#Did you come here to relax... or to keep me company?$8",
+  "Ashara_BathHouse_2": "You can feel it too, can’t you? The warmth of the water... it’s comforting.$11",
+  "Ashara_Tea_1": "I like the taste of tea, especially green one.$11#$b#My favorite is matcha - warm, calm, and just a little bittersweet. Quiet morning in a cup.$1",
+  "Ashara_couch_reads_2": "I simply cannot put this book down.$1#$b#It’s by Jo Nesbø... have you heard of him?$0#$b#I’m currently reading series about detective Harry Hole. $11#$b#It is quite a refreshing change from dusty ancient spell scrolls.$8",
+  "Ashara_Summer_Railroad_D": "The stone here bakes under the sun... it radiates a heat that sinks deep into the bones.$1#$b#Iron rails and scorched earth.$7#$b#It is a dry, harsh kind of magic up here. Very different from the forest.$0",
+  "Ashara_Bear": "One more...$8",
+  "Ashara_Beach_Talk": "The sun here... it soaks right into the spirit, doesn't it?$1#$b#I came down to warm my bones and listen to the waves.$3#$b#I am already looking forward to the Dance of the Moonlight Jellies at the end of the season.$0#$b#Watching that migration... seeing the ocean glow with living light... it feels more magical than any spell in my book.$7",
+  "Ashara:Ashara_Stool": "I picked this corner specifically to be invisible.$2#$b#I thought no one would find me here...$8#$b#Either my stealth spell is fading, or you just have a magnetic pull towards me?$3",
+  "Ashara_Vibration_Nature": "Can you feel it? That low, rhythmic vibration?$9",
+
+  //dialogues
+  "Ashara.introduction": "I think you’ll like it here - this place is... magical, in a way. It hides so many secrets... $3",
+  "Ashara.danceRejection": "Ashara dance rejection",
+  "Ashara.divorced": "Ashara divorced",
+  "Ashara.secondchance_Girls": "Ashara second chance Girls",
+  "Ashara.dumped_Girls": "Ashara dumped Girls",
+  "Ashara.breakUp": "Ashara breakup",
+  "Ashara.resort_entering": "Ashara resort entering",
+  "Ashara.resort_leaving": "Ashara resort leaving",
+  "Ashara.resort_shore": "Ashara resort shore",
+  "Ashara.resort_chair": "Ashara resort chair",
+  "Ashara.resort_bar": "Ashara resort bar",
+  "Ashara.resort": "Ashara resort",
+
+  //spring
+  "Ashara.spring_1": "Our Valley has a rhyth... once you tune into it, even silence becomes music.$1#$b#Some days it’s a cheerful melody, other days it’s more like... a sleepy lullaby.$3#$b#Either way, it’s better than the noise of the city, don’t you think?$1",
+  "Ashara.spring_8": "The first day of the week always feels full of possibility. I find peace in starting it with spa and quiet thoughts.$0#$b#It’s amazing how a quiet moment can set the tone for everything that follows.$1",
+  "Ashara.spring_15": "Some people rush into their week... I prefer to let it come to me.$3#$b#A quiet morning with a bit of tea, watching the world wake up around me.$1#$b#There’s something comforting about letting the day unfold on its own.$3",
+  "Ashara.spring_22": "I don’t like rushing things.$9#$b#When I move too fast, I feel like I miss the little moments that make the day worth it.$0#$b#I’d rather take my time - there’s no need to chase the sun.$1",
+
+  "Ashara.spring_2": "Ah, spring! The air feels lighter already.$3#b#I do miss the peaceful hush of winter nights...$7#b#But watching the forest bloom again fills me with hope! Energy of the earth awakens raw and untamed. It’s a good time to listen... the trees have much to say.$1#b#",
+  "Ashara.spring_9_1": "Did you know it’s Haley’s birthday this week?$6#$b#If you’re not sure what to give her she loves Pink Cake.$8#$b#Daffodils work too, and they’re easy to find this time of year.$1",
+  "Ashara.spring_9_2": "The Desert Festival is next week.$1#$b#I wonder who will host the stalls this time.$3#$b#My favourite part is the races. I love placing small bets. Speed Rooster is my favourite he's so cute!",
+  "Ashara.spring_16": "Hmm... I should probably talk to Rasmodius.$7#$b#I need his opinion on something.$7",
+  "Ashara.spring_23": "Tomorrow’s the Flower Dance... Do you already know who you’re going to dance with?$8#$b# I’m still thinking about it. I’m not sure if anyone would want to dance with me...$9",
+
+  "Ashara.Thursday": "Sometimes, the darkest monsters aren't the ones hiding in the mines... but the ones inside people's heads.$7",
+
+  "Ashara.spring_4_1": "The soil is restless today.$7#$b#Thousands of tiny roots are pushing through the dark, hungry for the sun.$0#$b#It is a chaotic, beautiful struggle. Can you feel it vibrating under your boots?$1",
+  "Ashara.spring_11_2": "I walked by the river earlier.$1#$b#The water runs faster now, carrying the melted snow from the mountains.$0#$b#It reminds me that everything eventually flows forward... even us.$3",
+  "Ashara.spring_11_1": "Do you like the smell of the air today? It’s heavy with potential.$1#$b#When it rains in spring, it feels like the sky is trying to wash the world clean.$0#$b#I often collect rainwater for my potions... it holds the memory of the clouds.$7",
+  "Ashara.spring_4_2": "Farming seems like a different kind of magic.$8#$b#You bury something dead-looking into the ground, and weeks later, it bursts into life.$1",
+  "Ashara.spring_18_1": "The bushes are full of Salmonberries right now.$1#$b#They are sweet, but their energy is fleeting.$0",
+  "Ashara.spring_18_2": "The forest is getting louder.$0#$b#In winter, I could hear my own heartbeat. Now? It’s a symphony of birds, bugs, and wind.$1#$b#It’s harder to concentrate on my books, but... I don't mind the company.$3",
+  "Ashara.spring_25_1": "Can you feel the shift in the wind? The air is getting warmer, stickier.$7#$b#Spring is packing its bags.$3#$b#I will miss the gentle green, but there is a fiery power in Summer that I am eager to tap into.$8",
+  "Ashara.spring_25_2": "Make sure you rest before the new season starts.$1#$b#Burnout is a real danger.$9#$b#If you push too hard, your inner flame will flicker out. Take care of yourself, @.$1",
+
+  "Ashara.spring_5_1": "Gunther is a walking encyclopedia, isn't he? He can tell you the date of a pottery shard just by tasting the dust.$7#$b#But he looks at artifacts and sees only history. I look at them and feel the *echo*.$0",
+  "Ashara.spring_5_2": "Gunther is a walking encyclopedia, isn't he? He can tell you the date of a pottery shard just by tasting the dust.$7#$b#But he looks at artifacts and sees only history. I look at them and feel the *echo*.$0",
+  "Ashara.spring_12_1": "It is a strange feeling... reading about snow, blood, and serial killers while the spring birds are singing around me.$7#$b#This Harry Hole character... he is a mess. Broken, alcoholic, brilliant.$0#$b#It is terrifying and magnetic. Much more interesting than a perfect hero.$1",
+  "Ashara.spring_12_2": "It is a strange feeling... reading about snow, blood, and serial killers while the spring birds are singing around me.$7#$b#This Harry Hole character... he is a mess. Broken, alcoholic, brilliant.$0#$b#It is terrifying and magnetic. Much more interesting than a perfect hero.$1",
+  "Ashara.spring_19_1": "Many think magic is just waving my hand and chanting funny words.$8#$b#But true magic is much more... physical. It is about grabbing the invisible threads of the world and pulling them tight.$7#$b#It takes more discipline than muscle.$1",
+  "Ashara.spring_19_2": "Have you ever stood close to a lightning strike? That is what raw magic smells like.$7#$b#Ozone, burnt air, and pure energy.$0#$b#It is intoxicating, but dangerous.$9",
+  "Ashara.spring_26_1": "The killer is never who you suspect at first.$7#$b#It reminds me that everyone wears a mask. Even in a quiet valley like this.$0#$b#I wonder what secrets *you* are hiding behind that farmer's smile, @.$8",
+  "Ashara.spring_26_2": "Sometimes it's nice to be just a girl with a book, not a witch.$3",
+
+  "Ashara.spring_6_1": "The spirits are quiet tonight, so I intend to relax.$0#$b#I’m heading to the Saloon later. I plan to have a beer or two.$1#$b#Even a witch needs to clear her head with something... stronger than tea sometimes.$8",
+  "Ashara.spring_6_2": "The spirits are quiet tonight, so I intend to relax.$0#$b#I’m heading to the Saloon later. I plan to have a beer or two.$1#$b#Even a witch needs to clear her head with something... stronger than tea sometimes.$8",
+  "Ashara.spring_20_1": "The spirits are quiet tonight, so I intend to relax.$0#$b#I’m heading to the Saloon later. I plan to have a beer or two.$1#$b#Even a witch needs to clear her head with something... stronger than tea sometimes.$8",
+  "Ashara.spring_20_2": "The spirits are quiet tonight, so I intend to relax.$0#$b#I’m heading to the Saloon later. I plan to have a beer or two.$1#$b#Even a witch needs to clear her head with something... stronger than tea sometimes.$8",
+  "Ashara.spring_13_1": "There is a certain... grounding quality to Gus's ale.$0#$b#People expect a witch to drink only bubbling potions or moon water... but honestly?$7#$b#Sometimes two cold beers work wonders for the soul.$3",
+  "Ashara.spring_13_2": "I am in the mood for something... with alcohol.$0",
+  "Ashara.spring_27_1": "Do you know what the best potion for a tired mind is?$0#$b#It isn't brewed in a cauldron.$7#$b#It is served cold, with foam on top. Simple magic is often the most effective.$8",
+  "Ashara.spring_27_2": "I don't need fancy wine or nectar today.$0#$b#Just a simple, honest brew.$1#$b#Being a witch is complicated enough. My drink shouldn't be.$3",
+
+  "Ashara.spring_7_1": "The air up here is thinner, sharper.$0#$b#It tastes like ancient stone and cold water.$7#$b#Down in the town, the air is thick with people's thoughts. Here? It clears the mind.$1",
+  "Ashara.spring_7_2": "The mountains are the bones of the earth.$7#$b#They are old, stubborn, and full of memories.$0#$b#If you listen closely, you can almost hear them groaning under the weight of the sky.$1",
+  "Ashara.spring_14_1": "The mountain lake is a perfect mirror.$0#$b#Not just for your face, but for your soul.$7#$b#Be careful not to look into the water for too long, @. You might see things you are trying to hide.$3",
+  "Ashara.spring_14_2": "The mountain lake is a perfect mirror.$0#$b#Not just for your face, but for your soul.$7#$b#Be careful not to look into the water for too long, @. You might see things you are trying to hide.$3",
+  "Ashara.spring_21_1": "I like being high up. It gives you a perspective that the valley floor cannot.$1#$b#Your farm, the town, the problems... they all look so small from here.$0#$b#It is easier to breathe when you are above it all.$3",
+  "Ashara.spring_21_2": "The acoustics here are dangerous for a witch.$8#$b#A single whisper can travel for miles if the wind is right.$7#$b#One must be careful what spells one speaks to the mountain wind. It never forgets.$0",
+  "Ashara.spring_28_1": "Water flows down from here to the rest of the valley.$1#$b#It is the heart pumping life into the veins of the river.$0#$b#Pure, cold, and untamed. Just like magic should be.$8",
+  "Ashara.spring_28_2": "There is a wildness here that the town has lost.$0#$b#Rock doesn't care about festivals or birthdays.$7#$b#It just exists. Eternal and indifferent.$1",
+
+
+  //summer
+  "Ashara.summer_1": "The sun hangs heavy today, doesn't it? $7#$b#Spring whispers, but Summer... Summer shouts.$0#$b#The air is thick with heat and life. It is pure, raw fuel.$1",
+  "Ashara.summer_8": "It is Gus's birthday today. He is a genuinely good soul... his hospitality is a magic of its own.$1#$b#If you want to give him a perfect gift, he loves Oranges. He also enjoys Truffles.$0#$b#I plan to stop by later to wish him well... and perhaps enjoy a few beers in his honor.$8",
+  "Ashara.summer_15": "I have been feeling a pull all day... like an itch in my mind.$7#$b#I hid a volatile magical artifact somewhere in my house long ago, for safekeeping.$0#$b#I cannot remember exactly where I put it... I will have to turn the place upside down when I return.$8",
+  "Ashara.summer_22": "There is a dweller in the mines... a Dwarf, living just out of sight.$7#$b#He is blocked off by a stone barrier in the entrance hall. If you haven't breached it yet, a bomb or a masterwork pickaxe should shatter it.$0#$b#If you wish to gain his favor, offer him gemstones. His people value the crystallized blood of the earth above all else.$1",
+
+  "Ashara.summer_2.text": "The sun is relentless today... it feels like it is melting my very thoughts away.$7#$b#I suddenly have a craving for something cold and sweet. Ice cream sounds perfect right now.$0#$b#I am going to grab one. Would you like me to get one for you too?$3",
+  "Ashara.summer_2.question.Yes": "Yes, please!",
+  "Ashara.summer_2.question.No": "No, thanks.",
+  "Ashara.summer_2.answer.Yes": "Here you go! Eat it quickly before it becomes a sweet puddle.$1",
+  "Ashara.summer_2.answer.No": "Fair enough. More for me then.$0",
+  "Ashara.summer_9": "It honestly fascinates me. Pierre manages to haul that shop of his to nearly every single festival.$7#$b#That man never misses an opportunity for a sale. His dedication to profit is... intense.$0#$b#But I suppose it works out for you. You look like the type who enjoys cluttering their farm with rare festival decorations, don't you? Haha.$8",
+  "Ashara.summer_16": "I see Clint at the Saloon sometimes...$7#$b#He sits there alone, staring at his cup, building invisible walls around himself.$9#$b#It is a heavy, gray aura. I can feel that he wants to reach out, to connect...$0#$b#But fear paralyzes him more effectively than any petrification spell.$1",
+  "Ashara.summer_23": "I will be honest... I have no appetite for fish. The texture... it is not for me.$7#$b#But I have a deep respect for Willy and his craft.$0#$b#I actually envy him a little.$1#$b#To wake up every morning to the rhythm of the waves... to have that soothing song constantly in your ears.$3#$b#It must be incredibly peaceful.$1",
+
+  "Ashara.summer_3": "The third day of summer began with an earthquake. Literally.$7#$b#A loud crash woke me up in the night, and by morning, the boulder blocking the mountains was destroyed.$0#$b#The path to the railroad is finally open, and with it—access to the Spa.$1#$b#I love going there. Until now, I had to manage differently—eating forage or sleeping early just to recover my energy.$9#$b#Now, a moment in the hot water is enough.$3",
+  "Ashara.summer_10": "The Luau is tomorrow. It is usually a pleasant gathering, but the soup is always a gamble.$1#$b#I just hope no one gets any... 'funny' ideas this year haha.$3",
+  "Ashara.summer_17": "It is Sam's birthday today, isn't it? That fit blond boy...$0#$b#I must admit, I do not particularly care for him. He is a bit too loud and reckless for my taste.$2#$b#But I cannot deny his energy. As the old proverb says: 'A healthy mind in a healthy body'.$1#$b#At least he takes good care of his vessel, even if his mind is mostly occupied with... skateboards.$8",
+  "Ashara.summer_24": "Speaking of the sea... today is Willy's birthday.$0#$b#He is an old salt. He traveled far and wide in his youth.$1#$b#If you want to ensure he has a good day, you could gift him a Gold Bar.$8#$b#Or a Catfish, he has a particular fondness for those.$1",
+
+  "Ashara.summer_4": "I was walking through town, near the cliff where the waterfall descends.$0#$b#There is a staircase leading up to the mountains... and two bushes standing guard.$8#$b#It is strange. To the left of those stairs, the space feels... hollow. As if a hidden room *should* be there.$7#$b#But physically? Nothing. Just a wall. It is very curious, isn't it?$3",
+  "Ashara.summer_11": "I actually enjoy these kinds of gatherings.$1#$b#When the music plays and the fire crackles, people tend to lower their guards.$0#$b#You can hear some very interesting things if you just stand quietly in the crowd.$8#$b#Information is just another form of harvest, isn't it?$3",
+  "Ashara.summer_18": "Have you prepared your fishing rod? The Trout Derby begins on the 20th.$0#$b#The river spirits are already whispering about it... Rainbow Trout will be swarming the waters.$1#$b#It is quite a spectacle—seeing half the town standing by the riverbank, chasing the same glimmer in the water.$8",
+  "Ashara.summer_25": "I found a fascinating anomaly in the deep woods, just past that large hollow log.$0#$b#There is an old stone statue there. It stands completely still, yet its aura is... restless.$7#$b#It projects a feeling of intense hunger. But not for food.$1#$b#It craves the 'sweetest taste'. I wonder... is there a fruit in this world that could satisfy a stone? It is a delicious mystery.$3",
+
+  "Ashara.summer_5": "Have you noticed the fireflies? Do you know *why* they glow? It is a tiny bit of alchemy happening inside them.$0#$b#They mix the air they breathe with a special substance to create 'cold fire'.$7#$b#It creates light without generating any heat.$1#$b#Humans need to burn things to see in the dark, but nature... nature knows how to shine without destroying.$3",
+  "Ashara.summer_12": "The cicadas are screaming today.$0#$b#To most people, it is just noise. But listen closely.$7#$b#It sounds like a thousand tiny monks chanting a prayer to the sun.$1#$b#Nature is very loud when it wants to be heard, isn't it?$3",
+  "Ashara.summer_19": "Have you ever grown Starfruit on your farm?$0#$b#It is not a normal plant. It acts as a biological battery for celestial energy.$7#$b#That is why they are so sweet. You are literally eating the light of distant stars.$1#$b#It is a very poetic way to have a snack, don't you think?$3",
+  "Ashara.summer_26": "I have always been more of a cat person. Dogs are sweet, but cats...$1#$b#I wondering how Felix is doing today.$0#$b#She is my mentor's cat.$7#$b#I hope she is treating her well. Sometimes I felt like *shes* was the one running the tower, not her.$3",
+
+  "Ashara.summer_6": "I was watching Linus earlier today.$0#$b#Most people in town look at him with pity, but I see someone who has mastered his environment.$1#$b#He is not homeless, @. He is just... untethered.$7#$b#I suspect he knows secrets about this valley that even I have yet to discover.$3",
+  "Ashara.summer_13": "I have been observing the energy around you, @.$7#$b#It makes me wonder... was one of your ancestors a witch? Or perhaps a wizard?$0#$b#You possess a very high magical potential.$1#$b#It is dormant, yes... but it is there. I can feel it humming beneath your skin.$3",
+  "Ashara.summer_20": "I spend some time near the railroad. It is fascinating to watch that iron snake scream through the valley.$0#$b#It is quite clumsy, you know? It spills coal, wood, sometimes even geodes right onto the ground.$1#$b#I even heard a rumor that it drops... Leprechaun Shoes? Tiny green boots.$7#$b#I have no idea who is shipping magical footwear in bulk, but I certainly wouldn't stand on the tracks to find out. It will crush you without hesitation.$2",
+  "Ashara.summer_27": "The golden light is fading... summer is finally packing its bags.$3#$b#...$7#$b#I need a beer. Not tea, not a potion. Just a cold, honest ale.$11",
+
+  "Ashara.summer_7": "If you are in need of a Pufferfish, you should head to the ocean soon.$0#$b#This is your ideal chance. They only drift into our waters during the summer, usually in the early afternoon.$1#$b#It is a funny, round little creature... but do not be fooled. It is full of spikes and potent toxins.$3",
+  "Ashara.summer_14": "The sea has been restless lately, especially after dark. The waves are crashing with such fury...$7#$b#But this violence has a benefit. It washes up all sorts of treasures from the deep.$0#$b#You should walk the shoreline today. When the ocean speaks this loudly, it usually leaves gifts behind.$1",
+  "Ashara.summer_21": "I respect Rasmodius. His command over the arcane is undeniable.$0#$b#But he spends so much time in that tower, convinced that the townspeople fear him.$7#$b#He tells me he has 'much work to do', but I think he just uses his research as a shield.$1#$b#Magic requires solitude, yes... but it shouldn't cost you your ability to smile.$3",
+  "Ashara.summer_28": "Summer is nearly over. As much as I love the sun, I am ready for a change of palette.$0#$b#I cannot wait for the trees to catch fire with autumn colors.$1#$b#The deep reds, the burning oranges... it is like nature is putting on its finest dress for the final dance of the year.$3",
+
+//fall
+
+  "Ashara.fall_1": "The air has turned crisp. Also, do not forget—Penny's birthday is tomorrow.$0#$b#She is a gentle soul. If you intend to give her a gift, make it sincere.$1#$b#Do not treat it as a joke. She has enough difficulty in her life without being mocked.$2#$b#Kindness costs nothing, but to her, it means everything.$3",
+  "Ashara.fall_8": "The blackberry season has begun. Nature is the greatest illusionist, isn't it?$0#$b#You go to sleep with bare branches, and by sunrise, thousands of berries have manifested from thin air.$7#$b#No incantations, no rituals. Just the quiet magic of the earth offering a sweet treat.$3",
+  "Ashara.fall_15": "I visited the desert today. It is Sandy's birthday, you know.$0#$b#She is a radiant soul, living so far away from the green world.$1#$b#If you go, bring her a piece of the valley. She loves our flowers—Crocus, Daffodil, Sweet Pea.$7#$b#Or if you want to see her truly smile, bring her some Mango Sticky Rice. It is her absolute favorite.$3",
+  "Ashara.fall_22": "The fields are heavy with produce today. It is the perfect time to invoke the 'Harvest Spirit'.$0#$b#That spell summons a spectral scythe to aid your hand.$7#$b#As the ancient texts say: 'When the earth sees your labor, it will share its strength.'$1#$b#Let the spirits do the reaping, @. Save your back for other burdens.$3",
+
+  "Ashara.fall_2": "Sorry, but I'm not in the mood to talk today $9",
+  "Ashara.fall_9": "Sam seems very excited today. He told me he ordered a new pair of shoes... the exact same model he is wearing now.$0#$b#I find that quite endearing.$1#$b#We all seek comfort in familiar things. For me, it is the smell of dried sage. For him, it is a specific brand of canvas sneaker.$3",
+  "Ashara.fall_16": "The mail is late again. I can feel Sam's disappointment from here.$9#$b#Living in this valley requires patience. Sometimes the mountains seem to block more than just the wind.$7#$b#I hope his package arrives soon. Even a patient spirit can get restless when waiting for something they desire.$0",
+  "Ashara.fall_23": "Have you seen Sam? He is practically floating.$1#$b#His new shoes finally arrived. He says they are 'crisp', but his aura is brighter than it has been all week.$0#$b#It is a good reminder, @. Sometimes a small change in what we wear can shift our entire energy.$3",
+
+  "Ashara.fall_3": "There is a certain... secretive energy in the town at night.$0#$b#I often see a shadow sneaking towards the ranch area. It wears a green hat and carries 'official business' as a shield.$7#$b#They think they are being subtle, hiding in the bushes.$1#$b#But passion—even at a mature age—has a very distinct glow. You cannot hide it, no matter how quiet you try to be.$3",
+  "Ashara.fall_10": "I walked past the beach cabin today. Elliott, was shouting at the ocean.$0#$b#For a moment, I thought he was casting a powerful storm summoning ritual.$7#$b#But no... I think he was just struggling to find a rhyme for 'crab'.$1#$b#Artists and wizards are very similar, @. We both talk to things that do not talk back.$3",
+  "Ashara.fall_17": "The wheel-bound elder, George... his aura is prickly today. Like a dry thistle.$0#$b#The damp autumn air gets into his joints. It makes him build walls.$7#$b#But have you noticed? When his wife speaks to him, that gray, stony aura turns pink for just a second.$1#$b#There is a lot of love in that house, buried under layers of grumpiness.$3",
+  "Ashara.fall_24": "Spirit's Eve is approaching, and Abigail is practically vibrating with excitement.$0#$b#Most villagers walk past the graveyard quickly, afraid of the chill.$7#$b#But she sits there and listens to the silence.$1#$b#She may not carry a wand, but she has the heart of a medium. She is not afraid of what lies beyond the veil.$3",
+
+  "Ashara.fall_11": "The Wizard is always watching the village from afar. He says he searches for an apprentice.$0#$b#He speaks of 'leaving this mortal plane' eventually, and his worry is palpable.$7#$b#He wants to pass on his knowledge, but he is so bad at simply talking to people.$8#$b#If he wants an heir, he should perhaps start by saying 'hello' instead of lurking in the shadows.$3",
+  "Ashara.fall_4": "I can sense a dormant spell in your book... the 'Living Chest'.$0#$b#It is a fascinating piece of magic. It summons a storage vessel that follows you, like a loyal dog made of oak and iron.$7#$b#But it will not answer a weak call. As the text says, you must increase your magical potential to awaken it.$1#$b#Keep practicing your craft, @. Your back will thank you when you no longer have to carry everything yourself.$3",
+  "Ashara.fall_18": "The damp earth smells rich today. It is the season of the mushroom.$0#$b#Fungi are fascinating. They are neither plant nor animal. They are the forest's secret nervous system.$7#$b#They connect every tree in this valley underground.$1#$b#Be careful which ones you pick, @. Some will feed you, others will make you see colors that do not exist.$3",
+  "Ashara.fall_25": "The wind has changed. It has teeth now.$0#$b#We are approaching the time of year when the veil between our world and the spirit realm gets thin.$7#$b#If you hear footsteps behind you in the tall grass... do not turn around too quickly.$8#$b#It is probably just a squirrel. But why take the risk?$3",
+
+  "Ashara.fall_5": "I correspond with another sorceress from time to time... she settled in a distant town called Mistria.$0#$b#She actually runs a bathhouse there. Can you imagine?$1#$b#She is... quite a character. Very theatrical. But she knows her craft.$7#$b#I suppose even witches need a day job in this economy.$3",
+  "Ashara.fall_12": "Sometimes, when the valley gets too quiet, I warp to Zuzu City for an afternoon.$0#$b#There is a hidden teahouse there that serves the most exquisite matcha.$1#$b#But the best part? The porcelain. They use these little cups with caricatures of kittens painted on them.$3",
+  "Ashara.fall_19": "Have you ever stopped to observe the threads connecting you to this town, @?$7#$b#Before you arrived, the energy here was... stagnant. People were walking in circles.$0#$b#Now? You have shifted the entire flow of the valley.$1#$b#You are not just growing crops; you are altering lives. I hope you understand the weight of that responsibility.$8",
+  "Ashara.fall_26": "I enjoy a glass of sparkling water, but it has to be *lightly* sparkling.$0#$b#Some of the bottles they sell... they are too aggressive.$9#$b#Drinking them feels like swallowing angry static electricity. Why would anyone enjoy that?$2#$b#I prefer a gentle fizz... like a whisper on the tongue, not a shout.$1",
+
+  "Ashara.fall_6_1": "Everything is turning orange and brown... which is lovely, but I find myself suddenly craving something bright red and sweet.$0#$b#I would give almost anything for a fresh strawberry right now.$7#$b#Promise me, @... when spring comes around and your first batch is ready, you'll bring one to me?",
+  "Ashara.fall_6_2": "I'm already dreaming of spring strawberries. There's a specific kind of natural alchemy in how they grow—turning simple rain and dirt into something so sweet.$1#$b#Don't forget to bring me one next year, okay?$8",
+  "Ashara.fall_13_1": "Have you ever noticed that Clint never takes off that dusty apron? Not even when he comes to the Saloon.$7#$b#He works in it, walks in it, and drinks his beer in it. It’s practically a second skin at this point.$9#$b#I’ve been so tempted to just... wave my hand and 'accidentally' make all that soot vanish. It would be so easy.$2#$b#But then I’d have to explain how I did it, and I'm not ready for the 'is it magic or just laundry?' interrogation.$8",
+  "Ashara.fall_13_2": "I wonder if Clint sleeps in that apron too. If I were as eccentric as people think, I'd say the metal dust has its own heavy aura... but maybe it's just plain old dirt.$8",
+  "Ashara.fall_20_1": "If you venture deep into the frozen layers of the mines, keep your eyes open for the crystals there.$0#$b#It’s fascinating how nature, without any tools or spells, carves such perfect, icy geometries in total darkness.$7#$b#They are breathtakingly beautiful... and so fragile. A reminder that some of the most powerful magic in this world doesn't need a wand—it just needs time and silence.$1",
+  "Ashara.fall_20_2": "Those frozen crystals in the mines... they hold a very 'still' kind of energy. I like to keep one on my desk when I'm studying; it helps cool the mind when a spell gets too frustrating.$3#$b#You're wondering why they don't melt in my warm room? Let's just say they are 'very high quality' ice.$8#$b#...And maybe I whispered a tiny word to the air around them so they’d stay forever frozen. But to anyone else, it’s just a paperweight that never drips.$1",
+
+
+  "Ashara.fall_7": "I’m spending the whole day organizing my bookshelves. They’ve become so dusty, and some of the older scrolls are starting to smell like damp earth.$0#$b#I could probably clear it all with a single flick of my wrist and a cleansing word, but... honestly? I have nothing else to do today.$7#$b#There’s something peaceful about doing it the 'normal' way. Feeling the paper, wiping the wood... it keeps me grounded.$8",
+  "Ashara.fall_14": "Do you have everything ready for tomorrow, @? It’s Sandy’s birthday, and even though she’s out there in the desert, she’s very dear to me.$1#$b#She is such a radiant soul, living so far away from all this green. I’m already preparing a gift for her—a little piece of our valley.$0#$b#If you’re heading to the Oasis, remember she loves our wild flowers like Sweet Peas or Crocus.",
+  "Ashara.fall_21": "Spirit's Eve is getting close! I love this time of year—it’s the only day when I can walk around with glowing jars and strange symbols, and everyone just assumes I’m a very dedicated cosplayer.$8#$b#I’ve been 'practicing' some special effects for my Poison Ivy costume. If you see some unusually large vines growing near my porch, don't worry... it’s just, uh, very expensive imported fertilizer!$3",
+  "Ashara.fall_28": "Did you know that Diamonds are the hardest natural substance on earth? Most people think they are the pinnacle of strength and value.$7#$b#But in our Valley... we know better, don't we? There’s the Prismatic Shard. It doesn't just have physical hardness; it holds a spectrum of pure, chaotic energy that a diamond could never touch.$0#$b#It’s funny how science stops at the diamond, while magic only truly begins once you find that rainbow glow.$1#$b#Keep that in mind if you’re mining in the cold winter ahead.$3",
+
+  // Dialog na festiwalu (podczas Spirit's Eve)
+  "Ashara.Spirits_Eve": "Can you guess who I am supposed to be? Here is a hint#$b# I command the plants.$8#$b#Yes, exactly! It is Poison Ivy.$1#$b#She is my absolute favorite character in the DC universe. I took inspiration specifically from the Harley Quinn series.$0#$b#It wasn't hard to put the costume together. Fortunately, I have my own ways... haha!$8",
+  // Dialog w trakcie dnia (przed festiwalem)
+  "Ashara.SpiritEve_Day": "I am almost ready for tonight. I am going as my favorite DC character.$1",
+  //EggF
+  "Ashara.Egg_Festival": "Look at all this! There’s something so refreshing about seeing the whole town come together for a bit of harmless fun.$1#$b#I’m not much of a runner myself, so I’ll just stay here and enjoy the atmosphere. Besides, my robes aren't exactly designed for sprinting through bushes.$3#$b#But listen... if you’re finding it hard to beat Abigail, just give me a wink. I could 'accidentally' make those hidden eggs glow just for you.$8#$b#No? You want to do it the honest way? Fair enough, @. Good luck out there!$1",
+  "Ashara.FlowerDance": "The air today is thick with the scent of spring blooms and... a lot of nervous energy.$1#$b#It’s a beautiful tradition, isn't it? Dancing to wake up the earth. Although, I suspect the flowers would wake up just fine without all the coordinated stepping.$7#$b#I’ll be honest, @, I’m a bit worried I might trip over my own robes if I tried to join in. I’m much better at dancing alone in the forest where the only judges are the crows.$8#$b#You look like you've been practicing, though. Don't let the pressure get to you—just move with the rhythm of the valley, and you'll do great.$3",
+  "Ashara.MoonlightJellies": "Can you feel that, @? The water is beginning to hum. It’s a very low, rhythmic vibration that most people mistake for the tide.$7#$b#But I know better. They are close... the sea is about to wake up.$0#$b#I always get a bit restless waiting for them. It’s like waiting for an old friend to knock on your door after a long journey.$1#$b#Stay close, the light will be here soon. I can almost smell the ozone and starlight in the sea breeze.$3",
+  "Ashara.StardewValleyFair": "Everything is so bright and loud today!$1#$b#But tell me... have you tried your luck at the Spinning Wheel yet? The one with the green and orange colors?$0#$b#I’ve noticed that 'Green' seems to be winning an unusually large number of times today. Almost as if the wind is giving the wheel a tiny, invisible nudge every time it passes the mark...$7#$b#*Wink*... Maybe the spirits of the valley just really like that color. Or maybe someone wanted to make sure you walked away with enough star tokens for that rarecrow.$8#$b#Go on, give it a spin. I have a very strong feeling the odds are in your favor today.$3",
+  "Ashara.FestivalOfIce": "Did you hear him? Rasmodius is already in full 'researcher mode.'$7#$b#He’s so focused on analyzing the 'significant concentration of mana' in this spot that he’s completely ignoring the actual festival.$0#$b#Honestly, I think the mana is just reacting to everyone having such a good time. Magic doesn't always need an origin story or a complex analysis—sometimes it just wants to enjoy the cold air and the ice sculptures, too.$1#$b#I tried to tell him that, but he just gave me that look. You know the one.$8#$b#Anyway, don't mind him, @. Let's focus on the competition. I'm rooting for you!$3",
+  "Ashara.WinterStar": "The sun is so bright today, it’s reflecting off the snow almost like a thousand tiny diamonds.$1#$b#Though I can’t help but feel a little sorry for this snowman here. He looks so proud standing there in the sunlight.$0#$b#We both know that once spring arrives, he’ll be nothing but a memory and a puddle.$9#$b#It's a shame there isn't some kind of spell that could bring him to life... right? Just imagine a little walking, talking snow-man who loves warm hugs.$7#$b#I think I’d name him... Olaf?",
+
+//winter
+
+    "Ashara.winter_4": "I'm not in the mood to talk, can you leave me alone?$9#$e#...$2#$e#I'm NOT in the mood!!$10#$action AddFriendshipPoints Ashara -30",
+    "Ashara.winter_7": "The Festival of Ice is coming up soon! I can’t wait to see all the snow sculptures and snowmen.$1#$b#There’s a unique kind of art in carving something so beautiful out of frozen water.$0#$b#I’ve been practicing my... 'artistic skills' lately.$7#$b#If you see a snowman near my house that looks a bit too lifelike, just assume I’m very good with a shovel and ignore any strange whispers you hear coming from it.$8",
+    
+
+
+  "Ashara.winter_1": "There is something truly breathtaking about the first day of winter, isn't there?$1#$b#The way the frost clings to the trees makes the whole valley look like it’s been dipped in silver.$0#$b#Most people see just cold and snow, but to me, the beginning of winter always feels so... magical.$7",
+  "Ashara.winter_8": "Hi @!",
+  "Ashara.winter_15": "The Night Market begins today! I can already see the glow of the lanterns from the docks.$0#$b#I’m not heading down there tonight, though. I prefer to let the initial crowd settle first.$7#$b#I’ll probably go tomorrow instead. There’s a certain traveling merchant there who sometimes carries the most fascinating 'trinkets'.$1#$b#...And I’ve heard the coffee they serve on the boat is strong enough to wake the spirits!$8",
+  "Ashara.winter_22": "The air is so still today... you can almost hear the snowflakes hitting the ground.$0#$b#I’ve been watching the ravens lately. They are so much smarter than people give them credit for.$7#$b#I sometimes leave bits of shiny foil or seeds for them on my windowsill.$1#$b#They’ve started bringing me small stones and twigs in return. It’s not exactly 'ancient treasure', but it’s a nice reminder that even in the dead of winter, we are never truly alone.$3",
+
+  "Ashara.winter_2": "Linus’s birthday is tomorrow. I truly admire him... not just because he survived the cold, but because he has the courage to live exactly how he wants, despite what society thinks.$0#$b#If you want to bring him something special, a Blueberry Tart is his favorite.$1#$b#You’ll likely find him at the Spa lately, warming up. I often pass by him on my way there; we don't always speak, but there's a mutual respect in the silence.$3",
+  "Ashara.winter_9": "It’s Sebastian’s birthday tomorrow. He’s... sweet, in his own brooding way, but I can’t say I particularly care for him.$0#$b#It’s not that I have anything against him, really! We just don't click.$9#$b#Some energies are like oil and water—both have their place, but they aren't meant to mix.$7",
+  "Ashara.winter_16": "I’m going to the Night Market tonight to buy a painting from Famous Painter Lupini.$0#$b#I’ll probably never hang it up; my walls are already crowded with maps and notes.$7#$b#But I enjoy admiring artistic craftsmanship in private. There’s a soul in a brushstroke that even the most perfect spell can't replicate.$1",
+  "Ashara.winter_23": "I love going to the Bathhouse, especially when the air is this biting.$11#$b#Theoretically, I could use magic to turn the pond in front of my house into a hot spring... but it wouldn't be the same.$0#$b#I enjoy the walk there, watching the town change under the snow. Making that long trip for a warm soak makes the reward feel earned.$1#$b#Sometimes, the 'hard way' is the only way to truly appreciate the comfort.$3",
+
+  "Ashara.winter_3": "Oh, @. You caught me staring.$7#$b#This statue... it’s an old friend of mine. I brought it with me when I first came to the Valley.$0#$b#We don't talk much anymore, but I find that standing here in the cold helps me remember things I’d otherwise forget.$7#$b#Please, don't ask for a name. Some memories are safer when they stay quiet.$2",
+  "Ashara.winter_10": "The snow looks beautiful on his shoulders today, doesn't it?$0#$b#I used to know someone who laughed just like the wind through the pines. This statue is the only thing I have left that carries that same... echo.$7#$b#It’s strange how a piece of stone can feel more alive than half the people in town.$1",
+  "Ashara.winter_17": "You’re curious about him, I can tell. Your aura practically ripples with questions whenever you see me here.$8#$b#He was a guardian, in a way. A protector of things that don't belong in the light.$0#$b#I keep him here to remind myself that even the most powerful spirits can find peace in a quiet garden.$7#$b#Just let him rest, @. Some stories don't need an ending.$0",
+  "Ashara.winter_24": "It’s the coldest day of the year, and yet he feels warm to the touch.$7#$b#He always hated the winter, you know? He used to say the frost was just the world's way of trying to stop time.$0#$b#I think he’d like it here, though. Watching the Junimos dance when no one is looking...$1#$b#Go on, @. Don't mind me. I just want to stay here a little longer and enjoy the silence.$3",
+
+  //"Ashara.winter_4": "I’ve noticed you’re starting to fill the pages of your book with some very practical magic.$0#$b#Spells like Lumber Spirit, Harvest Spirit, and Stone Spirit are incredibly useful for a farmer.$7#$b#They summon minor spirits to lend you their strength, making your daily chores much lighter.$1#$b#It’s better to let the spirits handle the heavy lifting while you focus on the bigger picture, don't you think?$3",
+  "Ashara.winter_11": "A word of advice, @—be mindful of how you weave your magic. Every spell in that book consumes a portion of your mana.$7#$b#It’s a finite resource. If you exhaust your energy on trivial things, you might find yourself unable to cast a life-saving spell when you need it most.$9#$b#Think of your mana like your farm's water—use it wisely, or you'll be left dry when the heat is on.$0",
+  "Ashara.winter_18": "I’ll admit, as much as I love how winter looks, I tend to avoid going out more than I have to.$0#$b#I prefer staying right here in my cozy little home, wrapped in a blanket with a hot drink.$1#$b#The valley is stunning when it’s covered in silver and white, but I’ve never been a fan of freezing my toes off.$8#$b#Nature is beautiful to observe, but much better from behind a warm window pane.$11",
+  "Ashara.winter_25": "Do you know Sophia? She’s such a sweet girl, but... I can feel a certain heaviness around her aura.$7#$b#It’s like she’s carrying much more on her shoulders than she lets on.$9#$b#I’ve thought about offering her a bit of 'comforting tea', but I don't want to startle her.$0#$b#Sometimes the kindest thing you can do for someone like her is just to be a steady presence in their life.$1",
+
+  "Ashara.winter_5": "I visited Rasmodius at his tower yesterday. He was so busy arguing with a restless spirit that he barely noticed me at first.$7#$b#He takes everything so seriously... sometimes I think he forgets that magic is supposed to be part of life, not just a burden to carry alone.$0#$b#I brought him some of my special tea to help him relax. He said it tasted like 'swamp water', but I saw him finish the whole cup.$8",
+  "Ashara.winter_12": "I've been spending a lot of time in my cellar lately, making sure everything is in order.$1#$b#I told Robin it’s just for storing pickles and wine... she doesn't need to know about the jars that glow in the dark or the ones that occasionally hum.$7#$b#It’s my little sanctuary. Feel free to stop by whenever you need to check your book, @. Just... try not to knock anything over.$3",
+  "Ashara.winter_19": "The snow is so deep now that even the secret paths in the forest are hard to find.$0#$b#I like it that way. It keeps the world quiet and the nosy people away from my doorstep.$7#$b#I’ve been working on a new knitting project while I wait for spring. It was supposed to be a scarf, but I think it’s turning into a very long, wooly serpent.$8#$b#Even a witch needs a hobby that doesn't involve ancient scrolls.$1",
+  "Ashara.winter_26": "The year is almost over, can you feel the shift in the air? The spirits are restless, waiting for the rebirth of spring.$7#$b#I’ve been reflecting on everything you’ve learned so far, @. You’ve come a long way since we first met on your farm.$1#$b#Don't let the winter chill freeze your ambition. There are still many spells hidden in those pages, just waiting for the right moment to reveal themselves.$3",
+
+  "Ashara.winter_6": "I was reorganizing my spice rack this morning. Did you know that dried Ginger can hold a surprisingly large amount of solar energy?$7#$b#It’s perfect for making a tea that warms you from the inside out when the snow is waist-deep.$1#$b#Of course, if anyone asks, I just like the spicy kick it gives my cookies.$8#$b#A witch’s kitchen is always full of secrets, even if they mostly look like ordinary jars of jam.$3",
+  "Ashara.winter_13": "I had a dream about the ocean last night... the Moonlight Jellies were there, glowing in the dark.$0#$b#It made me miss the summer heat for a moment, even though I love the silence of the frost.$7#$b#Sometimes I feel like my spirit is pulled between two worlds—the bright, loud world of people and the quiet, hidden world of the elements.$1#$b#I suppose that’s why I settled here in the forest. It’s exactly halfway between the town and the unknown.$3",
+  "Ashara.winter_20": "The days are so short now. It feels like the sun just wakes up and immediately goes back to bed.$9#$b#It’s the perfect time for 'starlight meditation'.$0#$b#I like to sit by my window and watch the constellations. They are like a giant book written across the sky, telling stories that are much older than this Valley.$7#$b#If you look closely enough, @, you can almost see the threads of fate weaving between the stars.$1",
+  "Ashara.winter_27": "Can you feel it, @? Tomorrow is the very last day of winter.$0#$b#The air is still biting, but the wind has lost its icy edge. I can already feel the roots stirring under the frozen soil, just waiting for the first touch of spring rain.$7#$b#I’ve spent the morning packing away my heaviest blankets.$1#$b#Winter is a time for reflection, but I’m more than ready to swap this white silence for the green melody of the forest once again.$3",
+
+  "Ashara.winter_7": "It’s Caroline’s birthday today. I honestly feel for her sometimes... having to deal with Pierre all the time must be exhausting.$9#$b#If it weren't for Abigail and her wanting the best for her daughter, I suspect she would have left him long ago.$7#$b#And honestly? I think she’s quite sweet. A bit of a... milf, don't you think?$8#$b#I know, I know! You probably didn't expect that from me. But even a witch can appreciate a woman who ages like fine wine.$3",
+  "Ashara.winter_14": "Wait, did I miss the SquidFest? It was just yesterday, wasn't it?$6#$b#Did you manage to catch many squids, @? I hope you didn't let those slippery things pull you into the water.$1#$b#The ocean gets so restless in the winter, but I suppose the challenge is part of the fun for a farmer like you.$0",
+  "Ashara.winter_21": "Can you believe there's only one week of winter left? The season of frost is finally drawing to a close.$7#$b#I’ve already started sorting through my spring seeds and airing out my lighter robes.$1#$b#I’ll miss the quiet of the snow, but my bones are definitely ready for a little more sun and a little less shivering.$3",
+  "Ashara.winter_28": "This is it—the very end of winter. Tomorrow, the valley will wake up to the smell of fresh soil and blooming petals.$0#$b#I’m spending the evening by the fireplace, saying a quiet goodbye to the cold.$7#$b#It’s been a long, white sleep, but I’m excited to see what we’ll discover together in the new year, @.$1#$b#Happy last day of frost!$3"
+
+}

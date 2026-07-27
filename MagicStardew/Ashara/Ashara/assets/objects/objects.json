@@ -1,0 +1,115 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "MagicStardew_Bean_Box": {
+          "Name": "MagicStardew_Bean_Box",
+          "Displayname": "{{i18n:MagicStardew_Bean_Box_Displayname}}",
+          "Description": "{{i18n:no_description}}",
+          "Type": "Crafting",
+          "Category": -9,
+          "Price": 0,
+          "Texture": "assets/objects/BigCraftables",
+          "SpriteIndex": 0
+        },
+        "MagicStardew_Dead_Bean_Box": {
+          "Name": "MagicStardew_Dead_Bean_Box",
+          "Displayname": "{{i18n:MagicStardew_Dead_Bean_Box_Displayname}}",
+          "Description": "{{i18n:no_description}}",
+          "Type": "Crafting",
+          "Category": -9,
+          "Price": 0,
+          "Texture": "assets/objects/BigCraftables",
+          "SpriteIndex": 1
+        },
+        
+
+
+
+        //for evnets
+        "MagicStardew_Book1": {
+          "Name": "MagicStardew_Book1",
+          "Displayname": "{{i18n:MagicStardew_Book1}}",
+          "Description": "{{i18n:no_description}}",
+          "Type": "Crafting",
+          "Category": -8,
+          "Price": 0,
+          "Texture": "assets/objects/objects",
+          "SpriteIndex": 0
+        },
+        "MagicStardew_Book2": {
+          "Name": "MagicStardew_Book2",
+          "Displayname": "{{i18n:MagicStardew_Book1}}",
+          "Description": "{{i18n:no_description}}",
+          "Type": "Crafting",
+          "Category": -8,
+          "Price": 0,
+          "Texture": "assets/objects/objects",
+          "SpriteIndex": 1
+        },
+        "MagicStardew_Book3": {
+          "Name": "MagicStardew_Book1",
+          "Displayname": "{{i18n:MagicStardew_Book3}}",
+          "Description": "{{i18n:no_description}}",
+          "Type": "Crafting",
+          "Category": -8,
+          "Price": 0,
+          "Texture": "assets/objects/objects",
+          "SpriteIndex": 2
+        }
+
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Hats",
+      "Entries": {
+        "MagicStardew_Ashara_Hat": "Ashara Hat/{{i18n:MagicStardew_Ashara_Hat}}/true/true//{{i18n:MagicStardew_Ashara_Hat}}/0/assets\\objects\\AsharaHat/0 0 20 20"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Infused_Red_Galaxy_Sword": {
+          "Name": "Infused_Red_Galaxy_Sword",
+          "DisplayName": "{{i18n:Infused_Red_Galaxy_Sword_Name}}",
+          "Description": "{{i18n:Infused_Red_Galaxy_Sword_Description}}",
+          "MinDamage": 90,
+          "MaxDamage": 130,
+          "Knockback": 1.2,
+          "Speed": 2,
+          "Precision": 3,
+          "Defense": 12,
+          "Type": 3,
+          "MineBaseLevel": 0,
+          "MineMinLevel": 0,
+          "AreaOfEffect": 1,
+          "CritChance": 0.20,
+          "CritMultiplier": 3.0,
+          "Texture": "assets/objects/objects",
+          "SpriteIndex": 3,
+          "SalePrice": 50000
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "assets/objects/BigCraftables",
+      "FromFile": "assets/objects/BigCraftables.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "assets/objects/AsharaHat",
+      "FromFile": "assets/objects/hat.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "assets/objects/objects",
+      "FromFile": "assets/objects/objects.png"
+    }
+  ]
+}
+

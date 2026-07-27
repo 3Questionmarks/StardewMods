@@ -1,0 +1,194 @@
+{
+	"Format": "2.0.2",
+	"ConfigSchema": {
+		"Enable Mod": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},	
+		"Tweak Seasonal Plants": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Tub o Flowers Always Full": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},				
+		"End-table backsides to shop counters": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		}
+	},
+	"Changes": [		 		
+		//End-Table backsides to shop counters
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/furniture",
+			"FromFile": "assets/florist_furniture.png",
+			"FromArea": { "X": 0, "Y": 128, "Width": 144, "Height": 32 },
+			"ToArea": { "X": 240, "Y": 688, "Width": 144, "Height": 32 },
+			"When": {
+				"Enable Mod": "true",
+				"End-table backsides to shop counters":"true"
+			}
+		},  
+		// Tub o' Flowers is always full
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"FromFile": "assets/florist_furniture.png",
+			"FromArea": { "X": 64, "Y": 64, "Width": 32, "Height": 32 },
+			"ToArea": 	{ "X": 64, "Y": 416, "Width": 32, "Height": 32 },
+			"When": {
+				"Enable Mod": "true",
+				"Tub o Flowers Always Full": "true"
+			}
+		}, 		
+		// Seasonal Decor item matches seasonal flower
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"FromFile": "assets/florist_furniture.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 32 },
+			"ToArea": 	{ "X": 0, "Y": 192, "Width": 64, "Height": 32 },
+			"When": {
+				"Enable Mod": "true",
+				"Tweak Seasonal Plants" : "true"
+			}
+		},  
+		// Small Seasonal Plant 
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"FromFile": "assets/florist_furniture.png",
+			"FromArea": { "X": 64, "Y": 0, "Width": 64, "Height": 32 },
+			"ToArea": 	{ "X": 0, "Y": 736, "Width": 64, "Height": 32 },
+			"When": {
+				"Enable Mod": "true",
+				"Tweak Seasonal Plants" : "true"
+			}
+		},
+		// Large Seasonal plant with long leaves
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+		"FromFile": "assets/florist_furniture.png",
+			"FromArea": { "X": 128, "Y": 0, "Width": 64, "Height": 32 },
+			"ToArea": 	{ "X": 64, "Y": 736, "Width": 64, "Height": 32 },
+			"When": {
+				"Enable Mod": "true",
+				"Tweak Seasonal Plants" : "true"
+			}
+		},
+		// Seasonal plant with Snowman in winter
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"FromFile": "assets/florist_furniture.png",
+			"FromArea": { "X": 0, "Y": 32, "Width": 64, "Height": 32 },
+			"ToArea": 	{ "X": 0, "Y": 768, "Width": 64, "Height": 32 },
+			"When": {
+				"Enable Mod": "true",
+				"Tweak Seasonal Plants" : "true"
+			}
+		},
+		// The cactus in a blue square pot
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"FromFile": "assets/florist_furniture.png",
+			"FromArea": { "X": 64, "Y": 32, "Width": 64, "Height": 32 },
+			"ToArea": 	{ "X": 64, "Y": 768, "Width": 64, "Height": 32 },
+			"When": {
+				"Enable Mod": "true",
+				"Tweak Seasonal Plants" : "true"
+			}
+		},
+		// The berry bush one
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"FromFile": "assets/florist_furniture.png",
+			"FromArea": { "X": 128, "Y": 32, "Width": 64, "Height": 32 },
+			"ToArea": 	{ "X": 0, "Y": 800, "Width": 64, "Height": 32 },
+			"When": {
+				"Enable Mod": "true",
+				"Tweak Seasonal Plants" : "true"
+			}
+		},
+		//The small wooden crate one (pine tree in winter)
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"FromFile": "assets/florist_furniture.png",
+			"FromArea": { "X": 0, "Y": 64, "Width": 64, "Height": 32 },
+			"ToArea": 	{ "X": 64, "Y": 800, "Width": 64, "Height": 32 },
+			"When": {
+				"Enable Mod": "true",
+				"Tweak Seasonal Plants" : "true"
+			}
+		},		
+
+		//New Items
+		{
+			"Action": "EditData",
+			"Target": "Data/Furniture",
+			 "Entries": {
+			 	//"UniqueID" :					 Name/category/w h/floorspace/number of rotations/price/location/i18n/spriteposition/asset
+        		"FarmerBeans.FloristCase": 		"Florist Case/decor/2 3/2 1/1/5000/2/{{i18n: FloristCase}}/0/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.NarrowFloristCase":"Narrow Florist Case/decor/1 3/1 1/1/3000/2/{{i18n: NarrowFloristCase}}/2/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.Column": 			"Wood Column/decor/1 3/1 1/1/3000/2/{{i18n: WoodColumn}}/3/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.Topiary": 			"Blooming Topiary/decor/1 3/1 1/1/1000/2/{{i18n: Topiary}}/4/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.FloristSign": 		"Florist Sign/painting/2 2/2 2/1/2000/0/{{i18n: FloristSign}}/8/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.Awning": 			"Awning/painting/1 1/1 1/1/2000/-1/{{i18n: Awning}}/7/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.Swag": 			"Blooming Swag/painting/2 1/2 1/1/1000/-1/{{i18n: Swag}}/5/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.PottingTable": 	"Potting Table/decor/3 2/3 1/1/4000/2/{{i18n: PottingTable}}/21/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.LowFloristCase": 	"Low Florist Case/decor/2 2/2 1/1/3000/2/{{i18n: LowFloristCase}}/10/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.GiftBundle": 		"Gift Bundle/decor/1 1/1 1/1/400/2/{{i18n: GiftBundle}}/42/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.Stump": 			"Stump Stool/chair/1 1/1 1/1/400/2/{{i18n: StumpStool}}/43/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.Hay": 				"Hay Bale/decor/1 2/1 1/1/500/2/{{i18n: HayBale}}/61/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.TableBlooms": 		"Table Blooms/decor/1 1/1 1/1/250/2/{{i18n: TableBlooms}}/40/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.TableBuds": 		"Table Buds/decor/1 1/1 1/1/250/2/{{i18n: TableBuds}}/41/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.BasketFlowers": 	"Basket o' Flowers/decor/1 2/1 1/1/250/2/{{i18n: BasketFlowers}}/12/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.BasketFlowersY": 	"Yellow Basket o' Flowers/decor/1 2/1 1/1/250/2/{{i18n: BasketFlowersY}}/62/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.GrassyHP": 		"Grassy Houseplant/decor/1 2/1 1/1/250/2/{{i18n: GrassyHP}}/48/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.BerriesHP": 		"Berries Houseplant/decor/1 2/1 1/1/250/2/{{i18n: BerriesHP}}/49/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.BlueCallaHP": 		"Blue Calla Lillies/decor/1 2/1 1/1/250/2/{{i18n: BlueCallaHP}}/50/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.PinkStarHP": 		"Starflower Houseplant/decor/1 2/1 1/1/250/2/{{i18n: PinkStarHP}}/51/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.CutFlowers": 		"Fresh-Cut Flowers/decor/1 2/1 1/1/250/2/{{i18n: CutFlowers}}/52/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.PinkBulb": 		"Potted Pink Bulb/decor/1 2/1 1/1/250/2/{{i18n: PinkBulb}}/53/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.LionHead": 		"Lion Head Planter/decor/1 2/1 1/1/250/2/{{i18n: LionHead}}/54/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.YellowBuds": 		"Yellow Table Buds/decor/1 2/1 1/1/250/2/{{i18n: YellowBuds}}/55/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.PinkPotted": 		"Potted Pink Blooms/decor/1 2/1 1/1/250/2/{{i18n: PinkPotted}}/56/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.BlueIris": 		"Potted Blue Iris/decor/1 2/1 1/1/250/2/{{i18n: BlueIris}}/57/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.FlowerBasket": 	"Flower Basket/decor/1 2/1 1/1/250/2/{{i18n: FlowerBasket}}/58/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.CactusFlower": 	"Flowering Cactus/decor/1 2/1 1/1/250/2/{{i18n: CactusFlower}}/59/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.BarrelBlooms": 	"Barrel o' Blooms/decor/1 2/1 1/1/250/2/{{i18n: BarrelBlooms}}/60/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.SaleSign": 		"Sale Sign/painting/2 1/2 1/1/450/-1/{{i18n: SaleSign}}/45/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.HangingBasket": 	"Hanging Basket/painting/1 2/1 2/1/500/-1/{{i18n: HangingBasket}}/63/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.ConsoleTable": 	"Console Table/table/2 2/2 1/1/2000/-1/{{i18n: ConsoleTable}}/13/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.WaterCan": 		"Watering Can/decor/1 1/1 1/1/250/2/{{i18n: WaterCan}}/44/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.TablePot1": 		"Table Pot/table/1 2/1 1/1/500/2/{{i18n: TablePot1}}/80/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.TableBox1": 		"Table Box/table/1 2/1 1/1/500/2/{{i18n: TableBox1}}/81/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.TableBarrel1": 	"Table Barrel 1/table/1 2/1 1/1/500/2/{{i18n: TableBarrel1}}/82/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.TableRound": 		"Round End Table/table/1 2/1 1/1/500/2/{{i18n: TableRound}}/83/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.TableBarrel2": 	"Table Barrel 2/table/1 2/1 1/1/500/2/{{i18n: TableBarrel2}}/84/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.TableCrate": 		"Table Crate/table/1 2/1 1/1/500/2/{{i18n: TableCrate}}/85/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.TableBarrel3": 	"Table Barrel 3/table/1 2/1 1/1/500/2/{{i18n: TableBarrel3}}/86/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.TablePot2": 		"Table Pot 2/table/1 2/1 1/1/500/2/{{i18n: TablePot2}}/87/Mods\\FarmerBeans.FloristFurniture\\NewFurniture",
+        		"FarmerBeans.TableParrot": 		"Table Parrot/table/1 2/1 1/1/500/2/{{i18n: TableParrot}}/88/Mods\\FarmerBeans.FloristFurniture\\NewFurniture"
+			},
+        	"When": {
+				"Enable Mod": "true"
+        	}
+		},
+		//load the image for new items
+		{
+			"Action" : "Load",
+			"Target": "Mods/FarmerBeans.FloristFurniture/NewFurniture",
+        	"FromFile": "assets/florist_new.png",
+        	"When": {
+				"Enable Mod": "true"
+        	}
+		}
+	]
+}

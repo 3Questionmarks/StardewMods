@@ -1,0 +1,153 @@
+
+{
+  "Changes": [  
+
+{
+
+      "LogName": "Meadow for Event",
+      "Action": "Load",
+      "Target": "Data/Events/Taro_Meadow",
+      "FromFile": "assets/Maps/Taro_Meadow.json"
+    },
+    {
+      "LogName": "Tent for Event",
+      "Action": "Load",
+      "Target": "Data/Events/Taro_Tent",
+      "FromFile": "assets/Maps/Taro_Tent.json"
+    },  
+	    {
+      "LogName": "Tent for Event",
+      "Action": "Load",
+      "Target": "Data/Events/Trolley_Pond",
+      "FromFile": "assets/Maps/Trolley_Pond.json"
+    }, 
+		    {
+      "LogName": "Tent for Event",
+      "Action": "Load",
+      "Target": "Data/Events/Taro_Train",
+      "FromFile": "assets/Maps/Taro_Train.json"
+    }, 
+  {
+            "LogName": "Introduction (0 hearts)",
+            "Action": "EditData",
+            "Target": "Data/Events/Taro_Tent",
+            "Entries":
+            {
+    "CC_tarointro/t 600 1800": "movie_nature/4 6/CC_RangerTaro 4 6 2 farmer 4 9 0/skippable/addConversationTopic RangerFirstMet 5/playSound doorOpen/pause 200/move CC_RangerTaro -1 0 2/move CC_RangerTaro 0 1 2/textAboveHead CC_RangerTaro \"A resident!\" /speak CC_RangerTaro \"Welcome to my research station. Do you live around here?#$b#I'm a Forest Ranger sent by the Department of Natural Land and Resource Considerations.#$b#Would you like to see my papers?#$b#I just arrived recently.\"/move CC_RangerTaro 1 0 0/showFrame CC_RangerTaro 24/pause 100/speak CC_RangerTaro \"Yes, very recently.$3\"/showFrame CC_RangerTaro 0/pause 100/playSound distantTrain/move CC_RangerTaro 0 0 2/speak CC_RangerTaro \"I'll begin patrolling Cindersap Forest tomorrow.\"/pause 100/showFrame CC_RangerTaro 24/speak CC_RangerTaro \"Yes, and then I'll scout into 'Pelican-ville' as well.$3\"/showFrame CC_RangerTaro 0/pause 200/speak CC_RangerTaro \"I look forward to seeing you along the trail, fine resident.#h\"/end"
+            }
+        },
+       
+        {
+            "LogName": "2 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+ "CC_tarotwo/f CC_RangerTaro 500/t 600 1800/DayofWeek Mon Tue Wed Thu Sat": "spring_day_ambient/30 14/farmer 34 14 2 CC_RangerTaro 29 10 0/skippable/pause 400/faceDirection CC_RangerTaro 2/move farmer -6 0 0/speak CC_RangerTaro \"Are you well, @?#$b#I'm out on patrol, observing the forest.\"/move CC_RangerTaro 0 1 2/move CC_RangerTaro 2 0 2/move CC_RangerTaro 0 2 2/speak CC_RangerTaro \"Actually, I'm on the lookout for something specific.\"/move CC_RangerTaro 1 0 2/move CC_RangerTaro 0 2 2/speak CC_RangerTaro \"Isn't that abandoned trolley line interesting?#$b#That spot is part of the reason the Department sent me in.\"/pause 600/showFrame CC_RangerTaro 24/pause 200/speak CC_RangerTaro \"There's rumors of a Gotoran smuggling operation in this area.$3#$b#You wouldn't happen to know anything about that, hmm?$3\"/showFrame CC_RangerTaro 0/pause 600/emote farmer 40/pause 300/speak CC_RangerTaro \"Well, just keep an eye out.#$b#Happy hiking!$h\"/move CC_RangerTaro 0 2 2/pause 100/end"
+
+            }
+        },
+		        {
+            "LogName": "4 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Taro_Meadow",
+            "Entries": {
+		"CC_tarofour/f CC_RangerTaro 1000/w sunny/t 600 1800": "junimoKart_whaleMusic/22 21/farmer 28 21 3 CC_RangerTaro 22 17 0/skippable/addConversationTopic cc_tarogood 5/move farmer -2 0 0/textAboveHead CC_RangerTaro \"What a beautiful day!\"/pause 400/move farmer 0 -3 3/faceDirection CC_RangerTaro 1/pause 400/textAboveHead CC_RangerTaro \"Take a look!\"/pause 1200/faceDirection CC_RangerTaro 0/pause 800/viewport move 0 -3 3500/pause 600/speak CC_RangerTaro \"These are Ancient Mega-Fibbanacho Ferns.#$b#I doubt they occur anywhere else in the world.\"/playSound leafrustle/pause 400/playSound SpringBirds/pause 600/viewport move 0 2 4000/pause 600/move CC_RangerTaro -3 0 3/pause 400/playSound SpringBirds/pause 400/speak CC_RangerTaro \"I haven't had much luck looking for the Gotoran smuggler.$2#$b#Not that I've been looking that hard.\"/pause 400/faceDirection CC_RangerTaro 2/emote CC_RangerTaro 40/pause 1200/speak CC_RangerTaro \"It's hard not to enjoy the peace here.$5\"/pause 200/playSound junimoMeep1/pause 400/playSound leafrustle/pause 600/emote CC_RangerTaro 16/pause 600/emote CC_RangerTaro 40/pause 800/speak CC_RangerTaro \"I didn't think complete ecosystems like this still existed.$s\"/pause 200/move farmer -4 0 2/pause 200/speak CC_RangerTaro \"Forgive my rudeness, but after watching the townsfolk here...$2#$b#You're all aware there's a war on, right?$5\"/pause 400/quickQuestion #Between who?#I've heard a little about it.(break) speak CC_RangerTaro \"Are you serious? The Gotoro Empire and the Ferngill Republic!$4\"(break) speak CC_RangerTaro \"Ah, that's just the thing!$4\"/pause 200/speak CC_RangerTaro \"The residents of this valley are going about their daily lives without worry.$2#$b#Or at least, with only everyday worries.\"/faceDirection CC_RangerTaro 1/faceDirection farmer 3/pause 400/speak CC_RangerTaro \"Speaking of which... tell me about being a farmer here, @.\"/stopMusic junimoKart_whaleMusic/playMusic spring_day_ambient/pause 300/textAboveHead CC_RangerTaro \"What's the cost of fertilizer these days?\"/pause 1400/end"
+			}
+        },
+   				        {
+            "LogName": "6 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Trolley_Pond",
+            "Entries":
+            {
+			"cc_tarosix/LocalMail CC_RangerTaro_heart_6/t 1800 2400/": "nightTime/16 17/farmer 24 17 1 CC_RangerTaro 13 14 2/skippable/showFrame CC_RangerTaro 23/textAboveHead CC_RangerTaro \"Over here\"/move farmer -5 0 3/pause 600/speak CC_RangerTaro \"It's me... Taro.$8\"/pause 200/showFrame CC_RangerTaro 21/pause 600/showFrame CC_RangerTaro 22/pause 400/move farmer -5 0 0/pause 800/speak CC_RangerTaro \"Thanks for coming, @.$9#$b#I called you here because I'm at a crossroads.$9\"/pause 200/showFrame CC_RangerTaro 23/pause 200/speak CC_RangerTaro \"The upper-brass at the Department are unhappy with my work.$9#$b#And I'm unhappy with my work, because I don't want to be doing it!$8\"/pause 200/playSound croak/pause 800/speak CC_RangerTaro \"You see, I've fallen in love with this valley.$9#$b#I want to grow ferns, not chase smugglers!$9\"/pause 600/speak CC_RangerTaro \"They said that my station will be terminated if I can't prove it's worth the cost.$9#$b#Which would mean I'm about to be fired. I'd have to stop...$9#$b#Being a spy!!$8\"/pause 200/shake CC_RangerTaro 600/emote farmer 16/pause 600/showFrame CC_RangerTaro 21/pause 200/speak CC_RangerTaro \"That's right! Before I was Ranger Taro of the Department of Natural Land and Resource Considerations of the Ferngill Republic...$9#$b#I was Agent Taro of the TD:LR, the Targeted Department of Landscape Reconnaissance for the Gotoro Empire!$8\"/pause 1800/showFrame CC_RangerTaro 23/pause 200/speak CC_RangerTaro \"Tell you the truth, @, I'm getting kind of old for this spy stuff.$9#$b#I've spent more years as a Park Ranger than any other role.$9\"/pause 400/playSound croak/pause 400/speak CC_RangerTaro \"I want out, I suppose.$9#$b#If it comes to that, I might rely on you...$9\"/pause 1200/end"
+            }
+        },
+		{
+            "LogName": "8 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Taro_Meadow",
+            "Entries":
+            {
+"cc_taroeight/f CC_RangerTaro 2000": "movieScreenAmbience/17 11/farmer 19 18 0 CC_RangerTaro 100 100 0/skippable/addConversationTopic cc_taroquits 5/pause 200/move farmer 0 -3 0/pause 200/playSound phone/pause 200/move farmer -3 0 0/pause 200/emote farmer 8/stopSound phone/playSound openBox/pause 600/move farmer 0 -2 0/playSound robotSoundEffects/pause 600/playSound doorOpen/changeLocation Taro_Train/viewport 11 9 clamp/warp farmer 15 10/warp CC_RangerTaro 11 9/playMusic crane_game/showFrame CC_RangerTaro 20/jump CC_RangerTaro 10/pause 600/move farmer 0 -1 3/emote farmer 16/pause 400/showFrame CC_RangerTaro 22/pause 400/speak CC_RangerTaro \"@! You have some timing!$8\"/pause 400/shake CC_RangerTaro 500/speak CC_RangerTaro \"I'm giving my final report to the Department!$8#$b#They're on the line right now!!$8\"/pause 200/move farmer -3 0 3/stopMusic crane_game/pause 100/playSound dogs/shake CC_RangerTaro 500/pause 3400/stopSound dogs/pause 600/speak CC_RangerTaro \"Sir, I can confirm all of that data, plus - $8\"/pause 400/playSound dogWhining/shake CC_RangerTaro 500/pause 1600/stopSound dogWhining/pause 400/playSound dog_bark/pause 400/speak CC_RangerTaro \"It's not excuses, sir, plus there's more -!$8\"/pause 200/textAboveHead CC_RangerTaro \"Psst - help me out!\"/pause 400/switchEvent report_loop",
+"report_loop": "pause 600/quickQuestion What should I say next?#There's no sign of illegal smuggling!#The people are really mean!#There's nothing going on in Stardew Valley!!(break) switchEvent report1 (break) switchEvent report2 (break) switchEvent report3",
+"report1": "pause 200/speak CC_RangerTaro \"The smuggler slipped through my fingers!$8#$b#I take full responsibility!$8\"/pause 400/ switchEvent report_continue",
+"report2": "pause 200/speak CC_RangerTaro \"The current residents are too few, and too ill-tempered to warrant a Ranger Station!$8\"/pause 400/ switchEvent report_continue",
+"report3": "pause 200/speak CC_RangerTaro \"In short, there is nothing of monetary or political value that warrants a Ranger Station.$9\"/pause 400/ switchEvent report_continue",
+"report_continue": "pause 400/playSound dog_pant/shake CC_RangerTaro 500/pause 1200/stopSound dog_pant/pause 200/playSound dog_pant/pause 600/stopSound dog_pant/pause 200/playSound dog_pant/pause 1200/stopSound dog_pant/pause 400/speak CC_RangerTaro \"Yes, I understand what that means.$9\"/pause 400/playSound dog_bark/shake CC_RangerTaro 500/pause 800/stopSound dog_bark/pause 400/speak CC_RangerTaro \"... You too, a real pleasure.$9#$b#Hey, tell the team that it was an early retirement, would you?$9#$b#...$8#$b#I will, thank you.$9\"/pause 600/playSound openBox/showFrame CC_RangerTaro 23/pause 1200/speak CC_RangerTaro \"...$9#$b#@, Would you meet me outside?$9\"/pause 400/move farmer 3 0 2/playSound doorOpen/fade/viewport -1000 -1000/changeLocation Taro_Meadow/showFrame CC_RangerTaro 0/warp CC_RangerTaro 16 13/warp farmer 17 14/fade/playSound doorOpen/viewport 18 16 clamp/playMusic movie_nature/faceDirection farmer 3/pause 600/speak CC_RangerTaro \"Well.$2#$b#That went way better than expected!$1\"/pause 400/playSound junimoMeep1/pause 800/playSound leafrustle/pause 600/speak CC_RangerTaro \"Haha! I officially just got myself 'retired'!$1#$b#...$1#$b#They'll shut this radio signal down and take the station off grid.#$b#I can keep living quietly... pretending to be a Park Ranger.\"/pause 600/textAboveHead CC_RangerTaro \"What should I do now...?\"/pause 1200/end",
+"cc_confront": "viewport -1000 -1000/changeLocation Taro_Meadow/warp CC_Merchant 20 17/warp CC_RangerTaro 20 20/fade/viewport 16 21 clamp/emote CC_RangerTaro 16/pause 200/playSound leafrustle/pause 100/warp farmer 29 21/pause 200/move farmer -4 0 3/stopMusic fall_day_ambient/playSound wind/textAboveHead CC_Merchant \"'Ranger!'\"/pause 400/move CC_Merchant 0 1 2/pause 600/stopSound wind/speak CC_Merchant \"At long last, I've come to end this charade!$1#$b#I'm scared, but we gotta talk!$1#$b#I know an Agent from the TD:LR when I see one!$1\"/pause 400/move CC_Merchant 0 1 2/pause 200/speak CC_RangerTaro \"W-wait!$4\"/pause 200/speak CC_Merchant \"And frankly! Life is a lot harder with you right here on the tracks!$1\"/pause 200/playSound leafrustle/pause 200/playSound pig/pause 200/playSound pig/pause 400/speak CC_Merchant \"Listen, I have a good thing going here.#$b#I love this valley, so I'm willing to bargain...#$b#Either you let me go, or I expose you to the townspeople!$1\"/playMusic movie_nature/pause 100/beginSimultaneousCommand/emote CC_RangerTaro 16/emote farmer 16/endSimultaneousCommand/move farmer -2 0 3/faceDirection CC_RangerTaro 1/pause 400/faceDirection CC_RangerTaro 0/pause 800/speak CC_RangerTaro \"You must be... the smuggler?$2\"/playSound pig/pause 200/playSound pig/pause 600/speak CC_Merchant \"My name is {{Merchant}}.\"/pause 400/speak CC_RangerTaro \"It's a delight to meet you, {{Merchant}}.#$b#You're something of a legend in my field.$1\"/pause 600/speak CC_RangerTaro \"My name is Taro.$2#$b#And you're a little too late.$3\"/pause 100/emote CC_Merchant 16/showFrame CC_RangerTaro 16/pause 200/showFrame CC_RangerTaro 17/pause 100/showFrame CC_RangerTaro 17/pause 100/showFrame CC_RangerTaro 18/pause 100/showFrame CC_RangerTaro 19/pause 600/speak CC_RangerTaro \"You see, I did a bad job at my job.$2#$b#I'm no longer an Agent and this is no longer a research station.\"/showFrame CC_RangerTaro 19/pause 200/showFrame CC_RangerTaro 18/pause 100/showFrame CC_RangerTaro 17/pause 100/showFrame CC_RangerTaro 16/pause 100/showFrame CC_RangerTaro 2/pause 600/speak CC_RangerTaro \"So, this interrogation should be in reverse.#$b#Merchant {{Merchant}}.#$b#May I have permission to continue camping along your caravan route?$1\"/pause 400/textAboveHead CC_Merchant \"Excuse me?\"/pause 200/faceDirection CC_RangerTaro 0/pause 600/speak CC_RangerTaro \"Maybe we could meet up once in a while, and talk over tea. I'm sure you have stories from all over!$1\"/pause 600/speak CC_Merchant \"...$1#$b#So, this was the situation.$2#$b#What a relief, I'm glad we came to talk to you.$2\"/pause 200/playSound leafrustle/pause 100/playSound pig/pause 1200/speak CC_Merchant \"In that case, let's work out a deal.$2#$b#I should have known you'd be a reasonable person.$2#$b#Our friend here has excellent taste!$2\"/pause 100/faceDirection CC_RangerTaro 1/pause 100/emote farmer 60/pause 1200/end warpOut"
+
+
+
+
+
+            }
+        },
+		{
+            "LogName": "8 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Taro_Train",
+            "Entries":
+            {
+"report_loop": "pause 300/quickQuestion What should I say next?#The smuggler got away!#The people don't even know it's wartime!#There's literally nothing here!(break) switchEvent report1 (break) switchEvent report2 (break) switchEvent report3",
+"report1": "pause 200/speak CC_RangerTaro \"The smuggler slipped through my fingers!$8#$b#I take full responsibility!$8\"/pause 400/ switchEvent report_continue",
+"report2": "pause 200/speak CC_RangerTaro \"The residents are ignorant of the Gotoro Empire!$8#$b#There's no sign of market infiltration whatsoever!$8\"/pause 400/ switchEvent report_continue",
+"report3": "pause 200/speak CC_RangerTaro \"It's basically a barren wasteland, sir.$9#$b#This was chasing a cold lead on icy intel!$8\"/pause 400/ switchEvent report_continue",
+"report_continue": "pause 400/playSound dog_pant/shake CC_RangerTaro 500/pause 1200/stopSound dog_pant/pause 200/playSound dog_pant/pause 600/stopSound dog_pant/pause 200/playSound dog_pant/pause 1200/stopSound dog_pant/pause 400/speak CC_RangerTaro \"Yes, I understand what that means.$9\"/pause 400/playSound dog_bark/shake CC_RangerTaro 500/pause 800/stopSound dog_bark/pause 400/speak CC_RangerTaro \"... You too, a real pleasure.$9#$b#Hey, tell the team that it was an early retirement, would you?$9#$b#...$8#$b#I will, thank you.$9\"/pause 600/playSound openBox/showFrame CC_RangerTaro 23/pause 1200/speak CC_RangerTaro \"...$9#$b#@, Would you meet me outside?$9\"/pause 400/move farmer 3 0 2/playSound doorOpen/fade/viewport -1000 -1000/changeLocation Taro_Meadow/showFrame CC_RangerTaro 0/warp CC_RangerTaro 16 13/warp farmer 17 14/fade/playSound doorOpen/viewport 18 16 clamp/playMusic movie_nature/faceDirection farmer 3/pause 600/speak CC_RangerTaro \"Well.$2#$b#That went way better than expected!$1\"/pause 400/playSound junimoMeep1/pause 800/playSound leafrustle/pause 600/speak CC_RangerTaro \"Haha! I officially just got myself 'retired'!$1#$b#...$1#$b#They'll shut this radio signal down and take the station off grid.#$b#I can keep living quietly... pretending to be a Park Ranger.\"/pause 600/textAboveHead CC_RangerTaro \"What should I do now...?\"/pause 1200/end",
+
+
+
+
+
+            }
+        },
+		
+
+				 {
+            "LogName": "10 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries":
+          {
+"cc_taroten/DayofWeek Sat/f CC_RangerTaro 2500": "continue/18 65/farmer 18 57 2 CC_RangerTaro 14 65 3 CC_Merchant 100 100 2/skippable/addConversationTopic cc_taroten 5/move farmer 0 8 2/pause 600/move CC_RangerTaro 0 1 1/pause 800/speak CC_RangerTaro \"You might want to avoid hiking this way, @.$5#$b#Something strange is going on.$5\"/pause 200/stopMusic continue/playMusic fall_day_ambient/emote farmer 8/pause 400/playSound pig/pause 100/playSound leafrustle/pause 200/playSound pig/pause 100/playSound pig/faceDirection CC_RangerTaro 3/faceDirection farmer 3/emote farmer 16/pause 600/speak CC_RangerTaro \"I noticed some fresh wheel tracks this morning.$2#$b#Someone's out there along the trolley tracks.$3\"/showFrame CC_RangerTaro 24/pause 1200/move CC_RangerTaro 0 2 2/pause 200/speak CC_RangerTaro \"Recon from TD:LR? Or an audit from the Ferngill Republic Investigative Agency?$3\"/showFrame CC_RangerTaro 24/pause 800/speak CC_RangerTaro \"I knew it... it was simply too easy to disappear.$3#$b#Agent Taro, heading in.$3\"/faceDirection farmer 2/pause 800/showFrame CC_RangerTaro 0/pause 600/move CC_RangerTaro -9 0 0/switchEvent cc_confront",
+"cc_confront": "viewport -1000 -1000/changeLocation Taro_Meadow/warp CC_Merchant 20 17/warp CC_RangerTaro 20 20/fade/viewport 16 21 clamp/emote CC_RangerTaro 16/pause 200/playSound leafrustle/pause 100/warp farmer 29 21/pause 200/move farmer -4 0 3/stopMusic fall_day_ambient/playSound wind/textAboveHead CC_Merchant \"'Ranger!'\"/pause 400/move CC_Merchant 0 1 2/pause 600/stopSound wind/speak CC_Merchant \"At long last, I've come to end this charade!$1#$b#I'm scared, but we gotta talk!$1#$b#I know an Agent from the TD:LR when I see one!$1\"/pause 400/move CC_Merchant 0 1 2/pause 200/speak CC_RangerTaro \"W-wait!$4\"/pause 200/speak CC_Merchant \"And frankly! Life is a lot harder with you right here on the tracks!$1\"/pause 200/playSound leafrustle/pause 200/playSound pig/pause 200/playSound pig/pause 400/speak CC_Merchant \"Listen, I have a good thing going here.#$b#I love this valley, so I'm willing to bargain...#$b#Either you let me go, or I expose you to the townspeople!$1\"/playMusic movie_nature/pause 100/beginSimultaneousCommand/emote CC_RangerTaro 16/emote farmer 16/endSimultaneousCommand/move farmer -2 0 3/faceDirection CC_RangerTaro 1/pause 400/faceDirection CC_RangerTaro 0/pause 800/speak CC_RangerTaro \"You must be... the smuggler?$2\"/playSound pig/pause 200/playSound pig/pause 600/speak CC_Merchant \"My name is {{Merchant}}.\"/pause 400/speak CC_RangerTaro \"It's a delight to meet you, {{Merchant}}.#$b#You're something of a legend in my field.$1\"/pause 600/speak CC_RangerTaro \"My name is Taro.$2#$b#And you're a little too late.$3\"/pause 100/emote CC_Merchant 16/showFrame CC_RangerTaro 16/pause 200/showFrame CC_RangerTaro 17/pause 100/showFrame CC_RangerTaro 17/pause 100/showFrame CC_RangerTaro 18/pause 100/showFrame CC_RangerTaro 19/pause 600/speak CC_RangerTaro \"You see, I did a bad job at my job.$2#$b#I'm no longer an Agent and this is no longer a research station.\"/showFrame CC_RangerTaro 19/pause 200/showFrame CC_RangerTaro 18/pause 100/showFrame CC_RangerTaro 17/pause 100/showFrame CC_RangerTaro 16/pause 100/showFrame CC_RangerTaro 2/pause 600/speak CC_RangerTaro \"So, this interrogation should be in reverse.#$b#Merchant {{Merchant}}.#$b#May I have permission to continue camping along your caravan route?$1\"/pause 400/textAboveHead CC_Merchant \"Excuse me?\"/pause 200/faceDirection CC_RangerTaro 0/pause 600/speak CC_RangerTaro \"Maybe we could meet up once in a while, and talk over tea. I'm sure you have stories from all over!$1\"/pause 600/speak CC_Merchant \"...$1#$b#So, this was the situation.$2#$b#What a relief, I'm glad we came to talk to you.$2\"/pause 200/playSound leafrustle/pause 100/playSound pig/pause 1200/speak CC_Merchant \"In that case, let's work out a deal.$2#$b#I should have known you'd be a reasonable person.$2#$b#Our friend here has excellent taste!$2\"/pause 100/faceDirection CC_RangerTaro 1/pause 100/emote farmer 60/pause 1200/end warpOut"
+            
+            }
+
+        },
+		
+		
+		
+		 {
+            "LogName": "Beyond Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries":
+          {
+		  "cc_bonusevent/SawEvent cc_taroten/SawEvent 463391/SawEvent 6497428": "spring_day_ambient/59 94/farmer 1000 1000 2 CC_RangerTaro 65 96 2 Leo 1000 1000 0 Linus 1000 1000 0 Wizard 46 99 2 Emily 1000 1000 2/skippable/addConversationTopic cc_bighike 5/pause 400/playSound SpringBirds/pause 600/faceDirection CC_RangerTaro 0/pause 200/textAboveHead CC_RangerTaro \"This way!\"/pause 400/move CC_RangerTaro 0 -4 1/pause 200/warp Linus 69 80/warp Leo 68 80/warp Emily 67 80/beginSimultaneousCommand/move Linus 0 12 3/move Leo 0 11 3/move Emily 0 10 2/move Emily -1 0 2/endSimultaneousCommand/pause 800/playSound achievement/pause 400/textAboveHead CC_RangerTaro \"Welcome to the end of the trail...\"/pause 800/speak CC_RangerTaro \"Hiking with all of you today has been a pleasure.$1#$b#This was a great idea, Emily.#$b#Park Rangers lead field trips, after all!$1\"/pause 1200/viewport move 1 3 4000/pause 200/playMusic movie_nature/pause 800/speak CC_RangerTaro \"We've now reached the mouth of the river.#$b#Freshwater and saltwater mix, forming a rich estuary for birds and wildlife.$1#$b#There's an endless cycle of growth and change...#$b#Right down to the wide ocean which connects our shores.$1\"/pause 1600/viewport move -1 -3 4000/pause 200/speak CC_RangerTaro \"But this crowd knows that better than anyone!$1\"/pause 800/speak CC_RangerTaro \"Especially you, little Leo!$1\"/pause 200/emote Leo 56/pause 400/faceDirection Leo 2/showFrame Leo 17/playSound parrot_squawk/shake Leo 500/emote Emily 56/pause 400/faceDirection Emily 2/showFrame Emily 48/playSound parrot_squawk/shake Emily 500/faceDirection Linus 2/showFrame Linus 26/pause 500/showFrame Linus 25/playSound parrot_squawk/shake Linus 500/pause 1000/showFrame CC_RangerTaro 28/playSound parrot_squawk/shake CC_RangerTaro 500/showFrame CC_RangerTaro 0/pause 400/showFrame CC_RangerTaro 28/playSound parrot_squawk/shake CC_RangerTaro 500/pause 1200/showFrame Wizard 16/playSound parrot_squawk/shake Wizard 500/pause 400/showFrame Wizard 0/pause 800/showFrame Linus 0/pause 100/showFrame Leo 0/pause 100/showFrame Emily 0/pause 100/showFrame CC_RangerTaro 0/pause 2000/textAboveHead CC_RangerTaro \"Now about Fibbanacho Spirals in nature...\"/pause 1200/fade/viewport -1000 -1000/message \"Looks like everyone is becoming friends in the valley!\"/pause 400/end"
+		  }
+		 },
+		{
+    "Action": "EditData",
+    "Target": "data/mail",
+		
+    "Entries": {
+
+			"CC_RangerTaro_heart_6": "Trolley Pond after 6pm ^^ - T[#]Ranger Taro's fourth letter",
+
+	}
+},
+// CC_RangerTaro's mail //
+{
+	"Action": "EditData",
+	"Target": "Data/Events/Farm",
+
+	"Entries": {
+
+		"61226/f CC_RangerTaro 1500/x CC_RangerTaro_heart_6": "null",
+
+			
+	}
+},
+	]
+}

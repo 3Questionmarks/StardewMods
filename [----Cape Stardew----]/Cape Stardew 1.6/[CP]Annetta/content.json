@@ -1,0 +1,142 @@
+{
+  "Format": "2.8.0",
+  "ConfigSchema": {
+    "AnnettaPortraitStyle": {
+      "AllowValues": "Front, AlternativeFront, 3/4(original), AlternativeFrontV2, AlternativeFrontV3, None(other)",
+      "Default": "AlternativeFrontV2",
+
+      "Description": "Switch the default portrait for Annetta"
+    },
+
+ "AnnettaScheduleChanges": {
+      "AllowValues": "Enabled, Disabled",
+      "Default": "Enabled",
+
+      "Description": "Toggle schedule updates."
+    },
+
+
+  },
+  
+  
+ "DynamicTokens": [
+ 
+
+  
+{
+  "Name": "AnnettaVault",
+  "Value": "Vault{{HasFlag: anyPlayer |contains=ccVault,jojaVault}}",
+},
+
+
+{
+  "Name": "AnnettaJelli",
+  "Value": "Locked{{HasSeenEvent: anyPlayer |contains=146353398}}",
+},
+
+
+{
+  "Name": "AnnettaCompatibility",
+  "Value": "Base",
+  "When": {
+    "HasMod |contains=Arknir.Jonghyuk": false,
+    "HasMod |contains=Arknir.Lucikiel": false
+  }
+},
+{
+  "Name": "AnnettaCompatibility",
+  "Value": "Jonghyuk",
+  "When": {
+    "HasMod |contains=Arknir.Jonghyuk": true,
+    "HasMod |contains=Arknir.Lucikiel": false
+  }
+},
+{
+  "Name": "AnnettaCompatibility",
+  "Value": "Lucikiel",
+  "When": {
+    "HasMod |contains=Arknir.Lucikiel": true,
+    "HasMod |contains=Arknir.Jonghyuk": false
+  }
+},
+{
+  "Name": "AnnettaCompatibility",
+  "Value": "Both",
+  "When": {
+    "HasMod |contains=Arknir.Lucikiel": true,
+    "HasMod |contains=Arknir.Jonghyuk": true
+  }
+},
+
+{
+  "Name": "AnnettaExpansion",
+  "Value": "Vanilla",
+  "When": {
+    "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+    "HasMod |contains=DaisyNiko.SVR3": false
+  }
+},
+{
+  "Name": "AnnettaExpansion",
+  "Value": "SVE",
+  "When": {
+    "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+    "HasMod |contains=DaisyNiko.SVR3": false
+  }
+},
+{
+  "Name": "AnnettaExpansion",
+  "Value": "SVR3",
+  "When": {
+    "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+    "HasMod |contains=DaisyNiko.SVR3": true
+  }
+},
+{
+  "Name": "AnnettaExpansion",
+  "Value": "SVE_SVR3",
+  "When": {
+    "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+    "HasMod |contains=DaisyNiko.SVR3": true
+  }
+},
+
+{
+  "Name": "AnnettaYear1",
+  "Value": "{{Year: anyPlayer |contains=1}}",
+},
+{
+  "Name": "AnnettaYear3",
+  "Value": "{{Year: anyPlayer |contains=3}}",
+},
+{
+    "Name": "AnnettaCoastalOrder",
+    "Value": "{{HasFlag: currentPlayer, hostPlayer, anyPlayer |contains=AnetCoastalOrder}}"
+  },
+  
+  ],
+  
+  
+  "Changes": [
+     {
+      "LogName": "NPC Characters1",
+      "Action": "Include",
+      "FromFile": "Data/NPCData.json"
+    },
+    
+     {
+      "LogName": "NPC Characters2",
+      "Action": "Include",
+      "FromFile": "Data/Characters.json"
+    },
+    
+    
+	{
+            "Action": "Load",
+            "Target": "TileSheets/AnnettaIcon",
+            "FromFile": "assets/AnnettaIcon.png"
+        }
+
+    
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Name": "Coffee Config",
+  "Author": "7eventy7",
+  "Version": "1.1.0",
+  "Description": "Allows configuration of coffee, triple shot espresso and joja cola properties",
+  "UniqueID": "7eventy7.CoffeeConfig",
+  "UpdateKeys": [ "Nexus:37812" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    { "UniqueID": "spacechase0.SpaceCore", "IsRequired": true }
+  ]
+}

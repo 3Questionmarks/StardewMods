@@ -1,0 +1,21 @@
+{
+	"Name": "Defense Division Code",
+	"Author": "Kiyugamods",
+	"Version": "1.4.8",
+	"Description": "Division Code",
+	"UniqueID": "DLL.DefenseDivision",
+	"UpdateKeys": [	"Nexus:12079" ],
+	"MinimumApiVersion": "4.0.0",
+    "MinimumGameVersion": "1.6",
+    "EntryDll": "DefenseDivision.dll",
+	"Dependencies": [
+	{	
+		"UniqueID": "DD.DefenseDivision",
+		"IsRequired": true
+    },
+    {	
+		"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+		"IsRequired": false
+    }
+  ]
+}

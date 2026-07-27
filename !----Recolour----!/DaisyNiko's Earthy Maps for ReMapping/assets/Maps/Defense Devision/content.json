@@ -1,0 +1,14 @@
+{
+	"Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Defense.Division)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Defense.Division",
+      "FromFile": "assets/Maps/Defense Devision/Casa.{{RMP.DD.House}}_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

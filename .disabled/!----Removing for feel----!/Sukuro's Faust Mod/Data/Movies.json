@@ -1,0 +1,248 @@
+{
+	"Changes": [
+		{
+			"LogName": "Movie Invite Strings",
+			"Action": "EditData",
+			"Target": "strings/Characters",
+			"Entries": {
+				"MovieInvite_Invited_Faust": "{{i18n:Movies.Faust.Invite}}",
+				"MovieInvite_Spouse_Faust": "{{i18n:Movies.Faust.Invite.Spouse}}"
+			}
+		},
+		{
+			"LogName": "Faust Concessions Tastes",
+			"Action": "EditData",
+			"Target": "Data/ConcessionTastes",
+			"Entries": {
+				"Faust": {
+					"LovedTags": [
+						"Apple Slices",
+						"Cappuccino Mousse Cake",
+						"Truffle Popcorn",
+						"Black Licorice",
+					],
+					"LikedTags": [
+						"Jasmine Tea",
+						"Hot",
+						"Sweet",
+						"Salty",
+						"Rock Candy",
+					],
+					"DislikedTags": [
+						"Healthy",
+						"Sour",
+						"Fatty",
+						"Joja",
+						"Burger",
+						"Cotton Candy",
+						"Candy",
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Faust Movie Reactions",
+			"Action": "EditData",
+			"Target": "Data/MoviesReactions",
+			"Entries": {
+				"Faust": {
+					"NPCName": "Faust",
+					"Reactions": [
+						//Brave Little Sapling
+						{
+							"Tag": "spring_movie_0",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Sapling.1}}"
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "/emote Faust 24/pause 500/message \"{{i18n:Movies.Faust.Sapling.2}}\"",
+									"Text": ""
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Sapling.3}}"
+								}
+							},
+							"ID": "reaction_0"
+						},
+						//Journey of the Praire King
+						{
+							"Tag": "summer_movie_0",
+							"Response": "like",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Prairie.1}}"
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Prairie.2}}"
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Prairie.3}}"
+								}
+							},
+							"ID": "reaction_1"
+						},
+						//Miracle at Coldstar Farm
+						{
+							"Tag": "winter_movie_0",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Coldstar.1}}"
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "/emote Faust 24/pause 500/message \"{{i18n:Movies.Faust.Coldstar.2}}\"",
+									"Text": ""
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Coldstar.3}}"
+								}
+							},
+							"ID": "reaction_4"
+						},
+						//Mysterium
+						{
+							"Tag": "fall_movie_0",
+							"Response": "love",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Mysterium.1}}"
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "/emote Faust 16/pause 500",
+									"Text": "{{i18n:Movies.Faust.Mysterium.2}}"
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Mysterium.3}}"
+								}
+							},
+							"ID": "reaction_3"
+						},
+						//Natural Wonders: Exploring Our Vibrant World
+						{
+							"Tag": "spring_movie_1",
+							"Response": "like",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Wonders.1}}"
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Wonders.2}}"
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Wonders.3}}"
+								}
+							},
+							"ID": "reaction_4"
+						},
+						//Wumbus
+						{
+							"Tag": "summer_movie_1",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Wumbus.1}}"
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "/emote Faust 24/pause 500/message \"{{i18n:Movies.Faust.Wumbus.2}}\"",
+									"Text": ""
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Wumbus.3}}"
+								}
+							},
+							"ID": "reaction_5"
+						},
+						//Howls in the Rain
+						{
+							"Tag": "fall_movie_1",
+							"Response": "love",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Howls.1}}"
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Howls.2}}"
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Howls.3}}"
+								}
+							},
+							"ID": "reaction_6"
+						},
+						//Zuzu City Express
+						{
+							"Tag": "winter_movie_1",
+							"Response": "like",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Zuzu.1}}"
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Zuzu.2}}"
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Movies.Faust.Zuzu.3}}"
+								}
+							},
+							"ID": "reaction_7"
+						}
+					]
+				}
+			}
+		}
+	]
+}

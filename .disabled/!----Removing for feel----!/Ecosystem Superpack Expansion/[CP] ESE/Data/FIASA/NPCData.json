@@ -1,0 +1,368 @@
+{
+  "Changes": [
+	{
+      "Action": "Load",
+      "Target": "Characters/CC_KodaK",
+      "FromFile": "assets/FIASA/Koda.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/CC_KodaK_Winter",
+      "FromFile": "assets/FIASA/Koda_Winter.png"
+    },
+	    {
+      "Action": "Load",
+      "Target": "Characters/CC_KodaK_Beach",
+      "FromFile": "assets/FIASA/Koda_Beach.png"
+    },
+	    {
+      "Action": "Load",
+      "Target": "Characters/CC_KodaK_Vendor",
+      "FromFile": "assets/FIASA/Koda_Vendor.png"
+    },
+	        {
+            "LogName": "Portrait Load",
+            "Action": "Load",
+            "Target": "Portraits/CC_KodaK",
+             "FromFile": "assets/FIASA/Koda_{{Portraits}}.png",
+       },
+	          {
+           "Action": "Load",
+           "Target": "Portraits/CC_KodaK_Winter",
+           "FromFile": "assets/FIASA/Koda_Winter_{{Portraits}}.png" 
+       }, 
+	          {
+        "LogName": "Beach Portrait Load",
+        "Action": "Load",
+        "Target": "Portraits/CC_KodaK_Beach",
+        "FromFile": "assets/FIASA/Koda_Beach_{{Portraits}}.png"
+        },
+		       {
+        "LogName": "Vendor Portrait Load",
+        "Action": "Load",
+        "Target": "Portraits/CC_KodaK_Vendor",
+        "FromFile": "assets/FIASA/Koda_Vendor_{{Portraits}}.png"
+        },
+		{
+      "LogName": "Vendor Change1",
+      "Action": "EditImage",
+      "Target": "Characters/CC_KodaK",
+      "FromFile": "assets/FIASA/Koda_Vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub"
+      }
+    },
+			{
+      "LogName": "Vendor Change2",
+      "Action": "EditImage",
+      "Target": "Characters/CC_KodaK",
+      "FromFile": "assets/FIASA/Koda_Vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub_rain"
+      }
+    },
+			{
+      "LogName": "Vendor Change3",
+      "Action": "EditImage",
+      "Target": "Portraits/CC_KodaK",
+      "FromFile": "assets/FIASA/Koda_Vendor_{{Portraits}}.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub"
+      }
+    },
+			{
+      "LogName": "Vendor Change4",
+      "Action": "EditImage",
+      "Target": "Portraits/CC_KodaK",
+      "FromFile": "assets/FIASA/Koda_Vendor_{{Portraits}}.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub_rain"
+      }
+    },
+{
+      "LogName": "Vendor Change5",
+      "Action": "EditImage",
+      "Target": "Characters/CC_KodaK_Winter",
+      "FromFile": "assets/FIASA/Koda_Vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub"
+      }
+    },
+			{
+      "LogName": "Vendor Change6",
+      "Action": "EditImage",
+      "Target": "Characters/CC_KodaK_Winter",
+      "FromFile": "assets/FIASA/Koda_Vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub_rain"
+      }
+    },
+			{
+      "LogName": "Vendor Change7",
+      "Action": "EditImage",
+      "Target": "Portraits/CC_KodaK_Winter",
+      "FromFile": "assets/FIASA/Koda_Vendor_{{Portraits}}.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub"
+      }
+    },
+			{
+      "LogName": "Vendor Change8",
+      "Action": "EditImage",
+      "Target": "Portraits/CC_KodaK_Winter",
+      "FromFile": "assets/FIASA/Koda_Vendor_{{Portraits}}.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub_rain"
+      }
+    },
+		{
+      "Action": "Include",
+	  "FromFile": "Data/FIASA/SVEdialogue.json",
+	  "When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+}
+	},
+			{
+      "Action": "Include",
+	  "FromFile": "Data/FIASA/ESdialogue.json",
+	  "When": {
+				"HasMod |contains=TenebrousNova.EliDylan.CP": true
+}
+	},
+	      {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/MarriageDialogueCC_KodaK",
+            "FromFile": "Data/FIASA/MarriageDialogueKoda.json"
+        },
+		     {
+            "LogName": "Engaged Dialogue",
+            "Action": "EditData",
+            "Target": "data/EngagementDialogue",
+            "Entries": {
+                "CC_KodaK0": "I can't believe we're getting married.$4",
+                "CC_KodaK1": "Hey, babe.$4"
+            }
+        },
+
+  {
+    "LogName": "NPC Dispositions",
+    "Action": "EditData",
+    "Target": "Data/Characters",
+    "Entries": {
+      "CC_KodaK": {
+        "DisplayName": "Koda",
+        "BirthSeason": "summer",
+        "BirthDay": 21,
+        "HomeRegion": "Other",
+        "Gender": "Female",
+        "Age": "Adult",
+        "Manner": "Polite",
+        "SocialAnxiety": "Shy",
+        "Optimism": "Neutral",
+        "CanBeRomanced": true,
+  
+        "CanReceiveGifts": true,
+		"CanVisitIsland": true,
+        "Calendar": "HiddenUntilMet",
+        "SocialTab": "HiddenUntilMet",
+		"CanSocialize": true,
+        "ExcludeFromIntroductionsQuest": true,
+        "ItemDeliveryQuests": false,
+        "ExcludeFromPerfectionScore": true,
+        "EndSlideShow": "MainGroup",
+"KissSpriteIndex": "31",
+"KissSpriteFacingRight": false,
+					"SpouseRoom": {
+						"MapAsset": "Koda_room",
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 6,
+							"Height": 9
+						}
+					},
+					"SpousePatio": {
+						"MapAsset": "Koda_patio",
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 4,
+							"Height": 4
+						},
+						"SpriteAnimationFrames": [
+							[
+								21,
+								2000
+							],
+							[
+								22,
+								1000
+							],
+							[
+							23, 1000]
+						],
+						"SpriteAnimationPixelOffset": {
+							"X": 0,
+							"Y": 0
+						}
+					},
+        "Home": [
+            {
+              "Id": "Default",
+              "Location": "Sub_back",
+              "Tile": {
+                "X": 20,
+                "Y": 10
+              },
+              "Direction": "down"
+            }
+          ],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          
+        "Breather": true,
+		 "TextureName": null,
+          "Appearance": [
+            {
+              "Id": "CC_KodaK",
+              "Condition": null,
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_KodaK",
+              "Sprite": "Characters/CC_KodaK",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 0
+            },
+			      {
+              "Id": "CC_KodaK_Beach",
+              "Condition": null,
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_KodaK_Beach",
+              "Sprite": "Characters/CC_KodaK_Beach",
+              "IsIslandAttire": true,
+              "Precedence": 0,
+              "Weight": 0
+            },
+				      {
+              "Id": "CC_KodaK_Vendor",
+              "Condition": null,
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_KodaK_Vendor",
+              "Sprite": "Characters/CC_KodaK_Vendor",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 0
+            },
+
+            {
+              "Id": "CC_KodaK_Winter",
+              "Condition": null,
+              "Season": "Winter",
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_KodaK_Winter",
+              "Sprite": "Characters/CC_KodaK_Winter",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            }
+
+          ],
+                }
+            }
+        },
+		
+		      {
+      "Action": "Include",
+      "FromFile": "Data/FIASA/Shop.json"
+    },
+
+{
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+         "koda_sleep": "35/35/35",
+		"koda_test": "16/17 18 18 18 18 18 18 18 18 18 18 19 19 19 19 19 19 19 19 19 19 19 19 18 18 18 18 18 18 18 18 18 18 17 17 17 17 17 17 17 17 17 17 17/16",
+		"koda_map": "21/21 21 22 22 22 22 23 23 23 23 22 22 22 22 22 23 23 23 23 23 22 22 21 21 21 21 22 22 22 21 21 21 21 21 21 22 22 22 22 22 23 23 23 23 23 23 22 22 21/21",
+		"koda_sitfront": "24/24/24",
+		"koda_sitleft": "27/27/27",
+		"koda_read": "24/25 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 25/24",
+		"koda_crouch": "0/28 28 28 28 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 28 28 28 28/0",
+		"koda_panic": "12/38 38 36 36 37 36 37 36 36 37 36 36 36 37 37 37 37 38 38 38 38/12",
+      }
+    },
+
+	{
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+ "CC_KodaK": "Ah! What a great color!$1/797 394 834 905 Book_Marlon/Oh, now this is interesting!$1/116 117 560 907/Why did you bring me this?/798 799 800 393 800/Ugh, how tacky.$2/591 593 595 597 376 418 421/Sorry, I'm not eating that./921 202 445 814/",
+      }
+    },
+
+
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/CC_KodaK",
+      "FromFile": "Data/FIASA/Dialogue.json"
+    },
+	{
+      "LogName": "Rainy Day Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "CC_KodaK": "I love the rain.#$b#There's like a hundred different varieties of 'rain'.#$b#Mists to monsoons, right?$1"
+      }
+    },
+  {
+      "LogName": "Load Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/CC_KodaK",
+      "FromFile": "Data/FIASA/Blank.json"
+    },
+    {
+      "LogName": "Schedule includes",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/Schedule.json"
+    },
+    {
+      "LogName": "Event includes",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/KodaEvents.json"
+    },
+	    {
+      "LogName": "Festival includes",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/Festivals.json"
+    },
+	    {
+      "LogName": "Movie includes",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/MovieTastes.json"
+    },
+		    {
+      "LogName": "Convotopics includes",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/ConvoTopics.json"
+    },
+
+    
+
+	]
+}

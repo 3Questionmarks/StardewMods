@@ -1,0 +1,138 @@
+{
+    "Format": "2.4.0",
+
+    "ConfigSchema": {
+//Leaves BusStop
+        "SeasonalEdits": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "SeasonalEdits (for SVE)",
+            "Description": "Adds leaves to the Busstop when for SVE, SeasonalEdits are on."
+            },
+//Remove Stones
+        "Remove Stones": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Remove Stones",
+            "Description": "Remove or place the stones at the BusStop."
+            },
+//Remove BusStopShield
+        "Remove BusStop Shield": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Remove BusStop Shield",
+            "Description": "Remove or place the BusStop Shield."
+            },
+//BusStop Shield Sprite
+        "BusStop Shield Sprite": {
+			"AllowValues": "Default, Aesthetic",
+			"Default": "Default",
+			"Section": "Sprite"
+        }
+    },
+    "Changes": [
+//BusStop
+        {
+            "Action": "Include",
+            "FromFile": "assets/MapPatches/BusStop.json"
+        },
+//Tilesheets
+        {   
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Maps/Leaves, Maps/spring_BusStop, Maps/summer_BusStop, Maps/fall_BusStop, Maps/winter_BusStop",
+            "FromFile": "assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+        },
+//Recolor Earthy
+        {   
+            "Action": "EditImage",
+			"Patchmode":"Overlay",
+            "Target": "Maps/{{Season}}_BusStop",
+            "FromFile": "assets/Maps/Tilesheets/Earthy/{{Season}}_BusStop.png",
+			"When":  { 
+                "HasFile:{{FromFile}}": true, 
+                "HasMod":"DaisyNiko.EarthyRecolour",
+                "BusStop Shield Sprite": "Default"
+            }
+        },
+        {   
+            "Action": "EditImage",
+			"Patchmode":"Overlay",
+            "Target": "Maps/{{Season}}_BusStop",
+            "FromFile": "assets/Maps/Tilesheets/Earthy/{{Season}}_aesthetic.BusStop.png",
+			"When":  { 
+                "HasFile:{{FromFile}}": true, 
+                "HasMod":"DaisyNiko.EarthyRecolour",
+                "BusStop Shield Sprite": "Aesthetic"
+            }
+        },
+//Recolor VPR
+        {   
+            "Action": "EditImage",
+			"Patchmode":"Overlay",
+            "Target": "Maps/{{Season}}_BusStop",
+            "FromFile": "assets/Maps/Tilesheets/VPR/{{Season}}_BusStop.png",
+			"When":  { 
+                "HasFile:{{FromFile}}": true, 
+                "HasMod":"grapeponta.VibrantPastoralRecolor",
+                "BusStop Shield Sprite": "Default"
+            }
+        },
+        {   
+            "Action": "EditImage",
+			"Patchmode":"Overlay",
+            "Target": "Maps/{{Season}}_BusStop",
+            "FromFile": "assets/Maps/Tilesheets/VPR/{{Season}}_aesthetic.BusStop.png",
+			"When":  { 
+                "HasFile:{{FromFile}}": true, 
+                "HasMod":"grapeponta.VibrantPastoralRecolor",
+                "BusStop Shield Sprite": "Aesthetic"
+            }
+        },
+//Recolor Starblue
+        {   
+            "Action": "EditImage",
+			"Patchmode":"Overlay",
+            "Target": "Maps/{{Season}}_BusStop",
+            "FromFile": "assets/Maps/Tilesheets/Starblue/{{Season}}_BusStop.png",
+			"When":  { 
+                "HasFile:{{FromFile}}": true, 
+                "HasMod":"Lita.StarblueValley",
+                "BusStop Shield Sprite": "Default"
+            }
+        },
+        {   
+            "Action": "EditImage",
+			"Patchmode":"Overlay",
+            "Target": "Maps/{{Season}}_BusStop",
+            "FromFile": "assets/Maps/Tilesheets/Starblue/{{Season}}_BusStop.png",
+			"When":  { 
+                "HasFile:{{FromFile}}": true, 
+                "HasMod":"Lita.StarblueValleyUnofficial",
+                "BusStop Shield Sprite": "Default"
+            }
+        },
+        {   
+            "Action": "EditImage",
+			"Patchmode":"Overlay",
+            "Target": "Maps/{{Season}}_BusStop",
+            "FromFile": "assets/Maps/Tilesheets/Starblue/{{Season}}_aesthetic.BusStop.png",
+			"When":  { 
+                "HasFile:{{FromFile}}": true, 
+                "HasMod":"Lita.StarblueValley",
+                "BusStop Shield Sprite": "Aesthetic"
+            }
+        },
+        {   
+            "Action": "EditImage",
+			"Patchmode":"Overlay",
+            "Target": "Maps/{{Season}}_BusStop",
+            "FromFile": "assets/Maps/Tilesheets/Starblue/{{Season}}_aesthetic.BusStop.png",
+			"When":  { 
+                "HasFile:{{FromFile}}": true, 
+                "HasMod":"Lita.StarblueValleyUnofficial",
+                "BusStop Shield Sprite": "Aesthetic"
+            }
+        }
+    ]
+}

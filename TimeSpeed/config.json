@@ -11,6 +11,7 @@
   },
   "FreezeTime": {
     "AnywhereAtTime": null,
+    "PassOut": false,
     "Indoors": false,
     "Outdoors": false,
     "Mines": false,
@@ -19,10 +20,11 @@
     "ByLocationName": [],
     "ExceptLocationNames": []
   },
+  "LetFarmhandsManageTime": false,
   "Keys": {
-    "FreezeTime": "OemCloseBrackets",
-    "IncreaseTickInterval": "OemOpenBrackets + OemComma",
-    "DecreaseTickInterval": "OemOpenBrackets + OemPeriod",
-    "ReloadConfig": "B"
+    "FreezeTime": "End",
+    "IncreaseTickInterval": "None",
+    "DecreaseTickInterval": "None",
+    "ReloadConfig": "None"
   }
 }

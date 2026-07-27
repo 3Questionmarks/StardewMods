@@ -1,0 +1,22 @@
+{
+    "Changes": [
+        {
+            "Action":"EditData",
+            "Target":"Data/TriggerActions",
+            "Entries": 
+            {
+                "{{ModId}}_TriggerActoin.Mail.SamInviteE10":{
+                    "Id": "{{ModId}}_TriggerActoin.Mail.SamInviteE10",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Sam 2500, PLAYER_HAS_SEEN_EVENT Current {{ModId}}_E09, !PLAYER_HAS_SEEN_EVENT Current {{ModId}}_E08.Friends",
+                    "HostOnly": false,
+                    "Action": "AddMail Current {{ModId}}_SamInviteE10",
+                    "Actions": null,
+                    "CustomFields": null,
+                    "MarkActionApplied": true
+                  },
+            
+            },
+        },
+    ]
+}

@@ -1,0 +1,92 @@
+{
+  "Changes":
+    [
+      {
+	"Action": "EditData",
+	"Target": "Mods/mistyspring.ItemExtensions/Treasure",
+	"Entries":
+	  {
+	    "appleseed.BCP.CattailSeedsTreasure":
+	      {
+		"ItemId": "(O)appleseed.BCP.CattailSeeds",
+		"Chance": 0.08,
+		"MinStack": 2,
+		"MaxStack": 5
+	      }
+	  }
+      },
+      {
+	"Action": "EditData",
+	"Target": "Mods/mistyspring.ItemExtensions/Resources",
+	"Entries": 
+	  {
+	   "appleseed.BCP.PetuntseNode":
+	    {
+	      "Name": "BCP.PetuntseNode",
+	      "Texture": "Mods\\appleseed.BCP\\Nodes",
+	      "SpriteIndex": 0,
+	      "Width": 1,
+	      "Height": 1,
+	      "Health": 6,
+	      "Tool": "pickaxe",
+	      "ItemDropped": "(O)appleseed.BCP.Petuntse",
+	      "MinDrops": 1,
+	      "Debris": "stone",
+	      "Sound": "hammer",
+	      "BreakingSound": "hammer",
+	      "Shake": false,
+	      "MinToolLevel": 3,
+	      "MineSpawns":
+		[
+		  {
+	  	    "Floors": "131/-999",
+		    "SpawnFrequency": 0.04
+		  }
+		]
+	    }
+	  }
+      },
+      {
+	"Action": "EditData",
+	"Target": "Mods/mistyspring.ItemExtensions/Resources",
+	"When": { "CattailNodes": "On" },
+	"Entries": 
+	  {
+	   "appleseed.BCP.CattailNodeOne":
+	    {
+	      "Name": "appleseed.BCP.CattailNodeOne",
+	      "Type": "Weeds",
+	      "Texture": "Mods\\appleseed.BCP\\Nodes",
+	      "SpriteIndex": 1,
+	      "Width": 1,
+	      "Height": 1,
+	      "Health": 2,
+	      "Tool": "Weapon",
+	      "ItemDropped": "(O)appleseed.BCP.Cattail",
+	      "MinDrops": 1,
+	      "Sound": "weed_cut",
+	      "BreakingSound": "cut",
+	      "Shake": true,
+	      "MinToolLevel": 0
+	    },
+	   "appleseed.BCP.CattailNodeTwo":
+	    {
+	      "Name": "appleseed.BCP.CattailNodeTwo",
+	      "Type": "Weeds",
+	      "Texture": "Mods\\appleseed.BCP\\Nodes",
+	      "SpriteIndex": 2,
+	      "Width": 1,
+	      "Height": 1,
+	      "Health": 2,
+	      "Tool": "Weapon",
+	      "ItemDropped": "(O)appleseed.BCP.Cattail",
+	      "MinDrops": 2,
+	      "Sound": "weed_cut",
+	      "BreakingSound": "cut",
+	      "Shake": true,
+	      "MinToolLevel": 0
+	    }
+	  }
+      }
+    ]
+}

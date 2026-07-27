@@ -1,0 +1,87 @@
+{
+  "Changes": [
+
+    {
+        "LogName": "Add Bakery Catalogue Shop",
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "Entries": {
+            "HXW.BakerySet": {
+            "PriceModifiers": null,
+            "PriceModifierMode": "Stack",
+            "Items": [
+                {
+                "Price": 0,
+                "AvailableStockLimit": "Global",
+                "AvoidRepeat": false,
+                "UseObjectDataPrice": false,
+                "IgnoreShopPriceModifiers": false,
+                "PriceModifiers": null,
+                "PriceModifierMode": "Stack",
+                "AvailableStockModifiers": null,
+                "AvailableStockModifierMode": "Stack",
+                "Condition": null,
+                "Id": "Default",
+                "ItemId": "ALL_ITEMS (F)",
+                "MinStack": -1,
+                "MaxStack": -1,
+                "Quality": -1,
+                "PerItemCondition": "ITEM_CONTEXT_TAG Target collection_hwboutiquebakeryfurni"
+                }
+            ],
+            "CustomFields":{
+                "HappyHomeDesigner/Catalogue":"true"
+            }
+            }
+        }
+    },
+
+    {
+        "LogName": "Add Bakery Catalogue Item",
+        "Action": "EditData",
+        "Target": "Data/Furniture",
+        "Entries": {    
+            "HXW.BoutiqueBakeryFurniture_Catalogue": "HXW.BoutiqueBakeryFurniture_Catalogue/other/1 2/1 1/1/35000/2/{{i18n:BoutiqueBakeryFurniture_Catalogue}}/7/Mods\\HXW.BoutiqueBakeryFurniture\\Furniture/true"
+        }
+    },
+  
+    {
+        "LogName": "Add Bakery Catalogue Tile Actions",
+        "Action": "EditData",
+        "Target": "sophie.Calcifer/FurnitureActions",
+        "Entries": {
+            "(F)HXW.BoutiqueBakeryFurniture_Catalogue": {
+                "TileActions": [
+                    {
+                        "TileAction": "OpenShop HXW.BakerySet"
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "LogName": "Add Bakery Catalogue to Robin's Shop",
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "TargetField": [ "Carpenter", "Items" ],
+        "Entries": {
+            "HXW.BoutiqueBakeryFurniture_Catalogue": {
+                "Id": "HXW.BoutiqueBakeryFurniture_Catalogue",
+                "ItemId": "(F)HXW.BoutiqueBakeryFurniture_Catalogue",
+                "Price": 35000
+            }
+        }
+    }
+   
+  ]
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  

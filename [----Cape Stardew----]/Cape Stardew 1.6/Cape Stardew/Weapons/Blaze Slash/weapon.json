@@ -1,0 +1,92 @@
+{
+  "Changes": [
+{
+  "Action": "EditData",
+  "Target": "Data/Weapons",
+  "Entries": {
+    "Cape.BlazeSlash": {
+      "Texture": "Mods/CapeStardew/Weapons/Blaze Slash",
+      "SpriteIndex": 0,
+      "Name": "Blaze Slash",
+      "DisplayName": "{{i18n:Blaze_Slash_Translated}}",
+      "Description": "{{i18n:Blaze_Slash_Description_Translated}}",
+      "Type": "3",
+      "Category": -98,
+      "Price": 6500,
+      "MinDamage": 55,
+      "MaxDamage": 70,
+      "Knockback": 0.2,
+      "Speed": 1,
+      "Precision": 40,
+      "Defense": 0,
+      "AreaOfEffect": 0,
+      "CritChance": 0.12,
+      "CritMultiplier": 3.0,
+      "CanPurchase": false
+    }
+  },
+  "When": { "WeaponsBalance": "Vanilla" }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Weapons",
+  "Entries": {
+    "Cape.BlazeSlash": {
+      "Texture": "Mods/CapeStardew/Weapons/Blaze Slash",
+      "SpriteIndex": 0,
+      "Name": "Blaze Slash",
+      "DisplayName": "{{i18n:Blaze_Slash_Translated}}",
+      "Description": "{{i18n:Blaze_Slash_Description_Translated}}",
+      "Type": "3",
+      "Category": -98,
+      "Price": 6500,
+      "MinDamage": 60,
+      "MaxDamage": 90,
+      "Knockback": 0.2,
+      "Speed": 1,
+      "Precision": 50,
+      "Defense": 0,
+      "AreaOfEffect": 0,
+      "CritChance": 0.13,
+      "CritMultiplier": 3.0,
+      "CanPurchase": false
+    }
+  },
+  "When": { "WeaponsBalance": "Balanced" }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Weapons",
+  "Entries": {
+    "Cape.BlazeSlash": {
+      "Texture": "Mods/CapeStardew/Weapons/Blaze Slash",
+      "SpriteIndex": 0,
+      "Name": "Blaze Slash",
+      "DisplayName": "{{i18n:Blaze_Slash_Translated}}",
+      "Description": "{{i18n:Blaze_Slash_Description_Translated}}",
+      "Type": "3",
+      "Category": -98,
+      "Price": 6500,
+      "MinDamage": 70,
+      "MaxDamage": 95,
+      "Knockback": 0.2,
+      "Speed": 1,
+      "Precision": 60,
+      "Defense": 0,
+      "AreaOfEffect": 0,
+      "CritChance": 0.14,
+      "CritMultiplier": 3.0,
+      "CanPurchase": false
+    }
+  },
+  "When": { "WeaponsBalance": "Stronger" }
+},
+
+{
+      "Action": "Load",
+      "Target": "Mods/CapeStardew/Weapons/Blaze Slash",
+      "FromFile": "Weapons/{{TargetWithoutPath}}/weapon.png"
+    }
+
+]
+}

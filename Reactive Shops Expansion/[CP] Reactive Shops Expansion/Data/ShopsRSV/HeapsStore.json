@@ -1,0 +1,25 @@
+{
+    "Changes": [
+        {
+			"LogName": "{{ModId}}_Heaps Store",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "RSVHeapsStore"
+            ],
+            "Entries": {
+				"PriceModifiers": [
+					{
+						"Modification": "Multiply",
+						"Amount": 1.0
+					},
+					{
+						"Modification": "Multiply",
+						"Amount": 0.8,
+						"Condition": "PLAYER_FRIENDSHIP_POINTS Any Lorenzo 2000"
+					}
+				]
+			}
+        }
+    ]
+}

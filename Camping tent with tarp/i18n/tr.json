@@ -1,0 +1,79 @@
+{
+
+//★★★ModConfig★★★
+
+    "config.EnableThisMod.name": "Bu Mod'u etkinleştirin",
+    "config.EnableThisMod.description": "Bu modun açma/kapama ayarı.",
+
+    "config.EntranceSleep.name": "Giriş Uykusu",
+    "config.EntranceSleep.description": "Bu ayarı açarsanız, çadırın girişindeki kareye dokunduğunuzda (iç mekan haritasına girmeden önce) uyuyabileceksiniz. (Onay seçeneğini iptal edip çadıra girebilirsiniz.)",
+
+    "config.FreeToBuild.name": "Maliyetsiz inşaat",
+    "config.FreeToBuild.description": "Ayar açıldığında, inşaat hizmeti olacak ve uygun olacak kalkacaktır.",
+
+    "config.ImmediateBuildFinish.name": "Anında inşaat",
+    "config.ImmediateBuildFinish.description": "Bu ücretin, inşaatın bir saniyeden daha iyi yapılmasını sağlar.",
+
+    "config.SeasonalAppearance.name": "Mevsimsel Görünüm",
+    "config.SeasonalAppearance.description": "Kapalıysa, görünümle birlikte kısa sürecek (İlk bahar görünümüne). sabitlenir) Bu ayar tüm renk tipi çadırlar için geçerlidir.",
+
+    "config.TentShadowTyep.name": "Çadır Gölge Tipi",
+    "config.TentShadowTyep.description": "\"Kahverengi\" vanilya binasının gölgesinin rengi ve yoğunluğudur. Bu ayar tüm renk tipi çadırlar için geçerlidir.",
+    "config.TentShadowTyep.values.Brown": "Kahverengi",
+    "config.TentShadowTyep.values.Brown(Thinner)": "Kahverengi (İnce)",
+    "config.TentShadowTyep.values.Black": "Siyah",
+    "config.TentShadowTyep.values.Black(Thinner)": "Siyah (İnce)",
+
+    "config.InDoorColor.name": "Mekanİç Rengi",
+    "config.InDoorColor.description": "Çadırın iç rengini değiştirebilirsiniz. Bu ayar tüm renkli çadırlar için geçerlidir.",
+    "config.InDoorColor.values.Vanilla(Yellow)": "Standart(Sarı)",
+    "config.InDoorColor.values.Black": "Siyah",
+    "config.InDoorColor.values.Blue": "Mavi",
+    "config.InDoorColor.values.Green": "Yeşil",
+    "config.InDoorColor.values.Purple": "Mor",
+    "config.InDoorColor.values.Red": "Kırmızı",
+    "config.InDoorColor.values.White": "Beyaz",
+
+  //●以下、動物表示関係のセクション
+    "config.section.DisplayAnimalsSetting.name": "Hayvanları Gösterme Ayarı",
+    "config.section.DisplayAnimalsSetting.description": "Hayvan düzenin konumu (tüm çadırlarda ortaktır) ve hayvanın her çadırda gösterilip gösterilmediği.",
+
+    "config.AnimalsDrawPosition.name": "Hayvanların konumu",
+    "config.AnimalsDrawPosition.description":"Hayvanın görüneceği konumu bulunur. Bu ayar tüm renkli çadırlar için geçerlidir.",
+    "config.AnimalsDrawPosition.values.OnTheTarp": "Tente üzerinde",
+    "config.AnimalsDrawPosition.values.OnTheTent": "Çadırda",
+
+    "config.EnableAnimal_Vanilla(Yellow).name": "Sarı Çadırda Göster",
+    "config.EnableAnimal_Vanilla(Yellow).description": "Bu renkteki çadırlarda hayvanlar göster.",
+    "config.EnableAnimal_Black.name": "Siyah Çadırda Göster",
+    "config.EnableAnimal_Black.description": "Bu renkteki çadırlarda hayvanları göster.",
+    "config.EnableAnimal_Blue.name": "Mavi Çadırda Göster",
+    "config.EnableAnimal_Blue.description": "Bu renkteki çadırlarda yaşıyor göster.",
+    "config.EnableAnimal_Green.name": "Yeşil Çadırda Göster",
+    "config.EnableAnimal_Green.description": "Bu renkteki çadırlarda hayvanlar göster.",
+    "config.EnableAnimal_Purple.name": "Mor Çadırda Göster",
+    "config.EnableAnimal_Purple.description": "Bu renkteki çadırlarda sergiler göster.",
+    "config.EnableAnimal_Red.name": "Kırmızı Çadırda Göster",
+    "config.EnableAnimal_Red.description": "Bu renkteki çadırlarda hayvanları göster.",
+    "config.EnableAnimal_White.name": "Beyaz Çadırda Göster",
+    "config.EnableAnimal_White.description": "Bu renkteki çadırlarda hayvanları göster.",
+    "config.EnableAnimal_RandomColor.name": "Rastgele Çadırda Göster",
+    "config.EnableAnimal_RandomColor.description": "Bu renkteki çadırlarda ürünler göster.",
+
+
+
+//★★★Name, Açıklama, Text★★★
+
+    "CampingTentWithTarp_Name": "Branda ile kamp çadırı(Sarı)",
+    "CampingTentWithTarp_Black_Name": "Branda ile kamp çadırı(Siyah)",
+    "CampingTentWithTarp_Blue_Name": "Branda ile kamp çadırı(Mavi)",
+    "CampingTentWithTarp_Green_Name": "Branda ile kamp çadırı(Yeşil)",
+    "CampingTentWithTarp_Purple_Name": "Branda ile kamp çadırı(Mor)",
+    "CampingTentWithTarp_Red_Name": "Branda ile kamp çadırı(Kırmızı)",
+    "CampingTentWithTarp_White_Name": "Branda ile kamp çadırı(Beyaz)",
+    "CampingTentWithTarp_Description": "Hadi biraz mola verelim!\nİçindeki uyku tulumu, günü sonlandırmak ve günü yapmak için kullanılabilir.",
+
+    "CampingTentWithTarp_RandomColor_Name": "Branda ile kamp çadırı (Rastgele)",
+    "CampingTentWithTarp_RandomColor_Description": "Nedense, bu gizemli çadır her sabah uyandığınızda renk değişiyor.",
+
+}

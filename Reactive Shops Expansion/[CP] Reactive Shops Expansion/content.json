@@ -1,0 +1,1184 @@
+{
+    "Format": "2.3.0",
+	
+	// TODO: i18n Config Keys
+	// TODO: Additional FishShop Include and optional file to include SVE fish?
+	// TODO: Optional Price Buffs Mod compat, mostly for that mod's buffed fish prices.
+	// TODO: Optional SDV Balance Overhaul compat, taking Theoddon's shop price changes into account.
+	
+    "ConfigSchema": {
+		
+		// BALANCE CHANGES
+		
+        "Shop Prices Don't Increase in Year 2+": {
+			"AllowValues": "true, false",
+			"Default": "false",
+            "Section": "1. Balance Changes",
+			"Description": "When true, removes all Year 2+ price hikes that I am aware of and disables price hikes included in this mod. Default false."
+        },
+		
+		// VANILLA SHOPS
+		
+        "Adventure Shop Changes": {
+			"AllowValues": "true, false",
+			"Default": "true",
+            "Section": "2. Vanilla Shops"
+        },
+        "Animal Shop Changes": {
+			"AllowValues": "true, false",
+			"Default": "true",
+            "Section": "2. Vanilla Shops"
+        },
+        "Blacksmith Changes": {
+			"AllowValues": "true, false",
+			"Default": "true",
+            "Section": "2. Vanilla Shops"
+        },
+        "Carpenter Changes": {
+			"AllowValues": "true, false",
+			"Default": "true",
+            "Section": "2. Vanilla Shops"
+        },
+        "Dwarf Shop Changes": {
+			"AllowValues": "true, false",
+			"Default": "true",
+            "Section": "2. Vanilla Shops"
+        },
+        "Fish Shop Changes": {
+			"AllowValues": "true, false",
+			"Default": "true",
+            "Section": "2. Vanilla Shops"
+        },
+        "Joja Changes": {
+			"AllowValues": "true, false",
+			"Default": "true",
+            "Section": "2. Vanilla Shops"
+        },
+        "Sandy Changes": {
+			"AllowValues": "true, false",
+			"Default": "true",
+            "Section": "2. Vanilla Shops"
+        },
+        "Seed Shop Changes": {
+			"AllowValues": "true, false",
+			"Default": "true",
+            "Section": "2. Vanilla Shops"
+        },
+		
+		// RSV SHOPS
+		
+        "Heaps Store Changes": {
+			"AllowValues": "true, false",
+			"Default": "false",
+            "Section": "3. Ridgeside Village Shops"
+        },
+        "Jeric Shop Changes": {
+			"AllowValues": "true, false",
+			"Default": "false",
+            "Section": "3. Ridgeside Village Shops"
+        },
+        "Malaya Shop Changes": {
+			"AllowValues": "true, false",
+			"Default": "false",
+            "Section": "3. Ridgeside Village Shops"
+        },
+		
+		// SVE SHOPS,
+		
+        "Sophia Ledger Changes": {
+			"AllowValues": "true, false",
+			"Default": "false",
+            "Section": "4. Stardew Valley Expanded Shops"
+        },
+		
+		// MISC.
+		
+        "Tea Sapling Sell Price Nerf": {
+			"AllowValues": "true, false",
+			"Default": "true",
+            "Section": "5. Misc.",
+			"Description": "When true, lowers the Tea Sapling sell price so that crafting and selling the sapling is not profitable. This is recommended to keep enabled as I have added Tea Saplings to Pierre's stock, but I'm not your dad. Default true.",
+        },
+        "No Seeds For Coin Compatibility": {
+			"AllowValues": "true, false",
+			"Default": "false",
+            "Section": "5. Misc.",
+			"Description": "When true, removes this mod's additional seed entries from stores to be compatible with No Seeds For Coin - Seed Shortage by Pokkki. Default false."
+        },
+		"No More Unlimited Stock Compatibility": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "5. Misc.",
+			"Description": "When true, limits all stock of items this mod adds to stores to be compatible with Realistic Seasonal Inventory - No More Unlimited Stock by boringvlln. Default false."
+		}
+		
+    },
+    "Changes": [
+	
+		// INCLUDES
+		
+		// VANILLA SHOPS: ADVENTURE SHOP
+		
+		{
+			"LogName": "{{ModId}}_Include Adventure Shop File",
+            "Action": "Include",
+            "FromFile": "Data/Shops/AdventureShop.json",
+            "When": {
+                "Adventure Shop Changes": "true"
+            }
+        },
+		
+		// VANILLA SHOPS: ANIMAL SHOP
+		
+		{
+			"LogName": "{{ModId}}_Include Animal Shop WITH Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/Shops/AnimalShop.json",
+            "When": {
+                "Animal Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false"
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Include Animal Shop WITHOUT Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsNoPriceHikes/AnimalShop.json",
+            "When": {
+                "Animal Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "true"
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Include Animal Shop WITH Price Changes Plus Limited Stock File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsLimitedStock/AnimalShop.json",
+            "When": {
+                "Animal Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false",
+				"No More Unlimited Stock Compatibility": "true"
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Include Animal Shop WITHOUT Price Changes Plus Limited Stock File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsNoPriceHikesLimitedStock/AnimalShop.json",
+            "When": {
+                "Animal Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "true",
+				"No More Unlimited Stock Compatibility": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Shane Dialogue File",
+            "Action": "Include",
+            "FromFile": "Data/Dialogue/Shane.json",
+            "When": {
+                "Animal Shop Changes": "true"
+            }
+        },
+		
+		// VANILLA SHOPS: BLACKSMITH
+		
+		{
+			"LogName": "{{ModId}}_Include Blacksmith Shop WITH Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/Shops/Blacksmith.json",
+            "When": {
+                "Blacksmith Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false"
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Include Blacksmith Shop WITHOUT Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsNoPriceHikes/Blacksmith.json",
+            "When": {
+                "Blacksmith Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "true"
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Include Blacksmith Shop WITH Price Changes Plus Limited Stock File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsLimitedStock/Blacksmith.json",
+            "When": {
+                "Blacksmith Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false",
+				"No More Unlimited Stock Compatibility": "true"
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Include Blacksmith Shop WITHOUT Price Changes Plus Limited Stock File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsNoPriceHikesLimitedStock/Blacksmith.json",
+            "When": {
+                "Blacksmith Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "true",
+				"No More Unlimited Stock Compatibility": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Clint Dialogue File",
+            "Action": "Include",
+            "FromFile": "Data/Dialogue/Clint.json",
+            "When": {
+                "Blacksmith Changes": "true"
+            }
+        },
+		
+		// VANILLA SHOPS: CARPENTER
+	
+        {
+			"LogName": "{{ModId}}_Include Carpenter Shop WITH Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/Shops/Carpenter.json",
+            "When": {
+                "Carpenter Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Carpenter Shop WITHOUT Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsNoPriceHikes/Carpenter.json",
+            "When": {
+                "Carpenter Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Carpenter Shop WITH Price Changes Plus Limited Stock File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsLimitedStock/Carpenter.json",
+            "When": {
+                "Carpenter Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false",
+				"No More Unlimited Stock Compatibility": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Carpenter Shop WITHOUT Price Changes Plus Limited Stock File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsNoPriceHikesLimitedStock/Carpenter.json",
+            "When": {
+                "Carpenter Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "true",
+				"No More Unlimited Stock Compatibility": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Robin Dialogue File",
+            "Action": "Include",
+            "FromFile": "Data/Dialogue/Robin.json",
+            "When": {
+                "Carpenter Changes": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Demetrius Dialogue File",
+            "Action": "Include",
+            "FromFile": "Data/Dialogue/Demetrius.json",
+            "When": {
+                "Carpenter Changes": "true"
+            }
+        },
+		
+		// VANILLA SHOPS: DWARF
+	
+        {
+			"LogName": "{{ModId}}_Include Dwarf Shop WITH Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/Shops/Dwarf.json",
+            "When": {
+                "Dwarf Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Dwarf Shop WITHOUT Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsNoPriceHikes/Dwarf.json",
+            "When": {
+                "Dwarf Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Dwarf Dialogue File",
+            "Action": "Include",
+            "FromFile": "Data/Dialogue/Dwarf.json",
+            "When": {
+                "Dwarf Shop Changes": "true"
+            }
+        },
+		
+		// VANILLA SHOPS: FISH SHOP
+	
+        {
+			"LogName": "{{ModId}}_Include Fish Shop WITH Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/Shops/FishShop.json",
+            "When": {
+                "Fish Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Fish Shop WITHOUT Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsNoPriceHikes/FishShop.json",
+            "When": {
+                "Fish Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Fish Shop WITH Price Changes Plus Limited Stock File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsLimitedStock/FishShop.json",
+            "When": {
+                "Fish Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false",
+				"No More Unlimited Stock Compatibility": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Fish Shop WITHOUT Price Changes Plus Limited Stock File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsNoPriceHikesLimitedStock/FishShop.json",
+            "When": {
+                "Fish Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "true",
+				"No More Unlimited Stock Compatibility": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Willy Dialogue File",
+            "Action": "Include",
+            "FromFile": "Data/Dialogue/Willy.json",
+            "When": {
+                "Fish Shop Changes": "true"
+            }
+        },
+		
+		// VANILLA SHOPS: JOJA
+	
+        {
+			"LogName": "{{ModId}}_Include Joja Shop File",
+            "Action": "Include",
+            "FromFile": "Data/Shops/Joja.json",
+            "When": {
+                "Joja Changes": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Joja Shop Plus Limited Stock File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsLimitedStock/Joja.json",
+            "When": {
+                "Joja Changes": "true",
+				"No More Unlimited Stock Compatibility": "true"
+            }
+        },
+		
+		// VANILLA SHOPS: SANDY
+	
+        {
+			"LogName": "{{ModId}}_Include Sandy Shop File",
+            "Action": "Include",
+            "FromFile": "Data/Shops/Sandy.json",
+            "When": {
+                "Sandy Changes": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Sandy Dialogue File",
+            "Action": "Include",
+            "FromFile": "Data/Dialogue/Sandy.json",
+            "When": {
+                "Sandy Changes": "true"
+            }
+        },
+		
+		// VANILLA SHOPS: SEED SHOP
+	
+        {
+			"LogName": "{{ModId}}_Include Seed Shop WITH Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/Shops/SeedShop.json",
+            "When": {
+                "Seed Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Seed Shop WITHOUT Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsNoPriceHikes/SeedShop.json",
+            "When": {
+                "Seed Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Seed Shop WITH Price Changes Plus Limited Stock File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsLimitedStock/SeedShop.json",
+            "When": {
+                "Seed Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false",
+				"No More Unlimited Stock Compatibility": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Seed Shop WITHOUT Price Changes Plus Limited Stock File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsNoPriceHikesLimitedStock/SeedShop.json",
+            "When": {
+                "Seed Shop Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "true",
+				"No More Unlimited Stock Compatibility": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Pierre Dialogue File",
+            "Action": "Include",
+            "FromFile": "Data/Dialogue/Pierre.json",
+            "When": {
+                "Seed Shop Changes": "true"
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Caroline Dialogue File",
+            "Action": "Include",
+            "FromFile": "Data/Dialogue/Caroline.json",
+            "When": {
+                "Seed Shop Changes": "true"
+            }
+        },
+		
+		// RSV SHOPS: HEAPS STORE
+	
+        {
+			"LogName": "{{ModId}}_Include Heaps Store File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsRSV/HeapsStore.json",
+            "When": {
+                "Heaps Store Changes": "true",
+				"HasMod |contains=Rafseazz.RSVCP": true
+            }
+        },
+		
+		// RSV SHOPS: JERIC SHOP
+	
+        {
+			"LogName": "{{ModId}}_Include Jeric Shop File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsRSV/JericShop.json",
+            "When": {
+                "Jeric Shop Changes": "true",
+				"HasMod |contains=Rafseazz.RSVCP": true
+            }
+        },
+		
+		// RSV SHOPS: MALAYA SHOP
+	
+        {
+			"LogName": "{{ModId}}_Include Malaya Shop File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsRSV/MalayaShop.json",
+            "When": {
+                "Malaya Shop Changes": "true",
+				"HasMod |contains=Rafseazz.RSVCP": true
+            }
+        },
+		
+		// SVE SHOPS: SOPHIA LEDGER
+	
+        {
+			"LogName": "{{ModId}}_Include Sophia Ledger WITH Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsSVE/SophiaLedger.json",
+            "When": {
+                "Sophia Ledger Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Sophia Ledger WITHOUT Price Changes File",
+            "Action": "Include",
+            "FromFile": "Data/ShopsSVENoPriceHikes/SophiaLedger.json",
+            "When": {
+                "Sophia Ledger Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "true",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+			"LogName": "{{ModId}}_Include Sophia Dialogue File",
+            "Action": "Include",
+            "FromFile": "Data/DialogueSVE/Sophia.json",
+            "When": {
+                "Sophia Ledger Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+		
+		// TRIGGER ACTIONS
+		
+		// VANILLA SHOPS: ADVENTURE SHOP
+		
+		{
+			"LogName": "{{ModId}}_Marlon Trigger Actions No Dependencies",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Marlon_FoodstuffsStock": {
+                    "Id": "{{ModId}}_Marlon_FoodstuffsStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "MINE_LOWEST_LEVEL_REACHED 10",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_AdventureShop_Foodstuffs Received"
+                    ]
+                }
+            },
+            "When": {
+                "Adventure Shop Changes": "true"
+            }
+        },
+		
+		// VANILLA SHOPS: ANIMAL SHOP
+		
+		{
+			"LogName": "{{ModId}}_Marnie Trigger Actions No Dependencies",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Marnie_BlueGrassStarterStock": {
+                    "Id": "{{ModId}}_Marnie_BlueGrassStarterStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Marnie 1500, PLAYER_FRIENDSHIP_POINTS Any Shane 1500",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_AnimalShop_BlueGrassStarter Received",
+                        "AddConversationTopic {{ModId}}_BlueGrassStarter_CT 10"
+                    ]
+                }
+            },
+            "When": {
+                "Animal Shop Changes": "true"
+            }
+        },
+		
+		// VANILLA SHOPS: BLACKSMITH
+		
+		{
+			"LogName": "{{ModId}}_Clint Trigger Actions No Dependencies",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Clint_IridiumOreStock": {
+                    "Id": "{{ModId}}_Clint_IridiumOreStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Clint 2000, PLAYER_MINING_LEVEL Any 10, MINE_LOWEST_LEVEL_REACHED 121",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Blacksmith_IridiumOre Received",
+                        "AddConversationTopic {{ModId}}_IridiumOre_CT 10"
+                    ]
+                },
+                "{{ModId}}_Clint_RadioactiveOreStock": {
+                    "Id": "{{ModId}}_Clint_RadioactiveOreStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Clint 2500, PLAYER_MINING_LEVEL Any 10, PLAYER_VISITED_LOCATION Any QiNutRoom",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Blacksmith_RadioactiveOre Received",
+                        "AddConversationTopic {{ModId}}_RadioactiveOre_CT 10"
+                    ]
+                },
+                "{{ModId}}_Clint_EarthCrystalStock": {
+                    "Id": "{{ModId}}_Clint_EarthCrystalStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Clint 500, PLAYER_MINING_LEVEL Any 2",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Blacksmith_EarthCrystal Received",
+                        "AddConversationTopic {{ModId}}_EarthCrystal_CT 10"
+                    ]
+                },
+                "{{ModId}}_Clint_RefinedQuartzStock": {
+                    "Id": "{{ModId}}_Clint_RefinedQuartzStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Clint 750, PLAYER_MINING_LEVEL Any 4",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Blacksmith_RefinedQuartz Received",
+                        "AddConversationTopic {{ModId}}_RefinedQuartz_CT 10"
+                    ]
+                },
+                "{{ModId}}_Clint_FurnaceStock": {
+                    "Id": "{{ModId}}_Clint_FurnaceStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Clint 250, PLAYER_MINING_LEVEL Any 2",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Blacksmith_Furnace Received",
+                        "AddConversationTopic {{ModId}}_Furnace_CT 10"
+                    ]
+                },
+                "{{ModId}}_Clint_CharcoalKilnStock": {
+                    "Id": "{{ModId}}_Clint_CharcoalKilnStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Clint 500, PLAYER_FORAGING_LEVEL Any 2",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Blacksmith_CharcoalKiln Received",
+                        "AddConversationTopic {{ModId}}_CharcoalKiln_CT 10"
+                    ]
+                },
+                "{{ModId}}_Clint_LightningRodStock": {
+                    "Id": "{{ModId}}_Clint_LightningRodStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Clint 1250, PLAYER_FORAGING_LEVEL Any 6",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Blacksmith_LightningRod Received",
+                        "AddConversationTopic {{ModId}}_LightningRod_CT 10"
+                    ]
+                },
+            },
+            "When": {
+                "Blacksmith Changes": "true"
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Clint Trigger Actions Strict False SVE Dependency",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+				"{{ModId}}_Clint_SprinklersStock": {
+                    "Id": "{{ModId}}_Clint_SprinklersStock",
+                    "Trigger": "DayEnding",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Clint_Sprinklers Received"
+                    ]
+                }
+            },
+            "When": {
+                "Blacksmith Changes": "true",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false // Reason for this condition is that SVE has a sprinkler merchant already, making this change redundant.
+            }
+        },
+		
+		// VANILLA SHOPS: CARPENTER
+		
+		{
+			"LogName": "{{ModId}}_Robin Trigger Actions False No Seeds For Coin",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Robin_SapStock": {
+                    "Id": "{{ModId}}_Robin_SapStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 500",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_Sap Received",
+                        "AddConversationTopic {{ModId}}_Sap_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_HardwoodStock": {
+                    "Id": "{{ModId}}_Robin_HardwoodStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 1000, PLAYER_FORAGING_LEVEL Any 4",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_Hardwood Received",
+                        "AddConversationTopic {{ModId}}_Hardwood_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_TreeSeedsStock": {
+                    "Id": "{{ModId}}_Robin_TreeSeedsStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 1000, PLAYER_HAS_PROFESSION Any 15",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_TreeSeeds Received",
+                        "AddConversationTopic {{ModId}}_TreeSeeds_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_ChestStock": {
+                    "Id": "{{ModId}}_Robin_ChestStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 250",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_Chest Received",
+                        "AddConversationTopic {{ModId}}_Chest_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_BigChestStock": {
+                    "Id": "{{ModId}}_Robin_BigChestStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 1000",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_BigChest Received",
+                        "AddConversationTopic {{ModId}}_BigChest_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_StoneChestStock": {
+                    "Id": "{{ModId}}_Robin_StoneChestStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 500, PLAYER_HAS_MAIL Any robinResource Received",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_StoneChest Received",
+                        "AddConversationTopic {{ModId}}_StoneChest_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_MushroomLogStock01": {
+                    "Id": "{{ModId}}_Robin_MushroomLogStock01",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 500, PLAYER_FRIENDSHIP_POINTS Any Demetrius 1250, PLAYER_FORAGING_LEVEL Any 4, PLAYER_MONEY_EARNED Any 25000, FARM_CAVE Mushrooms",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_MushroomLog Received",
+                        "AddConversationTopic {{ModId}}_MushroomLog_MCave_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_MushroomLogStock02": {
+                    "Id": "{{ModId}}_Robin_MushroomLogStock02",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 500, PLAYER_FRIENDSHIP_POINTS Any Demetrius 1250, PLAYER_FORAGING_LEVEL Any 4, PLAYER_MONEY_EARNED Any 25000, FARM_CAVE Bats",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_MushroomLog Received",
+                        "AddConversationTopic {{ModId}}_MushroomLog_BCave_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_ScarecrowStock": {
+                    "Id": "{{ModId}}_Robin_ScarecrowStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 250, PLAYER_FARMING_LEVEL Any 1",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_Scarecrow Received",
+                        "AddConversationTopic {{ModId}}_Scarecrow_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_ArtisanMachinesStock": {
+                    "Id": "{{ModId}}_Robin_ArtisanMachinesStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 2500, PLAYER_FARMING_LEVEL Any 10, PLAYER_FARMHOUSE_UPGRADE Any 3",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_ArtisanMachines Received"
+                    ]
+                }
+            },
+            "When": {
+                "Carpenter Changes": "true",
+				"No Seeds For Coin Compatibility": "false"
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Robin Trigger Actions True No Seeds For Coin",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Robin_SapStock": {
+                    "Id": "{{ModId}}_Robin_SapStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 500",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_Sap Received",
+                        "AddConversationTopic {{ModId}}_Sap_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_HardwoodStock": {
+                    "Id": "{{ModId}}_Robin_HardwoodStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 1000, PLAYER_FORAGING_LEVEL Any 4",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_Hardwood Received",
+                        "AddConversationTopic {{ModId}}_Hardwood_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_ChestStock": {
+                    "Id": "{{ModId}}_Robin_ChestStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 250",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_Chest Received",
+                        "AddConversationTopic {{ModId}}_Chest_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_BigChestStock": {
+                    "Id": "{{ModId}}_Robin_BigChestStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 1000",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_BigChest Received",
+                        "AddConversationTopic {{ModId}}_BigChest_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_StoneChestStock": {
+                    "Id": "{{ModId}}_Robin_StoneChestStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 500, PLAYER_HAS_MAIL Any robinResource Received",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_StoneChest Received",
+                        "AddConversationTopic {{ModId}}_StoneChest_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_MushroomLogStock01": {
+                    "Id": "{{ModId}}_Robin_MushroomLogStock01",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 500, PLAYER_FRIENDSHIP_POINTS Any Demetrius 1250, PLAYER_FORAGING_LEVEL Any 4, PLAYER_MONEY_EARNED Any 25000, FARM_CAVE Mushrooms",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_MushroomLog Received",
+                        "AddConversationTopic {{ModId}}_MushroomLog_MCave_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_MushroomLogStock02": {
+                    "Id": "{{ModId}}_Robin_MushroomLogStock02",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 500, PLAYER_FRIENDSHIP_POINTS Any Demetrius 1250, PLAYER_FORAGING_LEVEL Any 4, PLAYER_MONEY_EARNED Any 25000, FARM_CAVE Bats",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_MushroomLog Received",
+                        "AddConversationTopic {{ModId}}_MushroomLog_BCave_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_ScarecrowStock": {
+                    "Id": "{{ModId}}_Robin_ScarecrowStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 250, PLAYER_FARMING_LEVEL Any 1",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_Scarecrow Received",
+                        "AddConversationTopic {{ModId}}_Scarecrow_CT 10"
+                    ]
+                },
+                "{{ModId}}_Robin_ArtisanMachinesStock": {
+                    "Id": "{{ModId}}_Robin_ArtisanMachinesStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Robin 2500, PLAYER_FARMING_LEVEL Any 10, PLAYER_FARMHOUSE_UPGRADE Any 3",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_ArtisanMachines Received"
+                    ]
+                }
+            },
+            "When": {
+                "Carpenter Changes": "true",
+				"No Seeds For Coin Compatibility": "true"
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Robin Trigger Actions Strict False SVE Dependency",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+				"{{ModId}}_Robin_TapperOutputsStock": {
+                    "Id": "{{ModId}}_Robin_TapperOutputsStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "SEASON_DAY winter 1, PLAYER_FRIENDSHIP_POINTS Any Robin 1250, PLAYER_HAS_PROFESSION Any 4",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Carpenter_TapperOutputs Received",
+                        "AddConversationTopic {{ModId}}_TapperOutputs_CT 10"
+                    ]
+                }
+            },
+            "When": {
+                "Carpenter Changes": "true",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false // Reason for this condition is that SVE has a tapper product merchant already, making this change redundant.
+            }
+        },
+		
+		// VANILLA SHOPS: DWARF SHOP
+		
+		{
+			"LogName": "{{ModId}}_Dwarf Trigger Actions No Dependencies",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Dwarf_BigStoneChestStock": {
+                    "Id": "{{ModId}}_Dwarf_BigStoneChest",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Dwarf 1250, PLAYER_HAS_CRAFTING_RECIPE Any Stone Chest",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Dwarf_BigStoneChest Received",
+                        "AddConversationTopic {{ModId}}_BigStoneChest_CT 10"
+                    ]
+                },
+                "{{ModId}}_Dwarf_ConsumablesStock": {
+                    "Id": "{{ModId}}_Dwarf_ConsumablesStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Dwarf 1000, PLAYER_FORAGING_LEVEL Any 4, PLAYER_MINING_LEVEL Any 2",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Dwarf_Consumables Received",
+                        "AddConversationTopic {{ModId}}_Consumables_CT 10"
+                    ]
+                }
+			},
+            "When": {
+                "Dwarf Shop Changes": "true"
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Dwarf Trigger Actions Strict False SVE Dependency",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+				"{{ModId}}_Dwarf_MineralsStock": {
+                    "Id": "{{ModId}}_Dwarf_MineralsStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Dwarf 1500, PLAYER_MINING_LEVEL Any 4",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Dwarf_Minerals Received",
+                        "AddConversationTopic {{ModId}}_Minerals_CT 10"
+                    ]
+                }
+            },
+            "When": {
+                "Dwarf Shop Changes": "true",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false // Reason for this condition is that SVE has a mineral merchant already, albeit in lategame, making this change redundant.
+            }
+        },
+		
+		// VANILLA SHOPS: FISH SHOP
+		
+		{
+			"LogName": "{{ModId}}_Willy Trigger Actions No Dependencies",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+				"{{ModId}}_Willy_QualityBobberStock": {
+                    "Id": "{{ModId}}_Willy_QualityBobberStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Willy 2500, PLAYER_HAS_CRAFTING_RECIPE Any Quality Bobber",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_FishShop_QualityBobber Received",
+						"AddConversationTopic {{ModId}}_QualityBobber_CT 10"
+                    ]
+                },
+				"{{ModId}}_Willy_CuriosityLureStock": {
+                    "Id": "{{ModId}}_Willy_CuriosityLureStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Willy 2500, PLAYER_KILLED_MONSTERS Any Mummy 100",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_FishShop_CuriosityLure Received",
+						"AddConversationTopic {{ModId}}_CuriosityLure_CT 10"
+                    ]
+                },
+				"{{ModId}}_Willy_BaitMakerStock": {
+                    "Id": "{{ModId}}_Willy_BaitMakerStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Willy 2000, PLAYER_FISHING_LEVEL Any 6",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_FishShop_BaitMaker Received",
+						"AddConversationTopic {{ModId}}_BaitMaker_CT 10"
+                    ]
+                }
+			},
+            "When": {
+                "Fish Shop Changes": "true"
+            }
+        },
+		
+		// VANILLA SHOPS: JOJA
+		
+		{
+			"LogName": "{{ModId}}_Joja Trigger Actions No SVE",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+				"{{ModId}}_Joja_RaccoonSeedsStock": {
+                    "Id": "{{ModId}}_Joja_RaccoonSeedsStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "YEAR 2",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Joja_RaccoonSeeds Received"
+                    ]
+                }
+			},
+            "When": {
+                "Joja Changes": "true",
+				"No Seeds For Coin Compatibility": "false",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Joja Trigger Actions With SVE",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+				"{{ModId}}_Joja_RaccoonSeedsStockSVE": {
+                    "Id": "{{ModId}}_Joja_RaccoonSeedsStockSVE",
+                    "Trigger": "DayEnding",
+                    "Condition": "YEAR 2",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Joja_RaccoonSeedsSVE Received"
+                    ]
+                }
+			},
+            "When": {
+                "Joja Changes": "true",
+				"No Seeds For Coin Compatibility": "false",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+		
+		// VANILLA SHOPS: SANDY
+		
+		{
+			"LogName": "{{ModId}}_Sandy Trigger Actions No Dependencies",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+				"{{ModId}}_Sandy_CoffeeBeansStock": {
+                    "Id": "{{ModId}}_Sandy_CoffeeBeansStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "MINE_LOWEST_LEVEL_REACHED 70",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_Sandy_CoffeeBeans Received",
+                        "AddConversationTopic {{ModId}}_CoffeeBean_CT 10"
+                    ]
+                }
+			},
+            "When": {
+                "Sandy Changes": "true",
+				"No Seeds For Coin Compatibility": "false"
+            }
+        },
+		
+		// VANILLA SHOPS: SEED SHOP
+		
+		{
+			"LogName": "{{ModId}}_Pierre Trigger Actions False No Seeds For Coin",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Pierre_TeaSaplingStock": {
+                    "Id": "{{ModId}}_Pierre_TeaSaplingStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Caroline 500, PLAYER_HAS_CRAFTING_RECIPE Any Tea Sapling",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_SeedShop_TeaSapling Received",
+                        "AddConversationTopic {{ModId}}_TeaSapling_CT 10"
+                    ]
+                },
+				"{{ModId}}_Pierre_ArtisanGoodsStock": {
+                    "Id": "{{ModId}}_Pierre_ArtisanGoodsStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Pierre 1000, PLAYER_HAS_MAIL Any ccPantry Received",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_SeedShop_ArtisanGoods Received",
+                        "AddConversationTopic {{ModId}}_ArtisanGoods_CT 10"
+                    ]
+                },
+				"{{ModId}}_Pierre_RaccoonSeedsStock": {
+                    "Id": "{{ModId}}_Pierre_RaccoonSeedsStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "YEAR 2",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_SeedShop_RaccoonSeeds Received"
+                    ]
+                }
+			},
+            "When": {
+                "Seed Shop Changes": "true",
+				"No Seeds For Coin Compatibility": "false"
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Pierre Trigger Actions Strict False RSV Dependency",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+				"{{ModId}}_Pierre_StrawberrySeedsStock": {
+                    "Id": "{{ModId}}_Pierre_StrawberrySeedsStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Pierre 2000, PLAYER_FARMING_LEVEL Any 8, YEAR 2",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_SeedShop_StrawberrySeeds Received",
+                        "AddConversationTopic {{ModId}}_StrawberrySeeds_CT 10"
+                    ]
+                }
+            },
+            "When": {
+                "Seed Shop Changes": "true",
+				"No Seeds For Coin Compatibility": "false",
+				"HasMod |contains=Rafseazz.RSVCP": false // Reason for this condition is that RSV has a strawberry seed merchant already, making this change redundant.
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Pierre Trigger Actions Strict True No Seeds For Coin",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+				"{{ModId}}_Pierre_ArtisanGoodsStock": {
+                    "Id": "{{ModId}}_Pierre_ArtisanGoodsStock",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Pierre 1000, PLAYER_HAS_MAIL Any ccPantry Received",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_SeedShop_ArtisanGoods Received",
+                        "AddConversationTopic {{ModId}}_ArtisanGoods_CT 10"
+                    ]
+                }
+			},
+            "When": {
+                "Seed Shop Changes": "true",
+				"No Seeds For Coin Compatibility": "true"
+            }
+        },
+	
+		// VANILLA YEAR 2 PRICE INCREASE LETTER CHANGES
+		
+		{
+			"LogName": "{{ModId}}_Price Increase Letter Changes Version 1",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+			"Entries": {
+				"spring_1_2": "Notice:^^Prices of raw materials and certain other items have increased in stores.[#]Raw Material Price Notice", // Leave the end identifier alone in case changing it messes with anything.
+			},
+            "When": {
+                "Shop Prices Don't Increase in Year 2+": "false"
+            }
+        },
+		{
+			"LogName": "{{ModId}}_Price Increase Letter Changes Version 2",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+			"Entries": {
+				"spring_1_2": null
+			},
+            "When": {
+                "Shop Prices Don't Increase in Year 2+": "true"
+            }
+        },
+		
+		// SVE SHOPS: SOPHIA LEDGER
+		
+		{
+			"LogName": "{{ModId}}_Sophia Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Sophia_Year2FriendshipDiscount": {
+                    "Id": "{{ModId}}_Sophia_Year2FriendshipDiscount",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Any Sophia 2000, YEAR 2",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Sophia_Year2FriendshipDiscount Received",
+                        "AddConversationTopic {{ModId}}_Sophia_Year2FriendshipDiscount_CT 10"
+                    ]
+                }
+			},
+            "When": {
+                "Sophia Ledger Changes": "true",
+                "Shop Prices Don't Increase in Year 2+": "false",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+		
+		// MISC. CHANGES
+		
+		{
+			"LogName": "{{ModId}}_Tea Sapling Sell Price Nerf",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+			"TargetField": [ "251" ],
+            "Entries": {
+                "Price": "50"
+			},
+            "When": {
+                "Tea Sapling Sell Price Nerf": "true"
+            }
+        }
+    ]
+}

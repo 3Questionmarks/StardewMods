@@ -1,0 +1,54 @@
+{
+  "Changes": [
+    // Add Object
+    {
+      "LogName": "Load Cigar Box Object",
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "6480.StorageVariety_CigarBox": {
+          "Name": "Cigar Box",
+          "DisplayName": "{{i18n: CigarBox.name}}",
+          "Description": "{{i18n: CigarBox.description}}",
+          "Texture": "{{InternalAssetKey: assets/CigarBox.png}}",
+          "CustomFields": {
+            // Expanded Storage Data
+            "furyx639.ExpandedStorage/Enabled": "true",
+            "furyx639.ExpandedStorage/Frames": "5",
+            "furyx639.ExpandedStorage/PlayerColor": "true",
+            // Better Chests Data
+            "furyx639.BetterChests/ResizeChest": "Small",
+            "furyx639.BetterChests/ResizeChestCapacity": "9"
+          }
+        }
+      }
+    },
+    // Add Crafting Recipe
+    {
+      "LogName": "Load Cigar Box Crafting Recipe",
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "CigarBox": "709 10 428 1/Home/6480.StorageVariety_CigarBox/true/null/{{i18n: CigarBox.name}}"
+      }
+    },
+    // Add Shop Entry
+    {
+      "LogName": "Load Cigar Box Shop Entry",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Carpenter",
+        "Items"
+      ],
+      "Entries": {
+        "6480.StorageVariety_CigarBox": {
+          "Id": "6480.StorageVariety_CigarBox",
+          "ItemId": "(BC)6480.StorageVariety_CigarBox",
+          "Price": 5000,
+          "IsRecipe": true
+        }
+      }
+    }
+  ]
+}

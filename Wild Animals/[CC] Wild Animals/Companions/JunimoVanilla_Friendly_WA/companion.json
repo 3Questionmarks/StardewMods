@@ -228,14 +228,22 @@
 		"TextLifetime": 3000
 		}
 	],
+	"Sounds": [
+		{
+		"SoundName": "junimoMeep1",
+		"WhenToPlay": "Always",
+		"TimeBetweenSound": 3000,
+		"ChanceOfPlaying": 0.4
+		}
+	]  
   },
 
 "Sounds": [
 	{
 	"SoundName": "junimoMeep1",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.3
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.4
 	}
 ]  
 }

@@ -1,0 +1,12 @@
+{
+    "Changes": [
+		{
+			"LogName": "{{ModId}}_Shane",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"{{ModId}}_BlueGrassStarter_CT": "{{i18n: Shane.BlueGrassStarter_CT}}"
+			}
+		}
+	]
+}

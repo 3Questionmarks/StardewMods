@@ -1,0 +1,254 @@
+{
+  "Format": "2.8.0",
+  "ConfigSchema": {
+    "Enable Coffee Changes": { 
+      "Default": "True", 
+      "AllowValues": "True, False",
+      "Section": "Coffee"
+    },
+    "Coffee Speed": { 
+      "Default": "1", 
+      "AllowValues": "1, 2, 3, 4, 5",
+      "Section": "Coffee"
+    },
+    "Coffee Duration": { 
+      "Default": "2",
+      "AllowValues": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30",
+      "Section": "Coffee"
+    },
+    "Coffee Energy": { 
+      "Default": "3",
+      "Section": "Coffee"
+    },
+    "Coffee Health": { 
+      "Default": "1",
+      "Section": "Coffee"
+    },
+    "Enable Espresso Changes": { 
+      "Default": "True", 
+      "AllowValues": "True, False",
+      "Section": "Espresso"
+    },
+    "Espresso Speed": { 
+      "Default": "1", 
+      "AllowValues": "1, 2, 3, 4, 5",
+      "Section": "Espresso"
+    },
+    "Espresso Duration": { 
+      "Default": "5",
+      "AllowValues": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30",
+      "Section": "Espresso"
+    },
+    "Espresso Energy": { 
+      "Default": "8",
+      "Section": "Espresso"
+    },
+    "Espresso Health": { 
+      "Default": "3",
+      "Section": "Espresso"
+    },
+    "Enable Joja Cola Changes": { 
+      "Default": "True", 
+      "AllowValues": "True, False",
+      "Section": "Joja Cola"
+    },
+    "Joja Cola Speed": { 
+      "Default": "1", 
+      "AllowValues": "1, 2, 3, 4, 5",
+      "Section": "Joja Cola"
+    },
+    "Joja Cola Duration": { 
+      "Default": "1",
+      "AllowValues": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30",
+      "Section": "Joja Cola"
+    },
+    "Joja Cola Energy": { 
+      "Default": "13",
+      "Section": "Joja Cola"
+    },
+    "Joja Cola Health": { 
+      "Default": "5",
+      "Section": "Joja Cola"
+    }
+  },
+"DynamicTokens": [
+    {"Name": "CoffeeTicks", "Value": "86", "When": {"Coffee Duration": "1"}},
+    {"Name": "CoffeeTicks", "Value": "172", "When": {"Coffee Duration": "2"}},
+    {"Name": "CoffeeTicks", "Value": "258", "When": {"Coffee Duration": "3"}},
+    {"Name": "CoffeeTicks", "Value": "343", "When": {"Coffee Duration": "4"}},
+    {"Name": "CoffeeTicks", "Value": "429", "When": {"Coffee Duration": "5"}},
+    {"Name": "CoffeeTicks", "Value": "515", "When": {"Coffee Duration": "6"}},
+    {"Name": "CoffeeTicks", "Value": "600", "When": {"Coffee Duration": "7"}},
+    {"Name": "CoffeeTicks", "Value": "686", "When": {"Coffee Duration": "8"}},
+    {"Name": "CoffeeTicks", "Value": "772", "When": {"Coffee Duration": "9"}},
+    {"Name": "CoffeeTicks", "Value": "858", "When": {"Coffee Duration": "10"}},
+    {"Name": "CoffeeTicks", "Value": "943", "When": {"Coffee Duration": "11"}},
+    {"Name": "CoffeeTicks", "Value": "1029", "When": {"Coffee Duration": "12"}},
+    {"Name": "CoffeeTicks", "Value": "1115", "When": {"Coffee Duration": "13"}},
+    {"Name": "CoffeeTicks", "Value": "1200", "When": {"Coffee Duration": "14"}},
+    {"Name": "CoffeeTicks", "Value": "1286", "When": {"Coffee Duration": "15"}},
+    {"Name": "CoffeeTicks", "Value": "1372", "When": {"Coffee Duration": "16"}},
+    {"Name": "CoffeeTicks", "Value": "1458", "When": {"Coffee Duration": "17"}},
+    {"Name": "CoffeeTicks", "Value": "1543", "When": {"Coffee Duration": "18"}},
+    {"Name": "CoffeeTicks", "Value": "1629", "When": {"Coffee Duration": "19"}},
+    {"Name": "CoffeeTicks", "Value": "1715", "When": {"Coffee Duration": "20"}},
+    {"Name": "CoffeeTicks", "Value": "1800", "When": {"Coffee Duration": "21"}},
+    {"Name": "CoffeeTicks", "Value": "1886", "When": {"Coffee Duration": "22"}},
+    {"Name": "CoffeeTicks", "Value": "1972", "When": {"Coffee Duration": "23"}},
+    {"Name": "CoffeeTicks", "Value": "2058", "When": {"Coffee Duration": "24"}},
+    {"Name": "CoffeeTicks", "Value": "2143", "When": {"Coffee Duration": "25"}},
+    {"Name": "CoffeeTicks", "Value": "2229", "When": {"Coffee Duration": "26"}},
+    {"Name": "CoffeeTicks", "Value": "2315", "When": {"Coffee Duration": "27"}},
+    {"Name": "CoffeeTicks", "Value": "2400", "When": {"Coffee Duration": "28"}},
+    {"Name": "CoffeeTicks", "Value": "2486", "When": {"Coffee Duration": "29"}},
+    {"Name": "CoffeeTicks", "Value": "2572", "When": {"Coffee Duration": "30"}},
+    
+    {"Name": "EspressoTicks", "Value": "86", "When": {"Espresso Duration": "1"}},
+    {"Name": "EspressoTicks", "Value": "172", "When": {"Espresso Duration": "2"}},
+    {"Name": "EspressoTicks", "Value": "258", "When": {"Espresso Duration": "3"}},
+    {"Name": "EspressoTicks", "Value": "343", "When": {"Espresso Duration": "4"}},
+    {"Name": "EspressoTicks", "Value": "429", "When": {"Espresso Duration": "5"}},
+    {"Name": "EspressoTicks", "Value": "515", "When": {"Espresso Duration": "6"}},
+    {"Name": "EspressoTicks", "Value": "600", "When": {"Espresso Duration": "7"}},
+    {"Name": "EspressoTicks", "Value": "686", "When": {"Espresso Duration": "8"}},
+    {"Name": "EspressoTicks", "Value": "772", "When": {"Espresso Duration": "9"}},
+    {"Name": "EspressoTicks", "Value": "858", "When": {"Espresso Duration": "10"}},
+    {"Name": "EspressoTicks", "Value": "943", "When": {"Espresso Duration": "11"}},
+    {"Name": "EspressoTicks", "Value": "1029", "When": {"Espresso Duration": "12"}},
+    {"Name": "EspressoTicks", "Value": "1115", "When": {"Espresso Duration": "13"}},
+    {"Name": "EspressoTicks", "Value": "1200", "When": {"Espresso Duration": "14"}},
+    {"Name": "EspressoTicks", "Value": "1286", "When": {"Espresso Duration": "15"}},
+    {"Name": "EspressoTicks", "Value": "1372", "When": {"Espresso Duration": "16"}},
+    {"Name": "EspressoTicks", "Value": "1458", "When": {"Espresso Duration": "17"}},
+    {"Name": "EspressoTicks", "Value": "1543", "When": {"Espresso Duration": "18"}},
+    {"Name": "EspressoTicks", "Value": "1629", "When": {"Espresso Duration": "19"}},
+    {"Name": "EspressoTicks", "Value": "1715", "When": {"Espresso Duration": "20"}},
+    {"Name": "EspressoTicks", "Value": "1800", "When": {"Espresso Duration": "21"}},
+    {"Name": "EspressoTicks", "Value": "1886", "When": {"Espresso Duration": "22"}},
+    {"Name": "EspressoTicks", "Value": "1972", "When": {"Espresso Duration": "23"}},
+    {"Name": "EspressoTicks", "Value": "2058", "When": {"Espresso Duration": "24"}},
+    {"Name": "EspressoTicks", "Value": "2143", "When": {"Espresso Duration": "25"}},
+    {"Name": "EspressoTicks", "Value": "2229", "When": {"Espresso Duration": "26"}},
+    {"Name": "EspressoTicks", "Value": "2315", "When": {"Espresso Duration": "27"}},
+    {"Name": "EspressoTicks", "Value": "2400", "When": {"Espresso Duration": "28"}},
+    {"Name": "EspressoTicks", "Value": "2486", "When": {"Espresso Duration": "29"}},
+    {"Name": "EspressoTicks", "Value": "2572", "When": {"Espresso Duration": "30"}},
+    
+    {"Name": "JojaColaTicks", "Value": "86", "When": {"Joja Cola Duration": "1"}},
+    {"Name": "JojaColaTicks", "Value": "172", "When": {"Joja Cola Duration": "2"}},
+    {"Name": "JojaColaTicks", "Value": "258", "When": {"Joja Cola Duration": "3"}},
+    {"Name": "JojaColaTicks", "Value": "343", "When": {"Joja Cola Duration": "4"}},
+    {"Name": "JojaColaTicks", "Value": "429", "When": {"Joja Cola Duration": "5"}},
+    {"Name": "JojaColaTicks", "Value": "515", "When": {"Joja Cola Duration": "6"}},
+    {"Name": "JojaColaTicks", "Value": "600", "When": {"Joja Cola Duration": "7"}},
+    {"Name": "JojaColaTicks", "Value": "686", "When": {"Joja Cola Duration": "8"}},
+    {"Name": "JojaColaTicks", "Value": "772", "When": {"Joja Cola Duration": "9"}},
+    {"Name": "JojaColaTicks", "Value": "858", "When": {"Joja Cola Duration": "10"}},
+    {"Name": "JojaColaTicks", "Value": "943", "When": {"Joja Cola Duration": "11"}},
+    {"Name": "JojaColaTicks", "Value": "1029", "When": {"Joja Cola Duration": "12"}},
+    {"Name": "JojaColaTicks", "Value": "1115", "When": {"Joja Cola Duration": "13"}},
+    {"Name": "JojaColaTicks", "Value": "1200", "When": {"Joja Cola Duration": "14"}},
+    {"Name": "JojaColaTicks", "Value": "1286", "When": {"Joja Cola Duration": "15"}},
+    {"Name": "JojaColaTicks", "Value": "1372", "When": {"Joja Cola Duration": "16"}},
+    {"Name": "JojaColaTicks", "Value": "1458", "When": {"Joja Cola Duration": "17"}},
+    {"Name": "JojaColaTicks", "Value": "1543", "When": {"Joja Cola Duration": "18"}},
+    {"Name": "JojaColaTicks", "Value": "1629", "When": {"Joja Cola Duration": "19"}},
+    {"Name": "JojaColaTicks", "Value": "1715", "When": {"Joja Cola Duration": "20"}},
+    {"Name": "JojaColaTicks", "Value": "1800", "When": {"Joja Cola Duration": "21"}},
+    {"Name": "JojaColaTicks", "Value": "1886", "When": {"Joja Cola Duration": "22"}},
+    {"Name": "JojaColaTicks", "Value": "1972", "When": {"Joja Cola Duration": "23"}},
+    {"Name": "JojaColaTicks", "Value": "2058", "When": {"Joja Cola Duration": "24"}},
+    {"Name": "JojaColaTicks", "Value": "2143", "When": {"Joja Cola Duration": "25"}},
+    {"Name": "JojaColaTicks", "Value": "2229", "When": {"Joja Cola Duration": "26"}},
+    {"Name": "JojaColaTicks", "Value": "2315", "When": {"Joja Cola Duration": "27"}},
+    {"Name": "JojaColaTicks", "Value": "2400", "When": {"Joja Cola Duration": "28"}},
+    {"Name": "JojaColaTicks", "Value": "2486", "When": {"Joja Cola Duration": "29"}},
+    {"Name": "JojaColaTicks", "Value": "2572", "When": {"Joja Cola Duration": "30"}}
+  ],
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": ["395"],
+      "Entries": {
+        "Buffs": [
+          {
+            "IconTexture": "TileSheets/BuffsIcons",
+            "IconSpriteIndex": 9,
+            "Duration": "{{CoffeeTicks}}",
+            "CustomAttributes": { "Speed": "{{Coffee Speed}}" }
+          }
+        ],
+        "IsDrink": true
+      },
+      "When": { "Enable Coffee Changes": "True" }
+    },
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "395": {
+          "EatenStaminaRestoredOverride": "{{Coffee Energy}}",
+          "EatenHealthRestoredOverride": "{{Coffee Health}}"
+        }
+      },
+      "When": { "Enable Coffee Changes": "True" }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": ["253"],
+      "Entries": {
+        "Buffs": [
+          {
+            "IconTexture": "TileSheets/BuffsIcons",
+            "IconSpriteIndex": 9,
+            "Duration": "{{EspressoTicks}}",
+            "CustomAttributes": { "Speed": "{{Espresso Speed}}" }
+          }
+        ],
+        "IsDrink": true
+      },
+      "When": { "Enable Espresso Changes": "True" }
+    },
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "253": {
+          "EatenStaminaRestoredOverride": "{{Espresso Energy}}",
+          "EatenHealthRestoredOverride": "{{Espresso Health}}"
+        }
+      },
+      "When": { "Enable Espresso Changes": "True" }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": ["167"],
+      "Entries": {
+        "Buffs": [
+          {
+            "IconTexture": "TileSheets/BuffsIcons",
+            "IconSpriteIndex": 9,
+            "Duration": "{{JojaColaTicks}}",
+            "CustomAttributes": { "Speed": "{{Joja Cola Speed}}" }
+          }
+        ],
+        "IsDrink": true
+      },
+      "When": { "Enable Joja Cola Changes": "True" }
+    },
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "167": {
+          "EatenStaminaRestoredOverride": "{{Joja Cola Energy}}",
+          "EatenHealthRestoredOverride": "{{Joja Cola Health}}"
+        }
+      },
+      "When": { "Enable Joja Cola Changes": "True" }
+    }
+  ]
+}

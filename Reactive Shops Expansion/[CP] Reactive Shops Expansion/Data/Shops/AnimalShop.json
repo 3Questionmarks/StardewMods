@@ -1,0 +1,30 @@
+{
+    "Changes": [
+        {
+			"LogName": "{{ModId}}_Animal Shop WITH Year 2 Price Changes",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AnimalShop",
+                "Items"
+            ],
+            "Entries": {
+				
+				// MISC. OBJECTS
+				
+                "{{ModId}}_ID_BlueGrassStarter_Y1": {
+                    "Id": "{{ModId}}_ID_BlueGrassStarter_Y1",
+                    "ItemId": "BlueGrassStarter",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_AnimalShop_BlueGrassStarter Received, YEAR 1 1",
+                    "Price": "1800"
+                },
+				"{{ModId}}_ID_BlueGrassStarter_Y2": {
+                    "Id": "{{ModId}}_ID_BlueGrassStarter_Y2",
+                    "ItemId": "BlueGrassStarter",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_AnimalShop_BlueGrassStarter Received, YEAR 2",
+                    "Price": "5400"
+                }
+            }
+        }
+    ]
+}

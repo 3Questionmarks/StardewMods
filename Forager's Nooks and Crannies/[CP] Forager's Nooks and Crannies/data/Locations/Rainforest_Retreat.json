@@ -1,0 +1,241 @@
+{
+
+"Changes": [
+
+	{
+		"LogName": "Load Rainforest Retreat Map",
+		"Action": "Load",
+		"Target": "Maps/{{ModId}}_RainforestRetreat",
+		"FromFile": "assets/Maps/RainforestRetreat.tmx"
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"Entries": {
+		"{{ModId}}_RainforestRetreat": {
+			"CreateOnLoad": {
+				"MapPath": "Maps/{{ModId}}_RainforestRetreat",
+				"AlwaysActive":true
+			},
+			"FormerLocationNames": [ "Custom_WF_RainforestRetreat"],
+			"DisplayName": "{{i18n: RainforestRetreat}}",
+			"CanPlantHere": false,
+			"ExcludeFromNpcPathfinding": true,
+            "DefaultArrivalTile": {
+                "X": 37,
+                "Y": 50
+            },
+			"Music": [],
+            "MusicIgnoredInRain": false,
+			"ArtifactSpots": [
+			],
+           	"FishAreas": {},
+			"Fish": [
+				{
+					"Id": "{{ModId}}_SuperCucumber",
+					"ItemId": "(O)155"
+				},
+				{
+					"Id": "{{ModId}}_Tuna",
+					"ItemId": "(O)130"
+				},
+				{
+					"Id": "{{ModId}}_Pufferfish",
+					"ItemId": "(O)128"
+				},
+				{
+					"Id": "{{ModId}}_Flounder",
+					"ItemId": "(O)267"
+				},
+				{
+					"Id": "{{ModId}}_Lionfish",
+					"ItemId": "(O)837"
+				},
+				{
+					"Id": "{{ModId}}_SeaJelly",
+					"ItemId": "(O)SeaJelly",
+					"Season": "Summer"
+				},
+			],
+            "Forage": [
+				{
+                    "Id": "{{ModId}}_Rainforest_Forage",
+					"RandomItemId": [
+						"(O)829",
+						"(O)830",
+						"(O)832",
+						"(O)834"
+              		],
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_Rainforest_WAG_Rainforest_Forage",
+					"RandomItemId": [
+						"(O)Wildflour.AtelierGoods_Pistachio",
+						"(O)Wildflour.AtelierGoods_Olive",
+						"(O)Wildflour.AtelierGoods_Cashew",
+						"(O)Wildflour.AtelierGoods_Jasmine"
+              		],
+                    "Chance": 1.0,
+					"Condition":"{{HasMod |contains=Wildflour.AtelierGoods}}"
+                }
+			],
+			"MinDailyForageSpawn": 3,
+			"MaxDailyForageSpawn": 8
+		}
+	}
+	},
+
+//-----------------------------MAP PATCHES---------------------------//
+
+{
+	"LogName":"Map Patch IslandEast for Rainforest Retreat",
+	"Action": "EditMap",
+	"Target": "Maps/Island_E", 
+	"FromFile": "assets/Maps/IslandEdit.tmx",
+	"ToArea": {
+			"X": 24,
+			"Y": 23,
+			"Width": 3,
+			"Height": 3
+			},
+
+	"When":{"RainforestRetreatToken": "1"}	
+},
+
+//-----------------------------WARPS---------------------------//
+
+{
+	"LogName":"Add Warp to IslandEast for Rainforest Retreat",
+	"Action": "EditMap",
+	"Target": "Maps/Island_E",
+	"AddWarps": ["25 25 {{ModId}}_RainforestRetreat 36 49"],
+
+	"When":{"RainforestRetreatToken": "1"}	
+},
+
+{
+	"LogName":"Add Warps to Rainforest Retreat",
+	"Action": "EditMap",
+	"Target": "Maps/{{ModId}}_RainforestRetreat",
+	"AddWarps": ["36 52 IslandEast 26 32",
+				"37 52 IslandEast 27 32",
+				"38 52 IslandEast 28 32"]
+},
+
+////////////////////////
+// WILD TREE SPAWNING //
+////////////////////////
+
+{
+	"Action": "EditMap",
+	"Target": "Maps/{{ModId}}_RainforestRetreat",
+	"When":{"HasMod:|contains= Wildflour.AtelierGoods":true},
+	"MapTiles": [
+		{
+			"Position": { "X": 13, "Y": 7 },
+			"Layer": "Paths",
+			"SetIndex": "34",
+			"SetTilesheet":"p",
+			"SetProperties": {
+				"SpawnTree": "fruit Wildflour.AtelierGoods_Cashew_Sapling"
+			}
+		},
+		{
+			"Position": { "X": 18, "Y": 34 },
+			"Layer": "Paths",
+			"SetIndex": "34",
+			"SetTilesheet":"p",
+			"SetProperties": {
+				"SpawnTree": "fruit Wildflour.AtelierGoods_Cashew_Sapling"
+			}
+		},
+		{
+			"Position": { "X": 8, "Y": 41 },
+			"Layer": "Paths",
+			"SetIndex": "34",
+			"SetTilesheet":"p",
+			"SetProperties": {
+				"SpawnTree": "fruit Wildflour.AtelierGoods_Cacao_Sapling"
+			}
+		},
+		{
+			"Position": { "X": 36, "Y": 35 },
+			"Layer": "Paths",
+			"SetIndex": "34",
+			"SetTilesheet":"p",
+			"SetProperties": {
+				"SpawnTree": "fruit Wildflour.AtelierGoods_Cacao_Sapling"
+			}
+		},
+		{
+			"Position": { "X": 35, "Y": 30 },
+			"Layer": "Paths",
+			"SetIndex": "34",
+			"SetTilesheet":"p",
+			"SetProperties": {
+				"SpawnTree": "fruit Wildflour.AtelierGoods_Olive_Sapling"
+			}
+		},
+
+	]
+},
+
+{
+	"Action": "EditMap",
+	"Target": "Maps/{{ModId}}_RainforestRetreat",
+	"When":{"HasMod:|contains= Wildflour.AtelierGoods":false},
+	"MapTiles": [
+		{
+			"Position": { "X": 13, "Y": 7 },
+			"Layer": "Paths",
+			"SetIndex": "34",
+			"SetTilesheet":"p",
+			"SetProperties": {
+				"SpawnTree": "fruit 835 5"
+			}
+		},
+		{
+			"Position": { "X": 18, "Y": 34 },
+			"Layer": "Paths",
+			"SetIndex": "34",
+			"SetTilesheet":"p",
+			"SetProperties": {
+				"SpawnTree": "fruit 835 5"
+			}
+		},
+		{
+			"Position": { "X": 8, "Y": 41 },
+			"Layer": "Paths",
+			"SetIndex": "34",
+			"SetTilesheet":"p",
+			"SetProperties": {
+				"SpawnTree": "fruit 69 5"
+			}
+		},
+		{
+			"Position": { "X": 36, "Y": 35 },
+			"Layer": "Paths",
+			"SetIndex": "34",
+			"SetTilesheet":"p",
+			"SetProperties": {
+				"SpawnTree": "fruit 69 5"
+			}
+		},
+		{
+			"Position": { "X": 35, "Y": 30 },
+			"Layer": "Paths",
+			"SetIndex": "34",
+			"SetTilesheet":"p",
+			"SetProperties": {
+				"SpawnTree": "fruit 69 5"
+			}
+		},
+
+	]
+}
+
+
+	]
+}

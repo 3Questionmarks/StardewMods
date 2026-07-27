@@ -1,0 +1,52 @@
+{
+    "Changes": [
+        {
+			"LogName": "{{ModId}}_Dwarf Shop WITH Year 2 Price Changes",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Dwarf",
+                "Items"
+            ],
+            "Entries": {
+				
+				// BIG CRAFTABLES
+				
+                "{{ModId}}_ID_BigStoneChest_Y1": {
+                    "Id": "{{ModId}}_ID_BigStoneChest_Y1",
+                    "ItemId": "BigStoneChest",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Dwarf_BigStoneChest Received, YEAR 1 1",
+                    "Price": "4500",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_BigStoneChest_Y2": {
+                    "Id": "{{ModId}}_ID_BigStoneChest_Y2",
+                    "ItemId": "BigStoneChest",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Dwarf_BigStoneChest Received, YEAR 2",
+                    "Price": "22500",
+					"AvailableStock": "1"
+                },
+				
+				// CONSUMABLES
+				
+				"{{ModId}}_ID_Consumables": {
+                    "Id": "{{ModId}}_ID_Consumables",
+                    "RandomItemId": [ "(O)78", "(O)420", "(O)422" ],
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Dwarf_Consumables Received",
+                    "Price": "750",
+					"AvailableStock": "2"
+                },
+				
+				// MINERALS
+				
+				"{{ModId}}_ID_Minerals": {
+                    "Id": "{{ModId}}_ID_Minerals",
+                    "RandomItemId": [ "(O)60", "(O)62", "(O)64", "(O)66", "(O)68", "(O)70", "(O)72", "(O)562", "(O)564", "(O)565", "(O)538", "(O)539", "(O)540", "(O)541", "(O)542", "(O)543", "(O)544", "(O)545", "(O)546", "(O)547", "(O)548", "(O)549", "(O)550", "(O)551", "(O)552", "(O)553", "(O)554", "(O)555", "(O)556", "(O)557", "(O)558", "(O)559", "(O)560", "(O)561", "(O)563", "(O)566", "(O)567", "(O)568", "(O)569", "(O)570", "(O)571", "(O)572", "(O)573", "(O)574", "(O)575", "(O)576", "(O)577", "(O)578" ],
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Dwarf_Minerals Received",
+                    "Price": "1500",
+					"AvailableStock": "1"
+                }
+            }
+        }
+    ]
+}

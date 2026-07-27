@@ -1,0 +1,59 @@
+{
+  "ItemName": "WizardEndTable",
+  "Type": "Furniture",
+  "Keywords": ["dri", "modular", "table", "mahogany" ],
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "ManualVariations": [
+    {
+      "Id": 0,
+      "Name": "small Sun Table",
+      "Keywords": ["sun", "small", "1x1"]
+    },
+    {
+      "Id": 1,
+      "Name": "horizontal Sun Table",
+      "Keywords": ["sun", "horizontal", "1x3", "left"]
+    },
+    {
+      "Id": 2,
+      "Name": "horizontal Sun Table",
+      "Keywords": ["sun", "horizontal", "1x3", "right"]
+    },
+    {
+      "Id": 3,
+      "Name": "vertical Sun Table",
+      "Keywords": ["sun", "vertical", "1x3", "down"]
+    },
+    {
+      "Id": 4,
+      "Name": "vertical Sun Table",
+      "Keywords": ["sun", "vertical", "1x3", "up"]
+    },
+    {
+      "Id": 5,
+      "Name": "small Moon Table",
+      "Keywords": ["moon", "small", "1x1"]
+    },
+    {
+      "Id": 6,
+      "Name": "horizontal Moon Table",
+      "Keywords": ["moon", "horizontal", "1x3", "left"]
+    },
+    {
+      "Id": 7,
+      "Name": "horizontal Moon Table",
+      "Keywords": ["moon", "horizontal", "1x3", "right"]
+    },
+    {
+      "Id": 8,
+      "Name": "vertical Moon Table",
+      "Keywords": ["moon", "vertical", "1x3", "down"]
+    },
+    {
+      "Id": 9,
+      "Name": "vertical Moon Table",
+      "Keywords": ["moon", "vertical", "1x3", "up"]
+    }
+  ]
+}

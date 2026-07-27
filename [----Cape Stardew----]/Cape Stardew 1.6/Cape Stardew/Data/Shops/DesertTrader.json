@@ -1,0 +1,28 @@
+{
+  "Changes": [
+
+
+{
+  "LogName": "DesertTraderShavegrass",
+  "Action": "EditData",
+  "Target": "Data/Shops",
+  "TargetField": ["DesertTrade", "Items"],
+  "Entries": {
+    "Cape.Shavegrass": {
+      "Condition": "Season summer fall winter",
+      "Id": "Cape.Shavegrass",
+      "ItemId": "Cape.Shavegrass",
+      "TradeItemId": "(O)82",
+      "TradeItemAmount": 1,
+      "Price": 0,
+      "AvailableStock": 2,
+      "AvailableStockLimit": "Player",
+      "MinStack": 8
+    }
+  }
+}
+
+
+
+]
+}

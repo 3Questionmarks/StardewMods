@@ -1,0 +1,34 @@
+{
+  "ItemName": "JunimoEndTable",
+  "Type": "Furniture",
+  "Keywords": [ "dri", "modular", "table", "luau" ],
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "ManualVariations": [
+    {
+      "Id": 0,
+      "Name": "small Luau Table",
+      "Keywords": ["small", "1x1"]
+    },
+    {
+      "Id": 1,
+      "Name": "horizontal Luau Table",
+      "Keywords": ["horizontal", "1x3", "left"]
+    },
+    {
+      "Id": 2,
+      "Name": "horizontal Luau Table",
+      "Keywords": ["horizontal", "1x3", "right"]
+    },
+    {
+      "Id": 3,
+      "Name": "vertical Luau Table",
+      "Keywords": ["vertical", "1x3", "down"]
+    },
+    {
+      "Id": 4,
+      "Name": "vertical Luau Table",
+      "Keywords": ["vertical", "1x3", "up"]
+    }
+  ]
+}

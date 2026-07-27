@@ -1,0 +1,125 @@
+{
+    "mod.name": "The Forgotten Weaponsmith",
+
+    "config.section.gameplay": "Gameplay",
+    "config.section.debug": "Debug",
+
+    "config.debuglogging.name": "Enable Debug Logging",
+    "config.debuglogging.tooltip": "Enables debug logging in the SMAPI console.",
+
+    "config.donatableicon.name": "Donatable Icon Mode",
+    "config.donatableicon.tooltip": "How the forge icon is displayed when hovering a donatable weapon.",
+    "config.donatableicon.cornerbox": "Corner Box",
+    "config.donatableicon.tooltipicon": "Tooltip Icon",
+    "config.donatableicon.tooltipbottom": "Tooltip Icon (Lower)",
+    "config.donatableicon.off": "Off",
+
+    "config.forcedonationmenu.name": "Force Donation Style",
+    "config.forcedonationmenu.tooltip": "Forces a specific donation style. 'Regular' opens the donation menu at the desk. 'Android' shows a HUD hint to donate by clicking Werdon instead. 'None' auto-detects based on platform.",
+    "config.forcedonationmenu.none": "Auto",
+    "config.forcedonationmenu.android": "Android",
+    "config.forcedonationmenu.regular": "Regular",
+
+    "config.trackermenukey.name": "Tracker Menu Key",
+    "config.trackermenukey.tooltip": "Keybind to open the weapon donation tracker.",
+
+    "config.revealundiscoverednames.name": "Reveal Undiscovered Names",
+    "config.revealundiscoverednames.tooltip": "If enabled, shows the name of weapons you haven't donated yet instead of ???.",
+
+    "config.enableforgeexitoffset.name": "Enable Forge Exit Offset",
+    "config.enableforgeexitoffset.tooltip": "Disable if you experience screen flickering when exiting the forge.",
+
+    "config.section.restrictions": "Restrictions",
+
+    "config.tier2weaponupgrade.name": "Tier 2: Weapon Upgrade",
+    "config.tier2weaponupgrade.tooltip": "If disabled, Werdon's replicas will no longer have their stats boosted toward the strongest weapon of their type.",
+
+    "config.tier3forgeenchant.name": "Tier 3: Forge Enchantment",
+    "config.tier3forgeenchant.tooltip": "If disabled, Werdon's replicas will no longer receive a random forge enchantment.",
+
+    "config.tier4firstinnate.name": "Tier 4: First Innate Attribute",
+    "config.tier4firstinnate.tooltip": "If disabled, Werdon's replicas will no longer receive their first random innate attribute.",
+
+    "config.tier5donationscaling.name": "Tier 5: Donation Scaling",
+    "config.tier5donationscaling.tooltip": "If disabled, Werdon's replicas will no longer gain bonus damage and speed based on your total donations.",
+
+    "config.tier6secondinnate.name": "Tier 6: Second Innate Attribute",
+    "config.tier6secondinnate.tooltip": "If disabled, Werdon's replicas will no longer receive their second random innate attribute.",
+
+    "config.allowmoddedenchants.name": "Modded Weapon Enchantments",
+    "config.allowmoddedenchants.tooltip": "If enabled, modded weapons donated to Werdon can receive forge enchantments and innate attributes (stat boosts still remain vanilla-only).",
+
+    "config.allowmoddedstatboost.name": "Modded Weapon Stat Boosts",
+    "config.allowmoddedstatboost.tooltip": "If enabled, modded weapons donated to Werdon can receive stat boosts and donation damage scaling.",
+
+    "location.werdon.writing.unknown": "Strange markings cover the back of the machine. You can't make them out.",
+    "location.werdon.writing.translated": "In case of power loss: insert Fire Quartz into the central chamber.",
+    "location.werdon.activated": "Something stirs within... Perhaps you should step outside and return.",
+
+    "location.jailbar.locked": "Seems these bars won't move for you anytime soon...",
+
+    "dialogue_water_box": "The water is somehow cold to the touch?",
+    "dialogue_anvil": "You feel a tingle whenever you near the metal of the anvil!",
+    "dialogue_spare": "Seems like it's been used for spares.",
+    "dialogue_statue": "You feel watched by the statue.",
+
+    "dialogue_chest": "This might have a use later.",
+    "dialogue_chest_empty": "It's empty.",
+    "dialogue_chest_ready": "Place a weapon inside for Werdon to mess with.",
+    "dialogue_chest_skinned": "This weapon's been touched by the forge already — Werdon won't take it.",
+    "dialogue_chest_confirm": "Put your {{weaponName}} in the box for Werdon to reforge?",
+    "dialogue_chest_takeback": "Take your {{weaponName}} back out of the box?",
+    "dialogue_chest_locked": "Seems you need to buy the last weapon you left Werdon before he accepts a new one",
+    "dialogue_chest_not_donated": "Werdon won't reforge a weapon he hasn't seen donated before.",
+    "dialogue_chest_confirm_yes": "Yes",
+    "dialogue_chest_confirm_no": "No",
+
+    "menu.donate.title": "Donate a Weapon",
+    "menu.donate.action": "Donate",
+
+    "shop.desk.prompt": "What would you like to do?",
+    "shop.desk.donate": "Donate a weapon",
+    "shop.desk.adroid": "Donate weapon behind desk",
+    "shop.desk.check": "Check Donated Items",
+    "shop.desk.shop": "Browse Werdon's wares",
+    "shop.desk.empty": "Shop empty, check back in {{days}} days!",
+    "shop.desk.leave": "Never mind",
+
+    "iteract.android": "Donate Items by clicking Werdon with them!",
+
+    "source.tracker": "Tracker Menu",
+    "source.vanilla": "Vanilla Weapons",
+    "source.modded": "Modded Weapons",
+
+    "ui.hover.locked": "Locked until Tier {{tier}}",
+    "ui.tier": "Tier {{tier}}",
+
+    "ui.button.back": "Back",
+    "ui.tracker.notdonated": "Not yet donated.",
+
+    "werdon.intro.line1": "Boot finalized.",
+    "werdon.intro.line2": "Ah, the one who awoke my system. Thank you for the ignition.$2",
+    "werdon.intro.line3": "Hmm...",
+    "werdon.intro.line4": "Strange, you aren't of Dwarvenkind, but you can understand my dialect.$1",
+    "werdon.intro.line5": "For reawakening me, I will provide an explanation of what you see before you.",
+    "werdon.intro.line6": "I am named Werdon, I am an automated weaponsmith.",
+    "werdon.intro.line7": "This forge was used during the war against the Shadowfolk, but it seems in my absence that war has ended.",
+    "werdon.intro.line8": "It seems my data on weapon creation has been lost...$1",
+    "werdon.intro.line9": "Perhaps you can be of assistance?$1",
+    "werdon.intro.line10": "Bring me weapons and I can study them to regain my data.",
+    "werdon.intro.line11": "Back in my prime I made powerful enchanted items. Perhaps that fancies you?$1",
+    "werdon.intro.line12": "Excellent. Then I await your return.$2",
+
+    "werdon.active.line1": "These weapons are catalogued and secured.",
+    "werdon.active.line2": "My forge stands ready, as do I.",
+    "werdon.active.line3": "I am capable of transmuting materials with gold.",
+
+    "hud.tiershop.tier1": "Werdon has started forging replicas of your donations.",
+    "hud.tiershop.tier2": "Werdon's replicas are coming out sturdier now.",
+    "hud.tiershop.tier3": "Werdon has started working enchantments into his replicas.",
+    "hud.tiershop.tier4": "Werdon's replicas are taking on attributes of their own.",
+    "hud.tiershop.tier5": "Werdon's growing collection is sharpening his work.",
+    "hud.tiershop.tier6": "Werdon's replicas are reaching their finest form yet.",
+
+    "hud.wishitem.set": "Werdon notices your interest in the {{weaponName}}."
+}

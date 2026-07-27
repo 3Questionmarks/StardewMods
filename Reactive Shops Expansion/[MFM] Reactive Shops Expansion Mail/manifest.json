@@ -1,0 +1,17 @@
+{
+	"Name": "[MFM] Reactive Shops Expansion MFM Component",
+	"Author": "Bri",
+	"Version": "1.0.2",
+	"Description": "Adds custom mail for my Reactive Shops Expansion.",
+	"UniqueID": "Bri.ShopExpansionForMailFrameworkMod",
+	"MinimumApiVersion": "3.8.0",
+	"UpdateKeys": [],
+	"ContentPackFor": {
+		"UniqueID": "DIGUS.MailFrameworkMod"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "Bri.ShopExpansion"
+		}
+	]
+}

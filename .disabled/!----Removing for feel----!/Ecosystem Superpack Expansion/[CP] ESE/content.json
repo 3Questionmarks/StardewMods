@@ -1,0 +1,3083 @@
+{
+	"Format": "2.5.3",
+	  "ConfigSchema": {
+	  "Portraits": {
+			"AllowValues": "Vanilla, Nyapu",
+			"Default": "Vanilla",
+			"Description": "Choose your portrait"
+		},
+			  "Merchant": {
+			"AllowValues": "Lotti, Suki",
+			"Default": "Suki",
+			"Description": "Choose your merchant"
+		},
+	  
+    "Sun": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "See sun and sunset when it's sunny and not covered by clouds"
+    },
+    "Clouds when sunny": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "50% chance of static background clouds when it's sunny"
+    },
+    "Moon": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "See the moon at night"
+    },
+    "Mountains Position": {
+      "Default": "1600" //800 //400
+    },
+    "Horizon Position": {
+      "Default": "850" //1500 //1100
+    },
+    "Percent Offset": {
+      "Default": "-0.02" //-0.5 //-0.14
+    },
+    "Mountains Offset rate": {
+      "Default": "-0.6" //-0.6 //-0.35
+    },
+    "Horizon Offset rate": {
+      "Default": "-0.55" //-0.55 //-0.3
+    },
+    "Celestial objects offset rate": {
+      "Default": "-0.3" //-0.3 //-0.1
+    }
+  },
+	  
+  "DynamicTokens": [
+    {
+      "Name": "moontexture",
+      "Value": "backgrounds",
+      "When": { "Moon": "true" }
+    },
+   
+    {
+      "Name": "suntexture",
+      "Value": "blank",
+      "When": { "Sun": "false" }
+    },
+
+
+    {
+      "Name": "sunhorizontexture",
+      "Value": "blank",
+      "When": { "Sun": "false" }
+    },
+
+    {
+      "Name": "sunnycloudtexture",
+      "Value": "blank",
+      "When": { "Clouds when sunny": "false" }
+    },
+    {
+      "Name": "mountainpos",
+      "Value": "1600" 
+    },
+    {
+      "Name": "horizonpos",
+      "Value": "850" 
+    },
+    {
+      "Name": "percentoffset",
+      "Value": "-0.02"
+    },
+    {
+      "Name": "mountainrateY",
+      "Value": "-0.6" 
+    },
+    {
+      "Name": "horizonrate",
+      "Value": "-0.55" 
+    },
+    {
+      "Name": "sunrate",
+      "Value": "-0.3" 
+    }
+  ],
+
+	"Changes": [
+
+ {
+      "LogName": "Include Canyon Events",
+      "Action": "Include",
+      "FromFile": "Data/Canyons/CanyonEvents.json"
+    },
+	 {
+      "LogName": "Include Canyon Shop",
+      "Action": "Include",
+      "FromFile": "Data/Canyons/CanyonShop.json"
+    },
+		 {
+      "LogName": "Include Canyon Objects",
+      "Action": "Include",
+      "FromFile": "Data/Canyons/CanyonObjects.json"
+    },
+			 {
+      "LogName": "Include Canyon Animals",
+      "Action": "Include",
+      "FromFile": "Data/Canyons/CanyonAnimals.json"
+    },
+				 {
+      "LogName": "Include Canyon Objects Gift Taste",
+      "Action": "Include",
+      "FromFile": "Data/Canyons/giftedits.json"
+    },
+					 {
+      "LogName": "Include Ranger Taro",
+      "Action": "Include",
+      "FromFile": "Data/RangerTaro/NPCData.json"
+    },
+						 {
+      "LogName": "Include FIASA",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/NPCData.json"
+    },
+							 {
+      "LogName": "Include FIASA",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/NPCData_Mama.json"
+    },
+							 {
+      "LogName": "Include Inke",
+      "Action": "Include",
+ "When": {
+                    "HasSeenEvent": "cc_kodasix1",
+    },
+	        
+	  "Update": "OnLocationChange",
+      "FromFile": "Data/FIASA/NPCData_Inke.json"
+    },
+							 {
+      "LogName": "Include Kaho",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/NPCData_Kaho.json"
+    },
+	  {
+      "Action": "Include",
+	   "FromFile": "Data/RangerTaro/Jasperdialogue.json",
+	   "When": {
+    "HasMod |contains=Lemurkat.NPCJasper": true
+                        },
+	},
+	  {
+      "Action": "Include",
+	   "FromFile": "Data/RangerTaro/Lunnadialogue.json",
+	   "When": {
+    "HasMod |contains=Rafseazz.LunnaCP": true
+                        },
+	},
+	    {
+      "Action": "Include",
+	  "FromFile": "Data/RangerTaro/SVEdialogue.json",
+	   "When": {
+    "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+                        },
+	},
+
+
+ {
+      "Action": "Include",
+	   "FromFile": "Data/RangerTaro/Micedialogue.json",
+	   "When": {
+    "HasMod |contains=DolphINaF.ForestMice": true
+                        },
+ },
+		
+		
+			{
+			"Action": "Load",
+			"Target": "maps/Taro_Entrance",
+			"FromFile": "assets/Maps/Taro_Entrance.tmx"
+		},	
+					{
+			"Action": "Load",
+			"Target": "maps/Cove_NM",
+			"FromFile": "assets/Maps/Cove_NM.tmx"
+		},	
+				{
+			"Action": "Load",
+			"Target": "Maps/Koda_room",
+			"FromFile": "assets/Maps/Koda_room.tmx"
+		},
+					{
+			"Action": "Load",
+			"Target": "Maps/Sub_world_inke",
+			"FromFile": "assets/Maps/Sub_world_inke.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Sub_world_inke": {
+					"DisplayName": "Sub_world_inke",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Sub_world_inke",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+		{
+			"Action": "Load",
+			"Target": "Maps/Koda_patio",
+			"FromFile": "assets/Maps/Koda_patio.tmx"
+		},
+		{
+			"Action": "EditMap",
+			"Target": "maps/forest",
+			"FromFile": "assets/Maps/Taro_Entrance.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 6, "Height": 5 },
+			"ToArea": { "X": 4, "Y": 66, "Width": 6, "Height": 5 }
+		},
+
+	
+		{
+			"Action": "EditMap",
+			"Target": "maps/Desert",
+			"FromFile": "assets/Maps/Canyon_east.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 4, "Height": 2 },
+			"ToArea": { "X": 0, "Y": 24, "Width": 4, "Height": 2 }
+		},
+	
+
+			{
+			"Action": "EditMap",
+			"Target": "maps/Beach",
+			"FromFile": "assets/Maps/Cove_enter.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 12, "Height": 6 },
+			"ToArea": { "X": 0, "Y": 18, "Width": 12, "Height": 6 }
+		},
+			{
+			"Action": "EditMap",
+			"Target": "maps/Taro_Meadow",
+			"SetProperties": {
+        "CurrentTime": "{{Time}}"
+    },
+    "Update": "OnLocationChange",
+			"When": {
+					"DayOfWeek": "Saturday",
+					"HasSeenEvent:hostPlayer |contains=cc_taroten": true
+					
+					
+				},
+			"FromFile": "assets/Maps/Taro_Cart.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 7 },
+			"ToArea": { "X": 10, "Y": 16, "Width": 8, "Height": 7 }
+		},
+				{
+			"Action": "EditMap",
+			"Target": "maps/Taro_Meadow",
+			"SetProperties": {
+        "CurrentTime": "{{Time}}"
+    },
+    "Update": "OnLocationChange",
+			"When": {
+					"DayOfWeek": "Saturday",
+					"HasSeenEvent": "cc_taroten",
+					"Time": "{{Range: 0600, 2000}}"
+					
+				},
+			"FromFile": "assets/Maps/Taro_Merchant.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 2 },
+			"ToArea": { "X": 25, "Y": 16, "Width": 1, "Height": 2 }
+		},
+					{
+			"Action": "Load",
+			"Target": "maps/Taro_Cart",
+			"FromFile": "assets/Maps/Taro_Cart.tmx"
+		},
+						{
+			"Action": "Load",
+			"Target": "maps/Taro_Merchant",
+			"FromFile": "assets/Maps/Taro_Merchant.tmx"
+		},
+			{
+			"Action": "Load",
+			"Target": "maps/Sub_enter",
+			"FromFile": "assets/Maps/Sub_enter.tmx"
+		},
+	
+		{
+			"Action": "Load",
+			"Target": "maps/Koda_Cove",
+			"FromFile": "assets/Maps/Koda_Cove.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Koda_Cove": {
+					"DisplayName": "Koda_Cove",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Koda_Cove",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+			{
+			"Action": "Load",
+			"Target": "maps/Turtle_Cove_party",
+			"FromFile": "assets/Maps/Turtle_Cove_party.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Turtle_Cove_party": {
+					"DisplayName": "Turtle_Cove_party",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Turtle_Cove_party",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		{
+			"Action": "Load",
+			"Target": "maps/Sub_world",
+			"FromFile": "assets/Maps/Sub_world.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Sub_world": {
+					"DisplayName": "Sub_world",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Sub_world",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		{
+			"Action": "Load",
+			"Target": "maps/Turtle_Cove",
+			"FromFile": "assets/Maps/Turtle_Cove.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Turtle_Cove": {
+					"DisplayName": "Turtle_Cove",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Turtle_Cove",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+						{
+			"Action": "EditMap",
+			"Target": "maps/Koda_Cove",
+			    "When": {
+        "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday",
+		
+    },
+			"FromFile": "assets/Maps/Sub_enter.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 12, "Height": 9 },
+			"ToArea": { "X": 19, "Y": 27, "Width": 12, "Height": 9 }
+		},
+							{
+			"Action": "EditMap",
+			"Target": "maps/Koda_Cove",
+			    "When": {
+		      "Season": "winter",
+			  "Day": "12, 13, 15, 16, 17",
+    },
+			"FromFile": "assets/Maps/Cove_NM.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 12, "Height": 2 },
+			"ToArea": { "X": 28, "Y": 25, "Width": 12, "Height": 2 }
+		},
+									{
+			"Action": "EditMap",
+			"Target": "maps/Koda_Cove",
+			    "When": {
+		      "Season": "summer",
+			  "Day": "11, 28",
+    },
+			"FromFile": "assets/Maps/Cove_NM.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 12, "Height": 2 },
+			"ToArea": { "X": 28, "Y": 25, "Width": 12, "Height": 2 }
+		},
+		
+		
+		{
+			"Action": "Load",
+			"Target": "maps/Taro_Meadow",
+			"FromFile": "assets/Maps/Taro_Meadow.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Taro_Meadow": {
+					"DisplayName": "A Meadow",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Taro_Meadow",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+	{
+			"Action": "Load",
+			"Target": "maps/Trolley_Pond",
+			"FromFile": "assets/Maps/Trolley_Pond.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Trolley_Pond": {
+					"DisplayName": "Trolley_Pond",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Trolley_Pond",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		
+
+		{
+			"Action": "Load",
+			"Target": "maps/Canyon_maze",
+			"FromFile": "assets/Maps/Canyon_maze.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Canyon_maze": {
+					"DisplayName": "Canyon_maze",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Canyon_maze",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		
+
+		{
+			"Action": "Load",
+			"Target": "maps/Canyon_flood",
+			"FromFile": "assets/Maps/Canyon_flood.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Canyon_flood": {
+					"DisplayName": "Canyon_flood",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Canyon_flood",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		
+
+		{
+			"Action": "Load",
+			"Target": "maps/Canyon_final",
+			"FromFile": "assets/Maps/Canyon_final.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Canyon_final": {
+					"DisplayName": "Canyon_final",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Canyon_final",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+		{
+			"Action": "Load",
+			"Target": "maps/Canyon_south",
+			"FromFile": "assets/Maps/Canyon_south.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Canyon_south": {
+					"DisplayName": "Canyon_south",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Canyon_south",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+		{
+			"Action": "Load",
+			"Target": "maps/Canyon_end",
+			"FromFile": "assets/Maps/Canyon_end.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Canyon_end": {
+					"DisplayName": "Canyon_end",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Canyon_end",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+		{
+			"Action": "Load",
+			"Target": "maps/FlamingoCave",
+			"FromFile": "assets/Maps/FlamingoCave.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "FlamingoCave": {
+					"DisplayName": "FlamingoCave",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/FlamingoCave",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+		{
+			"Action": "Load",
+			"Target": "maps/Canyon_summit",
+			"FromFile": "assets/Maps/Canyon_summit.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Canyon_summit": {
+					"DisplayName": "Canyon_summit",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Canyon_summit",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+				{
+			"Action": "Load",
+			"Target": "maps/Canyon_summit2",
+			"FromFile": "assets/Maps/Canyon_summit2.tmx"
+		},
+{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Canyon_summit2": {
+					"DisplayName": "Canyon_summit2",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Canyon_summit2",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		{
+			"Action": "Load",
+			"Target": "maps/Canyon_end2",
+			"FromFile": "assets/Maps/Canyon_end2.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Canyon_end2": {
+					"DisplayName": "Canyon_end2",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Canyon_end2",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		{
+			"Action": "Load",
+			"Target": "maps/Koda_Sub_rain",
+			"FromFile": "assets/Maps/Koda_Sub_rain.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Koda_Sub_rain": {
+					"DisplayName": "Koda_Sub_rain",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Koda_Sub_rain",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		{
+			"Action": "Load",
+			"Target": "maps/Koda_Sub",
+			"FromFile": "assets/Maps/Koda_Sub.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Koda_Sub": {
+					"DisplayName": "Koda_Sub",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Koda_Sub",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		{
+			"Action": "Load",
+			"Target": "maps/Sub_Back",
+			"FromFile": "assets/Maps/Sub_Back.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Sub_Back": {
+					"DisplayName": "Sub_Back",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Sub_Back",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+			{
+			"Action": "Load",
+			"Target": "maps/Sub_Deck",
+			"FromFile": "assets/Maps/Sub_Deck.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Sub_Deck": {
+					"DisplayName": "Sub_Deck",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Sub_Deck",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					        "CustomFields": { "mushymato.MMAP_Panorama": "{{ModID}}_MountainPanorama" },
+
+          "ArrivalTile_T0": { "X": 0, "Y": 0 },
+
+          "MapAsset_T0": "assets/Maps/Sub_Deck"
+
+                }
+            }
+        },
+
+		{
+      "Action": "Include",
+      "FromFile": "panorama.json"
+    },
+		
+						{
+			"Action": "EditMap",
+			"Target": "maps/Beach",
+			"AddWarps": [
+				"-1 20 Koda_Cove 39 25"
+			]
+		},
+						{
+			"Action": "EditMap",
+			"Target": "maps/Koda_Cove",
+			"AddWarps": [
+				"41 25 Beach 1 20",
+				"40 19 Beach 10 5",
+				"18 3 Trolley_Pond 11 30",
+			]
+		},
+		{
+			"Action": "EditMap",
+			"Target": "maps/Koda_Cove",
+			"When": {
+      "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday"
+},
+			"AddWarps": [
+				"26 30 Koda_Sub 13 16"
+			]
+		},
+								{
+			"Action": "EditMap",
+			"Target": "maps/Koda_Cove",
+			"When": {
+   "Weather": "Rain, Storm, GreenRain, Snow",
+      "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday"
+},
+			"AddWarps": [
+				"26 30 Koda_Sub_rain 13 16"
+			]
+		},
+								{
+			"Action": "EditMap",
+			"Target": "maps/Koda_Sub",
+			"AddWarps": [
+				"13 18 Koda_Cove 26 28",
+			
+			]
+		},
+										{
+			"Action": "EditMap",
+			"Target": "maps/Koda_Sub_rain",
+			"AddWarps": [
+				"13 18 Koda_Cove 26 28",
+			
+			]
+		},
+											{
+			"Action": "EditMap",
+			"Target": "maps/Sub_Back",
+			"AddWarps": [
+				"7 13 Koda_Sub 7 7",
+			
+			]
+		},
+													{
+			"Action": "EditMap",
+			"Target": "maps/Sub_Back",
+		"When": {
+   "Weather": "Rain, Storm, GreenRain",
+},
+			"AddWarps": [
+				"7 13 Koda_Sub_rain 7 7",
+			]
+		},
+				{
+			"Action": "EditMap",
+			"Target": "maps/forest",
+			"AddWarps": [
+				"5 68 Taro_Meadow 29 21"
+			]
+		},
+
+						{
+			"Action": "EditMap",
+			"Target": "maps/Taro_Meadow",
+			"AddWarps": [
+				"30 20 forest 7 68",
+				"30 21 forest 7 68",
+				"19 8 forest 7 68",
+				"3 17 Trolley_Pond 26 17",
+
+			]
+		},
+							{
+			"Action": "EditMap",
+			"Target": "maps/Taro_Train",
+			"AddWarps": [
+				"15 11 Taro_Meadow 16 13"
+			
+			]
+		},
+								{
+			"Action": "EditMap",
+			"Target": "maps/Trolley_Pond",
+			"AddWarps": [
+				"29 17 Taro_Meadow 5 17",
+				"14 -1 Canyon_south 16 21",
+				"15 -1 Canyon_south 16 21",
+				"16 -1 Canyon_south 17 21",
+			"17 -1 Canyon_south 17 21",
+			"18 -1 Canyon_south 17 21",
+			"11 32 Koda_Cove 18 6"
+			
+			]
+		},
+				{
+			"Action": "EditMap",
+			"Target": "maps/Canyon_south",
+			"AddWarps": [
+				"16 22 Trolley_Pond 15 0",
+				"17 22 Trolley_Pond 16 0"
+			]
+		},
+	
+				{
+			"Action": "EditMap",
+			"Target": "maps/Canyon_south",
+			"SetProperties": {
+        "CurrentTime": "{{Time}}"
+    },
+    "Update": "OnLocationChange",
+			"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon1_5": true
+				},
+				"MapTiles":
+				[
+				{
+					"Position": {"X": 17, "Y": 6 },
+					"Layer": "Buildings",
+				"Remove": true
+				}
+				],
+			"AddWarps": [
+				"17 -2 Canyon_flood 12 59"
+			]
+		},
+				{
+			"Action": "EditMap",
+			"Target": "maps/Canyon_south",
+			"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon2": true
+				},
+			"AddWarps": [
+				"17 -2 Canyon_final 12 59"
+			]
+		},
+				{
+			"Action": "EditMap",
+			"Target": "maps/Canyon_south",
+			"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon3": true
+				},
+			"AddWarps": [
+				"17 -2 Canyon_end 12 59"
+			]
+		},
+				{
+			"Action": "EditMap",
+			"Target": "maps/Canyon_south",
+				"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon4": true
+				},
+			"AddWarps": [
+				"17 -2 Canyon_end2 12 59"
+			]
+		},
+			
+
+						{
+			"Action": "EditMap",
+			"Target": "maps/Canyon_end",
+			"AddWarps": [
+			"53 24 Desert 1 24",
+				"53 25 Desert 1 24",
+				"53 26 Desert 1 25",
+				"53 27 Desert 1 25",
+					"5 61 Canyon_south 17 1",
+					"6 61 Canyon_south 17 1",
+					"7 61 Canyon_south 17 1",
+					"8 61 Canyon_south 17 1",
+					"9 61 Canyon_south 17 1",
+					"10 61 Canyon_south 17 1",
+					"11 61 Canyon_south 17 1",
+					"12 61 Canyon_south 17 1",
+					"13 61 Canyon_south 17 1",
+					"14 61 Canyon_south 17 1",
+					"15 61 Canyon_south 17 1",
+					"16 61 Canyon_south 17 1",
+					"17 61 Canyon_south 17 1",
+				"18 61 Canyon_south 17 1",
+				"6 -1 Canyon_summit 28 0",
+				"7 -1 Canyon_summit 28 0",
+				"8 -1 Canyon_summit 28 0",
+				"9 -1 Canyon_summit 29 0",
+				"10 -1 Canyon_summit 29 0",
+				"11 -1 Canyon_summit 29 0",
+				"12 -1 Canyon_summit 30 0",
+				"13 -1 Canyon_summit 30 0",
+				"14 -1 Canyon_summit 31 0",
+				"15 -1 Canyon_summit 31 0",
+				"16 -1 Canyon_summit 31 0"
+				
+			]
+		},
+				{
+			"Action": "EditMap",
+			"Target": "maps/Canyon_final",
+			"AddWarps": [
+				"53 24 Desert 1 24",
+				"53 25 Desert 1 24",
+				"53 26 Desert 1 25",
+				"53 27 Desert 1 25",
+					"5 61 Canyon_south 17 1",
+					"6 61 Canyon_south 17 1",
+					"7 61 Canyon_south 17 1",
+					"8 61 Canyon_south 17 1",
+					"9 61 Canyon_south 17 1",
+					"10 61 Canyon_south 17 1",
+					"11 61 Canyon_south 17 1",
+					"12 61 Canyon_south 17 1",
+					"13 61 Canyon_south 17 1",
+					"14 61 Canyon_south 17 1",
+					"15 61 Canyon_south 17 1",
+					"16 61 Canyon_south 17 1",
+					"17 61 Canyon_south 17 1",
+				"18 61 Canyon_south 17 1",
+				"44 46 FlamingoCave 4 10"
+			]
+		},
+				{
+			"Action": "EditMap",
+			"Target": "maps/Canyon_flood",
+			"AddWarps": [
+				"53 24 Desert 1 24",
+				"53 25 Desert 1 24",
+				"53 26 Desert 1 25",
+				"53 27 Desert 1 25",
+					"5 61 Canyon_south 17 1",
+					"6 61 Canyon_south 17 1",
+					"7 61 Canyon_south 17 1",
+					"8 61 Canyon_south 17 1",
+					"9 61 Canyon_south 17 1",
+					"10 61 Canyon_south 17 1",
+					"11 61 Canyon_south 17 1",
+					"12 61 Canyon_south 17 1",
+					"13 61 Canyon_south 17 1",
+					"14 61 Canyon_south 17 1",
+					"15 61 Canyon_south 17 1",
+					"16 61 Canyon_south 17 1",
+					"17 61 Canyon_south 17 1",
+				"18 61 Canyon_south 17 1",
+				"9 -2 Canyon_summit 8 29"
+			]
+		},
+						{
+			"Action": "EditMap",
+			"Target": "maps/Canyon_maze",
+			"AddWarps": [
+				"53 24 Desert 1 24",
+				"53 25 Desert 1 24",
+				"53 26 Desert 1 25",
+				"53 27 Desert 1 25",
+					"5 61 Canyon_south 17 1",
+					"6 61 Canyon_south 17 1",
+					"7 61 Canyon_south 17 1",
+					"8 61 Canyon_south 17 1",
+					"9 61 Canyon_south 17 1",
+					"10 61 Canyon_south 17 1",
+					"11 61 Canyon_south 17 1",
+					"12 61 Canyon_south 17 1",
+					"13 61 Canyon_south 17 1",
+					"14 61 Canyon_south 17 1",
+					"15 61 Canyon_south 17 1",
+					"16 61 Canyon_south 17 1",
+					"17 61 Canyon_south 17 1",
+				"18 61 Canyon_south 17 1"
+			]
+		},
+		
+		{
+			"Action": "EditMap",
+			"Target": "maps/FlamingoCave",
+			"AddWarps": [
+				"4 12 Canyon_final 44 49",
+				"5 12 Canyon_final 44 49",
+				"5 0 Canyon_summit 54 4"
+			]
+		},
+				{
+			"Action": "EditMap",
+			"Target": "maps/Canyon_summit",
+			"AddWarps": [
+				"7 30 Canyon_flood 9 0",
+				"8 30 Canyon_flood 9 49",
+				"28 -1 Canyon_end 11 0",
+				"29 -1 Canyon_end 11 0",
+				"30 -1 Canyon_end 11 0",
+				"31 -1 Canyon_end 11 0"
+			]
+		},
+					{
+			"Action": "EditMap",
+			"Target": "maps/Canyon_end2",
+			"AddWarps": [
+			"53 24 Desert 1 24",
+				"53 25 Desert 1 24",
+				"53 26 Desert 1 25",
+				"53 27 Desert 1 25",
+					"5 61 Canyon_south 17 1",
+					"6 61 Canyon_south 17 1",
+					"7 61 Canyon_south 17 1",
+					"8 61 Canyon_south 17 1",
+					"9 61 Canyon_south 17 1",
+					"10 61 Canyon_south 17 1",
+					"11 61 Canyon_south 17 1",
+					"12 61 Canyon_south 17 1",
+					"13 61 Canyon_south 17 1",
+					"14 61 Canyon_south 17 1",
+					"15 61 Canyon_south 17 1",
+					"16 61 Canyon_south 17 1",
+					"17 61 Canyon_south 17 1"
+			]
+		},
+		
+		{
+			"Action": "Load",
+			"Target": "maps/Taro_Tent",
+			"FromFile": "assets/Maps/Taro_Tent.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Taro_Tent": {
+					"DisplayName": "Taros Tent",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Taro_Tent",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": false,
+
+		
+					"MinDailyWeeds": 0,
+					"MaxDailyWeeds": 0,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+				{
+			"Action": "EditMap",
+			"Target": "maps/Taro_Meadow",
+			"AddWarps": [
+				"20 12 Taro_Tent 4 9",
+			]
+		},
+						{
+			"Action": "EditMap",
+			"Target": "maps/Taro_Tent",
+			"AddWarps": [
+				"4 10 Taro_Meadow 20 13"
+			]
+		},
+
+		{
+			"Action": "Load",
+			"Target": "maps/Taro_Train",
+			"FromFile": "assets/Maps/Taro_Train.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Taro_Train": {
+					"DisplayName": "Taros hideout",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "maps/Taro_Train",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": false,
+
+		
+					"MinDailyWeeds": 0,
+					"MaxDailyWeeds": 0,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+	
+		
+				{
+			"LogName": "Strings from Maps",
+			"Action": "Include",
+			"FromFile": "assets/Maps/StringsFromMaps.json"
+		},
+{ 
+			"Action": "EditMap",
+			"Target": "maps/Taro_Meadow",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 16,
+						"Y": 12
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Door.1\""
+						
+					},
+						"Position": {
+						"X": 23,
+						"Y": 14
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Meadow.2\""
+						
+					},
+							"Position": {
+						"X": 17,
+						"Y": 20
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Meadow.3\""
+						
+					},
+				}
+			]
+	
+		},
+		{
+			"Action": "EditMap",
+			"Target": "maps/Taro_Tent",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 1,
+						"Y": 7
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Object.1\""
+						
+					},
+						"Position": {
+						"X": 7,
+						"Y": 8
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Reports.2\""
+						
+					},
+							"Position": {
+						"X": 6,
+						"Y": 5
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Snail.1\""
+						
+					},
+				}
+			]
+	
+		},
+		{
+			"Action": "EditMap",
+			"Target": "maps/Trolley_Pond",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 13,
+						"Y": 18
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Trolley.1\""
+						
+					}
+			
+						
+					},
+				
+					{
+							"Position": {
+						"X": 8,
+						"Y": 13
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Trolley.2\""
+						
+					}
+					}
+			
+						
+					
+				
+			]
+		},
+		{
+			"Action": "EditMap",
+			"Target": "maps/forest",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 8,
+						"Y": 70
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Meadow.1\""
+						
+					}
+			
+						
+					}
+				
+			]
+		},
+		{
+			"Action": "EditMap",
+			"Target": "maps/Koda_Cove",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 17,
+						"Y": 7
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Cove.1\""
+						
+					}
+			
+						
+					}
+				
+			]
+		},
+				{
+			"Action": "EditMap",
+			"Target": "maps/Sub_Back",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 9,
+						"Y": 8
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"fridge.1\""
+						
+					}
+			
+						
+					},
+					{
+					"Position": {
+						"X": 20,
+						"Y": 8
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"shirt.1\""
+						
+					}
+			
+						
+					},
+					{
+					"Position": {
+						"X": 25,
+						"Y": 10
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"toys.1\""
+						
+					}
+			
+						
+					},
+				
+			]
+		},
+						{
+			"Action": "EditMap",
+			"Target": "maps/Sub_Deck",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 16,
+						"Y": 16
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"scope.1\""
+						
+					}
+			
+						
+					},
+					{
+					"Position": {
+						"X": 10,
+						"Y": 16
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"landscape.1\""
+						
+					}
+			
+						
+					},
+					{
+					"Position": {
+						"X": 20,
+						"Y": 17
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"mappo.1\""
+						
+					}
+			
+						
+					},
+				
+			]
+		},
+
+
+		  {
+            "Action": "Load",
+            "Target": "Data/Events/Canyon_summit",
+            "FromFile": "assets/Maps/Canyon_summit.json",
+        },
+		       
+		{
+			"Action": "EditMap",
+			"Target": "maps/Desert",
+			"SetProperties": {
+        "CurrentTime": "{{Time}}"
+    },
+    "Update": "OnLocationChange",
+			"AddWarps": [
+				"-1 24 Canyon_maze 51 25",
+				"-1 25 Canyon_maze 51 27",
+				"-1 26 Canyon_maze 51 25"
+			],
+			"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon1": true
+				}
+		},
+		
+		 {
+			"Action": "EditMap",
+			"Target": "maps/Canyon_maze",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 47,
+						"Y": 23
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"MazeFlam.1\""
+						
+					}	
+					}
+				
+			]
+		},
+		 {
+			"Action": "EditMap",
+			"Target": "maps/Canyon_summit",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 8,
+						"Y": 24
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Riddleman.1\""
+						
+					}	
+					}
+				
+			]
+		},
+		
+		 		{
+			"Action": "EditMap",
+			"Target": "maps/Desert",
+			"SetProperties": {
+        "CurrentTime": "{{Time}}"
+    },
+    "Update": "OnLocationChange",
+			"AddWarps": [
+				"-1 24 Canyon_flood 51 25",
+				"-1 25 Canyon_flood 51 27",
+				"-1 26 Canyon_flood 51 25"
+			],
+			"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon1_5": true
+				}
+		},
+		  		
+		 {
+			"Action": "EditMap",
+			"Target": "maps/Canyon_summit",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 8,
+						"Y": 25
+					},
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "PlayEvent cc_canyon2 true true"
+						
+					}	
+					}
+				
+			]
+		},
+		 	 		  		
+
+		 {
+			"Action": "EditMap",
+			"Target": "maps/Desert",
+					"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon2": true
+				},
+			"AddWarps": [
+				"-1 24 Canyon_final 51 25",
+				"-1 25 Canyon_final 51 25",
+				"-1 26 Canyon_final 51 26"
+			]
+	
+		},
+				 {
+			"Action": "EditMap",
+			"Target": "maps/Canyon_summit",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 55,
+						"Y": 6
+					},
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "PlayEvent cc_canyon3 true true"
+						
+					}	
+					}
+				
+			]
+		},
+		 
+		 
+		  {
+			"Action": "EditMap",
+			"Target": "maps/Canyon_summit",
+			"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon3": true
+				},
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 56,
+						"Y": 6
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Riddleman.2\""
+						
+					}	
+					}
+				
+			]
+		},
+		{
+			"Action": "EditMap",
+			"Target": "maps/Desert",
+				"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon3": true
+				},
+			"AddWarps": [
+				"-1 24 Canyon_end 51 25",
+				"-1 25 Canyon_end 51 27",
+				"-1 26 Canyon_end 51 25"
+			]
+		},
+		 {
+			"Action": "EditMap",
+			"Target": "maps/Canyon_end",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 9,
+						"Y": 14
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"SwimGuy.1\""
+					}	
+					}
+				
+			]
+		},
+		 {
+			"Action": "EditMap",
+			"Target": "maps/Canyon_summit",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 35,
+						"Y": 8
+					},
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": "PlayEvent cc_canyon4 true true"
+						
+					}	
+					}
+				
+			]
+		},
+		
+		 {
+			"Action": "EditMap",
+			"Target": "maps/Desert",
+			"SetProperties": {
+        "CurrentTime": "{{Time}}"
+    },
+    "Update": "OnLocationChange",
+			"AddWarps": [
+				"-1 24 Canyon_end2 51 25",
+				"-1 25 Canyon_end2 51 27",
+				"-1 26 Canyon_end2 51 25"
+			],
+			"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon4": true
+				}
+		},
+
+	
+
+	]
+}

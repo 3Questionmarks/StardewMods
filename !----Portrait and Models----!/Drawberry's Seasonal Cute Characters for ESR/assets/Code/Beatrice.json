@@ -1,0 +1,122 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load Beatrice's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Beatrice_EggF, Portraits/Beatrice_Fair, Portraits/Beatrice_Fall, Portraits/Beatrice_FlowerDance, Portraits/Beatrice_Luau, Portraits/Beatrice_Spring, Portraits/Beatrice_Summer, Portraits/Beatrice_WinterStar, Portraits/Beatrice_Winter, Portraits/Beatrice_WinterStar, Portraits/Beatrice_Winter, Characters/Beatrice_EggF, Characters/Beatrice_Fair, Characters/Beatrice_Fall, Characters/Beatrice_FlowerDance, Characters/Beatrice_Luau, Characters/Beatrice_Spring, Characters/Beatrice_Summer, Characters/Beatrice_Winter, Characters/Beatrice_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Beatrice/{{TargetWithoutPath}}.png"
+		},
+		// Ice fest
+		{
+			"LogName": "Beatrice - IceFest editimage sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Beatrice_IceFestival",
+			"FromFile": "assets/Characters/Beatrice/Beatrice_Ice.png",
+		},
+		{
+			"LogName": "Beatrice - IceFest editimage portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/Beatrice_IceFestival",
+			"FromFile": "assets/Portraits/Beatrice/Beatrice_Ice.png",
+		},
+		// NOSE
+		{
+			"LogName": "Beatrice - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Beatrice_EggF, Characters/Beatrice_Fair, Characters/Beatrice_Fall, Characters/Beatrice_FlowerDance, Characters/Beatrice_Luau, Characters/Beatrice_Spring, Characters/Beatrice_Summer, Characters/Beatrice_Winter, Characters/Beatrice_WinterStar, Characters/Beatrice_IceFestival",
+			"FromFile": "assets/{{TargetPathOnly}}/Beatrice/Beatrice_nose.png",
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+			"When": 
+			{
+				"NoNose": "false",
+			},
+		},
+		//APPEARANCE DATA 
+		{
+			"LogName": "Beatrice Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Beatrice",
+				"Appearance"
+			],
+			"Entries": {
+				//Regular Outfits
+				"{{ModId}}.BeatriceSpring": {
+					"Id": "{{ModId}}.BeatriceSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Beatrice_Spring",
+					"Portrait": "Portraits/Beatrice_Spring",
+					"Precedence": -200,
+				},
+				"{{ModId}}.BeatriceSummer": {
+					"Id": "{{ModId}}.BeatriceSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Beatrice_Summer",
+					"Portrait": "Portraits/Beatrice_Summer",
+					"Precedence": -200,
+				},
+				"{{ModId}}.BeatriceFall": {
+					"Id": "{{ModId}}.BeatriceFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Beatrice_Fall",
+					"Portrait": "Portraits/Beatrice_Fall",
+					"Precedence": -200,
+				},
+				"{{ModId}}.BeatriceWinter": {
+					"Id": "{{ModId}}.BeatriceWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Beatrice_Winter",
+					"Portrait": "Portraits/Beatrice_Winter",
+					"Precedence": -200,
+				},
+				//Festival Outfits
+				"{{ModId}}.BeatriceFlowerDance": {
+					"Id": "{{ModId}}.BeatriceFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Beatrice_FlowerDance",
+					"Portrait": "Portraits/Beatrice_FlowerDance",
+					"Precedence": -2000,
+				},
+				"{{ModId}}.BeatriceEggF": {
+					"Id": "{{ModId}}.BeatriceEggF",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfits}}",
+					"Sprite": "Characters/Beatrice_EggF",
+					"Portrait": "Portraits/Beatrice_EggF",
+					"Precedence": -2000,
+				},
+				"{{ModId}}.BeatriceLuau": {
+					"Id": "{{ModId}}.BeatriceEggF",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfits}}",
+					"Sprite": "Characters/Beatrice_Luau",
+					"Portrait": "Portraits/Beatrice_Luau",
+					"Precedence": -2000,
+				},
+				"{{ModId}}.BeatriceFair": {
+					"Id": "{{ModId}}.BeatriceSpirit",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+					"Sprite": "Characters/Beatrice_Fair",
+					"Portrait": "Portraits/Beatrice_Fair",
+					"Precedence": -2000,
+				},
+				/*"{{ModId}}.BeatriceIceFestival": {
+					"Id": "{{ModId}}.BeatriceIceFestival",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+					"Sprite": "Characters/Beatrice_Ice",
+					"Portrait": "Portraits/Beatrice_Ice",
+					"Precedence": -2000,
+				},*/
+			},
+		},
+		{
+			"LogName": "Beatrice Calendar Sprite Edits",
+			"Action": "EditImage",
+			"Target": "Characters/Beatrice",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+		},
+	]
+}

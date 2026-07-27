@@ -1,8 +1,7 @@
-{ 		 
-	"LittleRedSchoolHouse": "Russel elementry. Home of the Soaring Pelicans.",
-	"Waste": "Waste",
-	"Paper": "Paper",
-	"CansandBottles": "Cans and Bottles",
+{ 	"LittleRedSchoolHouse": "Russel elementi. Yükselen Pelikanların evi.",
+	"Waste": "Çöp",
+	"Paper": "Kâğıt",
+	"CansandBottles": "Kutular ve Şişeler",
 	
 		 "School.1": "Kilitli.",
 	  	 "School.2": "Sınıfın Bitkisi. Sulamayın.",
@@ -10,7 +9,23 @@
 	  	 "School.4": "tik tak tik tak",
 	  	 "School.5": "Sınıf Hamsterı Russel",
 	  	 "School.6": "'Sadece Okumak İçin' yazan bir not var",
-	
+	  	 "School.7.spring": "Ders saat 10:00'da başlar. Her çarşamba ve cuma. Ayrıca her Salı. Yağmur yağarken bile, ama fırtına olsa bile.",
+	  	 "School.8.spring": "Okul binasına kurbağa veya salyangozun girmesine izin verilmez.",
+	  	 "School.9.spring": "Bir sebepten dolayı atanmış koltuklar var. Öğrencilerin masa değiştirmesine izin verilmez.",
+	  	 "School.7.summer": "Ders saat 10:00'da başlar. Her çarşamba ve cuma. Ayrıca her Salı. Yağmur yağarken bile, ama fırtına olsa bile.",
+	  	 "School.8.summer": "Yaz tatili yok. Bunun yerine her hafta daha az ders günümüz var.",
+	  	 "School.9.summer": "Susuz kalmayın çocuklar. Bol su için.",
+	  	 "School.7.fall": "Ders saat 10:00'da başlar. Her çarşamba ve cuma. Ayrıca her Salı. Yağmur yağarken bile, ama fırtına olsa bile.",
+	  	 "School.8.fall": "Herkes oyun alanı kulübüne katılmaya davetlidir. Her cumartesi buluşuyoruz.",
+	  	 "School.9.fall": "Bugün not yok.",
+	  	 "School.7.winter": "Ders saat 10:00'da başlar. Her çarşamba ve cuma. Ayrıca her Salı. Kar yağıyor olsa bile.",
+	  	 "School.8.winter": "Dr. Harvey'den çocuklara ellerini sık sık yıkamalarını ve hapşırdıklarında hem ağızlarını hem de burunlarını kapatmalarını hatırlatan bir not.",
+	  	 "School.9.winter": "Yasal nedenlerden dolayı okul içerisinde festival süslemeleri yapmamıza izin verilmiyor. Buna Kış Yıldızı ağaçları da dahildir.",
+	  	 "School.10": "Bu Joja Colalarının hepsi son kullanma tarihini geçmiş.",
+	  	 "School.11": "Bu kutularda festival süslemeleri var.",
+	  	 "School.12": "Birinin gizli içki içme mekanı.",
+	  	 "School.13": "Lewis'ten Robin'e, kasabanın okulun onarımı için yeterli bütçesi olmadığına dair bir mektup.",
+		
 	  	 "Desk.1": "Bu koltuk müsait.",
 	  	 "Desk.2": "Bu koltuk müsait.",
 	  	 "Desk.3": "Bu koltuk müsait.",
@@ -30,13 +45,13 @@
 	  	 "Desk.17": "Bu koltuk müsait.",
 	  	 "Desk.18": "Bu koltuk müsait.",
 	
-	"HigherEducation" : "Yüksek öğretim",	
-	"SchoolRepaired": "Hey @.^^ Okulda kalan malzemeleri aldım. Bitirdiğimde haber vermek için uğrarım. ^^~Robin",	
-	"Text1": "Eski okul evini tamir etmenin zamanı geldi. Ancak Robin'in işi tamamlamak için daha fazla malzemeye ihtiyacı var.",
-	"Text2": "Kereste",
-	"Text3": "Odun",
-	"Text4": "Kumaş",
-	"Text5": "Altın Külçesi",	
+	"school.HigherEducation" : "Yüksek öğretim",	
+	"school.SchoolRepaired": "Hey @.^^ Okulda kalan malzemeleri aldım. Bitirdiğimde haber vermek için uğrarım. ^^~Robin",	
+	"school.Text1": "Eski okul evini tamir etmenin zamanı geldi. Ancak Robin'in işi tamamlamak için daha fazla malzemeye ihtiyacı var.",
+	"school.Text2": "Kereste",
+	"school.Text3": "Odun",
+	"school.Text4": "Kumaş",
+	"school.Text5": "Altın Külçesi",	
 	
 	"Event1": "Hey @.#$b#Okulun her yeri düzeldi.#$b#Büyük açılışta görüşürüz.",
 	"Event2.1": "Bu harika.",
@@ -44,17 +59,4 @@
 	"Event2.3": "Harika bir iş çıkardın Robin",
 	"Event2.4": "@ yardım etmese yapamazdım",
 	"Event2.5": "Haklısın.#$b#@, Geri kalanımız kadar uzun süredir vadide değilsin ama Pelikan Kasabası için çok şey yaptın.#$b#Teşekkür ederim @.",
-	
-	"Deskrsv.4": "Bu sıra Keahi'e ait",
-	"Deskrsv.12": "Bu sıra Trinnie'e ait",
-	
-	"Desk.Eloise": "Bu sıra Eloise'e ait",
-	
-	"Desk.Adrian": "Bu sıra Adrian'e ait",
-	"Desk.James": "Bu sıra James'e ait",
-	"Desk.Tina": "Bu sıra Tina'e ait",
-	"Desk.Vanessa": "Bu sıra Vanessa'e ait",
-	
-	 "Deskpartone": "Bu sıra",
-	 "Deskparttwo": "'e ait",
 }

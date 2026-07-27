@@ -1,0 +1,562 @@
+{
+
+    "Format": "2.5.0",
+
+	"ConfigSchema": {
+		"Access Immediately":{
+			"Description": "Set to true for secret forage locations to always be accessible to the player, instead of unlocking them by leveling skills and relationships. Defaults to false.",
+            "AllowValues": "true, false",
+            "Default": false,
+            "AllowBlank": false,
+            "AllowMultiple": false},
+        "Abandoned Farmhouse": {
+            "Description": "Enables Abandoned Farmhouse Location.",
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "AllowMultiple": false
+          },
+        "Berry Grove": {
+            "Description": "Enables Berry Grove Location.",
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "AllowMultiple": false
+        },
+        "Frog Hollow": {
+            "Description": "Enables Frog Hollow Location.",
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "AllowMultiple": false
+        },
+        "Mermaid Grotto":{
+            "Description": "Enables Mermaid Grotto Location.",
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "AllowMultiple": false
+          },
+		"Mushroom Forest":{
+            "Description": "Enables Mushroom Forest Location.",
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "AllowMultiple": false
+          },
+		"Old Forest":{
+            "Description": "Enables Old Forest Location.",
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "AllowMultiple": false
+          },
+		"Rainforest Retreat":{
+            "Description": "Enables Location.",
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "AllowMultiple": false
+          },
+		"Secret Orchard":{
+            "Description": "Enables Secret Orchard Location.",
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "AllowMultiple": false
+          }
+    },
+	"DynamicTokens": [
+			{
+				"Name": "AbandonedFarmhouseToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5, 6, 7, 8}}",
+				"When": {"SkillLevel:Farming": "1, 2, 3"}
+			},
+			{
+				"Name": "AbandonedFarmhouseToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"SkillLevel:Farming": "4, 5"}
+			},
+			{
+				"Name": "AbandonedFarmhouseToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When":{ "SkillLevel:Farming": "6, 7, 8"}
+			},
+			{
+				"Name": "AbandonedFarmhouseToken",
+				"Value": "{{Random: 1, 2}}",
+				"When":{ "SkillLevel:Farming": "9"}
+			},
+			{
+				"Name": "AbandonedFarmhouseToken",
+				"Value": "1",
+				"When":{"Query: {{SkillLevel:Farming}} >= 10": true}
+			},
+			{
+				"Name": "AbandonedFarmhouseToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"Hearts:Evelyn":"3, 4, 5"}
+			}, 
+			{
+				"Name": "AbandonedFarmhouseToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When": {"Hearts:Evelyn":"6, 7, 8"}
+			}, 
+			{
+				"Name": "AbandonedFarmhouseToken",
+				"Value": "1",
+				"When": {"Hearts:Evelyn":"9, 10"}
+			},
+
+			{
+				"Name": "AbandonedFarmhouseToken",
+				"Value": "1",
+				"When":{"Access Immediately": true}
+			},
+			{
+				"Name": "AbandonedFarmhouseToken",
+				"Value": "1",
+				"When":{"HasMod|contains=Wildflour.SASS": true,"Hearts:WildflourSASS": "7,8,9,10"}
+			},
+
+			{
+				"Name": "BerryGroveToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5, 6, 7, 8}}",
+				"When": {"SkillLevel:Foraging": "1, 2, 3"}
+			},
+			{
+				"Name": "BerryGroveToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"SkillLevel:Foraging": "4, 5"}
+			},
+			{
+				"Name": "BerryGroveToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When":{ "SkillLevel:Foraging": "6, 7, 8"}
+			},
+			{
+				"Name": "BerryGroveToken",
+				"Value": "{{Random: 1, 2}}",
+				"When":{ "SkillLevel:Foraging": "9"}
+			},
+			{
+				"Name": "BerryGroveToken",
+				"Value": "1",
+				"When":{"Query: {{SkillLevel:Foraging}} >= 10": true}
+			},
+			{
+				"Name": "BerryGroveToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"Hearts:Jas":"3,4,5"}
+			}, 
+			{
+				"Name": "BerryGroveToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When": {"Hearts:Jas":"6, 7, 8"}
+			}, 
+			{
+				"Name": "BerryGroveToken",
+				"Value": "{{Random: 1}}",
+				"When": {"Hearts:Jas":"8,9,10"}
+			},
+
+			{
+				"Name": "BerryGroveToken",
+				"Value": "1",
+				"When":{"Access Immediately": true}
+			},
+			{
+				"Name": "BerryGroveToken",
+				"Value": "1",
+				"When":{"HasMod|contains=Wildflour.SASS": true,"Hearts:WildflourSASS": "7,8,9,10"}
+			},
+			{
+				"Name": "FrogHollowToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5, 6, 7, 8}}",
+				"When": {"SkillLevel:Combat": "1, 2, 3"}
+			},
+			{
+				"Name": "FrogHollowToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"SkillLevel:Combat": "4, 5"}
+			},
+			{
+				"Name": "FrogHollowToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When":{ "SkillLevel:Combat": "6, 7, 8"}
+			},
+			{
+				"Name": "FrogHollowToken",
+				"Value": "{{Random: 1, 2}}",
+				"When":{ "SkillLevel:Combat": "9"}
+			},
+			{
+				"Name": "FrogHollowToken",
+				"Value": "1",
+				"When":{"Query: {{SkillLevel:Combat}} >= 10": true}
+			},
+			{
+				"Name": "FrogHollowToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"Hearts:Sebastian":"3,4,5"}
+			}, 
+			{
+				"Name": "FrogHollowToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When": {"Hearts:Sebastian":"6,7,8"}
+			}, 
+			{
+				"Name": "FrogHollowToken",
+				"Value": "1",
+				"When": {"Hearts:Sebastian":"9,10"}
+			},
+			{
+				"Name": "FrogHollowToken",
+				"Value": "1",
+				"When":{"Access Immediately": true}
+			},
+			{
+				"Name": "FrogHollowToken",
+				"Value": "1",
+				"When":{"HasMod|contains=Wildflour.SASS": true,"Hearts:WildflourSASS": "7,8,9,10"}
+			},
+			
+			{
+				"Name": "OldForestToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5, 6, 7, 8}}",
+				"When": {"SkillLevel:Foraging": "1,2,3"}
+			},
+			{
+				"Name": "OldForestToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"SkillLevel:Foraging": "4,5"}
+			},
+			{
+				"Name": "OldForestToken",
+				"Value": "{{Random: 1,2,3}}",
+				"When":{ "SkillLevel:Foraging": "6,7,8"}
+			},
+			{
+				"Name": "OldForestToken",
+				"Value": "{{Random: 1,2}}",
+				"When":{ "SkillLevel:Foraging": "9"}
+			},
+			{
+				"Name": "OldForestToken",
+				"Value": "1",
+				"When":{"Query: {{SkillLevel:Foraging}} >= 10": true}
+			},
+			{
+				"Name": "OldForestToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"Hearts:Robin":"3,4,5"}
+			}, 
+			{
+				"Name": "OldForestToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When": {"Hearts:Robin":"6,7,8"}
+			}, 
+			{
+				"Name": "OldForestToken",
+				"Value": "1",
+				"When": {"Hearts:Robin":"9,10"}
+			},
+
+			{
+				"Name": "OldForestToken",
+				"Value": "1",
+				"When":{"Access Immediately": true}
+			},
+			{
+				"Name": "OldForestToken",
+				"Value": "1",
+				"When":{"HasMod|contains=Wildflour.SASS": true,"Hearts:WildflourSASS": "7,8,9,10"}
+			},
+
+			{
+				"Name": "MermaidGrottoToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5, 6, 7, 8}}",
+				"When": {"SkillLevel:Fishing": "1, 2, 3"}
+			},
+			{
+				"Name": "MermaidGrottoToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"SkillLevel:Fishing": "4, 5"}
+			},
+			{
+				"Name": "MermaidGrottoToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When":{ "SkillLevel:Fishing": "6,7,8"}
+			},
+			{
+				"Name": "MermaidGrottoToken",
+				"Value": "{{Random: 1, 2}}",
+				"When":{ "SkillLevel:Fishing": "9"}
+			},
+			{
+				"Name": "MermaidGrottoToken",
+				"Value": "1",
+				"When":{"Query: {{SkillLevel:Fishing}} >= 10": true}
+			},
+			{
+				"Name": "MermaidGrottoToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"Hearts:Willy":"3,4,5"}
+			}, 
+			{
+				"Name": "MermaidGrottoToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When":	{"Hearts:Willy":"6,7,8"}
+			}, 
+			{
+				"Name": "MermaidGrottoToken",
+				"Value": "1",
+				"When": {"Hearts:Willy":"9,10"}
+			},
+			{
+				"Name": "MermaidGrottoToken",
+				"Value": "1",
+				"When":{"Access Immediately": true}
+			},
+			{
+				"Name": "MermaidGrottoToken",
+				"Value": "1",
+				"When":{"HasMod|contains=Wildflour.SASS": true,"Hearts:WildflourSASS": "7,8,9,10"}
+			},
+
+			{
+				"Name": "MysticalForestToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5, 6, 7, 8}}",
+				"When":	{"SkillLevel:Foraging": "1, 2, 3"}
+			},
+			{
+				"Name": "MysticalForestToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When":{ "SkillLevel:Foraging": "4, 5"}
+			},
+			{
+				"Name": "MysticalForestToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When":{ "SkillLevel:Foraging": "6,7,8"}
+			},
+			{
+				"Name": "MysticalForestToken",
+				"Value": "{{Random: 1, 2}}",
+				"When":{ "SkillLevel:Foraging": "9"}
+			},
+			{
+				"Name": "MysticalForestToken",
+				"Value": "1",
+				"When":{"Query: {{SkillLevel:Foraging}} >= 10": true}
+			},
+			{
+				"Name": "MysticalForestToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"Hearts:Leah":"3,4,5"}
+			}, 
+			{
+				"Name": "MysticalForestToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When": {"Hearts:Leah":"6,7,8"}
+			}, 
+			{
+				"Name": "MysticalForestToken",
+				"Value": "1",
+				"When":{"Hearts:Leah":"9,10"}
+			},
+			{
+				"Name": "MysticalForestToken",
+				"Value": "1",
+				"When":{"Access Immediately": true}
+			},
+
+			{
+				"Name": "MysticalForestToken",
+				"Value": "1",
+				"When":{"HasMod|contains=Wildflour.SASS": true,"Hearts:WildflourSASS": "7,8,9,10"}
+			},
+			
+			{
+				"Name": "RainforestRetreatToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5, 6, 7, 8}}",
+				"When": {"SkillLevel:Fishing": "1, 2, 3"}
+			},
+			{
+				"Name": "RainforestRetreatToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"SkillLevel:Fishing": "4, 5"}
+			},
+			{
+				"Name": "RainforestRetreatToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When":{ "SkillLevel:Fishing": "6,7,8"}
+			},
+			{
+				"Name": "RainforestRetreatToken",
+				"Value": "{{Random: 1, 2}}",
+				"When":{ "SkillLevel:Fishing": "9"}
+			},
+			{
+				"Name": "RainforestRetreatToken",
+				"Value": "1",
+				"When":{"Query: {{SkillLevel:Fishing}} >= 10": true}
+			},
+			{
+				"Name": "RainforestRetreatToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"Hearts:Leo":"3,4,5"}
+			}, 
+			{
+				"Name": "RainforestRetreatToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When": {"Hearts:Leo":"6,7,8"}
+			}, 
+			{
+				"Name": "RainforestRetreatToken",
+				"Value": "1",
+				"When": {"Hearts:Leo":"9,10"}
+			},
+			{
+				"Name": "RainforestRetreatToken",
+				"Value": "1",
+				"When":{"Access Immediately": true}
+			},
+			{
+				"Name": "RainforestRetreatToken",
+				"Value": "1",
+				"When":{"HasMod|contains=Wildflour.SASS": true,"Hearts:WildflourSASS": "7,8,9,10"}
+			},
+			{
+				"Name": "SecretOrchardToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5, 6, 7, 8}}",
+				"When": {"SkillLevel:Farming": "1, 2, 3"}
+			},
+			{
+				"Name": "SecretOrchardToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"SkillLevel:Farming": "4, 5"}
+			},
+			{
+				"Name": "SecretOrchardToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When":{ "SkillLevel:Farming": "6, 7, 8"}
+			},
+			{
+				"Name": "SecretOrchardToken",
+				"Value": "{{Random: 1, 2}}",
+				"When":{ "SkillLevel:Farming": "9"}
+			},
+			{
+				"Name": "SecretOrchardToken",
+				"Value": "1",
+				"When":{"Query: {{SkillLevel:Farming}} >= 10": true}
+			},
+			{
+				"Name": "SecretOrchardToken",
+				"Value": "{{Random: 1, 2, 3, 4, 5}}",
+				"When": {"Hearts:Gus":"3,4,5"}
+			}, 
+			{
+				"Name": "SecretOrchardToken",
+				"Value": "{{Random: 1, 2, 3}}",
+				"When": {"Hearts:Gus":"6, 7"}
+			}, 
+			{
+				"Name": "SecretOrchardToken",
+				"Value": "1",
+				"When": {"Hearts:Gus":"8,9,10"}
+			},
+			{
+				"Name": "SecretOrchardToken",
+				"Value": "1",
+				"When":{"Access Immediately": true}
+			},
+			{
+				"Name": "SecretOrchardToken",
+				"Value": "1",
+				"When":{"HasMod|contains=Wildflour.SASS": true,"Hearts:WildflourSASS": "7,8,9,10"}
+			}
+			
+			],
+
+"Changes": [
+
+  	{
+		"LogName": "Include Abandoned Farmhouse Data",
+		"Action": "Include",
+		"FromFile": "Data/Locations/Abandoned_Farmhouse.json",
+		"When":{"Abandoned Farmhouse":true}
+	},
+
+	{
+		"LogName": "Include Berry Grove Data",
+		"Action": "Include",
+		"FromFile": "Data/Locations/Berry_Grove.json",
+		"When":{"Berry Grove":true}
+	},
+
+	{
+		"LogName": "Include Old Forest Data",
+		"Action": "Include",
+		"FromFile": "Data/Locations/Old_Forest.json",
+		"When":{"Old Forest":true}
+	},
+
+	{
+		"LogName": "Include Secret Orchard Data",
+		"Action": "Include",
+		"FromFile": "Data/Locations/Secret_Orchard.json",
+		"When":{"Secret Orchard":true}
+	},
+
+	{
+		"LogName": "Include Frog Hollow Data",
+		"Action": "Include",
+		"FromFile": "Data/Locations/Frog_Hollow.json",
+		"When":{"Frog Hollow":true}
+	},
+
+	{
+		"LogName": "Include Mermaid Grotto Data",
+		"Action": "Include",
+		"FromFile": "Data/Locations/Mermaid_Grotto.json",
+		"When":{"Mermaid Grotto":true}
+	},
+
+	{
+		"LogName": "Include Mushroom Forest Data",
+		"Action": "Include",
+		"FromFile": "Data/Locations/Mushroom_Forest.json",
+		"When":{"Mushroom Forest":true}
+	},
+
+	{
+		"LogName": "Include Rainforest Retreat Data",
+		"Action": "Include",
+		"FromFile": "Data/Locations/Rainforest_Retreat.json",
+		"When":{"Rainforest Retreat":true}
+	},
+
+	{
+		"LogName": "Include Item Extensions Data",
+		"Action": "Include",
+		"FromFile": "Data/Add_On_Content/Item_Extensions.json",
+		"When":{"HasMod|contains=mistyspring.ItemExtensions":true}
+	},
+
+	{
+		"LogName": "Include Custom Companions Data",
+		"Action": "Include",
+		"FromFile": "Data/Add_On_Content/Custom_Companions.json",
+		"When":{"HasMod|contains=PeacefulEnd.CustomCompanions":true}
+	},
+
+	 {
+		"LogName": "MMAP Data",
+		"Action": "Include",
+		"FromFile": "Data/Add_On_Content/MMAP.json",
+		"When": {"HasMod:|contains= mushymato.MMAP": true}
+    }
+
+	]
+}

@@ -1,0 +1,319 @@
+{
+		
+"Changes": [
+
+	{
+		"LogName": "Load Abandoned Farmhouse Map",
+		"Action": "Load",
+		"Target": "Maps/{{ModId}}_AbandonedFarmhouse",
+		"FromFile": "assets/Maps/AbandonedFarmhouse.tmx"
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"Entries": {
+		"{{ModId}}_AbandonedFarmhouse": {
+			"CreateOnLoad": {
+				"MapPath": "Maps/{{ModId}}_AbandonedFarmhouse",
+				"AlwaysActive":true
+			},
+			"FormerLocationNames": [ "Custom_WF_AbandonedFarmhouse"],
+			"DisplayName": "{{i18n: AbandonedFarmhouse}}",
+			"CanPlantHere": false,
+			"ExcludeFromNpcPathfinding": true,
+            "DefaultArrivalTile": {
+                "X": 48,
+                "Y": 23
+            },
+			"Music": [],
+			"MusicDefault": null,
+			"MusicContext": "Default",
+            "MusicIgnoredInRain": false,
+			"ArtifactSpots": [
+				{
+					"Id": "{{ModId}}_Spring_Seeds",
+					"RandomItemId": [
+						"(O)427",
+						"(O)429"
+              	],
+					"Chance": 1.0,
+					"Season": "spring"
+                },
+				{
+					"Id": "{{ModId}}_Summer_Seeds",
+					"RandomItemId": [
+						"(O)453",
+						"(O)455",
+						"(O)431"
+              	],
+					"Chance": 1.0,
+					"Season": "summer"
+                },
+				{
+					"Id": "{{ModId}}_Fall_Seeds",
+					"RandomItemId": [
+						"(O)431",
+						"(O)425"
+              	],
+					"Chance": 1.0,
+					"Season": "fall"
+                }
+			],
+           "FishAreas": {
+				"Default": {
+					"CrabPotFishTypes": [
+						"freshwater"
+					],
+					"CrabPotJunkChance": 0.3
+				}
+			},
+			"Fish": [
+				{
+					"Id": "{{ModId}}_SmallmouthBass",
+					"ItemId": "(O)137",
+					"Condition": "LOCATION_SEASON Here spring fall"
+				},
+				{
+					"Id": "{{ModId}}_Bream",
+					"ItemId": "(O)132"
+				},
+				{
+					"Id": "{{ModId}}_Catfish",
+					"ItemId": "(O)143",
+					"Condition": "LOCATION_SEASON Here spring fall winter"
+				},
+				{
+					"Id": "{{ModId}}_Sunfish",
+					"ItemId": "(O)145",
+					"Condition": "LOCATION_SEASON Here spring summer"
+				},
+				{
+					"Id": "{{ModId}}_GreenAlgae",
+					"ItemId": "(O)153"
+				},
+				{
+					"Id": "{{ModId}}_RainbowTrout",
+					"ItemId": "(O)138",
+					"Season": "Summer"
+				},
+				{
+					"Id": "{{ModId}}_Pike",
+					"ItemId": "(O)144",
+					"Condition": "LOCATION_SEASON Here summer winter"
+				},
+				{
+
+					"Id": "{{ModId}}_TigerTrout",
+					"ItemId": "(O)699",
+					"Condition": "LOCATION_SEASON Here fall winter"
+				},
+				{
+					"Id": "{{ModId}}_Perch",
+					"ItemId": "(O)141",
+					"Season": "Winter"
+				}
+			],
+            "Forage": [
+				{
+                    "Id": "{{ModId}}_Farmhouse_Spring_Crops",
+					"RandomItemId": [
+						"(O)176",
+						"(O)174",
+						"(O)Carrot",
+						"(O)192",
+						"(O)22",
+						"(O)190"
+              		],
+					"Season":"spring",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_Farmhouse_Spring_Forage",
+					"RandomItemId": [
+						"(O)22",
+						"(O)16",
+						"(O)20",
+						"(O)18",
+						"(O)399",
+						"(O)257"
+              		],
+					"Season":"spring",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_Farmhouse_WAG_Spring_Crops",
+					"RandomItemId": [
+						"(O)Wildflour.AtelierGoods_Mint",
+						"(O)Wildflour.AtelierGoods_Thyme",
+						"(O)Wildflour.AtelierGoods_Wild_Strawberry",
+              		],
+					"Season":"spring",
+                    "Chance": 1.0,
+					"Condition":"{{HasMod |contains=Wildflour.AtelierGoods}}"
+                },
+				{
+                    "Id": "{{ModId}}_Farmhouse_Summer_Crops",
+					"RandomItemId": [
+						"(O)180",
+						"(O)182",
+						"(O)376",
+						"(O)SummerSquash",
+						"(O)260",
+						"(O)421",
+						"(O)254"
+              		],
+					"Season":"summer",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_Farmhouse_Summer_Forage",
+					"RandomItemId": [
+						"(O)396",
+						"(O)402",
+						"(O)398",
+						"(O)259"
+              		],
+					"Season":"spring",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_Farmhouse_WAG_Summer_Crops",
+					"RandomItemId": [
+						"(O)Wildflour.AtelierGoods_Basil",
+						"(O)Wildflour.AtelierGoods_Thyme",
+						"(O)Wildflour.AtelierGoods_Mint",
+						"(O)Wildflour.AtelierGoods_Wormwood"
+              		],
+					"Season":"summer",
+                    "Chance": 1.0,
+					"Condition":"{{HasMod |contains=Wildflour.AtelierGoods}}"
+                },
+				{
+                    "Id": "{{ModId}}_Farmhouse_Fall_Forage",
+					"RandomItemId": [
+						"(O)406",
+						"(O)408",
+						"(O)410",
+						"(O)281"
+              		],
+					"Season":"spring",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_Farmhouse_Fall_Crops",
+					"RandomItemId": [
+						"(O)442",
+						"(O)421",
+						"(O)276",
+						"(O)274",
+						"(O)595",
+						"(O)Broccoli"
+              		],
+					"Season":"fall",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_Farmhouse_WAG_Fall_Crops",
+					"RandomItemId": [
+						"(O)Wildflour.AtelierGoods_Red_Onion",
+						"(O)Wildflour.AtelierGoods_Sage",
+						"(O)Wildflour.AtelierGoods_Rosemary"
+              		],
+					"Season":"fall",
+					"Condition":"{{HasMod |contains=Wildflour.AtelierGoods}}",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_Farmhouse_Winter_Forage",
+					"RandomItemId": [
+						"(O)412",
+						"(O)414",
+						"(O)416",
+						"(O)418"
+              		],
+					"Season":"spring",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_Farmhouse_WAG_Winter_Crops",
+					"RandomItemId": [
+						"(O)Wildflour.AtelierGoods_Cinnamon",
+						"(O)Wildflour.AtelierGoods_Rosemary",
+						"(O)Wildflour.AtelierGoods_Sage"
+              		],
+					"Season":"winter",
+                    "Chance": 1.0,
+					"Condition":"{{HasMod |contains=Wildflour.AtelierGoods}}"
+                },
+				{
+                    "Id": "{{ModId}}_Farmhouse_Winter_Crops",
+					"RandomItemId": [
+						"(O)305",
+						"(O)178",
+						"(O)414",
+						"Powdermelon"
+              		],
+					"Season":"winter",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_Farmhouse_Seed_Node",
+					"RandomItemId": [
+						"Wildflour.NooksCrannies_Berry_Node",
+          				"Wildflour.NooksCrannies_Herb_Seed_Node",
+              		],
+                    "Chance": 1.0
+                },
+			],
+			"MinDailyForageSpawn": 3,
+			"MaxDailyForageSpawn": 8,
+          	"MaxSpawnedForageAtOnce": 12,
+          	"CustomFields": {
+				"mistyspring.ItemExtensions/ClumpRemovalDays": 6,
+				"mistyspring.ItemExtensions/NodeRemovalDays": 6,
+			}
+		}
+	}
+	},
+
+//-----------------------------MAP PATCHES---------------------------//
+
+	{
+		"LogName":"Map Patch Backwoods Entrance for Abandoned Farmhouse",
+		"Action": "EditMap",
+		"Target": "Maps/Backwoods", 
+		"FromFile": "assets/Maps/Backwoods_AbandonedFarmhouseWarp.tmx",
+		"ToArea": {
+				"X": 28,
+				"Y": 26,
+				"Width": 4,
+				"Height": 2
+			},
+		"When": {"AbandonedFarmhouseToken": "1"}	
+	},	
+
+//-----------------------------WARPS---------------------------//
+
+	{
+		"LogName":"Add Warp to Backwoods for Abandoned Farmhouse",
+		"Action": "EditMap",
+		"Target": "Maps/Backwoods",
+		"AddWarps": ["29 27 {{ModId}}_AbandonedFarmhouse 49 22"],
+		"When": {"AbandonedFarmhouseToken": "1"}	
+	},
+
+	{
+		"LogName":"Add Warps from Abandoned Farmhouse to Backwoods",
+		"Action": "EditMap",
+		"Target": "Maps/{{ModId}}_AbandonedFarmhouse",
+		"AddWarps": [
+				"51 20 Backwoods 29 28",
+				"51 21 Backwoods 29 28",
+				"51 22 Backwoods 30 28",
+				"51 23 Backwoods 30 28",
+				"51 24 Backwoods 30 28"
+			]
+	},
+	]
+}

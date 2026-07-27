@@ -1,0 +1,33 @@
+{
+    "Name": "[CP] Reactive Shops Expansion",
+    "Author": "Bri",
+    "Version": "1.0.5",
+    "Description": "Expands shop inventories dynamically as the player progresses and builds friendships.",
+    "UniqueID": "Bri.ShopExpansion",
+    "UpdateKeys": [ "Nexus:28435" ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+	"Dependencies": [
+		{
+			"UniqueID": "DIGUS.MailFrameworkMod",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Rafseazz.RSVCP",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Theoddon.BalanceOverhaul",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "pokkki.NoSeedsForCoin",
+			"IsRequired": false
+		}
+	]
+}

@@ -1,0 +1,186 @@
+{
+  "Changes": [
+  
+	//Set CT for building Tilly's shop 
+	{
+		"LogName": "Set CT for building Tilly's shop",
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {
+			"{{ModId}}.Tilly_ConstructionTime": {
+				"Id": "{{ModId}}.Tilly_ConstructionTime",
+				"Condition": "PLAYER_SPECIAL_ORDER_COMPLETE Any {{ModId}}.Tilly_ConstructionOrder",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "AddConversationTopic {{ModId}}.Tilly_ConstructionCT 3",
+				"MarkActionApplied": true,
+			},
+			
+			"{{ModId}}.Tilly_ConstructionOrderMailflag": {
+				"Id": "{{ModId}}.Tilly_ConstructionOrderMailflag",
+				"Condition": "PLAYER_SPECIAL_ORDER_COMPLETE Any {{ModId}}.Tilly_ConstructionOrder",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}.Tilly_ConstructionOrderComplete",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			
+			"{{ModId}}.Tilly_GrandOpeningMailflag": {
+				"Id": "{{ModId}}.Tilly_GrandOpeningMailflag",
+				"Condition": "PLAYER_SPECIAL_ORDER_COMPLETE Any {{ModId}}.Tilly_ConstructionOrder, !PLAYER_HAS_CONVERSATION_TOPIC Current {{ModId}}.Tilly_ConstructionCT",
+				"Trigger": "DayStarted",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}.Tilly_GrandOpeningMail tomorrow",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+		},
+	},
+	
+	//Mail 
+	
+	{
+		"LogName": "Mail Strings",
+		"Action": "EditData",
+		"Target": "Data/mail",
+		"Entries": {
+			"{{ModId}}.Tilly_ConstructionOrderComplete": "{{i18n:Wem.Bundle.Tilly_ConstructionOrderComplete.text}}[letterbg Wem.Bundle.Tilly\\MailPaper 0][textcolor black][#]{{i18n:Wem.Bundle.Tilly_ConstructionOrderComplete.title}}",
+			
+			"{{ModId}}.Tilly_GrandOpeningMail": "{{i18n:Wem.Bundle.Tilly_GrandOpeningMail.text}}[letterbg Wem.Bundle.Tilly\\MailPaper 0][textcolor black][#]{{i18n:Wem.Bundle.Tilly_GrandOpeningMail.title}}",
+		},
+	},
+	
+	//SO 
+	// Shop Construction
+	{
+		"LogName": "Special Order Data",
+		"Action": "EditData",
+		"Target": "Data/SpecialOrders",
+		"Entries": {
+			"{{ModId}}.Tilly_ConstructionOrder": {
+				"Name": "[Wem.Bundle.Tilly.SO_ConstructionOrder_Name]",
+				"Requester": "{{ModId}}.Tilly",
+				"Duration": "TwoWeeks",
+				"Repeatable": false,
+				"RequiredTags": "event_{{ModId}}.Tilly_ShopPonder",
+				"OrderType": "",
+				"SpecialRule": "",
+				"Text": "[Wem.Bundle.Tilly.SO_ConstructionOrder_Text]",
+				"ItemToRemoveOnEnd": null,
+				"MailToRemoveOnEnd": null,
+				"RandomizedElements": null,
+				"Objectives": [
+					{
+						"Type": "Donate",
+						"Text": "[Wem.Bundle.Tilly_ConstructionOrderObjective_Text1]",
+						"RequiredCount": "450",
+						"Data": {
+							"DropBox": "RobinWood",
+							  "DropBoxGameLocation": "ScienceHouse",
+							  "DropBoxIndicatorLocation": "10.5 18",
+							  "AcceptedContextTags": "item_wood",
+						},
+					},
+					{
+						"Type": "Donate",
+						"Text": "[Wem.Bundle.Tilly_ConstructionOrderObjective_Text2]",
+						"RequiredCount": "200",
+						"Data": {
+							"DropBox": "RobinWood",
+							  "DropBoxGameLocation": "ScienceHouse",
+							  "DropBoxIndicatorLocation": "10.5 18",
+							  "AcceptedContextTags": "item_stone",
+						},
+					},
+					
+				],
+				"Rewards": [
+					{
+						"Type": "Money",
+						"Data": {
+							"Amount": "10000",
+						}
+					},
+					{
+						"Type": "Mail",
+						"Data": {
+							"MailReceived": "{{ModId}}.Tilly_ConstructionOrderComplete",
+						}
+					},
+					{
+						"Type": "Friendship",
+						"Data": {
+							"Amount": "500",
+							"Target": "{{ModId}}.Tilly",
+						}
+					},
+				]
+			},
+		},
+	},
+	
+	//Events 
+	
+	//14-Heart, Shop Story Start 
+	{
+		"LogName": "12-Heart Shop Story Start",
+		"Action": "EditData",
+		"Target": "Data/Events/Farmhouse",
+		"Entries": {
+			"{{ModId}}.Tilly_ShopPonder/Friendship {{ModId}}.Tilly 3000/Spouse {{ModId}}.Tilly/Time 900 2200/NPCVisibleHere {{ModId}}.Tilly/SawEvent {{ModId}}.Tilly_8Hearts.2/!SawEvent 502261": "echos/31 4/farmer 24 5 1 {{ModId}}.Tilly 31 5 0/move farmer 6 0 1/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.Ponder.0}}\"/pause 800/emote farmer 8/pause 800/faceDirection {{ModId}}.Tilly 3/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.Ponder.1}}\"/pause 800/message \"{{i18n:Wem.Bundle.Tilly_12H.Ponder.2}}\"/pause 800/emote farmer 32 true/pause 200/emote {{ModId}}.Tilly 56 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.Ponder.3}}\"/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.Ponder.4}}\"/pause 800/emote farmer 36 false/pause 800/message \"{{i18n:Wem.Bundle.Tilly_12H.Ponder.5}}\"/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.Ponder.6}}\"/pause 800/emote {{ModId}}.Tilly 40 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.Ponder.7}}\"/pause 800/emote farmer 56 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.Ponder.8}}\"/pause 800/emote farmer 32 false/pause 800/emote farmer 8 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.Ponder.9}}\"/move {{ModId}}.Tilly 2 0 2 farmer 2 0 2 true/globalFade/viewport -1000 -1000/addSpecialOrder {{ModId}}.Tilly_ConstructionOrder/pause 100/end",
+
+		},
+		
+	},
+	
+	//Grand Opening - Vanilla
+	{
+		"LogName": "Tilly Shop Grand Opening",
+		"Action": "EditData",
+		"Target": "Data/Events/{{ModId}}.Tilly_TillyShop",
+		"Entries": {
+			"{{ModId}}.Tilly_GrandOpening/Time 900 2200/LocalMail {{ModId}}.Tilly_GrandOpeningMail/!SawEvent 502261": "50s/5 10/{{ModId}}.Tilly 7 9 2 Vincent 6 11 0 Jas 7 11 0 Penny 8 11 0 Maru 9 11 0 Evelyn 5 11 0 George 5 10 1 Emily 4 11 0 Elliott 6 12 0 Leah 5 12 0 Robin 6 13 0 Harvey 5 13 0 Lewis 6 6 2 Willy 8 6 2 Sam 5 9 1 Sebastian 4 10 1 Abigail 4 9 1 Marnie 5 6 2 Gus 7 6 2 Caroline 7 13 0 Haley 10 10 3 Jodi 3 9 1 Kent 3 10 1 farmer 7 12 0/viewport 7 10/skippable/pause 1500/emote {{ModId}}.Tilly 32 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.0}}\"/pause 500/emote Penny 32 true/emote Leah 32 true/pause 200/emote Robin 32 true/emote Abigail 32 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.1}}\"/pause 300/emote Sam 56 true/emote Emily 56 true/pause 200/emote Penny 32 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.2}}\"/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.3}}\"/pause 500/emote Emily 56 true/emote Sam 56 true/pause 200/emote Penny 32 true/emote Robin 56 true/emote Lewis 32 true/pause 200/emote Elliott 32 true/emote Maru 32 true/pause 200/emote Marnie 32 true/emote Gus 56 true/emote Jodi 56 true/pause 200/emote Evelyn 32 true/emote Vincent 32 true/emote Jas 32 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.4}}\"/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.5}}\"/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.16}}\"/pause 800/emote farmer 32 false/pause 800/emote Sebastian 56 true/emote Penny 32 true/pause 300/emote Gus 32 true/pause 200/emote Maru 32 true/emote Caroline 32 true/textAboveHead Elliott \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.6}}\"/emote Haley 32 true/emote Abigail 32 true/pause 800/textAboveHead Sam \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.7}}\"/pause 200/emote Leah 32 true/pause 200/emote Willy 32 true/emote Harvey 32 true/pause 1000/textAboveHead Vincent \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.8}}\"/pause 100/globalFade/viewport -1000 -1000/beginSimultaneousCommand/warp Vincent 1 11 true/showFrame Vincent 24/warp Jas 4 11 true/showFrame Jas 22/warp Penny 7 6 true/warp Caroline 2 9 true/animate Caroline false true 800 20 20 20 20 20 20 20 20 21/warp Evelyn 10 7 true/showFrame Evelyn 16 true/warp George 10 8 true/animate George false true 200 16 17 18 19/warp Elliott 13 7 true/animate Elliott false true 800 33 33 33 33 33 33 32/warp Leah 10 12 true/animate Leah false true 400 32 32 33 34/warp Sam 5 12 true/faceDirection Sam 2/warp Sebastian 4 13 true/faceDirection Sebastian 1/warp Abigail 6 13 true/faceDirection Abigail 3/warp Emily 13 13 true/showFrame Emily 54/warp Jodi 4 9 true/faceDirection Jodi 0/faceDirection {{ModId}}.Tilly 3/warp Kent -10 -10 true/warp Gus -10 -10 true/warp Maru -10 -10 true/warp Willy -10 -10 true/warp Marnie -10 -10 true/warp Lewis -10 -10 true/warp Willy -10 -10 true/warp Harvey -10 -10 true/warp Robin -10 -10 true/warp Haley -10 -10 true/endSimultaneousCommand/globalFadeToClear/viewport 7 10/pause 1000/textAboveHead {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.9}}\"/pause 2000/textAboveHead Jodi \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.10}}\"/pause 500/faceDirection {{ModId}}.Tilly 2/pause 1000/move {{ModId}}.Tilly 0 2 2/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.11}}\"/pause 200/emote farmer 32 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.12}}\"/pause 200/emote farmer 56 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.13}}\"/addItem {{ModId}}.Tilly_HoneyCake/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.14}}\"/pause 200/emote farmer 20 true/pause 300/emote {{ModId}}.Tilly 60 false/pause 200/speed {{ModId}}.Tilly 5/move {{ModId}}.Tilly -1 0 0/speed {{ModId}}.Tilly 5/move {{ModId}}.Tilly 0 -4 3/speed {{ModId}}.Tilly 5/move {{ModId}}.Tilly -2 0 2/pause 200/textAboveHead {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpening.15}}\"/pause 500/globalFade/viewport -1000 -1000/pause 100/end",
+
+		},
+		"When": {
+			"HasMod | contains = FlashShifter.StardewValleyExpandedCP": false,
+		}
+	},
+	
+	//Grand Opening - SVE
+	{
+		"LogName": "Tilly Shop Grand Opening",
+		"Action": "EditData",
+		"Target": "Data/Events/{{ModId}}.Tilly_TillyShop",
+		"Entries": {
+			"{{ModId}}.Tilly_GrandOpening/Time 900 2200/LocalMail {{ModId}}.Tilly_GrandOpeningMail/!SawEvent 502261": "50s/5 10/{{ModId}}.Tilly 7 9 2 Vincent 6 11 0 Jas 7 11 0 Penny 8 11 0 Maru 9 11 0 Evelyn 5 11 0 George 5 10 1 Emily 4 11 0 Elliott 6 12 0 Leah 5 12 0 Robin 6 13 0 Sophia 4 13 0 Scarlett 5 13 0 Lewis 6 6 2 Gunther 8 6 2 Sam 5 9 1 Sebastian 4 10 1 Abigail 4 9 1 Marnie 5 6 2 Gus 7 6 2 Caroline 7 13 0 Haley 10 10 3 Harvey 9 13 0 Jodi 3 9 1 Olivia 3 10 1 farmer 7 12 0 Victor 10 12 0/viewport 7 10/skippable/pause 1500/emote {{ModId}}.Tilly 32 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.0}}\"/pause 500/emote Penny 32 true/emote Leah 32 true/pause 200/emote Robin 32 true/emote Abigail 32 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.1}}\"/pause 300/emote Sam 56 true/emote Emily 56 true/pause 200/emote Penny 32 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.2}}\"/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.3}}\"/pause 500/emote Emily 56 true/emote Sam 56 true/pause 200/emote Penny 32 true/emote Robin 56 true/emote Lewis 32 true/pause 200/emote Elliott 32 true/emote Maru 32 true/pause 200/emote Marnie 32 true/emote Gus 56 true/emote Jodi 56 true/pause 200/emote Evelyn 32 true/emote Vincent 32 true/pause 300/emote Jas 32 true/emote Victor 32 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.4}}\"/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.5}}\"/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.16}}\"/pause 800/emote farmer 32 false/pause 800/emote Sebastian 56 true/emote Penny 32 true/pause 300/emote Gus 32 true/pause 200/emote Maru 32 true/emote Caroline 32 true/emote Haley 32 true/emote Abigail 32 true/pause 800/textAboveHead Sam \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.6}}\"/pause 200/emote Leah 32 true/pause 200/emote Gunther 32 true/pause 300/emote Victor 56 true/textAboveHead Sophia \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.7}}\"/pause 500/textAboveHead Vincent \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.8}}\"/pause 1000/globalFade/viewport -1000 -1000/beginSimultaneousCommand/warp Vincent 1 11 true/showFrame Vincent 24/warp Jas 4 11 true/showFrame Jas 22/warp Penny 2 10 true/animate Penny false true 800 18 18 18 18 18 18 18 19/warp Sophia 7 6 true/warp Caroline 2 9 true/animate Caroline false true 800 20 20 20 20 20 20 20 20 21/warp Evelyn 10 7 true/showFrame Evelyn 16 true/warp George 10 8 true/animate George false true 200 16 17 18 19/warp Victor 9 6 true/warp Elliott 13 7 true/animate Elliott false true 800 33 33 33 33 33 33 32/warp Leah 10 12 true/animate Leah false true 400 32 32 33 34/warp Sam 5 12 true/faceDirection Sam 2/warp Sebastian 4 13 true/faceDirection Sebastian 1/warp Abigail 6 13 true/faceDirection Abigail 3/warp Emily 13 13 true/showFrame Emily 54/warp Jodi 4 9 true/faceDirection Jodi 0/warp Gunther 9 10 true/showFrame Gunther 19/faceDirection {{ModId}}.Tilly 3/warp Olivia -10 -10 true/warp Harvey -10 -10 true/warp Gus -10 -10 true/warp Scarlett -10 -10 true/warp Maru -10 -10 true/warp Marnie -10 -10 true/warp Lewis -10 -10 true/warp Robin -10 -10 true/warp Haley -10 -10 true/endSimultaneousCommand/globalFadeToClear/viewport 7 10/pause 1000/textAboveHead {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.9}}\"/pause 2000/textAboveHead Jodi \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.10}}\"/pause 500/faceDirection {{ModId}}.Tilly 2/pause 1000/move {{ModId}}.Tilly 0 2 2/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.11}}\"/pause 200/emote farmer 32 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.12}}\"/pause 200/emote farmer 56 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.13}}\"/addItem {{ModId}}.Tilly_HoneyCake/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.14}}\"/pause 200/emote farmer 20 true/pause 300/emote {{ModId}}.Tilly 60 false/pause 200/speed {{ModId}}.Tilly 5/move {{ModId}}.Tilly -1 0 0/speed {{ModId}}.Tilly 5/move {{ModId}}.Tilly 0 -4 3/speed {{ModId}}.Tilly 5/move {{ModId}}.Tilly -2 0 2/pause 200/textAboveHead {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly_12H.GrandOpeningSVE.15}}\"/pause 500/globalFade/viewport -1000 -1000/pause 100/end",
+
+		},
+		"When": {
+			"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+		}
+	},
+	
+	//Family Visit 
+	{ 
+		"LogName": "Family Intro",
+		"Action": "EditData",
+		"Target": "Data/Events/Farmhouse",
+		"Entries": {
+			"{{ModId}}.Tilly_FamIntro/Friendship {{ModId}}.Tilly 3250/Spouse {{ModId}}.Tilly/Time 900 2200/SawEvent {{ModId}}.Tilly_GrandOpening": "playful/31 6/farmer 26 5 1 {{ModId}}.Tilly 31 6 3/skippable/move farmer 4 0 2/pause 800/emote farmer 8 false/pause 100/message \"{{i18n:Tilly_FamIntro.0}}\"/pause 800/emote {{ModId}}.Tilly 40 false/pause 400/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamIntro.1}}\"/pause 400/emote {{ModId}}.Tilly 12/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamIntro.2}}\"/pause 800/emote farmer 40 false/emote farmer 8 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamIntro.3}}\"/pause 500/emote farmer 60 false/emote farmer 8 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamIntro.4}}\"/emote farmer 8 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamIntro.5}}\"/pause 200/emote {{ModId}}.Tilly 12 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamIntro.6}}\"/pause 800/emote farmer 28 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamIntro.7}}\"/pause 800/emote farmer 32 false/emote farmer 56 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamIntro.8}}\"/pause 800/emote farmer 20 true/pause 200/emote {{ModId}}.Tilly 60 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamIntro.9}}\"/pause 200/textAboveHead {{ModId}}.Tilly \"{{i18n:Tilly_FamIntro.10}}\"/pause 700/globalFade/viewport -1000 -1000/pause 100/end",
+
+		},
+	},	
+	{ 
+		"LogName": "Family Visit",
+		"Action": "EditData",
+		"Target": "Data/Events/BusStop",
+		"Entries": {
+		"{{ModId}}.Tilly_FamVisit/Friendship {{ModId}}.Tilly 3500/Spouse {{ModId}}.Tilly/Weather sunny/Time 700 830/SawEvent {{ModId}}.Tilly_FamIntro/DayOfWeek Sat": "playful/24 17/{{ModId}}.Tilly 10 23 1 {{ModId}}.Rebecca 24 17 0 {{ModId}}.Benjamin 25 14 1 {{ModId}}.Landon 23 16 3 farmer -10 -10 0 Gus -10 -10 0 Penny -10 -10 0 Vincent -10 -10 0 Jas -10 -10 0 Elliott -10 -10 0 Evelyn -10 -10 0 Maru -10 -10 0 Caroline -10 -10 0 Harvey -10 -10 0/skippable/animate {{ModId}}.Landon false true 200 16 17 18 19/animate {{ModId}}.Benjamin false true 100 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 18 19 20 20 20 20 20 20 20 20 19 22 22 23 23/addConversationTopic {{ModId}}.Tilly_VisitOver 3/pause 600/faceDirection {{ModId}}.Rebecca 1/pause 400/faceDirection {{ModId}}.Rebecca 3/pause 400/faceDirection {{ModId}}.Rebecca 2/pause 800/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.0}}\"/pause 800/textAboveHead {{ModId}}.Landon \"{{i18n:Tilly_FamVisit.1}}\"/speed {{ModId}}.Tilly 3/move {{ModId}}.Tilly 14 0 1 true/pause 2000/textAboveHead {{ModId}}.Benjamin \"{{i18n:Tilly_FamVisit.2}}\"/pause 2500/textAboveHead {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.3}}\"/emote {{ModId}}.Tilly 16 true/jump {{ModId}}.Tilly/stopAnimation {{ModId}}.Landon 0/stopAnimation {{ModId}}.Benjamin 0/pause 500/faceDirection {{ModId}}.Tilly 0/pause 700/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.4}}\"/pause 500/speed {{ModId}}.Rebecca 7/move {{ModId}}.Rebecca 0 5 2 true/textAboveHead {{ModId}}.Benjamin \"{{i18n:Tilly_FamVisit.5}}\"/pause 300/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.6}}\"/pause 400/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.7}}\"/pause 800/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.8}}\"/pause 300/move {{ModId}}.Landon 0 5 2 {{ModId}}.Benjamin 0 7 2 true/textAboveHead {{ModId}}.Landon \"{{i18n:Tilly_FamVisit.9}}\"/pause 400/textAboveHead {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.10}}\"/pause 500/textAboveHead {{ModId}}.Benjamin \"{{i18n:Tilly_FamVisit.11}}\"/pause 400/emote {{ModId}}.Tilly 40 false/pause 200/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.12}}\"/pause 200/textAboveHead {{ModId}}.Landon \"{{i18n:Tilly_FamVisit.13}}\"/pause 500/emote {{ModId}}.Tilly 12 false/pause 500/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.14}}\"/pause 500/emote {{ModId}}.Tilly 12 false/pause 300/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.15}}\"/pause 500/speak {{ModId}}.Landon \"{{i18n:Tilly_FamVisit.16}}\"/pause 200/textAboveHead {{ModId}}.Benjamin \"{{i18n:Tilly_FamVisit.17}}\"/pause 200/emote {{ModId}}.Landon 12 true/pause 400/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.18}}\"/pause 500/emote {{ModId}}.Tilly 12 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.19}}\"/pause 800/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.20}}\"/pause 500/faceDirection {{ModId}}.Tilly 1/pause 400/emote {{ModId}}.Tilly 12 false/pause 500/faceDirection {{ModId}}.Tilly 0/pause 800/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.21}}\"/pause 200/textAboveHead {{ModId}}.Landon \"{{i18n:Tilly_FamVisit.22}}\"/pause 600/emote {{ModId}}.Tilly 12 false/pause 200/faceDirection {{ModId}}.Tilly 1/pause 200/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.23}}\"/textAboveHead {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.24}}\"/move {{ModId}}.Tilly 2 0 1 {{ModId}}.Benjamin 0 1 1 {{ModId}}.Landon 0 1 1 false/globalFade/viewport -1000 -1000/pause 100/changeLocation Saloon/warp {{ModId}}.Tilly 9 22 true/warp {{ModId}}.Rebecca 10 21 true/warp {{ModId}}.Benjamin 11 21 true/warp {{ModId}}.Landon 12 21 true/positionOffset {{ModId}}.Landon 0 20 true/warp Gus 17 18 true/faceDirection {{ModId}}.Tilly 1/faceDirection farmer 0/faceDirection {{ModId}}.Rebecca 2/faceDirection {{ModId}}.Benjamin 2/faceDirection {{ModId}}.Landon 3/faceDirection Gus 0/advancedMove Gus true -4 0 2 7000 4 0 2 7000/changeMapTile Front 10 21 855/changeMapTile Front 11 21 856/addObject 11 21 (O)730 10/pause 200/message \"{{i18n:Tilly_FamVisit.25}}\"/pause 800/globalFadeToClear/viewport 11 20/pause 1000/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.26}}\"/pause 800/emote {{ModId}}.Tilly 12 false/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.27}}\"/pause 800/speak {{ModId}}.Landon \"{{i18n:Tilly_FamVisit.28}}\"/pause 500/emote {{ModId}}.Benjamin 12 false/pause 500/speak {{ModId}}.Benjamin \"{{i18n:Tilly_FamVisit.29}}\"/textAboveHead {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.30}}\"/pause 500/emote {{ModId}}.Tilly 12 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.31}}\"/pause 500/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.32}}\"/pause 400/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.33}}\"/pause 500/speak {{ModId}}.Benjamin \"{{i18n:Tilly_FamVisit.34}}\"/pause 500/emote {{ModId}}.Tilly  12 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.35}}\"/pause 500/emote {{ModId}}.Benjamin 28 false/textAboveHead {{ModId}}.Landon \"{{i18n:Tilly_FamVisit.36}}\"/pause 800/emote {{ModId}}.Tilly 12 true/warp farmer 14 24/faceDirection farmer 0/move farmer 0 -1 3/pause 500/emote farmer 8 false/move farmer -4 0 0/pause 400/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.37}}\"/pause 400/emote farmer 32 false/pause 400/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.38}}\"/pause 500/emote farmer 56 false/pause 600/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.39}}\"/pause 500/speak {{ModId}}.Landon \"{{i18n:Tilly_FamVisit.40}}\"/pause 500/emote {{ModId}}.Tilly 12 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.41}}\"/pause 500/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.42}}\"/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.43}}\"/textAboveHead {{ModId}}.Landon \"{{i18n:Tilly_FamVisit.44}}\"/pause 500/emote {{ModId}}.Rebecca 12 false/pause 500/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.45}}\"/pause 500/emote {{ModId}}.Tilly 12 false/pause 500/emote farmer 56 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.46}}\"/pause 500/speak {{ModId}}.Benjamin \"{{i18n:Tilly_FamVisit.47}}\"/pause 500/emote {{ModId}}.Tilly 12 true/message \"{{i18n:Tilly_FamVisit.48}}\"/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.49}}\"/pause 400/emote {{ModId}}.Rebecca 16 true/emote {{ModId}}.Landon 16 true/emote {{ModId}}.Benjamin 16 false/pause 1000/faceDirection {{ModId}}.Tilly 2/pause 500/emote {{ModId}}.Tilly 40 false/pause 700/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.50}}\"/emote {{ModId}}.Rebecca 8 true/pause 200/emote {{ModId}}.Landon 8 true/pause 300/emote {{ModId}}.Benjamin 8 true/pause 300/emote farmer 28 true/pause 200/textAboveHead {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.51}}\"/pause 800/globalFade/viewport -200 -200/changeLocation {{ModId}}.Tilly_TillyShop/warp Gus -10 -10 true/warp {{ModId}}.Tilly -10 -10 true/warp {{ModId}}.Rebecca -10 -10 true/warp {{ModId}}.Landon -10 -10 true/warp {{ModId}}.Benjamin -10 -10 true/warp farmer -10 -10 true/warp Penny 4 7 true/faceDirection Penny 2/warp Harvey 4 9 true/faceDirection Harvey 0/warp Elliott 13 7 true/faceDirection Elliott 2/warp Evelyn 10 13 true/faceDirection Evelyn 1/warp Vincent 1 11 true/showFrame Vincent 24/warp Caroline 18 9 true/faceDirection Caroline 0/warp Jas 4 11 true/showFrame Jas 22/warp Maru 7 6 true/faceDirection Maru 0/warp {{ModId}}.Tilly 7 10 true/faceDirection {{ModId}}.Tilly 2/warp {{ModId}}.Rebecca 8 11 true/faceDirection {{ModId}}.Rebecca 3/warp {{ModId}}.Benjamin 5 11 true/faceDirection {{ModId}}.Benjamin 1/warp {{ModId}}.Landon 6 12 true/faceDirection {{ModId}}.Landon 0/warp farmer 6 10 true/faceDirection farmer 2/animate Elliott false true 800 33 33 33 33 33 33 32/globalFadeToClear/viewport 7 10/textAboveHead Penny \"{{i18n:Tilly_FamVisit.52}}\"/pause 200/faceDirection {{ModId}}.Rebecca 2/pause 400/faceDirection {{ModId}}.Rebecca 1/pause 200/faceDirection {{ModId}}.Rebecca 2/pause 200/faceDirection {{ModId}}.Rebecca 3/pause 700/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.53}}\"/textAboveHead Harvey \"{{i18n:Tilly_FamVisit.54}}\"/pause 300/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.55}}\"/pause 400/emote {{ModId}}.Rebecca 16 true/emote {{ModId}}.Landon 16 true/emote {{ModId}}.Benjamin 16 false/pause 400/speak {{ModId}}.Benjamin \"{{i18n:Tilly_FamVisit.56}}\"/pause 500/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.57}}\"/pause 400/emote {{ModId}}.Tilly 16 true/pause 300/emote farmer 56 false/pause 600/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.58}}\"/move Penny -2 0 0 true/pause 500/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.59}}\"/pause 500/emote {{ModId}}.Tilly 40 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.60}}\"/pause 500/emote {{ModId}}.Rebecca 40 true/emote {{ModId}}.Benjamin 40 false/pause 400/speak {{ModId}}.Benjamin \"{{i18n:Tilly_FamVisit.61}}\"/pause 500/move {{ModId}}.Tilly 0 1 1 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.62}}\"/pause 400/emote {{ModId}}.Rebecca 28 true/emote {{ModId}}.Benjamin 28 false/pause 500/showFrame {{ModId}}.Rebecca 16/pause 500/showFrame {{ModId}}.Rebecca 17/shake {{ModId}}.Rebecca 1000/pause 1100/showFrame {{ModId}}.Rebecca 12/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.63}}\"/pause 500/speak {{ModId}}.Benjamin \"{{i18n:Tilly_FamVisit.64}}\"/pause 500/faceDirection {{ModId}}.Tilly 3/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.65}}\"/pause 500/faceDirection {{ModId}}.Tilly 1/pause 500/speak {{ModId}}.Rebecca \"{{i18n:Tilly_FamVisit.66}}\"/pause 500/emote {{ModId}}.Tilly 32 false/move {{ModId}}.Tilly 1 0 1/showFrame {{ModId}}.Rebecca 19/showFrame {{ModId}}.Tilly 49/pause 500/emote {{ModId}}.Benjamin 32 true/pause 300/textAboveHead {{ModId}}.Landon \"{{i18n:Tilly_FamVisit.67}}\"/pause 200/speak {{ModId}}.Benjamin \"{{i18n:Tilly_FamVisit.68}}\"/pause 500/emote farmer 32 false/warp {{ModId}}.Tilly 7 11 true/showFrame {{ModId}}.Rebecca 12/faceDirection {{ModId}}.Tilly 1/pause 300/faceDirection {{ModId}}.Tilly 3/pause 300/speak {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.69}}\"/pause 500/emote {{ModId}}.Rebecca 20 true/pause 200/emote {{ModId}}.Benjamin 32 false/speak {{ModId}}.Benjamin \"{{i18n:Tilly_FamVisit.70}}\"/pause 600/emote {{ModId}}.Tilly 32 true/emote farmer 56 false/pause 500/textAboveHead {{ModId}}.Landon \"{{i18n:Tilly_FamVisit.71}}\"/pause 1000/textAboveHead {{ModId}}.Tilly \"{{i18n:Tilly_FamVisit.72}}\"/pause 300/globalFade/viewport -200 -200/pause 100/end",
+
+		},
+	},
+  
+  ]
+}

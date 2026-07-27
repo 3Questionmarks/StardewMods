@@ -1,0 +1,97 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.SolsticePiercer": {
+          "Texture": "Mods/CapeStardew/Weapons/Solstice Piercer",
+          "SpriteIndex": 0,
+          "Name": "Solstice Piercer",
+          "DisplayName": "{{i18n:Solstice-Piercer_Translated}}",
+          "Description": "{{i18n:Solstice-Piercer_Description_Translated}}",
+          "Type": "1",
+          "Category": -98,
+          "Price": 5000,
+          "MinDamage": 42,
+          "MaxDamage": 55,
+          "Knockback": 0.01,
+          "Speed": 1,
+          "Precision": 40,
+          "Defense": 0,
+          "AreaOfEffect": 0,
+          "CritChance": 0.03,
+          "CritMultiplier": 3.0,
+          "CanPurchase": false
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Vanilla"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.SolsticePiercer": {
+          "Texture": "Mods/CapeStardew/Weapons/Solstice Piercer",
+          "SpriteIndex": 0,
+          "Name": "Solstice Piercer",
+          "DisplayName": "{{i18n:Solstice-Piercer_Translated}}",
+          "Description": "{{i18n:Solstice-Piercer_Description_Translated}}",
+          "Type": "1",
+          "Category": -98,
+          "Price": 5000,
+          "MinDamage": 48,
+          "MaxDamage": 62,
+          "Knockback": 0.02,
+          "Speed": 2,
+          "Precision": 50,
+          "Defense": 0,
+          "AreaOfEffect": 0,
+          "CritChance": 0.03,
+          "CritMultiplier": 3.0,
+          "CanPurchase": false
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Balanced"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.SolsticePiercer": {
+          "Texture": "Mods/CapeStardew/Weapons/Solstice Piercer",
+          "SpriteIndex": 0,
+          "Name": "Solstice Piercer",
+          "DisplayName": "{{i18n:Solstice-Piercer_Translated}}",
+          "Description": "{{i18n:Solstice-Piercer_Description_Translated}}",
+          "Type": "1",
+          "Category": -98,
+          "Price": 5000,
+          "MinDamage": 60,
+          "MaxDamage": 75,
+          "Knockback": 0.02,
+          "Speed": 5,
+          "Precision": 70,
+          "Defense": 0,
+          "AreaOfEffect": 0,
+          "CritChance": 0.04,
+          "CritMultiplier": 3.2,
+          "CanPurchase": false
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Stronger"
+      }
+    },
+
+{
+      "Action": "Load",
+      "Target": "Mods/CapeStardew/Weapons/Solstice Piercer",
+      "FromFile": "Weapons/{{TargetWithoutPath}}/weapon.png"
+    }
+  ]
+}

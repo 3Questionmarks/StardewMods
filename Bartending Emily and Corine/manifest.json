@@ -1,0 +1,21 @@
+{
+    "Name": "Bartending Emily and Corine",
+    "Author": "bananasalmon",
+    "Version": "0.1",
+    "Description": "Add Emily and Corine as Saloon shop owners",
+    "UniqueID": "bananasalmon.morebartenders",
+    "UpdateKeys": ["Nexus:43645"],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+		{
+			"UniqueID": "Spiderbuttons.BETAS",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "Rafseazz.RSVCP",
+			"IsRequired": false
+		}
+	]
+}

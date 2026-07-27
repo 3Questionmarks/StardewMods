@@ -1,0 +1,51 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Sydney.A)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Sydney.A",
+      "FromFile": "assets/Maps/Sydney/Sydney.A_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Sydney)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Sydney",
+      "FromFile": "assets/Maps/Sydney/Sydney_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+//Boat Journey
+    {
+		  "LogName": "Remapping (Earthy) Recolor Sydney Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap",
+		  "FromFile": "assets/Maps/Sydney/Sydney.A_{{season}}_Vanilla.png",
+		  "ToArea": {"X": 233, "Y": 31, "Width": 24, "Height": 19},
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=Lex.Sydney": true,
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {	
+		  "LogName": "Remapping (Earthy) Recolor Sydney SVE Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap",
+		  "FromFile": "assets/Maps/Sydney/Sydney.A_{{season}}_SVE.png",
+		  "ToArea": {"X": 233, "Y": 28, "Width": 24, "Height": 25},
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=Lex.Sydney": true,
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  }
+  ]
+}

@@ -1116,6 +1116,19 @@
 					"CanChooseDuringCharacterCustomization": false,
 					"CustomFields": {}
 				},
+				"Lumisteria.MtVapius_Shirt063": {
+					"Name": "Lumisteria.MtVapius_Shirt063",
+					"DisplayName": "{{i18n: MtVapiusShirt0000_Translated}}",
+					"Description": "{{i18n: MtVapiusShirt0000_Description_Translated}}",
+					"Price": 50,
+					"Texture": "Mods\\Lumisteria.MtVapius\\Shirts",
+					"SpriteIndex": 63,
+					"CanBeDyed": false,
+					"IsPrismatic": false,
+					"HasSleeves": true,
+					"CanChooseDuringCharacterCustomization": true,
+					"CustomFields": {}
+				},
 			}
 		},
 		/* add item  images*/

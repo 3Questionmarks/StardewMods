@@ -1,0 +1,19 @@
+{
+    "Changes": [
+        {
+            "LogName": "Gus Marriage Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gus",
+            "Entries": {
+                "Thu": "{{i18n:{{ModId}}_MarriageDialogue.Gus.Thu}}",
+                "Thu8": "{{i18n:{{ModId}}_MarriageDialogue.Gus.Thu8}}",
+                "pamHouseUpgrade": "{{i18n:{{ModId}}_MarriageDialogue.Gus.pamHouseUpgrade}}",
+                "pamHouseUpgradeAnonymous": "{{i18n:{{ModId}}_MarriageDialogue.Gus.pamHouseUpgradeAnonymous}}",
+                "spring_18": "{{i18n:{{ModId}}_MarriageDialogue.Gus.spring_18}}",
+                "fall_2": "{{i18n:{{ModId}}_MarriageDialogue.Gus.fall_2}}",
+                "summer_8": "{{i18n:{{ModId}}_MarriageDialogue.Gus.summer_8}}",
+                "married_Penny": "{{i18n:{{ModId}}_MarriageDialogue.Gus.married_Penny}}"
+            }
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+  "ItemName": "Dried Sunflowers",
+  "Type": "Furniture",
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "ManualVariations": [
+    {
+      "Id": -1,
+      "ChanceWeight": 0.1
+    },
+    {
+      "Id": 0,
+      "Name": "Cauldron Planter 1",
+      "ChanceWeight": 0.1
+    },
+    {
+      "Id": 1,
+      "Name": "Cauldron Planter 2",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 2,
+      "Name": "Cauldron Planter 3",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 3,
+      "Name": "Cauldron Planter 4",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 4,
+      "Name": "Cauldron Planter 5",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 5,
+      "Name": "Stack of Books",
+      "ChanceWeight": 0.5
+    }
+
+  ]
+}

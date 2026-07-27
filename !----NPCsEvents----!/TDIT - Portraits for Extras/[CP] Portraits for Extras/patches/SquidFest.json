@@ -1,0 +1,99 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Strings/SimpleNonVillagerDialogues",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","winter_derby_contestent0"],
+					"Value": "Portraits/Fisherman_DefaultWinter @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Append",
+					"Target": ["Entries","winter_derby_contestent4"],
+					"Value": "$1",
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","winter_derby_contestent4"],
+					"Value": "Portraits/FishingSisters_DefaultWinter @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Append",
+					"Target": ["Entries","winter_derby_contestent5"],
+					"Value": "$1",
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","winter_derby_contestent5"],
+					"Value": "Portraits/Angler_DefaultWinter @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","winter_derby_contestent6"],
+					"Value": "$1",
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","winter_derby_contestent6"],
+					"Value": "Portraits/TroutMan_DefaultWinter @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","winter_derby_contestent8"],
+					"Value": "Portraits/FishingPro_DefaultWinter Strings/DolphINaF.ExtraPortraits:Name.FishingPro {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","winter_derby_contestent9"],
+					"Value": "Portraits/Fisherman4_DefaultWinter @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},				
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","winter_derby_contestent11"],
+					"Value": "Portraits/SquidChef_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},						
+			]
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Strings/1_6_Strings",
+			"Priority": "Late + 50",		
+			"TextOperations": [		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SquidFestBooth_Intro"],
+					"Value": "Portraits/MasterFisher_Default Strings/DolphINaF.ExtraPortraits:Name.MasterFisher",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SquidFestBooth_NoRewards"],
+					"Value": "Portraits/MasterFisher_Default Strings/DolphINaF.ExtraPortraits:Name.MasterFisher",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SquidFest_AlreadyGotAvailableRewards"],
+					"Value": "Portraits/MasterFisher_Default Strings/DolphINaF.ExtraPortraits:Name.MasterFisher",
+					"Delimiter": "🐬"
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SquidFest_GotAllRewardsToday"],
+					"Value": "Portraits/MasterFisher_Default Strings/DolphINaF.ExtraPortraits:Name.MasterFisher",
+					"Delimiter": "🐬"
+				},			
+			]
+		},				
+	],
+}

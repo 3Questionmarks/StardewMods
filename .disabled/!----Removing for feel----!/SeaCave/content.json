@@ -1,0 +1,178 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.9.0",
+  "Changes": [
+    {
+      "LogName": "Load tmx into Maps",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_SeaCave",
+      "FromFile": "assets/Maps/dedpeechSeaCave.tmx"
+    },
+    {
+      "LogName": "Add custom location to Locations",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "{{ModId}}_SeaCave": {
+          "DisplayName": "Sea Cave",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_SeaCave"
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Add Large Rock to East Pier",
+      "Action": "EditMap",
+      "Target": "Maps/Beach",
+      "PatchMode": "Replace",
+      "FromFile": "Assets/Maps/BeachPatch.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 6,
+        "Height": 4
+      },
+      "ToArea": {
+        "X": 90,
+        "Y": 37,
+        "Width": 6,
+        "Height": 4
+      }
+    },
+    {
+      "LogName": "Add Large Rock to East Pier",
+      "Action": "EditMap",
+      "Target": "Maps/Beach-NightMarket",
+      "PatchMode": "Replace",
+      "FromFile": "Assets/Maps/Beach-NightMarket_patch.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 6,
+        "Height": 4
+      },
+      "ToArea": {
+        "X": 90,
+        "Y": 37,
+        "Width": 6,
+        "Height": 4
+      }
+    },
+    {
+      "LogName": "Add Large Rock to East Pier",
+      "Action": "EditMap",
+      "Target": "Maps/Beach-Jellies",
+      "PatchMode": "Replace",
+      "FromFile": "Assets/Maps/Beach-Jellies_patch.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 6,
+        "Height": 4
+      },
+      "ToArea": {
+        "X": 90,
+        "Y": 37,
+        "Width": 6,
+        "Height": 4
+      }
+    },
+    {
+      "LogName": "Add Large Rock to East Pier",
+      "Action": "EditMap",
+      "Target": "Maps/Beach-Jellies2",
+      "PatchMode": "Replace",
+      "FromFile": "Assets/Maps/Beach-Jellies2_patch.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 6,
+        "Height": 4
+      },
+      "ToArea": {
+        "X": 90,
+        "Y": 37,
+        "Width": 6,
+        "Height": 4
+      }
+    },
+    {
+      "LogName": "Add Large Rock to East Pier",
+      "Action": "EditMap",
+      "Target": "Maps/Beach-Luau",
+      "PatchMode": "Replace",
+      "FromFile": "Assets/Maps/Beach-Luau_patch.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 6,
+        "Height": 4
+      },
+      "ToArea": {
+        "X": 90,
+        "Y": 37,
+        "Width": 6,
+        "Height": 4
+      }
+    },
+    {
+      "LogName": "Add Large Rock to East Pier",
+      "Action": "EditMap",
+      "Target": "Maps/Beach-Luau2",
+      "PatchMode": "Replace",
+      "FromFile": "Assets/Maps/Beach-Luau2_patch.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 6,
+        "Height": 4
+      },
+      "ToArea": {
+        "X": 90,
+        "Y": 37,
+        "Width": 6,
+        "Height": 4
+      }
+    },
+    {
+      "LogName": "Add warp to custom location",
+      "Action": "EditMap",
+      "Target": "Maps/Beach",
+      "AddWarps": [
+        "90 39 {{ModId}}_SeaCave 2 8"
+      ]
+    },
+    {
+      "LogName": "Add warp to custom location",
+      "Action": "EditMap",
+      "Target": "Maps/Beach-NightMarket",
+      "AddWarps": [
+        "90 39 {{ModId}}_SeaCave 2 8"
+      ]
+    },
+    {
+      "LogName": "Edit Sea Cave interior to add warp out",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_SeaCave",
+      "AddWarps": [
+        "1 8 Beach 89 39"
+      ]
+    },
+    {
+      "LogName": "item info",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+        "{{ModId}}_SeaCave.1": "{{i18n:MapsText.SeaCave.1}}",
+        "{{ModId}}_SeaCave.2": "{{i18n:MapsText.SeaCave.2}}",
+        "{{ModId}}_SeaCave.3": "{{i18n:MapsText.SeaCave.3}}",
+        "{{ModId}}_SeaCave.4": "{{i18n:MapsText.SeaCave.4}}",
+        "{{ModId}}_SeaCave.5": "{{i18n:MapsText.SeaCave.5}}",
+        "{{ModId}}_SeaCave.6": "{{i18n:MapsText.SeaCave.6}}",
+        "{{ModId}}_SeaCave.7": "{{i18n:MapsText.SeaCave.7}}",
+        "{{ModId}}_SeaCave.8": "{{i18n:MapsText.SeaCave.8}}",
+      }
+    }
+  ]
+}

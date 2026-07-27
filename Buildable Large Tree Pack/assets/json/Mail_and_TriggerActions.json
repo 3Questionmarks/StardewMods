@@ -1,0 +1,34 @@
+{
+
+    "Changes": [
+
+
+
+  //★★★ メールデータ ★★★
+      {
+        "Action": "EditData",
+        "Target": "Data/Mail",
+        "Entries": {
+            "{{ModId}}_BuildableLargeTreePack.Mail": "{{i18n:Mail_Text}}[#]{{i18n:Mail_Title}}",
+        },
+        "When": { "RemoveBuildRestrictions": "false" }
+      },
+
+
+  //★★★ トリガーアクション ★★★
+      {
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModId}}_SendMail": {
+            "Id": "{{ModId}}_SendMail",
+            "Trigger": "DayStarted",
+            "Actions": [ "AddMail Current {{ModId}}_BuildableLargeTreePack.Mail {{DT_TriggerPatch}}" ],
+            "Condition": "PLAYER_FRIENDSHIP_POINTS Current Robin 1500"
+          }
+        }
+      }
+
+
+    ]//▼▼"Changes"の終了▼▼
+}

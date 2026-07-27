@@ -1,0 +1,117 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Ecosystem.Superpack.A)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Ecosystem.Superpack.A",
+      "FromFile": "assets/Maps/Ecosystem/Ecosystem.A_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Ecosystem.Superpack.B)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Ecosystem.Superpack.B",
+      "FromFile": "assets/Maps/Ecosystem/Ecosystem.B_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			   "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Ecosystem.Superpack.C)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Ecosystem.Superpack.C",
+      "FromFile": "assets/Maps/Ecosystem/Ecosystem.C_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+//Boat Journey
+    {
+		  "LogName": "Remapping (Earthy) Recolor Ecosystem Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Ecosystem/Ecosystem.A_{{season}}_Vanilla.png", 
+		  "ToArea": {"X": 208, "Y": 30, "Width": 49, "Height": 25},
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=cajcbell.ESE": true,
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {
+		  "LogName": "Remapping (Earthy) Recolor Ecosystem Boat Journey SVE",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Ecosystem/Ecosystem.A_{{season}}_SVE.png", 
+		  "ToArea": {"X": 202, "Y": 36, "Width": 55, "Height": 25},
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=cajcbell.ESE": true,
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {
+		  "LogName": "Remapping (Earthy) Recolor Fiasa Ecosystem Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Fiasa Platonic.Romance/Fiasa_{{season}}.png", 
+		  "ToArea": {"X": 220, "Y": 51, "Width": 12, "Height": 8},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=cajcbell.ESE": true,
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			  "DayofWeek": "Monday, Tuesday, Wednesday, Thursday, Friday",
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {
+		  "LogName": "Remapping (Earthy) Recolor Fiasa Ecosystem Boat Journey SVE",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Fiasa Platonic.Romance/Fiasa_{{season}}.png", 
+		  "ToArea": {"X": 215, "Y": 60, "Width": 12, "Height": 8},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=cajcbell.ESE": true,
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			  "DayofWeek": "Monday, Tuesday, Wednesday, Thursday, Friday",
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {
+		  "LogName": "Remapping (Earthy) Recolor Ecosystem (Gem Sea Compatibility) Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Ecosystem/Ecosystem.C_{{RMP.Season}}_{{RMP.Source}}.png", 
+		  "ToArea": {"X": 207, "Y": 21, "Width": 12, "Height": 13},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=cajcbell.ESE": true,
+			  "HasMod: |contains=Aimon111.BeachAreas": true,
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {
+		  "LogName": "Remapping (Earthy) Recolor Ecosystem (Gem Sea Compatibility) Boat Journey SVE",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Ecosystem/Ecosystem.C_{{RMP.Season}}_{{RMP.Source}}.png", 
+		  "ToArea": {"X": 198, "Y": 51, "Width": 12, "Height": 10},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=cajcbell.ESE": true,
+			  "HasMod: |contains=Aimon111.BeachAreas": true,
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  }
+  ]
+}

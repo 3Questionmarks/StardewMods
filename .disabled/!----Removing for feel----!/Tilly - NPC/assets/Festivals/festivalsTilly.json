@@ -1,0 +1,435 @@
+{
+  "Changes": [
+    { // Egg Hunt
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}.Tilly 22 63 3", //by Penny and Maru
+		  "Delimiter": "/",
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Value": "{{ModId}}.Tilly 22 76 2", //by Jorts
+		  "Delimiter": "/",
+        },
+      ]
+    },
+	
+	 { // Egg Hunt y2
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "{{ModId}}.Tilly 22 67 1", //by Emily
+		  "Delimiter": "/",
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters_y2"
+          ],
+          "Value": "{{ModId}}.Tilly 34 66 1", //by Emily and Haley
+		  "Delimiter": "/",
+        },
+      ]
+    },
+	
+	{ // Flower Dance
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}.Tilly 12 38 1",
+		  "Delimiter": "/",
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Value": "{{ModId}}.Tilly 14 20 2",
+		  "Delimiter": "/",
+        },
+      ]
+    },
+	
+		{ // Flower y2
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "{{ModId}}.Tilly 9 27 1",
+		  "Delimiter": "/",
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters_y2"
+          ],
+          "Value": "{{ModId}}.Tilly 10 21 2",
+		  "Delimiter": "/",
+        },
+      ]
+    },
+	
+	{ // Luau
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}.Tilly 34 10 0",
+		  "Delimiter": "/",
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Value": "{{ModId}}.Tilly 34 15 0",
+		  "Delimiter": "/",
+        }
+      ]
+    },
+	
+	{ // Luau y2
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "{{ModId}}.Tilly 36 13 2",
+		  "Delimiter": "/",
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters_y2"
+          ],
+          "Value": "{{ModId}}.Tilly 26 14 0",
+		  "Delimiter": "/",
+        }
+      ]
+    },
+	
+	
+	{ // Moonlight Jellies
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}.Tilly 11 35 3",
+		  "Delimiter": "/",
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Value": "{{ModId}}.Tilly 13 36 1",
+		  "Delimiter": "/",
+        }
+      ]
+    },
+	
+	{ // Moonlight Jellies y2
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "{{ModId}}.Tilly 24 32 3", //Below Emily
+		  "Delimiter": "/",
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters_y2"
+          ],
+          "Value": "{{ModId}}.Tilly 13 36 2",
+		  "Delimiter": "/",
+        }
+      ]
+    },
+	
+	{ // Fair
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}.Tilly 49 92 0",
+		  "Delimiter": "/",
+        },
+      ]
+    },
+	
+	{ // Fair
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "{{ModId}}.Tilly 53 73 2",
+		  "Delimiter": "/",
+        },
+      ]
+    },
+	
+	{ // Spirit's Eve
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}.Tilly 37 16 0",
+		  "Delimiter": "/",
+        },
+      ]
+    },
+	
+		{ // Spirit's Eve
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "{{ModId}}.Tilly 26 72 0",
+		  "Delimiter": "/",
+        },
+      ]
+    },
+	
+	{ // Festival of Ice
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}.Tilly 65 14 1",
+		  "Delimiter": "/",
+        },
+		{
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Main-Event_additionalCharacters"
+          ],
+          "Value": "{{ModId}}.Tilly 71 27 2",
+		  "Delimiter": "/",
+        }
+      ]
+    },
+	
+	{ // Festival of Ice
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "{{ModId}}.Tilly 82 28 0",
+		  "Delimiter": "/",
+        },
+		{
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Main-Event_additionalCharacters_y2"
+          ],
+          "Value": "{{ModId}}.Tilly 60 35 1",
+		  "Delimiter": "/",
+        }
+      ]
+    },
+	
+	
+	{ // Feast of the Winter Star
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}.Tilly 33 62 1",
+		  "Delimiter": "/",
+        },
+      ]
+    },
+	
+	{ // Feast of the Winter Star
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "{{ModId}}.Tilly 27 60 1",
+		  "Delimiter": "/",
+        },
+      ]
+    },
+	
+	
+	//Dialogue
+	{
+	  "LogName": "Tilly's Egg Hunt Dialogue",
+	  "Action": "EditData",
+	  "Target": "Data/Festivals/spring13",
+	  "Entries": {
+		"{{ModId}}.Tilly": "{{i18n:Wem.Bundle.Tilly_spring13}}#$action AddMail Current Wem.Bundle.Tilly_EggMail tomorrow#",
+		"{{ModId}}.Tilly_y2": "{{i18n:Wem.Bundle.Tilly_spring13y2}}",
+		"{{ModId}}.Tilly_spouse": "{{i18n:Wem.Bundle.Tilly_spring13spouse}}",
+	  }
+	},
+	{
+	  "LogName": "Tilly's Flower Dance Dialogue",
+	  "Action": "EditData",
+	  "Target": "Data/Festivals/spring24",
+	  "Entries": {
+		"{{ModId}}.Tilly": "{{i18n:Wem.Bundle.Tilly_spring24}}",
+		"{{ModId}}.Tilly_y2": "{{i18n:Wem.Bundle.Tilly_spring24y2}}",
+		"{{ModId}}.Tilly_spouse": "{{i18n:Wem.Bundle.Tilly_spring24spouse}}",
+	  }
+	},
+	{
+	  "LogName": "Tilly's Luau Dialogue",
+	  "Action": "EditData",
+	  "Target": "Data/Festivals/summer11",
+	  "Entries": {
+		"{{ModId}}.Tilly": "{{i18n:Wem.Bundle.Tilly_summer11}}",
+		"{{ModId}}.Tilly_y2": "{{i18n:Wem.Bundle.Tilly_summer11y2}}",
+		"{{ModId}}.Tilly_spouse": "{{i18n:Wem.Bundle.Tilly_summer11spouse}}",
+	  }
+	},
+	{
+	  "LogName": "Tilly's Moonlight Jellies Dialogue",
+	  "Action": "EditData",
+	  "Target": "Data/Festivals/summer28",
+	  "Entries": { 
+		"{{ModId}}.Tilly": "{{i18n:Wem.Bundle.Tilly_summer28}}",
+		"{{ModId}}.Tilly_y2": "{{i18n:Wem.Bundle.Tilly_summer28y2}}",
+		"{{ModId}}.Tilly_spouse": "{{i18n:Wem.Bundle.Tilly_summer28spouse}}",
+	  }
+	},
+	{
+	  "LogName": "Tilly's Fair Dialogue",
+	  "Action": "EditData",
+	  "Target": "Data/Festivals/fall16",
+	  "Entries": { 
+		"{{ModId}}.Tilly": "{{i18n:Wem.Bundle.Tilly_fall16}}",
+		"{{ModId}}.Tilly_y2": "{{i18n:Wem.Bundle.Tilly_fall16y2}}",
+		"{{ModId}}.Tilly_spouse": "{{i18n:Wem.Bundle.Tilly_fall16spouse}}",
+	  }
+	},
+	{
+	  "LogName": "Tilly's Spirit's Eve Dialogue",
+	  "Action": "EditData",
+	  "Target": "Data/Festivals/fall27",
+	  "Entries": { 
+		"{{ModId}}.Tilly": "{{i18n:Wem.Bundle.Tilly_fall27}}",
+		"{{ModId}}.Tilly_y2": "{{i18n:Wem.Bundle.Tilly_fall27y2}}",
+		"{{ModId}}.Tilly_spouse": "{{i18n:Wem.Bundle.Tilly_fall27spouse}}",
+	  }
+	},
+	{
+	  "LogName": "Tilly's Festival of Ice Dialogue",
+	  "Action": "EditData",
+	  "Target": "Data/Festivals/winter8",
+	  "Entries": { 
+		"{{ModId}}.Tilly": "{{i18n:Wem.Bundle.Tilly_winter8}}",
+		"{{ModId}}.Tilly_y2": "{{i18n:Wem.Bundle.Tilly_winter8y2}}",
+		"{{ModId}}.Tilly_spouse": "{{i18n:Wem.Bundle.Tilly_winter8spouse}}",
+	  }
+	},
+	{
+	  "LogName": "Tilly's Feast Dialogue",
+	  "Action": "EditData",
+	  "Target": "Data/Festivals/winter25",
+	  "Entries": { 
+		"{{ModId}}.Tilly": "{{i18n:Wem.Bundle.Tilly_winter25}}",
+		"{{ModId}}.Tilly_y2": "{{i18n:Wem.Bundle.Tilly_winter25y2}}",
+		"{{ModId}}.Tilly_spouse": "{{i18n:Wem.Bundle.Tilly_winter25spouse}}",
+	  }
+	},
+	
+  ]
+}

@@ -19,7 +19,9 @@
     "config.title.connectors": "Etkin bağlayıcılar",
     "config.connector.desc": "{{itemName}}'in makineleri ve sandıkları birbirine bağlayıp bağlamadığı.",
     "config.custom-connectors.name": "Özel bağlayıcılar",
-    "config.custom-connectors.desc": "Bitişik makineleri birbirine bağlayan öğelerin tam İngilizce adları. Birden çok öğeyi virgülle listeleyebilirsiniz.",
+
+    // TODO
+    "config.custom-connectors.desc": "The items which connect adjacent machines together. You can specify either the internal English name (like \"Wood Path\") or qualified item ID (like \"(O)405\"), and list multiple items with commas.", // note: connector names must be English even when playing in other languages
 
     // Junimo hut options
     "config.title.junimo-huts": "Junimo kulübesi davranışı",
@@ -30,15 +32,33 @@
     "config.junimo-hut-seeds.name": "Tohumlar",
     "config.junimo-hut-seeds.desc": "Junimo kulübelerinin tohum öğeleriyle yapması gerekenler. Better Junimos kuruluysa 'Otomatik algılama' onları yok sayacak, aksi takdirde onları kulübeden bağlı sandıklara taşıyacak.",
 
+    // TODO
+    "config.junimo-hut-move-items-into-hut.name": "Move item IDs into hut",
+    "config.junimo-hut-move-items-into-hut.desc": "The items which should be moved into Junimo huts (regardless of other fields like {{gemFieldName}}). This is a comma-delimited list of qualified item IDs (as shown by the Lookup Anything mod in its 'internal ID' field).",
+    "config.junimo-hut-ignore-items.name": "Ignore item IDs",
+    "config.junimo-hut-ignore-items.desc": "The items which should be ignored (not moved regardless of other fields like {{gemFieldName}}). This is a comma-delimited list of qualified item IDs (as shown by the Lookup Anything mod in its 'internal ID' field).",
+
     // Junimo hut dropdown values
     "config.junimo-huts.auto-detect": "Otomatik algılama",
     "config.junimo-huts.ignore": "Yok say",
     "config.junimo-huts.move-into-chests": "Junimo kulübelerinden sandıklara taşı",
     "config.junimo-huts.move-into-huts": "Sandıklardan Junimo kulübelerine taşı",
 
+    // per-chest settings
+    "config.title.chest-settings": "Sandık Ayarları",
+    "config.default-chest-override.name": "Varsayılan Davranış",
+    "config.default-chest-override.desc": "Sandığın varsayılan olarak etkin olup olmayacağını belirtir (Aşağıdaki sekme hariç). Etkin sandıklar otomatik olarak makinelere bağlanır. Etkin olmayanlar tamamen görmezden gelinir.",
+    "config.chest-override.name": "{{chestName}}",
+    "config.chest-override.name.take-only": "{{chestName}} (Sadece eşyaları alır)",
+    "config.chest-override.desc": "Yerleştirilen {{chestName}} eşyalarının sandık işlevi görüp görmeyeceği. '{{defaultBehaviorField}}' açıklamasını inceleyin.",
+    "config.chest-override.desc.take-only": "{{description}} (Etkin olduğunda, bu sandık tipi sadece eşyaların alınabileceği bir sandık olur.)", // {{description}} contains the previous translation line
+    "config.chest-override.values.default": "Varsayılan",
+    "config.chest-override.values.enabled": "Etkin",
+    "config.chest-override.values.disabled": "Etkin değil",
+
     // per-machine settings
     "config.title.machine-settings": "{{machineName}} Ayarları",
-    "config.machine-settings-enabled.Name": "Etkin",
+    "config.machine-settings-enabled.name": "Etkin",
     "config.machine-settings-enabled.desc": "{{machineName}} otomasyonunun etkinleştirilip etkinleştirilmeyeceği.",
     "config.machine-settings-priority.name": "Öncelik",
     "config.machine-settings-priority.desc": "Diğer makinelerle kıyasla {{machineName}} makinelerinin işlenme öncelik sırası. Makinelerin varsayılan önceliği 0'dır, daha yüksek değerler önce işlenir.",

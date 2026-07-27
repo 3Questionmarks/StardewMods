@@ -1,0 +1,35 @@
+{
+  "Name": "Jasper Expansion",
+  "Author": "Lemurkat",
+  "Description": "Adds loads of extra features to Jasper",
+  "Version": "1.0.0",
+  "UniqueID": "Lemurkat.JasperRomance",
+  "UpdateKeys": [
+    "Nexus:????"
+  ],
+  "Dependencies": [
+    {
+        "UniqueID": "Lemurkat.EastScarpNPCs",
+        "IsRequired": true
+      },
+    {
+      "UniqueID": "TheMightyAmondee.CustomTokens",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "Poltergeister.SeasonalCuteCharacters",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Rafseazz.RSVCP",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Solariaze.ChildhoodSweetheartCarolineEnglish",
+      "IsRequired": false
+    }
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

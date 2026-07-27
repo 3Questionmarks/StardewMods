@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Shopkeeper.Leela)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Shopkeeper.Leela",
+      "FromFile": "assets/Maps/Shopkeeper Leela/Shopkeeper.Leela_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

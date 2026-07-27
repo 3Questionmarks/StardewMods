@@ -1,0 +1,42 @@
+{   
+    "Changes": [
+//Sprite
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Yuuma",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Yuuma/Yuuma.png",
+            "When": {
+                "HasMod| contains=Rafseazz.RSVCP": "true"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Yuuma",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Yuuma/Yuuma1.png",
+            "Patchmode": "Overlay",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Rafseazz.RSVCP": "true"
+            }
+        },
+//NPC Animation
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "yuuma_read_left": "24/24/24",
+            }
+        },
+//StringsFromMaps
+        {	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.31": "{{i18n:Seat_Yuuma}}" },
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Rafseazz.RSVCP": "true"
+            }
+        }
+    ]
+}

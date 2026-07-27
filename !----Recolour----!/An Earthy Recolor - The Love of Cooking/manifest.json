@@ -1,0 +1,20 @@
+{
+    "Name": "An Updated Earthy Recolor - The Love of Cooking",
+    "Author": "AztecViper",
+    "Description": "An updated recolor for The Love of Cooking",
+    "Version": "1.0.0",
+    "UniqueID": "aztecviper.earthyrecolor.loveofcooking",
+    "Format": "2.5.0",
+    "UpdateKeys": [
+        "Nexus:31450"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "blueberry.LoveOfCooking.CP",
+            "IsRequired": true
+        }
+    ]
+}

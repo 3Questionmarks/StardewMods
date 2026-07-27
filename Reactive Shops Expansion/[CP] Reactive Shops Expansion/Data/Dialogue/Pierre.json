@@ -1,0 +1,13 @@
+{
+    "Changes": [
+		{
+			"LogName": "{{ModId}}_Pierre",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Pierre",
+			"Entries":{
+				"{{ModId}}_StrawberrySeeds_CT": "{{i18n: Pierre.StrawberrySeeds_CT}}",
+				"{{ModId}}_ArtisanGoods_CT": "{{i18n: Pierre.ArtisanGoods_CT}}"
+			}
+		}
+	]
+}

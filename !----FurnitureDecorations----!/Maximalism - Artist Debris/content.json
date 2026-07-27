@@ -1,0 +1,153 @@
+{
+    "Format": "2.7.0",
+    "Changes": [
+         {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+
+              
+                //wallstuff
+
+                "SMALLCOPPER.hanger": "smallcopper.hanger/painting/1 2/1 2/1/200/-1/Dress Hanger/0/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.hanger2": "smallcopper.hanger2/painting/1 2/1 2/1/200/-1/Coat Hanger/1/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.pinwall": "smallcopper.pinwall/painting/1 2/1 2/1/200/-1/Pin Wall/2/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.pinwall2": "smallcopper.pinwall2/painting/1 2/1 2/1/200/-1/Pin Wall 2/3/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.pinwall3": "smallcopper.pinwall3/painting/1 2/1 2/1/200/-1/Pin Wall 3/4/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.pinwall4": "smallcopper.pinwall4/painting/1 2/1 2/1/200/-1/Pin Wall 4/5/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paperwall": "smallcopper.paperwall/painting/1 2/1 2/1/200/-1/Paper Wall/6/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paperwall2": "smallcopper.paperwall2/painting/1 2/1 2/1/200/-1/Paper Wall 2/7/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paperwall3": "smallcopper.paperwall3/painting/1 2/1 2/1/200/-1/Paper Wall 3/8/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paperwall4": "smallcopper.paperwall4/painting/1 2/1 2/1/200/-1/Paper Wall 4/9/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.polaroids": "smallcopper.polaroids/painting/1 2/1 2/1/200/-1/Polaroids Blue/10/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.polaroids2": "smallcopper.polaroids2/painting/1 2/1 2/1/200/-1/Polaroids Mixed/11/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.polaroids3": "smallcopper.polaroids3/painting/1 2/1 2/1/200/-1/Polaroids Pink/12/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.polaroids4": "smallcopper.polaroids4/painting/1 2/1 2/1/200/-1/Polaroids Orange/13/Tilesheets\\artist_debris/false/collection_maximalism",
+
+                "SMALLCOPPER.largepinwall": "smallcopper.largepinwall/painting/2 2/2 2/1/200/-1/Large Pin Wall/288/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.largepinwall2": "smallcopper.largepinwall2/painting/2 2/2 2/1/200/-1/Large Pin Wall 2/290/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.bulletinboard": "smallcopper.bulletinboard/painting/2 2/2 2/1/200/-1/Bulletin Board/292/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.bulletinboard2": "smallcopper.bulletinboard2/painting/2 2/2 2/1/200/-1/Bulletin Board 2/294/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.bulletinboard3": "smallcopper.bulletinboard3/painting/2 2/2 2/1/200/-1/Bulletin Board 3/296/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.bulletinboard4": "smallcopper.bulletinboard4/painting/2 2/2 2/1/200/-1/Bulletin Board 4/298/Tilesheets\\artist_debris/false/collection_maximalism",
+
+            
+
+                //paints
+
+                "SMALLCOPPER.palette": "smallcopper.palette/decor/1 1/1 1/1/200/-1/Paint Palette/130/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.palette2": "smallcopper.palette2/decor/1 1/1 1/1/200/-1/Empty Palette/1378/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paintmess": "smallcopper.paintmess/rug/1 1/1 1/1/200/-1/Paint Splodges/1388/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paintmess2": "smallcopper.paintmess2/rug/1 1/1 1/1/200/-1/Paint Splodges 2/1368/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paints": "smallcopper.paints/decor/1 1/1 1/1/200/-1/Paints/1387/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paints2": "smallcopper.paints2/decor/1 1/1 1/1/200/-1/Paints 2/1367/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.brushes": "smallcopper.brushes/decor/1 1/1 1/1/200/-1/Paintbrush Set/81/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.brushes2": "smallcopper.brushes2/decor/1 1/1 1/1/200/-1/Paintbrush Set 2/72/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paintjars": "smallcopper.paintjars/decor/1 1/1 1/1/200/-1/Paint Jars/82/Tilesheets\\artist_debris/false/collection_maximalism",
+          
+                "SMALLCOPPER.paintwater": "smallcopper.paintwater/decor/1 1/1 1/1/200/-1/Empty Paint Water/21/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paintwater2": "smallcopper.paintwater2/decor/1 1/1 1/1/200/-1/Painty Paint Water/22/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paintwater3": "smallcopper.paintwater3/decor/1 1/1 1/1/200/-1/Paint Water - Brushes/29/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paintwater4": "smallcopper.paintwater4/decor/1 1/1 1/1/200/-1/Paint Water - Brushes 2/89/Tilesheets\\artist_debris/false/collection_maximalism",
+
+
+                //watercolours
+
+                "SMALLCOPPER.closedwatercolours": "smallcopper.closedwatercolours/decor/1 1/1 1/1/200/-1/Closed Watercolours/1385/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.watercolours": "smallcopper.watercolours/decor/1 1/1 1/1/200/-1/Messy Round Watercolours/128/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.watercolours2": "smallcopper.watercolours2/decor/1 1/1 1/1/200/-1/Round Watercolours/1376/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.watercolours3": "smallcopper.watercolours3/decor/1 1/1 1/1/200/-1/Messy Classic Watercolours/1365/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.watercolours5": "smallcopper.watercolours5/decor/1 1/1 1/1/200/-1/Colourful Watercolours/80/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.watercolours6": "smallcopper.watercolours6/decor/1 1/1 1/1/200/-1/Messy Colourful Watercolours/17/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.watercolours7": "smallcopper.watercolours7/decor/1 1/1 1/1/200/-1/Empty Watercolours/18/Tilesheets\\artist_debris/false/collection_maximalism",
+
+
+                //craft
+
+                "SMALLCOPPER.sellotape": "smallcopper.sellotape/decor/1 1/1 1/1/200/-1/Tape Dispensor/23/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.scissors": "smallcopper.scissors/decor/1 1/1 1/1/200/-1/Scissors/1379/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.scissors2": "smallcopper.scissors2/decor/1 1/1 1/1/200/-1/Scissors With Mess/131/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paper": "smallcopper.paper/decor/1 1/1 1/1/200/-1/Paper/30/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.notepage": "smallcopper.notepage/decor/1 1/1 1/1/200/-1/Notebook Page/90/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paperball": "smallcopper.paperball/decor/1 1/1 1/1/200/-1/Scrunched Paper/83/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.paperball2": "smallcopper.paperball2/decor/1 1/1 1/1/200/-1/Scrunched Paper 2/74/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.papermess": "smallcopper.papermess/decor/1 1/1 1/1/200/-1/Paper Mess/19/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.papermess2": "smallcopper.papermess2/decor/1 1/1 1/1/200/-1/Paper Mess 2/20/Tilesheets\\artist_debris/false/collection_maximalism",
+
+
+                //pencils
+
+                "SMALLCOPPER.pencils": "smallcopper.pencils/decor/1 1/1 1/1/200/-1/Pencil Mess/129/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.pencils2": "smallcopper.pencils2/decor/1 1/1 1/1/200/-1/Pencil Mess 2/1377/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.pencilbox": "smallcopper.pencilbox/decor/1 1/1 1/1/200/-1/Open Pencil Set/1386/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.pencilbox2": "smallcopper.pencilbox2/decor/1 1/1 1/1/200/-1/Closed Pencil Set/1366/Tilesheets\\artist_debris/false/collection_maximalism",
+
+
+                //books
+
+                "SMALLCOPPER.smallnotes": "smallcopper.smallnotes/decor/1 1/1 1/1/200/-1/Small Sketchbook/133/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.smallnotes2": "smallcopper.smallnotes2/decor/1 1/1 1/1/200/-1/Small Sketchbook - Pencils/68/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.smallnotes3": "smallcopper.smallnotes3/decor/1 1/1 1/1/200/-1/Small Sketchbook - Charcoal/77/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.smallnotes4": "smallcopper.smallnotes4/decor/1 1/1 1/1/200/-1/Small Sketchbook - Pencils 2/86/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.smallnotes5": "smallcopper.smallnotes5/decor/1 1/1 1/1/200/-1/Small Sketchbook - Pencils 3/93/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.mediumnotes": "smallcopper.mediumnotes/decor/1 1/1 1/1/200/-1/Medium Sketchbook/76/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.mediumnotes2": "smallcopper.mediumnotes2/decor/1 1/1 1/1/200/-1/Medium Sketchbook 2/1381/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.mediumnotes3": "smallcopper.mediumnotes3/decor/1 1/1 1/1/200/-1/Medium Sketchbook 3/1390/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.mediumnotes4": "smallcopper.mediumnotes4/decor/1 1/1 1/1/200/-1/Medium Sketchbook 4/67/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.largenotes": "smallcopper.largenotes/decor/1 1/1 1/1/200/-1/Large Sketchbook/85/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.largenotes2": "smallcopper.largenotes2/decor/1 1/1 1/1/200/-1/Large Sketchbook - Star/92/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.largenotes3": "smallcopper.largenotes3/decor/1 1/1 1/1/200/-1/Large Sketchbook - Flowers/31/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.largenotes4": "smallcopper.largenotes4/decor/1 1/1 1/1/200/-1/Large Sketchbook - Squiggles/24/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.notebook": "smallcopper.notebook/decor/1 1/1 1/1/200/-1/Plain Notebook/1362/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.book": "smallcopper.book/decor/1 1/1 1/1/200/-1/Blue Book/1382/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.book2": "smallcopper.book2/decor/1 1/1 1/1/200/-1/Yellow Book/64/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.bookstack": "smallcopper.bookstack/decor/1 1/1 1/1/200/-1/Book Stack/26/Tilesheets\\artist_debris/false/collection_maximalism",
+
+                //cameras
+
+                "SMALLCOPPER.polaroid": "smallcopper.polaroid/decor/1 1/1 1/1/200/-1/White Polaroid Camera/1389/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.polaroid2": "smallcopper.polaroid2/decor/1 1/1 1/1/200/-1/Blue Polaroid Camera/1380/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.polaroid3": "smallcopper.polaroid3/decor/1 1/1 1/1/200/-1/Pink Polaroid Camera/132/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.camera": "smallcopper.camera/decor/1 1/1 1/1/200/-1/Brown Camera/75/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.camera2": "smallcopper.camera2/decor/1 1/1 1/1/200/-1/Brown Camera with Strap/95/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.camera3": "smallcopper.camera3/decor/1 1/1 1/1/200/-1/Black Camera/91/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.camera4": "smallcopper.camera4/decor/1 1/1 1/1/200/-1/Black Camera with Strap/84/Tilesheets\\artist_debris/false/collection_maximalism",
+              
+                //decor
+        
+                "SMALLCOPPER.radio": "smallcopper.radio/decor/1 1/1 1/1/200/-1/Radio/1383/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.globe": "smallcopper.globe/decor/1 1/1 1/1/200/-1/Antique Globe/65/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.jars": "smallcopper.jars/decor/1 1/1 1/1/200/-1/Coloured Jars/1363/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.jars2": "smallcopper.jars2/decor/1 1/1 1/1/200/-1/Coloured Jars Green/69/Tilesheets\\artist_debris/false/collection_maximalism",          
+                "SMALLCOPPER.jars3": "smallcopper.jars3/decor/1 1/1 1/1/200/-1/Ingredients Jars/78/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.vase": "smallcopper.vase/decor/1 1/1 1/1/200/-1/Flowerless Flower Vase/73/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.bottle1": "smallcopper.bottle1/decor/1 1/1 1/1/200/-1/Red Bottle/87/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.bottle2": "smallcopper.bottle2/decor/1 1/1 1/1/200/-1/Yellow Bottle/94/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.bottle3": "smallcopper.bottle3/decor/1 1/1 1/1/200/-1/Green Bottle/15/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.tardis": "smallcopper.tardis/decor/1 1/1 1/1/200/-1/TARDIS/14/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.tardis2": "smallcopper.tardis2/decor/1 1/1 1/1/200/-1/TARDIS 2/25/Tilesheets\\artist_debris/false/collection_maximalism",
+            
+                //mail 
+
+                "SMALLCOPPER.envelope": "smallcopper.envelope/decor/1 1/1 1/1/200/-1/Envelope/66/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.envelope2": "smallcopper.envelope2/decor/1 1/1 1/1/200/-1/Heart Envelope/1384/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.envelope3": "smallcopper.envelope3/decor/1 1/1 1/1/200/-1/Envelope 2/1364/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.envelope4": "smallcopper.envelope4/decor/1 1/1 1/1/200/-1/Open Letter/70/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.letters": "smallcopper.letters/decor/1 1/1 1/1/200/-1/Letters/79/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.parcels": "smallcopper.parcels/decor/1 1/1 1/1/200/-1/Parcels/88/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.parcels2": "smallcopper.parcels2/decor/1 1/1 1/1/200/-1/Parcels 2/28/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.bigparcel": "smallcopper.bigparcel/decor/1 1/1 1/1/200/-1/Big Parcel/16/Tilesheets\\artist_debris/false/collection_maximalism",
+                "SMALLCOPPER.bigparcel2": "smallcopper.bigparcel2/decor/1 1/1 1/1/200/-1/Big Parcel 2/27/Tilesheets\\artist_debris/false/collection_maximalism"
+               
+  
+       
+            }
+        },
+            
+        
+        {"Action": "Load","Target": "Tilesheets/artist_debris","FromFile": "assets/artist_debris.png"}
+            
+                  
+        
+    ]
+}

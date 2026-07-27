@@ -1,0 +1,79 @@
+{
+
+//★★★ModConfig★★★
+
+    "config.EnableThisMod.name": "启用此Mod",
+    "config.EnableThisMod.description": "此模组的开关设置",
+
+    "config.EntranceSleep.name": "入口睡眠",
+    "config.EntranceSleep.description": "开启此设置后，您在触摸帐篷入口处的地砖（进入室内地图之前）即可入睡。（您可以取消确认并进入帐篷。）",
+
+    "config.FreeToBuild.name": "可自由建造",
+    "config.FreeToBuild.description": "打开该设置后，建筑成本将为零，所需材料将被消除。",
+
+    "config.ImmediateBuildFinish.name": "立即建造完成",
+    "config.ImmediateBuildFinish.description": "打开该设置可以在瞬间完成建造。",
+
+    "config.SeasonalAppearance.name": "季节性外观",
+    "config.SeasonalAppearance.description": "如果关闭，外观将不会随季节而变化。（固定为春季外观）此设置适用于所有颜色类型的帐篷。",
+
+    "config.TentShadowTyep.name": "Tent Shadow Tyep",
+    "config.TentShadowTyep.description": "\"Brown\" is the color and intensity of the shadow of the vanilla building. This setting applies to all color type tents.",
+    "config.TentShadowTyep.values.Brown": "Brown",
+    "config.TentShadowTyep.values.Brown(Thinner)": "Brown(Thinner)",
+    "config.TentShadowTyep.values.Black": "Black",
+    "config.TentShadowTyep.values.Black(Thinner)": "Black(Thinner)",
+
+    "config.InDoorColor.name": "室内颜色",
+    "config.InDoorColor.description": "您可以更改帐篷室内的颜色。此设置适用于所有颜色类型的帐篷。",
+    "config.InDoorColor.values.Vanilla(Yellow)": "默认（黄色）",
+    "config.InDoorColor.values.Black": "黑色",
+    "config.InDoorColor.values.Blue": "蓝色",
+    "config.InDoorColor.values.Green": "绿色",
+    "config.InDoorColor.values.Purple": "紫色",
+    "config.InDoorColor.values.Red": "红色",
+    "config.InDoorColor.values.White": "白色",
+
+  //●以下、動物表示関係のセクション
+    "config.section.DisplayAnimalsSetting.name": "显示动物设置",
+    "config.section.DisplayAnimalsSetting.description": "动物显示的位置（所有帐篷共用）以及动物是否显示在每个帐篷中。",
+
+    "config.AnimalsDrawPosition.name": "动物位置",
+    "config.AnimalsDrawPosition.description": "您可以选择动物将出现的位置。此设置适用于所有颜色类型的帐篷。",
+    "config.AnimalsDrawPosition.values.OnTheTarp": "在防水布上",
+    "config.AnimalsDrawPosition.values.OnTheTent": "在帐篷上",
+
+    "config.EnableAnimal_Vanilla(Yellow).name": "在黄色帐篷上显示",
+    "config.EnableAnimal_Vanilla(Yellow).description": "显示这种颜色帐篷中的动物。",
+    "config.EnableAnimal_Black.name": "在黄色帐篷上显示",
+    "config.EnableAnimal_Black.description": "显示这种颜色帐篷中的动物。",
+    "config.EnableAnimal_Blue.name": "在黑色帐篷上显示",
+    "config.EnableAnimal_Blue.description": "显示这种颜色帐篷中的动物。",
+    "config.EnableAnimal_Green.name": "在蓝色帐篷上显示",
+    "config.EnableAnimal_Green.description": "显示这种颜色帐篷中的动物。",
+    "config.EnableAnimal_Purple.name": "在绿色帐篷上显示",
+    "config.EnableAnimal_Purple.description": "显示这种颜色帐篷中的动物。",
+    "config.EnableAnimal_Red.name": "在紫色帐篷上显示",
+    "config.EnableAnimal_Red.description": "显示这种颜色帐篷中的动物。",
+    "config.EnableAnimal_White.name": "在红色帐篷上显示",
+    "config.EnableAnimal_White.description": "显示这种颜色帐篷中的动物。",
+    "config.EnableAnimal_RandomColor.name": "在白色帐篷上显示",
+    "config.EnableAnimal_RandomColor.description": "显示这种颜色帐篷中的动物。",
+
+
+
+//★★★Name, Description, Text★★★
+
+    "CampingTentWithTarp_Name": "露营帐篷(黄色)",
+    "CampingTentWithTarp_Black_Name": "露营帐篷(黑色)",
+    "CampingTentWithTarp_Blue_Name": "露营帐篷(蓝色)",
+    "CampingTentWithTarp_Green_Name": "露营帐篷(绿色)",
+    "CampingTentWithTarp_Purple_Name": "露营帐篷(紫色)",
+    "CampingTentWithTarp_Red_Name": "露营帐篷(红色)",
+    "CampingTentWithTarp_White_Name": "露营帐篷(白色)",
+    "CampingTentWithTarp_Description": "让我们休息下！\n里面的睡袋可以用来结束一天。",
+
+    "CampingTentWithTarp_RandomColor_Name": "露营帐篷。(随机)",
+    "CampingTentWithTarp_RandomColor_Description": "由于某种原因，这个神秘的帐篷每天早上醒来时都会变色。",
+
+}

@@ -1,0 +1,26 @@
+{
+    "Format": "1.28.0",
+    "ConfigSchema": {
+    "Annetta portrait":{
+            "AllowValues":"Black_hair, Purple_hair",
+            "Default":"Purple_hair"
+        },
+    "Annetta sprite":{
+            "AllowValues":"Black_hair, Purple_hair",
+            "Default":"Black_hair"
+        }
+    },
+
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Annetta",
+            "FromFile": "assets/Annetta_portrait_{{Annetta portrait}}.png"
+		},
+		{
+            "Action": "EditImage",
+            "Target": "Characters/Annetta",
+            "FromFile": "assets/Annetta_sprite_{{Annetta sprite}}.png"
+        }
+    ]
+}

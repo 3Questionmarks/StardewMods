@@ -1,0 +1,25 @@
+{
+    "Changes": [
+        {
+			"LogName": "{{ModId}}_Jeric Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "RSVJericShop"
+            ],
+            "Entries": {
+				"PriceModifiers": [
+					{
+						"Modification": "Multiply",
+						"Amount": 1.0
+					},
+					{
+						"Modification": "Multiply",
+						"Amount": 0.7,
+						"Condition": "PLAYER_FRIENDSHIP_POINTS Any Jeric 2000"
+					}
+				]
+			}
+        }
+    ]
+}

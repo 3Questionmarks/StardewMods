@@ -164,5 +164,14 @@
 		},
 		],
 	}
+  },
+
+"Sounds": [
+	{
+	"SoundName": "Penguin_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.3
 	}
+]  
 }

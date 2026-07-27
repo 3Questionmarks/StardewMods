@@ -1,4 +1,6 @@
 {
+  "ThemeId": "Parchment",
+  "ForceFullScreen": false,
   "Controls": {
     "ToggleLookup": "F1",
     "ToggleSearch": "LeftShift + F1",
@@ -8,7 +10,9 @@
     "PageDown": "PageDown",
     "ToggleDebug": "None"
   },
+  "ToggleLookupOnDoubleTap": false,
   "ShowUnknownGiftTastes": true,
+  "ShowUncaughtFishSpawnRules": true,
   "ShowUnknownRecipes": true,
   "ShowPuzzleSolutions": true,
   "HighlightUnrevealedGiftTastes": false,
@@ -29,7 +33,6 @@
   "HideOnKeyUp": false,
   "EnableTargetRedirection": true,
   "EnableTileLookups": true,
-  "ForceFullScreen": false,
   "ScrollAmount": 160,
   "ShowDataMiningFields": false,
   "ShowInvalidRecipes": false

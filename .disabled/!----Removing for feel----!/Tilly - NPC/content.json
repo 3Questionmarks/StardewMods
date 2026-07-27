@@ -1,0 +1,453 @@
+{
+  "Format": "2.8.0",
+  
+  "ConfigSchema": { 
+		"Tilly's Route": {
+			"AllowValues": "Romantic, Platonic, Joja",
+			"Description": "Switch between story types for Tilly. NOTE: The Joja route will not have the events that develop her original story beats as this route essentially leapfrogs all of it, but you will have access to other heart events.", 
+			"Default": "Romantic"
+		},
+		
+		"Tilly's House Location": {
+			"AllowValues": "Above Blacksmith, Below Penny",
+			"Description": "Switch between house locations for Tilly.", 
+			"Default": "Above Blacksmith"
+		},
+		"Nyapu-style Portraits": {
+			"AllowValues": "True, False",
+			"Description": "Switch to using my Nyapu-style portraits.", 
+			"Default": "False"
+		},
+		"Lunar New Year Stand": {
+			"AllowValues": "True, False",
+			"Description": "Enable Tilly's LNY Stand.",
+			"Default": "True",
+		},
+		
+		"Joja Route Trigger Length": {
+			"AllowValues": "7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28",
+			"Description": "Choose how much time passes between the construction of the Joja Warehouse (vanilla) or the construction of the Movie Theatre (SVE) and the start of Tilly's Joja route.",
+			"Default": "28",
+		},
+		
+		"Darcy Location": {
+			"AllowValues": "Original, Location2, Leela's",
+			"Description": "Switch events between Darcy's location.", 
+			"Default": "Original"
+		},
+		"Hair Type - Girl": {
+			"AllowValues": "None (Vanilla), Straight Hair, Curly Hair, Coily Hair",
+			"Description": "Switch between hair types for girl.", 
+			"Default": "None (Vanilla)"
+		},
+		"Hair Type - Boy": {
+			"AllowValues": "None (Vanilla), Straight Hair, Curly Hair, Coily Hair",
+			"Description": "Switch between hair types for boy.", 
+			"Default": "None (Vanilla)"
+		},
+	},
+
+	"DynamicTokens": [
+	
+	//House/Shop
+	{
+		"Name": "BuildingDT",
+		"Value": "House",
+		"When": {
+			"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+		},
+	},
+	{
+		"Name": "BuildingDT",
+		"Value": "Shop",
+		"When": {
+			"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+		},
+	},
+	
+	//Extra Saloon Space Schedule Token
+	{
+		"Name": "ESS",
+		"Value": "29 34 2",
+		"When": {
+			"HasMod": "RaffieJohn.ExtraSaloonSpace",
+		},
+	},
+	
+	{
+		"Name": "ESS",
+		"Value": "19 20 2",
+		"When": {
+			"HasMod | contains = RaffieJohn.ExtraSaloonSpace": false,
+		},
+	},
+	
+	//DT version of location Configs 
+	{
+		"Name": "LocationDT",
+		"Value": "AB",
+		"When": {
+			"Tilly's House Location": "Above Blacksmith",
+		},
+	},
+	{
+		"Name": "LocationDT",
+		"Value": "BP",
+		"When": {
+			"Tilly's House Location": "Below Penny",
+		},
+	},
+	
+	
+	//Style
+	{
+		"Name": "StyleDT",
+		"Value": "Vanilla",
+	},
+	{
+		"Name": "StyleDT",
+		"Value": "Starblue",
+		"When": {
+			"HasMod": "Lita.StarblueValleyUnofficial",
+		},
+	},
+	{
+		"Name": "StyleDT",
+		"Value": "EarthyRecolour",
+		"When": {
+			"HasMod": "DaisyNiko.EarthyRecolour",
+		},
+	},
+	
+	
+	// Even/Odd Year Token
+		{
+			"Name": "IsOdd",
+			"Value": "{{Query: {{Year}} % 2 = 1}}",
+		},
+		{ // Robin Modded Alone
+			"Name": "DSVFireworks",
+			"Value": "Mountain 41 32 3",
+			"When": {
+				"HasMod": "DSV.Core",
+				"DSV.Core/ConfigValue:RobinVariant": "Modded"
+			},
+		},
+		{ // Pierre Modded Alone
+			"Name": "DSVFireworks",
+			"Value": "Town 111 28 3",
+			"When": {
+				"HasMod": "DSV.Core",
+				"Query: '{{DSV.Core/ConfigValue:PierreVariant |contains= Modded}}' = 'true' OR ('{{HasMod |contains= Heliax.PiperAPierreRewrite}}' = 'true' AND '{{DSV.Core/ConfigValue:ChinesePiper}}' = 'true')": true,
+			},
+		},
+		
+		{ // Pierre and Robin, Odd Year
+			"Name": "DSVFireworks",
+			"Value": "Town 111 28 3",
+			"When": {
+				"HasMod": "DSV.Core",
+				"DSV.Core/ConfigValue:RobinVariant": "Modded",
+				"Query: '{{DSV.Core/ConfigValue:PierreVariant |contains= Modded}}' = 'true' OR ('{{HasMod |contains= Heliax.PiperAPierreRewrite}}' = 'true' AND '{{DSV.Core/ConfigValue:ChinesePiper}}' = 'true')": true,
+				"IsOdd": true,
+			},
+		},
+		{ // Pierre and Robin, Even Year
+			"Name": "DSVFireworks",
+			"Value": "Beach 48 22 0",
+			"When": {
+				"HasMod": "DSV.Core",
+				"DSV.Core/ConfigValue:RobinVariant": "Modded",
+				"Query: '{{DSV.Core/ConfigValue:PierreVariant |contains= Modded}}' = 'true' OR ('{{HasMod |contains= Heliax.PiperAPierreRewrite}}' = 'true' AND '{{DSV.Core/ConfigValue:ChinesePiper}}' = 'true')": true,
+				"IsOdd": false,
+			},
+		},
+		
+		//WORLDMAP TOKENS 
+		
+		//Location Name
+		{
+			"Name": "Location Name",
+			"Value": "Wem.Bundle.Tilly_TillyHouse",
+			"When": {
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+			},
+		},
+		{
+			"Name": "Location Name",
+			"Value": "Wem.Bundle.Tilly_TillyShop",
+			"When": {
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+			},
+		},
+		
+		//Building Name 	
+		{
+			"Name": "Building Name",
+			"Value": "Tilly's House",
+			"When": {
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+			},
+		},
+		{
+			"Name": "Building Name",
+			"Value": "{{i18n:WorldMapShopName}}\n                  {{i18n:WorldMapShopDesc}}\n                  ",
+			"When": {
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+			},
+		},
+		
+		//Scroll Name 	
+		{
+			"Name": "Scroll Name",
+			"Value": "{{i18n:WorldMapScrollHouseName}}",
+			"When": {
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+			},
+		},
+		{
+			"Name": "Scroll Name",
+			"Value": "{{i18n:WorldMapShopName}}",
+			"When": {
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+			},
+		},
+		
+		{ //Above Blacksmith Tooltips
+			"Name": "WorldMap X Coord TT",
+			"Value": "210",
+			"When": {
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		{
+			"Name": "WorldMap Y Coord TT",
+			"Value": "90",
+			"When": {
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		{
+			"Name": "WorldMap Width TT",
+			"Value": "10",
+			"When": {
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		{
+			"Name": "WorldMap Height TT",
+			"Value": "10",
+			"When": {
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		
+		{ //House Below Penny Tooltips
+			"Name": "WorldMap X Coord TT",
+			"Value": "197",
+			"When": {
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		{
+			"Name": "WorldMap Y Coord TT",
+			"Value": "100",
+			"When": {
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		{
+			"Name": "WorldMap Width TT",
+			"Value": "7",
+			"When": {
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		{
+			"Name": "WorldMap Height TT",
+			"Value": "7",
+			"When": {
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		
+		{ //Shop Below Penny Tooltips
+			"Name": "WorldMap X Coord TT",
+			"Value": "200",
+			"When": {
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		
+		{ //Above Blacksmith WorldPositions
+			"Name": "WorldMap X Coord WP",
+			"Value": "215",
+			"When": {
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		{
+			"Name": "WorldMap Y Coord WP",
+			"Value": "90",
+			"When": {
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		{
+			"Name": "WorldMap Width WP",
+			"Value": "4",
+			"When": {
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		{
+			"Name": "WorldMap Height WP",
+			"Value": "8",
+			"When": {
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		
+		{ //Below Penny WorldPositions
+			"Name": "WorldMap X Coord WP",
+			"Value": "203",
+			"When": {
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		{
+			"Name": "WorldMap Y Coord WP",
+			"Value": "100",
+			"When": {
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		{
+			"Name": "WorldMap Width WP",
+			"Value": "3",
+			"When": {
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		{
+			"Name": "WorldMap Height WP",
+			"Value": "5",
+			"When": {
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		
+	],
+	
+  "Changes": [
+	//Include Tilly Data
+	{
+		"LogName": "Character Load Tilly",
+		"Action": "Include",
+		"FromFile": "assets/Characters/Tilly.json",
+	},
+	
+	//Include Routes
+	{
+		"LogName": "Include Romantic Route",
+		"Action": "Include",
+		"FromFile": "assets/Routes/Romantic.json",
+		"When": {
+			"Tilly's Route": "Romantic",
+		},
+	},
+	{
+		"LogName": "Include Platonic Route",
+		"Action": "Include",
+		"FromFile": "assets/Routes/Platonic.json",
+		"When": {
+			"Tilly's Route": "Platonic",
+		},
+	},
+	{
+		"LogName": "Include Joja Route",
+		"Action": "Include",
+		"FromFile": "assets/Routes/Joja.json",
+		"When": {
+			"Tilly's Route": "Joja",
+		},
+	},
+	
+	//Include Family Data
+	{
+		"LogName": "Character Load Family",
+		"Action": "Include",
+		"FromFile": "assets/Characters/Family.json",
+	},
+	
+	
+	//Include Map Data
+	{
+		"LogName": "Maps",
+		"Action": "Include",
+		"FromFile": "assets/Maps/maps.json",
+	},
+	
+	//Include WorldMap Data
+	{
+		"LogName": "Maps",
+		"Action": "Include",
+		"FromFile": "assets/Maps/WorldMap.json",
+	},
+	
+	//Anims
+	{
+		"LogName": "Include animations",
+		"Action": "Include",
+		"FromFile": "assets/Misc/anims.json",
+	},
+	
+		
+	//Include Tractions 
+	{
+		"LogName": "Include tractions",
+		"Action": "Include",
+		"FromFile": "assets/Misc/Tractions.json",
+	},
+	
+	//Include Event Dialogue
+	{
+		"LogName": "Include event dialogue",
+		"Action": "Include",
+		"FromFile": "assets/Events/eventDialogue.json",
+	},
+	
+	//Include Shops
+	{
+		"LogName": "Include shops",
+		"Action": "Include",
+		"FromFile": "assets/Misc/Shops.json",
+	},
+	
+	//Include NPC Schedule Edits
+	{
+		"LogName": "Include compat file",
+		"Action": "Include",
+		"FromFile": "assets/schedules/NPCScheduleEdits.json",
+		"When": {
+			"HasReadLetter": "{{ModId}}.Tilly_GrandOpeningMail",
+		},
+	},
+	
+	//Include Compat file
+	{
+		"LogName": "Include compat file",
+		"Action": "Include",
+		"FromFile": "assets/Compat/Compat.json",
+	},
+	
+	//Load Spouse Portraits
+	{
+        "Action": "Load",
+        "Target": "{{ModId}}/Furniture",
+        "FromFile": "assets/Objects/spousePortraits.png"
+    },
+	
+  ]
+}

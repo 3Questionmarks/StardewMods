@@ -1,0 +1,48 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Krobus", "Appearance"],
+			"Entries": {
+				"DolphINaF.ExtraPortraits_Krobus.Origin": {
+					"Id": "DolphINaF.ExtraPortraits_Krobus.Origin",
+					"Portrait": "Portraits/ShadowGuy_Default",
+					"Sprite": "Characters/ShadowGuy_Default",
+					"Condition": "ANY \"IS_EVENT 520702\" \"!IS_EVENT, LOCATION_NAME Here Town, {{HasActiveQuest |contains=31}}\"",
+					"Precedence": -1100
+				},
+					
+			}
+		},		
+		{
+			"Action": "EditData",
+			"Target": "Strings/Locations",
+			"Priority": "Late + 50",		
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","Town_mgThiefMessage"],
+					"Value": "Portraits/ShadowGuy_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},						
+			],	
+		},	
+		{
+			"Action": "Load",
+			"Target": "Characters/ShadowGuy_Default",
+			"FromFile": "assets/LooseSprites/ShadowGuy_Default.png",
+		},	
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Krobus",
+			"Priority": "Late +50",
+			"FromFile": "assets/LooseSprites/ShadowGuy_Default.png",
+			"Update": "OnLocationChange",
+			"When": {
+				"HasActiveQuest": "31",
+				"LocationName": "Town",
+			},
+		}
+	],
+}

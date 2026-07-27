@@ -1,0 +1,85 @@
+{
+    "Name": "Gem Sea Shores - More Beach Areas",
+    "Author": "Aimon111",
+    "Version": "1.0.9",
+    "UniqueID": "Aimon111.BeachAreas",
+    "Description": "A small beach themed expansion which aims to add new beach and forest themed maps and overhaul vanilla areas.",	
+    "MinimumApiVersion": "4.0.0",
+      "UpdateKeys": [ "Nexus:44095" ],
+    "ContentPackFor": {"UniqueID": "Pathoschild.ContentPatcher"},
+	 "Dependencies": [
+	{
+            "UniqueID":"DaisyNiko.Tilesheets",
+            "IsRequired":true
+	},
+	{
+	"UniqueID":"crystalinerose.Tilesheets",
+            "IsRequired":true
+	},
+	{
+	"UniqueID":"mushymato.MMAP",
+            "IsRequired":false
+	},
+	
+	{
+	"UniqueID":"cajcbell.ESE",
+            "IsRequired":false
+	},
+	{
+	"UniqueID":"Lemurkat.EastScarp",
+            "IsRequired":false
+	},
+		{
+	"UniqueID":"Lemurkat.EastScarpNPCs",
+            "IsRequired":false
+	},
+		{
+	"UniqueID":"dreamy.kickitspot",
+            "IsRequired":false
+	},
+		{
+	"UniqueID":"Rafseazz.RSVCP",
+            "IsRequired":false
+	},
+		
+		{
+	"UniqueID":"unclearya.beachminecart",
+            "IsRequired":false
+	},
+		{
+	"UniqueID":"Endwyr.EssentialNPCsVegans",
+            "IsRequired":false
+	},
+		{
+	"UniqueID":"handwrittenhello.dbda",
+            "IsRequired":false
+	},
+		{
+	"UniqueID":"skellady.SBVCP",
+            "IsRequired":false
+	},
+	
+	
+	
+	{
+	"UniqueID":"recolorstardewfoliage",
+            "IsRequired":false
+	},
+	{
+	"UniqueID":"Kookiefroggie.Recolor",
+            "IsRequired":false
+	},
+	{
+	"UniqueID":"DaisyNiko.EarthyRecolour",
+            "IsRequired":false
+	},
+	{
+	"UniqueID":"Lita.StarblueValleyUnofficial",
+            "IsRequired":false
+	},
+	{
+	"UniqueID":"Acerbicon.Recolor",  
+            "IsRequired":false
+	},
+	]
+}

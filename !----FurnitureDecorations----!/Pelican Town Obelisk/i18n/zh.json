@@ -1,0 +1,39 @@
+{
+    "PelicanTownObelisk_Name": "鹈鹕镇方尖碑",
+    "PelicanTownObelisk_Description": "方尖碑充满了巫师的技能。它可以瞬间弯曲到城镇喷泉。",
+ 
+    "PelicanTownObelisk.Mail_Title": "鹈鹕镇方尖碑建设开放通知",
+    "PelicanTownObelisk.Mail_Text": "亲爱的 @^^你好啊刘易斯已经要求巫师提供技术有一段时间了。 所以他们终于得到了一些合作现在他们想在其他城镇建立这个鹈鹕镇方尖碑以吸引人们进城。^^我不知道所有的细节但我从一个巫师那里学会了如何把魔法放进去所以对我来说很容易搭建。 如果说 @ 说农场需要它 我总是愿意承担它的几个材料和一个小费用^^-罗宾",
+
+
+
+  "config.Enable this mod.name": "模组开关",
+  "config.Enable this mod.description": "用来控制模组开关的。",
+
+  "config.Fountain Appearance.name": "喷泉外观",
+  "config.Fountain Appearance.description": "更改喷泉本身的外观。目前有两种图形类型 原版或在Project Yellog Town大修mod中使用的那些。即使Project Yellog Town大修mod本身没有安装这个mod本身没有安装你只能用这个mod来改变它。",
+  "config.Fountain Appearance.values.Vanilla": "原版",
+  "config.Fountain Appearance.values.ProjectYellogTownOverhaul": "Yellog城镇大修项目",
+
+  "config.Seasonal Appearance.name": "季节性外观",
+  "config.Seasonal Appearance.description": "如果关闭设置外观不会随着季节的变化而变化。它将被固定到弹簧外观。",
+
+  "config.Treat same other obelisks.name": "对待同样的方尖碑",
+  "config.Treat same other obelisks.description": "当设置打开时规格将与其他方尖碑相同。显示、所需费用和材料将在向导的构建菜单中增加。",
+
+  "config.Remove Build Restrictions.name": "删除生成限制",
+  "config.Remove Build Restrictions.description": "打开设置将允许鹈鹕镇方尖碑立即建造。打开建筑锁",
+
+  "config.Free to Build.name": "免费构建",
+  "config.Free to Build.description": "当设置打开时鹈鹕镇方尖碑的建设成本将为零并且不需要任何材料。",
+
+  "config.Immediate Build Finish.name": "立即生成完成",
+  "config.Immediate Build Finish.description": "打开设置鹈鹕镇方尖碑的建设可以在几分之一秒内完成。",
+
+  "config.Warp Front Only.name": "仅前翘曲",
+  "config.Warp Front Only.description": "此设置可防止向喷壶供水时发生意外翘曲。当设置打开时曲速仅在喷泉前的一个方格中起作用。",
+
+  "config.No Warp Function.name": "无翘曲功能",
+  "config.No Warp Function.description": "它去除了它作为方尖碑的功能变成了一个喷泉。此设置优先于上面的仅翘曲前项。",
+
+}

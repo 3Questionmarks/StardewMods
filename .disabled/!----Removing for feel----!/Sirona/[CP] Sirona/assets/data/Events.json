@@ -1,0 +1,108 @@
+{
+  "Changes": [
+    {
+      "LogName": "EVENT CHAR LOADS",
+      "Action": "Load",
+      "Target": "Characters/SealSprite",
+      "FromFile": "assets/{{TargetPathOnly}}/EventActors/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Skin Portraits",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_Sirona_Skin",
+      "FromFile": "assets/portraits/Sirona_Skin.png"
+    },
+    {
+      "LogName": "Skin Sprites",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_Sirona_Skin",
+      "FromFile": "assets/sprites/Sirona_Skin.png"
+    },
+    {
+      "LogName": "Custom Locations Events Blank",
+      "Action": "Load",
+      "Target": "Data/Events/dedpeech.seacave_SeaCave",
+      "FromFile": "assets/data/blank/blank.json"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "When": {
+        "HasFlag": "beachBridgeFixed"
+      },
+      "Entries": {
+        "{{ModId}}_SironaHeartEvent0/f {{ModId}}_Sirona 0/t 600 2600": "continue/38 8/farmer 38 1 2/skippable/pause 1000/move farmer 0 8 2 true/pause 2000/playSound ghost/pause 1000/emote farmer 8/pause 1000/message \"{{i18n:SironaHeartEvent0.0}}\"/fade/viewport 73 23/addTemporaryActor SealSprite 32 32 72 23 3 false Character SealSprite/fade unfade/playSound ghost/shake SealSprite 1000/pause 2000/globalFade/viewport -1000 -1000/stopMusic/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "{{ModId}}_SironaHeartEvent0pt2/SawEvent {{ModId}}_SironaHeartEvent0/t 600 1200": "continue/70 18/farmer 56 13 1 Willy 66 18 2/addTemporaryActor SealSprite 32 32 72 23 3 false Character SealSprite/skippable/pause 1000/move farmer 9 0 1 false/move farmer 0 5 2 false/pause 1000/playSound ghost/shake SealSprite 1000/pause 1000/speak Willy \"{{i18n:SironaHeartEvent0pt2.0}}\"/pause 2000/globalFade/viewport -1000 -1000/message \"{{i18n:SironaHeartEvent0pt2.1}}\"/friendship {{ModId}}_Sirona 100/stopMusic/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "{{ModId}}_SironaHeartEvent1/f {{ModId}}_Sirona 250/t 600 1200": "continue/76 12/farmer 56 13 1 /addTemporaryActor SealSprite 32 32 78 14 3 false Character SealSprite/addObject 77 14 (O)372/skippable/pause 1000/move farmer 17 0 1 false/message \"{{i18n:SironaHeartEvent1.0}}\"/pause 1000/emote farmer 16/addItem (O)372/message \"{{i18n:SironaHeartEvent1.1}}\"/globalFade/viewport -1000 -1000/friendship {{ModId}}_Sirona 100/stopMusic/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/ArchaeologyHouse",
+      "Entries": {
+        "{{ModId}}_SironaHeartEvent2/f {{ModId}}_Sirona 500/t 800 1800": "continue/14 12/farmer 3 14 0 {{ModId}}_Sirona 10 16 0 Gunther 5 8 2 /skippable/pause 1000/move farmer 0 -3 0 false/pause 1500/faceDirection farmer 1/message \"{{i18n:SironaHeartEvent2.0}}\"/move farmer 2 0 1 false/move farmer 0 -1 0 false/pause 1500/speak Gunther \"{{i18n:SironaHeartEvent2.1}}\"/globalFade/viewport -1000 -1000/stopMusic/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "{{ModId}}_SironaHeartEvent3/f {{ModId}}_Sirona 750/SawEvent {{ModId}}_SironaHeartEvent1/t 600 1600": "continue/76 12/farmer 56 13 1 /addTemporaryActor SealSprite 32 32 78 14 3 false Character SealSprite/addObject 77 14 (O)372/skippable/pause 1000/move farmer 17 0 1 false/message \"{{i18n:SironaHeartEvent4.0}}\"/pause 1000/emote farmer 16/addItem (O)372/addItem (O)797/message \"{{i18n:SironaHeartEvent4.1}}\"/globalFade/viewport -1000 -1000/friendship {{ModId}}_Sirona 100/stopMusic/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "{{ModId}}_SironaHeartEvent4/f {{ModId}}_Sirona 1000/SawEvent {{ModId}}_SironaHeartEvent3/t 600 2600": "continue/38 8/farmer 38 1 2/addTemporaryActor SealSprite 32 32 37 12 0 false Character SealSprite/skippable/pause 1000/move farmer 0 8 2 false/pause 1000/message \"{{i18n:SironaHeartEvent5.0}}\"/addItem (O)149/emote farmer 16/pause 2000/message \"{{i18n:SironaHeartEvent5.1}}\"/globalFade/viewport -1000 -1000/stopMusic/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/SeedShop",
+      "Entries": {
+        "{{ModId}}_SironaHeartEvent6/f {{ModId}}_Sirona 1500/SawEvent {{ModId}}_SironaHeartEvent2/t 900 1600": "continue/9 21/farmer 6 28 0 {{ModId}}_Sirona 11 23 0 Pierre 4 17 2 /skippable/pause 1000/move farmer 0 -8 0 false/move farmer -2 0 3 false/faceDirection {{ModId}}_Sirona 3/move farmer 0 -1 0 false/speak Pierre \"{{i18n:SironaHeartEvent6.0}}\"/move {{ModId}}_Sirona -5 0 3/move {{ModId}}_Sirona 0 8 2/speak Pierre \"{{i18n:SironaHeartEvent6.1}}\"/globalFade/viewport -1000 -1000/stopMusic/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "{{ModId}}_SironaHeartEvent7/f {{ModId}}_Sirona 1750/t 1800 2600": "night_market/87 38/farmer 87 27 2 {{ModId}}_Sirona 83 41 2 /showFrame {{ModId}}_Sirona 32/skippable/pause 1000/move farmer 0 10 2/pause 800/move farmer 0 2 2/move farmer -2 0 2/move farmer 0 2 2/showFrame 70/pause 800/speak {{ModId}}_Sirona \"{{i18n:SironaHeartEvent7.0}}\"/pause 250/message \"{{i18n:SironaHeartEvent7.1}}\"/speak {{ModId}}_Sirona \"{{i18n:SironaHeartEvent7.2}}\"/message \"{{i18n:SironaHeartEvent7.3}}\"/speak {{ModId}}_Sirona \"{{i18n:SironaHeartEvent7.4}}\"/pause 2000/globalFade/viewport -1000 -1000/stopMusic/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "{{ModId}}_SironaHeartEvent8/f {{ModId}}_Sirona 2000/HostOrLocalMail {{ModId}}_HeartEvent8_Mail/t 1800 2600": "night_market/78 15/farmer 69 9 1 {{ModId}}_Sirona 100 15 3 /addTemporaryActor SealSprite 32 32 86 15 3 false Character SealSprite/changeSprite {{ModId}}_Sirona Skin/changePortrait {{ModId}}_Sirona Skin/move farmer 10 0 1/move farmer 0 6 1/move farmer 4 0 1/move SealSprite 15 0 2/move {{ModId}}_Sirona -14 0 3/pause 100/speak {{ModId}}_Sirona \"{{i18n:SironaHeartEvent8.0}}\"/pause 100/speak {{ModId}}_Sirona \"{{i18n:SironaHeartEvent8.1}}\"/message \"{{i18n:SironaHeartEvent8.2}}\"/move farmer 2 0 1/speak {{ModId}}_Sirona \"{{i18n:SironaHeartEvent8.3}}\"/pause 2000/globalFade/viewport -1000 -1000/stopMusic/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/dedpeech.seacave_SeaCave",
+      "Entries": {
+        "{{ModId}}_SironaHeartEvent10/f {{ModId}}_Sirona 2500/t 1400 2600": "moonlightJellies/9 7/farmer 2 8 1 {{ModId}}_Sirona 16 11 3 /skippable/pause 1000/move farmer 12 0 1/pause 100/move farmer 0 2 2/pause 100/move farmer 1 0 2/pause 200/speak {{ModId}}_Sirona \"{{i18n:SironaHeartEvent10.0}}\"/emote farmer 20/pause 10/emote {{ModId}}_Sirona 20/speak {{ModId}}_Sirona \"{{i18n:SironaHeartEvent10.1}}\"/move {{ModId}}_Sirona 0 -1 3/faceDirection farmer 1/pause 100/positionOffset farmer 2 0/pause 100/positionOffset farmer 2 0/pause 100/positionOffset farmer 2 0/pause 100/positionOffset farmer 2 0/positionOffset {{ModId}}_Sirona -2 0/pause 100/positionOffset farmer 2 0/positionOffset {{ModId}}_Sirona -2 0/pause 100/positionOffset farmer 2 0/positionOffset {{ModId}}_Sirona -2 0/pause 100/positionOffset farmer 2 0/positionOffset {{ModId}}_Sirona -2 0/pause 100/positionOffset farmer 2 0/positionOffset {{ModId}}_Sirona -2 0/showFrame {{ModId}}_Sirona 51/showFrame 101/pause 2000/globalFade/viewport -1000 -1000/message \"{{i18n:SironaHeartEvent10.2}}\"/stopMusic/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FarmHouse",
+      "Entries": {
+        "{{ModId}}_SironaHeartEvent12/t 1800 2200/f {{ModId}}_Sirona 3000/!Season Summer/Weather rainy": "continue/27 25/farmer 0 0 0 {{ModId}}_Sirona 29 28 2/skippable/move {{ModId}}_Sirona 3 0 1/pause 200/move {{ModId}}_Sirona -3 0 2/playSound rainsound/textAboveHead {{ModId}}_Sirona \"{{i18n:SironaHeartEvent12.0 |PlayerName={{PlayerName}} }}\"/faceDirection {{ModId}}_Sirona 2/pause 2000/warp farmer 27 30/emote {{ModId}}_Sirona 16/pause 400/speak {{ModId}}_Sirona \"{{i18n:SironaHeartEvent12.1}}\"/move farmer 0 -2 1/faceDirection {{ModId}}_Sirona 3/move {{ModId}}_Sirona -1 0 3/message \"{{i18n:SironaHeartEvent12.2}}\"/positionOffset farmer 2 0/pause 100/positionOffset farmer 2 0/pause 100/positionOffset farmer 2 0/pause 100/positionOffset farmer 2 0/positionOffset {{ModId}}_Sirona -2 0/pause 100/positionOffset farmer 2 0/positionOffset {{ModId}}_Sirona -2 0/pause 100/positionOffset farmer 2 0/positionOffset {{ModId}}_Sirona -2 0/emote farmer 20 true/pause 100/positionOffset farmer 2 0/positionOffset {{ModId}}_Sirona -2 0/pause 100/positionOffset farmer 2 0/positionOffset {{ModId}}_Sirona -2 0/showFrame {{ModId}}_Sirona 51/showFrame 101/pause 200/showFrame {{ModId}}_Sirona 14/showframe 6/speak {{ModId}}_Sirona \"{{i18n:SironaHeartEvent12.3}}\"/addItem (O)395 1/pause 2000/globalFade/viewport -1000 -1000/stopMusic/end"
+      }
+    }
+  ]
+}

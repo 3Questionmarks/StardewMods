@@ -1,0 +1,88 @@
+{
+
+"Changes": [
+
+	{
+		"LogName": "Load Berry Grove Map",
+		"Action": "Load",
+		"Target": "Maps/{{ModId}}_BerryGrove",
+		"FromFile": "assets/Maps/BerryGrove.tmx"
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"Entries": {
+		"{{ModId}}_BerryGrove": {
+			"CreateOnLoad": {
+				"MapPath": "Maps/{{ModId}}_BerryGrove",
+				"AlwaysActive":true
+			},
+			"FormerLocationNames": [ "Custom_WF_BerryGrove"],
+			"DisplayName": "{{i18n: BerryGrove}}",
+			"CanPlantHere": false,
+			"ExcludeFromNpcPathfinding": true,
+            "DefaultArrivalTile": {
+                "X": 13,
+                "Y": 24
+            },
+			"Music": [],
+			"MusicDefault": null,
+			"MusicContext": "Default",
+            "MusicIgnoredInRain": false,
+			"ArtifactSpots": [
+			],
+            "FishAreas": {},
+            "Fish": [
+			],
+            "Forage": [
+			]
+		}
+	}
+	},
+
+//-----------------------------MAP PATCHES---------------------------//
+
+{
+	"LogName":"Map Patch Town for Berry Grove",
+	"Action": "EditMap",
+	"Target": "Maps/Town", 
+	"FromFile": "assets/Maps/TownEdit.tmx",
+	"ToArea": {
+			"X": 112,
+			"Y": 34,
+			"Width": 1,
+			"Height": 2
+			},
+
+	"When": {"BerryGroveToken": "1"}			
+},
+
+//-----------------------------WARPS---------------------------//
+
+{
+	"LogName":"Add Warps to Berry Grove Map",
+	"Action": "EditMap",
+	"Target": "Maps/{{ModId}}_BerryGrove",
+	"AddWarps": ["9 24 Town 114 35"]
+},
+
+{
+	"LogName":"Add Warps from Town to Berry Grove",
+	"Action": "EditMap",
+	"Target": "Maps/Town",
+	"MapTiles": [
+		{
+		"Position": {
+			"X": 112,
+			"Y": 35
+		},
+		"Layer": "Buildings",
+		"SetProperties": {"Action": "Warp 12 24 {{ModId}}_BerryGrove"}
+		}
+	],
+	"When":{"BerryGroveToken": "1"}	
+},
+
+	]
+}

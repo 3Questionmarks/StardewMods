@@ -1,0 +1,15 @@
+{   
+    "Changes": [
+//StringsFromMaps
+        {	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.27": "{{i18n:Seat_Trinnie}}" },
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Rafseazz.RSVCP": "true"
+            },
+        },
+    ]
+}

@@ -1,0 +1,24 @@
+{
+	"Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Desert.Shortcut.A)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Desert.Shortcut.A",
+      "FromFile": "assets/Maps/Desert Shortcut/Desert.Shortcut.A_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When":{
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Desert.Shortcut.B)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Desert.Shortcut.B",
+      "FromFile": "assets/Maps/Desert Shortcut/Desert.Shortcut.B_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When":{
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

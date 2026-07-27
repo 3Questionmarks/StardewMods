@@ -1,0 +1,98 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Donny": {
+                "DisplayName": "{{i18n:DisplayName_Donny}}",
+                "BirthSeason": "Fall",
+                "BirthDay": 5,
+                "HomeRegion": "Other",
+                "Gender": "Male",
+                "Age": "Child",
+                "Manner": "Polite",
+                "Optimism": "Negative",
+                "SocialAnxiety": "Outgoing",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "Calendar": "AlwaysShown",
+                "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9695002",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_SchoolWarpRoom",
+                        "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        }
+                    ],
+                },
+            },
+        },
+//CanReceiveGift´s
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "When": {
+                "Donny": "true"
+            },
+            "Fields": {
+            "Donny": {
+                "CanReceiveGifts": true,
+                "SocialTab": "AlwaysShown"
+                },
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "When": {
+                "Donny": "false"
+            },
+            "Fields": {
+            "Donny": {
+                "CanReceiveGifts": false,
+                "SocialTab": "HiddenAlways"
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Donny": "{{i18n:gifts.Donny.love}}/206/{{i18n:gifts.Donny.like}}/254/{{i18n:gifts.Donny.dislike}}/248/{{i18n:gifts.Donny.hate}}/276/{{i18n:gifts.Donny.neutral}}/274/"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Donny",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Donny/Donny.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Donny",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Donny/Donny_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "donny_sit_right": "17/17/17",
+                "donny_sit_backward": "18/18/18",	
+                "donny_sit_left": "19/19/19",
+                "donny_read_right": "23/23/23",
+                "donny_read_backward": "22/22/22",
+                "donny_read_left": "21/21/21"
+            },
+        },
+    ]
+}

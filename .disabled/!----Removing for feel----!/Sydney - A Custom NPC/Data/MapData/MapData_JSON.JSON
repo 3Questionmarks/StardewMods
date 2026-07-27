@@ -1,0 +1,165 @@
+{
+	"Changes": [
+		//Loads Custom Maps
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_sydBeach",
+			"FromFile": "assets/maps/Custom_sydBeach.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_sydHouse",
+			"FromFile": "assets/maps/Custom_Sydney_House.tmx"
+		},
+		//Beach & Forest Vanilla Warps
+		{
+			"Action": "EditMap",
+			"Target": "maps/Beach",
+			"AddWarps": [
+                		"-1 4 Custom_sydBeach 43 5",
+                		"-1 5 Custom_sydBeach 43 5",
+                		"-1 6 Custom_sydBeach 43 5",
+                		"-1 7 Custom_sydBeach 43 5",
+                		"-1 8 Custom_sydBeach 43 5",
+                		"-1 9 Custom_sydBeach 43 5"
+            ],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+			},
+		},
+		{
+			"Action": "EditMap",
+			"Target": "maps/Beach-NightMarket",
+            		"AddWarps": [
+                		"0 4 Custom_sydBeach 44 5",
+                		"0 5 Custom_sydBeach 44 5",
+                		"0 6 Custom_sydBeach 44 5",
+                		"0 7 Custom_sydBeach 44 5"
+            		],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+			},
+		},
+		{
+			"Action": "EditMap",
+			"Target": "maps/Forest",
+			"AddWarps": [
+                		"120 33 Custom_sydBeach 0 5",
+                		"120 34 Custom_sydBeach 0 5",
+                		"120 35 Custom_sydBeach 0 6",
+                		"120 36 Custom_sydBeach 0 6"
+            ],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+			},
+		},
+		//Spouse Room Data
+		{
+      			"LogName": "Sydney Room Map",
+      			"Action": "Load",
+      			"Priority": "High",
+      			"Target": "Maps/Custom_sydLexSpouseRoom",
+      			"FromFile": "assets/Maps/Custom_sydLexSpouseRoom.tmx"
+    		},
+		{
+      			"LogName": "Blank-load Spouse Room Map",
+      			"Action": "Load",
+      			"Priority": "Low", 
+      			"Target": "Maps/Custom_sydLexSpouseRoom",
+      			"FromFile": "data/MapData/Blank_SpouseRoom.json"
+    		},
+		{
+			"LogName": "Create Sydney's Spouse Room",
+      			"Action": "EditData",
+      			"Target": "Data/Locations",
+      			"Entries": {
+				"Custom_sydLexSpouseRoom": {
+          			"DisplayName": "Sydney's Spouse Room",
+          			"DefaultArrivalTile": { "X": 5, "Y": 5 },
+          			"CreateOnLoad": { "MapPath": "Maps/Custom_sydLexSpouseRoom" }
+				},
+			},
+		},
+		//Spouse Patio Data
+		{
+      			"LogName": "Sydney Patio Map",
+      			"Action": "Load",
+      			"Priority": "High",
+      			"Target": "Maps/Custom_sydLexPatio",
+      			"FromFile": "assets/Maps/Custom_sydLexPatio.tmx"
+    		},
+		{
+			"LogName": "Create Sydney's Patio",
+      			"Action": "EditData",
+      			"Target": "Data/Locations",
+      			"Entries": {
+				"Custom_sydLexPatio": {
+          			"DisplayName": "Sydney's Patio",
+          			"DefaultArrivalTile": { "X": 5, "Y": 5 },
+          			"CreateOnLoad": { "MapPath": "Maps/Custom_sydLexPatio" }
+				},
+			},
+		},
+
+		//Beach & Forest Clutter Removal 
+		{
+			"Action": "EditMap",
+			"Target": "maps/Beach",
+			"FromFile": "assets/maps/Custom_beachClutter.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 12,
+				"Height": 10
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 12,
+				"Height": 10
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "maps/Forest",
+			"FromFile": "assets/maps/Custom_forestClutter.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 5,
+				"Height": 8
+			},
+			"ToArea": {
+				"X": 115,
+				"Y": 31,
+				"Width": 5,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+			}
+		},
+		//Seasonal Changes Vanilla
+		{
+			"Action": "EditImage",
+			"Target": "maps/Z_Sydney_House",
+			"FromFile": "assets/Tilesheets/Z_Sydney_House_fall.png",
+			"When": {
+				"season": "fall",
+				"HasMod |contains=DaisyNiko.EarthyRecolour": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "maps/Z_Sydney_House",
+			"FromFile": "assets/Tilesheets/Z_Sydney_House_winter.png",
+			"When": {
+				"season": "winter",
+				"HasMod |contains=DaisyNiko.EarthyRecolour": "false"
+			}
+		}
+	]
+}

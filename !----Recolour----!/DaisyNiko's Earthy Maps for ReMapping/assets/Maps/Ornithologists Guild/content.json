@@ -1,0 +1,27 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Ornithologist.Guild)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Ornithologist.Guild",
+      "FromFile": "assets/Maps/Ornithologists Guild/Ornithologist.Guild_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+//Boat Journey
+    {	
+		  "LogName": "Remapping (Earthy) Recolor Ornithologist Guild Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap",
+		  "FromFile": "assets/Maps/Ornithologists Guild/Ornithologist.Guild_{{season}}.png",	 
+		  "ToArea": {"X": 115, "Y": 16, "Width": 6, "Height": 10},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=Ivy.OrnithologistsGuild.CP": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  }
+  ]
+}

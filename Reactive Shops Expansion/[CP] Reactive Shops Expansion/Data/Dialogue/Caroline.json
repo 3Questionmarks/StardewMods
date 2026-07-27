@@ -1,0 +1,12 @@
+{
+    "Changes": [
+		{
+			"LogName": "{{ModId}}_Caroline",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Caroline",
+			"Entries":{
+				"{{ModId}}_TeaSapling_CT": "{{i18n: Caroline.TeaSapling_CT}}"
+			}
+		}
+	]
+}

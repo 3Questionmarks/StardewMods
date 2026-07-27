@@ -289,8 +289,8 @@
 "Sounds": [
 	{
 	"SoundName": "SpringBirds",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
 	"ChanceOfPlaying": 0.4
 	}
 ]  

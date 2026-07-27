@@ -175,8 +175,8 @@
               "ProducedItems": [
                 {
                   "ItemID": "(O)419",
-                  "MinCount": 1,
-                  "MaxCount": 2,
+                  "MinStack": 1,
+                  "MaxStack": 2,
                   "Chance": 1.0,
                   //"Condition": null
                 }
@@ -194,8 +194,8 @@
               "ProducedItems": [
                 {
                   "ItemID": "(O)419",
-                  "MinCount": 2,
-                  "MaxCount": 3,
+                  "MinStack": 2,
+                  "MaxStack": 3,
                   "Chance": 1.0,
                   //"Condition": null
                 }
@@ -213,8 +213,8 @@
               "ProducedItems": [
                 {
                   "ItemID": "(O)348",
-                  "MinCount": 1,
-                  "MaxCount": 1,
+                  "MinStack": 1,
+                  "MaxStack": 1,
                   "Chance": 1.0,
                   //"Condition": null
                 }
@@ -232,8 +232,8 @@
               "ProducedItems": [
                 {
                   "ItemID": "(O)350",
-                  "MinCount": 1,
-                  "MaxCount": 1,
+                  "MinStack": 1,
+                  "MaxStack": 1,
                   "Chance": 1.0,
                   //"Condition": null
                 }
@@ -463,6 +463,7 @@
               "Amount": 10
             }
           ],
+		  "MagicalConstruction": true,
           "DefaultAction": "ObeliskWarp Lumisteria.MtVapius_Hamlet 16 61 false",
         }
       }

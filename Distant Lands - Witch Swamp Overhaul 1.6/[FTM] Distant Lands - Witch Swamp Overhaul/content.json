@@ -88,6 +88,74 @@
       },
       {
         "SpringItemIndex": [
+          {
+            "category": "buried",
+            "contents": [
+              "SkillBook_0"
+            ]
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "category": "buried",
+            "contents": [
+              "SkillBook_0"
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "category": "buried",
+            "contents": [
+              "SkillBook_0"
+            ]
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "category": "buried",
+            "contents": [
+              "SkillBook_0"
+            ]
+          }
+        ],
+        "UniqueAreaID": "WitchSwampBook",
+        "MapName": "WitchSwamp",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Any"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "21,14;21,14"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "None",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
           "Void Mint Leaves"
         ],
         "SummerItemIndex": [

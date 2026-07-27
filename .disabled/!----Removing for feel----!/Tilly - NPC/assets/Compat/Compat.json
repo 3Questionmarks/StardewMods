@@ -1,0 +1,533 @@
+{
+  "Changes": [
+  
+	//Merchant
+	{
+      "Action": "EditData",
+      "Target": "mushymato.Merchant/Customers",
+      "TargetField": [
+        "{{ModId}}.Tilly",
+        "Dialogue"
+      ],
+      "Entries": {
+        "{{ModId}}_Haggle_A": {
+          "Haggle_Ask": "A - Ask - Price - {0} - Item {1}",
+          "Haggle_Compromise": "A - Compromise - Price - {0} - Item {1}",
+          "Haggle_Overpriced": "A - Overpriced - Price - {0} - Item {1}",
+          "Haggle_Success": "A - Success - Price - {0} - Item {1}",
+          "Haggle_Fail": "A - Fail - Price - {0} - Item {1}"
+        },
+        "{{ModId}}_Haggle_B": {
+          "Haggle_Ask": "B - Ask - Price - {0} - Item {1}",
+          "Haggle_Compromise": "B - Compromise - Price - {0} - Item {1}",
+          "Haggle_Overpriced": "B - Overpriced - Price - {0} - Item {1}",
+          "Haggle_Success": "B - Success - Price - {0} - Item {1}",
+          "Haggle_Fail": "B - Fail - Price - {0} - Item {1}"
+        }
+      },
+    },
+  
+	{
+      "Action": "EditData",
+      "Target": "mushymato.Merchant/Tourists",
+      "Entries": {
+        "{{ModId}}_Booklover_Tilly": {
+          "AppearsDuring": [
+            "mushymato.Merchant_BooksellerDay"
+          ],
+          "NPC": "{{ModId}}.Tilly",
+          "Chance": 0.3,
+          "Dialogue": {
+            "{{ModId}}.Tilly_HiChu": {
+				"Haggle_Ask": "{{i18n:Wem.Bundle.Tilly.Haggle_Ask}}",
+				"Haggle_Compromise": "{{i18n:Wem.Bundle.Tilly.Haggle_Compromise}}",
+				"Haggle_Overpriced": "{{i18n:Wem.Bundle.Tilly.Haggle_Overpriced}}",
+				"Haggle_Success": "{{i18n:Wem.Bundle.Tilly.Haggle_Success}}",
+				"Haggle_Fail": "{{i18n:Wem.Bundle.Tilly.Haggle_Fail}}",
+
+            }
+          }
+        },
+      },
+    },
+	
+	//SVE Town NightTiles
+	
+	{
+		"LogName": "Night Tiles Fix",
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapProperties": { 
+			"NightTiles": "AlwaysFront 33 53 908 AlwaysFront 11 7 908 AlwaysFront 27 7 908 AlwaysFront 21 20 908 AlwaysFront 31 20 908 AlwaysFront 21 27 908 AlwaysFront 31 27 908 AlwaysFront 24 50 908 AlwaysFront 17 50 908 AlwaysFront 4 50 908 AlwaysFront 24 58 908 AlwaysFront 20 64 908 AlwaysFront 27 72 908 AlwaysFront 30 72 908 AlwaysFront 38 64 908 AlwaysFront 27 86 908 AlwaysFront 14 86 908 AlwaysFront 1 86 908 AlwaysFront 25 111 368 AlwaysFront 52 98 908 AlwaysFront 56 98 908 AlwaysFront 50 77 908 AlwaysFront 37 77 908 AlwaysFront 52 49 908 AlwaysFront 86 56 908 AlwaysFront 111 68 908 AlwaysFront 97 86 908 AlwaysFront 72 88 908 Buildings 41 69 653 Buildings 92 79 190",
+		},
+		"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+		},
+	},
+	{
+		"LogName": "Reg Ext Lighting",
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapProperties": { 
+			"Light": "24 52 4 24 60 4 33 55 4 20 66 4 38 66 4 27 74 4 30 74 4 27 88 4 37 79 4 50 79 4 52 100 4 56 100 4 118 16 4 71 67 4 92 79 4 94 52 4 97 52 4 11 9 4 27 9 4 1 88 4 14 88 4 111 70 4 86 58 4 87 45 4 88 45 4 97 88 4 17 52 4 4 52 4 52 51 4 36 49 4 41 51 4 41 69 4 12 84 4 24 87 4 59 48 4 57 60 4 63 83 4 101 87 4 108 6 1 112 7 1 111 10 1 97 49 4 94 49 4 31 22 4 31 29 4 21 29 4 21 22 4 72 90 4 25 113 4",
+		},
+		"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+				"HasSeenEvent | contains = {{ModId}}.Tilly_GrandOpening": false,				
+		},
+	},
+	
+	{
+		"LogName": "Shop Ext Lighting",
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapProperties": { 
+			"Light": "24 52 4 24 60 4 33 55 4 20 66 4 38 66 4 27 74 4 30 74 4 27 88 4 37 79 4 50 79 4 52 100 4 56 100 4 118 16 4 71 67 4 92 79 4 94 52 4 97 52 4 11 9 4 27 9 4 1 88 4 14 88 4 111 70 4 86 58 4 87 45 4 88 45 4 97 88 4 17 52 4 4 52 4 52 51 4 36 49 4 41 51 4 41 69 4 12 84 4 24 87 4 59 48 4 57 60 4 63 83 4 101 87 4 108 6 1 112 7 1 111 10 1 97 49 4 94 49 4 31 22 4 31 29 4 21 29 4 21 22 4 72 90 4 25 113 4",
+		},
+		"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+				"HasSeenEvent | contains = {{ModId}}.Tilly_GrandOpening": true,
+		},
+	},
+	
+	//SVE Lighting
+	//Regular House
+		{
+			   "LogName": "Reg Ext Lighting, Above Blacksmith",
+               "Action": "EditMap",
+               "Target": "Maps/Town",
+               "TextOperations": [
+                    {
+                         "Operation": "Append",
+                         "Target": [
+                              "MapProperties",
+                              "Light"
+                         ],
+                         "Value": "91 65 4 92 65 4 94 65 4 95 65 4 94 66 4 95 66 4",
+                         "Delimiter": " "
+                    },
+               ],
+			   "When": {
+					"HasFlag | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+					"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+					"Tilly's House Location": "Above Blacksmith",
+				},
+          },
+		  {
+			   "LogName": "Reg Ext Lighting, Below Penny",
+               "Action": "EditMap",
+               "Target": "Maps/Town",
+               "TextOperations": [
+                    {
+                         "Operation": "Append",
+                         "Target": [
+                              "MapProperties",
+                              "Light"
+                         ],
+                         "Value": "75 74 4 76 74 4 78 74 4 79 74 4 78 75 4 79 75 4",
+                         "Delimiter": " "
+                    },
+               ],
+			   "When": {
+					"HasFlag | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+					"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+					"Tilly's House Location": "Below Penny",
+				},
+          },
+		  
+		  //Shop 
+		  { 
+			"LogName": "Shop Ext Lighting, Above Blacksmith",
+               "Action": "EditMap",
+               "Target": "Maps/Town",
+               "TextOperations": [
+                    {
+                         "Operation": "Append",
+                         "Target": [
+                              "MapProperties",
+                              "Light"
+                         ],
+                         "Value": "91 61 4 92 61 4 91 62 4 92 62 4 94 61 4 95 61 4 94 62 4 95 62 4",
+                         "Delimiter": " "
+                    },
+               ],
+			   "When": {
+					"HasFlag | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+					"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+					"Tilly's House Location": "Above Blacksmith",
+				},
+          },
+		  { 
+			"LogName": "Shop Ext Lighting, Below Penny",
+               "Action": "EditMap",
+               "Target": "Maps/Town",
+               "TextOperations": [
+                    {
+                         "Operation": "Append",
+                         "Target": [
+                              "MapProperties",
+                              "Light"
+                         ],
+                         "Value": "80 70 4 81 70 4 80 71 4 81 71 4 83 69 4 84 69 4 83 70 4 84 70 4",
+                         "Delimiter": " "
+                    },
+               ],
+			   "When": {
+					"HasFlag | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+					"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+					"Tilly's House Location": "Below Penny",
+				},
+          },
+	
+	//SVE Sam Schedule Edits - Above Blacksmith
+	{
+		"LogName": "Sam Skateboard Schedule Edit",
+		"Action": "EditData",
+		"Target": "Characters/schedules/Sam",
+		"TextOperations": [
+		  {
+			 "Operation": "ReplaceDelimited",
+			 "Target": ["Entries", "26"],
+			 "Search": "93",
+			 "Value": "106",
+			 "Delimiter": " "
+		  }
+	   ],
+	   "When": {
+		   "HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+		   "Tilly's House Location": "Above Blacksmith",
+	   },
+	},
+	
+	//SVE Victor Schedule Edits - Above Blacksmith
+	{
+		"LogName": "Victor Schedule Edit",
+		"Action": "EditData",
+		"Target": "Characters/schedules/Victor",
+		"TextOperations": [
+		  {
+			 "Operation": "ReplaceDelimited",
+			 "Target": ["Entries", "Tue"],
+			 "Search": "96",
+			 "Value": "99",
+			 "Delimiter": " "
+		  },
+		  {
+			 "Operation": "ReplaceDelimited",
+			 "Target": ["Entries", "marriage_Fri"],
+			 "Search": "96",
+			 "Value": "99",
+			 "Delimiter": " "
+		  }
+	   ],
+	   "When": {
+		   "HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+		   "Tilly's House Location": "Above Blacksmith",
+	   },
+	},
+	
+	
+	
+	//Add Tilly to Joja Election and Emporium events 
+	{
+		"LogName": "Morris Election Event Edit",
+		"Action": "EditData",
+		"Target": "Data/Events/Town",
+		"TextOperations": [
+		  {
+			 "Operation": "ReplaceDelimited",
+			 "Target": ["Entries", "6665293/w sunny/t 800 1700/H"],
+			 "Search": "Andy",
+			 "Value": "{{ModId}}.Tilly 32 71 0 Andy",
+			 "Delimiter": " ",
+			 "ReplaceMode": "First",
+		  }
+	   ],
+	   "When": {
+		   "HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+		   "HasSeenEvent": "6665292"
+	   },
+	},
+	
+	{
+		"LogName": "Morris Election Event Emporium Edit - Sunny",
+		"Action": "EditData",
+		"Target": "Data/Events/Town",
+		"TextOperations": [
+		  {
+			 "Operation": "ReplaceDelimited",
+			 "Target": ["Entries", "5553213/e 6665293/t 600 1830/w sunny/H"],
+			 "Search": "Maru",
+			 "Value": "{{ModId}}.Tilly 25 68 0 Maru",
+			 "Delimiter": " ",
+			 "ReplaceMode": "First",
+		  }
+	   ],
+	   "When": {
+		   "HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+	   },
+	},
+	
+	{
+		"LogName": "Morris Election Event Emporium Edit - Rainy",
+		"Action": "EditData",
+		"Target": "Data/Events/Town",
+		"TextOperations": [
+		  {
+			 "Operation": "ReplaceDelimited",
+			 "Target": ["Entries", "5553213/e 6665293/t 600 1830/w rainy/H"],
+			 "Search": "Maru",
+			 "Value": "{{ModId}}.Tilly 25 68 0 Maru",
+			 "Delimiter": " ",
+			 "ReplaceMode": "First",
+		  }
+	   ],
+	   "When": {
+		   "HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+	   },
+	},
+	
+	
+	
+	//Darcy Gossip Event
+	{
+		"LogName": "Darcy Event - Original Location",
+		"Action": "EditData",
+		"Target": "Data/Events/SeedShop",
+		"Entries": {
+			"{{ModId}}.Tilly_DarcyGossip/Friendship {{ModId}}.Tilly 1000/Friendship chocolatte12.DarcysCoffeeShop_Darcy 1000/Time 900 1600/Weather rainy": "playful/28 28/farmer -10 -10 0 {{ModId}}.Tilly 28 29 3 chocolatte12.DarcysCoffeeShop_Darcy 27 28 2/viewport 28 28/skippable/pause 800/textAboveHead chocolatte12.DarcysCoffeeShop_Darcy \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.0}}\"/pause 1000/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.1}}\"/pause 500/emote chocolatte12.DarcysCoffeeShop_Darcy 32 false/pause 400/speak chocolatte12.DarcysCoffeeShop_Darcy \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.2}}\"/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.3}}\"/pause 400/emote chocolatte12.DarcysCoffeeShop_Darcy 32 true/pause 300/emote {{ModId}}.Tilly 32 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.4}}\"/pause 400/speak chocolatte12.DarcysCoffeeShop_Darcy \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.5}}\"/pause 500/emote {{ModId}}.Tilly 32 false/pause 400/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.6}}\"/pause 200/emote {{ModId}}.Tilly 56 true/pause 300/emote chocolatte12.DarcysCoffeeShop_Darcy 32 false/move chocolatte12.DarcysCoffeeShop_Darcy -2 0 2 true/speak chocolatte12.DarcysCoffeeShop_Darcy \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.7}}\"/globalFade/viewport -1000 -1000/pause 100/end",
+		},
+		"When": {
+				"HasMod | contains = chocolatte12.DarcysCoffeeShop": true,
+				"Darcy Location": "Original",
+		},
+	},
+	{
+		"LogName": "Darcy Event - Location2",
+		"Action": "EditData",
+		"Target": "Data/Events/SeedShop",
+		"Entries": {
+			"{{ModId}}.Tilly_DarcyGossip/Friendship {{ModId}}.Tilly 1000/Friendship chocolatte12.DarcysCoffeeShop_Darcy 1000/Time 900 1600/Weather rainy": "playful/17 35/farmer -10 -10 0 {{ModId}}.Tilly 17 36 3 chocolatte12.DarcysCoffeeShop_Darcy 16 35 2/viewport 17 35/skippable/pause 800/textAboveHead chocolatte12.DarcysCoffeeShop_Darcy \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.0}}\"/pause 1000/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.1}}\"/pause 500/emote chocolatte12.DarcysCoffeeShop_Darcy 32 false/pause 400/speak chocolatte12.DarcysCoffeeShop_Darcy \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.2}}\"/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.3}}\"/pause 400/emote chocolatte12.DarcysCoffeeShop_Darcy 32 true/pause 300/emote {{ModId}}.Tilly 32 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.4}}\"/pause 400/speak chocolatte12.DarcysCoffeeShop_Darcy \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.5}}\"/pause 500/emote {{ModId}}.Tilly 32 false/pause 400/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.6}}\"/pause 200/emote {{ModId}}.Tilly 56 true/pause 300/emote chocolatte12.DarcysCoffeeShop_Darcy 32 false/move chocolatte12.DarcysCoffeeShop_Darcy -2 0 2 true/speak chocolatte12.DarcysCoffeeShop_Darcy \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.7}}\"/globalFade/viewport -1000 -1000/pause 100/end",
+		},
+		"When": {
+				"HasMod | contains = chocolatte12.DarcysCoffeeShop": true,
+				"Darcy Location": "Location2",
+		},
+	},
+	
+	{
+		"LogName": "Darcy Event - Leela's",
+		"Action": "EditData",
+		"Target": "Data/Events/yuninocorn.ShopkeeperLeelaLeelaHouse",
+		"Entries": {
+			"{{ModId}}.Tilly_DarcyGossip/Friendship {{ModId}}.Tilly 1000/Friendship chocolatte12.DarcysCoffeeShop_Darcy 1000/Time 900 1600/Weather rainy": "playful/13 28/farmer -10 -10 0 {{ModId}}.Tilly 14 28 3 chocolatte12.DarcysCoffeeShop_Darcy 13 27 2/viewport 13 27/skippable/pause 800/textAboveHead chocolatte12.DarcysCoffeeShop_Darcy \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.0}}\"/pause 1000/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.1}}\"/pause 500/emote chocolatte12.DarcysCoffeeShop_Darcy 32 false/pause 400/speak chocolatte12.DarcysCoffeeShop_Darcy \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.2}}\"/pause 500/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.3}}\"/pause 400/emote chocolatte12.DarcysCoffeeShop_Darcy 32 true/pause 300/emote {{ModId}}.Tilly 32 false/pause 800/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.4}}\"/pause 400/speak chocolatte12.DarcysCoffeeShop_Darcy \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.5}}\"/pause 500/emote {{ModId}}.Tilly 32 false/pause 400/speak {{ModId}}.Tilly \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.6}}\"/pause 200/emote {{ModId}}.Tilly 56 true/pause 300/emote chocolatte12.DarcysCoffeeShop_Darcy 32 false/move chocolatte12.DarcysCoffeeShop_Darcy -2 0 2 true/speak chocolatte12.DarcysCoffeeShop_Darcy \"{{i18n:Wem.Bundle.Tilly.DarcyGossip.7}}\"/globalFade/viewport -1000 -1000/pause 100/end",
+		},
+		"When": {
+				"HasMod | contains = chocolatte12.DarcysCoffeeShop": true,
+				"Darcy Location": "Leela's",
+		},
+	},
+	
+	//RSV Events
+	
+	//{
+	//	"LogName": "Prepping for Madame's Tea Party with Irene, 5 Hearts w/ Irene",
+	//	"Action": "EditData",
+	//	"Target": "Data/Events/Custom_Ridgeside_PurpleMansion",
+	//	"Entries": {
+	//		"{{ModId}}.Tilly_IreneBaking/Friendship Irene 1250/SawEvent {{ModId}}.Tilly_7Hearts.1/SawEvent 75160321/!Dating Zayne/!Dating Irene/Time 1600 2000": "jaunty/33 9/farmer -10 -10 0 Irene 33 7 2 {{ModId}}.Tilly 34 8 3 Sonny 40 11 0/positionOffSet {{ModId}}.Tilly 0 20 true/addObject 33 8 {{ModId}}.Tilly_HoneyCake 10/skippable/pause 1000/speak Irene \"{{i18n:Tilly_IreneBaking.0}}\"/pause 500/emote {{ModId}}.Tilly 32 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_IreneBaking.1}}\"/pause 500/emote Irene 60 false/pause 500/speak Irene \"{{i18n:Tilly_IreneBaking.2}}\"/pause 500/emote {{ModId}}.Tilly 56 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_IreneBaking.3}}\"/pause 500/faceDirection Irene 3/message \"{{i18n:Tilly_IreneBaking.4}}\"/pause 500/speak Irene \"{{i18n:Tilly_IreneBaking.5}}\"/faceDirection Irene 2/pause 500/emote {{ModId}}.Tilly 32 true/pause 400/emote Irene 60 false/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_IreneBaking.6}}\"/pause 500/emote Irene 32 true/move Sonny 0 -1 3 false/move Sonny -7 0 0 false/pause 400/speak Sonny \"{{i18n:Tilly_IreneBaking.7}}\"/pause 500/speak Irene \"{{i18n:Tilly_IreneBaking.8}}\"/pause 500/shake Irene 500/pause 500/removeObject 33 8/advancedMove Irene false 1 0 1 0 0 3 2 0 6 0 1 0 0 1 2 0 10 0 1 0/pause 100/speak {{ModId}}.Tilly \"{{i18n:Tilly_IreneBaking.9}}\"/pause 100/speak Sonny \"{{i18n:Tilly_IreneBaking.10}}\"/pause 200/textAboveHead {{ModId}}.Tilly \"{{i18n:Tilly_IreneBaking.11}}\"/addConversationTopic {{ModId}}.Tilly_IreneBakingCT 10/pause 1000/globalFade/viewport -1000 -1000/pause 100/end",
+
+	//	},
+	//	"When": {
+	//		"HasMod": "Rafseazz.RSVCP",
+	//	},
+	//},
+	
+	//{
+	//	"LogName": "Irene Baking Event CT",
+	//	"Action": "EditData",
+	//	"Target": "Characters/Dialogue/Zayne",
+	//	"Entries": {
+	//		"{{ModId}}.Tilly_IreneBakingCT": "{{i18n:Zayne.Tilly_IreneBakingCT}}",
+	//	},
+	//	"When": {
+	//		"HasMod": "Rafseazz.RSVCP",
+	//	},
+	//},
+	
+	//{
+	//	"LogName": "Book Club Meeting #1",
+	//	"Action": "EditData",
+	//	"Target": "Data/Events/Custom_Ridgeside_LogCabinHotelLobby",
+	//	"Entries": {
+	//		"{{ModId}}.Tilly_RSVBookClub.1/Friendship Flor 1000/Friendship {{ModId}}.Tilly 1250/Friendship Penny 750/Time 900 1700": "jaunty/26 14/farmer 15 14 0 {{ModId}}.Tilly 25 14 2 Flor 24 14 2 Penny 26 15 3/positionOffSet Penny 0 -15 true/viewport 25 14/skippable/pause 1000/speak {{ModId}}.Tilly \"{{i18n:Tilly_RSVBookClub.1.0}}\"/pause 400/emote Flor 60 true/pause 200/emote Penny 32 false/pause 400/speak Penny \"{{i18n:Tilly_RSVBookClub.1.1}}\"/pause 300/speak Flor \"{{i18n:Tilly_RSVBookClub.1.2}}\"/pause 300/emote {{ModId}}.Tilly 32 false/pause 400/speak {{ModId}}.Tilly \"{{i18n:Tilly_RSVBookClub.1.3}}\"/pause 300/emote Flor 40 true/pause 200/textAboveHead Penny \"{{i18n:Tilly_RSVBookClub.1.4}}\"/pause 1000/speak Flor \"{{i18n:Tilly_RSVBookClub.1.5}}\"/pause 400/speak {{ModId}}.Tilly \"{{i18n:Tilly_RSVBookClub.1.6}}\"/emote {{ModId}}.Tilly 56 true/pause 200/emote Flor 60 false/pause 500/speak Penny \"{{i18n:Tilly_RSVBookClub.1.7}}\"/pause 400/emote {{ModId}}.Tilly 56 true/pause 150/emote Flor 32 false/pause 400/speak {{ModId}}.Tilly \"{{i18n:Tilly_RSVBookClub.1.8}}\"/pause 400/emote Penny 32/pause 400/speak Flor \"{{i18n:Tilly_RSVBookClub.1.9}}\"/pause 300/speak Penny \"{{i18n:Tilly_RSVBookClub.1.10}}\"/pause 500/speak {{ModId}}.Tilly \"{{i18n:Tilly_RSVBookClub.1.11}}\"/pause 300/speak Penny \"{{i18n:Tilly_RSVBookClub.1.12}}\"/pause 300/emote {{ModId}}.Tilly 32 false/pause 300/speak {{ModId}}.Tilly \"{{i18n:Tilly_RSVBookClub.1.13}}\"/pause 600/speak Flor \"{{i18n:Tilly_RSVBookClub.1.14}}\"/pause 400/speak {{ModId}}.Tilly \"{{i18n:Tilly_RSVBookClub.1.15}}\"/pause 400/emote Penny 32 true/emote Flor 32 false/pause 800/move farmer 7 0 1 true/speak Penny \"{{i18n:Tilly_RSVBookClub.1.16}}\"/pause 700/textAboveHead Flor \"{{i18n:Tilly_RSVBookClub.1.17}}\"/pause 1500/emote farmer 8 false/pause 400/faceDirection Flor 3/faceDirection {{ModId}}.Tilly 3/pause 400/speak {{ModId}}.Tilly \"{{i18n:Tilly_RSVBookClub.1.18}}\"/pause 400/emote farmer 56 false/pause 400/speak Penny \"{{i18n:Tilly_RSVBookClub.1.19}}\"/pause 200/speak {{ModId}}.Tilly \"{{i18n:Tilly_RSVBookClub.1.20}}\"/pause 500/emote Flor 60 true/pause 100/emote Penny 32 true/pause 200/emote {{ModId}}.Tilly 56 false/pause 200/speak {{ModId}}.Tilly \"{{i18n:Tilly_RSVBookClub.1.21}}\"/pause 200/emote farmer 32 false/pause 400/textAboveHead {{ModId}}.Tilly \"{{i18n:Tilly_RSVBookClub.1.22}}\"/pause 200/emote Penny 32 true/emote Flor 32 true/emote farmer 32 true/pause 800/globalFade/viewport -1000 -1000/pause 100/end",
+	//	},
+	//	"When": {
+	//		"HasMod": "Rafseazz.RSVCP",
+	//	},
+	//},
+	
+	
+	//{
+	//	"LogName": "Fruit Picking with the Kids",
+	//	"Action": "EditData",
+	//	"Target": "Data/Events/Custom_Ridgeside_RidgesideVillage",
+	//	"Entries": {
+			//"{{ModId}}.Tilly_RSVFruitPicking": "event1/20 114/{{ModId}}.Tilly 20 113 2 Keahi 18 114 1 Trinnie 18 115 1 Yuuma 20 116 0 Louie 21 116 0 Sonny 22 115 3 Alissa 18 113 1 farmer 19 116 0/animate Keahi true true 80 20 20 20 23 23 23 20 20 20 23 23 23 21 22 21 23/skippable/pause 1000/speak {{ModId}}.Tilly \"$16Mr. Kimpoi was kind enough to allow all of us to enjoy picking fruit straight from his orchard.#$b#$1I hope you all saved up your allowances for today!\"/pause 200/textAboveHead Keahi \"Whoop!\"/pause 100/emote Yuuma 56 true/pause 600/textAboveHead Louie \"I certainly have enough.\"/pause 1000/speak Trinnie \"What are you going to use the fruit for, Tilly?\"/pause 300/speak {{ModId}}.Tilly \"$16Besides just eating them, I'll turn them into syrups for tea.\"/pause 100/speak Keahi \"Tea is kinda bitter. Yuck!#$b#$1I'm gonna pick some rotten fruit. Perfect for pranks!\"/pause 100/emote Louie 12 true/pause 200/emote {{ModId}}.Tilly 32 false/pause 100/speak {{ModId}}.Tilly \"$1Not all the time, Keahi. Depends on a lot of different factors like--#$b#$8Ahem.#$b#$16I can teach you all about that later. Let's get on with the fruit-picking!\"/pause 100/emote Yuuma 32 true/emote Louie 32 true/emote Keahi 32 true/emote Trinnie 32 false/pause 200/speak {{ModId}}.Tilly \"Please be careful on the ladders. Ask an adult for help.#$b#$1Alright, let's start!\"/globalFade/viewport -1000 -1000/pause 100/end",
+	//	},
+	//	"When": {
+	//		"HasMod": "Rafseazz.RSVCP",
+	//	},
+	//},
+	
+	{
+			"LogName": "Compat Event Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/{{ModId}}.Tilly",
+			"Entries": {
+				"Tilly_RSVBookClub.eventquestion_1": "{{i18n:Tilly_RSVBookClub.eventquestion_1}}",
+				"Tilly_RSVBookClub.eventquestion_2": "{{i18n:Tilly_RSVBookClub.eventquestion_2}}",
+				"Tilly_RSVBookClub.eventquestion_3": "{{i18n:Tilly_RSVBookClub.eventquestion_3}}",
+
+			}
+		},
+	
+	
+	//DSV LNY Fireworks
+
+	{
+		"LogName": "LNY DSV Fireworks Schedule - Above Blacksmith",
+		"Action": "EditData",
+		"Target": "Characters/schedules/{{ModId}}.Tilly",
+		"Entries": {
+			"DSVTeam.DiverseStardewValley_LunarNewYear_2": "900 {{ModId}}.Tilly_TillyHouse 7 5 0/950 Town 61 94 3/1010 SeedShop 28 17 3/1300 SeedShop 22 20 39 Wem.Bundle.Tilly_Squat/1600 Town 58 94 1/1720 Town 91 72 2/1830 Town 90 72 2/1850 {{ModId}}.Tilly_TillyHouse 5 10 0/1910 {{ModId}}.Tilly_TillyHouse 3 10 0/1920 {{ModId}}.Tilly_TillyHouse 2 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1930 {{ModId}}.Tilly_TillyHouse 1 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1940 {{ModId}}.Tilly_TillyHouse 2 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1950 {{ModId}}.Tilly_TillyHouse 11 7 2 Wem.Bundle.Tilly_ReadSit/a2300 {{DSVFireworks}} \"Strings\\schedules\\Wem.Bundle.Tilly:Fireworks.000\"/2430 bed",
+		},
+		"When": {
+			"HasMod": "DSV.Core",
+			"Tilly's House Location": "Above Blacksmith",
+		},
+	},
+	
+	{
+		"LogName": "LNY DSV Fireworks Schedule - Below Penny",
+		"Action": "EditData",
+		"Target": "Characters/schedules/{{ModId}}.Tilly",
+		"Entries": {
+			"DSVTeam.DiverseStardewValley_LunarNewYear_2": "900 {{ModId}}.Tilly_TillyHouse 7 5 0/950 Town 61 94 3/1010 SeedShop 28 17 3/1300 SeedShop 22 20 39 Wem.Bundle.Tilly_Squat/1600 Town 91 72 2/1830 Town 90 72 2/1850 {{ModId}}.Tilly_TillyHouse 5 10 0/1910 {{ModId}}.Tilly_TillyHouse 3 10 0/1920 {{ModId}}.Tilly_TillyHouse 2 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1930 {{ModId}}.Tilly_TillyHouse 1 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1940 {{ModId}}.Tilly_TillyHouse 2 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1950 {{ModId}}.Tilly_TillyHouse 11 7 2 Wem.Bundle.Tilly_ReadSit/a2300 {{DSVFireworks}} \"Strings\\schedules\\Wem.Bundle.Tilly:Fireworks.000\"/2430 bed",
+		},
+		"When": {
+			"HasMod": "DSV.Core",
+			"Tilly's House Location": "Below Penny",
+		},
+	},
+	
+	
+	//Si's Book Collecting Mod Compat
+	
+	//Gift Taste
+	
+	//fiction, comic, graphic novel, fashion, mystery, recipe
+	{
+		"LogName": "Si's Books - Loved Books",
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "{{ModId}}.Tilly", 1],
+					"Value": "fiction_book comic_book graphicnovel_book fashion_book mystery_book recipe_book",
+					"Delimiter": " "
+				}
+			],
+		"When": {
+			"HasMod | contains = SI.BC": true,
+		},
+	},
+	
+	//non-fiction, romance, sport, medical, guide, kid, poem, business, activity, science, nature, space, music
+	{
+		"LogName": "Si's Books - Neutral Books",
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "{{ModId}}.Tilly", 9],
+					"Value": "nonfiction_book romance_book sport_book medical_book guide_book kid_book poem_book business_book activity_book science_book nature_book space_book music_book",
+					"Delimiter": " "
+				}
+			],
+		"When": {
+			"HasMod | contains = SI.BC": true,
+		},
+	},
+	
+	//relationship, guild, fish
+	{
+		"LogName": "Si's Books - Dislike Books",
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "{{ModId}}.Tilly", 5],
+					"Value": "relationship_book guild_book fish_book",
+					"Delimiter": " "
+				}
+			],
+		"When": {
+			"HasMod | contains = SI.BC": true,
+		},
+	},
+	
+	//selfhelp
+	{
+		"LogName": "Si's Books - Hate Books",
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "{{ModId}}.Tilly", 7],
+					"Value": "selfhelp_book",
+					"Delimiter": " "
+				}
+			],
+		"When": {
+			"HasMod | contains = SI.BC": true,
+		},
+	},
+	
+	//Figure out the conditions
+	//15 books read, has DSV, no DSV 
+	
+	//{
+	//	"LogName": "Book Fair with DSV - Above Blacksmith",
+	//	"Action": "EditData",
+	//	"Target": "Characters/schedules/{{ModId}}.Tilly",
+	//	"Entries": {
+	//		"spring_9": "900 {{ModId}}.Tilly_TillyHouse 7 5 0/950 Town 61 94 3/1010 SeedShop 28 17 3/1300 SeedShop 22 20 39 Wem.Bundle.Tilly_Squat/1600 Town 58 94 1/1720 Town 91 72 2/1830 Town 90 72 2/1850 {{ModId}}.Tilly_TillyHouse 5 10 0/1910 {{ModId}}.Tilly_TillyHouse 3 10 0/1920 {{ModId}}.Tilly_TillyHouse 2 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1930 {{ModId}}.Tilly_TillyHouse 1 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1940 {{ModId}}.Tilly_TillyHouse 2 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1950 {{ModId}}.Tilly_TillyHouse 11 7 2 Wem.Bundle.Tilly_ReadSit/a2300 {{DSVFireworks}} \"Strings\\schedules\\Wem.Bundle.Tilly:Fireworks.000\"/2430 bed",
+	//	},
+	//	"When": {
+	//		"HasMod | contains = DSV.Core": false,
+	//		"HasMod | contains = SI.BC": true,
+	//		"Tilly's House Location": "Above Blacksmith",
+	//	},
+	//},
+	//{
+	//	"LogName": "Book Fair with DSV - Below Penny",
+	//	"Action": "EditData",
+	//	"Target": "Characters/schedules/{{ModId}}.Tilly",
+	//	"Entries": {
+	//		"spring_9": "900 {{ModId}}.Tilly_TillyHouse 7 5 0/950 SeedShop 28 17 3/1300 SeedShop 22 20 39 Wem.Bundle.Tilly_Squat/1600 Town 91 72 2/1830 Town 90 72 2/1850 {{ModId}}.Tilly_TillyHouse 5 10 0/1910 {{ModId}}.Tilly_TillyHouse 3 10 0/1920 {{ModId}}.Tilly_TillyHouse 2 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1930 {{ModId}}.Tilly_TillyHouse 1 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1940 {{ModId}}.Tilly_TillyHouse 2 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1950 {{ModId}}.Tilly_TillyHouse 11 7 2 Wem.Bundle.Tilly_ReadSit/a2300 {{DSVFireworks}} \"Strings\\schedules\\Wem.Bundle.Tilly:Fireworks.000\"/2430 bed",
+	//	},
+	//	"When": {
+	//		"HasMod | contains = DSV.Core": false,
+	//		"HasMod | contains = SI.BC": true,
+	//		"Tilly's House Location": "Below Penny",
+	//	},
+	//},
+	
+	
+  ]
+}

@@ -2341,11 +2341,6 @@
     <property name="NoSpawn" value="All"/>
    </properties>
   </object>
-  <object id="27" name="TileData" x="96" y="528" width="16" height="16">
-   <properties>
-    <property name="Action" value="MinecartTransport Lumisteria.MtVapiusNetworkTrainBus Lumisteria.MtVapius_TrainStationTrain"/>
-   </properties>
-  </object>
  </objectgroup>
  <layer id="5" name="Paths" width="47" height="47">
   <data encoding="csv">

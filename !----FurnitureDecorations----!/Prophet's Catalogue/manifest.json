@@ -1,0 +1,14 @@
+{
+"Name": "Prophet's Furniture Catalogue",
+"Author": "Prophet",
+"Version": "1.0.0",
+"Description": "A catalogue for all of Prophet's furniture mods.",
+"UniqueID": "Prophet.Catalogue",
+"ContentPackFor": {"UniqueID": "Pathoschild.ContentPatcher"},
+"Dependencies": [
+        {
+            "UniqueID": "sophie.Calcifer",
+            "IsRequired": true
+        }
+    ], 
+}

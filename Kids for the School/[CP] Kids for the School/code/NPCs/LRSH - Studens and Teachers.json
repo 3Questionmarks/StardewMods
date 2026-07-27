@@ -1,0 +1,145 @@
+{
+    "Changes": [
+//StringsFromMaps
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.2": "{{i18n:Seat_Rose}}" },
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LRSHStudentsandTeachers": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.17": "{{i18n:Seat_Nele}}" },
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LRSHStudentsandTeachers": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.33": "{{i18n:Seat_Violet}}" },
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LRSHStudentsandTeachers": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.34": "{{i18n:Seat_Oskar}}" },
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LRSHStudentsandTeachers": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.32": "{{i18n:Seat_Maxim}}" },
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LRSHStudentsandTeachers": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.36": "{{i18n:Seat_Felix}}" },
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LRSHStudentsandTeachers": "true"
+            }
+        },
+//Without Stardew Kids Expansion
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.19": "{{i18n:Seat_Lukas}}" },
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LRSHStudentsandTeachers": "true",
+                "HasMod|contains=BURAKMESE.SKE": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.20": "{{i18n:Seat_Johanna}}" },
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LRSHStudentsandTeachers": "true",
+                "HasMod|contains=BURAKMESE.SKE": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.18": "{{i18n:Seat_Emma}}" },
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LRSHStudentsandTeachers": "true",
+                "HasMod|contains=BURAKMESE.SKE": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.22": "{{i18n:Seat_Ida}}" },
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LRSHStudentsandTeachers": "true",
+                "HasMod|contains=BURAKMESE.SKE": false
+            }
+        },
+//Without Ridgeside Village
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.26": "{{i18n:Seat_Kilian}}" },
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LRSHStudentsandTeachers": "true",
+                "HasMod|contains=Rafseazz.RSVCP": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.27": "{{i18n:Seat_Thea}}" },
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LRSHStudentsandTeachers": "true",
+                "HasMod|contains=Rafseazz.RSVCP": false
+            }
+        },
+//Without East Scarp
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { "Desk.10": "{{i18n:Seat_Liam}}" },
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Xiddav.LRSHStudentsandTeachers": "true",
+                "HasMod|contains=LemurKat.EastScarpe.CP": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+﻿{
+   "Format": "2.0.0",
+   "Changes": [
+   
+   {
+		"Action": "EditData",
+		"Target": "Data/Machines",
+		"Fields": {
+		"(BC)90": {
+			"OutputRules": [{
+			"Id": "Default",
+        "Triggers": [
+          {
+            "Id": "ItemPlacedInMachine_Default",
+            "Trigger": 1,
+            "RequiredItemId": null,
+            "RequiredTags": [
+              "bone_item",
+              "!id_o_881"
+            ],
+            "RequiredCount": 1,
+            "Condition": null
+          },
+          {
+            "Id": "ItemPlacedInMachine_BoneFragment",
+            "Trigger": 1,
+            "RequiredItemId": "(O)881",
+            "RequiredTags": null,
+            "RequiredCount": 5,
+            "Condition": null
+          }
+        ],
+        "UseFirstValidOutput": false,
+				"OutputItem": [
+					{			
+					"Condition": "Random 0.30",
+					"Id": "(O)330",
+					"ItemId": "(O)330",
+					"MinStack": 1,
+					"MaxStack": 10,
+					},
+					{	
+					"Condition": "Random 0.25",
+					"Id": "(O)805",
+					"ItemId": "(O)805",
+					"MinStack": 5,
+					"MaxStack": 6,
+					},
+					{			
+					"Condition": "Random 0.15",
+					"Id": "(O)920",
+					"ItemId": "(O)920",
+					"MinStack": 1,
+					"MaxStack": 3,
+					},
+					{			
+					"Condition": "Random 0.15",
+					"Id": "(O)919",
+					"ItemId": "(O)919",
+					"MinStack": 1,
+					"MaxStack": 2,
+					},
+					{
+					"Condition": "Random 0.15",
+					"Id": "(O)918",
+					"ItemId": "(O)918",
+					"MinStack": 1,
+					"MaxStack": 1,
+					},
+				],
+			"MinutesUntilReady": 240,
+        "DaysUntilReady": -1,
+        "InvalidCountMessage": null,
+        "RecalculateOnCollect": false
+			}]
+			}
+			}
+  }
+ ]			
+}

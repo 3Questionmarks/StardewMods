@@ -1,0 +1,16 @@
+{
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/ArchaeologyHouse",
+            "FromFile": "code/MapPatches/ArchaeologyHouse/Seat_ArchaeologyHouse.tmx",
+            "ToArea": {
+                "X": 16, 
+                "Y": 11,
+                "Width": 1,
+                "Height": 1,
+            "Patchmode": "Overlay",
+            },
+        },
+    ]
+}

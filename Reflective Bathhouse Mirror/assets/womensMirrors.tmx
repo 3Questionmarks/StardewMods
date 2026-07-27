@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="6" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="10">
+ <properties>
+  <property name="Music" value="Hospital_Ambient"/>
+  <property name="Warp" value="13 28 BathHouse_Entry 2 4 2 28 BathHouse_Pool 6 0"/>
+ </properties>
+ <tileset firstgid="1" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="240" columns="15">
+  <image source="bathhouse_tiles.png" width="240" height="256"/>
+  <tile id="52">
+   <animation>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="53" duration="50"/>
+    <frame tileid="54" duration="50"/>
+    <frame tileid="55" duration="50"/>
+    <frame tileid="56" duration="50"/>
+    <frame tileid="57" duration="50"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="305" name="z_mirror" tilewidth="16" tileheight="16" tilecount="36" columns="6">
+  <image source="mirror_tiles.png" width="96" height="96"/>
+ </tileset>
+ <layer id="1" name="Back" width="6" height="5">
+  <data encoding="base64" compression="zlib">
+   eJybwcDAMAOIZ0IxiK3DyMCwggGClzMg2NJA8e0MmFgLKD4NyRxkMA3JDGQAAOmKDfU=
+  </data>
+ </layer>
+ <layer id="13" name="Mirrors" width="6" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxzYWRgcEXDbkDsD8QBaDgQiL2A2BsN+wCxC5JeZOCFpAYZAAD8NwcJ
+  </data>
+ </layer>
+ <layer id="3" name="Buildings" width="6" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAOMGXELm6NQxwAEDYAcw==
+  </data>
+ </layer>
+ <layer id="5" name="Front" width="6" height="5">
+  <data encoding="base64" compression="zlib">
+   eJwzYmRgMEbDJkBsC8TowB4o5gvE7mg4GIiNkPQiAwsg3xKIrdDEAUXHBMM=
+  </data>
+ </layer>
+ <objectgroup id="14" name="Mirrors">
+  <object id="7" name="TileData" x="0" y="32" width="16" height="16">
+   <properties>
+    <property name="IsMirrorBase" value="T"/>
+    <property name="MirrorHeight" value="5"/>
+    <property name="MirrorOffset" value="0 7.3"/>
+    <property name="MirrorOverlay" value="255 255 255 185"/>
+    <property name="MirrorWidth" value="6"/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="0" y="64" width="16" height="16">
+   <properties>
+    <property name="IsMirrorBase" value="T"/>
+    <property name="MirrorHeight" value="5"/>
+    <property name="MirrorOffset" value="0 8.2"/>
+    <property name="MirrorOverlay" value="255 255 255 185"/>
+    <property name="MirrorWidth" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

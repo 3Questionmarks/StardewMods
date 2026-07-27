@@ -1,0 +1,63 @@
+{
+
+    "Changes": [
+
+
+//■■■ Hidden Spring Farm Cave ■■■
+
+
+  //★★★ FarmCave側の編集 ★★★
+
+  //●AFCへの入り口を制御
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/tmx/Mod/TsAFC_HiddenSFC_{{DT_Entrance}}.tmx",
+        "ToArea": { "X": 5, "Y": 0, "Width": 3, "Height": 4 },
+        "When": {
+          "LocationName": "FarmCave"
+        },
+        "Update": "OnLocationChange"
+      },
+
+    //●AFCへのワープ追加
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Warp"],
+            "Value": "6 2 {{DT_AddFarmCaveName}} 9 14",
+            "Delimiter": " "
+          }
+        ]
+      },
+
+
+  //◆◆◆AddFarmCave側の編集◆◆◆
+
+    //●FCへのワープ変更
+      {
+        "Action": "EditMap",
+        "Target": "Maps/{{DT_AddFarmCaveName}}",
+        "MapProperties": { "Warp": "9 15 FarmCave 6 3 9 4 Custom_AdditionalFarmCave_2ndArea 9 14" }
+      },
+
+    //●2ndエリア解放まで奥の入り口を封鎖
+      {
+        "Action": "EditMap",
+        "Target": "Maps/{{DT_AddFarmCaveName}}",
+        "FromFile": "assets/tmx/TsAFC_Entrance_Close.tmx",
+        "ToArea": { "X": 8, "Y": 2, "Width": 3, "Height": 4 },
+        "When": {
+          "OpenImmediately_2nd": "false",
+          "HasSeenEvent |contains=1410977501": "false",
+          "LocationName": "{{DT_AddFarmCaveName}}"
+        },
+        "Update": "OnLocationChange"
+      }
+
+
+    ]//▼▼"Changes"の終了▼▼
+}

@@ -1,0 +1,96 @@
+{
+	"Changes": [
+// Vanilla changes with PasserbyCemetery
+      {
+         "LogName": "Aspen's Farm on Minimap (Railroad blocked)",
+         "Action": "EditData",
+         "Target": "Data/WorldMap",
+         "TargetField": [ "Valley", "MapAreas" ],
+         "When": {"DaysPlayed |contains={{Range:0, 30}}": "true", // railroad blocked
+                  "HasMod: |contains=invatorzen.AspenCP": true },
+         "Entries": {
+            "Custom_invatorzen.AspenCP_AspenFarm": {
+            "Id": "Custom_invatorzen.AspenCP_AspenFarm",
+
+// which part of the map covered by your area
+         "PixelArea": { "X": 90, "Y": 0, "Width": 111, "Height": 20 },
+
+// the texture overlay(s) to apply
+         "Textures": [
+         {
+         "Id": "Default",
+         "Texture": "{{InternalAssetKey: assets/Maps/Aspen/{{season}}_map.png}}",
+         "SourceRect": { "X": 0, "Y": 0, "Width": 111, "Height": 20 }
+         }
+      ],
+// display text
+         "ScrollText": "???",
+         "Tooltips": [
+            {
+               "Id": "AspenFarm",
+               "Text": "???",
+               "PixelArea": { "X": 118, "Y": 0, "Width": 18, "Height": 20 }
+            }
+         ]
+      }
+   }
+},
+      {
+         "LogName": "Aspen's Farm on Minimap (Railroad Unblocked)",
+         "Action": "EditData",
+         "Target": "Data/WorldMap",
+         "TargetField": [ "Valley", "MapAreas" ],
+         "When": {"DaysPlayed |contains={{Range:0, 30}}": "false", // railroad unblocked
+                  "HasMod: |contains=invatorzen.AspenCP": true },
+         "Entries": {
+            "Custom_invatorzen.AspenCP_AspenFarm": {
+            "Id": "Custom_invatorzen.AspenCP_AspenFarm",
+
+// which part of the map covered by your area
+         "PixelArea": { "X": 90, "Y": 0, "Width": 111, "Height": 20 },
+
+// the texture overlay(s) to apply
+         "Textures": [
+            {
+               "Id": "Default",
+               "Texture": "{{InternalAssetKey: assets/Maps/Aspen/{{season}}_map.png}}",
+               "SourceRect": { "X": 0, "Y": 0, "Width": 111, "Height": 20 }
+            }
+         ],
+// display text
+         "ScrollText": "Aspen's Farm",
+         "Tooltips": [
+            {
+               "Id": "AspenFarm",
+               "Text": "Aspen's Farm",
+               "PixelArea": { "X": 118, "Y": 0, "Width": 18, "Height": 20 }
+            }
+         ],
+// the in-game locations that are part of this world map area
+         "WorldPositions": [
+            {
+               "Id": "AspenFarm",
+               "LocationName": "Custom_invatorzen.AspenCP_AspenFarm",
+               "MapPixelArea": { "X": 118, "Y": 0, "Width": 18, "Height": 20 },
+               "ScrollText": "Aspen's Farm"
+            }
+         ]
+      }
+   }
+},
+      // SVE changes
+      {
+         "LogName": "Overlays the map for SVE",
+         "Action": "EditImage",
+         "Target": "LooseSprites/map",
+         "FromFile": "assets/Maps/Aspen/{{season}}_SVE_map.png",
+         "ToArea": { "X": 90, "Y": 0, "Width": 111, "Height": 20 },		
+         "PatchMode": "Overlay",
+         "When": {
+            "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+            "HasMod: |contains=invatorzen.AspenCP": true
+         },
+         "Update": "OnLocationChange"
+      }
+	]
+}

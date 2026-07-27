@@ -1,0 +1,25 @@
+{
+
+  "Changes": [
+    
+    {
+      "Action": "Load",
+      "Target": "Maps/Cape_wallpapers",
+      "FromFile": "assets/TileSheets/cape_wallpapers.png"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/AdditionalWallpaperFlooring",
+      "Entries": {
+        "Cape.SecretWalls": {
+          "Id": "Cape.SecretWalls",
+          "Texture": "Maps/Cape_wallpapers",
+          "IsFlooring": false,
+          "Count": 8
+        }
+      }
+    }
+
+  ]
+}

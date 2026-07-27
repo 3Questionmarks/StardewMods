@@ -1,0 +1,233 @@
+{
+  "Changes": [
+
+
+		 {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+			
+            "Entries": {
+                "FIASA_Shop": {
+					   "ID": "FIASA_Shop",
+                    "Owners": [
+                        {
+                            "Name": "Any",
+							"Portrait": "Portraits/CC_KodaK_Vendor",
+                            "Dialogues": [
+                          
+                           
+                                {
+                                    "Id": "FIASASun",
+                                    "Condition": "WEATHER Here Sun",
+                                    "Dialogue": "FIASA stands for the Fern-isle Archipelago Science Authority."
+                                },
+                                    {
+                                    "Id": "FIASARain",
+                                    "Condition": "WEATHER Here Rain",
+                                    "Dialogue": "This cove is especially safe during storms."
+                                },
+                            ]
+                        }
+                    ],
+
+    "Items": [
+    
+ {
+        "ActionsOnPurchase": null,
+        "CustomFields": null,
+        "TradeItemId": "393",
+        "TradeItemAmount": 5,
+        "ApplyProfitMargins": null,
+        "AvailableStock": 1,
+        "AvailableStockLimit": "Global",
+        "AvoidRepeat": true,
+        "UseObjectDataPrice": true,
+        "IgnoreShopPriceModifiers": false,
+       
+        "AvailableStockModifiers": [
+          {
+            "Id": "RareMultiplier",
+            "Condition": "RANDOM 0.1",
+            "Modification": "Set",
+            "Amount": 5.0,
+            "RandomAmount": null
+          }
+        ],
+        "AvailableStockModifierMode": "Stack",
+        "Condition": null,
+        "Id": "RandomObjects",
+        "ItemId": "RANDOM_ITEMS (O) 2 789 @requirePrice @isRandomSale",
+        "RandomItemId": null,
+        "MaxItems": 10,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": "ITEM_HAS_EXPLICIT_OBJECT_CATEGORY Target, !ITEM_CATEGORY Target -999, !ITEM_OBJECT_TYPE Target Quest Minerals Arch"
+      }
+    
+	  ]
+                }
+            }
+        },	
+		
+
+		 {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+				   "When": {
+ "HasSeenEvent": "cc_kodasix1"
+    },
+	  "Update": "OnLocationChange",
+            "Entries": {
+                "FIASA_Shop_Inke": {
+					   "ID": "FIASA_Shop_Inke",
+                    "Owners": [
+                        {
+                            "Name": "Any",
+							"Portrait": "Portraits/CC_Inke",
+                            "Dialogues": [
+                          
+                           
+                                    {
+                                    "Id": "FIASAInkeSun",
+                                    "Condition": "WEATHER Here Sun",
+                                    "Dialogue": "Specimens! Specimens for me!"
+                                },
+                                    {
+                                    "Id": "FIASAInkeRain",
+                                    "Condition": "WEATHER Here Rain",
+                                    "Dialogue": "Ya can make a pretty good rhythm with rain sounds."
+                                },
+                            
+                            ]
+                        }
+                    ],
+
+    "Items": [
+    
+ {
+        "ActionsOnPurchase": null,
+        "CustomFields": null,
+        "TradeItemId": "393",
+        "TradeItemAmount": 5,
+        "ApplyProfitMargins": null,
+        "AvailableStock": 1,
+        "AvailableStockLimit": "Global",
+        "AvoidRepeat": true,
+        "UseObjectDataPrice": true,
+        "IgnoreShopPriceModifiers": false,
+       
+        "AvailableStockModifiers": [
+          {
+            "Id": "RareMultiplier",
+            "Condition": "RANDOM 0.1",
+            "Modification": "Set",
+            "Amount": 5.0,
+            "RandomAmount": null
+          }
+        ],
+        "AvailableStockModifierMode": "Stack",
+        "Condition": null,
+        "Id": "RandomObjects",
+        "ItemId": "RANDOM_ITEMS (O) 2 789 @requirePrice @isRandomSale",
+        "RandomItemId": null,
+        "MaxItems": 10,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": "ITEM_HAS_EXPLICIT_OBJECT_CATEGORY Target, !ITEM_CATEGORY Target -999, !ITEM_OBJECT_TYPE Target Quest Minerals Arch"
+      }
+    
+	  ]
+                }
+            }
+        },
+		
+		
+		 {
+      "Action": "EditMap",
+      "Target": "Maps/Koda_Sub",
+      "MapTiles": [
+        {
+          "Position": { "X": 15, "Y": 12 },
+          "Layer": "Buildings",
+          "SetProperties": {
+           "Action": "OpenShop FIASA_Shop none 900 1800 15 11 16 32"
+          }
+        }
+        
+      ]
+    },	
+	 {
+      "Action": "EditMap",
+      "Target": "Maps/Koda_Sub",
+	 "When": {
+        "DayOfWeek": "Monday, Friday",
+    },
+      "MapTiles": [
+        {
+          "Position": { "X": 15, "Y": 12 },
+          "Layer": "Buildings",
+          "SetProperties": {
+           "Action": "OpenShop FIASA_Shop_Inke none 900 1800 15 11 16 32"
+          }
+        }
+        
+      ]
+    },	
+	
+ {
+      "Action": "EditMap",
+      "Target": "Maps/Koda_Sub_rain",
+
+      "MapTiles": [
+        {
+          "Position": { "X": 15, "Y": 12 },
+          "Layer": "Buildings",
+          "SetProperties": {
+           "Action": "OpenShop FIASA_Shop none 900 1800 15 11 16 32"
+          }
+        }
+        
+      ]
+    },
+	 {
+      "Action": "EditMap",
+      "Target": "Maps/Koda_Sub_rain",
+	 "When": {
+        "DayOfWeek": "Monday, Friday",
+    },
+      "MapTiles": [
+        {
+          "Position": { "X": 15, "Y": 12 },
+          "Layer": "Buildings",
+          "SetProperties": {
+           "Action": "OpenShop FIASA_Shop_Inke none 900 1800 15 11 16 32"
+          }
+        }
+        
+      ]
+    },	
+   
+    ]
+} 

@@ -1,0 +1,42 @@
+[
+	{
+		// DEMETRIUS - CARPENTER FIBER AND MOSS
+		// LEADS TO ROBIN ADDING NEW STOCK
+		
+		"Id": "{{ModId}}_Mail_Demetrius_Fiber_Moss",
+		"GroupId": "{{ModId}}_Mail_Carpenter_Stock",
+		"Title": "{{DemetriusMail01.Title}}",
+		"Text": "{{DemetriusMail01.Text}}",
+		"AdditionalMailReceived": ["{{ModId}}_Mail_Demetrius_Fiber_Moss"],
+		
+		// CONDITIONS FOR DELIVERY: 24 SUMMER Y1 OR LATER, HAVE MET DEMETRIUS AND ROBIN AT LEAST ONCE
+		// USE THIS DATE AS IT'S THE DAY AFTER THE LATEST POSSIBLE OCCURRENCE OF Y1 GREEN RAIN
+		
+		"Date": "24 summer Y1", // Must be that date or after it. The format is "[1-28] [spring|summer|fall|winter] Y[1-999]",
+		"MailNotReceived": ["{{ModId}}_Mail_Demetrius_Fiber_Moss"]
+	},
+	{
+		// ROBIN - CARPENTER ARTISAN MACHINES
+		// LEADS TO ROBIN ADDING NEW STOCK
+		
+		"Id": "{{ModId}}_Mail_Robin_ArtisanMachines",
+		"GroupId": "{{ModId}}_Mail_Carpenter_Stock",
+		"Title": "{{RobinMail01.Title}}",
+		"Text": "{{RobinMail01.Text}}",
+		"AdditionalMailReceived": ["{{ModId}}_Mail_Robin_ArtisanMachines"],
+		"MailReceived": ["{{ModId}}_Mail_Carpenter_ArtisanMachines"],
+		"MailNotReceived": ["{{ModId}}_Mail_Robin_ArtisanMachines"]
+	},
+	{
+		// ROBIN - CARPENTER ARTISAN MACHINES
+		// LEADS TO ROBIN ADDING NEW STOCK
+		
+		"Id": "{{ModId}}_Mail_Marlon_Foodstuffs",
+		"GroupId": "{{ModId}}_Mail_AdventureShop_Stock",
+		"Title": "{{MarlonMail01.Title}}",
+		"Text": "{{MarlonMail01.Text}}",
+		"AdditionalMailReceived": ["{{ModId}}_Mail_Marlon_Foodstuffs"],
+		"MailReceived": ["{{ModId}}_Mail_AdventureShop_Foodstuffs"],
+		"MailNotReceived": ["{{ModId}}_Mail_Marlon_Foodstuffs"]
+	}
+]

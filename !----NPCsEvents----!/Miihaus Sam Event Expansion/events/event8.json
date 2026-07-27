@@ -1,0 +1,189 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/Railroad",
+        "Entries":
+    { //276 1984
+    "{{ModId}}_E08/F/f Sam 2000/t 2000 2300/w sunny/e {{ModId}}_E07":"
+    sam_acoustic2/
+    26 40/
+    farmer 30 49 0 Sam 26 38 2/
+    skippable/
+    addConversationTopic {{ModId}}_Topic_E08/
+    addTemporaryActor {{ModId}}_CampFire 16 32 26 40 2 false/
+    animate {{ModId}}_CampFire false true 650 0 1 2 3/ 
+    addLantern 23 26 40 2/
+        showFrame Sam 52/
+        move farmer 0 -2 3/
+        playSound cracklingFire/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 27 37 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.024 -0.02/
+        animate Sam false true 350 52 53/
+        move farmer -1 0 0/
+        move farmer 0 -2 0 true/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 27 37 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.02 -0.006/
+        pause 1100/
+        playSound cracklingFire/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 27 37 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.014 -0.012/
+        pause 800/
+        faceDirection farmer 3/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 27 37 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.024 -0.02/
+        pause 1200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 27 37 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.02 -0.006/
+        pause 800/
+        faceDirection farmer 0/
+        playSound cracklingFire/
+        faceDirection farmer 1/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 27 37 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.014 -0.012/
+        pause 1300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 27 37 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.024 -0.02/
+        pause 800/
+        faceDirection farmer 0/
+        pause 200/
+        move farmer 0 -5 3 true/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 27 37 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.02 -0.006/
+        pause 1000/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 27 37 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.014 -0.012/
+        pause 1300/
+        playSound cracklingFire/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 27 37 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.024 -0.02/
+        pause 500/
+        emote Sam {{?}} true/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 27 37 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.02 -0.006/
+        pause 300/
+    stopMusic/
+    stopAnimation Sam 52/
+    playSound cracklingFire/
+    pause 500/
+    playSound slime/
+    showFrame Sam 0/
+    pause 500/
+    faceDirection Sam 1/
+    pause 200/
+    speak Sam \"{{i18n:E08.001}}\"/
+    pause 400/
+    speak Sam \"{{i18n:E08.002}}\"/
+    pause 400/
+    emote Sam {{pause}}/
+    pause 200/
+    speak Sam \"{{i18n:E08.003}}\"/
+    pause 200/
+    emote farmer {{happy}}/
+    move farmer -1 0 0/
+    move farmer 0 -2 3/
+    move farmer -1 0 2/
+    pause 200/
+    playMusic spaceMusic/
+    faceDirection Sam 2/
+    pause 300/
+    speak Sam \"{{i18n:E08.004}}\"/
+    pause 400/
+    speak Sam \"{{i18n:E08.005}}\"/
+    pause 500/
+    speak Sam \"{{i18n:E08.006}}\"/
+    pause 600/
+    speak Sam \"{{i18n:E08.007}}\"/
+    pause 500/
+    faceDirection Sam 1/
+    pause 400/
+    faceDirection farmer 3/
+    pause 500/
+    speak Sam \"{{i18n:E08.008}}\"/
+    pause 400/
+    speak Sam \"{{i18n:E08.009}}\"/
+    pause 400/
+    speak Sam \"{{i18n:E08.010}}\"/
+    pause 400/
+    faceDirection Sam 2/
+    pause 100/
+    emote Sam  {{pause}}/
+    message \"{{i18n:E08.011}}\"/
+    pause 500/
+    speak Sam \"{{i18n:E08.012}}\"/
+    pause 400/
+    speak Sam \"{{i18n:E08.013}}\"/
+    pause 300/
+    faceDirection Sam 1/
+    pause 300/
+    speak Sam \"{{i18n:E08.014}}\"/
+    pause 300/
+    quickQuestion {{i18n:E08.015}}(break)pause 200\\switchEvent {{ModId}}_E08.Lovers(break)pause 200\\switchEvent {{ModId}}_E08.Friends/
+    pause 300/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    end/
+    ",
+
+    "{{ModId}}_E08.Lovers":"
+    pause 100/
+    eventSeen {{ModId}}_E08.Lovers true/
+    speak Sam \"{{i18n:E08.016}}\"/
+    pause 100/
+    switchEvent {{ModId}}_E08.End/
+
+    pause 300/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    end/
+    ",
+
+    "{{ModId}}_E08.Friends":"
+    pause 100/
+    eventSeen {{ModId}}_E08.Friends true/
+    speak Sam \"{{i18n:E08.017}}\"/
+    pause 100/
+    switchEvent {{ModId}}_E08.End/
+
+    pause 300/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    end/
+    ",
+
+    "{{ModId}}_E08.End":"
+    pause 100/
+    speak Sam \"{{i18n:E08.018}}\"/
+    pause 300/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    end/
+    ",
+    
+        
+    },
+},
+
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Vincent",
+        "Entries":{
+            "{{ModId}}_Topic_E08":"{{i18n:E08.021}}",
+            }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Sam",
+        "Entries":{
+            "{{ModId}}_Topic_E08":"{{i18n:E08.019}}",
+            }
+    },
+        {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Sebastian",
+        "Entries":{
+            "{{ModId}}_Topic_E08":"{{i18n:E08.020}}",
+            }
+    },
+    /*   {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Abigail",
+        "Entries":{
+            "{{ModId}}_Topic_E08":"{{i18n:E08.022}}",
+            }
+    },*/
+    ]
+}

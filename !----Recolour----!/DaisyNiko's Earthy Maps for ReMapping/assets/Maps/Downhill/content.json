@@ -1,0 +1,96 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Downhill.Project)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Downhill.Project",
+      "FromFile": "assets/Maps/Downhill/Downhill.Project_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Downhill.Project.fix)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Downhill.Project.fix",
+      "FromFile": "assets/Maps/Downhill/Downhill.Project.fix_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+    /*{
+      "LogName": "Downhill Map Overlay (Meadowlands)",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Farm_ranching_map, LooseSprites/Farm_ranching_map_{{season}}",
+      "FromFile": "assets/Maps/Downhill/Downhill.Project_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=DH.Kiyuga.Main": true,
+        "N3cro_92.ReMappingEarthySync/Downhill": "true"
+      },
+      "FromArea": {
+        "X": 0,
+        "Y": 34,
+        "Width": 31,
+        "Height": 13
+      },
+      "ToArea": {
+        "X": 100,
+        "Y": 0,
+        "Width": 31,
+        "Height": 13
+      }
+    },
+    {
+			"LogName": "Downhill Map Overlay Waterfall",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=DH.Kiyuga.Main": true,
+				"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+        "N3cro_92.ReMappingEarthySync/Downhill": "true"
+      },
+			"Entries": {
+			   	"RMP Downhill Project": {
+					"Id": "DH.Kiyuga.Main",
+					"PixelArea": { "X": 26, "Y": 78, "Width": 10, "Height": 14 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Maps/Downhill/Downhill.Project_{{season}}.png}}",
+						"SourceRect": { "X": 0,	"Y": 0,	"Width": 10,	"Height": 14  } }]
+				}
+			}
+		},
+    {
+			"LogName": "Downhill Map Overlay Waterfall LE",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod: |contains=DH.Kiyuga.Main": true,
+				"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+        "N3cro_92.ReMappingEarthySync/Downhill": "true"
+      },
+			"Entries": {
+			   	"RMP Downhill Project": {
+					"Id": "DH.Kiyuga.Main",
+					"PixelArea": { "X": 26, "Y": 78, "Width": 10, "Height": 14 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Maps/Downhill/Downhill.Project_{{season}}.png}}",
+						"SourceRect": { "X": 0,	"Y": 0,	"Width": 10,	"Height": 14  } }]
+				}
+			}
+		}*/
+  ]
+}

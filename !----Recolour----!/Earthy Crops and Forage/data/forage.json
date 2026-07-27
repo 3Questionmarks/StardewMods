@@ -1,0 +1,83 @@
+{
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Overlays/Forage.png",
+            "PatchMode": "Overlay",
+            "Priority": "Early"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Clam.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 192,
+                "Y": 240,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/CommonMushroom.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 320,
+                "Y": 256,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/WildPlum.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 352,
+                "Y": 256,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/PurpleMushroom.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 224,
+                "Y": 272,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/RedMushroom.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 192,
+                "Y": 272,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/WinterRoot.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 64,
+                "Y": 272,
+                "Width": 16,
+                "Height": 16
+            }
+        }
+    ]
+}

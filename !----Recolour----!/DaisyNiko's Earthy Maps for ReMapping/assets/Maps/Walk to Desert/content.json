@@ -1,0 +1,24 @@
+{
+	"Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Walk.Desert)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Walk.Desert",
+      "FromFile": "assets/Maps/Walk to Desert/Walk.Desert_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Walk.Desert.Road)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Walk.Desert.Road",
+      "FromFile": "assets/Maps/Walk to Desert/Walk.Desert.Road_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="6" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="10">
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="320" columns="16">
+  <image source="Mines/mine_lava.png" width="256" height="320"/>
+  <tile id="165">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="181">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="240">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="241">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="242">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="256">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="257">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="258">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="272">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="273">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="274">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="321" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="385" name="z_AdditionalFarmCave" tilewidth="16" tileheight="16" tilecount="480" columns="20">
+  <image source="z_AdditionalFarmCave.png" width="320" height="384"/>
+  <tile id="120">
+   <animation>
+    <frame tileid="120" duration="100"/>
+    <frame tileid="121" duration="100"/>
+    <frame tileid="122" duration="100"/>
+    <frame tileid="123" duration="100"/>
+    <frame tileid="124" duration="100"/>
+    <frame tileid="125" duration="100"/>
+    <frame tileid="126" duration="100"/>
+    <frame tileid="127" duration="100"/>
+    <frame tileid="127" duration="100"/>
+    <frame tileid="120" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="865" name="z_AdditionalFarmCave_XiddavFC" tilewidth="16" tileheight="16" tilecount="198" columns="18">
+  <image source="z_AdditionalFarmCave_XiddavFC.png" width="300" height="191"/>
+ </tileset>
+ <layer id="1" name="Back" width="3" height="6">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+219,219,219,
+219,219,219,
+219,219,219
+</data>
+ </layer>
+ <layer id="12" name="Back2" width="3" height="6">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+651,651,651,
+671,671,671,
+691,691,691
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="3" height="6">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+109,0,109,
+125,0,125,
+104,0,105,
+120,465,121
+</data>
+ </layer>
+ <layer id="11" name="Buildings2" width="3" height="6">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+72,0,73,
+88,0,89,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="3" height="6">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="3" height="6">
+  <data encoding="csv">
+78,78,78,
+78,78,78,
+0,108,0,
+0,124,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="9" name="AlwaysFront" width="3" height="6">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="13" name="Back2"/>
+ <objectgroup id="6" name="Buildings">
+  <object id="9" name="TileData" x="16" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;AdFCms02&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="14" name="Buildings2"/>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

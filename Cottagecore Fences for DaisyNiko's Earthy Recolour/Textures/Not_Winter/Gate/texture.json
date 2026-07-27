@@ -1,0 +1,26 @@
+{
+  "ItemName": "Gate",
+  "Type": "Craftable",
+	"Seasons": ["Summer", "Spring", "Fall"],
+  "TextureWidth": 48,
+  "TextureHeight": 224,
+  "Variations": 4,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "wood",
+		},
+		{
+		"Id": 1,
+		"Name": "stone",
+		},
+		{
+		"Id": 2,
+		"Name": "iron",
+		},
+		{
+		"Id": 3,
+		"Name": "hardwood",
+		},
+	]
+}

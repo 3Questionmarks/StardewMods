@@ -1182,14 +1182,22 @@
 		"TextLifetime": 3000
 		}
 	],
+	"Sounds": [
+		{
+		"SoundName": "owl",
+		"WhenToPlay": "Always",
+		"TimeBetweenSound": 3000,
+		"ChanceOfPlaying": 0.3
+		}
+	]  
   },
 
 "Sounds": [
 	{
 	"SoundName": "owl",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.2
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.3
 	}
 ]  
 }

@@ -1,0 +1,20 @@
+{
+    "Name": "Earthy Recolour for SVE",
+    "Author": "rainkius",
+    "Version": "1.0.1",
+    "Description": "Edits the snow and other environment assets in SVE to match DaisyNiko's Earthy Recolour",
+    "UniqueID": "rainkius.EarthySVE",
+    "UpdateKeys": ["Nexus:45617"], 
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+				{"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+				"MinimumVersion": "1.15.0",
+                "IsRequired": true
+				},
+				{"UniqueID": "DaisyNiko.EarthyRecolour",
+                "IsRequired": true
+				},
+	]
+}

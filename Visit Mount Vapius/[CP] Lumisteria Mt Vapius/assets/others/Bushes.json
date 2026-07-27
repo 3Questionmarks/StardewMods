@@ -11,31 +11,70 @@
                     "ShakeOff": "Lumisteria.MtVapius_Rosemary",
                     "StartSeason": "summer",
                     "StartDay": 3,
-					"EndSeason": "summer",
-					"EndDay": 18,
-					"Chance": 0.05,
-					"Locations": [ "Lumisteria.MtVapius_TrainStation", "Lumisteria.MtVapius_Hamlet", "Lumisteria.MtVapius_Cliff" ],
+                    "EndSeason": "summer",
+                    "EndDay": 18,
+                    "Chance": 0.05,
+                    "Locations": [
+                        "Lumisteria.MtVapius_TrainStation",
+                        "Lumisteria.MtVapius_Hamlet",
+                        "Lumisteria.MtVapius_Cliff"
+                    ],
                 },
                 "Lumisteria.MtVapius/winter_nevaril": {
                     "ShakeOff": "Lumisteria.MtVapius_Nevaril",
                     "StartSeason": "winter",
                     "StartDay": 18,
-					"EndSeason": "winter",
-					"EndDay": 25,
-					"Chance": 0.1,
-					"Weather": [ "Snow" ],
-					"DestroyWeather": [ "Sun" ],
-					"Locations": ["Lumisteria.MtVapius_Cliff", "Lumisteria.MtVapius_Orchard", "Lumisteria.MtVapius_Clearing"],
+                    "EndSeason": "winter",
+                    "EndDay": 25,
+                    "Chance": 0.1,
+                    "Weather": [
+                        "Snow"
+                    ],
+                    "DestroyWeather": [
+                        "Sun"
+                    ],
+                    "Locations": [
+                        "Lumisteria.MtVapius_Cliff",
+                        "Lumisteria.MtVapius_Orchard",
+                        "Lumisteria.MtVapius_Clearing"
+                    ],
                 },
                 "Lumisteria.MtVapius/fall_seabuckthorn": {
                     "ShakeOff": "Lumisteria.MtVapius_SeaBuckthornBerry",
                     "StartSeason": "fall",
                     "StartDay": 24,
-					"EndSeason": "winter",
-					"EndDay": 7,
-					"Chance": 0.07,
-					"Locations": ["Lumisteria.MtVapius_Cliff", "Lumisteria.MtVapius_Orchard"],
+                    "EndSeason": "winter",
+                    "EndDay": 7,
+                    "Chance": 0.07,
+                    "Locations": [
+                        "Lumisteria.MtVapius_Cliff",
+                        "Lumisteria.MtVapius_Orchard"
+                    ],
+                },
+                "Lumisteria.MtVapius/fall_seabuckthorn_mountain": {
+                    "Enabled": false,
+                    "ShakeOff": "Lumisteria.MtVapius_SeaBuckthornBerry",
+                    "StartSeason": "fall",
+                    "StartDay": 18,
+                    "EndSeason": "winter",
+                    "EndDay": 1,
+                    "Chance": 0.03,
+                    "Locations": [
+                        "Mountain"
+                    ],
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "NCarigon.BushBloomMod/Schedules",
+            "Fields": {
+                "Lumisteria.MtVapius/fall_seabuckthorn_mountain": {
+                    "Enabled": true
                 }
+            },
+            "When": {
+                "HasSeenEvent": "Lumisteria.MtVapius_Cliff_ForageReturn"
             }
         },
         {

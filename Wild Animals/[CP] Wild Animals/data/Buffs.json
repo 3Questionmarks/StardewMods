@@ -24,7 +24,7 @@
 					"Attack": 0.0,
 					"Defense": 0.0,
 					"MagneticRadius": 0.0,
-					"MaxStamina": 0.0,
+					"MaxStamina": 20.0,
 					"Speed": 0.0
 				}
 			},
@@ -48,7 +48,7 @@
 					"Defense": 0.0,
 					"MagneticRadius": 0.0,
 					"MaxStamina": 0.0,
-					"Speed": 0.0
+					"Speed": 2.0
 				}
 			},
 
@@ -70,7 +70,7 @@
 					"Attack": 0.0,
 					"Defense": 0.0,
 					"MagneticRadius": 0.0,
-					"MaxStamina": 0.0,
+					"MaxStamina": 20.0,
 					"Speed": 0.0
 				}
 			},
@@ -109,13 +109,13 @@
 					"FarmingLevel": 0.0,
 					"FishingLevel": 0.0,
 					"ForagingLevel": 0.0,
-					"LuckLevel": 0.0,
+					"LuckLevel": -1.0,
 					"MiningLevel": 0.0,
 					"Attack": 0.0,
 					"Defense": 0.0,
 					"MagneticRadius": 0.0,
 					"MaxStamina": -30.0,
-					"Speed": -1.0
+					"Speed": 0.0
 				}
 			},
 		}

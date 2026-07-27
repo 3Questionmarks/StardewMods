@@ -1,0 +1,16 @@
+{
+//Outfit Loads when use Seasonal Cute Characters
+  "Changes": [    
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Leo_{{Season}}, Characters/ParrotBoy",
+      "FromFile": "code/Compatibilitys/SeasonalCuteCharacters/Leo/{{Season}}_Leo.png",
+      "Patchmode": "Overlay",
+      "When": {
+        "HasSeenEvent |contains=9695002": true,
+        "HasSeenEvent |contains=6497428": true,
+        "HasMod |contains=Poltergeister.SeasonalCuteCharacters": true
+      }
+    }
+  ]
+}

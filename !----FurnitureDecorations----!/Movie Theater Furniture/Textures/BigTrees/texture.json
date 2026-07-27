@@ -1,0 +1,22 @@
+{
+   "CollectiveNames": [
+      "Tree of the Winter Star",
+      "Exotic Tree",
+      "Deluxe Tree"
+  ],
+  "Type": "Furniture",
+  "TextureWidth": 48,
+  "TextureHeight": 80,
+  "Variations": 5,
+  "Keywords": [ "Movies", "Theater"  ],
+  "Animation": [
+     {
+      "Frame" :  0,
+      "Duration": 1000
+     },
+     {
+      "Frame" :  1,
+      "Duration": 100
+     }
+  ]  
+}

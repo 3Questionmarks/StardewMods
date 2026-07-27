@@ -1,0 +1,234 @@
+{
+    "Changes": [
+        {
+			"LogName": "{{ModId}}_Carpenter Shop WITHOUT Year 2 Price Changes Fields",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+			"Fields": {
+				"(O)388": {
+					"Price": 10
+				},
+				"(O)390": {
+					"Price": 20
+				}
+			}
+		},
+		{
+			"LogName": "{{ModId}}_Carpenter Shop WITHOUT Year 2 Price Changes Entries",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+			"Entries": {
+				
+				// RESOURCES
+				
+                "{{ModId}}_ID_Fiber": {
+                    "Id": "{{ModId}}_ID_Fiber",
+                    "ItemId": "(O)771",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Demetrius_Fiber_Moss Received",
+                    "Price": "20",
+					"AvailableStock": "20",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+                "{{ModId}}_ID_Moss": {
+                    "Id": "{{ModId}}_ID_Moss",
+                    "ItemId": "Moss",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Demetrius_Fiber_Moss Received",
+                    "Price": "50",
+					"AvailableStock": "20"
+                },
+                "{{ModId}}_ID_Sap": {
+                    "Id": "{{ModId}}_ID_Sap",
+                    "ItemId": "(O)92",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Carpenter_Sap Received",
+                    "Price": "20",
+					"AvailableStock": "30",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+                "{{ModId}}_ID_Hardwood": {
+                    "Id": "{{ModId}}_ID_Hardwood",
+                    "ItemId": "(O)709",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Carpenter_Hardwood Received",
+                    "Price": "150",
+					"AvailableStock": "20"
+                },
+                "{{ModId}}_ID_MapleSyrup": {
+                    "Id": "{{ModId}}_ID_MapleSyrup",
+                    "ItemId": "(O)724",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Carpenter_TapperOutputs Received",
+                    "Price": "1000",
+					"AvailableStock": "10"
+                },
+                "{{ModId}}_ID_OakResin": {
+                    "Id": "{{ModId}}_ID_OakResin",
+                    "ItemId": "(O)725",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Carpenter_TapperOutputs Received",
+                    "Price": "750",
+					"AvailableStock": "10"
+                },
+                "{{ModId}}_ID_PineTar": {
+                    "Id": "{{ModId}}_ID_PineTar",
+                    "ItemId": "(O)726",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Carpenter_TapperOutputs Received",
+                    "Price": "500",
+					"AvailableStock": "10"
+                },
+                "{{ModId}}_ID_Acorn": {
+                    "Id": "{{ModId}}_ID_Acorn",
+                    "ItemId": "(O)309",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Carpenter_TreeSeeds Received,",
+                    "Price": "100",
+					"AvailableStock": "5"
+                },
+                "{{ModId}}_ID_MapleSeed": {
+                    "Id": "{{ModId}}_ID_MapleSeed",
+                    "ItemId": "(O)310",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Carpenter_TreeSeeds Received",
+                    "Price": "50",
+					"AvailableStock": "5"
+                },
+                "{{ModId}}_ID_PineCone": {
+                    "Id": "{{ModId}}_ID_PineCone",
+                    "ItemId": "(O)311",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Carpenter_TreeSeeds Received",
+                    "Price": "50",
+					"AvailableStock": "5"
+                },
+				
+				// GENERAL AND MISC. BIG CRAFTABLES
+				
+                "{{ModId}}_ID_Chest": {
+                    "Id": "{{ModId}}_ID_Chest",
+                    "ItemId": "(BC)130",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Carpenter_Chest Received",
+                    "Price": "450",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_BigChest": {
+                    "Id": "{{ModId}}_ID_BigChest",
+                    "ItemId": "BigChest",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Carpenter_BigChest Received",
+                    "Price": "2025",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_StoneChest": {
+                    "Id": "{{ModId}}_ID_StoneChest",
+                    "ItemId": "(BC)232",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Carpenter_StoneChest Received",
+                    "Price": "900",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_MushroomLog": {
+                    "Id": "{{ModId}}_ID_MushroomLog",
+                    "ItemId": "(BC)MushroomLog",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Carpenter_MushroomLog Received",
+                    "Price": "1800",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_Scarecrow": {
+                    "Id": "{{ModId}}_ID_Scarecrow",
+                    "ItemId": "(BC)8",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Carpenter_Scarecrow Received",
+                    "Price": "945",
+					"AvailableStock": "1"
+                },
+				
+				// ARTISAN MACHINES
+				
+                "{{ModId}}_ID_BeeHouse": {
+                    "Id": "{{ModId}}_ID_BeeHouse",
+                    "ItemId": "(BC)10",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Robin_ArtisanMachines Received",
+                    "Price": "2880",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_Cask": {
+                    "Id": "{{ModId}}_ID_Cask",
+                    "ItemId": "(BC)163",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Robin_ArtisanMachines Received",
+                    "Price": "315",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_CheesePress": {
+                    "Id": "{{ModId}}_ID_CheesePress",
+                    "ItemId": "(BC)16",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Robin_ArtisanMachines Received",
+                    "Price": "3322",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_Keg": {
+                    "Id": "{{ModId}}_ID_Keg",
+                    "ItemId": "(BC)12",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Robin_ArtisanMachines Received",
+                    "Price": "2227",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_PreservesJar": {
+                    "Id": "{{ModId}}_ID_PreservesJar",
+                    "ItemId": "(BC)15",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Robin_ArtisanMachines Received",
+                    "Price": "2250",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_Loom": {
+                    "Id": "{{ModId}}_ID_Loom",
+                    "ItemId": "(BC)17",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Robin_ArtisanMachines Received",
+                    "Price": "1530",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_MayonnaiseMachine": {
+                    "Id": "{{ModId}}_ID_MayonnaiseMachine",
+                    "ItemId": "(BC)24",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Robin_ArtisanMachines Received",
+                    "Price": "1327",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_OilMaker": {
+                    "Id": "{{ModId}}_ID_OilMaker",
+                    "ItemId": "(BC)19",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Robin_ArtisanMachines Received",
+                    "Price": "6885",
+					"AvailableStock": "1"
+                }
+            }
+        }
+    ]
+}

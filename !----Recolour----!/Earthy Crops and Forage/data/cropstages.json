@@ -1,0 +1,35 @@
+{
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "TileSheets/crops",
+            "FromFile": "assets/Overlays/CropStages.png",
+            "PatchMode": "Overlay",
+            "Priority": "Early"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "TileSheets/crops",
+            "FromFile": "assets/Replacers/HopsGrowth.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 128,
+                "Y": 576,
+                "Width": 128,
+                "Height": 32
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "TileSheets/crops",
+            "FromFile": "assets/Replacers/GreenBeanGrowth.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 128,
+                "Y": 0,
+                "Width": 128,
+                "Height": 32
+            }
+        }
+    ]
+}

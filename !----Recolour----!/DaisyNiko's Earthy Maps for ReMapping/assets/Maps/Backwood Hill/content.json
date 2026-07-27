@@ -1,0 +1,14 @@
+{
+	"Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Backwood.Hill)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Backwood.Hill",
+      "FromFile": "assets/Maps/Backwood Hill/Backwood.Hill_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+				"RMP Enable (Earthy) Recolour": "ON"
+			}
+    }
+  ]
+}

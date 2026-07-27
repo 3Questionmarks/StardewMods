@@ -5,7 +5,7 @@
 			"Target": "Data/Mail",
 			"Entries": {
 				"Lumisteria.MtVapius_TagetesSeedsMail": "{{i18n: MtVapiusTagetesSeedsMail_{{Query: {{DaysPlayed}} > 30}}_Translated |default={{i18n:MtVapiusTagetesSeedsMail_Translated}} }}%item id (O)Lumisteria.MtVapius_TagetesSeeds 3 %%[#]{{i18n: MtVapiusTagetesSeedsMail_Title_Translated}}",
-				"Lumisteria.MtVapius_AsterWelcomeMail": "{{i18n: MtVapiusAsterWelcomeMail_Translated}}%item id (O)Lumisteria.MtVapius_PinkMorningGloryStarter 3 %%[#]{{i18n: MtVapiusAsterWelcomeMail_Title_Translated}}",
+				"Lumisteria.MtVapius_AsterWelcomeMail": "{{i18n: MtVapiusAsterWelcomeMail_Translated}}[letterbg Mods\\Lumisteria.MtVapius\\MtVapiusLettersBG 0]%item id (O)Lumisteria.MtVapius_PinkMorningGloryStarter 3 %%[#]{{i18n: MtVapiusAsterWelcomeMail_Title_Translated}}",
 				"Lumisteria.MtVapius_CloverSeedsMail": "{{i18n: MtVapiusCloverSeedsMail_Translated}}%item id (O)Lumisteria.MtVapius_BlueCloverSeeds 5 %%[#]{{i18n: MtVapiusCloverSeedsMail_Title_Translated}}",
 				"Lumisteria.MtVapius_StrangeRarecrowMail": "{{i18n: MtVapiusStrangeRarecrowMail_Translated}}%item id (BC)Lumisteria.MtVapius_StrangeRarecrow 1 %%[#]{{i18n: MtVapiusStrangeRarecrowMail_Title_Translated}}",
 				"Lumisteria.MtVapius_PrimroseSeedsMail": "{{i18n: MtVapiusPrimroseSeedsMail_Translated}}%item id (O)Lumisteria.MtVapius_PrimroseSeeds 4 %%[#]{{i18n: MtVapiusPrimroseSeedsMail_Title_Translated}}",
@@ -27,6 +27,7 @@
 				"Lumisteria.MtVapius_GazetteMail06": "{{i18n: MtVapiusGazetteMail06_Translated}}[#]{{i18n: MtVapiusGazetteMail06_Title_Translated}}",
 				"Lumisteria.MtVapius_GazetteMail07": "{{i18n: MtVapiusGazetteMail07_Translated}}%item id (O)Lumisteria.MtVapius_WeirdCoins 5%%[#]{{i18n: MtVapiusGazetteMail07_Title_Translated}}",
 				"Lumisteria.MtVapius_GazetteMail08": "{{i18n: MtVapiusGazetteMail08_Translated}}[#]{{i18n: MtVapiusGazetteMail08_Title_Translated}}",
+				"Lumisteria.MtVapius_GazetteMail09": "{{i18n: MtVapiusGazetteMail09_Translated}}[letterbg Mods\\Lumisteria.MtVapius\\MtVapiusLettersBG 5][#]{{i18n: MtVapiusGazetteMail09_Title_Translated}}",
 
 				//Cooking Recipes
 				"CelestineDuboisVMVCooking": "{{i18n: MtVapiusCelestineCookingMail_Translated}}[letterbg Mods\\Lumisteria.MtVapius\\MtVapiusLettersBG 1]%item cookingRecipe %%[#]{{i18n: MtVapiusCelestineCookingMail_Title_Translated}}",
@@ -35,7 +36,14 @@
 				"AsterPellegrinVMVCooking": "{{i18n: MtVapiusAsterCookingMail_Translated}}[letterbg Mods\\Lumisteria.MtVapius\\MtVapiusLettersBG 0]%item cookingRecipe %%[#]{{i18n: MtVapiusAsterCookingMail_Title_Translated}}",
 				"MariamFortinVMVCooking": "{{i18n: MtVapiusMariamCookingMail_Translated}}%item cookingRecipe %%[#]{{i18n: MtVapiusMariamCookingMail_Title_Translated}}",
 				"NaveenFaycombeSereneVMVCooking": "{{i18n: MtVapiusNaveenCookingMail_Translated}}%item cookingRecipe %%[#]{{i18n: MtVapiusNaveenCookingMail_Title_Translated}}",
-				"OdalisFaycombeSereneVMVCooking": "{{i18n: MtVapiusOdalisCookingMail_Translated}}%item cookingRecipe %%[#]{{i18n: MtVapiusOdalisCookingMail_Title_Translated}}",
+				"OdalisDuboisVelezVMVCooking": "{{i18n: MtVapiusOdalisCookingMail_Translated}}%item cookingRecipe %%[#]{{i18n: MtVapiusOdalisCookingMail_Title_Translated}}",
+				//Hearts
+				"Lumisteria.MtVapius_Gavin7HSaplingMail": "{{i18n: MtVapiusGavin7HSaplingMail_Translated}}%item id (O)Lumisteria.MtVapius_FrostAppleSapling 1%%[#]{{i18n: MtVapiusGavin7HSaplingMail_Title_Translated}}",
+				"Lumisteria.MtVapius_GavinDatingForgetMeNotMail": "{{i18n: MtVapiusGavinDatingForgetMeNotMail_Translated}}[#]{{i18n: MtVapiusGavinDatingForgetMeNotMail_Title_Translated}}",
+				"Lumisteria.MtVapius_AsterDatingMail": "{{i18n: MtVapiusAsterDatingMail_Translated}}%item id (O)Lumisteria.MtVapius_ZenithFlower 1%%[#]{{i18n: MtVapiusAsterDatingMail_Title_Translated}}",
+
+				
+				
 				//Quests
 				"Lumisteria.MtVapius_NympheaSeedsRequestMail": "{{i18n: MtVapiusNympheaSeedsRequestMail_Translated}}%item quest Lumisteria.MtVapiusQuestNympheaSeedsForCaroline %%[#]{{i18n: MtVapiusNympheaSeedsRequestMail_Title_Translated}}",
 				"Lumisteria.MtVapius_PurpleCupFlowerRequestMail": "{{i18n: MtVapiusPurpleCupFlowerRequestMail_Translated}}%item quest Lumisteria.MtVapiusQuestPurpleCupFlowerForWizard %%[letterbg 2][textcolor cyan][#]{{i18n: MtVapiusPurpleCupFlowerRequestMail_Title_Translated}}",
@@ -45,7 +53,7 @@
 				"Lumisteria.MtVapius_MoreGuildGoalsMail": "{{i18n: MtVapiusMoreGuildGoalsMail_Translated}}[#]{{i18n: MtVapiusMoreGuildGoalsMail_Title_Translated}}",
 				"Lumisteria.MtVapius_EweCheeseForGusMail": "{{i18n: MtVapiusEweCheeseForGusMail_Translated}}%item quest Lumisteria.MtVapiusQuestEweCheeseForGus %%[#]{{i18n: MtVapiusEweCheeseForGusMail_Title_Translated}}",
 				"Lumisteria.MtVapius_ChanterelleRequestMail": "{{i18n: MtVapiusChanterelleRequestMail_Translated}}%item quest Lumisteria.MtVapiusQuestChanterellesForGus %%[#]{{i18n: MtVapiusChanterelleRequestMail_Title_Translated}}",
-				"Lumisteria.MtVapius_ButterRequestMail": "{{i18n: MtVapiusButterRequestMail_Translated}}%item quest Lumisteria.MtVapiusQuestButterForJodi %%[#]{{i18n: MtVapiusButterRequestMail_Title_Translated}}",
+				"Lumisteria.MtVapius_ButterRequestMail": "{{i18n: MtVapiusButterRequestMail_Translated}}%item id 184 3 %% %item quest Lumisteria.MtVapiusQuestButterForJodi %%[#]{{i18n: MtVapiusButterRequestMail_Title_Translated}}",
 				"Lumisteria.MtVapius_OrpimentRequestMail": "{{i18n: MtVapiusOrpimentRequestMail_Translated}}%item quest Lumisteria.MtVapiusQuestOrpimentForMariam %%[#]{{i18n: MtVapiusOrpimentRequestMail_Title_Translated}}",
 				"Lumisteria.MtVapius_MyriadinTeaRequestMail": "{{i18n: MtVapiusMyriadinTeaRequestMail_Translated}}%item quest Lumisteria.MtVapiusQuestMyriadinTeaForPam %%[#]{{i18n: MtVapiusMyriadinTeaRequestMail_Title_Translated}}",
 				
@@ -75,7 +83,12 @@
 				"Lumisteria.MtVapius_NightMiscanthusSeedsMail": "{{i18n: MtVapiusNightMiscanthusSeedsMail_Translated}}%item id (O)Lumisteria.MtVapius_NightMiscanthusSeeds 4 %%[#]{{i18n: MtVapiusNightMiscanthusSeedsMail_Title_Translated}}",
 				"Lumisteria.MtVapius_RobinRedirectMail": "{{i18n: MtVapiusRobinRedirectMail_Translated}}[#]{{i18n: MtVapiusRobinRedirectMail_Title_Translated}}",
 				"Lumisteria.MtVapius_DwarfCosmosSeedsMail": "{{i18n: MtVapiusDwarfCosmosSeedsMail_Translated}}%item id (O)Lumisteria.MtVapius_CosmosSeeds 4 %%[#]{{i18n: MtVapiusDwarfCosmosSeedsMail_Title_Translated}}",
-				"Lumisteria.MtVapius_LivreauRootsMail": "{{i18n: MtVapiusLivreauRootsMail_Translated}}%%item id (O)Lumisteria.MtVapius_CometRoots 2 %%[#]{{i18n: MtVapiusLivreauRootsMail_Title_Translated}}",
+				"Lumisteria.MtVapius_LivreauRootsMail": "{{i18n: MtVapiusLivreauRootsMail_Translated}}%item id (O)Lumisteria.MtVapius_CometRoots 2 %%[#]{{i18n: MtVapiusLivreauRootsMail_Title_Translated}}",
+				
+				
+				//Museum
+				"Lumisteria.MtVapius_NaturalReserve_RewardMail01": "{{i18n: MtVapiusNaturalReserveMail01_Translated}}%item id (O)PrizeTicket 2 %%[#]{{i18n: MtVapiusNaturalReserveMail01_Title_Translated}}",
+				"Lumisteria.MtVapius_NaturalReserve_RewardMail02": "{{i18n: MtVapiusNaturalReserveMail02_Translated}}%item id (O)PrizeTicket 2 %%[#]{{i18n: MtVapiusNaturalReserveMail02_Title_Translated}}",
 
 				//Luna
 				"Lumisteria.MtVapius_JunimoSatchelMail": "{{i18n: MtVapiusJunimoSatchelMail_Translated}}[letterbg Mods\\Lumisteria.MtVapius\\MtVapiusLettersBG 2][textcolor cyan]%item id (F)Lumisteria.MtVapius_FurnitureVarious_JunimoSatchel 1%%[#]{{i18n: MtVapiusJunimoSatcheleMail_Title_Translated}}",
@@ -88,6 +101,20 @@
 				"Lumisteria.MtVapius_AdelaideBalsamicVinegarTipsMail": "{{i18n: MtVapiusAdelaideBalsamicVinegarTipsMail_Translated}}[letterbg Mods\\Lumisteria.MtVapius\\MtVapiusLettersBG 4][#]{{i18n: MtVapiusAdelaideBalsamicVinegarTipsMail_Title_Translated}}",
 
 
+				//Fluff
+				
+				"Lumisteria.MtVapius_LeahMushroomMail": "{{i18n: MtVapiusLeahMushroomMail_Translated}}[#]{{i18n: MtVapiusLeahMushroomMail_Title_Translated}}",
+				
+				//Central Station
+				"Lumisteria.MtVapius_EarlyTrainMail": "{{i18n: MtVapiusEarlyTrain_Translated}}[#]{{i18n: MtVapiusEarlyTrain_Title_Translated}}",
+				
+				//Animal Shop Compat
+				"Lumisteria.MtVapius_MoiraAnimalShopMail": "{{i18n: MtVapiusMoiraAnimalShopMail_Translated}}[#]{{i18n: MtVapiusMoiraAnimalShopMail_Title_Translated}}",
+				
+				//Festival Fluff
+				
+				"Lumisteria.MtVapius_GavinFlowerDanceMail": "{{i18n: MtVapiusGavinFlowerDanceMail_Translated}}%item id (O)Lumisteria.MtVapius_SweetMyriadin 3%% %item id (O)Lumisteria.MtVapius_CasalotierFlower 3%%[#]{{i18n: MtVapiusGavinFlowerDanceMail_Title_Translated}}",
+				"Lumisteria.MtVapius_GavinFlowerDanceRomanticMail": "{{i18n: MtVapiusGavinFlowerDanceRomanticMail_Translated}}%item id (O)Lumisteria.MtVapius_SweetMyriadin 3%% %item id (O)Lumisteria.MtVapius_CasalotierFlower 3%%[#]{{i18n: MtVapiusGavinFlowerDanceRomanticMail_Title_Translated}}",
 			},
 		},
 		// add letter BG

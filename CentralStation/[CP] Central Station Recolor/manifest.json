@@ -1,0 +1,16 @@
+   {
+    "Name": "[CP] Central Station Recolor Compatibility",
+    "Author": "crystalinerose",
+    "Version": "1.1.1",
+    "Description": "Central Station recolor compatibility patch for Earthy, VPR, and Starblue.",
+    "UniqueID": "crystalinerose.CentralStation_Recolor",
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "UpdateKeys": [ "Nexus:31510" ],
+    "Dependencies": [
+        {
+            "UniqueID": "Pathoschild.CentralStation.Content"
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Priority": "Late + 50",
+			"TextOperations": [	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SVFS_Tourist1"],
+					"Value": "Portraits/ConcessionMan_Default {{Aaron}} {{i18n:colon}}🐬{{i18n:Name.TouristMale}}{{i18n:colon2}}",
+					"Delimiter": " "
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SVFS_Tourist2"],
+					"Value": "Portraits/PurpleHairLady_Default {{Amber}} {{i18n:colon}}🐬{{i18n:Name.TouristFemale}}{{i18n:colon2}}",
+					"Delimiter": " "
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SVFS_Tourist3"],
+					"Value": "Portraits/PainterLupini_Default Strings/DolphINaF.ExtraPortraits:Name.Lupini",
+					"Delimiter": "🐬"
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SVFS_Tourist4"],
+					"Value": "Portraits/Mother_Default {{Laura}} {{i18n:colon}}🐬{{i18n:Name.TouristFemale}}{{i18n:colon2}}",
+					"Delimiter": " "
+				},			
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","SVFS_Tourist5"],
+					"Value": "Portraits/Child_Default Strings/DolphINaF.ExtraPortraits:Name.Simon",
+					"Delimiter": "🐬"
+				},
+			]
+		},		
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"Priority": "Late + 50",	
+			"TargetField": ["SVFS_SeedsSaplings","Owners"],
+			"Fields": {
+				"AnyOrNone": {
+					"Portrait": "Portraits/RedCapGuy_Default",
+				},
+			},
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Fields","Closed","ClosedMessage"],
+					"Value": "Portraits/RedCapGuy_Default {{Terrence}} {{i18n:colon}}🐬{{i18n:Name.VendorMale}}{{i18n:colon2}}",
+					"Delimiter": " "
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Fields","Closed","ClosedMessage"],
+					"Value": "$1",
+				},				
+			]
+		},			
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"Priority": "Late + 50",	
+			"TargetField": ["SVFS_FurnitureShop","Owners"],
+			"Fields": {
+				"AnyOrNone": {
+					"Portrait": "Portraits/OldMan_Default",
+				},
+			},
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Fields","Closed","ClosedMessage"],
+					"Value": "Portraits/OldMan_Default {{Manolis}} {{i18n:colon}}🐬{{i18n:Name.VendorMale}}{{i18n:colon2}}",
+					"Delimiter": " "
+				},				
+			]
+		},		
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"Priority": "Late + 50",	
+			"TargetField": ["SVFS_FlowerShop","Owners"],
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Fields","Closed","ClosedMessage"],
+					"Value": "Portraits/SVFSDaena {{Daena}} {{i18n:colon}}🐬{{i18n:Name.VendorFemale}}{{i18n:colon2}}",
+					"Delimiter": " "
+				},				
+			]
+		},		
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"Priority": "Late + 50",	
+			"TargetField": ["SVFS_ClothingShop","Owners"],
+			"TextOperations": [
+				{
+					"Operation": "Prepend",
+					"Target": ["Fields","Closed","ClosedMessage"],
+					"Value": "Portraits/SVFSNaufal {{Naufal}} {{i18n:colon}}🐬{{i18n:Name.VendorMale}}{{i18n:colon2}}",
+					"Delimiter": " "
+				},				
+			]
+		},
+	],
+}

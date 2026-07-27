@@ -1,0 +1,35 @@
+{
+	"Name": "Faust Mod",
+	"Author": "Sukuro",
+	"Version": "2.1.3",
+	"Description": "Adds custom NPC Faust",
+	"UniqueID": "FaustGravekeeperNPC",
+	"MinimumApiVersion": "3.5.0",
+	"UpdateKeys": ["Nexus:37246"],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "alvadea.tilesheet",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "Lumisteria.LumiTilesheetsIndoor",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "hxw.tilesheets",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "misscoriel.UCRFix",
+			"IsRequired": false
+		},
+		
+	]
+}

@@ -1,0 +1,40 @@
+{
+//Leo
+        "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Characters/ParrotBoy",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Leo/Leo.png",
+            "Patchmode": "Overlay",
+            "When": {
+                "HasSeenEvent |contains=9695002": true,
+                "HasSeenEvent |contains=6497428": true,
+            },
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/ParrotBoy_Winter",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Leo/winter_Leo.png",
+            "Patchmode": "Overlay",
+            "When": {
+                "HasSeenEvent |contains=9695002": true,
+                "HasSeenEvent |contains=6497428": true,
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "leo_sit_right": "27/27/27",
+                "leo_sit_left": "25/25/25",
+                "leo_sleep": "23/23/23",
+                "leo_sit_up": "24/24/24",
+                "leo_sit_backward": "26/26/26"
+            },
+            "When": {
+                "HasSeenEvent |contains=9695002": true,
+                "HasSeenEvent |contains=6497428": true,
+            },
+        },
+    ]
+}

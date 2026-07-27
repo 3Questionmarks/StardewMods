@@ -1,0 +1,31 @@
+[
+	{
+        "Id": "Gus.PaymentRentMail",
+		"Title": "GusPaymentMail.Title",
+        "Text": "GusPaymentMail.Text", 
+		"LetterBG": "LetterBG.png",        
+		"Repeatable": true,
+		"Days": [28],
+		"EventsSeen": [11611200]
+    },
+	
+	{
+        "Id": "Gus.TropicalRecipeMail",
+		"Title": "GusTropicalRecipe.Title",
+        "Text": "GusTropicalRecipe.Text", 
+		"LetterBG": "LetterBG.png",
+		"Recipe": "Tropical Curry",
+		"MailReceived": ["Gus.PaymentRentMail"],
+		"RandomChance": 0.2,
+		"Repeatable": false,
+		"EventsSeen": [11611200],
+		"RecipeNotKnown": ["Tropical Curry"],
+		"FriendshipConditions": [
+			{
+				"NpcName": "Gus",
+				"FriendshipLevel": 10
+			}
+		],
+		"ExpandedPrecondition": "y 3",
+    }
+]

@@ -1,0 +1,15 @@
+{
+    "Name": "Kids for the School Tokens",
+    "Author": "N3cro_92",
+    "Version": "3.2.2",
+    "Description": "Compares Content Patcher tokens between mods.",
+    "UniqueID": "N3cro_92.KidsfortheSchoolTokens",
+    "EntryDll": "KidsfortheSchoolTokens.dll",
+    "MinimumApiVersion": "4.0.0",
+    "Dependencies": [
+        {
+            "UniqueID": "Pathoschild.ContentPatcher",
+            "IsRequired": false
+        }
+    ]
+}

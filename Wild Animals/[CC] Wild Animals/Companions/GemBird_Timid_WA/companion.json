@@ -3,7 +3,7 @@
 	"Type": "Walking",
 	"EnableSpawnAtDayStart": false,
 	"EnableCharacterCollision": false,
-	"EnableFarmerCollision": true,
+	"EnableFarmerCollision": false,
 	"TravelSpeed": 2,
 	"MaxIdleDistance": -1,
 	"MaxDistanceBeforeTeleport": -1,
@@ -486,8 +486,8 @@
 "Sounds": [
 	{
 	"SoundName": "SpringBirds",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
 	"ChanceOfPlaying": 0.4
 	}
 ]  

@@ -1,0 +1,64 @@
+{
+  "Name": "Hiroko",
+  "FrontHair": {
+    "UseBaldHead": true,
+    "StartingPosition": {
+      "X": -3,
+      "Y": 2
+    },
+    "HeadPosition": {
+      "X": 4,
+      "Y": 0
+    },
+    "HairSize": {
+      "Width": 24,
+      "Length": 32
+    }
+  },
+  "RightHair": {
+    "UseBaldHead": true,
+    "StartingPosition": {
+      "X": -4,
+      "Y": 34
+    },
+    "HeadPosition": {
+      "X": 5,
+      "Y": 1
+    },
+    "HairSize": {
+      "Width": 24,
+      "Length": 32
+    }
+  },
+  "LeftHair": {
+    "Flipped": true,
+    "UseBaldHead": true,
+    "StartingPosition": {
+      "X": -4,
+      "Y": 34
+    },
+    "HeadPosition": {
+      "X": 3,
+      "Y": 1
+    },
+    "HairSize": {
+      "Width": 24,
+      "Length": 32
+    }
+  },
+  "BackHair": {
+    "UseBaldHead": true,
+    "StartingPosition": {
+      "X": -3,
+      "Y": 65
+    },
+    "HeadPosition": {
+      "X": 4,
+      "Y": 0
+    },
+    "HairSize": {
+      "Width": 24,
+      "Length": 32
+    }
+  }
+}

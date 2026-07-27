@@ -1,0 +1,10 @@
+{
+    "Format": "2.8.0",
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Mods/shekurika.EventLookup/button, Mods/shekurika.EventLookup/statusCover",
+            "FromFile":"assets/{{TargetWithoutPath}}.png"
+        }
+    ]
+}

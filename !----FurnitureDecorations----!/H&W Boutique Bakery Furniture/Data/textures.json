@@ -1,0 +1,45 @@
+ {
+
+   "Changes": [
+ 
+    {
+        "LogName": "Load Furniture Textures",
+        "Action": "Load",
+        "Target": "Mods/HXW.BoutiqueBakeryFurniture/Furniture",
+        "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+
+/////////////////////
+// recolor options //
+/////////////////////
+
+{
+    "LogName": "Strawberry Recolor - Furniture",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.BoutiqueBakeryFurniture/Furniture",
+    "FromFile": "assets/Furniture_Strawberry.png",
+    "PatchMode":"Replace",
+    "When": {"Recolor": "Strawberry"}
+},
+
+{
+    "LogName": "Blueberry Recolor - Furniture",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.BoutiqueBakeryFurniture/Furniture",
+    "FromFile": "assets/Furniture_Blueberry.png",
+    "PatchMode":"Replace",
+    "When": {"Recolor": "Blueberry"}
+},
+
+
+{
+    "LogName": "Chocolate Recolor - Furniture",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.BoutiqueBakeryFurniture/Furniture,",
+    "FromFile": "assets/Furniture_Chocolate.png",
+    "PatchMode":"Replace",
+    "When": {"Recolor": "Chocolate"}
+}
+
+    ]
+}

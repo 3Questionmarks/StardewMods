@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Haley.Bakery)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Haley.Bakery",
+      "FromFile": "assets/Maps/Haley Bakery/Haley.Bakery.{{RMP.HaleyBakery.State}}_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

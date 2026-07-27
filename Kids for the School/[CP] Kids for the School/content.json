@@ -1,0 +1,422 @@
+{
+    "Format": "2.8.0",
+    "CustomLocations": [
+//SpawnRoom MapLoad
+        {
+            "Name": "Custom_SchoolWarpRoom",
+            "FromMapFile": "code/NPCSpawnRoom/SchoolWarpRoom.tmx",
+            "MigrateLegacyNames": [
+                "SchoolWarpRoom"
+            ]
+        },
+//New SchoolFloor Rundown
+        {
+            "Name": "Custom_SchoolHouse_SecondFloor",
+            "FromMapFile": "code/MapPatches/SchoolHouse/Rundown_SchoolHouse_SecondFloor.tmx",
+            "MigrateLegacyNames": [
+                "SchoolHouse_SecondFloor"
+            ]
+        }
+    ],
+//Little NPC's
+    "AliasTokenNames": {
+        "FirstbornName": "Candidus42.LittleNPCs/FirstLittleNPC:Name",
+		"SecondbornName": "Candidus42.LittleNPCs/SecondLittleNPC:Name",
+        "FirstLittleNPCDN": "Candidus42.LittleNPCs/FirstLittleNPC:DisplayName",
+        "SecondLittleNPCDN": "Candidus42.LittleNPCs/SecondLittleNPC:DisplayName"
+    },
+    "DynamicTokens": [
+//Little Red School House
+        {"Name": "Fixed","Value":"false","When":{}},
+        {"Name": "Fixed","Value":"true","When":{"HasSeenEvent": "9695002"}},
+        {"Name": "IsOddYear","Value": "{{Query: {{Year}} % 2 = 1}}"},
+        {"Name": "noschoolday","Value": "false","When":{}},
+        {"Name": "noschoolday","Value": "true","When":{"day": "9, 23"}},
+        {"Name": "Rundown","Value":"Rundown","When":{}},
+        {"Name": "Rundown","Value":"","When":{"HasSeenEvent": "9695001"}},
+        {"Name": "RSV","Value":""},
+        {"Name": "RSV","Value":"RSV","When":{"HasMod|contains=Rafseazz.RSVCP": true}},	
+//Growing Valley
+        {"Name": "LRSH_NoSchoolDay","Value": false},
+        {"Name": "LRSH_NoSchoolDay","Value": true,"When": {"day": "9, 23"}},
+//Seasonal Improved Leo
+        {
+            "Name": "IndoorVariant", // Indoors
+            "Value": "_Indoor",
+            "When":
+            {
+                "IsOutdoors": "false"
+            }
+        },
+        {
+            "Name": "IndoorVariant", // Outdoors
+            "Value": "_Outdoor",
+            "When":
+            {
+                "IsOutdoors": "true"
+            }
+        },
+//Firstborn Name Little NPC's
+        {
+            "Name": "FirstbornDisplayName",
+            "Value": "{{siliconmodding.GVChildrenSMAPI/FirstbornNameErrorMessage}}",
+            "When": {
+            "HasValue: {{ChildGenders|valueAt=0}}": false,
+            "HasMod |contains=siliconmodding.GVChildrenSMAPI": true,
+            "HasMod |contains=Candidus42.LittleNPCs": true
+            }
+        },
+        {
+            "Name": "FirstbornDisplayName",
+            "Value": "{{ChildNames|valueAt=0}}",
+            "When": {
+            "HasValue: {{ChildGenders|valueAt=0}}": true,
+            "HasMod |contains=siliconmodding.GVChildrenSMAPI": true,
+            "HasMod |contains=Candidus42.LittleNPCs": true
+            }
+        },
+        {
+            "Name": "FirstbornDisplayName",
+            "Value": "{{Candidus42.LittleNPCs/FirstLittleNPC:DisplayName}}",
+            "When": {
+            "HasValue: {{Candidus42.LittleNPCs/FirstLittleNPC:DisplayName}}": true,
+            "HasMod |contains=siliconmodding.GVChildrenSMAPI": true,
+            "HasMod |contains=Candidus42.LittleNPCs": true
+            }
+        },
+        {
+			"Name": "FirstbornTokenPass",
+			"Value": "|DisplayName={{FirstbornDisplayName}}"
+		},
+//Secondborn Name Little NPC's
+        {
+            "Name": "SecondbornDisplayName",
+            "Value": "{{siliconmodding.GVChildrenSMAPI/SecondbornNameErrorMessage}}",
+            "When": {
+            "HasValue: {{ChildGenders|valueAt=1}}": false,
+            "HasMod |contains=siliconmodding.GVChildrenSMAPI": true,
+            "HasMod |contains=Candidus42.LittleNPCs": true
+            }
+        },
+        {
+            "Name": "SecondbornDisplayName",
+            "Value": "{{ChildNames|valueAt=1}}",
+            "When": {
+            "HasValue: {{ChildGenders|valueAt=1}}": true,
+            "HasMod |contains=siliconmodding.GVChildrenSMAPI": true,
+            "HasMod |contains=Candidus42.LittleNPCs": true
+            }
+        },
+        {
+            "Name": "SecondbornDisplayName",
+            "Value": "{{Candidus42.LittleNPCs/SecondLittleNPC:DisplayName}}",
+            "When": {
+            "HasValue: {{Candidus42.LittleNPCs/SecondLittleNPC:DisplayName}}": true,
+            "HasMod |contains=siliconmodding.GVChildrenSMAPI": true,
+            "HasMod |contains=Candidus42.LittleNPCs": true
+            }
+        },
+        {
+			"Name": "SecondbornTokenPass",
+			"Value": "|DisplayName={{SecondbornDisplayName}}"
+		}
+    ],
+    "ConfigSchema": {
+//Seasonal Improved Leo
+        "Hairdo Leo" : {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "Leo (for Seasonal Improved Leo)",
+			"Description": "Leo hairs after his 6 hearts event. (Only working if 'Seasonal' is 'false')"
+			},
+        "Seasonal": {
+			"AllowValues": "true, false",
+			"Default": "false",
+            "Section": "Leo (for Seasonal Improved Leo)",
+            "Description": "Seasonal Outfit"
+			},
+        "ParrotFriend": {
+            "AllowValues": "true, false",
+			"Default": "false",
+            "Section": "Leo (for Seasonal Improved Leo)",
+            "Description": "Gives Leo a parrot on his shoulder."
+			},
+		"Random ParrotFriend": {
+			"AllowValues": "true, false",
+			"Default": "false",
+            "Section": "Leo (for Seasonal Improved Leo)",
+            "Description": "Parrot randomly appears on sunny day."
+			},
+//CanReceiveGifts
+        "Ahmad": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "CanReceiveGifts"
+            },
+        "Amy": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "CanReceiveGifts"
+            },
+        "Beng": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "CanReceiveGifts"
+            },
+        "Cammi": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "CanReceiveGifts"
+            },
+        "Donny": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "CanReceiveGifts"
+            },
+        "Kara": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "CanReceiveGifts"
+            },
+        "Kimberly": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "CanReceiveGifts"
+            },
+        "Kitty": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "CanReceiveGifts"
+            },
+        "Meha": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "CanReceiveGifts"
+            },
+        "Muthu": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "CanReceiveGifts"
+            },
+        "Peter": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "CanReceiveGifts"
+            },
+        "Teela": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Section": "CanReceiveGifts"
+            },
+//SKE
+        "Douglas go to School": {
+            "AllowValues": "true, false",
+			"Default": "false",
+            "Section": "SKE Options",
+            "Description": "Douglas from SKE will go to School when you set this Option to 'true'"
+            }
+        },
+    "Changes": [
+//DayEnd MapLoad
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Maps/Custom_WarpRoom_DayEnd",
+            "FromFile": "code/NPCSpawnRoom/WarpRoom_DayEnd.tmx"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Custom_WarpRoom_DayEnd": {
+                    "CreateOnLoad": {
+                        "AlwaysActive": false,
+                        "MapPath": "Maps\\Custom_WarpRoom_DayEnd"
+                    }
+                }
+            }
+        },
+        {   "Action": "EditMap",
+            "Target": "Maps/Custom_SchoolHouse_SecondFloor",
+            "When": {
+                "Fixed": true 
+            },
+            "FromFile": "code/MapPatches/SchoolHouse/SchoolHouse_SecondFloor.tmx",
+	        "PatchMode": "Replace"
+        },
+//NPC Sprites
+        {
+            "Action": "Include",
+            "FromFile": "code/NPCs/Ahmad.json, code/NPCs/Amy.json, code/NPCs/Beng.json, code/NPCs/Cammi.json, code/NPCs/Donny.json, code/NPCs/Kara.json, code/NPCs/Kimberly.json, code/NPCs/Kitty.json, code/NPCs/Meha.json, code/NPCs/Muthu.json, code/NPCs/Peter.json, code/NPCs/Teela.json, code/NPCs/Leo.json, code/NPCs/Keahi.json, code/NPCs/Trinnie.json, code/NPCs/Yuuma.json, code/NPCs/Flor_Teacher.json, code/NPCs/Leah_TeachingAssistent.json, code/NPCs/Eloise.json, code/NPCs/Dianna.json, code/NPCs/Lavril.json, code/NPCs/Jas.json, code/NPCs/LRSH - Studens and Teachers.json"
+        },
+//NPC Dialogue Blank Load
+        {
+            "LogName": "NPC Dialogue Blank Loads",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Ahmad, Characters/Dialogue/Amy, Characters/Dialogue/Beng, Characters/Dialogue/Cammi, Characters/Dialogue/Donny, Characters/Dialogue/Kara, Characters/Dialogue/Kimberly, Characters/Dialogue/Kitty, Characters/Dialogue/Meha, Characters/Dialogue/Muthu, Characters/Dialogue/Peter, Characters/Dialogue/Teela",
+            "FromFile": "assets/blank.json"
+        },
+//NPC Dialogue
+        {
+            "LogName": "NPC Dialogue Loads",
+            "Action": "Include",
+            "FromFile": "assets/CharacterFiles/Dialogue/Ahmad.json, assets/CharacterFiles/Dialogue/Amy.json, assets/CharacterFiles/Dialogue/Beng.json, assets/CharacterFiles/Dialogue/Cammi.json, assets/CharacterFiles/Dialogue/Donny.json, assets/CharacterFiles/Dialogue/Kara.json, assets/CharacterFiles/Dialogue/Kimberly.json, assets/CharacterFiles/Dialogue/Kitty.json, assets/CharacterFiles/Dialogue/Meha.json, assets/CharacterFiles/Dialogue/Muthu.json, assets/CharacterFiles/Dialogue/Peter.json, assets/CharacterFiles/Dialogue/Teela.json"
+        },
+//NPC Schedule Blank Load
+        {
+            "LogName": "NPC Dialogue Blank Loads",
+            "Action": "Load",
+            "Target": "Characters/Schedules/Ahmad, Characters/Schedules/Amy, Characters/Schedules/Beng, Characters/Schedules/Cammi, Characters/Schedules/Donny, Characters/Schedules/Kara, Characters/Schedules/Kimberly, Characters/Schedules/Kitty, Characters/Schedules/Meha, Characters/Schedules/Muthu, Characters/Schedules/Peter, Characters/Schedules/Teela",
+            "FromFile": "assets/blank.json"
+        },
+//NPC Schedules
+        {
+            "LogName": "NPC Schedules Loads",
+            "Action": "Include",
+            "FromFile": "assets/CharacterFiles/Schedules/Ahmad.json, assets/CharacterFiles/Schedules/Amy.json, assets/CharacterFiles/Schedules/Beng.json, assets/CharacterFiles/Schedules/Cammi.json, assets/CharacterFiles/Schedules/Donny.json, assets/CharacterFiles/Schedules/Kara.json, assets/CharacterFiles/Schedules/Kimberly.json, assets/CharacterFiles/Schedules/Kitty.json, assets/CharacterFiles/Schedules/Meha.json, assets/CharacterFiles/Schedules/Muthu.json, assets/CharacterFiles/Schedules/Peter.json, assets/CharacterFiles/Schedules/Teela.json, assets/CharacterFiles/Schedules/Jas.json, assets/CharacterFiles/Schedules/Vincent.json, assets/CharacterFiles/Schedules/LeoMainland.json, assets/CharacterFiles/Schedules/Keahi.json, assets/CharacterFiles/Schedules/Trinnie.json, assets/CharacterFiles/Schedules/Yuuma.json, assets/CharacterFiles/Schedules/Lavril.json, assets/CharacterFiles/Schedules/Eloise.json, assets/CharacterFiles/Schedules/Dianna.json, assets/CharacterFiles/Schedules/Leah_TeachingAssistent.json, assets/CharacterFiles/Schedules/Penny_Teacher.json, assets/CharacterFiles/Schedules/Flor_Teacher.json, assets/CharacterFiles/Schedules/SKE.json" 
+        },
+//NPC Map Location Tracking
+        {
+            "Action": "Include",
+            "FromFile": "code/NPCMapLocation/NPCMapLocationTracking.json"
+        },
+//SchoolHouse
+        {
+            "Action": "Include",
+            "FromFile": "code/MapPatches/ArchaeologyHouse/Seat_ArchaeologyHouse.json, code/MapPatches/SchoolHouse/SchoolHouse.json"
+        },
+//Compatibility LRSH - Students and Teachers
+        {
+            "Action": "Include",
+            "FromFile": "code/Compatibilitys/LRSH - Students and Teachers/SEAT1/Lukas.json, code/Compatibilitys/LRSH - Students and Teachers/SEAT2/Johanna.json, code/Compatibilitys/LRSH - Students and Teachers/SEAT3/Maxim.json, code/Compatibilitys/LRSH - Students and Teachers/SEAT4/Kilian.json, code/Compatibilitys/LRSH - Students and Teachers/SEAT6/Liam.json, code/Compatibilitys/LRSH - Students and Teachers/SEAT8/Nele.json, code/Compatibilitys/LRSH - Students and Teachers/SEAT10/Emma.json, code/Compatibilitys/LRSH - Students and Teachers/SEAT11/Felix.json, code/Compatibilitys/LRSH - Students and Teachers/SEAT12/Thea.json, code/Compatibilitys/LRSH - Students and Teachers/SEAT13/Oskar.json, code/Compatibilitys/LRSH - Students and Teachers/SEAT14/Violet.json, code/Compatibilitys/LRSH - Students and Teachers/SEAT15/Rose.json, code/Compatibilitys/LRSH - Students and Teachers/SEAT17/Ida.json" 
+        },
+//Compatibility Outfit Load
+//Seasonal Cute Characters
+//Leo
+        {  
+			"Action": "Include",
+			"FromFile": "code/Compatibilitys/SeasonalCuteCharacters/Leo/Leo.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": true
+			}
+		},
+//Jas
+        {  
+            "Action": "Include",
+            "FromFile": "code/Compatibilitys/SeasonalCuteCharacters/Jas/Jas.json",
+            "When": 
+            {
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": true
+            }
+        },
+//Keahi
+        {  
+			"Action": "Include",
+			"FromFile": "code/Compatibilitys/SeasonalCuteCharacters/Keahi/Keahi.json",
+			"When": 
+			{
+                "HasMod |contains=Rafseazz.RSVSeasonalOutfits": true
+			}
+		},
+//Yuuma
+        {  
+			"Action": "Include",
+			"FromFile": "code/Compatibilitys/SeasonalCuteCharacters/Yuuma/Yuuma.json",
+			"When": 
+			{
+                "HasMod |contains=Rafseazz.RSVSeasonalOutfits": true
+			}
+		},
+//Seasonal Improved Leo
+        {  
+			"Action": "Include",
+			"FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Leo_Seasonal.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true
+			}
+		},
+        {  
+			"Action": "Include",
+			"FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Leo_NonSeasonal.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true
+			}
+		},
+        {  
+			"Action": "Include",
+			"FromFile": "code/Compatibilitys/SeasonalImprovedLeo/parrotfriend.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true
+			}
+        },
+        {  
+			"Action": "Include",
+			"FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Festivals.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true
+			}
+        },
+//Compatibility Growing Valley
+        {
+            "Action": "Include",
+            "FromFile": "code/Compatibilitys/GrowingValley/Alex/FirstBorn.json, code/Compatibilitys/GrowingValley/Alex/SecondBorn.json, code/Compatibilitys/GrowingValley/Elliott/FirstBorn.json, code/Compatibilitys/GrowingValley/Elliott/SecondBorn.json, code/Compatibilitys/GrowingValley/Emily/FirstBorn.json, code/Compatibilitys/GrowingValley/Emily/SecondBorn.json, code/Compatibilitys/GrowingValley/Farmer/FirstBorn.json, code/Compatibilitys/GrowingValley/Farmer/SecondBorn.json, code/Compatibilitys/GrowingValley/Leah/FirstBorn.json, code/Compatibilitys/GrowingValley/Leah/SecondBorn.json, code/Compatibilitys/GrowingValley/Penny/FirstBorn.json, code/Compatibilitys/GrowingValley/Penny/SecondBorn.json, code/Compatibilitys/GrowingValley/Sebastian/FirstBorn.json, code/Compatibilitys/GrowingValley/Sebastian/SecondBorn.json, code/Compatibilitys/GrowingValley/Seats.json",
+            "When": 
+            {
+                "HasMod |contains=siliconmodding.GVChildNPCs": true,
+                "HasMod |contains=Candidus42.LittleNPCs": true
+            }
+        },
+        {  
+			"Action": "Include",
+			"FromFile": "code/Compatibilitys/GrowingValley/GrowthSpurt/Leo/Leo.json, code/Compatibilitys/GrowingValley/GrowthSpurt/Jas/Jas.json",
+			"When": 
+			{
+                "HasMod |contains=siliconmodding.GVGrowthSpurt": true
+			}
+		},
+//Compatibility Farmer's Children
+        {
+            "Action": "Include",
+            "FromFile": "code/Compatibilitys/FarmersChildren/FarmersChildren1.json, code/Compatibilitys/FarmersChildren/FarmersChildren2.json",
+            "When": 
+            {
+                "HasMod |contains=xiddav.NPCChildren": true,
+                "HasMod |contains=Candidus42.LittleNPCs": true
+            }
+        },
+//TileSheets
+        {   
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Maps/N3cro92_Indoor",
+            "FromFile": "assets/Maps/TileSheets/{{TargetWithoutPath}}.png"
+        },
+//Recolor Earthy
+        {   
+            "Action": "EditImage",
+			"Patchmode":"Overlay",
+            "Target": "Maps/N3cro92_Indoor",
+            "FromFile": "assets/Maps/Tilesheets/Earthy/N3cro92_Indoor.png",
+			"When":  { 
+                "HasFile:{{FromFile}}": true, 
+                "HasMod":"DaisyNiko.EarthyRecolour"
+            }
+        },
+//NPC DayEndRoom
+        {  
+			"Action": "Include",
+			"FromFile": "code/NPCSpawnRoom/DayEndRoom.json"
+		}
+    ]
+}

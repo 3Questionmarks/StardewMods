@@ -1,0 +1,28 @@
+{
+        "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Meha",
+            "Entries": { 
+                "Mon": "0 Custom_SchoolWarpRoom 1 3 3/610 BusStop 28 19 0/620 Custom_SchoolHouse 23 17 3/700 Custom_SchoolHouse 22 16 3 meha_read_left/1130 Town 17 20 0/1230 Custom_SchoolHouse 23 17 3/1250 Custom_SchoolHouse 22 16 3 meha_read_left/1600 BusStop 28 19 0/1900 Custom_WarpRoom_DayEnd 3 3 0",
+                "Tue": "0 Custom_SchoolWarpRoom 1 3 3/610 BusStop 28 19 0/620 Custom_SchoolHouse 23 17 3/700 Custom_SchoolHouse 22 16 3 meha_read_left/1130 Town 17 20 0/1230 Custom_SchoolHouse 23 17 3/1250 Custom_SchoolHouse 22 16 3 meha_read_left/1600 BusStop 28 19 0/1900 Custom_WarpRoom_DayEnd 3 3 0",
+                "Wed": "0 Custom_SchoolWarpRoom 1 3 3/610 BusStop 28 19 0/620 Custom_SchoolHouse 23 17 3/700 Custom_SchoolHouse 22 16 3 meha_read_left/1130 Town 17 20 0/1230 Custom_SchoolHouse 23 17 3/1250 Custom_SchoolHouse 22 16 3 meha_read_left/1600 BusStop 28 19 0/1900 Custom_WarpRoom_DayEnd 3 3 0",
+                "Thu": "0 Custom_SchoolWarpRoom 1 3 3/610 BusStop 28 19 0/620 Custom_SchoolHouse 23 17 3/700 Custom_SchoolHouse 22 16 3 meha_read_left/1130 Town 17 20 0/1230 Custom_SchoolHouse 23 17 3/1250 Custom_SchoolHouse 22 16 3 meha_read_left/1600 BusStop 28 19 0/1900 Custom_WarpRoom_DayEnd 3 3 0",
+                "Fri": "0 Custom_SchoolWarpRoom 1 3 3/610 BusStop 28 19 0/620 Custom_SchoolHouse 23 17 3/700 Custom_SchoolHouse 22 16 3 meha_read_left/1130 Town 17 20 0/1230 Custom_SchoolHouse 23 17 3/1250 Custom_SchoolHouse 22 16 3 meha_read_left/1600 BusStop 28 19 0/1900 Custom_WarpRoom_DayEnd 3 3 0",
+                "Sat": "0 Custom_WarpRoom_DayEnd 3 3 0",
+                "Sun": "0 Custom_WarpRoom_DayEnd 3 3 0",
+
+//Festivals School is closed
+                "spring_13": "0 Custom_WarpRoom_DayEnd 3 3 0",
+                "spring_24": "0 Custom_WarpRoom_DayEnd 3 3 0",
+                "fall_16": "0 Custom_WarpRoom_DayEnd 3 3 0",
+                "winter_8": "0 Custom_WarpRoom_DayEnd 3 3 0",
+                "winter_25": "0 Custom_WarpRoom_DayEnd 3 3 0",
+            },
+        },
+    ]
+}
+
+
+
+//(0 = up, 1 = right, 2 = down, 3 = left)

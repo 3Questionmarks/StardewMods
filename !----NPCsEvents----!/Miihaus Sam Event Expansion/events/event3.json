@@ -1,0 +1,135 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/Town",
+        "Entries":
+    {
+        //Sam 3-Heart Event: "Crash Landing"
+        "{{ModId}}_E03/F/f Sam 750/t 1100 1400/w sunny/e {{ModId}}_E02":"
+        playful/
+        17 16/
+        Vincent 23 12 3 Jas 20 14 0 farmer 26 19 3 Sam 17 16 2/
+        skippable/
+        addConversationTopic {{ModId}}_Topic_E03/
+        animate Sam false true 150  25 25 27 27 25 25 25 25 27 27 27 27 25 25 25 25 25 25 25 27 27 27 27 27 25 26 29 30 31 32 32 32 31 31 31 31 31 31 31 31 31 32 32 32 32 31 30 29 26 25 27 27 27 27 27 27/
+        advancedMove Vincent false -7 0 0 2 2 0 1 1000/
+        advancedMove Jas false -1 0 4 1000 1 0 4 1000 -1 0 4 1000 1 0 4 1000 -1 0 4 1000 1 0 4 1000 -1 0 4 1000 1 0 4 1000/
+        advancedMove farmer false -9 0 4 1000/
+        pause 10000/
+        stopAnimation Sam 35/
+        showFrame Sam 35 true/playSound slime/temporaryAnimatedSprite LooseSprites\\Cursors 388 1875 16 6 500 1 1 17 16 false false 999999 0 1 0.01 -0.5 -0.5 hold_last_frame motion 4 -2 acceleration 0.2 -0.06/jump Sam/pause 200/warp Sam 1000 1000 true/
+        playSound throw/
+        temporaryAnimatedSprite Characters\\Sam{{Winter}} 48 256 16 32 500 1 1 17 14 false false 1 0 1 0 -0.16 -0.11 hold_last_frame motion 0 -3 acceleration 0 0.14/
+        pause 1000/
+        stopAdvancedMoves/
+        playSound clubSmash/
+        removeTemporarySprites/
+        temporaryAnimatedSprite Characters\\Sam{{Winter}} 0 288 16 32 500 1 1 17 16 false false 1 0 1 0 -1.5 0 hold_last_frame/
+        pause 100/
+        emote farmer {{!}} true/
+        textAboveHead Vincent \"{{i18n:E03.001}}\"/
+        speed farmer 4/
+        speed Vincent 4/
+        move farmer 0 -2 0 Vincent -1 0 2/
+        speed Vincent 4/
+        speed Jas 4/
+        move Vincent 0 1 2 Jas -2 0 2 true/
+        pause 1000/
+        showFrame Sam 0/
+        faceDirection Sam 1/
+        speak Vincent \"{{i18n:E03.002}}\"/
+        pause 100/
+        speak Sam \"{{i18n:E03.003}}\"/
+        removeTemporarySprites/
+        warp Sam 17 16 true/
+        jump Sam/
+        pause 1300/
+        speak Vincent \"{{i18n:E03.004}}\"/
+        pause 200/
+        faceDirection Sam 0/
+        pause 100/
+        emote Sam {{happy}}/
+        pause 100/
+        speak Sam \"{{i18n:E03.005}}\"/
+        pause 100/
+        emote Vincent {{sad}} true/
+        speed Vincent 4/
+        move Vincent 0 -1 0/
+        shake Vincent 2000/
+        faceDirection Jas 3/
+        pause 1000/
+        move Sam -1 0 0/
+        move Sam 0 -2 1/
+        pause 1000/
+        faceDirection Vincent 3/
+        pause 600/
+        showFrame Sam 34/
+        playSound slime/
+        pause 400/
+        speak Sam \"{{i18n:E03.006}}\"/
+        pause 500/
+        speak Vincent \"{{i18n:E03.007}}\"/
+        pause 600/
+        speak Sam \"{{i18n:E03.008}}\"/
+        pause 500/
+        message \"{{i18n:E03.009}}\"/
+        pause 200/
+        showFrame Sam 4/
+        faceDirection Sam 1/
+        pause 200/
+        move Sam 0 3 0/
+        pause 300/
+        move Vincent -1 0 0 Jas -1 0 3/
+        move Vincent 0 -1 0 Jas -1 0 0/
+        move Vincent 0 -1 0 Jas 0 -1 0/
+        move Vincent 1 0 3 Jas 0 -1 1/
+        pause 300/
+        faceDirection farmer 3/
+        pause 200/
+        faceDirection Sam 1/
+        speak Sam \"{{i18n:E03.009X}}\"/
+        pause 200/
+        faceDirection farmer 0/
+        pause 200/
+        faceDirection Sam 0/
+        pause 200/
+        emote Sam {{pause}}/
+        pause 500/
+        faceDirection Sam 1/
+        pause 400/
+        faceDirection Sam 0/
+        advancedMove Vincent true 3 0 3 4000 -3 0 3 7000/
+        advancedMove Jas true 3 0 1 4000 -3 0 1 7000/
+        pause 300/
+        Speak Sam \"{{i18n:E03.010}}\"/
+        pause 800/
+        Speak Sam \"{{i18n:E03.011}}\"/
+        pause 800/
+        Speak Sam \"{{i18n:E03.012}}\"/
+        pause 200/
+        quickQuestion {{i18n:E03.013}}(break)pause 500\\speak Sam \"{{i18n:E03.014}}\"(break)pause 500\\speak Sam \"{{i18n:E03.015}}\"(break)pause 500\\speak Sam \"{{i18n:E03.016}}\"/
+        pause 200/
+        globalFade/
+        viewport -1200 -1200/
+        pause 200/
+        end/
+        "
+    }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Vincent",
+        "Entries":{
+            "{{ModId}}_Topic_E03":"{{i18n:E03.018}}",
+            }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Sam",
+        "Entries":{
+            "{{ModId}}_Topic_E03":"{{i18n:E03.017}}",
+            }
+    },
+    ]
+}

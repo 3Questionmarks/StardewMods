@@ -11,7 +11,7 @@
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 12, 25, 42 |key=backwoods critters coordinate}}",
+					"X": "{{Random: 22, 25, 42 |key=backwoods critters coordinate}}",
 					"Y": "{{Random: 13, 15, 15 |key=backwoods critters coordinate}}"
             },
                "Layer": "Back",
@@ -137,7 +137,7 @@
                "Position": { "X": 43, "Y": 14 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_A_Timid_WA, Squirrel_B_Timid_WA, Squirrel_A_WA, Squirrel_B_WA, Squirrel_A_Friendly_WA, Squirrel_B_Friendly_WA, Chipmunk_Timid_WA, Chipmunk_WA, Chipmunk_Friendly_WA}}"
                },
             },
          ],
@@ -191,78 +191,6 @@
 			"Load Wild Critters |contains= Crabs": true,
 			"Season": "Spring, Summer, Fall",
 			"Weather": "Sun, Wind, Rain",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add dolphins in the beach waters",
-		"Action": "EditMap",
-		"Target": "Maps/Beach",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 94, 30 |key=beach dolphins coordinate}}",
-					"Y": "{{Random: 45, 42 |key=beach dolphins coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC.Dolphin_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Animals |contains= Dolphins": true,
-			"Season": "Summer",
-			"Weather": "Wind",
-			"Time": "{{Range: 0600, 1800}}",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add dolphins in the beach waters (2)",
-		"Action": "EditMap",
-		"Target": "Maps/Beach",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 95, 31 |key=beach dolphins coordinate}}",
-					"Y": "{{Random: 47, 44 |key=beach dolphins coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Dolphin_WA, Dolphin_WA, DolphinPink_WA, Dolphin_WA}}"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Animals |contains= Dolphins": true,
-			"Season": "Summer",
-			"Weather": "Wind",
-			"Time": "{{Range: 0600, 1800}}",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add baby dolphins in the beach waters",
-		"Action": "EditMap",
-		"Target": "Maps/Beach",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 94, 30 |key=beach dolphins coordinate}}",
-					"Y": "{{Random: 46, 43 |key=beach dolphins coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2}} SmolHooman.WildAnimalsCC.DolphinBaby_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Animals |contains= Dolphins": true,
-			"Season": "Summer",
-			"Weather": "Wind",
-			"Time": "{{Range: 0600, 1800}}",
 			},
 		"Update": "OnLocationChange"
 	},
@@ -460,7 +388,7 @@
                "Position": { "X": 19, "Y": 16 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_A_Timid_WA, Squirrel_B_Timid_WA, Squirrel_A_WA, Squirrel_B_WA, Squirrel_A_Friendly_WA, Squirrel_B_Friendly_WA, Chipmunk_Timid_WA, Chipmunk_WA, Chipmunk_Friendly_WA}}"
                },
             },
          ],
@@ -550,12 +478,31 @@
                "Position": { "X": 16, "Y": 76 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC.Armadillo_WA"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Armadillo_WA, Armadillo_Timid_WA}}"
                },
             },
          ],
 		"When": {
 			"Load Wild Animals |contains= Armadillos": true,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add bearded dragons on the desert",
+		"Action": "EditMap",
+		"Target": "Maps/Desert",
+		"MapTiles": [
+            {
+               "Position": { "X": 45, "Y": 84 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: BeardedDragon_WA, BeardedDragon_WA, BeardedDragon_Friendly_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Critters |contains= Bearded Dragons": true,
+			"Time": "{{Range: 0600, 1800}}",
 			},
 		"Update": "OnLocationChange"
 	},
@@ -605,6 +552,25 @@
 		"Update": "OnLocationChange"
 	},
 	{
+		"LogName": "Add jerboas on the desert",
+		"Action": "EditMap",
+		"Target": "Maps/Desert",
+		"MapTiles": [
+            {
+               "Position": { "X": 37, "Y": 66 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Jerboa_Timid_WA, Jerboa_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Critters |contains= Jerboas": true,
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
 		"LogName": "Add meerkats on the desert",
 		"Action": "EditMap",
 		"Target": "Maps/Desert",
@@ -625,7 +591,26 @@
             },
          ],
 		"When": {
-			"Load Wild Animals |contains= Meerkats": true,
+			"Load Wild Critters |contains= Meerkats": true,
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add roadrunners on the desert",
+		"Action": "EditMap",
+		"Target": "Maps/Desert",
+		"MapTiles": [
+            {
+               "Position": { "X": 9, "Y": 33 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Roadrunner_Timid_WA, Roadrunner_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Critters |contains= Roadrunners": true,
 			"Time": "{{Range: 0600, 1800}}",
 			},
 		"Update": "OnLocationChange"
@@ -740,6 +725,30 @@
          ],
 		"When": {
 			"Load Wild Animals |contains= Foxes": true,
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add foxes in the forest (winter)",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 78, 68, 11 |key=forest foxes coordinates}}",
+					"Y": "{{Random: 37, 25, 85 |key=forest foxes coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 1, 2 |key=Foxes}} SmolHooman.WildAnimalsCC.{{Random: FoxWinter_WA, Fox_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Foxes": true,
+			"Season": "Winter",
 			"Weather": "Snow, Sun, Wind",
 			},
 		"Update": "OnLocationChange"
@@ -824,7 +833,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC.Hedgehog_WA"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Hedgehog_Timid_WA, Hedgehog_WA}}"
                },
             },
          ],
@@ -871,7 +880,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2}} SmolHooman.WildAnimalsCC.PineMarten_WA"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: PineMarten_Timid_WA, PineMarten_WA}}"
                },
             },
          ],
@@ -1010,7 +1019,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC..{{Random: Skunk_Timid_WA, Skunk_WA}}"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Skunk_Timid_WA, Skunk_WA}}"
                },
             },
          ],
@@ -1055,7 +1064,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_A_Timid_WA, Squirrel_B_Timid_WA, Squirrel_A_WA, Squirrel_B_WA, Squirrel_A_Friendly_WA, Squirrel_B_Friendly_WA, Chipmunk_Timid_WA, Chipmunk_WA, Chipmunk_Friendly_WA}}"
                },
             },
          ],
@@ -1073,8 +1082,8 @@
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 105, 73, 29 |key=forest swan coordinates}}",
-					"Y": "{{Random: 43, 55, 75 |key=forest swan coordinates}}"
+					"X": "{{Random: 105, 73, 37 |key=forest swan coordinates}}",
+					"Y": "{{Random: 43, 55, 40 |key=forest swan coordinates}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -1083,8 +1092,8 @@
             },
             {
                "Position": {
-					"X": "{{Random: 105, 73, 29 |key=forest swan coordinates}}",
-					"Y": "{{Random: 44, 54, 76 |key=forest swan coordinates}}"
+					"X": "{{Random: 105, 73, 34 |key=forest swan coordinates}}",
+					"Y": "{{Random: 44, 54, 75 |key=forest swan coordinates}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -1094,7 +1103,7 @@
             {
                "Position": {
 					"X": "{{Random: 107, 70, 32 |key=forest swan coordinates}}",
-					"Y": "{{Random: 42, 56, 79 |key=forest swan coordinates}}"
+					"Y": "{{Random: 46, 56, 83 |key=forest swan coordinates}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -1197,43 +1206,33 @@
 		"Update": "OnLocationChange"
 	},
 	{
-		"LogName": "Add ducks in the mountain's lake",
+		"LogName": "Add geese in the mountain's lake",
 		"Action": "EditMap",
 		"Target": "Maps/Mountain",
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 49, 73 |key=mountain duck coordinates}}",
-					"Y": "{{Random: 17, 27 |key=mountain duck coordinates}}"
+					"X": "{{Random: 54, 67 |key=mountain geese coordinates}}",
+					"Y": "{{Random: 20, 32 |key=mountain geese coordinates}}"
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: DuckDrake_WA, DuckDrake_WA, DuckDrake_Friendly_WA}}"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Goose_WA, Goose_WA, Goose_Mean_WA}}"
                },
             },
             {
                "Position": {
-					"X": "{{Random: 52, 68 |key=mountain duck coordinates}}",
-					"Y": "{{Random: 25, 30 |key=mountain duck coordinates}}"
+					"X": "{{Random: 52, 64 |key=mountain geese coordinates}}",
+					"Y": "{{Random: 27, 26 |key=mountain geese coordinates}}"
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Duck_WA, Duck_WA, Duck_Friendly_WA}}"
-               },
-            },
-            {
-               "Position": {
-					"X": "{{Random: 51, 70 |key=mountain duck coordinates}}",
-					"Y": "{{Random: 22, 31 |key=mountain duck coordinates}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 3, 3}} SmolHooman.WildAnimalsCC.{{Random: Duckling_WA, Duckling_WA, Duckling_Friendly_WA}}"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 3, 3}} SmolHooman.WildAnimalsCC.GooseGosling_WA"
                },
             },
          ],
 		"When": {
-			"Load Wild Animals |contains= Ducks": true,
+			"Load Wild Animals |contains= Geese": true,
 			"Season": "Spring, Summer, Fall",
 			"Time": "{{Range: 0600, 1800}}",
 			"Weather": "Rain, Sun, Wind",
@@ -1359,11 +1358,11 @@
             {
                "Position": {
 					"X": "{{Random: 37, 86, 18 |key=mountain squirrels coordinate}}",
-					"Y": "{{Random: 23, 22, 30 |key=mountain squirrels coordinate}}"
+					"Y": "{{Random: 23, 24, 30 |key=mountain squirrels coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_A_Timid_WA, Squirrel_B_Timid_WA, Squirrel_A_WA, Squirrel_B_WA, Squirrel_A_Friendly_WA, Squirrel_B_Friendly_WA, Chipmunk_Timid_WA, Chipmunk_WA, Chipmunk_Friendly_WA}}"
                },
             },
          ],
@@ -1561,7 +1560,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_A_Timid_WA, Squirrel_B_Timid_WA, Squirrel_A_WA, Squirrel_B_WA, Squirrel_A_Friendly_WA, Squirrel_B_Friendly_WA, Chipmunk_Timid_WA, Chipmunk_WA, Chipmunk_Friendly_WA}}"
                },
             },
          ],
@@ -1671,7 +1670,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Goose_WA, Goose_WA, Goose_Mean_WA}}"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Goose_WA, Goose_WA, Goose_Mean_WA}}"
                },
             },
          ],
@@ -1880,14 +1879,14 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_A_Timid_WA, Squirrel_B_Timid_WA, Squirrel_A_WA, Squirrel_B_WA, Squirrel_A_Friendly_WA, Squirrel_B_Friendly_WA, Chipmunk_Timid_WA, Chipmunk_WA, Chipmunk_Friendly_WA}}"
                },
             },
             {
                "Position": { "X": 102, "Y": 93 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_A_Timid_WA, Squirrel_B_Timid_WA, Squirrel_A_WA, Squirrel_B_WA, Squirrel_A_Friendly_WA, Squirrel_B_Friendly_WA, Chipmunk_Timid_WA, Chipmunk_WA, Chipmunk_Friendly_WA}}"
                },
             },
          ],
@@ -2036,6 +2035,431 @@
 			"Load Wild Critters |contains= Snails": true,
 			"Season": "Spring, Summer, Fall",
 			"Weather": "Rain",
+			},
+		"Update": "OnLocationChange"
+	},
+
+// AQUATIC SECTION
+	{
+		"LogName": "Add swimming crabs in the beach's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 3, 60, 98 |key=beach swimming crustaceans coordinates}}",
+					"Y": "{{Random: 22, 29, 25 |key=beach swimming crustaceans coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2, 3, 4, 5}} SmolHooman.WildAnimalsCC.{{Random: CrabSwimming_A_WA, CrabSwimming_B_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Wild Critters |contains= Crabs": true,
+			"Season": "Spring, Summer, Fall",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add dolphins in the beach waters",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {
+               "Position": { "X": 94, "Y": 44 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC.Dolphin_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= Dolphins": true,
+			"Season": "Summer",
+			"Weather": "Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add dolphins in the beach waters (2)",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 95, 31 |key=beach dolphins coordinate}}",
+					"Y": "{{Random: 47, 44 |key=beach dolphins coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.Dolphin_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Allow Bonus Animals": "false",
+			"Load Aquatic Animals |contains= Dolphins": true,
+			"Season": "Summer",
+			"Weather": "Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add baby dolphins in the beach waters",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 94, 30 |key=beach dolphins coordinate}}",
+					"Y": "{{Random: 45, 42 |key=beach dolphins coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2}} SmolHooman.WildAnimalsCC.DolphinBaby_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= Dolphins": true,
+			"Season": "Summer",
+			"Weather": "Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add swimming eels in the beach's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 3, 68 |key=beach eel coordinates}}",
+					"Y": "{{Random: 48, 47 |key=beach eel coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1}} SmolHooman.WildAnimalsCC.Eel_A_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= Eels": true,
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Rain, Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add swimming jellyfishes in the beach's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 13, 64, 95 |key=beach swimming jellyfishes coordinates}}",
+					"Y": "{{Random: 44, 43, 43 |key=beach swimming jellyfishes coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2}} SmolHooman.WildAnimalsCC.Jellyfish_A_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= Jellyfishes": true,
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add swimming lobsters in the beach's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 60, 98, 3 |key=beach swimming crustaceans coordinates}}",
+					"Y": "{{Random: 29, 25, 22 |key=beach swimming crustaceans coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Lobster_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= Crustaceans": true,
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add seahorses in the beach's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 5, 62, 77 |key=beach seahorses coordinates}}",
+					"Y": "{{Random: 46, 36, 38 |key=beach seahorses coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.SeaHorse_A_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= SeaHorses": true,
+			"Season": "Spring, Summer",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add sea urchins in the beach's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 8, 53, 78, 94 |key=beach seaurchins coordinates}}",
+					"Y": "{{Random: 32, 43, 31, 35 |key=beach seaurchins coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.SeaUrchin_A_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= SeaUrchins": true,
+			"Season": "Spring, Fall, Winter",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add sea urchins in the beach's waters (summer)",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 8, 53, 78, 94 |key=beach seaurchins coordinates}}",
+					"Y": "{{Random: 32, 43, 31, 35 |key=beach seaurchins coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2, 3, 4, 5}} SmolHooman.WildAnimalsCC.SeaUrchin_A_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= SeaUrchins": true,
+			"Season": "Summer",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add starfishes in the beach's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 78, 101, 32, 6 |key=beach starfishes coordinates}}",
+					"Y": "{{Random: 32, 34, 44, 34 |key=beach starfishes coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Starfish_A_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= Starfishes": true,
+			"Season": "Spring, Summer, Fall",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Add swimming crayfishes in the forest's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 74, 44, 30, 42 |key=forest swimming crayfishes coordinates}}",
+					"Y": "{{Random: 56, 87, 82, 35 |key=forest swimming crayfishes coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Crayfish_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= Crustaceans": true,
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add swimming frogs in the forest's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 26, 53, 101, 40 |key=forest swimming frogs coordinates}}",
+					"Y": "{{Random: 79, 87, 43, 23 |key=forest swimming frogs coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3, 4, 5}} SmolHooman.WildAnimalsCC.{{Random: FrogSwimming_A_WA, FrogSwimming_B_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Wild Critters |contains= Frogs + Toads": true,
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add swimming salamanders in the forest's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 38, 65, 62, 29 |key=forest swimming salamanders coordinates}}",
+					"Y": "{{Random: 69, 57, 87, 31 |key=forest swimming salamanders coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Salamander_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= Salamanders": true,
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Rain, Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Add axolotls in the mountain's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Mountain",
+		"MapTiles": [
+            {		
+               "Position": { "X": 52, "Y": 18 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Axolotl_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= Axolotls": true,
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Rain, Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add swimming frogs in the mountain's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Mountain",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 63, 55, 74 |key=mountain swimming frogs coordinates}}",
+					"Y": "{{Random: 33, 28, 20 |key=mountain swimming frogs coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2, 3, 4, 5}} SmolHooman.WildAnimalsCC.{{Random: FrogSwimming_A_WA, FrogSwimming_B_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Wild Critters |contains= Frogs + Toads": true,
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add swimming salamanders in the mountain's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Mountain",
+		"MapTiles": [
+            {		
+               "Position": { "X": 63, "Y": 26 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Salamander_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= Salamanders": true,
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Rain, Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Add axolotls in the woods's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Woods",
+		"MapTiles": [
+            {		
+               "Position": { "X": 44, "Y": 45 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Axolotl_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= Axolotls": true,
+			"Season": "Spring, Summer, Fall",
 			},
 		"Update": "OnLocationChange"
 	},

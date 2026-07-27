@@ -1,0 +1,16 @@
+{
+	"Changes": [
+//Vanilla Worldmap DeadBoy Detectives
+    {
+      "Action": "EditImage",
+      "Target": "handwrittenhello.dbda_WorldMap/{{Recolor}}",
+      "FromFile": "assets/Maps/Vanilla/map_{{Season}}.png",
+      "PatchMode": "Overlay",
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": false,
+				"HasMod |contains=handwrittenhello.dbda": true
+			},
+			"Update": "OnLocationChange"
+		}
+  ]
+}

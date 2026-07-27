@@ -231,56 +231,12 @@
     }
   },
 
-	// Follower Data
-	"MinTilesForNearby": 3,
-	"UpdateWhenPlayerNearby": {
-	"Name": "Armadillo_WA",
-	"Type": "Walking",
-	"TravelSpeed": 2,
-	"EnableCharacterCollision": false,
-	"EnableFarmerCollision": false,
-	"MaxIdleDistance": -1,
-	"MaxDistanceBeforeTeleport": -1,
-	"IdleBehavior": "Nothing",
-	"FrameSizeWidth": 32,
-	"FrameSizeHeight": 32,
-	"ResetWhenPlayerAway": true,
-	"MinTilesForAway": 5,
-
-	"UniformAnimation": {
-		"ManualFrames": [
-		{
-		"Frame": 0,
-		"Duration": 100,
-		"PlayOnlyOnce": true
-		},
-		{
-		"Frame": 20,
-		"Duration": 100,
-		"PlayOnlyOnce": true
-		},
-		{
-		"Frame": 21,
-		"Duration": 100,
-		"PlayOnlyOnce": true
-		},
-		{
-		"Frame": 22,
-		"Duration": 100,
-		"PlayOnlyOnce": true
-		},
-		{
-		"Frame": 23,
-		"Duration": 100
-		},
-		],
-	},
-	"OverheadTexts": [
-		{
-		"Text": "!",
-		"ChanceWeight": 0.1,
-		"TextLifetime": 3000
-		}
-	],
-  },
+"Sounds": [
+	{
+	"SoundName": "rabbit",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.3
+	}
+]  
 }

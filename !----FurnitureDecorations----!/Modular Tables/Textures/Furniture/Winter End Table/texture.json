@@ -1,0 +1,89 @@
+{
+  "ItemName": "Winter End Table",
+  "Type": "Furniture",
+  "Keywords": [ "dri", "modular", "table", "winter", "white" ],
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "ManualVariations": [
+    {
+      "Id": 0,
+      "Name": "small Winter Table",
+      "Keywords": ["small", "1x1"]
+    },
+    {
+      "Id": 1,
+      "Name": "horizontal Winter Table",
+      "Keywords": ["horizontal", "1x3", "left"]
+    },
+    {
+      "Id": 2,
+      "Name": "horizontal Winter Table",
+      "Keywords": ["horizontal", "1x3", "middle"]
+    },
+    {
+      "Id": 3,
+      "Name": "horizontal Winter Table",
+      "Keywords": ["horizontal", "1x3", "right"]
+    },
+    {
+      "Id": 4,
+      "Name": "vertical Winter Table",
+      "Keywords": ["vertical", "1x3", "down"]
+    },
+    {
+      "Id": 5,
+      "Name": "vertical Winter Table",
+      "Keywords": ["vertical", "1x3", "middle"]
+    },
+    {
+      "Id": 6,
+      "Name": "vertical Winter Table",
+      "Keywords": ["vertical", "1x3", "up"]
+    },
+    {
+      "Id": 7,
+      "Name": "big Winter Table",
+      "Keywords": ["big", "corner", "3x3", "left", "up"]
+    },
+    {
+      "Id": 8,
+      "Name": "big Winter Table",
+      "Keywords": ["big", "side", "3x3", "middle", "up"]
+    },
+    {
+      "Id": 9,
+      "Name": "big Winter Table",
+      "Keywords": ["big", "corner", "3x3", "right", "up"]
+    },
+    {
+      "Id": 10,
+      "Name": "big Winter Table",
+      "Keywords": ["big", "corner", "3x3", "left", "down"]
+    },
+    {
+      "Id": 11,
+      "Name": "big Winter Table",
+      "Keywords": ["big", "side", "3x3", "middle", "down"]
+    },
+    {
+      "Id": 12,
+      "Name": "big Winter Table",
+      "Keywords": ["big", "corner", "3x3", "right", "down"]
+    },
+    {
+      "Id": 13,
+      "Name": "big Winter Table",
+      "Keywords": ["big", "side", "3x3", "left"]
+    },
+    {
+      "Id": 14,
+      "Name": "big Winter Table",
+      "Keywords": ["big", "center", "3x3", "middle"]
+    },
+    {
+      "Id": 15,
+      "Name": "big Winter Table",
+      "Keywords": ["big", "side", "3x3", "right"]
+    }
+  ]
+}

@@ -1,0 +1,1122 @@
+{
+
+    "Changes": [
+
+
+  //★★★ 建物データ ★★★ (特殊※パッチ順で建設メニューに表示される)(通常(季節適用)の木)★★★
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "Entries": {
+
+        //●"ラージ"ツリー
+          //◆"ラージ"ツリー
+          "{{ModId}}_LargeTree": { 
+            "Name": "{{i18n:LargeTree_Name}}",
+            "Description": "{{i18n:Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_LargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 2 },
+            "SourceRect": { "X": 0, "Y": 0, "Width": 64, "Height": 112 },
+            "SeasonOffset": { "X": 64, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 0, "Y": 112, "Width": 32, "Height": 64 },
+                "DrawPosition": "-32, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition}}",
+            "BuildCost": "{{DT_BuildCost}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_LargeTree(DN)",
+                "Description": "{{i18n:Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree(SF)",
+                "Description": "{{i18n:Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree(SF-DN)",
+                "Description": "{{i18n:Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree(SF-VP)",
+                "Description": "{{i18n:Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree(SF-VP_GreenFall)",
+                "Description": "{{i18n:Tree_Description(SF-VP_GreenFall)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF-VP_GreenFall)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree(VP)",
+                "Description": "{{i18n:Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(VP)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree(VP_GreenFall)",
+                "Description": "{{i18n:Tree_Description(VP_GreenFall)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(VP_GreenFall)"
+              }
+            ]
+          },
+
+          //◆"ラージ"ツリー(春)
+          "{{ModId}}_LargeTree_Spring": { 
+            "Name": "{{i18n:LargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5680])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_LargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 2 },
+            "SourceRect": { "X": 0, "Y": 0, "Width": 64, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 0, "Y": 112, "Width": 32, "Height": 64 },
+                "DrawPosition": "-32, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Replica}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_LargeTree_Spring(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Spring(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Spring(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Spring(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Spring(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(VP)"
+              }
+            ]
+          },
+
+          //◆"ラージ"ツリー(夏)
+          "{{ModId}}_LargeTree_Summer": { 
+            "Name": "{{i18n:LargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5681])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_LargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 2 },
+            "SourceRect": { "X": 64, "Y": 0, "Width": 64, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 64, "Y": 112, "Width": 32, "Height": 64 },
+                "DrawPosition": "-32, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Replica}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_LargeTree_Summer(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Summer(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Summer(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Summer(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Summer(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(VP)"
+              }
+            ]
+          },
+
+          //◆"ラージ"ツリー(秋)
+          "{{ModId}}_LargeTree_Fall": { 
+            "Name": "{{i18n:LargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5682])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_LargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 2 },
+            "SourceRect": { "X": 128, "Y": 0, "Width": 64, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 128, "Y": 112, "Width": 32, "Height": 64 },
+                "DrawPosition": "-32, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Replica}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_LargeTree_Fall(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Fall(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Fall(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Fall(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Fall(SF-VP_GreenFall)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP_GreenFall)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF-VP_GreenFall)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Fall(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(VP)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Fall(VP_GreenFall)",
+                "Description": "{{i18n:Replica_Tree_Description(VP_GreenFall)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(VP_GreenFall)"
+              }
+            ]
+          },
+
+          //◆"ラージ"ツリー(冬)
+          "{{ModId}}_LargeTree_Winter": { 
+            "Name": "{{i18n:LargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5683])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_LargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 2 },
+            "SourceRect": { "X": 192, "Y": 0, "Width": 64, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 192, "Y": 112, "Width": 32, "Height": 64 },
+                "DrawPosition": "-32, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Replica}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_LargeTree_Winter(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Winter(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Winter(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Winter(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_LargeTree_Winter(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_LargeTree(VP)"
+              }
+            ]
+          },
+
+        //●"タウン"ツリー
+          //◆"タウン"ツリー
+          "{{ModId}}_TownLargeTree": { 
+            "Name": "{{i18n:TownLargeTree_Name}}",
+            "Description": "{{i18n:Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_TownLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 1 },
+            "SourceRect": { "X": 0, "Y": 0, "Width": 48, "Height": 112 },
+            "SeasonOffset": { "X": 48, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 0, "Y": 112, "Width": 16, "Height": 64 },
+                "DrawPosition": "-16, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Town}}",
+            "BuildCost": "{{DT_BuildCost}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_TownLargeTree(DN)",
+                "Description": "{{i18n:Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree(SF)",
+                "Description": "{{i18n:Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree(SF-DN)",
+                "Description": "{{i18n:Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree(SF-VP)",
+                "Description": "{{i18n:Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree(SF-VP_GreenFall)",
+                "Description": "{{i18n:Tree_Description(SF-VP_GreenFall)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF-VP_GreenFall)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree(VP)",
+                "Description": "{{i18n:Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(VP)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree(VP_GreenFall)",
+                "Description": "{{i18n:Tree_Description(VP_GreenFall)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(VP_GreenFall)"
+              }
+            ]
+          },
+
+          //◆"タウン"ツリー(春)
+          "{{ModId}}_TownLargeTree_Spring": { 
+            "Name": "{{i18n:TownLargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5680])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_TownLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 1 },
+            "SourceRect": { "X": 0, "Y": 0, "Width": 48, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 0, "Y": 112, "Width": 16, "Height": 64 },
+                "DrawPosition": "-16, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Town_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Replica}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_TownLargeTree_Spring(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Spring(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Spring(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Spring(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Spring(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(VP)"
+              }
+            ]
+          },
+
+          //◆"タウン"ツリー(夏)
+          "{{ModId}}_TownLargeTree_Summer": { 
+            "Name": "{{i18n:TownLargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5681])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_TownLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 1 },
+            "SourceRect": { "X": 48, "Y": 0, "Width": 48, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 48, "Y": 112, "Width": 16, "Height": 64 },
+                "DrawPosition": "-16, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Town_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Replica}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_TownLargeTree_Summer(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Summer(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Summer(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Summer(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Summer(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(VP)"
+              }
+            ]
+          },
+
+          //◆"タウン"ツリー(秋)
+          "{{ModId}}_TownLargeTree_Fall": { 
+            "Name": "{{i18n:TownLargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5682])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_TownLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 1 },
+            "SourceRect": { "X": 96, "Y": 0, "Width": 48, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 96, "Y": 112, "Width": 16, "Height": 64 },
+                "DrawPosition": "-16, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Town_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Replica}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_TownLargeTree_Fall(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Fall(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Fall(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Fall(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Fall(SF-VP_GreenFall)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP_GreenFall)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF-VP_GreenFall)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Fall(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(VP)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Fall(VP_GreenFall)",
+                "Description": "{{i18n:Replica_Tree_Description(VP_GreenFall)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(VP_GreenFall)"
+              }
+            ]
+          },
+
+          //◆"タウン"ツリー(冬)
+          "{{ModId}}_TownLargeTree_Winter": { 
+            "Name": "{{i18n:TownLargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5683])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_TownLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 1 },
+            "SourceRect": { "X": 144, "Y": 0, "Width": 48, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 144, "Y": 112, "Width": 16, "Height": 64 },
+                "DrawPosition": "-16, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Town_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Replica}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_TownLargeTree_Winter(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Winter(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Winter(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Winter(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_TownLargeTree_Winter(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_TownLargeTree(VP)"
+              }
+            ]
+          },
+
+        //●"ワイルド"ツリー
+          //◆"ワイルド"ツリー
+          "{{ModId}}_WildLargeTree": { 
+            "Name": "{{i18n:WildLargeTree_Name}}",
+            "Description": "{{i18n:Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_WildLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 1 },
+            "SourceRect": { "X": 0, "Y": 0, "Width": 48, "Height": 112 },
+            "SeasonOffset": { "X": 48, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 0, "Y": 112, "Width": 16, "Height": 64 },
+                "DrawPosition": "-16, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Wild}}",
+            "BuildCost": "{{DT_BuildCost}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_WildLargeTree(DN)",
+                "Description": "{{i18n:Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree(SF)",
+                "Description": "{{i18n:Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree(SF-DN)",
+                "Description": "{{i18n:Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree(SF-VP)",
+                "Description": "{{i18n:Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree(VP)",
+                "Description": "{{i18n:Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(VP)"
+              }
+            ]
+          },
+
+          //◆"ワイルド"ツリー(春)
+          "{{ModId}}_WildLargeTree_Spring": { 
+            "Name": "{{i18n:WildLargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5680])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_WildLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 1 },
+            "SourceRect": { "X": 0, "Y": 0, "Width": 48, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 0, "Y": 112, "Width": 16, "Height": 64 },
+                "DrawPosition": "-16, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Wild_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Replica}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_WildLargeTree_Spring(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Spring(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Spring(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Spring(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Spring(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(VP)"
+              }
+            ]
+          },
+
+          //◆"ワイルド"ツリー(夏)
+          "{{ModId}}_WildLargeTree_Summer": { 
+            "Name": "{{i18n:WildLargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5681])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_WildLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 1 },
+            "SourceRect": { "X": 48, "Y": 0, "Width": 48, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 48, "Y": 112, "Width": 16, "Height": 64 },
+                "DrawPosition": "-16, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Wild_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Replica}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_WildLargeTree_Summer(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Summer(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Summer(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Summer(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Summer(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(VP)"
+              }
+            ]
+          },
+
+          //◆"ワイルド"ツリー(秋)
+          "{{ModId}}_WildLargeTree_Fall": { 
+            "Name": "{{i18n:WildLargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5682])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_WildLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 1 },
+            "SourceRect": { "X": 96, "Y": 0, "Width": 48, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 96, "Y": 112, "Width": 16, "Height": 64 },
+                "DrawPosition": "-16, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Wild_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Replica}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_WildLargeTree_Fall(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Fall(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Fall(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Fall(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Fall(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(VP)"
+              }
+            ]
+          },
+
+          //◆"ワイルド"ツリー(冬)
+          "{{ModId}}_WildLargeTree_Winter": { 
+            "Name": "{{i18n:WildLargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5683])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_WildLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 2, "Y": 1 },
+            "SourceRect": { "X": 144, "Y": 0, "Width": 48, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 144, "Y": 112, "Width": 16, "Height": 64 },
+                "DrawPosition": "-16, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Wild_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Replica}}",
+            "BuildDays": "{{DT_BuildDays}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_WildLargeTree_Winter(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Winter(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Winter(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Winter(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_WildLargeTree_Winter(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_WildLargeTree(VP)"
+              }
+            ]
+          },
+
+        //●"ベリーラージ"ツリー
+          //◆"ベリーラージ"ツリー
+          "{{ModId}}_VeryLargeTree": { 
+            "Name": "{{i18n:VeryLargeTree_Name}}",
+            "Description": "{{i18n:Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_VeryLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 3, "Y": 2 },
+            "SourceRect": { "X": 0, "Y": 0, "Width": 80, "Height": 112 },
+            "SeasonOffset": { "X": 80, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 0, "Y": 112, "Width": 32, "Height": 96 },
+                "DrawPosition": "-32, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Very}}",
+            "BuildCost": "{{DT_BuildCost_Very}}",
+            "BuildDays": "{{DT_BuildDays_Very}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_VeryLargeTree(DN)",
+                "Description": "{{i18n:Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree(SF)",
+                "Description": "{{i18n:Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree(SF-DN)",
+                "Description": "{{i18n:Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree(SF-VP)",
+                "Description": "{{i18n:Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree(VP)",
+                "Description": "{{i18n:Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(VP)"
+              }
+            ]
+          },
+
+          //◆"ベリーラージ"ツリー(春)
+          "{{ModId}}_VeryLargeTree_Spring": { 
+            "Name": "{{i18n:VeryLargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5680])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_VeryLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 3, "Y": 2 },
+            "SourceRect": { "X": 0, "Y": 0, "Width": 80, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 0, "Y": 112, "Width": 32, "Height": 96 },
+                "DrawPosition": "-32, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Very_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Very_Replica}}",
+            "BuildDays": "{{DT_BuildDays_Very}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Spring(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Spring(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Spring(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Spring(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Spring(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(VP)"
+              }
+            ]
+          },
+
+          //◆"ベリーラージ"ツリー(夏)
+          "{{ModId}}_VeryLargeTree_Summer": { 
+            "Name": "{{i18n:VeryLargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5681])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_VeryLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 3, "Y": 2 },
+            "SourceRect": { "X": 80, "Y": 0, "Width": 80, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 80, "Y": 112, "Width": 32, "Height": 96 },
+                "DrawPosition": "-32, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Very_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Very_Replica}}",
+            "BuildDays": "{{DT_BuildDays_Very}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Summer(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Summer(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Summer(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Summer(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Summer(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(VP)"
+              }
+            ]
+          },
+
+          //◆"ベリーラージ"ツリー(秋)
+          "{{ModId}}_VeryLargeTree_Fall": { 
+            "Name": "{{i18n:VeryLargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5682])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_VeryLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 3, "Y": 2 },
+            "SourceRect": { "X": 160, "Y": 0, "Width": 80, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 160, "Y": 112, "Width": 32, "Height": 96 },
+                "DrawPosition": "-32, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Very_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Very_Replica}}",
+            "BuildDays": "{{DT_BuildDays_Very}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Fall(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Fall(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Fall(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Fall(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Fall(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(VP)"
+              }
+            ]
+          },
+
+          //◆"ベリーラージ"ツリー(冬)
+          "{{ModId}}_VeryLargeTree_Winter": { 
+            "Name": "{{i18n:VeryLargeTree_Name}} ([LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5683])",
+            "Description": "{{i18n:Replica_Tree_Description}}",
+            "Texture": "Buildings\\Ts_BLTP_VeryLargeTree",
+            "DrawShadow": false, //影
+            "Size": { "X": 3, "Y": 2 },
+            "SourceRect": { "X": 240, "Y": 0, "Width": 80, "Height": 112 },
+            "SeasonOffset": { "X": 0, "Y": 0 },
+            "DrawLayers": [
+              {
+                "Id": "Hidarigawa",
+                "SourceRect": { "X": 240, "Y": 112, "Width": 32, "Height": 96 },
+                "DrawPosition": "-32, 0",
+                "DrawInBackground": false
+              }
+            ],
+            "DefaultAction": "{{DT_DefaultAction}}",
+            "BuildCondition": "{{DT_BuildCondition_Very_Replica}}",
+            "BuildCost": "{{DT_BuildCost_Very_Replica}}",
+            "BuildDays": "{{DT_BuildDays_Very}}",
+            "Builder": "Robin",//Robin Wizard
+            "FadeWhenBehind": "{{TransparentWhenGoBehind}}", //●後ろに行ったとき建物を透過するかどうか
+            "AllowsFlooringUnderneath": "{{BuildOnTheFloor}}", //●下に床タイルを敷けるかどうか
+            "Skins": [
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Winter(DN)",
+                "Description": "{{i18n:Replica_Tree_Description(DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(DN)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Winter(SF)",
+                "Description": "{{i18n:Replica_Tree_Description(SF)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Winter(SF-DN)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-DN)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF-DN)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Winter(SF-VP)",
+                "Description": "{{i18n:Replica_Tree_Description(SF-VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(SF-VP)"
+              },
+              {
+                "Id": "{{ModId}}_VeryLargeTree_Winter(VP)",
+                "Description": "{{i18n:Replica_Tree_Description(VP)}}",
+                "Texture": "Buildings\\Ts_BLTP_VeryLargeTree(VP)"
+              }
+            ]
+          }
+
+        }//▼"Entries"の終了▼
+      }
+
+
+    ]//▼▼"Changes"の終了▼▼
+}

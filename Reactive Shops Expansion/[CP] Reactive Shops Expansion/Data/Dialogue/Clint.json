@@ -1,0 +1,18 @@
+{
+    "Changes": [
+		{
+			"LogName": "{{ModId}}_Clint",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Clint",
+			"Entries":{
+				"{{ModId}}_EarthCrystal_CT": "{{i18n: Clint.EarthCrystal_CT}}",
+				"{{ModId}}_RefinedQuartz_CT": "{{i18n: Clint.RefinedQuartz_CT}}",
+				"{{ModId}}_IridiumOre_CT": "{{i18n: Clint.IridiumOre_CT}}",
+				"{{ModId}}_RadioactiveOre_CT": "{{i18n: Clint.RadioactiveOre_CT}}",
+				"{{ModId}}_Furnace_CT": "{{i18n: Clint.Furnace_CT}}",
+				"{{ModId}}_CharcoalKiln_CT": "{{i18n: Clint.CharcoalKiln_CT}}",
+				"{{ModId}}_LightningRod_CT": "{{i18n: Clint.LightningRod_CT}}"
+			}
+		}
+	]
+}

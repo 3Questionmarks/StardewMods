@@ -1,21 +1,6 @@
 ﻿{
     "Changes": [
         {
-            "Action": "Load",
-            "Target": "Mods/moonslime.ArchaeologySkill/textures",
-            "FromFile": "Assets/sprites.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "Mods/moonslime.ArchaeologySkill/water_shifter",
-            "FromFile": "Assets/water_shifter.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "Mods/moonslime.ArchaeologySkill/machines",
-            "FromFile": "Assets/machines.png"
-        },
-        {
             "Action": "EditData",
             "Target": "Data/BigCraftables",
             "Entries": {
@@ -109,6 +94,14 @@
                         "draw_water_overlay",
                         "prevent_remove_when_processing"
                     ]
+                },
+                "moonslime.Archaeology.soil_sifter": {
+                    "Name": "Soil Sifter",
+                    "DisplayName": "{{i18n:moonslime.Archaeology.soil_sifter.name}}",
+                    "Description": "{{i18n:moonslime.Archaeology.soil_sifter.description}}",
+                    "Price": 50,
+                    "Texture": "Mods/moonslime.ArchaeologySkill/machines",
+                    "SpriteIndex": 20
                 }
             }
         },
@@ -271,7 +264,8 @@
                     "ContextTags": [
                         "moonslime_volcano_warp",
                         "not_placeable",
-                        "color_dark_red"
+                        "color_dark_red",
+                        "totem_item"
                     ],
                     "CustomFields": null
                 },

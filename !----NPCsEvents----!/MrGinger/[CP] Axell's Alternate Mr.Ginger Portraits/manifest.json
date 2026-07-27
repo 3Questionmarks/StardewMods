@@ -1,0 +1,23 @@
+{
+	"Name": "Axell's Alternate Mr. Ginger Portraits",
+	"Author": "7thAxis",
+	"Version": "1.0.1",
+	"Description": "Alternate portraits for Lemurkat's NPC Mister Ginger.",
+	"UniqueID": "7thAxis.AlternateMrGingerPortraits",
+	"UpdateKeys": [ "Nexus:10582" ],	
+	"MinimumApiVersion": "2.11.0",
+	"MinimumGameVersion": "1.5",
+	"ContentPackFor":{
+	"UniqueID": "Pathoschild.ContentPatcher"
+	},
+	"Dependencies": [
+	   {
+		"UniqueID": "LemurKat.Mr.Ginger.NPC",
+		"IsRequired": true
+	   },
+	   {
+		"UniqueID": "Airyn.ESAnimals",
+		"IsRequired": false
+	   } 
+   ]
+}

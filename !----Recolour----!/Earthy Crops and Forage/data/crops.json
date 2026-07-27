@@ -1,0 +1,239 @@
+{
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Overlays/Crops.png",
+            "PatchMode": "Overlay",
+            "Priority": "Early"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/GreenBeanCauli.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 320,
+                "Y": 112,
+                "Width": 48,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Garlic.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 128,
+                "Y": 160,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Potato.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 0,
+                "Y": 128,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Melon.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 224,
+                "Y": 160,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Tomato.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 256,
+                "Y": 160,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Blueberry.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 288,
+                "Y": 160,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/HotPepper.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 320,
+                "Y": 160,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Radish.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 0,
+                "Y": 176,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/RedCabbage.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 32,
+                "Y": 176,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Starfruit.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 64,
+                "Y": 176,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Corn.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 96,
+                "Y": 176,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Eggplant.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 128,
+                "Y": 176,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Artichoke.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 160,
+                "Y": 176,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Pumpkin.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 192,
+                "Y": 176,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Yam.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 256,
+                "Y": 176,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Cranberry.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 288,
+                "Y": 176,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Coffee.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 16,
+                "Y": 288,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/TeaLeaves.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 368,
+                "Y": 528,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Tilesheets/objects_2",
+            "FromFile": "assets/Replacers/Objects_2.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 0,
+                "Y": 160,
+                "Width": 64,
+                "Height": 16
+            }
+        }
+    ]
+}

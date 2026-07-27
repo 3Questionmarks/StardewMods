@@ -1,0 +1,56 @@
+{
+  "Changes": [
+    // Add Object
+    {
+      "LogName": "Load Wrought Iron Cellar Object",
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "6480.StorageVariety_WroughtIronCellar": {
+          "Name": "Wrought Iron Cellar",
+          "DisplayName": "{{i18n: WroughtIronCellar.name}}",
+          "Description": "{{i18n: WroughtIronCellar.description}}",
+          "Texture": "{{InternalAssetKey: assets/WroughtIronCellar.png}}",
+          "CustomFields": {
+            // Expanded Storage Data
+            "furyx639.ExpandedStorage/Enabled": "true",
+            "furyx639.ExpandedStorage/Frames": "5",
+            "furyx639.ExpandedStorage/OpenNearby": "true",
+            "furyx639.ExpandedStorage/OpenSound": "doorCreak",
+            "furyx639.ExpandedStorage/PlayerColor": "true",
+            // Better Chests Data
+            "furyx639.BetterChests/ResizeChest": "Large",
+            "furyx639.BetterChests/ResizeChestCapacity": "70"
+          }
+        }
+      }
+    },
+    // Add Crafting Recipe
+    {
+      "LogName": "Load Wrought Iron Cellar Crafting Recipe",
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "WroughtIronCellar": "335 10/Home/6480.StorageVariety_WroughtIronCellar/true/null/{{i18n: WroughtIronCellar.name}}"
+      }
+    },
+    // Add Shop Entry
+    {
+      "LogName": "Load Wrought Iron Cellar Shop Entry",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Carpenter",
+        "Items"
+      ],
+      "Entries": {
+        "6480.StorageVariety_WroughtIronCellar": {
+          "Id": "6480.StorageVariety_WroughtIronCellar",
+          "ItemId": "(BC)6480.StorageVariety_WroughtIronCellar",
+          "Price": 15000,
+          "IsRecipe": true
+        }
+      }
+    }
+  ]
+}

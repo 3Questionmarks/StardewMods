@@ -22,27 +22,43 @@
 		"ManualFrames": [
 		{
 		"Frame": 8,
-		"Duration": 2000
+		"Duration": 3000
 		},
 		{
 		"Frame": 20,
-		"Duration": 100
+		"Duration": 150
 		},
 		{
 		"Frame": 21,
-		"Duration": 100
+		"Duration": 150
+		},
+		{
+		"Frame": 22,
+		"Duration": 150
+		},
+		{
+		"Frame": 23,
+		"Duration": 150
+		},
+		{
+		"Frame": 8,
+		"Duration": 150
 		},
 		{
 		"Frame": 20,
-		"Duration": 100
+		"Duration": 150
 		},
 		{
 		"Frame": 21,
-		"Duration": 100
+		"Duration": 150
 		},
 		{
-		"Frame": 20,
-		"Duration": 100
+		"Frame": 22,
+		"Duration": 150
+		},
+		{
+		"Frame": 23,
+		"Duration": 150
 		},
 		]
 	}
@@ -56,50 +72,50 @@
 		"ManualFrames": [
 		{
 		"Frame": 0,
-		"Duration": 2000
+		"Duration": 3000
 		},
 		{
-		"Frame": 24,
+		"Frame": 12,
 		"Duration": 150
 		},
 		{
-		"Frame": 25,
+		"Frame": 13,
 		"Duration": 150
 		},
 		{
-		"Frame": 26,
+		"Frame": 14,
+		"Duration": 500
+		},
+		{
+		"Frame": 15,
 		"Duration": 250
 		},
 		{
-		"Frame": 27,
+		"Frame": 14,
 		"Duration": 250
 		},
 		{
-		"Frame": 26,
+		"Frame": 15,
 		"Duration": 250
 		},
 		{
-		"Frame": 27,
+		"Frame": 14,
 		"Duration": 250
 		},
 		{
-		"Frame": 26,
+		"Frame": 15,
 		"Duration": 250
 		},
 		{
-		"Frame": 27,
-		"Duration": 250
+		"Frame": 14,
+		"Duration": 500
 		},
 		{
-		"Frame": 26,
-		"Duration": 250
-		},
-		{
-		"Frame": 25,
+		"Frame": 13,
 		"Duration": 150
 		},
 		{
-		"Frame": 24,
+		"Frame": 12,
 		"Duration": 150
 		},
 		]
@@ -137,38 +153,38 @@
 		"Flip": true
 		},
 		{
-		"Frame": 22,
-		"Duration": 250,
+		"Frame": 16,
+		"Duration": 150,
 		"Flip": true
 		},
 		{
-		"Frame": 23,
-		"Duration": 250,
+		"Frame": 17,
+		"Duration": 150,
 		"Flip": true
 		},
 		{
-		"Frame": 22,
-		"Duration": 250,
+		"Frame": 18,
+		"Duration": 150,
 		"Flip": true
 		},
 		{
-		"Frame": 23,
-		"Duration": 250,
+		"Frame": 19,
+		"Duration": 3000,
 		"Flip": true
 		},
 		{
-		"Frame": 22,
-		"Duration": 250,
+		"Frame": 18,
+		"Duration": 150,
 		"Flip": true
 		},
 		{
-		"Frame": 23,
-		"Duration": 250,
+		"Frame": 17,
+		"Duration": 150,
 		"Flip": true
 		},
 		{
-		"Frame": 22,
-		"Duration": 250,
+		"Frame": 16,
+		"Duration": 150,
 		"Flip": true
 		},
 		]
@@ -183,19 +199,35 @@
 		"ManualFrames": [
 		{
 		"Frame": 4,
-		"Duration": 3000
+		"Duration": 3000,
+		},
+		{
+		"Frame": 16,
+		"Duration": 150,
+		},
+		{
+		"Frame": 17,
+		"Duration": 150,
 		},
 		{
 		"Frame": 18,
-		"Duration": 250
+		"Duration": 150,
 		},
 		{
 		"Frame": 19,
-		"Duration": 500
+		"Duration": 3000,
 		},
 		{
 		"Frame": 18,
-		"Duration": 150
+		"Duration": 150,
+		},
+		{
+		"Frame": 17,
+		"Duration": 150,
+		},
+		{
+		"Frame": 16,
+		"Duration": 150,
 		},
 		]
 	}
@@ -204,8 +236,8 @@
 "Sounds": [
 	{
 	"SoundName": "SpringBirds",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
 	"ChanceOfPlaying": 0.5
 	}
 ]  

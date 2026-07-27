@@ -1,0 +1,44 @@
+{
+	"Changes": [
+		//Patches for Custom_BlueMoonVineyard
+		{
+			"Action": "EditMap",
+			"Target": "maps/Custom_BlueMoonVineyard",
+            		"AddWarps": [
+                		"56 61 Custom_sydBeach 0 5",
+                		"56 62 Custom_sydBeach 0 5",
+                		"56 63 Custom_sydBeach 0 6",
+                		"56 64 Custom_sydBeach 0 6"
+            		],
+		},
+		//Patches for Beach
+		{
+			"Action": "EditMap",
+			"Target": "maps/Beach",
+            		"AddWarps": [
+                		"0 4 Custom_sydBeach 44 5",
+                		"0 5 Custom_sydBeach 44 5",
+                		"0 6 Custom_sydBeach 44 5",
+                		"0 7 Custom_sydBeach 44 5"
+            		],
+		},
+		{
+			"Action": "EditMap",
+			"Target": "maps/Beach-NightMarket",
+            		"AddWarps": [
+                		"0 4 Custom_sydBeach 44 5",
+                		"0 5 Custom_sydBeach 44 5",
+                		"0 6 Custom_sydBeach 44 5",
+                		"0 7 Custom_sydBeach 44 5"
+            		],
+		},
+		//Patches for Custom_sydBeach
+		{
+			"Action": "EditMap",
+			"Target": "maps/Custom_sydBeach",
+			"MapProperties": {
+				"Warp": "45 4 Beach 1 4 45 5 Beach 1 5 45 6 Beach 1 6 -1 4 Custom_BlueMoonVineyard 56 62 -1 5 Custom_BlueMoonVineyard 56 62 -1 6 Custom_BlueMoonVineyard 56 63 -1 7 Custom_BlueMoonVineyard 56 63 -1 8 Custom_BlueMoonVineyard 56 64 -1 8 Custom_BlueMoonVineyard 56 64 -1 9 Custom_BlueMoonVineyard 56 64"
+			}
+		}
+	]
+}

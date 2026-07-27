@@ -1,0 +1,36 @@
+{
+	"Changes": [
+		{
+			"LogName": "Faust Strings",
+			"Action": "EditData",
+			"Target": "Strings/schedules/Faust",
+			"Entries": {
+				"Sun.000": "{{i18n:Sun.000}}",
+				"nap.000": "{{i18n:nap.000}}",
+				"nap.001": "{{i18n:nap.001}}",
+				"yard.000": "{{i18n:yard.000}}",
+				"mom.000": "{{i18n:mom.000}}",
+				"mom.001": "{{i18n:mom.001}}",
+				"married.000": "{{i18n:married.00{{Random: 0,1,2}}}}"
+			}
+		},
+		{
+			"LogName": "Faust Strings When Married",
+			"Action": "EditData",
+			"Target": "Strings/schedules/Faust",
+			"When": { "HasSeenEvent |contains=95790302": true },
+			"Entries": {
+				"mom.000": "{{i18n:mom.000.alt}}",
+			}
+		},
+		{
+			"LogName": "Faust Strings When Married",
+			"Action": "EditData",
+			"Target": "Strings/schedules/Faust",
+			"When": { "Relationship:Faust": "Married" },
+			"Entries": {
+				"yard.000": "{{i18n:yard.000.married}}",
+			}
+		},
+	]
+}

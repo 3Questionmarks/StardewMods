@@ -1,0 +1,90 @@
+{
+//Outfit Loads when use Seasonal Improved Leo
+        "Changes": [    
+        {
+            "Action": "EditImage",
+            "Target": "Characters/ParrotBoy",
+            "Priority": "Late",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Characters/{{Season}}_Leo.png",
+            "When": {
+                "HasSeenEvent |contains=6497428": true,
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+                "Seasonal": "true"
+            },
+        },
+//Indoor Variant
+        {
+            "Action": "EditImage",
+            "Target": "Characters/ParrotBoy_Winter",
+            "Priority": "Late",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Characters/{{Season}}_Leo{{IndoorVariant}}.png",
+            "Update": "OnLocationChange", 
+			"When": {
+				"HasSeenEvent |contains=6497428": true,
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+				"Season": "winter",
+                "Seasonal": "true"
+            }
+        },
+//when Leo goes to Ginger Island
+		{
+			"Action": "EditImage",
+			"Target": "Characters/ParrotBoy",
+            "Priority": "Late",
+			"FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Characters/NewLeo.png",
+			"Update": "OnLocationChange", 
+			"When": {
+				"HasSeenEvent |contains=6497428": true,
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast, IslandHut",
+                "Seasonal": "true"
+		    }
+		},
+//Portrait Loads when use Seasonal Improved Leo
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/ParrotBoy",
+            "Priority": "Late",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Portraits/{{Season}}_portrait_NewLeo.png",
+            "When": {
+                "HasSeenEvent |contains=6497428": true,
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+                "Seasonal": "true"
+            },
+        },
+//Indoor Variant
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/ParrotBoy_Winter",
+            "Priority": "Late",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Portraits/{{Season}}_portrait_NewLeo{{IndoorVariant}}.png",
+            "Update": "OnLocationChange", 
+			"When": {
+                "HasSeenEvent |contains=6497428": true,
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+				"Season": "winter",
+                "Seasonal": "true"
+            }
+        },
+//when Leo goes to Ginger Island
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/ParrotBoy",
+            "Priority": "Late",
+			"FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Portraits/portrait_NewLeo.png",
+			"Update": "OnLocationChange", 
+			"When": {
+				"HasSeenEvent |contains=6497428": true,
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+				"LocationContext": "Island",
+                "Seasonal": "true"
+		    }
+		},
+    ]
+}

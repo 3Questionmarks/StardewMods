@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Law.Order)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Law.Order",
+      "FromFile": "assets/Maps/Law and Order/Law_Order_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

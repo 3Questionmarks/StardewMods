@@ -1,0 +1,206 @@
+{
+	"Changes": [
+//SVE Worldmap
+		{
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_summer, LooseSprites/map_fall, LooseSprites/map_winter",
+      "FromFile": "assets/Maps/Stardew Valley Expanded/{{Season}}_SVE_WorldMap.png",
+      "PatchMode": "Overlay",
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": true
+			},
+			"Update": "OnLocationChange"
+		},
+//SVE Worldmap DeadBoy Detectives
+		{
+      "Action": "EditImage",
+      "Target": "handwrittenhello.dbda_WorldMap/{{Recolor}}",
+      "FromFile": "assets/Maps/Stardew Valley Expanded/{{Season}}_SVE_WorldMap.png",
+      "PatchMode": "Overlay",
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": true,
+				"HasMod |contains=handwrittenhello.dbda": true,
+				"HasMod |contains=DaisyNiko.EarthyRecolour": true
+			},
+			"Update": "OnLocationChange"
+		},
+//Crimson Badlands
+		{
+      "Action": "EditImage",
+      "Target": "Mods/FlashShifter.StardewValleyExpandedCP/CrimsonBadlands",
+      "FromFile": "assets/Maps/Stardew Valley Expanded/CrimsonBadlands.png",
+      "PatchMode": "Overlay",
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": true
+			}
+		},
+//Meadowlands Farm
+		{
+      "Action": "EditImage",
+      "Target": "LooseSprites/Farm_ranching_map, LooseSprites/Farm_ranching_map_summer, LooseSprites/Farm_ranching_map_fall, LooseSprites/Farm_ranching_map_winter",
+      "FromFile": "assets/Maps/Stardew Valley Expanded/{{Season}}_Meadowlands_WorldMap.png",
+      "PatchMode": "Overlay",
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": true
+			},
+			"Update": "OnLocationChange"
+        },
+//Grandpas Farm + Icon
+		{
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_summer, LooseSprites/map_fall, LooseSprites/map_winter",
+      "FromFile": "assets/Maps/Stardew Valley Expanded/{{Season}}_Grandpas_WorldMap.png",
+      "PatchMode": "Overlay",
+			"ToArea": { "X": 0, "Y": 43, "Width": 142, "Height": 61 },
+			"When": {
+				"HasMod |contains=flashshifter.GrandpasFarm": true
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Loosesprites/Cursors",
+			"FromFile": "assets/Maps/Stardew Valley Expanded/GrandpasFarm_Icon.png",
+			"ToArea": {
+			  	"X": 2,
+			  	"Y": 324,
+			  	"Width": 18,
+			  	"Height": 20
+			},
+			"When": {
+				"HasMod |contains=flashshifter.GrandpasFarm": true
+			}
+		},
+//Grampleton Fields 
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/{{Season}}_Grampletonfields",
+			"FromFile": "assets/Maps/Stardew Valley Expanded/{{Season}}_GrampletonFields.png",
+			"Patchmode": "Overlay",
+			"When": {
+				"HasMod |contains=flashshifter.GrampletonFields": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			},
+			"Update": "OnLocationChange",
+		},
+//Immersive Farm 2 Remastered + Icon
+		{
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_summer, LooseSprites/map_fall, LooseSprites/map_winter",
+      "FromFile": "assets/Maps/Stardew Valley Expanded/{{Season}}_IF2R_Worldmap.png",
+      "PatchMode": "Overlay",
+			"ToArea": { "X": 0, "Y": 43, "Width": 142, "Height": 61 },
+			"When": {
+				"HasMod |contains=flashshifter.immersivefarm2remastered": true,
+				"FarmType": "Standard",
+				"HasMod |contains=flashshifter.GrandpasFarm": false
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Loosesprites/Cursors",
+			"FromFile": "assets/Maps/Stardew Valley Expanded/IF2R_Icon.png",
+			"When": {
+			  "HasMod |contains=flashshifter.GrandpasFarm": false
+			},
+			"ToArea": {
+			  "X": 2,
+			  "Y": 324,
+			  "Width": 18,
+			  "Height": 20
+			}
+		},
+//Highlands
+		{
+      "Action": "EditImage",
+      "Target": "Mods/FlashShifter.StardewValleyExpandedCP/{{Season}}_Highlands",
+      "FromFile": "assets/Maps/Stardew Valley Expanded/{{Season}}_Highlands_WorldMap.png",
+      "PatchMode": "Overlay",
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": true,
+			},
+			"Update": "OnLocationChange"
+		},
+//Grumpleton Suburbs
+		{
+      "Action": "EditImage",
+      "Target": "Mods/FlashShifter.StardewValleyExpandedCP/{{Season}}_GrampletonSuburbs",
+      "FromFile": "assets/Maps/Stardew Valley Expanded/{{Season}}_GrampletonSuburbs_WorldMap.png",
+      "PatchMode": "Overlay",
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": true,
+			},
+			"Update": "OnLocationChange"
+		},
+//Joja
+		{
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_summer, LooseSprites/map_fall, LooseSprites/map_winter",
+      "FromFile": "assets/Maps/Stardew Valley Expanded/{{Season}}_Joja_WorldMap.png",
+			"ToArea": { "X": 84, "Y": 14, "Width": 189, "Height": 117 },
+            "PatchMode": "Overlay",
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": true,
+				"HasSeenEvent": "5553210"
+			},
+			"Update": "OnLocationChange"
+		},
+//Fablereef
+		{
+    	"Action": "EditImage",
+      "Target": "Mods/FlashShifter.StardewValleyExpandedCP/FableReef",
+      "FromFile": "assets/Maps/Stardew Valley Expanded/FableReef.png",
+      "PatchMode": "Overlay",
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": true
+			}
+		},
+//Frontier Farm + Icon
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map, LooseSprites/map_summer, LooseSprites/map_fall, LooseSprites/map_winter",
+			"Priority": "Late",
+			"FromFile": "assets/Maps/Stardew Valley Expanded/{{Season}}_FrontierFarm_Worldmap.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 0, "Y": 44, "Width": 137, "Height": 60 },
+			"When": {
+				"HasMod |contains=flashshifter.FrontierFarm": true,
+				"FarmType": "FrontierFarm"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/FlashShifter.FrontierFarm/Icon",
+			"FromFile": "assets/Maps/Stardew Valley Expanded/FrontierFarm_Icon.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod |contains=flashshifter.FrontierFarm": true
+			}
+		},
+//Maplayer
+		{
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_summer, LooseSprites/map_fall, LooseSprites/map_winter",
+      "FromFile": "assets/Maps/Stardew Valley Expanded/maplayer.png",
+			"FromArea": { "X": 208, "Y": 363, "Width": 40, "Height": 30 },
+			"ToArea": { "X": 208, "Y": 363, "Width": 40, "Height": 30 },
+            "PatchMode": "Overlay",
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": true,
+				"HasMod |contains=DaisyNiko.EarthyInterface": true
+			}
+		},
+//BoatJourney
+		{
+     "Action": "EditImage",
+      "Target": "Minigames/boatJourneyMap",
+      "FromFile": "assets/Maps/Stardew Valley Expanded/{{season}}_SVE_boatJourneyMap.png",
+      "PatchMode": "Overlay",
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": true
+			}
+		}
+  ]
+}

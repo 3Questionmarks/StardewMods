@@ -1,0 +1,21 @@
+{
+    "Name": "Animated Rings Pack",
+    "Author": "KocaKolotra & zBoggler",
+    "Version": "1.0.0",
+    "Description": "A collection of all animated rings",
+    "UniqueID": "KKzBG.AnimatedRingsPack",
+    "MinimumApiVersion": "4.1.10",
+    "UpdateKeys": [
+        "Nexus:30972"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher",
+        "MinimumVersion": "2.5.1"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "spacechase0.SpaceCore",
+            "Required": true
+        }
+    ]
+}

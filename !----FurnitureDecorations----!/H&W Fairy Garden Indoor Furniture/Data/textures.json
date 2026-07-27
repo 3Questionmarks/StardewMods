@@ -1,0 +1,73 @@
+ {
+
+   "Changes": [
+ 
+    {
+        "LogName": "Load Furniture Textures",
+        "Action": "Load",
+        "Target": "Mods/HXW.FairyGardenIndoor/Furniture, Mods/HXW.FairyGardenIndoor/FurnitureFront",
+        "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+
+    
+/////////////////////
+// recolor options //
+/////////////////////
+
+
+{
+    "LogName": "Dark Recolor - Furniture",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.FairyGardenIndoor/Furniture,",
+    "FromFile": "assets/Furniture_Dark.png",
+    "PatchMode":"Replace",
+    "When": {"Recolor": "Dark"}
+},
+
+{
+    "LogName": "Dark Recolor - Furniture Front",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.FairyGardenIndoor/FurnitureFront",
+    "FromFile": "assets/FurnitureFront_Dark.png",
+    "PatchMode":"Replace",
+    "When": {"Recolor": "Dark"}
+},
+
+
+{
+    "LogName": "Light Recolor - Furniture",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.FairyGardenIndoor/Furniture,",
+    "FromFile": "assets/Furniture_Light.png",
+    "PatchMode":"Replace",
+    "When": {"Recolor": "Light"}
+},
+
+{
+    "LogName": "Light Recolor - Furniture Front",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.FairyGardenIndoor/FurnitureFront",
+    "FromFile": "assets/FurnitureFront_Light.png",
+    "PatchMode":"Replace",
+    "When": {"Recolor": "Light"}
+},
+
+{
+    "LogName": "Toned Down Recolor - Furniture",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.FairyGardenIndoor/Furniture,",
+    "FromFile": "assets/Furniture_Bog.png",
+    "PatchMode":"Replace",
+    "When": {"Recolor": "Bog"}
+},
+
+{
+    "LogName": "Toned Down - Furniture",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.FairyGardenIndoor/FurnitureFront",
+    "FromFile": "assets/FurnitureFront_Bog.png",
+    "PatchMode":"Replace",
+    "When": {"Recolor": "Bog"}
+}
+    ]
+}

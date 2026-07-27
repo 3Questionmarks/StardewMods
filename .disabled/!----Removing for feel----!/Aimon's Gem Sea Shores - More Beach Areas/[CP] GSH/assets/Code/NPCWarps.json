@@ -1,0 +1,100 @@
+{
+    "Changes": [
+	{		"LogName": "NPCWarp - EastScarp_LoresCove - Beach",
+               "Action": "EditMap",
+               "Target": "Maps/EastScarp_LoresCove",
+                  "When": { "HasMod |contains=Lemurkat.EastScarp":  true    }, 
+               "AddNpcWarps": [
+                    "0 52 Beach 101 8",		
+		"3 52 Beach 101 8",	
+		"2 52 Beach 101 8",	
+		"1 51 Beach 101 8",
+               ],	
+          },
+	{       "LogName": "NPCWarp -  Beach - EastScarp_LoresCove",
+	"Action": "EditMap",
+	 "Target":  "Maps/Beach, Maps/Beach-NightMarket",
+	 "AddNpcWarps": [
+	 	  "103 7 EastScarp_LoresCove 4 52",
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "HasMod |contains=Lemurkat.EastScarp":  true  
+				}, 						
+ },		
+{         "LogName": "NPCWarp -  Beach - Custom_sydBeach",
+	"Action": "EditMap",
+	 "Target":  "Maps/Beach, Maps/Beach-NightMarket",
+	 "AddNpcWarps": [
+	 	  "0 8 Custom_sydBeach 42 5",
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "HasMod |contains=Lex.Sydney":  true,
+				}, 						
+ },	 
+{        "LogName": "NPCWarp -  Custom_sydBeach - Beach",
+	"Action": "EditMap",
+	 "Target":  "Maps/Custom_sydBeach",
+	 "AddNpcWarps": [
+                    "44 5 Beach 2 7",	
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "HasMod |contains=Lex.Sydney":  true,
+				}, 						
+ },	
+{ 	"LogName": "NPCWarp - Beach - DBDA_Lighthouse & Docks",
+		"Action":"EditMap",
+		"Target":"Maps/Beach, Maps/Beach-NightMarket",
+		"AddNpcWarps": [ "1 6 handwrittenhello.dbda_Lighthouse 103 8", "103 18 handwrittenhello.dbda_Docks 0 7" ],
+		"When": {  "HasMod |contains=handwrittenhello.dbda":  true, },
+	},
+	{  "LogName": "NPCWarp - DBDA_Lighthouse - Beach",
+		"Action":"EditMap",
+		"Target":"Maps/handwrittenhello.dbda_Lighthouse",
+		"AddNpcWarps": [ "103 9 Beach 2 6", ],
+		"When": {  "HasMod |contains=handwrittenhello.dbda":  true,  },
+	},	
+{   "LogName": "NPCWarp Beach - FOS",
+            "Action": "EditMap",
+            "Target": "Maps/Beach, Maps/Beach-NightMarket",
+	"When": { "HasMod |contains=aztecviper.fishofstardew":  true,  },	
+            "AddNpcWarps": [
+                "104 21 FOS_Beach1 1 5",
+            ]
+        },
+ {  "LogName": "NPCWarp FOS - Beach",
+            "Action": "EditMap",
+            "Target": "Maps/FOS_Beach1",
+            "AddNpcWarps": [
+	
+		 "0 5 Beach 102 22",
+            ]
+        },		
+		  
+//-------------< NPCWARPS - VANILLA >--------------------// >)
+
+{ "LogName": "NPCWarp  - Beach -  Town",
+               "Action": "EditMap",
+               "Target": "Maps/Beach, Maps/Beach-NightMarket",
+               "AddNPCWarps": [
+                    "38 -1 Town 54 109",	
+		
+               ],	
+          },
+		  { "LogName": "NPCWarp Town - Beach",
+               "Action": "EditMap",
+               "Target": "Maps/Town",
+               "AddNPCWarps": [
+                    "54 109 Beach 38 1",	
+		
+               ],	
+          },
+{ "LogName": "NPCWarp  - Forest -  Town",
+               "Action": "EditMap",
+               "Target": "Maps/Forest",
+               "AddNPCWarps": [
+                    "120 25 Town 0 90",	
+		
+               ],	
+          },		
+    ]
+}

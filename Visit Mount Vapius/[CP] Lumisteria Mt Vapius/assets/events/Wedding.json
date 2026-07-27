@@ -33,7 +33,7 @@
 		},
 		"MaddyPellegrinVMV": {
 		  "Id": "MaddyPellegrinVMV",
-		  "Condition": "ANY \"PLAYER_HEARTS Any MaddyPellegrinVMV 6, !PLAYER_NPC_RELATIONSHIP Any AsterPellegrinVMV Married\" \"PLAYER_NPC_RELATIONSHIP Any AsterPellegrinVMV Married, !PLAYER_NPC_RELATIONSHIP Any AsterPellegrinVMV Married\"",
+		  "Condition": "ANY \"PLAYER_HEARTS Any MaddyPellegrinVMV 6, !PLAYER_NPC_RELATIONSHIP Any AsterPellegrinVMV Married\" \"PLAYER_NPC_RELATIONSHIP Any AsterPellegrinVMV Married\"",
 		  "Setup": "MaddyPellegrinVMV 35 71 0",
 		  //"Celebration": null
 		},

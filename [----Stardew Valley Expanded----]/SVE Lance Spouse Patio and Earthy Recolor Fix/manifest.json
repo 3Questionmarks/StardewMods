@@ -1,0 +1,38 @@
+{
+    "Name": "SVE Lance Spouse Patio and Earthy Recolor Fix",
+    "Author": "Bri",
+    "Version": "1.2.0",
+    "Description": "Fixes an issue where Lance's spouse patio would be invisible on DaisyNiko's Earthy Recolor.",
+    "UniqueID": "svelance.daisynikorecolor",
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "UpdateKeys": [ "Nexus:-1" ],
+    "Dependencies":
+	[
+    	{
+            "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+            "IsRequired": false
+        },
+		{
+			"UniqueID": "flashshifter.immersivefarm2remastered",
+			"IsRequired": false
+		},
+    	{
+            "UniqueID": "Lunatyx.LegacyFarm",
+            "IsRequired": false
+		},
+    	{
+            "UniqueID": "Lumisteria.TtilesheetsOutdoor",
+            "IsRequired": false
+		},
+    	{
+            "UniqueID": "DaisyNiko.EarthyRecolour",
+            "IsRequired": false
+		},
+    	{
+            "UniqueID": "DNER.IF2Rmapfix",
+            "IsRequired": false
+		}
+	]
+}

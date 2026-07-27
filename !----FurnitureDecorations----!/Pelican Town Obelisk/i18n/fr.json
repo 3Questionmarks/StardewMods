@@ -1,0 +1,42 @@
+{
+    "PelicanTownObelisk_Name": "Obélisque de Pélican Ville.",
+    "PelicanTownObelisk_Description": "Cet obélisque a été imprégné avec la compétence d’un Sorcier. Il peut vous téléporter à la fontaine de la ville en un instant.",
+
+    "PelicanTownObelisk.Mail_Title": "Notification d'ouverture de la construction d'Obélisque de Pélican Ville",
+    "PelicanTownObelisk.Mail_Text": "${Cher @^Chère @^@}$^^Bonjour. On dirait que Lewis avait demandé au Sorcier de fournir une certaine technologie depuis un certain temps. Ils ont finalement réussi à coopérer et maintenant ils veulent construire cet Obélisque de Pélican Ville dans d'autres villes pour attirer des gens en ville.^^Je ne connais pas tous les détails mais on m’a transmis de la part du Sorcier la manière d’y mettre de la magie donc c'est facile pour moi de le construire. Si tu penses que la ferme en a besoin, je suis toujours prête à le fabriquer pour quelques matériaux et une petite somme !^^- Robine",
+
+
+
+    "config.Enable this mod.name": "Activer le mod",
+    "config.Enable this mod.description": "Paramètre On/Off du mod.",
+
+    "config.Fountain Appearance.name": "Apparence de la fontaine",
+    "config.Fountain Appearance.description": "Change l'apparence de la fontaine elle-même. Actuellement, il existe deux types de graphismes : Jeu de base ou ceux utilisés dans le mod Project Yellog Town Overhaul. Même si le mod Project Yellog Town Overhaul n'est pas installé, ce mod permet de changer l'apparence uniquement avec ce mod.",
+    "config.Fountain Appearance.values.Vanilla": "Jeu de base",
+    "config.Fountain Appearance.values.ProjectYellogTownOverhaul": "Project Yellog Town Overhaul",
+
+    "config.Seasonal Appearance.name": "Apparence saisonnière",
+    "config.Seasonal Appearance.description": "Si ce paramètre est désactivé, l'apparence ne changera pas avec les saisons. (Elle sera bloquée sur la version du printemps.)",
+
+    "config.Treat same other obelisks.name": "Unifier les obélisques",
+    "config.Treat same other obelisks.description": "Lorsque le paramètre est activé, les spécifications seront les mêmes que celles des autres obélisques. (Affichage, frais requis et matériaux augmenteront dans le menu de construction du Sorcier.)",
+
+    "config.Remove Build Restrictions.name": "Pas de restriction de construction",
+    "config.Remove Build Restrictions.description": "L'activation de ce paramètre permettra de construire immédiatement l'Obélisque de Pélican Ville. (Déverrouillage du menu de construction)",
+
+    "config.Free to Build.name": "Construction gratuite",
+    "config.Free to Build.description": "Lorsque le paramètre est activé, le coût de construction de l'Obélisque de Pelican Town sera nul et aucun matériau ne sera requis.",
+
+    "config.Immediate Build Finish.name": "Construction immédiate",
+    "config.Immediate Build Finish.description": "L'activation de ce paramètre permet de terminer la construction de l'Obélisque de Pelican Town en une fraction de seconde.",
+
+    "config.Warp Front Only.name": "Téléportation seulement à l'avant",
+    "config.Warp Front Only.description": "Ce paramètre empêche la téléportation accidentelle lorsque l'eau est fournie aux arrosoirs. Lorsque le paramètre est activé, la téléportation fonctionne seulement sur une case devant la fontaine.",
+
+    "config.No Warp Function.name": "Désactiver la téléportation",
+    "config.No Warp Function.description": "Supprime sa fonction d'obélisque et devient juste une fontaine. Ce paramètre prend le pas sur l'élément 'Téléportation seulement à l'avant' ci-dessus.",
+
+
+    "config.Building Over Flooring.name": "Construction sur revêtement",
+    "config.Building Over Flooring.description": "Il est possible de construire sur des \"Planchers en bois\", \"Planchers en pierre\" et d'autres revêtements de matériaux.",
+}

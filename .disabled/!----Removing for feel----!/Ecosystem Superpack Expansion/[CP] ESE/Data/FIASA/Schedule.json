@@ -1,0 +1,35 @@
+
+{
+  "Changes": [   
+  {
+      "LogName": "Game Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/CC_KodaK",
+      "Entries": { 
+	  "spring": "710 Sub_Back 7 9 0/810 Koda_Sub 17 9 0/830 Koda_Sub 11 9 2/900 Koda_Sub 15 11 2/1800 Koda_Sub 11 9 2/2000 Sub_Back 7 9 0/2200 Sub_Back 10 11 koda_sleep",
+"rain": "710 Sub_Back 7 9 0/810 Koda_Sub 17 9 0/830 Koda_Sub 11 9 2/2200 Sub_Back 10 11 koda_sleep",
+"Mon": "MAIL beachBridgeFixed/GOTO Mon_noBridge/710 Sub_Back 7 9 0/910 Koda_Sub 10 11 1/1010 Koda_Cove 19 14 koda_test/1110 Koda_Cove 29 17 koda_crouch/1140 Beach 20 20 koda_crouch/1210 Beach 55 23 2/1310 Beach 79 15 koda_test/1410 Beach 81 17 koda_crouch/1440 Beach 55 23 2/1510 Beach 11 19 1/1610 Koda_Cove 25 26 3/1640 Koda_Sub 10 11 1/1700 Sub_Back 7 9 0/1740 Sub_Deck 16 17 0/1810 Sub_Deck 16 17 koda_map/1910 Sub_Back 26 10 1/2200 Sub_Back 10 11 koda_sleep",
+"Mon_noBridge": "710 Sub_Back 7 9 0/910 Sub_Deck 16 17 0/1210 Sub_Deck 11 17 koda_map/1310 Sub_Deck 20 15 2/1340 Sub_Deck 20 15 koda_sleep/1610 Sub_Deck 20 16 koda_sitleft/2200 Sub_Back 10 11 koda_sleep",
+"Tue": "710 Sub_Back 7 9 0/810 Koda_Sub 17 9 0/830 Koda_Sub 11 9 2/900 Koda_Sub 15 11 2/1800 Koda_Sub 11 9 2/2000 Sub_Back 7 9 0/2200 Sub_Back 10 11 koda_sleep",
+"Wed": "710 Sub_Back 7 9 0/810 Koda_Sub 17 9 0/830 Koda_Sub 11 9 2/900 Koda_Sub 15 11 2/1800 Koda_Sub 11 9 2/2000 Sub_Back 7 9 0/2200 Sub_Back 10 11 koda_sleep",
+"Thu": "710 Sub_Back 7 9 0/810 Koda_Sub 17 9 0/830 Koda_Sub 11 9 2/900 Koda_Sub 15 11 2/1800 Koda_Sub 11 9 2/2000 Sub_Back 7 9 0/2200 Sub_Back 10 11 koda_sleep",
+"Fri": "710 Sub_Back 7 9 0/810 Koda_Sub 17 9 0/910 Koda_Cove 29 17 koda_crouch/940 Beach 20 20 koda_crouch/1040 Beach 20 20 2/1210 Town 34 76 2/1410 Town 43 77 koda_sitfront/1440 Town 43 77 koda_read/1610 Town 63 100 0/1910 Beach 27 27 1/1940 Koda_Cove 25 26 3/2100 Koda_Sub 17 9 0/2200 Sub_Back 10 11 koda_sleep",
+"summer_12": "710 Sub_Back 7 9 0/910 Koda_Sub 10 11 1/1010 Koda_Cove 19 14 koda_test/1110 Koda_Cove 29 17 koda_crouch/1140 Beach 20 20 koda_crouch/1210 Beach 55 23 2/1310 Beach 79 15 koda_test/1410 Beach 81 17 koda_crouch/1440 Beach 55 23 2/1510 Beach 11 19 1/1610 Koda_Cove 25 26 3/1640 Koda_Sub 10 11 1/1700 Sub_Back 7 9 0/1740 Sub_Deck 16 17 0/1810 Sub_Deck 16 17 koda_map/1910 Sub_Back 26 10 1/2200 Sub_Back 10 11 koda_sleep",
+"winter_12": "710 Sub_Back 7 9 0/810 Koda_Sub 17 9 0/830 Koda_Sub 11 9 2/900 Koda_Sub 15 11 2/1800 Koda_Sub 11 9 2/2000 Sub_Back 7 9 0/2200 Sub_Back 10 11 koda_sleep",
+"winter_15": "1010 Sub_Back 7 9 0/1140 Koda_Sub 17 9 0/1210 Koda_Cove 29 17 koda_crouch/1410 Beach 10 37 1",
+"marriage_NightMarket_1": "1210 Town 37 70 2/1610 Beach 10 37 1/2010 bed",
+"marriage_summer_12": "910 BusStop 37 25 2/1010 Beach 77 17 koda_study/1210 Beach 9 17 koda_study/1410 Koda_Cove 29 17 koda_crouch/1500 Koda_Cove 29 17 2/1710 Beach 13 22 3/1810 BusStop -1 23 3",
+"marriage_summer_13": "910 BusStop 37 25 2/1010 Beach 77 17 koda_study/1210 Beach 9 17 koda_study/1410 Koda_Cove 29 17 koda_crouch/1500 Koda_Cove 29 17 2/1710 Beach 13 22 3/1810 BusStop -1 23 3",
+"marriage_summer_14": "910 BusStop 37 25 2/1010 Beach 77 17 koda_study/1210 Beach 9 17 koda_study/1410 Koda_Cove 29 17 koda_crouch/1500 Koda_Cove 29 17 2/1710 Beach 13 22 3/1810 BusStop -1 23 3",
+
+"marriage_Fri": "910 BusStop 37 25 koda_map/1010 Town 8 63 2/1110 Beach 20 20 koda_crouch/1200 Beach 20 21 2/1410 Koda_Cove 23 12 koda_crouch/1510 Koda_Cove 23 12 2/1610 Beach 20 20 2/1640 Town 74 75 2/1740 Saloon 5 17 2/2010 BusStop -1 23 3",
+
+ 
+"GreenRain": "710 Sub_Back 7 9 0/810 Koda_Sub 10 11 1/910 Koda_Cove 19 14 koda_test/1210 Koda_Cove 29 17 koda_crouch/1310 Koda_Cove 23 12 2/1810 Koda_Sub 10 11 1/1910 Sub_Back 10 11 koda_sleep",
+
+
+ }
+
+	}
+	]
+}

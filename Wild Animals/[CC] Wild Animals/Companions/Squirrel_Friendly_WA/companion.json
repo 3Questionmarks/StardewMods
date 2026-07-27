@@ -502,14 +502,22 @@
 		"TextLifetime": 3000
 		}
 	],
+	"Sounds": [
+		{
+		"SoundName": "Squirrel_WA_Sound",
+		"WhenToPlay": "Always",
+		"TimeBetweenSound": 3000,
+		"ChanceOfPlaying": 0.4
+		}
+	]  
   },
 
 "Sounds": [
 	{
-	"SoundName": "dustMeep",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.2
+	"SoundName": "Squirrel_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.4
 	}
 ]  
 }

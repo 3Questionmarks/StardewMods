@@ -1,0 +1,224 @@
+{
+  "Changes": [
+  
+	//OpenShop Wem.Bundle.Tilly_TeaShop down 900 1700 4 7 1 1
+  
+	 {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "{{ModId}}.Tilly_TeaShop": {
+                    "Owners": [
+                        {
+							"Name": "AnyOrNone",
+							"ClosedMessage": "{{i18n:TeaShop.ClosedMessage}}",
+							"Condition": "!TIME 900 1700"
+						},
+						{
+                            "Name": "{{ModId}}.Tilly",
+							"Dialogues": [
+								{
+								  "Id": "Regular Dialogue",
+								  "Dialogue": "{{i18n:TeaShop.Dialogue}}",
+								},
+						],
+                        },
+                    ],
+
+                    "Items": [
+                        
+						//Regular 
+						{
+                            "Id": "Green Tea",
+                            "ItemId": "(O)614",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						
+						{
+                            "Id": "Jasmine Tea",
+                            "ItemId": "{{ModId}}.Tilly_JTea",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						
+						{
+                            "Id": "Matcha",
+                            "ItemId": "{{ModId}}.Tilly_MatchaLatte",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						
+						{
+                            "Id": "LondonFog",
+                            "ItemId": "{{ModId}}.Tilly_LFog",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						
+						{
+                            "Id": "Masala Chai",
+                            "ItemId": "{{ModId}}.Tilly_MasalaChai",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						
+						{
+                            "Id": "Sweet Iced Tea",
+                            "ItemId": "{{ModId}}.Tilly_SweetTea",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "HoneyCake",
+                            "ItemId": "{{ModId}}.Tilly_HoneyCake",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						
+						{
+                            "Id": "TeaCake",
+                            "ItemId": "{{ModId}}.Tilly_TeaCake",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						{
+                            "Id": "Cookie",
+                            "ItemId": "(O)223",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						{
+                            "Id": "Maple Bar",
+                            "ItemId": "(O)731",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						
+						{
+                            "Id": "Mousse Cake",
+                            "ItemId": "{{ModId}}.Tilly_MousseCake",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						
+						{
+                            "Id": "Tiramisu",
+                            "ItemId": "{{ModId}}.Tilly_Tiramisu",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						
+						{
+                            "Id": "Matcha Tiramisu",
+                            "ItemId": "{{ModId}}.Tilly_MatchaTiramisu",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						
+						{
+                            "Id": "Star Cookie",
+                            "ItemId": "{{ModId}}.Tilly_StarCookie",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						
+						{
+                            "Id": "Muffin",
+                            "ItemId": "(O)651",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+						
+						
+						//Spring
+						{
+                            "Id": "Sakura Tea",
+                            "ItemId": "{{ModId}}.Tilly_SakuraTea",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+							"Condition": "SEASON Summer",
+                        },
+						
+						//Summer
+						{
+                            "Id": "Blueberry Tart",
+                            "ItemId": "(O)234",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+							"Condition": "SEASON Summer",
+                        },
+						
+						{
+                            "Id": "Pudding",
+                            "ItemId": "(O)904",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+							"Condition": "SEASON Summer",
+                        },
+						
+						//Fall
+						{
+                            "Id": "Plum Pudding",
+                            "ItemId": "(O)604",
+							"AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+							"Condition": "SEASON Fall",
+                        },
+						
+                    ],
+                },
+				
+				//LNY Stand
+				"{{ModId}}.Tilly_LNYStand": {
+                    "Owners": [
+                        {
+							"Name": "AnyOrNone",
+							"ClosedMessage": "{{i18n:LNYStand.ClosedMessage}}",
+							 "Condition": "!TIME 800 1900"
+						},
+						{
+                            "Name": "{{ModId}}.Tilly",
+							"Dialogues": [
+								{
+								  "Id": "Regular Dialogue",
+								  "Dialogue": "{{i18n:LNYStand.Dialogue}}",
+								},
+						],
+                        },
+                    ],
+
+                    "Items": [
+						{
+                            "Id": "Egg Tart",
+                            "ItemId": "{{ModId}}.Tilly_EggTart",
+							"AvailableStock": 10,
+                            "AvailableStockLimit": "Player",
+                        },
+						{
+                            "Id": "Sesame Balls",
+                            "ItemId": "{{ModId}}.Tilly_SesameBalls",
+							"AvailableStock": 10,
+                            "AvailableStockLimit": "Player",
+                        },
+						{
+                            "Id": "Sweet Rice Cake",
+                            "ItemId": "{{ModId}}.Tilly_SweetRiceCake",
+							"AvailableStock": 10,
+                            "AvailableStockLimit": "Player",
+                        },
+						{
+                            "Id": "Red Bean Soup",
+                            "ItemId": "{{ModId}}.Tilly_RedBeanSoup",
+							"AvailableStock": 10,
+                            "AvailableStockLimit": "Player",
+                        },
+						
+                    ],
+                },
+            },
+        },
+	
+	
+  ]
+}

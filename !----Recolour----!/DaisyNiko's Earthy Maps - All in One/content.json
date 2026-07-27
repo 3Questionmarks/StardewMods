@@ -1,0 +1,30 @@
+{
+  "Format": "2.8.0",
+
+  "DynamicTokens": [
+	  {
+		  "Name": "Recolor",
+		  "Value": "daisyniko",
+		  "When": {
+			  "HasMod": "DaisyNiko.EarthyRecolour"
+		  }
+	  }
+  ],
+
+  "Changes": [
+    { "Action": "Include", "FromFile": "assets/Maps/Aspen/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/DownTown Zuzu/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/East Scarp/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Ginger Island/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Mineral Town/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Ridgeside Village/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Stardew Valley Expanded/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/VisitMountVapius/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Worldmap Everywhere/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Sunberry Village/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Marry Morris/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Custom NPC Aliyah/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Juliet and Jessie/content.json" },
+    { "Action": "Include", "FromFile": "assets/Maps/Vanilla/content.json" }
+  ]
+}

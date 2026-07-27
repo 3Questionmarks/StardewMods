@@ -1,0 +1,25 @@
+{
+//Outfit Loads when use Seasonal Cute Characters
+  "Changes": [    
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Jas_{{Season}},",
+      "FromFile": "code/Compatibilitys/SeasonalCuteCharacters/Jas/Jas_{{Season}}.png",
+      "Patchmode": "Overlay",
+      "When": {
+        "HasSeenEvent |contains=9695002": true,
+        "HasMod |contains=Poltergeister.SeasonalCuteCharacters": true
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Jas_winter_indoor,",
+      "FromFile": "code/Compatibilitys/SeasonalCuteCharacters/Jas/Jas_Winter_indoor.png",
+      "Patchmode": "Overlay",
+      "When": {
+        "HasSeenEvent |contains=9695002": true,
+        "HasMod |contains=Poltergeister.SeasonalCuteCharacters": true
+      }
+    }
+  ]
+}

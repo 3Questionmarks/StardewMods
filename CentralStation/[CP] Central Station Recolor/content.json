@@ -1,0 +1,24 @@
+﻿{
+	"Format": "2.4.0",
+	
+	"ConfigSchema":
+	{
+		"Recolor Option": {
+			"AllowValues": "Off, Earthy, VPR, Starblue",
+			"Default": "Off"
+		}
+	},
+	
+	"Changes": [
+		{
+			"Action": "EditImage",
+			"Target": "Maps/Pathoschild.CentralStation_Tiles",
+			"FromFile": "assets/Pathoschild.CentralStation_{{Recolor Option}}.png",
+            "PatchMode": "Replace",
+			"When": {
+				"Recolor Option": "Earthy, VPR, Starblue"
+			},
+            "Priority": "Late +100"
+		}
+	]
+}

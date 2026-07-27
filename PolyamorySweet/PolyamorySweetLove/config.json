@@ -9,10 +9,18 @@
   "RoommateRomance": false,
   "RomanceAllVillagers": false,
   "GayPregnancies": true,
+  "ImpregnatingMother": false,
+  "ImpregnatingFemmeNPC": false,
   "MaxChildren": 2,
   "ShowParentNames": true,
-  "SpouseSleepOrder": "",
+  "SpouseSleepOrder": "Sophia,Emily,Wizard,Krobus",
   "PercentChanceForSpouseInBed": 25,
   "PercentChanceForSpouseInKitchen": 25,
-  "PercentChanceForSpouseAtPatio": 25
+  "PercentChanceForSpouseAtPatio": 25,
+  "PercentChanceForSpouseAtPorch": 0.37,
+  "PercentChanceForBirthingQuestion": 0.05,
+  "PercentChanceForBirthSex": 0.6,
+  "ConcurrentPregnancies": false,
+  "WinterPatio": true,
+  "SpouseOrder": ""
 }

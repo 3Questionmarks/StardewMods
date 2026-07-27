@@ -1,0 +1,49 @@
+{
+    "Changes": [
+              {
+            "LogName": "Beach Picnic map",
+            "Action": "Load",
+            "Target": "Maps/BeachJasperPicnic",
+            "FromFile": "assets/Maps/Beach_Jasper_Picnic.tmx",
+            "When": {
+                "HasSeenEvent |contains=5599015": false
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueJasper",
+            "When": {
+                "HasSeenEvent": "5599017"
+            },
+            "Entries": {
+                "{{SeasonAnniversary}}_{{DayAnniversary}}": "Happy anniversary, @. A small token of my appreciation.[578 565 553 547 347]#$e#You have sparked new light inside me, and drawn me back to life.$3#$b#I love you.$4",
+                //"{{TheMightyAmondee.CustomTokens/AnniversarySeason}}_{{TheMightyAmondee.CustomTokens/AnniversaryDay}}":"A test to see if this works."
+            }
+        },
+        //Anniversary event
+        {
+            "Logname": "Anniversary Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "When": {
+                "Season": "{{SeasonAnniversary}}"
+            },
+            "Entries": {
+                "5599015/u {{DayAnniversary}}/e 5599017/O Jasper/t 1700 2200/n Jasper_Anniversary/w sunny": "ocean/-100 -100/Jasper 67 11 0 farmer 56 13 1/changeToTemporaryMap BeachJasperPicnic/addLantern 735 68 9 3/viewport 67 10/skippable/pause 1000/move farmer 8 0 0/move farmer 0 -2 1 true/move Jasper -2 0 3 true/pause 1000/faceDirection Jasper 3/pause 500/emote Jasper 20/pause 1500/speak Jasper \"{{i18n:5599015.01}}\"/emote farmer 32/speak Jasper \"{{i18n:5599015.02}}\"/fade/viewport -1000 -1000/warp farmer 67 7/positionOffset farmer 0 18/warp Jasper 68 7/faceDirection farmer 2/faceDirection Jasper 2/viewport 67 10/pause 1000/speak Jasper \"{{i18n:5599015.03}}\"/faceDirection Jasper 3/faceDirection farmer 1/playMusic sappypiano/speak Jasper \"{{i18n:5599015.04}}\"/positionOffset farmer 2 0/pause 10/speak Jasper \"{{i18n:5599015.05}}\"/positionOffset farmer 2 0/pause 10/speak Jasper \"{{i18n:5599015.06}}\"/pause 500/emote Jasper 20/pause 1000/positionOffset farmer 2 0/pause 10/speak Jasper \"{{i18n:5599015.07}}\"/positionOffset Jasper -2 0/speak Jasper \"{{i18n:5599015.08}}\"/emote farmer 60/pause 1000/speak Jasper \"{{i18n:5599015.09}}\"/positionOffset Jasper -2 0/positionOffset farmer 2 0/speak Jasper \"{{i18n:5599015.10}}\"/pause 1000/animate farmer false true 100 101/showFrame Jasper 26/positionOffset Jasper -2 0/pause 10/emote farmer 20/pause 3000/viewport move 0 -1 5000/globalFade/viewport -1000 -1000/end"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueJasper",
+            "When": {
+                "HasSeenEvent": "5599017",
+                "Weather": "Sun, Wind"
+            },
+            "Entries": {
+                "{{SeasonAnniversary}}_{{DayAnniversary}}": "$1 Jasper_Anniversary#Happy anniversary Beloved. Please, would you join me on the beach tonight? For I have a little something prepared in celebration.$4$k#$e#Happy anniversary, @. A small token of my appreciation.[578 565 553 547 347]#$e#You have sparked new light inside me, and drawn me back to life.$3#$b#I love you.$4"
+            }
+        },
+    ]
+}

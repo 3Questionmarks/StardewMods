@@ -119,25 +119,6 @@
 		"Update": "OnLocationChange"
 	},
 	{
-		"LogName": "Add crabs in southeast of the island",
-		"Action": "EditMap",
-		"Target": "Maps/Island_SE",
-		"MapTiles": [
-            {
-               "Position": { "X": 11, "Y": 24 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Crab_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Critters |contains= Crabs": true,
-			"Weather": "Wind, Rain",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
 		"LogName": "Add crabs in west of the island",
 		"Action": "EditMap",
 		"Target": "Maps/Island_W",
@@ -173,26 +154,6 @@
                "Layer": "Back",
                "SetProperties": {
                   "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Crab_WA, Crab_WA, Crab_WA, Crab_WA, CrabDance_WA}}"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Critters |contains= Crabs": true,
-			"Time": "{{Range: 0600, 1800}}",
-			"Weather": "Sun",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add crabs in southeast of the island (dance)",
-		"Action": "EditMap",
-		"Target": "Maps/Island_SE",
-		"MapTiles": [
-            {
-               "Position": { "X": 11, "Y": 24 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Crab_WA, Crab_WA, Crab_WA, Crab_WA, CrabDance_WA}}"
                },
             },
          ],
@@ -251,26 +212,6 @@
 		"Update": "OnLocationChange"
 	},
 	{
-		"LogName": "Add crabs in southeast of the island (dance 2)",
-		"Action": "EditMap",
-		"Target": "Maps/Island_SE",
-		"MapTiles": [
-            {
-               "Position": { "X": 11, "Y": 24 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Crab_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Critters |contains= Crabs": true,
-			"Time": "{{Range: 1800, 2600}}",
-			"Weather": "Sun",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
 		"LogName": "Add crabs in west of the island (dance 2)",
 		"Action": "EditMap",
 		"Target": "Maps/Island_W",
@@ -315,14 +256,14 @@
 		"Update": "OnLocationChange"
 	},
 	{
-		"LogName": "Add dolphins in southeast of the island (pink)",
+		"LogName": "Add dolphins in the beach waters (2)",
 		"Action": "EditMap",
-		"Target": "Maps/Island_SE",
+		"Target": "Maps/Beach",
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 33, 5, 23 |key=island se dolphin coordinate}}",
-					"Y": "{{Random: 39, 37, 42 |key=island se dolphin coordinate}}"
+					"X": "{{Random: 95, 31 |key=beach dolphins coordinate}}",
+					"Y": "{{Random: 47, 44 |key=beach dolphins coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -331,8 +272,12 @@
             },
          ],
 		"When": {
-			"Load Wild Animals |contains= Dolphins": true,
-			"Weather": "Sun, Wind, Rain",
+			"Allow Aquatic Animals": "true",
+			"Allow Bonus Animals": "false",
+			"Load Aquatic Animals |contains= Dolphins": true,
+			"Season": "Summer",
+			"Weather": "Wind",
+			"Time": "{{Range: 0600, 1800}}",
 			},
 		"Update": "OnLocationChange"
 	},
@@ -444,9 +389,49 @@
             },
          ],
 		"When": {
-			"Load Wild Animals |contains= Hedgehogs": true,
+			"Load Wild Critters |contains= Hedgehogs": true,
 			"Season": "Spring, Summer",
 			"Time": "{{Range: 1200, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add a large iguana in the southeast of the island waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_SE",
+		"MapTiles": [
+            {
+               "Position": { "X": 31, "Y": 46 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.IguanaLarge_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Critters |contains= Iguanas": true,
+			"Weather": "Rain, Storm",
+			"HasMod |contains=Lnh.IslandOverhaul": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add a large iguana in the southeast of the island waters (2)",
+		"Action": "EditMap",
+		"Target": "Maps/Island_SE",
+		"MapTiles": [
+            {
+               "Position": { "X": 6, "Y": 54 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.IguanaLarge_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Critters |contains= Iguanas": true,
+			"Weather": "Rain, Storm",
+			"HasMod |contains=Lnh.IslandOverhaul": true,
 			},
 		"Update": "OnLocationChange"
 	},
@@ -646,6 +631,7 @@
 		},
 		],
 		"When": {
+			"Allow Aquatic Animals": "true",
 			"Allow Festive Animals": "true",
 			"Load Wild Animals |contains= MoonlightJellies": true,	
 			"Day": "24, 25, 26, 27",
@@ -726,11 +712,32 @@
 		},
 		],
 		"When": {
-			"Load Wild Animals |contains= Rabbits": true,
+			"Load Wild Critters |contains= Rabbits": true,
 			"Allow Festive Animals": "true",
 			"Day": "12, 13, 14",
 			"Season": "Spring",
 			"Weather": "Sun, Wind",
+		},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds a jackalope in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+		{
+			"Position": { "X": 21, "Y": 22 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 0, 0, 1}} SmolHooman.WildAnimalsCC.RabbitJackalope_WA"
+			},
+		},
+		],
+		"When": {
+			"Load Wild Critters |contains= Rabbits": true,
+			"Season": "Fall",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Wind",
 		},
 		"Update": "OnLocationChange"
 	},
@@ -743,13 +750,57 @@
                "Position": { "X": 22, "Y": 11 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 0, 1}} SmolHooman.WildAnimalsCC.RatCook_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 0, 0, 1}} SmolHooman.WildAnimalsCC.RatCook_WA"
                },
             },
          ],
 		"When": {
-			"Load Wild Animals |contains= Rats": true,
+			"Load Wild Critters |contains= Rats": true,
 			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wile coyote on the desert",
+		"Action": "EditMap",
+		"Target": "Maps/Desert",
+		"MapTiles": [
+            {
+               "Position": { "X": 53, "Y": 26 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1 |key=looney}} SmolHooman.WildAnimalsCC.CoyoteWilE_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Coyotes": true,
+			"Load Wild Critters |contains= Roadrunners": true,
+			"Day": "28",
+			"Season": "Fall",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds meep roadrunner on the desert",
+		"Action": "EditMap",
+		"Target": "Maps/Desert",
+		"MapTiles": [
+            {
+               "Position": { "X": 52, "Y": 26 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1 |key=looney}} SmolHooman.WildAnimalsCC.RoadrunnerMeep_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Critters |contains= Roadrunners": true,
+			"Load Wild Animals |contains= Coyotes": true,
+			"Day": "28",
+			"Season": "Fall",
+			"Time": "{{Range: 0600, 1800}}",
 			},
 		"Update": "OnLocationChange"
 	},
@@ -790,6 +841,24 @@
 			"Time": "{{Range: 1800, 2600}}",
 			"Weather": "Storm",
 			"Year |contains=1": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds a royal slime in the woods",
+		"Action": "EditMap",
+		"Target": "Maps/Woods",
+		"MapTiles": [
+            {
+               "Position": { "X": 9, "Y": 13 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 1}} SmolHooman.WildAnimalsCC.SlimeRoyal_WA"
+               },
+            },
+         ],
+		"When": {
+			"Weather": "Wind",
 			},
 		"Update": "OnLocationChange"
 	},

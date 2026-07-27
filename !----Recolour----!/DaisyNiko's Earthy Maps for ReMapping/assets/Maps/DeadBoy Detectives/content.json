@@ -1,0 +1,83 @@
+{
+	"Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Dead.Boy.A)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Dead.Boy.A",
+      "FromFile": "assets/Maps/DeadBoy Detectives/Dead.Boy.A_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Dead.Boy.B)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Dead.Boy.B",
+      "FromFile": "assets/Maps/DeadBoy Detectives/Dead.Boy.B_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Dead.Boy.C)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Dead.Boy.C",
+      "FromFile": "assets/Maps/DeadBoy Detectives/Dead.Boy.C_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Dead.Boy.D)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Dead.Boy.D",
+      "FromFile": "assets/Maps/DeadBoy Detectives/Dead.Boy.D_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+//Boat Journey
+    {
+		  "LogName": "Remapping (NAME) Recolor Dead Boy Detectives A Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap",
+		  "FromFile": "assets/Maps/DeadBoy Detectives/Dead.Boy.Island_{{season}}_{{RMP.Source}}.png",
+		  "ToArea": {"X": 165, "Y": 22, "Width": 90, "Height": 71},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			  "HasMod: |contains=handwrittenhello.dbda": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {
+		  "LogName": "Remapping (NAME) Recolor Dead Boy Detectives A Boat Journey SVE",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap",
+		  "FromFile": "assets/Maps/DeadBoy Detectives/Dead.Boy.Island_{{season}}_{{RMP.Source}}.png",
+		  "ToArea": {"X": 167, "Y": 34, "Width": 91, "Height": 61},
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			  "HasMod: |contains=handwrittenhello.dbda": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {
+		  "LogName": "Remapping (NAME) Recolor Dead Boy Detectives B Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap",
+		  "FromFile": "assets/Maps/DeadBoy Detectives/Dead.Boy.B_{{season}}.png",
+		  "ToArea": {"X": 303, "Y": 27, "Width": 33, "Height": 27},
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=handwrittenhello.dbda": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  }
+  ]
+}

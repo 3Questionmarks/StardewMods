@@ -491,7 +491,7 @@
 	},
 
 	// Follower Data
-	"MinTilesForNearby": 2,
+	"MinTilesForNearby": 5,
 	"UpdateWhenPlayerNearby": {
 	"Name": "Goose_Mean_WA",
 	"Type": "Walking",
@@ -504,7 +504,7 @@
 	"FrameSizeWidth": 24,
 	"FrameSizeHeight": 24,
 	"ResetWhenPlayerAway": true,
-	"MinTilesForAway": 4,
+	"MinTilesForAway": 6,
 
 	// This plays when the companion travels upwards
 	"UpAnimation": {
@@ -512,9 +512,64 @@
 		"NumberOfFrames": 4,
 		"Duration": 500,
     "IdleAnimation": {
-		"StartingFrame": 8,
-		"NumberOfFrames": 4,
-		"Duration": 500,
+		"ManualFrames": [
+		{
+        "Frame": 8,
+        "Duration": 500,
+		},
+		{
+        "Frame": 44,
+        "Duration": 250,
+		},
+		{
+        "Frame": 45,
+        "Duration": 250,
+		},
+		{
+        "Frame": 46,
+        "Duration": 500,
+		},
+		{
+        "Frame": 47,
+        "Duration": 500,
+		},
+		{
+        "Frame": 48,
+        "Duration": 500,
+		},
+		{
+        "Frame": 45,
+        "Duration": 500,
+		},
+		{
+        "Frame": 46,
+        "Duration": 500,
+		},
+		{
+        "Frame": 47,
+        "Duration": 500,
+		},
+		{
+        "Frame": 48,
+        "Duration": 500,
+		},
+		{
+        "Frame": 45,
+        "Duration": 250,
+		},
+		{
+        "Frame": 44,
+        "Duration": 250,
+		},
+		{
+        "Frame": 10,
+        "Duration": 500,
+		},
+		{
+        "Frame": 11,
+        "Duration": 500,
+		},
+    ],
     }
 	},
 	// This plays when the companion travels downwards
@@ -523,9 +578,72 @@
 		"NumberOfFrames": 4,
 		"Duration": 500,
     "IdleAnimation": {
-		"StartingFrame": 0,
-		"NumberOfFrames": 4,
-		"Duration": 500,
+		"ManualFrames": [
+		{
+        "Frame": 0,
+        "Duration": 500,
+		},
+		{
+        "Frame": 58,
+        "Duration": 250,
+		},
+		{
+        "Frame": 59,
+        "Duration": 250,
+		},
+		{
+        "Frame": 60,
+        "Duration": 500,
+		},
+		{
+        "Frame": 61,
+        "Duration": 500,
+		},
+		{
+        "Frame": 62,
+        "Duration": 500,
+		},
+		{
+        "Frame": 63,
+        "Duration": 500,
+		},
+		{
+        "Frame": 60,
+        "Duration": 500,
+		},
+		{
+        "Frame": 61,
+        "Duration": 500,
+		},
+		{
+        "Frame": 62,
+        "Duration": 500,
+		},
+		{
+        "Frame": 63,
+        "Duration": 500,
+		},
+		{
+        "Frame": 60,
+        "Duration": 500,
+		},
+		{
+        "Frame": 59,
+        "Duration": 250,
+		},
+		{
+        "Frame": 58,
+        "Duration": 250,
+		},
+		{
+        "Frame": 2,
+        "Duration": 500,
+		},
+		{
+        "Frame": 3,
+        "Duration": 250,
+		},
+    ],
     }
 	},
 	// This plays when the companion travels left
@@ -557,21 +675,71 @@
 		{
         "Frame": 4,
         "Duration": 500,
+		"Flip": true,
+		},
+		{
+        "Frame": 56,
+        "Duration": 250,
+		"Flip": true,
+		},
+		{
+        "Frame": 57,
+        "Duration": 250,
+		"Flip": true,
+		},
+		{
+        "Frame": 54,
+        "Duration": 500,
 		"Flip": true
 		},
 		{
-        "Frame": 5,
+        "Frame": 55,
         "Duration": 500,
+		"Flip": true
+		},
+		{
+        "Frame": 52,
+        "Duration": 500,
+		"Flip": true
+		},
+		{
+        "Frame": 53,
+        "Duration": 500,
+		"Flip": true
+		},
+		{
+        "Frame": 54,
+        "Duration": 500,
+		"Flip": true
+		},
+		{
+        "Frame": 55,
+        "Duration": 500,
+		"Flip": true
+		},
+		{
+        "Frame": 52,
+        "Duration": 500,
+		"Flip": true
+		},
+		{
+        "Frame": 57,
+        "Duration": 250,
+		"Flip": true
+		},
+		{
+        "Frame": 56,
+        "Duration": 250,
 		"Flip": true
 		},
 		{
         "Frame": 6,
-        "Duration": 500,
+        "Duration": 250,
 		"Flip": true
 		},
 		{
         "Frame": 7,
-        "Duration": 500,
+        "Duration": 250,
 		"Flip": true
 		},
     ],
@@ -583,10 +751,65 @@
 		"NumberOfFrames": 4,
 		"Duration": 500,
     "IdleAnimation": {
-		"StartingFrame": 4,
-		"NumberOfFrames": 4,
-		"Duration": 500,
-    }
+		"ManualFrames": [
+		{
+        "Frame": 4,
+        "Duration": 500,
+		},
+		{
+        "Frame": 56,
+        "Duration": 250,
+		},
+		{
+        "Frame": 57,
+        "Duration": 250,
+		},
+		{
+        "Frame": 54,
+        "Duration": 500,
+		},
+		{
+        "Frame": 55,
+        "Duration": 500,
+		},
+		{
+        "Frame": 52,
+        "Duration": 500,
+		},
+		{
+        "Frame": 53,
+        "Duration": 500,
+		},
+		{
+        "Frame": 54,
+        "Duration": 500,
+		},
+		{
+        "Frame": 55,
+        "Duration": 500,
+		},
+		{
+        "Frame": 52,
+        "Duration": 500,
+		},
+		{
+        "Frame": 57,
+        "Duration": 250,
+		},
+		{
+        "Frame": 56,
+        "Duration": 250,
+		},
+		{
+        "Frame": 6,
+        "Duration": 250,
+		},
+		{
+        "Frame": 7,
+        "Duration": 250,
+		},
+    ],
+	},
 	},
 	"OverheadTexts": [
 		{
@@ -597,32 +820,31 @@
 	],
 	"Sounds": [
 		{
-		"SoundName": "waterSlosh",
+		"SoundName": "WaterSlosh_WA_Sound",
 		"WhenToPlay": "Moving",
 		"TimeBetweenSound": 2000
 		},
 		{
-		"SoundName": "Duck",
+		"SoundName": "Goose_WA_Sound",
 		"WhenToPlay": "Idle",
 		"Pitch": "5",
 		"TimeBetweenSound": 2000,
-		"ChanceOfPlaying": 0.5
+		"ChanceOfPlaying": 0.8
 		}
 	]
   },
 
 "Sounds": [
 	{
-	"SoundName": "waterSlosh",
+	"SoundName": "WaterSlosh_WA_Sound",
 	"WhenToPlay": "Moving",
 	"TimeBetweenSound": 2000
 	},
 	{
-	"SoundName": "Duck",
-	"WhenToPlay": "Idle",
-	"Pitch": "5",
-	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.2
+	"SoundName": "Goose_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.4
 	}
 ]  
 }

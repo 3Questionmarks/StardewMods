@@ -27,6 +27,18 @@
       "FromFile": "assets/npcs/Portraits/AsterPellegrinVMVExtra/Winter.png",
     },
     {
+      "LogName": "Aster Flower Dance Portraits",
+      "Action": "Load",
+      "Target": "Portraits/AsterPellegrinVMV_FlowerDance",
+      "FromFile": "assets/npcs/Portraits/AsterPellegrinVMVExtra/FlowerDance.png",
+    },
+    {
+      "LogName": "Aster Flower Dance Sprites",
+      "Action": "Load",
+      "Target": "Characters/AsterPellegrinVMV_FlowerDance",
+      "FromFile": "assets/npcs/Characters/AsterPellegrinVMVExtra/FlowerDance.png",
+    },
+    {
       "LogName": "Aster Beach Portraits",
       "Action": "Load",
       "Target": "Portraits/AsterPellegrinVMV_Beach",
@@ -99,12 +111,21 @@
           "SpawnIfMissing": true,
 			"Appearance": [
 			  {
+				"Id": "Lumisteria.MtVapiusAsterFlowerDance",
+				"Condition": "IS_EVENT festival_spring24",
+				"Portrait": "Portraits/AsterPellegrinVMV_FlowerDance",
+				"Sprite": "Characters/AsterPellegrinVMV_FlowerDance",
+				"IsIslandAttire": false,
+				"Precedence": -1000,
+				"Weight": 1
+			  },
+			  {
 				"Id": "Lumisteria.MtVapiusAsterFall",
 				"Condition": "LOCATION_SEASON Here Fall",
 				"Portrait": "Portraits/AsterPellegrinVMV_Fall",
 				"IsIslandAttire": false,
 				"Precedence": -100,
-				"Weight": 0
+				"Weight": 1
 			  },
 			  {
 				"Id": "Lumisteria.MtVapiusAsterWinter",
@@ -112,7 +133,7 @@
 				"Portrait": "Portraits/AsterPellegrinVMV_Winter",
 				"IsIslandAttire": false,
 				"Precedence": -100,
-				"Weight": 0
+				"Weight": 1
 			  },
 			  {
 				"Id": "Lumisteria.MtVapiusAsterBeach",
@@ -120,7 +141,7 @@
 				"Sprite": "Characters/AsterPellegrinVMV_Beach",
 				"IsIslandAttire": true,
 				"Precedence": -100,
-				"Weight": 0
+				"Weight": 1
 			  },
 			],
           "Home": [
@@ -169,7 +190,7 @@
       "Action": "EditData",
       "Target": "Data/NPCGiftTastes",
       "Entries": {
-        "AsterPellegrinVMV": "{{i18n: AsterGiftLoved{{GiftAnswerAster}}}}/228 392 421 648 Lumisteria.MtVapius_StarShapedFlower book_item/{{i18n: AsterGiftLiked{{GiftAnswerAster}}}}/-74 60 614 quality_fertilizer_item/{{i18n: AsterGiftDislike{{GiftAnswerAster}}}}/-81 395 253/{{i18n: AsterGiftHate{{GiftAnswerAster}}}}/-5 729 202 430 372 718 719 721 722 723/{{i18n: AsterGiftNeutral{{GiftAnswerAster}}}}/-4 food_sweet WWWA.AutographedPhoto/",
+        "AsterPellegrinVMV": "{{i18n: AsterGiftLoved{{GiftAnswerAster}}}}/228 392 421 648 Lumisteria.MtVapius_StarShapedFlower book_item skellady.SBVCP_GoldenSunberrySeeds/{{i18n: AsterGiftLiked{{GiftAnswerAster}}}}/-74 60 614 quality_fertilizer_item/{{i18n: AsterGiftDislike{{GiftAnswerAster}}}}/-81 395 253/{{i18n: AsterGiftHate{{GiftAnswerAster}}}}/-5 729 202 430 372 718 719 721 722 723/{{i18n: AsterGiftNeutral{{GiftAnswerAster}}}}/-4 food_sweet WWWA.AutographedPhoto/",
       },
     },
     {

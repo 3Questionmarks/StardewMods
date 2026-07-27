@@ -1,0 +1,14 @@
+{
+    "Changes": [
+		{
+			"LogName": "{{ModId}}_Willy",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Willy",
+			"Entries":{
+				"{{ModId}}_QualityBobber_CT": "{{i18n: Willy.QualityBobber_CT}}",
+				"{{ModId}}_CuriosityLure_CT": "{{i18n: Willy.CuriosityLure_CT}}",
+				"{{ModId}}_BaitMaker_CT": "{{i18n: Willy.BaitMaker_CT}}"
+			}
+		}
+	]
+}

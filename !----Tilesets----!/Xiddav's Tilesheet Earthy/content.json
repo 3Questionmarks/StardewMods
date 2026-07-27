@@ -1,0 +1,14 @@
+{  "Format": "2.8.0",
+  "Changes": [
+{"Action": "EditImage",
+			"Patchmode":"Overlay",
+"Target": "Maps/Spring_Xiddav, Maps/Summer_Xiddav, Maps/Fall_Xiddav, Maps/Winter_Xiddav, Maps/Xiddav_FestivalExtras, Maps/spring_Xiddav_Cliffs, Maps/summer_Xiddav_Cliffs, Maps/fall_Xiddav_Cliffs, Maps/winter_Xiddav_Cliffs",
+"FromFile": "recolors/Earthy/{{TargetWithoutPath}}.png",
+			"When":  {  "HasMod":"DaisyNiko.EarthyRecolour"}},
+
+{"Action": "EditImage",
+			"Patchmode":"Overlay",
+"Target": "Maps/Xiddav_Indoor",
+"FromFile": "recolors/Earthy Interiors/Xiddav_Indoor.png",
+			"When":  { "Hasmod":"DaisyNiko.EarthyInteriors"}},
+  ] }

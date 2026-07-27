@@ -1,0 +1,931 @@
+{
+   "Format": "2.8.0",
+
+//Sorry, my code is really crappy, have fun reading! Thanks to Mads for making such a wonderful mod, and to the amazing people at east carp discord server for helping me <3
+
+//Please if you find a bug let me know on discord! (Heartofflowers is my tag!) Is my first mod so I expect many bugs ^^"
+
+
+  "ConfigSchema": {
+
+    "SigurdHairColor": {
+      "AllowValues": "bluehaired, blackhaired",
+      "Default": "blackhaired",
+      "AllowBlank": false,
+      "Description": "Changes the color of Sig's hair between black and blue!",
+      "Section": "General"
+    },
+    "GunnarHasFreckles": {
+      "AllowValues": "freckled, nofreckles",
+      "Default": "freckled",
+      "AllowBlank": false,
+      "Description": "Is gunnar freckled or not?",
+      "Section": "General"
+    }
+  },
+
+
+   "Changes": [
+
+     //// SASSYYYYYYYYYYYYYYY
+    {
+      "LogName": "ArmyPhoto",
+      "Action": "EditImage",
+      "Target": "MadDogBearFam/BearfamOldArmyPhoto",
+      "FromFile": "assets/MEEP_images/MadDog_BearFam_MEEPOldArmyPhoto_{{SigurdHairColor}}.png"
+    },
+    {
+      "LogName": "Sassy_Portrait",
+      "Action": "EditImage",
+      "Target": "Portraits/MadDog.HashtagBearFam_Sassy",
+      "FromFile": "assets/MEEP_images/portrait.png"
+    },
+    {
+      "LogName": "TempSassy_Portrait",
+      "Action": "EditImage",
+      "Target": "Portraits/TempMadDogSassy",
+      "FromFile": "assets/MEEP_images/portrait.png"
+    },
+
+
+
+//// Sigurd! Sorry, I mean Sig ^^ I've received comments that he looks younger in my style, and that's definitely a mistake on my part! Sorry~
+
+
+
+//Default
+    {
+         "LogName": "Def_Sig",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd",
+         "FromFile":"assets/portraits/sigurd/sigurd_{{SigurdHairColor}}.png"
+    },
+//Beach
+     {
+         "LogName": "Beach_Sig",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Spring_1",
+         "FromFile": "assets/portraits/sigurd/spring_{{SigurdHairColor}}_sigurd.png"
+    },
+//Spring!! GO BEES!
+    {
+         "LogName": "Spring_Sig",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Spring_1",
+         "FromFile": "assets/Portraits/sigurd/spring_{{SigurdHairColor}}_sigurd1.png"
+    },
+    {
+         "LogName": "Spring_Sig1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Spring_2",
+         "FromFile": "assets/Portraits/sigurd/spring_{{SigurdHairColor}}_sigurd1.png"
+    },
+//Summer
+    {
+         "LogName": "Summer_Sig",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Summer_1",
+         "FromFile": "assets/Portraits/Sigurd/summer_{{SigurdHairColor}}_sigurd.png"
+    },
+    {
+         "LogName": "Summer_Sig1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Summer_2",
+         "FromFile": "assets/Portraits/Sigurd/summer_{{SigurdHairColor}}_sigurd1.png"
+    },
+   
+//Fall
+    {
+         "LogName": "Autumn_Sig",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Fall_1",
+         "FromFile": "assets/Portraits/Sigurd/fall_{{SigurdHairColor}}_sigurd.png"
+    },
+    {
+         "LogName": "Autumn_Sig1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Fall_2",
+         "FromFile": "assets/Portraits/Sigurd/fall_{{SigurdHairColor}}_sigurd1.png"
+    },
+//Winter
+    {
+         "LogName": "Winter_Sig",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Winter_1",
+         "FromFile": "assets/Portraits/Sigurd/winter_{{SigurdHairColor}}_sigurd.png"
+    },
+    {
+         "LogName": "Winter_Sig1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Winter_2",
+         "FromFile": "assets/Portraits/Sigurd/winter_{{SigurdHairColor}}_sigurd1.png"
+    },
+
+
+    //It's time... FESTIVALS!!! I'm so not ready :D
+
+
+    {
+         "LogName": "Eggfest_Sig",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_eggfest",
+         "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_eggfest.png"
+    },
+//
+    {
+         "LogName": "Flower_Sig",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_flowerdance",
+         "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_flowerdance.png"
+    },
+//
+    {
+         "LogName": "Moonlight_Sig",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_moonlightjellies",
+         "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_moonlightjellies.png"
+    },
+//
+    {
+         "LogName": "Fair_Sig",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_sdvfair",
+         "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_sdvfair.png"
+    },
+// I had so much fun adding little ears to the spirit's eve outfit! I was so giddy with the final result!!
+    {
+         "LogName": "Spirit_Sig",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_spiritseve1",
+         "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_spiritseve.png"
+    },
+    {
+         "LogName": "Spirit_Sig1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_spiritseve2",
+         "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_spiritseve1.png"
+    },
+//
+    {
+         "LogName": "Ice_Sig",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_icefestival",
+         "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_icefestival.png"
+    },
+//
+    {
+         "LogName": "Feast_Sig",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_winterfeast",
+         "FromFile": "assets/Portraits/Sigurd/sigurd_{{SigurdHairColor}}_winterfeast.png"
+    },
+
+
+//// Sondra! Please don't commit tax fraud kids <3
+
+
+    {
+         "LogName": "Def_Sondra",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra",
+         "FromFile":"assets/portraits/sondra/sondra.png"
+    },
+//Beach
+    {
+         "LogName": "Beach_Sondra",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Beach",
+         "FromFile": "assets/Portraits/Sondra/Sondra_Beach.png"
+    }, 
+//Spring
+    {
+         "LogName": "Spring_Sondra1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_spring_1",
+         "FromFile": "assets/Portraits/Sondra/spring_sondra.png"
+    },
+    {
+         "LogName": "Spring_Sondra2",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_spring_2",
+         "FromFile": "assets/Portraits/Sondra/spring_sondra1.png"
+    },
+//Summer
+    {
+         "LogName": "Summer_Sondra",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_summer_1",
+         "FromFile": "assets/Portraits/Sondra/summer_sondra.png"
+    },
+    {
+         "LogName": "Summer_Sondra1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_summer_2",
+         "FromFile": "assets/Portraits/Sondra/summer_sondra1.png"
+    },
+//Fall
+    {
+         "LogName": "Fall_Sondra",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Fall_1",
+         "FromFile": "assets/Portraits/Sondra/fall_sondra.png"
+    },
+    {
+         "LogName": "Fall_Sondra1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Fall_2",
+         "FromFile": "assets/Portraits/Sondra/fall_sondra1.png"
+    },
+//Winter! Sondra always wear beautiful clothing in winter! Girl I want that confidence!!!
+    {
+         "LogName": "Winter_Sondra",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Winter_1",
+         "FromFile": "assets/Portraits/Sondra/winter_sondra.png"
+    },
+    {
+         "LogName": "Winter_Sondra1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Winter_2",
+         "FromFile": "assets/Portraits/Sondra/winter_sondra1.png"
+    },
+
+    //Festivals! Oh she has some amazing outfits, I'll definitely use her as inspo <3
+
+    {
+         "LogName": "Eggfest_Sondra",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_eggfest",
+         "FromFile": "assets/Portraits/Sondra/sondra_eggfest.png"
+    },
+
+//
+    {
+         "LogName": "Flower_Sondra",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_flowerdance",
+         "FromFile": "assets/Portraits/Sondra/sondra_flowerdance.png"
+    },
+//
+    {
+         "LogName": "luau_Sondra",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_luau",
+         "FromFile": "assets/Portraits/Sondra/sondra_luau.png"
+    },
+//
+    {
+         "LogName": "Moonlight_Sondra",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_moonlightjellies",
+         "FromFile": "assets/Portraits/Sondra/sondra_moonlightjellies.png"
+    },
+//
+    {
+         "LogName": "Fair_Sondra",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_sdvfair",
+         "FromFile": "assets/Portraits/Sondra/sondra_sdvfair.png"
+    },
+//
+    {
+         "LogName": "Spirit_Sondra",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_spiritseve1",
+         "FromFile": "assets/Portraits/Sondra/sondra_spiritseve.png"
+    },
+    {
+         "LogName": "Spirit_Sondra1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_spiritseve2",
+         "FromFile": "assets/Portraits/Sondra/sondra_spiritseve1.png"
+    },
+//
+    {
+         "LogName": "Feast_Sondra",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Sondra_winterfeast",
+         "FromFile": "assets/Portraits/Sondra/sondra_winterfeast.png"
+    },
+
+
+
+////Gunnar! You DON'T know how much I suffered with replacing his PNGs with my own portraits... Future me: The code is equally bothersome.
+
+
+    {
+         "LogName": "Def_Gunnar_noglasses",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_noglasses.png"
+    },
+    {
+         "LogName": "Def_Gunnar_glasses",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_glasses.png"
+    },
+
+//Beach
+    {
+         "LogName": "Spring_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Beach",
+         "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_Beach_{{Random: noglasses, glasses}}.png"
+    },
+
+//Spring! 
+
+    {
+         "LogName": "Spring_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_1",
+         "FromFile": "assets/Portraits/Gunnar/spring_{{GunnarHasFreckles}}_gunnar_noglasses.png"
+    },
+    {
+         "LogName": "Spring_Gunnar_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_1_glasses",
+         "FromFile": "assets/Portraits/Gunnar/spring_{{GunnarHasFreckles}}_gunnar_glasses.png"
+    },
+    {
+         "LogName": "Spring_Gunnar1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_2",
+         "FromFile": "assets/Portraits/Gunnar/spring_{{GunnarHasFreckles}}_gunnar1_noglasses.png"
+    },
+    {
+         "LogName": "Spring_Gunnar1_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_2_glasses",
+         "FromFile": "assets/Portraits/Gunnar/spring_{{GunnarHasFreckles}}_gunnar1_glasses.png"
+    },
+
+//Summer!
+
+    {
+         "LogName": "Summer_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Summer_1",
+         "FromFile": "assets/Portraits/Gunnar/summer_{{GunnarHasFreckles}}_gunnar.png"
+    },
+    {
+         "LogName": "Summer_Gunnar1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Summer_2",
+         "FromFile": "assets/Portraits/Gunnar/summer_{{GunnarHasFreckles}}_gunnar1_noglasses.png"
+    },
+    {
+         "LogName": "Summer_Gunnar1_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Summer_2_glasses",
+         "FromFile": "assets/Portraits/Gunnar/summer_{{GunnarHasFreckles}}_gunnar1_glasses.png"
+    },
+
+//Fall! I keep typing Autumn because I'm dumb!
+
+    {
+         "LogName": "Fall_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_1",
+         "FromFile": "assets/Portraits/Gunnar/fall_{{GunnarHasFreckles}}_gunnar_noglasses.png"
+    },
+    {
+         "LogName": "Fall_Gunnar_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_1_glasses",
+         "FromFile": "assets/Portraits/Gunnar/fall_{{GunnarHasFreckles}}_gunnar_glasses.png"
+    },
+        {
+         "LogName": "Fall_Gunnar1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_2",
+         "FromFile": "assets/Portraits/Gunnar/fall_{{GunnarHasFreckles}}_gunnar1_noglasses.png"
+    },
+    {
+         "LogName": "Fall_Gunnar1_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_2_glasses",
+         "FromFile": "assets/Portraits/Gunnar/fall_{{GunnarHasFreckles}}_gunnar1_glasses.png"
+    },
+
+//Winter
+    {
+         "LogName": "Winter_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_1",
+         "FromFile": "assets/Portraits/Gunnar/fall_{{GunnarHasFreckles}}_gunnar_noglasses.png"
+    },
+    {
+         "LogName": "Winter_Gunnar_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_1_glasses",
+         "FromFile": "assets/Portraits/Gunnar/fall_{{GunnarHasFreckles}}_gunnar_glasses.png"
+    },
+    {
+         "LogName": "Winter_Gunnar1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_2",
+         "FromFile": "assets/Portraits/Gunnar/fall_{{GunnarHasFreckles}}_gunnar1_noglasses.png"
+    },
+    {
+         "LogName": "Winter_Gunnar1_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_2_glasses",
+         "FromFile": "assets/Portraits/Gunnar/fall_{{GunnarHasFreckles}}_gunnar1_glasses.png"
+    },
+//Bonus? (As I'm writing this I have no idea what is this for or if I'm doing this correctly, we'll see!)
+    {
+         "LogName": "Bonus_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Bonus",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_otherevent_noglasses.png" //gunnar_{{GunnarHasFreckles}}_otherevent_noglasses.png
+    },
+    {
+         "LogName": "Bonus_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Bonus_glasses",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_otherevent_glasses.png" //gunnar_{{GunnarHasFreckles}}_otherevent_glasses.png
+    },
+//Adventure boy!!
+    {
+         "LogName": "Armor_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_armored",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_armored_noglasses.png"
+    },
+    {
+         "LogName": "Armor_Gunnar_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_armored_glasses",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_armored_glasses.png"
+    },
+    {
+         "LogName": "Armor_Gunnar1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_armored2",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_armored1_noglasses.png"
+    },
+    {
+         "LogName": "Armor_Gunnar1_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_armored2_glasses",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_armored1_glasses.png"
+    },
+
+    //Festival timeeee!!!!! Real talk, I was so intimidated by doing the festivals for each character, I thought it was going to be so hard, but it wasn't!
+
+    {
+         "LogName": "Eggfest_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_eggfest",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_eggfest_noglasses.png"
+    },
+    {
+         "LogName": "Eggfest_Gunnar_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_eggfest_glasses",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_eggfest_glasses.png"
+    },
+//
+    {
+         "LogName": "Flower_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_flowerdance",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_flowerdance_noglasses.png"
+    },
+    {
+         "LogName": "Flower_Gunnar_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_flowerdance_glasses",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_flowerdance_glasses.png"
+    },
+//
+    {
+         "LogName": "Luau_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_luau",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_luau.png"
+    },
+//
+    {
+         "LogName": "Fireworks_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_fireworksfestival",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_fireworksfestival.png"
+    },
+//
+    {
+         "LogName": "Moonlight_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_moonlightjellies",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_moonlightjellies.png"
+    },
+//
+    {
+         "LogName": "Fair_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_sdvfair",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_sdvfair_noglasses.png"
+    },
+    {
+         "LogName": "Fair_Gunnar_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_sdvfair_glasses",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_sdvfair_glasses.png"
+    },
+// I love how a couple members of the family have FNAF related outfits, that made me giggle a lot while I was drawing them! 
+    {
+         "LogName": "Spirit_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve1",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_spiritseve_noglasses.png"
+    },
+    {
+         "LogName": "Spirit_Gunnar_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve1_glasses",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_spiritseve_glasses.png"
+    },
+    {
+         "LogName": "Spirit_Gunnar1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve2",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_spiritseve1_noglasses.png"
+    },
+    {
+         "LogName": "Spirit_Gunnar1_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve2_glasses",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_spiritseve1_glasses.png"
+    },
+// I accidentally wrote Licefestival instead of Icefestival... Oh gods! Can you imagine that!?
+    {
+         "LogName": "icefestival_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_icefestival",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_icefestival_noglasses.png"
+    },
+    {
+         "LogName": "icefestival_Gunnar_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_icefestival_glasses",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_icefestival_glasses.png"
+    },
+// OK SO THIS IS THE LAST ONE FROM GUNNAR, I LOVE YOU GUNNAR BUT WHY DID I HAVE TO DO SO MUCH EXTRA WORK ON YOU!?!? I GET IT BUT *velocirraptor screams*
+    {
+         "LogName": "winterfeast_Gunnar",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_winterfeast",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_winterfeast_noglasses.png"
+    },
+    {
+         "LogName": "winterfeast_Gunnar_glass",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_winterfeast_glasses",
+         "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_winterfeast_glasses.png"
+    },
+//
+
+//// Gudrun! Fun fact, she was the first one I've ever made! She's kinda the reason of why I started this, but of course this wouldn't be here if it weren't for the support I've received! <3
+
+    {  
+         "LogName": "Def_Gudrun",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun",
+         "FromFile": "assets/Portraits/Gudrun/gudrun.png"
+    },
+
+//beach
+
+    {  
+         "LogName": "Beach_Gudrun",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_Beach",
+         "FromFile": "assets/Portraits/Gudrun/Gudrun_Beach.png"
+    },
+//Spring
+
+    {  
+         "LogName": "Spring_Gudrun",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_spring_1",
+         "FromFile": "assets/Portraits/Gudrun/spring_gudrun.png"
+    },
+    {  
+         "LogName": "Spring_Gudrun1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_spring_2",
+         "FromFile": "assets/Portraits/Gudrun/spring_gudrun1.png"
+    },
+//Summer
+    {  
+         "LogName": "Summer_Gudrun",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_summer_1",
+         "FromFile": "assets/Portraits/Gudrun/summer_gudrun.png"
+    },
+    {  
+         "LogName": "Summer_Gudrun1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_summer_2",
+         "FromFile": "assets/Portraits/Gudrun/summer_gudrun1.png"
+    },
+//Fall
+
+    {  
+         "LogName": "Fall_Gudrun",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_fall_1",
+         "FromFile": "assets/Portraits/Gudrun/fall_gudrun.png"
+    },
+    {  
+         "LogName": "Fall_Gudrun1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_fall_2",
+         "FromFile": "assets/Portraits/Gudrun/fall_gudrun1.png"
+    },
+
+//Winter!
+
+    {  
+         "LogName": "Winter_Gudrun",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_winter_1",
+         "FromFile": "assets/Portraits/Gudrun/winter_gudrun.png"
+    },
+    {  
+         "LogName": "Winter_Gudrun1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_winter_2",
+         "FromFile": "assets/Portraits/Gudrun/winter_gudrun1.png"
+    },
+
+    //Festivaaaaals! You know, I still remember being Gudrun's age, and lemme tell ya, this girl has a style developed and also a big wardrobe? I wish I had that!
+
+    {  
+         "LogName": "Eggfest_Gudrun",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_eggfest",
+         "FromFile": "assets/Portraits/Gudrun/gudrun_eggfest.png"
+    },
+//
+    {  
+         "LogName": "Flower_Gudrun",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_flowerdance",
+         "FromFile": "assets/Portraits/Gudrun/gudrun_flowerdance.png"
+    },
+//
+    {  
+         "LogName": "luau_Gudrun",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_luau",
+         "FromFile": "assets/Portraits/Gudrun/gudrun_luau.png"
+    },
+//
+    {  
+         "LogName": "Moonlight_Gudrun",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_moonlightjellies",
+         "FromFile": "assets/Portraits/Gudrun/gudrun_moonlightjellies.png"
+    },
+//
+    {  
+         "LogName": "Fair_Gudrun",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_sdvfair",
+         "FromFile": "assets/Portraits/Gudrun/gudrun_sdvfair.png"
+    },
+//
+    {  
+         "LogName": "Spirit_Gudrun",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_spiritseve1",
+         "FromFile": "assets/Portraits/Gudrun/gudrun_spiritseve.png"
+    },
+    {  
+         "LogName": "Spirit_Gudrun1",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_spiritseve2",
+         "FromFile": "assets/Portraits/Gudrun/gudrun_spiritseve1.png"
+    },
+//
+    {  
+         "LogName": "Feast_Gudrun",
+         "Action": "EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_winterfeast",
+         "FromFile": "assets/Portraits/Gudrun/gudrun_winterfeast.png"
+    },
+//
+
+
+
+////Teren!! Nova's crush! Nova, if you're reading this, I WON!! >:D (Dont show this to Nova please <3)
+
+    {
+         "LogName": "Def_Teren",
+         "Action":"EditImage",
+         "Target":"Portraits/MadDog.HashtagBearFam.Teren",
+         "FromFile": "assets/portraits/teren/teren.png"
+
+    },
+//Beach
+   
+    {
+         "LogName": "Beach_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_Beach",
+         "FromFile": "assets/Portraits/Teren/Teren_Beach.png"
+
+    },
+//Spring! 
+    {
+         "LogName": "Spring_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_spring_1",
+         "FromFile": "assets/Portraits/Teren/spring_teren.png"
+    },
+    {
+         "LogName": "Spring_Teren1",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_spring_2",
+         "FromFile": "assets/Portraits/Teren/spring_teren1.png"
+    },
+//Summer! Happy birthday Teren!
+
+  
+    {
+         "LogName": "Summer_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_summer_1",
+         "FromFile": "assets/Portraits/Teren/Summer_teren.png"
+    },  
+    {
+         "LogName": "Summer_Teren1",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_summer_2",
+         "FromFile": "assets/Portraits/Teren/Summer_teren1.png"
+    },
+
+//Fall!
+
+    {
+         "LogName": "Fall_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_fall_1",
+         "FromFile": "assets/Portraits/Teren/fall_teren.png"
+    },
+    {
+         "LogName": "Fall_Teren1",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_fall_2",
+         "FromFile": "assets/Portraits/Teren/fall_teren1.png"
+    },
+//Winter!
+
+    {
+         "LogName": "Winter_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_winter_1",
+         "FromFile": "assets/Portraits/Teren/winter_teren.png"
+    },
+    {
+         "LogName": "Winter_Teren1",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_winter_2",
+         "FromFile": "assets/Portraits/Teren/winter_teren1.png"
+    },
+
+    //Festivaaaals! I'm so fricking excited to finish this!!!
+
+    {
+         "LogName": "Eggfest_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_eggfest",
+         "FromFile": "assets/Portraits/Teren/teren_eggfest.png"
+    },
+//
+    {
+         "LogName": "Flower_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_flowerdance",
+         "FromFile": "assets/Portraits/Teren/teren_flowerdance.png"
+    },
+//
+    {
+         "LogName": "Luau_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_luau",
+         "FromFile": "assets/Portraits/Teren/teren_luau.png"
+    },
+//
+    {
+         "LogName": "Moonlight_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_moonlightjellies",
+         "FromFile": "assets/Portraits/Teren/teren_moonlightjellies.png"
+    },
+//
+    {
+         "LogName": "Fair_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_sdvfair",
+         "FromFile": "assets/Portraits/Teren/teren_sdvfair.png"
+    },
+//ARE WE GOING TO TALK ABOUT THE BIBLICALLY ACCURATE ANGEL?!? NO? OKAY?
+    {
+         "LogName": "Spirit_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_spiritseve1",
+         "FromFile": "assets/Portraits/Teren/teren_spiritseve.png"
+    },
+//Literally my two personalities, biblically accurate angel and just a bunny
+    {
+         "LogName": "Spirit_Teren1",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_spiritseve2",
+         "FromFile": "assets/Portraits/Teren/teren_spiritseve1.png"
+    },
+//
+    {
+         "LogName": "Ice_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_icefestival",
+         "FromFile": "assets/Portraits/Teren/teren_icefestival.png"
+    },
+//
+    {
+         "LogName": "Feast_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_winterfeast",
+         "FromFile": "assets/Portraits/Teren/teren_winterfeast.png"
+    },
+//
+
+//Woooork! My faves are the teal, red and pink!!!
+
+    {
+         "LogName": "Work_Blue_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Blue",
+         "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_blue.png"
+    },
+//
+    {
+         "LogName": "Work_Dark_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Dark",
+         "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_dark.png"
+    },
+//
+    {
+         "LogName": "Work_Green_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Green",
+         "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_green.png"
+    },
+//
+    {
+         "LogName": "Work_Purple_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Purple",
+         "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_Purple.png"
+    },
+//
+    {
+         "LogName": "Work_Teal_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Teal",
+         "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_teal.png"
+    },
+//
+    {
+         "LogName": "Work_Pink_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Pink",
+         "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_pink.png"
+    },
+//
+    {
+         "LogName": "Work_Yellow_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Yellow",
+         "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_yellow.png"
+    },
+//
+    {
+         "LogName": "Work_Red_Teren",
+         "Action":"EditImage",
+         "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Red",
+         "FromFile": "assets/Portraits/Teren/WorkUniform/teren_workuniform_red.png"
+    }
+//
+
+//Sooo... That's it huh... Omg...
+//Once again, thanks to everyone in the East Scarp Discord server for helping me in every step of the way and also for motivating me to keep going.
+// This is my first experience with codding and thanks to them the tears spilled were minimal
+// I hope you enjoy the many hours I pour into this silly project of mine, I don't regret any second of it! <3
+
+   ]
+}

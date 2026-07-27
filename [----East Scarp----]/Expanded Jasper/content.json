@@ -1,0 +1,338 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+		"JasperPortraits": {
+			"AllowValues": "Airyn, Archer, FellowClown, Default",
+			"Default": "Default",
+			"Description": "Choose your portrait"
+		},
+		"PolyDating": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Set this to true if you want to date Jasper and also let him have a rival heart-style relationship (currently dialogue only)"
+		},
+		// Below has no effect unless you marry Jasper. Use cautiously with multiple spouse mods.
+		"PregnancyTalk": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "If married to Jasper and female, your pregnancy will be discussed. Nothing graphic!"
+		},
+		"JasperKids": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Enables Jasper's custom kid sprites"
+		},
+		"FirstChildGender": {
+			"AllowValues": "female, male",
+			"Default": "female",
+			"Description": "Is your first child with Jasper male or female (features not yet implemented)"
+		},
+		"SocialGunther": {
+			"AllowValues": "true,false",
+			"Default": "true"
+		},
+	},
+	"DynamicTokens": [
+		{
+			"name": "SeasonAnniversary",
+			"Value": "{{TheMightyAmondee.CustomTokens/AnniversarySeason}}",
+		},
+		{
+			"Name": "DayAnniversary",
+			"Value": "{{TheMightyAmondee.CustomTokens/AnniversaryDay}}",
+		},
+		{ //Are you married to Jasper? ********************************
+			"Name": "JasperSpouse",
+			"Value": "false"
+		},
+		{
+			"Name": "JasperSpouse",
+			"When": {
+				"Spouse": "Jasper"
+			},
+			"Value": "true"
+		},
+		{
+			"Name": "JasperSpouse",
+			"When": {
+				"Relationship:Jasper": "Married"
+			},
+			"Value": "true"
+		},
+		{ //Jasper Facing Direction ******************************
+			"Name": "SleepFace",
+			"Value": "{{Random:true,false}}"
+		},
+		{ //Tokens for Immersive 'FunDay' Dialogue *********************
+			"Name": "Token",
+			"Value": "false.{{season}}",
+			"When": {
+				"DayOfWeek": "Monday, Sunday"
+			}
+		},
+		{
+			"Name": "Token",
+			"Value": "false.{{season}}",
+			"When": {
+				"DayofWeek": "Wednesday",
+				"HasFlag |contains=Jasper_Penny": false
+			}
+		},
+		{
+			"Name": "Token",
+			"Value": "JasperPenny.{{season}}",
+			"When": {
+				"DayofWeek": "Wednesday",
+				"HasFlag": "Jasper_Penny"
+			}
+		},
+		{
+			"Name": "Token",
+			"Value": "NoDwarf",
+			"When": {
+				"DayofWeek": "friday",
+				"HasFlag |contains=Dwarf_Friend": false
+			}
+		},
+		{
+			"Name": "Token",
+			"Value": "DwarfFriend.{{season}}",
+			"When": {
+				"DayofWeek": "friday",
+				"HasFlag": "Dwarf_Friend"
+			}
+		},
+		{
+			"Name": "Token",
+			"Value": "DwarfRoommate",
+			"When": {
+				"DayofWeek": "friday",
+				"RoomMate": "Dwarf"
+			}
+		},
+		{
+			"Name": "Token",
+			"Value": "DwarfRoommate",
+			"When": {
+				"DayofWeek": "friday",
+				"Relationship:Dwarf": "married"
+			}
+		},
+		{
+			"Name": "Token",
+			"Value": "birthday",
+			"When": {
+				"Day": "22",
+				"Season": "fall"
+			}
+		},
+		{
+			"Name": "SecondChildGender",
+			"Value": "female",
+			"When": {
+				"FirstChildGender": "male"
+			}
+		},
+		{
+			"Name": "SecondChildGender",
+			"Value": "male",
+			"When": {
+				"FirstChildGender": "female"
+			}
+		},
+		//Child One
+		{
+			"Name": "FirstChildStage",
+			"Value": "none",
+		},
+		{ //Child age <= 14 days = sleeping baby
+			"Name": "FirstChildStage",
+			"Value": "sleep ",
+			"When": {
+				"TheMightyAmondee.CustomTokens/Child:player=host|childindex=0|daysold": "{{range:0,14}}"
+			}
+		},
+		{ //Child age 15 - 29 = awake in crib
+			"Name": "FirstChildStage",
+			"Value": "crib",
+			"When": {
+				"TheMightyAmondee.CustomTokens/Child:player=host|childindex=0|daysold": "{{range:15,29}}"
+			}
+		},
+		{ //Child 30 - 58 = crawler"Name": "FirstChildStage",
+			"Name": "FirstChildStage",
+			"Value": "crawler",
+			"When": {
+				"TheMightyAmondee.CustomTokens/Child:player=host|childindex=0|daysold": "{{range:30,58}}"
+			},
+		},
+		{ //Child >= 58 = toddler
+			"Name": "FirstChildStage",
+			"Value": "toddler",
+			"When": {
+				"TheMightyAmondee.CustomTokens/Child:player=host|childindex=0|daysold": "{{range:59,5000}}"
+			}
+		},
+		{ //Setting the dialogue keys
+			"Name": "kid1",
+			"Value": "false"
+		},
+		{
+			"Name": "kid1",
+			"Value": "kid1.sleep",
+			"When": {
+				"FirstChildStage": "sleep"
+			}
+		},
+		{
+			"Name": "kid1",
+			"Value": "kid1.crib",
+			"When": {
+				"FirstChildStage": "crib, crawler"
+			}
+		},
+		{
+			"Name": "kid1",
+			"Value": "kid1.child.{{season}}",
+			"When": {
+				"FirstChildStage": "toddler"
+			}
+		},
+		//Child Two
+		{
+			"Name": "SecondChildStage",
+			"Value": "none"
+		},
+		{ //Child age <= 14 days = sleeping baby
+			"Name": "SecondChildStage",
+			"Value": "sleep",
+			"When": {
+				"TheMightyAmondee.CustomTokens/Child:player=host|childindex=1|daysold": "{{range:0,14}}"
+			}
+		},
+		{ //Child age 15 - 29 = awake in crib
+			"Name": "SecondChildStage",
+			"Value": "crib",
+			"When": {
+				"TheMightyAmondee.CustomTokens/Child:player=host|childindex=1|daysold": "{{range:15,29}}"
+			}
+		},
+		{ //Child 30 - 58 = crawler"Name": "FirstChildStage",
+			"Name": "SecondChildStage",
+			"Value": "crawler",
+			"When": {
+				"TheMightyAmondee.CustomTokens/Child:player=host|childindex=1|daysold": "{{range:30,58}}"
+			},
+		},
+		{ //Child >= 58 = toddler
+			"Name": "SecondChildStage",
+			"Value": "toddler",
+			"When": {
+				"Query:{{TheMightyAmondee.CustomTokens/Child:player=host|childindex=1|daysold}} >=59": true
+			}
+		},
+		{ //Setting the dialogue keys
+			"Name": "kid2",
+			"Value": "false"
+		},
+		{
+			"Name": "kid2",
+			"Value": "kid2.sleep",
+			"When": {
+				"SecondChildStage": "sleep"
+			}
+		},
+		{
+			"Name": "kid2",
+			"Value": "kid2.crib",
+			"When": {
+				"SecondChildStage": "crib, crawler"
+			}
+		},
+		{
+			"Name": "kid2",
+			"Value": "kid2.child.{{season}}",
+			"When": {
+				"SecondChildStage": "toddler"
+			}
+		},
+		{ //Sets two toddlers to false
+			"Name": "Jasper_TwoToddlers",
+			"Value": "false",
+		},
+		{ //Sets two toddlers to true
+			"Name": "Jasper_TwoToddlers",
+			"Value": "true",
+			"When": {
+				"SecondChildStage": "toddler"
+			}
+		},
+	],
+	/*******************************************************************************************************************************
+	A C T U A L   N P C
+	*******************************************************************************************************************************/
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"Lemurkat.JasperRomance.TwoChildren": {
+					"ID": "mail.Lemurkat.JasperRomance.TwoChildren",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_HAS_CHILDREN Current 2",
+					"Actions": [
+						"AddMail Current Jasper_TwoChildren"
+					]
+				},
+			}
+		},
+		{
+			"LogName": "Alternate Portraits",
+			"Action": "Include",
+			"FromFile": "assets/PortraitChanges.json",
+			"When": {
+				"JasperPortraits": "Airyn, Archer"
+			}
+		},
+		{
+			"LogName": "Married to Jasper",
+			"Action": "Include",
+			"FromFile": "assets/Spouse.json",
+			"When": {
+				"JasperSpouse": true
+			}
+		},
+		{ //Adds Gunther and Marlon as characters plus some other compatibility stuff	
+			"LogName": "Gunther",
+			"Action": "Include",
+			"FromFile": "assets/Gunther.json",
+			"When": {
+				"SocialGunther": true
+			}
+		},
+		       
+		//Adds dialogue relevant to other mods
+		{
+			"LogName": "Cecilia Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jasper",
+			"Entries": {
+				"winter_Fri6": "{{i18n:jasper.cecilia}}"
+			},
+			"When": {
+				"HasMod": "balverines.cecilia"
+			}
+		},
+		{
+			"LogName": "Denver Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jasper",
+			"Entries": {
+				"winter_Sat4": "{{i18n:jasper.denver}}"
+			},
+			"When": {
+				"HasMod": "balverines.Denver"
+			}
+		}
+	]
+}

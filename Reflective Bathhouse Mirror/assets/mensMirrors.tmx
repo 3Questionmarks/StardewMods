@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="7" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="3">
+ <properties>
+  <property name="Music" value="Hospital_Ambient"/>
+  <property name="Warp" value="3 28 BathHouse_Entry 7 4 15 28 BathHouse_Pool 21 0"/>
+ </properties>
+ <tileset firstgid="1" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="240" columns="15">
+  <image source="bathhouse_tiles.png" width="240" height="256"/>
+ </tileset>
+ <tileset firstgid="241" name="mirror" tilewidth="16" tileheight="16" tilecount="36" columns="6">
+  <image source="mirror_tiles.png" width="96" height="96"/>
+ </tileset>
+ <layer id="1" name="Back" width="7" height="2">
+  <data encoding="base64" compression="zlib">
+   eJyLZGBgiITiCDR2BhJOR+MDAJhwBUU=
+  </data>
+ </layer>
+ <layer id="3" name="Mirrors" width="7" height="2">
+  <data encoding="base64" compression="zlib">
+   eJxjYWRgEAJiZjSaDYi5gJgbiDnRaB4gBgASNgCe
+  </data>
+ </layer>
+ <layer id="5" name="Buildings" width="7" height="2">
+  <data encoding="base64" compression="zlib">
+   eJz7yoAb/MYjBwBRRAHx
+  </data>
+ </layer>
+ <layer id="7" name="Front" width="7" height="2">
+  <data encoding="base64" compression="zlib">
+   eJz7xAAEjAwMH9HoL0DqBxD/BOLvaPQvIAYAE6gKlw==
+  </data>
+ </layer>
+ <objectgroup id="4" name="Mirrors">
+  <object id="2" name="TileData" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="IsMirrorBase" value="T"/>
+    <property name="MirrorHeight" value="5"/>
+    <property name="MirrorOffset" value="0 8.2"/>
+    <property name="MirrorOverlay" value="255 255 255 185"/>
+    <property name="MirrorWidth" value="7"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

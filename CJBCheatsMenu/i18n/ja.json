@@ -38,11 +38,10 @@
     "tools.harvest-with-scythe": "カマで収穫",
 
     // tool enchantments
-    // TODO
-    "tool-enchantments.title": "Tool Enchantments",
-    "tool-enchantments.select-tool": "Select a tool on your toolbar to edit enchantments.",
-    "tool-enchantments.none-for-tool": "No enchantments available for selected {{toolName}}.",
-    "tool-enchantments.for-tool": "For the selected {{toolName}}.",
+    "tool-enchantments.title": "どうぐのエンチャント",
+    "tool-enchantments.select-tool": "スロットのどうぐを選択した状態で、チートメニューを表示してください。",
+    "tool-enchantments.none-for-tool": "選択中の{{toolName}}に使用できるエンチャントがありません。",
+    "tool-enchantments.for-tool": "選択中のどうぐ：{{toolName}}",
 
     // money
     "add.money": "お金",
@@ -58,7 +57,8 @@
     *********/
     // farm
     "farm.title": "農業",
-    "farm.auto-water": "自動水やり",
+    "farm.auto-water-crops": "自動水やり",
+    "farm.auto-water-pet-bowls": "Auto-Water Pet Bowls", // TODO
     "farm.durable-fences": "柵を強化",
     "farm.instant-build": "建築がすぐに終わる",
     "farm.auto-feed-animals": "エサやり自動化",
@@ -85,57 +85,26 @@
     *********/
     // skills
     "skills.title": "スキル",
-    "skills.increase-farming": "農業レベル: {{currentLevel}}",
-    "skills.increase-mining": "採鉱レベル: {{currentLevel}}",
-    "skills.increase-foraging": "採取レベル: {{currentLevel}}",
-    "skills.increase-fishing": "釣りレベル: {{currentLevel}}",
-    "skills.increase-combat": "戦闘レベル: {{currentLevel}}",
+    "skills.increase-skill": "{{skillName}}レベル: {{currentLevel}}",
+    "skills.increase-mastery": "Increase mastery level: {{currentLevel}}", // TODO
 
     // professions
     "professions.title": "職業",
-    "professions.combat.fighter": "戦闘レベル5 - 戦士",
-    "professions.combat.scout": "戦闘レベル5 - 偵察者",
-    "professions.combat.acrobat": "戦闘レベル10 - 軽業師",
-    "professions.combat.brute": "戦闘レベル10 - 荒くれ者",
-    "professions.combat.defender": "戦闘レベル10 - 防衛者",
-    "professions.combat.desperado": "戦闘レベル10 - デスペラード",
-    "professions.farming.rancher": "農業レベル5 - 動物飼育者",
-    "professions.farming.tiller": "農業レベル5 - 耕作者",
-    "professions.farming.agriculturist": "農業レベル10 - 農業者",
-    "professions.farming.artisan": "農業レベル10 - 職人",
-    "professions.farming.coopmaster": "農業レベル10 - トリ小屋の達人",
-    "professions.farming.shepherd": "農業レベル10 - 羊飼い",
-    "professions.fishing.fisher": "釣りレベル5 - 釣り人",
-    "professions.fishing.trapper": "釣りレベル5 - 漁師",
-    "professions.fishing.angler": "釣りレベル10 - 釣り師",
-    "professions.fishing.luremaster": "釣りレベル10 - ルアーの達人",
-    "professions.fishing.mariner": "釣りレベル10 - 水夫",
-    "professions.fishing.pirate": "釣りレベル10 - 海賊",
-    "professions.foraging.forester": "採取レベル5 - 森の住人",
-    "professions.foraging.gatherer": "採取レベル5 - 収集者",
-    "professions.foraging.botanist": "採取レベル10 - 植物学者",
-    "professions.foraging.lumberjack": "採取レベル10 - 木こり",
-    "professions.foraging.tapper": "採取レベル10 - 樹液採集器",
-    "professions.foraging.tracker": "採取レベル10 - 追跡者",
-    "professions.mining.geologist": "採鉱レベル5 - 地質学者",
-    "professions.mining.miner": "採鉱レベル5 - 鉱山労働者",
-    "professions.mining.blacksmith": "採鉱レベル10 - 鍛冶屋",
-    "professions.mining.excavator": "採鉱レベル10 - 掘削者",
-    "professions.mining.gemologist": "採鉱レベル10 - 宝石学者",
-    "professions.mining.prospector": "採鉱レベル10 - 探鉱者",
+    "professions.profession": "{{skillName}}レベル{{level}} - {{professionName}}",
 
 
     /*********
     ** Weather tab
     *********/
     "weather.title": "明日の天気",
-    "weather.current-value": "Tomorrow's weather is set to {{weather}}.", // TODO
+    "weather.current-value": "明日の天気は{{weather}}です。",
     "weather.explanation": "明日の天気を設定するには、せっていボタンをクリックしてください。\nこのタブはそれ以外の天気に影響を与えません。",
+    "weather.cannot-change-weather": "The game forces tomorrow's weather to {{weather}}, so it can't be changed.", // TODO
     "weather.sunny": "晴れ",
     "weather.raining": "雨",
     "weather.lightning": "嵐",
     "weather.snowing": "雪",
-    "weather.green-rain": "Green Raining", // TODO
+    "weather.green-rain": "緑の雨",
 
 
     /*********
@@ -214,6 +183,7 @@
     "time.freeze-inside": "屋内で時間が止まる",
     "time.freeze-caves": "洞窟やダンジョンで時間が止まる",
     "time.freeze-everywhere": "どこでも時間が止まる",
+    "time.fade-time-frozen-message": "Hide '{{timeFrozen}}' After a Few Seconds", // TODO
     "time.time": "時間",
     "time.time-frozen-message": "時間停止！",
 
@@ -237,7 +207,7 @@
     "flags.unlocked-content": "ロック解除されたコンテンツ",
     "flags.unlocked-content.dyes-and-tailoring": "染色と仕立て",
     "flags.unlocked-content.junimo-text": "ジュニモの言葉を読めるようにする",
-    "flags.unlocked-content.perfection": "Perfection achieved", // TODO
+    "flags.unlocked-content.perfection": "パーフェクションの達成",
     "flags.community-center": "公民館の復興",
     "flags.community-center.door-unlocked": "公民館へ入館",
     "flags.jojamart.membership": "Jojaマートの会員権",
@@ -265,9 +235,8 @@
     "config.grow-tree.desc": "プレイヤーの周りの樹木や果樹を生長させるキーを設定する",
     "config.grow-crops.desc": "プレイヤーの周りの作物を収穫状態にするキーを設定する",
 
-    // TODO
-    "controls.reload-config": "Reload settings from file",
-    "controls.reload-config.desc": "The keybind which reloads the mod settings from the mod's config.json file. If the menu is currently open, changes may only take effect when it's reopened.",
+    "controls.reload-config": "ファイルからの設定の再読み込み",
+    "controls.reload-config.desc": "modの設定をmodのconfig.jsonファイルからリロードするキー設定。メニューが現在開かれている場合、変更はメニューが再び開かれたときにのみ有効になります。",
 
     "config.title.other-options": "その他オプション",
     "config.default-tab.name": "デフォルトタブ",

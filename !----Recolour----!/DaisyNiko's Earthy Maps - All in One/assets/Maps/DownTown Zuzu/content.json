@@ -1,0 +1,25 @@
+{
+	"Changes": [
+//Downtown Zuzu
+		{
+            "Action": "EditImage",
+            "Target": "LooseSprites/ZuzuMap",
+            "FromFile": "assets/Maps/DownTown Zuzu/{{Season}}_Downtown_Zuzu.png",
+            "PatchMode": "Overlay",
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP",
+			},
+			"Update": "OnLocationChange",
+		},
+//Kahuna Island
+		{
+            "Action": "EditImage",
+            "Target": "LooseSprites/KahunaMap",
+            "FromFile": "assets/Maps/DownTown Zuzu/MapKahuna.png",
+            "PatchMode": "Overlay",
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP",
+			},
+		},
+    ]
+}

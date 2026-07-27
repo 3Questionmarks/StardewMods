@@ -1,0 +1,348 @@
+{
+    "Format": "2.9.0",
+    "DynamicTokens": [
+	{
+	"Name": "PamGusHappyEndingActive",
+	"Value": "true"
+	},
+	{
+	"Name": "PamGusHappyEndingActive",
+	"Value": "false",
+	"When": {
+		"HasMod |contains=DSV.Core": "true",
+		"DSV.Core/ConfigValue:AroAceGus |contains= true": true
+		}
+	}
+    ],
+    "Changes": [
+//DISPOSITIONS
+	{
+	"LogName": "Data/Character edit - Pam after finding Yoba",
+		"Action": "EditData",
+		"When": {
+			"PamGusHappyEndingActive": "true",
+			"HasSeenEvent": "503180",
+			"HasFlag |contains=PamGusMarriedLetter": "false"
+			},
+		"Target": "Data/Characters",
+		"Fields": {
+			"Pam": {
+				"Home": [
+                   			{
+					"Id": "Default",
+					"Location": "Trailer_Big",
+					"Tile": { "X": 24, "Y": 17 },
+					"Direction": "Down"
+					}
+		   		] 
+			}
+		}
+	},
+	{
+	"LogName": "Data/Character edit - Pam and Gus married and living together",
+		"Action": "EditData",
+		"When": {
+			"PamGusHappyEndingActive": "true",
+			"HasFlag |contains=PamGusMarriedLetter": "true"
+			},
+		"Target": "Data/Characters",
+		"Fields": {
+			"Pam": {
+				"LoveInterest": "Gus",
+				"FriendsAndFamily": { "Gus": "{{i18n:teainthesunroom.PamGusHappyEnding_hubby}}" },
+				"Home": [
+                   		{
+					"Id": "Default",
+					"Location": "Trailer_Big",
+					"Tile": { "X": 24, "Y": 17 },
+					"Direction": "Down"
+					}
+		    		] 
+			},
+			"Gus": {
+				"LoveInterest": "Pam",
+				"FriendsAndFamily": {
+                      			"Penny": "{{i18n:teainthesunroom.PamGusHappyEnding_stepdaughter}}",
+                     			"Pam": "[LocalizedText Strings\\Characters:Relative_Wife]"
+				},
+				"Home": [
+					{
+					"Id": "Default",
+					"Location": "Trailer_Big",
+                      	 		"Tile": { "X": 26, "Y": 17 },
+                       			"Direction": "Down"
+                    			}
+		    		]
+			}
+		}
+	},
+//EVENTS, DIALOGUE, SCHEDULES
+
+	//1. ALWAYS LOAD: Universal events unaffected by Gus's variant
+	{
+	"LogName": "Events, Dialogue & Schedules",
+		"Action": "Include",
+		"When": {
+			"PamGusHappyEndingActive": "true"
+			},
+		"FromFile": "assets/Events/events.json, assets/Events/triggeractions.json, assets/Dialogue/dialogue.json, assets/Schedules/schedules.json"
+		},
+	//2. DSV TURKISH GUS: Player has DSV AND the Turkish variant is active
+	{
+	"LogName": "Events: Load DSV-specific events for Turkish Gus",
+		"Action": "Include",
+		"When": {
+			"PamGusHappyEndingActive": "true",
+			"HasMod |contains=DSV.Core": "true",
+			"DSV.Core/ConfigValue:GusVariant |contains= Modded": true
+			},
+		"FromFile": "assets/Events/events-dsv.json"
+		},
+	//3. VANILLA GUS (SCENARIO A): Player does NOT have DSV installed
+	{
+	"LogName": "Events: Load Vanilla events for DSV not installed",
+		"Action": "Include",
+		"When": {
+			"PamGusHappyEndingActive": "true",
+			"HasMod |contains=DSV.Core": "false"
+			},
+		"FromFile": "assets/Events/events-vanilla.json"
+		},
+	//4. VANILLA GUS (SCENARIO B): Player HAS DSV installed, but Gus is Vanilla
+	{
+	"LogName": "Events: Load Vanilla events for DSV without Turkish Gus",
+		"Action": "Include",
+		"When": {
+			"PamGusHappyEndingActive": "true",
+			"HasMod |contains=DSV.Core": "true",
+			"DSV.Core/ConfigValue:GusVariant |contains= Modded": false
+			},
+		"FromFile": "assets/Events/events-vanilla.json"
+		},
+//PAM, GUS, PENNY UPDATES
+	{
+	"LogName": "Pam's dialogue after Yoba conversion",
+		"Action": "Include",
+		"When": {
+			"PamGusHappyEndingActive": "true",
+			"HasFlag |contains=PamYobaLetter": "true",
+			"HasFlag |contains=PamGusMarriedLetter": "false"
+			},
+		"FromFile": "assets/Dialogue/pamyoba.json"
+		},
+	{
+	"LogName": "Pam's dialogue after Pam and Gus are married",
+		"Action": "Include",
+		"When": {
+			"PamGusHappyEndingActive": "true",
+			"HasFlag": "PamGusMarriedLetter"
+			},
+		"FromFile": "assets/Dialogue/pammarried.json"
+		},
+	{
+	"LogName": "Gus's dialogue after Pam and Gus are married",
+		"Action": "Include",
+		"When": {
+			"PamGusHappyEndingActive": "true",
+			"HasFlag": "PamGusMarriedLetter"
+			},
+		"FromFile": "assets/Dialogue/gusmarried.json"
+		},
+	{
+	"LogName": "Penny's dialogue after Pam and Gus are married",
+		"Action": "Include",
+		"When": {
+			"PamGusHappyEndingActive": "true",
+			"HasFlag": "PamGusMarriedLetter"
+			},
+		"FromFile": "assets/Dialogue/pennypammarried.json"
+		},
+//MAIL AND QUEST UPDATES
+	{
+	"LogName": "Mail",
+		"Action": "EditData",
+		"When": {
+			"PamGusHappyEndingActive": "true"
+			},
+		"Target": "Data/Mail",
+		"Entries": {
+			"PamGusMarriedLetter": "{{i18n:{{ModId}}_Mail.PamGusMarriedLetter}}",
+			"PamYobaLetter": "{{i18n:{{ModId}}_Mail.PamYobaLetter}}",
+			"PamBusChangedLetter": "{{i18n:{{ModId}}_Mail.PamBusChangedLetter}}"
+			}
+		},
+	{
+	"LogName": "Replace Pam Is Thirsty letter text with parsnip soup letter after Yoba conversion",
+		"Action": "EditData",
+		"When": {
+			"PamGusHappyEndingActive": "true",
+   			"HasMod |contains=recon88.NoPamEnabling": false,
+   			"HasMod |contains=Jonqora.DontEnablePam": false,
+			"HasFlag |contains=PamYobaLetter": "true"
+			},
+		"Target": "Data/Mail",
+		"Entries": {
+			"summer_14_1": "{{i18n:{{ModId}}_Mail.ReplacePaleAleLetter}}"
+			}
+		},
+	{
+	"LogName": "Replace Pam Is Thirsty quest with parsnip soup quest after Yoba conversion",
+		"Action": "EditData",
+		"When": {
+			"PamGusHappyEndingActive": "true",
+   			"HasMod |contains=recon88.NoPamEnabling": "false",
+   			"HasMod |contains=Jonqora.DontEnablePam": "false",
+			"HasFlag |contains=PamYobaLetter": "true"
+			},
+		"Target": "Data/Quests",
+		"Entries": {
+			"103": "ItemDelivery/{{i18n:{{ModId}}_pam.replacepalealeletter.title}}/{{i18n:{{ModId}}_pam.replacepalealeletter.description}}/{{i18n:{{ModId}}_pam.replacepalealeletter.objective}}/Pam (O)199/-1/350/-1/true/{{i18n:{{ModId}}_pam.replacepalealeletter.reaction}}"
+   			}
+		},
+//GIFT TASTE CHANGES
+	{
+	"LogName": "Update Pam's gift tastes to remove alcohol after Yoba conversion", 
+		"When": {
+			"PamGusHappyEndingActive": "true",
+			"HasFlag |contains=PamYobaLetter": "true"
+			}, 
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+		{
+			"Operation": "RemoveDelimited",
+			"Target": ["Fields", "Pam", 3],
+			"Search": "-75",
+			"Delimiter": " "
+			},
+		{
+			"Operation": "RemoveDelimited",
+			"Target": ["Fields", "Pam", 3],
+			"Search": "-6",
+			"Delimiter": " "
+			},
+		{
+			"Operation": "RemoveDelimited",
+			"Target": ["Fields", "Pam", 1],
+			"Search": "873",
+			"Delimiter": " "
+			},
+		{
+			"Operation": "RemoveDelimited",
+			"Target": ["Fields", "Pam", 1],
+			"Search": "346",
+			"Delimiter": " "
+			},
+		{
+			"Operation": "RemoveDelimited",
+			"Target": ["Fields", "Pam", 1],
+			"Search": "459",
+			"Delimiter": " "
+			},
+		{
+			"Operation": "RemoveDelimited",
+			"Target": ["Fields", "Pam", 1],
+			"Search": "303",
+			"Delimiter": " "
+			},
+		{
+			"Operation": "Append",
+			"Target": ["Fields", "Pam", 1],
+			"Value": "-75 -6",
+			"Delimiter": " "
+			},
+		{
+			"Operation": "Append",
+			"Target": ["Fields", "Pam", 5],
+			"Value": "346 303 459 873",
+			"Delimiter": " "
+			}
+		]
+		},
+{
+	"LogName": "Update Pam's gift tastes to remove SVE Blue Moon Wine after Yoba conversion", 
+		"When": {
+			"PamGusHappyEndingActive": "true",
+			"HasFlag |contains=PamYobaLetter": "true",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+			}, 
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+		{
+			"Operation": "RemoveDelimited",
+			"Target": ["Fields", "Pam", 1],
+			"Search": "FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine",
+			"Delimiter": " "
+			},
+		{
+			"Operation": "RemoveDelimited",
+			"Target": ["Fields", "Pam", 1],
+			"Search": "FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine",
+			"Delimiter": " "
+			},
+		{
+			"Operation": "RemoveDelimited",
+			"Target": ["Fields", "Pam", 3],
+			"Search": "FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine",
+			"Delimiter": " "
+			},
+		{
+			"Operation": "RemoveDelimited",
+			"Target": ["Fields", "Pam", 3],
+			"Search": "FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine",
+			"Delimiter": " "
+			},
+		{
+			"Operation": "Append",
+			"Target": ["Fields", "Pam", 5],
+			"Value": "FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine",
+			"Delimiter": " "
+			}
+		]
+		},
+	{
+	"LogName": "Update the gifts Pam sends in the mail to remove alcohol after Yoba conversion",  
+		"Action": "EditData",
+		"When": {
+			"PamGusHappyEndingActive": "true",
+			"HasFlag |contains=PamYobaLetter": "true"
+			},
+		"Target": "Data/Mail",
+		"TextOperations": [
+		{
+			"Operation": "ReplaceDelimited",
+			"Target": ["Entries", "Pam"],
+			"Search": "(O)346",
+			"Value": "(O)208",
+			"Delimiter": " "
+			}
+			]
+		},
+	{
+	"LogName": "Update Penny's secret note (#5)",
+		"Action": "EditData",
+		"When": {
+			"PamGusHappyEndingActive": "true",
+			"HasFlag |contains=PamYobaLetter": "true"
+			},
+		"Target": "Data/SecretNotes",
+		"TextOperations": [
+		{
+			"Operation": "ReplaceDelimited",
+			"Target": ["Entries", "5"],
+			"Search": ", NO BEER!",
+			"Value": "",
+			"Delimiter": "^"
+			},
+			{
+			"Operation": "ReplaceDelimited",
+			"Target": ["Entries", "5"],
+			"Search": "revealtaste:Pam:346",
+			"Value": "revealtaste:Pam:90",
+			"Delimiter": "%"
+			}
+			]
+		}
+	]
+}

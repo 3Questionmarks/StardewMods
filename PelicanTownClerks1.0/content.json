@@ -1,0 +1,437 @@
+{
+	"Format": "2.9.0",
+	"DynamicTokens": [
+		{
+			"Name": "ThompsonEndofDay",
+			"Value": "15 11 1",
+			"When": { "Query: {{DailyLuck}} < 0": true, },
+		},
+		{
+			"Name": "ThompsonEndofDay",
+			"Value": "14 4 2 ThompsonDancingVideo \"Strings\\schedules\\Thompson:Custom_ThompsonRoom.000\"",
+			"When": { "Query: {{DailyLuck}} < 0": false, },
+		},
+		{
+			"Name": "ThompsonCall1",
+			"Value": "ABBY!",
+			"When": {
+				"HasMod|Contains = AndrewJC.APelicanTown": "False"
+			},
+		},
+		{
+			"Name": "ThompsonCall1",
+			"Value": "ABBY! THOMPSON!",
+			"When": {
+				"HasMod|Contains = AndrewJC.APelicanTown": "True"
+			},
+		},
+		{
+			"Name": "ThompsonCall2",
+			"Value": "pause 1",
+			"When": {
+				"HasMod|Contains = AndrewJC.APelicanTown": "False"
+			},
+		},
+		{
+			"Name": "ThompsonCall2",
+			"Value": "speak Thompson \"What's in it for me?$3\"/faceDirection Pierre 1/speak Pierre \"You're a month behind on rent.$3#$b#Me not evicting you should be reason enough.$0\"/shake Thompson 500/faceDirection Pierre 2",
+			"When": {
+				"HasMod|Contains = AndrewJC.APelicanTown": "True"
+			},
+		},
+		//Setting Up Shoppers
+		{
+			"Name": "InLine2",
+			"Value": "Maru",
+			"When": {
+				"HasMod|Contains = FlashShifter.StardewValleyExpandedCP": "False"
+			},
+		},
+		{
+			"Name": "InLine2",
+			"Value": "Sophia",
+			"When": {
+				"HasMod|Contains = FlashShifter.StardewValleyExpandedCP": "True"
+			},
+		},
+		{
+			"Name": "InLine3",
+			"Value": "Penny",
+			"When": {
+				"HasMod|Contains = FlashShifter.StardewValleyExpandedCP": "False"
+			},
+		},
+		{
+			"Name": "InLine3",
+			"Value": "Scarlett",
+			"When": {
+				"HasMod|Contains = FlashShifter.StardewValleyExpandedCP": "True"
+			},
+		},
+		{
+			"Name": "InLine5",
+			"Value": "Vincent",
+			"When": {
+				"HasMod|Contains = AndrewJC.CoalPointFarm": "False"
+			},
+		},
+		{
+			"Name": "InLine6",
+			"Value": "Jas",
+			"When": {
+				"HasMod|Contains = AndrewJC.CoalPointFarm": "False"
+			},
+		},
+		{
+			"Name": "InLine5",
+			"Value": "APTMarcus",
+			"When": {
+				"HasMod|Contains = AndrewJC.CoalPointFarm": "True"
+			},
+		},
+		{
+			"Name": "InLine6",
+			"Value": "APTMora",
+			"When": {
+				"HasMod|Contains = AndrewJC.CoalPointFarm": "True"
+			},
+		},
+		{
+			"Name": "InLine7",
+			"Value": "Evelyn",
+			"When": {
+				"HasMod|Contains = handwrittenhello.TFJ": "False"
+			},
+		},
+		{
+			"Name": "InLine7",
+			"Value": "handwrittenhello.TFJ_Miriam",
+			"When": {
+				"HasMod|Contains = handwrittenhello.TFJ": "True"
+			},
+		},
+		{
+			"Name": "InLine9",
+			"Value": "Willy",
+			"When": {
+				"HasMod|Contains = FlashShifter.StardewValleyExpandedCP": "False"
+			},
+		},
+		{
+			"Name": "InLine9",
+			"Value": "Andy",
+			"When": {
+				"HasMod|Contains = FlashShifter.StardewValleyExpandedCP": "True"
+			},
+		},
+		
+		//Around the Shop
+		{
+			"Name": "InShop1",
+			"Value": "Robin",
+			"When": {
+				"HasMod|Contains = TenebrousNova.EliDylan.CP": "False"
+			},
+		},
+		{
+			"Name": "InShop1",
+			"Value": "Nova.Eli",
+			"When": {
+				"HasMod|Contains = TenebrousNova.EliDylan.CP": "True"
+			},
+		},
+		{
+			"Name": "InShop2",
+			"Value": "Sam",
+			"When": {
+				"HasMod|Contains = DH.Kiyuga.Characters": "False"
+			},
+		},
+		{
+			"Name": "InShop2",
+			"Value": "Anderson",
+			"When": {
+				"HasMod|Contains = DH.Kiyuga.Characters": "True"
+			},
+		},
+		{
+			"Name": "InShop3",
+			"Value": "Lewis",
+			"When": {
+				"HasMod|Contains = MV.Municipal": "False"
+			},
+		},
+		{
+			"Name": "InShop3",
+			"Value": "MV.Municipal_SheriffBill",
+			"When": {
+				"HasMod|Contains = MV.Municipal": "True"
+			},
+		},
+		{
+			"Name": "InShop4",
+			"Value": "Leah",
+			"When": {
+				"HasMod|Contains = Himetarts.ARV.CP": "False"
+			},
+		},
+		{
+			"Name": "InShop4",
+			"Value": "Henry",
+			"When": {
+				"HasMod|Contains = Himetarts.ARV.CP": "True"
+			},
+		},
+		{
+			"Name": "InShop5",
+			"Value": "Harvey",
+			"When": {
+				"HasMod|Contains = Lemurkat.EastScarpNPCs": "False"
+			},
+		},
+		{
+			"Name": "InShop5",
+			"Value": "Juliet",
+			"When": {
+				"HasMod|Contains = Lemurkat.EastScarpNPCs": "True"
+			},
+		},
+		{
+			"Name": "InShop6",
+			"Value": "Elliott",
+			"When": {
+				"HasMod|Contains = Lemurkat.EastScarpNPCs": "False"
+			},
+		},
+		{
+			"Name": "InShop6",
+			"Value": "Rosa",
+			"When": {
+				"HasMod|Contains = Lemurkat.EastScarpNPCs": "True"
+			},
+		},
+		
+	],
+	"Changes": [
+		//Starter Event
+		{
+			"LogName": "Stardew Clerks Events",
+			"Action": "EditData",
+			"Target": "data/events/SeedShop",
+			"Entries": {
+				"StardewClerksEvent1/d Wed/sawEvent 191393": "CloudCountry/14 23/farmer 100 100 0 Pierre 14 12 2 Abigail 7 19 0 Thompson? 16 26 3 Pam 7 25 1 Gus 4 20 0 {{InLine2}} 6 20 3 {{InLine3}} 7 20 3 Marnie 9 20 3 {{InLine5}} 8 22 0 {{InLine6}} 9 22 0 {{InLine7}} 9 24 0 Jodi 9 25 0 {{InLine9}} 8 26 1 Shane 16 28 3 {{InShop1}} 11 23 0 {{InShop2}} 12 28 3 {{InShop3}} 2 21 3 {{InShop4}} 2 24 3 {{InShop5}} 12 20 0 {{InShop6}} 13 20 0/skippable/warp farmer 6 29/advancedMove farmer false 0 -2 -1 0 0 -2 1 100/pause 500/textAboveHead Jodi \"*sigh*\"/pause 1000/emote farmer 8/advancedMove {{InShop1}} true 3 0 4 10000 -3 0 4 10000/faceDirection Pam 3/pause 500/speak Pam \"End of the line kid, sorry.$0#$b#Pierre's been real backed up after Jojamart closed, since he's the only place to shop in town now.$0#$b#I just hope this doesn't make me late for the bus..$2\"/viewport move 0 -1 4000/faceDirection Pam 1/advancedMove Pierre false 0 4 2 1500 0 1 -5 0 2 100/pause 500/emote {{InLine3}} 28/pause 1000/doAction 14 16/pause 500/textAboveHead Pierre \"What's all this noise...?\"/pause 3250/showFrame Pierre 16/jump Pierre 8/pause 500/speed Pierre 3/advancedMove Pierre false 2 0 1 100/pause 500/textAboveHead Pierre \"{{ThompsonCall1}}\"/speed Abigail 3/advancedMove Abigail false 2 0 0 -2 1 0 1 100/speed Thompson? 3/advancedMove Thompson? false 0 -8 -1 0 0 -1 -2 0 3 100/pause 3000/speak Pierre \"I don't know if I can take all these villagers, and would really appreciate your help.$4\"/faceDirection Pierre 3/speak Pierre \"I know you haven't been the most enthusiastic about the shop, but I think this would be a wonderful opportunity to develop yourself.$0\"/speak Abigail \"Sure, I can try it out.$1#$b#Although I've never seen this many customers before..$9\"/{{ThompsonCall2}}/speak Pierre \"Alright, let's do this!$1\"/speed Pierre 2/speed Abigail 2/speed Thompson? 2/advancedMove Abigail false -1 0 0 2 -6 0/advancedMove Pierre false -2 0 0 2 -5 0/advancedMove Thompson? false -4 0 0 2 -2 0/globalFade/viewport 1000 -1000/stopAdvancedMoves/warp Gus 100 -100/warp {{InLine2}} 100 -100/warp {{InLine3}} 100 -100/warp Marnie 100 -100/warp {{InLine5}} 100 -100/warp {{InLine6}} 100 -100/warp {{InLine7}} 100 -100/warp Jodi 100 -100/warp {{InLine9}} 100 -100/warp Shane 100 -100/warp {{InShop1}} 100 -100/warp {{InShop2}} 100 -100/warp {{InShop3}} 100 -100/warp {{InShop4}} 100 -100/warp {{InShop5}} 100 -100/warp {{InShop6}} 100 -100/warp Abigail 5 17/advancedMove Abigail false 2 100/warp Pierre 4 17/advancedMove Pierre false 2 100/warp Thompson? 3 17/advancedMove Thompson? false 2 100/warp farmer 4 19/faceDirection farmer 0/message \"With help, Pierre is able to move through customers at lightning speed!\"/advancedMove Pam false -1 0 0 4 2 100/viewport 10 21/globalFadeToClear/pause 1000/shake Pierre 500/playSound moneyDial/pause 500/warp Pam 100 -100/playSound doorClose/speak Pierre \"...Thank you so much for shopping at Pierre's! So sorry about the wait.$0\"/emote Pierre 8/pause 500/quickQuestion What did you think of my help today?#It was fantastic!#I'd rather wait for a week than deal with Abigail.(break)speak Abigail \"Really? I didn't even do that much!$1\"\\speak Thompson? \"That was the hardest I've worked in years!$9\"(break)speak Abigail \"What's wrong with you?$5\"\\speak Pierre \"Don't you talk about my daughter like that!$3\"\\speak Thompson? \"Yeah! That was the hardest I've worked in years.$5#$b#Give her some respect.$5\"\\friendship Abigail -250\\friendship Pierre -250\\friendship Thompson -125\\emote farmer 12\\shake Pierre 1000\\pause 500\\textAboveHead Pierre \"Anyways...\"\\pause 500/speak Abigail \"It was actually much more engaging than I thought it'd be!$1\"/speak Thompson? \"It was busy, but I'd be more than happy to do it again.$0\"/speak Pierre \"Well, I could use a break every now and then...$4\"/faceDirection Pierre 3/pause 500/faceDirection Pierre 1/pause 500/faceDirection Pierre 2/speak Pierre \"Say, how about you pick up a few shifts throughout the week?$0#$b#If business stays this busy, I'll have more than enough to afford the extra help!$1\"/speak Abigail \"Sure, I'll try it out.$1\"/speak Thompson? \"I can too. I'm already a pop sensation AND a florist, how hard could working as a cashier be?$1\"/emote Pierre 20/pause 500/speak Pierre \"Great! I'll start you off as soon as I can.$0#$b#Oh and um, I'm sorry @, but we'll need to leave the counter for a few minutes so we can sort our schedule out.$4\"/emote farmer 32/pause 500/advancedMove farmer false 0 1 2 0 0 2/globalFade/viewport 1000 -1000/end"
+			}
+		},
+		//Change Shop Data
+		{
+			"LogName": "Thompson Stardew Clerks Shop Edits",
+			"Action": "EditData",
+			"Target": "data/shops",
+			"TargetField": ["SeedShop", "Owners"],
+			"Entries": {
+				//Thompson
+				"ThompsonClerk": {
+					"Condition": "PLAYER_HAS_SEEN_EVENT Any StardewClerksEvent1",
+					"Portrait": "Portraits/Thompson/ThompsonPortraits{{Season}}",
+					"Dialogues": [
+					{
+						"Id": "Wednesday",
+						"Condition": "DAY_OF_WEEK Wednesday",
+						"Dialogue": "Welcome to Pierre's! Look at this shiny name tag I get!",
+						"RandomDialogue": null
+					},
+					{
+						"Id": "Sunday",
+						"Condition": "DAY_OF_WEEK Sunday",
+						"Dialogue": "Welcome to Pierre's! Look at this shiny name tag I get!",
+						"RandomDialogue": null
+					}
+					],
+					"RandomizeDialogueOnOpen": true,
+					"ClosedMessage": null,
+					"Id": "Thompson",
+					"Name": "Thompson"
+				},
+				//Abby APT
+				"AbbyClerkAPT":{
+					"Condition": "PLAYER_HAS_SEEN_EVENT Any StardewClerksEvent1",
+					"Portrait": "Abigail",
+					"Dialogues": [
+					  {
+						"Id": "Tuesday",
+						"Condition": "DAY_OF_WEEK Tuesday",
+						"Dialogue": "Welcome to Pierre's! Let me know if you need help finding anything.",
+						"RandomDialogue": null
+					  },
+					],
+					"RandomizeDialogueOnOpen": true,
+					"ClosedMessage": null,
+					"Id": "Abigail",
+					"Name": "Abigail"
+				},
+			},
+			"When": {
+				"HasMod|Contains=AndrewJC.APelicanTown": "True"
+			}
+		},
+		{
+			"LogName": "Thompson Stardew Clerks Shop Edits",
+			"Action": "EditData",
+			"Target": "data/shops",
+			"TargetField": ["SeedShop", "Owners"],
+			"Entries": {
+				//Abby Vanilla
+				"AbbyClerkVanilla": {
+					"Condition": "PLAYER_HAS_SEEN_EVENT Any StardewClerksEvent1",
+					"Portrait": "Abigail",
+					"Dialogues": [
+					  {
+						"Id": "Wednesday",
+						"Condition": "DAY_OF_WEEK Wednesday",
+						"Dialogue": "Welcome to Pierre's! Let me know if you need help finding anything.",
+						"RandomDialogue": null
+					  },
+					  {
+						"Id": "Tuesday",
+						"Condition": "DAY_OF_WEEK Tuesday",
+						"Dialogue": "Welcome to Pierre's! Let me know if you need help finding anything.",
+						"RandomDialogue": null
+					  },
+					],
+					"RandomizeDialogueOnOpen": true,
+					"ClosedMessage": null,
+					"Id": "Abigail",
+					"Name": "Abigail"
+				},
+			},
+			"When": {
+				"HasMod|Contains=AndrewJC.APelicanTown": "False"
+			}
+		},
+		
+		//Change Pierre's Schedule
+		
+		{
+			"LogName": "Pierre Clerks Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Pierre",
+			"Entries": {
+				"Tue": "700 SeedShop 10 20 0/1000 CommunityCenter 56 6 0/1500 Town 30 27 3/1900 SeedShop 34 5 0/2100 SeedShop 24 4 1 pierre_sleep",
+				"Wed": "700 SeedShop 10 20 0/900 Beach 20 24 2/1700 Saloon 16 20 0 \"Strings\\schedules\\Pierre:Wed.43840\"/2250 SeedShop 24 4 1 pierre_sleep",
+			},
+			"When": { 
+				"HasSeenEvent": "StardewClerksEvent1",	
+			},
+		},
+		{
+			"LogName": "Pierre Clerks Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Pierre",
+			"Entries": {
+				"Sun": "700 SeedShop 10 20 0/900 Beach 20 24 2/1700 SeedShop 11 20 0/2000 SeedShop 34 5 0/2100 SeedShop 24 4 1 pierre_sleep",
+				"14": "700 SeedShop 10 20 0/1000 CommunityCenter 56 6 0/1600 SeedShop 20 15 1/1740 Town 27 30 0/2030 SeedShop 24 4 1 pierre_sleep",
+				"28": "700 SeedShop 10 20 0/1000 CommunityCenter 56 6 0/1600 SeedShop 20 15 1/1740 Town 27 30 0/2030 SeedShop 24 4 1 pierre_sleep",
+			},
+			"When": { 
+				"HasSeenEvent": "StardewClerksEvent1",
+				"HasMod": "AndrewJC.APelicanTown"			
+			},
+		}, 
+		//Change Thompson's Schedule
+		//Works Wednesday, Sunday
+		
+		{
+			"LogName": "Thompson Clerks Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Thompson",
+			"Entries": {
+				"Sun":"800 SeedShop 4 17 2/1700 Custom_ThompsonRoom {{ThompsonEndofDay}}/2300 Custom_ThompsonRoom 1 7 3",
+				"Wed":"800 SeedShop 4 17 2/1700 Custom_ThompsonRoom {{ThompsonEndofDay}}/2300 Custom_ThompsonRoom 1 7 3",
+				"marriage_Wed": "610 SeedShop 4 17 2/1700 BusStop -1 23 3",
+				"marriage_Sun": "610 SeedShop 4 17 2/1700  BusStop -1 23 3",
+			},
+			"When": { 
+				"HasSeenEvent": "StardewClerksEvent1",
+				"HasMod": "AndrewJC.APelicanTown"			
+			},
+		},
+		
+		//Change Abigail's Schedule
+		//Works Tuesday, Works Wednesday when APT isn't Installed
+		{
+			"LogName": "Abby Clerks Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Abigail",
+			"Entries": {
+				"spring_Tue":"800 SeedShop 4 17 2/1700 SeedShop 3 6 0 abigail_videogames/1930 SeedShop 1 9 3 abigail_sleep",
+				"spring_Wed":"800 SeedShop 4 17 2/1700 Town 47 87 0/2200 SeedShop 1 9 3 abigail_sleep",
+				"summer_Tue":"800 SeedShop 4 17 2/1700 SeedShop 3 6 0 abigail_videogames/1930 SeedShop 1 9 3 abigail_sleep",
+				"summer_Wed":"800 SeedShop 4 17 2/1700 Town 47 87 0/2200 SeedShop 1 9 3 abigail_sleep",
+				"fall_Tue":"800 SeedShop 4 17 2/1700 SeedShop 3 6 0 abigail_videogames/1930 SeedShop 1 9 3 abigail_sleep",
+				"fall_Wed":"800 SeedShop 4 17 2/1700 Town 47 87 0/2200 SeedShop 1 9 3 abigail_sleep",
+				"winter_Tue":"800 SeedShop 4 17 2/1700 SeedShop 3 6 0 abigail_videogames/1930 SeedShop 1 9 3 abigail_sleep",
+				"winter_Wed":"800 SeedShop 4 17 2/1700 Town 47 87 0/2200 SeedShop 1 9 3 abigail_sleep",
+				"marriage_Wed": "610 SeedShop 4 17 2/1700 BusStop -1 23 3",
+				"marriage_Tue": "610 SeedShop 4 17 2/1700  BusStop -1 23 3",
+			},
+			"When": { 
+				"HasSeenEvent": "StardewClerksEvent1",
+				"HasMod|contains=AndrewJC.APelicanTown": false,			
+			},
+		},
+		{
+			"LogName": "Abby Clerks Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Abigail",
+			"Entries": {
+				"spring_Tue":"800 SeedShop 4 17 2/1700 SeedShop 3 6 0 abigail_videogames/1930 SeedShop 1 9 3 abigail_sleep",
+				"summer_Tue":"800 SeedShop 4 17 2/1700 SeedShop 3 6 0 abigail_videogames/1930 SeedShop 1 9 3 abigail_sleep",
+				"fall_Tue":"800 SeedShop 4 17 2/1700 SeedShop 3 6 0 abigail_videogames/1930 SeedShop 1 9 3 abigail_sleep",
+				"winter_Tue":"800 SeedShop 4 17 2/1700 SeedShop 3 6 0 abigail_videogames/1930 SeedShop 1 9 3 abigail_sleep",
+				"marriage_Tue": "610 SeedShop 4 17 2/1700  BusStop -1 23 3",
+			},
+			"When": { 
+				"HasSeenEvent": "StardewClerksEvent1",
+				"HasMod": "AndrewJC.APelicanTown"			
+			},
+		},
+		
+		//Strings
+		{
+			"LogName": "Adding Clerks Strings",
+			"Action": "EditData",
+			"Target": "Strings/schedules/Pierre",
+			"Entries": {
+				"Wed.43840": "It's nice to have some extra time at the Saloon, now that I can have someone else man the counter for me.$1",
+
+			},
+		},
+		{
+			"LogName": "Adding Clerks Strings",
+			"Action": "EditData",
+			"Target": "Strings/schedules/Pierre",
+			"Entries": {
+				"Wed.43840": "It's nice to have some extra time at the Saloon, now that I can have someone else man the counter for me.$0#$b#Plus, Thompson isn't singing anymore today, so I can enjoy some peace and quiet!$1",
+
+			},
+			"When": { 
+				"HasMod": "AndrewJC.APelicanTown"			
+			},
+		},
+		//Thompson Nametag
+		{
+			"LogName": "Thompson Nametag",
+			"Action": "EditImage",
+			"Target": "Portraits/Thompson/ThompsonPortraitsSpring, Portraits/Thompson/ThompsonPortraitsSummer, Portraits/Thompson/ThompsonPortraitsFall, Portraits/Thompson/ThompsonPortraitsWinter",
+			"FromFile": "ThompsonNametagOverlay.png",
+			"When": {
+				"HasSeenEvent": "StardewClerksEvent1",
+				"HasMod": "AndrewJC.APelicanTown",
+				"DayOfWeek": "Wednesday, Sunday",
+				"Time": "{{Range:730, 1700}}",
+			},
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay"
+		},
+	]
+}

@@ -1,0 +1,247 @@
+{
+  "Changes": [
+
+    ////////////////////////////
+    // PROJECTILE ON
+    ////////////////////////////
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.GlacialWind": {
+           "Texture": "Mods/CapeStardew/Weapons/Glacial Wind",
+          "SpriteIndex": 0,
+          "Name": "Glacial Wind",
+          "DisplayName": "{{i18n:Glacial-Wind_Translated}}",
+          "Description": "{{i18n:Glacial-Wind_Description_Translated}}",
+          "Type": "3",
+          "Category": -98,
+          "Price": 7000,
+          "MinDamage": 50,
+          "MaxDamage": 65,
+          "Knockback": 0.05,
+          "Speed": 1,
+          "Precision": 30,
+          "Defense": 0,
+          "AreaOfEffect": 0,
+          "CritChance": 0.03,
+          "CritMultiplier": 2.8,
+          "CanPurchase": false,
+          "Projectiles": [
+            {
+              "Id": "glacialwind_projectile1",
+              "Damage": 18,
+              "Explodes": false,
+              "Bounces": 0,
+              "MaxDistance": 16,
+              "Velocity": 9,
+              "RotationVelocity": 16,
+              "TailLength": 4,
+              "FireSound": "wand",
+              "CollisionSound": "crystal",
+              "SpriteIndex": 14
+            }
+          ]
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Vanilla",
+        "GlacialWindProjectile": "on"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.GlacialWind": {
+          "Texture": "Mods/CapeStardew/Weapons/Glacial Wind",
+          "SpriteIndex": 0,
+          "Name": "Glacial Wind",
+          "DisplayName": "{{i18n:Glacial-Wind_Translated}}",
+          "Description": "{{i18n:Glacial-Wind_Description_Translated}}",
+          "Type": "3",
+          "Category": -98,
+          "Price": 7000,
+          "MinDamage": 58,
+          "MaxDamage": 72,
+          "Knockback": 0.08,
+          "Speed": 2,
+          "Precision": 40,
+          "Defense": 0,
+          "AreaOfEffect": 0,
+          "CritChance": 0.04,
+          "CritMultiplier": 2.9,
+          "CanPurchase": false,
+          "Projectiles": [
+            {
+              "Id": "glacialwind_projectile1",
+              "Damage": 24,
+              "Explodes": false,
+              "Bounces": 0,
+              "MaxDistance": 17,
+              "Velocity": 10,
+              "RotationVelocity": 16,
+              "TailLength": 4,
+              "FireSound": "wand",
+              "CollisionSound": "crystal",
+              "SpriteIndex": 14
+            }
+          ]
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Balanced",
+        "GlacialWindProjectile": "on"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.GlacialWind": {
+           "Texture": "Mods/CapeStardew/Weapons/Glacial Wind",
+          "SpriteIndex": 0,
+          "Name": "Glacial Wind",
+          "DisplayName": "{{i18n:Glacial-Wind_Translated}}",
+          "Description": "{{i18n:Glacial-Wind_Description_Translated}}",
+          "Type": "3",
+          "Category": -98,
+          "Price": 7000,
+          "MinDamage": 70,
+          "MaxDamage": 85,
+          "Knockback": 0.12,
+          "Speed": 3,
+          "Precision": 60,
+          "Defense": 0,
+          "AreaOfEffect": 0,
+          "CritChance": 0.06,
+          "CritMultiplier": 3.0,
+          "CanPurchase": false,
+          "Projectiles": [
+            {
+              "Id": "glacialwind_projectile1",
+              "Damage": 30,
+              "Explodes": false,
+              "Bounces": 0,
+              "MaxDistance": 20,
+              "Velocity": 11,
+              "RotationVelocity": 16,
+              "TailLength": 4,
+              "FireSound": "wand",
+              "CollisionSound": "crystal",
+              "SpriteIndex": 14
+            }
+          ]
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Stronger",
+        "GlacialWindProjectile": "on"
+      }
+    },
+/////////////
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.GlacialWind": {
+          "Texture": "Mods/CapeStardew/Weapons/Glacial Wind",
+          "SpriteIndex": 0,
+          "Name": "Glacial Wind",
+          "DisplayName": "{{i18n:Glacial-Wind_Translated}}",
+          "Description": "{{i18n:Glacial-Wind_Description_Translated}}",
+          "Type": "3",
+          "Category": -98,
+          "Price": 7000,
+          "MinDamage": 50,
+          "MaxDamage": 65,
+          "Knockback": 0.05,
+          "Speed": 1,
+          "Precision": 30,
+          "Defense": 0,
+          "AreaOfEffect": 0,
+          "CritChance": 0.03,
+          "CritMultiplier": 2.8,
+          "CanPurchase": false
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Vanilla",
+"GlacialWindProjectile": "off"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.GlacialWind": {
+          "Texture": "Mods/CapeStardew/Weapons/Glacial Wind",
+          "SpriteIndex": 0,
+          "Name": "Glacial Wind",
+          "DisplayName": "{{i18n:Glacial-Wind_Translated}}",
+          "Description": "{{i18n:Glacial-Wind_Description_Translated}}",
+          "Type": "3",
+          "Category": -98,
+          "Price": 7000,
+          "MinDamage": 58,
+          "MaxDamage": 72,
+          "Knockback": 0.08,
+          "Speed": 2,
+          "Precision": 40,
+          "Defense": 0,
+          "AreaOfEffect": 0,
+          "CritChance": 0.04,
+          "CritMultiplier": 2.9,
+          "CanPurchase": false
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Balanced",
+"GlacialWindProjectile": "off"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.GlacialWind": {
+          "Texture": "Mods/CapeStardew/Weapons/Glacial Wind",
+          "SpriteIndex": 0,
+          "Name": "Glacial Wind",
+          "DisplayName": "{{i18n:Glacial-Wind_Translated}}",
+          "Description": "{{i18n:Glacial-Wind_Description_Translated}}",
+          "Type": "3",
+          "Category": -98,
+          "Price": 7000,
+          "MinDamage": 70,
+          "MaxDamage": 85,
+          "Knockback": 0.12,
+          "Speed": 3,
+          "Precision": 60,
+          "Defense": 0,
+          "AreaOfEffect": 0,
+          "CritChance": 0.06,
+          "CritMultiplier": 3.0,
+          "CanPurchase": false
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Stronger",
+"GlacialWindProjectile": "off"
+      }
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Mods/CapeStardew/Weapons/Glacial Wind",
+      "FromFile": "Weapons/{{TargetWithoutPath}}/weapon.png"
+    }
+
+  ]
+}

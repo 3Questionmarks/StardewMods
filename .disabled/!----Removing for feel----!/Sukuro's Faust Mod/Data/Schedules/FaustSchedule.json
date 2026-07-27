@@ -1,0 +1,50 @@
+{
+	"Changes": [
+		{
+			"LogName": "Faust Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Faust",
+			"Entries": {
+				"spring": "610 FaustHouse 22 7 0/630 FaustHouse 19 7 0/800 Town 44 89 3/1300 Railroad 14 19 0/1900 FaustHouse 6 9 2 Faust_Read/2100 FaustHouse 6 9 2 Faust_Doze/2400 FaustHouse 6 6 3 faust_sleep",
+				"summer": "610 FaustHouse 22 7 0/630 FaustHouse 19 7 0/700 FaustHouse 14 7 2 Faust_Read/1000 Railroad 28 39 2 Faust_Doze \"Strings\\schedules\\Faust:nap.000\"/1200 Town 52 42 2/1800 Railroad 16 21 2 Faust_Lantern \"Strings\\schedules\\Faust:yard.000\"/2500 FaustHouse 6 6 3 faust_sleep",
+				"fall": "610 FaustHouse 22 7 0/630 FaustHouse 19 7 0/700 FaustHouse 14 7 2 Faust_Read/900 Town 92 8 1/1200 Town 49 88 2 Faust_Doze/1600 Railroad 27 20 0 Faust_LanternBack/2400 FaustHouse 6 6 3 faust_sleep",
+				"winter": "610 FaustHouse 22 7 0/630 FaustHouse 19 7 0/700 FaustHouse 14 7 2 Faust_Read/900 Mountain 49 9 2/1100 Town 51 87 0/1500 Mountain 8 5 2 Faust_Doze \"Strings\\schedules\\Faust:nap.001\"/1900 Railroad 16 21 2 Faust_Lantern \"Strings\\schedules\\Faust:yard.000\"/2500 FaustHouse 6 6 3 faust_sleep",
+				"rain": "610 FaustHouse 22 7 0/630 FaustHouse 19 7 0/700 FaustHouse 15 7 0 Faust_Read/1500 FaustHouse 15 7 0 Faust_Doze/1700 Railroad 23 38 2/2000 Railroad 4 34 0 Faust_LanternBack \"Strings\\schedules\\Faust:mom.000\"/2500 FaustHouse 6 6 3 faust_sleep",
+				"Tue": "610 FaustHouse 22 7 0/630 FaustHouse 19 7 0/800 Railroad 10 27 3/1000 Railroad 20 16 0/1330 Railroad 41 41 2/1400 Railroad 41 41 2 Faust_Doze \"Strings\\schedules\\Faust:nap.001\"/1500 Saloon 14 20 0 Faust_Drink/2330 FaustHouse 6 6 3 faust_sleep",
+				"Fri": "610 FaustHouse 22 7 0/630 FaustHouse 19 7 0/730 SeedShop 14 20 0/1100 SeedShop 16 27 3/1200 Town 47 87 0/1700 Saloon 14 20 0 Faust_Drink/2330 FaustHouse 6 6 3 faust_sleep",
+				"Sun": "610 FaustHouse 22 7 0/630 FaustHouse 19 7 0/800 SeedShop 38 22 0 \"Strings\\schedules\\Faust:Sun.000\"/1430 Town 42 86 0/1830 FaustHouse 16 7 0 Faust_Read/100 FaustHouse 6 6 3 faust_sleep",
+				"winter_12": "610 FaustHouse 6 6 3/2200 Railroad 4 34 0 \"Strings\\schedules\\Faust:mom.001\"",
+				"GreenRain": "0 Saloon 19 23 3",
+				"marriage_Fri": "700 Railroad 16 21 2 \"Strings\\schedules\\Faust:yard.000\"/1200 Town 51 87 0/1800 Saloon 14 20 0 Faust_Drink \"Strings\\schedules\\Faust:marriage.000\"/2230 bed",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Faust",
+			"When": { "House Location": "Alternate" },
+			"Entries": {
+				"summer": "610 FaustHouse 22 7 0/630 FaustHouse 19 7 0/700 FaustHouse 14 7 2 Faust_Read/1000 Railroad 22 23 2 Faust_Doze \"Strings\\schedules\\Faust:nap.000\"/1200 Town 52 42 2/1800 Railroad 16 21 2 Faust_Lantern \"Strings\\schedules\\Faust:yard.000\"/2500 FaustHouse 6 6 3 faust_sleep",
+				"rain": "610 FaustHouse 22 7 0/630 FaustHouse 19 7 0/700 FaustHouse 15 7 0 Faust_Read/1500 FaustHouse 15 7 0 Faust_Doze/1700 Railroad 12 18 2/2000 Railroad 4 34 0 Faust_LanternBack \"Strings\\schedules\\Faust:mom.000\"/2500 FaustHouse 6 6 3 faust_sleep",
+			}
+		},
+		{
+			"LogName": "Faust Goes Outside More",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Faust",
+			"When": { "HasSeenEvent |contains=95790305": true },
+			"Entries": {
+				"Thu": "610 FaustHouse 22 7 0/630 FaustHouse 19 7 0/700 ArchaeologyHouse 13 5 0/1100 ArchaeologyHouse 10 12 3 Faust_Read/1400 Railroad 8 16 3/2000 Railroad 14 12 1/2300 FaustHouse 22 7 2/100 FaustHouse 6 6 3 faust_sleep",
+				"Fri": "610 FaustHouse 22 7 0/630 FaustHouse 19 7 0/730 SeedShop 14 20 0/1100 SeedShop 16 27 3/1200 Town 47 87 0/1800 Saloon 8 20 0 Faust_Drink/2330 FaustHouse 6 6 3 faust_sleep",
+				"marriage_Fri": "700 Railroad 16 21 2 \"Strings\\schedules\\Faust:yard.000\"/1200 Town 51 87 0/1800 Saloon 8 20 0 Faust_Drink \"Strings\\schedules\\Faust:marriage.000\"/2230 bed",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Faust",
+			"When": { "HasSeenEvent |contains=95790305": true, "House Location": "Alternate" },
+			"Entries": {
+				"Thu": "610 FaustHouse 22 7 0/630 FaustHouse 19 7 0/700 ArchaeologyHouse 13 5 0/1100 ArchaeologyHouse 10 12 3 Faust_Read/1400 Railroad 20 16 0/2000 Railroad 14 12 1/2300 FaustHouse 22 7 2/100 FaustHouse 6 6 3 faust_sleep",
+			}
+		}
+	]
+}

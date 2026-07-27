@@ -1,0 +1,970 @@
+{
+    "Changes": [
+        {
+			"LogName": "{{ModId}}_Fish Shop WITHOUT Year 2 Price Changes",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "FishShop",
+                "Items"
+            ],
+            "Entries": {
+				
+				// BOBBERS
+				
+                "{{ModId}}_ID_QualityBobber": {
+                    "Id": "{{ModId}}_ID_QualityBobber",
+                    "ItemId": "(O)877",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_FishShop_QualityBobber Received",
+                    "Price": "1192",
+					"AvailableStock": "1"
+                },
+				"{{ModId}}_ID_CuriosityLure": {
+                    "Id": "{{ModId}}_ID_CuriosityLure",
+                    "ItemId": "(O)856",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_FishShop_CuriosityLure Received",
+                    "Price": "5000",
+					"AvailableStock": "1"
+                },
+				
+				// MACHINES
+				
+				"{{ModId}}_ID_BaitMaker_Y1": {
+                    "Id": "{{ModId}}_ID_BaitMaker_Y1",
+                    "ItemId": "BaitMaker",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_FishShop_BaitMaker Received",
+                    "Price": "2790",
+					"AvailableStock": "1"
+                },
+				
+				// FISH
+				// Later: might split up entries into stock by day of the week to unclog the shop.
+				
+				// NON SEASONAL
+				
+				"{{ModId}}_ID_Bream": {
+                    "Id": "{{ModId}}_ID_Bream",
+                    "ItemId": "(O)132",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 132 1",
+                    "Price": "134",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Bullhead": {
+                    "Id": "{{ModId}}_ID_Bullhead",
+                    "ItemId": "(O)700",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 700 1",
+                    "Price": "224",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Carp": {
+                    "Id": "{{ModId}}_ID_Carp",
+                    "ItemId": "(O)142",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 142 1",
+                    "Price": "90",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Chub": {
+                    "Id": "{{ModId}}_ID_Chub",
+                    "ItemId": "(O)702",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 702 1",
+                    "Price": "150",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_LargemouthBass": {
+                    "Id": "{{ModId}}_ID_LargemouthBass",
+                    "ItemId": "(O)136",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 136 1",
+                    "Price": "300",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				
+				// SPRING
+				
+				"{{ModId}}_ID_Anchovy": {
+                    "Id": "{{ModId}}_ID_Anchovy",
+                    "ItemId": "(O)129",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 129 1, SEASON Spring Fall",
+                    "Price": "90",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Catfish": {
+                    "Id": "{{ModId}}_ID_Catfish",
+                    "ItemId": "(O)143",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 143 1, SEASON Spring Fall",
+                    "Price": "600",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Eel": {
+                    "Id": "{{ModId}}_ID_Eel",
+                    "ItemId": "(O)148",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 148 1, SEASON Spring Fall",
+                    "Price": "254",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Flounder": {
+                    "Id": "{{ModId}}_ID_Flounder",
+                    "ItemId": "(O)267",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 267 1, SEASON Spring Summer",
+                    "Price": "300",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Halibut": {
+                    "Id": "{{ModId}}_ID_Halibut",
+                    "ItemId": "(O)708",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 708 1, SEASON Spring Summer Winter",
+                    "Price": "240",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Herring": {
+                    "Id": "{{ModId}}_ID_Herring",
+                    "ItemId": "(O)147",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 147 1, SEASON Spring Winter",
+                    "Price": "90",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Sardine": {
+                    "Id": "{{ModId}}_ID_Sardine",
+                    "ItemId": "(O)131",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 131 1, SEASON Spring Fall Winter",
+                    "Price": "120",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Shad": {
+                    "Id": "{{ModId}}_ID_Shad",
+                    "ItemId": "(O)706",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 706 1, SEASON Spring Summer Fall",
+                    "Price": "180",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_SmallmouthBass": {
+                    "Id": "{{ModId}}_ID_SmallmouthBass",
+                    "ItemId": "(O)137",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 137 1, SEASON Spring Fall",
+                    "Price": "150",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Sunfish": {
+                    "Id": "{{ModId}}_ID_Sunfish",
+                    "ItemId": "(O)145",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 145 1, SEASON Spring Summer",
+                    "Price": "90",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				
+				// SUMMER
+				
+				"{{ModId}}_ID_Dorado": {
+                    "Id": "{{ModId}}_ID_Dorado",
+                    "ItemId": "(O)704",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 704 1, SEASON Summer",
+                    "Price": "300",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Octopus": {
+                    "Id": "{{ModId}}_ID_Octopus",
+                    "ItemId": "(O)149",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 149 1, SEASON Summer",
+                    "Price": "450",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Pike": {
+                    "Id": "{{ModId}}_ID_Pike",
+                    "ItemId": "(O)128",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 128 1, SEASON Summer",
+                    "Price": "300",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Pufferfish": {
+                    "Id": "{{ModId}}_ID_Pufferfish",
+                    "ItemId": "(O)144",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 144 1, SEASON Summer Winter",
+                    "Price": "600",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_RainbowTrout": {
+                    "Id": "{{ModId}}_ID_RainbowTrout",
+                    "ItemId": "(O)138",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 138 1, SEASON Summer",
+                    "Price": "194",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_RedMullet": {
+                    "Id": "{{ModId}}_ID_RedMullet",
+                    "ItemId": "(O)146",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 146 1, SEASON Summer Winter",
+                    "Price": "224",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_RedSnapper": {
+                    "Id": "{{ModId}}_ID_RedSnapper",
+                    "ItemId": "(O)150",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 150 1, SEASON Summer Fall Winter",
+                    "Price": "150",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Sturgeon": {
+                    "Id": "{{ModId}}_ID_Sturgeon",
+                    "ItemId": "(O)698",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 698 1, SEASON Summer Winter",
+                    "Price": "600",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_SuperCucumber": {
+                    "Id": "{{ModId}}_ID_SuperCucumber",
+                    "ItemId": "(O)155",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 155 1, SEASON Summer Fall",
+                    "Price": "750",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Tilapia": {
+                    "Id": "{{ModId}}_ID_Tilapia",
+                    "ItemId": "(O)701",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 701 1, SEASON Summer Fall",
+                    "Price": "224",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Tuna": {
+                    "Id": "{{ModId}}_ID_Tuna",
+                    "ItemId": "(O)130",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 130 1, SEASON Summer Winter",
+                    "Price": "300",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				
+				// FALL
+				
+				"{{ModId}}_ID_Albacore": {
+                    "Id": "{{ModId}}_ID_Albacore",
+                    "ItemId": "(O)705",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 705 1, SEASON Fall Winter",
+                    "Price": "224",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_MidnightCarp": {
+                    "Id": "{{ModId}}_ID_MidnightCarp",
+                    "ItemId": "(O)269",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 269 1, SEASON Fall Winter",
+                    "Price": "450",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Salmon": {
+                    "Id": "{{ModId}}_ID_Salmon",
+                    "ItemId": "(O)139",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 139 1, SEASON Fall",
+                    "Price": "224",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_SeaCucumber": {
+                    "Id": "{{ModId}}_ID_SeaCucumber",
+                    "ItemId": "(O)154",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 154 1, SEASON Fall Winter",
+                    "Price": "224",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_TigerTrout": {
+                    "Id": "{{ModId}}_ID_TigerTrout",
+                    "ItemId": "(O)699",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 699 1, SEASON Fall Winter",
+                    "Price": "450",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Walleye": {
+                    "Id": "{{ModId}}_ID_Walleye",
+                    "ItemId": "(O)140",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 140 1, SEASON Fall Winter",
+                    "Price": "314",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				
+				// WINTER
+				
+				"{{ModId}}_ID_Lingcod": {
+                    "Id": "{{ModId}}_ID_Lingcod",
+                    "ItemId": "(O)707",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 707 1, SEASON Winter",
+                    "Price": "360",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Perch": {
+                    "Id": "{{ModId}}_ID_Perch",
+                    "ItemId": "(O)141",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 141 1, SEASON Winter",
+                    "Price": "164",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				"{{ModId}}_ID_Squid": {
+                    "Id": "{{ModId}}_ID_Squid",
+                    "ItemId": "(O)151",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Any 151 1, SEASON Winter",
+                    "Price": "240",
+					"AvoidRepeat": true,
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                }
+            }
+        }
+    ]
+}

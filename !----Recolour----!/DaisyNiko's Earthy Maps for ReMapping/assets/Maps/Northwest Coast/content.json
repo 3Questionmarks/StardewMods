@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Northwest.Coast)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Northwest.Coast",
+      "FromFile": "assets/Maps/Northwest Coast/Northwest.Coast_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+			"When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

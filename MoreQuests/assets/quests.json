@@ -1,0 +1,978 @@
+{
+    "Schema": "1.0",
+    "Quests": [
+        {
+            "Name": "Farming.BasicCropDelivery",
+            "Category": "Farming",
+            "Trigger": { "Source": "DailyBoard", "Weight": 60, "MaxPerDay": 4, "CooldownTier": "Medium" },
+            "Generator": "BasicCropDelivery"
+        },
+        {
+            "Name": "Fishing.SimpleRequest",
+            "Category": "Fishing",
+            "Trigger": { "Source": "DailyBoard", "Weight": 50, "MaxPerDay": 1, "CooldownTier": "Short" },
+            "Generator": "SimpleFishingRequest"
+        },
+        {
+            "Name": "Fishing.KnowYourWaters",
+            "Category": "Fishing",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 15,
+                "MaxPerDay": 1,
+                "CooldownDays": 30,
+                "Available": { "DayRange": "1-5" }
+            },
+            "Generator": "KnowYourWaters"
+        },
+        {
+            "Name": "Mining.BasicSlimeClearing",
+            "Category": "Mining",
+            "Trigger": {
+                "Source": "CustomBoard",
+                "Weight": 50,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "MinDeepestMineLevel": "1" }
+            },
+            "Generator": "BasicSlimeClearing"
+        },
+        {
+            "Name": "Mining.ClearTheFloor",
+            "Category": "Mining",
+            "Trigger": {
+                "Source": "CustomBoard",
+                "Weight": 25,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long",
+                "Available": { "MinDeepestMineLevel": "1" }
+            },
+            "Generator": "ClearTheFloor"
+        },
+        {
+            "Name": "Mining.BarDelivery",
+            "Category": "Mining",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 35,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "SkillLevel": "Mining 1", "MinDeepestMineLevel": "40" }
+            },
+            "Generator": "BarDelivery"
+        },
+        {
+            "Name": "Foraging.Seasonal",
+            "Category": "Foraging",
+            "Trigger": { "Source": "DailyBoard", "Weight": 50, "MaxPerDay": 3, "CooldownTier": "Short" },
+            "Generator": "SeasonalForaging"
+        },
+        {
+            "Name": "Social.ElliottPoem",
+            "Category": "Social",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 25,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long",
+                "Available": { "NpcExists": "Elliott", "NpcMet": "Elliott" }
+            },
+            "Generator": "ElliottPoemInspiration"
+        },
+        {
+            "Name": "Social.CheckOnGeorge",
+            "Category": "Social",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 25,
+                "MaxPerDay": 1,
+                "CooldownDays": 21,
+                "Available": { "NpcExists": "George Evelyn" }
+            },
+            "Generator": "CheckOnGeorge"
+        },
+        {
+            "Name": "Animal.HaySupplyRun",
+            "Category": "Animal",
+            "Trigger": { "Source": "Mail", "Weight": 0, "MaxPerDay": 1, "CooldownDays": 84 },
+            "Generator": "HaySupplyRun"
+        },
+        {
+            "Name": "Seasonal.BattenDownTheHatches",
+            "Category": "Seasonal",
+            "Trigger": {
+                "Source": "WeatherForecast",
+                "Weather": "Storm",
+                "CooldownDays": 14,
+                "Available": { "KnownCraftingRecipe": "Lightning Rod" }
+            },
+            "Generator": "BattenDownTheHatches"
+        },
+        {
+            "Name": "Seasonal.BeachCleanup",
+            "Category": "Seasonal",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 30,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long"
+            },
+            "Generator": "BeachCleanup"
+        },
+        {
+            "Name": "Seasonal.FloralTea",
+            "Category": "Seasonal",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 40,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium"
+            },
+            "Generator": "FloralTea"
+        },
+        {
+            "Name": "Cooking.CravingDish",
+            "Category": "Cooking",
+            "Trigger": { "Source": "DailyBoard", "Weight": 30, "MaxPerDay": 3, "CooldownTier": "Short" },
+            "Generator": "CravingDish"
+        },
+        {
+            "Name": "Festival.SubmarineFuel",
+            "Category": "Seasonal",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "winter 12",
+                "RepeatYearly": true
+            },
+            "Generator": "SubmarineFuel"
+        },
+        {
+            "Name": "Festival.WizardsRitual",
+            "Category": "Seasonal",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "fall 24",
+                "RepeatYearly": true,
+                "Available": { "NpcExists": "Wizard" }
+            },
+            "Generator": "WizardsRitualMaterials"
+        },
+        {
+            "Name": "Festival.HolidayCookies",
+            "Category": "Seasonal",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "winter 21",
+                "RepeatYearly": true,
+                "Available": { "NpcExists": "Evelyn" }
+            },
+            "Generator": "HolidayCookies"
+        },
+        {
+            "Name": "Social.CheckOnFriends",
+            "Category": "Social",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 20,
+                "MaxPerDay": 1,
+                "CooldownDays": 30
+            },
+            "Generator": "CheckOnFriends"
+        },
+        {
+            "Name": "Social.EmilyHousewarming",
+            "Category": "Social",
+            "Trigger": {
+                "Source": "OneShot",
+                "When": "FirstFriendship Emily >= 5",
+                "Available": { "NpcExists": "Emily", "NpcMet": "Emily" }
+            },
+            "Generator": "EmilyHousewarming"
+        },
+        {
+            "Name": "Story.MorrisManOfMeans",
+            "Category": "Social",
+            "Trigger": {
+                "Source": "OneShot",
+                "When": "FirstMoneyEarned >= 15000",
+                "Available": { "IsCommunityCenterCompleted": "false" }
+            },
+            "Generator": "MorrisManOfMeans"
+        },
+        {
+            "Name": "Story.MorrisQualityControl",
+            "Category": "Social",
+            "Trigger": {
+                "Source": "MailReceived",
+                "Flag": "RafiaBee.MoreQuests.Morris.QualityControlUnlocked",
+                "DayDelay": 0,
+                "Available": { "NpcExists": "Pierre", "IsCommunityCenterCompleted": "false" }
+            },
+            "Generator": "MorrisQualityControl"
+        },
+        {
+            "Name": "Story.PierreDontGetCaught",
+            "Category": "Social",
+            "Trigger": {
+                "Source": "OneShot",
+                "When": "FirstFriendship Pierre >= 4",
+                "Available": { "NpcExists": "Pierre", "IsCommunityCenterCompleted": "false" }
+            },
+            "Generator": "PierreDontGetCaught"
+        },
+        {
+            "Name": "Festival.GusSpring",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "spring 6",
+                "RepeatYearly": true,
+                "Available": { "NpcExists": "Gus" }
+            },
+            "Generator": "GusFestivalFeastSpring"
+        },
+        {
+            "Name": "Festival.GusWinter",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "winter 18",
+                "RepeatYearly": true,
+                "Available": { "NpcExists": "Gus" }
+            },
+            "Generator": "GusFestivalFeastWinter"
+        },
+        {
+            "Name": "Farming.PreservesJarRequest",
+            "Category": "Farming",
+            "Trigger": {
+                "Source": "OneShot",
+                "When": "FirstCraftingRecipe Preserves Jar"
+            },
+            "Generator": "PreservesJarRequest"
+        },
+        {
+            "Name": "Farming.KegRequest",
+            "Category": "Farming",
+            "Trigger": {
+                "Source": "OneShot",
+                "When": "FirstCraftingRecipe Keg"
+            },
+            "Generator": "KegRequest"
+        },
+        {
+            "Name": "Farming.DehydratorRequest",
+            "Category": "Farming",
+            "Trigger": {
+                "Source": "OneShot",
+                "When": "FirstCraftingRecipe Dehydrator"
+            },
+            "Generator": "DehydratorRequest"
+        },
+        {
+            "Name": "Fishing.FishSmokerRequest",
+            "Category": "Fishing",
+            "Trigger": {
+                "Source": "OneShot",
+                "When": "FirstCraftingRecipe Fish Smoker"
+            },
+            "Generator": "FishSmokerRequest"
+        },
+        {
+            "Name": "Mining.SkullCavernDeepDive",
+            "Category": "Mining",
+            "Trigger": {
+                "Source": "CustomBoard",
+                "Weight": 30,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long",
+                "Available": { "MinDeepestMineLevel": "121" }
+            },
+            "Generator": "SkullCavernDeepDive"
+        },
+        {
+            "Name": "Mining.MinesDeepDive",
+            "Category": "Mining",
+            "Trigger": {
+                "Source": "CustomBoard",
+                "Weight": 40,
+                "MaxPerDay": 1,
+                "CooldownTier": "Short",
+                "Available": { "MinDeepestMineLevel": "5", "SkillLevel": "Mining 1" }
+            },
+            "Generator": "MinesDeepDive"
+        },
+        {
+            "Name": "Mining.UnseenOffering",
+            "Category": "Mining",
+            "Trigger": {
+                "Source": "CustomBoard",
+                "Weight": 10,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "SkillLevel": "Combat 5", "MailReceived": "willyBoatFixed" }
+            },
+            "Generator": "UnseenOffering"
+        },
+        {
+            "Name": "Mining.ArchaeologyDig",
+            "Category": "Mining",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 30,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium"
+            },
+            "Generator": "ArchaeologyDig"
+        },
+        {
+            "Name": "Farming.PierresStockUp",
+            "Category": "Farming",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 20,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long",
+                "Available": { "SkillLevel": "Farming 4", "NpcExists": "Pierre" }
+            },
+            "Generator": "PierresStockUp"
+        },
+        {
+            "Name": "Farming.CropCycleQuest",
+            "Category": "Farming",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 12,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long",
+                "Available": { "SkillLevel": "Farming 4" }
+            },
+            "Generator": "CropCycleQuest"
+        },
+        {
+            "Name": "Farming.MassiveHarvest",
+            "Category": "Farming",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 15,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long",
+                "Available": { "SkillLevel": "Farming 7" }
+            },
+            "Generator": "MassiveHarvestRequest"
+        },
+        {
+            "Name": "Cooking.WeeklySpecialCommon",
+            "Category": "Cooking",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 25,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "SkillLevel": "Cooking 2|Farming 3" }
+            },
+            "Generator": "WeeklySpecialCommon"
+        },
+        {
+            "Name": "Cooking.WeeklySpecialComplex",
+            "Category": "Cooking",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 15,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "SkillLevel": "Cooking 4|Farming 5" }
+            },
+            "Generator": "WeeklySpecialComplex"
+        },
+        {
+            "Name": "Cooking.GrandFeast",
+            "Category": "Cooking",
+            "Trigger": {
+                "Source": "SpecialOrder",
+                "Duration": "Week",
+                "CooldownTier": "Long",
+                "Weight": 50
+            },
+            "Generator": "GrandFeast"
+        },
+        {
+            "Name": "Fishing.MediumHaul",
+            "Category": "Fishing",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 15,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "SkillLevel": "Fishing 5" }
+            },
+            "Generator": "MediumFishingHaul"
+        },
+        {
+            "Name": "Fishing.SeafoodNight",
+            "Category": "Fishing",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 10,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long",
+                "Available": { "SkillLevel": "Fishing 8" }
+            },
+            "Generator": "SeafoodNight"
+        },
+        {
+            "Name": "Mining.MonsterParts",
+            "Category": "Mining",
+            "Trigger": {
+                "Source": "CustomBoard",
+                "Weight": 20,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "SkillLevel": "Combat 2", "MinDeepestMineLevel": "40" }
+            },
+            "Generator": "MonsterParts"
+        },
+        {
+            "Name": "Foraging.ForageWithLinus",
+            "Category": "Foraging",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 20,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long",
+                "Available": { "NpcExists": "Linus", "NpcMet": "Linus" }
+            },
+            "Generator": "ForageWithLinus"
+        },
+        {
+            "Name": "Festival.GusFall",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "fall 8",
+                "RepeatYearly": true,
+                "Available": { "NpcExists": "Gus" }
+            },
+            "Generator": "GusFestivalFeastFall"
+        },
+        {
+            "Name": "Festival.GusSummer",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "summer 8",
+                "RepeatYearly": true,
+                "Available": { "NpcExists": "Gus" }
+            },
+            "Generator": "GusFestivalFeastSummer"
+        },
+        {
+            "Name": "Social.GiftDelivery",
+            "Category": "Social",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 25,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long"
+            },
+            "Generator": "GiftDelivery"
+        },
+        {
+            "Name": "Social.GuntherMuseumDonation",
+            "Category": "Social",
+            "Trigger": {
+                "Source": "NpcDialogue",
+                "Npc": "GuntherSilvian",
+                "CooldownTier": "Long",
+                "Available": { "NpcExists": "GuntherSilvian", "HasMod": "FlashShifter.SVECode" }
+            },
+            "Generator": "GuntherMuseumDonation"
+        },
+        {
+            "Name": "Social.TimedPackageDelivery",
+            "Category": "Social",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 15,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long"
+            },
+            "Generator": "TimedPackageDelivery"
+        },
+        {
+            "Name": "Seasonal.HeatWaveRelief",
+            "Category": "Seasonal",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 20,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "Season": "summer" }
+            },
+            "Generator": "HeatWaveRelief"
+        },
+        {
+            "Name": "Festival.JellyfishWatchPrep",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "summer 21",
+                "RepeatYearly": true
+            },
+            "Generator": "JellyfishWatchPrep"
+        },
+        {
+            "Name": "Festival.MerchantUnpacking",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "winter 13",
+                "RepeatYearly": true
+            },
+            "Generator": "MerchantUnpacking"
+        },
+        {
+            "Name": "Mining.MonsterHunt",
+            "Category": "Mining",
+            "Trigger": {
+                "Source": "CustomBoard",
+                "Weight": 25,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "MinDeepestMineLevel": "1" }
+            },
+            "Generator": "MonsterHunt"
+        },
+        {
+            "Name": "Foraging.RareForageHunt",
+            "Category": "Foraging",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 15,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "SkillLevel": "Foraging 1" }
+            },
+            "Generator": "RareForageHunt"
+        },
+        {
+            "Name": "Mining.RareMaterialRequest",
+            "Category": "Mining",
+            "Trigger": {
+                "Source": "CustomBoard",
+                "Weight": 15,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "SkillLevel": "Mining 7" }
+            },
+            "Generator": "RareMaterialRequest"
+        },
+        {
+            "Name": "Festival.SecretGiftHint",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "NpcDialogue",
+                "Npc": "Lewis",
+                "CooldownDays": 100,
+                "Available": { "Date": "winter 22-25", "NpcExists": "Lewis" }
+            },
+            "Generator": "SecretGiftHint"
+        },
+        {
+            "Name": "Festival.WrappingPaper",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "winter 20",
+                "RepeatYearly": true,
+                "Available": { "HasMod": "Si.ExtraCraftingMaterials", "NpcExists": "Lewis" }
+            },
+            "Generator": "WrappingPaper"
+        },
+        {
+            "Name": "Farming.QualityCropDelivery",
+            "Category": "Farming",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 20,
+                "MaxPerDay": 1,
+                "CooldownTier": "Short",
+                "Available": { "SkillLevel": "Farming 2" }
+            },
+            "Generator": "QualityCropDelivery"
+        },
+        {
+            "Name": "Farming.PremiumCropOrder",
+            "Category": "Farming",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 12,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long",
+                "Available": { "SkillLevel": "Farming 7" }
+            },
+            "Generator": "PremiumCropOrder"
+        },
+        {
+            "Name": "Fishing.QualityFishDelivery",
+            "Category": "Fishing",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 18,
+                "MaxPerDay": 1,
+                "CooldownTier": "Short",
+                "Available": { "SkillLevel": "Fishing 4" }
+            },
+            "Generator": "QualityFishDelivery"
+        },
+        {
+            "Name": "Festival.MoonlightJelliesDecor",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "summer 21",
+                "RepeatYearly": true,
+                "Available": { "NpcExists": "Lewis" }
+            },
+            "Generator": "MoonlightJelliesFestivalDecor"
+        },
+        {
+            "Name": "Festival.EggFestivalDecor",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "spring 10",
+                "RepeatYearly": true,
+                "Available": { "NpcExists": "Lewis" }
+            },
+            "Generator": "EggFestivalDecor"
+        },
+        {
+            "Name": "Festival.EggHuntSabotage",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "NpcDialogue",
+                "Npc": "Vincent",
+                "CooldownDays": 250,
+                "Available": { "Date": "spring 10-12", "NpcMet": "Vincent Jas" },
+                "DialogueText": "{{i18n:quest.festival.eggHuntSabotage.offer}}"
+            },
+            "Generator": "EggHuntSabotage"
+        },
+        {
+            "Name": "Festival.DyeForEggs",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "spring 8",
+                "RepeatYearly": true,
+                "Available": { "NpcExists": "Lewis" }
+            },
+            "Generator": "DyeForEggs"
+        },
+        {
+            "Name": "Festival.FairDecor",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "fall 12",
+                "RepeatYearly": true,
+                "Available": { "NpcExists": "Lewis" }
+            },
+            "Generator": "FairFestivalDecor"
+        },
+        {
+            "Name": "Festival.LuauDecor",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "summer 6",
+                "RepeatYearly": true,
+                "Available": { "NpcExists": "Lewis" }
+            },
+            "Generator": "LuauFestivalDecor"
+        },
+        {
+            "Name": "Festival.SpiritsEveDecor",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "fall 22",
+                "RepeatYearly": true,
+                "Available": { "NpcExists": "Wizard" }
+            },
+            "Generator": "SpiritsEveDecor"
+        },
+        {
+            "Name": "Festival.EastScarpSpiritsEveDecor",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "fall 24",
+                "RepeatYearly": true,
+                "Available": { "HasMod": "FlashShifter.EastScarpMod|Devilduke.EliandDylan|7thAxis.LitD.CP", "NpcExists": "Rosa" }
+            },
+            "Generator": "EastScarpSpiritsEveDecor"
+        },
+        {
+            "Name": "Festival.RidgesideGatheringDecor",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "fall 15",
+                "RepeatYearly": true,
+                "Available": { "HasMod": "Rafseazz.RidgesideVillage", "NpcExists": "Lenny" }
+            },
+            "Generator": "RidgesideGatheringDecor"
+        },
+        {
+            "Name": "Fishing.LocationOverpopulation",
+            "Category": "Fishing",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 22,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "SkillLevel": "Fishing 2" }
+            },
+            "Generator": "LocationFishOverpopulation"
+        },
+        {
+            "Name": "Fishing.RainyDayCatchMail",
+            "Category": "Fishing",
+            "Trigger": {
+                "Source": "WeatherForecast",
+                "Weather": "Rain",
+                "Available": { "SkillLevel": "Fishing 3" }
+            },
+            "Generator": "RainyDayCatch"
+        },
+        {
+            "Name": "Fishing.SizeOverpopulation",
+            "Category": "Fishing",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 18,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "SkillLevel": "Fishing 3" }
+            },
+            "Generator": "SizeFishOverpopulation"
+        },
+        {
+            "Name": "Fishing.LegendaryFish",
+            "Category": "Fishing",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 4,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long",
+                "Available": { "SkillLevel": "Fishing 6", "NpcMet": "Willy" }
+            },
+            "Generator": "LegendaryFishQuest"
+        },
+        {
+            "Name": "Festival.RainbowPlatter",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "summer 19",
+                "RepeatYearly": true
+            },
+            "Generator": "RainbowPlatter"
+        },
+        {
+            "Name": "Festival.SquidFestShowcase",
+            "Category": "Festival",
+            "Trigger": {
+                "Source": "DateLocked",
+                "Date": "winter 11",
+                "RepeatYearly": true
+            },
+            "Generator": "SquidFestShowcase"
+        },
+        {
+            "Name": "Animal.AlexProteinShakes",
+            "Category": "Animal",
+            "Trigger": {
+                "Source": "Periodic",
+                "EveryDays": 56,
+                "Available": { "NpcExists": "Alex", "NpcMet": "Alex" }
+            },
+            "Generator": "AlexProteinShakes"
+        },
+        {
+            "Name": "Animal.GuntherDinosaurStudy",
+            "Category": "Animal",
+            "Trigger": {
+                "Source": "OneShot",
+                "When": "FirstHeldItem (O)107",
+                "Available": { "NpcExists": "Gunther" }
+            },
+            "Generator": "GuntherDinosaurStudy"
+        },
+        {
+            "Name": "Animal.KrobusVoidNote",
+            "Category": "Animal",
+            "Trigger": {
+                "Source": "OneShot",
+                "When": "FirstHeldItem (O)305",
+                "Available": { "NpcExists": "Krobus", "NpcMet": "Krobus", "FriendshipLevel": "Krobus 1" }
+            },
+            "Generator": "KrobusVoidNote"
+        },
+        {
+            "Name": "Animal.LeahFarmPainting",
+            "Category": "Animal",
+            "Trigger": {
+                "Source": "Periodic",
+                "EveryDays": 21,
+                "Available": { "NpcExists": "Leah", "NpcMet": "Leah", "FriendshipLevel": "Leah 2" }
+            },
+            "Generator": "LeahFarmPainting"
+        },
+        {
+            "Name": "Animal.MarnieLivestockShow",
+            "Category": "Animal",
+            "Trigger": {
+                "Source": "BuildingBuilt",
+                "Building": "Deluxe Barn",
+                "DayDelay": 1,
+                "Available": { "NpcExists": "Marnie", "Season": "spring|summer|fall" }
+            },
+            "Generator": "MarnieLivestockShow"
+        },
+        {
+            "Name": "Animal.MarnieChickenOffer",
+            "Category": "Animal",
+            "Trigger": {
+                "Source": "BuildingBuilt",
+                "Building": "Coop",
+                "DayDelay": 1,
+                "Available": { "NpcExists": "Marnie" }
+            },
+            "Generator": "MarnieChickenOffer"
+        },
+        {
+            "Name": "Animal.MarnieCowOffer",
+            "Category": "Animal",
+            "Trigger": {
+                "Source": "BuildingBuilt",
+                "Building": "Barn",
+                "DayDelay": 1,
+                "Available": { "NpcExists": "Marnie" }
+            },
+            "Generator": "MarnieCowOffer"
+        },
+        {
+            "Name": "Animal.MarnieEggRequest",
+            "Category": "Animal",
+            "Trigger": {
+                "Source": "OneShot",
+                "When": "FirstStat chickenEggsLayed >= 1",
+                "Available": { "NpcExists": "Marnie" }
+            },
+            "Generator": "MarnieEggRequest"
+        },
+        {
+            "Name": "Animal.MarnieMilkRequest",
+            "Category": "Animal",
+            "Trigger": {
+                "Source": "OneShot",
+                "When": "FirstStat cowMilkProduced|goatMilkProduced >= 1",
+                "Available": { "NpcExists": "Marnie" }
+            },
+            "Generator": "MarnieMilkRequest"
+        },
+        {
+            "Name": "Animal.RobinSiloOfferCoop",
+            "Category": "Animal",
+            "Trigger": {
+                "Source": "BuildingBuilt",
+                "Building": "Coop",
+                "DayDelay": 2,
+                "Available": { "NpcExists": "Robin", "not:BuildingExists": "Silo" }
+            },
+            "Generator": "RobinSiloOffer"
+        },
+        {
+            "Name": "Animal.RobinSiloOfferBarn",
+            "Category": "Animal",
+            "Trigger": {
+                "Source": "BuildingBuilt",
+                "Building": "Barn",
+                "DayDelay": 2,
+                "Available": { "NpcExists": "Robin", "not:BuildingExists": "Silo" }
+            },
+            "Generator": "RobinSiloOffer"
+        },
+        {
+            "Name": "Farming.CarolineTeaGarden",
+            "Category": "Farming",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 18,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long",
+                "Available": { "NpcExists": "Caroline", "NpcMet": "Caroline", "SkillLevel": "Foraging 3", "FriendshipLevel": "Caroline 1" }
+            },
+            "Generator": "CarolineTeaGarden"
+        },
+        {
+            "Name": "Foraging.ClearDebris",
+            "Category": "Foraging",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 18,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long"
+            },
+            "Generator": "ClearDebris"
+        },
+        {
+            "Name": "Foraging.FeedWildCritters",
+            "Category": "Foraging",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 12,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long"
+            },
+            "Generator": "FeedWildCritters"
+        },
+        {
+            "Name": "Cooking.DinnerParty",
+            "Category": "Cooking",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 10,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long"
+            },
+            "Generator": "DinnerParty"
+        },
+        {
+            "Name": "Foraging.PlantTrees",
+            "Category": "Foraging",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 15,
+                "MaxPerDay": 1,
+                "CooldownTier": "Long"
+            },
+            "Generator": "PlantTrees"
+        },
+        {
+            "Name": "Seasonal.SpringCleaning",
+            "Category": "Seasonal",
+            "Trigger": {
+                "Source": "DailyBoard",
+                "Weight": 25,
+                "MaxPerDay": 1,
+                "CooldownTier": "Medium",
+                "Available": { "Season": "spring" }
+            },
+            "Generator": "SpringCleaning"
+        }
+    ]
+}

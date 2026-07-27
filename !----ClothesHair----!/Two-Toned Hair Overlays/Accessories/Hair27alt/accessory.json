@@ -1,0 +1,107 @@
+{
+  "Name": "Hair 27 alt",
+  "FrontAccessory": {
+    "ColorMasks": [
+	  [ 57, 57, 57 ],
+	  [ 81, 81, 81 ],
+	  [ 119, 119, 119 ],
+	  [ 141, 141, 141 ],
+      [ 158, 158, 158 ],
+	  [ 167, 167, 167 ],
+      [ 203, 203, 203 ],
+      [ 224, 224, 224 ],
+      [ 254, 254, 254 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 2
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 21
+    }
+  },
+  "LeftAccessory": {
+    "ColorMasks": [
+	  [ 57, 57, 57 ],
+	  [ 81, 81, 81 ],
+	  [ 119, 119, 119 ],
+	  [ 141, 141, 141 ],
+      [ 158, 158, 158 ],
+	  [ 167, 167, 167 ],
+      [ 203, 203, 203 ],
+      [ 224, 224, 224 ],
+      [ 254, 254, 254 ]
+    ],
+    "StartingPosition": {
+      "X": 32,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 20
+    }
+  },
+    "RightAccessory": {
+    "ColorMasks": [
+	  [ 57, 57, 57 ],
+	  [ 81, 81, 81 ],
+	  [ 119, 119, 119 ],
+	  [ 141, 141, 141 ],
+      [ 158, 158, 158 ],
+	  [ 167, 167, 167 ],
+      [ 203, 203, 203 ],
+      [ 224, 224, 224 ],
+      [ 254, 254, 254 ]
+    ],
+    "StartingPosition": {
+      "X": 48,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 20
+    }
+  },
+    "BackAccessory": {
+      "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Hair"
+    },
+    "ColorMasks": [
+	  [ 57, 57, 57 ],
+	  [ 81, 81, 81 ],
+	  [ 119, 119, 119 ],
+	  [ 141, 141, 141 ],
+      [ 158, 158, 158 ],
+	  [ 167, 167, 167 ],
+      [ 203, 203, 203 ],
+      [ 224, 224, 224 ],
+      [ 254, 254, 254 ]
+    ],
+    "StartingPosition": {
+      "X": 16,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 21
+    }
+  }
+}

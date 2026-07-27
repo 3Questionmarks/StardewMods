@@ -1,0 +1,47 @@
+{
+  "Changes": [
+    // Add Object
+    {
+      "LogName": "Load Adventurer's Pack Object",
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "6480.StorageVariety_AdventurersPack": {
+          "Name": "Adventurer's Pack",
+          "DisplayName": "{{i18n: AdventurersPack.name}}",
+          "Description": "{{i18n: AdventurersPack.description}}",
+          "Texture": "{{InternalAssetKey: assets/AdventurersPack.png}}",
+          "CustomFields": {
+            // Expanded Storage Data
+            "furyx639.ExpandedStorage/Enabled": "true",
+            "furyx639.ExpandedStorage/PlayerColor": "false",
+            "furyx639.ExpandedStorage/OpenSound": "Ship",
+            // Better Chests Data
+            "furyx639.BetterChests/AutoCreateChest": "Enabled",
+            "furyx639.BetterChests/FilterItemsList": "category_artifact,category_gem,category_monster_loot,item_geode,item_frozen_geode,item_magma_geode,item_omni_geode,category_minerals",
+            "furyx639.BetterChests/OpenHeldChest": "Enabled",
+            "furyx639.BetterChests/ResizeChest": "Medium",
+            "furyx639.BetterChests/ResizeChestCapacity": "36"
+          }
+        }
+      }
+    },
+    // Add Shop Entry
+    {
+      "LogName": "Load Adventurer's Pack Shop Entry",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "AdventureShop",
+        "Items"
+      ],
+      "Entries": {
+        "6480.StorageVariety_AdventurersPack": {
+          "Id": "6480.StorageVariety_AdventurersPack",
+          "ItemId": "(BC)6480.StorageVariety_AdventurersPack",
+          "Price": 4000
+        }
+      }
+    }
+  ]
+}

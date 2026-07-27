@@ -1,7 +1,7 @@
 ﻿{
-    /*********
+    /*************************************************
     ** Generic translations
-    *********/
+    *************************************************/
     // language info
     "generic.list-separator": ", ", // text between listed values (like ", " in "A, B, C")
     "generic.line-wrap-on": "", // characters after which we can line-wrap text if needed, even if there's no space
@@ -34,10 +34,10 @@
     "generic.show-x-results": "mostra {{count}} risultati",
 
     // types
+    "type.achievement": "Achievement",
     "type.building": "Edificio",
     "type.bush": "Cespuglio",
     "type.fruit-tree": "Albero da frutta",
-    "type.map-tile": "Tassello della mappa",
     "type.monster": "Mostro",
     "type.player": "Giocatore",
     "type.tree": "Albero",
@@ -61,6 +61,17 @@
     "friendship-status.divorced": "Divorziati",
     "friendship-status.kicked-out": "Cacciato via",
 
+    // custom content (shows which mod added an item, NPC, etc)
+    "added-by-mod": "Aggiunto dalla mod",
+    "added-by-mod.summary": "{{modName}}",
+
+    // internal ID
+    "internal-id": "ID Interno",
+
+
+    /*************************************************
+    ** Lookup UI
+    *************************************************/
     /*********
     ** Data translations
     *********/
@@ -112,10 +123,14 @@
     "location.forest.island-tip": "fiume nella foresta (punta Sud dell'isola maggiore)",
     "location.forest.lake": "laghetto nella foresta",
     "location.forest.river": "fiume nella foresta",
+    "location.HarveyRoom": "stanza di Harvey",
+    "location.LeoTreeHouse": "casa sull'albero",
+    "location.SandyHouse": "oasi",
+    "location.SebastianRoom": "stanza di Sebastian",
     "location.submarine": "sottomarino",
     "location.town.northmost-bridge": "paese (ponte Nord)",
     "location.undergroundMine": "miniera",
-    "location.undergroundMine.level": "miniera livello {{level}}",
+    "location.undergroundMine.level": "livello {{level}} della miniera",
     "location.witchSwamp": "palude della strega",
 
     "location.caldera": "Caldera dell'Isola Zenzero",
@@ -135,6 +150,8 @@
     /*********
     ** Conditions & context tags
     *********/
+    "conditions-summary": "[condizioni: {{conditions}}]", // wraps 'game state query' conditions that often can't be translated. For example: "[conditions: ITEM_ID Input (O)128]".
+
     "condition-or-context-tag.negate": "non {{value}}",
 
     "condition.day-of-month": "in giorni specifici ({{days}})",
@@ -162,6 +179,18 @@
 
 
     /*********
+    ** Achievement lookups
+    *********/
+    // labels
+    "achievement.unlocked": "Sbloccato",
+    "achievement.hat-shop": "Negozio di cappelli",
+
+    // values
+    "achievement.hat-shop.hats-added": "Questi cappelli vengono aggiunti al Negozio del Topo di cappelli quando si sblocca l'achievement:",
+    "achievement.hat-shop.no-hats-added": "Questo achievement non sblocca cappelli.",
+
+
+    /*********
     ** Animal lookups
     *********/
     // labels
@@ -172,6 +201,7 @@
     "animal.produce-ready": "Pronto alla produzione",
     "animal.growth": "Crescita",
     "animal.sells-for": "Valore",
+    "animal.golden-cracker": "Cracker per animali dorato", // also used for fish ponds
 
     // values
     "animal.complaints.hungry": "non è stato nutrito ieri",
@@ -180,6 +210,8 @@
     "animal.complaints.no-heater": "non ha il riscaldamento in inverno",
     "animal.complaints.not-petted": "non è ancora stato accarezzato oggi",
     "animal.complaints.wild-animal-attack": "attaccato da animali selvaggi questa notte",
+    "animal.golden-cracker.none": "Nessuno. Aggiungi un cracker per animali dorato per raddoppiare gli oggetti prodotti.",
+    "animal.golden-cracker.applied": "Applicato; gli oggetti prodotti ora verranno raddoppiati.",
 
 
     /*********
@@ -300,6 +332,8 @@
     "crop.summary.drops-X-to-Y": "ne facadere da {{min}} a {{max}} ({{percent}}% di probabilità in più di raccolto extra)",
     "crop.summary.harvest-once": "raccogli dopo {{daysToFirstHarvest}} giorni",
     "crop.summary.harvest-multi": "raccogli dopo {{daysToFirstHarvest}} giorni, e successivamente ogni {{daysToNextHarvests}} giorni",
+    "crop.summary.farming-xp": "conferisce +{{amount}} XP agricoltura per raccolto",
+    "crop.summary.foraging-xp": "conferisce +{{amount}} XP foraggiamento per raccolto",
     "crop.summary.seasons": "cresce in {{seasons}}",
     "crop.summary.sells-for": "vendibile a {{price}}",
     "crop.harvest.too-late": "sei troppo avanti nella stagione attuale per la prossima raccolta (finirebbe il {{date}})",
@@ -309,7 +343,6 @@
     ** Item > generic lookups
     *********/
     // labels
-    "item.custom-item": "Oggetto personalizzato",
     "item.contents": "Contenuti",
     "item.loves-this": "Lo adora",
     "item.likes-this": "Piace a",
@@ -317,6 +350,7 @@
     "item.dislikes-this": "Non piace a",
     "item.hates-this": "Lo odia",
     "item.needed-for": "Ne ha bisogno",
+    "item.flavor": "Sapore", // links to the flavor item (e.g. 'Blueberry' for Blueberry Wine)
     "item.number-owned": "Posseduto",
     "item.number-cooked": "Cucinato",
     "item.number-crafted": "Fabbricato",
@@ -328,7 +362,6 @@
     "item.produces-dye": "Produce tinta",
 
     // values
-    "item.custom-item.summary": "aggiunto da {{modName}}",
     "item.contents.placed": "{{name}} piazzato",
     "item.contents.ready": "{{name}} pronto",
     "item.contents.partial": "{{name}} fra {{time}}",
@@ -342,15 +375,17 @@
     "item.needed-for.gourmet-chef": "l'achievement 'chef stellato' (cucina {{recipes}})",
     "item.needed-for.craft-master": "l'achievement 'maestro della fabbricazione' (crea {{recipes}})",
     "item.needed-for.quests": "missioni attuali ({{quests}})",
+    "item.needed-for.trash-bear": "orso della spazzatura (consegnane uno)",
     "item.unknown-recipes": "{{count}} ricette sconosciute",
     "item.sells-to.shipping-box": "Cassetta delle spedizioni",
     "item.recipes-for-ingredient.entry": "{{name}} ({{count}} necessari)",
     "item.recipes-for-machine.multiple-items": "{{name}} x{{count}}",
     "item.recipes-for-machine.same-as-input": "[stesso oggetto]", // e.g. crystalarium produces same item that was put in
-    "item.recipes-for-machine.conditions": "[condizioni: {{conditions}}]",
     "item.recipes-for-machine.too-complex": "Alcune regole della macchina sono troppo dinamiche per essere visualizzate.",
     "item.number-owned.summary": "Quantità posseduta: {{count}}",
+    "item.number-owned-flavored.summary": "ne possiedi {{count}} ({{name}}) o {{baseCount}} ({{baseName}}) di questi", // e.g. "you own 5 (Sturgeon Roe) or 20 (Roe) of these"
     "item.number-crafted.summary": "Quantità fabbricata: {{count}}",
+    "item.internal-id.summary": "{{itemId}} ('ID qualificato' globalmente unico: {{qualifiedItemId}})",
 
 
     /*********
@@ -404,8 +439,9 @@
     "item.fish-spawn-rules.season-any": "tutte le stagioni",
     "item.fish-spawn-rules.season-list": "stagioni: {{seasons}}",
     "item.fish-spawn-rules.time": "orario: {{times}}",
-    "item.fish-spawn-rules.weather-sunny": "tempo meteo: soleggiato",
-    "item.fish-spawn-rules.weather-rainy": "tempo meteo: pioggia",
+    "item.fish-spawn-rules.weather-sunny": "meteo: soleggiato",
+    "item.fish-spawn-rules.weather-rainy": "meteo: pioggia",
+    "item.uncaught-fish": "{{count}} pesci non pescati",
 
 
     /*********
@@ -490,15 +526,22 @@
     "npc.neutral-gifts": "Regali neutrali",
     "npc.dislikes-gifts": "Regali che non piacciono",
     "npc.hates-gifts": "Regali che odia",
+    "npc.schedule": "Programma di oggi",
 
     // values
     "npc.can-romance.married": "Siete sposati! <", // < turns into a heart
     "npc.can-romance.housemate": "Siete coinquilini!",
     "npc.friendship.not-met": "Non vi siete ancora incontrati.",
     "npc.friendship.need-bouquet": "ha bisogno di un bouquet per avanzare",
-    "npc.friendship.need-points": "prossimo fra {{count}} pti",
+    "npc.friendship.need-points": "prossimo fra {{count}} p.ti",
     "npc.undiscovered-gift-taste": "{{count}} oggetti non rivelati",
     "npc.unowned-gift-taste": "{{count}} oggetti non posseduti",
+    "npc.schedule.current-position": "Attualmente si trova presso {{locationName}} ({{x}}, {{y}}).",
+    "npc.schedule.no-entries": "Nessun programma caricato.",
+    "npc.schedule.not-following-schedule": "Al momento non sta seguendo un programma. Di solito questo significa che un PNG sta eseguendo un'attività straordinaria (es. si trova al cinema).",
+    "npc.schedule.entry": "{{time}}: cammina verso {{locationName}} ({{x}}, {{y}}).",
+    "npc.schedule.farmhand.unknown-position": "Attualmente in una posizione sconosciuta sull'host.",
+    "npc.schedule.farmhand.unknown-schedule": "In multigiocatore i PNG sono gestiti dall'host, perciò il loro programma non è disponibile.",
 
 
     /*********
@@ -610,19 +653,30 @@
     /*********
     ** Tile lookups
     *********/
+    // Note for translators:
+    // The translations in this section are a bit more technical. Quick summary:
+    //
+    //  - A 'map' sets the layout and appearance for an in-game location (like the farmhouse).
+    //  - Each map is divided into a grid of 64x64 pixel 'tiles'. A map can have multiple 'layers' of tiles (e.g. 'Back', 'Front', 'Buildings', etc).
+    //  - Each tile's visual appearance is set by assigning it a 'tile index', which is its position in a larger texture called a 'tilesheet'.
+    //  - Each tile can be assigned 'properties'. These are metadata which tell the game about the tile (like "Type: Dirt" or "Action: OpenShop HatMouse").
+    //  - There are two property types: 'tile property' (set for a specific tile position) and 'index property' (set for all tiles which use that tile index).
+
     // labels
+    "tile.title": "Tassello della mappa ({{x}}, {{y}})",
     "tile.description": "La posizione di un tassello della mappa. Ti viene mostrato perchè hai abilitato la visione dei tasselli dalle opzioni.",
-    "tile.game-location": "Posizione",
     "tile.map-name": "Nome mappa",
-    "tile.tile": "Tassello della mappa",
-    "tile.tile-index": "{{layerName}}: indice tasselli della mappa",
-    "tile.tilesheet": "{{layerName}}: listatassellimappa",
-    "tile.blend-mode": "{{layerName}}: modalità mimetizzazione",
-    "tile.index-property": "{{layerName}}: oggetti ix: {{propertyName}}",
-    "tile.tile-property": "{{layerName}}: oggetti: {{propertyName}}",
+    "tile.map-properties": "Proprietà della mappa",
+    "tile.layer-tile": "Tassello {{layer}}",
+    "tile.layer-tile-none": "Tassello della mappa",
 
     // values
-    "tile.tile.none-here": "nessun tassello della mappa qui",
+    "tile.map-properties.value": "{{name}}: {{value}}",
+    "tile.layer-tile.appearance": "indice {{index}} dal tilesheet '{{tilesheetId}}' (percorso: '{{tilesheetPath}}')",
+    "tile.layer-tile.blend-mode": "modalità mimetizzazione: {{value}}",
+    "tile.layer-tile.index-property": "proprietà indice: {{name}}: {{value}}",
+    "tile.layer-tile.tile-property": "proprietà tassello: {{name}}: {{value}}",
+    "tile.layer-tile.none-here": "nessun tassello della mappa qui",
 
 
     /*********
@@ -671,15 +725,50 @@
 
 
     /*********
-    ** Generic Mod Config Menu UI
+    ** Data mining fields
     *********/
-    // main options
-    "config.title.main-options": "Opzioni principali",
+    "data-mining.name": "Dati grezzi",
+    "data-mining.name.map-tile": "Dati grezzi (tassello mappa)",
+    "data-mining.name.map-location": "Dati grezzi (luogo)",
+
+    "data-mining.section-pinned": "In evidenza", // 'pinned' section has notable values (i.e. it's pinned at the top of the list)
+
+
+    /*************************************************
+    ** Search UI
+    *************************************************/
+    // screen reader text
+    "search-menu.screen-reader.instructions": "Menu di ricerca di Lookup Anything. Casella di ricerca selezionata. Inserisci il testo per cercare.",
+    "search-menu.screen-reader.search-results": "Casella di ricerca. {{count}} risultati trovati per \"{{search}}\". Scorri verso il basso per visualizzare i risultati.",
+    "search-menu.screen-reader.search-no-results": "Casella di ricerca. Nessun risultato trovato per \"{{search}}\".",
+    "search-menu.screen-reader.search-empty": "Casella di ricerca. Attualmente vuota.",
+    "search-menu.screen-reader.result": "{{name}} ({{type}}).",
+
+
+    /*************************************************
+    ** Generic Mod Config Menu UI
+    *************************************************/
+    // appearance
+    "config.title.appearance": "Aspetto",
+
+    "config.theme.name": "Tema visivo",
+    "config.theme.desc": "L'aspetto da applicare al menu di ricerca e lookup.",
+
+    "config.theme.values.Parchment": "Pergamena",
+    "config.theme.values.Joja": "Joja",
+    "config.theme.values.MenuBox_Border": "Casella menu (bordatura)",
+    "config.theme.values.MenuBox_Inset": "Casella menu (inserto)",
+    "config.theme.values.MenuBox_Raised": "Casella menu (in rilievo)",
+    "config.theme.values.Plain": "Semplice",
+
     "config.force-full-screen.name": "Forza schermo intero",
     "config.force-full-screen.desc": "Scegli se il menu deve essere sempre a tutto schermo, invece che centrato nella finestra. Questa opzione è utile soprattutto quando si visualizzano i campi di data mining.",
 
     // progression mode
     "config.title.progression": "Modalità progressione",
+
+    "config.progression.show-uncaught-fish-spawn-rules.name": "Mostra regole di spawn dei pesci non pescati",
+    "config.progression.show-uncaught-fish-spawn-rules.desc": "Scegli se mostrare le condizioni di spawn dei pesci che ancora non hai pescato.",
 
     "config.progression.show-unknown-gift-tastes.name": "Mostra gusti dei regali sconosciuti",
     "config.progression.show-unknown-gift-tastes.desc": "Scegli se mostrare i gusti dei regali che non si sono ancora appresi nel gioco (ad esempio dal testo del dialogo o sperimentando).",
@@ -737,8 +826,14 @@
     "config.title.controls": "Controlli",
     "config.hide-on-key-up.name": "Nascondi con tasto non premuto",
     "config.hide-on-key-up.desc": "Scegli se nascondere l'interfaccia utente di ricerca quando si rilascia il tasto di ricerca.",
-    "config.toggle-lookup.name": "Attiva lookup",
+    "config.toggle-lookup.name": "Attiva ricerca",
     "config.toggle-lookup.desc": "I tasti che attivano l'interfaccia utente di ricerca per qualcosa sotto il cursore.",
+
+    "config.toggle-lookup-on-double-click.name": "Attiva/disattiva ricerca con doppio clic",
+    "config.toggle-lookup-on-double-click.description": "Scegli se attivare/disattivare l'interfaccia di ricerca cliccando due volte il tasto sinistro del mouse. Se possibile, questa funzione individua la posizione del cursore.",
+    "config.toggle-lookup-on-double-tap.name": "Attiva/disattiva ricerca con doppio tocco",
+    "config.toggle-lookup-on-double-tap.description": "Scegli se attivare/disattivare l'interfaccia di ricerca toccando due volte lo schermo. Se possibile, questa funzione individua la posizione toccata.",
+
     "config.toggle-search.name": "Attiva ricerca",
     "config.toggle-search.desc": "I tasti che attivano l'interfaccia utente di ricerca.",
     "config.scroll-up.name": "Scorri verso l'alto",
@@ -750,5 +845,12 @@
     "config.page-down.name": "Pagina giù",
     "config.page-down.desc": "I tasti che fanno scorrere i contenuti lunghi di una pagina intera verso il basso.",
     "config.toggle-debug.name": "Attiva debug",
-    "config.toggle-debug.desc": "I tasti che attivano la visualizzazione delle informazioni di debug."
+    "config.toggle-debug.desc": "I tasti che attivano la visualizzazione delle informazioni di debug.",
+
+
+    /*************************************************
+    ** Iconic Framework icon
+    *************************************************/
+    "icon.toggle-search.name": "Lookup Anything",
+    "icon.toggle-search.desc": "Attiva/disattiva ricerca di Lookup Anything"
 }

@@ -1,0 +1,145 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "9032801/x RedPandaBazaar_SpringFair": "null",
+        "9032802/x RedPandaBazaar_ShiFuShanMail03": "null"
+      },
+      "When": {
+        "Season": "spring",
+        "Day": "7"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "ShiFuShanMail05/x RedPandaBazaar_ShiFuShanMail05": "null",
+      },
+      "When": {
+        "Season": "winter",
+        "Day": "1"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "9032802/ActiveDialogueEvent RPB.Linden.Heart.8/e RPB.Linden.Heart.6.2/x RedPandaBazaar_LindenMail03": "null"
+      },
+    },
+    {
+      "Action": "Load","Priority": "Low",
+      "Target": "Mods/RedPandaBazaar/Mail",
+      "FromFile": "assets/Mail.png"
+    },
+    {
+      "LogName": "Mail Triggers",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "RedPandaBazaar_ShiFuShanMail01": {
+          "Id": "RedPandaBazaar_ShiFuShanMail01",
+          "Trigger": "DayStarted",
+          "HostOnly": false,
+          "Action": "AddMail Current RedPandaBazaar_ShiFuShanMail01",
+          "Condition": "PLAYER_HAS_MAIL Current newsstory",
+          "MarkActionApplied": true
+        },
+        "RedPandaBazaar_ShiFuShanMail02": {
+          "Id": "RedPandaBazaar_ShiFuShanMail02",
+          "Trigger": "DayStarted",
+          "HostOnly": false,
+          "Action": "AddMail Current RedPandaBazaar_ShiFuShanMail02",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current RPB.ShiFuShan.2",
+          "MarkActionApplied": true
+        },
+        "RedPandaBazaar_ShiFuShanMail04": {
+          "Id": "RedPandaBazaar_ShiFuShanMail04",
+          "Trigger": "DayStarted",
+          "HostOnly": false,
+          "Action": "AddMail Current RedPandaBazaar_ShiFuShanMail04",
+          "Condition": "PLAYER_HEARTS Current RedPandaBazaar_ShiFuShan 4",
+          "MarkActionApplied": true
+        },
+        "RedPandaBazaar_ShiFuShanMail06": {
+          "Id": "RedPandaBazaar_ShiFuShanMail06",
+          "Trigger": "DayStarted",
+          "HostOnly": false,
+          "Action": "AddMail Current RedPandaBazaar_ShiFuShanMail06",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current RPB.ShiFuShan.Heart.4",
+          "MarkActionApplied": true
+        },
+        "RedPandaBazaar_LiQingFengMail01": {
+          "Id": "RedPandaBazaar_LiQingFengMail01",
+          "Trigger": "DayStarted",
+          "HostOnly": false,
+          "Action": "AddMail Current RedPandaBazaar_LiQingFengMail01",
+          "Condition": "PLAYER_HEARTS Current RedPandaBazaar_LiQingFeng 6",
+          "MarkActionApplied": true
+        },
+        "RedPandaBazaar_LiQingFengMail02": {
+          "Id": "RedPandaBazaar_LiQingFengMail02",
+          "Trigger": "DayStarted",
+          "HostOnly": false,
+          "Action": "AddMail Current RedPandaBazaar_LiQingFengMail02",
+          "Condition": "PLAYER_HEARTS Current RedPandaBazaar_LiQingFeng 10",
+          "MarkActionApplied": true
+        },
+        "RedPandaBazaar_ChenXiaoMingMail01": {
+          "Id": "RedPandaBazaar_ChenXiaoMingMail01",
+          "Trigger": "DayStarted",
+          "HostOnly": false,
+          "Action": "AddMail Current RedPandaBazaar_ChenXiaoMingMail01",
+          "Condition": "PLAYER_HEARTS Current RedPandaBazaar_ChenXiaoMing 10",
+          "MarkActionApplied": true
+        },
+        "RedPandaBazaar_LindenMail02": {
+          "Id": "RedPandaBazaar_LindenMail02",
+          "Trigger": "DayStarted",
+          "HostOnly": false,
+          "Action": "AddMail Current RedPandaBazaar_LindenMail02",
+          "Condition": "PLAYER_HEARTS Current RedPandaBazaar_Linden 6",
+          "MarkActionApplied": true
+        },
+        "RedPandaBazaar_JojaMart01": {
+          "Id": "RedPandaBazaar_JojaMart01",
+          "Trigger": "DayStarted",
+          "HostOnly": false,
+          "Action": "AddMail Current RedPandaBazaar_JojaMart01",
+          "Condition": "RANDOM 0.2 @addDailyLuck",
+          "MarkActionApplied": true
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "RedPandaBazaar_PlantResearch.42.32.Mail": "{{i18n:PlantResearch.42.32.Mail}}[letterbg 1]",
+        "RedPandaBazaar_PlantResearch.42.28.Mail": "{{i18n:PlantResearch.42.28.Mail}}[letterbg 1]",
+
+        "RedPandaBazaar_ButterflyNight": "{{i18n:ButterflyNight.Mail}}",
+        "RedPandaBazaar_LiQingFengMail01": "{{i18n:LiQingFeng.Mail.01}}",
+        "RedPandaBazaar_LiQingFengMail02": "{{i18n:LiQingFeng.Mail.02}}",
+        "RedPandaBazaar_ChenXiaoMingMail01": "{{i18n:ChenXiaoMing.Mail.01}}[letterbg Mods/RedPandaBazaar/Mail 0][textcolor black]{{i18n:ChenXiaoMing.Mail.01.2}}",
+
+        "RedPandaBazaar_LindenMail01": "{{i18n:Linden.Mail.01}}[letterbg Mods/RedPandaBazaar/Mail 0][textcolor black]{{i18n:Linden.Mail.01.2}}",
+        "RedPandaBazaar_LindenMail02": "{{i18n:Linden.Mail.02}}[letterbg Mods/RedPandaBazaar/Mail 0][textcolor black]{{i18n:Linden.Mail.02.2}}",
+        "RedPandaBazaar_LindenMail03": "{{i18n:Linden.Mail.03}}[letterbg Mods/RedPandaBazaar/Mail 0][textcolor black]{{i18n:Linden.Mail.03.2}}",
+
+        "RedPandaBazaar_ShiFuShanMail01": "{{i18n:ShiFuShan.Mail.01}}",
+        "RedPandaBazaar_ShiFuShanMail02": "{{i18n:ShiFuShan.Mail.02}}",
+        "RedPandaBazaar_ShiFuShanMail03": "{{i18n:ShiFuShan.Mail.03}}",
+        "RedPandaBazaar_ShiFuShanMail04": "{{i18n:ShiFuShan.Mail.04}}",
+        "RedPandaBazaar_ShiFuShanMail05": "{{i18n:ShiFuShan.Mail.05}}",
+        "RedPandaBazaar_ShiFuShanMailHeart4": "{{i18n:ShiFuShan.Mail.Heart4}}",
+
+        "RedPandaBazaar_SpringFair": "{{i18n:SpringFair.Mail}}",
+        "RedPandaBazaar_JojaMart01": "{{i18n:JojaMart.Mail.01.1}} RedPandaBazaar_Prize_Ticket_4 {{i18n:JojaMart.Mail.01.2}}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+	"Changes": [	
+
+		{
+			"LogName": "Add in Schedule Strings",
+			"Action": "EditData",
+			"Target": "Strings/schedules/{{ModId}}.Tilly",
+			"Entries": {
+				"Tue.000": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.Tue.000}}",
+				"Thu.000": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.Thu.000}}",
+				"Fri.000": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.Fri.000}}",
+				"SumFri.000": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.SumFri.000}}",
+				"Sat.000": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.Sat.000}}",
+				"Bday.000": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.Bday.000}}",
+				"Bookcase.000": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.Bookcase.000}}",
+				"Gardening.000": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.Gardening.000}}",
+				"Gardening.001": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.Gardening.001}}",
+				"Gardening.002": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.Gardening.002}}",
+				"Binding.000": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.Binding.000}}",
+				"Binding.001": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.Binding.001}}",
+				"Binding.002": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.Binding.002}}",
+				"Binding.003": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.Binding.003}}",
+				"DesertFestival": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.DesertFestival}}",
+				"DesertFestival_2": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.DesertFestival_2}}",
+				"DesertFestival_marriage": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.DesertFestival_marriage}}",
+				"NightMarket": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.NightMarket}}",
+				"NightMarket.Marriage": "{{i18n:Wem.Bundle.Tilly.TillySchedStrings.NightMarket.Marriage}}",
+				"LNY.000": "{{i18n:LNY.000}}",
+				"LNY.001": "{{i18n:LNY.001}}",
+				"Fireworks.000": "{{i18n:Fireworks.000}}",
+				
+				"Cooking.000": "{{i18n:Cooking.000}}",
+
+			}
+		},
+	]
+
+}

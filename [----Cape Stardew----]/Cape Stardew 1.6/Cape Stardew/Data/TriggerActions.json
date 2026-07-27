@@ -1,0 +1,175 @@
+{
+  "Changes": [
+
+//SpaceCoreTriggers//
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "HasMod": "spacechase0.SpaceCore"
+      },
+      "Entries": {
+        "{{ModId}}_LegacyAgedRumTrigger": {
+          "Id": "{{ModId}}_LegacyAgedRumTrigger",
+          "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+          "Condition": "ITEM_CONTEXT_TAG Input Seafaring Antique",
+          "MarkActionApplied": false,
+          "Action": "AddItem 152"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "When": {
+        "HasMod": "spacechase0.SpaceCore"
+      },
+      "Entries": {
+        "{{ModId}}_SeaCrystalFlaskTrigger": {
+          "Id": "{{ModId}}_SeaCrystalFlaskTrigger",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Condition": "ITEM_CONTEXT_TAG Input Seafaring Antique magic_flask",
+          "MarkActionApplied": true,
+          "Actions": [
+            "spacechase0.SpaceCore_PlaySound shadowDie local",
+"spacechase0.SpaceCore_ShowHudMessage \"{{i18n:Flask-Hud-Message}}\" dreamy.kickitspot_SeaCrystalFlask",
+            "AddMail Current essence1 received",
+            "AddItem 859",
+	    "AddMoney 30",
+	    "AddBuff 18",
+          ]
+        }
+      }
+    },
+
+
+
+//greenraintrigger//
+{
+      "Action": "EditData",
+ "When": {
+        "HasMod": "DLX.Bundles"
+      },
+    "Target": "Data/TriggerActions",
+      "Entries": {
+"{{ModId}}_greenRainTrigger":
+{
+  "Id": "{{ModId}}_greenRainTrigger",
+  "Trigger": "LocationChanged",
+  "Condition": "PLAYER_HAS_MAIL Current orbSecretRoomIntroSeen Received",
+
+  "Actions": [
+    "UB_PlaceBundle Cape.SecretOrb",
+    "MarkActionApplied Current {{ModId}}_greenRainTrigger true"
+  ]
+}
+}
+
+},
+///repeat//
+{
+  "Action": "EditData",
+  "When": {
+    "HasMod": "DLX.Bundles"
+  },
+  "Target": "Data/TriggerActions",
+  "Entries": {
+    "{{ModId}}_greenRainTriggerRepeat": {
+      "Id": "{{ModId}}_greenRainTriggerRepeat",
+      "Trigger": "LocationChanged",
+      "Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_greenRainTrigger",
+      "Actions": [
+        "UB_PlaceBundle Cape.SecretOrb.Repeat",
+        "MarkActionApplied Current {{ModId}}_greenRainTriggerRepeat false"
+      ]
+    }
+  }
+},
+
+
+
+  {
+    "Action": "EditData",
+    "Target": "Data/TriggerActions",
+    "Entries": {
+      "{{ModId}}_EndlessEmberRingEquip": {
+        "Id": "{{ModId}}_EndlessEmberRingEquip",
+        "ItemId": "{{ModId}}_EndlessEmber",
+        "Trigger": "dreamy.kickitspot_OnRingEndlessEmberEquip",
+        "MarkActionApplied": false,
+        "Actions": [
+          "AddBuff {{ModId}}_AshenPromise"
+        ]
+      },
+      "{{ModId}}_EndlessEmberRingUnequip": {
+        "Id": "{{ModId}}_EndlessEmberRingUnequip",
+        "ItemId": "{{ModId}}_EndlessEmber",
+        "Trigger": "dreamy.kickitspot_OnRingEndlessEmberUnequip",
+        "MarkActionApplied": false,
+        "Actions": [
+          "RemoveBuff {{ModId}}_AshenPromise"
+        ]
+      },
+
+      "{{ModId}}_SilverPetalRingEquip": {
+        "Id": "{{ModId}}_SilverPetalRingEquip",
+        "ItemId": "{{ModId}}_SilverPetal",
+        "Trigger": "dreamy.kickitspot_OnRingSilverPetalEquip",
+        "MarkActionApplied": false,
+        "Actions": [
+          "AddBuff {{ModId}}_PetalGrace"
+        ]
+      },
+      "{{ModId}}_SilverPetalRingUnequip": {
+        "Id": "{{ModId}}_SilverPetalRingUnequip",
+        "ItemId": "{{ModId}}_SilverPetal",
+        "Trigger": "dreamy.kickitspot_OnRingSilverPetalUnequip",
+        "MarkActionApplied": false,
+        "Actions": [
+          "RemoveBuff {{ModId}}_PetalGrace"
+        ]
+      },
+
+      "{{ModId}}_SkyOakEquip": {
+        "Id": "{{ModId}}_SkyOakEquip",
+        "ItemId": "{{ModId}}_SkyOak",
+        "Trigger": "dreamy.kickitspot_OnRingSkyOakEquip",
+        "MarkActionApplied": false,
+        "Actions": [
+          "AddBuff {{ModId}}_OakBlessing"
+        ]
+      },
+      "{{ModId}}_SkyOakUnequip": {
+        "Id": "{{ModId}}_SkyOakUnequip",
+        "ItemId": "{{ModId}}_SkyOak",
+        "Trigger": "dreamy.kickitspot_OnRingSkyOakUnequip",
+        "MarkActionApplied": false,
+        "Actions": [
+          "RemoveBuff {{ModId}}_OakBlessing"
+        ]
+      },
+
+      "{{ModId}}_MysticArcanaEquip": {
+        "Id": "{{ModId}}_MysticArcanaEquip",
+        "ItemId": "{{ModId}}_MysticArcana",
+        "Trigger": "dreamy.kickitspot_OnRingMysticArcanaEquip",
+        "MarkActionApplied": false,
+        "Actions": [
+          "AddBuff {{ModId}}_ArcaneCharm"
+        ]
+      },
+      "{{ModId}}_MysticArcanaUnequip": {
+        "Id": "{{ModId}}_MysticArcanaUnequip",
+        "ItemId": "{{ModId}}_MysticArcana",
+        "Trigger": "dreamy.kickitspot_OnRingMysticArcanaUnequip",
+        "MarkActionApplied": false,
+        "Actions": [
+          "RemoveBuff {{ModId}}_ArcaneCharm"
+        ]
+      }
+    }
+  }
+
+
+  ]
+}

@@ -1,0 +1,28 @@
+{
+	"Changes": [
+//East Scarp Worldmap SVE
+		{
+			"Action": "EditImage",
+			"Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+			"FromFile": "assets/Maps/East Scarp/{{Season}}_ESmap_SVE.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod |contains=Lemurkat.EastScarp": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			},
+			"Update": "OnLocationChange"
+		},
+//East Scarp Worldmap
+		{
+      "Action": "EditImage",
+      "Target": "Mods/Lemurkat.EastScarp/ESWorldMap_{{Season}}",
+      "FromFile": "assets/Maps/East Scarp/{{Season}}_ESmap.png",
+			"PatchMode": "Overlay",
+      "When": {
+				"HasMod |contains=Lemurkat.EastScarp": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      },
+			"Update": "OnLocationChange"
+    }
+	]
+}

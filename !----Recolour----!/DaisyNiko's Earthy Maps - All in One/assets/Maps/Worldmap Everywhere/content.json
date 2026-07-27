@@ -1,0 +1,99 @@
+{
+	"Changes": [
+//Icons
+		{
+			"LogName": "Village Map",
+			"Action": "EditImage",
+			"Target": "Mods/shekurika.worldMaps/Icons",
+			"FromFile": "assets/Maps/Worldmap Everywhere/{{season}}_Icons.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "shekurika.worldMaps",
+			},
+		},
+//GrampletonFields
+		{
+			"Action": "Load",
+			"Target": "assets/Maps/Worldmap Everywhere/{{Season}}_GrampletonFields_Icon",
+			"FromFile": "assets/Maps/Worldmap Everywhere/{{Season}}_GrampletonFields_Icon.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Mods/shekurika.Worldmaps/WorldMapData",
+			"Entries": {
+				"Custom_GrampletonFields2": {
+					"Texture": "assets/Maps/Worldmap Everywhere/{{Season}}_GrampletonFields_Icon",
+					"SpriteIndex": 0,
+					"Location": "Custom_GrampletonFields",
+					"Condition": "true",
+				},
+			},
+			"When": {
+				"HasMod": "flashshifter.GrampletonFields",
+			},
+		},
+//DownTown Zuzu
+		{
+			"Action": "Load",
+			"Target": "assets/Maps/Worldmap Everywhere/{{Season}}_Downtown_Zuzu_Icon",
+			"FromFile": "assets/Maps/Worldmap Everywhere/{{Season}}_Downtown_Zuzu_Icon.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Mods/shekurika.Worldmaps/WorldMapData",
+			"Entries": {
+				"Custom_DTZ_ZuzuCity12": {
+					"Texture": "assets/Maps/Worldmap Everywhere/{{Season}}_Downtown_Zuzu_Icon",
+					"SpriteIndex": 0,
+					"Location": "Custom_DTZ_ZuzuCity1",
+					"Condition": "true"
+				},
+			},
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP",
+			},
+		},
+//Kahuna Resort
+		{
+			"Action": "Load",
+			"Target": "assets/Maps/Worldmap Everywhere/MapKahuna_Icon",
+			"FromFile": "assets/Maps/Worldmap Everywhere/MapKahuna_Icon.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Mods/shekurika.Worldmaps/WorldMapData",
+			"Entries": {
+				"Custom_DTZ_ResortCentral2": {
+					"Texture": "assets/Maps/Worldmap Everywhere/MapKahuna_Icon",
+					"SpriteIndex": 0,
+					"Location": "Custom_DTZ_ResortCentral",
+					"Condition": "true"
+				},
+			},
+			"When": {
+				"HasMod": "DTZ.DowntownZuzuCP",
+			},
+		},
+//Return to Mineral Town
+		{
+			"Action": "Load",
+			"Target": "assets/Maps/Worldmap Everywhere/{{Season}}_MineralTown_Icon",
+			"FromFile": "assets/Maps/Worldmap Everywhere/{{Season}}_MineralTown_Icon.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Mods/shekurika.Worldmaps/WorldMapData",
+			"Entries": {
+				"Rexstrife20.MineralTownCP_TownEntrance": {
+					"Texture": "assets/Maps/Worldmap Everywhere/{{Season}}_MineralTown_Icon",
+					"SpriteIndex": 0,
+					"Location": "Rexstrife20.MineralTownCP_TownEntrance",
+					"Condition": "true"
+				},
+			},
+			"When": {
+				"HasMod": "Rexstrife20.MineralTownCP",
+			},
+		},
+	]
+}

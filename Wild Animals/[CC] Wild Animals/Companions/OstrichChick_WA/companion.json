@@ -121,10 +121,10 @@
 
 "Sounds": [
 	{
-	"SoundName": "Ostrich",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.3
+	"SoundName": "SpringBirds",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.5
 	}
 ]  
 }

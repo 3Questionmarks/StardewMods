@@ -1,0 +1,32 @@
+{
+
+"Changes": [
+//monsterslayer//
+{
+  "Action": "EditData",
+  "Target": "Data/MonsterSlayerQuests",
+	"When": {
+"HasFlag |contains=seaCombat1": true,
+},
+  "Entries": {
+    "CapeDinos": {
+      "DisplayName": "{{i18n:Guild.CapeDinos.Name}}",
+      "Targets": [
+        "Bioflame Rex",
+        "Inferno Raptor"
+      ],
+      "Count": 30,
+
+      
+
+      "RewardDialogue": "{{i18n:Guild.CapeDinos.Dialogue}}",
+      "RewardDialogueFlag": "capeDinosGuildSeen",
+
+      "RewardFlag": "capeDinosGuildComplete"
+    }
+  }
+}
+
+
+]
+}

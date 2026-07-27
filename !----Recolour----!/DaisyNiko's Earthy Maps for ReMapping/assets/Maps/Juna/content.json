@@ -1,0 +1,14 @@
+{
+	"Changes": [
+    {
+        "LogName": "(Earthy) Recolor Remapping (Juna)",
+        "Action": "EditImage",
+        "Target": "Mods/ReMapping.Vlgor/Juna",
+        "FromFile": "assets/Maps/Juna/Juna_{{RMP.Season}}.png",
+        "Priority": "Default",
+        "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "Name": "Magic Stardew",
+  "Author": "Zexu2K",
+  "Version": "0.0.46",
+  "Description": "Who knows...",
+  "UniqueID": "Zexu2K.MagicStardew.C",
+  "EntryDll": "MagicStardew.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": ["Nexus:36609"],
+  "Dependencies": [
+   {
+      "UniqueID": "spacechase0.GenericModConfigMenu",
+      "IsRequired": true
+   },
+   {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "IsRequired": true
+   },
+    {
+      "UniqueID": "StardewHack.WearMoreRings",
+      "IsRequired": false
+    }
+]
+}

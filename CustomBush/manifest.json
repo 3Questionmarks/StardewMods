@@ -9,18 +9,22 @@
   "UniqueID": "furyx639.CustomBush",
   "Name": "Custom Bush",
   "Author": "LeFauxMatt",
-  "Version": "1.2.3",
-  "Description": "Custom Bush is a framework which allows custom bushes to be added to the game which work like the tea sapling.",
+  "Version": "1.5.2",
+  "Description": "Framework which allows custom bushes to be added to the game which work like the tea sapling.",
   "MinimumApiVersion": "4.1",
   "MinimumGameVersion": "1.6.14",
   "EntryDll": "CustomBush.dll",
   "Dependencies": [
     {
-      "UniqueID": "furyx639.FauxCore",
-      "MinimumVersion": "1.2.0"
+      "UniqueID": "spacechase0.GenericModConfigMenu",
+      "MinimumVersion": "1.14.1",
+      "IsRequired": false
     }
   ],
   "UpdateKeys": [
-    "Nexus:20619"
+    "Nexus:20619",
+    "CurseForge:998265",
+    "ModDrop:1547214",
+    "GitHub:LeFauxMatt/CustomBush"
   ]
 }

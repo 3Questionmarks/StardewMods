@@ -27,15 +27,7 @@
         "Duration": 100,
 		},
 		{
-        "Frame": 8,
-        "Duration": 100,
-		},
-		{
-        "Frame": 25,
-        "Duration": 100,
-		},
-		{
-        "Frame": 8,
+        "Frame": 10,
         "Duration": 100,
 		},
 		{
@@ -47,7 +39,15 @@
         "Duration": 100,
 		},
 		{
-        "Frame": 25,
+        "Frame": 24,
+        "Duration": 100,
+		},
+		{
+        "Frame": 10,
+        "Duration": 100,
+		},
+		{
+        "Frame": 24,
         "Duration": 100,
 		},
     ],
@@ -388,10 +388,10 @@
 
 "Sounds": [
 	{
-	"SoundName": "rabbit",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.2
+	"SoundName": "Trill_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.1
 	}
 ]  
 }

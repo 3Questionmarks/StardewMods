@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="25">
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="1" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+  <tile id="546">
+   <animation>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="547" duration="150"/>
+    <frame tileid="548" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="547" duration="150"/>
+    <frame tileid="548" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="547" duration="150"/>
+    <frame tileid="548" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="547" duration="150"/>
+    <frame tileid="548" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="547" duration="150"/>
+    <frame tileid="548" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="547" duration="150"/>
+    <frame tileid="548" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+    <frame tileid="546" duration="150"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="548" name="furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="furniture.png" width="512" height="1488"/>
+ </tileset>
+ <layer id="1" name="Back" width="1" height="2">
+  <data encoding="csv">
+0,
+0
+</data>
+ </layer>
+ <layer id="2" name="Back2" width="1" height="2">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,
+0
+</data>
+ </layer>
+ <layer id="3" name="Buildings" width="1" height="2">
+  <data encoding="csv">
+0,
+0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="1" height="2">
+  <data encoding="csv">
+0,
+0
+</data>
+ </layer>
+ <layer id="5" name="Front2" width="1" height="2">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="csv">
+0,
+0
+</data>
+ </layer>
+ <layer id="6" name="Front3" width="1" height="2">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="csv">
+0,
+0
+</data>
+ </layer>
+ <layer id="7" name="Paths" width="1" height="2">
+  <data encoding="csv">
+0,
+0
+</data>
+ </layer>
+ <objectgroup id="8" name="Back"/>
+ <objectgroup id="9" name="Back2"/>
+ <objectgroup id="10" name="Buildings"/>
+ <objectgroup id="11" name="Front"/>
+ <objectgroup id="12" name="Front2"/>
+ <objectgroup id="13" name="Front3"/>
+ <objectgroup id="14" name="Paths"/>
+</map>

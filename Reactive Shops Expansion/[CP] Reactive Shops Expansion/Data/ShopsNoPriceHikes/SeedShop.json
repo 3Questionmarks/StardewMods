@@ -1,0 +1,64 @@
+{
+    "Changes": [
+        {
+			"LogName": "{{ModId}}_Seed Shop WITHOUT Year 2 Price Changes",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+				
+				// SEEDS
+				
+                "{{ModId}}_ID_TeaSapling": {
+                    "Id": "{{ModId}}_ID_TeaSapling",
+                    "ItemId": "(O)251",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_SeedShop_TeaSapling Received, SEASON spring summer fall",
+                    "Price": "184"
+                },
+                "{{ModId}}_ID_StrawberrySeeds": {
+                    "Id": "{{ModId}}_ID_StrawberrySeeds",
+                    "ItemId": "(O)92",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_SeedShop_StrawberrySeeds Received, SEASON spring",
+                    "Price": "180"
+                },
+                "{{ModId}}_ID_CarrotSeedsPierre": {
+                    "Id": "{{ModId}}_ID_CarrotSeedsPierre",
+                    "ItemId": "CarrotSeeds",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_SeedShop_RaccoonSeeds Received, SEASON spring",
+                    "Price": "25"
+                },
+                "{{ModId}}_ID_SummerSquashSeedsPierre": {
+                    "Id": "{{ModId}}_ID_SummerSquashSeedsPierre",
+                    "ItemId": "SummerSquashSeeds",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_SeedShop_RaccoonSeeds Received, SEASON summer",
+                    "Price": "35"
+                },
+                "{{ModId}}_ID_BroccoliSeedsPierre": {
+                    "Id": "{{ModId}}_ID_BroccoliSeedsPierre",
+                    "ItemId": "BroccoliSeeds",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_SeedShop_RaccoonSeeds Received, SEASON fall",
+                    "Price": "55"
+                },
+                "{{ModId}}_ID_PowdermelonSeedsPierre": {
+                    "Id": "{{ModId}}_ID_PowdermelonSeedsPierre",
+                    "ItemId": "PowdermelonSeeds",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_SeedShop_RaccoonSeeds Received, SEASON winter",
+                    "Price": "40"
+                },
+				
+				// ARTISAN GOODS
+				
+                "{{ModId}}_ID_ArtisanGoods": {
+                    "Id": "{{ModId}}_ID_ArtisanGoods",
+                    "RandomItemId": [ "(O)348", "(O)350", "(O)342", "(O)344", "(O)340", "(O)303", "(O)346", "(O)459", "(O)197", "(O)426", "(O)306" ],
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_SeedShop_ArtisanGoods Received",
+                    "Price": "750",
+					"AvailableStock": "5"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Cape.Infernoraptor": {
+          "DisplayName": "{{i18n:InfernoRaptor}}",
+	  "Name": "Infernoraptor",
+          "House": "Coop",
+          "Gender": "Female",
+          "SellPrice": 2000,
+          "DaysToMature": 5,
+          "Texture": "assets/Monsters/infernoraptorhatched",
+          "BabyTexture": null,
+          "PurchasePrice": -1,
+          "EggItemIds": [
+            "CapeStardew_LavaDinoEgg"
+          ],
+          "IncubationTime": 18000,
+          "IncubatorParentSheetOffset": 0,
+          "CanGetPregnant": false,
+          "ProduceItemIds": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "CapeStardew_LavaDinoEgg"
+            }
+          ],
+          "EmoteOffset": {
+            "X": 0,
+            "Y": -16
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "GrassEatAmount": 1,
+          "HappinessDrain": 2
+        },
+        "Cape.Bioflamerx": {
+          "DisplayName": "{{i18n:Bioflamerx}}",
+	  "Name": "Bioflamerex",
+          "House": "Coop",
+          "Gender": "Female",
+          "SellPrice": 2000,
+          "DaysToMature": 5,
+          "Texture": "assets/Monsters/Cape.Bioflamerx",
+          "BabyTexture": null,
+          "PurchasePrice": -1,
+          "EggItemIds": [
+            "CapeStardew_FrostDinoEgg"
+          ],
+          "IncubationTime": 18000,
+          "IncubatorParentSheetOffset": 0,
+          "CanGetPregnant": false,
+          "ProduceItemIds": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "CapeStardew_FrostDinoEgg"
+            }
+          ],
+          "EmoteOffset": {
+            "X": 0,
+            "Y": -16
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "GrassEatAmount": 1,
+          "HappinessDrain": 2
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "assets/Monsters/infernoraptorhatched",
+      "FromFile": "assets/Monsters/infernoraptorhatched.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "assets/Monsters/Cape.Bioflamerx",
+      "FromFile": "assets/Monsters/bioflamerx.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "CapeStardew_LavaDinoEgg": {
+          "Name": "CapeStardew_LavaDinoEgg",
+          "DisplayName": "{{i18n:LavaDinoEgg_Name}}",
+          "Description": "{{i18n:LavaDinoEgg_Description}}",
+          "Type": "Arch",
+          "Category": -5,
+          "Price": 650,
+          "Texture": "assets/Monsters/lavadinoeggtexture",
+    "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "ContextTags": [
+            "dinosaur_item",
+            "egg_item",
+            "cape_dino_lava",
+            "color_red"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "CapeStardew_FrostDinoEgg": {
+          "Name": "CapeStardew_FrostDinoEgg",
+          "DisplayName": "{{i18n:FrostDinoEgg_Name}}",
+          "Description": "{{i18n:FrostDinoEgg_Description}}",
+          "Type": "Arch",
+          "Category": -5,
+          "Price": 650,
+          "Texture": "assets/Monsters/frostdinoeggtexture",
+    "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "ContextTags": [
+            "dinosaur_item",
+            "egg_item",
+            "cape_dino_frost",
+            "color_blue"
+          ]
+        }
+      }
+    },
+
+{
+      "Action": "Load",
+      "Target": "assets/Monsters/lavadinoeggtexture",
+      "FromFile": "assets/Monsters/lavadinoegg.png"
+    },
+
+{
+      "Action": "Load",
+      "Target": "assets/Monsters/frostdinoeggtexture",
+      "FromFile": "assets/Monsters/frostdinoegg.png"
+    },
+  ]
+}

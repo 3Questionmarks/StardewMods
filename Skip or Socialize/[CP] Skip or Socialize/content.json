@@ -1,0 +1,37 @@
+{
+  "Format": "2.6.0",
+
+  "ConfigSchema": {
+    "Recolor": {
+      "Section": "CompatibilitySettings",
+      "AllowValues": "Vanilla, Adventurer's Interface, Bog's Forest UI, Cat Valley, Citrus Interface, DaisyNiko's Earthy Interface, DBB's Victorian Gothic User Interface, Lavender Dreams UI, Lynneas Witchy and Purple UI, Magical Valley, Meow UI, Natural Dark Wood Interface, Overgrown Flowery Interface, Pastel Pink Lolita Interface, Starblue Valley, Starry Blue UI, Vanilla Accent Interface, Vintage Interface v1, Vintage Interface v2, Void's Weird Wonders, VPR-Inspired UI",
+      "Default": "Vanilla"
+    },
+    "CustomInterface": {
+      "Section": "CompatibilitySettings",
+      "AllowValues": "true, false",
+      "Default": "false"
+    }
+  },
+
+  "Changes": [
+    {
+      "LogName": "Skip or Socialize - Recolor",
+      "Action": "EditImage",
+      "Target": "Mods/dylanjames.skiporsocialize/Skip",
+      "FromFile": "assets/{{Recolor}}/Skip.png",
+      "When": {
+        "CustomInterface": "false"
+      }
+    },
+    {
+      "LogName": "Skip or Socialize - Custom Recolor",
+      "Action": "EditImage",
+      "Target": "Mods/dylanjames.skiporsocialize/Skip",
+      "FromFile": "assets/Custom/Skip.png",
+      "When": {
+        "CustomInterface": "true"
+      }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+    "Name": "Kids for the School",
+    "Author": "N3cro_92",
+    "Version": "3.2.2",
+    "Description": "Kids for the School",
+    "UniqueID": "N3cro_92.KidsfortheSchool",
+    "MinimumApiVersion": "4.0.7",
+    "UpdateKeys": [ "Nexus:29295" ],
+    "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "N3cro_92.KidsfortheSchoolTokens",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "DaisyNiko.EarthyInteriors",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "DaisyNiko.EarthyRecolour",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Lita.StarblueValley",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Lita.StarblueValleyUnofficial",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "grapeponta.VibrantPastoralRecolor",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Poltergeister.SeasonalCuteCharacters",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "siliconmodding.GVChildrenSMAPI",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "siliconmodding.GVChildNPCs",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "siliconmodding.GVGrowthSpurt",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "SuperAardvark.AntiSocial",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Zilch.SeasonalImprovedLeo",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Stuyk.HardwareStoreCP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Rafseazz.LunnaCP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Rafseazz.RSVCP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Rafseazz.RidgesideVillage",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Rafseazz.RSVSeasonalOutfits",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "xiddav.NPCChildren",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Xiddav.LRSHStudentsandTeachers",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Xiddav.LittleRedSchoolHouse",
+           
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "xiddav.tilesheet",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Candidus42.LittleNPCs",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Bouhm.NPCMapLocations",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Lemurkat.EastScarp",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Lemurkat.EastScarpNPCs",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Arknir27.Lavril",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Arknir27.VoidCC",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "BURAKMESE.SKE",
+            "IsRequired": false
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+   "Format": "2.0.0",
+   "ConfigSchema": {
+      "IF2R": {
+         "AllowValues": "true, false",
+		 "Description": "Whether or not you are also using the Immersive Farm 2 Remastered map, for the purpose of the SpouseAreaLocation property placement. Defaults to true.",
+         "Default": "true"
+      }
+   },
+   "Changes": [
+      {
+         "Action": "EditImage",
+         "Target": "Maps/spring_z_extras",
+         "FromFile": "assets/LancePatio-Spring.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 65, "Height": 32 },
+         "ToArea": { "X": 159, "Y": 3360, "Width": 65, "Height": 32 },
+		 "PatchMode": "Overlay",
+		 "When": {
+            "Season": "spring",
+            },
+		 "LogName": "Lance Patio Spring"
+      },
+      {
+         "Action": "EditImage",
+         "Target": "Maps/summer_z_extras",
+         "FromFile": "assets/LancePatio-Summer.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 32 },
+         "ToArea": { "X": 160, "Y": 3360, "Width": 64, "Height": 32 },
+		 "PatchMode": "Overlay",
+		 "When": {
+            "Season": "summer",
+            },
+		 "LogName": "Lance Patio Summer"
+      },
+      {
+         "Action": "EditImage",
+         "Target": "Maps/fall_z_extras",
+         "FromFile": "assets/LancePatio-Fall.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 32 },
+         "ToArea": { "X": 160, "Y": 3360, "Width": 64, "Height": 32 },
+		 "PatchMode": "Overlay",
+		 "When": {
+            "Season": "fall",
+            },
+		 "LogName": "Lance Patio Fall"
+      },
+      {
+         "Action": "EditImage",
+         "Target": "Maps/winter_z_extras",
+         "FromFile": "assets/LancePatio-Winter.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 22 },
+         "ToArea": { "X": 160, "Y": 3370, "Width": 64, "Height": 22 },
+		 "PatchMode": "Overlay",
+		 "When": {
+            "Season": "winter",
+            },
+		 "LogName": "Lance Patio Winter"
+      },
+	  {
+		 "Action": "EditMap",
+		 "Target": "Maps/Farm",
+		 "MapProperties": {
+		    "SpouseAreaLocation": "69 6"
+		 },
+		 "When": {
+			"IF2R": "true",
+            },
+		 "LogName": "Lance SpouseAreaLocation"
+	  }
+   ]
+}

@@ -1,0 +1,72 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+      "LogName": "Load Tilesheet",
+      "Action": "Load",
+      "Target": "maps/spring_PetShop, maps/summer_PetShop, maps/fall_PetShop, maps/winter_PetShop",
+      "FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+    },
+	{
+	  "LogName": "SVE x Alec Patch",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "assets/SVE_Alec_Overlay.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 21,
+        "Height": 18
+      },
+      "ToArea": {
+        "X": 64,
+        "Y": 17,
+        "Width": 21,
+        "Height": 18
+      },
+      "PatchMode": "Overlay",
+    },
+	{
+	  "LogName": "SVE x Alec Paths Layer Fix",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "assets/SVE_Alec_Paths_Layer.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 21,
+        "Height": 18
+      },
+      "ToArea": {
+        "X": 64,
+        "Y": 17,
+        "Width": 21,
+        "Height": 18
+      },
+      "PatchMode": "ReplaceByLayer",
+    },
+	{
+	  "LogName": "SVE x Alec x Aymeric",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "assets/maps/AlecRevisited_Aymeric.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 15,
+        "Height": 11
+      },
+      "ToArea": {
+        "X": 71,
+        "Y": 26,
+        "Width": 15,
+        "Height": 11
+      },
+      "PatchMode": "ReplaceByLayer",
+      "When": {
+        "HasMod |contains=Adaire.Aymeric": true,
+		"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    }
+  ]
+}

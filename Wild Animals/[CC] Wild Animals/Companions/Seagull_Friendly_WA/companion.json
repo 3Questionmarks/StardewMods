@@ -565,13 +565,21 @@
 		"TextLifetime": 3000
 		}
 	],
+	"Sounds": [
+		{
+		"SoundName": "seagulls",
+		"WhenToPlay": "Always",
+		"TimeBetweenSound": 3000,
+		"ChanceOfPlaying": 0.4
+		}
+	]  
   },
 
 "Sounds": [
 	{
 	"SoundName": "seagulls",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
 	"ChanceOfPlaying": 0.4
 	}
 ]  

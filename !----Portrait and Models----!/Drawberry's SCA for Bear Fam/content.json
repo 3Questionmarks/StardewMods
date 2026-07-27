@@ -1,0 +1,1669 @@
+{
+  "Format": "2.9.0",
+  "ConfigSchema": {
+      "NoNose": {
+          "AllowValues": "true, false",
+          "Default": "true",
+          "Description": "Choose between no noses (true) or noses (false) for the sprites.",
+          },
+          "SigurdHairColor": {
+          "AllowValues": "bluehaired, blackhaired",
+          "Default": "bluehaired",
+          "AllowBlank": false,
+          "Description": "Choose between blue or black hair for Sig. Values can be either bluehaired or blackhaired. To ensure the spouse portrait furniture item matches, please select the respective colour in the Bear Fam config.",
+          },
+        "GunnarHasFreckles": {
+          "AllowValues": "freckled, nofreckles",
+          "Default": "freckled",
+          "AllowBlank": false,
+          "Description": "Choose between freckles or no freckles for Gunnar. Values can either freckled or nofreckles",
+        }
+      },
+    "Changes": [ 
+      {
+        "LogName": "Cute 'wish you were here' letter - blue haired Sig",
+        "Action": "EditImage",
+        "Target": "letterbg Mods/MadDog.HashtagBearFam/LetterBackgrounds", 
+        "FromFile": "assets/cutelettersBearFam.png",
+        "FromArea": {"X": 185, "Y": 300, "Width": 129, "Height": 78},
+        "ToArea": {"X": 185, "Y": 300, "Width": 129, "Height": 78},
+        "When": 
+        {
+          "HasFile:{{FromFile}}": true,
+        },
+      },
+      {
+        "LogName": "Cute 'wish you were here' letter - black haired Sig",
+        "Action": "EditImage",
+        "Target": "letterbg Mods/MadDog.HashtagBearFam/LetterBackgrounds", 
+        "FromFile": "assets/cutelettersBearFam.png",
+        "FromArea": {"X": 505, "Y": 300, "Width": 129, "Height": 78},
+        "ToArea": {"X": 505, "Y": 300, "Width": 129, "Height": 78},
+        "When": 
+        {
+          "HasFile:{{FromFile}}": true,
+        },
+      },
+    {
+      "LogName": "Sig - Cute Spouse Pictures",
+      "Action": "EditImage",
+      "Target": "Mods/MadDog.HashtagBearFam/MadDogFurniture", 
+      "FromFile": "assets/cutespouseBearFam.png",
+      "FromArea": {"X": 0, "Y": 0, "Width": 64, "Height": 32},
+      "ToArea": {"X": 0, "Y": 0, "Width": 64, "Height": 32},
+      "When": 
+      {
+        "HasFile:{{FromFile}}": true,
+      },
+    },
+    {
+      "LogName": "Gunnar - Cute Spouse Picture",
+      "Action": "EditImage",
+      "Target": "Mods/MadDog.HashtagBearFam/MadDogFurniture", 
+      "FromFile": "assets/cutespouseBearFam.png",
+      "FromArea": {"X": 71, "Y": 7, "Width": 18, "Height": 18},
+      "ToArea": {"X": 71, "Y": 7, "Width": 18, "Height": 18},
+      "When": 
+      {
+        "HasFile:{{FromFile}}": true,
+      },
+    },
+    {
+      "LogName": "Teren - Cute Spouse Picture",
+      "Action": "EditImage",
+      "Target": "Mods/MadDog.HashtagBearFam/MadDogFurniture", 
+      "FromFile": "assets/cutespouseBearFam.png",
+      "FromArea": {"X": 103, "Y": 7, "Width": 18, "Height": 18},
+      "ToArea": {"X": 103, "Y": 7, "Width": 18, "Height": 18},
+      "When": 
+      {
+        "HasFile:{{FromFile}}": true,
+      },
+    },
+    // Army photo
+    {
+        "Action": "EditImage",
+        "Target": "MadDogBearFam/BearfamOldArmyPhoto",
+        "FromFile": "assets/ArmyPhoto_{{SigurdHairColor}}.png"
+    },
+    //Calendar edits - find a way to load{{season}}2.pngs in calendar!
+    {
+        "LogName": "Cute Sig Calendar Sprite Edits",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_{{Season}}1.png",
+    },	
+    {
+        "LogName": "Cute Sondra Calendar Sprite Edits",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra",
+        "FromFile": "assets/Characters/Sondra/Sondra_{{Season}}1.png",
+    },	
+    {
+        "LogName": "Cute Gunnar Calendar Sprite Edits",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_{{Season}}1.png",
+    },	
+    {
+        "LogName": "Cute Gudrun Calendar Sprite Edits",
+        "Action": "EditImage",
+        "Target": "Characters/Characters/MadDog.HashtagBearFam.Gudrun",
+        "FromFile": "assets/Characters/Gudrun/Gudrun{{Season}}1.png",
+    },	
+    {
+        "LogName": "Cute Teren Calendar Sprite Edits",
+        "Action": "EditImage",
+        "Target": "Characters/Characters/MadDog.HashtagBearFam.Teren",
+        "FromFile": "assets/Characters/Teren/Teren{{Season}}1.png",
+    },	
+    //NOSES
+		{
+			"LogName": "Cute Sig - Nose",
+			"Action": "EditImage",
+			"Target": "Characters/MadDog.HashtagBearFam.Sigurd, Characters/MadDog.HashtagBearFam.Sigurd_Beach, Characters/MadDog.HashtagBearFam.Sigurd_Spring_1, Characters/MadDog.HashtagBearFam.Sigurd_Spring_2, Characters/MadDog.HashtagBearFam.Sigurd_Summer_1, Characters/MadDog.HashtagBearFam.Sigurd_Summer_2, Characters/MadDog.HashtagBearFam.Sigurd_Fall_1, Characters/MadDog.HashtagBearFam.Sigurd_Fall_2, Characters/MadDog.HashtagBearFam.Sigurd_Winter_1, Characters/MadDog.HashtagBearFam.Sigurd_Winter_2,Characters/MadDog.HashtagBearFam.Sigurd_eggfest, Characters/MadDog.HashtagBearFam.Sigurd_flowerdance, Characters/MadDog.HashtagBearFam.Sigurd_moonlightjellies, Characters/MadDog.HashtagBearFam.Sigurd_sdvfair, Characters/MadDog.HashtagBearFam.Sigurd_spiritseve1, Characters/MadDog.HashtagBearFam.Sigurd_spiritseve2, Characters/MadDog.HashtagBearFam.Sigurd_icefestival, Characters/MadDog.HashtagBearFam.Sigurd_winterfeast",
+      "FromFile": "assets/Sig_Nose.png",
+			"PatchMode": "Overlay",
+			"When": 
+			{
+				"NoNose": "false",
+			},
+            "Priority": "Late",
+        },
+        
+      {
+			"LogName": "Cute Sondra - Nose",
+			"Action": "EditImage",
+			"Target": "Characters/MadDog.HashtagBearFam.Sondra, Characters/MadDog.HashtagBearFam.Sondra_Beach, Characters/MadDog.HashtagBearFam.Sondra_spring_1, Characters/MadDog.HashtagBearFam.Sondra_spring_2, Characters/MadDog.HashtagBearFam.Sondra_summer_1, Characters/MadDog.HashtagBearFam.Sondra_summer_2, Characters/MadDog.HashtagBearFam.Sondra_Fall_1, Characters/MadDog.HashtagBearFam.Sondra_Fall_2, Characters/MadDog.HashtagBearFam.Sondra_Winter_1, Characters/MadDog.HashtagBearFam.Sondra_Winter_2, Characters/MadDog.HashtagBearFam.Sondra_eggfest, Characters,, MadDog.HashtagBearFam.Sondra_flowerdance, Characters/MadDog.HashtagBearFam.Sondra_luau, Characters/MadDog.HashtagBearFam.Sondra_moonlightjellies, Characters/MadDog.HashtagBearFam.Sondra_sdvfair, Characters/MadDog.HashtagBearFam.Sondra_spiritseve1, Characters/MadDog.HashtagBearFam.Sondra_spiritseve2, Characters/MadDog.HashtagBearFam.Sondra_winterfeast",
+            "FromFile": "assets/Sondra_Nose.png",
+			"PatchMode": "Overlay",
+			"When": 
+			{
+				"NoNose": "false",
+			},
+            "Priority": "Late",
+        },
+      
+        {
+			"LogName": "Cute Gunnar - Nose",
+			"Action": "EditImage",
+			"Target": "Characters/MadDog.HashtagBearFam.Gunnar, Characters/MadDog.HashtagBearFam.Gunnar_Beach, Characters/MadDog.HashtagBearFam.Gunnar_Spring_1, Characters/MadDog.HashtagBearFam.Gunnar_Spring_2, Characters/MadDog.HashtagBearFam.Gunnar_Summer_1, Characters/MadDog.HashtagBearFam.Gunnar_Summer_2, Characters/MadDog.HashtagBearFam.Gunnar_Fall_1, Characters/MadDog.HashtagBearFam.Gunnar_Fall_2, Characters/MadDog.HashtagBearFam.Gunnar_Winter_1, Characters/MadDog.HashtagBearFam.Gunnar_Winter_2, Characters/MadDog.HashtagBearFam.Gunnar_Bonus, Characters/MadDog.HashtagBearFam.Gunnar_eggfest, Characters/MadDog.HashtagBearFam.Gunnar_flowerdance, Characters/MadDog.HashtagBearFam.Gunnar_luau, Characters/MadDog.HashtagBearFam.Gunnar_fireworksfestival, Characters/MadDog.HashtagBearFam.Gunnar_moonlightjellies, Characters/MadDog.HashtagBearFam.Gunnar_sdvfair, Characters/MadDog.HashtagBearFam.Gunnar_spiritseve1, Characters/MadDog.HashtagBearFam.Gunnar_spiritseve2, Characters/MadDog.HashtagBearFam.Gunnar_icefestival, Characters/MadDog.HashtagBearFam.Gunnar_winterfeast, Characters/MadDog.HashtagBearFam.Gunnar_armored, Characters/MadDog.HashtagBearFam.Gunnar_armored2",
+            "FromFile": "assets/Gunnar_Nose.png",
+			"PatchMode": "Overlay",
+			"When": 
+			{
+				"NoNose": "false",
+			},
+            "Priority": "Late",
+        },
+
+
+        {
+			"LogName": "Cute Gudrun - Nose",
+			"Action": "EditImage",
+			"Target": "Characters/MadDog.HashtagBearFam.Gudrun, Characters/MadDog.HashtagBearFam.Gudrun_Beach, Characters/MadDog.HashtagBearFam.Gudrun_spring_1, Characters/MadDog.HashtagBearFam.Gudrun_spring_2, Characters/MadDog.HashtagBearFam.Gudrun_summer_1, Characters/MadDog.HashtagBearFam.Gudrun_summer_2, Characters/MadDog.HashtagBearFam.Gudrun_Fall_1, Characters/MadDog.HashtagBearFam.Gudrun_Fall_2, Characters/MadDog.HashtagBearFam.Gudrun_Winter_1, Characters/MadDog.HashtagBearFam.Gudrun_Winter_2, Characters/MadDog.HashtagBearFam.Gudrun_eggfest, Characters/MadDog.HashtagBearFam.Gudrun_flowerdance, Characters/MadDog.HashtagBearFam.Gudrun_luau, Characters/MadDog.HashtagBearFam.Gudrun_moonlightjellies, Characters/MadDog.HashtagBearFam.Gudrun_sdvfair, Characters/MadDog.HashtagBearFam.Gudrun_spiritseve1, Characters/MadDog.HashtagBearFam.Gudrun_spiritseve2, Characters/MadDog.HashtagBearFam.Gudrun_winterfeast",
+            "FromFile": "assets/Gudrun_Nose.png",
+			"PatchMode": "Overlay",
+			"When": 
+			{
+				"NoNose": "false",
+			},
+            "Priority": "Late",
+        },
+
+
+        {
+			"LogName": "Cute Teren - Nose",
+			"Action": "EditImage",
+			"Target": "Characters/MadDog.HashtagBearFam.Teren, Characters/MadDog.HashtagBearFam.Teren_Beach, Characters/MadDog.HashtagBearFam.Teren_spring_1, Characters/MadDog.HashtagBearFam.Teren_spring_2, Characters/MadDog.HashtagBearFam.Teren_summer_1, Characters/MadDog.HashtagBearFam.Teren_summer_2, Characters/MadDog.HashtagBearFam.Teren_Fall_1, Characters/MadDog.HashtagBearFam.Teren_Fall_2, Characters/MadDog.HashtagBearFam.Teren_Winter_1, Characters/MadDog.HashtagBearFam.Teren_Winter_2, Characters/MadDog.HashtagBearFam.Teren_eggfest, Characters/MadDog.HashtagBearFam.Teren_flowerdance, Characters/MadDog.HashtagBearFam.Teren_luau, Characters/MadDog.HashtagBearFam.Teren_moonlightjellies, Characters/MadDog.HashtagBearFam.Teren_sdvfair, Characters/MadDog.HashtagBearFam.Teren_spiritseve1, Characters/MadDog.HashtagBearFam.Teren_spiritseve2, Characters/MadDog.HashtagBearFam.Teren_icefestival, Characters/MadDog.HashtagBearFam.Teren_winterfeast, Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Blue, Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Dark, Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Green, Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Purple, Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Teal, Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Pink, Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Yellow, Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Red",
+      "FromFile": "assets/Teren_Nose.png",
+			"PatchMode": "Overlay",
+			"When": 
+			{
+				"NoNose": "false",
+			},
+            "Priority": "Late",
+        },
+
+        
+        // OUTFITS
+      //////////////////////////////////////////
+      //Sigurd
+      //////////////////////////////////////////
+
+      //default
+      //
+    {
+        "LogName": "Cute Sig Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_default.png"
+      },
+      {
+        "LogName": "Cute Sig Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_default.png"
+      },
+  
+      //beach/resort
+      {
+        "LogName": "Cute Sigurd Island Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Beach",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_beach.png"
+      },
+      {
+        "LogName": "Cute Sigurd Island Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_Beach",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_beach.png"
+      },
+      //spring
+      {
+        "LogName": "Cute Sigurd Spring Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Spring_1",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_spring1.png"
+      },
+      {
+        "LogName": "Cute Sigurd Spring Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_Spring_1",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_spring1.png"
+      },
+      {
+        "LogName": "Cute Sigurd Spring Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Spring_2",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_spring2.png"
+      },
+      {
+        "LogName": "Cute Sigurd Spring Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_Spring_2",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_spring2.png"
+      },
+      //summer
+      {
+        "LogName": "Cute Sigurd summer Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Summer_1",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_summer1.png"
+      },
+      {
+        "LogName": "Cute Sigurd summer Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_Summer_1",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_summer1.png"
+      },
+      {
+        "LogName": "Cute Sigurd summer Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Summer_2",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_summer2.png"
+      },
+      {
+        "LogName": "Cute Sigurd summer Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_Summer_2",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_summer2.png"
+      },
+      //fall
+      {
+        "LogName": "Cute Sigurd Fall Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Fall_1",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_fall1.png"
+      },
+      {
+        "LogName": "Cute Sigurd Fall Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_Fall_1",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_fall1.png"
+      },
+      {
+        "LogName": "Cute Sigurd Fall Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Fall_2",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_fall2.png"
+      },
+      {
+        "LogName": "Cute Sigurd Fall Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_Fall_2",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_fall2.png"
+      },
+      //winter
+      {
+        "LogName": "Cute Sigurd Winter Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Winter_1",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_winter1.png"
+      },
+      {
+        "LogName": "Cute Sigurd Winter Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_Winter_1",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_winter1.png"
+      },
+      {
+        "LogName": "Cute Sigurd Winter Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_Winter_2",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_winter2.png"
+      },
+      {
+        "LogName": "Cute Sigurd Winter Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_Winter_2",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_winter2.png"
+      },
+      //festivals
+      //eggfest
+      {
+        "LogName": "Cute Sigurd eggfest Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_eggfest",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_eggf.png"
+      },
+      {
+        "LogName": "Cute Sigurd eggfest Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_eggfest",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_eggf.png"
+      },
+      //flowerdance
+      {
+        "LogName": "Cute Sigurd flowerdance Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_flowerdance",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_flowerdance.png"
+      },
+      {
+        "LogName": "Cute Sigurd flowerdance Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_flowerdance",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_flowerdance.png"
+      },
+      //jellies
+      {
+        "LogName": "Cute Sigurd moonlightjellies Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_moonlightjellies",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_jellies.png"
+      },
+      {
+        "LogName": "Cute Sigurd moonlightjellies Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_moonlightjellies",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_jellies.png"
+      },
+      //fair
+      {
+        "LogName": "Cute Sigurd sdvfair Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_sdvfair",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_fair.png"
+      },
+      {
+        "LogName": "Cute Sigurd sdvfair Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_sdvfair",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_fair.png"
+      },
+      //spiritseve1
+      {
+        "LogName": "Cute Sigurd spiritseve Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_spiritseve1",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_spiritseve1.png"
+      },
+      {
+        "LogName": "Cute Sigurd spiritseve Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_spiritseve1",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_spiritseve1.png"
+      },
+      //spiritseve2
+      {
+        "LogName": "Cute igurd spiritseve Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_spiritseve2",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_spiritseve2.png"
+      },
+      {
+        "LogName": "Cute Sigurd spiritseve Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_spiritseve2",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_spiritseve2.png"
+      },
+      //icefestival
+      {
+        "LogName": "Cute Sigurd icefestival Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_icefestival",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_ice.png"
+      },
+      {
+        "LogName": "Cute Sigurd icefestival Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_icefestival",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_ice.png"
+      },
+      //winterfeast
+      {
+        "LogName": "Cute Sigurd winterfeast Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sigurd_winterfeast",
+        "FromFile": "assets/Portraits/Sigurd/Sig_{{SigurdHairColor}}_winterstar.png"
+      },
+      {
+        "LogName": "Cute Sigurd winterfeast Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sigurd_winterfeast",
+        "FromFile": "assets/Characters/Sigurd/Sig_{{SigurdHairColor}}_winterstar.png"
+      },
+  
+      //////////////////////////////////////////
+      //Sondra
+      //////////////////////////////////////////
+  
+      //default
+      {
+        "LogName": "Cute Sondra Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra",
+        "FromFile": "assets/Portraits/Sondra/Sondra_default.png"
+      },
+      {
+        "LogName": "Cute Sondra Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra",
+        "FromFile": "assets/Characters/Sondra/Sondra_default.png"
+      },
+  
+      //beach/resort
+      {
+        "LogName": "Cute Sondra Island Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Beach",
+        "FromFile": "assets/Portraits/Sondra/Sondra_beach.png"
+      },
+      {
+        "LogName": "Cute Sondra Island Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_Beach",
+        "FromFile": "assets/Characters/Sondra/Sondra_beach.png"
+      },
+      //spring
+      {
+        "LogName": "Cute Sondra Spring Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_spring_1",
+        "FromFile": "assets/Portraits/Sondra/Sondra_spring1.png"
+      },
+      {
+        "LogName": "Cute Sondra Spring Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_spring_1",
+        "FromFile": "assets/Characters/Sondra/Sondra_spring1.png"
+      },
+      {
+        "LogName": "Cute Sondra Spring Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_spring_2",
+        "FromFile": "assets/Portraits/Sondra/Sondra_spring2.png"
+      },
+      {
+        "LogName": "Cute Sondra Spring Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_spring_2",
+        "FromFile": "assets/Characters/Sondra/Sondra_spring2.png"
+      },
+      //summer
+      {
+        "LogName": "Cute Sondra summer Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_summer_1",
+        "FromFile": "assets/Portraits/Sondra/Sondra_summer1.png"
+      },
+      {
+        "LogName": "Cute Sondra summer Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_summer_1",
+        "FromFile": "assets/Characters/Sondra/Sondra_summer1.png"
+      },
+      {
+        "LogName": "Cute Sondra summer Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_summer_2",
+        "FromFile": "assets/Portraits/Sondra/Sondra_summer2.png"
+      },
+      {
+        "LogName": "Cute Sondra summer Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_summer_2",
+        "FromFile": "assets/Characters/Sondra/Sondra_summer2.png"
+      },
+      //fall
+      {
+        "LogName": "Cute Sondra Fall Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Fall_1",
+        "FromFile": "assets/Portraits/Sondra/Sondra_fall1.png"
+      },
+      {
+        "LogName": "Cute Sondra Fall Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_Fall_1",
+        "FromFile": "assets/Characters/Sondra/Sondra_fall1.png"
+      },
+      {
+        "LogName": "Cute Sondra Fall Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Fall_2",
+        "FromFile": "assets/Portraits/Sondra/Sondra_fall2.png"
+      },
+      {
+        "LogName": "Cute Sondra Fall Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_Fall_2",
+        "FromFile": "assets/Characters/Sondra/Sondra_fall2.png"
+      },
+      //winter
+      {
+        "LogName": "Cute Sondra Winter Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Winter_1",
+        "FromFile": "assets/Portraits/Sondra/Sondra_winter1.png"
+      },
+      {
+        "LogName": "Cute Sondra Winter Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_Winter_1",
+        "FromFile": "assets/Characters/Sondra/Sondra_winter1.png"
+      },
+      {
+        "LogName": "Cute Sondra Winter Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_Winter_2",
+        "FromFile": "assets/Portraits/Sondra/Sondra_winter2.png"
+      },
+      {
+        "LogName": "Cute Sondra Winter Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_Winter_2",
+        "FromFile": "assets/Characters/Sondra/Sondra_winter2.png"
+      },
+      //festivals
+      //eggfest
+      {
+        "LogName": "Cute Sondra eggfest Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_eggfest",
+        "FromFile": "assets/Portraits/Sondra/Sondra_eggf.png"
+      },
+      {
+        "LogName": "Cute Sondra eggfest Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_eggfest",
+        "FromFile": "assets/Characters/Sondra/Sondra_eggf.png"
+      },
+      //flowerdance
+      {
+        "LogName": "Cute Sondra flowerdance Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_flowerdance",
+        "FromFile": "assets/Portraits/Sondra/Sondra_flowerdance.png"
+      },
+      {
+        "LogName": "Cute Sondra flowerdance Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_flowerdance",
+        "FromFile": "assets/Characters/Sondra/Sondra_flowerdance.png"
+      },
+      //luau
+      {
+        "LogName": "Cute Sondra luau Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_luau",
+        "FromFile": "assets/Portraits/Sondra/Sondra_luau.png"
+      },
+      {
+        "LogName": "Cute Sondra luau Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_luau",
+        "FromFile": "assets/Characters/Sondra/Sondra_luau.png"
+      },
+      //moonlightjellies
+      {
+        "LogName": "Cute Sondra moonlightjellies Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_moonlightjellies",
+        "FromFile": "assets/Portraits/Sondra/Sondra_jellies.png"
+      },
+      {
+        "LogName": "Cute Sondra moonlightjellies Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_moonlightjellies",
+        "FromFile": "assets/Characters/Sondra/Sondra_jellies.png"
+      },
+      //sdvfair
+      {
+        "LogName": "Cute Sondra sdvfair Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_sdvfair",
+        "FromFile": "assets/Portraits/Sondra/Sondra_fair.png"
+      },
+      {
+        "LogName": "Cute Sondra sdvfair Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_sdvfair",
+        "FromFile": "assets/Characters/Sondra/Sondra_fair.png"
+      },
+      //spiritseve1
+      {
+        "LogName": "Cute Sondra spiritseve Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_spiritseve1",
+        "FromFile": "assets/Portraits/Sondra/Sondra_spiritseve1.png"
+      },
+      {
+        "LogName": "Cute Sondra spiritseve Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_spiritseve1",
+        "FromFile": "assets/Characters/Sondra/Sondra_spiritseve1.png"
+      },
+      //spiritseve2
+      {
+        "LogName": "Cute Sondra spiritseve Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_spiritseve2",
+        "FromFile": "assets/Portraits/Sondra/Sondra_spiritseve2.png"
+      },
+      {
+        "LogName": "Cute Sondra spiritseve Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_spiritseve2",
+        "FromFile": "assets/Characters/Sondra/Sondra_spiritseve2.png"
+      },
+  
+      //winterfeast
+      {
+        "LogName": "Cute Sondra winterfeast Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Sondra_winterfeast",
+        "FromFile": "assets/Portraits/Sondra/Sondra_winterstar.png"
+      },
+      {
+        "LogName": "Cute Sondra winterfeast Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Sondra_winterfeast",
+        "FromFile": "assets/Characters/Sondra/Sondra_winterstar.png"
+      },
+  
+      //////////////////////////////////////////
+      //Gunnar
+      //////////////////////////////////////////
+  
+      //default
+      {
+        "LogName": "Cute Gunnar Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_default.png"
+      },
+      {
+        "LogName": "Cute Gunnar Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_default.png"
+      },
+      {
+        "LogName": "Cute Gunnar Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_default.png"
+      },
+      //beach/resort
+      {
+        "LogName": "Cute Gunnar Island Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Beach",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_{{Random: noglasses, glasses}}_beach.png"
+      },
+      {
+        "LogName": "Cute Gunnar Island Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_Beach",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_beach.png"
+      },
+      //spring
+      {
+        "LogName": "Cute Gunnar Spring Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_1",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_spring1.png"
+      },
+      {
+        "LogName": "Cute Gunnar Spring Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_1_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_spring1.png"
+      },
+      {
+        "LogName": "Cute Gunnar Spring Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_Spring_1",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_spring1.png"
+      },
+      {
+        "LogName": "Cute Gunnar Spring Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_2",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_spring2.png"
+      },
+      {
+        "LogName": "Cute Gunnar Spring Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Spring_2_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_spring2.png"
+      },
+      {
+        "LogName": "Cute Gunnar Spring Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_Spring_2",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_spring2.png"
+      },
+      //summer
+      {
+        "LogName": "Cute Gunnar summer Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Summer_1",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_summer1.png"
+      },
+      {
+        "LogName": "Cute Gunnar summer Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_Summer_1",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_summer1.png"
+      },
+      {
+        "LogName": "Cute Gunnar summer Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Summer_2",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_summer2.png"
+      },
+      {
+        "LogName": "Cute Gunnar summer Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Summer_2_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_summer2.png"
+      },
+      {
+        "LogName": "Cute Gunnar summer Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_Summer_2",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_summer2.png"
+      },
+      //fall
+      {
+        "LogName": "Cute Gunnar Fall Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_1",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_fall1.png"
+      },
+      {
+        "LogName": "Cute Gunnar Fall Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_1_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_fall1.png"
+      },
+      {
+        "LogName": "Cute Gunnar Fall Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_Fall_1",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_fall1.png"
+      },
+      {
+        "LogName": "Cute Gunnar Fall Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_2",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_fall2.png"
+      },
+      {
+        "LogName": "Cute Gunnar Fall Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Fall_2_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_fall2.png"
+      },
+      {
+        "LogName": "Cute Gunnar Fall Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_Fall_2",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_fall2.png"
+      },
+      //winter
+      {
+        "LogName": "Cute Gunnar Winter Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_1",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_winter1.png"
+      },
+      {
+        "LogName": "Cute Gunnar Winter Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_1_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_winter1.png"
+      },
+      {
+        "LogName": "Cute Gunnar Winter Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_Winter_1",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_winter1.png"
+      },
+      {
+        "LogName": "Cute Gunnar Winter Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_2",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_winter2.png"
+      },
+      {
+        "LogName": "Cute Gunnar Winter Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Winter_2_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_winter2.png"
+      },
+      {
+        "LogName": "Cute Gunnar Winter Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_Winter_2",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_winter2.png"
+      },
+      //bonus
+      {
+        "LogName": "Cute Gunnar Bonus Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Bonus",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_otherevent.png" //gunnar_{{GunnarHasFreckles}}_otherevent_noglasses.png
+      },
+      {
+        "LogName": "Cute Gunnar Bonus Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_Bonus_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_otherevent.png" //gunnar_{{GunnarHasFreckles}}_otherevent_glasses.png
+      },
+      {
+        "LogName": "Cute Gunnar Bonus Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_Bonus",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_otherevent.png"
+      },
+      //festivals
+      //eggfest
+      {
+        "LogName": "Cute Gunnar eggfest Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_eggfest",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_eggf.png"
+      },
+      {
+        "LogName": "Cute Gunnar eggfest Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_eggfest_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_eggf.png"
+      },
+      {
+        "LogName": "Cute Gunnar eggfest Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_eggfest",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_Eggf.png"
+      },
+      //flowerdance
+      {
+        "LogName": "Cute Gunnar flowerdance Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_flowerdance",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_flowerdance.png"
+      },
+      {
+        "LogName": "Cute Gunnar flowerdance Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_flowerdance_glasses",
+        "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_glasses_flowerdance.png"
+      },
+      {
+        "LogName": "Cute Gunnar flowerdance Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_flowerdance",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_flowerdance.png"
+      },
+      //luau
+      {
+        "LogName": "Cute Gunnar luau Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_luau",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_luau.png"
+      },
+      {
+        "LogName": "Cute unnar luau Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_luau",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_luau.png"
+      },
+      {
+        "LogName": "Cute Gunnar luau Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_luau",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_luau.png"
+      },
+      //fireworks
+      {
+        "LogName": "Cute Gunnar fireworks Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_fireworksfestival",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_fireworks.png"
+      },
+      {
+        "LogName": "Cute Gunnar fireworks Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_fireworksfestival",
+        "FromFile": "assets/Characters/Gunnar/gunnar_Fireworks.png"
+      },
+      //moonlightjellies
+      {
+        "LogName": "Cute Gunnar jellies Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_moonlightjellies",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_jellies.png"
+      },
+      {
+        "LogName": "Cute Gunnar moonlightjellies Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_moonlightjellies",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_jellies.png"
+      },
+      //sdvfair
+      {
+        "LogName": "Cute Gunnar sdvfair Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_sdvfair",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_fair.png"
+      },
+      {
+        "LogName": "Cute Gunnar sdvfair Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_sdvfair_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_fair.png"
+      },
+      {
+        "LogName": "Cute Gunnar sdvfair Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_sdvfair",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_fair.png"
+      },
+      //spiritseve1
+      {
+        "LogName": "Cute Gunnar spiritseve Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve1",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_spiritseve1.png"
+      },
+      {
+        "LogName": "Cute Gunnar spiritseve Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve1_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_spiritseve1.png"
+      },
+      {
+        "LogName": "Cute Gunnar spiritseve Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_spiritseve1",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_spiritseve1.png"
+      },
+      //spiritseve2
+      {
+        "LogName": "Cute Gunnar spiritseve Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve2",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_spiritseve2.png"
+      },
+      {
+        "LogName": "Cute Gunnar spiritseve Portraits test",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_spiritseve2_glasses",
+        "FromFile": "assets/Portraits/Gunnar/gunnar_{{GunnarHasFreckles}}_glasses_spiritseve2.png"
+      },
+      {
+        "LogName": "Cute Gunnar spiritseve Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_spiritseve2",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_spiritseve2.png"
+      },
+      //icefestival
+      {
+        "LogName": "Cute Gunnar icefestival Portraits test",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_icefestival",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_ice.png"
+      },
+      {
+        "LogName": "Cute Gunnar icefestival Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_icefestival_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_ice.png"
+      },
+      {
+        "LogName": "Cute Gunnar icefestival Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_icefestival",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_ice.png"
+      },
+      //winter star
+      {
+        "LogName": "Cute Gunnar winter star Portraits ",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_winterfeast",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_winterstar.png"
+      },
+      {
+        "LogName": "Cute Gunnar winterfeast Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_winterfeast_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_winterstar.png"
+      },
+      {
+        "LogName": "Cute Gunnar winterfeast Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_winterfeast",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_winterstar.png"
+      },
+      //special
+      //armor1
+      {
+        "LogName": "Cute Gunnar Armor Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_armored",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_armor1.png"
+      },
+      {
+        "LogName": "Cute Gunnar Armor Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_armored_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_armor1.png"
+      },
+      {
+        "LogName": "Cute Gunnar Armor Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_armored",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_armor1.png"
+      },
+      //armor2
+      {
+        "LogName": "Cute Gunnar Armor2 Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_armored2",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_noglasses_armor2.png"
+      },
+      {
+        "LogName": "Cute Gunnar Armor2 Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gunnar_armored2_glasses",
+        "FromFile": "assets/Portraits/Gunnar/Gunnar_{{GunnarHasFreckles}}_glasses_armor2.png"
+      },
+      {
+        "LogName": "Cute Gunnar Armor2 Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gunnar_armored2",
+        "FromFile": "assets/Characters/Gunnar/Gunnar_armor2.png"
+      },
+  
+      //////////////////////////////////////////
+      //Gudrun
+      //////////////////////////////////////////
+  
+      //default
+      {
+        "LogName": "Cute Gudrun Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_default.png"
+      },
+      {
+        "LogName": "Cute Gudrun Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_default.png"
+      },
+  
+      //beach/resort
+      {
+        "LogName": "Cute Gudrun Island Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_Beach",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_beach.png"
+      },
+      {
+        "LogName": "Cute Gudrun Island Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_Beach",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_beach.png"
+      },
+      //spring
+      {
+        "LogName": "Cute Gudrun Spring Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_spring_1",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_spring1.png"
+      },
+      {
+        "LogName": "Cute Gudrun Spring Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_spring_1",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_spring1.png"
+      },
+      {
+        "LogName": "Cute Gudrun Spring Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_spring_2",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_spring2.png"
+      },
+      {
+        "LogName": "Cute Gudrun Spring Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_spring_2",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_spring2.png"
+      },
+      //summer
+      {
+        "LogName": "Cute Gudrun summer Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_summer_1",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_summer1.png"
+      },
+      {
+        "LogName": "Cute Gudrun summer Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_summer_1",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_summer1.png"
+      },
+      {
+        "LogName": "Cute Gudrun summer Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_summer_2",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_summer2.png"
+      },
+      {
+        "LogName": "Cute Gudrun summer Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_summer_2",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_summer2.png"
+      },
+      //fall
+      {
+        "LogName": "Cute Gudrun Fall Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_Fall_1",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_fall1.png"
+      },
+      {
+        "LogName": "Cute Gudrun Fall Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_Fall_1",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_fall1.png"
+      },
+      {
+        "LogName": "Cute Gudrun Fall Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_Fall_2",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_fall2.png"
+      },
+      {
+        "LogName": "Cute Gudrun Fall Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_Fall_2",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_fall2.png"
+      },
+      //winter
+      {
+        "LogName": "Cute Gudrun Winter Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_Winter_1",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_winter1.png"
+      },
+      {
+        "LogName": "Cute Gudrun Winter Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_Winter_1",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_winter1.png"
+      },
+      {
+        "LogName": "Cute Gudrun Winter Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_Winter_2",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_winter2.png"
+      },
+      {
+        "LogName": "Cute Gudrun Winter Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_Winter_2",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_winter2.png"
+      },
+      //festivals
+      //eggfest
+      {
+        "LogName": "Cute Gudrun eggfest Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_eggfest",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_eggf.png"
+      },
+      {
+        "LogName": "Cute Gudrun eggfest Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_eggfest",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_eggf.png"
+      },
+      //flowerdance
+      {
+        "LogName": "Cute Gudrun flowerdance Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_flowerdance",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_flowerdance.png"
+      },
+      {
+        "LogName": "Cute Gudrun flowerdance Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_flowerdance",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_flowerdance.png"
+      },
+      //luau
+      {
+        "LogName": "Cute Gudrun luau Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_luau",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_luau.png"
+      },
+      {
+        "LogName": "Cute Gudrun luau Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_luau",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_Luau.png"
+      },
+      //moonlightjellies
+      {
+        "LogName": "Cute Gudrun moonlightjellies Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_moonlightjellies",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_jellies.png"
+      },
+      {
+        "LogName": "Cute Gudrun moonlightjellies Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_moonlightjellies",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_jellies.png"
+      },
+      //sdvfair
+      {
+        "LogName": "Cute Gudrun sdvfair Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_sdvfair",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_fair.png"
+      },
+      {
+        "LogName": "Cute Gudrun sdvfair Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_sdvfair",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_fair.png"
+      },
+      //spiritseve1
+      {
+        "LogName": "Cute Gudrun spiritseve Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_spiritseve1",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_spiritseve1.png"
+      },
+      {
+        "LogName": "Cute Gudrun spiritseve Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_spiritseve1",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_spiritseve1.png"
+      },
+      //spiritseve2
+      {
+        "LogName": "Cute Gudrun spiritseve Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_spiritseve2",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_spiritseve2.png"
+      },
+      {
+        "LogName": "Cute Gudrun spiritseve Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_spiritseve2",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_spiritseve2.png"
+      },
+  
+      //winterfeast
+      {
+        "LogName": "Cute Gudrun winterfeast Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Gudrun_winterfeast",
+        "FromFile": "assets/Portraits/Gudrun/Gudrun_winterstar.png"
+      },
+      {
+        "LogName": "Cute Gudrun winterfeast Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Gudrun_winterfeast",
+        "FromFile": "assets/Characters/Gudrun/Gudrun_winterstar.png"
+      },
+  
+      //////////////////////////////////////////
+      //Teren
+      //////////////////////////////////////////
+  
+      //default
+      {
+        "LogName": "Cute Teren Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren",
+        "FromFile": "assets/Portraits/Teren/Teren_default.png"
+      },
+      {
+        "LogName": "Cute Teren Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren",
+        "FromFile": "assets/Characters/Teren/Teren_default.png"
+      },
+  
+      //beach/resort
+      {
+        "LogName": "Cute Teren Island Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_Beach",
+        "FromFile": "assets/Portraits/Teren/Teren_beach.png"
+      },
+      {
+        "LogName": "Cute Teren Island Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_Beach",
+        "FromFile": "assets/Characters/Teren/Teren_beach.png"
+      },
+      //spring
+      {
+        "LogName": "Cute Teren Spring Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_spring_1",
+        "FromFile": "assets/Portraits/Teren/Teren_spring1.png"
+      },
+      {
+        "LogName": "Cute Teren Spring Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_spring_1",
+        "FromFile": "assets/Characters/Teren/Teren_spring1.png"
+      },
+      {
+        "LogName": "Cute Teren Spring Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_spring_2",
+        "FromFile": "assets/Portraits/Teren/Teren_spring2.png"
+      },
+      {
+        "LogName": "Cute Teren Spring Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_spring_2",
+        "FromFile": "assets/Characters/Teren/Teren_spring2.png"
+      },
+      //summer
+      {
+        "LogName": "Cute Teren summer Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_summer_1",
+        "FromFile": "assets/Portraits/Teren/Teren_summer1.png"
+      },
+      {
+        "LogName": "Cute Teren summer Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_summer_1",
+        "FromFile": "assets/Characters/Teren/Teren_summer1.png"
+      },
+      {
+        "LogName": "Cute Teren summer Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_summer_2",
+        "FromFile": "assets/Portraits/Teren/Teren_summer2.png"
+      },
+      {
+        "LogName": "Cute Teren summer Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_summer_2",
+        "FromFile": "assets/Characters/Teren/Teren_summer2.png"
+      },
+      //fall
+      {
+        "LogName": "Cute Teren Fall Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_Fall_1",
+        "FromFile": "assets/Portraits/Teren/Teren_fall1.png"
+      },
+      {
+        "LogName": "Cute Teren Fall Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_Fall_1",
+        "FromFile": "assets/Characters/Teren/Teren_fall1.png"
+      },
+      {
+        "LogName": "Cute Teren Fall Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_Fall_2",
+        "FromFile": "assets/Portraits/Teren/Teren_fall2.png"
+      },
+      {
+        "LogName": "Cute Teren Fall Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_Fall_2",
+        "FromFile": "assets/Characters/Teren/Teren_fall2.png"
+      },
+      //winter
+      {
+        "LogName": "Cute Teren Winter Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_Winter_1",
+        "FromFile": "assets/Portraits/Teren/Teren_winter1.png"
+      },
+      {
+        "LogName": "Cute Teren Winter Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_Winter_1",
+        "FromFile": "assets/Characters/Teren/Teren_winter1.png"
+      },
+      {
+        "LogName": "Cute Teren Winter Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_Winter_2",
+        "FromFile": "assets/Portraits/Teren/Teren_winter2.png"
+      },
+      {
+        "LogName": "Cute Teren Winter Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_Winter_2",
+        "FromFile": "assets/Characters/Teren/Teren_winter2.png"
+      },
+      //festivals
+      //eggfest
+      {
+        "LogName": "Cute Teren eggfest Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_eggfest",
+        "FromFile": "assets/Portraits/Teren/Teren_eggf.png"
+      },
+      {
+        "LogName": "Cute Teren eggfest Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_eggfest",
+        "FromFile": "assets/Characters/Teren/Teren_eggf.png"
+      },
+      //flowerdance
+      {
+        "LogName": "Cute Teren flowerdance Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_flowerdance",
+        "FromFile": "assets/Portraits/Teren/Teren_flowerdance.png"
+      },
+      {
+        "LogName": "Cute Teren flowerdance Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_flowerdance",
+        "FromFile": "assets/Characters/Teren/Teren_flowerdance.png"
+      },
+      //luau
+      {
+        "LogName": "Cute Teren luau Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_luau",
+        "FromFile": "assets/Portraits/Teren/Teren_luau.png"
+      },
+      {
+        "LogName": "Cute Teren luau Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_luau",
+        "FromFile": "assets/Characters/Teren/Teren_luau.png"
+      },
+      //moonlightjellies
+      {
+        "LogName": "Cute Teren moonlightjellies Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_moonlightjellies",
+        "FromFile": "assets/Portraits/Teren/Teren_jellies.png"
+      },
+      {
+        "LogName": "Cute Teren moonlightjellies Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_moonlightjellies",
+        "FromFile": "assets/Characters/Teren/Teren_jellies.png"
+      },
+      //sdvfair
+      {
+        "LogName": "Cute Teren sdvfair Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_sdvfair",
+        "FromFile": "assets/Portraits/Teren/Teren_fair.png"
+      },
+      {
+        "LogName": "Cute Teren sdvfair Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_sdvfair",
+        "FromFile": "assets/Characters/Teren/Teren_fair.png"
+      },
+      //spiritseve1
+      {
+        "LogName": "Cute Teren spiritseve Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_spiritseve1",
+        "FromFile": "assets/Portraits/Teren/Teren_spiritseve1.png"
+      },
+      {
+        "LogName": "Cute Teren spiritseve Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_spiritseve1",
+        "FromFile": "assets/Characters/Teren/Teren_spiritseve1.png"
+      },
+      //spiritseve2
+      {
+        "LogName": "Cute Teren spiritseve Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_spiritseve2",
+        "FromFile": "assets/Portraits/Teren/teren_spiritseve2.png"
+      },
+      {
+        "LogName": "Cute Teren spiritseve Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_spiritseve2",
+        "FromFile": "assets/Characters/Teren/Teren_spiritseve2.png"
+      },
+      //icefestival
+      {
+        "LogName": "Cute Teren icefestival Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_icefestival",
+        "FromFile": "assets/Portraits/Teren/Teren_ice.png"
+      },
+      {
+        "LogName": "Cute Teren icefestival Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_icefestival",
+        "FromFile": "assets/Characters/Teren/Teren_ice.png"
+      },
+      //winterfeast
+      {
+        "LogName": "Cute Teren winterfeast Portraits",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_winterfeast",
+        "FromFile": "assets/Portraits/Teren/Teren_winterstar.png"
+      },
+      {
+        "LogName": "Cute Teren winterfeast Sprites",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_winterfeast",
+        "FromFile": "assets/Characters/Teren/Teren_winterstar.png"
+      },
+      //teren work
+      {
+        "LogName": "Cute Teren Work Assorted Portraits - Blue",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Blue",
+        "FromFile": "assets/Portraits/Teren/PortraitWork/BLUE_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Sprites - Blue",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Blue",
+        "FromFile": "assets/Characters/Teren/SpriteWork/BLUE_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Portraits - Dark",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Dark",
+        "FromFile": "assets/Portraits/Teren/PortraitWork/DARK_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Sprites - Dark",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Dark",
+        "FromFile": "assets/Characters/Teren/SpriteWork/DARK_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Portraits - Green",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Green",
+        "FromFile": "assets/Portraits/Teren/PortraitWork/GREEN_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Sprites - Green",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Green",
+        "FromFile": "assets/Characters/Teren/SpriteWork/GREEN_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Portraits - Purple",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Purple",
+        "FromFile": "assets/Portraits/Teren/PortraitWork/PURPLE_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Sprites - Purple",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Purple",
+        "FromFile": "assets/Characters/Teren/SpriteWork/PURPLE_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Portraits - Teal",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Teal",
+        "FromFile": "assets/Portraits/Teren/PortraitWork/TEAL_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Sprites - Teal",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Teal",
+        "FromFile": "assets/Characters/Teren/SpriteWork/TEAL_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Portraits - Pink",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Pink",
+        "FromFile": "assets/Portraits/Teren/PortraitWork/PINK_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Sprites - Pink",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Pink",
+        "FromFile": "assets/Characters/Teren/SpriteWork/PINK_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Portraits - Yellow",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Yellow",
+        "FromFile": "assets/Portraits/Teren/PortraitWork/YELLOW_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Sprites - Yellow",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Yellow",
+        "FromFile": "assets/Characters/Teren/SpriteWork/YELLOW_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Portraits - Red",
+        "Action": "EditImage",
+        "Target": "Portraits/MadDog.HashtagBearFam.Teren_WorkUniform_Red",
+        "FromFile": "assets/Portraits/Teren/PortraitWork/RED_Teren_work.png"
+      },
+      {
+        "LogName": "Cute Teren Work Assorted Sprites - Red",
+        "Action": "EditImage",
+        "Target": "Characters/MadDog.HashtagBearFam.Teren_WorkUniform_Red",
+        "FromFile": "assets/Characters/Teren/SpriteWork/RED_Teren_work.png"
+      },
+    ],
+}
+  
+  

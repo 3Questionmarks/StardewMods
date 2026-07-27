@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="5" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="2">
+ <tileset firstgid="1" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source=".spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <tileset firstgid="1976" name="spring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source=".spring_town.png" width="512" height="1152"/>
+ </tileset>
+ <layer id="2" name="Back" width="5" height="3">
+  <data encoding="csv">
+351,352,352,305,352,
+351,352,352,352,305,
+376,377,377,377,377
+</data>
+ </layer>
+ <objectgroup id="6" name="Back"/>
+ <layer id="1" name="Buildings" width="5" height="3">
+  <data encoding="csv">
+412,233,308,0,0,
+2947,384,386,258,0,
+2979,436,149,384,386
+</data>
+ </layer>
+ <objectgroup id="7" name="Buildings">
+  <object id="1" name="TileData" x="16" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.BusStop&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="4" name="Paths" width="5" height="3">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+ <layer id="3" name="Front" width="5" height="3">
+  <data encoding="csv">
+0,359,361,0,0,
+0,411,124,359,361,
+0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="9" name="Front"/>
+ <layer id="5" name="AlwaysFront" width="5" height="3">
+  <data encoding="csv">
+2915,0,0,0,0,
+0,0,0,0,0,
+0,0,0,2758,2759
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

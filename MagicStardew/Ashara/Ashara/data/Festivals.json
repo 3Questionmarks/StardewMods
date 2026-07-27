@@ -1,0 +1,426 @@
+{
+  "Changes": [
+    {
+      "LogName": "spring 13",
+      "Action": "EditData",
+      "When": {
+        "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+      },
+      "Target": "Data/Festivals/spring13",
+      "TextOperations": [
+        /*SetUp (SVE) - SVE changes the maps from year to year but I don't know the specifics, so you may need more than one set of positions for SVE compat.*/
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Ashara 37 88 3",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "Ashara 37 88 3",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Sspring 13 - dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "Ashara": "{{i18n:Ashara.Egg_Festival}}",
+        "Ashara_y2": "{{i18n:Ashara.Egg_Festival}}"
+      }
+    },
+
+
+
+
+
+
+
+    {
+      "LogName": "spring 24",
+      "Action": "EditData",
+      "When": {
+        "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+      },
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        /*SetUp (SVE) - SVE changes the maps from year to year but I don't know the specifics, so you may need more than one set of positions for SVE compat.*/
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Ashara 33 37 2",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "Ashara 33 37 2",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Sspring 24 - dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "Ashara": "{{i18n:Ashara.FlowerDance}}",
+        "Ashara_y2": "{{i18n:Ashara.FlowerDance}}"
+      }
+    },
+
+
+    {
+      "LogName": "summer28",
+      "Action": "EditData",
+      "When": {
+        "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+      },
+      "Target": "Data/Festivals/summer28",
+      "TextOperations": [
+        /*SetUp (SVE) - SVE changes the maps from year to year but I don't know the specifics, so you may need more than one set of positions for SVE compat.*/
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Ashara 88 40 2",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "Ashara 88 40 2",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Sspring 13 - dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "Ashara": "{{i18n:Ashara.MoonlightJellies}}",
+        "Ashara_y2": "{{i18n:Ashara.MoonlightJellies}}"
+      }
+    },
+
+
+
+
+
+
+
+
+
+    {
+      "LogName": "fall16",
+      "Action": "EditData",
+      "When": {
+        "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+      },
+      "Target": "Data/Festivals/fall16",
+      "TextOperations": [
+        /*SetUp (SVE) - SVE changes the maps from year to year but I don't know the specifics, so you may need more than one set of positions for SVE compat.*/
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Ashara 39 68 3",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "Ashara 39 68 3",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Sspring 13 - dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "Ashara": "{{i18n:Ashara.StardewValleyFair}}",
+        "Ashara_y2": "{{i18n:Ashara.StardewValleyFair}}"
+      }
+    },
+
+
+    {
+      "LogName": "winter8",
+      "Action": "EditData",
+      "When": {
+        "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+      },
+      "Target": "Data/Festivals/winter8",
+      "TextOperations": [
+        /*SetUp (SVE) - SVE changes the maps from year to year but I don't know the specifics, so you may need more than one set of positions for SVE compat.*/
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Ashara 31 10 2",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "Ashara 31 10 2",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "winter8 - dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "Ashara": "{{i18n:Ashara.FestivalOfIce}}",
+        "Ashara_y2": "{{i18n:Ashara.FestivalOfIce}}"
+      }
+    },
+
+
+
+
+
+    {
+      "LogName": "winter25",
+      "Action": "EditData",
+      "When": {
+        "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+      },
+      "Target": "Data/Festivals/winter25",
+      "TextOperations": [
+        /*SetUp (SVE) - SVE changes the maps from year to year but I don't know the specifics, so you may need more than one set of positions for SVE compat.*/
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Ashara 9 66 3",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "Ashara 9 66 3",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "winter25 - dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "Ashara": "{{i18n:Ashara.WinterStar}}",
+        "Ashara_y2": "{{i18n:Ashara.WinterStar}}"
+      }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "LogName": "Spirit's Eve - SVE compat",
+      "Action": "EditData",
+      "When": {
+        "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+      },
+      "Target": "Data/Festivals/fall27",
+      "TextOperations": [
+        /*SetUp (SVE) - SVE changes the maps from year to year but I don't know the specifics, so you may need more than one set of positions for SVE compat.*/
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Ashara 50 32 2",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "Ashara 50 32 2",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Spirit's Eve - dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "Ashara": "{{i18n:Ashara.Spirits_Eve}}",
+        "Ashara_y2": "{{i18n:Ashara.Spirits_Eve}}"
+      }
+    },
+    {
+      "LogName": "Luau",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Ashara 23 9 2",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Value": "Ashara 23 9 2",
+          "Delimiter": "/"
+        }
+        /*YEAR 2*/,
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "Ashara 37 14 2",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters_y2"
+          ],
+          "Value": "Ashara 37 14 2",
+          "Delimiter": "/"
+        }
+        /*ANIMATIONS YEAR 1*/,
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "set-up",
+            5
+          ],
+          "Value": "/animate Ashara false true 200 17 18 19 20 21 20 19 18"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "mainEvent",
+            5
+          ],
+          "Value": "/animate Ashara false true 200 17 18 19 20 21 20 19 18"
+        }
+        /*ANIMATIONS YEAR 2*/,
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "set-up_y2",
+            5
+          ],
+          "Value": "/animate Ashara false true 200 17 18 19 20 21 20 19 18"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "mainEvent_y2",
+            5
+          ],
+          "Value": "/animate Ashara false true 200 17 18 19 20 21 20 19 18"
+        }
+      ]
+    },
+
+
+    {
+      "LogName": "Luau - dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "Ashara": "{{i18n:Ashara.Luau}}",
+        "Ashara_y2": "{{i18n:Ashara.Luau}}"
+      }
+    }
+  ]
+}

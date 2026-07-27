@@ -1,0 +1,61 @@
+{
+  "Changes": [
+    // Add Object
+    {
+      "LogName": "Load Dimensional Portal Object",
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "6480.StorageVariety_DimensionalPortal": {
+          "Name": "Dimensional Portal",
+          "DisplayName": "{{i18n: DimensionalPortal.name}}",
+          "Description": "{{i18n: DimensionalPortal.description}}",
+          "Texture": "{{InternalAssetKey: assets/DimensionalPortal.png}}",
+          "CustomFields": {
+            // Expanded Storage Data
+            "furyx639.ExpandedStorage/Enabled": "true",
+            "furyx639.ExpandedStorage/Frames": "5",
+            "furyx639.ExpandedStorage/GlobalInventoryId": "6480.StorageVariety_DimensionalPortal",
+            "furyx639.ExpandedStorage/Animation": "Loop",
+            "furyx639.ExpandedStorage/OpenNearby": "true",
+            "furyx639.ExpandedStorage/OpenSound": "Ship",
+            "furyx639.ExpandedStorage/PlayerColor": "false",
+            "furyx639.ExpandedStorage/ModData": "furyx639.ExpandedStorage/Prismatic=1",
+            // Better Chests Data
+            "furyx639.BetterChests/AutoCreateChest": "Enabled",
+            "furyx639.BetterChests/OpenHeldChest": "Enabled",
+            "furyx639.BetterChests/ResizeChest": "Large",
+            "furyx639.BetterChests/ResizeChestCapacity": "70"
+          }
+        }
+      }
+    },
+    // Add Crafting Recipe
+    {
+      "LogName": "Load Dimensional Portal Crafting Recipe",
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "DimensionalPortal": "768 25 769 25 386 10/Home/6480.StorageVariety_DimensionalPortal/true/null/{{i18n: DimensionalPortal.name}}"
+      }
+    },
+    // Add Shop Entry
+    {
+      "LogName": "Load Dimensional Portal Shop Entry",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "ShadowShop",
+        "Items"
+      ],
+      "Entries": {
+        "6480.StorageVariety_DimensionalPortal": {
+          "Id": "6480.StorageVariety_DimensionalPortal",
+          "ItemId": "(BC)6480.StorageVariety_DimensionalPortal",
+          "Price": 15000,
+          "IsRecipe": true
+        }
+      }
+    }
+  ]
+}

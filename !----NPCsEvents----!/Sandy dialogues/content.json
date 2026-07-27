@@ -1,0 +1,298 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+      "LogName": "0. Diálogos Cotidianos Base",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "Entries": {
+        "Mon": "{{i18n: cotidiano_mon}}",
+        "Tue": "{{i18n: cotidiano_tue}}",
+        "Wed": "{{i18n: cotidiano_wed}}",
+        "Thu": "{{i18n: cotidiano_thu}}",
+        "Fri": "{{i18n: cotidiano_fri}}",
+        "Sat": "{{i18n: cotidiano_sat}}",
+        "Sun": "{{i18n: cotidiano_sun}}",
+        "Mon4": "{{i18n: cotidiano_mon4}}",
+        "Tue4": "{{i18n: cotidiano_tue4}}",
+        "Wed4": "{{i18n: cotidiano_wed4}}",
+        "Thu4": "{{i18n: cotidiano_thu4}}",
+        "Fri4": "{{i18n: cotidiano_fri4}}",
+        "Sat4": "{{i18n: cotidiano_sat4}}",
+        "Sun4": "{{i18n: cotidiano_sun4}}"
+      }
+    },
+    {
+      "LogName": "1. Clima - Lluvia",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "Weather": "Rain" },
+      "Entries": {
+        "Mon": "{{i18n: lluvia_mon}}",
+        "Tue": "{{i18n: lluvia_tue}}",
+        "Thu": "{{i18n: lluvia_thu}}",
+        "Sat6": "{{i18n: lluvia_sat6}}"
+      }
+    },
+    {
+      "LogName": "1. Clima - Invierno",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "Season": "winter" },
+      "Entries": {
+        "Mon": "{{i18n: invierno_mon}}",
+        "Tue": "{{i18n: invierno_tue}}",
+        "Thu4": "{{i18n: invierno_thu4}}",
+        "Sun": "{{i18n: invierno_sun}}"
+      }
+    },
+    {
+      "LogName": "2. Eventos - Cantera Desbloqueada",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "HasFlag": "ccCraftsRoom" },
+      "Entries": {
+        "Wed": "{{i18n: cantera_wed}}",
+        "Thu6": "{{i18n: cantera_thu6}}",
+        "Fri": "{{i18n: cantera_fri}}"
+      }
+    },
+{
+      "LogName": "3. Progreso - Llave del Cráneo",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "HasWalletItem": "SkullKey" },
+      "Entries": {
+        "Sun": "{{i18n: llave_sun}}",
+        "Mon6": "{{i18n: llave_mon6}}",
+        "Tue8": "{{i18n: llave_tue8}}"
+      }
+    },
+    {
+      "LogName": "4. Isla Jengibre",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "HasFlag": "visited_island" },
+      "Entries": {
+        "Mon": "{{i18n: isla_mon}}",
+        "Tue": "{{i18n: isla_tue}}",
+        "Wed": "{{i18n: isla_wed}}",
+        "Fri8": "{{i18n: isla_fri8}}"
+      }
+    },
+    {
+      "LogName": "5. Casino y Sr. Qi",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "HasWalletItem": "ClubCard" },
+      "Entries": {
+        "Thu": "{{i18n: casino_thu}}",
+        "Sat": "{{i18n: casino_sat}}",
+        "Sun": "{{i18n: casino_sun}}"
+      }
+    },
+    {
+      "LogName": "6. Festivales",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "Season": "summer", "Day": "10" },
+      "Entries": { "Wed": "{{i18n: fest_luau}}" }
+    },
+    {
+      "LogName": "6. Festivales",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "Season": "fall", "Day": "26" },
+      "Entries": { "Fri": "{{i18n: fest_espiritus}}" }
+    },
+    {
+      "LogName": "7. Relaciones - Pam y Emily",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "Entries": {
+        "Tue_Pam8": "{{i18n: pam_tue}}",
+        "Thu_Pam8": "{{i18n: pam_thu}}",
+        "Wed_Emily8": "{{i18n: emily_wed}}",
+        "Sat_Emily8": "{{i18n: emily_sat}}"
+      }
+    },
+    {
+      "LogName": "7. Relaciones - SVE (Sophia y Claire)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" },
+      "Entries": {
+        "Mon_Sophia8": "{{i18n: sve_sophia_mon}}",
+        "Thu_Sophia8": "{{i18n: sve_sophia_thu}}",
+        "Tue_Claire8": "{{i18n: sve_claire_tue}}"
+      }
+    },
+    {
+      "LogName": "7. Relaciones - SVE (Nuevos)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" },
+      "Entries": {
+        "Thu_Morris8": "{{i18n: sve_morris_thu}}",
+        "Mon_Lance": "{{i18n: sve_lance_mon}}",
+        "Sat_Susan": "{{i18n: sve_susan_sat}}"
+      }
+    },
+
+
+    {
+      "LogName": "8. Matrimonios - Cualquiera",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "Query: '{{Spouse}}' != ''": "true" },
+      "Entries": {
+        "Mon": "{{i18n: mat_gen_mon}}",
+        "Wed": "{{i18n: mat_gen_wed}}",
+        "Sat": "{{i18n: mat_gen_sat}}"
+      }
+    },
+    {
+      "LogName": "8. Matrimonios - Emily",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "Spouse": "Emily" },
+      "Entries": {
+        "Mon": "{{i18n: mat_emily_mon}}",
+        "Wed": "{{i18n: mat_emily_wed}}",
+        "Thu": "{{i18n: mat_emily_thu}}"
+      }
+    },
+    {
+      "LogName": "8. Matrimonios - SVE",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" },
+      "Entries": {
+        "Wed_Sophia_Spouse": "{{i18n: sve_mat_sophia_wed}}",
+        "Fri_Sophia_Spouse": "{{i18n: sve_mat_sophia_fri}}",
+        "Thu_Olivia_Spouse": "{{i18n: sve_mat_olivia_thu}}"
+      }
+    },
+    {
+      "LogName": "9. Poliamor - Vanilla",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "Entries": {
+        "Tue_Emily_Haley_Spouses": "{{i18n: poly_hermanas_tue}}",
+        "Thu_Emily_Haley_Spouses": "{{i18n: poly_hermanas_thu}}",
+        "Fri_Emily_Haley_Spouses": "{{i18n: poly_hermanas_fri}}",
+        "Mon_Abigail_Sebastian_Spouses": "{{i18n: poly_goticos_mon}}",
+        "Thu_Abigail_Sebastian_Spouses": "{{i18n: poly_goticos_thu}}"
+      }
+    },
+    {
+      "LogName": "9. Poliamor - SVE",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" },
+      "Entries": {
+        "Tue_Emily_Sophia_Spouses": "{{i18n: poly_sve_coloridas_tue}}",
+        "Mon_Olivia_Victor_Spouses": "{{i18n: poly_sve_manson_mon}}"
+      }
+    },
+    {
+      "LogName": "10. Alta Amistad",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sandy",
+      "Entries": {
+        "Mon6": "{{i18n: alta_mon6}}",
+        "Tue6": "{{i18n: alta_tue6}}",
+        "Wed8": "{{i18n: alta_wed8}}",
+        "Fri8": "{{i18n: alta_fri8}}",
+        "Sun10": "{{i18n: alta_sun10}}"
+      }
+    },
+    {
+      "LogName": "11. Diálogos Matrimonio (Sandy)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueSandy",
+      "Entries": {
+        "GoodMorning_0": "{{i18n: marr_morn_0}}",
+        "GoodMorning_1": "{{i18n: marr_morn_1}}",
+        "Rainy_Day_0": "{{i18n: marr_rain_0}}",
+        "Rainy_Day_1": "{{i18n: marr_rain_1}}",
+        "Indoor_Day_0": "{{i18n: marr_in_0}}",
+        "Indoor_Day_1": "{{i18n: marr_in_1}}",
+        "Outdoor_0": "{{i18n: marr_out_0}}",
+        "Outdoor_1": "{{i18n: marr_out_1}}",
+        "GoodNight_0": "{{i18n: marr_night_0}}",
+        "GoodNight_1": "{{i18n: marr_night_1}}"
+      }
+    },
+    {
+      "LogName": "12. Cartas",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "SandyLetter_2Hearts": "{{i18n: mail_2}}",
+        "SandyLetter_3Hearts": "{{i18n: mail_3}}",
+        "SandyLetter_4Hearts": "{{i18n: mail_4}}",
+        "SandyLetter_5Hearts": "{{i18n: mail_5}}",
+        "SandyLetter_6Hearts": "{{i18n: mail_6}}",
+        "SandyLetter_7Hearts": "{{i18n: mail_7}}",
+        "SandyLetter_8Hearts": "{{i18n: mail_8}}",
+        "SandyLetter_10Hearts": "{{i18n: mail_10}}"
+      }
+    },
+    {
+      "LogName": "13. Disparadores de Correo (Seguros)",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "Sandy_Mail_2": {
+          "Id": "Sandy_Mail_2",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FRIENDSHIP_POINTS Target Sandy 500, !PLAYER_HAS_MAIL Current SandyLetter_2Hearts",
+          "Actions": ["AddMail Current SandyLetter_2Hearts"]
+        },
+        "Sandy_Mail_3": {
+          "Id": "Sandy_Mail_3",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FRIENDSHIP_POINTS Target Sandy 750, !PLAYER_HAS_MAIL Current SandyLetter_3Hearts",
+          "Actions": ["AddMail Current SandyLetter_3Hearts"]
+        },
+        "Sandy_Mail_4": {
+          "Id": "Sandy_Mail_4",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FRIENDSHIP_POINTS Target Sandy 1000, !PLAYER_HAS_MAIL Current SandyLetter_4Hearts",
+          "Actions": ["AddMail Current SandyLetter_4Hearts"]
+        },
+        "Sandy_Mail_5": {
+          "Id": "Sandy_Mail_5",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FRIENDSHIP_POINTS Target Sandy 1250, !PLAYER_HAS_MAIL Current SandyLetter_5Hearts",
+          "Actions": ["AddMail Current SandyLetter_5Hearts"]
+        },
+        "Sandy_Mail_6": {
+          "Id": "Sandy_Mail_6",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FRIENDSHIP_POINTS Target Sandy 1500, !PLAYER_HAS_MAIL Current SandyLetter_6Hearts",
+          "Actions": ["AddMail Current SandyLetter_6Hearts"]
+        },
+        "Sandy_Mail_7": {
+          "Id": "Sandy_Mail_7",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FRIENDSHIP_POINTS Target Sandy 1750, !PLAYER_HAS_MAIL Current SandyLetter_7Hearts",
+          "Actions": ["AddMail Current SandyLetter_7Hearts"]
+        },
+        "Sandy_Mail_8": {
+          "Id": "Sandy_Mail_8",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FRIENDSHIP_POINTS Target Sandy 2000, !PLAYER_HAS_MAIL Current SandyLetter_8Hearts",
+          "Actions": ["AddMail Current SandyLetter_8Hearts"]
+        },
+        "Sandy_Mail_10": {
+          "Id": "Sandy_Mail_10",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_FRIENDSHIP_POINTS Target Sandy 2500, !PLAYER_HAS_MAIL Current SandyLetter_10Hearts",
+          "Actions": ["AddMail Current SandyLetter_10Hearts"]
+        }
+      }
+    }
+  ]
+}

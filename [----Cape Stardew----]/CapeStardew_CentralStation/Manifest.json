@@ -1,0 +1,14 @@
+{
+  "Name": "Cape Stardew - Central Station",
+  "Author": "Arony/DreamyGloom",
+  "Version": "1.0.0",
+  "Description": "Adds Cape Stardew as a bus destination in Central Station.",
+  "UniqueID": "dreamy.kickitspot.CentralStation",
+  "MinimumApiVersion": "4.0.0",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    { "UniqueID": "Pathoschild.CentralStation", "IsRequired": false }
+  ]
+}

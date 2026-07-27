@@ -1,0 +1,45 @@
+{
+    "Changes": [
+//Sprites
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Lavril",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Lavril/LavrilSprites.png",
+            "When": {
+                "HasSeenEvent |contains=63070012": "true",
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Arknir27.Lavril": "true",
+            },
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Lavril_winter",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Lavril/LavrilWinterSprites.png",
+            "When": {
+                "HasSeenEvent |contains=63070012": "true",
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Arknir27.Lavril": "true",
+            },
+        },
+//Animation
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "lavril_read_right": "39/39/39",
+            },
+        },
+//StringsFromMaps
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.14": "{{i18n:Seat_Lavril}}" },
+            "When": {
+                "HasSeenEvent |contains=63070012": "true",
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Arknir27.Lavril": "true"
+            },
+        }
+    ]
+}

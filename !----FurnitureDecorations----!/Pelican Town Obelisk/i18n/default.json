@@ -1,0 +1,42 @@
+{
+    "PelicanTownObelisk_Name": "Pelican Town Obelisk",
+    "PelicanTownObelisk_Description": "The obelisk is imbued with the skill of a Wizard. It can warp to the Town fountain in an instant.",
+
+    "PelicanTownObelisk.Mail_Title": "Pelican Town Obelisk Construction Open Notification",
+    "PelicanTownObelisk.Mail_Text": "Dear @^^Hello. It's like Lewis had been asking the Wizard to provide the technology for some time. So they finally got some cooperation, and now they want to build this Pelican Town Obelisk in other towns to attract people to town.^^I don't know all the details, but I learned from a Wizard how to put magic into it, so it's easy for me to build it. If @ says the farm needs it, I'm always willing to take it on for a few materials and a small fee!^^-Robin",
+
+
+
+    "config.Enable this mod.name": "Enable this mod.",
+    "config.Enable this mod.description": "On/Off setting of this mod itself.",
+
+    "config.Fountain Appearance.name": "Fountain Appearance",
+    "config.Fountain Appearance.description": "Change the appearance of the fountain itself. Currently there are two types of graphics: vanilla or those used in the Project Yellog Town Overhaul mod. Even if the Project Yellog Town Overhaul mod itself is not installed, this mod itself is not installed, you can change it only with this mod.",
+    "config.Fountain Appearance.values.Vanilla": "Vanilla",
+    "config.Fountain Appearance.values.ProjectYellogTownOverhaul": "Project Yellog Town Overhaul",
+
+    "config.Seasonal Appearance.name": "Seasonal Appearance",
+    "config.Seasonal Appearance.description": "If the setting is turned off, the appearance will not change with the seasons. (It will be fixed to the spring appearance.)",
+
+    "config.Treat same other obelisks.name": "Treat same other obelisks",
+    "config.Treat same other obelisks.description": "When the setting is turned on, the specifications will be the same as other obelisks. (Display, required expenses, and materials will increase in the Wizard's construction menu.)",
+
+    "config.Remove Build Restrictions.name": "Remove Build Restrictions",
+    "config.Remove Build Restrictions.description": "Turning on the setting will allow the Pelican Town Obelisk to be constructed immediately. (Unlock building lock)",
+
+    "config.Free to Build.name": "Free to Build",
+    "config.Free to Build.description": "When the setting is turned on, the construction cost of the Pelican Town Obelisk will be zero and no materials will be required.",
+
+    "config.Immediate Build Finish.name": "Immediate Build Finish",
+    "config.Immediate Build Finish.description": "Turning on the setting allows the building of the Pelican Town Obelisk to be completed in a fraction of a second.",
+
+    "config.Warp Front Only.name": "Warp Front Only",
+    "config.Warp Front Only.description": "This setting prevents accidental warp when water is supplied to Watering Cans. When the setting is turned on, the warp functions in only one square in front of the fountain.",
+
+    "config.No Warp Function.name": "No Warp Function",
+    "config.No Warp Function.description": "It removes its function as an obelisk and becomes just a fountain. This setting takes precedence over the 'Warp Front Only' item above.",
+
+
+    "config.Building Over Flooring.name": "Building Over Flooring",
+    "config.Building Over Flooring.description": "It is possible to build on \"Wood Floor\", \"Stone Floor\" and other flooring materials.",
+}

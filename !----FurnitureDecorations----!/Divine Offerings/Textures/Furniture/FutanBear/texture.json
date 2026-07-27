@@ -1,0 +1,47 @@
+{
+  "ItemName": "Futan Bear",
+  "Type": "Furniture",
+  "TextureWidth": 16,
+  "TextureHeight": 16,
+  "ManualVariations": [
+    {
+      "Id": -1,
+      "ChanceWeight": 0.1
+    },
+    {
+      "Id": 0,
+      "Name": "Tarot Spread 1",
+      "ChanceWeight": 0.1
+    },
+    {
+      "Id": 1,
+      "Name": "Tarot Spread 2",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 2,
+      "Name": "Tarot Spread 3",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 3,
+      "Name": "Tarot Spread 4",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 4,
+      "Name": "Tarot Spread 5",
+      "ChanceWeight": 0.1
+    },
+    {
+      "Id": 5,
+      "Name": "Tarot Spread 6",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 6,
+      "Name": "Tarot Spread7",
+      "ChanceWeight": 0.5
+    }
+  ]
+}

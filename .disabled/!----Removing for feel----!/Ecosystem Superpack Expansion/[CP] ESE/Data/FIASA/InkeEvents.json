@@ -1,0 +1,84 @@
+
+{
+  "Changes": [  
+
+ {
+            "LogName": "Introduction (2 hearts)",
+            "Action": "EditData",
+            "Target": "Data/Events/Koda_Sub",
+            "Entries":
+            {
+    "cc_inketwo/t 600 1800/f CC_Inke 500": "submarine_song/17 9/CC_KodaK 13 13 2 farmer 13 16 0 CC_Inke 15 8 2/skippable/playSound doorClose/pause 100/move farmer 0 -1 0/move CC_KodaK 0 1 2/move farmer 1 0 3/pause 200/speak CC_KodaK \"Hey, @.$2\"/pause 200/move CC_KodaK 0 3 2/playSound doorOpen/warp CC_KodaK 1000 1000/pause 100/playSound doorClose/pause 400/move farmer -1 0 0/move farmer 0 -2 0/move farmer 2 0 0 CC_Inke 0 2 2/pause 400/speak CC_Inke \"Hiya hatchlin'.#$b#Ya here for the exchange program?\"/pause 400/emote CC_Inke 40/pause 400/speak CC_Inke \"Nah...?#$b#Yer were probably here to see Koda.$2\"/pause 200/move CC_Inke 0 1 2/pause 200/speak CC_Inke \"She just gave me a real chewin' out.$2#$b#...$2\"/pause 1200/speak CC_Inke \"Ya know, @, this climate research ain't always the sunniest.#$b#I look forward to new interns cuz they come in all bright an' shiny.#$b#But when the news's bad, and seafare long...$2#$b#Well, ya ever heard of 'bein burned out?'\"/pause 400/faceDirection CC_Inke 3/pause 400/faceDirection CC_Inke 2/speak CC_Inke \"When they called me back to HQ, I prolly stayed a lil' longer than I needed to.#$b#I kept thinkin' of how I'd get back to Koda and drag her down into the muck...$3\"/pause 400/speak CC_Inke \"I didn't think she'd think she had to do my job too!$2\"/pause 600/speak CC_Inke \"If ya see her out there...#$b#Will ya tell Koda that I'm gonna try and be a better Captain from here on out!\"/pause 1200/end warpOut",
+			}
+	 },
+	 
+	  {
+            "LogName": "Introduction (6 hearts)",
+            "Action": "EditData",
+            "Target": "Data/Events/Koda_Sub",
+            "Entries":
+            {
+    "cc_inkesix/f CC_Inke 1500": "submarine_song/17 9/farmer 13 16 0 CC_Inke 25 7 0/skippable/addConversationTopic cc_inkeboat 5/playSound doorClose/pause 100/move farmer 0 -3 0/faceDirection CC_Inke 2/pause 600/speak CC_Inke \"Our farmer friend!$1\"/faceDirection farmer 1/pause 600/speak CC_Inke \"Ya were prolly lookin' for Koda, but it's only little ol' me right now.$3#$b#But it's a pretty pretty day, so I had a good idea.\"/pause 600/emote farmer 8/pause 400/faceDirection CC_Inke 0/showFrame CC_Inke 24/pause 100/showFrame CC_Inke 25/pause 200/showFrame CC_Inke 26/pause 200/showFrame CC_Inke 27/pause 200/showFrame CC_Inke 24/pause 300/playSound keyboardTyping/showFrame CC_Inke 9/pause 200/showFrame CC_Inke 8/pause 600/playSound clank/pause 400/playSound button_press/pause 400/playSound clank/pause 200/playSound clank/glow 0 173 56/pause 600/glow 0 173 56 true/pause 1200/playSound furnace/shake CC_Inke 10000/startJittering/playSound furnace/pause 1200/screenFlash 1/playSound furnace/playSound busDriveOff/textAboveHead CC_Inke \"Adventure!!\"/jump farmer 5/startJittering/pause 400/faceDirection CC_Inke 2/playSound furnace/pause 1300/playSound furnace/pause 1200/playSound busDriveOff/fade/viewport -1000 -1000/pause 400/message \"Some time later...\"/pause 400/glow 0 173 56 true/playSound submarine_landing/pause 1600/screenFlash 1/stopGlowing/playSound questcomplete/playMusic ocean/pause 600/switchEvent cc_inkesix2",
+	"cc_inkesix2": "changeLocation Sub_world_inke/warp farmer 1000 1000/warp CC_Inke 1000 1000/fade/viewport 16 11 clamp/pause 3000/fade/viewport -1000 -1000/switchEvent cc_inkesix3",
+	"cc_inkesix3": "changeLocation Sub_Deck/warp farmer 19 17/faceDirection farmer 3/warp CC_Inke 14 16/faceDirection CC_Inke 1/fade/viewport 17 15 clamp/pause 1200/quickQuestion #Where are we?#Is this fieldwork?#Did I just get kidnapped? (break) switchEvent cc_inkewhere (break) switchEvent cc_inkefield (break) cc_inkekidnap",
+	"cc_inkewhere": "pause 400/speak CC_Inke \"This here is called the 'super highway'!$1\"/pause 600/friendship CC_Inke 25/switchEvent cc_inkesix4",
+	"cc_inkefield": "pause 400/speak CC_Inke \"This here is a mega fieldwork spot for me!$1\"/friendship CC_Inke 25/pause 600/switchEvent cc_inkesix4",
+	"cc_inkekidnap": "pause 400/friendship CC_Inke -25/speak CC_Inke \"Eh!!$2#$b#Kidnapped? That sounds like a liability.$2#$b#Well, just listen a lil' sec and then I promise we can go ashore.\"/pause 600/switchEvent cc_inkesix4",
+	"cc_inkesix4": "pause 400/speak CC_Inke \"This place's got a serious undercurrent.#$b#All kinds of creatures go swimmin' and groovin' through these waters.$1#$b#While we're here, I kinda hoped to yak a minute.\"/pause 800/speak CC_Inke \"See, ya know Koda pretty well, don't ya @?$2#$b#I wanna do somethin' for her, to show her what bein' a team is all about.\"/pause 200/faceDirection CC_Inke 2/pause 400/speak CC_Inke \"See, I wanna throw a party...$2#$b#I heard that parties help with bein' burned out.\"/pause 400/faceDirection CC_Inke 1/pause 600/speak CC_Inke \"Can ya help me with that, @?\"/pause 400/emote farmer 32/pause 1200/fade/viewport -1000 -1000/changeLocation Koda_Sub/end warpOut",
+	
+			}
+	 },
+	  {
+            "LogName": "Introduction (6 hearts)",
+            "Action": "EditData",
+            "Target": "Data/Events/Sub_world_inke",
+            "Entries":
+            {
+
+	"cc_inkesix2": "changeLocation Sub_world_inke/warp farmer 1000 1000/warp CC_Inke 1000 1000/fade/viewport 16 11 clamp/pause 3000/fade/viewport -1000 -1000/switchEvent cc_inkesix3",
+	"cc_inkesix3": "changeLocation Sub_Deck/warp farmer 19 17/faceDirection farmer 3/warp CC_Inke 14 16/faceDirection CC_Inke 1/fade/viewport 17 15 clamp/pause 1200/quickQuestion #Where are we?#Is this fieldwork?#Did I just get kidnapped? (break) switchEvent cc_inkewhere (break) switchEvent cc_inkefield (break) cc_inkekidnap",
+	"cc_inkewhere": "pause 400/speak CC_Inke \"This here is called the 'super highway'!$1\"/pause 600/friendship CC_Inke 25/switchEvent cc_inkesix4",
+	"cc_inkefield": "pause 400/speak CC_Inke \"This here is a mega fieldwork spot for me!$1\"/friendship CC_Inke 25/pause 600/switchEvent cc_inkesix4",
+	"cc_inkekidnap": "pause 400/friendship CC_Inke -25/speak CC_Inke \"Eh!!$2#$b#Kidnapped? That sounds like a liability.$2#$b#Well, just listen a lil' sec and then I promise we can go ashore.\"/pause 600/switchEvent cc_inkesix4",
+	"cc_inkesix4": "pause 400/speak CC_Inke \"This place's got a serious undercurrent.#$b#All kinds of creatures go swimmin' and groovin' through these waters.$1#$b#While we're here, I kinda hoped to yak a minute.\"/pause 800/speak CC_Inke \"See, ya know Koda pretty well, don't ya @?$2#$b#I wanna do somethin' for her, to show her what bein' a team is all about.\"/pause 200/faceDirection CC_Inke 2/pause 400/speak CC_Inke \"See, I wanna throw a party...$2#$b#I heard that parties help with bein' burned out.\"/pause 400/faceDirection CC_Inke 1/pause 600/speak CC_Inke \"Can ya help me with that, @?\"/pause 400/emote farmer 32/pause 1200/fade/viewport -1000 -1000/changeLocation Koda_Sub/end warpOut",
+	
+			}
+	 },
+	  {
+            "LogName": "Introduction (6 hearts)",
+            "Action": "EditData",
+            "Target": "Data/Events/Sub_Deck",
+            "Entries":
+            {
+	"cc_inkesix2": "changeLocation Sub_world_inke/warp farmer 1000 1000/warp CC_Inke 1000 1000/fade/viewport 16 11 clamp/pause 3000/fade/viewport -1000 -1000/switchEvent cc_inkesix3",
+	"cc_inkesix3": "changeLocation Sub_Deck/warp farmer 19 17/faceDirection farmer 3/warp CC_Inke 14 16/faceDirection CC_Inke 1/fade/viewport 17 15 clamp/pause 1200/quickQuestion #Where are we?#Is this fieldwork?#Did I just get kidnapped? (break) switchEvent cc_inkewhere (break) switchEvent cc_inkefield (break) switchEvent cc_inkekidnap",
+	"cc_inkewhere": "pause 400/speak CC_Inke \"This here is called the 'super highway'!$1\"/pause 600/friendship CC_Inke 25/switchEvent cc_inkesix4",
+	"cc_inkefield": "pause 400/speak CC_Inke \"This here is a mega fieldwork spot for me!$1\"/friendship CC_Inke 25/pause 600/switchEvent cc_inkesix4",
+	"cc_inkekidnap": "pause 400/friendship CC_Inke -25/speak CC_Inke \"Eh!!$2#$b#Kidnapped? That sounds like a liability.$2#$b#Well, just listen a lil' sec and then I promise we can go ashore.\"/pause 600/switchEvent cc_inkesix4",
+	"cc_inkesix4": "pause 400/speak CC_Inke \"This place's got a serious undercurrent.#$b#All kinds of creatures go swimmin' and groovin' through these waters.$1#$b#While we're here, I kinda hoped to yak a minute.\"/pause 800/speak CC_Inke \"See, ya know Koda pretty well, don't ya @?$2#$b#I wanna do somethin' for her, to show her what bein' a team is all about.\"/pause 200/faceDirection CC_Inke 2/pause 400/speak CC_Inke \"See, I wanna throw a party...$2#$b#I heard that parties help with bein' burned out.\"/pause 400/faceDirection CC_Inke 1/pause 600/speak CC_Inke \"Can ya help me with that, @?\"/pause 400/emote farmer 32/pause 1200/fade/viewport -1000 -1000/changeLocation Koda_Sub/end warpOut",
+	
+			}
+	 },
+	 				   {
+            "LogName": "(10 hearts)",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+            {
+    "cc_inketen/f CC_Inke 2500/f CC_KodaK 2000/f CC_RangerTaro 2500/SawEvent cc_canyon4/DayOfWeek Saturday Sunday/": "continue/64 15/farmer 64 16 2 CC_RangerTaro 64 18 2/skippable/pause 1600/speak CC_RangerTaro \"Morning!$1#$b#This is an unusual occurence, huh?\"/pause 600/speak CC_RangerTaro \"I'm here because I received a mysterious invitation...$2#$b#To a party.$3\"/pause 400/shake CC_RangerTaro 500/pause 400/speak CC_RangerTaro \"What's more, there's a second invitation...$5#$b#For you.$3\"/emote farmer 16/pause 600/speak CC_RangerTaro \"It says to meet at Stormboat Cove before the weekend is over.$2#$b#I'll be investigating, so...$2#$b#I hope to see you there.\"/pause 800/end"
+			}
+	  },
+	  	 				   {
+            "LogName": "(10 hearts)2",
+            "Action": "EditData",
+            "Target": "Data/Events/Koda_Cove",
+            "Entries":
+            {
+    "cc_inketen2/SawEvent cc_inketen/DayOfWeek Saturday Sunday/": "ocean/21 25/farmer 26 19 2 CC_RangerTaro 1000 1000 2 CC_Inke 1000 1000 2 CC_Kaho 1000 1000 2 CC_KodaK 1000 1000 2 Mama_Big 17 27 2/addConversationTopic cc_inkeparty 5/showFrame Mama_Big 0/move farmer 0 7 2/pause 1200/showFrame Mama_Big 1/faceDirection farmer 3/jump farmer 6/pause 400/playSound dropItemInWater/showFrame Mama_Big 2/pause 300/playSound dropItemInWater/showFrame Mama_Big 3/pause 1200/speak Mama_Big \"Hello dear.\"/pause 200/textAboveHead Mama_Big \"Mmm-hmm\"/pause 400/speak Mama_Big \"Well, little farmer, it's time.#$b#Hop on my back so we can join the festivites.\"/pause 100/emote farmer 16/pause 400/move farmer -1 0 3/jump farmer 16/fade/viewport -1000 -1000/switchEvent cc_inketen3",
+	"cc_inketen3": "changeLocation Turtle_Cove_party/warp Mama_Big 22 2/warp farmer 25 7/faceDirection farmer 2/warp CC_RangerTaro 24 16/warp CC_Kaho 29 12/faceDirection CC_Kaho 2/faceDirection CC_RangerTaro 0/warp CC_Inke 17 12/faceDirection CC_Inke 1/warp CC_KodaK 18 14/faceDirection CC_KodaK 1/playMusic tropical_island_day_ambient/fade/viewport 26 9 clamp/pause 200/textAboveHead CC_RangerTaro \"You made it!\"/pause 400/jump CC_Inke 6/move CC_Inke 6 0 0/pause 400/move CC_KodaK 4 0 0/pause 200/speak CC_Inke \"@!$1#$b#My hatchlin' friend!$1\"/pause 400/faceDirection CC_Inke 2/pause 400/speak CC_Inke \"I organized this gatherin' as an official FIASA event.#$b#Mandatory office party!$1\"/pause 400/showFrame CC_Inke 28/pause 200/showFrame CC_Inke 29/pause 300/showFrame CC_Inke 30/pause 300/showFrame CC_Inke 28/pause 300/showFrame CC_Inke 29/pause 400/showFrame CC_Inke 30/pause 300/showFrame CC_Inke 28/pause 400/showFrame CC_Inke 29/pause 300/showFrame CC_Inke 30/pause 300/showFrame CC_Inke 28/pause 300/speak CC_Inke \"They say celebratin' 'wins' can help prevent bein' burned out.#$b#Koda... and to everyone...$2#$b#Thank ya for all your hard work!$1\"/pause 200/screenFlash 2/playMusic event2/specificTemporarySprite wed/pause 800/move CC_KodaK 0 -2 2 CC_RangerTaro 0 -3 3/pause 300/faceDirection CC_RangerTaro 2/showFrame CC_Inke 28/pause 100/showFrame CC_Inke 29/pause 200/showFrame CC_Inke 30/pause 100/showFrame CC_Inke 28/pause 100/showFrame CC_Inke 29/pause 200/showFrame CC_Inke 30/pause 100/showFrame CC_Inke 28/pause 200/showFrame CC_Inke 29/pause 200/showFrame CC_Inke 30/pause 100/showFrame CC_Inke 28/pause 200/showFrame CC_RangerTaro 1/pause 100/showFrame CC_RangerTaro 3/pause 100/showFrame CC_RangerTaro 1/pause 200/showFrame CC_RangerTaro 3/pause 400/showFrame CC_KodaK 1/pause 200/showFrame CC_KodaK 3/pause 200/showFrame CC_KodaK 1/pause 200/showFrame CC_KodaK 3/pause 400/shake Mama_Big 800/jump Mama_Big 6/pause 600/Message \"Thank you...!#For doing your best...!#Together and on your own...#Thank you for playing!!\"/pause 1200/screenFlash 3/pause 400/speak Mama_Big \"Alright dears, let's dance!\"/pause 200/showFrame CC_RangerTaro 1/pause 100/showFrame CC_RangerTaro 3/pause 100/showFrame CC_RangerTaro 1/pause 200/showFrame CC_RangerTaro 3/pause 400/showFrame CC_KodaK 1/pause 200/showFrame CC_KodaK 3/pause 200/showFrame CC_KodaK 1/pause 200/showFrame CC_KodaK 3/showFrame CC_Kaho 1/pause 200/showFrame CC_Kaho 3/pause 300/showFrame CC_Kaho 1/pause 200/showFrame CC_Kaho 3/pause 300/showFrame CC_Kaho 1/pause 200/showFrame CC_Kaho 3/pause 300/showFrame CC_Inke 29/pause 200/showFrame CC_Inke 30/pause 300/showFrame CC_Inke 28/pause 100/showFrame CC_Inke 29/pause 300/showFrame CC_Inke 30/pause 300/showFrame CC_Inke 28/pause 300/showFrame CC_Inke 29/pause 300/showFrame CC_Inke 30/pause 300/showFrame CC_Inke 28/pause 300/showFrame farmer 98/playSound miniharp_note/pause 300/showFrame farmer 99/playSound miniharp_note/pause 300/showFrame farmer 100/playSound miniharp_note/pause 400/showFrame farmer 98/playSound miniharp_note/pause 400/showFrame farmer 99/playSound miniharp_note/pause 400/showFrame farmer 100/playSound miniharp_note/pause 800/fade/viewport -1000 -1000/changeLocation Koda_Cove/pause 600/end"
+			}
+	  },
+
+	 
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/{{ModId}}.Tilly",
+			"Entries": {
+			  "Introduction": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Introduction}}",
+				"DumpsterDiveComment": "{{i18n:Wem.Bundle.Tilly.JojaRoute.DumpsterDiveComment}}",
+				"HitBySlingshot": "{{i18n:Wem.Bundle.Tilly.JojaRoute.HitBySlingshot}}",
+				"GreenRain": "{{i18n:Wem.Bundle.Tilly.JojaRoute.GreenRain}}",
+				"GreenRain_2": "{{i18n:Wem.Bundle.Tilly.JojaRoute.GreenRain_2}}",
+				"Fair_Judged_PlayerWon": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Fair_Judged_PlayerWon}}",
+				"RejectItem_458": "{{i18n:Wem.Bundle.Tilly.JojaRoute.RejectItem_458}}",
+
+
+			//Spring/DEFAULT dialogue
+			  "Mon": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Mon}}",
+				"Mon2": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Mon2}}",
+				"Tue": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Tue}}",
+				"Tue2": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Tue2}}",
+				"Wed": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Wed}}",
+				"Wed2": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Wed2}}",
+				"Thu": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Thu}}",
+				"Thu2": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Thu2}}",
+				"Fri": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Fri}}",
+				"Fri2": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Fri2}}",
+				"Sat": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Sat}}",
+				"Sat2": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Sat2}}",
+				"Sun": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Sun}}",
+				"Sun2": "{{i18n:Wem.Bundle.Tilly.JojaRoute.Sun2}}",				
+			}
+		},
+	]
+}

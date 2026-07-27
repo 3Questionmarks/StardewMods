@@ -1,0 +1,94 @@
+{ "Format": "2.7.0",
+"DynamicTokens": [
+{"Name": "IsOddYear","Value": "{{Query: {{Year}} % 2 = 1}}"},
+{"Name": "noschoolday","Value": "false","When":{}},
+{"Name": "noschoolday","Value": "true","When":{"day": "9, 23"}},
+{"Name": "Rundown","Value":"Rundown","When":{}},
+{"Name": "Rundown","Value":"","When":{"HasSeenEvent": "9695001"}},
+{"Name": "RSV","Value":""},
+{"Name": "RSV","Value":"RSV","When":{"HasMod|contains=Rafseazz.RSVCP": true}},
+],
+
+"ConfigSchema": {
+"Five days":{"AllowValues": "true, false", "Default": "false"},
+"Seat 3 Antisocial":{"AllowValues": "true, false", "Default": "true"},
+"Seat 8 Antisocial":{"AllowValues": "true, false", "Default": "true"},
+"Seat 11 Antisocial":{"AllowValues": "true, false", "Default": "true"},
+"Seat 13 Antisocial":{"AllowValues": "true, false", "Default": "true"},
+"Seat 14 Antisocial":{"AllowValues": "true, false", "Default": "true"},
+"Seat 15 Antisocial":{"AllowValues": "true, false", "Default": "true"},
+"Seat 1 Antisocial":{"AllowValues": "true, false", "Default": "true"},
+"Seat 2 Antisocial":{"AllowValues": "true, false", "Default": "true"},
+"Seat 10 Antisocial":{"AllowValues": "true, false", "Default": "true"},
+"Seat 17 Antisocial":{"AllowValues": "true, false", "Default": "true"},
+"Seat 6 Antisocial":{"AllowValues": "true, false", "Default": "true"},
+"Seat 4 Antisocial":{"AllowValues": "true, false", "Default": "true"},
+"Seat 12 Antisocial":{"AllowValues": "true, false", "Default": "true"},
+"LittleNPC BETA":{"AllowValues": "true, false", "Default": "false"},
+"Hide antisocial kids NPCMap": {"AllowValues": "true, false", "Default": "true"},
+},
+
+"CustomLocations": [
+{"Name": "Custom_SchoolHouse_NPCTrainRoom",
+"FromMapFile": "assets/NPCTrainRoom.tmx"}],
+
+"Changes": [
+{"Action": "Include",
+		"FromFile": "assets/Schedules/Schedules.json",
+"When": {"HasSeenEvent": "9695001", "HasMod|contains=Xiddav.LittleRedSchoolHouse":true}},
+{"Action": "Include",
+		"FromFile": "assets/Schedules/Schedules.json",
+"When": {"HasMod|contains=Xiddav.LittleRedSchoolHouseLazy":true}},
+
+{"Action": "Include",
+		"FromFile": "assets/Antisocial Kids/Schedules.json",
+"When": {"HasSeenEvent": "9695001", "HasMod|contains=Xiddav.LittleRedSchoolHouse":true}},
+{"Action": "Include",
+		"FromFile": "assets/Antisocial Kids/Schedules.json",
+"When": {"HasMod|contains=Xiddav.LittleRedSchoolHouseLazy":true}},
+
+{"Action": "EditData",
+	"Target": "Data/animationdescriptions",
+    "Entries":{
+		"LittleRed_Read_1": "4/23/4",
+		"LittleRed_Read_3": "12/22/12",
+		"LittleRed_RightReach": "8/16 16 16 16 17 16 16 16 16 17 16 16 16 16 16 16/10",
+		"LittleRed_LeftReach":  "8/19 19 19 18 19 19 19 19 19 18 19 19 19 19 19 19/10",
+		"LittleRed_Yippi": "2/20 20 20 20 21 21 21 21/2",
+		"LittleRed_Sit_2": "2/24/2",
+		"LittleRed_Paint_0": "0/25 25 26 26 27 27 26 26/0"}},
+
+{"Action": "EditMap",
+"Target": "Maps/Railroad",
+"MapTiles": [{
+	"Layer": "Buildings",	
+		"Position": { "X": 44, "Y": 39 },	
+		"SetIndex": "167"}
+]},
+
+{  "Action": "EditMap",
+    "Target": "Maps/Railroad",
+      "AddNPCWarps": ["44 39 Custom_SchoolHouse_NPCTrainRoom 11 9"]},
+
+{"Action": "EditData",
+    "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+    "Entries": {"Custom_SchoolHouse_NPCTrainRoom": {"Exclude": true}}},
+
+{"Action": "EditData",
+	"When": {"Hide antisocial kids NPCMap":"true"},
+    "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+    "Entries": {
+        "Seat 3": {"Exclude": true},
+        "Seat 8": {"Exclude": true},
+        "Seat 11": {"Exclude": true},
+        "Seat 13": {"Exclude": true},
+        "Seat 14": {"Exclude": true},
+        "Seat 15": {"Exclude": true},
+        "Seat 1": {"Exclude": true},
+        "Seat 2": {"Exclude": true},
+        "Seat 10": {"Exclude": true},
+        "Seat 17": {"Exclude": true},
+        "Seat 6": {"Exclude": true},
+        "Seat 4": {"Exclude": true},
+        "Seat 12": {"Exclude": true}}}
+]}

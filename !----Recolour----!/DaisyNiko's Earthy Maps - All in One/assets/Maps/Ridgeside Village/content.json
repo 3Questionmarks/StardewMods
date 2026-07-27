@@ -1,0 +1,77 @@
+{
+	"Changes": [
+//RSV Map
+		{
+			"LogName": "Village Map",
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVMap",
+			"FromFile": "assets/Maps/Ridgeside Village/RSVMap_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+			},
+			"Update": "OnLocationChange",
+		},
+//RSV Icon
+		{
+			"LogName": "RSV Icon",
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVIcon",
+			"FromFile": "assets/Maps/Ridgeside Village/RSVIcon.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+			},
+			"Update": "OnLocationChange",
+		},
+//RSV Icon Season
+		{
+			"LogName": "RSV Icon",
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVIcon",
+			"FromFile": "assets/Maps/Ridgeside Village/RSVIcon_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+			},
+			"Update": "OnLocationChange",
+		},
+//RSV Worldmap
+		{
+			"LogName": "RSV World Map",
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVWorldMap",
+			"FromFile": "assets/Maps/Ridgeside Village/RSVWorldMap.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+			},
+			"Update": "OnLocationChange",
+		},
+//RSV Worldmap Season
+		{
+			"LogName": "RSV World Map",
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVWorldMap",
+			"FromFile": "assets/Maps/Ridgeside Village/RSVWorldMap_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+			},
+			"Update": "OnLocationChange",
+		},
+//RSV Interior Shield
+		{
+			"LogName": "RSV Shield Interior",
+			"Action": "EditImage",
+			"Target": "Maps/z_rsvinterior",
+			"FromFile": "assets/Maps/Ridgeside Village/Shield_{{season}}.png",
+			"ToArea": {"X": 128, "Y":469, "Width": 16, "Height": 27},
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+			},
+			"Update": "OnLocationChange",
+		},
+	]
+}

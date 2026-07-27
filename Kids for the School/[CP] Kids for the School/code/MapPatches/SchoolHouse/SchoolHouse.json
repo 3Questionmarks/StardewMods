@@ -1,0 +1,198 @@
+{
+    "Changes": [
+//Warp
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SchoolHouse",
+            "AddWarps":
+            [
+                "3 1 Custom_SchoolHouse_SecondFloor 3 17"
+            ]
+        },
+//SchoolHouse
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SchoolHouse",
+            "When": {
+               "Fixed": true
+            },
+            "FromFile": "code/MapPatches/SchoolHouse/SchoolHouse_FirstFloor.tmx",
+            "ToArea": {
+                "X": 0, 
+                "Y": 0,
+                "Width": 31,
+                "Height": 19
+            },
+            "Patchmode": "Replace"
+        },
+//SchoolHouse Rundown
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SchoolHouse",
+            "When": {
+                "Fixed": false 
+            },
+            "FromFile": "code/MapPatches/SchoolHouse/Rundown_SchoolHouse_FirstFloor.tmx",
+            "ToArea": {
+                "X": 0, 
+                "Y": 0,
+                "Width": 31,
+                "Height": 19
+            },
+            "Patchmode": "Replace"
+        },
+//Lights
+        {   
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SchoolHouse_SecondFloor",
+            "When": {
+                "Fixed": true
+            },
+            "MapProperties": { 
+                "DayTiles": "Front 3 1 256 Front 10 1 256 Front 17 1 256 Front 22 1 256 Front 3 2 288 Front 10 2 288 Front 17 2 288 Front 22 2 288 Front 6 1 827 Front 19 1 827 Front 1 15 809 Front 4 3 809",
+                "NightTiles": "Front 3 1 1253 Front 10 1 1253 Front 17 1 1253 Front 22 1 1253 Front 3 2 1285 Front 10 2 1285 Front 17 2 1285 Front 22 2 1285 Front 6 1 826 Front 19 1 826 Front 1 15 480 Front 4 3 480",
+                "AmbientLight": "95 95 95",
+                "WindowLight": "3 2 6 10 2 6 17 2 6 22 2 6 6 1 4 4 3 1 1 15 1 19 1 4"
+            }
+        },
+        {   
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SchoolHouse",
+            	"When": {
+                    "Fixed": true
+                },
+            "MapProperties": { 
+		        "DayTiles": "Front 10 1 256 Front 17 1 256 Front 22 1 256 Front 27 1 256 Front 10 2 288 Front 17 2 288 Front 22 2 288 Front 27 2 288 Front 6 1 827 Front 2 10 827 Front 19 1 827 Front 28 10 827 Front 4 8 809 Front 1 15 809 Front 26 12 809",
+		        "NightTiles": "Front 10 1 1253 Front 17 1 1253 Front 22 1 1253 Front 27 1 1253 Front 10 2 1285 Front 17 2 1285 Front 22 2 1285 Front 27 2 1285 Front 6 1 826 Front 2 10 826 Front 19 1 826 Front 28 10 826 Front 4 8 480 Front 1 15 480 Front 26 12 480",
+		        "AmbientLight": "95 95 95",
+		        "WindowLight": "10 2 6 17 2 6 22 2 6 27 2 6 6 1 4 2 10 4 4 8 1 1 15 1 19 1 4 28 10 4 26 12 1"
+            }
+        },
+//School Christmas Entrance
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SchoolHouse",
+            "When": {
+                "Fixed": true,
+                "Season": "Winter"
+            },
+            "FromFile": "code/MapPatches/SchoolHouse/SchoolHouse_Entrance_Winter.tmx",
+            "ToArea": {
+                "X": 0, 
+                "Y": 10,
+                "Width": 6,
+                "Height": 9,
+            "Patchmode": "Replace"
+            }
+        },
+//School SpiritsEve Entrance
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SchoolHouse",
+            "When": {
+                "Fixed": true,
+                "Season": "Fall"
+            },
+            "FromFile": "code/MapPatches/SchoolHouse/SchoolHouse_Entrance_Spiritseve.tmx",
+            "ToArea": {
+                "X": 0, 
+                "Y": 10,
+                "Width": 6,
+                "Height": 9,
+            "Patchmode": "Replace"
+            }
+        },
+//BellRoom
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SchoolHouse_BellRoom",
+            "FromFile": "code/MapPatches/SchoolHouse/BellRoom.tmx",
+            "ToArea": {
+                "X": 11, 
+                "Y": 10,
+                "Width": 1,
+                "Height": 1,
+            "Patchmode": "Replace"
+            }
+        },
+//StringsFromMaps
+        {	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": { 
+                "Desk.1": "{{i18n:Seat_Teela}}",
+                "Desk.2": "{{i18n:Seat_2}}",
+                "Desk.3": "{{i18n:Seat_Cammi}}",
+                "Desk.4": "{{i18n:Seat_Meha}}",
+                "Desk.5": "{{i18n:Seat_Peter}}",
+                "Desk.6": "{{i18n:Seat_Donny}}",
+                "Desk.7": "{{i18n:Seat_Kitty}}",
+                "Desk.8": "{{i18n:Seat_Kimberly}}",
+                "Desk.9": "{{i18n:Seat_Jas}}",
+                "Desk.10": "{{i18n:Seat_10}}",
+                "Desk.11": "{{i18n:Seat_Kara}}",
+                "Desk.12": "{{i18n:Seat_Leo}}",
+                "Desk.13": "{{i18n:Seat_Vincent}}",
+                "Desk.14": "{{i18n:Seat_14}}",
+                "Desk.15": "{{i18n:Seat_15}}",
+                "Desk.16": "{{i18n:Seat_16}}",
+	  	        "Desk.17": "{{i18n:Seat_17}}",
+	  	        "Desk.18": "{{i18n:Seat_18}}",
+	  	        "Desk.19": "{{i18n:Seat_19}}",
+	  	        "Desk.20": "{{i18n:Seat_20}}",
+	  	        "Desk.21": "{{i18n:Seat_Muthu}}",
+	  	        "Desk.22": "{{i18n:Seat_22}}",
+	  	        "Desk.23": "{{i18n:Seat_23}}",
+	  	        "Desk.24": "{{i18n:Seat_24}}",
+	  	        "Desk.25": "{{i18n:Seat_Ahmad}}",
+	  	        "Desk.26": "{{i18n:Seat_26}}",
+	  	        "Desk.27": "{{i18n:Seat_27}}",
+	  	        "Desk.28": "{{i18n:Seat_28}}",
+	  	        "Desk.29": "{{i18n:Seat_Beng}}",
+	  	        "Desk.30": "{{i18n:Seat_Amy}}",
+                "Desk.31": "{{i18n:Seat_31}}",
+                "Desk.32": "{{i18n:Seat_32}}",
+                "Desk.33": "{{i18n:Seat_33}}",
+                "Desk.34": "{{i18n:Seat_34}}",
+                "Desk.35": "{{i18n:Seat_35}}",
+                "Desk.36": "{{i18n:Seat_36}}",
+                "Desk.TeacherEmpty": "{{i18n:Desk.TeacherEmpty}}",
+                "Desk.Teacher1": "{{i18n:Desk.Teacher1}}"
+            }
+        }
+    ]
+}
+
+//INFORMATION SEATS
+//Desk.1 Teela
+//Desk.2
+//Desk.3 Cammi
+//Desk.4 Meha
+//Desk.5 Peter
+//Desk.6 Donny
+//Desk.7 Kitty
+//Desk.8 Kimberly
+//Desk.9 Jas
+//Desk.10 Eloise
+//Desk.11 Kara
+//Desk.12 Leo
+//Desk.13 Vincent
+//Desk.14 Lavril
+//Desk.15
+//Desk.16 FirstBorn
+//Desk.17
+//Desk.18 Tina
+//Desk.19 Adrian
+//Desk.20
+//Desk.21 Muthu
+//Desk.22 James
+//Desk.23 Vanessa
+//Desk.24 Dianna
+//Desk.25 Ahmad
+//Desk.26 Keahi
+//Desk.27 Trinnie
+//Desk.28 SecondBorn
+//Desk.29 Beng
+//Desk.30 Amy
+//Desk.31 Yumma
+//Desk.32

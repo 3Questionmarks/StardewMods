@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Fishmonger)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Fishmonger",
+      "FromFile": "assets/Maps/Fishmonger/Fishmonger.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

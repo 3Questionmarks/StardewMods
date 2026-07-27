@@ -4,7 +4,6 @@
 	"EnableSpawnAtDayStart": false,
 	"EnableCharacterCollision": false,
 	"EnableFarmerCollision": false,
-	"Scale": 1.15,
 	"EnableShadow": true,
 	"TravelSpeed": 2,
 	"MaxIdleDistance": -1,
@@ -62,8 +61,8 @@
 "Sounds": [
 	{
 	"SoundName": "croak",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
 	"ChanceOfPlaying": 0.5
 	}
 ]  

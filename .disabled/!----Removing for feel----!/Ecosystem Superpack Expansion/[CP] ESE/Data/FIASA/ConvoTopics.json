@@ -1,0 +1,79 @@
+{
+	"Changes": [
+		
+
+		
+		{ 
+			"Action": "EditData",
+      "Target": "Characters/Dialogue/Leah",
+      "Entries": { 
+"cc_kodapresent": "In another life, I could see myself becoming a Forest Ranger or Biologist of some sort.$1#$b#Too many reports and regulations though, now that I think about it.$2#$b#An art show deadline is enough stress for me.",
+			},
+		},
+				{ 
+			"Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": { 
+"cc_kodaadventure": "Hmm, what's that you say? A house in the middle of the sea?#$b#It's impolite to disturb one's barrier runes.",
+			},
+		},
+				{ 
+			"Action": "EditData",
+      "Target": "Characters/Dialogue/Lewis",
+      "Entries": { 
+"eventSeen_CC_kodaintro_memory_twoweeks": "Ah, the FIASA group.#$b#Yes, I approved their docking application.#$b#Well, they paid the whole applciation fee upfront!$h",
+"cc_kodapresent": "Did you make friends with the FIASA crew, @?#$b#Aren't you gregarious!$h#$b#And to the benefit of Pelican Town, at that!$h",
+			},
+		},
+						{ 
+			"Action": "EditData",
+      "Target": "Characters/Dialogue/Demetrius",
+      "Entries": { 
+"cc_fiasatown": "The equipment on that FIASA boat is a dream.$h#$b#I wonder if they're open to collabration?",
+"cc_kodapresent": "The valley becoming a Protected Heritage Zone is highly advantagous for my work.#$b#And for the potential of future scientific collaboration!$h",
+			},
+		},
+								{ 
+			"Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": { 
+"cc_fiasatown": "I'm pretty excited about that ship's hull!$h#$b#It must have been challenging to fit that glass bubble.",
+"cc_kodapresent": "I wonder if there are regulations around a Protected Heritage Zone.#$b#Especilly where it concerns lumber use.",
+			},
+		},
+										{ 
+			"Action": "EditData",
+      "Target": "Characters/Dialogue/Willy",
+      "Entries": { 
+"eventSeen_CC_kodaintro_memory_oneweek": "Ye visited that vessel over in Stormboat Cove?#$b#Aye, the crew put up that floatin' bit of the pier.",
+"cc_kodapresent": "I wanted to support that wee lass at the Community Center.#$b#She let me take a crab home from the ship once.",
+"eventSeen_cc_kodasix25_memory_oneweek": "I met the Captain the other day.#$b#Aye.",
+			},
+		},
+												{ 
+			"Action": "EditData",
+      "Target": "Characters/Dialogue/Elliott",
+      "Entries": { 
+"eventSeen_CC_kodaintro_memory_oneweek": "You must go see that strange ship in Stormboat Cove!#$b#It might be straight out of a steampunk novel.$h",
+"cc_fiasatown": "You're always in the most interesting places, @.#$b#Such as that marvelous diving ship!!",
+			},
+		},
+												{ 
+			"Action": "EditData",
+      "Target": "Characters/Dialogue/CC_RangerTaro",
+      "Entries": { 
+"eventSeen_CC_kodaintro_memory_oneweek": "Hello fine resident.$1#$b#You haven't connected with the FIASA agents down at the shore, have you?#$b#They're from a very different agency.$1",
+"cc_kodapresent": "That was an interesting presentation at the Community Center.#$b#What do you suppose the FIASA upper-brass are like?$3",
+			},
+		},
+														{ 
+			"Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",
+      "Entries": { 
+"cc_kodapresent": "I heard Stardew Valley is now a Protected Heritage Zone.$h#$b#I knew the waters here were especially vibrant!$h",
+			},
+		},
+
+		
+	]
+}

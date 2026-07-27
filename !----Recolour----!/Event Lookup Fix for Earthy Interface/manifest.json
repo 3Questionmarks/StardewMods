@@ -1,0 +1,21 @@
+{
+    "Name": "Event Lookup Fix for Earthy Interface",
+    "Author": "alixyz",
+    "Version": "1.0.0",
+    "Description": "Fixes Event Lookup button to match with DaisyNiko's Earthy Interface mod.",
+    "UniqueID": "alixyz.EventLookupFixEI",
+    "UpdateKeys": [ "Nexus:40269" ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID":"DaisyNiko.EarthyInterface",
+            "IsRequired":true
+        },
+        {
+            "UniqueID":"shekurika.EventLookup",
+            "IsRequired":true
+        }
+    ]
+}

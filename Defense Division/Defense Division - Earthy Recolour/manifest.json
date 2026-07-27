@@ -1,0 +1,23 @@
+{
+	"Name": "Defense Division Earthy Recolour",
+	"Author": "Kiyugamods",
+	"Version": "2.0",
+	"Description": "Texture Earthy Recolour Compatibility",
+	"UniqueID": "DD.EarthyRecolour",
+	"UpdateKeys": [	"Nexus:"	],
+	"MinimumApiVersion": "4.1.0",
+    	"ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher",
+        "MinimumVersion": "2.5.0"
+    },
+	"Dependencies": [
+	{
+		"UniqueID": "DD.DefenseDivision",
+		"IsRequired": true,
+    },
+	{
+		"UniqueID": "DaisyNiko.EarthyRecolour",
+		"IsRequired": true,
+    },
+  ]
+}

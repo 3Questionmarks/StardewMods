@@ -1,0 +1,624 @@
+{
+  "Changes": [
+	{
+      "Action": "Load",
+      "Target": "Characters/CC_RangerTaro",
+      "FromFile": "assets/RangerTaro/Taro.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/CC_RangerTaro_Winter",
+      "FromFile": "assets/RangerTaro/Taro_winter.png"
+    },
+  {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "CC_RangerTaro": {
+          "DisplayName": "Ranger Taro",
+          "BirthSeason": "Summer",
+          "BirthDay": 25,
+          "HomeRegion": "Other",
+          "Language": "Default",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": false,
+          "Calendar": "AlwaysShown",
+          "SocialTab": "UnknownUntilMet",
+          "CanSocialize": true,
+          "CanReceiveGifts": true,
+          "CanGreetNearbyCharacters": true,
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": false,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "MainGroup",
+          "SpouseAdopts": null,
+          "SpouseWantsChildren": false,
+          "SpouseGiftJealousy": false,
+       
+          "DumpsterDiveFriendshipEffect": -25,
+          "DumpsterDiveEmote": 8,
+
+          "FlowerDanceCanDance": null,
+          "WinterStarGifts": [
+            {
+              "Condition": null,
+              "Id": "Default",
+              "ItemId": null,
+              "RandomItemId": [
+                "(O)169",
+                "(O)226",
+                "(O)251",
+                "(O)266",
+                "(O)466",
+                "Raisins"
+              ],
+              "MaxItems": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1,
+              "ObjectInternalName": null,
+              "ObjectDisplayName": null,
+              "ToolUpgradeLevel": -1,
+              "IsRecipe": false,
+              "StackModifiers": null,
+              "StackModifierMode": "Stack",
+              "QualityModifiers": null,
+              "QualityModifierMode": "Stack",
+              "ModData": null,
+              "PerItemCondition": null
+            }
+          ],
+          "WinterStarParticipant": null,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Taro_Tent",
+              "Tile": {
+                "X": 4,
+                "Y": 6
+              },
+              "Direction": "down"
+            }
+          ],
+          "TextureName": null,
+          "Appearance": [
+            {
+              "Id": "Taro",
+              "Condition": null,
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_RangerTaro",
+              "Sprite": "Characters/CC_RangerTaro",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 0
+            },
+            {
+              "Id": "Winter",
+              "Condition": null,
+              "Season": "Winter",
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_RangerTaro_Winter",
+              "Sprite": "Characters/CC_RangerTaro_Winter",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            }
+
+          ],
+        
+        }
+      }
+    },
+
+{
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+        "Taro_study": "16/17 18 19 19 19 19 18 18 18 18 19 19 19 19 18 18 18 18 19 19 19 19 19 18 18 18 18 18 18 19 19 19 19 19 19 18 18 18 18 19 19 18 18 19 19 19 18 17/16",
+        "Taro_drink": "0 0 24 24 25 25 25/26 26 26 26 26 26 26 26 26 26 26 26 27 27 27 27 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26/25 25 25 25 24 24 0",
+        "Taro_spysurprise": "20/20/20",
+        "Taro_spy": "23/21 22 21 22 21 23/23",
+        "Taro_sleep": "16/16/16",
+		"Taro_hat": "0/24/0"
+      }
+    },
+	{
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "CC_RangerTaro": "A perfect Fibbanacho Spiral, thank you!/392 586 721 830/This will keep me busy for a while!$1/614 Moss 649 807 MossySeed MossSoup/Thank you.$2/16 282 283 410 459 638 303/Oh... shrimp?$5/218 720 733 909 910/I can take this off your hands, I suppose.$2/SmokedFish 829 591 445 432 91/"
+      }
+    },
+{
+			"LogName": "Taro Portraits",
+			"Action": "Load",
+			"Target": "Portraits/CC_RangerTaro",
+			"FromFile": "assets/RangerTaro/Taro_{{Portraits}}.png"
+		},
+{
+			"LogName": "Taro Portraits",
+			"Action": "Load",
+			"Target": "Portraits/CC_RangerTaro_Winter",
+			"FromFile": "assets/RangerTaro/Taro_{{Portraits}}_Winter.png"
+		},
+
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/CC_RangerTaro",
+      "FromFile": "Data/RangerTaro/Dialogue.json"
+    },
+  {
+      "LogName": "Load Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/CC_RangerTaro",
+      "FromFile": "Data/RangerTaro/Blank.json"
+    },
+    {
+      "LogName": "Schedule includes",
+      "Action": "Include",
+      "FromFile": "Data/RangerTaro/Schedule.json"
+    },
+    {
+      "LogName": "Event includes",
+      "Action": "Include",
+      "FromFile": "Data/RangerTaro/TaroEvents.json"
+    },
+	
+	    {
+      "LogName": "Movie includes",
+      "Action": "Include",
+      "FromFile": "Data/RangerTaro/MovieTastes.json"
+    },
+		    {
+      "LogName": "Convotopics includes",
+      "Action": "Include",
+      "FromFile": "Data/RangerTaro/ConvoTopics.json"
+    },
+	{
+      "Action": "Load",
+      "Target": "Characters/CC_Merchant",
+      "FromFile": "assets/RangerTaro/CC_Merchant.png"
+    },
+
+  {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "CC_Merchant": {
+          "DisplayName": "{{Merchant}}",
+          "BirthSeason": "Winter",
+          "BirthDay": 15,
+          "HomeRegion": "Other",
+          "Language": "Default",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": false,
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanSocialize": false,
+          "CanReceiveGifts": false,
+          "CanGreetNearbyCharacters": false,
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": false,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "SpouseAdopts": null,
+          "SpouseWantsChildren": false,
+          "SpouseGiftJealousy": false,
+          "FlowerDanceCanDance": null,
+          "WinterStarParticipant": null,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Taro_Tent",
+              "Tile": {
+                "X": 100,
+                "Y": 100
+              },
+              "Direction": "down"
+            }
+          ],
+          "TextureName": null,
+          "Appearance": [
+            {
+              "Id": "{{Merchant}}",
+              "Condition": null,
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+		"Portrait": "Portraits/CC_Merchant",
+              "Sprite": "Characters/CC_Merchant",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 0
+            }
+            
+          ],
+        
+        }
+      }
+    },
+
+{
+			"LogName": "Merchant Portraits",
+			"Action": "Load",
+			"Target": "Portraits/CC_Merchant",
+			"FromFile": "assets/RangerTaro/CC_Merchant_{{Merchant}}_{{Portraits}}.png"
+		},
+				{
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"Entries": {
+				"CC_Merchant": { "Exclude": true}
+				}
+},
+ 
+    {
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 23 25 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 25 25 left",
+					"Delimiter": "/"
+				},
+			],
+      "When": {
+        "query: {{Year}} / 2 = 1": false
+      }
+		},
+    {
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+        {
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 23 25 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 25 25 left",
+					"Delimiter": "/"
+				},
+			],
+      "When": {
+        "query: {{Year}} / 2 = 1": true
+      }
+		},
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "CC_RangerTaro": "The Flower Dance has protected this part of the forest for ages.$2#$b#Are you going to dance?"
+      },
+      "When": {
+        "query: {{Year}} / 2 = 1": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "CC_RangerTaro": "That man with Jodi's family...$3#$b#I recognize a soldier when I see one.$2"
+      },
+      "When": {
+        "query: {{Year}} / 2 = 1": true
+      }
+    },
+    {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 15 4 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 15 4 down",
+					"Delimiter": "/"
+				},
+			],
+      "When": {
+        "query: {{Year}} / 2 = 1": false
+      }
+		},
+    {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+        {
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 47 20 1",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 47 20 1",
+					"Delimiter": "/"
+				},
+			],
+      "When": {
+        "query: {{Year}} / 2 = 1": true
+      }
+		},
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "CC_RangerTaro": "That's the Governor, hmm?$3#$b#Does his jurisdiction include Zuzu City?$3#$b#Would you be willing to ask him for me? ... No, nevermind.$3",
+        "CC_RangerTaro_y2": "The residents are here to dance, and the Governor is here to eat.#$b#Let's relax a little!$1",
+      }
+    },
+    {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 63 8 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 90 39 right",
+					"Delimiter": "/"
+				},
+			],
+      "When": {
+        "query: {{Year}} / 2 = 1": false
+      }
+		},
+    {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+        {
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 63 8 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 40 36 right",
+					"Delimiter": "/"
+				},
+			],
+      "When": {
+        "query: {{Year}} / 2 = 1": true
+      }
+		},
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "CC_RangerTaro": "The ocean connects many ecosystems.$2#$b#If only the jellies collected stories.",
+        "CC_RangerTaro_y2": "There's an energy to the ocean tonight.$2#$b#It deserves a poem.$2",
+      }
+    },
+    {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 19 76 down",
+					"Delimiter": "/"
+				}
+			],
+      "When": {
+        "query: {{Year}} / 2 = 1": false
+      }
+		},
+    {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+        {
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 19 76 down",
+					"Delimiter": "/"
+				}
+			],
+      "When": {
+        "query: {{Year}} / 2 = 1": true
+      }
+		},
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "CC_RangerTaro": "Wow, all this fanfare feels like peacetime!$h#$b#All these people are just walking around, enjoying themselves!$h",
+        "CC_RangerTaro_y2": "Pelican Town's economy is certainly thriving.#$b#In part, that's thanks to you @, isn't it?"
+      }
+    },
+    {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 40 57 down",
+					"Delimiter": "/"
+				}
+			],
+      "When": {
+        "query: {{Year}} / 2 = 1": false
+      }
+		},
+
+    {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+        {
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 40 57 down",
+					"Delimiter": "/"
+				}
+			],
+      "When": {
+        "query: {{Year}} / 2 = 1": true
+      }
+		},
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "CC_RangerTaro": "Have you ever seen a ghost, @?#$b#Maybe they're more common where I'm from.",
+        "CC_RangerTaro_y2": "Do you ever light incense, @?#$b#Sage does well for calming spirits."
+      }
+    },
+    {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 57 13 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Main-Event_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 57 13 down",
+					"Delimiter": "/"
+				}
+			],
+      "When": {
+        "query: {{Year}} / 2 = 1": false
+      }
+		},
+    {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+        {
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 57 13 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Main-Event_additionalCharacters"
+					],
+					"Value": "CC_RangerTaro 57 13 down",
+					"Delimiter": "/"
+				}
+			],
+      "When": {
+        "query: {{Year}} / 2 = 1": true
+      }
+		},
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "CC_RangerTaro_y2": "This is my kind of celebration!$h#$b#Right out in the frozen forest.$2",
+        "CC_RangerTaro": "The townspeople are hardy, hmm?#$b#A whole town braving the cold...$1#$b#By choice!$4"
+      }
+    },
+    
+
+	]
+}

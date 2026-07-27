@@ -1,0 +1,225 @@
+{
+  "Changes": [
+  
+	{
+		"LogName": "Y1 No CC",
+		"Action": "EditData",
+		"Target": "Characters/schedules/{{ModId}}.Tilly",
+		"Entries": {
+			
+			//Default
+			"spring": "GOTO Mon",
+			
+			 //TILLY 
+			  "rain": "GOTO Mon",
+			  "rain2": "GOTO Thu",
+			  "GreenRain": "0 Saloon 19 20 2/600 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair",
+			  "DesertFestival_1": "800 Desert 11 24 2 \"Strings\\schedules\\Wem.Bundle.Tilly:DesertFestival\"",
+			  "DesertFestival_2": "800 Desert 39 43 2 \"Strings\\schedules\\Wem.Bundle.Tilly:DesertFestival_2\"",
+			  "NightMarket_1": "900 ArchaeologyHouse 17 5 0/1300 ArchaeologyHouse 22 4 2 Wem.Bundle.Tilly_ReadStand/1500 ArchaeologyHouse 10 11 3/1700 Beach 34 36 2 \"Strings\\schedules\\Wem.Bundle.Tilly:NightMarket\"/2020 bed",
+			 
+			 //Doctor
+			 "spring_1": "730 Hospital 7 17 0/1100 Hospital 2 7 1/1130 Hospital 19 5 2/1210 Hospital 7 17 0/1300 Town 46 32 2 Wem.Bundle.Tilly_ReadSit/1700 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair/2000 bed",
+			
+			  
+			  //Spring 
+			  "Mon": "900 ArchaeologyHouse 17 5 0/1300 ArchaeologyHouse 22 4 2 Wem.Bundle.Tilly_ReadStand/1500 ArchaeologyHouse 10 11 3/1700 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair/2030 {{ModId}}.Tilly_TillyHouse 9 5 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Bookcase.000\"/2200 bed",
+			  
+			  "Wed": "900 ArchaeologyHouse 17 5 0/1300 ArchaeologyHouse 22 4 2 Wem.Bundle.Tilly_ReadStand/1500 ArchaeologyHouse 10 11 3/1700 Town 54 71 2 Wem.Bundle.Tilly_ReadSit/2000 {{ModId}}.Tilly_TillyHouse 9 5 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Bookcase.000\"/2200 bed",
+			  "Thu": "900 ArchaeologyHouse 10 5 0/1300 ArchaeologyHouse 11 9 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Thu.000\"/1500 ArchaeologyHouse 10 11 3/1700 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair/1930 {{ModId}}.Tilly_TillyHouse 12 6 2 Wem.Bundle.Tilly_Tea/2200 bed",
+
+			  //Pool 
+			 
+			  "spring_26": "GOTO spring_12",
+			  
+			  "Sun": "900 {{ModId}}.Tilly_TillyHouse 5 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/930 {{ModId}}.Tilly_TillyHouse 3 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1000 {{ModId}}.Tilly_TillyHouse 2 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1030 {{ModId}}.Tilly_TillyHouse 1 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1100 {{ModId}}.Tilly_TillyHouse 2 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1130 Beach 46 24 2/1600 Town 45 78 3/1800 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair/2000 bed",
+			  
+			  //Summer
+			  "summer_Mon": "GOTO Mon",
+			  "summer_Tue": "900 {{ModId}}.Tilly_TillyHouse 7 5 0/1000 SeedShop 28 17 3/1300 SeedShop 22 20 39 Wem.Bundle.Tilly_Squat/1500 Town 88 93 0/1700 Town 74 81 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1740 {{ModId}}.Tilly_TillyHouse 5 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1810 {{ModId}}.Tilly_TillyHouse 3 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1820 {{ModId}}.Tilly_TillyHouse 2 10 0/1830 {{ModId}}.Tilly_TillyHouse 1 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1840 {{ModId}}.Tilly_TillyHouse 2 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1850 {{ModId}}.Tilly_TillyHouse 11 5 2/1930 {{ModId}}.Tilly_TillyHouse 9 5 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Tue.000\"/2000 {{ModId}}.Tilly_TillyHouse 11 7 2 Wem.Bundle.Tilly_ReadSit/2200 bed",
+			  "summer_Wed": "900 ArchaeologyHouse 17 5 0/1300 ArchaeologyHouse 22 4 2 Wem.Bundle.Tilly_ReadStand/1500 ArchaeologyHouse 10 11 3/1700 Beach 45 21 2 Wem.Bundle.Tilly_ReadSit/2000 {{ModId}}.Tilly_TillyHouse 9 5 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Bookcase.000\"/2200 bed",
+			  "summer_Thu": "GOTO Thu",
+			  "summer_Fri": "900 SeedShop 13 23 0/1130 SeedShop 12 27 3/1200 SeedShop 4 26 2 Wem.Bundle.Tilly_LookDown \"Strings\\schedules\\Wem.Bundle.Tilly:Fri.000\"/1300 Town 88 93 0/1420 Town 54 71 2 Wem.Bundle.Tilly_ReadSit \"Strings\\schedules\\Wem.Bundle.Tilly:SumFri.000\"/1700 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair/2000 {{ModId}}.Tilly_TillyHouse 10 9 2 Wem.Bundle.Tilly_Tea/2400 bed",
+			  //Pool
+			  "summer_26": "930 SeedShop 13 23 0/1130 SeedShop 12 27 3/1200 SeedShop 4 26 2 Wem.Bundle.Tilly_LookDown \"Strings\\schedules\\Wem.Bundle.Tilly:Fri.000\"/1330 Town 88 93 0/1420 Town 54 71 2 Wem.Bundle.Tilly_ReadSit \"Strings\\schedules\\Wem.Bundle.Tilly:SumFri.000\"/1700 Saloon 38 19 2/2100 {{ModId}}.Tilly_TillyHouse 10 9 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.002\"/2400 bed",
+			  
+			  "summer_Sat": "1000 Beach 42 24 2/1200 Beach 47 18 2 Wem.Bundle.Tilly_ReadSit/1400 Beach 43 21 2 Wem.Bundle.Tilly_BeachRelax/1600 {{ModId}}.Tilly_TillyHouse 13 11 1/1730 {{ModId}}.Tilly_TillyHouse 13 10 0/1830 {{ModId}}.Tilly_TillyHouse 12 11 3 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.003\"/1930 {{ModId}}.Tilly_TillyHouse 10 9 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.001\"/2030 {{ModId}}.Tilly_TillyHouse 7 5 0/2200 bed",
+			  
+			  //Birthday 
+			  "summer_12": "900 {{ModId}}.Tilly_TillyHouse 11 5 2 Wem.Bundle.Tilly_Tea/1000 Town 50 68 1/1230 Town 88 93 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Bday.000\"/1330 Town 35 89 2 Wem.Bundle.Tilly_ReadSit/1700 Saloon 19 20 2 Wem.Bundle.Tilly_Cake/2030 {{ModId}}.Tilly_TillyHouse 10 9 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.000\"/2300 bed",
+
+			  
+			  //fall
+			  "fall_Mon": "GOTO Mon",
+			  "fall_Tue": "GOTO Tue",
+			  "fall_Wed": "900 ArchaeologyHouse 17 5 0/1300 ArchaeologyHouse 22 4 2 Wem.Bundle.Tilly_ReadStand/1500 Forest 102 23 0/1730 Forest 41 10 2/1930 bed",
+			  "fall_Thu": "GOTO Thu",
+			  "fall_Fri": "GOTO Fri",
+			  //Pool
+			  "fall_12": "GOTO spring_12",
+			  "fall_26": "GOTO spring_12",
+			  "fall_Sat": "GOTO Sat",
+			  "fall_Sun": "GOTO summer_Sun",
+			  
+			  //winter 
+			  "winter_Mon": "GOTO Mon",
+			  "winter_Tue": "900 {{ModId}}.Tilly_TillyHouse 7 5 0/1000 SeedShop 28 17 3/1300 SeedShop 22 20 39 Wem.Bundle.Tilly_Squat/1530 {{ModId}}.Tilly_TillyHouse 2 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1640 {{ModId}}.Tilly_TillyHouse 1 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1710 {{ModId}}.Tilly_TillyHouse 2 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1740 {{ModId}}.Tilly_TillyHouse 3 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1810 {{ModId}}.Tilly_TillyHouse 5 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1830 {{ModId}}.Tilly_TillyHouse 11 5 2 Wem.Bundle.Tilly_Tea/2000 {{ModId}}.Tilly_TillyHouse 11 7 2 Wem.Bundle.Tilly_ReadSit/2200 bed",
+			  
+			  "winter_Thu": "900 ArchaeologyHouse 17 5 0/1300 ArchaeologyHouse 11 9 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Thu.000\"/1500 ArchaeologyHouse 10 11 3/1700 {{ModId}}.Tilly_TillyHouse 13 11 1/1800 {{ModId}}.Tilly_TillyHouse 13 10 0/1830 {{ModId}}.Tilly_TillyHouse 10 9 2 Wem.Bundle.Tilly_Tea/1930 {{ModId}}.Tilly_TillyHouse 12 11 3 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.003\"/2100 bed",
+			  "winter_Fri": "900 SeedShop 13 23 0/1130 SeedShop 12 27 3/1200 SeedShop 4 26 2 Wem.Bundle.Tilly_LookDown \"Strings\\schedules\\Wem.Bundle.Tilly:Fri.000\"/1240 Town 50 68 1/1400 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair/1520 Saloon 38 19 2/2130 {{ModId}}.Tilly_TillyHouse 9 5 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Bookcase.000\"/2100 bed",
+			  
+			  "winter_Sun": "900 BathHouse_Pool 21 8 2 Wem.Bundle.Tilly_BeachSit/1700 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair/2100 bed",
+			  
+			  //Marriage Schedule
+			  "marriage_spring_1": "730 800 Hospital 7 17 0/1100 Hospital 2 7 1/1130 Hospital 19 5 2/1210 Hospital 7 17 0/1300 Town 46 32 2 Wem.Bundle.Tilly_ReadSit/1700 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair/2000 bed",
+			  "marriage_summer_9": "1000 Town 88 93 0/1500 Beach 46 24 2/1800 bed",
+			  "marriage_summer_23": "GOTO marriage_summer_9",
+			  "marriage_Fri": "900 SeedShop 13 23 0/1130 SeedShop 12 27 3/1200 SeedShop 4 26 2 Wem.Bundle.Tilly_LookDown \"Strings\\schedules\\Wem.Bundle.Tilly:Fri.000\"/1420 Town 54 71 2 Wem.Bundle.Tilly_ReadSit \"Strings\\schedules\\Wem.Bundle.Tilly:SumFri.000\"/1700 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair/2100 bed",
+			  "marriage_Tue": "900 SeedShop 28 17 3/1300 SeedShop 22 20 39 Wem.Bundle.Tilly_Squat/1500 Town 50 68 1/1700 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair/2000 bed",
+			  "marriage_DesertFestival_2": "800 Desert 39 43 2 \"Strings\\schedules\\Wem.Bundle.Tilly:DesertFestival_marriage\"",
+			  "marriage_NightMarket": "1650 Beach 34 36 2 \"Strings\\schedules\\Wem.Bundle.Tilly:NightMarket.Marriage\"/2030 bed",
+		},
+	},
+	{ //No beekeeping 
+		"LogName": "No beekeeping",
+		"Action": "EditData",
+		"Target": "Characters/schedules/{{ModId}}.Tilly",
+		"Entries": {
+			"Tue": "900 {{ModId}}.Tilly_TillyHouse 7 5 0/1000 SeedShop 28 17 3/1300 SeedShop 22 20 39 Wem.Bundle.Tilly_Squat/1630 Town 75 81 2/1830 Town 74 81 2/1850 {{ModId}}.Tilly_TillyHouse 5 10 0/1910 {{ModId}}.Tilly_TillyHouse 3 10 0/1920 {{ModId}}.Tilly_TillyHouse 2 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1930 {{ModId}}.Tilly_TillyHouse 1 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1940 {{ModId}}.Tilly_TillyHouse 2 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1950 {{ModId}}.Tilly_TillyHouse 11 5 2/2030 {{ModId}}.Tilly_TillyHouse 9 5 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Tue.000\"/2120 {{ModId}}.Tilly_TillyHouse 11 7 2 Wem.Bundle.Tilly_ReadSit/2200 bed",
+			
+			"Fri": "900 SeedShop 13 23 0/1130 SeedShop 12 27 3/1200 SeedShop 4 26 2 Wem.Bundle.Tilly_LookDown \"Strings\\schedules\\Wem.Bundle.Tilly:Fri.000\"/1300 Town 75 81 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1420 Town 93 72 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1500 Town 74 81 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1700 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair/2000 {{ModId}}.Tilly_TillyHouse 10 9 2 Wem.Bundle.Tilly_Tea/2400 bed",
+			 
+			"spring_12": "900 SeedShop 13 23 0/1130 SeedShop 12 27 3/1200 SeedShop 4 26 2 Wem.Bundle.Tilly_LookDown \"Strings\\schedules\\Wem.Bundle.Tilly:Fri.000\"/1300 Town 75 81 2/1420 Town 93 72 2/1500 Town 74 81 2/1700 Saloon 38 19 2/2100 {{ModId}}.Tilly_TillyHouse 10 9 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.000\"/2400 bed",
+			  
+			"summer_Sun": "1000 {{ModId}}.Tilly_TillyHouse 5 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1020 {{ModId}}.Tilly_TillyHouse 3 10 0/1040 {{ModId}}.Tilly_TillyHouse 2 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1100 {{ModId}}.Tilly_TillyHouse 1 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1120 {{ModId}}.Tilly_TillyHouse 2 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1140 HaleyHouse 4 16 2/1520 Town 50 68 1/1630 Town 74 81 2/1720 Town 75 81 2/1740 Town 93 72 2/1800 {{ModId}}.Tilly_TillyHouse 11 5 2 Wem.Bundle.Tilly_Tea/2000 {{ModId}}.Tilly_TillyHouse 6 5 0/2200 bed",
+			
+			
+		},
+		"When": {
+			"Year": "1",
+		},
+	},
+	
+	{ //Beekeeping
+		"LogName": "Beekeeping",
+		"Action": "EditData",
+		"Target": "Characters/schedules/{{ModId}}.Tilly",
+		"Entries": {
+			"Tue": "900 {{ModId}}.Tilly_TillyHouse 7 5 0/1000 SeedShop 28 17 3/1300 SeedShop 22 20 39 Wem.Bundle.Tilly_Squat/1600 Town 75 81 51/1830 Town 74 81 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1850 {{ModId}}.Tilly_TillyHouse 5 10 0/1910 {{ModId}}.Tilly_TillyHouse 3 10 0/1920 {{ModId}}.Tilly_TillyHouse 2 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1930 {{ModId}}.Tilly_TillyHouse 1 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1940 {{ModId}}.Tilly_TillyHouse 2 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1950 {{ModId}}.Tilly_TillyHouse 11 5 2/2030 {{ModId}}.Tilly_TillyHouse 9 5 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Tue.000\"/2120 {{ModId}}.Tilly_TillyHouse 11 7 2 Wem.Bundle.Tilly_ReadSit/2200 bed",
+			
+			"Fri": "900 SeedShop 13 23 0/1130 SeedShop 12 27 3/1200 SeedShop 4 26 2 Wem.Bundle.Tilly_LookDown \"Strings\\schedules\\Wem.Bundle.Tilly:Fri.000\"/1300 Town 75 81 52 Wem.Bundle.Tilly_Beekeeping/1420 Town 93 72 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1500 Town 74 81 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1700 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair/2000 {{ModId}}.Tilly_TillyHouse 10 9 2 Wem.Bundle.Tilly_Tea/2400 bed",
+			 
+			"spring_12": "900 SeedShop 13 23 0/1130 SeedShop 12 27 3/1200 SeedShop 4 26 2 Wem.Bundle.Tilly_LookDown \"Strings\\schedules\\Wem.Bundle.Tilly:Fri.000\"/1300 Town 75 81 51/1420 Town 93 72 2/1500 Town 74 81 2/1700 Saloon 38 19 2/2100 {{ModId}}.Tilly_TillyHouse 10 9 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.000\"/2400 bed",
+			  
+			"summer_Sun": "1000 {{ModId}}.Tilly_TillyHouse 5 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1020 {{ModId}}.Tilly_TillyHouse 3 10 0/1040 {{ModId}}.Tilly_TillyHouse 2 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1100 {{ModId}}.Tilly_TillyHouse 1 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1120 {{ModId}}.Tilly_TillyHouse 2 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1140 HaleyHouse 4 16 2/1500 Town 74 81 2/1600 Town 75 81 52 Wem.Bundle.Tilly_Beekeeping/1740 Town 93 72 2/1800 {{ModId}}.Tilly_TillyHouse 11 5 2 Wem.Bundle.Tilly_Tea/2000 {{ModId}}.Tilly_TillyHouse 6 5 0/2200 bed",
+			
+			"summer_Tue": "GOTO Tue",
+			"summer_Fri": "GOTO Fri",
+			"fall_Tue": "GOTO Tue",
+			"fall_Fri": "GOTO Fri",
+			
+			
+		},
+		"When": {
+			"Year | contains = 1": false,
+		},
+	},
+	
+	//NO CC 
+	{ 
+		"LogName": "NO CC",
+		"Action": "EditData",
+		"Target": "Characters/schedules/{{ModId}}.Tilly",
+		"Entries": {
+			"Sat": "1000 Town 49 32 2 Wem.Bundle.Tilly_ReadSit/1500 Town 35 77 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Sat.000\"/1630 {{ModId}}.Tilly_TillyHouse 13 10 0/1730 {{ModId}}.Tilly_TillyHouse 10 9 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.001\"/1830 {{ModId}}.Tilly_TillyHouse 12 11 3 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.003\"/2030 {{ModId}}.Tilly_TillyHouse 9 7 2 Wem.Bundle.Tilly_ReadChair/2300 bed",
+			
+			"winter_Wed": "900 ArchaeologyHouse 17 5 0/1300 ArchaeologyHouse 22 4 2 Wem.Bundle.Tilly_ReadStand/1500 ArchaeologyHouse 10 11 3/1700 {{ModId}}.Tilly_TillyHouse 4 7 2/1900 {{ModId}}.Tilly_TillyHouse 9 7 2/2100 bed",
+			
+			"winter_Sat": "1000 {{ModId}}.Tilly_TillyHouse 7 5 0/1030 {{ModId}}.Tilly_TillyHouse 11 5 2 Wem.Bundle.Tilly_Tea/1200 {{ModId}}.Tilly_TillyHouse 5 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1230 {{ModId}}.Tilly_TillyHouse 3 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1300 {{ModId}}.Tilly_TillyHouse 2 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1330 {{ModId}}.Tilly_TillyHouse 1 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1400 {{ModId}}.Tilly_TillyHouse 2 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1430 {{ModId}}.Tilly_TillyHouse 5 11 2/1500 {{ModId}}.Tilly_TillyHouse 10 9 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.001\"/1700 {{ModId}}.Tilly_TillyHouse 13 10 0/1800 {{ModId}}.Tilly_TillyHouse 12 11 3 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.003\"/1930 {{ModId}}.Tilly_TillyHouse 2 5 0/2100 bed",
+		},
+		"When": {
+			"IsCommunityCenterComplete": false,
+		},
+	},
+	
+	//CC 
+	{ 
+		"LogName": "CC",
+		"Action": "EditData",
+		"Target": "Characters/schedules/{{ModId}}.Tilly",
+		"Entries": {
+			"Sat": "930 CommunityCenter 8 5 0/1200 CommunityCenter 5 5 0/1230 CommunityCenter 6 5 0/1330 Town 74 81 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1630 Town 75 81 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1730 Town 93 72 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1920 {{ModId}}.Tilly_TillyHouse 13 10 0/2000 {{ModId}}.Tilly_TillyHouse 10 9 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.001\"/2130 {{ModId}}.Tilly_TillyHouse 12 11 3 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.003\"/2300 bed",
+			
+			"winter_Wed": "900 ArchaeologyHouse 17 5 0/1300 ArchaeologyHouse 22 4 2 Wem.Bundle.Tilly_ReadStand/1500 ArchaeologyHouse 10 11 3/1700 CommunityCenter 24 18 2 Wem.Bundle.Tilly_ReadSit/2100 bed",
+			
+			"winter_Sat": "1000 {{ModId}}.Tilly_TillyHouse 11 5 2 Wem.Bundle.Tilly_Tea/1100 CommunityCenter 8 5 0/1300 CommunityCenter 5 5 0/1400 CommunityCenter 6 5 0/1500 CommunityCenter 4 7 0/1630 Saloon 19 20 2 Wem.Bundle.Tilly_ReadChair/2100 bed",
+		},
+		"When": {
+			"IsCommunityCenterComplete": true,
+		},
+	},
+	
+	//Joja Warehouse Compete
+	{ 
+		"LogName": "NO CC, yes Joja",
+		"Action": "EditData",
+		"Target": "Characters/schedules/{{ModId}}.Tilly",
+		"Entries": {
+			"Sat": "1000 Town 49 32 2 Wem.Bundle.Tilly_ReadSit/1500 Town 35 77 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Sat.000\"/1630 {{ModId}}.Tilly_TillyHouse 13 10 0/1730 {{ModId}}.Tilly_TillyHouse 10 9 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.001\"/1830 {{ModId}}.Tilly_TillyHouse 12 11 3 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.003\"/2030 {{ModId}}.Tilly_TillyHouse 9 7 2 Wem.Bundle.Tilly_ReadChair/2300 bed",
+			
+			"winter_Wed": "900 ArchaeologyHouse 17 5 0/1300 ArchaeologyHouse 22 4 2 Wem.Bundle.Tilly_ReadStand/1500 ArchaeologyHouse 10 11 3/1700 {{ModId}}.Tilly_TillyHouse 4 7 2/1900 {{ModId}}.Tilly_TillyHouse 9 7 2/2100 bed",
+			
+			"winter_Sat": "1000 {{ModId}}.Tilly_TillyHouse 7 5 0/1030 {{ModId}}.Tilly_TillyHouse 11 5 2 Wem.Bundle.Tilly_Tea/1200 {{ModId}}.Tilly_TillyHouse 5 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1230 {{ModId}}.Tilly_TillyHouse 3 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1300 {{ModId}}.Tilly_TillyHouse 2 10 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1330 {{ModId}}.Tilly_TillyHouse 1 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.001\"/1400 {{ModId}}.Tilly_TillyHouse 2 11 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.000\"/1430 {{ModId}}.Tilly_TillyHouse 5 11 2/1500 {{ModId}}.Tilly_TillyHouse 10 9 2 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.001\"/1700 {{ModId}}.Tilly_TillyHouse 13 10 0/1800 {{ModId}}.Tilly_TillyHouse 12 11 3 \"Strings\\schedules\\Wem.Bundle.Tilly:Binding.003\"/1930 {{ModId}}.Tilly_TillyHouse 2 5 0/2100 bed",
+		},
+		"When": {
+			"IsJojaMartComplete": true,
+		},
+	},
+	
+	//Regular Marriage Schedule 
+	{
+		"LogName": "Marriage Schedule",
+		"Action": "EditData",
+		"Target": "Characters/schedules/{{ModId}}.Tilly",
+		"Entries": {
+			"marriage_Mon": "700 ArchaeologyHouse 17 5 0/1300 ArchaeologyHouse 22 4 2 Wem.Bundle.Tilly_ReadStand/1500 ArchaeologyHouse 10 11 3/1600 bed",
+			"marriage_Wed": "GOTO marriage_Mon",
+		},
+		"When": {
+			"Spouse": "{{ModId}}.Tilly",
+			"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+		},
+	},
+	
+	//Shop Schedule
+	{
+		"LogName": "Shop Schedule",
+		"Action": "EditData",
+		"Target": "Characters/schedules/{{ModId}}.Tilly",
+		"Entries": {
+			"marriage_Mon": "630 {{ModId}}.Tilly_TillyShop 4 7 2/1300 {{ModId}}.Tilly_TillyShop 4 7 2/1700 {{ModId}}.Tilly_TillyShop 18 7 0 \"Strings\\schedules\\Wem.Bundle.Tilly:Gardening.002\"/1800 bed",
+			"marriage_Wed": "630 {{ModId}}.Tilly_TillyShop 4 7 2/1300 {{ModId}}.Tilly_TillyShop 4 7 2/1700 bed",
+			"marriage_Sat": "630 {{ModId}}.Tilly_TillyShop 4 7 2/1300 {{ModId}}.Tilly_TillyShop 4 7 2/1700 Town 75 81 2 Wem.Tilly_Beekeeping/1800 bed",
+		},
+		"When": {
+			"Spouse": "{{ModId}}.Tilly",
+			"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+		},
+	},
+	
+	//LNY Stand Schedule
+	{
+		"LogName": "LNY Shop Schedule",
+		"Action": "EditData",
+		"Target": "Characters/schedules/{{ModId}}.Tilly",
+		"Entries": {
+			"spring_8": "730 Town 88 91 2 \"Strings\\schedules\\Wem.Bundle.Tilly:LNY.000\"/1900 {{ModId}}.Tilly_TillyHouse 5 7 2 Wem.Bundle.Tilly_LNYCall \"Strings\\schedules\\Wem.Bundle.Tilly:LNY.001\"/2200 bed",
+			"marriage_spring_8": "640 Town 88 91 2 \"Strings\\schedules\\Wem.Bundle.Tilly:LNY.000\"/1900 bed",
+		},
+		"When": {
+			"Lunar New Year Stand": true,
+		},
+	},
+		
+   ]
+} 

@@ -1,0 +1,170 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Ashara":{
+          "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 611439",
+          "DisplayName": "{{i18n:Ashara_name}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Manner": "Polite",
+          "BirthSeason": "summer",
+          "BirthDay": 17,
+          "HomeRegion": "Forest",
+          "CanBeRomanced": false,
+          "CanVisitIsland": true,
+          "SpouseAdopts": false,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": true,
+          "WinterStarParticipant": true,
+          "CanGreetNearbyCharacters": false,
+          "SpawnIfMissing": true,
+          "TextureName": "Ashara",
+          "CanSocialize": true,
+          "CanReceiveGifts": true,
+          "Breather": true,
+          "Home": [
+             {
+               "Id": "Default",
+               "Location": "MagicStardew_AsharaHouse",
+               "Tile": {
+                 "X": 14,
+                 "Y": 14
+               },
+               "Direction": "down"
+             }
+           ],
+          "Appearance": [
+            {
+              "Id": "Ashara_default",
+              "Indoors": false,
+              "Outdoors": true,
+              "Sprite": "Characters/Ashara",
+              "Portrait": "Portraits/Ashara",
+              "IsIslandAttire": false,
+            },
+            {
+              "Id": "Ashara_spring",
+              "Season": "Spring",
+              "Indoors": false,
+              "Outdoors": true,
+              "Sprite": "Characters/Ashara_sp",
+              "Portrait": "Portraits/Ashara_sp",
+              "IsIslandAttire": false,
+            },
+            {
+              "Id": "Ashara_summer",
+              "Season": "Summer",
+              "Condition": "SEASON_DAY Summer 1 Summer 2 Summer 3 Summer 4 Summer 5 Summer 8 Summer 9 Summer 10 Summer 11 Summer 12 Summer 15 Summer 16 Summer 17 Summer 18 Summer 19 Summer 22 Summer 23 Summer 24 Summer 25 Summer 26",
+              "Indoors": false,
+              "Outdoors": true,
+              "Sprite": "Characters/Ashara_su",
+              "Portrait": "Portraits/Ashara_su",
+              "IsIslandAttire": false,
+            },
+            {
+              "Id": "Ashara_fall",
+              "Season": "Fall",
+              "Indoors": false,
+              "Outdoors": true,
+              "Sprite": "Characters/Ashara_f",
+              "Portrait": "Portraits/Ashara_f",
+              "IsIslandAttire": false,
+            },
+            {
+              "Id": "Ashara_winter",
+              "Season": "Winter",
+              "Indoors": false,
+              "Outdoors": true,
+              "Sprite": "Characters/Ashara_w",
+              "Portrait": "Portraits/Ashara_w",
+              "IsIslandAttire": false,
+            },
+            {
+              "Id": "Ashara_house",
+              "Condition": "ANY \"LOCATION_NAME Target MagicStardew_AsharaHouse\" \"LOCATION_NAME Target MagicStardew_AsharaHouse_Cellar\"",
+              "Sprite": "Characters/Ashara_Inside",
+              "Portrait": "Portraits/Ashara_Inside",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 1
+            },
+            {
+              "Id": "Ashara_BathHouse",
+              "Condition": "ANY \"LOCATION_NAME Target BathHouse_Pool\" \"LOCATION_NAME Target BathHouse_WomensLocker\"",
+              "Portrait": "Portraits/Ashara_Beach",
+              "Sprite": "Characters/Ashara_Beach",
+              "IsIslandAttire": false,
+              "Precedence": -1000,
+              "Weight": 1
+            },
+            {
+              "Id": "Ashara_Beach_Summer",
+              "Season": "Summer",
+              "Condition": "ANY \"LOCATION_NAME Target Beach\"",
+              "Portrait": "Portraits/Ashara_Beach_2",
+              "Sprite": "Characters/Ashara_Beach_2",
+              "IsIslandAttire": false,
+              "Precedence": -1000,
+              "Weight": 1
+            },
+            {
+              "Id": "Ashara_Summer_Dress",
+              "Season": "Summer",
+              "Condition": "SEASON_DAY Summer 6 Summer 7 Summer 13 Summer 14 Summer 20 Summer 21 Summer 27 Summer 28",
+              "Portrait": "Portraits/Ashara_Summer_Dress",
+              "Sprite": "Characters/Ashara_Summer_Dress",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 1
+            },
+            {
+              "Id": "Ashara_Beach_Luau",
+              "Season": "Summer",
+              "Condition": "IS_EVENT festival_summer11",
+              "Portrait": "Portraits/Luau",
+              "Sprite": "Characters/Luau",
+              "IsIslandAttire": false,
+              "Precedence": -1000,
+              "Weight": 1
+            },
+            {
+              "Id": "Ashara_Flower_Dance",
+              "Season": "Spring",
+              "Condition": "IS_EVENT festival_spring24",
+              "Portrait": "Portraits/Flower_Dance",
+              "Sprite": "Characters/Flower_Dance",
+              "IsIslandAttire": false,
+              "Precedence": -1000,
+              "Weight": 1
+            },
+            {
+              "Id": "Ashara_Christmas",
+              "Indoors": true,
+              "Outdoors": true,
+              "Condition": "SEASON_DAY Winter 23 Winter 24 Winter 25 Winter 26 Winter 27",
+              "Sprite": "Characters/Ashara_Christmas",
+              "Portrait": "Portraits/Ashara_Christmas",
+              "IsIslandAttire": false,
+              "Precedence": -1000,
+              "Weight": 1
+            },
+            {
+              "Id": "Ashara_Spirits_Eve",
+              "Indoors": true,
+              "Outdoors": true,
+              "Condition": "SEASON_DAY Fall 27",
+              "Sprite": "Characters/Ashara_Spirits_Eve",
+              "Portrait": "Portraits/Ashara_Spirits_Eve",
+              "IsIslandAttire": false,
+              "Precedence": -1000,
+              "Weight": 1
+            },
+          ],
+        }
+      }
+    }
+  ]
+}

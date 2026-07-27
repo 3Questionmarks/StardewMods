@@ -1,0 +1,79 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "RedPandaBazaar_Sean": {
+                    "DisplayName": "{{i18n:NPCName:RedPandaBazaar_Sean}}",
+                    "HomeRegion": "Other",
+                    "Language": "default",
+                    "Gender": "male",
+                    "Age": "adult",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "outgoing",
+                    "Optimism": "positive",
+                    "IsDarkSkinned": false,
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": false,
+                    "CanCommentOnPurchasedShopItems": false,
+                    "CanGreetNearbyCharacters": false,
+                    "CanVisitIslandCondition": false,
+                    "LoveInterest": "",
+                    "Calendar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "IntroductionsQuest": false,
+                    "ItemDeliveryQuests": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "DumpsterDiveEmote": 40,
+                    "DumpsterDiveFriendshipEffect":-50,
+                    "WinterStarParticipant": false,
+
+                    "ExcludeFromIntroductionsQuest": false,
+                    "ExcludeFromPerfectionScore": false,
+                    "FriendsAndFamily": {},
+                    "UnlockConditions": null,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Custom_RedPandaBazaarBank1",
+                            "Condition": null,
+                            "Location": "Custom_RedPandaBazaarBank1",
+                            "Tile": {
+                                "X": 14,
+                                "Y": 14
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    },
+                    "CustomFields": {}
+                }
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/RedPandaBazaar_Sean",
+            "FromFile": "assets/Sprites/Sean.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/RedPandaBazaar_Sean",
+            "FromFile": "assets/Portraits/Sean.png"
+        },
+        {
+            "LogName": "Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_RedPandaBazaarBank1",
+            "Entries": {
+                "RPB.Bank.1/t 600 2400": "libraryTheme/14 15/farmer 500 500 0 RedPandaBazaar_Sean 11 14 2/pause 1000/warp farmer 11 17/playSound doorClose/pause 1000/move farmer 0 -1 0/pause 500/pause 500/speak RedPandaBazaar_Sean \"{{i18n:Event.Bank.1.1.Sean}}\"/pause 200/question none #{{i18n:Event.Bank.1.2.Farmer}}/pause 200/speak RedPandaBazaar_Sean \"{{i18n:Event.Bank.1.3.Sean}}\"/pause 1000/speak RedPandaBazaar_Sean \"{{i18n:Event.Bank.1.4.Sean}}\"/pause 1000/speak RedPandaBazaar_Sean \"{{i18n:Event.Bank.1.5.Sean}}\"/pause 1000/speak RedPandaBazaar_Sean \"{{i18n:Event.Bank.1.6.Sean}}\"/pause 200/question none #{{i18n:Event.Bank.1.7.Farmer}}/pause 200/speak RedPandaBazaar_Sean \"{{i18n:Event.Bank.1.8.Sean}}\"/pause 200/question none #{{i18n:Event.Bank.1.9.Farmer}}/pause 200/speak RedPandaBazaar_Sean \"{{i18n:Event.Bank.1.10.Sean}}\"/pause 1000/speak RedPandaBazaar_Sean \"{{i18n:Event.Bank.1.11.Sean}}\"/pause 1000/speak RedPandaBazaar_Sean \"{{i18n:Event.Bank.1.12.Sean}}\"/pause 1000/speak RedPandaBazaar_Sean \"{{i18n:Event.Bank.1.13.Sean}}\"/pause 200/question none #{{i18n:Event.Bank.1.14.Farmer}}/pause 200/speak RedPandaBazaar_Sean \"{{i18n:Event.Bank.1.15.Sean}}\"/pause 200/qquestion none #{{i18n:Event.Bank.1.6.Farmer}}/pause 200/speak RedPandaBazaar_Sean \"{{i18n:Event.Bank.1.17.Sean}}\"/pause 1000/end"
+            }
+        }
+    ]
+}

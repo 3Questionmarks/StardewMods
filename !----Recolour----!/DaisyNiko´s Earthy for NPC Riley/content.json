@@ -1,0 +1,39 @@
+{
+    "Format": "2.8.0",
+    "Changes": [
+        {
+            "LogName": "Riley House World Map",
+            "Action": "EditImage",
+            "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+            "FromFile": "assets/Riley_{{season}}.png",
+            "ToArea": {
+                "X": 212,
+                "Y": 88,
+                "Width": 13,
+                "Height": 13
+            },
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod:|contains=SG.Riley": true
+            }
+        },
+        {
+            "LogName": "Riley House World Map SVE",
+            "Action": "EditImage",
+            "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+            "FromFile": "assets/RileySVE_{{season}}.png",
+            "ToArea": {
+                "X": 230,
+                "Y": 92,
+                "Width": 7,
+                "Height": 8
+            },
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod:|contains=SG.Riley": true
+            }
+        }
+    ]
+}

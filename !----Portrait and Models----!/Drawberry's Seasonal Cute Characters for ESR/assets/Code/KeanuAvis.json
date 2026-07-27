@@ -1,0 +1,91 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load KeanuAvis's Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/KeanuAvis_Beach, Portraits/KeanuAvis_Fall, Portraits/KeanuAvis_FlowerDance, Portraits/KeanuAvis, Portraits/KeanuAvis_Summer, Portraits/KeanuAvis_Wetsuit, Portraits/KeanuAvis_Winter, Characters/KeanuAvis_Beach, Characters/KeanuAvis_Fall, Characters/KeanuAvis_FlowerDance, Characters/KeanuAvis, Characters/KeanuAvis_Summer, Characters/KeanuAvis_Wetsuit, Characters/KeanuAvis_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/KeanuAvis/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "KeanuAvis - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/KeanuAvis, Characters/KeanuAvis_Summer, Characters/KeanuAvis_Fall, Characters/KeanuAvis_Winter, Characters/KeanuAvis_FlowerDance, Characters/KeanuAvis_SpiritsEve, Characters/KeanuAvis_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/KeanuAvis/KeanuAvis_nose.png",
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+			"When": 
+			{
+				"NoNose": "false",
+			},
+		},
+
+		/* APPEARANCE DATA
+			"LogName": "KeanuAvis Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"KeanuAvis",
+				"Appearance"
+			],
+			"Entries": {
+				//Regular Outfits
+				"{{ModId}}.KeanuAvis": {
+					"Id": "{{ModId}}.KeanuAvis",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/KeanuAvis",
+					"Portrait": "Portraits/KeanuAvis",
+					"Precedence": -2000,
+				},
+				"{{ModId}}.KeanuAvisSummer": {
+					"Id": "{{ModId}}.KeanuAvisSummer",
+					"Condition": "SEASON summer",
+					"Sprite": "Characters/KeanuAvis_Summer",
+					"Portrait": "Portraits/KeanuAvis_Summer",
+					"Precedence": -2000,
+				},
+				"{{ModId}}.KeanuAvisFall": {
+					"Id": "{{ModId}}.KeanuAvisFall",
+					"Condition": "SEASON fall",
+					"Sprite": "Characters/KeanuAvis_Fall",
+					"Portrait": "Portraits/KeanuAvis_Fall",
+					"Precedence": -2000,
+				},
+				"{{ModId}}.KeanuAvisWinter": {
+					"Id": "{{ModId}}.KeanuAvisWinter",
+					"Condition": "SEASON winter",
+					"Sprite": "Characters/KeanuAvis_Winter",
+					"Portrait": "Portraits/KeanuAvis_Winter",
+					"Precedence": -2000,
+				},
+				//Festival Outfits
+				"{{ModId}}.KeanuAvisFlowerDance": {
+					"Id": "{{ModId}}.KeanuAvisFlowerDance",
+					"Condition": "IS_EVENT festival24, {{FestivalOutfits}}",
+					"Sprite": "Characters/KeanuAvis_FlowerDance",
+					"Portrait": "Portraits/KeanuAvis_FlowerDance",
+					"Precedence": -4000, 
+				}, */
+				
+			//MISCELLANEOUS
+			{
+			"LogName": "KeanuAvis - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "Mods/Lemurkat.EastScarp/esfurniture", /// Mods/UniqueID/Image name
+			"FromFile": "assets/Characters/esfurniture.png",
+			"FromArea": {"X": 72, "Y": 135, "Width": 18, "Height": 18},
+			"ToArea": {"X": 72, "Y": 135, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+	"LogName": "KeanuAvis Calendar Sprite Edits",
+	"Action": "EditImage",
+	"Target": "Characters/KeanuAvis",
+	"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+		},
+	]
+}

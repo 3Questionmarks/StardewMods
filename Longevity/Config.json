@@ -4,7 +4,7 @@
   "Dynamic_Pricing": true,
   "Stamina_Balance": true,
   "Subsidized_Crops": true,
-  "Dynamic_Honey": true,
+  "Dynamic_Honey": false,
   "Price_Exemption": "",
   "MenuHotkey": "OemTilde",
   "Sub_Reduction": 1,
@@ -42,7 +42,7 @@
   "Sta_Axe": 1.0,
   "Sta_Hoe": 1.0,
   "Sta_WateringCan": 1.0,
-  "Sta_FishingRod": 3.0,
-  "Sta_Scythe": 2.0,
+  "Sta_FishingRod": 2.0,
+  "Sta_Scythe": 0.5,
   "Sta_Weapons": 0.5
 }

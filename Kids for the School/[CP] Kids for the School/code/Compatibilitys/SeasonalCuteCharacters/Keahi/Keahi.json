@@ -1,0 +1,23 @@
+{
+//Outfit Loads when use RSVSeasonalOutfits
+  "Changes": [  
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Keahi_{{Season}}",
+      "FromFile": "code/Compatibilitys/SeasonalCuteCharacters/Keahi/Keahi_{{Season}}.png",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVSeasonalOutfits": true
+      }
+    }  ,
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Keahi_{{Season}}",
+      "FromFile": "code/Compatibilitys/SeasonalCuteCharacters/Keahi/Keahi_{{Season}}1.png",
+      "Patchmode": "Overlay",
+      "When": {
+        "HasSeenEvent |contains=9695002": true,
+        "HasMod |contains=Rafseazz.RSVSeasonalOutfits": true
+      }
+    }
+  ]
+}

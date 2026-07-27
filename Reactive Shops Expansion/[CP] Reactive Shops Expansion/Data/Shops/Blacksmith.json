@@ -1,0 +1,148 @@
+{
+    "Changes": [
+        {
+			"LogName": "Bri.ShopExpansion_Blacksmith Shop WITH Year 2 Price Changes",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Blacksmith",
+                "Items"
+            ],
+            "Entries": {
+				
+				// RESOURCES: QUINTUPLE IN PRICES IN YEAR 2
+				
+                "Bri.ShopExpansion_ID_IridiumOre_Y1": {
+                    "Id": "Bri.ShopExpansion_ID_IridiumOre_Y1",
+                    "ItemId": "(O)386",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_IridiumOre any, YEAR 1 1",
+                    "Price": "1000",
+					"AvailableStock": "5"
+                },
+                "Bri.ShopExpansion_ID_IridiumOre_Y2": {
+                    "Id": "Bri.ShopExpansion_ID_IridiumOre_Y2",
+                    "ItemId": "(O)386",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_IridiumOre any, YEAR 2",
+                    "Price": "2500",
+					"AvailableStock": "5"
+                },
+				"Bri.ShopExpansion_ID_RadioactiveOre_Y1": {
+                    "Id": "Bri.ShopExpansion_ID_RadioactiveOre_Y1",
+                    "ItemId": "(O)909",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_RadioactiveOre any, YEAR 1 1",
+                    "Price": "3000",
+					"AvailableStock": "5"
+                },
+                "Bri.ShopExpansion_ID_RadioactiveOre_Y2": {
+                    "Id": "Bri.ShopExpansion_ID_RadioactiveOre_Y2",
+                    "ItemId": "(O)909",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_RadioactiveOre any, YEAR 2",
+                    "Price": "6500",
+					"AvailableStock": "5"
+                },
+				"Bri.ShopExpansion_ID_EarthCrystal_Y1": {
+                    "Id": "Bri.ShopExpansion_ID_EarthCrystal_Y1",
+                    "ItemId": "(O)86",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_EarthCrystal Any, YEAR 1 1",
+                    "Price": "500"
+                },
+                "Bri.ShopExpansion_ID_EarthCrystal_Y2": {
+                    "Id": "Bri.ShopExpansion_ID_EarthCrystal_Y2",
+                    "ItemId": "(O)86",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_EarthCrystal any, YEAR 2",
+                    "Price": "2500"
+                },
+                "Bri.ShopExpansion_ID_RefinedQuartz_Y1": {
+                    "Id": "Bri.ShopExpansion_ID_RefinedQuartz_Y1",
+                    "ItemId": "(O)338",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_RefinedQuartz any, YEAR 1 1",
+                    "Price": "500"
+                },
+                "Bri.ShopExpansion_ID_RefinedQuartz_Y2": {
+                    "Id": "Bri.ShopExpansion_ID_RefinedQuartz_Y2",
+                    "ItemId": "(O)338",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_RefinedQuartz any, YEAR 2",
+                    "Price": "2500"
+                },
+				
+				// BIG CRAFTABLES: MATCH PRICE CHANGES OF RESOURCES
+				
+                "Bri.ShopExpansion_ID_Furnace_Y1": {
+                    "Id": "Bri.ShopExpansion_ID_Furnace_Y1",
+                    "ItemId": "(BC)13",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_Furnace any, YEAR 1 1",
+                    "Price": "1800",
+					"AvailableStock": "1"
+                },
+                "Bri.ShopExpansion_ID_Furnace_Y2": {
+                    "Id": "Bri.ShopExpansion_ID_Furnace_Y2",
+                    "ItemId": "(BC)13",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_Furnace any, YEAR 2",
+                    "Price": "3825",
+					"AvailableStock": "1"
+                },
+                "Bri.ShopExpansion_ID_CharcoalKiln_Y1": {
+                    "Id": "Bri.ShopExpansion_ID_CharcoalKiln_Y1",
+                    "ItemId": "(BC)114",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_CharcoalKiln any, YEAR 1 1",
+                    "Price": "1125",
+					"AvailableStock": "1"
+                },
+                "Bri.ShopExpansion_ID_CharcoalKiln_Y2": {
+                    "Id": "Bri.ShopExpansion_ID_CharcoalKiln_Y2",
+                    "ItemId": "(BC)114",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_CharcoalKiln any, YEAR 2",
+                    "Price": "2700",
+					"AvailableStock": "1"
+                },
+                "Bri.ShopExpansion_ID_LightningRod_Y1": {
+                    "Id": "Bri.ShopExpansion_ID_LightningRod_Y1",
+                    "ItemId": "(BC)9",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_LightningRod any, YEAR 1 1",
+                    "Price": "1935",
+					"AvailableStock": "1"
+                },
+                "Bri.ShopExpansion_ID_LightningRod_Y2": {
+                    "Id": "Bri.ShopExpansion_ID_LightningRod_Y2",
+                    "ItemId": "(BC)9",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Blacksmith_LightningRod any, YEAR 2",
+                    "Price": "4275",
+					"AvailableStock": "1"
+                },
+				
+				// NON-SVE PLAYERS: SPRINKLERS
+				// MEANT TO BE AVAILABLE FROM GAME START
+				
+                
+                "Bri.ShopExpansion_ID_Sprinkler_Y1": {
+                    "Id": "Bri.ShopExpansion_ID_Sprinkler_Y1",
+                    "ItemId": "(O)599",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Clint_Sprinklers any, YEAR 1 1",
+                    "Price": "1282",
+					"AvailableStock": "5"
+                },
+                "Bri.ShopExpansion_ID_Sprinkler_Y2": {
+                    "Id": "Bri.ShopExpansion_ID_Sprinkler_Y2",
+                    "ItemId": "(O)599",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Clint_Sprinklers any, YEAR 2",
+                    "Price": "2250",
+					"AvailableStock": "5"
+                },
+				"Bri.ShopExpansion_ID_QualitySprinkler_Y1": {
+                    "Id": "Bri.ShopExpansion_ID_QualitySprinkler_Y1",
+                    "ItemId": "(O)621",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Clint_Sprinklers any, YEAR 1 1",
+                    "Price": "3195",
+					"AvailableStock": "5"
+                },
+                "Bri.ShopExpansion_ID_QualitySprinkler_Y2": {
+                    "Id": "Bri.ShopExpansion_ID_QualitySprinkler_Y2",
+                    "ItemId": "(O)621",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Clint_Sprinklers any, YEAR 2",
+                    "Price": "7200",
+					"AvailableStock": "5"
+                }
+            }
+        }
+    ]
+}

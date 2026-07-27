@@ -1,0 +1,139 @@
+{
+	"Changes": [
+		{
+			"LogName": "Faust's Marriage Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueFaust",
+			"Entries": {
+				"Rainy_Day_0": "{{i18n:Marriage.Faust.RainyDay{{Random: 0,1}}}}",
+				"Rainy_Day_1": "{{i18n:Marriage.Faust.RainyDay{{Random: 2,3}}}}",
+				"Rainy_Day_2": "{{i18n:Marriage.Faust.RainyDay{{Random: 4,5}}}}",
+				"Rainy_Day_3": "{{i18n:Marriage.Faust.RainyDay{{Random: 6,7}}}}",
+				"Rainy_Day_4": "{{i18n:Marriage.Faust.RainyDay{{Random: 8,9}}}}",
+				
+				"Rainy_Night_0": "{{i18n:Marriage.Faust.RainyNight{{Random: 0,1}}}}",
+				"Rainy_Night_1": "{{i18n:Marriage.Faust.RainyNight{{Random: 2,3}}}}",
+				"Rainy_Night_2": "{{i18n:Marriage.Faust.RainyNight{{Random: 4,5}}}}",
+				"Rainy_Night_3": "{{i18n:Marriage.Faust.RainyNight{{Random: 6,7}}}}",
+				"Rainy_Night_4": "{{i18n:Marriage.Faust.RainyNight{{Random: 8,9}}}}",
+				
+				"Indoor_Day_0": "{{i18n:Marriage.Faust.IndoorDay{{Random: 0,1}}}}",
+				"Indoor_Day_1": "{{i18n:Marriage.Faust.IndoorDay{{Random: 2,3}}}}",
+				"Indoor_Day_2": "{{i18n:Marriage.Faust.IndoorDay{{Random: 4,5}}}}",
+				"Indoor_Day_3": "{{i18n:Marriage.Faust.IndoorDay{{Random: 6,7}}}}",
+				"Indoor_Day_4": "{{i18n:Marriage.Faust.IndoorDay{{Random: 8,9}}}}",
+				"Indoor_Day_5": "{{i18n:Marriage.Faust.IndoorDay{{Random: 10,11}}}}",
+				"Indoor_Day_6": "{{i18n:Marriage.Faust.IndoorDay{{Random: 12,13}}}}",
+				
+				"Indoor_Night_0": "{{i18n:Marriage.Faust.IndoorNight{{Random: 0,1}}}}",
+				"Indoor_Night_1": "{{i18n:Marriage.Faust.IndoorNight{{Random: 2,3}}}}",
+				"Indoor_Night_2": "{{i18n:Marriage.Faust.IndoorNight{{Random: 4,5}}}}",
+				"Indoor_Night_3": "{{i18n:Marriage.Faust.IndoorNight{{Random: 6,7}}}}",
+				"Indoor_Night_4": "{{i18n:Marriage.Faust.IndoorNight{{Random: 8,9}}}}",
+				"Indoor_Night_5": "{{i18n:Marriage.Faust.IndoorNight{{Random: 10,11}}}}",
+				"Indoor_Night_6": "{{i18n:Marriage.Faust.IndoorNight{{Random: 12,13}}}}",
+				"Indoor_Night_Faust": "{{i18n:Marriage.Faust.IndoorNightGeneric}}",
+				
+				"Outdoor_0": "{{i18n:Marriage.Faust.Outdoor{{Random: 0,1}}}}",
+				"Outdoor_1": "{{i18n:Marriage.Faust.Outdoor{{Random: 2,3}}}}",
+				"Outdoor_2": "{{i18n:Marriage.Faust.Outdoor{{Random: 4,5}}}}",
+				"Outdoor_3": "{{i18n:Marriage.Faust.Outdoor{{Random: 6,7}}}}",
+				"Outdoor_4": "{{i18n:Marriage.Faust.Outdoor{{Random: 8,9}}}}",
+				
+				"OneKid_0": "{{i18n:Marriage.Faust.OneKid{{Random: 0,1}}}}",
+				"OneKid_1": "{{i18n:Marriage.Faust.OneKid{{Random: 2,3}}}}",
+				"OneKid_2": "{{i18n:Marriage.Faust.OneKid{{Random: 4,5}}}}",
+				"OneKid_3": "{{i18n:Marriage.Faust.OneKid{{Random: 6,7}}}}",
+				
+				"TwoKids_0": "{{i18n:Marriage.Faust.TwoKids{{Random: 0,1}}}}",
+				"TwoKids_1": "{{i18n:Marriage.Faust.TwoKids{{Random: 2,3}}}}",
+				"TwoKids_2": "{{i18n:Marriage.Faust.TwoKids{{Random: 4,5}}}}",
+				"TwoKids_3": "{{i18n:Marriage.Faust.TwoKids{{Random: 6,7}}}}",
+				
+				"Good_0": "{{i18n:Marriage.Faust.Good0}}",
+				"Good_1": "{{i18n:Marriage.Faust.Good1}}",
+				"Good_2": "{{i18n:Marriage.Faust.Good2}}",
+				"Good_3": "{{i18n:Marriage.Faust.Good3}}",
+				"Good_4": "{{i18n:Marriage.Faust.Good4}}",
+				"Good_5": "{{i18n:Marriage.Faust.Good5}}",
+				"Good_6": "{{i18n:Marriage.Faust.Good6}}",
+				"Good_7": "{{i18n:Marriage.Faust.Good7}}",
+				"Good_8": "{{i18n:Marriage.Faust.Good8}}",
+				"Good_9": "{{i18n:Marriage.Faust.Good9}}",
+				
+				"Neutral_0": "{{i18n:Marriage.Faust.Neutral0}}",
+				"Neutral_1": "{{i18n:Marriage.Faust.Neutral1}}",
+				"Neutral_2": "{{i18n:Marriage.Faust.Neutral2}}",
+				"Neutral_3": "{{i18n:Marriage.Faust.Neutral3}}",
+				"Neutral_4": "{{i18n:Marriage.Faust.Neutral4}}",
+				"Neutral_5": "{{i18n:Marriage.Faust.Neutral5}}",
+				"Neutral_6": "{{i18n:Marriage.Faust.Neutral6}}",
+				"Neutral_7": "{{i18n:Marriage.Faust.Neutral7}}",
+				"Neutral_8": "{{i18n:Marriage.Faust.Neutral8}}",
+				"Neutral_9": "{{i18n:Marriage.Faust.Neutral9}}",
+				
+				"Bad_0": "{{i18n:Marriage.Faust.Bad0}}",
+				"Bad_1": "{{i18n:Marriage.Faust.Bad1}}",
+				"Bad_2": "{{i18n:Marriage.Faust.Bad2}}",
+				"Bad_3": "{{i18n:Marriage.Faust.Bad3}}",
+				"Bad_4": "{{i18n:Marriage.Faust.Bad4}}",
+				"Bad_5": "{{i18n:Marriage.Faust.Bad5}}",
+				"Bad_6": "{{i18n:Marriage.Faust.Bad6}}",
+				"Bad_7": "{{i18n:Marriage.Faust.Bad7}}",
+				"Bad_8": "{{i18n:Marriage.Faust.Bad8}}",
+				"Bad_9": "{{i18n:Marriage.Faust.Bad9}}",
+				
+				"spring_1": "{{i18n:Marriage.Faust.Spring1}}",
+				"spring_13": "{{i18n:Marriage.Faust.Spring13}}",
+				"spring_23": "{{i18n:Marriage.Faust.Spring23}}",
+				"spring_24": "{{i18n:Marriage.Faust.Spring24}}",
+				
+				"summer_1": "{{i18n:Marriage.Faust.Summer1}}",
+				"summer_11": "{{i18n:Marriage.Faust.Summer11}}",
+				"summer_28": "{{i18n:Marriage.Faust.Summer28}}",
+				
+				"fall_1": "{{i18n:Marriage.Faust.Fall1}}",
+				"fall_15": "{{i18n:Marriage.Faust.Fall15}}",
+				"fall_16": "{{i18n:Marriage.Faust.Fall16}}",
+				"fall_27": "{{i18n:Marriage.Faust.Fall27}}",
+				"fall_28": "{{i18n:Marriage.Faust.Fall28}}",
+				
+				"winter_1": "{{i18n:Marriage.Faust.Winter1}}",
+				"winter_8": "{{i18n:Marriage.Faust.Winter8}}",
+				"winter_12": "{{i18n:Marriage.Faust.Winter12}}",
+				"winter_24": "{{i18n:Marriage.Faust.Winter24}}",
+				"winter_25": "{{i18n:Marriage.Faust.Winter25}}",
+				"winter_28": "{{i18n:Marriage.Faust.Winter28}}",
+				
+				"patio_Faust": "{{i18n:Marriage.Faust.Patio{{Random: 0,1,2,3,4}}}}",
+				
+				"spouseRoom_Faust": "{{i18n:Marriage.Faust.SpouseRoom{{Random: 0,1,2,3,4}}}}",
+				
+				"funLeave_Faust": "{{i18n:Marriage.Faust.FunLeave{{Random: 0,1,2}}}}",
+				"funReturn_Faust": "{{i18n:Marriage.Faust.FunReturn{{Random: 0,1,2}}}}",
+				
+				"spring_Faust": "{{i18n:Marriage.Faust.Spring}}",
+				"summer_Faust": "{{i18n:Marriage.Faust.Summer}}",
+				"fall_Faust": "{{i18n:Marriage.Faust.Fall}}",
+				"winter_Faust": "{{i18n:Marriage.Faust.Winter}}",   
+			}
+		},
+		{
+			"LogName": "Faust's Marriage Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueFaust",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"Entries": {
+				"Rainy_Night_2": "{{i18n:Marriage.Faust.RainyNight{{Random: 4,5.NoSVE}}}}",
+				"Indoor_Day_2": "{{i18n:Marriage.Faust.IndoorDay{{Random: 4,5.NoSVE}}}}",
+				"Indoor_Day_3": "{{i18n:Marriage.Faust.IndoorDay{{Random: 6,7.NoSVE}}}}",
+				"Indoor_Night_3": "{{i18n:Marriage.Faust.IndoorNight{{Random: 6.NoSVE,7}}}}",
+				"Outdoor_1": "{{i18n:Marriage.Faust.Outdoor{{Random: 2,3.NoSVE}}}}",
+				
+				"Bad_0": "{{i18n:Marriage.Faust.Bad0.NoSVE}}",
+				
+				"summer_1": "{{i18n:Marriage.Faust.Summer1.NoSVE}}",
+			}
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (CMM.Joseph.Seed)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/CMM.Joseph.Seed",
+      "FromFile": "assets/Maps/Joseph Seed Shop/CMM.Joseph.Seed_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

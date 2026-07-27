@@ -1,0 +1,12 @@
+{
+    "Changes": [
+		{
+			"LogName": "{{ModId}}_Sophia",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sophia",
+			"Entries":{
+				"{{ModId}}_Sophia_Year2FriendshipDiscount_CT": "{{i18n: Sophia.Year2FriendshipDiscount_CT}}"
+			}
+		}
+	]
+}

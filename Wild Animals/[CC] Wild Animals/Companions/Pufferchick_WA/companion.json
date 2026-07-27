@@ -544,7 +544,7 @@
 	],
 	"Sounds": [
 		{
-		"SoundName": "cluck",
+		"SoundName": "Cluck_WA_Sound",
 		"WhenToPlay": "Idle",
 		"TimeBetweenSound": 3000,
 		"ChanceOfPlaying": 0.5
@@ -554,10 +554,10 @@
 
 "Sounds": [
 	{
-	"SoundName": "cluck",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.1
+	"SoundName": "Cluck_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.4
 	}
 ]  
 }

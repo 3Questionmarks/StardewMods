@@ -1,0 +1,71 @@
+{
+	"Changes": [
+//Sunberry Village SeasonMap
+		{
+            "Action": "EditImage",
+            "Target": "Mods/skellady.SBVCP/SBVMap",
+            "FromFile": "assets/Maps/Sunberry Village/{{Season}}_SBVMap.png",
+            "PatchMode": "Overlay",
+			"When": {
+				"HasMod": "skellady.SBVCP",
+			},
+		},
+//Sunberry Village Icon
+		{
+			"Action": "EditImage",
+			"Target": "Mods/skellady.SBVCP/SBVMapIcon",
+			"FromFile": "assets/Maps/Sunberry Village/SBVMapIcon.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "skellady.SBVCP",
+			},
+		},
+//Compatibility Mods
+// Always Raining in the Valley SBV
+		{
+			"Action": "EditImage",
+			"Target": "Mods/skellady.SBVCP/SBVMap",
+			"FromFile": "assets/Maps/Sunberry Village/Always Raining in the Valley SBV/{{Season}}_SBVMap.png",
+			"PatchMode": "Overlay",
+			"FromArea": {
+                "X": 12,
+                "Y": 37,
+                "Width": 15,
+                "Height": 23
+            },
+            "ToArea":  {
+                "X": 48,
+                "Y": 78,
+                "Width": 15,
+                "Height": 23
+            },
+			"When": {
+				"HasMod |contains=skellady.SBVCP": true,
+				"HasMod |contains=Himetarts.ARV.CP": true
+			},
+		},
+//[NPC] Ripley
+		{
+			"Action": "EditImage",
+			"Target": "Mods/skellady.SBVCP/SBVMap",
+			"FromFile": "assets/Maps/Sunberry Village/[NPC] Ripley/{{Season}}_SBVMap.png",
+			"PatchMode": "Overlay",
+			"FromArea": {
+                "X": 5,
+                "Y": 86,
+                "Width": 26,
+                "Height": 26
+            },
+            "ToArea":  {
+                "X": 41,
+                "Y": 122,
+                "Width": 26,
+                "Height": 26
+            },
+			"When": {
+				"HasMod |contains=skellady.SBVCP": true,
+				"HasMod |contains=Clara.Ripley": true
+			},
+		},
+	],
+}

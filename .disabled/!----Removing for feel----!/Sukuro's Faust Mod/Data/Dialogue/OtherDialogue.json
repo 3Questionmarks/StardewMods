@@ -1,0 +1,23 @@
+{
+	"Changes": [
+		{//Elliott
+			"LogName": "Elliott Additional Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries": {
+				"eventSeen_95790305_memory_oneweek": "{{i18n:Elliott.FaustFriendship.OneWeek}}",
+				"eventSeen_95790305_memory_twoweeks": "{{i18n:Elliott.FaustFriendship.TwoWeeks}}",
+				"eventSeen_95790305_memory_fourweeks": "{{i18n:Elliott.FaustFriendship.FourWeeks}}",
+			}
+		},
+		{
+			"LogName": "Elliott Additional Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"When": { "HasSeenEvent |contains=95790305": true },
+			"Entries": {
+				"dating_Elliott": "{{i18n:Elliott.DatingElliott.Faust}}",
+			}
+		},
+	]
+}

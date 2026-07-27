@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="1">
+ <tileset firstgid="1" name="Interior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source=".townInterior.png" width="512" height="1088"/>
+  <tile id="491">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="523">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="546">
+   <animation>
+    <frame tileid="546" duration="500"/>
+    <frame tileid="547" duration="500"/>
+    <frame tileid="548" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="553">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="581">
+   <animation>
+    <frame tileid="581" duration="250"/>
+    <frame tileid="550" duration="250"/>
+    <frame tileid="581" duration="250"/>
+    <frame tileid="582" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1109">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1393">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2177" name="Xiddav" tilewidth="16" tileheight="16" tilecount="648" columns="18">
+  <image source=".Xiddav_Indoor.png" width="288" height="576"/>
+  <tile id="1">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="40">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="57">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="72">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="75">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="91">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="94">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="108">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="127">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2825" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
+  <image source=".walls_and_floors.png" width="256" height="688"/>
+ </tileset>
+ <tileset firstgid="3513" name="N3cro92_Indoor" tilewidth="16" tileheight="16" tilecount="120" columns="10">
+  <image source=".N3cro92_Indoor.png" width="160" height="192"/>
+  <tile id="83">
+   <animation>
+    <frame tileid="83" duration="180"/>
+    <frame tileid="80" duration="180"/>
+    <frame tileid="81" duration="180"/>
+    <frame tileid="80" duration="180"/>
+    <frame tileid="82" duration="180"/>
+    <frame tileid="80" duration="180"/>
+    <frame tileid="83" duration="180"/>
+   </animation>
+  </tile>
+  <tile id="96">
+   <animation>
+    <frame tileid="96" duration="180"/>
+    <frame tileid="90" duration="180"/>
+    <frame tileid="92" duration="180"/>
+    <frame tileid="90" duration="180"/>
+    <frame tileid="94" duration="180"/>
+    <frame tileid="90" duration="180"/>
+    <frame tileid="96" duration="180"/>
+   </animation>
+  </tile>
+  <tile id="97">
+   <animation>
+    <frame tileid="97" duration="180"/>
+    <frame tileid="91" duration="180"/>
+    <frame tileid="93" duration="180"/>
+    <frame tileid="91" duration="180"/>
+    <frame tileid="95" duration="180"/>
+    <frame tileid="91" duration="180"/>
+    <frame tileid="97" duration="180"/>
+   </animation>
+  </tile>
+  <tile id="100">
+   <animation>
+    <frame tileid="100" duration="180"/>
+    <frame tileid="101" duration="180"/>
+    <frame tileid="102" duration="180"/>
+    <frame tileid="103" duration="180"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="3633" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source=".townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <layer id="2" name="Back" width="6" height="9">
+  <data encoding="csv">
+0,266,267,267,267,267,
+0,266,267,267,267,267,
+0,266,113,0,0,220,
+0,1049,1049,1049,1049,1049,
+0,536871961,1081,1081,1081,3758097433,
+0,536871961,1081,1081,1081,3758097433,
+0,536871961,1081,1081,1081,3758097433,
+0,3221226521,3221226521,3221226521,3221226521,3221226521,
+0,0,0,233,0,0
+</data>
+ </layer>
+ <layer id="1" name="Back2" width="6" height="9">
+  <data encoding="csv">
+0,2881,2881,2881,2881,2881,
+0,2897,2897,2897,2897,2897,
+0,2913,0,0,0,0,
+0,199,0,0,0,262,
+0,0,0,0,0,262,
+0,0,0,0,0,262,
+0,0,0,0,0,262,
+0,0,0,0,0,262,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="16" name="Back3" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,3520,0,
+0,0,0,0,3530,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="9" name="Back"/>
+ <layer id="3" name="Buildings" width="6" height="9">
+  <data encoding="csv">
+33,42,0,0,0,156,
+65,80,81,81,81,188,
+65,112,215,113,113,220,
+65,144,726,3586,3577,3567,
+65,3826,0,0,0,0,
+65,714,0,0,0,0,
+65,746,0,0,0,0,
+161,535,0,0,0,0,
+1,1,97,0,131,1
+</data>
+ </layer>
+ <layer id="4" name="Buildings2" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,3762,0,0,3556,3557,
+0,3794,0,0,3566,3567,
+0,3596,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="5" name="Buildings3" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,3577,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="14" name="Buildings4" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,3609,3610,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="15" name="Buildings5" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,3576,0,0,
+0,0,0,3586,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="Buildings"/>
+ <layer id="6" name="Front" width="6" height="9">
+  <data encoding="csv">
+0,0,3613,0,0,0,
+0,0,0,0,0,0,
+0,0,694,0,0,0,
+0,0,0,0,0,0,
+0,682,0,0,0,0,
+0,810,0,0,0,0,
+0,503,0,0,0,0,
+0,162,163,0,164,0,
+0,0,0,0,0,1
+</data>
+ </layer>
+ <objectgroup id="10" name="Front"/>
+ <layer id="7" name="Paths" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="11" name="Paths"/>
+ <layer id="8" name="AlwaysFront" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,3221229061,
+0,0,0,0,0,3221229051,
+0,0,2684358177,0,0,0,
+0,1073745413,0,0,0,0,
+0,1073745403,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,166,
+0,0,0,166,0,0
+</data>
+ </layer>
+ <objectgroup id="13" name="AlwaysFront"/>
+</map>

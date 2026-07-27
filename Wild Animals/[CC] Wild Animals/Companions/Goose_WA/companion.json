@@ -492,16 +492,15 @@
 
 "Sounds": [
 	{
-	"SoundName": "waterSlosh",
+	"SoundName": "WaterSlosh_WA_Sound",
 	"WhenToPlay": "Moving",
 	"TimeBetweenSound": 2000
 	},
 	{
-	"SoundName": "Duck",
-	"WhenToPlay": "Idle",
-	"Pitch": "5",
-	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.2
+	"SoundName": "Goose_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.4
 	}
 ]  
 }

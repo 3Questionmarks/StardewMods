@@ -1,0 +1,98 @@
+{
+  "ItemName": "Decorative Lantern",
+  "Type": "Furniture",
+  "TextureWidth": 16,
+  "TextureHeight": 16,
+  "ManualVariations": [
+    {
+      "Id": -1, 
+      "ChanceWeight": 0.9 
+    },
+    {
+      "Id": 0,
+      "Name": "Offering Tray 1",
+      "ChanceWeight": 0.1
+    },
+    {
+      "Id": 1,
+      "Name": "Offering Tray 2",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 2,
+      "Name": "Offering Tray 3",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 3,
+      "Name": "Offering Tray 4",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 4,
+      "Name": "Skull Candle 1",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 5,
+      "Name": "Skull Candle 2",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 6,
+      "Name": "Plant Propogation 1",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 7,
+      "Name": "Plant Propogation 2",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 8,
+      "Name": "Incense 1",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 9,
+      "Name": "Incense 2",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 10,
+      "Name": "Bird Skull",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 11,
+      "Name": "Mushroom Terrarium",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 12,
+      "Name": "Skull Terrarium",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 13,
+      "Name": "Crystal Ball",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 14,
+      "Name": "Open Book 1",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 15,
+      "Name": "Open Book 2",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 16,
+      "Name": "Open Book 3",
+      "ChanceWeight": 0.5
+    }
+
+  ]
+}

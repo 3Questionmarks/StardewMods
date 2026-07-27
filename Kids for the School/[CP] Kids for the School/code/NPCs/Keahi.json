@@ -1,0 +1,39 @@
+{   
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Keahi",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Keahi/Keahi.png",
+            "When": {
+                "HasMod| contains=Rafseazz.RSVCP": "true"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Keahi",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Keahi/Keahi1.png",
+            "Patchmode": "Overlay",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Rafseazz.RSVCP": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "keahi_read_left": "31/31/31"
+            }
+        },
+        {	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.26": "{{i18n:Seat_Keahi}}" },
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Rafseazz.RSVCP": "true"
+            }
+        }
+    ]
+}

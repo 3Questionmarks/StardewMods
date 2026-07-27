@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Connecting Bookshelves",
+  "Author": "skellady",
+  "Version": "1.0.0",
+  "Description": "Adds the connecting bookshelves from town interior in different colors.",
+  "UniqueID": "skellady.bookshelves",
+  "UpdateKeys": [ "Nexus:18129" ],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.AlternativeTextures",
+    "MinimumVersion": "6.9.0"
+  }
+}

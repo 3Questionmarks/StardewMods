@@ -1,0 +1,926 @@
+{
+/*CHANGE NOTES*/
+
+//---------------------------
+// === No Changes (0.8.4) ===
+//---------------------------
+
+//---------------------------
+// === Keys Added (0.8.3) ===
+//---------------------------
+
+//--The Friendly Snowman(Jack) (Nexus 42877)
+
+  "event022.Jack01": "Hey!",
+  "event022.Jack02": "You dropped something!",
+  "event022.Ayeisha01": "Oh, my drink!",
+  "event022.Ayeisha02": "Thanks @. If you hadn't called out, I would have had to buy another one.",
+  "event022.Farmer01": "You're welcome. Have a nice day.",
+  "event022.Farmer02": "It wasn't me, it was the snowman!",
+  "event022.Ayeisha03": "I hope you have a nice day too. See you later.",
+  "event022.Ayeisha04": "Very Funny...$h",
+  "event022.Ayeisha05": "...Anyway, I hope you have a nice day. See you later.",
+
+//---------------------------
+// === Keys Added (0.8.2) ===
+//---------------------------
+
+//--Eloise and Duck (Nexus 5787)
+  "event021.Ayeisha01": "You're quite persistent duck.$h",
+  "event021.Eloise01": "Hi Miss Ayeisha!",
+  "event021.Ayeisha02": "Hello Eloise.",
+  "event021.Eloise02": "The Emperor seems to like you.",
+  "event021.Ayeisha03": "Is that your name for him?#$b#And you're right! He does seem to...$h#$b#...or he just thinks I have food.$h",
+  "event021.Ayeisha04": "I just hope he doesn't follow me home, I don't think he would like my cat.$h",
+  "event021.Eloise03": "That won't be good.$s",
+  "event021.Eloise04": "Oh! I have some grapes on me. I'll distract him and you can make a getaway!",
+  "event021.Ayeisha05": "Thank you, that would be very helpful.",
+  "event021.Eloise05": "Hi Mr. Emperor, I've got some grapes for you.",
+
+//---------------------------
+// === Dialogue Changed (0.8.2) ===
+//---------------------------
+
+/*  event011.Juna06 --- (it was duplicated\incorrect) */
+
+
+//---------------------------
+// === Keys Added (0.8.1) ===
+//---------------------------
+  "Ayeisha.MapLabel15b": "~Ferngill Post~^Collection days are Monday to Friday.^Collection time is at 2:10am.^Nearest Post Office is located in Pelican Town.",
+
+  "LoveToken.Gift.Cambria": "Here you go. [421]$h",
+  "LoveToken.Sig.Cambria": "'A token of my love - Cambria xxx'",
+  "LoveToken.Gift.Keanu": "Here you go. [394]$h",
+  "LoveToken.Sig.Keanu": "'A token of my love - Keanu xxx'",
+  "LoveToken.Gift.Dale": "Here you go. [611]$h",
+  "LoveToken.Sig.Dale": "'A token of my love - Dale xxx'",
+  "LoveToken.Gift.Corwin": "Here you go. [(F)1367]$h",
+  "LoveToken.Sig.Corwin": "'A token of my love - Corwin xxx'",
+  "LoveToken.Gift.Quinn": "Here you go. [595]$h",
+  "LoveToken.Sig.Quinn": "'A token of my love - Quinn xxx'",
+  "LoveToken.Gift.Nora": "Here you go. [60]$h",
+  "LoveToken.Sig.Nora": "'A token of my love - Nora xxx'",
+
+//--Town Munincipal (Nexus 38698)
+  "event017.Alicia01": "Alicia",
+  "event017.Alicia02": "Good Evening Ayeisha.",
+  "event017.Ayeisha01": "Good Evening.#$b#Sid is ill today and so is not able to do the pickup. So I've been asked to take what you have back to the depot.",
+  "event017.Alicia03": "I'm sorry to hear that! I hope he gets better soon.#$b#Everything's in the back.#$b#Here are the keys.",
+  "event017.Ayeisha02": "Thanks.",
+  "event017.Ayeisha03": "Oh no! The bulb has died.$s#$b#Fortunately I can just about make things out.",
+  "event017.Ayeisha04": "...$6#$b#This town really does love to send odd shaped packages!$s",
+  "event017.Ayeisha05": "At least they're not too heavy.",
+  "event017.Ayeisha06": "Urgh. Spoke to soon.$s#$b#At least it's the end of the day.",
+  "event017.Ayeisha07": "That's all of them.#$b#Time to head back to the depot and then home for a nice bath.$h",
+
+//--Krobus Delivery
+  "event018.Ayeisha01": "A delivery for a 'Mr K.' at the sewer.$s",
+  "event018.Ayeisha02": "I guess I'll have to leave it here then.$s",
+
+//--Eastscarp Duck Encounter (Nexus 5787)
+  "event019.Ayeisha01": "Hello duck.$h",
+  "event019.Ayeisha02": "I'm sorry, I don't have anything for you.",
+
+//--Spork Interaction (Nexus 23979) -Note- Ayeisha is talking to a dog.
+  "event020.Ayeisha01": "What's the matter boy?$u#$b#Has Joja caused another mine collapse?$u#$b#Has the Governor stolen the town's money?$u",
+  "event020.Ayeisha02": "Theft at the museum?$u#$b#A tree has fallen onto the tracks?$u",
+  "event020.Ayeisha03": "Has a nasty blue intruder come into your territory?$h",
+  "event020.Ayeisha04": "I knew it!$h#$b#Here, let me give you something.",
+  "event020.Ayeisha05": "That's why I carry a few emergency dog treats on me.",
+
+//---------------------------
+/*END OF CHANGE NOTES*/
+//---------------------------
+
+//Config
+
+  "config.section.Main Settings.Name": "Main Settings",
+  "config.section.Night Market Positions.Name": "Night Market Positions",
+  "config.section.Overide Mailbox/Mailslot Style.Name": "Overide Mailbox/Mailslot Style",
+
+  "config.Portrait.Name": "Portrait",
+  "config.Love Token Events.Name": "Love Token Events",
+  "config.Ayeisha Asks Pet Question.Name": "Ayeisha Asks Pet Question",
+  "config.Ayeishas Van.Name": "Ayeisha's Van",
+  "config.Town MB.Name": "Town's Mailbox.",
+  "config.Alex MB.Name": "Alex's Mailbox.",
+  "config.Clint MS.Name": "Clint's Mailslot.",
+  "config.Elliott MB.Name": "Elliott's Mailbox.",
+  "config.Gus MS.Name": "Gus's Mailslot.",
+  "config.Haley MB.Name": "Haley's Mailbox.",
+  "config.Harvey MS.Name": "Harvey's Mailslot.",
+  "config.Jodi MB.Name": "Jodi's Mailbox.",
+  "config.Leah MB.Name": "Leah's Mailbox.",
+  "config.Lewis MB.Name": "Lewis's Mailbox.",
+  "config.Marnie MB.Name": "Marnie's Mailbox.",
+  "config.Pam MB.Name": "Pam's Mailbox.",
+  "config.Robin MB.Name": "Robin's Mailbox.",
+  "config.Pierre MS.Name": "Pierre's Mailslot.",
+  "config.Willy MB.Name": "Willy's Mailbox.",
+
+  "config.Portrait.Description": "Change Ayeisha's Portrait Picture.",
+  "config.Love Token Events.Description": "Turns on/off Love Token Delivery Events.",
+  "config.Ayeisha Asks Pet Question.Description": "Ayeisha replaces Marnie when asking the player if they want to adopt a pet.",
+  "config.Ayeishas Van.Description": "Override Ayeisha's Van Style.",
+  "config.NightMarket15x.Description": "Night Market Day 15 X Co-Ordinate",
+  "config.NightMarket15y.Description": "Night Market Day 15 Y Co-Ordinate",
+  "config.NightMarket16x.Description": "Night Market Day 16 X Co-Ordinate",
+  "config.NightMarket16y.Description": "Night Market Day 16 Y Co-Ordinate",
+  "config.NightMarket17x.Description": "Night Market Day 17 X Co-Ordinate",
+  "config.NightMarket17y.Description": "Night Market Day 17 Y Co-Ordinate",
+  "config.Town MB.Description": "Override Town's Public Mailbox.",
+  "config.Alex MB.Description": "Override Alex's Mailbox.",
+  "config.Clint MS.Description": "Override Clint's Mailslot.",
+  "config.Elliott MB.Description": "Override Elliott's Mailbox.",
+  "config.Gus MS.Description": "Override Gus's Mailslot.",
+  "config.Haley MB.Description": "Override Haley's Mailbox.",
+  "config.Harvey MS.Description": "Override Harvey's Mailslot.",
+  "config.Jodi MB.Description": "Override Jodi's Mailbox.",
+  "config.Leah MB.Description": "Override Leah's Mailbox.",
+  "config.Lewis MB.Description": "Override Lewis's Mailbox.",
+  "config.Marnie MB.Description": "Override Marnie's Mailbox.",
+  "config.Pam MB.Description": "Override Pam's Mailbox.",
+  "config.Robin MB.Description": "Override Robin's Mailbox.",
+  "config.Pierre MS.Description": "Override Pierre's Mailslot.",
+  "config.Willy MB.Description": "Override Willy's Mailbox.",
+
+//Main Mod
+//Dispo
+  "name.Ayeisha": "Ayeisha",
+
+//Items
+
+  "item.displayName.LostRing": "Lost Ring",
+  "item.description.LostRing": "This ring belongs to Ayeisha.",
+
+  "item.displayName.MissingEnvelope": "Missing Envelope",
+  "item.description.MissingEnvelope": "This is the envelope Ayeisha lost in the wind.",
+
+  "item.displayName.RidgesidePackage": "Ridgeside Package",
+  "item.description.RidgesidePackage": "A Package to deliver to a resident of Ridgeside",
+
+//Quests
+
+  "quest.AyeishaLostRing01": "Ayeisha's Lost Ring",
+  "quest.AyeishaLostRing02": "Ayeisha has lost her ring and would like help to find it.",
+  "quest.AyeishaLostRing03": "Find Ayeisha's lost ring.",
+  "quest.AyeishaLostRing04": "You found it! Thank you so much! I thought I'd lost it forever.$h",
+
+  "quest.AyeishaMissingEnvelope01": "Missing Envelope",
+  "quest.AyeishaMissingEnvelope02": "The wind blew an envelope out of Ayeisha's hand and she would like help retrieving it.",
+  "quest.AyeishaMissingEnvelope03": "Find the missing envelope.",
+  "quest.AyeishaMissingEnvelope04": "You found it! Thanks! Time for me to deliver it!$h",
+
+  "quest.Package.Description": "Ayeisha asked me to help her deliver some packages.",
+
+  "quest.Package.Kiarra01": "Deliver Package to Kiarra",
+  "quest.Package.Kiarra02": "Bring Package to Kiarra.",
+  "quest.Package.Kiarra03": "Hey, that's my package! How did you end up with this, cousin?#$b#Really? Well, I guess everyone gets a little lost sometimes! Thanks for bringing it by!$1",
+
+  "quest.Package.Alissa01": "Deliver Package to Alissa",
+  "quest.Package.Alissa02": "Bring Package to Alissa.",
+  "quest.Package.Alissa03": "A package?  But I don't remember ordering anything....#$b#Well, I guess I'll open it later and let you know if it's anything interesting!$1",
+
+  "quest.Package.Pika01": "Deliver Package to Pika",
+  "quest.Package.Pika02": "Bring Package to Pika.",
+  "quest.Package.Pika03": "Oh? Are you taking a part time job now, @?$1#$b#You brought this just in time, I was almost out of dried kukui!$1",
+
+  "quest.Package.Philip01": "Deliver Package to Philip",
+  "quest.Package.Philip02": "Bring Package to Philip.",
+  "quest.Package.Philip03": "Hey, this is my Incrediman order! Thanks, @!$1#$b#Want to come by later and read a bit of it with me?$11",
+
+  "quest.Package.Carmen01": "Deliver Package to Carmen",
+  "quest.Package.Carmen02": "Bring Package to Carmen.",
+  "quest.Package.Carmen03": "Ay, that's my package!$3#$b#Did you bring it all the way out here for me? Muy agradecida!$1",
+
+  "quest.Package.Ayeisha01": "Deliver Package to ?????",
+  "quest.Package.Ayeisha02": "The package is missing a name, better bring it back to Ayeisha.",
+  "quest.Package.Ayeisha03": "Bring Package to Ayeisha.",
+  "quest.Package.Ayeisha04": "Thanks, I'll take this one back to the depot and get it returned to sender.",
+
+//Mails
+
+  "note.AyeishaLostRing01": "HELP:^I have lost my favorite Ring! If you find it, please let me know!^   -Ayeisha",
+  "note.AyeishaLostRing02": "Ayeisha Lost Her Ring",
+  "note.AyeishaMissingEnvelope01": "Hi @!^I know this is an odd note to leave you, but the wind blew an envelope out of my hand and I don't know where it went. If you find it, please grab it for me.^   -Ayeisha",
+  "note.AyeishaMissingEnvelope02": "Missing Envelope",
+
+//Gift Tastes
+
+  "Ayeisha.Gift.Love": "Thank you so much! I love it! $l#",
+  "Ayeisha.Gift.Like": "Thank you. This is very nice. $h#",
+  "Ayeisha.Gift.Neutral": "Thank you.",
+  "Ayeisha.Gift.Dislike": "Umm... Thanks. $s#",
+  "Ayeisha.Gift.Hate": "I'm going to deliver this straight to the recycling bin. $a#",
+
+//Map Labels
+
+  "Ayeisha.MapLabel01": "-Willy's Fish Shop-",
+  "Ayeisha.MapLabel02": "'Elliott' has been painted on in a cursive script.",
+  "Ayeisha.MapLabel03": "24 Mountain Road#-The Carpenter's Shop-",
+  "Ayeisha.MapLabel04": "-Marnie's Ranch-",
+  "Ayeisha.MapLabel05": "-The Cottage-#An L has been carved underneath.",
+  "Ayeisha.MapLabel06": "1 River Road",
+  "Ayeisha.MapLabel07": "2 River Road",
+  "Ayeisha.MapLabel08": "1 Willow Lane",
+  "Ayeisha.MapLabel09": "2 Willow Lane",
+  "Ayeisha.MapLabel10": "The paint has rusted off.",
+  "Ayeisha.MapLabel11": "Mail",
+  "Ayeisha.MapLabel12": "-Mayor's Manor-",
+  "Ayeisha.MapLabel13": "Stardew Valley Museum and Library",
+  "Ayeisha.MapLabel14": "Mail and Prescriptions",
+  "Ayeisha.MapLabel15": "~Ferngill Post~^Collection days are Monday to Friday.^Collection time is at 2:10am.^Nearest Post Office is located in Zuzu City.",
+  "Ayeisha.MapLabel16": "It's rude to look at a lady's chest.", /*Joke is about a chest of drawers that is next to her.*/
+
+//Rain Dialogue
+
+  "Ayeisha.Rainy01": "I love the smell and sound of the rain. I find it really relaxing.#$b#Even if I am walking in it.$h#$e#I guess you have to work in the rain a lot too.",
+
+//Film Reactions
+//Brave Little Sapling
+
+  "Movie.Before01": "This movie looks really cute and fun",
+  "Movie.During01": "I like the animation style.",
+  "Movie.After01": "That was a really sweet movie.",
+
+//Journey of the Praire King
+
+  "Movie.Before02": "I remember playing the game, I can't remember the plot tho.",
+  "Movie.During02": "Haha! This is great! $h",
+  "Movie.After02": "That movie was great! Makes me want to play the game again now! $h",
+
+//Mysterium
+
+  "Movie.Before03": "I don't know anything about this movie. It looks unusual.",
+  "Movie.During03": "This movie is weird. $u",
+  "Movie.After03": "That was a very odd movie. I kind of liked it.",
+
+//Miracle at Coldstar Ranch
+
+  "Movie.Before04": "I remember seeing this on TV as a child. I don't think I liked it much but maybe my taste has changed.",
+  "Movie.After04": "Did you enjoy it? I don't think my opinion of it has changed sadly. $s",
+
+//Natural Wonders
+
+  "Movie.Before05": "I've been wanting to see this since I saw a trailer for it. $h",
+  "Movie.During05": "This is really fascinating. $u",
+  "Movie.After05": "Thanks for inviting me. I loved it! $h",
+
+//Wumbus
+
+  "Movie.Before06": "I love sci-fi movies.",
+  "Movie.During06": "Hahahaha $h",
+  "Movie.After06": "That movie was hilarious. I had a great time. Thanks for inviting me. $h",
+
+//Howls in the Rain
+
+  "Movie.Before07": "I don't really like horror movies but I'll try to like it.",
+  "Movie.During07": "... $6",
+  "Movie.After07": "Sorry I really didn't enjoy that at all. I had to close my eyes for most of it. $s",
+
+//Zuzu City Express
+
+  "Movie.Before08": "I've not seen a black and white movie for a long time. I don't think I've ever seen this one.",
+  "Movie.After08": "That was nice. I can see why it's a classic.",
+
+//TheLimeyDragon Movie
+
+  "Movie.Before09": "Oh! I know the director of that movie!",
+  "Movie.During09": "I'd like to see this!",
+  "Movie.After09": "That was fun! I'd see it again. $h",
+
+//Thief of Justice Movie
+
+  "Movie.Before10": "I don't know anything about this movie.",
+  "Movie.After10": "That movie was good, but I think I've seen better.",
+
+//Festival Secrets
+
+  "Festival.Spring13": "You Found Me!#$b#%Game Score is now 28/2000",
+  "Festival.Fall16": "I see you're getting passed the barriers again.#$b#It is far less crowded over here.",
+  "Festival.Fall27": "oOoOoOoOoOh I'm a ghost! $3",
+
+//DELIVERY EVENTS
+//--Pierre Secret Stash Delivery
+
+  "event001.Ayeisha01": "Hi Pierre! I have a package for you.",
+  "event001.Pierre01": "Thank you Ayeisha. However can you be a little more discreet next time.$s",
+  "event001.Pierre02": "Because...$4",
+  "event001.Pierre03": "...I have some deliveries that I would like to keep secret.$4",
+  "event001.Ayeisha02": "Sure thing.$h",
+  "event001.Pierre04": "Now I need to hide this somewhere.",
+
+//--Willy Magazine Delivery
+
+  "event002.Ayeisha01": "Hey Willy, I have some letters and your magazine subscription for you today.",
+  "event002.Willy01": "Ah... Me favorite magazine, The Ferngill Angler.$h#$b#But is there anythin' I can do for ya today?",
+  "event002.Ayeisha02": "There is actually. Do you have any fresh sardines? I want a couple as a small treat for my cats.",
+  "event002.Willy02": "Give me a moment.",
+  "event002.Willy03": "Here ya go, two fresh sardines.$h",
+  "event002.Ayeisha03": "Thanks Willy. How much do I owe you?",
+  "event002.Willy04": "Nothin', they're on me.$h",
+  "event002.Ayeisha04": "Oh wow! Thanks.$h",
+  "event002.Willy05": "Me pleasure.$h",
+
+//--Lewis Lucky Shorts Delivery
+
+  "event003.Ayeisha01": "Hello Lewis. I think this package is for you.",
+  "event003.Ayeisha02": "The label has been damaged but it looks like your address.",
+  "event003.Ayeisha03": "Seems to be from Lucky Shorts C...",
+  "event003.Lewis01": "Yep.$2",
+  "event003.Lewis02": "That's mine.$5",
+  "event003.Lewis03": "Thank you.$2",
+
+//--Jean and Jorts Food Delivery
+
+  "event004.Ayeisha01": "Hi you two!$h",
+  "event004.Ayeisha02": "Have you both been behaving?$h",
+  "event004.JeanJorts01": "Yes",
+  "event004.Ayeisha03": "Glad to hear it.$h#$b#My cat wasn't keen on this cat food I bought him. So I wondered if you would like it?",
+  "event004.JeanJorts02": "Thanks!",
+  "event004.Ayeisha04": "I'm glad you both enjoyed it.$h",
+
+//--Vincent Delivery
+
+  "event005.Ayeisha01": "Hello there Vincent.",
+  "event005.Vincent01": "Hi Miss Ayeisha.",
+  "event005.Ayeisha02": "Looks like you have a small parcel today.",
+  "event005.Vincent02": "Thank you.$3",
+  "event005.Ayeisha03": "You're welcome.",
+  "event005.Vincent03": "Mom?$3",
+  "event005.Jodi01": "It must be the surprise I ordered for you. You can open it now if you like.",
+  "event005.Vincent04": "Wow! It's a cool shark!$1#$b#Thanks Mom! Can I play with it now?",
+  "event005.Jodi02": "You can.",
+  "event005.Vincent05": "Yay! Come on Sharky!$1",
+  "event005.Ayeisha04": "Looks like he enjoyed the gift, Jodi.",
+  "event005.Jodi03": "I am glad! He's been feeling low lately.#$b#Thanks Ayeisha for delivering it safely.",
+  "event005.Ayeisha05": "My pleasure.",
+  "event005.Jodi04": "Sorry, I best go inside. I don't want him to make too much of a mess. Hope you have a nice day.",
+  "event005.Ayeisha06": "You too.",
+
+//--Gus Drink Samples Delivery
+
+  "event006.Ayeisha01": "Hi Gus. I have a large package for you today.",
+  "event006.Gus01": "Great! My free drink samples arrived.$h#$b#Do you want to try one and let me know what you think?",
+  "event006.Ayeisha02": "Sure.",
+  "event006.Ayeisha03": "*blech* What was that?!$6",
+  "event006.Gus02": "Peanut butter soda.",
+  "event006.Ayeisha04": "Tasted more like mud soda.$s",
+  "event006.Gus03": "I'm sorry.$s#$b#Let me make it up to you with something nicer.",
+  "event006.Ayeisha05": "Thanks. I'm ahead of schedule and can use a 5-minute break.",
+
+//--Mister Gigner Fish Delivery (Nexus 5295)
+
+  "event007.Ayeisha01": "Hello Mr Ginger.",
+  "event007.MrGinger01": "Meow.",
+  "event007.Ayeisha02": "A little bird asked me to give you a package.$h",
+  "event007.MrGinger02": "Mreoow??$l",
+  "event007.Ayeisha03": "Let me open it for you.",
+  "event007.MrGinger03": "Mirp!$h",
+  "event007.Ayeisha04": "Oh look! It's one of your favorite fish and no bones!$h",
+  "event007.MrGinger04": "Meooow meooww!$l",
+  "event007.MrGinger05": "Mrr$6",
+  "event007.Ayeisha05": "I'm glad you like it!$h",
+
+//--Marnie Lew Lew Gift Delivery
+
+  "event008.Ayeisha01": "Morning Marnie.",
+  "event008.Marnie01": "Morning Ayeisha. How can I help you this morning?",
+  "event008.Ayeisha02": "I just have a special delivery for you today.",
+  "event008.Marnie02": "Special delivery?$s",
+  "event008.Marnie03": "I didn't order anything?$s",
+  "event008.Marnie04": "Awww.. It's from LewLew. I told him not to.$h",
+  "event008.Ayeisha03": "LewLew?$u",
+  "event008.Marnie05": "...$l#$b#Did I say LewLew? I meant...$u",
+  "event008.Ayeisha04": "It's OK. You don't have to worry. I'm sworn to secrecy.$h",
+
+//--Maru Heavy Package Delivery
+
+  "event009.Ayeisha01": "Afternoon Maru.",
+  "event009.Maru01": "Hey Ayeisha.#$b#Oooh! My new package has arrived!$h",
+  "event009.Ayeisha02": "It has!#$b#I just hope you're not ordering many more heavy packages. It's very tiring getting them up here.$s",
+  "event009.Maru02": "I'm sorry Ayeisha. I have a few projects I'm working on at the moment.$s",
+  "event009.Maru03": "I had a thought!$u#$b#In the future you can drop all my packages at the clinic.#$b#Harvey won't mind.$h",
+  "event009.Ayeisha03": "Thanks that will be a great help.$h#$b#Sorry but I must get going. I've got a lot more deliveries to make. Hope you enjoy the rest of your day.",
+  "event009.Maru04": "You too.",
+  "event009.Ayeisha04": "Hello {{PlayerName}}",
+
+//--Jacob Animal Drug Delivery (Nexus 5787)
+
+  "event010.Ayeisha01": "... and sign here.",
+  "event010.Ayeisha02": "Here too.",
+  "event010.Richie01": "Sign here! Sign here!",
+  "event010.Ayeisha03": "And just one more here.",
+  "event010.Ayeisha04": "That's it. Nothing else needed. $h",
+  "event010.Jacob01": "Thanks Ayeisha, you're a gem. I didn't realize I'd run so low on Enrofloxacin until it was almost too late.",
+  "event010.Ayeisha05": "That's ok. I always try to get your and Harvey's urgent deliveries done first.#$b#I can also always tell when the delivery is veterinary drugs.#$b#When it's a food package all the pets in the town follow me around. $h",
+  "event010.Jacob02": "Hah yes, they do that, don't they?$h",
+  "event010.Jacob03": "Oh, before I forget - I picked up some new cat treats the other day.#$b#Princess Midnight loves them - and I'm sure your cats will too.$1",
+  "event010.Ayeisha06": "Awww thank you. It's very sweet of you. $l",
+  "event010.Richie02": "Ooh La La!",
+  "event010.Jacob04": "Thanks for that Richie... Sorry about him, he's just excited to have a visitor.",
+  "event010.Ayeisha07": "I must dash. I still have more deliveries to make. See you later Jacob.",
+  "event010.Jacob05": "Thanks Ayeisha. Have a good day.",
+  "event010.Richie03": "Hasta la vista Baby!",
+
+//--Juna Question (Nexus 8606)
+
+  "event011.Juna01": "Ayeisha! I've got a question for you.$6",
+  "event011.Ayeisha01": "Hello, sure?$3",
+  "event011.Juna02": "Why do I never see you deliver anything to the annoying purple's tower?",
+  "event011.Ayeisha02": "Sorry? Who?$3#$b#I don't know who or what that is.$2",
+  "event011.Juna03": "The decrepit tower in the forest, you know the one. Houses a very old, very annoying old man who calls himself a wizard.",
+  "event011.Ayeisha03": "Oh, that tower. I always thought that tower was pretty. However the reason I never go there is I just never have anything to deliver.",
+  "event011.Juna04": "Hm. If, hypothetically, one were to send something rather large and fragile to the tower, would that go through you as well?$3",
+  "event011.Ayeisha04": "Yes, yes it would. However it's also a good idea to mark it 'Fragile'.",
+  "event011.Juna05": "Interesting. And could one send something that goes bang?$1#$b#Hypothetically.$3",
+  "event011.Ayeisha05": "No!$5#$b#No, you can't send such things in the mail.$5",
+  "event011.Juna06": "*sigh*",
+  "event011.Juna07": "Oh well. Have a nice day then, I suppose.$2",
+  "event011.Ayeisha06": "I wish she wouldn't do that.$6",
+
+//--Susan (SVE) After Delivery
+
+  "event012.Ayeisha01": "...so are you happy that your mail delivery has gone back to normal?",
+  "event012.Susan01": "Oh I'm really glad you're hand delivering it again.",
+  "event012.Ayeisha02": "Oh? Why is that?$3",
+  "event012.Susan02": "When it was dropped off by the passing trains, I would find that it would get damaged.$s",
+  "event012.Ayeisha03": "That's not good. I'm sorry to hear that.$2",
+  "event012.Susan03": "It's ok. It's not your fault.#$b#However I am always finding things that fall off the trains that pass by.",
+  "event012.Ayeisha04": "What kind of things?$3",
+  "event012.Susan04": "All sorts! I even found a pair of green shoes once!#$b#However someone must take the stuff that falls off as it always vanishes within a few hours!",
+  "event012.Ayeisha05": "Only thing I am guilty of taking is some wild forage.$1#$b#However I always leave enough for the animals too.#$b#Anyway I must be off. See you later.",
+  "event012.Susan05": "See you later!",
+
+//--Ornithologist Guild Delivery (Note -- Kyle uses a Speak 'n' Spell)(Nexus 14510)
+
+  "event013.Ayeisha01": "Hello, is anyone there?",
+  "event013.Kyle01": "~ H-E-L-L-O ~",
+  "event013.Ayeisha02": "Err... $2#$b#You don't have a mailbox and I have some small packets here for you.",
+  "event013.Kyle02": "~ T-H-A-N-K Y-O-U ~$6",
+  "event013.Ayeisha03": "Erm... $2#$b#Should I just leave them on the counter? $2",
+  "event013.Kyle03": "~ Y-E-S P-L-E-A-S-E ~$6",
+  "event013.Ayeisha04": "OK, I've left them on the counter for you.$2#$b#Hopefully next time I pop in we can meet face to face!",
+  "event013.Kyle04": "~ T-H-A-N-K Y-O-U ~$6",
+  "event013.Kyle05": "~ G-O-O-D-B-Y-E ~$6",
+
+//--Evelyn After Delivery
+
+  "event014.Evelyn01": "Ayeisha!",
+  "event014.Evelyn02": "Sorry dear, give me a few seconds!",
+  "event014.Evelyn03": "Good morning dear.",
+  "event014.Ayeisha01": "Good morning Evelyn. Can I help you?",
+  "event014.Evelyn04": "No no no. I'm just baking today and I have an extra cookie, I thought you'd like.$1",
+  "event014.Ayeisha02": "That's sweet of you and little snacks always give me a boost on long walks.",
+  "event014.Ayeisha03": "Thank you.",
+  "event014.Evelyn05": "I'll tell you the recipe one day.$1#$b#Oh my! I think I smell something burning, I better go inside. Have a nice day dear.",
+  "event014.Ayeisha04": "Bye Evelyn.",
+  "event014.Ayeisha05": "WHAT WAS THAT?! $6",
+  "event014.Ayeisha06": "...and it stole my cookie! $2",
+
+//--Kent Delivery
+  "event015.Ayeisha01": "Hello Kent! Here's your family's mail for today.",
+  "event015.Kent01": "Thanks Ayeisha$h#$b#How's work going?",
+  "event015.Ayeisha02": "Work is going well thanks.#$b#Altough we have caught a lot of suspicious packages at the depot lately.$s",
+  "event015.Kent02": "...Oh? What kind of things?",
+  "event015.Ayeisha03": "Just prohibited items, a few of them dangerous.$s#$b#People really do try to send -anything- in the mail.#$b#But I must dash, I've got quite a lot left to deliver.",
+  "event015.Kent03": "...Heh. People can be... careless.$s",
+  "event015.Ayeisha04": "They can. See you later.",
+  "event015.Kent04": "Bye Ayeisha.",
+
+//--Tilly Return to Sender
+  "event016.Tilly01": "Ayeisha!",
+  "event016.Tilly02": "Hi, Ayeisha! I got the two packages you delivered to my house earlier.$16#$b#Sadly, one of them is just a duplicate order I made by mistake.$s#$b#Can I give it to you now to return to sender?",
+  "event016.Ayeisha01": "Hi. Yes that's fine, as long as it's not been opened.",
+  "event016.Tilly03": "Thanks, you're a star.$h",
+  "event016.Ayeisha02": "May I ask what the duplicate order was?",
+  "event016.Tilly04": "It was a copy of 'Dewey Decimal Classification Volume 53' by the Ferngill Republic Lexicographical Society.$h",
+  "event016.Ayeisha03": "Ah, I can see why you don't need two copies of that.$s",
+  "event016.Tilly05": " I definitely don't and I have no idea who else would even want Volume 1.$h",
+  "event016.Tilly06": "Thanks for stopping by, Ayeisha.$h#$b#I have to get back to shelving returned books. I'll see you later.$16",
+  "event016.Ayeisha04": "See you later.",
+
+//Love Token Deliveries
+//Vanilla
+
+  "LoveToken.Greeting": "Good morning @. I have a special delivery for you today.",
+  "LoveToken.Note": "A note is attached:",
+
+  "LoveToken.Gift.Abigail": "Here you go.[66]$h",
+  "LoveToken.Sig.Abigail": "'A token of my love - Abigail xxx'",
+
+  "LoveToken.Gift.Emily": "Here you go.[62]$h",
+  "LoveToken.Sig.Emily": "'A token of my love - Emily xxx'",
+
+  "LoveToken.Gift.Haley": "Here you go.[421]$h",
+  "LoveToken.Sig.Haley": "'A token of my love - Haley xxx'",
+
+  "LoveToken.Gift.Leah": "Here you go.[348]$h",
+  "LoveToken.Sig.Leah": "'A token of my love - Leah xxx'",
+
+  "LoveToken.Gift.Maru": "Here you go.[72]$h",
+  "LoveToken.Sig.Maru": "'A token of my love - Maru xxx'",
+
+  "LoveToken.Gift.Penny": "Here you go.[376]$h",
+  "LoveToken.Sig.Penny": "'A token of my love - Penny xxx'",
+
+  "LoveToken.Gift.Alex": "Here you go.[446]$h",
+  "LoveToken.Sig.Alex": "'A token of my love - Alex xxx'",
+
+  "LoveToken.Gift.Elliott": "Here you go.[444]$h",
+  "LoveToken.Sig.Elliott": "'A token of my love - Elliott xxx'",
+
+  "LoveToken.Gift.Harvey": "Here you go.[348]$h",
+  "LoveToken.Sig.Harvey": "'A token of my love - Harvey xxx'",
+
+  "LoveToken.Gift.Sam": "Here you go.[562]$h",
+  "LoveToken.Sig.Sam": "'A token of my love - Sam xxx'",
+
+  "LoveToken.Gift.Sebastian": "Here you go.[84]$h",
+  "LoveToken.Sig.Sebastian": "'A token of my love - Sebastian xxx'",
+
+  "LoveToken.Gift.Shane": "Here you go.[446]$h",
+  "LoveToken.Sig.Shane": "'A token of my love - Shane xxx'",
+
+//SVE
+
+  "LoveToken.Gift.Claire": "Here you go.[421]$h",
+  "LoveToken.Sig.Claire": "'A token of my love - Claire xxx'",
+
+  "LoveToken.Gift.Olivia": "Here you go.[348]$h",
+  "LoveToken.Sig.Olivia": "'A token of my love - Olivia xxx'",
+
+  "LoveToken.Gift.Sophia": "Here you go.[595]$h",
+  "LoveToken.Sig.Sophia": "'A token of my love - Sophia xxx'",
+
+  "LoveToken.Gift.Victor": "Here you go.[551]$h",
+  "LoveToken.Sig.Victor": "'A token of my love - Victor xxx'",
+
+  "LoveToken.Gift.Lance": "Here you go.[797]$h",
+  "LoveToken.Sig.Lance": "'A token of my love - Lance xxx'",
+
+  "LoveToken.Gift.Scarlett": "Here you go.[70]$h",
+  "LoveToken.Sig.Scarlett": "'A token of my love - Scarlett xxx'",
+
+//Ridgeside Village
+
+  "LoveToken.Gift.Alissa": "Here you go. [60]$h",
+  "LoveToken.Sig.Alissa": "'A token of my love - Alissa xxx'",
+
+  "LoveToken.Gift.Corine": "Here you go. [591]$h",
+  "LoveToken.Sig.Corine": "'A token of my love - Corine xxx'",
+
+  "LoveToken.Gift.Flor": "Here you go. [64]$h",
+  "LoveToken.Sig.Flor": "'A token of my love - Flor xxx'",
+
+  "LoveToken.Gift.Ian": "Here you go. [446]$h",
+  "LoveToken.Sig.Ian": "'A token of my love - Ian xxx'",
+
+  "LoveToken.Gift.Jeric": "Here you go. [597]$h",
+  "LoveToken.Sig.Jeric": "'A token of my love - Jeric xxx'",
+
+  "LoveToken.Gift.Kenneth": "Here you go. [338]$h",
+  "LoveToken.Sig.Kenneth": "'A token of my love - Kenneth xxx'",
+
+  "LoveToken.Gift.Maddie": "Here you go. [586]$h",
+  "LoveToken.Sig.Maddie": "'A token of my love - Maddie xxx'",
+
+  "LoveToken.Gift.Philip": "Here you go. [86]$h",
+  "LoveToken.Sig.Philip": "'A token of my love - Philip xxx'",
+
+  "LoveToken.Gift.Shiro": "Here you go. [446]$h",
+  "LoveToken.Sig.Shiro": "'A token of my love - Shiro xxx'",
+
+  "LoveToken.Gift.Ysabelle": "Here you go. [72]$h",
+  "LoveToken.Sig.Ysabelle": "'A token of my love - Ysabelle xxx'",
+
+  "LoveToken.Gift.Daia": "Here you go. [64]$h",
+  "LoveToken.Sig.Daia": "'A token of my love - Daia xxx'",
+
+  "LoveToken.Gift.Kiarra": "Here you go. [348]$h",
+  "LoveToken.Sig.Kiarra": "'A token of my love - Kiarra xxx'",
+
+  "LoveToken.Gift.Jio": "Here you go. [797]$h",
+  "LoveToken.Sig.Jio": "'A token of my love - Jio xxx'",
+
+  "LoveToken.Gift.Sean": "Here you go. [348]$h",
+  "LoveToken.Sig.Sean": "'A token of my love - Sean xxx'",
+
+  "LoveToken.Gift.Paula": "Here you go. [421]$h",
+  "LoveToken.Sig.Paula": "'A token of my love - Paula xxx'",
+
+  "LoveToken.Gift.Anton": "Here you go. [459]$h",
+  "LoveToken.Sig.Anton": "'A token of my love - Anton xxx'",
+
+  "LoveToken.Gift.June": "Here you go. [421]$h",
+  "LoveToken.Sig.June": "'A token of my love - June xxx'",
+
+  "LoveToken.Gift.Bryle": "Here you go. [444]$h",
+  "LoveToken.Sig.Bryle": "'A token of my love - Bryle xxx'",
+
+  "LoveToken.Gift.Faye": "Here you go. [348]$h",
+  "LoveToken.Sig.Faye": "'A token of my love - Faye xxx'",
+
+  "LoveToken.Gift.Irene": "Here you go. [222]$h",
+  "LoveToken.Sig.Irene": "'A token of my love - Irene xxx'",
+
+  "LoveToken.Gift.Zayne": "Here you go. [221]$h",
+  "LoveToken.Sig.Zayne": "'A token of my love - Zayne xxx'",
+
+//Boarding House
+
+  "LoveToken.Gift.Gregory": "Here you go. [82]$h",
+  "LoveToken.Sig.Gregory": "'A token of my love - Gregory xxx'",
+
+  "LoveToken.Gift.Sheila": "Here you go. [459]$h",
+  "LoveToken.Sig.Sheila": "'A token of my love - Sheila xxx'",
+
+//Stray Catfe
+
+  "LoveToken.Gift.Tabitha": "Here you go. [222]$h",
+  "LoveToken.Sig.Tabitha": "'A token of my love - Tabitha xxx'",
+
+  "LoveToken.Gift.Theo": "Here you go. [591]$h",
+  "LoveToken.Sig.Theo": "'A token of my love - Theo xxx'",
+
+//Other
+
+  "LoveToken.Gift.John": "Here you go. [348]$h",
+  "LoveToken.Sig.John": "'A token of my love - John xxx'",
+
+  "LoveToken.Gift.Nikolai": "Here you go. [70]$h",
+  "LoveToken.Sig.Nikolai": "'A token of my love - Nikolai xxx'",
+
+  "LoveToken.Gift.Lyell": "Here you go. [84]$h",
+  "LoveToken.Sig.Lyell": "'A token of my love - Lyell xxx'",
+
+  "LoveToken.Gift.Juliet": "Here you go. [272]$h",
+  "LoveToken.Sig.Juliet": "'A token of my love - Juliet xxx'",
+
+  "LoveToken.Gift.Jasper": "Here you go. [72]$h",
+  "LoveToken.Sig.Jasper": "'A token of my love - Jasper xxx'",
+
+  "LoveToken.Gift.Charlie": "Here you go. [64]$h",
+  "LoveToken.Sig.Charlie": "'A token of my love - Charlie xxx'",
+
+  "LoveToken.Gift.Riley": "Here you go. [104]$h",
+  "LoveToken.Sig.Riley": "'A token of my love - Riley xxx'",
+
+  "LoveToken.Gift.Jade": "Here you go. [577]$h",
+  "LoveToken.Sig.Jade": "'A token of my love - Jade xxx'",
+
+  "LoveToken.Gift.Delores": "Here you go. [62]$h",
+  "LoveToken.Sig.Delores": "'A token of my love - Delores xxx'",
+
+  "LoveToken.Gift.Aspen": "Here you go. [595]$h",
+  "LoveToken.Sig.Aspen": "'A token of my love - Aspen xxx'",
+
+  "LoveToken.Gift.Aideen": "Here you go. [597]$h",
+  "LoveToken.Sig.Aideen": "'A token of my love - Aideen xxx'",
+
+  "LoveToken.Gift.Stirling": "Here you go. [421]$h",
+  "LoveToken.Sig.Stirling": "'A token of my love - Stirling xxx'",
+
+  "LoveToken.Gift.KatrielleGlitch": "Here you go. [819]$h",
+  "LoveToken.Sig.KatrielleGlitch": "'K khsiy sp dr pzgi - K xxx'", //Should check how translations deal with her glitch days.
+
+  "LoveToken.Gift.Katrielle": "Here you go. [819]$h",
+  "LoveToken.Sig.Katrielle": "'A token of my love - K xxx'",
+
+  "LoveToken.Gift.Barron": "Here you go. [60]$h",
+  "LoveToken.Sig.Barron": "'A token of my love - Barron xxx'",
+
+  "LoveToken.Gift.Sydney": "Here you go. [797]$h",
+  "LoveToken.Sig.Sydney": "'A token of my love - Sydney xxx'",
+
+  "LoveToken.Gift.Tilly": "Here you go. [797]$h",
+  "LoveToken.Sig.Tilly": "'A token of my love - Tilly xxx'",
+
+  "LoveToken.Gift.Arumi": "Here you go. [336]$h",
+  "LoveToken.Sig.Arumi": "'A token of my love - Arumi xxx'",
+
+//EVENTS
+//--Spring and Autumn  Seed Gift
+
+  "Ayeisha.Event.Farm01": "Hi @. I have a left over pack of blue jazz seeds and I thought you could make use of them.[429]",
+  "Ayeisha.Event.Farm02": "Hello @. I have a spare pack of fairy rose seeds and I thought the bees on your farm would love them.[425]",
+  "Ayeisha.Event.Farm03": "Hey @!!! I have an odd question for you.$s#$b#Have seen any strange creatures around lately?$s",
+  "Ayeisha.Event.Farm04": "Yes, I have!",
+  "Ayeisha.Event.Farm05": "No, I haven't!",
+  "Ayeisha.Event.Farm06": "Only Linus.",
+  "Ayeisha.Event.Farm07": "Really?!$u#$b#I think I may have seen it too then!$h#$b#I saw this strange creature go into some bushes near my van this morning.#$b#I thought I'd let you know in case it damaged your crops.",
+  "Ayeisha.Event.Farm08": "Oh?$s#$b#I thought I saw this strange creature go into some bushes near my van this morning.$s#$b#I thought I'd let you know in case it damaged your crops.$s",
+  "Ayeisha.Event.Farm09": "....$a#$b#...So I thought I saw this strange creature go into some bushes near my van this morning.$s#$b#I thought I'd let you know in case it damaged your crops.$s",
+
+//Forest
+
+  "Ayeisha.Event.Forest01":  "Earlier Today...",
+  "Ayeisha.Event.Forest02": "Odd.$s",
+  "Ayeisha.Event.Forest03": "I wonder why I had to deliver 5 packages to this house today.$s#$b#Nobody has lived here for years.$s",
+  "Ayeisha.Event.Forest04": "I hope someone isn't playing a trick on me.$s",
+  "Ayeisha.Event.Forest05": "Well I've done a good job and the packages should be safe.",
+  "Ayeisha.Event.Forest06": "Now I just need to trek back into town. Hopefully I will find some nice forage on the way.$h",
+  "Ayeisha.Event.Forest07": "Don't Worry!",
+  "Ayeisha.Event.Forest08": "The boxes are water proof!",
+
+//Bus Stop
+
+  "Ayeisha.Event.Bustop01": "*Grumble Grumble*",
+  "Ayeisha.Event.Bustop02": "Oh! Hi @. Sorry if you overheard my grumbling.$2#$b#I just noticed I have been given some packages for Ridgeside, which is not part of my route.$2#$b#I'll just have to take them back to the sorting office when I'm done for the day.$2",
+  "Ayeisha.Event.Bustop03": "I'll deliver them for you!",
+  "Ayeisha.Event.Bustop04": "I'd like to help, but I'm a bit too busy right now.",
+  "Ayeisha.Event.Bustop05": "That's not my problem, you deal with it.",
+  "Ayeisha.Event.Bustop06": "Hmmm, I'm not supposed to do this, but it would be a great help if you could.",
+  "Ayeisha.Event.Bustop07": "Those are the packages, none of them need to be signed for so you don't need to do anything special.#$b#Thanks for the help, it will save me some time when I get back.",
+  "Ayeisha.Event.Bustop08": "That's ok! I'm not supposed to hand out deliveries for other people.$s",
+
+//MODIFIED VANILLA EVENTS (choseToBeKnown and choseToBeKnown_pennySpouse)
+
+  "Event.Town.Robin01": "Okay... let's go.",
+  "Event.Town.Robin02": "Hi there, neighbors... that's a nice new house you got there!",
+  "Event.Town.Pam01": "Robin... I... I dunno what to say...$s#$b#This is a dream come true... it's all I've ever wanted.$s",
+  "Event.Town.Penny01": "Robin, thank you so much...$s",
+  "Event.Town.Robin03": "Hey, don't thank me! This was @'s idea... And he paid for the whole thing, too!^Hey don't thank me! This was @'s idea... And she paid for the whole thing, too!",
+  "Event.Town.Penny02": "@... This is absolutely incredible...$7#$b#I... I don't know what else to say...$s",
+  "Event.Town.Pam02": "This must have cost a fortune, @...$s#$b#...To be honest, this is kind of embarrassing. How can I ever repay you for this?$4",
+  "Event.Town.Fork01": "It's a gift... no repayment needed.",
+  "Event.Town.Fork02": "You can start by treating Penny better...",
+  "Event.Town.Pam03": "...I'm sorry.$s",
+  "Event.Town.Pam04": "I'll do whatever you say...$s",
+  "Event.Town.Penny03": "Mom...$s",
+  "Event.Town.Penny04": "Don't worry... I understand why you get angry sometimes. Your life hasn't been so easy...$s",
+  "Event.Town.Pam05": "Thanks, kid.$h#$b#From now on we'll be like a real family... you hear?#$b#I don't wanna be so bitter all the time anymore...$s#$b#I'm gonna try to turn my life around...",
+
+  "Event.Town.Robin04": "Okay... let's go.",
+  "Event.Town.Robin05": "Hi there, neighbors... that's a nice new house you got there!$4",
+  "Event.Town.Pam06": "Robin... I... I dunno what to say...$s#$b#This is a dream come true... it's all I've ever wanted.$s",
+  "Event.Town.Penny05": "@? What are you doing here?",
+  "Event.Town.Robin06": "What, you didn't tell your wife about this, @?$u",
+  "Event.Town.Robin07": "@ came up with this idea and paid for the whole thing!",
+  "Event.Town.Penny06": "@... you didn't need to do this...#$b#But, thank you. This means a lot to me.$s",
+  "Event.Town.Pam07": "This must have cost a fortune, @...$s#$b#...To be honest, this is kind of embarrassing. How can I ever repay you for this?$4",
+  "Event.Town.Fork03": "...",
+  "Event.Town.Fork04": "You're my 'Mom'!. No repayment needed!",
+  "Event.Town.Fork05": "You can start by treating Penny better...",
+  "Event.Town.Pam08": "...I'm sorry.$s",
+  "Event.Town.Pam09": "I'll do whatever you say...$s",
+  "Event.Town.Penny07": "Mom...$s",
+  "Event.Town.Penny08": "Don't worry... I understand why you get angry sometimes. Your life hasn't been so easy...$s",
+  "Event.Town.Pam10": "Thanks, kid.$h#$b#From now on we'll be like a real family... you hear?#$b#I don't wanna be so bitter all the time anymore...$s#$b#I'm gonna try to turn my life around...",
+
+//AYEISHA REPLACES MARNIE FOR PET ADOPTION
+
+  "Pet.Adoption01": "Hi @!$h#$b#This cat...$s",
+  "Pet.Adoption02": "I found it sitting on top of your mailbox this morning! I think it's a stray...$s",
+  "Pet.Adoption03": "It seems to like this farm!#$b#I would look after it myself, but my other cat is unwell at the moment and needs my attention.$s#$b# I don't suppose this farm could use a cat?$h",
+  "Pet.Adoption04": "I'll probably see you tomorrow morning %pet.$h",
+  "Pet.Adoption05": "Hi @!$h#$b#This dog...$s",
+  "Pet.Adoption06": "I found it laying by your mailbox this morning! I think it's a stray...$s",
+  "Pet.Adoption07": "It seems to like this farm!#$b#I would look after it myself, but my cat would not be happy.$s#$b# I don't suppose this farm could use a dog?$h",
+  "Pet.Adoption08": "No? Okay... I'll have to ask around to find a home for the poor thing.$s",
+  "Pet.Adoption09": "No? Okay... I'll have to ask Jacob to see if he can help find a home for the poor thing.$s",
+
+//Dialogue
+
+  "dialogue.Introduction": "Hello, you must be the new farmer. I'm Ayeisha, I work for the Ferngill Postal Service. I normally get to your house by 5:30 in the morning.$h",
+  "dialogue.BeachNightMarket": "Have you seen that mermaid show? It's here every year.$h",
+  "dialogue.AyeishaVanRoad": "I wish I could park my van closer.",
+  "dialogue.AyeishaWarpRoom": "HEY! You shouldn't be here! I could have been getting changed!$a#$b#Use warps more responsibly please!$a",
+  "dialogue.Town_35_56": "HEY! How did you  get to this spot so quickly? Have you been using mods to cheat?!?!$u#$b#...or did my schedule break? Try sleeping 1 night to fix me or yell at TheLimeyDragon.",
+  "dialogue.Saloon_15_20": "I finished early today so I am having a drink before I go home.#$b#Don't worry, it's not alchoholic.$h",
+  "dialogue.StrayCatfe": "I had a very short shift today so I decided to have a drink at this café.$h",
+  "dialogue.PetRejectionAyeisha": "Hello @. Don't worry about the the stray, a good home has been found!$h#$b#I was worried for a while.$s",
+  "dialogue.ChickenAyeisha": "Hello @. Have you seen a strange gold coloured creature around? It stole my snack!$2",
+  "dialogue.GreenRain": "It's a good thing I enjoy the rain, as this rain is very unusual.",
+  "dialogue.GreenRainFinished": "Leah and I, seemed to be the only ones who weren't worried about that strange rain yesterday.$s",
+  "dialogue.GreenRain_2": "This strange rain really makes the plants vibrant!$h",
+
+//*Conversation Topics From Other Mods*//
+
+  "dialogue.SterlingDrugs": "Sterling was getting very agitated at me today.$s#$b#He wanted to know why a package he ordered hadn't arrived.$s",
+  "dialogue.SterlingRiver": "Sterling looks really happy lately!$h#$b#He apologised to me for being angry around me a while ago.",
+  "dialogue.AfterProposal": "Yri told me that Charles proposed to her and she said yes! I'm so happy for them!$h",
+  "dialogue.keahi_prank": "...$s#$b#Is it just me or is there an unpleasant smell around here?$s",
+  "dialogue.JasperGone2": "Do you know where Jasper has gone?$s#$b#The Museum's mailbox is filling up with his mail.$s",
+
+//*Play Prairie King With NPCs Mod Support*//
+
+  "TwoPlayerPrairieKing.start": "I'm ready!",
+  "TwoPlayerPrairieKing.mid": "I think we're half way there!",
+  "TwoPlayerPrairieKing.end": "We beat the stage!",
+  "TwoPlayerPrairieKing.die": "Sorry! I died!$s",
+
+//* Generic Days *//
+
+  "dialogue.Mon": "Hello @.",
+  "dialogue.Tue": "Hey @.",
+  "dialogue.Wed": "Hi @.",
+  "dialogue.Thu": "Hello @.",
+  "dialogue.Fri": "Hi @.",
+  "dialogue.Sat": "Hey @.",
+  "dialogue.Sun": "Hello @.",
+  "dialogue.Mon2": "Hello @. Did you have a nice weekend?",
+  "dialogue.Tue2": "Hello, I hope the crows aren't doing much damage.",
+  "dialogue.Wed2": "Hi, how's %farm farm going?",
+  "dialogue.Thu2": "Hey @. Have you been enjoying the weather?",
+  "dialogue.Fri2": "How's your day going?",
+  "dialogue.Sat2": "Hey @. Is it tiring to water your crops every day?",
+  "dialogue.Sun2": "Hello @. Are you having a nice Sunday?",
+
+  "dialogue.Mon4": "Do you ware out shoes quickly?#$b#All the walking I do and I get through a few pairs every year.",
+  "dialogue.Tue4": "Do you ever get a chance to watch Livin' Off The Land?#$b#I try to watch it when I can. It's my favorite show.",
+  "dialogue.Wed4": "Have you ever found anything buried on your farm?#$b#I've read that some farmers find old relics buried on their land.$h",
+
+  "dialogue.summer_Wed4_1": "I think I'll watch a movie when I get home.",
+  "dialogue.summer_Wed4_2": "What would you recommend?",
+  "dialogue.summer_Wed4_3": "Larry Cobbler and the Labyrinth of Mystery",
+  "dialogue.summer_Wed4_4": "Natural Wonders: The Deep Ocean World",
+  "dialogue.summer_Wed4_5": "Farmer Nancy and her Huge Tracts of Land",
+  "dialogue.summer_Wed4_6": "I don't know. Sorry.",
+  "dialogue.summer_Wed4_7": "I think movies are really stupid.",
+  "dialogue.filmquestion1": "Thanks, that's a good suggestion.$h",
+  "dialogue.filmquestion2": "Good Idea! I love nature documentaries.$h",
+  "dialogue.filmquestion3": "Err...$s",
+  "dialogue.filmquestion4": "That's ok. I'll just browse the movie guide when I get home.",
+  "dialogue.filmquestion5": "Oh... Um...$s",
+  "dialogue.filmquestionfollowup01": "I enjoyed your suggestion last time.$h.",
+  "dialogue.filmquestionfollowup02": "I think my cats would suggest 'A Ferngillian Tail'.",
+
+  "dialogue.Thu4": "Hey, Have you ever been to Ridgeside?#$b#It has amazing views! However it's not part of my route so I rarely go.",
+  "dialogue.Fri4": "Have you ever played the game 'Moondrop Hill?'#$b#It's this very cute farming game where you live in a small village.#$b#It reminds me of Pelican Town a lot.",
+  "dialogue.Sat4": "Do you enjoy jigsaw puzzles?#$b#I do! They're fun to do on rainy evenings.$h",
+  "dialogue.Sun4": "Hi, I guess you work Sundays too.#$e#Ferngill Post also delivers on Sundays.#$e#It's tiring, but I do get paid well.",
+  "dialogue.Mon6": "$d cc#You did a great job at restoring Pelican Town's Community Center.$h#$b#I'm happy that it's back to its back former glory.$h|It's sad to see the Community Center in such a derelict state.$s#$b#I hope it gets restored one day.$s",
+  "dialogue.Tue6": "My friend Rachael from ZuZu City baked me blackberry cobbler yesterday. It was delicious.$h",
+  "dialogue.Wed6": "I found a pair of purple shorts by some bushes yesterday.$s#$b#It was disgusting. I hate people who leave their rubbish around.$s",
+  "dialogue.Thu6": "I love trees. They're home to lots of wildlife.$h#$b#However they sometimes seem to spring up along parts of my route and it messes with my schedule.$s#$b#I sometimes feel like someone is doing it deliberately.$s",
+  "dialogue.Fri6": "I find foraging really fun! Do you do it at all?$h#$e#I find lots of forage on my route and I use it for home cooking.#$b#You just have to be careful and do your research so that you don't pick anything that is poisonous.",
+
+  "dialogue.winter_Fri6_1": "Hi @! I've been meaning to ask you something.",
+  "dialogue.winter_Fri6_2": "How do you manage to hide all those crops and items on you?",
+  "dialogue.winter_Fri6_3": "Sorry it's a trade secret.",
+  "dialogue.winter_Fri6_4": "Probably the same way you manage to hide all those letters and packages.",
+  "dialogue.winter_Fri6_5": "I'm not telling you.",
+  "dialogue.itemscarryquestion1": "You farmers and your secrets.",
+  "dialogue.itemscarryquestion2": "Oh?$u#$b#OOOOH! I see!$h",
+  "dialogue.itemscarryquestion3": "Oh.$s",
+  "dialogue.itemscarryfollowup01": "However I know you like your secrets.$h",
+  "dialogue.itemscarryfollowup02": "However last time I asked, you were a bit blunt.$s",
+
+//*NOTE TO ANY TRANSLATORS 'Indaway' might be difficult to translate. It's a joke as it sounds like 'In the way'.*//
+
+  "dialogue.fall_Mon8_1": "I've got a new pet cat, I still need to name it.",
+  "dialogue.fall_Mon8_2": "What do you think I should name my new cat?",
+  "dialogue.fall_Mon8_3": "Oscar",
+  "dialogue.fall_Mon8_4": "Tigger",
+  "dialogue.fall_Mon8_5": "Indaway",
+  "dialogue.fall_Mon8_6": "Sorry I'm not very good with names.",
+  "dialogue.fall_Mon8_7": "Don't ask me. All my animals are named rude words.",
+  "dialogue.fall_Mon8_8": "I'm not naming your silly pet for you.",
+  "dialogue.catname0": "Oscar is a good idea. I'll think about it.",
+  "dialogue.catname1": "Tigger is a good idea. I'll think about it.",
+  "dialogue.catname2": "Inda...$s#$b#Oh very funny. No I'm not calling her that.$h",
+  "dialogue.catname3": "That's ok. If you think of anything let me know.",
+  "dialogue.catname4": "Oh... I definitely don't want her to be named a rude word.",
+  "dialogue.catname5": "...$a",
+  "dialogue.catnamefollowup01": "I love the suggestion you gave.$h",
+  "dialogue.catnamefollowup02": "I don't think I will ask you for name suggestions again.$s",
+  "dialogue.catnamefollowup03": "If you do think of a name then let me know.",
+
+//*Dad Jokes That probably don't translate well at all.*//
+
+  "dialogue.Tue8": "Oh hi! I forgot to tell you this story. I bumped into this old lady at the Zuzu City Bank last week.#$b#She was standing next to the cash machine and asked me to check her balance for her.#$b#So I pushed her over.$h",
+  "dialogue.Mon10": "Did I tell you that I tried making a belt made of old watches?#$b#It was a waist of time.$h",
+  "dialogue.Wed10": "Hey! Did I tell you I put my vacuum on JojaBay the other day?#$b#It was just gathering dust.$h",
+  "dialogue.Sat10": "Hi! Do you know the best way to upgrade a pickaxe?#$b#With groundbreaking technology!$h",
+
+//* Specific Days *//
+
+  "dialogue.spring_1_2": "Happy New Year!",
+  "dialogue.spring_2_1": "How was your first night on %farm?",
+  "dialogue.spring_4_1": "I hope Jodi is ok. It's her husband's birthday today.$s",
+  "dialogue.spring_14": "Hi @. Did you go to the egg festival yesterday?#$b#I hope I don't find any melted eggs in people's mailboxes again.$s",
+  "dialogue.spring_24": "Hi @. Are you going to the Flower Dance? It's a nice day for it.",
+  "dialogue.spring_25": "Did you go to the Flower Dance Yesterday?",
+
+  "dialogue.summer_1_1": "I hope your first season's crops grew well.",
+  "dialogue.summer_9": "It might be my birthday, however I enjoy my work.",
+  "dialogue.summer_11": "Everyone should be going to the luau on the beach.",
+  "dialogue.summer_28": "It's the Moonlight Jellies tonight. I should go one year. I've heard it's very beautiful.",
+
+  "dialogue.fall_3": "I love the colour of the leaves at this time of year.",
+  "dialogue.fall_27": "The town have done a great job at decorating the festival this year!$h#$b#It's very spooky!",
+  "dialogue.fall_27_2": "They've done it again!$h#$b#The town always does a wonderful job at decorating their Spirit's Eve festival.$h",
+
+  "dialogue.winter_1": "Do you know who Krowbis is? I have this strange letter.#$b#It's addressed to 'Misstar Krowbis - 1 Soo-ar'.#$b#It's very strange.$u",
+  "dialogue.winter_7": "Are you going to the Festival of Ice tommorow?",
+  "dialogue.winter_15": "Are you going to the Night Market?#$b#I go every year. I often find nice presents there for my friends and cats.",
+  "dialogue.winter_15_2": "Are you going to this year's Night Market?#$b#There are usually new things to buy each year.",
+  "dialogue.winter_17": "It's your last chance to go to the night market tonight.",
+  "dialogue.winter_25": "Hey @. I arrived early today to give my presents.$h#$b#Oh and here is yours.[621]$h#$e#Pelican Town have done a great job decorating this year.$h#$e#It's a shame I can't stay, but I have plans with my family.",
+  "dialogue.winter_25_2": "Hey @. I arrived early today to give my presents.$h#$b#Oh and here is yours.[645]$h#$e#Pelican Town have done another great job decorating.$h#$e#It's a shame I can't stay again, but I have plans with my family.",
+
+}
+
+

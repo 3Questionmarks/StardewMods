@@ -1,0 +1,224 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/Town",
+        "Entries":
+    {
+    "{{ModId}}_E10/F/f Sam 2000/t 2000 2300/e {{ModId}}_E09/n {{ModId}}_SamInviteE10/k {{ModId}}_E08.Friends":"
+    none/
+    12 88/
+    farmer 16 90 3 Sam -100 -100 2 Jodi 23 5 1 Vincent 8 22 0/
+    skippable/
+    showFrame Jodi 24/
+    move farmer -6 0 0/
+    pause 1000/
+    move farmer 0 -2 0/
+    warp Sam 10 86/
+    playSound doorClose/
+    pause 200/
+    emote farmer {{!}}/
+    pause 200/
+    speak Sam \"{{i18n:E10.001}}\"/
+    pause 600/
+    faceDirection Sam 0/
+    pause 800/
+    faceDirection Sam 2/
+    pause 200/
+    speak Sam \"{{i18n:E10.002}}\"/
+    pause 400/
+    emote Sam {{happy}}/
+    pause 200/
+    speak Sam \"{{i18n:E10.003}}\"/
+    pause 200/
+    move farmer 0 -1 0/
+    pause 500/
+    faceDirection Sam 0/
+    pause 1000/
+    warp Sam 18 14/
+    playSound doorClose/
+    pause 200/
+    move farmer 0 -1 0/
+    pause 200/
+    warp farmer 16 14/
+    playSound doorClose/
+    faceDirection farmer 1/
+    faceDirection Sam 3/
+    pause 300/
+    globalFade/
+    viewport -1200 -1200/
+    changeLocation SamHouse/
+    positionOffset farmer 0 18/
+    message \"{{i18n:E10.004}}\"/
+    ambientLight  180 180 180/
+    globalFadeToClear 0.007 true/
+    viewport 17 16/
+    pause 2000/
+    speak Sam \"{{i18n:E10.005}}\"/
+    pause 1000/
+    speak Sam \"{{i18n:E10.006}}\"/
+    pause 600/
+    faceDirection Sam 2/
+    pause 1000/
+    showFrame Sam 52/
+    playSound slime/
+    pause 600/
+    speak Sam \"{{i18n:E10.007}}\"/
+    pause 700/
+    animate Sam false true 300 52 52 53 53/
+    playMusic {{ModId}}_melody-of-feels/
+               pause 2200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.021 -0.016/
+        pause 2300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.027 -0.016/
+                pause 2200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.011 -0.024/
+        pause 2300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.018 -0.028/
+                pause 2200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.020 -0.020/
+        pause 2300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.018 -0.029/
+                pause 2200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.022 -0.018/
+        pause 2300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.028 -0.027/
+                pause 2200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.025 -0.026/
+        pause 2300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.024 -0.012/
+                pause 2200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.013 -0.020/
+        pause 2300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.022 -0.027/
+                pause 2200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.011 -0.021/
+        pause 2300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.015 -0.023/
+                pause 2200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.019 -0.030/
+        pause 2300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.016 -0.025/
+                pause 2200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.017 -0.018/
+        pause 2300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.029 -0.013/
+                pause 2200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.020 -0.021/
+        pause 2300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.026 -0.022/
+                pause 2200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.014 -0.012/
+        pause 2300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.024 -0.02/
+                pause 2200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.025 -0.026/
+        pause 2300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.024 -0.012/
+                pause 2200/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.013 -0.020/
+        pause 2300/
+        temporaryAnimatedSprite LooseSprites\\Cursors 516 1916 7 10 500 1 1 19 13 false false 5 0.005 1 0.01 0 0 hold_last_frame acceleration 0.022 -0.027/
+        pause 2300/
+    pause 500/
+    stopAnimation Sam 52/
+    stopMusic/
+    pause 1500/
+    playSound slime/
+    showFrame Sam 0/
+    pause 500/
+    faceDirection Sam 2/
+    pause 500/
+    faceDirection Sam 3/
+    pause 500/
+    speak Sam \"{{i18n:E10.008}}\"/
+    pause 500/
+    speak Sam \"{{i18n:E10.009}}\"/
+    pause 500/
+    quickQuestion {{i18n:E10.010}}(break)pause 500\\speak Sam \"{{i18n:E10.011}}\"(break)pause 500\\speak Sam \"{{i18n:E10.012}}\"(break)pause 500\\speak Sam \"{{i18n:E10.013}}\"/
+    pause 600/
+    faceDirection Sam 1/
+    pause 200/
+    emote Sam {{pause}}/
+    pause 200/
+    faceDirection Sam 2/
+    faceDirection Sam 3/
+    pause 500/
+    speak Sam \"{{i18n:E10.014}}\"/
+    pause 500/
+    speak Sam \"{{i18n:E10.015}}\"/
+    pause 500/    
+    speak Sam \"{{i18n:E10.016}}\"/
+    pause 1000/
+    speak Sam \"{{i18n:E10.017}}\"/
+    pause 500/
+    speed Sam 2/
+    move Sam -1 0 3/
+    pause 200/
+    speak Sam \"{{i18n:E10.018}}\"/
+    pause 300/
+    emote farmer {{happy}}/
+    pause 300/
+    emote Sam {{pause}}/
+    pause 300/
+    speak Sam \"{{i18n:E10.019}}\"/
+    pause 400/
+    shake Sam 2500/
+    pause 2000/
+    speak Sam \"{{i18n:E10.020}}\"/
+    pause 200/
+    question fork1 \"{{i18n:E10.021}}\" /
+    fork {{ModId}}_E10_noKissBozo/
+    pause 500/
+    animate farmer false true 500 101/
+    animate Sam true true 500 38/
+        pause 50/
+        positionOffset farmer 2 0/
+        positionOffset Sam -2 0/
+        pause 50/
+        positionOffset farmer 2 2/
+        positionOffset Sam -2 0/
+        pause 50/
+        positionOffset farmer 2 0/
+        positionOffset Sam -2 0/
+        pause 50/
+        positionOffset farmer 2 2/
+        positionOffset Sam -2 0/
+        pause 50/
+        positionOffset farmer 2 0/
+        positionOffset Sam -2 0/
+        pause 50/
+        positionOffset farmer 2 2/
+        positionOffset Sam -2 0/
+        pause 50/
+        specificTemporarySprite heart 17 13/
+    pause 300/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    end dialogue Sam \"{{i18n:E10.023}}\"/
+    ",
+    
+       
+    },
+},
+{
+        "Action":"EditData",
+        "Target":"Data/Events/SamHouse",
+        "Entries":{
+                "{{ModId}}_E10_noKissBozo":"
+                pause 200/
+                friendship Sam -500/
+                emote Sam {{pause}}/
+                speak Sam \"{{i18n:E10.022}}\"/
+                pause 300/
+                globalFade/
+                viewport -1200 -1200/
+                pause 200/
+                end dialogue Sam \"{{i18n:E10.024}}\"/
+                " 
+        }       
+}
+
+    ]
+}

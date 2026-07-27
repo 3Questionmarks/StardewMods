@@ -1,0 +1,34 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "Cape.Shavegrass": {
+          "Texture": "Mods/CapeStardew/Objects/Shavegrass",
+          "SpriteIndex": 0,
+          "Name": "Shavegrass",
+          "Description": "{{i18n:Shavegrass_Description_Translated}}",
+          "Type": "Basic",
+          "Category": -81,
+          "CategoryTextOverride": "Medicinal Herb",
+          "Edibility": 4,
+          "CanSell": true,
+          "Price": 100,
+          "IsColored": false,
+          "ContextTags": [
+            "color_green",
+            "forage_item"
+          ],
+          "DisplayName": "{{i18n:Shavegrass_Translated}}",
+          "IsDrink": false
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/CapeStardew/Objects/Shavegrass",
+      "FromFile": "Objects/{{TargetWithoutPath}}/object.png"
+    }
+  ]
+}

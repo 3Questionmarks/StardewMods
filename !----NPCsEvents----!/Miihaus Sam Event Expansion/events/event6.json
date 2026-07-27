@@ -1,0 +1,157 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/SamHouse",
+        "Entries":
+    {
+    //Sam 6-Heart Event: "Family Ties"
+    "{{ModId}}_E06/F/f Sam 1500/t 1000 1500/e {{ModId}}_E05/w rainy":"
+    none/
+    8 14/
+    farmer -1000 -1000 0 Sam 19 13 0 Vincent 5 14 3 Jodi 4 13 2/
+    skippable/
+    addTemporaryActor {{ModId}}_GameBoard 16 16 4 14 2 false/
+    addConversationTopic {{ModId}}_Topic_E06/
+    pause 2500/
+    textAboveHead Vincent \"{{i18n:E06.001}}\"/
+    pause 2800/
+    playSound doorClose/
+    warp farmer 4 23/
+    pause 1000/
+    move farmer 0 -4 0/
+    emote farmer {{happy}}/
+    speak Jodi \"{{i18n:E06.002}}\"/
+    pause 300/
+    move farmer 0 -4 0/
+    speak Vincent \"{{i18n:E06.003}}\"/
+    pause 200/
+    speak Jodi \"{{i18n:E06.004}}\"/
+    pause 300/
+    move Sam -7 0 2/
+    doAction 12 14/
+    pause 200/
+    move Sam 0 2 3/
+    move Sam -5 0 3 Vincent 0 1 1/
+    faceDirection farmer 1/
+    speak Vincent \"{{i18n:E06.005}}\"/
+    pause 200/
+    speak Sam \"{{i18n:E06.006}}\"/
+    pause 200/
+    speak Vincent \"{{i18n:E06.007}}\"/
+    pause 200/
+    emote Sam {{sad}} true/
+    speed Vincent 2/
+    move Sam -2 0 2 Vincent 0 -1 2/
+    faceDirection farmer 2 true/
+    move Sam 0 2 3/
+    faceDirection Vincent 2 true/
+    move Sam -1 0 2/
+    faceDirection Vincent 3 true/
+    emote Vincent {{sad}} true/
+    move Sam 0 6 2/
+    warp Sam 25 98/
+    playSound doorClose/
+    pause 300/
+    faceDirection farmer 0/
+    emote Jodi {{pause}}/
+    speak Jodi \"{{i18n:E06.008}}\"/
+    quickQuestion {{i18n:E06.009}}(break)pause 200(break)pause 500\\speak Vincent \"{{i18n:E06.010}}\"\\question null \"{{i18n:E06.011}}\"/
+    pause 300/
+    move farmer 0 8 2/
+    warp farmer 18 91/
+    playSound doorClose/
+    faceDirection farmer 1/
+    pause 500/
+    globalFade/
+    viewport -1200 -1200/
+    changeLocation Town/
+    globalFadeToClear 0.007 true/
+    viewport 25 98/
+    move farmer 5 0 1/
+    emote farmer {{?}} true/
+    faceDirection farmer 2/
+    pause 300/
+    move farmer 0 7 1/
+    pause 200/
+    faceDirection Sam 3/
+    quickQuestion {{i18n:E06.012}}(break)pause 500\\speak Sam \"{{i18n:E06.013}}\"(break)pause 500\\speak Sam \"{{i18n:E06.014}}\"/
+    pause 200/
+    faceDirection Sam 2/
+    pause 200/
+    speak Sam \"{{i18n:E06.015}}\"/
+    pause 400/
+    move farmer 1 0 2/
+    pause 200/
+    speak Sam \"{{i18n:E06.016}}\"/
+    pause 200/
+    speak Sam \"{{i18n:E06.017}}\"/
+    pause 800/
+    speak Sam \"{{i18n:E06.018}}\"/
+    pause 600/
+    speak Sam \"{{i18n:E06.019}}\"/
+    pause 200/
+    emote Sam {{angry}}/
+    pause 200/
+    speak Sam \"{{i18n:E06.020}}\"/
+    pause 200/
+    speak Sam \"{{i18n:E06.021}}\"/
+    pause 100/
+    faceDirection farmer 1/
+    pause 100/
+    quickQuestion {{i18n:E06.022}}(break)pause 500\\speak Sam \"{{i18n:E06.023}}\"(break)pause 500\\speak Sam \"{{i18n:E06.024}}\"(break)pause 500\\speak Sam \"{{i18n:E06.025}}\"/
+    pause 500/
+    speak Sam \"{{i18n:E06.026}}\"/
+    pause 500/
+    faceDirection Sam 3/
+    pause 300/
+    speak Sam \"{{i18n:E06.027}}\"/
+    pause 300/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    end/
+    ",
+    
+        
+    },
+},
+
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Sam",
+        "Entries":{
+            "{{ModId}}_Topic_E06":"{{i18n:E06.028}}",
+            }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Vincent",
+        "Entries":{
+            "{{ModId}}_Topic_E06":"{{i18n:E06.030}}",
+            }
+    },
+        {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Jodi",
+        "Entries":{
+            "{{ModId}}_Topic_E06":"{{i18n:E06.029}}",
+            }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Kent",
+        "Entries":{
+            "{{ModId}}_Topic_E06":"{{i18n:E06.031}}",
+            }
+    },
+        {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Sebastian",
+        "Entries":{
+            "{{ModId}}_Topic_E06":"{{i18n:E06.032}}",
+            }
+    },
+
+    ]
+}

@@ -1,0 +1,680 @@
+{
+  "Changes":
+    [
+      {
+	"Action": "EditData",
+	"Target": "Data/Objects",
+	"Fields":
+	  {
+	    "appleseed.BCP.RedWool":
+	      {
+		"Price": "425"
+	      },
+	    "appleseed.BCP.YellowWool":
+	      {
+		"Price": "425"
+	      },
+	    "appleseed.BCP.BlueWool":
+	      {
+		"Price": "425"
+	      },
+	    "appleseed.BCP.OrangeWool":
+	      {
+		"Price": "525"
+	      },
+	    "appleseed.BCP.GreenWool":
+	      {
+		"Price": "525"
+	      },
+	    "appleseed.BCP.VioletWool":
+	      {
+		"Price": "525"
+	      },
+	    "appleseed.BCP.BrownWool":
+	      {
+		"Price": "620"
+	      },
+	    "appleseed.BCP.BlackWool":
+	      {
+		"Price": "425"
+	      },
+	    "appleseed.BCP.WhiteWool":
+	      {
+		"Price": "425"
+	      },
+	    "appleseed.BCP.GreyWool":
+	      {
+		"Price": "525"
+	      },
+	    "appleseed.BCP.PinkWool":
+	      {
+		"Price": "525"
+	      },
+	    "appleseed.BCP.RedCloth":
+	      {
+		"Price": "1025"
+	      },
+	    "appleseed.BCP.YellowCloth":
+	      {
+		"Price": "1025"
+	      },
+	    "appleseed.BCP.BlueCloth":
+	      {
+		"Price": "1025"
+	      },
+	    "appleseed.BCP.OrangeCloth":
+	      {
+		"Price": "1130"
+	      },
+	    "appleseed.BCP.GreenCloth":
+	      {
+		"Price": "1130"
+	      },
+	    "appleseed.BCP.VioletCloth":
+	      {
+		"Price": "1130"
+	      },
+	    "appleseed.BCP.BrownCloth":
+	      {
+		"Price": "1225"
+	      },
+	    "appleseed.BCP.BlackCloth":
+	      {
+		"Price": "1025"
+	      },
+	    "appleseed.BCP.WhiteCloth":
+	      {
+		"Price": "1025"
+	      },
+	    "appleseed.BCP.GreyCloth":
+	      {
+		"Price": "1130"
+	      },
+	    "appleseed.BCP.PinkCloth":
+	      {
+		"Price": "1130"
+	      },
+	    "appleseed.BCP.WoodenButtons":
+	      {
+		"Price": "60"
+	      },
+	    "appleseed.BCP.MetalButtons":
+	      {
+		"Price": "180"
+	      },
+	    "appleseed.BCP.HardwoodButtons":
+	      {
+		"Price": "100"
+	      },
+	    "appleseed.BCP.GemstoneButtons":
+	      {
+		"Price": "200"
+	      },
+	    "appleseed.BCP.PimaCotton":
+	      {
+		"Price": "60"
+	      },
+	    "appleseed.BCP.PelicanBell":
+	      {
+		"Price": "50"
+	      },
+	    "appleseed.BCP.BatFlower":
+	      {
+		"Price": "80"
+	      },
+	    "appleseed.BCP.SmallGears":
+	      {
+		"Price": "118"
+	      },
+	    "appleseed.BCP.WindingKey":
+	      {
+		"Price": "235"
+	      },
+	    "appleseed.BCP.SpoolOfThread":
+	      {
+		"Price": "170"
+	      },
+	    "appleseed.BCP.Paint":
+	      {
+		"Price": "360"
+	      },
+	    "appleseed.BCP.WoodenDoll":
+	      {
+		"Price": "1005"
+	      },
+	    "appleseed.BCP.SeaGlobe":
+	      {
+		"Price": "760"
+	      },
+	    "appleseed.BCP.SnowGlobe":
+	      {
+		"Price": "930"
+	      },
+	    "appleseed.BCP.ToyBoat":
+	      {
+		"Price": "1885"
+	      },
+	    "appleseed.BCP.ToyShuttle":
+	      {
+		"Price": "1440"
+	      },
+	    "appleseed.BCP.ToyTrain":
+	      {
+		"Price": "2410"
+	      },
+	    "appleseed.BCP.ToyPlane":
+	      {
+		"Price": "2785"
+	      },
+	    "appleseed.BCP.FeltSlime":
+	      {
+		"Price": "880"
+	      },
+	    "appleseed.BCP.FeltGrub":
+	      {
+		"Price": "730"
+	      },
+	    "appleseed.BCP.FeltRockCrab":
+	      {
+		"Price": "940"
+	      },
+	    "appleseed.BCP.FeltBat":
+	      {
+		"Price": "790"
+	      },
+	    "appleseed.BCP.FeltDustSprite":
+	      {
+		"Price": "1060"
+	      },
+	    "appleseed.BCP.FeltGhost":
+	      {
+		"Price": "910"
+	      },
+	    "appleseed.BCP.FeltSkeleton":
+	      {
+		"Price": "940"
+	      },
+	    "appleseed.BCP.FeltMetalHead":
+	      {
+		"Price": "1090"
+	      },
+	    "appleseed.BCP.FeltSquidKid":
+	      {
+		"Price": "1090"
+	      },
+	    "appleseed.BCP.FeltHauntedSkull":
+	      {
+		"Price": "1180"
+	      },
+	    "appleseed.BCP.FeltSerpent":
+	      {
+		"Price": "1615"
+	      },
+	    "appleseed.BCP.FeltMummy":
+	      {
+		"Price": "1230"
+	      },
+	    "appleseed.BCP.FeltDinosaur":
+	      {
+		"Price": "2215"
+	      },
+	    "appleseed.BCP.PlushChicken":
+	      {
+		"Price": "1975"
+	      },
+	    "appleseed.BCP.PlushCow":
+	      {
+		"Price": "1975"
+	      },
+	    "appleseed.BCP.PlushCrow":
+	      {
+		"Price": "1975"
+	      },
+	    "appleseed.BCP.PlushHorse":
+	      {
+		"Price": "2455"
+	      },
+	    "appleseed.BCP.PlushDog":
+	      {
+		"Price": "2035"
+	      },
+	    "appleseed.BCP.PlushCat":
+	      {
+		"Price": "2190"
+	      },
+	    "appleseed.BCP.PlushDuck":
+	      {
+		"Price": "2190"
+	      },
+	    "appleseed.BCP.PlushGoat":
+	      {
+		"Price": "2155"
+	      },
+	    "appleseed.BCP.PlushFox":
+	      {
+		"Price": "2155"
+	      },
+	    "appleseed.BCP.PlushPelican":
+	      {
+		"Price": "2305"
+	      },
+	    "appleseed.BCP.PlushBear":
+	      {
+		"Price": "2275"
+	      },
+	    "appleseed.BCP.PlushSheep":
+	      {
+		"Price": "2190"
+	      },
+	    "appleseed.BCP.PlushBee":
+	      {
+		"Price": "3690"
+	      },
+	    "appleseed.BCP.PlushRaccoon":
+	      {
+		"Price": "2400"
+	      },
+	    "appleseed.BCP.PlushTurtle":
+	      {
+		"Price": "2340"
+	      },
+	    "appleseed.BCP.WindupMouse":
+	      {
+		"Price": "2160"
+	      },
+	    "appleseed.BCP.WindupFrog":
+	      {
+		"Price": "2315"
+	      },
+	    "appleseed.BCP.PlushOstrich":
+	      {
+		"Price": "5500"
+	      },
+	    "appleseed.BCP.PlushParrot":
+	      {
+		"Price": "5635"
+	      },
+	    "appleseed.BCP.PlushJellyfish":
+	      {
+		"Price": "6135"
+	      },
+	    "appleseed.BCP.CottonPillow":
+	      {
+		"Price": "3885"
+	      },
+	    "appleseed.BCP.FeatherPillow":
+	      {
+		"Price": "5840"
+	      },
+	    "appleseed.BCP.HandBell":
+	      {
+		"Price": "2100"
+	      },
+	    "appleseed.BCP.PlushGoblin":
+	      {
+		"Price": "2595"
+	      },
+	    "appleseed.BCP.PlushSeaMonster":
+	      {
+		"Price": "2565"
+	      },
+	    "appleseed.BCP.PlushDwarf":
+	      {
+		"Price": "2410"
+	      },
+	    "appleseed.BCP.PlushShadowSpirit":
+	      {
+		"Price": "2410"
+	      },
+	    "appleseed.BCP.PlushWizard":
+	      {
+		"Price": "4400"
+	      },
+	    "appleseed.BCP.PlushWitch":
+	      {
+		"Price": "4200"
+	      },
+	    "appleseed.BCP.PlushElf":
+	      {
+		"Price": "4575"
+	      },
+	    "appleseed.BCP.Teacup":
+	      {
+		"Price": "3045"
+	      },
+	    "appleseed.BCP.Teapot":
+	      {
+		"Price": "4015"
+	      },
+	    "appleseed.BCP.FigurineRose":
+	      {
+		"Price": "1465"
+	      },
+	    "appleseed.BCP.FigurineSnail":
+	      {
+		"Price": "970"
+	      },
+	    "appleseed.BCP.FigurineFish":
+	      {
+		"Price": "1420"
+	      },
+	    "appleseed.BCP.FigurinePrincess":
+	      {
+		"Price": "2940"
+	      },
+	    "appleseed.BCP.FigurineOwl":
+	      {
+		"Price": "3235"
+	      },
+	    "appleseed.BCP.FigurinePig":
+	      {
+		"Price": "2940"
+	      },
+	    "appleseed.BCP.WhitePawn":
+	      {
+		"Price": "970"
+	      },
+	    "appleseed.BCP.WhiteRook":
+	      {
+		"Price": "970"
+	      },
+	    "appleseed.BCP.WhiteKnight":
+	      {
+		"Price": "970"
+	      },
+	    "appleseed.BCP.WhiteBishop":
+	      {
+		"Price": "970"
+	      },
+	    "appleseed.BCP.WhiteQueen":
+	      {
+		"Price": "970"
+	      },
+	    "appleseed.BCP.WhiteKing":
+	      {
+		"Price": "970"
+	      },
+	    "appleseed.BCP.PlushFairy":
+	      {
+		"Price": "9900"
+	      },
+	    "appleseed.BCP.PlushUnseelie":
+	      {
+		"Price": "9945"
+	      },
+	    "appleseed.BCP.PlushMermaid":
+	      {
+		"Price": "11460"
+	      },
+	    "appleseed.BCP.8-Ball":
+	      {
+		"Price": "5955"
+	      },
+	    "appleseed.BCP.AntiqueTeaSet":
+	      {
+		"Price": "19345"
+	      },
+	    "appleseed.BCP.CuckooClock":
+	      {
+		"Price": "9440"
+	      },
+	    "appleseed.BCP.JunimoShaker":
+	      {
+		"Price": "7345"
+	      },
+	    "appleseed.BCP.MusicBox":
+	      {
+		"Price": "13150"
+	      },
+	    "appleseed.BCP.PlushTrashBear":
+	      {
+		"Price": "8530"
+	      },
+	    "appleseed.BCP.Starglobe":
+	      {
+		"Price": "4370"
+	      },
+	    "appleseed.BCP.WindupHare":
+	      {
+		"Price": "9255"
+	      },
+	    "appleseed.BCP.StrangePuzzle":
+	      {
+		"Price": "10625"
+	      },
+	    "appleseed.BCP.Chessboard":
+	      {
+		"Price": "25045"
+	      },
+	    "appleseed.BCP.DollMansion":
+	      {
+		"Price": "10010"
+	      },
+	    "appleseed.BCP.MiniFountain":
+	      {
+		"Price": "15525"
+	      },
+	    "appleseed.BCP.PimaCottonSeeds":
+	      {
+		"Price": "50"
+	      },
+	    "appleseed.BCP.ToyBoatAlt":
+	      {
+		"Price": "1885"
+	      },
+	    "appleseed.BCP.ToyShuttleAlt":
+	      {
+		"Price": "1440"
+	      },
+	    "appleseed.BCP.FeltSlimeGreenF":
+	      {
+		"Price": "880"
+	      },
+	    "appleseed.BCP.FeltSlimeBlue":
+	      {
+		"Price": "880"
+	      },
+	    "appleseed.BCP.FeltSlimeBlueF":
+	      {
+		"Price": "880"
+	      },
+	    "appleseed.BCP.FeltSlimeRed":
+	      {
+		"Price": "880"
+	      },
+	    "appleseed.BCP.FeltSlimeRedF":
+	      {
+		"Price": "880"
+	      },
+	    "appleseed.BCP.FeltSlimePurple":
+	      {
+		"Price": "880"
+	      },
+	    "appleseed.BCP.FeltSlimePurpleF":
+	      {
+		"Price": "880"
+	      },
+	    "appleseed.BCP.FeltSlimeTiger":
+	      {
+		"Price": "880"
+	      },
+	    "appleseed.BCP.FeltSlimeTigerF":
+	      {
+		"Price": "880"
+	      },
+	    "appleseed.BCP.FeltGrubGreen":
+	      {
+		"Price": "730"
+	      },
+	    "appleseed.BCP.FeltRockCrabRed":
+	      {
+		"Price": "940"
+	      },
+	    "appleseed.BCP.FeltRockCrabIridium":
+	      {
+		"Price": "940"
+	      },
+	    "appleseed.BCP.FeltRockCrabTruffle":
+	      {
+		"Price": "940"
+	      },
+	    "appleseed.BCP.FeltBatBlue":
+	      {
+		"Price": "790"
+	      },
+	    "appleseed.BCP.FeltBatRed":
+	      {
+		"Price": "790"
+	      },
+	    "appleseed.BCP.FeltBatIridium":
+	      {
+		"Price": "790"
+	      },
+	    "appleseed.BCP.FeltDustSpriteAlt":
+	      {
+		"Price": "1060"
+	      },
+	    "appleseed.BCP.FeltGhostGreen":
+	      {
+		"Price": "910"
+	      },
+	    "appleseed.BCP.FeltSkeletonBlue":
+	      {
+		"Price": "940"
+	      },
+	    "appleseed.BCP.FeltMetalHeadOrange":
+	      {
+		"Price": "1090"
+	      },
+	    "appleseed.BCP.FeltSquidKidCool":
+	      {
+		"Price": "1090"
+	      },
+	    "appleseed.BCP.FeltHauntedSkullBlue":
+	      {
+		"Price": "1180"
+	      },
+	    "appleseed.BCP.PlushChickenWhite":
+	      {
+		"Price": "1975"
+	      },
+	    "appleseed.BCP.PlushChickenBrown":
+	      {
+		"Price": "1975"
+	      },
+	    "appleseed.BCP.PlushCowBrown":
+	      {
+		"Price": "1975"
+	      },
+	    "appleseed.BCP.PlushDogShepard":
+	      {
+		"Price": "2035"
+	      },
+	    "appleseed.BCP.PlushDogPoodle":
+	      {
+		"Price": "2035"
+	      },
+	    "appleseed.BCP.PlushDogHound":
+	      {
+		"Price": "2035"
+	      },
+	    "appleseed.BCP.PlushDogChocolate":
+	      {
+		"Price": "2035"
+	      },
+	    "appleseed.BCP.PlushCatGrey":
+	      {
+		"Price": "2190"
+	      },
+	    "appleseed.BCP.PlushCatYellow":
+	      {
+		"Price": "2190"
+	      },
+	    "appleseed.BCP.PlushCatWhite":
+	      {
+		"Price": "2190"
+	      },
+	    "appleseed.BCP.PlushCatBlack":
+	      {
+		"Price": "2190"
+	      },
+	    "appleseed.BCP.PlushSheepInverted":
+	      {
+		"Price": "2190"
+	      },
+	    "appleseed.BCP.PlushTurtleGreen":
+	      {
+		"Price": "2340"
+	      },
+	    "appleseed.BCP.PlushJellyfishMoon":
+	      {
+		"Price": "6135"
+	      },
+	    "appleseed.BCP.BlackPawn":
+	      {
+		"Price": "970"
+	      },
+	    "appleseed.BCP.BlackRook":
+	      {
+		"Price": "970"
+	      },
+	    "appleseed.BCP.BlackKnight":
+	      {
+		"Price": "970"
+	      },
+	    "appleseed.BCP.BlackBishop":
+	      {
+		"Price": "970"
+	      },
+	    "appleseed.BCP.BlackQueen":
+	      {
+		"Price": "970"
+	      },
+	    "appleseed.BCP.BlackKing":
+	      {
+		"Price": "970"
+	      },
+	    "appleseed.BCP.TeacupBlue":
+	      {
+		"Price": "3045"
+	      },
+	    "appleseed.BCP.TeapotBlue":
+	      {
+		"Price": "4015"
+	      },
+	    "appleseed.BCP.TeacupRed":
+	      {
+		"Price": "3045"
+	      },
+	    "appleseed.BCP.TeapotRed":
+	      {
+		"Price": "4015"
+	      },
+	    "appleseed.BCP.FigurineSunflower":
+	      {
+		"Price": "1465"
+	      },
+	    "appleseed.BCP.FigurineJazz":
+	      {
+		"Price": "1465"
+	      },
+	    "appleseed.BCP.FigurineFishPuff":
+	      {
+		"Price": "1420"
+	      },
+	    "appleseed.BCP.FigurineFishOcto":
+	      {
+		"Price": "1420"
+	      },
+	    "appleseed.BCP.WoodenDollPurple":
+	      {
+		"Price": "1005"
+	      },
+	    "appleseed.BCP.WoodenDollRed":
+	      {
+		"Price": "1005"
+	      },
+	  }
+      }
+    ]
+}

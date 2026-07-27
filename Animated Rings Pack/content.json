@@ -1,0 +1,1646 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "ConfigSchema": {
+        "RingStyle":{
+			"AllowValues":"Vanilla, Better Rings",
+			"Default":"Vanilla",
+            "AllowMultiple": false,
+            "Section": "Appearance",
+            "Description": "Choose between Vanilla rings style or Better Rings by bahbahrah"
+		},
+        //
+        // Vanilla DISABLE/ENABLE
+        //
+        "SmallGlowRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "GlowRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "SmallMagnetRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "MagnetRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "SlimeCharmerRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "WarriorRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "VampireRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "SavageRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "RingofYoba": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "SturdyRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "BurglarsRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "IridiumBand": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "AmethystRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "TopazRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "AquamarineRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "JadeRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "EmeraldRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "RubyRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "WeddingRing1": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "WeddingRing2": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "CrabshellRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "NapalmRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "ThornsRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "LuckyRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "HotJavaRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "ProtectionRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "SoulSapperRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "PhoenixRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "ImmunityBand": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        "GlowstoneRing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Vanilla individual Ring",
+        },
+        //
+        // Better Rings DISABLE/ENABLE
+        //
+
+        "SmallGlowRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "GlowRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "SmallMagnetRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "MagnetRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "SlimeCharmerRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "WarriorRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "VampireRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "SavageRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "RingofYobaBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "SturdyRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "BurglarsRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "IridiumBandBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "AmethystRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "TopazRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "AquamarineRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "JadeRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "EmeraldRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "RubyRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "WeddingRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "CrabshellRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "NapalmRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "ThornsRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "LuckyRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "HotJavaRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "ProtectionRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "SoulSapperRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "PhoenixRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "ImmunityBandBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        },
+        "GlowstoneRingBRA": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false,
+            "Section": "Disable Better Rings individual Ring",
+        }
+    },
+    "Format": "2.5.1",
+    "Changes": [
+        //
+        //VANILLA RINGS
+        //
+        {
+            "LogName": "Small Glow Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SmallGlowRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_SmallGlowRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/smallglowring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Glow Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GlowRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_GlowRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/glowring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Small Magnet Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SmallMagnetRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_SmallMagnetRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/smallmagnetring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Magnet Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MagnetRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_MagnetRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 240,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/magnetring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Slime Charmer Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SlimeCharmerRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_SlimeCharmerRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 256,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/slimecharmerring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Warrior Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "WarriorRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_WarriorRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 272,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/warriorring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Vampire Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "VampireRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_VampireRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/vampirering.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Savage Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SavageRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_SavageRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 304,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/savagering.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Ring of Yoba",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RingofYoba": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_RingofYoba": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/ringofyoba.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Sturdy Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SturdyRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_SturdyRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 336,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/sturdyring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Burglars Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BurglarsRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_BurglarsRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/burglarsring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Iridium Band",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "IridiumBand": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_IridiumBand": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/iridiumband.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Amethyst Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "AmethystRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_AmethystRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 16,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/amethystring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Topaz Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "TopazRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_TopazRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/topazring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Aquamarine Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "AquamarineRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_AquamarineRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/aquamarinering.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Jade Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "JadeRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_JadeRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/jadering.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Emerald Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "EmeraldRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_EmeraldRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/emeraldring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Ruby Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RubyRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_RubyRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/rubyring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Wedding Ring 1",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "WeddingRing1": true,
+                "WeddingRing2": false,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_WeddingRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/weddingring1.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Wedding Ring 2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "WeddingRing2": true,
+                "WeddingRing1": false,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_WeddingRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/weddingring2.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Crabshell Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CrabshellRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_CrabshellRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/crabshellring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Napalm Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "NapalmRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_NapalmRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 304,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/napalmring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Thorns Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "ThornsRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_ThornsRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 544,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/thornsring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Lucky Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "LuckyRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_LuckyRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 304,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/luckyring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Hot Java Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "HotJavaRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_HotJavaRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/hotjavaring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Protection Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "ProtectionRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_ProtectionRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 336,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/protectionring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Soul Sapper Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SoulSapperRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_SoulSapperRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/soulsapperring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Phoenix Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PhoenixRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_PhoenixRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/phoenixring.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Immunity Band",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "ImmunityBand": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_ImmunityBand": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 576,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/immunityband.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Glowstone Ring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GlowstoneRing": true,
+                "RingStyle": "Vanilla"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_GlowstoneRing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 592,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/glowstonering.png}}:0..16@10"
+                }
+            }
+        },
+        //
+        //Better Rings
+        //
+        {
+            "LogName": "Small Glow Ring BRA ",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GlowstoneRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Priority": "Late",
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_GlowstoneRingBRA": {
+                    "Target":"BBR.BetterRings",
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 592,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/glowstonebra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Small Glow Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SmallGlowRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_SmallGlowRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/smallglowbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Glow Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GlowRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_GlowRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/glowbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Small Magnet Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SmallMagnetRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_SmallMagnetRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/smallmagnetbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Magnet Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MagnetRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_MagnetRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 240,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/magnetbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Slime Charmer Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SlimeCharmerRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_SlimeCharmerRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 256,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/slimecharmerbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Warrior Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "WarriorRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_WarriorRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 272,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/warriorbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Vampire Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "VampireRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_VampireRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/vampirebra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Savage Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SavageRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_SavageRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 304,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/savagebra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Ring of Yoba BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RingofYobaBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_RingofYobaBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/yobabra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Sturdy Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SturdyRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_SturdyRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 336,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/sturdybra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Burglars Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BurglarsRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_BurglarsRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/burglarbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Iridium Band BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "IridiumBandBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_IridiumBandBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 336,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/iridiumbandbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Amethyst Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "AmethystRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_AmethystRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 16,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/amethystbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Topaz Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "TopazRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_TopazRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/topazbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Aquamarine Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "AquamarineRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_AquamarineRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/aquamarinebra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Jade Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "JadeRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_JadeRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/jadebra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Emerald Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "EmeraldRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_EmeraldRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/emeraldbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Ruby Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RubyRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_RubyRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/rubybra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Wedding Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "WeddingRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_WeddingRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/weddingbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Crabshell Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CrabshellRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_CrabshellRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/crabshellbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Napalm Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "NapalmRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_NapalmRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 304,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/napalmbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Thorns Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "ThornsRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_ThornsRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 544,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/thornsbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Lucky Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "LuckyRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_LuckyRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 304,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/luckybra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Hot Java Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "HotJavaRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_HotJavaRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/hotjavabra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Protection Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "ProtectionRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_ProtectionRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 336,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/protectionbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Soul Sapper Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SoulSapperRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_SoulSapperRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/soulsapperbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Phoenix Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PhoenixRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_PhoenixRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/phoenixbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Immunity Band BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "ImmunityBandBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_ImmunityBandBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 576,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/immunitybandbra.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Glowstone Ring BRA",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GlowstoneRingBRA": true,
+                "RingStyle": "Better Rings"
+            },
+            "Entries": {
+                "KKzBG.AnimatedRingsPack_GlowstoneRingBRA": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 592,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/better_rings/glowstonebra.png}}:0..16@10"
+                }
+            }
+        }
+    ]
+}

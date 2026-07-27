@@ -1,0 +1,114 @@
+{
+    "Changes": [
+    
+        {
+            //Adds leaves to buildings and objects during fall
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Priority": "Late",
+            "Target": "Maps/fall_town",
+            "FromFile": "assets/Tilesheets/z_Leaves_Roofs.png", //My edit - got rid of roof bits under the leaves so will work with any recolor                      
+        },
+        {
+            //Adds snow to buildings and objects during winter
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Priority": "Late",
+            "Target": "Maps/winter_outdoorsTileSheet",
+            "FromFile": "assets/Recolors/Default/winter_outdoors.png",
+            "When": {
+                "IsOutdoors": true
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            //Adds snow onto basic craftable fences
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Target": "LooseSprites/Fence1",
+            "FromFile": "Assets/Recolors/Default/FenceSnow_Default.png",
+            "When": {
+                "Season": "winter",
+                "IsOutdoors": true,
+                "LocationName |contains=IslandWest": false
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            //Adds snow onto hardwood craftable fences
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Target": "LooseSprites/Fence5",
+            "FromFile": "Assets/Recolors/Default/FenceSnow_Default.png",
+            "When": {
+                "Season": "winter",
+                "IsOutdoors": true,
+                "LocationName |contains=IslandWest": false
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+			//Adds snow onto small hardwood craftable fences
+            "Action": "EditImage",
+            "Patchmode": "Overlay",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Small Hardwood Fence Tilesheet",
+			"FromFile": "assets/Items/fences/small hardwood fence tilesheet snow.png",			
+			"Update": "OnLocationChange",
+			"When": {
+			   "Season": "Winter",
+			   "LocationName |contains=Custom_ForbiddenMaze, Custom_CrimsonBadlands, Custom_CastleVillageOutpost, Custom_DesertRailway, Custom_IridiumQuarry, Custom_TreasureCave, Custom_GaldoranVoid": false
+			}
+		},
+        {
+            //Adds snow to buildings and objects during winter
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Priority": "Late",
+            "Target": "Maps/winter_town",
+            "FromFile": "assets/recolors/Default/winter_town.png",
+            "When": {
+                "SeasonalEdits": true,
+                "IsOutdoors": true
+            },
+            "Update": "OnLocationChange"
+        },
+        { //Adds snow to wood and rock debris
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Recolors/Default/DebrisSnow.png",
+            "When": {
+                "SnowyDebris": true,
+                "Season": "Winter",
+                "IsOutdoors": true,
+                "LocationName |contains=Farm, Forest, Mountain, Custom_Garden, Custom_GrandpasShedOutside": true
+            },
+            "Update": "OnLocationChange"
+        },
+        { //Adds snow to dead crops grown by the player
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Target": "Tilesheets/crops",
+            "FromFile": "assets/Recolors/Default/SnowyDeadCrops.png",
+            "When": {
+                "Season": "Winter",
+                "IsOutdoors": true,
+                "LocationName |contains=IslandWest, Island_W": false
+            },
+            "ToArea": { "X": 192, "Y": 400, "Width": 64, "Height": 16 },
+            "Update": "OnLocationChange"
+        },
+        { //Adds leaves to picnic table sit animation
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Priority": "Late",
+            "Target": "Tilesheets/ChairTiles",
+            "FromFile": "assets/Tilesheets/PicnicTableLeaves.png",
+            "When": {
+                "Season": "Fall"
+            },
+            "ToArea": { "X": 96, "Y": 64, "Width": 48, "Height": 16 },            
+        },
+    
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "Name": "[CP] H&W Restaurant Furniture - Oak",
+    "Author": "HimeTarts and Wildflourmods",
+    "Version": "1.0",
+    "Description": "Restaurant-themed table furniture.",
+    "UniqueID": "HXW.RestaurantFurni",
+    "UpdateKeys": ["nexus:31802"], 
+    "Dependencies": [
+        {
+            "UniqueID": "sophie.Calcifer",
+            "IsRequired": true
+        }
+    ], 
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

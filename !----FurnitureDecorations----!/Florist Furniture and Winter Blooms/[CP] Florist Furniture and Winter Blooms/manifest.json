@@ -1,0 +1,17 @@
+{
+   "Name": "Florist Furniture and Winter Blooms",
+   "Author": "FarmerBeans",
+   "Version": "1.0.2",
+   "Description": "Adds Florist items to the furniture catalog and keeps seasonal plants blooming through winter",
+   "UniqueID": "FarmerBeans.FloristFurniture",
+   "UpdateKeys": ["Nexus:24024"], 
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+      "Dependencies": [
+      {
+         "UniqueID": "Novamare.Furniture",
+         "IsRequired": false
+      }
+   ]
+}

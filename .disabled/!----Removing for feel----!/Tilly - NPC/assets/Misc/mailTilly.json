@@ -1,0 +1,176 @@
+{
+  "Changes": [
+	{
+		"LogName": "Mail Trigger Actions",
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {
+			"{{ModId}}.Tilly_ScissorsMail": {
+				"Id": "{{ModId}}.Tilly_ScissorsMail",
+				"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{ModId}}.Tilly 1000",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}.Tilly_TillyScissorsQuest",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			
+			"{{ModId}}.Tilly_MapleOrderCompleteTA": {
+				"Id": "{{ModId}}.Tilly_MapleOrderCompleteMail",
+				"Condition": "PLAYER_SPECIAL_ORDER_COMPLETE Current {{ModId}}.Tilly_MapleOrder",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}.Tilly_MapleOrderComplete",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			
+			"{{ModId}}.Tilly_HoneyOrderCompleteTA": {
+				"Id": "{{ModId}}.Tilly_HoneyOrderCompleteMail",
+				"Condition": "PLAYER_SPECIAL_ORDER_COMPLETE Current {{ModId}}.Tilly_HoneyOrder",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}.Tilly_HoneyOrderComplete",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			
+			
+			"{{ModId}}.Tilly_FlowerDeliveryCompleteTA": {
+				"Id": "{{ModId}}.Tilly_FlowerDeliveryCompleteMail",
+				"Condition": "PLAYER_SPECIAL_ORDER_COMPLETE Current {{ModId}}.Tilly_FlowerDelivery",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}.Tilly_FlowerDeliveryComplete",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			
+			"{{ModId}}.Tilly_TeaCakeMailflag": {
+				"Id": "{{ModId}}.Tilly_TeaCakeMailflag",
+				"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{ModId}}.Tilly 1500",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}.Tilly_TeaCakeMail",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			
+			"{{ModId}}.Tilly_TeaPartyMailflag": {
+				"Id": "{{ModId}}.Tilly_TeaPartyMailflag",
+				"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{ModId}}.Tilly 1750",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}.Tilly_TeaPartyMail",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			
+			"{{ModId}}.Tilly_ElliottBookMailflag": {
+				"Id": "{{ModId}}.Tilly_ElliottBookMailflag",
+				"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}.Tilly_7Hearts.2, !PLAYER_HAS_CONVERSATION_TOPIC Current {{ModId}}.Tilly_AuctionCT",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}.Tilly_AuctionBook tomorrow",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			
+			//Portrait 1
+			"{{ModId}}.Tilly_Portrait1Flag": {
+				"Id": "{{ModId}}.Tilly_Portrait1Flag",
+				"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{ModId}}.Tilly 2000",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}.Tilly_Portrait1 tomorrow",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			
+			
+			//Portrait 2
+			"{{ModId}}.Tilly_Portrait2Flag": {
+				"Id": "{{ModId}}.Tilly_Portrait2Flag",
+				"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{ModId}}.Tilly 3500",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}.Tilly_Portrait2 tomorrow",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			
+			
+			//Tea Egg Recipe Fallback 
+			"{{ModId}}.Tilly_TeaEggFallback": {
+				"Id": "{{ModId}}.Tilly_TeaEggFallback",
+				"Condition": "!PLAYER_HAS_COOKING_RECIPE Current {{ModId}}.Tilly_TeaEgg, YEAR 2, SEASON_DAY spring 13",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}.Tilly_TeaEggMailFallback tomorrow",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			
+			
+			//Recipe failure fix 
+			"{{ModId}}.Tilly_TeaCakeMailFix": {
+				"Id": "{{ModId}}.Tilly_TeaCakeMailFix",
+				"Condition": "PLAYER_HAS_MAIL Current {{ModId}}.Tilly_TeaCakeMail",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "MarkCookingRecipeKnown Current {{ModId}}.Tilly_TeaCake",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			"{{ModId}}.Tilly_HoneyCakeMailFix": {
+				"Id": "{{ModId}}.Tilly_HoneyCakeMailFix",
+				"Condition": "PLAYER_HAS_MAIL Current {{ModId}}.Tilly_HoneyCakeMail",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "MarkCookingRecipeKnown Current {{ModId}}.Tilly_HoneyCake",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			"{{ModId}}.Tilly_TeaEggMailFix": {
+				"Id": "{{ModId}}.Tilly_TeaEggMailFix",
+				"Condition": "PLAYER_HAS_MAIL Current {{ModId}}.Tilly_EggMail",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "MarkCookingRecipeKnown Current {{ModId}}.Tilly_TeaEgg",
+				"Actions": null,
+				"MarkActionApplied": true,
+			},
+			
+		}
+	},
+	
+	{
+		"LogName": "Mail Strings",
+		"Action": "EditData",
+		"Target": "Data/mail",
+		"Entries": {
+			"{{ModId}}.Tilly_TillyScissorsQuest": "{{i18n:Wem.Bundle.Tilly_TillyScissorsQuest.text}}[letterbg Wem.Bundle.Tilly\\MailPaper 0]%item quest {{ModId}}.Tilly_LostScissors true %%[textcolor black][#]{{i18n:Wem.Bundle.Tilly_TillyScissorsQuest.title}}",
+			"{{ModId}}.Tilly_EggMail": "{{i18n:Wem.Bundle.Tilly_EggMail.text}}[textcolor black][letterbg Wem.Bundle.Tilly\\MailPaper 0]%item cookingRecipe {{ModId}}.Tilly_TeaEgg%%[#]{{i18n:Wem.Bundle.Tilly_EggMail.title}}",
+			"{{ModId}}.Tilly_MapleOrderComplete": "{{i18n:Wem.Bundle.Tilly_MapleOrderComplete.text}}[letterbg Wem.Bundle.Tilly\\MailPaper 0]%item id (O)341 1 %%[textcolor black][#]{{i18n:Wem.Bundle.Tilly_MapleOrderComplete.title}}",
+			"{{ModId}}.Tilly_FlowerDeliveryComplete": "{{i18n:Wem.Bundle.Tilly_FlowerDeliveryComplete.text}}[letterbg Wem.Bundle.Tilly\\MailPaper 0]%item id (O)872 15 %%[textcolor black][#]{{i18n:Wem.Bundle.Tilly_FlowerDeliveryComplete.title}}",
+			"{{ModId}}.Tilly_HoneyOrderComplete": "{{i18n:Wem.Bundle.Tilly_HoneyOrderComplete.text}}[letterbg Wem.Bundle.Tilly\\MailPaper 0]%item id {{ModId}}.Tilly_SweetTea 5 %%[textcolor black][#]{{i18n:Wem.Bundle.Tilly_HoneyOrderComplete.title}}",
+			
+			"{{ModId}}.Tilly_HoneyCakeMail": "{{i18n:Wem.Bundle.Tilly_HoneyCake.text}}[letterbg Wem.Bundle.Tilly\\MailPaper 0]%item cookingRecipe {{ModId}}.Tilly_HoneyCake %%[textcolor black][#]{{i18n:Wem.Bundle.Tilly_HoneyCake.title}}",
+			
+			"{{ModId}}.Tilly_TeaCakeMail": "{{i18n:Wem.Bundle.Tilly_TeaCake.text}}[letterbg Wem.Bundle.Tilly\\MailPaper 0]%item cookingRecipe {{ModId}}.Tilly_TeaCake %%[textcolor black][#]{{i18n:Wem.Bundle.Tilly_TeaCake.title}}",
+			
+			"{{ModId}}.Tilly_TeaPartyMail": "{{i18n:Wem.Bundle.Tilly_TeaParty.text}}[letterbg Wem.Bundle.Tilly\\MailPaper 0][textcolor black][#]{{i18n:Wem.Bundle.Tilly_TeaParty.title}}",
+			
+			"{{ModId}}.Tilly_AuctionBook": "{{i18n:Wem.Bundle.Tilly_AuctionBook.text}}[letterbg Wem.Bundle.Tilly\\MailPaper 0]%item id {{ModId}}.Tilly_ElliottBook 1 %%[textcolor black][#]{{i18n:Wem.Bundle.Tilly_AuctionBook.title}}",
+
+			"{{ModId}}.Tilly_Portrait1": "{{i18n:Wem.Bundle.Tilly_Portrait1.text}}[letterbg Wem.Bundle.Tilly\\MailPaper 0]%item id {{ModId}}_TillyPortrait1 1 %%[textcolor black][#]{{i18n:Wem.Bundle.Tilly_Portrait1.title}}",
+			
+			"{{ModId}}.Tilly_Portrait2": "{{i18n:Wem.Bundle.Tilly_Portrait2.text}}%item id {{ModId}}_TillyPortrait2 1 %%[#]{{i18n:Wem.Bundle.Tilly_Portrait2.title}}",
+			
+			"{{ModId}}.Tilly_TeaEggMailFallback": "{{i18n:Wem.Bundle.Tilly_TeaEggMailFallback.text}}[textcolor black][letterbg Wem.Bundle.Tilly\\MailPaper 0]%item cookingRecipe {{ModId}}.Tilly_TeaEgg%%[#]{{i18n:Wem.Bundle.Tilly_EggMail.title}}",
+			
+
+		}
+	},
+  ]
+}

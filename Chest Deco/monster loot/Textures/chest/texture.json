@@ -1,0 +1,37 @@
+{
+ "CollectiveNames":
+[
+"Chest",
+"Stone Chest",
+"Junimo Chest",
+"Big Chest",
+"Big Stone Chest"
+],
+  "Type": "Craftable",
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "Keywords": [ "Monster Loot" ],
+  "ManualVariations": 
+[
+    {
+      "Id": 0,
+      "Name" : "Slime"
+    },
+    {
+      "Id": 1,
+      "Name" : "Bug Meat"
+    },
+    {
+      "Id": 2,
+      "Name" : "Bat Wing"
+    },
+    {
+      "Id": 3,
+      "Name" : "Star Essence"
+    },
+    {
+      "Id": 4,
+      "Name" : "Void Essence"
+    }
+]
+}

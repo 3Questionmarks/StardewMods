@@ -10,15 +10,16 @@
         "Wed": "{{i18n: NaveenDialogueWed}}",
         "Thu": "{{i18n: NaveenDialogueThu}}",
         "Fri": "{{i18n: NaveenDialogueFri}}",
-        "Sat": "{{i18n: NaveenDialogueSat{{Random:R01, R02, R03}}|HasSBV={{HasMod |contains=skellady.SBVCP}}}}",
+        "Sat": "{{i18n: NaveenDialogueSat{{Random:R01, R02, R03, R04}}|HasSBV={{HasMod |contains=skellady.SBVCP}}}}",
+        "Lumisteria.MtVapius_SatR03BetasReaction": "{{i18n: NaveenDialogueSatR03BetasReaction}}",
         "Sun": "{{i18n: NaveenDialogueSun}}",
 		//2
         "Mon4": "{{i18n: NaveenDialogueMon2}}",
         "Tue2": "{{i18n: NaveenDialogueTue2}}",
-        //"Wed2": "{{i18n: NaveenDialogueWed2}}",
+        "Wed2": "{{i18n: NaveenDialogueWed2}}",
         "Thu2": "{{i18n: NaveenDialogueThu2}}",
         "Fri2": "{{i18n: NaveenDialogueFri2}}",
-        "Sat2": "{{i18n: NaveenDialogueSat2{{Random:R01, R02}}}}",
+        "Sat2": "{{i18n: NaveenDialogueSat2{{Random:R01, R02, R03}}}}",
         "Sun2": "{{i18n: NaveenDialogueSun2}}",
 		//4
         "Mon4": "{{i18n: NaveenDialogueMon4}}",
@@ -36,6 +37,9 @@
         "Fri6": "{{i18n: NaveenDialogueFri6}}",
         "Sat6": "{{i18n: NaveenDialogueSat6{{Random:R01, R02}}}}",
         "Sun6": "{{i18n: NaveenDialogueSun6}}",
+		
+		
+        "fall_15": "{{i18n: NaveenDialoguefall_15|HamletProgress={{HamletProgress|contains={{Range: 0, 5}}}}}}",
 		
 		//Resort
 		"Resort": "{{i18n: NaveenDialogueResort}}",
@@ -62,7 +66,7 @@
       "Target": "Characters/Dialogue/NaveenFaycombeSereneVMV",
       "Entries": {
         "Mon8": "{{i18n: NaveenDialogueMon8{{Random:R01, R02}}}}",
-        "Tue8": "{{i18n: NaveenDialogueTue8}}",
+        "Tue8": "{{i18n: NaveenDialogueTue8{{Random:R01, R02}}}}",
         "Wed8": "{{i18n: NaveenDialogueWed8{{Random:R01, R02}}}}",
         "Thu8": "{{i18n: NaveenDialogueThu8}}",
         "Fri8": "{{i18n: NaveenDialogueFri8}}",
@@ -91,7 +95,7 @@
 	  
 		//10
         "Mon10": "{{i18n: NaveenDialogueMon10}}",
-        //"Tue10": "{{i18n: NaveenDialogueTue10}}",
+        "Tue10": "{{i18n: NaveenDialogueTue10}}",
         //"Wed10": "{{i18n: NaveenDialogueWed10}}",
         //"Thu10": "{{i18n: NaveenDialogueThu10}}",
         //"Fri10": "{{i18n: NaveenDialogueFri10}}",
@@ -102,6 +106,24 @@
       },
 	  "When": { "Random: true, true, true, true, false": "true"}
 
+    },
+    {
+      "LogName": "Naveen 10 Heart Romantic Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/NaveenFaycombeSereneVMV",
+      "Entries": {
+        "Mon10": "{{i18n: NaveenDialogueMon10Romantic}}",
+        "Tue10": "{{i18n: NaveenDialogueTue10Romantic}}",
+        "Wed10": "{{i18n: NaveenDialogueWed10Romantic}}",
+        "Fri10": "{{i18n: NaveenDialogueThu10Romantic}}",
+        "Fri10": "{{i18n: NaveenDialogueFri10Romantic}}",
+        "Sat10": "{{i18n: NaveenDialogueSat10Romantic}}",
+        "Sat10": "{{i18n: NaveenDialogueSun10Romantic}}",
+      },
+      "When": {
+        "Random: true, true, true, false": "true",
+		"Relationship:NaveenFaycombeSereneVMV": "Dating, Engaged",
+      }
     },
     /*{
       "LogName": "Naveen Inlaw Conditional",

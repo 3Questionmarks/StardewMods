@@ -264,9 +264,9 @@
 
 "Sounds": [
 	{
-	"SoundName": "turtle_pet",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
+	"SoundName": "Pup_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
 	"ChanceOfPlaying": 0.2
 	}
 ]  

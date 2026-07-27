@@ -1,0 +1,64 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Interior Tilesheets",
+            "Action": "Load",
+            "Target": "Maps/MidnightsMisc,Maps/MidnightsMisc2",
+            "FromFile": "Assets/{{InteriorRecolorTag}}Interior/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Load Exterior Tilesheets",
+            "Action": "Load",
+            "Target": "Maps/MidnightsMiscExt",
+            "FromFile": "Assets/{{ExteriorRecolorTag}}Exterior/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Load Exterior Tilesheets - Mailboxes",
+            "Action": "Load",
+            "Target": "Maps/spring_MidnightsMiscExt2,Maps/summer_MidnightsMiscExt2,Maps/fall_MidnightsMiscExt2,Maps/winter_MidnightsMiscExt2",
+            "FromFile": "Assets/{{MailboxRecolorTag}}Exterior/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ChairTiles",
+            "Entries": {
+                "MidnightsMisc/1/1": "1/2/left/couch/0/1/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/4/1": "1/2/left/couch/3/1/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/7/1": "1/2/right/couch/8/1/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/0/3": "1/1/up/highback_chair/0/5/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/1/3": "1/1/up/highback_chair/1/5/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/2/3": "1/1/up/highback_chair/2/5/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/3/3": "1/1/up/highback_chair/3/5/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/4/3": "1/1/up/highback_chair/4/5/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/5/3": "1/1/up/highback_chair/5/5/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/6/3": "1/1/up/highback_chair/6/5/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/7/3": "1/1/up/highback_chair/7/5/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/8/3": "1/1/up/highback_chair/8/5/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/1/29": "1/2/left/couch/0/29/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/7/36": "1/2/right/couch/8/36/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/0/32": "1/1/up/highback_chair/0/34/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/1/32": "1/1/up/highback_chair/1/34/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/2/32": "1/1/up/highback_chair/2/34/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/9/29": "1/1/down/couch/-1/-1/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/10/29": "1/1/down/couch/-1/-1/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/11/29": "1/1/down/couch/-1/-1/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/4/29": "1/2/left/couch/3/29/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/5/36": "1/2/right/couch/5/36/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/3/32": "1/1/up/highback_chair/3/34/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/4/32": "1/1/up/highback_chair/4/34/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/5/32": "1/1/up/highback_chair/5/34/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/9/31": "1/1/down/couch/-1/-1/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/10/31": "1/1/down/couch/-1/-1/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/11/31": "1/1/down/couch/-1/-1/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/7/29": "1/2/left/couch/6/29/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/1/36": "1/2/right/couch/2/36/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/6/32": "1/1/up/highback_chair/6/34/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/7/32": "1/1/up/highback_chair/7/34/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/8/32": "1/1/up/highback_chair/8/34/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/9/33": "1/1/down/couch/-1/-1/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/10/33": "1/1/down/couch/-1/-1/false/Maps\\MidnightsMisc",
+                "MidnightsMisc/11/33": "1/1/down/couch/-1/-1/false/Maps\\MidnightsMisc"
+            }
+        }
+    ]
+}

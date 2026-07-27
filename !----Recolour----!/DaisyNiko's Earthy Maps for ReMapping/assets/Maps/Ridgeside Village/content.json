@@ -1,0 +1,24 @@
+{
+	"Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Ridgeside.Village)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Ridgeside.Village",
+      "FromFile": "assets/Maps/Ridgeside Village/Ridgeside.Village_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Ridgeside.Village.Icone)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Ridgeside.Village.Icone",
+      "FromFile": "assets/Maps/Ridgeside Village/Ridgeside.Village.Icone_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

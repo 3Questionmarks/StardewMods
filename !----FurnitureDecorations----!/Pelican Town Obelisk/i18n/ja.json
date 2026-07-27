@@ -1,0 +1,41 @@
+{
+    "PelicanTownObelisk_Name": "ペリカンタウンオベリスク",
+    "PelicanTownObelisk_Description": "魔術師の技術が込められたオベリスク。タウンの噴水へと一瞬でワープする事が出来る。",
+
+    "PelicanTownObelisk.Mail_Title": "ペリカンタウンオベリスクのお知らせ",
+    "PelicanTownObelisk.Mail_Text": "@ へ^^こんにちわ。 ルイスが以前から技術を提供して欲しいと魔術師に頼み込んでいたみたいなんだ。それでやっと協力が得られたから、このペリカンタウンオベリスクを他の町に建設して人をタウンに呼び込みたいという話らしい。^^私は詳しい事は分からないけど魔力の込め方は魔術師から教わったから簡単に建てれるようになったんだ。もし@が農場に必要だと言うなら材料と少しの料金でいつでも承るよ！^^-ロビン より",
+
+
+
+    "config.Enable this mod.name": "MODを有効にする",
+    "config.Enable this mod.description": "このMOD自体のOn/Off設定です。",
+
+    "config.Fountain Appearance.name": "噴水の見た目を変更する",
+    "config.Fountain Appearance.description": "噴水自体の見た目の変更。現在はバニラか、Project Yellog Town Overhaul MODで使用されているグラフィックの2種類。 Project Yellog Town Overhaul MOD自体が導入されていなくてもこのMODのみで変更できます。",
+    "config.Fountain Appearance.values.Vanilla": "バニラ",
+    "config.Fountain Appearance.values.ProjectYellogTownOverhaul": "Project Yellog Town Overhaul",
+
+    "config.Seasonal Appearance.name": "季節で見た目を変更する",
+    "config.Seasonal Appearance.description": "設定をOFFにすると季節によって見た目が変化しなくなります。(春の外観に固定されます）",
+
+    "config.Treat same other obelisks.name": "他のオベリスクと同じ仕様",
+    "config.Treat same other obelisks.description": "設定をONにすると仕様が他のオベリスと同じになります。(魔術師の建設メニューに表示、必要経費、資材が増加します。)",
+
+    "config.Remove Build Restrictions.name": "建設解放条件の削除",
+    "config.Remove Build Restrictions.description": "設定をONにするとペリカンタウンオベリスクが直ぐに建設可能になります。(建設のロック解除)",
+
+    "config.Free to Build.name": "建設費、素材がかからない",
+    "config.Free to Build.description": "設定をONにするとペリカンタウンオベリスクの建設費用が0になり必要素材も無くなります。",
+
+    "config.Immediate Build Finish.name": "建設が一瞬で終わる",
+    "config.Immediate Build Finish.description": "設定をONにするとペリカンタウンオベリスクの建設が一瞬で終わる様になります。",
+
+    "config.Warp Front Only.name": "ワープを正面１マスだけにする",
+    "config.Warp Front Only.description": "ジョウロへの給水の誤ワープを防ぐ設定。設定をONにするとワープの機能する場所が噴水の正面の１マスだけになります。",
+
+    "config.No Warp Function.name": "ワープ機能無し",
+    "config.No Warp Function.description": "オベリスクとしての機能を削除して、ただの噴水になります。この設定は上の「ワープを正面１マスだけにする」の項目より優先されます。",
+
+    "config.Building Over Flooring.name": "装飾床上に建築",
+    "config.Building Over Flooring.description": "木の床、石の床、等の敷いてある床材の上に建築出来る様になります。",
+}

@@ -1,0 +1,17 @@
+{
+  "Name": "The Forgotten Weaponsmith",
+  "Author": "TimBukTwo",
+  "Version": "1.0.0",
+  "Description": "Content Patcher pack for The Forgotten Weaponsmith.",
+  "UniqueID": "TimBukTwo.TheForgottenWeaponsmith.CP",
+  "UpdateKeys": [ "Nexus:???" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "TimBukTwo.TheForgottenWeaponsmith",
+      "IsRequired": true
+    }
+  ]
+}

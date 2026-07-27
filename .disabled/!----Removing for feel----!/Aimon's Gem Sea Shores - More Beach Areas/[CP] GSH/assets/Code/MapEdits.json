@@ -1,0 +1,597 @@
+{
+    "Changes": [
+	
+	
+		
+//CHAIR TILES TIRES	
+	        {
+            "Action": "EditData",
+            "Target": "Data/ChairTiles",
+            "Entries": {
+		  "z_aimon_bextras2/0/2": "1/1/down/chair/-1/-1/false",	
+  "z_aimon_bextras2/0/3": "1/1/right/chair/-1/-1/false",			  
+				}
+		},
+//
+			//"Light": "19 11 4",
+			//"DayTiles": "Buildings 170 6 510",
+			//"NightTiles": "Buildings 170 6 507",
+			//ScreenshotRegion 0 27 69 61.
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Aimon.Beach_West",
+			"MapProperties": { 
+			"Outdoors": "T",
+			"LocationContext": "Default",  
+			"DefaultWarpLocation": "53 39",
+			"AllowGrassSurviveInWinter": "T",	
+			"BrookSounds": "46 26 4 51 19 4",
+			}	
+        },	
+	{
+            "Action": "EditMap",
+            "Target": "Maps/Aimon.Beach_Extra",
+			"MapProperties": { 
+			"Outdoors": "T",
+			"LocationContext": "Default",  
+			"DefaultWarpLocation": "1 1",
+			"AllowGrassSurviveInWinter": "T",	
+			"BrookSounds": "",
+			}	
+        },		
+{
+            "Action": "EditMap",
+            "Target": "Maps/Aimon.Forest_Festival",
+			"MapProperties": { 
+			"Outdoors": "T",
+			"LocationContext": "Default",  
+			"DefaultWarpLocation": "56 18",
+			"AllowGrassSurviveInWinter": "T",	
+			"BrookSounds": "37 37 4 61 19 4",
+			}	
+        },	
+		{
+            "Action": "EditMap",
+         "Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2", 
+		 "When": { "SVE":  true   },		
+			"MapProperties": { 
+			"ScreenshotRegion ": "0 0 74 49",	
+			}	
+        },	
+
+
+	
+//-------------<Maps EDITS - FOREST>-------------//
+//- VANILLA
+	
+{       	
+		"LogName": "Vanilla Forest1",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/Aimon.Forest_Vanilla.tmx",
+		 "FromArea": { "X": 0, "Y": 19, "Width": 7, "Height": 4 },
+		 "ToArea": { "X": 0, "Y": 68, "Width": 7, "Height": 4 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  false   },			
+        },		
+	{        
+		"LogName": "Vanilla Forest2",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/Aimon.Forest_Vanilla.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 4, "Height": 19 },
+		 "ToArea": { "X": 0, "Y": 49, "Width": 4, "Height": 19 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  false   },				
+        },
+	{   
+		"LogName": "Vanilla Forest3",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/Aimon.Forest_Vanilla.tmx",
+		 "FromArea": { "X": 0, "Y": 23, "Width": 9, "Height": 19 },
+		 "ToArea": { "X": 0, "Y": 72, "Width": 9, "Height": 19 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  false   },			
+        },	
+	{        
+		"LogName": "Vanilla Forest4",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/Aimon.Forest_Vanilla.tmx",
+		 "FromArea": { "X": 0, "Y": 42, "Width": 14, "Height": 29 },
+		 "ToArea": { "X": 0, "Y": 91, "Width": 14, "Height": 29 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  false   },			
+        },		
+	{        
+		"LogName": "Vanilla Forest5",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/Aimon.Forest_Vanilla.tmx",
+		 "FromArea": { "X": 14, "Y": 51, "Width": 48, "Height": 20 },
+		 "ToArea": { "X": 14, "Y": 100, "Width": 48, "Height": 20 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  false   },			
+        },		
+	{        
+		"LogName": "Vanilla Forest6",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/Aimon.Forest_Vanilla.tmx",
+		 "FromArea": { "X": 62, "Y": 48, "Width": 58, "Height": 23 },
+		 "ToArea": { "X": 62, "Y": 97, "Width": 58, "Height": 23 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  false   },			
+        },	
+		
+		
+		
+	//FESTIVAL BRIDGE
+	{        
+		"LogName": "Vanilla Forest Fest Bridge",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/Aimon.Forest_Vanilla_Bridge.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 6, "Height": 2 },
+		 "ToArea": { "X": 0, "Y": 75, "Width": 6, "Height": 2 },
+		 "Update": "OnLocationChange",
+		 "PatchMode": "Replace",
+		 
+		"When": { "SVE":  false,    "HasFlag |contains=spring_23":  true, "Forest Clearing Bridge - Manual toggle": false,       },			
+        },
+		
+		//manual
+		{        
+		"LogName": "Vanilla Forest Fest Bridge manual",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/Aimon.Forest_Vanilla_Bridge.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 6, "Height": 2 },
+		 "ToArea": { "X": 0, "Y": 75, "Width": 6, "Height": 2 },
+		 "PatchMode": "Replace",
+		 
+		"When": { "SVE":  false,     "Forest Clearing Bridge - Manual toggle": true,      },			
+        },
+// //FESTIVAL BRIDGE - Cindersap Forest
+	{        
+		"LogName": "SVE Forest Fest Bridge",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"FromFile": "assets/MapEdits/Aimon.Cindersap_SVE_Bridge.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":4, "Height": 10 },
+		 "ToArea": { "X": 4, "Y":127, "Width":4, "Height": 10 },
+		 "PatchMode": "ReplaceByLayer",
+		  "Update": "OnLocationChange",
+		"Priority": "Late+1",
+		"When": { "SVE":  true ,    "HasFlag |contains=spring_23":  true, "Forest Clearing Bridge - Manual toggle": false,  	    },	
+		//"HasReadLetter": "spring_23" 		
+		//"HasSeenEvent |contains=Aimon.FlowerDancePrep":  false 
+        },	
+		//manual
+		{        
+		"LogName": "SVE Forest Fest Bridge manual",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"FromFile": "assets/MapEdits/Aimon.Cindersap_SVE_Bridge.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":4, "Height": 10 },
+		 "ToArea": { "X": 4, "Y":127, "Width":4, "Height": 10 },
+		 "PatchMode": "ReplaceByLayer",
+		"Priority": "Late+1",
+		"When": { "SVE":  true ,     "Forest Clearing Bridge - Manual toggle": true,  	    },	
+	
+        },	
+		
+		
+//----------------------		
+//FOREST - SVE 	
+{        
+		"LogName": "SVE Forest1",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/Aimon.Forest_SVE.tmx",
+		 "FromArea": { "X": 0, "Y":2, "Width": 22, "Height": 20 },
+		 "ToArea": { "X": 45, "Y":100, "Width": 22, "Height": 20 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  true   },				
+        },
+	{       
+		"LogName": "SVE Forest2",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/Aimon.Forest_SVE.tmx",
+		 "FromArea": { "X": 22, "Y":0, "Width": 12, "Height": 22 },
+		 "ToArea": { "X": 67, "Y":98, "Width": 12, "Height": 22 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  true   },				
+        },	
+	{       
+		"LogName": "SVE Forest3",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/Aimon.Forest_SVE.tmx",
+		 "FromArea": { "X": 34, "Y":1, "Width": 41, "Height": 21 },
+		 "ToArea": { "X": 79, "Y":99, "Width": 41, "Height": 21 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  true   },				
+        },	
+//SVE Forest Fest Bridge
+	{        
+		"LogName": "SVE Forest Fest Bridge",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"FromFile": "assets/MapEdits/Aimon.Cindersap_SVE.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":29, "Height": 29 },
+		 "ToArea": { "X": 0, "Y":127, "Width": 29, "Height": 29 },
+		 "PatchMode": "ReplaceByLayer",
+		"When": { "SVE":  true,    },			
+        },
+
+		
+//FOREST CLEARING - Cindersap Pathway
+	{        "LogName": "Forest Clearing - SVE Cindersap",
+		"Action": "EditMap",
+		"Target": "Maps/Aimon.Forest_Festival",
+		"FromFile": "assets/MapEdits/Aimon.Forest_Festival_SVEEdit.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":12, "Height": 50 },
+		 "ToArea": { "X": 51, "Y":0, "Width":12, "Height": 50 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  true    },			
+        },		
+
+//<------------------------->	
+//-------------<Maps EDITS - Blue Moon Vineyard>-------------//
+	{        "Action": "EditMap",
+		"Target": "Maps/Custom_BlueMoonVineyard",
+		"FromFile": "assets/MapEdits/Aimon.BlueMoon_SVE.tmx",
+		 "FromArea": { "X": 0, "Y":5, "Width": 7, "Height": 18 },
+		 "ToArea": { "X": 0, "Y":62, "Width": 7, "Height": 18 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  true   },				
+        },
+		{        "Action": "EditMap",
+		"Target": "Maps/Custom_BlueMoonVineyard",
+		"FromFile": "assets/MapEdits/Aimon.BlueMoon_SVE.tmx",
+		 "FromArea": { "X": 7, "Y":0, "Width": 50, "Height": 23 },
+		 "ToArea": { "X": 7, "Y":57, "Width": 50, "Height": 23 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  true   },				
+        },
+		
+		
+		
+		
+//-------------<Maps EDITS - BEACH>-------------//
+//BEACH - VANILLA
+{        "Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/MapEdits/Aimon.Beach_Vanilla.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 104, "Height": 49 },
+		 "ToArea": { "X": 0, "Y": 0, "Width": 104, "Height": 49 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  false   },			
+        },
+		{        "Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/MapEdits/Aimon.Beach_Vanilla.tmx",
+		 "FromArea": { "X": 0, "Y": 49, "Width": 104, "Height": 1 },
+		 "ToArea": { "X": 0, "Y": 49, "Width": 104, "Height": 1 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  false   },			
+        },
+		
+//BEACH - SVE
+	{        "Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/MapEdits/Aimon.Beach_SVE.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 104, "Height": 49 },
+		 "ToArea": { "X": 0, "Y": 0, "Width": 104, "Height": 49 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  true   },			
+        },
+		{        "Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/MapEdits/Aimon.Beach_SVE.tmx",
+		  "FromArea": { "X": 0, "Y": 49, "Width": 104, "Height": 1 },
+		 "ToArea": { "X": 0, "Y": 49, "Width": 104, "Height": 1 },
+		 "PatchMode": "Replace",
+		"When": { "SVE":  true   },			
+        },
+		
+//unpassable tide pools
+		{        "Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/MapEdits/Aimon.Beach_TidePools.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 24, "Height": 15 },
+		 "ToArea": { "X": 66, "Y": 8, "Width": 24, "Height": 15 },
+		 "PatchMode": "Overlay",
+		"When": { "Passable Tide Pools":  false   },			
+        },
+	//TOWN RENOVATIONS
+	
+	{        "Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/MapEdits/Aimon.Beach_TownRenovaion.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 4, "Height": 4 },
+		 "ToArea": { "X": 0, "Y": 0,"Width": 4, "Height": 4 },
+		 "PatchMode": "Replace",
+		  "Priority": "Late+1",
+		"When": { "HasFlag":  "communityUpgradeShortcuts", "SVE":  false     },			
+        },
+
+//-------------<Maps EDITS - FESTIVAL Maps>-------------//
+//VANILLA FOREST - FLOWER DANCE
+	{        "Action": "EditMap",
+		"Target": "Maps/Forest-FlowerFestival", 
+		"FromFile": "assets/MapEdits/FestivalMaps/Aimon.Forest_Festival_Flower1.tmx",
+		 "PatchMode": "ReplaceByLayer",
+	"When": { "SVE":  false   },			
+        },
+	{        "Action": "EditMap",
+		"Target": "Maps/Forest-FlowerFestival2", 
+		"FromFile": "assets/MapEdits/FestivalMaps/Aimon.Forest_Festival_Flower2.tmx",
+		 "PatchMode": "ReplaceByLayer",
+		"When": { "SVE":  false   },			
+        },	
+
+//SVE FOREST - FLOWER DANCE
+	{        "Action": "EditMap",
+		"Target": "Maps/Forest-FlowerFestival", 
+		"FromFile": "assets/MapEdits/FestivalMaps/Aimon.Forest_Festival_Flower1_SVE.tmx",
+		 "PatchMode": "ReplaceByLayer",
+		"When": { "SVE":  true   },			
+        },
+	{        "Action": "EditMap",
+		"Target": "Maps/Forest-FlowerFestival2", 
+		"FromFile": "assets/MapEdits/FestivalMaps/Aimon.Forest_Festival_Flower2_SVE.tmx",
+		 "PatchMode": "ReplaceByLayer",
+		"When": { "SVE":  true   },			
+        },			
+//VANILLA BEACH - JELLIES
+
+	{        "Action": "EditMap",
+		"Target": "Maps/Beach-Jellies", 
+		"FromFile": "assets/MapEdits/FestivalMaps/Aimon.Beach_Jellies.tmx",
+		 "PatchMode": "ReplaceByLayer",
+		//"When": { "SVE":  false   },			
+       },
+	{        "Action": "EditMap",
+		"Target": "Maps/Beach-Jellies2", 
+		"FromFile": "assets/MapEdits/FestivalMaps/Aimon.Beach_Jellies2.tmx",
+		 "PatchMode": "ReplaceByLayer",
+		//"When": { "SVE":  false   },			
+       },   
+//VANILLA BEACH -  LUAU	   
+	{        "Action": "EditMap",
+		"Target": "Maps/Beach-Luau", 
+		"FromFile": "assets/MapEdits/FestivalMaps/Aimon.Beach_Luau.tmx",
+		 "PatchMode": "ReplaceByLayer",
+		//"When": { "SVE":  false   },			
+       },      
+	 {        "Action": "EditMap",
+		"Target": "Maps/Beach-Luau2", 
+		"FromFile": "assets/MapEdits/FestivalMaps/Aimon.Beach_Luau2.tmx",
+		 "PatchMode": "ReplaceByLayer",
+		//"When": { "SVE":  false   },			
+       }, 
+//VANILLA BEACH - NIGHT MARKET
+ {        "Action": "EditMap",
+		"Target": "Maps/Beach-NightMarket", 
+		"FromFile": "assets/MapEdits/FestivalMaps/Aimon.Beach_NightMarket.tmx",
+		 "PatchMode": "ReplaceByLayer",
+		//"When": { "SVE":  false   },			
+       }, 	   
+	//{  
+	//"Action": "EditMap",
+	//	"Target": "Maps/Beach-Jellies2", 
+	//	"FromFile": "assets/MapEdits/FestivalMaps/Aimon.Beach_Jellies2_Vanilla.tmx",
+	//	 "PatchMode": "ReplaceByLayer",
+	//	"When": { "SVE":  false   },			
+      //  },	
+	//VANILLA BEACH - LUAU
+	
+	//VANILLA BEACH - NIGHT MARKET
+
+	
+//EVENT EDITS
+{
+         "Action": "EditData",
+         "Target": "Data/Festivals/spring24",
+		 	"When": { "SVE":  true   },
+         "Entries": {
+            "set-up": "event1/22 22/farmer 54 9 2/changeToTemporaryMap Forest-FlowerFestival/loadActors Set-Up/advancedMove Sophia true 4 8000 -2 0 4 5000 2 0/advancedMove Vincent true -6 0 0 -1 6 0 0 1/advancedMove Jas true 1 0 0 1 -6 0 0 -1 5 0/advancedMove Pam true 2 25000 0 -3 2 0 4 25000 -2 0 0 3/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Caroline true 7 0 0 1 1 18000 0 -1 -7 0 3 18000/advancedMove Willy true 2 7000 4 0 2 8000 -4 0/playerControl flowerFestival",	
+	 "set-up_y2": "event1/22 22/farmer 54 9 2/changeToTemporaryMap Forest-FlowerFestival2/viewport -1000 -1000/loadActors Set-Up/advancedMove Jas true 3 620 4 620 1 620 2 620/advancedMove Vincent true 0 4 2 0 0 -4 -2 0/advancedMove Haley true 0 1 2 3000 2 0 0 -1 -2 0 3 500 4 500 1 500 2 500 2 0 1 500 2 500 3 500 4 500 0 2 0 -2 -2 0/advancedMove Alex true 4 12500 1 2000/advancedMove Gus true 4 8000 -2 0 3 400 4 6000 2 0 4 1000/advancedMove Elliott true 4 14500 1 2350/advancedMove Emily true 2 2000 1 1200 1 0 3 1750 4 650 3 600 2 500 1 675 4 1000 0 -1 4 1250 3 600 2 600 1 600 4 600 3 1000 -1 0 3 1000 2 800 1 800 4 800 3 800 2 2000 0 1 2 2000 1 500 2 500 3 500 4 500 1 500 2 500/positionOffset Sebastian -6 -20/positionOffset Leah -24 10/positionOffset Clint -12 24/positionOffset Caroline -12 12/positionOffset Jodi 16 6/positionOffset Robin -6 12/positionOffset Kent? -12 24/positionOffset MarlonFay -16 0/positionOffset Penny -20 -9/positionOffset Sam 6 12/positionOffset Shane 12 -12/playerControl flowerFestival/viewport player clamp true unfreeze/globalFadeToClear",
+            }
+         },
+
+  
+//<------------------------->CLEANER Maps<----------------------->		
+	
+
+//y3 Tras bear patch
+{        "Action": "EditMap",
+		"Target": "Maps/Forest-SewerClean",
+		"FromFile": "assets/MapEdits/TrashRemoval/TR.Forest_SewerClean.tmx",
+		 "FromArea": { "X": 0, "Y": 1, "Width": 24, "Height": 12 },
+		 "ToArea": { "X": 0, "Y": 0, "Width": 24, "Height": 12 },
+		 "PatchMode": "Replace",	 
+        },
+	{        "Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/TrashRemoval/TR.Forest_SewerClean.tmx",
+		 "FromArea": { "X": 10, "Y": 0, "Width": 24, "Height": 1 },
+		 "ToArea": { "X": 93, "Y": 96, "Width": 24, "Height": 1 },
+		 "PatchMode": "Overlay",	
+		  "Priority": "Late+1",	
+		  "When": {  "HasSeenEvent": "777111",  "Cleaner Sewer Pipe": false,  }, //trash bear eventID	
+		 
+        },
+	{        "Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/TrashRemoval/TR.Forest_SewerClean.tmx",
+		 "FromArea": { "X": 0, "Y":13, "Width": 24, "Height": 2 },
+		 "ToArea": { "X": 83, "Y": 109, "Width": 24, "Height": 2 },
+		 "PatchMode": "Replace",
+	  "Priority": "Late+1",			 
+		 "When": {  "HasSeenEvent": "777111", "Cleaner Sewer Pipe": false,  }, //trash bear eventID	
+        },	
+		
+//manual		
+{        "Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/TrashRemoval/TR.Forest_SewerClean.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width": 24, "Height": 12 },
+		 "ToArea": { "X": 83, "Y": 96, "Width": 24, "Height": 12 },
+		 "PatchMode": "Replace",
+	  "Priority": "Late+1",			 
+		 "When": {  "Cleaner Sewer Pipe": true,  },
+        },
+{        "Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/TrashRemoval/TR.Forest_SewerClean.tmx",
+		 "FromArea": { "X": 9, "Y":11, "Width": 5, "Height": 4 },
+		 "ToArea": { "X": 92, "Y": 107, "Width": 5, "Height": 4 },
+		 "PatchMode": "Replace",
+	  "Priority": "Late+1",			 
+		 "When": {  "Cleaner Sewer Pipe": true,  },
+        },		
+
+//FOREST - AUTO
+
+{  
+		"LogName": "Cleaner Forest - auto", 
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/TrashRemoval/TR.Forest.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width": 113, "Height": 27 },
+		 "ToArea": { "X": 4, "Y":86, "Width": 113, "Height": 27 },
+		  "PatchMode": "Overlay",
+		"Priority": "Late+1",				 
+		"When": {  "Cleaner Forest": false, "HasReadLetter |contains=linusTrashCleanup":  true }, //make it an event after special order
+        },		
+	{        
+		"LogName": "Cleaner Forest Clearing - auto",
+		"Action": "EditMap",
+		"Target": "Maps/Aimon.Forest_Festival",
+		"FromFile": "assets/MapEdits/TrashRemoval/TR.Forest_Festival.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width": 13, "Height": 19 },
+		 "ToArea": { "X": 50, "Y":31, "Width": 13, "Height": 19 },
+		  "PatchMode": "Overlay",	
+		"Priority": "Late+1",	
+		"When": {  "Cleaner Forest": false, "HasReadLetter |contains=linusTrashCleanup":  true },
+        },	
+	{        
+		"LogName": "Cleaner Forest FlowDance - auto",
+		"Action": "EditMap",
+		"Target": "Maps/Forest_Festival_Flower1, Forest_Festival_Flower2",
+		"FromFile": "assets/MapEdits/TrashRemoval/TR.Forest_Festival_Flower.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width": 50, "Height": 19 },
+		 "ToArea": { "X": 50, "Y":31, "Width": 50, "Height": 19 },
+		 "PatchMode": "Overlay",	
+		 "Priority": "Late+1",	
+		"When": {  "Cleaner Forest": false,  "HasReadLetter |contains=linusTrashCleanup":  true  },
+        },
+//FOREST - MANUAL
+{       
+		"LogName": "Cleaner Forest - manual",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/TrashRemoval/TR.Forest.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width": 113, "Height": 27 },
+		 "ToArea": { "X": 4, "Y":86, "Width": 113, "Height": 27 },
+		"PatchMode": "Overlay",
+		  "Priority": "Late+1",	
+		"When": {  "Cleaner Forest": true, },
+        },	
+
+	{       	
+		"LogName": "Cleaner Forest Clearing - manual",
+		"Action": "EditMap",
+		"Target": "Maps/Aimon.Forest_Festival",
+		"FromFile": "assets/MapEdits/TrashRemoval/TR.Forest_Festival.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width": 13, "Height": 19 },
+		 "ToArea": { "X": 50, "Y":31, "Width": 13, "Height": 19 },
+		  "PatchMode": "Overlay",	
+		 "Priority": "Late+1",	
+		"When": {  "Cleaner Forest": true,  },
+        },	
+{        
+		"LogName": "Cleaner Forest FlowDance - manual",
+		"Action": "EditMap",
+		"Target": "Maps/Forest_Festival_Flower1, Forest_Festival_Flower2",
+		"FromFile": "assets/MapEdits/TrashRemoval/TR.Forest_Festival_Flower.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width": 50, "Height": 19 },
+		 "ToArea": { "X": 50, "Y":31, "Width": 50, "Height": 19 },
+		 "PatchMode": "Overlay",	
+		"Priority": "Late+1",	
+		"When": {  "Cleaner Forest": true,  },
+        },		
+//beach cleaning from debris		
+{        
+		"LogName": "Cleaner Beach - manual",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/MapEdits/TrashRemoval/TR.Beach.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width": 104, "Height": 8 },
+		 "ToArea": { "X": 0, "Y":0, "Width": 104, "Height": 8 },
+		 "PatchMode": "Overlay",
+		 "Priority": "Late+1",
+		"When": { "Cleaner Beach":  false,   },			
+        },	
+  
+//-------------<SWIM AT BEACH AND WEST BEACH>-------------//
+//westbeach
+	
+	{        "Action": "EditMap",
+		"Target": "Maps/Beach_West",
+		"FromFile": "assets/MapEdits/Aimon.Beach_West_SwimTiles.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width": 13, "Height": 21 },
+		 "ToArea": { "X": 20, "Y": 29, "Width": 13, "Height": 21 },
+		 "PatchMode": "Replace",
+	  "Priority": "Late+1",			 
+		 "When": {  "Season": "Summer", "Swim All Year Round": false, "HasMod |contains=FlyingTNT.Swim":  false  }, //add pool entrance examine event	
+        },	
+{        "Action": "EditMap",
+		"Target": "Maps/Beach_West",
+		"FromFile": "assets/MapEdits/Aimon.Beach_West_SwimTiles.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width": 8, "Height": 12 },
+		 "ToArea": { "X": 33, "Y": 38, "Width": 8, "Height": 12 },
+		 "PatchMode": "Replace",
+	  "Priority": "Late+1",			 
+		 "When": {  "Season": "Summer", "Swim All Year Round": false,   "HasMod |contains=FlyingTNT.Swim":  false   }, //add pool entrance examine event	
+        },
+	//manual 
+
+{        "Action": "EditMap",
+		"Target": "Maps/Beach_West",
+		"FromFile": "assets/MapEdits/Aimon.Beach_West_SwimTiles.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width": 13, "Height": 21 },
+		 "ToArea": { "X": 20, "Y": 29, "Width": 13, "Height": 21 },
+		 "PatchMode": "Replace",			 
+		 "When": {   "Swim All Year Round": true,  "HasMod |contains=FlyingTNT.Swim":  false   }, 
+        },	
+{        "Action": "EditMap",
+		"Target": "Maps/Beach_West",
+		"FromFile": "assets/MapEdits/Aimon.Beach_West_SwimTiles.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width": 8, "Height": 12 },
+		 "ToArea": { "X": 33, "Y": 38, "Width": 8, "Height": 12 },
+		 "PatchMode": "Replace", 
+		 "When": {  "Swim All Year Round": true,  "HasMod |contains=FlyingTNT.Swim":  false   }, 
+        },	
+		
+	
+//-------------<MISC MAP ACTIONS>-------------//
+//-------------<Summit SEA BG
+
+	//{
+          //  "Action": "EditMap",
+          //  "Target": "Maps/Aimon.Beach_West",
+	//"When": { 
+	//		"HasMod |contains=mushymato.MMAP":  true },
+	// "MapProperties": {
+           // "mushymato.MMAP_Panorama": "MMAP_IslandHorizon"
+	//		}
+	//},
+
+    ]
+}

@@ -13,15 +13,15 @@
 			"Conditions": [
 				{
 				"Condition": "TRUE",
-				"Chance": 0.01,
+				"Chance": 0.003,
 				"Weight": 1,
 				"IsExclusive": false
 				}
 			],
 			"TargetMap": "Farm",
-			"SoundName": "grunt",
+			"SoundName": "BearEvent_WA_Sound",
 			"Message": "{{i18n: SmolHooman.WildAnimals.Bears_NightEventDialogue}}",
-			"MessageDelay": 1500,
+			"MessageDelay": 4500,
 			"Output": [
 				{
 				"Type": "Item",
@@ -34,7 +34,7 @@
 					"771"	// FIBER
 				],
 				"MinStack": 1,
-				"MaxStack": 10
+				"MaxStack": 5
 				}
 			],
 		}
@@ -52,15 +52,15 @@
 			"Conditions": [
 				{
 				"Condition": "TRUE",
-				"Chance": 0.01,
+				"Chance": 0.003,
 				"Weight": 1,
 				"IsExclusive": false
 				}
 			],
 			"TargetMap": "Farm",
-			"SoundName": "crow",
+			"SoundName": "CrowEvent_WA_Sound",
 			"Message": "{{i18n: SmolHooman.WildAnimals.Crows_NightEventDialogue}}",
-			"MessageDelay": 1500,
+			"MessageDelay": 4500,
 			"Output": [
 				{
 				"Type": "Item",
@@ -91,15 +91,15 @@
 			"Conditions": [
 				{
 				"Condition": "TRUE",
-				"Chance": 0.01,
+				"Chance": 0.003,
 				"Weight": 1,
 				"IsExclusive": false
 				}
 			],
 			"TargetMap": "Farm",
-			"SoundName": "Raccoon",
+			"SoundName": "RaccoonEvent_WA_Sound",
 			"Message": "{{i18n: SmolHooman.WildAnimals.Raccoons_NightEventDialogue}}",
-			"MessageDelay": 1500,
+			"MessageDelay": 4500,
 			"Output": [
 				{
 				"Type": "Item",
@@ -130,15 +130,15 @@
 			"Conditions": [
 				{
 				"Condition": "TRUE",
-				"Chance": 0.01,
+				"Chance": 0.003,
 				"Weight": 1,
 				"IsExclusive": false
 				}
 			],
 			"TargetMap": "Farm",
-			"SoundName": "slimedead",
+			"SoundName": "SlimeEvent_WA_Sound",
 			"Message": "{{i18n: SmolHooman.WildAnimals.Slimes_NightEventDialogue}}",
-			"MessageDelay": 1500,
+			"MessageDelay": 4500,
 			"Output": [
 				{
 				"Type": "Item",
@@ -151,46 +151,7 @@
 					"680"	// GREEN SLIME EGG
 				],
 				"MinStack": 1,
-				"MaxStack": 6
-				}
-			],
-		}
-	}
-	},
-
-	{
-	"LogName": "Load Wild Animals Squirrels Nightly Event",
-	"Action": "EditData",
-	"Target": "Mods/leclair.morenightlyevents/Events",
-	"Entries": {
-		"SmolHooman.WildAnimals.Squirrels_NightEvent": {
-			"Id": "SmolHooman.WildAnimals.Squirrels_NightEvent",
-			"Type": "Placement",
-			"Conditions": [
-				{
-				"Condition": "TRUE",
-				"Chance": 0.01,
-				"Weight": 1,
-				"IsExclusive": false
-				}
-			],
-			"TargetMap": "Farm",
-			"SoundName": "leafrustle",
-			"Message": "{{i18n: SmolHooman.WildAnimals.Squirrels_NightEventDialogue}}",
-			"MessageDelay": 1500,
-			"Output": [
-				{
-				"Type": "Item",
-				"Condition": "TRUE",
-				"RandomItemId": [
-					"309",	// ACORN
-					"310",	// MAPLE SEED
-					"311",	// PINE CONE
-					"292",	// MAHOGANY SEED
-					"MossySeed"	// MOSSY SEED
-				],
-				"MinStack": 3,
-				"MaxStack": 10
+				"MaxStack": 5
 				}
 			],
 		}
@@ -208,15 +169,15 @@
 			"Conditions": [
 				{
 				"Condition": "TRUE",
-				"Chance": 0.01,
+				"Chance": 0.003,
 				"Weight": 1,
 				"IsExclusive": false
 				}
 			],
 			"TargetMap": "Farm",
-			"SoundName": "rabbit",
+			"SoundName": "ForagerEvent_WA_Sound",
 			"Message": "{{i18n: SmolHooman.WildAnimals.WildAnimals_NightEventDialogue}}",
-			"MessageDelay": 1500,
+			"MessageDelay": 4500,
 			"Output": [
 				{
 				"Type": "Item",
@@ -247,15 +208,15 @@
 			"Conditions": [
 				{
 				"Condition": "TRUE",
-				"Chance": 0.01,
+				"Chance": 0.003,
 				"Weight": 1,
 				"IsExclusive": false
 				}
 			],
 			"TargetMap": "Farm",
-			"SoundName": "SpringBirds",
+			"SoundName": "BirdEvent_WA_Sound",
 			"Message": "{{i18n: SmolHooman.WildAnimals.WildBirds_NightEventDialogue}}",
-			"MessageDelay": 1500,
+			"MessageDelay": 4500,
 			"Output": [
 				{
 				"Type": "Item",
@@ -286,23 +247,32 @@
 			"Conditions": [
 				{
 				"Condition": "TRUE",
-				"Chance": 0.01,
+				"Chance": 0.003,
 				"Weight": 1,
 				"IsExclusive": false
 				}
 			],
 			"TargetMap": "Farm",
-			"SoundName": "cat",
+			"SoundName": "CatEvent_WA_Sound",
 			"Message": "{{i18n: SmolHooman.WildAnimals.WildCats_NightEventDialogue}}",
-			"MessageDelay": 1500,
+			"MessageDelay": 4500,
 			"Output": [
 				{
 				"Type": "Item",
 				"Condition": "TRUE",
-				"ItemId": "RANDOM_ITEMS (O)",
-				"PerItemCondition": "ITEM_CATEGORY Target -4",
+				"RandomItemId": [
+					"143",	// CATFISH
+					"137",	// SMALLMOUTH BASS
+					"706",	// SHAD
+					"132",	// BREAM
+					"144",	// PIKE
+					"140",	// WALLEYE
+					"139",	// SALMON
+					"702",	// CHUB
+					"269",	// MIDNIGHT CARP
+				],
 				"MinStack": 1,
-				"MaxStack": 10
+				"MaxStack": 5
 				}
 			],
 		}
@@ -320,15 +290,15 @@
 			"Conditions": [
 				{
 				"Condition": "TRUE",
-				"Chance": 0.01,
+				"Chance": 0.003,
 				"Weight": 1,
 				"IsExclusive": false
 				}
 			],
 			"TargetMap": "Farm",
-			"SoundName": "dog_bark",
+			"SoundName": "DogEvent_WA_Sound",
 			"Message": "{{i18n: SmolHooman.WildAnimals.WildDogs_NightEventDialogue}}",
-			"MessageDelay": 1500,
+			"MessageDelay": 4500,
 			"Output": [
 				{
 				"Type": "Item",
@@ -341,7 +311,7 @@
 					"444"	// DUCK FEATHER
 				],
 				"MinStack": 1,
-				"MaxStack": 10
+				"MaxStack": 5
 				}
 			],
 		}
@@ -360,15 +330,15 @@
 			"Conditions": [
 				{
 				"Condition": "TRUE",
-				"Chance": 0.01,
+				"Chance": 0.003,
 				"Weight": 1,
 				"IsExclusive": false
 				}
 			],
 			"TargetMap": "Farm",
-			"SoundName": "yoba",
+			"SoundName": "FairyEvent_WA_Sound",
 			"Message": "{{i18n: SmolHooman.WildAnimals.Fairy_NightEventDialogue}}",
-			"MessageDelay": 1500,
+			"MessageDelay": 4500,
 			"Output": [
 				{
 				"Type": "Item",
@@ -400,15 +370,15 @@
 			"Conditions": [
 				{
 				"Condition": "TRUE",
-				"Chance": 0.01,
+				"Chance": 0.003,
 				"Weight": 1,
 				"IsExclusive": false
 				}
 			],
 			"TargetMap": "Farm",
-			"SoundName": "junimoMeep1",
+			"SoundName": "JunimoEvent_WA_Sound",
 			"Message": "{{i18n: SmolHooman.WildAnimals.Junimos_NightEventDialogue}}",
-			"MessageDelay": 1500,
+			"MessageDelay": 4500,
 			"Output": [
 				{
 				"Type": "Item",
@@ -440,15 +410,15 @@
 			"Conditions": [
 				{
 				"Condition": "TRUE",
-				"Chance": 0.01,
+				"Chance": 0.003,
 				"Weight": 1,
 				"IsExclusive": false
 				}
 			],
 			"TargetMap": "Farm",
-			"SoundName": "terraria_boneSerpent",
+			"SoundName": "SpookyEvent_WA_Sound",
 			"Message": "{{i18n: SmolHooman.WildAnimals.Mysterious_NightEventDialogue}}",
-			"MessageDelay": 1500,
+			"MessageDelay": 4500,
 			"Output": [
 				{
 				"Type": "Item",
@@ -489,19 +459,21 @@
 			"Conditions": [
 				{
 				"Condition": "TRUE",
-				"Chance": 0.01,
+				"Chance": 0.003,
 				"Weight": 1,
 				"IsExclusive": false
 				}
 			],
 			"TargetMap": "Farm",
-			"SoundName": "rabbit",
+			"SoundName": "SkunkEvent_WA_Sound",
 			"Message": "{{i18n: SmolHooman.WildAnimals.Skunks_NightEventDialogue}}",
-			"MessageDelay": 1500,
+			"MessageDelay": 4500,
 			"SideEffects": [
 				{
 				"Actions": [
-					"AddBuff SmolHooman.WildAnimals_StinkySkunk"
+					"AddBuff SmolHooman.WildAnimals_StinkySkunk",
+					"AddBuff 23",
+					"AddBuff 25"
 				]
 				}
 			]
@@ -520,15 +492,15 @@
 			"Conditions": [
 				{
 				"Condition": "TRUE",
-				"Chance": 0.01,
+				"Chance": 0.003,
 				"Weight": 1,
 				"IsExclusive": false
 				}
 			],
 			"TargetMap": "Farm",
-			"SoundName": "yoba",
+			"SoundName": "UnicornEvent_WA_Sound",
 			"Message": "{{i18n: SmolHooman.WildAnimals.Unicorn_NightEventDialogue}}",
-			"MessageDelay": 1500,
+			"MessageDelay": 4500,
 			"SideEffects": [
 				{
 				"Actions": [

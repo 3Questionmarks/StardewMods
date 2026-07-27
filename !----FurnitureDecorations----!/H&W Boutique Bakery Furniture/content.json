@@ -1,0 +1,42 @@
+{
+    "Format": "2.3.0",
+
+    "ConfigSchema": {
+
+        "Recolor": {
+            "Description": "If you want to use a recolor, choose from Blueberry, Strawberry or Chocolate. Defaults to Vanilla.",
+            "AllowValues": "Vanilla, Blueberry, Strawberry, Chocolate",
+            "Default": "Vanilla",
+            "AllowBlank": false,
+            "AllowMultiple": false
+          }
+
+    },
+    
+    "Changes": [
+
+        //Include Furniture
+
+        {
+        "LogName": "HXW Furniture",
+        "Action": "Include",
+        "FromFile": "Data/furniture.json"
+        },
+
+         //Include Shop and Catalogue
+
+         {
+        "LogName": "HXW Furniture",
+        "Action": "Include",
+        "FromFile": "Data/shops.json"
+        },
+        
+        //Include Textures
+
+        {
+        "LogName": "HXW Furniture Textures",
+        "Action": "Include",
+        "FromFile": "Data/textures.json"
+        }
+    ]
+}

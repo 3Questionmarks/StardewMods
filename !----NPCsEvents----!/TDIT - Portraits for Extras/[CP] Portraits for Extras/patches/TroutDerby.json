@@ -1,0 +1,83 @@
+{
+	"Changes":[
+		{
+			"Action": "EditData",
+			"Target": "Strings/1_6_Strings",
+			"Priority": "Late + 50",		
+			"TextOperations": [	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","FishingDerbyBooth_Intro"],
+					"Value": "Portraits/MasterFisher_Default Strings/DolphINaF.ExtraPortraits:Name.MasterFisher",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","FishingDerbyBooth_BagFull"],
+					"Value": "Portraits/MasterFisher_Default Strings/DolphINaF.ExtraPortraits:Name.MasterFisher",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","FishingDerbyBooth_NoTags"],
+					"Value": "Portraits/MasterFisher_Default Strings/DolphINaF.ExtraPortraits:Name.MasterFisher",
+					"Delimiter": "🐬"
+				},		
+				
+			]
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Strings/SimpleNonVillagerDialogues",
+			"Priority": "Late + 50",		
+			"TextOperations": [	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","derby_contestent0"],
+					"Value": "Portraits/Fisherman_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},					
+				{
+					"Operation": "Append",
+					"Target": ["Entries","derby_contestent4"],
+					"Value": "$1",
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","derby_contestent4"],
+					"Value": "Portraits/FishingSisters_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","derby_contestent5"],
+					"Value": "Portraits/Angler_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries","derby_contestent6"],
+					"Value": "$1",
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","derby_contestent6"],
+					"Value": "Portraits/TroutMan_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","derby_contestent8"],
+					"Value": "Portraits/FishingPro_Default Strings/DolphINaF.ExtraPortraits:Name.FishingPro {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},					
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","derby_contestent9"],
+					"Value": "Portraits/Fisherman4_Default @ {{i18n:colon}}",
+					"Delimiter": "🐬"
+				},							
+			]
+		},			
+	],
+}

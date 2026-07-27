@@ -1,0 +1,81 @@
+{
+//Flor
+        "Changes": [
+        {   
+            "Action": "EditData",	 
+            "Target": "Characters/Schedules/Flor",
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod |contains=Rafseazz.RSVCP": "true",
+                "HasMod |contains=Xiddav.LittleRedSchoolHouse": "true"
+            },
+            "Entries": {
+                "Mon": "0 Town 6 12 2/610 Town 6 13 2/740 Custom_SchoolHouse_SecondFloor 15 7 2/1020 Custom_SchoolHouse_SecondFloor 8 10 0/1040 Custom_SchoolHouse_SecondFloor 15 7 2/1120 Custom_SchoolHouse_SecondFloor 13 4 0/1140 Custom_SchoolHouse_SecondFloor 13 4 2/1230 Custom_SchoolHouse_SecondFloor 15 7 2/1420 Custom_SchoolHouse_SecondFloor 11 15 0/1500 Custom_SchoolHouse_SecondFloor 15 7 2/1600 Custom_Ridgeside_LogCabinHotel2ndFloor 2 9 1/2200 Custom_Ridgeside_LogCabinHotel2ndFloor 3 5 0 flor_sleep",
+                "Tue": "0 Town 6 12 2/610 Town 6 13 2/740 Custom_SchoolHouse_SecondFloor 15 7 2/1020 Custom_SchoolHouse_SecondFloor 8 10 0/1040 Custom_SchoolHouse_SecondFloor 15 7 2/1140 Town 12 13 2/1300 Custom_SchoolHouse_SecondFloor 15 7 2/1420 Custom_SchoolHouse_SecondFloor 19 10 0/1500 Custom_SchoolHouse_SecondFloor 15 7 2/1600 Custom_Ridgeside_LogCabinHotel2ndFloor 2 9 1/2200 Custom_Ridgeside_LogCabinHotel2ndFloor 3 5 0 flor_sleep",
+                "Wed": "0 Town 6 12 2/610 Town 6 13 2/740 Custom_SchoolHouse_SecondFloor 15 7 2/1020 Custom_SchoolHouse_SecondFloor 8 10 0/1040 Custom_SchoolHouse_SecondFloor 15 7 2/1120 Custom_SchoolHouse_SecondFloor 13 4 0/1140 Custom_SchoolHouse_SecondFloor 13 4 2/1230 Custom_SchoolHouse_SecondFloor 15 7 2/1420 Custom_SchoolHouse_SecondFloor 11 15 0/1500 Custom_SchoolHouse_SecondFloor 15 7 2/1600 Custom_Ridgeside_LogCabinHotel2ndFloor 2 9 1/2200 Custom_Ridgeside_LogCabinHotel2ndFloor 3 5 0 flor_sleep",
+                "Thu": "0 Town 6 12 2/610 Town 6 13 2/740 Custom_SchoolHouse_SecondFloor 15 7 2/1020 Custom_SchoolHouse_SecondFloor 8 10 0/1040 Custom_SchoolHouse_SecondFloor 15 7 2/1140 Town 12 13 2/1300 Custom_SchoolHouse_SecondFloor 15 7 2/1420 Custom_SchoolHouse_SecondFloor 19 10 0/1500 Custom_SchoolHouse_SecondFloor 15 7 2/1600 Custom_Ridgeside_LogCabinHotel2ndFloor 2 9 1/2200 Custom_Ridgeside_LogCabinHotel2ndFloor 3 5 0 flor_sleep",
+                "Fri": "0 Town 6 12 2/610 Town 6 13 2/740 Custom_SchoolHouse_SecondFloor 15 7 2/1020 Custom_SchoolHouse_SecondFloor 8 10 0/1040 Custom_SchoolHouse_SecondFloor 15 7 2/1120 Custom_SchoolHouse_SecondFloor 13 4 0/1140 Custom_SchoolHouse_SecondFloor 13 4 2/1230 Custom_SchoolHouse_SecondFloor 15 7 2/1420 Custom_SchoolHouse_SecondFloor 11 15 0/1500 Custom_SchoolHouse_SecondFloor 15 7 2/1600 Custom_Ridgeside_LogCabinHotel2ndFloor 2 9 1/2200 Custom_Ridgeside_LogCabinHotel2ndFloor 3 5 0 flor_sleep",
+                "summer_5": "GOTO Fri",
+                "rain": "GOTO Wed",
+                "rain2": "GOTO Fri",
+                "summer_7": "0 Custom_Ridgeside_LogCabinHotelLobby 25 10 0"
+            },
+        },
+//With SKE 
+        {   
+            "Action": "EditData",	 
+            "Target": "Characters/Schedules/Flor",
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod |contains=Rafseazz.RSVCP": "true",
+                "HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+                "HasMod |contains=BURAKMESE.SKE": "true"
+            },
+            "Entries": {
+                "Wed": "0 Town 6 12 2/610 Town 6 13 2/740 Custom_SchoolHouse_SecondFloor 15 7 2/1020 Custom_SchoolHouse_SecondFloor 8 10 0/1040 Custom_SchoolHouse_SecondFloor 15 7 2/1120 Custom_SchoolHouse_SecondFloor 13 4 0/1140 Custom_SchoolHouse_SecondFloor 13 4 2/1230 Custom_SchoolHouse_SecondFloor 15 7 2/1420 Custom_SchoolHouse_SecondFloor 22 15 0/1500 Custom_SchoolHouse_SecondFloor 15 7 2/1600 Custom_Ridgeside_LogCabinHotel2ndFloor 2 9 1/2200 Custom_Ridgeside_LogCabinHotel2ndFloor 3 5 0 flor_sleep",
+            },
+        },
+//Marriage
+        {   
+            "Action": "EditData",	 
+            "Target": "Characters/Schedules/Flor",
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod |contains=Rafseazz.RSVCP": "true",
+                "HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+                "Spouse |contains=Flor": "true",
+            },
+            "Entries": {   
+                "marriage_Mon": "610 Town 23 53 3/630 Town 6 13 2/740 Custom_SchoolHouse_SecondFloor 15 7 2/1020 Custom_SchoolHouse_SecondFloor 8 10 0/1040 Custom_SchoolHouse_SecondFloor 15 7 2/1120 Custom_SchoolHouse_SecondFloor 13 4 0/1140 Custom_SchoolHouse_SecondFloor 13 4 2/1230 Custom_SchoolHouse_SecondFloor 15 7 2/1420 Custom_SchoolHouse_SecondFloor 11 15 0/1500 Custom_SchoolHouse_SecondFloor 15 7 2/1550 Town 17 90 3/1750 Forest 92 20 3/2030 bed",
+                "marriage_Tue": "610 Town 23 53 3/630 Town 6 13 2/740 Custom_SchoolHouse_SecondFloor 15 7 2/1020 Custom_SchoolHouse_SecondFloor 8 10 0/1040 Custom_SchoolHouse_SecondFloor 15 7 2/1140 Town 12 13 2/1300 Custom_SchoolHouse_SecondFloor 15 7 2/1420 Custom_SchoolHouse_SecondFloor 19 10 0/1500 Custom_SchoolHouse_SecondFloor 15 7 2/1550 Town 17 90 3/1750 Forest 92 20 3/2030 bed",
+                "marriage_Wed": "610 Town 6 12 2/740 Custom_SchoolHouse_SecondFloor 11 4 2/1120 Town 12 13 2/1300 Custom_SchoolHouse_SecondFloor 6 13 1/1550 Town 17 90 3/1750 Forest 92 20 3/2030 bed",
+                "marriage_Thu": "610 Town 23 53 3/630 Town 6 13 2/740 Custom_SchoolHouse_SecondFloor 15 7 2/1020 Custom_SchoolHouse_SecondFloor 8 10 0/1040 Custom_SchoolHouse_SecondFloor 15 7 2/1140 Town 12 13 2/1300 Custom_SchoolHouse_SecondFloor 15 7 2/1420 Custom_SchoolHouse_SecondFloor 19 10 0/1500 Custom_SchoolHouse_SecondFloor 15 7 2/1550 Town 17 90 3/1750 Forest 92 20 3/2030 bed",
+                "marriage_Fri": "610 Town 6 12 2/740 Custom_SchoolHouse_SecondFloor 11 4 2/1120 Town 12 13 2/1300 Custom_SchoolHouse_SecondFloor 6 13 1/1550 Town 17 90 3/1750 Forest 92 20 3/2030 bed",
+                "marriageJob": "GOTO Wed",
+                "summer_5": "GOTO Fri",
+                "rain": "GOTO Wed",
+                "rain2": "GOTO Fri",
+                "summer_7": "610 Town 103 90 2/1100 ArchaeologyHouse 12 10 2 flor_read/1400 Town 89 99 1 flor_read2/1800 bed"
+            },
+        },
+//With SKE
+        {   
+            "Action": "EditData",	 
+            "Target": "Characters/Schedules/Flor",
+            "Priority": "Late",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod |contains=Rafseazz.RSVCP": "true",
+                "HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+                "HasMod |contains=BURAKMESE.SKE": "true",
+                "Spouse |contains=Flor": "true"
+            },
+            "Entries": {
+                "marriage_Wed": "0 Town 6 12 2/610 Town 6 13 2/740 Custom_SchoolHouse_SecondFloor 15 7 2/1020 Custom_SchoolHouse_SecondFloor 8 10 0/1040 Custom_SchoolHouse_SecondFloor 15 7 2/1120 Custom_SchoolHouse_SecondFloor 13 4 0/1140 Custom_SchoolHouse_SecondFloor 13 4 2/1230 Custom_SchoolHouse_SecondFloor 15 7 2/1420 Custom_SchoolHouse_SecondFloor 22 15 0/1500 Custom_SchoolHouse_SecondFloor 15 7 2/1600 Custom_Ridgeside_LogCabinHotel2ndFloor 2 9 1/2200 Custom_Ridgeside_LogCabinHotel2ndFloor 3 5 0 flor_sleep",
+            },
+        },
+    ]
+}

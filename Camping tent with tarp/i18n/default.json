@@ -1,0 +1,79 @@
+{
+
+//★★★ModConfig★★★
+
+    "config.EnableThisMod.name": "Enable this Mod",
+    "config.EnableThisMod.description": "On/Off setting of this mod itself.",
+
+    "config.EntranceSleep.name": "Entrance Sleep",
+    "config.EntranceSleep.description": "If you turn this setting on, you will be able to sleep when you touch the tile at the entrance of the tent (before entering the indoor map). (You can cancel the confirmation option and enter the tent.)",
+
+    "config.FreeToBuild.name": "Free to Build",
+    "config.FreeToBuild.description": "When the setting is turned on, the cost of building will be zero and the required materials will be eliminated.",
+
+    "config.ImmediateBuildFinish.name": "Immediate Build Finish",
+    "config.ImmediateBuildFinish.description": "Turning on the setting allows construction to be finished in a fraction of a second.",
+
+    "config.SeasonalAppearance.name": "Seasonal Appearance",
+    "config.SeasonalAppearance.description": "If turned off, the appearance will not change with the season.(Fixed to spring appearance) This setting applies to all color type tents.",
+
+    "config.TentShadowTyep.name": "Tent Shadow Tyep",
+    "config.TentShadowTyep.description": "\"Brown\" is the color and intensity of the shadow of the vanilla building. This setting applies to all color type tents.",
+    "config.TentShadowTyep.values.Brown": "Brown",
+    "config.TentShadowTyep.values.Brown(Thinner)": "Brown(Thinner)",
+    "config.TentShadowTyep.values.Black": "Black",
+    "config.TentShadowTyep.values.Black(Thinner)": "Black(Thinner)",
+
+    "config.InDoorColor.name": "Indoor Color",
+    "config.InDoorColor.description": "You can change the color of the indoor of the tent. This setting applies to all color type tents.",
+    "config.InDoorColor.values.Vanilla(Yellow)": "Vanilla(Yellow)",
+    "config.InDoorColor.values.Black": "Black",
+    "config.InDoorColor.values.Blue": "Blue",
+    "config.InDoorColor.values.Green": "Green",
+    "config.InDoorColor.values.Purple": "Purple",
+    "config.InDoorColor.values.Red": "Red",
+    "config.InDoorColor.values.White": "White",
+
+  //●以下、動物表示関係のセクション
+    "config.section.DisplayAnimalsSetting.name": "Display Animals Setting",
+    "config.section.DisplayAnimalsSetting.description": "The position of the animal display (common to all tents) and whether the animal is displayed in each tent.",
+
+    "config.AnimalsDrawPosition.name": "Animals Draw Position",
+    "config.AnimalsDrawPosition.description": "You can select the position where the animal will appear. This setting applies to all color type tents.",
+    "config.AnimalsDrawPosition.values.OnTheTarp": "On the Tarp",
+    "config.AnimalsDrawPosition.values.OnTheTent": "On the Tent",
+
+    "config.EnableAnimal_Vanilla(Yellow).name": "Display on Yellow Tent",
+    "config.EnableAnimal_Vanilla(Yellow).description": "Display animals in tents of this color.",
+    "config.EnableAnimal_Black.name": "Display on Black Tent",
+    "config.EnableAnimal_Black.description": "Display animals in tents of this color.",
+    "config.EnableAnimal_Blue.name": "Display on Blue Tent",
+    "config.EnableAnimal_Blue.description": "Display animals in tents of this color.",
+    "config.EnableAnimal_Green.name": "Display on Green Tent",
+    "config.EnableAnimal_Green.description": "Display animals in tents of this color.",
+    "config.EnableAnimal_Purple.name": "Display on Purple Tent",
+    "config.EnableAnimal_Purple.description": "Display animals in tents of this color.",
+    "config.EnableAnimal_Red.name": "Display on Red Tent",
+    "config.EnableAnimal_Red.description": "Display animals in tents of this color.",
+    "config.EnableAnimal_White.name": "Display on White Tent",
+    "config.EnableAnimal_White.description": "Display animals in tents of this color.",
+    "config.EnableAnimal_RandomColor.name": "Display on Random Tent",
+    "config.EnableAnimal_RandomColor.description": "Display animals in tents of this color.",
+
+
+
+//★★★Name, Description, Text★★★
+
+    "CampingTentWithTarp_Name": "Camping Tent with tarp(Yellow)",
+    "CampingTentWithTarp_Black_Name": "Camping Tent with tarp(Black)",
+    "CampingTentWithTarp_Blue_Name": "Camping Tent with tarp(Blue)",
+    "CampingTentWithTarp_Green_Name": "Camping tent with tarp(Green)",
+    "CampingTentWithTarp_Purple_Name": "Camping tent with tarp(Purple)",
+    "CampingTentWithTarp_Red_Name": "Camping tent with tarp(Red)",
+    "CampingTentWithTarp_White_Name": "Camping tent with tarp(White)",
+    "CampingTentWithTarp_Description": "Let's take a break!\nThe sleeping bag inside can be used to end the day and save the day.",
+
+    "CampingTentWithTarp_RandomColor_Name": "Camping tent with tarp(Random)",
+    "CampingTentWithTarp_RandomColor_Description": "For some reason, this mysterious tent changes color every morning when you wake up.",
+
+}

@@ -1,0 +1,130 @@
+{
+    "Format": "2.0.0",
+    
+    "Changes": [
+
+    {
+		"LogName": "Shyzie's String Lights (L): Load",
+        "Action": "Load",
+        "Target": "{{ModId}}/StringLightsL, {{ModId}}/StringLightsM, {{ModId}}/StringLightsS",
+        "FromFile": "Assets/{{TargetWithoutPath}}.png"
+    },
+    {
+		"LogName": "Shyzie's String Lights (L): Furniture",
+		"Action": "EditData",
+		"Target": "Data/Furniture",
+  
+		"Entries": {
+        
+			"ShyzieStringLightsL": "ShyzieStringLightsL/Decor/5 3/5 1/1/1000/2/{{i18n: ShyzieStringLightsL.name}}/0/{{ModId}}\\StringLightsL",
+			"ShyzieStringLightsM": "ShyzieStringLightsM/Decor/3 3/3 1/1/700/2/{{i18n: ShyzieStringLightsM.name}}/0/{{ModId}}\\StringLightsM",
+			"ShyzieStringLightsS": "ShyzieStringLightsS/Decor/2 3/2 1/1/500/2/{{i18n: ShyzieStringLightsS.name}}/0/{{ModId}}\\StringLightsS"
+
+		}
+    },
+	{
+		"Action": "EditData",
+		"Target": "Data/Shops",
+		"TargetField": [ "Carpenter", "Items" ],
+		"Entries": {
+			"ShyzieStringLightsL": {
+			"Price": 1000,
+			"Id": "ShyzieStringLightsL",
+			"ItemId": "ShyzieStringLightsL"
+			},
+			"ShyzieStringLightsM": {
+			"Price": 700,
+			"Id": "ShyzieStringLightsM",
+			"ItemId": "ShyzieStringLightsM"
+			},
+			"ShyzieStringLightsS": {
+			"Price": 500,
+			"Id": "ShyzieStringLightsS",
+			"ItemId": "ShyzieStringLightsS"
+			}
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Strings/Furniture",
+		"Entries": {
+			"ShyzieStringLightsL.name": "{{i18n:ShyzieStringLightsL.name}}",
+			"ShyzieStringLightsL.description": "{{i18n:ShyzieStringLightsL.description}}",
+			"ShyzieStringLightsM.name": "{{i18n:ShyzieStringLightsM.name}}",
+			"ShyzieStringLightsM.description": "{{i18n:ShyzieStringLightsM.description}}",
+			"ShyzieStringLightsS.name": "{{i18n:ShyzieStringLightsS.name}}",
+			"ShyzieStringLightsS.description": "{{i18n:ShyzieStringLightsS.description}}"
+            }
+	},
+	{
+		"Action": "EditData",
+		"Target": "spacechase0.SpaceCore/FurnitureExtensionData",
+		"Entries": {
+			"ShyzieStringLightsL": { "DescriptionOverride": "{{i18n: ShyzieStringLightsL.description}}" },
+			"ShyzieStringLightsM": { "DescriptionOverride": "{{i18n: ShyzieStringLightsM.description}}" },
+			"ShyzieStringLightsS": { "DescriptionOverride": "{{i18n: ShyzieStringLightsS.description}}" }
+		}
+	},
+	{
+		"LogName": "Shyzie's String Lights (L): FurnitureProperties",
+		"Action": "EditData",
+		"Target": "mushymato.MMAP/FurnitureProperties",
+		"Entries": {
+			"ShyzieStringLightsL": {
+			"Description": "{{i18n: ShyzieStringLightsL.description}}",
+			"CollisionMap": "OOOOO",
+			"TileProperties": [
+				{
+				"Id": "{{ModId}}_LightL",
+				"Name": "mushymato.MMAP_Light",
+				"Value": "1.5 White 4 0 -128 None",
+				"Layer": "Front",
+				"TileArea": {
+					"X": 2,
+					"Y": 0,
+					"Width": 1,
+					"Height": 1
+					}
+				}
+			]
+			},
+			"ShyzieStringLightsM": {
+			"Description": "{{i18n: ShyzieStringLightsM.description}}",
+			"CollisionMap": "OOO",
+			"TileProperties": [
+				{
+				"Id": "{{ModId}}_LightM",
+				"Name": "mushymato.MMAP_Light",
+				"Value": "1.5 White 4 0 -128 None",
+				"Layer": "Front",
+				"TileArea": {
+					"X": 1,
+					"Y": 0,
+					"Width": 1,
+					"Height": 1
+					}
+				}
+			]
+			},
+			"ShyzieStringLightsS": {
+			"Description": "{{i18n: ShyzieStringLightsS.description}}",
+			"CollisionMap": "OO",
+			"TileProperties": [
+				{
+				"Id": "{{ModId}}_LightS",
+				"Name": "mushymato.MMAP_Light",
+				"Value": "1.5 White 4 0 -128 None",
+				"Layer": "Front",
+				"TileArea": {
+					"X": 1,
+					"Y": 0,
+					"Width": 1,
+					"Height": 1
+					}
+				}
+			]
+			}
+		}
+    }
+  ]
+}

@@ -5,6 +5,7 @@
 	"EnableFarmerCollision": true,
 	"TravelSpeed": 4,
 	"MaxIdleDistance": -1,
+	"MaxDistanceBeforeTeleport": -1,
 	"IdleBehavior": "Wander",
 	"FrameSizeWidth": 32,
 	"FrameSizeHeight": 32,
@@ -15,7 +16,6 @@
 		"StartingFrame": 15,
 		"NumberOfFrames": 6,
 		"Duration": 100,
-	},
 	"IdleAnimation": {
 		"ManualFrames": [
 		{
@@ -38,7 +38,8 @@
 		"Duration": 250,
 		"Flip": true
 		},
-		]
+		],
+	}
 	},
 	// This plays when the companion travels downwards
 	"DownAnimation": {
@@ -211,10 +212,16 @@
 
 "Sounds": [
 	{
-	"SoundName": "camel",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
+	"SoundName": "Horse_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
 	"ChanceOfPlaying": 0.3
-	}
+	},
+	{
+	"SoundName": "Gallop_WA_Sound",
+	"WhenToPlay": "Moving",
+	"TimeBetweenSound": 550,
+	"ChanceOfPlaying": 1
+	},
 ]  
 }

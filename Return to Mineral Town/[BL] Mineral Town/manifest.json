@@ -1,0 +1,12 @@
+{
+  "Name": "[BL] Mineral Town",
+  "Author": "Romzes",
+  "Version": "1.0.0",
+  "Description": "Adds a bus route to Mineral Town.",
+  "UniqueID": "Romzes.MineralTownBL",
+  "MinimumApiVersion": "4.0.1",
+  "UpdateKeys": [ "" ],
+  "ContentPackFor": {
+    "UniqueID": "hootless.BusLocations",
+  }
+}

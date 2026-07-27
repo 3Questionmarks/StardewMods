@@ -19,7 +19,8 @@
     "config.title.connectors": "Connettori abilitati",
     "config.connector.desc": "Scegli se {{itemName}} collega tra loro macchinari e bauli.",
     "config.custom-connectors.name": "Connettori personalizzati",
-    "config.custom-connectors.desc": "I nomi inglesi esatti degli elementi che collegano tra loro macchinari adiacenti. È possibile elencare più elementi con le virgole.", // note: connector names must be English even when playing in other languages
+
+    "config.custom-connectors.desc": "Gli elementi che collegano tra loro macchinari adiacenti. È possibile specificare il nome interno in inglese (ad esempio \"Wood Path\") o l'ID qualificato dell'elemento (ad esempio “(O)405”) ed elencare più elementi separandoli con virgole.", // note: connector names must be English even when playing in other languages
 
     // Junimo hut options
     "config.title.junimo-huts": "Comportamento capanno Junimo",
@@ -29,6 +30,10 @@
     "config.junimo-hut-fertilizer.desc": "Cosa dovrebbero fare le Capanne Junimo con i fertilizzanti. 'Individua automaticamente' li ignorerà se è stato installato Better Junimos, altrimenti li sposterà dal capanno alle casse collegate.",
     "config.junimo-hut-seeds.name": "Semi",
     "config.junimo-hut-seeds.desc": "Cosa dovrebbero fare le Capanne Junimo con i Semi. 'Individua automaticamente' li ignorerà se è stato installato Better Junimos, altrimenti li sposterà dal capanno alle casse collegate.",
+    "config.junimo-hut-move-items-into-hut.name": "Sposta ID oggetti nel capanno",
+    "config.junimo-hut-move-items-into-hut.desc": "Gli oggetti che dovrebbero essere spostati nei capanni Junimo (a prescindere da altri campi come {{gemFieldName}}). Si tratta di un elenco delimitato da virgole di ID oggetto qualificati (come mostrato dalla mod Lookup Anything nel campo 'ID interno').",
+    "config.junimo-hut-ignore-items.name": "Ignora ID oggetti",
+    "config.junimo-hut-ignore-items.desc": "Gli oggetti che dovrebbero essere ignorati (non spostati a prescindere da altri campi come {{gemFieldName}}). Si tratta di un elenco delimitato da virgole di ID oggetto qualificati (come mostrato dalla mod Lookup Anything nel campo 'ID interno').",
 
     // Junimo hut dropdown values
     "config.junimo-huts.auto-detect": "Individua automaticamente",
@@ -36,9 +41,21 @@
     "config.junimo-huts.move-into-chests": "Sposta dai capanni Junimo alle casse",
     "config.junimo-huts.move-into-huts": "Sposta dalle casse ai capanni Junimo",
 
+    // per-chest settings
+    "config.title.chest-settings": "Impostazioni baule",
+    "config.default-chest-override.name": "Comportamento predefinito",
+    "config.default-chest-override.desc": "Scegli se i bauli devono essere abilitati o disabilitati per impostazione predefinita (tranne quelli impostati di seguito). I bauli abilitati automatizzeranno le macchine collegate, mentre quelli disabilitati saranno completamente ignorati.",
+    "config.chest-override.name": "{{chestName}}",
+    "config.chest-override.name.take-only": "{{chestName}} (oggetti solo estraibili)",
+    "config.chest-override.desc": "Scegli se gli oggetti {{chestName}} posizionati devono essere abilitati come bauli. Vedi i consigli su '{{defaultBehaviorField}}'.",
+    "config.chest-override.desc.take-only": "{{description}} (Quando abilitato, questo tipo di baule permette solo di tirare fuori gli oggetti da esso.)", // {{description}} contains the previous translation line
+    "config.chest-override.values.default": "Predefinito",
+    "config.chest-override.values.enabled": "Abilita",
+    "config.chest-override.values.disabled": "Disabilita",
+
     // per-machine settings
     "config.title.machine-settings": "Comportamento di: {{machineName}}",
-    "config.machine-settings-enabled.Name": "Abilitata",
+    "config.machine-settings-enabled.name": "Abilitata",
     "config.machine-settings-enabled.desc": "Scegli se abilitare l'automazione di: {{machineName}}.",
     "config.machine-settings-priority.name": "Priorità",
     "config.machine-settings-priority.desc": "L'ordine di priorità con cui le macchine: {{machineName}} dovrebbero essere processate rispetto ad altre macchine. Le macchine hanno una priorità predefinita di 0, con valori più alti processati per primi.",

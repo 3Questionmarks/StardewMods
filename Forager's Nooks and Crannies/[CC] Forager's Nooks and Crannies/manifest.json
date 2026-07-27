@@ -1,0 +1,17 @@
+﻿{
+	"Name": "Custom Companions for Nooks and Crannies",
+	"Author": "wildflourmods",
+	"Version": "2.2",
+	"Description": "Adds animals to secret forage maps.",
+	"UniqueID": "Wildflour.NooksCranniesCC",
+	"Dependencies":[
+		{   
+			"UniqueID": "Wildflour.NooksCrannies",
+			"IsRequired": true
+		}
+	],
+	"ContentPackFor": {
+		"UniqueID": "PeacefulEnd.CustomCompanions",
+		"MinimumVersion": "1.4.3"
+  }
+}

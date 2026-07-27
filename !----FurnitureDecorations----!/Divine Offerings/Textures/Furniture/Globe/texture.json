@@ -1,0 +1,97 @@
+{
+  "ItemName": "Globe",
+  "Type": "Furniture",
+  "TextureWidth": 16,
+  "TextureHeight": 16,
+  "ManualVariations": [
+    {
+      "Id": -1,
+      "ChanceWeight": 0.1
+    },
+    {
+      "Id": 0,
+      "Name": "Rose Quartz 1",
+      "ChanceWeight": 0.1
+    },
+    {
+      "Id": 1,
+      "Name": "Rose Quartz 2",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 2,
+      "Name": "Rose Quartz 3",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 3,
+      "Name": "Rose Quartz and Fluorite",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 4,
+      "Name": "Triple Set of Crystals",
+      "ChanceWeight": 0.5
+    }, 
+    {
+      "Id": 5,
+      "Name": "Moss Agate and Amethyst",
+      "ChanceWeight": 0.5
+    }, 
+    {
+      "Id": 6,
+      "Name": "Sphere and Fluorite",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 7,
+      "Name": "Rose Quartz and Moss Agate",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 8,
+      "Name": "Fluorite and Rose Quartz",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 9,
+      "Name": "Double Moss Agate",
+      "ChanceWeight": 0.5
+    }, 
+   {
+      "Id": 10,
+      "Name": "Double Amethyst Geodes",
+      "ChanceWeight": 0.1
+    },
+    {
+      "Id": 11,
+      "Name": "Amethyst",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 12,
+      "Name": "Double Moss Agate",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 13,
+      "Name": "Small Rose Quartz",
+      "ChanceWeight": 0.5
+    },
+    {
+      "Id": 14,
+      "Name": "Fluorite",
+      "ChanceWeight": 0.5
+    },
+{
+      "Id": 15,
+      "Name": "Sphere",
+      "ChanceWeight": 0.1
+    },
+    {
+      "Id": 16,
+      "Name": "Skull and Moss Agate",
+      "ChanceWeight": 0.5
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "Changes": [
+    // Add Object
+    {
+      "LogName": "Load Wooden Cabinet Object",
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "6480.StorageVariety_WoodenCabinet": {
+          "Name": "Wooden Cabinet",
+          "DisplayName": "{{i18n: WoodenCabinet.name}}",
+          "Description": "{{i18n: WoodenCabinet.description}}",
+          "Texture": "{{InternalAssetKey: assets/WoodenCabinet.png}}",
+          "CustomFields": {
+            // Expanded Storage Data
+            "furyx639.ExpandedStorage/Enabled": "true",
+            "furyx639.ExpandedStorage/Frames": "5",
+            "furyx639.ExpandedStorage/OpenSound": "doorCreak",
+            "furyx639.ExpandedStorage/PlayerColor": "true",
+            // Better Chests Data
+            "furyx639.BetterChests/ResizeChest": "Medium",
+            "furyx639.BetterChests/ResizeChestCapacity": "36"
+          }
+        }
+      }
+    },
+    // Add Crafting Recipe
+    {
+      "LogName": "Load Wooden Cabinet Crafting Recipe",
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "WoodenCabinet": "709 30/Home/6480.StorageVariety_WoodenCabinet/true/null/{{i18n: WoodenCabinet.name}}"
+      }
+    },
+    // Add Shop Entry
+    {
+      "LogName": "Load Wooden Cabinet Shop Entry",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Carpenter",
+        "Items"
+      ],
+      "Entries": {
+        "6480.StorageVariety_WoodenCabinet": {
+          "Id": "6480.StorageVariety_WoodenCabinet",
+          "ItemId": "(BC)6480.StorageVariety_WoodenCabinet",
+          "Price": 4000,
+          "IsRecipe": true
+        }
+      }
+    }
+  ]
+}

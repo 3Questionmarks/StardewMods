@@ -1,0 +1,18 @@
+{
+   "Name": "Drawberry's Seasonal Cute Characters for Bear Fam",
+   "Author": "drawberry138",
+   "Version": "1.0.2",
+   "Description": "Tweaks the Bear Fam portraits and sprites with the cute aesthetic",
+   "UniqueID": "drawberry138.DrawberrysSeasonalCuteCharactersforBearFam",
+   "UpdateKeys": ["Nexus:45999"],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+   "Dependencies": [
+      {
+        "UniqueID": "MadDog.HashtagBearFam",
+        "IsRequired": true
+      },
+      
+   ]
+}

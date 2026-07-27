@@ -1,0 +1,77 @@
+{
+"Changes": [
+	{
+	"LogName": "Pam schedule after 9 heart Yoba event",
+		"Action": "EditData",
+		"Target": "Characters/schedules/Pam",
+		"Entries": {
+			"7": "710 Trailer_Big 15 4 2 pam_sit_down/840 SeedShop 37 18 0/1200 CommunityCenter 24 8 2 pam_sit_down/1830 Town 56 69 3/2100 Trailer 24 17 2 pam_sleep",
+			"14": "710 Trailer_Big 15 4 2 pam_sit_down/840 SeedShop 37 18 0/1200 CommunityCenter 24 8 2 pam_sit_down/1830 Town 56 69 3/2100 Trailer 24 17 2 pam_sleep",
+			"21": "710 Trailer_Big 15 4 2 pam_sit_down/840 SeedShop 37 18 0/1200 CommunityCenter 24 8 2 pam_sit_down/1830 Town 56 69 3/2100 Trailer 24 17 2 pam_sleep",
+			"28": "710 Trailer_Big 15 4 2 pam_sit_down/840 SeedShop 37 18 0/1200 CommunityCenter 24 8 2 pam_sit_down/1830 Town 56 69 3/2100 Trailer 24 17 2 pam_sleep",
+			"summer_13": "710 Trailer_Big 15 4 2 pam_sit_down/900 Trailer_Big 11 7 0/1000 Trailer_Big 12 7 0/1040 Trailer_Big 23 9 2 pam_sit_down/1240 Trailer_Big 9 20 0/1320 Trailer_Big 8 23 2 pam_sit_down/1500 Trailer_Big 9 20 0/1520 Trailer_Big 25 9 1/1620 Trailer_Big 15 4 2/2100 Trailer_Big 24 17 2 pam_sleep",
+			"summer_26": "710 Trailer_Big 15 4 2 pam_sit_down/900 Trailer_Big 11 7 0/1000 Trailer_Big 12 7 0/1040 Trailer_Big 23 9 2 pam_sit_down/1240 Trailer_Big 9 20 0/1320 Trailer_Big 8 23 2 pam_sit_down/1500 Trailer_Big 9 20 0/1520 Trailer_Big 25 9 1/1620 Trailer_Big 15 4 2/2100 Trailer_Big 24 17 2 pam_sleep",
+			"spring_25": "710 Trailer_Big 15 4 2 pam_sit_down/1130 Hospital 4 17 2 pam_sit_down \"Strings\\schedules\\Pam:spring_25.000\"/1330 Hospital 4 6 1 \"Strings\\schedules\\Pam:spring_25.001\"/1600 Saloon 7 18 1/2100 Trailer 24 17 2 pam_sleep",
+			"bus": "710 Trailer_Big 15 4 2 pam_sit_down/830 BusStop 21 10 2/1700 Saloon 7 18 1/2100 Trailer 24 17 2 pam_sleep",
+			"rain": "GOTO bus",
+			"spring": "710 Trailer_Big 15 4 2 pam_sit_down/1200 JojaMart 6 19 1/1600 Saloon 7 18 1/2100 Trailer 24 17 2 pam_sleep"
+			},
+		"When": {
+			"HasFlag |contains=PamYobaLetter": "true",	
+			"HasFlag |contains=PamGusMarriedLetter": "false"
+			}
+		},
+	{
+	"LogName": "Pam schedule after marriage",
+		"Action": "EditData",
+		"Target": "Characters/schedules/Pam",
+		"Entries": {
+			"spring_25": "710 Trailer_Big 15 4 2 pam_sit_down/1130 Hospital 4 17 2 pam_sit_down \"Strings\\schedules\\Pam:spring_25.000\"/1330 Hospital 4 6 1 \"Strings\\schedules\\Pam:spring_25.001\"/1600 Saloon 10 18 2/2400 Trailer 24 17 2 pam_sleep",
+			"7": "710 Trailer_Big 15 4 2 pam_sit_down/840 SeedShop 37 18 0/1200 Saloon 10 18 2/1720 Saloon 10 18 1/1800 Saloon 10 18 2/2400 Trailer 24 17 2 pam_sleep",
+			"14": "710 Trailer_Big 15 4 2 pam_sit_down/840 SeedShop 37 18 0/1200 Saloon 10 18 2/1720 Saloon 10 18 1/1800 Saloon 10 18 2/2400 Trailer 24 17 2 pam_sleep",
+			"21": "710 Trailer_Big 15 4 2 pam_sit_down/840 SeedShop 37 18 0/1200 Saloon 10 18 2/1720 Saloon 10 18 1/1800 Saloon 10 18 2/2400 Trailer 24 17 2 pam_sleep",
+			"28": "710 Trailer_Big 15 4 2 pam_sit_down/840 SeedShop 37 18 0/1200 Saloon 10 18 2/1720 Saloon 10 18 1/1800 Saloon 10 18 2/2400 Trailer 24 17 2 pam_sleep",
+			"summer_13": "710 Trailer_Big 15 4 2 pam_sit_down/900 Trailer_Big 11 7 0/1000 Trailer_Big 12 7 0/1040 Trailer_Big 23 9 2 pam_sit_down/1240 Trailer_Big 9 20 0/1320 Trailer_Big 8 23 2 pam_sit_down/1500 Trailer_Big 9 20 0/1520 Trailer_Big 25 9 1/1700 Saloon 10 18 2/2400 Trailer 24 17 2 pam_sleep",
+			"summer_26": "710 Trailer_Big 15 4 2 pam_sit_down/900 Trailer_Big 11 7 0/1000 Trailer_Big 12 7 0/1040 Trailer_Big 23 9 2 pam_sit_down/1240 Trailer_Big 9 20 0/1320 Trailer_Big 8 23 2 pam_sit_down/1500 Trailer_Big 9 20 0/1520 Trailer_Big 25 9 1/1700 Saloon 10 18 2/2400 Trailer 24 17 2 pam_sleep",
+			"bus": "710 Trailer_Big 15 4 2 pam_sit_down/830 BusStop 21 10 2/1700 Saloon 10 18 2/2400 Trailer 24 17 2 pam_sleep",
+			"rain": "GOTO bus",
+			"spring": "710 Trailer_Big 15 4 2 pam_sit_down/1200 JojaMart 6 19 1/1600 Saloon 10 18 2/2400 Trailer 24 17 2 pam_sleep"
+			},
+		"When": {
+			"HasFlag |contains=PamGusMarriedLetter": "true"
+			}
+		},
+	{
+	"LogName": "Gus schedule after marriage",
+		"Action": "EditData",
+		"Target": "Characters/schedules/Gus",
+		"Entries": {
+			"rain": "710 Trailer_Big 14 4 2 gus_sit_down/1200 Saloon 14 18 2 gus_clean/1830 Saloon 12 17 0/1900 Saloon 11 18 2/1940 Saloon 12 17 0/1950 Saloon 11 18 2/2030 Saloon 12 18 2/2040 Saloon 11 18 2/2400 Trailer 26 17 2 gus_sleep",
+			"fall_4": "710 Trailer_Big 14 4 2 gus_sit_down/1030 Hospital 12 14 0 \"Strings\\schedules\\Gus:fall_4.000\"/1330 Hospital 4 6 1 \"Strings\\schedules\\Gus:fall_4.001\"/1600 Saloon 11 18 2/1940 Saloon 12 18 0/1950 Saloon 11 18 2/2030 Saloon 12 18 0/2040 Saloon 11 18 2/2400 Trailer 26 17 2 gus_sleep",
+			"Mon": "710 Trailer_Big 14 4 2 gus_sit_down/800 SeedShop 13 23 0 \"Strings\\schedules\\Gus:Mon.000\"/1100 Saloon 11 18 2/1830 Saloon 12 18 0/1850 Saloon 11 18 2/1940 Saloon 12 18 0/1950 Saloon 11 18 2/2030 Saloon 12 18 0/2040 Saloon 11 18 2/2400 Trailer 26 17 2 gus_sleep",
+			"Tue": "710 Trailer_Big 14 4 2 gus_sit_down/830 CommunityCenter 5 5 0 square_5_1_0/1230 Saloon 11 18 2/1830 Saloon 12 18 0/1850 Saloon 11 18 2/1940 Saloon 12 18 0/1950 Saloon 11 18 2/2030 Saloon 12 18 0/2040 Saloon 11 18 2/2400 Trailer 26 17 2 gus_sleep",
+			"spring": "710 Trailer_Big 14 4 2 gus_sit_down/1200 Saloon 14 18 2 gus_clean/1830 Saloon 12 17 0/1900 Saloon 11 18 2/1940 Saloon 12 17 0/1950 Saloon 11 18 2/2030 Saloon 12 18 2/2040 Saloon 11 18 2/2400 Trailer 26 17 2 gus_sleep",
+			"summer_13": "710 Trailer_Big 14 4 2 gus_sit_down/900 Trailer_Big 10 7 1/1000 Trailer_Big 9 7 0/1100 Trailer_Big 20 7 2/1230 Trailer_Big 6 23 0 gus_sit_down/1500 Trailer_Big 27 9 3/1700 Saloon 12 18 0/1850 Saloon 11 18 2/1940 Saloon 12 18 0/1950 Saloon 11 18 2/2030 Saloon 12 18 0/2040 Saloon 11 18 2/2400 Trailer 26 17 2 gus_sleep",
+			"summer_26": "710 Trailer_Big 14 4 2 gus_sit_down/900 Trailer_Big 10 7 1/1000 Trailer_Big 9 7 0/1100 Trailer_Big 20 7 2/1230 Trailer_Big 6 23 0 gus_sit_down/1500 Trailer_Big 27 9 3/1700 Saloon 12 18 0/1850 Saloon 11 18 2/1940 Saloon 12 18 0/1950 Saloon 11 18 2/2030 Saloon 12 18 0/2040 Saloon 11 18 2/2400 Trailer 26 17 2 gus_sleep",
+			"Sun": "MAIL saloonSportsRoom/GOTO yoba/710 Trailer_Big 14 4 2 gus_sit_down/1140 Saloon 34 8 0 \"Strings\\schedules\\Gus:Sun.000\"/1500 Saloon 12 18 2/1850 Saloon 11 18 2/1940 Saloon 12 18 2/1950 Saloon 11 18 2/2030 Saloon 12 18 2/2040 Saloon 11 18 2/2400 Trailer 26 17 2 gus_sleep",
+			"yoba": "710 Trailer_Big 14 4 2 gus_sit_down/840 SeedShop 36 18 0/1200 Saloon 14 18 2 gus_clean/1710 Saloon 11 18 2/1730 Saloon 11 18 3/1750 Saloon 11 18 2/1830 Saloon 12 17 0/1900 Saloon 11 18 2/1940 Saloon 12 18 2/1950 Saloon 11 18 2/2030 Saloon 12 18 2/2040 Saloon 11 18 2/2400 Trailer 26 17 2 gus_sleep"
+			},
+		"When": {
+			"HasFlag |contains=PamGusMarriedLetter": "true"
+			}
+		},
+	{
+	"LogName": "Gus schedule after marriage - SVE addition",
+		"Action": "EditData",
+		"Target": "Characters/schedules/Gus",
+		"Entries": {
+			"Tue": "710 Trailer_Big 14 4 2 gus_sit_down/830 Town 37 16 0/1000 Town 41 14 0/1030 Town 37 14 0/1230 Town 109 101 3/1400 Town 107 100 2/1420 Town 106 100 2/1440 Town 105 100 2/1500 Town 104 100 2/1520 Saloon 12 18 0/1850 Saloon 11 18 2/1940 Saloon 12 18 0/1950 Saloon 11 18 2/2030 Saloon 12 18 0/2040 Saloon 11 18 2/2400 Trailer 26 17 2 gus_sleep",
+			"winter_Tue": "710 Trailer_Big 14 4 2 gus_sit_down/1200 Saloon 14 18 2 gus_clean/1830 Saloon 12 18 0/1850 Saloon 11 18 2/1940 Saloon 12 18 0/1950 Saloon 11 18 2/2030 Saloon 12 18 0/2040 Saloon 11 18 2/2400 Trailer 26 17 2 gus_sleep"
+			},
+		"When": {
+			"HasFlag |contains=PamGusMarriedLetter": "true",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+			}
+		}
+	]
+}

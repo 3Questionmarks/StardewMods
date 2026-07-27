@@ -4,6 +4,13 @@
 	"EnableSpawnAtDayStart": false,
 	"EnableCharacterCollision": true,
 	"EnableFarmerCollision": false,
+	"EnableShadow": true,
+	"Shadow": {
+		"OffsetX": 0,
+		"OffsetY": 10,
+		"Scale": 1,
+		"Alpha": 200
+	},
 	"TravelSpeed": 1,
 	"MaxIdleDistance": -1,
 	"MaxDistanceBeforeTeleport": -1,

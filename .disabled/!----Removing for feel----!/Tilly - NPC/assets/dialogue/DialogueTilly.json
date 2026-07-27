@@ -1,0 +1,507 @@
+{
+	"Changes": [
+		
+		{
+			"LogName": "Pendant Dialogue",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"{{ModId}}.Tilly_Engaged": "{{i18n:Wem.Bundle.Tilly_Engaged}}#$action Spiderbuttons.BETAS_EmoteNPC {{ModId}}.Tilly 60",
+			}
+		},
+		{
+		  "LogName": "Engagement Dialogue",
+		  "Action": "EditData",
+		  "Target": "Data/EngagementDialogue",
+		  "Entries": {
+			  "{{ModId}}.Tilly0": "{{i18n:Wem.Bundle.Tilly0}}#$action Spiderbuttons.BETAS_EmoteNPC {{ModId}}.Tilly 20",
+			  "{{ModId}}.Tilly1": "{{i18n:Wem.Bundle.Tilly1}}#$action Spiderbuttons.BETAS_EmoteNPC {{ModId}}.Tilly 60",
+		  }
+		},
+		
+		{
+		  "LogName": "Rainy Dialogue",
+		  "Action": "EditData",
+		  "Target": "Characters/Dialogue/rainy",
+		  "Entries": {
+			  "{{ModId}}.Tilly": "{{i18n:Wem.Bundle.Tilly_Rainy}}#$action Spiderbuttons.BETAS_EmoteNPC {{ModId}}.Tilly 32",
+		  }
+		},
+				
+		//Reject Marriage before Y2
+		{
+			"LogName": "Reject Marriage before Y2",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/{{ModId}}.Tilly",
+			"Entries": {
+				"RejectItem_(O)460": "{{i18n:Wem.Bundle.Tilly.RejectItem(O)460}}",
+			},
+			"When": {
+				"Hearts:{{ModId}}.Tilly": 10,
+				"Year": "1",
+				"HasSeenEvent | contains = {{ModId}}.Tilly_8Hearts.2": false,
+			},
+		},
+		
+		//Boxosoup Farmer Birthday Dialogue
+		{
+			"LogName": "Boxosoup Farmer Birthday Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/{{ModId}}.Tilly",
+			"Entries": {
+				"boxosoup.birthday_birthday": "{{i18n:Wem.Bundle.Tilly.boxosoup.birthday_birthday}}[{{ModId}}.Tilly_HoneyCake]",
+			},
+			"When": {
+				"HasMod": "boxosoup.birthday",
+			},
+		},
+		
+		
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/{{ModId}}.Tilly",
+			"Entries": {
+				
+			"Introduction": "{{i18n:Wem.Bundle.Tilly.Introduction}}",
+			"breakUp": "{{i18n:Wem.Bundle.Tilly.breakUp}}",
+			"divorced": "{{i18n:Wem.Bundle.Tilly.divorced}}#$action Spiderbuttons.BETAS_EmoteNPC {{ModId}}.Tilly 12",
+			"DumpsterDiveComment": "{{i18n:Wem.Bundle.Tilly.DumpsterDiveComment}}",
+			"HitBySlingshot": "{{i18n:Wem.Bundle.Tilly.HitBySlingshot}}",
+			"GreenRain": "{{i18n:Wem.Bundle.Tilly.GreenRain}}#$action Spiderbuttons.BETAS_EmoteNPC {{ModId}}.Tilly 56",
+			"GreenRain_2": "{{i18n:Wem.Bundle.Tilly.GreenRain_2}}",
+			"Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:Wem.Bundle.Tilly.Fair_Judged_PlayerLost_PurpleShorts}}",
+			"Fair_Judged_PlayerWon": "{{i18n:Wem.Bundle.Tilly.Fair_Judged_PlayerWon}}",
+			"FlowerDance_Accept_Spouse": "{{i18n:Wem.Bundle.Tilly.FlowerDance_Accept_Spouse}}#$action Spiderbuttons.BETAS_EmoteNPC {{ModId}}.Tilly 32",
+			"FlowerDance_Accept": "{{i18n:Wem.Bundle.Tilly.FlowerDance_Accept}}#$action Spiderbuttons.BETAS_EmoteNPC {{ModId}}.Tilly 60",
+			"FlowerDance_Decline": "{{i18n:Wem.Bundle.Tilly.FlowerDance_Decline}}#$action Spiderbuttons.BETAS_EmoteNPC {{ModId}}.Tilly 40",
+
+			//Spring/DEFAULT dialogue
+			"Mon": "{{i18n:Wem.Bundle.Tilly.Mon}}",
+			"Mon2": "{{i18n:Wem.Bundle.Tilly.Mon2}}",
+			"Mon4": "{{i18n:Wem.Bundle.Tilly.Mon4}}",
+			"Mon6": "{{i18n:Wem.Bundle.Tilly.Mon6.{{Random:1,2}}}}",
+			"Mon8": "{{i18n:Wem.Bundle.Tilly.Mon8}}",
+			"Mon10": "{{i18n:Wem.Bundle.Tilly.Mon10}}",
+			"Tue": "{{i18n:Wem.Bundle.Tilly.Tue}}",
+			"Tue2": "{{i18n:Wem.Bundle.Tilly.Tue2}}",
+			"Tue4": "{{i18n:Wem.Bundle.Tilly.Tue4}}",
+			"Tue6": "{{i18n:Wem.Bundle.Tilly.Tue6}}",
+			"Tue8": "{{i18n:Wem.Bundle.Tilly.Tue8}}",
+			"Tue10": "{{i18n:Wem.Bundle.Tilly.Tue10}}",
+			"Wed": "{{i18n:Wem.Bundle.Tilly.Wed}}",
+			"Wed2": "{{i18n:Wem.Bundle.Tilly.Wed2}}",
+			"Wed4": "{{i18n:Wem.Bundle.Tilly.Wed4.{{Random:1,2}}}}",
+			"Wed6": "{{i18n:Wem.Bundle.Tilly.Wed6}}",
+			"Wed8": "{{i18n:Wem.Bundle.Tilly.Wed8}}",
+			"Wed10": "{{i18n:Wem.Bundle.Tilly.Wed10}}",
+			"Thu": "{{i18n:Wem.Bundle.Tilly.Thu}}",
+			"Thu2": "{{i18n:Wem.Bundle.Tilly.Thu2}}",
+			"Thu4": "{{i18n:Wem.Bundle.Tilly.Thu4}}",
+			"Thu6": "{{i18n:Wem.Bundle.Tilly.Thu6}}",
+			"Thu8": "{{i18n:Wem.Bundle.Tilly.Thu8}}",
+			"Thu10": "{{i18n:Wem.Bundle.Tilly.Thu10}}",
+			"Fri": "{{i18n:Wem.Bundle.Tilly.Fri}}",
+			"Fri2": "{{i18n:Wem.Bundle.Tilly.Fri2}}",
+			"Fri4": "{{i18n:Wem.Bundle.Tilly.Fri4}}",
+			"Fri6": "{{i18n:Wem.Bundle.Tilly.Fri6}}",
+			"Fri8": "{{i18n:Wem.Bundle.Tilly.Fri8}}",
+			"Fri10": "{{i18n:Wem.Bundle.Tilly.Fri10}}",
+			"Sat": "{{i18n:Wem.Bundle.Tilly.Sat}}",
+			"Sat2": "{{i18n:Wem.Bundle.Tilly.Sat2}}",
+			"Sat4": "{{i18n:Wem.Bundle.Tilly.Sat4}}",
+			"Sat6": "{{i18n:Wem.Bundle.Tilly.Sat6}}",
+			"Sat8": "{{i18n:Wem.Bundle.Tilly.Sat8}}",
+			"Sat10": "{{i18n:Wem.Bundle.Tilly.Sat10}}",
+			"Sun": "{{i18n:Wem.Bundle.Tilly.Sun}}",
+			"Sun2": "{{i18n:Wem.Bundle.Tilly.Sun2}}",
+			"Sun4": "{{i18n:Wem.Bundle.Tilly.Sun4}}",
+			"Sun6": "{{i18n:Wem.Bundle.Tilly.Sun6}}",
+			"Sun8": "{{i18n:Wem.Bundle.Tilly.Sun8}}",
+			"Sun10": "{{i18n:Wem.Bundle.Tilly.Sun10}}",
+			
+			"spring_7": "{{i18n:Tilly.spring_7}}",
+			  			  
+			 //Summer dialogue
+			"summer_Mon": "{{i18n:Wem.Bundle.Tilly.summer_Mon}}",
+			"summer_Mon2": "{{i18n:Wem.Bundle.Tilly.summer_Mon2}}",
+			"summer_Mon4": "{{i18n:Wem.Bundle.Tilly.summer_Mon4}}",
+			"summer_Mon6": "{{i18n:Wem.Bundle.Tilly.summer_Mon6}}",
+			"summer_Mon8": "{{i18n:Wem.Bundle.Tilly.summer_Mon8}}",
+			"summer_Mon10": "{{i18n:Wem.Bundle.Tilly.summer_Mon10}}",
+			"summer_Tue": "{{i18n:Wem.Bundle.Tilly.summer_Tue}}",
+			"summer_Tue2": "{{i18n:Wem.Bundle.Tilly.summer_Tue2}}",
+			"summer_Tue4": "{{i18n:Wem.Bundle.Tilly.summer_Tue4}}",
+			"summer_Tue6": "{{i18n:Wem.Bundle.Tilly.summer_Tue6}}",
+			"summer_Tue8": "{{i18n:Wem.Bundle.Tilly.summer_Tue8}}",
+			"summer_Tue10": "{{i18n:Wem.Bundle.Tilly.summer_Tue10}}",
+			"summer_Wed": "{{i18n:Wem.Bundle.Tilly.summer_Wed}}",
+			"summer_Wed2": "{{i18n:Wem.Bundle.Tilly.summer_Wed2}}",
+			"summer_Wed4": "{{i18n:Wem.Bundle.Tilly.summer_Wed4}}",
+			"summer_Wed6": "{{i18n:Wem.Bundle.Tilly.summer_Wed6}}",
+			"summer_Wed8": "{{i18n:Wem.Bundle.Tilly.summer_Wed8}}",
+			"summer_Wed10": "{{i18n:Wem.Bundle.Tilly.summer_Wed10}}",
+			"summer_Thu": "{{i18n:Wem.Bundle.Tilly.summer_Thu}}",
+			"summer_Thu2": "{{i18n:Wem.Bundle.Tilly.summer_Thu2}}",
+			"summer_Thu4": "{{i18n:Wem.Bundle.Tilly.summer_Thu4}}",
+			"summer_Thu6": "{{i18n:Wem.Bundle.Tilly.summer_Thu6}}",
+			"summer_Thu8": "{{i18n:Wem.Bundle.Tilly.summer_Thu8}}",
+			"summer_Thu10": "{{i18n:Wem.Bundle.Tilly.summer_Thu10}}",
+			"summer_Fri": "{{i18n:Wem.Bundle.Tilly.summer_Fri}}",
+			"summer_Fri2": "{{i18n:Wem.Bundle.Tilly.summer_Fri2}}",
+			"summer_Fri4": "{{i18n:Wem.Bundle.Tilly.summer_Fri4}}",
+			"summer_Fri6": "{{i18n:Wem.Bundle.Tilly.summer_Fri6}}",
+			"summer_Fri8": "{{i18n:Wem.Bundle.Tilly.summer_Fri8}}",
+			"summer_Fri10": "{{i18n:Wem.Bundle.Tilly.summer_Fri10}}",
+			"summer_Sat": "{{i18n:Wem.Bundle.Tilly.summer_Sat}}",
+			"summer_Sat2": "{{i18n:Wem.Bundle.Tilly.summer_Sat2}}",
+			"summer_Sat4": "{{i18n:Wem.Bundle.Tilly.summer_Sat4}}",
+			"summer_Sat6": "{{i18n:Wem.Bundle.Tilly.summer_Sat6}}",
+			"summer_Sat8": "{{i18n:Wem.Bundle.Tilly.summer_Sat8}}",
+			"summer_Sat10": "{{i18n:Wem.Bundle.Tilly.summer_Sat10}}",
+			"summer_Sun": "{{i18n:Wem.Bundle.Tilly.summer_Sun}}",
+			"summer_Sun2": "{{i18n:Wem.Bundle.Tilly.summer_Sun2}}",
+			"summer_Sun4": "{{i18n:Wem.Bundle.Tilly.summer_Sun4}}",
+			"summer_Sun6": "{{i18n:Wem.Bundle.Tilly.summer_Sun6}}",
+			"summer_Sun8": "{{i18n:Wem.Bundle.Tilly.summer_Sun8}}",
+			"summer_Sun10": "{{i18n:Wem.Bundle.Tilly.summer_Sun10}}",
+			"summer_12": "{{i18n:Wem.Bundle.Tilly.summer_12}}",
+				
+			//Fall dialogue
+			"fall_Mon": "{{i18n:Wem.Bundle.Tilly.fall_Mon}}",
+			"fall_Mon2": "{{i18n:Wem.Bundle.Tilly.fall_Mon2}}",
+			"fall_Mon4": "{{i18n:Wem.Bundle.Tilly.fall_Mon4}}",
+			"fall_Mon6": "{{i18n:Wem.Bundle.Tilly.fall_Mon6}}",
+			"fall_Mon8": "{{i18n:Wem.Bundle.Tilly.fall_Mon8}}",
+			"fall_Mon10": "{{i18n:Wem.Bundle.Tilly.fall_Mon10}}",
+			"fall_Tue": "{{i18n:Wem.Bundle.Tilly.fall_Tue}}",
+			"fall_Tue2": "{{i18n:Wem.Bundle.Tilly.fall_Tue2}}",
+			"fall_Tue4": "{{i18n:Wem.Bundle.Tilly.fall_Tue4}}",
+			"fall_Tue6": "{{i18n:Wem.Bundle.Tilly.fall_Tue6}}",
+			"fall_Tue8": "{{i18n:Wem.Bundle.Tilly.fall_Tue8}}",
+			"fall_Tue10": "{{i18n:Wem.Bundle.Tilly.fall_Tue10}}",
+			"fall_Wed": "{{i18n:Wem.Bundle.Tilly.fall_Wed}}",
+			"fall_Wed2": "{{i18n:Wem.Bundle.Tilly.fall_Wed2}}",
+			"fall_Wed4": "{{i18n:Wem.Bundle.Tilly.fall_Wed4}}",
+			"fall_Wed6": "{{i18n:Wem.Bundle.Tilly.fall_Wed6}}",
+			"fall_Wed8": "{{i18n:Wem.Bundle.Tilly.fall_Wed8}}",
+			"fall_Wed10": "{{i18n:Wem.Bundle.Tilly.fall_Wed10}}",
+			"fall_Thu": "{{i18n:Wem.Bundle.Tilly.fall_Thu}}",
+			"fall_Thu2": "{{i18n:Wem.Bundle.Tilly.fall_Thu2}}",
+			"fall_Thu4": "{{i18n:Wem.Bundle.Tilly.fall_Thu4}}",
+			"fall_Thu6": "{{i18n:Wem.Bundle.Tilly.fall_Thu6}}",
+			"fall_Thu8": "{{i18n:Wem.Bundle.Tilly.fall_Thu8}}",
+			"fall_Thu10": "{{i18n:Wem.Bundle.Tilly.fall_Thu10}}",
+			"fall_Fri": "{{i18n:Wem.Bundle.Tilly.fall_Fri}}",
+			"fall_Fri2": "{{i18n:Wem.Bundle.Tilly.fall_Fri2}}",
+			"fall_Fri4": "{{i18n:Wem.Bundle.Tilly.fall_Fri4}}",
+			"fall_Fri6": "{{i18n:Wem.Bundle.Tilly.fall_Fri6}}",
+			"fall_Fri8": "{{i18n:Wem.Bundle.Tilly.fall_Fri8}}",
+			"fall_Fri10": "{{i18n:Wem.Bundle.Tilly.fall_Fri10}}",
+			"fall_Sat": "{{i18n:Wem.Bundle.Tilly.fall_Sat}}",
+			"fall_Sat2": "{{i18n:Wem.Bundle.Tilly.fall_Sat2}}",
+			"fall_Sat4": "{{i18n:Wem.Bundle.Tilly.fall_Sat4}}",
+			"fall_Sat6": "{{i18n:Wem.Bundle.Tilly.fall_Sat6}}",
+			"fall_Sat8": "{{i18n:Wem.Bundle.Tilly.fall_Sat8}}",
+			"fall_Sat10": "{{i18n:Wem.Bundle.Tilly.fall_Sat10}}",
+			"fall_Sun": "{{i18n:Wem.Bundle.Tilly.fall_Sun}}",
+			"fall_Sun2": "{{i18n:Wem.Bundle.Tilly.fall_Sun2}}",
+			"fall_Sun4": "{{i18n:Wem.Bundle.Tilly.fall_Sun4}}",
+			"fall_Sun6": "{{i18n:Wem.Bundle.Tilly.fall_Sun6}}",
+			"fall_Sun8": "{{i18n:Wem.Bundle.Tilly.fall_Sun8}}",
+			"fall_Sun10": "{{i18n:Wem.Bundle.Tilly.fall_Sun10}}",
+			"fall_14": "{{i18n:Wem.Bundle.Tilly.fall_14}}",
+			"fall_26": "{{i18n:Wem.Bundle.Tilly.fall_26}}",
+
+			  
+			  //Winter dialogue			  
+			  "winter_Mon": "{{i18n:Wem.Bundle.Tilly.winter_Mon}}",
+			"winter_Mon2": "{{i18n:Wem.Bundle.Tilly.winter_Mon2}}",
+			"winter_Mon4": "{{i18n:Wem.Bundle.Tilly.winter_Mon4}}",
+			"winter_Mon6": "{{i18n:Wem.Bundle.Tilly.winter_Mon6}}",
+			"winter_Mon8": "{{i18n:Wem.Bundle.Tilly.winter_Mon8}}",
+			"winter_Mon10": "{{i18n:Wem.Bundle.Tilly.winter_Mon10}}",
+			"winter_Tue": "{{i18n:Wem.Bundle.Tilly.winter_Tue}}",
+			"winter_Tue2": "{{i18n:Wem.Bundle.Tilly.winter_Tue2}}",
+			"winter_Tue4": "{{i18n:Wem.Bundle.Tilly.winter_Tue4}}",
+			"winter_Tue6": "{{i18n:Wem.Bundle.Tilly.winter_Tue6}}",
+			"winter_Tue8": "{{i18n:Wem.Bundle.Tilly.winter_Tue8}}",
+			"winter_Tue10": "{{i18n:Wem.Bundle.Tilly.winter_Tue10}}",
+			"winter_Wed": "{{i18n:Wem.Bundle.Tilly.winter_Wed}}",
+			"winter_Wed2": "{{i18n:Wem.Bundle.Tilly.winter_Wed2}}",
+			"winter_Wed4": "{{i18n:Wem.Bundle.Tilly.winter_Wed4.{{Random:1,2}}}}",
+			"winter_Wed6": "{{i18n:Wem.Bundle.Tilly.winter_Wed6}}",
+			"winter_Wed8": "{{i18n:Wem.Bundle.Tilly.winter_Wed8}}",
+			"winter_Wed10": "{{i18n:Wem.Bundle.Tilly.winter_Wed10}}",
+			"winter_Thu": "{{i18n:Wem.Bundle.Tilly.winter_Thu}}",
+			"winter_Thu2": "{{i18n:Wem.Bundle.Tilly.winter_Thu2}}",
+			"winter_Thu4": "{{i18n:Wem.Bundle.Tilly.winter_Thu4}}",
+			"winter_Thu6": "{{i18n:Wem.Bundle.Tilly.winter_Thu6.{{Random:1,2}}}}",
+			"winter_Thu8": "{{i18n:Wem.Bundle.Tilly.winter_Thu8}}",
+			"winter_Thu10": "{{i18n:Wem.Bundle.Tilly.winter_Thu10}}",
+			"winter_Fri": "{{i18n:Wem.Bundle.Tilly.winter_Fri}}",
+			"winter_Fri2": "{{i18n:Wem.Bundle.Tilly.winter_Fri2}}",
+			"winter_Fri4": "{{i18n:Wem.Bundle.Tilly.winter_Fri4}}",
+			"winter_Fri6": "{{i18n:Wem.Bundle.Tilly.winter_Fri6}}",
+			"winter_Fri8": "{{i18n:Wem.Bundle.Tilly.winter_Fri8}}",
+			"winter_Fri10": "{{i18n:Wem.Bundle.Tilly.winter_Fri10}}",
+			"winter_Sat": "{{i18n:Wem.Bundle.Tilly.winter_Sat}}",
+			"winter_Sat2": "{{i18n:Wem.Bundle.Tilly.winter_Sat2}}",
+			"winter_Sat4": "{{i18n:Wem.Bundle.Tilly.winter_Sat4}}",
+			"winter_Sat6": "{{i18n:Wem.Bundle.Tilly.winter_Sat6}}",
+			"winter_Sat8": "{{i18n:Wem.Bundle.Tilly.winter_Sat8}}",
+			"winter_Sat10": "{{i18n:Wem.Bundle.Tilly.winter_Sat10}}",
+			"winter_Sun": "{{i18n:Wem.Bundle.Tilly.winter_Sun}}",
+			"winter_Sun2": "{{i18n:Wem.Bundle.Tilly.winter_Sun2}}",
+			"winter_Sun4": "{{i18n:Wem.Bundle.Tilly.winter_Sun4}}",
+			"winter_Sun6": "{{i18n:Wem.Bundle.Tilly.winter_Sun6}}",
+			"winter_Sun8": "{{i18n:Wem.Bundle.Tilly.winter_Sun8}}",
+			"winter_Sun10": "{{i18n:Wem.Bundle.Tilly.winter_Sun10}}",
+			"winter_1": "{{i18n:Wem.Bundle.Tilly.winter_1}}",
+			"winter_5": "{{i18n:Wem.Bundle.Tilly.winter_5}}",
+			"winter_14": "{{i18n:Wem.Bundle.Tilly.winter_14}}",
+			"winter_24": "{{i18n:Wem.Bundle.Tilly.winter_24}}",
+
+			  
+			  //Villager Birthdays 
+			  "spring_10": "{{i18n:Wem.Bundle.Tilly.spring_10}}",
+			"spring_27": "{{i18n:Wem.Bundle.Tilly.spring_27}}",
+			"summer_4": "{{i18n:Wem.Bundle.Tilly.summer_4}}",
+			"summer_17": "{{i18n:Wem.Bundle.Tilly.summer_17}}",
+			"fall_2": "{{i18n:Wem.Bundle.Tilly.fall_2}}",
+			"fall_5": "{{i18n:Wem.Bundle.Tilly.fall_5}}",
+			"fall_18": "{{i18n:Wem.Bundle.Tilly.fall_18}}",
+			"fall_24": "{{i18n:Wem.Bundle.Tilly.fall_24}}",
+			"winter_3": "{{i18n:Wem.Bundle.Tilly.winter_3}}",
+			"winter_20": "{{i18n:Wem.Bundle.Tilly.winter_20}}",
+			"winter_23": "{{i18n:Wem.Bundle.Tilly.winter_23}}",
+
+				
+			 "AcceptBouquet": "{{i18n:Wem.Bundle.Tilly.AcceptBouquet}}",
+			"AcceptGift_(O)340": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)340}}",
+			"AcceptGift_(O)341": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)341}}",
+			"AcceptGift_(O)100": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)100}}",
+			"AcceptGift_(O)348": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)348}}",
+			"AcceptGift_(O)797": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)797}}",
+			"AcceptGift_(O)106": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)106}}",
+			"AcceptGift_(O)445": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)445}}",
+			"AcceptGift_(O)424": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)424}}",
+			"AcceptGift_(O)426": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)426}}",
+			"AcceptGift_(O)428": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)428}}",
+			"AcceptGift_(O)459": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)459}}",
+			"AcceptGift_(O)614": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)614}}",
+			"AcceptGift_(O)447": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)447}}",
+			"AcceptGift_(O)228": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)228}}",
+			"AcceptGift_(O)724": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)724}}",
+			"AcceptGift_(O)84": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)84}}",
+			"AcceptGift_(O)595": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)595}}",
+			"AcceptGift_(O)597": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)597}}",
+			"AcceptGift_(O)202": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)202}}",
+			"AcceptGift_(O)213": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)213}}",
+			"AcceptGift_(O)216": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)216}}",
+			"AcceptGift_(O)203": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)203}}",
+			"AcceptGift_(O)251": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)251}}",
+			"AcceptGift_(O)730": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)730}}",
+			"AcceptGift_(O)731": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)731}}",
+			"AcceptGift_(O)903": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)903}}",
+			"AcceptGift_(O)907": "{{i18n:Wem.Bundle.Tilly.AcceptGift(O)907}}",
+			
+			"AcceptGift_(O){{ModId}}.Tilly_TeaEgg": "{{i18n:Wem.Bundle.Tilly.AcceptGift_Wem.Bundle.Tilly_TeaEgg}}",
+			"AcceptGift_(O){{ModId}}.Tilly_HoneyCake": "{{i18n:Wem.Bundle.Tilly.AcceptGift_Wem.Bundle.Tilly_HoneyCake}}",
+			"AcceptGift_(O){{ModId}}.Tilly_TeaCake": "{{i18n:Wem.Bundle.Tilly.AcceptGift_Wem.Bundle.Tilly_TeaCake}}",
+			"AcceptGift_(O){{ModId}}.Tilly_SweetTea": "{{i18n:Wem.Bundle.Tilly.AcceptGift_Wem.Bundle.Tilly_SweetTea}}",
+			"RejectItem_(O){{ModId}}.Tilly_ElliottBook": "{{i18n:Wem.Bundle.Tilly.RejectItem_Wem.Bundle.Tilly_ElliottBook}}",
+
+			"RejectItem_(O)167": "{{i18n:Wem.Bundle.Tilly.RejectItem(O)167}}",
+
+			  			  
+			//CTs
+			"GreenRain_Finished": "{{i18n:Wem.Bundle.Tilly.GreenRain_Finished}}",
+			"cc_Complete": "{{i18n:Wem.Bundle.Tilly.cc_Complete}}",
+			"dating_Penny": "{{i18n:Wem.Bundle.Tilly.dating_Penny}}",
+			"dating_Emily": "{{i18n:Wem.Bundle.Tilly.dating_Emily}}",
+			"dating_Sam": "{{i18n:Wem.Bundle.Tilly.dating_Sam}}",
+			"gotPet": "{{i18n:Wem.Bundle.Tilly.gotPet}}",
+			"LeoDeparture": "{{i18n:Wem.Bundle.Tilly.LeoDeparture}}",
+			"pamHouseUpgrade": "{{i18n:Wem.Bundle.Tilly.pamHouseUpgrade}}",
+			"pamHouseUpgradeAnonymous": "{{i18n:Wem.Bundle.Tilly.pamHouseUpgradeAnonymous}}",
+			
+			"{{ModId}}.Tilly_VisitOver": "{{i18n:Tilly_VisitOver}}",
+			
+			//Joja Route
+			"{{ModId}}.Tilly_JojaOpeningBuffer": "{{i18n:Tilly.Tilly_JojaOpeningBuffer}}",
+			"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Tilly.Tilly_DefeatedBuffer}}",
+			"election": "{{i18n:Tilly.election}}",
+			"jojaEmporium": "{{i18n:Tilly.jojaEmporium}}",
+			  
+			//Resort
+			"Resort_Entering": "{{i18n:Wem.Bundle.Tilly.Resort_Entering}}",
+			"Resort": "{{i18n:Wem.Bundle.Tilly.Resort}}",
+			"Resort_2": "{{i18n:Wem.Bundle.Tilly.Resort_2}}",
+			"Resort_Bar": "{{i18n:Wem.Bundle.Tilly.Resort_Bar}}",
+			"Resort_Bar_2": "{{i18n:Wem.Bundle.Tilly.Resort_Bar_2}}",
+			"Resort_Chair": "{{i18n:Wem.Bundle.Tilly.Resort_Chair}}",
+			"Resort_Chair_2": "{{i18n:Wem.Bundle.Tilly.Resort_Chair_2}}",
+			"Resort_Shore": "{{i18n:Wem.Bundle.Tilly.Resort_Shore}}",
+			"Resort_Shore_2": "{{i18n:Wem.Bundle.Tilly.Resort_Shore_2}}",
+			"Resort_Towel": "{{i18n:Wem.Bundle.Tilly.Resort_Towel}}",
+			"Resort_Towel_2": "{{i18n:Wem.Bundle.Tilly.Resort_Towel_2}}",
+			"Resort_Umbrella": "{{i18n:Wem.Bundle.Tilly.Resort_Umbrella}}",
+			"Resort_Umbrella_2": "{{i18n:Wem.Bundle.Tilly.Resort_Umbrella_2}}",
+			"Resort_Wander": "{{i18n:Wem.Bundle.Tilly.Resort_Wander}}",
+			"Resort_Wander_2": "{{i18n:Wem.Bundle.Tilly.Resort_Wander_2}}",
+			"Resort_Leaving": "{{i18n:Wem.Bundle.Tilly.Resort_Leaving}}",
+
+			}
+		},
+		
+		
+		//NPC CT Dialogue
+		{
+			"LogName": "Emily",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries": {
+				"{{ModId}}.Tilly_Matilda": "{{i18n:Wem.Bundle.Tilly.Emily.Tilly_Matilda}}",
+				"{{ModId}}.Tilly.JojaCT": "{{i18n:Wem.Bundle.Tilly.Emily.Tilly.JojaCT}}",
+				"{{ModId}}.Tilly_JojaOpeningBuffer": "I'm excited for Tilly's new shop to open! She's worked so hard.",
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Emily.Tilly_DefeatedBuffer}}",
+
+
+			},
+		},
+		{
+			"LogName": "Haley",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries": {
+				"{{ModId}}.Tilly_Matilda": "{{i18n:Wem.Bundle.Tilly.Haley.Tilly_Matilda}}",
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Haley.Tilly_DefeatedBuffer}}",
+			},
+		},
+		
+		{
+			"LogName": "Penny",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"Entries": {
+				"{{ModId}}.Tilly.JojaCT": "{{i18n:Wem.Bundle.Tilly.Penny.Tilly.JojaCT}}",
+				"{{ModId}}.Tilly_JojaOpeningBuffer": "{{i18n:Penny.Tilly_JojaOpeningBuffer}}",
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Penny.Tilly_DefeatedBuffer}}",
+
+
+			},
+		},
+		
+		{
+			"LogName": "Sebastian",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries": {
+				"{{ModId}}.Tilly.JojaCT": "{{i18n:Wem.Bundle.Tilly.Seb.Tilly.JojaCT}}",
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Sebastian.Tilly_DefeatedBuffer}}",
+
+			},
+		},
+		
+		{
+			"LogName": "Evelyn",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Evelyn",
+			"Entries": {
+				"{{ModId}}.Tilly.JojaCT": "{{i18n:Wem.Bundle.Tilly.Evelyn.Tilly.JojaCT}}",
+				"{{ModId}}.Tilly_JojaOpeningBuffer": "{{i18n:Evelyn.Tilly_JojaOpeningBuffer}}",
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Evelyn.Tilly_DefeatedBuffer}}",
+
+			},
+		},
+		
+		{
+			"LogName": "Elliott",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries": {
+				"{{ModId}}.Tilly.JojaCT": "{{i18n:Wem.Bundle.Tilly.Elliott.Tilly.JojaCT}}",
+				"Fri2": "{{i18n:Wem.Bundle.Tilly.Elliott.Fri2}}",
+				"RejectItem_(O){{ModId}}.Tilly_ElliottBook": "{{i18n:Wem.Bundle.Tilly_Elliott.RejectItem_Wem.Bundle.Tilly_ElliottBook}}",
+				"{{ModId}}.Tilly_JojaOpeningBuffer": "{{i18n:Elliott.Tilly_JojaOpeningBuffer}}",
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Elliott.Tilly_DefeatedBuffer}}",
+
+
+			},
+		},
+		
+		{
+			"LogName": "Pam",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Pam",
+			"Entries": {
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Pam.Tilly_DefeatedBuffer}}",
+			},
+		},
+		
+		{
+			"LogName": "Jas",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jas",
+			"Entries": {
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Jas.Tilly_DefeatedBuffer}}",
+
+			},
+		},
+		{
+			"LogName": "Vincent",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Vincent",
+			"Entries": {
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Vincent.Tilly_DefeatedBuffer}}",
+
+			},
+		},
+		{
+			"LogName": "Jodi",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jodi",
+			"Entries": {
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Jodi.Tilly_DefeatedBuffer}}",
+
+			},
+		},
+		{
+			"LogName": "Shane",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries": {
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Shane.Tilly_DefeatedBuffer}}",
+
+			},
+		},
+		{
+			"LogName": "Pierre",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Pierre",
+			"Entries": {
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Pierre.Tilly_DefeatedBuffer}}",
+
+			},
+		},
+		{
+			"LogName": "Lewis",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Lewis",
+			"Entries": {
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Lewis.Tilly_DefeatedBuffer}}",
+
+			},
+		},
+		{
+			"LogName": "Harvey",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries": {
+				"{{ModId}}.Tilly_DefeatedBuffer": "{{i18n:Harvey.Tilly_DefeatedBuffer}}",
+
+			},
+		},
+	
+	]
+}

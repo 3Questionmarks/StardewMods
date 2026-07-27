@@ -1,0 +1,27 @@
+{
+  "Changes": [
+    {
+      "LogName": "Add seal to beach",
+      "Action": "EditMap",
+      "Target": "Maps/Beach",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "65",
+            "Y": "9"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 dedpeech.sironaCC.WanderingSeal"
+          }
+        }
+      ],
+      "When": {
+        "Weather": "Rain, Sun, Storm, Snow, Wind, debris, default,",
+        "Season": "Spring, Fall, Winter",
+        "DayOfWeek": "Tuesday"
+      },
+      "Update": "OnLocationChange"
+    }
+  ]
+}

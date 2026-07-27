@@ -1,0 +1,229 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/Town",
+        "Entries":
+    {
+    "{{ModId}}_E09/F/f Sam 2250 Vincent 500 Jodi 250/t 1000 1700/w sunny":"
+    playful/
+    12 91/
+    farmer 23 91 1 Sam 4 14 1 Vincent 14 94 1 Jodi 13 90 2/
+    skippable/
+    addTemporaryActor {{ModId}}_Box 16 32 5 14 2 false/
+    addTemporaryActor {{ModId}}_Snail 16 16 15 94 2 false/
+    move farmer -8 0 3/
+    pause 250/
+    faceDirection farmer 2/
+    pause 900/
+    faceDirection Jodi 1/
+    pause 900/
+    move Jodi 0 1 1/
+    pause 700/
+    faceDirection farmer 3/
+    speak Jodi \"{{i18n:E09.001}}\"/
+    pause 800/
+    faceDirection Jodi 2/
+    pause 700/
+    faceDirection farmer 2/
+    speed Vincent 5/
+    move Vincent 0 1 1/
+    speed Vincent 5/
+    move Vincent 1 0 0/
+    emote farmer {{?}}/
+    pause 500/
+    speak Jodi \"{{i18n:E09.002}}\"/
+    pause 900/
+    faceDirection Jodi 1/
+    pause 500/
+    emote Jodi {{happy}} true/
+    pause 400/
+    faceDirection farmer 3/
+    pause 800/
+    speak Jodi \"{{i18n:E09.003}}\"/
+    pause 900/
+    speak Jodi \"{{i18n:E09.004}}\"/
+    pause 600/
+    emote farmer {{blush}} true/
+    speed Vincent 5/
+    move Vincent 1 0 0/
+    speed Vincent 5/
+    move Vincent 0 -2 3/
+    speed Vincent 5/
+    move Vincent -1 0 2/
+    move farmer 0 -1 3/
+    faceDirection Jodi 2 true/
+    move farmer -5 0 0/
+    move farmer 0 -4 0/
+    pause 300/
+    warp farmer 1000 1000/
+    playSound doorClose/
+    pause 500/
+    speed Vincent 5/
+    move Vincent -1 0 2/
+    speed Vincent 5/
+    move Vincent 0 1 1/
+    pause 600/
+    globalFade/
+    viewport -1200 -1200/
+    changeLocation SamHouse/
+    globalFadeToClear 0.007 true/
+    viewport 6 15/
+    pause 1000/
+    emote Sam {{pause}}/
+    pause 900/
+    warp farmer 4 23/
+    playSound doorClose/
+    pause 300/
+    move farmer 0 -4 0/
+    faceDirection Sam 2 true/
+    move farmer 0 -4 0/
+    pause 200/
+    speak Sam \"{{i18n:E09.005}}\"/
+    pause 400/
+    faceDirection Sam 1/
+    pause 300/
+    speak Sam \"{{i18n:E09.006}}\"/
+    pause 500/
+    move farmer 1 0 0/
+    pause 500/
+    message \"{{i18n:E09.007}}\"/
+    pause 600/
+    speak Sam \"{{i18n:E09.008}}\"/
+    pause 600/
+    speak Sam \"{{i18n:E09.009}}\"/
+    pause 900/
+    speak Sam \"{{i18n:E09.010}}\"/
+    pause 900/
+    speak Sam \"{{i18n:E09.011}}\"/
+    pause 450/
+    move Sam 0 1 2/
+    pause 400/
+    faceDirection farmer 3/
+    pause 900/
+    speak Sam \"{{i18n:E09.012}}\"/
+    pause 300/
+    faceDirection Sam 1/
+    pause 400/
+    speak Sam \"{{i18n:E09.013}}\"/
+    pause 900/
+    emote Sam {{?}}/
+    pause 300/
+    textAboveHead Sam \"{{i18n:E09.014}}\" true/
+    pause 200/
+    move Sam 0 -1 1/
+    pause 200/
+    faceDirection farmer 0/
+    pause 500/
+    animate Sam false true 200 34 34 34 4 4/
+    pause 500/
+    playSound leafrustle/
+    pause 1100/
+    playSound shwip/
+    pause 900/
+    playSound batFlap/
+    pause 800/
+    stopAnimation Sam 35/
+    showFrame Sam 35/
+    speak Sam \"{{i18n:E09.015}}\"/
+    pause 700/
+    playSound slime/
+    showFrame Sam 39/
+    pause 300/
+    faceDirection farmer 3/
+    pause 300/
+    message \"{{i18n:E09.016}}\"/
+    pause 200/
+    showFrame Sam 43/
+    pause 569/
+    addConversationTopic {{ModId}}_Topic_E09/
+    playSound breathin/
+    temporaryAnimatedSprite Mods\\{{ModId}}\\{{ModId}}_Drawing-Sheet 0 0 320 180 10 30 1 -3 11 false false 999999 0 1 0 0 0 hold_last_frame/
+    pause 5000/
+    message \"{{i18n:E09.016X}}\"/
+    removeTemporarySprites true/
+    temporaryAnimatedSprite Mods\\{{ModId}}\\{{ModId}}_Drawing-Sheet-Reverse 0 0 320 180 10 30 1 -3 11 false false 999999 0 1 0 0 0/
+    playSound breathout true/
+    pause 500/
+    speak Sam \"{{i18n:E09.017}}\"/
+    pause 700/
+    showFrame Sam 39/
+    pause 300/
+    faceDirection Vincent 0/
+    warp Vincent 4 23/
+    playSound doorClose/
+    pause 400/
+    faceDirection farmer 2/
+    pause 200/
+    speed Vincent 5/
+    move Vincent 0 -4 0/
+    speak Vincent \"{{i18n:E09.018}}\"/
+    pause 600/
+    emote Vincent {{?}}/
+    pause 200/
+    move Vincent 0 -1 0/
+    pause 200/
+    speak Vincent \"{{i18n:E09.019}}\"/
+    pause 400/
+    faceDirection farmer 3 true/
+    speed Vincent 4/
+    move Vincent 0 -3 0/
+    speak Vincent \"{{i18n:E09.020}}\"/
+    pause 600/
+    speak Sam \"{{i18n:E09.021}}\"/
+    pause 200/
+    emote Vincent {{happy}}/
+    pause 200/
+    speed Vincent 5/
+    move Vincent 0 4 2/
+    faceDirection farmer 2 true/
+    pause 300/
+    faceDirection Vincent 0/
+    speak Vincent \"{{i18n:E09.022}}\"/
+    pause 100/
+    speed Vincent 5/
+    move Vincent 0 4 2/
+    warp Vincent -200 -200/
+    playSound doorClose/
+    pause 1100/
+    showFrame Sam 0/
+    playSound slime/
+    pause 500/
+    move farmer -1 0 0/
+    pause 400/
+    speak Sam \"{{i18n:E09.023}}\"/
+    pause 200/
+    emote farmer {{happy}}/
+    pause 300/
+    globalFade/
+    viewport -1200 -1200/
+    end/
+    ",
+    
+        
+    },
+},
+
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Vincent",
+        "Entries":{
+            "{{ModId}}_Topic_E09":"{{i18n:E09.025}}",
+            }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Sam",
+        "Entries":{
+            "{{ModId}}_Topic_E09":"{{i18n:E09.024}}",
+            }
+    },
+        {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Jodi",
+        "Entries":{
+            "{{ModId}}_Topic_E09":"{{i18n:E09.026}}",
+            }
+    },
+    ]
+} 

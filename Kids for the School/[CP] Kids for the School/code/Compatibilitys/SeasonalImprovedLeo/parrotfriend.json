@@ -1,0 +1,103 @@
+{
+	"Changes": [
+//Parrot Friend Valley
+		{
+            "Action": "EditImage",
+			"PatchMode": "Overlay",
+            "Target": "Portraits/ParrotBoy",
+			"Priority": "Late",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Portraits/Parrot.png",
+			"Update": "OnLocationChange",
+			"When": {
+                "HasFile:{{FromFile}}": true,
+				"HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+				"ParrotFriend": "true",
+				"Season": "spring, summer, fall",
+				"LocationContext": "Default",
+			}
+        },
+//Winter
+		{
+            "Action": "EditImage",
+			"PatchMode": "Overlay",
+            "Target": "Portraits/ParrotBoy_Winter",
+			"Priority": "Late",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Portraits/Parrot_Winter.png",
+			"Update": "OnLocationChange",
+			"When": {
+                "HasFile:{{FromFile}}": true,
+				"HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+				"ParrotFriend": "true",
+				"Season": "winter",
+				"LocationContext": "Default",
+			}
+        },
+//Parrot Friend Valley Random
+		{
+            "Action": "EditImage",
+			"PatchMode": "Overlay",
+            "Target": "Portraits/ParrotBoy",
+			"Priority": "Late",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Portraits/Parrot.png",
+			"Update": "OnLocationChange",
+			"When": {
+                "HasFile:{{FromFile}}": true,
+				"HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+				"Random ParrotFriend": "true",
+				"Season": "spring, summer, fall",
+				"Weather": "Sun, Wind",
+				"LocationContext": "Default",
+			}
+        },
+//Winter
+		{
+            "Action": "EditImage",
+			"PatchMode": "Overlay",
+            "Target": "Portraits/ParrotBoy_Winter",
+			"Priority": "Late",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Portraits/Parrot_Winter.png",
+			"Update": "OnLocationChange",
+			"When": {
+                "HasFile:{{FromFile}}": true,
+				"HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+				"Random ParrotFriend": "true",
+				"Season": "winter",
+				"Weather": "Sun, Wind",
+				"LocationContext": "Default",
+			}
+        },
+//Parrot Friend Island
+		{
+            "Action": "EditImage",
+			"PatchMode": "Overlay",
+            "Target": "Portraits/ParrotBoy",
+			"Priority": "Late",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Portraits/Parrot.png",
+			"Update": "OnLocationChange",
+			"When": {
+                "HasFile:{{FromFile}}": true,
+				"HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+				"ParrotFriend": "true",
+				"LocationContext": "Island",
+				"Season": "spring, summer, fall, winter",
+			}
+        },
+//Parrot Friend Island Random
+		{
+            "Action": "EditImage",
+			"PatchMode": "Overlay",
+            "Target": "Portraits/ParrotBoy",
+			"Priority": "Late",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Portraits/Parrot.png",
+			"Update": "OnLocationChange",
+			"When": {
+                "HasFile:{{FromFile}}": true,
+				"HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+				"Random ParrotFriend": "true",
+				"LocationContext": "Island",
+				"Season": "spring, summer, fall, winter",
+				"Weather": "Sun, Wind"
+			},
+        },
+	]
+}

@@ -1,0 +1,54 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Fishing.Trawle Default)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Fishing.Trawle.Default",
+      "FromFile": "assets/Maps/Fishing Trawler/Fishing.Trawle.Novo_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Fishing.Trawle Old)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Fishing.Trawle.Old",
+      "FromFile": "assets/Maps/Fishing Trawler/Fishing.Trawle.Velho_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Fishing.Trawle.Ginger Default)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Fishing.Trawle.Default.Ginger",
+      "FromFile": "assets/Maps/Fishing Trawler/Fishing.Trawle.Novo.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Fishing.Trawle.Ginger Old)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Fishing.Trawle.Old.Ginger.",
+      "FromFile": "assets/Maps/Fishing Trawler/Fishing.Trawle.Velho.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Fishing.Trawle.Ginger.Bridge)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Fishing.Trawle.Ginger.Bridge",
+      "FromFile": "assets/Maps/Fishing Trawler/Fishing.Trawle.Ponte.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

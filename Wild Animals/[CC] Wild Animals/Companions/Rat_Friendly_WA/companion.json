@@ -720,14 +720,22 @@
 		"TextLifetime": 3000
 		}
 	],
+	"Sounds": [
+		{
+		"SoundName": "Rodent_WA_Sound",
+		"WhenToPlay": "Always",
+		"TimeBetweenSound": 3000,
+		"ChanceOfPlaying": 0.3
+		}
+	] 
   },
 
 "Sounds": [
 	{
-	"SoundName": "dustMeep",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.2
+	"SoundName": "Rodent_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.3
 	}
 ]  
 }

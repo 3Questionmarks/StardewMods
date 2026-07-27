@@ -1,0 +1,22 @@
+{
+	"Name": "DaisyNiko's Earthy Map for NPC Riley",
+	"Author": "N3cro_92",
+	"Description": "DaisyNiko's Earthy Map for NPC Riley",
+	"Version": "1.0.0",
+	"UniqueID": "N3cro_92.DaisyNikosEarthyMapNPCRiley",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "Nexus:40419" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+    },
+	"Dependencies": [
+        {
+            "UniqueID": "Pathoschild.ContentPatcher",
+            "IsRequired": true
+        },
+		{
+            "UniqueID": "SG.Riley",
+            "IsRequired": false
+        }
+	]
+}

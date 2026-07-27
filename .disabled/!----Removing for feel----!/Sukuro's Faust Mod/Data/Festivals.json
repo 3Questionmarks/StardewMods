@@ -1,0 +1,588 @@
+{
+	"Changes": [
+		{//Egg Festival Data SVE
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Faust 12 57 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "Faust 37 65 left",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+			},
+		},
+		{//Egg Festival Data No SVE
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Faust 12 57 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "Faust 37 65 left",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+			},
+		},
+		{//Egg Festival Data Y2
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "Faust 20 68 right",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters_y2"
+					],
+					"Value": "Faust 26 74 up",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{//Egg Festival Dialogues
+			"Action": "EditData",
+			"Target": "data/festivals/spring13",
+			"Entries": {
+				"Faust": "{{i18n:Festivals.Faust.Egg.Y1}}",
+				"Faust_y2": "{{i18n:Festivals.Faust.Egg.Y2}}",
+				"Faust_spouse_y1": "{{i18n:Festivals.Faust.Egg.Y1.Married}}"
+			},
+		},
+		{//Flower Dance Data
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Faust 33 42 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "Faust 20 21 down",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{//Flower Dance Data Y2 SVE
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "Faust 25 35 left",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters_y2"
+					],
+					"Value": "Faust 20 21 down",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+			},
+		},
+		{//Flower Dance Data Y2 No SVE
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "Faust 25 36 left",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters_y2"
+					],
+					"Value": "Faust 20 21 down",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+			},
+		},
+		{//Flower Dance Dialogues
+			"Action": "EditData",
+			"Target": "data/festivals/spring24",
+			"Entries": {
+				"Faust": "{{i18n:Festivals.Faust.Flower.Y1}}",
+				"Faust_y2": "{{i18n:Festivals.Faust.Flower.Y2}}",
+				"Faust_spouse_y2": "{{i18n:Festivals.Faust.Flower.Y2.Married}}"
+			}
+		},
+		{//Luau Data
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Faust 14 38 right",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "Faust 14 38 right",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{//Luau Data Y2
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "Faust 43 5 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters_y2"
+					],
+					"Value": "Faust 16 7 down",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{//Luau Dialogues
+			"Action": "EditData",
+			"Target": "data/festivals/summer11",
+			"Entries": {
+				"Faust": "{{i18n:Festivals.Faust.Luau.Y1}}",
+				"Faust_y2": "{{i18n:Festivals.Faust.Luau.Y2}}",
+				"Faust_spouse": "{{i18n:Festivals.Faust.Luau.Y1.Married}}",
+				"Faust_spouse_y2": "{{i18n:Festivals.Faust.Luau.Y2.Married}}"
+			}
+		},
+		{//Jellies Data
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Faust 39 32 right",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "Faust 39 32 right",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{//Jellies Data Y2
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "Faust 7 8 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters_y2"
+					],
+					"Value": "Faust 13 35 right",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{//Jellies Dialogues
+			"Action": "EditData",
+			"Target": "data/festivals/summer28",
+			"Entries": {
+				"Faust": "{{i18n:Festivals.Faust.Jellies.Y1}}",
+				"Faust_y2": "{{i18n:Festivals.Faust.Jellies.Y2}}",
+				"Faust_spouse_y1": "{{i18n:Festivals.Faust.Jellies.Y1.Married}}",
+				"Faust_spouse_y2": "{{i18n:Festivals.Faust.Jellies.Y2.Married}}",
+			}
+		},
+		{//Stardew Valley Fair Data SVE
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Faust 30 79 right",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+			},
+		},
+		{//Stardew Valley Fair Data No SVE
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Faust 36 81 up",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+			},
+		},
+		{//Stardew Valley Fair Y2
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "Faust 48 95 down",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{//Fair Dialogues
+			"Action": "EditData",
+			"Target": "data/festivals/fall16",
+			"Entries": {
+				"Faust": "{{i18n:Festivals.Faust.Fair.Y1}}",
+				"Faust_y2": "{{i18n:Festivals.Faust.Fair.Y2}}",
+				"Faust_spouse": "{{i18n:Festivals.Faust.Fair.Y1.Married}}",
+			}
+		},
+		{//Halloween Data SVE
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Faust 45 87 down",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+			},
+		},
+		{//Halloween Data No SVE
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Faust 23 14 up",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+			},
+		},
+		{//Halloween Data Y2
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "Faust 13 62 left",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{//Halloween Dialogues
+			"Action": "EditData",
+			"Target": "data/festivals/fall27",
+			"Entries": {
+				"Faust": "{{i18n:Festivals.Faust.Spirits.Y1}}",
+				"Faust_y2": "{{i18n:Festivals.Faust.Spirits.Y2}}",
+				"Faust_spouse_y2": "{{i18n:Festivals.Faust.Spirits.Y2.Married}}"
+			}
+		},
+		{//Halloween Dialogues No SVE
+			"Action": "EditData",
+			"Target": "data/festivals/fall27",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"Entries": {
+				"Faust": "{{i18n:Festivals.Faust.Spirits.Y1.NoSVE}}"
+			}
+		},
+		{//Ice Festival Data SVE
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Faust 29 52 left",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Main-Event_additionalCharacters"
+					],
+					"Value": "Faust 57 19 down",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+			},
+		},
+		{//Ice Festival Data No SVE
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Faust 96 23 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Main-Event_additionalCharacters"
+					],
+					"Value": "Faust 96 23 down",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+			},
+		},
+		{//Ice Festival Data Y2
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "Faust 45 16 right",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Main-Event_additionalCharacters_y2"
+					],
+					"Value": "Faust 55 42 right",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{//Ice Festival Dialogues
+			"Action": "EditData",
+			"Target": "data/festivals/winter8",
+			"Entries": {
+				"Faust": "{{i18n:Festivals.Faust.Ice.Y1}}",
+				"Faust_y2": "{{i18n:Festivals.Faust.Ice.Y2}}",
+				"Faust_spouse": "{{i18n:Festivals.Faust.Ice.Y1.Married}}",
+				"Faust_spouse_y2": "{{i18n:Festivals.Faust.Ice.Y2.Married}}"
+			}
+		},
+		{//Ice Festival Dialogues No SVE
+			"Action": "EditData",
+			"Target": "data/festivals/winter8",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"Entries": {
+				"Faust": "{{i18n:Festivals.Faust.Ice.Y1.NoSVE}}",
+				"Faust_spouse": "{{i18n:Festivals.Faust.Ice.Y1.Married.NoSVE}}",
+			}
+		},
+		{//Christmas Data SVE
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Faust 47 89 up",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+			},
+		},
+		{//Christmas Data No SVE
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Faust 44 78 down",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+			},
+		},
+		{//Christmas Data Y2
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "Faust 39 72 down",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{//Christmas Dialogues
+			"Action": "EditData",
+			"Target": "data/festivals/winter25",
+			"Entries": {
+				"Faust": "{{i18n:Festivals.Faust.Feast.Y1}}",
+				"Faust_y2": "{{i18n:Festivals.Faust.Feast.Y2}}",
+				"Faust_spouse": "{{i18n:Festivals.Faust.Feast.Y1.Married}}",
+				"Faust_spouse_y2": "{{i18n:Festivals.Faust.Feast.Y2.Married}}",
+			}
+		},
+		{//Christmas Dialogues No SVE
+			"Action": "EditData",
+			"Target": "data/festivals/winter25",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"Entries": {
+				"Faust": "{{i18n:Festivals.Faust.Feast.Y1.NoSVE}}",
+			}
+		}
+	]
+}							

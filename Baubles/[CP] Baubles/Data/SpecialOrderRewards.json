@@ -1,0 +1,128 @@
+{
+  "Changes":
+    [
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries":
+	   {
+		  "appleseed.BCP.BurnTonic":
+		    {
+		 	"Name": "BurnTonic",
+			"DisplayName": "{{i18n:appleseed.BCP.BurnTonic.name}}",
+			"Description": "{{i18n:appleseed.BCP.BurnTonic.description}}",
+			"Type": "Cooking",
+			"Category": -7,
+			"Price": 280,
+			"Texture": "Mods/appleseed.BCP/Objects",
+			"SpriteIndex": 163,
+			"Edibility": 8,
+			"IsDrink": true,
+			"Buffs": 
+			  [
+			    {
+				"Duration": "430",
+				"CustomAttributes": 
+				  {
+				    "LuckLevel": "1.0"
+				  }
+			    }
+			  ],
+			"ExcludeFromShippingCollection": "{{CollectionConfig}}",
+			"ContextTags":
+			  [
+			    "color_purple",
+			  ]
+		    },
+	   }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "Entries":
+	    {
+		"appleseed.BCP.BurnTonicCure":
+		  {
+		    "Id": "appleseed.BCP.BurnTonicCure",
+		    "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+		    "Condition": "ITEM_ID Input appleseed.BCP.BurnTonic",
+		    "Actions":
+			[
+			  "RemoveBuff 12"
+			],
+			"MarkActionApplied": false
+		  }
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/CookingRecipes",
+	  "Entries":
+	    {
+		"appleseed.BCP.BurnTonic": "appleseed.BCP.BatFlower 3 340 1/Home/appleseed.BCP.BurnTonic/none/"
+	    }
+	},
+	{
+	  "Action": "Load",
+	  "Target": "Mods/appleseed.BCP/Clothing",
+	  "FromFile": "Assets/Items/Clothing.png"
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Shirts",
+	  "Entries":
+	   {
+	    "appleseed.BCP.KnitSweater":
+		{
+		  "Name": "Knit Sweater",
+		  "DisplayName": "{{i18n:appleseed.BCP.KnitSweater.Name}}",
+		  "Description": "{{i18n:appleseed.BCP.KnitSweater.Description}}",
+		  "Texture": "Mods/appleseed.BCP/Clothing",
+		  "SpriteIndex": 0,
+		  "CanBeDyed": true
+		},
+	    "appleseed.BCP.ILoveSDShirt":
+		{
+		  "Name": "Souvenir Shirt",
+		  "DisplayName": "{{i18n:appleseed.BCP.ILoveSDShirt.Name}}",
+		  "Description": "{{i18n:appleseed.BCP.ILoveSDShirt.Description}}",
+		  "Texture": "Mods/appleseed.BCP/Clothing",
+		  "SpriteIndex": 1
+		}
+	   }
+	},
+	{
+	  "Action": "Load",
+	  "Target": "Mods/appleseed.BCP/Paintings",
+	  "FromFile": "Assets/Items/{{TargetWithoutPath}}.png",
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Furniture",
+	  "Entries": 
+	    {
+		"appleseed.BCP.JasDrawing": "Jas' Drawing/painting/1 2/1 2/1/0/-1/{{i18n:appleseed.BCP.JasDrawing.Name}}/0/Mods\\appleseed.BCP\\Paintings/false/none",
+		"appleseed.BCP.HaleyEmbroidery": "Haley's Embroidery/painting/1 2/1 2/1/0/-1/{{i18n:appleseed.BCP.HaleyEmbroidery.Name}}/1/Mods\\appleseed.BCP\\Paintings/false/none",
+		"appleseed.BCP.LeahStillLife": "Leah's Still Life/painting/2 2/2 2/1/0/-1/{{i18n:appleseed.BCP.LeahStillLife.Name}}/2/Mods\\appleseed.BCP\\Paintings/false/none",
+		"appleseed.BCP.VincentDrawing": "Vincent's Drawing/painting/1 2/1 2/1/0/-1/{{i18n:appleseed.BCP.VincentDrawing.Name}}/4/Mods\\appleseed.BCP\\Paintings/false/none"
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "Entries":
+	    {
+	      "appleseed.BCP.BurnTonicTrigger":
+		{
+		  "Id": "appleseed.BCP.BurnTonicTrigger",
+		  "Trigger": "DayStarted",
+		  "Condition": "PLAYER_SPECIAL_ORDER_COMPLETE Current appleseed.BCP.Harvey",
+		  "Actions":
+		    [
+		      "MarkCookingRecipeKnown Current appleseed.BCP.BurnTonic"
+		    ]
+		}
+	    }
+	}
+    ]
+}

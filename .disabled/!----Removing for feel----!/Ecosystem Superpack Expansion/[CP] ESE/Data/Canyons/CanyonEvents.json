@@ -1,0 +1,199 @@
+{// 0 = up, 1 = right, 2 = down, 3 = left
+    "Changes": [
+
+
+	 {
+			"Action": "EditMap",
+			"Target": "maps/Canyon_south",
+
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 16,
+						"Y": 8
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"canyonguy.1\""
+						
+					},
+				}
+			]
+	
+		},
+ {
+            "LogName": "Canyon 1",
+            "Action": "EditData",
+            "Target": "Data/Events/SandyHouse",
+            "Entries": 
+            {
+            "cc_canyon1/GameStateQuery WEATHER Town Rain Storm GreenRain/Time 1800 2400": "nightTime/4 6/farmer 4 9 0 Sandy 3 5 1 Wizard 4 5 3/skippable/addConversationTopic canyon1 5/pause 800/speak Wizard \"The dancers have begun their ballet.\"/pause 300/faceDirection Sandy 2/faceDirection Wizard 2/emote Sandy 16/pause 400/move farmer 0 -2 0/speak Sandy \"@! What are you doing here so late?#$b#The bus to the valley already left...$s\"/pause 200/speak Wizard \"Your timing is unfortunate, @.\"/emote Sandy 16/faceDirection Sandy 1/pause 100/faceDirection Sandy 2/pause 200/speak Sandy \"Oh, you already know each other?#$b#I should have guessed you'd make friends with the mysterious!$h\"/pause 400/speak Wizard \"'The mysterious,' hmm...#$b#Whatever task you came for, I advise you hurry home.#$b#The desert will not be safe tonight.\"/pause 400/speak Sandy \"Yeah... it's gonna get wild.$s\"/pause 400/speak Wizard \"Tell me @, how much do you know about deserts?\"/playMusic LavaMine/speak Wizard \"Some believe it never rains in the desert, but there's a hidden truth.$2#$b#There is a long dry season, followed by a destructive wet season.#$b#Once a year, a storm rages through the gorges and canyonlands beyond this oasis.#$b#It is a storm of all storms!$1#$b#A MONSOON!$1\"/pause 1200/stopMusic LavaMine/pause 300/speak Sandy \"Yep, and once a year, our friend here stops by with a cute little note about keeping the shop dry.\"/pause 400/emote Wizard 40/pause 400/speak Wizard \"It is a complex barrier spell against water elementals.\"/pause 200/ speak Sandy \"Anyway, the bigger issue here is rainpuffs!$s#$b#Right before the monsoon hits, there's this special bush that flowers up and releases puffballs.$1\"/pause 200/speak Wizard \"Creosote... one of the most potent and long-lived medicinal plants.\"/pause 400/speak Sandy \"Yeah, and they make great tea!$h#$b#It's a total waste, but the storm is going to wash them all away at this rate.$s\"/pause 400/faceDirection Wizard 3/pause 200/speak Wizard \"I discern your desire to rush out and collect what you can.#$b#It is ill-advised - only one experienced in the elemental arts should venture out now.\"/pause 200/faceDirection Sandy 1/pause 200/faceDirection Sandy 2/emote Sandy 40/pause 400/question fork1 \"#Offer to help Sandy#Ask the Wizard to warp you home\"/fork GoHome/pause 200/speak Sandy \"Oh wow, really?$h#$b#I didn't realize you were an elemental artist!$h#$b#Even just one rainpuff would be great.\"/pause 100/faceDirection Wizard 3/pause 200/faceDirection Wizard 2/pause 200/speak Wizard \"Hmm.#$b#I suppose...#$b#I will hold off the worst of the torrent for a few hours.\"/pause 200/faceDirection Sandy 1/pause 400/speak Wizard \"But be warned... when true night falls, nothing in this world can stop the flood.\"/pause 200/showFrame Wizard 16/pause 200/playSound shwip/shake Wizard 5/faceDirection Wizard 3 true/pause 50/faceDirection Wizard 0 true/pause 50/faceDirection Wizard 1 true/pause 50/faceDirection Wizard 2 true/pause 50/showFrame Wizard 16/pause 500/playSound wand/pause 200/shake Wizard 300/pause 600/speak Wizard \"I've cleared the way forward to the canyonlands.#$b#Follow the sidewalk along the road outside... away from the valley.$2\"/pause 400/playSound shwip/faceDirection Wizard 3 true/pause 50/faceDirection Wizard 0 true/pause 50/faceDirection Wizard 1 true/pause 50/faceDirection Wizard 2 true/pause 50/showFrame Wizard 16/pause 500/playSound wand/pause 400/warp Wizard -3000 -3000/specificTemporarySprite wizardWarp/screenFlash 1/pause 400/faceDirection Sandy 2/pause 200/speak Sandy \"Be safe, @, I'll be waiting up for you.$h\"/pause 200/end", 
+"GoHome": "pause 300/speak Wizard \"Of course.\"/pause 300/speak Sandy \"It was nice to see you, @!#$b#Maybe next year you'll get a chance to try my rainpuff tea!\"/pause 200/playSound wand/pause 400/end newDay/"			}
+           
+        },
+		 {
+            "LogName": "Canyon 1.5",
+            "Action": "EditData",
+            "Target": "Data/Events/SandyHouse",
+            "Entries": 
+            {
+            "cc_canyon1_5/i CC_Rainpuff":"nightTime/4 6/Sandy 3 5 2 farmer 4 8 0/skippable/addConversationTopic creosoteking 5/pause 200/emote Sandy 16/pause 200/move Sandy 1 0 1/move Sandy 0 1 2/pause 200/speak Sandy \"I'm so glad you're okay!\"/playMusic rain/pause 600/faceDirection Sandy 0/pause 1200/speak Sandy \"Wow...$3\"/pause 1200/stopMusic rain/pause 400/faceDirection Sandy 2/pause 600/speak Sandy \"Just like that, the 'magical barrier' must be up again#$b#So...$s#$b#How did it go out there?\"/pause 600/faceDirection farmer 2/pause 400/itemAboveHead CC_Rainpuff/emote Sandy 16/pause 1400/faceDirection farmer 0/removeItem CC_Rainpuff 1/emote Sandy 56/pause 400/speak Sandy \"You're a lifesaver, @.$h#$b#These rainpuffs can be distilled into the most amazing tea.#$b#The boss in back really likes them.#$b#I'm sure he won't mind if I share the recipe with you!$h\"/pause 300/addCookingRecipe CC_Remedytea/message \"You learned how to brew Remedy Tea!\"/pause 500/speak Sandy \"Whew... everything turned out okay.#$b#Oh! And here's one more thing for you, since it's getting late...\"/pause 200/itemAboveHead 688/pause 1600/addItem 688 1 0/pause 1600/speak Sandy \"You know... I bet a farmer like you could figure out how to grow creosote bushes.#$b#It would be cool if they were growing on a local farm... wink wink.$h#$b#Okay, @, get home safe!\"/pause 200/end" }
+		 },
+		 {
+			"Action": "EditMap",
+			"Target": "maps/Canyon_south",
+			"SetProperties": {
+        "CurrentTime": "{{Time}}"
+    },
+ "Update": "OnLocationChange",
+			"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon1_5": true
+				},
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 16,
+						"Y": 8
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"canyonguy.2\""
+						
+					},
+				}
+			]
+	
+		},
+		  {
+            "LogName": "Canyon 1.7",
+            "Action": "EditData",
+            "Target": "Data/Events/SandyHouse",
+            "Entries": 
+            {
+            "cc_canyon1_7/i CC_Remedytea":"summer_day_ambient/4 6/Sandy 2 5 2 farmer 4 9 0 Bouncer 4 8 2/skippable/addConversationTopic warptime 5/playSound doorClose/pause 200/emote farmer 16/pause 200/speak Bouncer \"Hey.\"/pause 600/speak Bouncer \"What's that you got there?\"/pause 600/speak Bouncer \"Remedy Tea, huh?#$b#...#$b#So you went into the canyonlands...#$b#Listen, the boss likes this kind of thing, so I'm gonna tell you something.#$b#But I'm only gonna tell you once.#$b#Those canyons shift and change all the time, especially now that they're flooded.#$b#Might be worth taking another look, that's all.\"/pause 600/emote Sandy 40/pause 300/speak Sandy \"Uhm...$s#$b#Can I get either of you anything or...?\"/pause 200/faceDirection Bouncer 0/pause 200/speak Bouncer \"...#$b#Actually... yeah...\"/pause 400/end" }
+		 },
+		  {
+            "LogName": "Canyon 3",
+            "Action": "EditData",
+            "Target": "Data/Events/Canyon_summit",
+            "Entries": 
+            {
+            "cc_canyon3/Tile 55 6/":"event2/48 9/farmer 55 6 1/skippable/pause 500/playSound Ostrich/pause 300/message \"Ah hah! I see you found my secret passage.\"/pause 200/message \"It only opens once in a while, so you must be quite the explorer. Were you trying to get to the ballet?\"/pause 200/message \"Answer a little riddle and I'll help you out.\"/pause 400/ switchEvent nothing_loop",
+			"nothing_loop": "pause 300/quickQuestion Rich folks want it, poor folks have it, and it makes a terrible meal. What is it?#Gold#Coal#Carnivorous Plants#Nothing (break) switchEvent nothing_answer1 (break) switchEvent nothing_answer2 (break) switchEvent nothing_answer3 (break) switchEvent nothing_answer4",
+			"nothing_answer1": "pause 300/ message \"Not quite!\"/pause 400/ message \"If you want to try again, you'll need to go back down the ladder and come up again.\"/pause 300/eventSeen cc_canyon3 false/end",
+			"nothing_answer2": "pause 300/ message \"Not quite!\"/pause 400/ message \"If you want to try again, you'll need to go back down the ladder and come up again.\"/pause 300/eventSeen cc_canyon3 false/end",
+			"nothing_answer3": "pause 300/ message \"Not quite!\"/pause 400/ message \"If you want to try again, you'll need to go back down the ladder and come up again.\"/pause 300/eventSeen cc_canyon3 false/end",
+			"nothing_answer4": "pause 300/message \"Hah! Quite right!\"/pause 200/message \"Alright here's my hint... Flamingos are big fans of water.\"/pause 300/emote farmer 40/pause 800/message \"What, too cryptic for you? It will make sense in time, I promise.\"/pause 300/playSound cut/screenFlash 1/removeTile 54 6 Buildings/pause 200/message \"This warp will take you home, but the canyons will shift again soon.\"/pause 400/message \"Psst... remember that 'nothing' can be written as a big fat 'zero' too.\"/pause 300/end"
+			}
+		 },
+		 
+		 		 {
+			"Action": "EditMap",
+			"Target": "maps/Canyon_south",
+
+			"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon3": true
+				},
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 16,
+						"Y": 8
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"canyonguy.4\""
+						
+					},
+				}
+			]
+		},
+		 
+		 		 { 
+  "LogName": "Canyon 2",
+  "Action": "EditData",
+  "Target": "data/events/Canyon_summit",
+  "Entries": {
+    "cc_canyon2/Tile 8 25/": "event2/16 22/farmer 8 25 0/skippable/pause 300/message \"Huh? Where did you come from?\"/pause 400/playSound Ostrich/pause 300/message \"Oh, I get it, you want to go the party.\"/pause 200/message \"Maybe I'll help you out if you answer a riddle.\"/pause 200/message \"Six flamingos are standing in a row, and half of them have a leg tucked up.\"/pause 400/switchEvent Flamlegs_Looping",
+	"Flamlegs_Looping": "pause 300/quickQuestion How many legs can you see?#12#6#9(break)switchEvent Flamlegs_Answer1(break)switchEvent Flamlegs_Answer2(break)switchEvent Flamlegs_Answer3",
+    "Flamlegs_Answer1": "pause 200/message \"Bzzt! Wrong answer. How about you try again?\"/pause 200/switchEvent Flamlegs_Looping",
+    "Flamlegs_Answer2": "pause 200/message \"Bzzt! Wrong answer. How about you try again?\"/pause 200/switchEvent Flamlegs_Looping",
+	"Flamlegs_Answer3": "pause 300/ message \"That's correct!\"/pause 200/playSound cut/removeTile 7 25 Buildings/pause 600/message \"Here, take this as a reward.\"/pause 200/itemAboveHead CC_Rainflower/pause 1600/addItem CC_Rainflower 1 0/pause 1600/message \"This warp will take you home, but the desert has it's ways... come back another time and there might be another path.\"/pause 200/emote farmer 8/pause 800/end"
+  } 
+}, 
+		 {
+			"Action": "EditMap",
+			"Target": "maps/Canyon_south",
+
+			"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon2": true
+				},
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 16,
+						"Y": 8
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"canyonguy.3\""
+						
+					},
+				}
+			]
+		},
+		 
+		  
+		 		  		 {
+            "LogName": "Canyon 2.5",
+            "Action": "EditData",
+            "Target": "Data/Events/SandyHouse",
+            "Entries": 
+            {
+            "cc_canyon2_5/i CC_Rainflower":"summer_day_ambient/4 6/Sandy 2 5 2 farmer 4 9 0/skippable/addConversationTopic flowertea 5/playSound doorClose/pause 200/textAboveHead Sandy \"Come on in!\"/pause 300/speak Sandy \"Wait a second... what's that smell?\"/pause 200/emote farmer 8/pause 300/emote Sandy 20/pause 300/speak Sandy \"Mmm, the scent of petrichor and butterscotch.$3#$b#You've been collecting creosote flowers, right @?\"/pause 300/move farmer 0 -2 2/pause 200/itemAboveHead CC_Rainflower/pause 2400/speak Sandy \"Lovely!$h#$b#The canyon changes so quickly this time of year, it's lucky that you were able to find them.#$b#I bet the whole place will look different tomorrow.\"/faceDirection farmer 0/pause 300/speak Sandy \"Speaking of which, the flowers make great tea too!$h#$b#Here, take this recipe.\"/pause 400/addCookingRecipe CC_Greasetea/message \"You learned how to brew Grease Tea!\"/pause 600/end" }
+		 },
+		  {
+            "LogName": "Canyon 4",
+            "Action": "EditData",
+            "Target": "Data/Events/Canyon_summit",
+            "Entries": 
+            {
+            "cc_canyon4/Tile 35 8/":"event2/33 8/farmer 35 8 3/skippable/pause 500/message \"Oh!! No further!\"/pause 400/playSound Ostrich/message \"Friend or foe? Or customer?\"/pause 300/playSound Ostrich/pause 200/message \"Trade for rainpuffs is good, but we have special friends to protect.\"/pause 400/playSound Ostrich/pause 200/message \"Answer riddle first, we love riddle. Move rock and open shop if you answer riddle. Then we trust for friends.\"/pause 400/ switchEvent ShopRiddle_Loop",
+			"ShopRiddle_Loop": "pause 200/quickQuestion How many flamingos are dancing around this oasis right now?#10#13#14#Wait, I need to go count! (break) switchEvent 1Riddle_Answer1 (break) switchEvent 1Riddle_Answer2 (break) switchEvent 1Riddle_Answer3 (break) switchEvent 1Riddle_Answer4",
+			"1Riddle_Answer1": "pause 200/ message \"No no! Not right! Try again!\"/pause 200/ switchEvent ShopRiddle_Loop",
+			"1Riddle_Answer2": "pause 200/ message \"No no! Not right! Try again!\"/pause 200/ switchEvent ShopRiddle_Loop",
+			"1Riddle_Answer3": "pause 200/ message \"Yes true! Fourteen dance, including me!\"/pause 300/ message \"Now time for next question.\"/pause 300/ switchEvent ShopRiddle_Loop2",
+			
+			"1Riddle_Answer4": "pause 200/ message \"Oh? We understand... take warp up there to go home, then come back and try again.\"/pause 200/emote farmer 40/pause 600/message \"Oh? Don't know? Canyon all calm now, so next time you step on purple platform, come right back. Just one time.\"/eventSeen cc_canyon4 false/pause 300/end",
+			"ShopRiddle_Loop2": "pause 200/quickQuestion When you add all riddles together, what get?#30#26#23#0 (break) switchEvent 2Riddle_Answer1 (break) switchEvent 2Riddle_Answer2 (break) switchEvent 2Riddle_Answer3 (break) switchEvent 2Riddle_Answer4",
+			"2Riddle_Answer1": "pause 200/message \"No good! Try again!\"/pause 200/ switchEvent ShopRiddle_Loop2",
+			"2Riddle_Answer2": "pause 200/message \"No good! Try again!\"/pause 200/ switchEvent ShopRiddle_Loop2",
+			"2Riddle_Answer3": "pause 200/message \"Yes, exact! Good number!\"/pause 200/playSound clank/removeTile 34 8 Buildings/pause 600/message \"Now we friends, come shop. Found little friends that need a home too.\"/pause 300/message \"Oh, one more thing... warp up there will take you home. Step on purple platform to come back anytime.\"/pause 300/end",
+			"2Riddle_Answer4": "pause 200/message \"No good! Try again!\"/pause 200/ switchEvent ShopRiddle_Loop2",
+			
+  }
+		 },
+		 		 		 {
+			"Action": "EditMap",
+			"Target": "maps/Canyon_south",
+
+			"When": {
+					"HasSeenEvent:hostPlayer |contains=cc_canyon4": true
+				},
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 16,
+						"Y": 8
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"canyonguy.5\""
+						
+					},
+				}
+			]
+		},
+    ]
+}   
+

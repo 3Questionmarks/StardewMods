@@ -1,0 +1,32 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "AdventureShop",
+        "Items"
+      ],
+      "Entries": {
+        "Cape.GoldenObsidianBlade": {
+          "Id": "Cape.GoldenObsidianBlade",
+          "ItemId": "Cape.GoldenObsidianBlade",
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Global",
+          "MinStack": 1,
+          "Condition": "PLAYER_VISITED_LOCATION Current Custom_CapeCavingArea3",
+          "Price": 15000
+        },
+        "Cape.ShadowStrikeBlade": {
+          "Id": "Cape.ShadowStrikeBlade",
+          "ItemId": "Cape.ShadowStrikeBlade",
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Global",
+          "MinStack": 1,
+          "Condition": "PLAYER_VISITED_LOCATION Current Custom_AreaSecretBossLvl2",
+          "Price": 18000
+        }
+      }
+    },
+]
+}

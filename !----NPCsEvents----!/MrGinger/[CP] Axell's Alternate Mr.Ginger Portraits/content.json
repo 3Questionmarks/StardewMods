@@ -1,0 +1,11 @@
+{
+	"Format": "2.0.0",
+	"Changes": [
+      {
+		"Action": "EditImage",
+		"Target": "Portraits/MisterGinger",
+		"FromFile": "assets/7thAxisMrGinger.png",
+		"When": { "HasSeenEvent: |contains=5295000": false }
+       }   
+    ]
+}

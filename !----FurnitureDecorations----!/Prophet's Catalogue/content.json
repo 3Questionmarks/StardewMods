@@ -1,0 +1,16 @@
+{"Format": "2.0.0",
+"Changes": [
+
+{
+	"LogName": "Proph Furniture Catalogue",
+	"Action": "Include",
+	"FromFile": "Data/shops.json"
+},
+
+{
+	"Action": "Load",
+	"Target": "Tilesheets/Proph_Catalogue",
+	"FromFile": "assets/Proph_Catalogue.png"
+}
+
+]}

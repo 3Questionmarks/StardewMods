@@ -1,0 +1,60 @@
+{
+//Dianna Sprite
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Dianna",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Dianna/Dianna.png",
+            "When": {
+                "HasSeenEvent: hostPlayer": 75160033,
+                "DayOfWeek":"Tuesday, Wednesday, Friday",
+                "HasMod |contains=Rafseazz.LunnaCP": true
+            },
+        },
+//Dianna Portrait
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Dianna",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Dianna/Dianna_Portrait.png",
+            "When": {
+                "HasSeenEvent: hostPlayer": 75160033,
+                "DayOfWeek":"Tuesday, Wednesday, Friday",
+                "HasMod |contains=Rafseazz.LunnaCP": true
+            },
+        },
+//Dianna Animation
+        {
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "dianna_sit_right": "25/25/25",
+                "dianna_sit_left": "27/27/27",
+                "dianna_sit_forward": "16/16/16",
+                "dianna_sit_backward": "26/26/26",
+            },
+            "When": {
+                "HasMod |contains=Rafseazz.LunnaCP": true
+            },
+        },
+//StringsFromMaps
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.24": "{{i18n:Seat_Dianna}}" },
+            "When": {
+                "HasSeenEvent: hostPlayer": 75160033,
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Rafseazz.LunnaCP": "true"
+            },
+        },
+//NPC Warp	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Forest",
+			"MapProperties": {
+			    "NPCWarp": "5 4 Custom_LASV_Umuwi 92 31"
+	        },
+		},
+    ]
+}

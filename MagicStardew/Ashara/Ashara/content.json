@@ -1,0 +1,240 @@
+{
+  "Format": "2.9.0",
+  "Changes": [
+    {
+      "LogName": "NPC Creation",
+      "Action": "Include",
+      "FromFile": "assets/disposition/disposition.json"
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Characters/Ashara",
+      "FromFile": "assets/images/spring_sprites.png",
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Characters/Ashara_sp",
+      "FromFile": "assets/images/spring_sprites.png",
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Characters/Ashara_su",
+      "FromFile": "assets/images/summer_sprites.png",
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Characters/Ashara_f",
+      "FromFile": "assets/images/fall_sprites.png",
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Characters/Ashara_w",
+      "FromFile": "assets/images/winter_sprites.png",
+    },
+    {
+      "LogName": "Load Sprite Inside",
+      "Action": "Load",
+      "Target": "Characters/Ashara_Summer_Dress",
+      "FromFile": "assets/images/summer_dress_sprites.png",
+    },
+    {
+      "LogName": "Load Sprite Inside",
+      "Action": "Load",
+      "Target": "Characters/Ashara_Inside",
+      "FromFile": "assets/images/inside_sprites.png",
+    },
+    {
+      "LogName": "Load Sprite Inside",
+      "Action": "Load",
+      "Target": "Characters/Ashara_Christmas",
+      "FromFile": "assets/images/christmas_sprites.png",
+    },
+    {
+      "LogName": "Load Sprite Inside",
+      "Action": "Load",
+      "Target": "Characters/Ashara_Spirits_Eve",
+      "FromFile": "assets/images/hallowen_sprites.png",
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Characters/Ashara_Beach",
+      "FromFile": "assets/images/beach_sprites.png",
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Characters/Ashara_Beach_2",
+      "FromFile": "assets/images/beach_sprites_2.png",
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Characters/Luau",
+      "FromFile": "assets/images/Luau_sprites.png",
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Characters/Flower_Dance",
+      "FromFile": "assets/images/flower_dance_sprite.png",
+    },
+    {
+      "LogName": "Load Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Ashara",
+      "FromFile": "assets/images/spring_portraits.png",
+    },
+    {
+      "LogName": "Load Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Ashara_sp",
+      "FromFile": "assets/images/spring_portraits.png",
+    },
+    {
+      "LogName": "Load Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Ashara_su",
+      "FromFile": "assets/images/summer_portraits.png",
+    },
+    {
+      "LogName": "Load Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Ashara_f",
+      "FromFile": "assets/images/fall_portraits.png",
+    },
+    {
+      "LogName": "Load Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Ashara_w",
+      "FromFile": "assets/images/winter_portraits.png",
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Portraits/Ashara_Summer_Dress",
+      "FromFile": "assets/images/summer_portraits.png",
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Portraits/Ashara_Beach",
+      "FromFile": "assets/images/beach_portraits.png",
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Portraits/Ashara_Beach_2",
+      "FromFile": "assets/images/beach_portraits_2.png",
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Portraits/Luau",
+      "FromFile": "assets/images/Luau_portraits.png",
+    },
+    {
+      "LogName": "Load Sprite",
+      "Action": "Load",
+      "Target": "Portraits/Flower_Dance",
+      "FromFile": "assets/images/flower_dance_portraits.png",
+    },
+    {
+      "LogName": "Load Portrait Inside",
+      "Action": "Load",
+      "Target": "Portraits/Ashara_Inside",
+      "FromFile": "assets/images/inside_portraits.png",
+    },
+    {
+      "LogName": "Load Portrait Inside",
+      "Action": "Load",
+      "Target": "Portraits/Ashara_Christmas",
+      "FromFile": "assets/images/christmas_portraits.png",
+    },
+    {
+      "LogName": "Load Portrait Inside",
+      "Action": "Load",
+      "Target": "Portraits/Ashara_Spirits_Eve",
+      "FromFile": "assets/images/hallowen_portraits.png",
+    },
+    {
+      "LogName": "GiftTaste",
+      "Action": "Include",
+      "FromFile": "assets/disposition/gifttaste.json"
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Ashara",
+      "FromFile": "assets/dialogue/dialogue.json"
+    },
+    {
+      "LogName": "Events",
+      "Action": "Include",
+      "FromFile": "assets/events/events.json"
+    },
+    {
+      "LogName": "Quests",
+      "Action": "Include",
+      "FromFile": "assets/quests/Quests.json"
+    },
+    {
+      "LogName": "Schedule Dialogue",
+      "Action": "Load",
+      "Target": "Strings/schedules/Ashara",
+      "FromFile": "assets/schedule/scheduledialogue.json"
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Ashara",
+      "FromFile": "assets/schedule/schedule.json",
+    },
+    {
+      "LogName": "MagicStardew_AsharaHouse_Outside BLANK",
+      "Action": "Load",
+      "Target": "Data/Events/MagicStardew_AsharaHouse_Outside",
+      "FromFile": "data/events.json",
+    },
+    {
+      "LogName": "MagicStardew_AsharaHouse BLANK",
+      "Action": "Load",
+      "Target": "Data/Events/MagicStardew_AsharaHouse",
+      "FromFile": "data/events.json",
+    },
+    {
+      "LogName": "MagicStardew_AsharaHouse BLANK",
+      "Action": "Load",
+      "Target": "Data/Events/MagicStardew_AsharaHouse_Cellar",
+      "FromFile": "data/events.json",
+    },
+    {
+       "LogName": "Festival Include",
+       "Action": "Include",
+       "FromFile": "data/Festivals.json"
+     },
+    {
+      "LogName": "Data includes",
+      "Action": "Include",
+      "FromFile": "data/Dialogue.json, data/Scheduledialogue.json, data/animationdescriptions.json, data/SpecialOrders.json, assets/objects/objects.json"
+    },
+        {
+      "LogName": "Schedule",
+      "Action": "Include",
+      "FromFile": "data/schedule.json",
+      "When": {
+        "HasSeenEvent: currentPlayer |contains=MagicStardew_FirstMeet": true
+      }
+    },
+    {
+     "Action": "Load",
+     "Target": "Mods/MagicStardew/Firefly",
+     "FromFile": "assets/objects/firefly.png"
+    }
+  ]
+}

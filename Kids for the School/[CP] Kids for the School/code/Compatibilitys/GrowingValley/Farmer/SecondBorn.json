@@ -1,0 +1,40 @@
+{
+  "Changes": [
+    {
+			"LogName": "Add Little Red School House schedule for Farmer's daughter as secondborn.",
+			"Action": "EditData",
+			"Target": "Characters/schedules/{{Candidus42.LittleNPCs/SecondLittleNPC:Name}}",
+			"Priority": "Late",
+			"Entries": {
+				"Tue": "710 Custom_SchoolHouse_SecondFloor 10 17 1/800 Custom_SchoolHouse_SecondFloor 11 16 1 {{Candidus42.LittleNPCs/SecondLittleNPC:Name}}_read \"Strings\\schedules\\{{Candidus42.LittleNPCs/SecondLittleNPC:Name}}:Schoolhouse.000\"/1130 Town 30 26 3 square_3_7 \"Strings\\schedules\\{{Candidus42.LittleNPCs/SecondLittleNPC:Name}}:Schoolhouse.001\"/1240 Custom_SchoolHouse_SecondFloor 10 17 1/1250 Custom_SchoolHouse_SecondFloor 11 16 1 {{Candidus42.LittleNPCs/SecondLittleNPC:Name}}_read/1550 Town 113 32 3/1820 bed",
+				"Wed": "GOTO Tue",
+				"Fri": "GOTO Tue",
+				"winter_Tue": "GOTO Tue"
+			},
+			"When": {
+        "HasSeenEvent": "9695002",
+				"HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+				"HasMod |contains=siliconmodding.GVChildNPCs": "true",
+				"HasMod |contains=Candidus42.LittleNPCs": "true",
+				"LRSH_NoSchoolDay": false
+			}
+		},
+		{
+			"LogName": "Add Little Red School House schedule for Farmer's daughter as secondborn (rain).",
+			"Action": "EditData",
+			"Target": "Characters/schedules/{{Candidus42.LittleNPCs/SecondLittleNPC:Name}}",
+			"Priority": "Late",
+			"Entries": {
+				"rain": "710 Custom_SchoolHouse_SecondFloor 10 17 1/800 Custom_SchoolHouse_SecondFloor 11 16 1 {{Candidus42.LittleNPCs/SecondLittleNPC:Name}}_read \"Strings\\schedules\\{{Candidus42.LittleNPCs/SecondLittleNPC:Name}}:Schoolhouse.000\"/1130 Custom_SchoolHouse_SecondFloor 11 16 1 {{Candidus42.LittleNPCs/SecondLittleNPC:Name}}_sit \"Strings\\schedules\\{{Candidus42.LittleNPCs/SecondLittleNPC:Name}}:Schoolhouse.002\"/1240 Custom_SchoolHouse_SecondFloor 10 17 1/1250 Custom_SchoolHouse_SecondFloor 11 16 1 {{Candidus42.LittleNPCs/SecondLittleNPC:Name}}_read/1550 SeedShop 26 14 0/1730 bed"
+			},
+			"When": {
+        "HasSeenEvent": "9695002",
+				"DayOfWeek": "Tuesday, Wednesday, Friday",
+				"HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+				"HasMod |contains=siliconmodding.GVChildNPCs": "true",
+				"HasMod |contains=Candidus42.LittleNPCs": "true",
+				"LRSH_NoSchoolDay": false
+			}
+		}
+  ]
+}

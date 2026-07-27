@@ -1,0 +1,548 @@
+{
+    "Changes": [
+
+//-------------<MODDED WARPS - COMPATS>-------------//
+
+//-------------<Ecosystem Superpack Expansion>-------------//
+{			"LogName": "Warp - Beach - ESE Koda_Cove",
+			"Action": "EditMap",
+			"Target": "Maps/Beach-NightMarket",
+			   "When": { "HasMod |contains=cajcbell.ESE":  true    },  	
+			"AddWarps": [
+			"-1 20 Koda_Cove 39 25"
+				]
+		},
+						
+	{		"LogName": "Warp - ESE Koda_Cove - Beach",
+			"Action": "EditMap",
+			"Target": "Maps/Koda_Cove",
+			   "When": { "HasMod |contains=cajcbell.ESE":  true    },  	
+			"AddWarps": [
+				"40 25 Beach 1 20",	
+			]
+		},	
+		
+//-------------<East Scarp>-------------//	
+
+		
+		
+		
+
+		  
+		  
+{		"LogName": "Warp - EastScarp_LoresCove - Beach",
+               "Action": "EditMap",
+               "Target": "Maps/EastScarp_LoresCove",
+                  "When": { "HasMod |contains=Lemurkat.EastScarp":  true    }, 
+               "AddWarps": [
+                    "0 50 Beach 101 8",	
+		 "0 51 Beach 101 8",	
+		 "0 52 Beach 101 8",	
+               ],	
+          },	
+		  
+//		  
+
+ 
+{       "LogName": "Warp -  Beach - EastScarp_LoresCove",
+	"Action": "EditMap",
+	 "Target":  "Maps/Beach, Maps/Beach-NightMarket",
+	 "AddWarps": [
+	 	  "103 7 EastScarp_LoresCove 2 50",
+                 "104 7 EastScarp_LoresCove 2 50",
+				  "105 7 EastScarp_LoresCove 2 50",
+				   "106 7 EastScarp_LoresCove 2 50",
+				    "107 7 EastScarp_LoresCove 2 50",
+	
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "HasMod |contains=Lemurkat.EastScarp":  true  
+				}, 						
+ },				  
+//-------------<Sydney - A Custom NPC>-------------//		
+	{         "LogName": "Warp -  Beach - Custom_sydBeach",
+	"Action": "EditMap",
+	 "Target":  "Maps/Beach, Maps/Beach-NightMarket",
+	 "AddWarps": [
+	 	  "0 8 Custom_sydBeach 42 5",
+                    "0 7 Custom_sydBeach 42 5",	
+		 "0 6 Custom_sydBeach 42 5",	
+		   "0 5 Custom_sydBeach 42 5",	
+		 "0 4 Custom_sydBeach 42 5",
+	
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "HasMod |contains=Lex.Sydney":  true,
+				}, 						
+ },
+
+ //
+ {        "LogName": "Warp -  Custom_sydBeach - Beach",
+	"Action": "EditMap",
+	 "Target":  "Maps/Custom_sydBeach",
+	 "AddWarps": [
+                    "44 5 Beach 2 7",	
+		"44 4 Beach 2 7", 
+		"44 6 Beach 2 7",
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "HasMod |contains=Lex.Sydney":  true,
+				}, 						
+ },	
+ 
+//
+//TEMP Forest - Custom_sydBeach
+
+{    "LogName": "Warp -  Temp Forest - Custom_sydBeach",
+	"Action": "EditMap",
+	 "Target":  "Maps/Forest",
+	 "AddWarps": [
+                    "119 104 Custom_sydBeach 1 6",	
+		 "119 103 Custom_sydBeach 1 6",
+		  "119 102 Custom_sydBeach 1 6",
+		   "119 101 Custom_sydBeach 1 6",
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "HasMod |contains=Lex.Sydney":  true,"SVE": false, "HasMod |contains=handwrittenhello.dbda":  false, 
+				}, 						
+ },		
+ {   "LogName": "Warp -  Temp Custom_sydBeach - Forest",
+	"Action": "EditMap",
+	 "Target":  "Maps/Custom_sydBeach",
+	 "AddWarps": [
+                    "0 4 Forest 118 103",
+		"0 5 Forest 118 103",
+		"0 6 Forest 118 103",
+		"0 7 Forest 118 103",	
+		"0 8 Forest 118 103",
+		"0 9 Forest 118 103",		
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "HasMod |contains=Lex.Sydney":  true,"SVE": false, "HasMod |contains=handwrittenhello.dbda":  false, 
+				}, 						
+ },	
+ {     "LogName": "Warp - SVE BlueMoonVineyard - Custom_sydBeach",
+	"Action": "EditMap",
+	 "Target":  "Maps/Custom_BlueMoonVineyard",
+	 "AddWarps": [
+                    "56 61 Custom_sydBeach 1 6",
+		"56 62 Custom_sydBeach 1 6",
+		"56 63 Custom_sydBeach 1 6",
+		"56 64 Custom_sydBeach 1 6",			
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "HasMod |contains=Lex.Sydney":  true,"SVE": true, "HasMod |contains=handwrittenhello.dbda":  false, 
+				}, 						
+ },			  
+	
+
+	
+//-------------<Dead Boy Detectives>-------------//		
+
+	  
+	
+//
+{	"LogName": "Warp - Beach - dbda_Docks",
+		"Action": "EditMap",
+		"Target": "Maps/Beach, Maps/Beach-NightMarket",
+		"When": {  "HasMod |contains=handwrittenhello.dbda":  true,  },
+		"AddWarps": [
+		"103 15 handwrittenhello.dbda_Docks 2 8",
+		"103 16 handwrittenhello.dbda_Docks 2 8",
+		"103 17 handwrittenhello.dbda_Docks 2 8",
+		"103 18 handwrittenhello.dbda_Docks 2 8",
+		],
+	},
+	{	"LogName": "Warp - dbda_Docks - Beach",
+		"Action": "EditMap",
+		"Target": "Maps/handwrittenhello.dbda_Docks",
+		"When": {  "HasMod |contains=handwrittenhello.dbda":  true,  },
+		"AddWarps": [
+		"0 5 Beach 102 17",
+		"0 6 Beach 102 17",
+		"0 7 Beach 102 17",
+		"0 8 Beach 102 17",
+		"0 9 Beach 102 17",
+		"0 10 Beach 102 17",
+		"0 11 Beach 102 17",
+		
+		],
+	},
+
+//
+
+	{
+		"LogName": "NPCWarp - dbda_Docks - Beach",
+		"Action": "EditMap",
+		"Target": "Maps/handwrittenhello.dbda_Docks",
+		"When": {  "HasMod |contains=handwrittenhello.dbda":  true,  },
+		"AddWarps": [
+		"1 5 Beach 102 17",
+		],
+	},
+//	
+{		"LogName": "Warp - dbda_Lighthouse - Beach / IF SydneyNPC NO",
+		"Action": "EditMap",
+		"Target": "Maps/handwrittenhello.dbda_Lighthouse",
+		"When": {  "HasMod |contains=handwrittenhello.dbda":  true,  "HasMod |contains=Lex.Sydney":  false, },
+		"AddWarps": [
+		"103 7 Beach 1 6",
+		"103 8 Beach 1 6",
+		"103 9 Beach 1 6",
+		"103 10 Beach 1 6",
+		],
+	},
+	
+{        "LogName": "Warp - Beach - dbda_Lighthouse / IF SydneyNPC NO",
+	"Action": "EditMap",
+	 "Target":  "Maps/Beach, Maps/Beach-NightMarket",
+	 "AddWarps": [
+	 	  "0 4 handwrittenhello.dbda_Lighthouse 101 9",
+		   "0 5 handwrittenhello.dbda_Lighthouse 101 9",
+		    "0 6 handwrittenhello.dbda_Lighthouse 101 9",
+			 "0 7 handwrittenhello.dbda_Lighthouse 101 9",
+			  "0 8 handwrittenhello.dbda_Lighthouse 101 9",
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "HasMod |contains=Lex.Sydney":  false, "HasMod |contains=handwrittenhello.dbda":  true, 
+				}, 						
+ },			
+ {        "LogName": "Warp dbda_Lighthouse - Custom_sydBeach - / IF SydneyNPC YES",
+	"Action": "EditMap",
+	 "Target":  "Maps/handwrittenhello.dbda_Lighthouse",
+	 "AddWarps": [
+	 	  "103 7 Custom_sydBeach 1 6",
+		"103 8 Custom_sydBeach 1 6",
+		    "103 9 Custom_sydBeach 1 6",
+			"103 10 Custom_sydBeach 1 6",
+			"103 11 Custom_sydBeach 1 6",
+			"103 12 Custom_sydBeach 1 6",
+			"103 13 Custom_sydBeach 1 6",
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "HasMod |contains=Lex.Sydney":  true, "HasMod |contains=handwrittenhello.dbda":  true, 
+				}, 						
+ },		
+ {        "LogName": "Warp Custom_sydBeach - dbda_Lighthouse - / IF SydneyNPC YES",
+	"Action": "EditMap",
+	 "Target":  "Maps/Custom_sydBeach",
+	 "AddWarps": [
+	 	  "0 4 handwrittenhello.dbda_Lighthouse 102 9",
+		 "0 5 handwrittenhello.dbda_Lighthouse 102 9",
+		  "0 6 handwrittenhello.dbda_Lighthouse 102 9",
+		   "0 7 handwrittenhello.dbda_Lighthouse 102 9",
+		    "0 8 handwrittenhello.dbda_Lighthouse 102 9",
+			 "0 9 handwrittenhello.dbda_Lighthouse 102 9",
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "HasMod |contains=Lex.Sydney":  true, "HasMod |contains=handwrittenhello.dbda":  true, 
+				}, 						
+ },	
+//
+	 {     "LogName": "Warp dbda_Lighthouse - Forest - / IF SVE NO",
+	"Action": "EditMap",
+	 "Target":  "Maps/handwrittenhello.dbda_Lighthouse",
+	 "AddWarps": [
+                    "32 0 Forest 118 103",	
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "SVE": false, "HasMod |contains=handwrittenhello.dbda":  true, 
+				}, 						
+ },	
+{   "LogName": "Warp Forest - dbda_Lighthouse / IF SVE NO",
+	"Action": "EditMap",
+	 "Target":  "Maps/Forest",
+	 "AddWarps": [
+                    "119 104 handwrittenhello.dbda_Lighthouse 32 2",	
+		 "119 103 handwrittenhello.dbda_Lighthouse 32 2",
+		  "119 102 handwrittenhello.dbda_Lighthouse 32 2",
+		   "119 101 handwrittenhello.dbda_Lighthouse 32 2",
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "SVE": false, "HasMod |contains=handwrittenhello.dbda":  true, 
+				}, 						
+ },	
+
+
+ {  "LogName": "Warp BlueMoonVineyard - dbda_Lighthouse / IF SVE YES, SydneyNPC YES",
+	"Action": "EditMap",
+	 "Target":  "Maps/Custom_BlueMoonVineyard",
+	 "AddWarps": [
+                    "56 61 handwrittenhello.dbda_Lighthouse 32 2",
+		"56 62 handwrittenhello.dbda_Lighthouse 32 2",
+		"56 63 handwrittenhello.dbda_Lighthouse 32 2",
+		"56 64 handwrittenhello.dbda_Lighthouse 32 2",			
+               ],	
+	 "Priority": "Late+1",
+	  "When": { "HasMod |contains=Lex.Sydney":  true,"SVE": true, "HasMod |contains=handwrittenhello.dbda":  true, 
+				}, 						
+ },	
+
+  //-------------<Fish of Stardew - AztecViper>-------------// 
+  
+   
+		
+  {   "LogName": "Warp Beach - FOS",
+            "Action": "EditMap",
+            "Target": "Maps/Beach, Maps/Beach-NightMarket",
+	"When": { "HasMod |contains=aztecviper.fishofstardew":  true,  },	
+            "AddWarps": [
+                "104 21 FOS_Beach1 1 5",
+                "104 22 FOS_Beach1 1 5",  
+            ]
+        },
+ {  "LogName": "Warp FOS - Beach",
+            "Action": "EditMap",
+            "Target": "Maps/FOS_Beach1",
+            "AddWarps": [
+		"0 2 Beach 102 22",
+		"0 3 Beach 102 22",
+		"0 4 Beach 102 22",
+		 "0 5 Beach 102 22",
+		 "0 6 Beach 102 22",
+		 "0 7 Beach 102 22",
+		"0 8 Beach 102 22",
+		"0 9 Beach 102 22",
+		 "0 10 Beach 102 22",
+		 "0 11 Beach 102 22",
+		  "0 12 Beach 102 22",
+		 "0 13 Beach 102 22",
+		 "0 14 Beach 102 22",
+		"0 15 Beach 102 22",
+		"0 16 Beach 102 22",
+		 "0 17 Beach 102 22",
+		 "0 18 Beach 102 22",
+            ]
+        },
+		
+		
+		
+//-------------<VANILLA WARPS>-------------//
+
+
+{	 "LogName": "Warp ShortcutsUnlocked - Beach - Forest / NO SVE",
+               "Action": "EditMap",
+               "Target": "Maps/Forest",
+              "When": { "HasFlag":  "communityUpgradeShortcuts", "SVE": false,    },	
+               "AddWarps": [
+			    "119 32 Beach 2 2",
+			    "119 33 Beach 2 2",
+			    "119 34 Beach 2 2",
+                    "119 35 Beach 2 2",	
+		"119 36 Beach 2 2",
+               ],	
+          },
+		  {	 "LogName": "Warp ShortcutsUnlocked - Beach - Town",
+               "Action": "EditMap",
+               "Target": "Maps/Beach",
+              "When": { "HasFlag":  "communityUpgradeShortcuts", "SVE": true,    },	
+               "AddWarps": [
+                    "86 1 Town 102 106",	
+               ],	
+          },
+		  
+		  
+		  
+		  
+{	 "LogName": "Warp Temp - Beach - Forest",
+               "Action": "EditMap",
+               "Target": "Maps/Forest",
+               "When": {   "SVE": false,   },
+               "AddWarps": [
+                    "120 101 Beach 1 7",	
+		"120 102 Beach 1 7",
+		"120 103 Beach 1 7",	  
+		"120 104 Beach 1 7", 
+		"-1 76 Aimon.Forest_Festival 60 19", 
+               ],	
+          },
+{	 "LogName": "Warp Temp - Forest - Beach",
+               "Action": "EditMap",
+               "Target": "Maps/Beach",
+               "When": {   "SVE": false, },
+               "AddWarps": [
+                    "-1 7 Forest 118 103",	
+		"-1 8 Forest 118 103",
+		"-1 6 Forest 118 103",
+		"-1 5 Forest 118 103",
+		"-1 4 Forest 118 103",
+               ],	
+          },	
+		  
+//TEMP WEST-FESTIVAL
+{	 "LogName": "Warp Temp (Add Cave) - Beach_West - Forest Clearing",
+               "Action": "EditMap",
+               "Target": "Maps/Aimon.Beach_West",	   
+               "AddWarps": [
+                    "53 37 Aimon.Forest_Festival 31 8",				
+               ],	
+          },
+	  {	 "LogName": "Warp Temp (Add Cave) - Forest Clearing - Beach_West",
+               "Action": "EditMap",
+               "Target": "Maps/Aimon.Forest_Festival",
+               "AddWarps": [
+                    "31 5 Aimon.Beach_West 53 39",				
+               ],	
+          },
+	  
+		
+		
+		
+//-------------<Forest-ForestExtra
+//{
+           //    "Action": "EditMap",
+          //     "Target": "Maps/Forest",
+          //     "When": {   "SVE": false,  },
+          //     "AddWarps": [
+          //          "120 101 Aimon.Forest_Extra 0 73",
+	//	"120 102 Aimon.Forest_Extra 0 73", 
+	//	"120 103 Aimon.Forest_Extra 0 73",		
+          //     ],
+		
+      //    },	  
+//{
+         //      "Action": "EditMap",
+       //        "Target": "Maps/Aimon.Forest_Extra",
+       //        "When": {   "SVE": false,  },
+       //        "AddWarps": [
+           //         "120 101 Forest 119 102",	
+           //    ],
+		
+         // },
+//-------------<Forest-BlueMoonVineyard	  
+	{  "LogName": "Warp  - Forest - SVE BlueMoonVineyard",
+               "Action": "EditMap",
+               "Target": "Maps/Forest",
+               "When": {   "SVE": true,  },
+               "AddWarps": [
+                    "120 101 Custom_BlueMoonVineyard 0 73",
+		"120 102 Custom_BlueMoonVineyard 0 73",
+		"120 103 Custom_BlueMoonVineyard 0 73",		
+               ],	
+          },
+{ 	"LogName": "Warp  - SVE BlueMoonVineyard - Forest",
+               "Action": "EditMap",
+               "Target": "Maps/Custom_BlueMoonVineyard",
+               "When": {   "SVE": true,  },
+               "AddWarps": [
+                    "-1 72 Forest 119 102",
+		 "-1 73 Forest 119 102",
+		  "-1 74 Forest 119 102",
+               ],	
+          },
+//
+//-------------<ForestExtra-Beach	
+//{
+   //            "Action": "EditMap",
+   //            "Target": "Maps/Aimon.Forest_Extra",
+    //           "When": {   "SVE": false,  },
+     //          "AddWarps": [
+      //              "120 101 Beach 1 7",	
+       //        ],	
+     //     },
+//{
+         //      "Action": "EditMap",
+         //      "Target": "Maps/Beach",
+           //    "When": {   "SVE": false,  },
+            //   "AddWarps": [
+             //       "-1 5 Aimon.Forest_Extra 1 7",	
+	//	   "-1 6 Aimon.Forest_Extra 1 7",	
+	//	      "-1 7 Aimon.Forest_Extra 1 7",	
+             //  ],
+		
+        //  },		  
+	  
+{	"LogName": "Warp  - SVE BlueMoonVineyard - Beach / dbda NO",
+               "Action": "EditMap",
+               "Target": "Maps/Custom_BlueMoonVineyard",
+               "When": {   "SVE": true, "HasMod |contains=handwrittenhello.dbda":  false, },
+               "AddWarps": [
+                    "57 61 Beach 1 7",	
+		 "57 62 Beach 1 7",
+		"57 63 Beach 1 7",
+		"57 64 Beach 1 7",
+               ],	
+          },	
+  {	"LogName": "Warp  - Beach - SVE BlueMoonVineyard / dbda NO",
+               "Action": "EditMap",
+               "Target": "Maps/Beach",
+               "When": {   "SVE": true, "HasMod |contains=handwrittenhello.dbda":  false,  },
+               "AddWarps": [
+                    "-1 5 Custom_BlueMoonVineyard 55 63",	
+		  "-1 6 Custom_BlueMoonVineyard 55 63",
+		"-1 7 Custom_BlueMoonVineyard 55 63",				
+               ],	
+          },
+//-------------<Forest West-Cave_West-Forest_Festival
+//{
+    //           "Action": "EditMap",
+    //           "Target": "Maps/Aimon.Beach_West",
+    //           "AddWarps": [
+    //                "53 37 Aimon.Cave_West 1 1",				
+      //         ],	
+      //    },
+//{
+    //           "Action": "EditMap",
+    //           "Target": "Maps/Aimon.Cave_West",
+    //           "AddWarps": [
+      //              "2 2 Aimon.Beach_West 53 39",				
+      //         ],	
+        //  },
+		  //
+//{
+      //         "Action": "EditMap",
+     //          "Target": "Maps/Aimon.Cave_West",
+     //          "AddWarps": [
+       //             "3 3 Aimon.Forest_Festival 31 8",				
+        //       ],	
+        //  },	
+//{
+   //            "Action": "EditMap",
+    //          "Target": "Maps/Aimon.Forest_Festival",
+    //          "AddWarps": [
+      //              "31 5 Aimon.Cave_West 4 4",				
+        //       ],	
+      //    },	
+//-------------<Forest_Festival-Forest		
+{	"LogName": "Warp  - Forest Clearing - Forest / SVE NO",
+               "Action": "EditMap",
+               "Target": "Maps/Aimon.Forest_Festival",
+               "When": {   "SVE": false,  },
+               "AddWarps": [
+                    "63 19 Forest 4 76",				
+               ],	
+          },
+  {	"LogName": "Warp  - Forest -  Forest Clearing / SVE NO",
+               "Action": "EditMap",
+               "Target": "Maps/Forest",
+               "When": {   "SVE": false,  },
+               "AddWarps": [
+                    "-1 75 Aimon.Forest_Festival 59 19",				
+               ],	
+          },
+//-------------<Forest_Festival-SVE Cindersap Forest	
+{	"LogName": "Warp  - Forest Clearing - Forest / SVE YES",
+               "Action": "EditMap",
+               "Target": "Maps/Aimon.Forest_Festival",
+               "When": {   "SVE": true,  },
+               "AddWarps": [
+                    "56 2 Custom_ForestWest 18 153",				
+               ],	
+          },
+  { "LogName": "Warp  - Forest -  Forest Clearing / SVE YES",
+               "Action": "EditMap",
+               "Target": "Maps/Custom_ForestWest",
+               "When": {   "SVE": true,  },
+               "AddWarps": [
+		"18 156 Aimon.Forest_Festival 56 5",						
+               ],	
+          },
+		  
+		  
+		  
+
+
+
+
+    ]
+}

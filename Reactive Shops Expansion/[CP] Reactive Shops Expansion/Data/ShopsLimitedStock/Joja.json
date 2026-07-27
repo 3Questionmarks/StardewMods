@@ -1,0 +1,221 @@
+{
+    "Changes": [
+        {
+			"LogName": "{{ModId}}_Joja",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Joja",
+                "Items"
+            ],
+            "Entries": {
+				
+				// SEEDS NO SVE
+				
+                "{{ModId}}_ID_CarrotSeedsJoja": {
+                    "Id": "{{ModId}}_ID_CarrotSeedsJoja",
+                    "ItemId": "CarrotSeeds",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Joja_RaccoonSeeds Received, SEASON spring",
+                    "Price": "30",
+					"AvailableStock": "10",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+                "{{ModId}}_ID_SummerSquashSeedsJoja": {
+                    "Id": "{{ModId}}_ID_SummerSquashSeedsJoja",
+                    "ItemId": "SummerSquashSeeds",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Joja_RaccoonSeeds Received, SEASON summer",
+                    "Price": "40",
+					"AvailableStock": "10",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+                "{{ModId}}_ID_BroccoliSeedsJoja": {
+                    "Id": "{{ModId}}_ID_BroccoliSeedsJoja",
+                    "ItemId": "BroccoliSeeds",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Joja_RaccoonSeeds Received, SEASON fall",
+                    "Price": "60",
+					"AvailableStock": "10",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+                "{{ModId}}_ID_PowdermelonSeedsJoja": {
+                    "Id": "{{ModId}}_ID_PowdermelonSeedsJoja",
+                    "ItemId": "PowdermelonSeeds",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Joja_RaccoonSeeds Received, SEASON winter",
+                    "Price": "45",
+					"AvailableStock": "10",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				
+				// SEEDS SVE
+				
+				"{{ModId}}_ID_CarrotSeedsJojaSVE": {
+                    "Id": "{{ModId}}_ID_CarrotSeedsJojaSVE",
+                    "ItemId": "CarrotSeeds",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Joja_RaccoonSeedsSVE Received, SEASON spring",
+                    "Price": "20",
+					"AvailableStock": "10",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+                "{{ModId}}_ID_SummerSquashSeedsJojaSVE": {
+                    "Id": "{{ModId}}_ID_SummerSquashSeedsJojaSVE",
+                    "ItemId": "SummerSquashSeeds",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Joja_RaccoonSeedsSVE Received, SEASON summer",
+                    "Price": "30",
+					"AvailableStock": "10",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+                "{{ModId}}_ID_BroccoliSeedsJojaSVE": {
+                    "Id": "{{ModId}}_ID_BroccoliSeedsJojaSVE",
+                    "ItemId": "BroccoliSeeds",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Joja_RaccoonSeedsSVE Received, SEASON fall",
+                    "Price": "50",
+					"AvailableStock": "10",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+                "{{ModId}}_ID_PowdermelonSeedsJojaSVE": {
+                    "Id": "{{ModId}}_ID_PowdermelonSeedsJojaSVE",
+                    "ItemId": "PowdermelonSeeds",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Joja_RaccoonSeedsSVE Received, SEASON winter",
+                    "Price": "35",
+					"AvailableStock": "10",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{   
+    "Changes": [
+//NPC Disposition
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+            "Kimberly": {
+                "DisplayName": "{{i18n:DisplayName_Kimberly}}",
+                "BirthSeason": "Fall",
+                "BirthDay": 3,
+                "HomeRegion": "Other",
+                "Gender": "Female",
+                "Age": "Child",
+                "Manner": "Polite",
+                "Optimism": "Negative",
+                "SocialAnxiety": "Outgoing",
+                "CanBeRomanced": false,
+                "CanSocialize": true,
+                "Calendar": "AlwaysShown",
+                "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 9695002",
+                "Home": [
+                {
+                    "Id": "N3cro_92.KidsfortheSchool.WarpRoom",
+                    "Condition": null,
+                    "Location": "Custom_SchoolWarpRoom",
+                        "Tile": {
+                            "X": 3,
+                            "Y": 3
+                        },
+                        "Direction": "left"
+                        }
+                    ],
+                },
+            },
+        },
+//CanReceiveGift´s
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "When": {
+                "Kimberly": "true"
+            },
+            "Fields": {
+            "Kimberly": {
+                "CanReceiveGifts": true,
+                "SocialTab": "AlwaysShown"
+                },
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "When": {
+                "Kimberly": "false"
+            },
+            "Fields": {
+            "Kimberly": {
+                "CanReceiveGifts": false,
+                "SocialTab": "HiddenAlways"
+                },
+            },
+        },
+//NPC GiftTastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Kimberly": "{{i18n:gifts.Kimberly.love}}/101 104/{{i18n:gifts.Kimberly.like}}/106 113/{{i18n:gifts.Kimberly.dislike}}/881/{{i18n:gifts.Kimberly.hate}}//{{i18n:gifts.Kimberly.neutral}}//"
+            },
+        },
+//NPC Sprite
+        {
+            "Action": "Load",
+            "Target": "Characters/Kimberly",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Kimberly/Kimberly.png",
+        },
+//NPC Portrait
+        {
+            "Action": "Load",
+            "Target": "Portraits/Kimberly",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Kimberly/Kimberly_portrait.png",
+        },
+//NPC Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "kimberly_sit_right": "17/17/17",
+                "kimberly_sit_backward": "18/18/18",	
+                "kimberly_sit_left": "19/19/19",
+                "kimberly_read_right": "21/21/21",
+                "kimberly_read_backward": "22/22/22",
+                "kimberly_read_left": "23/23/23"	
+            },
+        },
+    ]
+}

@@ -1,0 +1,403 @@
+{
+    "Changes": [
+
+
+//-------------<Ecosystem Superpack Expansion>-------------//
+
+{        "Action": "EditMap",
+		"Target": "Maps/Beach, Maps/Beach-NightMarket",
+		"FromFile": "assets/MapEdits/Compats/Compat.Ecosystem_SP.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 12, "Height": 3 },
+		 "ToArea": { "X": 0, "Y": 19, "Width": 12, "Height": 3 },
+		 "PatchMode": "Replace",
+		   "When": { "HasMod |contains=cajcbell.ESE":  true    },  			
+ },
+ 
+ {        "Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/Compats/Compat.Ecosystem_SP_Forest.tmx",
+		 "FromArea": { "X": 0, "Y": 1, "Width": 2, "Height": 2 },
+		 "ToArea": { "X": 5, "Y": 68, "Width":  2, "Height": 2 },
+		 "PatchMode": "Replace",
+		 "Priority": "Late+1",
+		   "When": { "HasMod |contains=cajcbell.ESE":  true, 
+					"SVE":  false,
+					},  			
+ },
+ 
+		
+		
+ //festivals - beach
+ 
+ {        
+   "LogName": "ECOSYSTEM FEST BEACH PATCH",
+   "Action": "EditMap",
+		"Target": "Maps/Beach-Luau, Maps/Beach-Luau2, Maps/Beach-Jellies, Maps/Beach-Jellies2",
+		"FromFile": "assets/MapEdits/Compats/Compat.Ecosystem_SP_Jellies.tmx",
+		  "FromArea": { "X": 0, "Y": 0, "Width": 12, "Height": 3 },
+		 "ToArea": { "X": 0, "Y": 19, "Width": 12, "Height": 3 },
+		 "PatchMode": "ReplaceByLayer",
+		  "Priority": "Late+2",
+		"When": { "HasMod |contains=cajcbell.ESE":  true,   },			
+},
+
+ 
+//-------------<East Scarp>-------------//	
+
+		
+{        "Action": "EditMap",
+		"Target": "Maps/Beach, Maps/Beach-NightMarket",
+		"FromFile": "assets/MapEdits/Compats/Compat_ES_BeachWarp.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 14, "Height": 10 },
+		 "ToArea": { "X": 90, "Y": 0, "Width": 14, "Height": 10 },
+		 "PatchMode": "Replace",
+		   "When": { "HasMod |contains=Lemurkat.EastScarp":  true    },  			
+ },	
+ {        "Action": "EditMap",
+		"Target": "Maps/Beach-Luau, Maps/Beach-Luau2, Maps/Beach-Jellies, Maps/Beach-Jellies2", 
+		"FromFile": "assets/MapEdits/Compats/Compat_ES_BeachWarp_Jellies.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 14, "Height": 10 },
+		 "ToArea": { "X": 90, "Y": 0, "Width": 14, "Height": 10 },
+		 "PatchMode": "ReplaceByLayer",
+		   "When": { "HasMod |contains=Lemurkat.EastScarp":  true    },  			
+ },
+ 
+ 	
+	
+		  //flower festival
+{        "Action": "EditMap",
+		"Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2", 
+		"FromFile": "assets/MapEdits/Compats/Compat_ES_FlowerFestival.tmx",
+			 "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 20 },
+		 "ToArea": { "X": 45, "Y": 29, "Width": 21, "Height": 20 },
+		 "PatchMode": "ReplaceByLayer",
+		   "Priority": "Late+1",
+	   "When": { "HasMod |contains=Lemurkat.EastScarpNPCs":  true,  "SVE":  false     }, 		
+        },
+		{        "Action": "EditMap",
+		"Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2", 
+		"FromFile": "assets/MapEdits/Compats/Compat_ES_FlowerFestival_SVE.tmx",
+			 "FromArea": { "X": 0, "Y": 0, "Width": 22, "Height": 20 },
+		 "ToArea": { "X": 45, "Y": 29, "Width": 22, "Height": 20 },
+		 "PatchMode": "Replace",
+		  "Priority": "Late+1",
+	   "When": { "HasMod |contains=Lemurkat.EastScarpNPCs":  true,  "SVE":  true     }, 		
+        },
+
+	//festival - beach jellies
+		{        "Action": "EditMap",
+		"Target": "Maps/Beach-Jellies, Maps/Beach-Jellies2", 
+		"FromFile": "assets/MapEdits/Compats/Compat_ES_Jellies.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":19, "Height": 18 },
+		 "ToArea": { "X": 85, "Y":32, "Width":19, "Height": 18 },
+		 "PatchMode": "ReplaceByLayer",
+		  "Priority": "Late+1",
+		"When": { "HasMod |contains=Lemurkat.EastScarpNPCs":  true,     },				
+       },
+	   //festival - luau
+		{        "Action": "EditMap",
+		"Target": "Maps/Beach-Luau, Maps/Beach-Luau2", 
+		"FromFile": "assets/MapEdits/Compats/Compat_ES_Luau.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":22, "Height": 18 },
+		 "ToArea": { "X": 32, "Y":31, "Width":22, "Height": 18 },
+		 "PatchMode": "ReplaceByLayer",
+		  "Priority": "Late+1",
+		"When": { "HasMod |contains=Lemurkat.EastScarpNPCs":  true,     },				
+       },
+	   
+	   
+//-------------<Cape Stardew>-------------//	
+//vanilla forest
+{        "Action": "EditMap",
+		"Target": "Maps/Forest",
+		"FromFile": "assets/MapEdits/Compats/Compat.CapeStardew_Forest.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 30, "Height": 33 },
+		 "ToArea": { "X": 0, "Y": 87, "Width":  30, "Height": 33 },
+		 "PatchMode": "Replace",
+		   "When": { "HasMod |contains=dreamy.kickitspot":  true ,
+					"SVE":  false,
+					},  			
+ },
+
+ 
+ //-------------<Ridgeside Village>-------------//	
+ {        "Action": "EditMap",
+		"Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2",
+		"FromFile": "assets/MapEdits/Compats/Compat.RSV_Festival_Flower1.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":20, "Height": 19 },
+		 "ToArea": { "X": 26, "Y":13, "Width":20, "Height": 19 },
+		 "PatchMode": "Replace",
+		"When": {  "HasMod |contains=Rafseazz.RSVCP":  true,    },			
+        },	
+		
+		
+		//festivals - beach luau
+{        "Action": "EditMap",
+		"Target": "Maps/Beach-Luau, Maps/Beach-Luau2", 
+			"FromFile": "assets/MapEdits/Compats/Compat.RSV_Beach_Luau.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 37, "Height": 25 },	
+			"ToArea": { "X": 56, "Y": 0, "Width": 37, "Height": 25 },
+		 "PatchMode": "ReplaceByLayer",
+		"When": {  "HasMod |contains=Rafseazz.RSVCP":  true,    },				
+       },		
+		
+ 
+ //-------------<Beach Minecart>-------------//	
+  {        "Action": "EditMap",
+		"Target": "Maps/Beach, Maps/Beach-NightMarket",
+		"FromFile": "assets/MapEdits/Compats/Compat.BeachMinecart.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":5, "Height": 5 },
+		 "ToArea": { "X": 41, "Y":1, "Width":5, "Height": 5 },
+		 "PatchMode": "Replace",
+		"When": {  "HasMod |contains=unclearya.beachminecart":  true,    },			
+        },
+		//festival Maps
+		{        "Action": "EditMap",
+		"Target": "Maps/Beach-Jellies, Maps/Beach-Jellies2,",
+		"FromFile": "assets/MapEdits/Compats/Compat.BeachMinecart.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":5, "Height": 5 },
+		 "ToArea": { "X": 41, "Y":1, "Width":5, "Height": 5 },
+		 "PatchMode": "ReplaceByLayer",
+		"When": {  "HasMod |contains=unclearya.beachminecart":  true,    },				
+       },
+	   {        "Action": "EditMap",
+		"Target": "Maps/Beach-Luau", 
+		"FromFile": "assets/MapEdits/Compats/Compat.BeachMinecart_Luau.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":5, "Height": 3 },
+		 "ToArea": { "X": 41, "Y":1, "Width":5, "Height": 3 },
+		 "PatchMode": "ReplaceByLayer",
+		"When": {  "HasMod |contains=unclearya.beachminecart":  true,   "Year": "1"  },				
+       },
+	   {        "Action": "EditMap",
+		"Target": "Maps/Beach-Luau2", 
+		"FromFile": "assets/MapEdits/Compats/Compat.BeachMinecart_Luau2.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":5, "Height": 3 },
+		 "ToArea": { "X": 41, "Y":1, "Width":5, "Height": 3 },
+		 "PatchMode": "ReplaceByLayer",
+		"When": {  "HasMod |contains=unclearya.beachminecart":  true,   "Year": "2"  },				
+       },
+	   
+
+//-------------<Beach Extension For Crab Pod>-------------//	
+{        "Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/MapEdits/Compats/Compat.BeachExtension.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":28, "Height": 11 },
+		 "ToArea": { "X": 50, "Y":37, "Width":28, "Height": 11 },
+		 "PatchMode": "Overlay",
+		  "Priority": "Late+1",
+		"When": {  "HasMod |contains=Tikamin557.BeachExtensionForCrabPod":  true,  "Beach Extension - Center Scaffold": true   },			
+        },
+		{        "Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/MapEdits/Compats/Compat.BeachExtension_NoCentralPlank.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":28, "Height": 11 },
+		 "ToArea": { "X": 50, "Y":37, "Width":28, "Height": 11 },
+		 "PatchMode": "Overlay",
+		  "Priority": "Late+1",
+		"When": {  "HasMod |contains=Tikamin557.BeachExtensionForCrabPod":  true,  "Beach Extension - Center Scaffold": false   },			
+        },
+//-------------<Essential NPCs>-------------//		
+		{        "Action": "EditMap",
+		"Target": "Maps/Beach, Maps/Beach-NightMarket",
+		"FromFile": "assets/MapEdits/Compats/Compat.EssentialNPCs.tmx",
+		 "FromArea": { "X": 0, "Y":0, "Width":7, "Height": 6 },
+		 "ToArea": { "X": 29, "Y":0, "Width":7, "Height": 6 },
+		 "PatchMode": "Replace",
+		  "Priority": "Late+1",
+		"When": {  "HasMod |contains=Endwyr.EssentialNPCsVegans":  true, },			
+        },
+		
+//-------------<Dead Boy Detectives>-------------//		
+	
+		{  //beach-lighthouse
+			"Action": "EditMap",
+			"Target": "Maps/Beach, Maps/Beach-NightMarket",
+			"FromFile": "assets/MapEdits/Compats/Compat.DBD_Beach.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 6 },	
+			"ToArea": { "X": 0, "Y": 4, "Width": 5, "Height": 6 },		
+		},		
+	{ //beach-docks
+			"Action": "EditMap",
+			"Target": "Maps/Beach, Maps/Beach-NightMarket",
+			"FromFile": "assets/MapEdits/Compats/Compat.DBD_Docks.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 13, "Height": 6 },
+			"ToArea": { "X": 91, "Y": 14, "Width": 13, "Height": 6 },
+			"When": {  "HasMod |contains=handwrittenhello.dbda":  true, },	
+		},
+		
+	
+	
+
+ //festivals - beach
+ 	{        "Action": "EditMap",
+		"Target": "Maps/Beach-Jellies, Maps/Beach-Jellies2, Maps/Beach-Luau, Maps/Beach-Luau2", 
+		"FromFile": "assets/MapEdits/Compats/Compat.DBD_Docks_Jellies.tmx",
+		"FromArea": { "X": 0, "Y": 0, "Width": 13, "Height": 6 },
+		"ToArea": { "X": 91, "Y": 14, "Width": 13, "Height": 6 },
+		 "PatchMode": "ReplaceByLayer",
+		  "Priority": "Late+1",
+		"When": { "HasMod |contains=handwrittenhello.dbda":  true,     },				
+       },
+	   	{        "Action": "EditMap",
+		"Target": "Maps/Beach-Jellies, Maps/Beach-Jellies2, Maps/Beach-Luau, Maps/Beach-Luau2", 
+		"FromFile": "assets/MapEdits/Compats/Compat.DBD_Beach.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 6 },	
+			"ToArea": { "X": 0, "Y": 4, "Width": 5, "Height": 6 },
+		 "PatchMode": "ReplaceByLayer",
+		  "Priority": "Late+1",
+		"When": { "HasMod |contains=handwrittenhello.dbda":  true,     },				
+       },
+ 
+	   
+ //----------------SYDNEY NPC
+
+
+
+ 
+		
+
+ //-------------<Fish of Stardew - AztecViper>-------------// 
+ //beach bridge
+ {        "Action": "EditMap",
+		"Target": "Maps/Beach, Maps/Beach-NightMarket",
+		"FromFile": "assets/MapEdits/Compats/Compat.FishOfStardew.tmx",
+		 "FromArea": { "X": 0, "Y": 2, "Width": 12, "Height": 5 },
+		 "ToArea": { "X": 92, "Y": 21, "Width": 12, "Height": 5 },
+		 "PatchMode": "Replace",
+		"When": { "HasMod |contains=aztecviper.fishofstardew":  true,  },			
+        },
+		
+	{        "Action": "EditMap",
+		"Target": "Maps/Beach, Maps/Beach-NightMarket, Maps/Beach-Luau, Maps/Beach-Luau2, Maps/Beach-Jellies, Maps/Beach-Jellies2",
+		"FromFile": "assets/MapEdits/Compats/Compat.FishOfStardew.tmx",
+		 "FromArea": { "X": 9, "Y": 0, "Width": 3, "Height": 2 },
+		 "ToArea": { "X": 101, "Y": 19, "Width": 3, "Height": 2 },
+		 "PatchMode": "Overlay",
+		  "Priority": "Late+2",
+		"When": { "HasMod |contains=aztecviper.fishofstardew":  true,  },			
+        },	
+	{        "Action": "EditMap",
+		"Target": "Maps/Beach, Maps/Beach-NightMarket, Maps/Beach-Luau, Maps/Beach-Luau2, Maps/Beach-Jellies, Maps/Beach-Jellies2",
+		"FromFile": "assets/MapEdits/Compats/Compat.FishOfStardew.tmx",
+		 "FromArea": { "X": 0, "Y": 1, "Width": 9, "Height": 1 },
+		 "ToArea": { "X": 92, "Y": 20, "Width": 9, "Height": 1 },
+		 "PatchMode": "Overlay",
+		  "Priority": "Late+2",
+		"When": { "HasMod |contains=aztecviper.fishofstardew":  true,  },			
+        },	
+
+//festivals - beach
+
+ {        
+   "LogName": "FISH OF STARDEW BEACH PATCH",
+   "Action": "EditMap",
+		"Target": "Maps/Beach-Luau, Maps/Beach-Luau2, Maps/Beach-Jellies, Maps/Beach-Jellies2",
+			"FromFile": "assets/MapEdits/Compats/Compat.FishOfStardew_Jellies.tmx",
+		 "FromArea": { "X": 0, "Y": 2, "Width": 12, "Height": 5 },
+		 "ToArea": { "X": 92, "Y": 21, "Width": 12, "Height": 5 },
+		 "PatchMode": "ReplaceByLayer",
+		 "Priority": "Late+2",
+		"When": { "HasMod |contains=aztecviper.fishofstardew":  true,  },				
+       },			
+
+	   
+ 
+ 
+		
+		
+ //-------------<Wayfarer Remastered>-------------// 	
+ //fix beach tile when boat is present
+ {        "Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/MapEdits/Compats/Compat.WayfarerBeach.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1 },
+		 "ToArea": { "X": 44, "Y": 27, "Width": 1, "Height": 1 },
+		 "PatchMode": "ReplaceByLayer",
+		"When": { "HasMod |contains=Fellowclown.TW":  true, "DayOfWeek": "Monday,Tuesday,Wednesday,Thursday",  },			
+        },
+
+//-------------<Cowboy Life Expanded>-------------// 	
+	{	 "LogName": "Compat CowboyLife - Sand tiles fix Oscars ship",
+			"Action": "EditMap",
+			"Target": "Maps/Beach, Maps/Beach-NightMarket",
+			"FromFile": "assets/MapEdits/Compats/Compat.CowboyLife_Ship.tmx",
+			"When": { "HasMod |contains=HamioDracny.TCLECP":  true, },		
+			"PatchMode": "ReplaceByLayer",
+			"ToArea": { "X": 42, "Y": 26, "Width": 10, "Height": 8 }
+		},  
+//-------------<Sunberry Village>-------------// 	
+//flower festival
+{        "Action": "EditMap",
+		"Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2", 
+		"FromFile": "assets/MapEdits/Compats/Compat.SunberryVillage_FlowerFest.tmx",
+		"FromArea": { "X": 0, "Y": 0, "Width": 35, "Height": 8 },
+		 "ToArea": { "X": 0, "Y": 42, "Width": 35, "Height": 8},	
+		 "PatchMode": "ReplaceByLayer",
+	"When": { "HasMod |contains=skellady.SBVCP":  true, },	
+	
+        },
+//beach luau  
+	{        "Action": "EditMap",
+		"Target": "Maps/Beach-Luau, Maps/Beach-Luau2", 
+		"FromFile": "assets/MapEdits/Compats/Compat.SunberryVillage_Luau.tmx",
+			"FromArea": { "X": 0, "Y": 2, "Width": 25, "Height": 15 },	
+			"ToArea": { "X": 56, "Y": 27, "Width": 25, "Height": 15 },
+		 "PatchMode": "ReplaceByLayer",
+		  "Priority": "Late+1",
+			"When": { "HasMod |contains=skellady.SBVCP":  true, },					
+       },
+	   //fest bridge
+	   {        "Action": "EditMap",
+		"Target": "Maps/Beach-Luau, Maps/Beach-Luau2, Maps/Beach-Jellies, Maps/Beach-Jellies2", 
+		"FromFile": "assets/MapEdits/Compats/Compat.SunberryVillage_Luau.tmx",
+			"FromArea": { "X": 12, "Y": 0, "Width": 4, "Height": 4 },	
+			"ToArea": { "X": 68, "Y": 25, "Width": 4, "Height": 4 },
+		 "PatchMode": "ReplaceByLayer",
+		  "Priority": "Late+1",
+			"When": { "HasMod |contains=skellady.SBVCP":  true, },					
+       },
+	 //double bridge
+	 {        "Action": "EditMap",
+		"Target": "Maps/Beach-Luau, Maps/Beach-Luau2, Maps/Beach-Jellies, Maps/Beach-Jellies2", 
+		"FromFile": "assets/MapEdits/Compats/Compat.RSV_Beach_Luau.tmx",
+			"FromArea": { "X": 1, "Y": 12, "Width": 6, "Height": 4 },	
+			"ToArea": { "X": 57, "Y": 12, "Width": 6, "Height": 4 },
+		 "PatchMode": "ReplaceByLayer",
+		  "Priority": "Late+1",
+			"When": { "HasMod |contains=skellady.SBVCP":  true, },					
+       },
+	   //jellies
+	   	{    
+		"Action": "EditMap",
+		"Target": "Maps/Beach-Jellies, Maps/Beach-Jellies2", 
+		"FromFile": "assets/MapEdits/Compats/Compat.SunberryVillage_Jellies.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 25, "Height": 15 },	
+			"ToArea": { "X": 56, "Y": 27, "Width": 25, "Height": 15 },
+		 "PatchMode": "ReplaceByLayer",
+		  "Priority": "Late+1",
+			"When": { "HasMod |contains=skellady.SBVCP":  true, },					
+       },
+//-------------<SVE-FlowerFest other mods compat>-------------// 
+
+
+{        "Action": "EditMap",
+		"Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2", 
+		"FromFile": "assets/MapEdits/Compats/Compat.SVE_FlowerFest_OtherMods.tmx",
+		 "PatchMode": "ReplaceByLayer",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 13},
+		 "ToArea": { "X": 59, "Y": 9, "Width": 21, "Height": 13},
+		"When": { "SVE":  true, "HasMod |contains=Rafseazz.RSVCP":  true,     },			
+        },
+		{        "Action": "EditMap",
+		"Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2", 
+		"FromFile": "assets/MapEdits/Compats/Compat.SVE_FlowerFest_OtherMods.tmx",
+		 "PatchMode": "Replace",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 13},
+		 "ToArea": { "X": 59, "Y": 9, "Width": 21, "Height": 13},
+		"When": { "SVE":  true,  "HasMod |contains=Fellowclown.TW":  true,  },			
+        },
+    ]
+}
+   
+			

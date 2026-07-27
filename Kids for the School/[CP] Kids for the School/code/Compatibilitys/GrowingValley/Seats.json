@@ -1,0 +1,30 @@
+{
+    "Changes": [
+//StringsFromMaps
+//Growing Valley/Little NPC's
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Priority": "Late",
+			"Entries": { "Desk.16": "{{i18n:Seat_FirstBorn {{FirstbornTokenPass}} }}" },
+			"When": {
+				"HasValue:{{ChildGenders|valueAt=0}}": true,
+				"HasMod |contains=siliconmodding.GVChildNPCs": true,
+				"HasMod |contains=siliconmodding.GVChildrenSMAPI": true,
+				"HasMod |contains=Candidus42.LittleNPCs": true,
+			},
+		},
+        {
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Priority": "Late",
+			"Entries": { "Desk.28": "{{i18n:Seat_SecondBorn {{SecondbornTokenPass}} }}" },
+			"When": {
+				"HasValue:{{ChildGenders|valueAt=1}}": true,
+				"HasMod |contains=siliconmodding.GVChildNPCs": true,
+				"HasMod |contains=siliconmodding.GVChildrenSMAPI": true,
+				"HasMod |contains=Candidus42.LittleNPCs": true,
+			},
+		},
+    ]
+}

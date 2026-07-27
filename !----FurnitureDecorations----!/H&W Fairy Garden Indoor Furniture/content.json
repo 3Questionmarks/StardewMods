@@ -1,0 +1,33 @@
+{
+    "Format": "2.3.0",
+
+    "ConfigSchema": {
+        "Recolor": 
+            {
+                "Description": "Set this to Dark, Light or Bog for recolors or leave as is for the Classic color scheme. Classic by default",
+                "AllowValues": "Light, Dark, Classic, Bog",
+                "Default": "Classic",
+                "AllowBlank": false
+            }
+
+    },
+    
+    "Changes": [
+
+        //Include Furniture
+
+        {
+        "LogName": "HXW Furniture",
+        "Action": "Include",
+        "FromFile": "Data/furniture.json"
+        },
+        
+        //Include Textures
+
+        {
+        "LogName": "HXW Furniture Textures",
+        "Action": "Include",
+        "FromFile": "Data/textures.json"
+        },
+    ]
+}

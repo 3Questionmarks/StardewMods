@@ -561,14 +561,14 @@
 
 "Sounds": [
 	{
-	"SoundName": "waterSlosh",
+	"SoundName": "WaterSlosh_WA_Sound",
 	"WhenToPlay": "Moving",
 	"TimeBetweenSound": 2000
 	},
 	{
-	"SoundName": "Duck",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
+	"SoundName": "Quack_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
 	"ChanceOfPlaying": 0.3
 	}
 ]  

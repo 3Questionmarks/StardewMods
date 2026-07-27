@@ -7,5 +7,7 @@
     "config.DefaultShopAmount.tooltip": "Cantidad estándar cuando haces Shift + Clic derecho en una compra de las tiendas.",
     "config.EnableStackSplitRedux.name": "Habilitar Split Redux",
     "config.EnableStackSplitRedux.tooltip": "Habilite las funcionalidades de Split Redux. Desmarca esta casilla si tienes algún problema.",
-    "ui.stacksplitmenu.title": "Seleccionar cantidad"
+    "ui.stacksplitmenu.title": "Seleccionar cantidad",
+    "config.EnableTackleSplit.name": "Activar pila de giradores",
+    "config.EnableTackleSplit.tooltip": "Si está activado, los giradores de pesca se pueden apilar y su durabilidad se compartirá en la pila."
 }

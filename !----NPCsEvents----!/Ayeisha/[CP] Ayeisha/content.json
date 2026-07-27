@@ -1,0 +1,1559 @@
+{
+"Format": "2.9.0",
+//==CONFIG MENU==
+"ConfigSchema": {
+	"Portrait": {
+	//main section
+		"Description": "{{i18n:config.ChangeAyeishaPortrait}}",
+		"AllowValues": "default, airyn, custom",
+		"Default": "default",
+		"Section": "Main Settings"},
+	"Love Token Events": {
+		"Description": "{{i18n:config.ToggleLoveTokenEvents}}",
+		"AllowValues": "true, false",
+		"Default": true,
+		"Section": "Main Settings"},
+	"Ayeisha Asks Pet Question": {
+		"Description": "{{i18n:config.AyeishaAdoptsPet}}",
+		"AllowValues": "true, false",
+		"Default": "true",
+		"Section": "Main Settings"},
+	"Ayeishas Van": {"Description": "{{i18n:config.OverrideAyeishaVanStyle}}",
+		"AllowValues": "Automatic, Custom, vanilla, cottoncandy, earthyrecolour, elle, flowervalley, gloomyrecolor, pastoral, seasidevalley, starblue, wayback-vanilla, wayback-earthy, wayback-eemie, wayback-pastoral, wayback-starblue, wayback-wittilynamed, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Main Settings"},
+	//coordinate section
+	"NightMarket15x": {
+		"Description": "{{i18n:config.NightMarketDay15X}}",
+		"AllowValues": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93",
+		"Default": "38",
+		"Section": "Night Market Positions"},
+	"NightMarket15y": {
+		"Description": "{{i18n:config.NightMarketDay15Y}}",
+		"AllowValues": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40",
+		"Default": "36",
+		"Section": "Night Market Positions"},
+	"NightMarket16x": {
+		"Description": "{{i18n:config.NightMarketDay16X}}",
+		"AllowValues": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93",
+		"Default": "24",
+		"Section": "Night Market Positions"},
+	"NightMarket16y": {
+		"Description": "{{i18n:config.NightMarketDay16Y}}",
+		"AllowValues": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40",
+		"Default": "31",
+		"Section": "Night Market Positions"},
+	"NightMarket17x": {
+		"Description": "{{i18n:config.NightMarketDay17X}}",
+		"AllowValues": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93",
+		"Default": "13",
+		"Section": "Night Market Positions"},
+	"NightMarket17y": {
+		"Description": "{{i18n:config.NightMarketDay17Y}}",
+		"AllowValues": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40",
+		"Default": "36",
+		"Section": "Night Market Positions"},
+//Overides
+		"Town MB": {"Description": "{{i18n:config.OverrideTownMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wayback-earthy, wayback-eemie, wayback-pastoral, wayback-starblue, wayback-wittilynamed, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Alex MB": {"Description": "{{i18n:config.OverrideAlexMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wayback-earthy, wayback-eemie, wayback-pastoral, wayback-starblue, wayback-wittilynamed, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Clint MS": {"Description": "{{i18n:config.OverrideClintMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, elle, foliageredone, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Elliott MB": {"Description": "{{i18n:config.OverridElliottMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wayback-earthy, wayback-eemie, wayback-pastoral, wayback-starblue, wayback-wittilynamed, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Gus MS": {"Description": "{{i18n:config.OverrideGusMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, elle, foliageredone, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Haley MB": {"Description": "{{i18n:config.OverrideHaleyMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wayback-earthy, wayback-eemie, wayback-pastoral, wayback-starblue, wayback-wittilynamed, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Harvey MS": {"Description": "{{i18n:config.OverrideHarveyMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, elle, foliageredone, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Jodi MB": {"Description": "{{i18n:config.OverrideJodiMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wayback-earthy, wayback-eemie, wayback-pastoral, wayback-starblue, wayback-wittilynamed, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Leah MB": {"Description": "{{i18n:config.OverrideLeahMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wayback-earthy, wayback-eemie, wayback-pastoral, wayback-starblue, wayback-wittilynamed, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Lewis MB": {"Description": "{{i18n:config.OverrideLewisMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wayback-earthy, wayback-eemie, wayback-pastoral, wayback-starblue, wayback-wittilynamed, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Marnie MB": {"Description": "{{i18n:config.OverrideMarnieMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wayback-earthy, wayback-eemie, wayback-pastoral, wayback-starblue, wayback-wittilynamed, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Pam MB": {"Description": "{{i18n:config.OverridePamMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wayback-earthy, wayback-eemie, wayback-pastoral, wayback-starblue, wayback-wittilynamed, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Robin MB": {"Description": "{{i18n:config.OverrideRobinMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wayback-earthy, wayback-eemie, wayback-pastoral, wayback-starblue, wayback-wittilynamed, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Pierre MS": {"Description": "{{i18n:config.OverridePierreMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, elle, foliageredone, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+		"Willy MB": {"Description": "{{i18n:config.OverrideWillyMailbox}}",
+		"AllowValues": "Automatic, Off, Custom, vanilla, cottoncandy, earthyrecolour, flowervalley, gloomyrecolor, pastoral, ruralsitaly, seasidevalley, starblue, wayback-vanilla, wayback-earthy, wayback-eemie, wayback-pastoral, wayback-starblue, wayback-wittilynamed, wittilynamed, yellog, yetanotherrecolour",
+		"Default": "Automatic",
+		"Section": "Overide Mailbox/Mailslot Style"},
+	},
+
+  "DynamicTokens": [
+//Tilesheet Tokens
+      {
+         "Name": "Tilesheet",
+         "Value": "vanilla"
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "earthyrecolour",
+         "When": {"HasMod |contains=DaisyNiko.EarthyRecolour": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "starblue",
+         "When": {"HasMod |contains=Lita.StarblueValley": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wittilynamed",
+         "When": {"HasMod |contains=Acerbicon.Recolor": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "flowervalley",
+         "When": {"HasMod |contains=kaya.floralvalley": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "pastoral",
+         "When": {"HasMod |contains=grapeponta.VibrantPastoralRecolor": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "yellog",
+         "When": {"HasMod |contains=yri.ProjectYellogTownOverhaul": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "yetanotherrecolour",
+         "When": {"HasMod |contains=Narianka.YetAnotherRecolour": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "gloomyrecolor",
+         "When": {"HasMod |contains=KittenTyme.GloomyRecolour": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "seasidevalley",
+         "When": {"HasMod |contains=rainkius.SeasideValley": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "cottoncandy",
+         "When": {"HasMod |contains=PinkStations.CottonCandyRecolor": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-vanilla",
+         "When": {"HasMod |contains=Gweniaczek.WayBackPT": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-earthy",
+         "When": {"HasMod |contains=Gweniaczek.WayBackPT": true,
+		"HasMod |contains=DaisyNiko.EarthyRecolour": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-wittilynamed",
+         "When": {"HasMod |contains=Gweniaczek.WayBackPT": true,
+		"HasMod |contains=Acerbicon.Recolor": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-starblue",
+         "When": {"HasMod |contains=Gweniaczek.WayBackPT": true,
+		"HasMod |contains=Lita.StarblueValley": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-pastoral",
+         "When": {"HasMod |contains=Gweniaczek.WayBackPT": true,
+		"HasMod |contains=grapeponta.VibrantPastoralRecolor": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-eemie",
+         "When": {"HasMod |contains=Gweniaczek.WayBackPT": true,
+		"HasMod |contains=minervamaga.CP.eemieMapRecolour": true}
+      },
+      {
+         "Name": "Tilesheet2",
+         "Value": "elle",
+         "When": {"HasMod |contains=Elle.TownBuildings": true}
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "ruralsitaly",
+         "When": {"HasMod |contains=Latteholn.RuralsOfItaly": true}
+      },
+
+//Map Patch Tokens
+      {
+         "Name": "Mappatch",
+         "Value": "vanilla"
+      },
+
+//Alex Box Location
+
+{
+"Name": "AlexLoc",
+"Value": "49 64",
+"When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false}
+},
+{
+"Name": "AlexLoc",
+"Value": "51 64",
+"When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true}
+},
+//Museum Box Location
+{
+"Name": "MuseLoc",
+"Value": "94 93",
+"When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false}
+},
+{
+"Name": "MuseLoc",
+"Value": "99 93",
+"When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true}
+},
+
+//Random Schedules
+// Vanilla
+      {
+         "Name": "PossibleSchedules",
+         "Value": "
+             0 Town 35 56 0/610 Town 46 57 0 Ayeisha_Deliver/640 Town {{AlexLoc}} 0 Ayeisha_Deliver/700 Town 41 72 0 Ayeisha_Deliver/730 Town 21 90 0 Ayeisha_Deliver/820 Town 8 89 0 Ayeisha_Deliver/850 Forest 100 34 0 Ayeisha_Deliver/940 Forest 89 24 0 Ayeisha_Deliver/1010 Beach 42 7 0 Ayeisha_Deliver/1150 Beach 27 34 0 Ayeisha_Deliver/1240 Town {{MuseLoc}} 0 Ayeisha_Deliver/1420 Town 95 82 0 Ayeisha_Deliver/1450 Saloon 15 20 3 Ayeisha_Sit3/1640 {{ModId}}_AyeishaWarpRoom 0 1 2
+             @@ 0 Town 35 56 0/610 Town 46 57 0 Ayeisha_Deliver/640 Mountain 9 27 0 Ayeisha_Deliver/820 Town {{AlexLoc}} 0 Ayeisha_Deliver/1000 Town 68 71 0 Ayeisha_Deliver/1030 Town 21 90 0 Ayeisha_Deliver/1110 Forest 89 24 0 Ayeisha_Deliver/1210 Forest 100 34 0 Ayeisha_Deliver/1240 Beach 42 7 0 Ayeisha_Deliver/1420 Town 95 82 0 Ayeisha_Deliver/1530 Town {{MuseLoc}} 0 Ayeisha_Deliver/1600 {{ModId}}_AyeishaWarpRoom 0 1 2
+             @@ 0 Town 35 56 0/610 Town 41 72 0 Ayeisha_Deliver/640 Town {{AlexLoc}} 0 Ayeisha_Deliver/710 Town 68 71 0 Ayeisha_Deliver/740 Town 56 87 0 Ayeisha_Deliver/820 Town {{MuseLoc}} 0 Ayeisha_Deliver/910 Town 95 82 0 Ayeisha_Deliver/940 Beach 42 7 0 Ayeisha_Deliver/1050 Beach 27 34 0 Ayeisha_Deliver/1140 Town 21 90 0 Ayeisha_Deliver/1310 Town 8 89 0 Ayeisha_Deliver/1340 Forest 100 34 0 Ayeisha_Deliver/1420 Forest 89 24 0 Ayeisha_Deliver/1450 {{ModId}}_AyeishaWarpRoom 0 1 2
+             @@ 0 Town 35 56 0/610 Town 46 57 0 Ayeisha_Deliver/640 Mountain 9 27 0 Ayeisha_Deliver/820 Town {{AlexLoc}} 0 Ayeisha_Deliver/1000 Town 68 71 0 Ayeisha_Deliver/1030 Town 41 72 0 Ayeisha_Deliver/1110 Town 56 87 0 Ayeisha_Deliver/1150 Beach 42 7 0 Ayeisha_Deliver/1230 Town {{MuseLoc}} 0 Ayeisha_Deliver/1330 Town 8 89 0 Ayeisha_Deliver/1500 Forest 100 34 0 Ayeisha_Deliver/1540 Forest 89 24 0 Ayeisha_Deliver/1610 {{ModId}}_AyeishaWarpRoom 0 1 2
+             @@ 0 Town 35 56 0/610 Town 46 57 0 Ayeisha_Deliver/640 Town {{AlexLoc}} 0 Ayeisha_Deliver/700 Town 41 72 0 Ayeisha_Deliver/730 Town 56 87 0 Ayeisha_Deliver/810 Beach 42 7 0 Ayeisha_Deliver/850 Beach 27 34 0 Ayeisha_Deliver/940 Town 95 82 0 Ayeisha_Deliver/1120 Town 21 90 0 Ayeisha_Deliver/1240 Town 8 89 0 Ayeisha_Deliver/1310 Forest 89 24 0 Ayeisha_Deliver/1400 Forest 100 34 0 Ayeisha_Deliver/1420 Saloon 15 20 3 Ayeisha_Sit3/1620 {{ModId}}_AyeishaWarpRoom 0 1 2
+         "
+      },
+// East Scarp Only
+      {
+         "Name": "PossibleSchedules",
+         "Value": "
+             {{PossibleSchedules}}
+             @@ 0 Town 35 56 0/610 Town 41 72 0 Ayeisha_Deliver/640 Town 56 87 0 Ayeisha_Deliver/720 Town 95 82 0 Ayeisha_Deliver/820 EastScarp_Village 14 54 0 Ayeisha_Deliver/1010 EastScarp_Village 29 56 0 Ayeisha_Deliver/1040 EastScarp_Village 45 69 0 Ayeisha_Deliver/1120 EastScarp_Village 74 110 0 Ayeisha_Deliver/1300 Town 21 90 0 Ayeisha_Deliver/1720 {{ModId}}_AyeishaWarpRoom 0 1 2
+             @@ 0 Town 35 56 0/610 Town 46 57 0 Ayeisha_Deliver/640 Town {{MuseLoc}} 0 Ayeisha_Deliver/800 EastScarp_Village 13 67 0 Ayeisha_Deliver/940 EastScarp_Village 45 69 0 Ayeisha_Deliver/1030 EastScarp_Village 51 56 0 Ayeisha_Deliver/1100 EastScarp_Village 23 36 0 Ayeisha_Deliver/1150 EastScarp_Village 14 54 0 Ayeisha_Deliver/1240 Beach 42 7 0 Ayeisha_Deliver/1520 Town 8 89 0 Ayeisha_Deliver/1630 Forest 100 34 0 Ayeisha_Deliver/1710 {{ModId}}_AyeishaWarpRoom 0 1 2
+             @@ 0 Town 35 56 0/610 Town 46 57 0 Ayeisha_Deliver/640 Mountain 9 27 0 Ayeisha_Deliver/820 Town {{AlexLoc}} 0 Ayeisha_Deliver/1000 Town 68 71 0 Ayeisha_Deliver/1040 EastScarp_Village 13 67 0 Ayeisha_Deliver/1250 EastScarp_Village 14 54 0 Ayeisha_Deliver/1320 EastScarp_Village 51 56 0 Ayeisha_Deliver/1410 EastScarp_Village 45 69 0 Ayeisha_Deliver/1440 EastScarp_Village 23 36 0 Ayeisha_Deliver/1550 {{ModId}}_AyeishaWarpRoom 0 1 2
+             @@ 0 Town 35 56 0/610 Town 68 71 0 Ayeisha_Deliver/700 EastScarp_Village 14 54 0 Ayeisha_Deliver/920 EastScarp_Village 29 56 0 Ayeisha_Deliver/950 EastScarp_Village 45 69 0 Ayeisha_Deliver/1030 EastScarp_Village 23 36 0 Ayeisha_Deliver/1120 EastScarp_Village 86 32 0 Ayeisha_Deliver/1240 Saloon 15 20 3 Ayeisha_Sit3/1750 {{ModId}}_AyeishaWarpRoom 0 1 2
+             @@ 0 Town 35 56 0/610 Town 41 72 0 Ayeisha_Deliver/640 Town 21 90 0 Ayeisha_Deliver/720 Town 8 89 0 Ayeisha_Deliver/740 Town 56 87 0 Ayeisha_Deliver/840 Town {{MuseLoc}} 0 Ayeisha_Deliver/930 EastScarp_Village 13 67 0 Ayeisha_Deliver/1110 EastScarp_Village 14 54 0 Ayeisha_Deliver/1140 EastScarp_Village 45 69 0 Ayeisha_Deliver/1230 EastScarp_Village 51 56 0 Ayeisha_Deliver/1300 EastScarp_Village 23 36 0 Ayeisha_Deliver/1350 Beach 42 7 0 Ayeisha_Deliver/1700 Beach 27 34 0 Ayeisha_Deliver/1750 {{ModId}}_AyeishaWarpRoom 0 1 2
+         ",
+         "When": {
+	      "HasMod |contains=Lemurkat.EastScarp": true,
+         }
+      },
+// SVE Only
+      {
+         "Name": "PossibleSchedules",
+         "Value": "
+             {{PossibleSchedules}}
+             @@ 0 Town 35 56 0/610 Town 46 57 0 Ayeisha_Deliver/640 Town {{AlexLoc}} 0 Ayeisha_Deliver/710 Town 41 72 0 Ayeisha_Deliver/740 Town 68 71 0 Ayeisha_Deliver/820 Town 56 87 0 Ayeisha_Deliver/900 Town {{MuseLoc}} 0 Ayeisha_Deliver/950 Town 95 82 0 Ayeisha_Deliver/1020 Beach 42 7 0 Ayeisha_Deliver/1130 Beach 27 34 0 Ayeisha_Deliver/1220 Forest 89 24 0 Ayeisha_Deliver/1430 Forest 100 34 0 Ayeisha_Deliver/1500 Forest 70 74 0 Ayeisha_Deliver/1610 Custom_BlueMoonVineyard 30 48 0 Ayeisha_Deliver/1740 {{ModId}}_AyeishaWarpRoom 0 1 2
+             @@ 0 Town 35 56 0/610 Town 46 57 0 Ayeisha_Deliver/640 Town 67 53 0 Ayeisha_Deliver/710 Mountain 9 27 0 Ayeisha_Deliver/830 Town 68 71 0 Ayeisha_Deliver/1000 Town 56 87 0 Ayeisha_Deliver/1040 Beach 42 7 0 Ayeisha_Deliver/1120 Beach 27 34 0 Ayeisha_Deliver/1210 Town {{MuseLoc}} 0 Ayeisha_Deliver/1340 Town 21 90 0 Ayeisha_Deliver/1500 Forest 100 34 0 Ayeisha_Deliver/1550 Custom_BlueMoonVineyard 30 48 0 Ayeisha_Deliver/1740 {{ModId}}_AyeishaWarpRoom 0 1 2
+             @@ 0 Town 35 56 0/610 Town 41 72 0 Ayeisha_Deliver/640 Town 68 71 0 Ayeisha_Deliver/720 Town {{MuseLoc}} 0 Ayeisha_Deliver/820 Town 95 82 0 Ayeisha_Deliver/850 Town 67 53 0 Ayeisha_Deliver/950 Mountain 9 27 0 Ayeisha_Deliver/1110 Town 8 89 0 Ayeisha_Deliver/1340 Forest 89 24 0 Ayeisha_Deliver/1420 Forest 70 74 0 Ayeisha_Deliver/1540 {{ModId}}_AyeishaWarpRoom 0 1 2
+         ",
+         "When": {
+	      "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+         }
+      },
+// SVE and East Scarp
+      {
+         "Name": "PossibleSchedules",
+         "Value": "
+             {{PossibleSchedules}}
+             @@ 0 Town 35 56 0/610 Custom_BlueMoonVineyard 30 48 0 Ayeisha_Deliver/750 Beach 42 7 0 Ayeisha_Deliver/840 Town {{MuseLoc}} 0 Ayeisha_Deliver/950 EastScarp_Village 13 67 0 Ayeisha_Deliver/1130 EastScarp_Village 29 56 0 Ayeisha_Deliver/1210 EastScarp_Village 51 56 0 Ayeisha_Deliver/1240 EastScarp_Village 86 32 0 Ayeisha_Deliver/1340 EastScarp_Village 74 110 0 Ayeisha_Deliver/1510 {{ModId}}_AyeishaWarpRoom 0 1 2
+             @@ 0 Town 35 56 0/610 Town 21 90 0 Ayeisha_Deliver/700 Forest 89 24 0 Ayeisha_Deliver/750 Forest 70 74 0 Ayeisha_Deliver/850 Town 56 87 0 Ayeisha_Deliver/1100 EastScarp_Village 45 69 0 Ayeisha_Deliver/1340 EastScarp_Village 51 56 0 Ayeisha_Deliver/1410 EastScarp_Village 14 54 0 Ayeisha_Deliver/1450 {{ModId}}_AyeishaWarpRoom 0 1 2
+         ",
+         "When": {
+	      "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+	      "HasMod |contains=Lemurkat.EastScarp": true,
+         }
+      },
+// SVE inc Susan
+      {
+         "Name": "PossibleSchedules",
+         "Value": "
+             {{PossibleSchedules}}
+             @@ 0 Town 35 56 0/610 Town {{AlexLoc}} 0 Ayeisha_Deliver/640 Town 67 53 0 Ayeisha_Deliver/720 Mountain 9 27 0 Ayeisha_Deliver/840 Railroad 33 54 0 Ayeisha_Deliver/930 Town 56 87 0 Ayeisha_Deliver/1210 Beach 27 34 0 Ayeisha_Deliver/1320 Town 95 82 0 Ayeisha_Deliver/1500 Town 21 90 0 Ayeisha_Deliver/1620 {{ModId}}_AyeishaWarpRoom 0 1 2
+             @@ 0 Town 35 56 0/610 Railroad 33 54 0 Ayeisha_Deliver/830 Town 41 72 0 Ayeisha_Deliver/1100 Town 8 89 0 Ayeisha_Deliver/1150 Forest 89 24 0 Ayeisha_Deliver/1240 Forest 70 74 0 Ayeisha_Deliver/1350 Custom_BlueMoonVineyard 30 48 0 Ayeisha_Deliver/1520 {{ModId}}_AyeishaWarpRoom 0 1 2
+         ",
+         "When": {
+	      "HasMod |contains=FlashShifter.StardewValleyExpandedCP, DolphINaF.Susan": true,
+	      "HasSeenEvent |contains=1000077": true,
+         }
+      },
+// Stray Catfe
+      {
+         "Name": "PossibleSchedules",
+         "Value": "
+             {{PossibleSchedules}}
+             @@ 0 Town 35 56 0/610 Town 46 57 0 Ayeisha_Deliver/640 Town {{AlexLoc}} 0 Ayeisha_Deliver/700 Town 41 72 0 Ayeisha_Deliver/730 Town 56 87 0 Ayeisha_Deliver/810 Beach 42 7 0 Ayeisha_Deliver/850 Beach 27 34 0 Ayeisha_Deliver/940 Custom_StrayCatfe_CafeIndoors 10 21 3 Ayeisha_Sit2/1350 {{ModId}}_AyeishaWarpRoom 0 1 2
+             ",
+         "When": {
+	      "HasMod |contains=ch20youk.TSCCP": true,
+	      "DayOfWeek |contains=Monday": false
+         }
+      },
+// Downhill
+      {
+         "Name": "PossibleSchedules",
+         "Value": "
+             {{PossibleSchedules}}
+             @@ 0 Town 35 56 0/610 Downhill 21 32 0 Ayeisha_Deliver/810 Downhill 49 45 0 Ayeisha_Deliver/900 Downhill 75 68 0 Ayeisha_Deliver/950 Town 8 89 0 Ayeisha_Deliver/1230 Forest 89 24 Ayeisha_Deliver/1320 Forest 100 34 Ayeisha_Deliver/1350 Town 56 87 Ayeisha_Deliver/1520 Saloon 15 20 3 Ayeisha_Sit3/1700 {{ModId}}_AyeishaWarpRoom 0 1 2
+             @@ 0 Town 35 56 0/610 Downhill 21 32 0 Ayeisha_Deliver/810 Downhill 49 45 0 Ayeisha_Deliver/900 Downhill 75 68 0 Ayeisha_Deliver/950 Town 8 89 0 Ayeisha_Deliver/1230 Forest 89 24 Ayeisha_Deliver/1320 Forest 100 34 Ayeisha_Deliver/1350 Town 56 87 Ayeisha_Deliver/1520 Saloon 15 20 3 Ayeisha_Sit3/1700 {{ModId}}_AyeishaWarpRoom 0 1 2
+             ",
+         "When": {
+	      "HasMod |contains=DH.Kiyuga.Main": true,
+         }
+      },
+// BLANK FOR YOUR OWN USE - USE THIS TO ADD YOUR OWN RANDOM ROUTES
+      {
+         "Name": "PossibleSchedules",
+         "Value": "{{PossibleSchedules}}
+             //INSERT CUSTOM SCHEDULE HERE
+             //INSERT 2ND CUSTOM SCHEDULE HERE
+             //INSERT 3RD CUSTOM SCHEDULE HERE
+             //ONCE DONE SET THE BELOW CONDITION FROM false TO true
+          ",
+         "When": {
+              "HasMod |contains=TheLimeyDragon.Ayeisha": false,
+         }
+      },
+   ],
+   
+
+////////////////////////////////////////////MAIN MOD START
+
+  "Changes": [ 
+
+//Add custom maps
+
+    {
+        "Action": "Load",
+        "Target": "Maps/TheLimeyDragon.Ayeisha_AyeishaVanRoad",
+        "FromFile": "assets/maps/vanilla/AyeishaVanRoad.tmx"
+	},
+	{
+        "Action": "Load",
+        "Target": "Maps/TheLimeyDragon.Ayeisha_AyeishaWarpRoom",
+        "FromFile": "assets/maps/vanilla/AyeishaWarpRoom.tmx"
+	},
+	{
+        "Action": "Load",
+        "Target": "Maps/TheLimeyDragon.Ayeisha_AyeishaSpawnRoom",
+        "FromFile": "assets/maps/vanilla/AyeishaSpawnRoom.tmx"
+	},
+
+//Add custom locations
+
+    {
+        "Action": "EditData",
+        "Target": "Data/Locations",
+        "Entries": {
+        "TheLimeyDragon.Ayeisha_AyeishaVanRoad": {
+        "DisplayName": "AyeishaVanRoad",
+		"DefaultArrivalTile": {"X": 1,"Y": 13},
+        "CreateOnLoad": {
+           "MapPath": "Maps/TheLimeyDragon.Ayeisha_AyeishaVanRoad",
+                        },
+		"FormerLocationNames": ["Custom_AyeishaVanRoad"]
+		},
+
+        "TheLimeyDragon.Ayeisha_AyeishaWarpRoom": {
+        "DisplayName": "AyeishaWarpRoom",
+        "CreateOnLoad": {
+           "MapPath": "Maps/TheLimeyDragon.Ayeisha_AyeishaWarpRoom",
+                        },
+		"FormerLocationNames": ["Custom_AyeishaWarpRoom"]
+		},
+
+		"TheLimeyDragon.Ayeisha_AyeishaSpawnRoom": {
+        "DisplayName": "AyeishaSpawnRoom",
+        "CreateOnLoad": {
+           "MapPath": "Maps/TheLimeyDragon.Ayeisha_AyeishaSpawnRoom",
+                        },
+		"FormerLocationNames": ["Custom_AyeishasSpawnRoom"]
+		},
+        }
+    },
+
+  {    //Add custom tilesheets
+     "LogName": "Load Tilesheets", 
+     "Action": "Load",
+     "Target": "Maps/spring_z_mailboxes,Maps/summer_z_mailboxes,Maps/fall_z_mailboxes,Maps/winter_z_mailboxes,Maps/spring_z_vanfpsheet,Maps/summer_z_vanfpsheet,Maps/fall_z_vanfpsheet,Maps/winter_z_vanfpsheet",
+     "FromFile": "assets/images/tilesheets/{{Tilesheet}}/{{TargetWithoutPath}}.png",
+},
+
+//Overides
+//Target the tilesheet that was automatically loaded
+//Patch an area with a different tilesheet based on the setting given by the user
+
+{
+         "Action": "Include",
+         "FromFile": "includes/tilesheetpatches.json",
+},
+
+//Add Ayeisha's Offset
+{
+      "LogName": "NPC Map Sprite Offset", 
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+      "Entries": {"Ayeisha": {"MarkerCropOffset": 1}},
+      "When": {"HasMod |contains=Bouhm.NPCMapLocations": true}
+},
+
+//Ayeisha's Disposition
+
+        {"Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Ayeisha": {
+                    "DisplayName": "{{i18n:name.Ayeisha}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 9,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "CanVisitIsland": false,
+                    "WinterStarParticipant": false,
+                    "EndSlideShow": "MainGroup",
+                    "Appearance": [
+                    {
+                    "Id": "AyeishaWinter",
+                    "Season": "Winter",
+                    "Sprite": "Characters/Ayeisha_Long",
+                    },
+                    {
+                    "Id": "AyeishaRain",
+                    "Condition": "WEATHER Here Rain",
+                    "Sprite": "Characters/Ayeisha_Long",
+                    },
+                    {
+                    "Id": "AyeishaStorm",
+                    "Condition": "WEATHER Here Storm",
+                    "Sprite": "Characters/Ayeisha_Long",
+                    },
+                    {
+                    "Id": "AyeishaWindy",
+                    "Condition": "SEASON Spring Fall, WEATHER Here Wind",
+                    "Sprite": "Characters/Ayeisha_Long",
+                    },
+                    ],
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "TheLimeyDragon.Ayeisha_AyeishaSpawnRoom",
+                            "Tile": { "X": 1, "Y": 1 },
+                            "Direction": "Up"
+                        }
+                    ]
+                }
+            }
+        },
+
+//Ayeisha's Items
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+  "TheLimeyDragon.Ayeisha_Ring": {
+    "Name": "Ayeisha's Ring",
+    "DisplayName": "{{i18n:item.displayName.LostRing}}",
+    "Description": "{{i18n:item.description.LostRing}}",
+    "Type": "Quest",
+    "Category": 0,
+    "Texture": "Mods/TheLimeyDragon.Ayeisha/Objects",
+    "SpriteIndex": 0
+  },
+  "TheLimeyDragon.Ayeisha_Envelope": {
+    "Name": "Missing Envelope",
+    "DisplayName": "{{i18n:item.displayName.MissingEnvelope}}",
+    "Description": "{{i18n:item.description.MissingEnvelope}}",
+    "Type": "Quest",
+    "Category": 0,
+    "Texture": "Mods/TheLimeyDragon.Ayeisha/Objects",
+    "SpriteIndex": 1
+  },
+  "TheLimeyDragon.Ayeisha_Package": {
+    "Name": "Ridgeside Package",
+    "DisplayName": "{{i18n:item.displayName.RidgesidePackage}}",
+    "Description": "{{i18n:item.description.RidgesidePackage}}",
+    "Type": "Quest",
+    "Category": 0,
+    "Texture": "Mods/TheLimeyDragon.Ayeisha/Objects",
+    "SpriteIndex": 2,
+    "ContextTags": ["not_giftable"]
+  },
+            }
+        },
+
+
+//ITEM SPRITESHEET
+        {
+            "Action": "Load",
+            "Target": "Mods/TheLimeyDragon.Ayeisha/Objects",
+            "FromFile": "assets/images/objects/Objects.png"
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Quests",
+            "Entries": {
+                        "TheLimeyDragon.Ayeisha_Quest1": "LostItem/{{i18n:quest.AyeishaLostRing01}}/{{i18n:quest.AyeishaLostRing02}}/{{i18n:quest.AyeishaLostRing03}}/Ayeisha (O)TheLimeyDragon.Ayeisha_Ring Forest 42 10/-1/300/-1/false/{{i18n:quest.AyeishaLostRing04}}",
+                        "TheLimeyDragon.Ayeisha_Quest2": "LostItem/{{i18n:quest.AyeishaMissingEnvelope01}}/{{i18n:quest.AyeishaMissingEnvelope02}}/{{i18n:quest.AyeishaMissingEnvelope03}}/Ayeisha (O)TheLimeyDragon.Ayeisha_Envelope Mountain 68 24/-1/100/-1/false/{{i18n:quest.AyeishaMissingEnvelope04}}",
+                        "TheLimeyDragon.Ayeisha_Quest3": "ItemDelivery/{{i18n:quest.Package.Kiarra01}}/{{i18n:quest.Package.Description}}/{{i18n:quest.Package.Kiarra02}}/Kiarra (O)TheLimeyDragon.Ayeisha_Package/TheLimeyDragon.Ayeisha_Quest4/75/-1/true/{{i18n:quest.Package.Kiarra03}}",
+                        "TheLimeyDragon.Ayeisha_Quest4": "ItemDelivery/{{i18n:quest.Package.Alissa01}}/{{i18n:quest.Package.Description}}/{{i18n:quest.Package.Alissa02}}/Alissa (O)TheLimeyDragon.Ayeisha_Package/TheLimeyDragon.Ayeisha_Quest5/120/-1/true/{{i18n:quest.Package.Alissa03}}",
+                        "TheLimeyDragon.Ayeisha_Quest5": "ItemDelivery/{{i18n:quest.Package.Pika01}}/{{i18n:quest.Package.Description}}/{{i18n:quest.Package.Pika02}}/Pika (O)TheLimeyDragon.Ayeisha_Package/TheLimeyDragon.Ayeisha_Quest6/90/-1/true/{{i18n:quest.Package.Pika03}}",
+                        "TheLimeyDragon.Ayeisha_Quest6": "ItemDelivery/{{i18n:quest.Package.Philip01}}/{{i18n:quest.Package.Description}}/{{i18n:quest.Package.Philip02}}/Philip (O)TheLimeyDragon.Ayeisha_Package/TheLimeyDragon.Ayeisha_Quest7/85/-1/true/{{i18n:quest.Package.Philip03}}",
+                        "TheLimeyDragon.Ayeisha_Quest7": "ItemDelivery/{{i18n:quest.Package.Carmen01}}/{{i18n:quest.Package.Description}}/{{i18n:quest.Package.Carmen02}}/Carmen (O)TheLimeyDragon.Ayeisha_Package/TheLimeyDragon.Ayeisha_Quest8/105/-1/true/{{i18n:quest.Package.Carmen03}}",
+                        "TheLimeyDragon.Ayeisha_Quest8": "ItemDelivery/{{i18n:quest.Package.Ayeisha01}}/{{i18n:quest.Package.Ayeisha02}}/{{i18n:quest.Package.Ayeisha03}}/Ayeisha (O)TheLimeyDragon.Ayeisha_Package/-1/1000/-1/true/{{i18n:quest.Package.Ayeisha04}}",
+                        }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                        "TheLimeyDragon.Ayeisha_NoteText1": "{{i18n:note.AyeishaLostRing01}}%item quest TheLimeyDragon.Ayeisha_Quest1 %%[#]{{i18n:note.AyeishaLostRing02}}",
+                        "TheLimeyDragon.Ayeisha_NoteText2": "{{i18n:note.AyeishaMissingEnvelope01}}%item quest TheLimeyDragon.Ayeisha_Quest2 %%[#]{{i18n:note.AyeishaMissingEnvelope02}}",
+            }
+        },
+
+
+{
+	 "Action": "EditData",
+	 "Target": "Data/TriggerActions",
+	 "Entries": {
+	 "TheLimeyDragon.Ayeisha_Note1": {
+    "Id": "TheLimeyDragon.Ayeisha_Note1",
+    "Trigger": "DayStarted",
+    "Location": null,
+    "Condition": "SEASON Winter",
+    "HostOnly": false,
+    "Action": "AddMail Current TheLimeyDragon.Ayeisha_NoteText1",
+    "Actions": null},
+
+	 "TheLimeyDragon.Ayeisha_Note2": {
+    "Id": "TheLimeyDragon.Ayeisha_Note2",
+    "Trigger": "DayStarted",
+    "Location": null,
+    "Condition": "WEATHER Here Wind, SEASON Spring Fall, DAYS_PLAYED 12",
+    "HostOnly": false,
+    "Action": "AddMail Current TheLimeyDragon.Ayeisha_NoteText2 now",
+    "Actions": null}
+	             }
+},
+
+///GIFT TASTES
+
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {"Ayeisha": "{{i18n:Ayeisha.Gift.Love}}/60 195 205 231 248 252 258 281 402 406 611/{{i18n:Ayeisha.Gift.Like}}/-81 376 564/{{i18n:Ayeisha.Gift.Dislike}}/64 72 190 280 727 728/{{i18n:Ayeisha.Gift.Hate}}/270/{{i18n:Ayeisha.Gift.Neutral}}//"}
+    },
+
+
+//Ayeisha's Animations
+    {
+      "LogName": "NPC Animations",
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+      "Ayeisha_Deliver": "8 8/19 19 19 19 19 19 19 19 19 19 8 8 8 8 8/8 8",
+	  "Ayeisha_Sit2": "21/21/21",
+      "Ayeisha_Sit3": "18/18/18",
+      }
+    },
+
+//Custom_AyeishaVanRoad Events
+
+{
+      "LogName": "AyeishaVanRoad Events",
+      "Action": "Load",
+      "Target": "Data/Events/TheLimeyDragon.Ayeisha_AyeishaVanRoad",
+      "FromFile": "assets/other/Custom_AyeishaVanRoad.json",
+},
+
+//Map Labels
+{
+      "LogName": "Map Labels",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+      "TheLimeyDragon.Ayeisha1": "{{i18n:Ayeisha.MapLabel01}}",
+      "TheLimeyDragon.Ayeisha2": "{{i18n:Ayeisha.MapLabel02}}",
+      "TheLimeyDragon.Ayeisha3": "{{i18n:Ayeisha.MapLabel03}}",
+      "TheLimeyDragon.Ayeisha4": "{{i18n:Ayeisha.MapLabel04}}",
+      "TheLimeyDragon.Ayeisha5": "{{i18n:Ayeisha.MapLabel05}}",
+      "TheLimeyDragon.Ayeisha6": "{{i18n:Ayeisha.MapLabel06}}",
+      "TheLimeyDragon.Ayeisha7": "{{i18n:Ayeisha.MapLabel07}}",
+      "TheLimeyDragon.Ayeisha8": "{{i18n:Ayeisha.MapLabel08}}",
+      "TheLimeyDragon.Ayeisha9": "{{i18n:Ayeisha.MapLabel09}}",
+      "TheLimeyDragon.Ayeisha10": "{{i18n:Ayeisha.MapLabel10}}",
+      "TheLimeyDragon.Ayeisha11": "{{i18n:Ayeisha.MapLabel11}}",
+      "TheLimeyDragon.Ayeisha12": "{{i18n:Ayeisha.MapLabel12}}",
+      "TheLimeyDragon.Ayeisha13": "{{i18n:Ayeisha.MapLabel13}}",
+      "TheLimeyDragon.Ayeisha14": "{{i18n:Ayeisha.MapLabel14}}",
+      "TheLimeyDragon.Ayeisha15": "{{i18n:Ayeisha.MapLabel15}}",
+      "TheLimeyDragon.Ayeisha16": "{{i18n:Ayeisha.MapLabel16}}",
+      }
+},
+
+{
+      "LogName": "Map Labels",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+      "TheLimeyDragon.Ayeisha15": "{{i18n:Ayeisha.MapLabel15b}}",
+      },
+      "When": {"HasMod |contains=MV.Municipal": true}
+},
+
+//MAP CHANGES
+//==ADD WARPS==
+
+      {
+         "Action": "EditMap",
+         "Target": "Maps/BusStop",
+         "AddWarps": [
+		"43 6 TheLimeyDragon.Ayeisha_AyeishaVanRoad 1 9",
+		"43 7 TheLimeyDragon.Ayeisha_AyeishaVanRoad 1 10",
+		"43 8 TheLimeyDragon.Ayeisha_AyeishaVanRoad 1 11",
+		"43 9 TheLimeyDragon.Ayeisha_AyeishaVanRoad 1 12",
+		"43 10 TheLimeyDragon.Ayeisha_AyeishaVanRoad 1 12",
+         ],
+         "When": {"HasMod |contains=Lnh.BusStopEastExitHubArea": false}
+      },
+
+//=======TOWN
+//-------Main Postbox
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town, Maps/Town-EggFestival, Maps/Town-EggFestival2",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxesv2.tmx",
+         "FromArea": { "X": 4, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 59, "Y": 92, "Width": 1, "Height": 2 },
+         "When": {"Town MB|contains=Off": false}
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Fair, Maps/Town-Fair2, Maps/Town-Halloween, Maps/Town-Halloween2",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxesv2fallfes.tmx",
+         "FromArea": { "X": 4, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 59, "Y": 92, "Width": 1, "Height": 2 },
+         "When": {"Town MB|contains=Off": false}
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Christmas, Maps/Town-Christmas2",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxesv2winterfes.tmx",
+         "FromArea": { "X": 4, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 59, "Y": 92, "Width": 1, "Height": 2 },
+         "When": {"Town MB|contains=Off": false}
+  },
+
+
+{
+         "Action": "Include",
+         "FromFile": "includes/mappatches-vanilla.json",
+         "When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                  "HasMod |contains=DaisyNiko.SVR3": false}
+},
+{
+         "Action": "Include",
+         "FromFile": "includes/mappatches-sve.json",
+         "When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true}
+},
+{
+         "Action": "Include",
+         "FromFile": "includes/mappatches-svr3.json",
+         "When": {"HasMod |contains=DaisyNiko.SVR3": true}
+},
+{
+         "Action": "Include",
+         "FromFile": "includes/mappatches-gemsea.json",
+         "When": {"HasMod |contains=Aimon111.BeachAreas": true}
+},
+
+  //Remove Rubbish by Van (TrashBear)
+
+    {
+         "LogName": "Remove Trash",
+         "Action": "EditMap",
+         "Target": "Maps/AyeishaVanRoad",
+         "FromFile": "assets/maps/{{Mappatch}}/VanPatch.tmx",
+         "FromArea": { "X": 7, "Y": 3, "Width": 7, "Height": 1 },
+         "ToArea": { "X": 3, "Y": 8, "Width": 7, "Height": 1 },
+         "When": { "HasSeenEvent |contains=64273003": true, }
+  },
+
+  //-------GARDEN VILLAGE (Add FP Van)
+  {
+         "LogName": "Add GV Van", 
+         "Action": "EditMap",
+         "Target": "Maps/Custom_MainShops",
+         "FromFile": "assets/maps/{{Mappatch}}/VanPatch.tmx",
+         "FromArea": { "X": "{{Random: 0, 7}}", "Y": 0, "Width": 7, "Height": 4 },
+         "ToArea": { "X": 2, "Y": 17, "Width": 7, "Height": 4 },
+         "When": {"HasMod |contains=N3cro92.CP.GardenVillage": true}
+  },
+
+//Change Postboxes in Grand Central Station with F.P branded ones.
+
+      {
+         "Action": "EditImage",
+         "Target": "Maps/Pathoschild.CentralStation_Tiles",
+         "FromFile": "assets/images/tilesheets/{{Tilesheet}}/spring_z_mailboxes.png",
+         "FromArea": { "X": 64, "Y": 32, "Width": 16, "Height": 32 },
+         "ToArea": { "X": 288, "Y": 462, "Width": 16, "Height": 32 },
+         "When": {"HasMod |contains=Pathoschild.CentralStation": true}
+      },
+
+//Rain Dialogue
+    {
+     "LogName": "Rainy Dialogue", 
+     "Action": "EditData", 
+     "Target": "Characters/Dialogue/Rainy",
+     "Entries": {
+        "Ayeisha": "{{i18n:Ayeisha.Rainy01}}",
+      },
+    },
+
+//Sprites
+
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/Ayeisha",
+      "FromFile": "assets/images/sprites/spritesheet-shorts.png",
+    },
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/Ayeisha_Long",
+      "FromFile": "assets/images/sprites/spritesheet-long.png",
+    },
+
+//Dialogue
+    {
+         "Action": "Include",
+         "FromFile": "assets/dialogue/Dialogue.json",
+    },
+
+    {
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Ayeisha, Portraits/Marnie_Ayeisha",
+      "FromFile": "assets/images/portraits/{{Portrait}}.png",
+    },
+
+    {
+      "LogName": "ScheduleBlank",
+      "Action": "Load",
+      "Target": "Characters/schedules/Ayeisha",
+      "FromFile": "assets/schedules/ScheduleAll.json",
+    },
+
+    {
+      "LogName": "DialogueBlank",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Ayeisha",
+      "FromFile": "assets/blank.json",
+    },
+
+//Schedule
+
+{
+    "LogName": "Schedule",
+    "Action": "EditData",
+    "Target": "Characters/schedules/Ayeisha",
+    "Entries": {
+        "spring": "{{Random: {{PossibleSchedules}} |inputSeparator=@@ }}",
+        "winter_15": "0 Town 35 56 0/610 Town 46 57 0 Ayeisha_Deliver/630 Mountain 9 27 0 Ayeisha_Deliver/800 Town 68 71 0 Ayeisha_Deliver/930 Town 51 64 0 Ayeisha_Deliver/1000 Town 41 72 0 Ayeisha_Deliver/1030 Town 56 87 0 Ayeisha_Deliver/1110 Town 99 93 0 Ayeisha_Deliver/1200 Town 95 82 0 Ayeisha_Deliver/1230 Beach 42 7 0 Ayeisha_Deliver/1340 Beach 27 34 0 Ayeisha_Deliver/1430 Town 21 90 0 Ayeisha_Deliver/1600 Town 8 89 0 Ayeisha_Deliver/1630 Forest 89 24 0 Ayeisha_Deliver/1720 Beach {{NightMarket15x}} {{NightMarket15y}} 2/2200 {{ModId}}_AyeishaWarpRoom 0 1 2",
+        "winter_16": "0 Town 35 56 0/610 Town 46 57 0 Ayeisha_Deliver/630 Mountain 9 27 0 Ayeisha_Deliver/800 Town 68 71 0 Ayeisha_Deliver/930 Town 51 64 0 Ayeisha_Deliver/1000 Town 41 72 0 Ayeisha_Deliver/1030 Town 56 87 0 Ayeisha_Deliver/1110 Town 99 93 0 Ayeisha_Deliver/1200 Town 95 82 0 Ayeisha_Deliver/1230 Beach 42 7 0 Ayeisha_Deliver/1340 Beach 27 34 0 Ayeisha_Deliver/1430 Town 21 90 0 Ayeisha_Deliver/1600 Town 8 89 0 Ayeisha_Deliver/1630 Forest 100 34 0 Ayeisha_Deliver/1720 Beach {{NightMarket16x}} {{NightMarket16y}} 3/2240 {{ModId}}_AyeishaWarpRoom 0 1 2",
+        "winter_17": "0 Town 35 56 0/610 Town 46 57 0 Ayeisha_Deliver/630 Mountain 9 27 0 Ayeisha_Deliver/800 Town 68 71 0 Ayeisha_Deliver/930 Town 51 64 0 Ayeisha_Deliver/1000 Town 41 72 0 Ayeisha_Deliver/1030 Town 56 87 0 Ayeisha_Deliver/1110 Town 99 93 0 Ayeisha_Deliver/1200 Town 95 82 0 Ayeisha_Deliver/1230 Beach 42 7 0 Ayeisha_Deliver/1340 Beach 27 34 0 Ayeisha_Deliver/1430 Town 21 90 0 Ayeisha_Deliver/1600 Town 8 89 0 Ayeisha_Deliver/1630 Forest 89 24 0 Ayeisha_Deliver/1720 Beach {{NightMarket17x}} {{NightMarket17y}} 2/2210 {{ModId}}_AyeishaWarpRoom 0 1 2",
+    }
+},
+
+//Film Snacks/Drinks
+
+    {
+      "LogName": "Concessions Tastes",
+      "Action": "EditData",
+      "Target": "Data/ConcessionTastes",
+      "Entries": {
+      "Ayeisha": {
+      "Name": "Ayeisha",
+      "LovedTags":["Chocolate Popcorn", "Jasmine Tea", "Panzanella Salad", "Personal Pizza", "Salted Peanuts", "Sour Slimes", "Star Cookie", "Truffle Popcorn"],
+      "LikedTags":["Apple Slices", "Black Licorice", "Cappuccino Mousse Cake", "Fries", "Ice Cream Sandwich", "Nachos", "Popcorn", "Stardrop Sorbet"],
+      "DislikedTags":["Cotton Candy", "Hummus Snack Pack", "Jawbreaker", "Joja Cola", "JojaCorn", "Kale Smoothie", "Rock Candy", "Salmon Burger"],
+                 }
+                 },
+    },
+
+//Film Reactions
+{
+  "Action": "EditData",
+  "Target": "Data/MoviesReactions",
+  "Entries": {
+  "Ayeisha": {
+    "NPCName": "Ayeisha",
+    "Reactions": [
+//Brave Little Sapling
+      {
+        "Tag": "spring_movie_0",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.Before01}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.During01}}"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.After01}}"
+          }
+        },
+        "ID": "reaction_0"
+      },
+//Journey of the Praire King
+      {
+        "Tag": "summer_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.Before02}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.During02}}"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.After02}}"
+          }
+        },
+        "ID": "reaction_1"
+      },
+//Mysterium
+      {
+        "Tag": "fall_movie_0",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.Before03}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.During03}}"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.After03}}"
+          }
+        },
+        "ID": "reaction_2"
+      },
+//Mirale at Coldstar Ranch
+      {
+        "Tag": "winter_movie_0",
+        "Response": "dislike",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.Before04}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.After04}}"
+          }
+        },
+        "ID": "reaction_3"
+      },
+//Natural Wonders
+      {
+        "Tag": "spring_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.Before05}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.During05}}"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.After05}}"
+          }
+        },
+        "ID": "reaction_4"
+      },
+//Wumbus
+      {
+        "Tag": "summer_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.Before06}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.During06}}"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.After06}}"
+          }
+        },
+        "ID": "reaction_5"
+      },
+//Howls in the Rain
+      {
+        "Tag": "fall_movie_1",
+        "Response": "dislike",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.Before07}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.During07}}"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.After07}}"
+          }
+        },
+        "ID": "reaction_6"
+      },
+//Zuzu City Express
+      {
+        "Tag": "winter_movie_1",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.Before08}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.After08}}"
+          }
+        },
+        "ID": "reaction_7"
+      },
+//TheLimeyDragon Movie
+      {
+        "Tag": "TheLimeyDragon.Movie_Summer1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.Before09}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": "TLDNWO",
+            "Script": "",
+            "Text": "{{i18n:Movie.During09}}"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.After09}}"
+          }
+        },
+        "ID": "reaction_8"
+      },
+//Thief of Justice Movie
+      {
+        "Tag": "Evgen1310.ClaireFilm",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.Before10}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:Movie.After10}}"
+          }
+        },
+        "ID": "reaction_9"
+      },
+     ]
+	}
+  }
+  },
+
+//Festival Location Secret
+//spring13
+    {
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring13",
+        "Priority": "Late",
+        "Entries": {"Ayeisha": "{{i18n:Festival.Spring13}}"},
+        "TextOperations": [
+            {
+                "Operation": "Append",
+                "Target": ["Entries", "Set-Up_additionalCharacters"],
+                "Value": "Ayeisha 81 -5 down",
+                "Delimiter": "/"
+            },
+            {
+             "Operation": "Append",
+             "Target": ["Fields", "set-up", 5],
+             "Value": "/advancedMove Ayeisha true 0 13 1 0 0 -13 -1 0",
+            },
+                        {
+                "Operation": "Append",
+                "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+                "Value": "Ayeisha 81 -5 down",
+                "Delimiter": "/"
+            },
+            {
+             "Operation": "Append",
+             "Target": ["Fields", "set-up_y2", 5],
+             "Value": "/advancedMove Ayeisha true 0 13 1 0 0 -13 -1 0",
+            }
+            ]
+},
+
+//Festival Location Secret
+//fall16
+    {
+        "Action": "EditData",
+        "Target": "Data/Festivals/fall16",
+        "Priority": "Late",
+        "Entries": {"Ayeisha": "{{i18n:Festival.Fall16}}"},
+        "TextOperations": [
+            {
+                "Operation": "Append",
+                "Target": ["Entries", "Set-Up_additionalCharacters"],
+                "Value": "Ayeisha 107 66 down",
+                "Delimiter": "/"
+            },
+            {
+                "Operation": "Append",
+                "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+                "Value": "Ayeisha 107 66 down",
+                "Delimiter": "/"
+            }
+            ]
+},
+
+{
+		"Action": "EditMap",
+		"Target": "Maps/Town-Fair, Maps/Town-Fair2",
+		"FromFile": "assets/maps/{{Mappatch}}/chest.tmx",
+		"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 2 },
+		"ToArea": { "X": 108, "Y": 65, "Width": 1, "Height": 2 },
+},
+
+//Festival Location Secret
+//fall27
+    {
+        "Action": "EditData",
+        "Target": "Data/Festivals/fall27",
+        "Priority": "Late",
+        "Entries": {"Ayeisha": "{{i18n:Festival.Fall27}}"},
+        "TextOperations": [
+            {
+                "Operation": "Append",
+                "Target": ["Entries", "Set-Up_additionalCharacters"],
+                "Value": "Ayeisha 101 90 down",
+                "Delimiter": "/"
+            },
+            {
+             "Operation": "Append",
+             "Target": ["Fields", "set-up", 5],
+             "Value": "/animate Ayeisha false true 120 23 23 23 23 23 23 23 23 23 23 23 23 23 24 25 26 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 26 25 24 23 23 23 23 23 23 23 23 23 23 23 23 23",
+            },
+                        {
+                "Operation": "Append",
+                "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+                "Value": "Ayeisha 101 90 down",
+                "Delimiter": "/"
+            },
+            {
+             "Operation": "Append",
+             "Target": ["Fields", "set-up_y2", 5],
+             "Value": "/animate Ayeisha false true 120 23 23 23 23 23 23 23 23 24 24 25 25 26 26 27 27 27 27 27 27 27 27 27 27 27 27 27 27 26 26 25 25 24 24 23 23 23 23 23 23 23 23 23 23 23 23 23",
+            }
+            ]
+},
+
+//DELIVERY EVENTS
+
+//--Pierre Secret Stash Delivery
+{
+	 "Action": "EditData",
+	 "Target": "data/events/seedshop",
+	 "Entries": {
+	 "64271002/f Pierre 1250/t 900 1700": "playful/6 21/farmer 12 27 3 Pierre 4 17 2 Caroline 10 17 0 Ayeisha 6 29 0/skippable/move Ayeisha 0 -8 0/speak Ayeisha \"{{i18n:event001.Ayeisha01}}\"/move Pierre 0 0 1/pause 500/move Pierre 0 0 2/pause 400/move Pierre 0 0 1/pause 300/move Pierre 0 0 2/pause 200/jump Pierre/textAboveHead Pierre \"!?!?\"/showFrame Pierre 16/shake Pierre 800/move Caroline 0 0 3/pause 1500/move Caroline 0 0 0/pause 800/speed Pierre 4/advancedMove Pierre false -2 0 0 2 4 0 0 1/pause 1600/speak Pierre \"{{i18n:event001.Pierre01}}\"/advancedmove Caroline false 4 0 0 -5 4 0/speak Pierre \"{{i18n:event001.Pierre02}}\"/pause 250/doAction 14 16/move Pierre 0 0 0/pause 400/move Pierre 0 0 2/speak Pierre \"{{i18n:event001.Pierre03}}\"/pause 300/speak Ayeisha \"{{i18n:event001.Ayeisha02}}\"/move Ayeisha 0 9 2/pause 150/playSound doorClose/warp Ayeisha -100 -100/pause 500/speak Pierre \"{{i18n:event001.Pierre04}}\"/end position 6 29",
+	 },
+},
+
+//--Willy Magazine Delivery
+{
+	 "Action": "EditData",
+	 "Target": "data/events/fishshop",
+	 "Entries": {
+	 "64271003/f Willy 1250/t 900 1700/z summer": "distantBanjo/6 6/farmer 6 7 1 Willy 5 4 2 Ayeisha 5 9 0/skippable/move Ayeisha 0 -3 0/speak Ayeisha \"{{i18n:event002.Ayeisha01}}\"/speak Willy \"{{i18n:event002.Willy01}}\"/speak Ayeisha \"{{i18n:event002.Ayeisha02}}\"/speak Willy \"{{i18n:event002.Willy02}}\"/pause 100/showFrame Willy 25/pause 1000/showFrame Willy 0/speak Willy \"{{i18n:event002.Willy03}}\"/speak Ayeisha \"{{i18n:event002.Ayeisha03}}\"/speak Willy \"{{i18n:event002.Willy04}}\"/speak Ayeisha \"{{i18n:event002.Ayeisha04}}\"/speak Willy \"{{i18n:event002.Willy05}}\"/move Ayeisha 0 3 2/playSound doorClose/warp Ayeisha -100 -100/end position 5 9",
+	 },
+},
+
+//--Lewis Lucky Shorts Delivery
+//--Jean and Jorts Food Delivery (Nexus 10950)
+//--Vincent Delivery
+//--Evelyn After Delivery
+//--Tilly Return to Sender (Nexus 38008)
+//--Krobus
+
+{
+	 "Action": "EditData",
+	 "Target": "data/events/town",
+	 "Entries": {
+	 "64271004/f Lewis 1250/t 830 1400/w sunny/z winter": "distantBanjo/56 87/Lewis 65 86 4 Ayeisha 54 95 0/skippable/animate Lewis false true 500 16 17/move Ayeisha 0 -7 1/speak Ayeisha \"{{i18n:event003.Ayeisha01}}\"/pause 200/stopAnimation Lewis 12/advancedMove Lewis false 0 2 -10 0/speak Ayeisha \"{{i18n:event003.Ayeisha02}}\"/pause 800/speak Ayeisha \"{{i18n:event003.Ayeisha03}}\"/speak Lewis \"{{i18n:event003.Lewis01}}\"/speak Lewis \"{{i18n:event003.Lewis02}}\"/speak Lewis \"{{i18n:event003.Lewis03}}\"/pause 500/speed Lewis 4/advancedMove Lewis false 4 0 0 -2/pause 2000/playSound doorClose/warp Lewis -100 -100/end",
+	 "64271011/f JeanCat 500/f JortsCat 500/t 800 1400/w sunny": "distantBanjo/84 54/farmer 76 53 1 JeanCat 85 52 2 JortsCat 83 52 2 Ayeisha 79 53 2/skippable/animate JeanCat false true 400 36 37 38 39/animate JortsCat false true 400 44 45 46 47/move Ayeisha 5 0 0/speak Ayeisha \"{{i18n:event004.Ayeisha01}}\"/stopAnimation JeanCat/stopAnimation JortsCat/pause 400/speak Ayeisha \"{{i18n:event004.Ayeisha02}}\"/pause 400/move JeanCat 0 0 3/move JortsCat 0 0 1/pause 1200/move JeanCat 0 0 2/move JortsCat 0 0 2/pause 100/textAboveHead JeanCat \"{{i18n:event004.JeanJorts01}}\"/textAboveHead JortsCat \"{{i18n:event004.JeanJorts01}}\"/beginSimultaneousCommand/playSound cat/playSound cat/endSimultaneousCommand/pause 400/speak Ayeisha \"{{i18n:event004.Ayeisha03}}\"/pause 200/textAboveHead JeanCat \"<\"/textAboveHead JortsCat \"<\"/beginSimultaneousCommand/playSound cat/playSound cat/endSimultaneousCommand/pause 500/move JortsCat 1 0 2/pause 200/showFrame Ayeisha 19/playSound cat/pause 700/showFrame Ayeisha 8/move JortsCat -1 0 2/move JeanCat -1 0 2/pause 200/showFrame Ayeisha 19/playSound cat/pause 700/showFrame Ayeisha 8/move JeanCat 1 0 2/textAboveHead JeanCat \"{{i18n:event004.JeanJorts02}}\"/textAboveHead JortsCat \"{{i18n:event004.JeanJorts02}}\"/pause 500/speak Ayeisha \"{{i18n:event004.Ayeisha04}}\"/pause 900/end position 69 53",
+	 "64271013/f Vincent 750/t 1000 1500/w sunny/z winter": "distantBanjo/11 88/farmer 5 90 1 Vincent 10 87 2 Jodi 12 87 3 Ayeisha 17 90 2/skippable/animate Vincent false true 800 22 23/move Ayeisha -7 0 0/move Ayeisha 0 -1 0/speak Ayeisha \"{{i18n:event005.Ayeisha01}}\"/stopAnimation Vincent/speak Vincent \"{{i18n:event005.Vincent01}}\"/speak Ayeisha \"{{i18n:event005.Ayeisha02}}\"/emote Vincent 8/move Vincent 0 1 2/pause 200/showFrame Ayeisha 19/playSound throwDownITem/pause 1000/showFrame Ayeisha 8/speak Vincent \"{{i18n:event005.Vincent02}}\"/speak Ayeisha \"{{i18n:event005.Ayeisha03}}\"/move Vincent 0 -1 1/speak Vincent \"{{i18n:event005.Vincent03}}\"/speak Jodi \"{{i18n:event005.Jodi01}}\"/emote Vincent 8/emote Vincent 20/speak Vincent \"{{i18n:event005.Vincent04}}\"/speak Jodi \"{{i18n:event005.Jodi02}}\"/speak Vincent \"{{i18n:event005.Vincent05}}\"/move Vincent 0 -1 0/pause 150/playSound doorClose/warp Vincent -200 -200/speak Ayeisha \"{{i18n:event005.Ayeisha04}}\"/speak Jodi \"{{i18n:event005.Jodi03}}\"/speak Ayeisha \"{{i18n:event005.Ayeisha05}}\"/speak Jodi \"{{i18n:event005.Jodi04}}\"/speak Ayeisha \"{{i18n:event005.Ayeisha06}}\"/advancedMove Ayeisha false 0 2 10 0/move Jodi -2 0 0/move Jodi 0 -1 0/pause 150/playSound doorClose/warp Jodi -200 -200/end position 9 90",
+	 "64271014/f Evelyn 750/t 1030 1130/w sunny/z spring": "distantBanjo/57 64/Ayeisha 53 65 1 Evelyn -100 -100 2/addTemporaryActor \"Golden Chicken\" 16 16 80 65 1 false Animal BadChicken/addTemporaryActor Evelyn 1 1 55 62 2 false Character InvEve/skippable/advancedMove Ayeisha false 8 0 1 200 -3 0 3 200/pause 2800/textAboveHead InvEve \"{{i18n:event014.Evelyn01}}\"/emote Ayeisha 8 true/pause 1200/speak Evelyn \"{{i18n:event014.Evelyn02}}\"/emote Ayeisha 8 true/pause 1800/playSound doorClose/warp Evelyn 57 64/showFrame Evelyn 20/speak Evelyn \"{{i18n:event014.Evelyn03}}\"/speak Ayeisha \"{{i18n:event014.Ayeisha01}}\"/speak Evelyn \"{{i18n:event014.Evelyn04}}\"/speak Ayeisha \"{{i18n:event014.Ayeisha02}}\"/playSound pickUpItem/showFrame Evelyn 0/pause 100/speak Ayeisha \"{{i18n:event014.Ayeisha03}}\"/pause 250/speak Evelyn \"{{i18n:event014.Evelyn05}}\"/speak Ayeisha \"{{i18n:event014.Ayeisha04}}\"/showFrame Evelyn 8/pause 50/playSound doorClose/warp Evelyn -100 -100/pause 500/playSound cluck/pause 100/showFrame Ayeisha 4/speed BadChicken 20/pause 300/move BadChicken -21 0 3/jump BadChicken/speed BadChicken 20/move BadChicken -15 0 0/showFrame Ayeisha 12/pause 100/speak Ayeisha \"{{i18n:event014.Ayeisha05}}\"/pause 400/speak Ayeisha \"{{i18n:event014.Ayeisha06}}\"/addConversationTopic ChickenAyeisha/end",
+	 "64271020/f Kent 1500/t 1200 1600/w sunny": "distantBanjo/11 88/Ayeisha 16 90 2 Kent 10 86 2/skippable/move Ayeisha -6 0 0/move Ayeisha 0 -1 0/speak Ayeisha \"{{i18n:event015.Ayeisha01}}\"/move Kent 0 2 2/speak Kent \"{{i18n:event015.Kent01}}\"/speak Ayeisha \"{{i18n:event015.Ayeisha02}}\"/pause 100/emote Kent 8/speak Kent \"{{i18n:event015.Kent02}}\"/speak Ayeisha \"{{i18n:event015.Ayeisha03}}\"/speak Kent \"{{i18n:event015.Kent03}}\"/speak Ayeisha \"{{i18n:event015.Ayeisha04}}\"/speak Kent \"{{i18n:event015.Kent04}}\"/advancedMove Ayeisha false 0 1 -6 0/emote Kent 40/pause 1000/end",
+	 "64271021/f Wem.Bundle.Tilly 1000/t 1400 1630/w sunny": "distantBanjo/97 92/Ayeisha 94 93 3 Wem.Bundle.Tilly -200 -200 2/skippable/advancedMove Ayeisha false -4 0 3 200 7 0 1 500/pause 1700/playSound doorClose/warp Wem.Bundle.Tilly 101 90/textAboveHead Wem.Bundle.Tilly \"{{i18n:event016.Tilly01}}\"/emote Ayeisha 8/Move Wem.Bundle.Tilly 0 3 3/Move Wem.Bundle.Tilly -3 0 3/pause 100/speak Wem.Bundle.Tilly \"{{i18n:event016.Tilly02}}\"/pause 200/speak Ayeisha \"{{i18n:event016.Ayeisha01}}\"/speak Wem.Bundle.Tilly \"{{i18n:event016.Tilly03}}\"/pause 200/playSound throwDownITem/pause 200/speak Ayeisha \"{{i18n:event016.Ayeisha02}}\"/speak Wem.Bundle.Tilly \"{{i18n:event016.Tilly04}}\"/pause 300/speak Ayeisha \"{{i18n:event016.Ayeisha03}}\"/speak Wem.Bundle.Tilly \"{{i18n:event016.Tilly05}}\"/pause 200/speak Wem.Bundle.Tilly \"{{i18n:event016.Tilly06}}\"/speak Ayeisha \"{{i18n:event016.Ayeisha04}}\"/advancedMove Ayeisha false -12 0/advancedMove Wem.Bundle.Tilly false 3 0 0 -3/pause 1200/end",
+	 "64271023/f Krobus 900/t 600 800/w sunny/z summer": "distantBanjo/35 96/Ayeisha 35 100 0 Krobus -200 -200 2/skippable/changeSprite Krobus Trenchcoat/move Ayeisha 0 -3 0/speak Ayeisha \"{{i18n:event018.Ayeisha01}}\"/emote Ayeisha 8/pause 1000/move Ayeisha 0 0 3/pause 400/addObject 34 97 923/playSound axe/pause 800/speak Ayeisha \"{{i18n:event018.Ayeisha02}}\"/pause 1000/advancedmove Ayeisha false 0 4 7 0 0 -5 33 0/pause 8600/playSound openBox/pause 200/warp Krobus 35 97/emote Krobus 8/pause 100/move Krobus 0 0 3/pause 300/move Krobus 0 0 1/pause 300/move Krobus 0 0 3/pause 300/move Krobus 0 0 1/pause 200/move Krobus 0 0 3/pause 800/emote Krobus 32/playSound coin/removeObject 34 97/pause 200/move Krobus 0 0 0/pause 200/playSound openBox/pause 200/warp Krobus -200 -200/pause 1200/end",
+	 },
+},
+
+//--Spork Interaction (Law and Order)(Nexus 23979)
+
+{
+	 "Action": "EditData",
+	 "Target": "data/events/town",
+	 "Entries": {
+	 "64271025/f sdvhead.LawAndOrderSV_Spork 350/f Ayeisha 1100/t 1300 1500/w sunny/z summer/z winter": "distantBanjo/80 9/Ayeisha 80 5 2 sdvhead.LawAndOrderSV_Spork 74 10 1/skippable/playsound dog_bark/animate sdvhead.LawAndOrderSV_Spork false true 800 24 24/advancedMove Ayeisha false 0 5 3 1000/pause 700/playsound dog_bark/pause 700/playsound dog_bark/stopAnimation sdvhead.LawAndOrderSV_Spork/speed sdvhead.LawAndOrderSV_Spork 4/changeSprite sdvhead.LawAndOrderSV_Spork Run/advancedMove sdvhead.LawAndOrderSV_Spork false 5 0 4 1 0 -1 1 1 2 0 2 1 0 2 3 1 -2 0 4 1 0 -1 1 1/playsound dog_bark/pause 400/playsound dog_bark/pause 650/playsound dog_bark/pause 350/playsound dog_bark/pause 700/playsound dog_bark/pause 450/playsound dog_bark/pause 550/playsound dog_bark/pause 400/showFrame sdvhead.LawAndOrderSV_Spork 24/changeSprite sdvhead.LawAndOrderSV_Spork/playSound dog_pant/pause 400/playSound dog_pant/pause 400/playSound dog_pant/pause 400/speak Ayeisha \"{{i18n:event020.Ayeisha01}}\"/pause 200/playsound dog_bark/pause 400/speak Ayeisha \"{{i18n:event020.Ayeisha02}}\"/pause 200/playsound dog_bark/pause 400/speak Ayeisha \"{{i18n:event020.Ayeisha03}}\"/pause 150/animate sdvhead.LawAndOrderSV_Spork false true 350 4 25/playsound dog_bark/pause 250/playsound dog_bark/pause 200/playsound dog_bark/pause 350/playsound dog_bark/pause 450/playsound dog_bark/speak Ayeisha \"{{i18n:event020.Ayeisha04}}\"/pause 200/stopanimation sdvhead.LawAndOrderSV_Spork 24/playSound coin/pause 400/playSound eat/pause 200/playSound dog_pant/pause 200/playSound dog_pant/pause 200/speak Ayeisha \"{{i18n:event020.Ayeisha05}}\"/pause 200/playSound dog_bark/animate sdvhead.LawAndOrderSV_Spork true true 120 22 23/positionOffset sdvhead.LawAndOrderSV_Spork 20 0 false/emote sdvhead.LawAndOrderSV_Spork 20/pause 200/playSound dog_pant/pause 200/stopanimation sdvhead.LawAndOrderSV_Spork 24/emote Ayeisha 32/pause 1200/end",
+	 },
+	 "When": {"query: ('{{HasSeenEvent|Contains=sdvhead.LawAndOrderSV_SporkReturn}}' = 'true' OR ('{{HasSeenEvent|Contains=sdvhead.LawAndOrderSV_SporkIntro}}' = 'true' AND '{{HasSeenEvent|Contains=sdvhead.LawAndOrderSV_SporkMissing}}' = 'false'))": true},
+},
+
+//--Ornithologist Guild Delivery (Nexus 14510)
+{
+	 "Action": "EditData",
+	 "Target": "data/events/Custom_Ivy_OrnithologistsGuild",
+	 "Entries": {
+	 "64271019/t 700 800": "continue/15 24/farmer 15 29 1 Ayeisha 15 24 0 OrinothlogistsGuild_Kyle 15 14 1/removeTile 13 22 Front/skippable/pause 1000/speak Ayeisha \"{{i18n:event013.Ayeisha01}}\"/pause 500/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/speak OrinothlogistsGuild_Kyle \"{{i18n:event013.Kyle01}}\"/emote Ayeisha 8 true/pause 1200/speak Ayeisha \"{{i18n:event013.Ayeisha02}}\"/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/speak OrinothlogistsGuild_Kyle \"{{i18n:event013.Kyle02}}\"/emote Ayeisha 8 true/pause 1200/speak Ayeisha \"{{i18n:event013.Ayeisha03}}\"/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/speak OrinothlogistsGuild_Kyle \"{{i18n:event013.Kyle03}}\"/pause 800/showFrame Ayeisha 19/playSound throwDownITem/pause 1000/showFrame Ayeisha 8/pause 500/speak Ayeisha \"{{i18n:event013.Ayeisha04}}\"/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/speak OrinothlogistsGuild_Kyle \"{{i18n:event013.Kyle04}}\"/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/playSound mouseClick/pause 200/speak OrinothlogistsGuild_Kyle \"{{i18n:event013.Kyle05}}\"/emote Ayeisha 8 true/pause 600/advancedMove Ayeisha false 0 1 -5 0 0 4/pause 1200/end",
+	 },
+},
+
+//--Susan (SVE and Standalone) After Delivery
+
+{
+	 "Action": "EditData",
+	 "Target": "data/events/railroad",
+	 "Entries": {
+	 "64271018/y 1/j 31/w sunny/Season summer fall/t 630 1500": "distantBanjo/33 57/farmer 29 61 1 Ayeisha 32 54 1 Susan 35 54 3/skippable/move farmer 0 -5 1/speak Ayeisha \"{{i18n:event012.Ayeisha01}}\"/speak Susan \"{{i18n:event012.Susan01}}\"/speak Ayeisha \"{{i18n:event012.Ayeisha02}}\"/speak Susan \"{{i18n:event012.Susan02}}\"/speak Ayeisha \"{{i18n:event012.Ayeisha03}}\"/speak Susan \"{{i18n:event012.Susan03}}\"/speak Ayeisha \"{{i18n:event012.Ayeisha04}}\"/speak Susan \"{{i18n:event012.Susan04}}\"/speak Ayeisha \"{{i18n:event012.Ayeisha05}}\"/speak Susan \"{{i18n:event012.Susan05}}\"/advancedMove Ayeisha false -2 0 0 7/pause 100/advancedMove Susan false 3 0 0 -4/pause 1000/end",
+	 },
+	 "When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true}
+},
+{
+	 "Action": "EditData",
+	 "Target": "data/events/railroad",
+	 "Entries": {
+	 "64271018/y 1/j 31/w sunny/Season summer fall/t 630 1500": "distantBanjo/33 57/farmer 29 61 1 Ayeisha 32 54 1 DolphINaF.Susan_Susan 35 54 3/skippable/move farmer 0 -5 1/speak Ayeisha \"{{i18n:event012.Ayeisha01}}\"/speak DolphINaF.Susan_Susan \"{{i18n:event012.Susan01}}\"/speak Ayeisha \"{{i18n:event012.Ayeisha02}}\"/speak DolphINaF.Susan_Susan \"{{i18n:event012.Susan02}}\"/speak Ayeisha \"{{i18n:event012.Ayeisha03}}\"/speak DolphINaF.Susan_Susan \"{{i18n:event012.Susan03}}\"/speak Ayeisha \"{{i18n:event012.Ayeisha04}}\"/speak DolphINaF.Susan_Susan \"{{i18n:event012.Susan04}}\"/speak Ayeisha \"{{i18n:event012.Ayeisha05}}\"/speak DolphINaF.Susan_Susan \"{{i18n:event012.Susan05}}\"/advancedMove Ayeisha false -2 0 0 7/pause 100/advancedMove DolphINaF.Susan_Susan false 3 0 0 -4/pause 1000/end",
+	 },
+	 "When": {"HasMod |contains=DolphINaF.Susan": true}
+},
+
+//--Gus Drink Samples Delivery
+{
+	 "Action": "EditData",
+	 "Target": "data/events/saloon",
+	 "Entries": {
+	 "64271005/f Gus 1250/t 1230 1500": "ragtime/14 17/farmer 9 22 1 Gus 14 18 2 Emily 10 17 0 Ayeisha 14 24 0/skippable/move Ayeisha 0 -4 0/speak Ayeisha \"{{i18n:event006.Ayeisha01}}\"/speak Gus \"{{i18n:event006.Gus01}}\"/speak Ayeisha \"{{i18n:event006.Ayeisha02}}\"/playSound gulp/playSound gulp/pause 1000/move Ayeisha 0 0 2/showFrame Ayeisha 20/emote Ayeisha 60/pause 1000/move Ayeisha 0 0 0/speak Ayeisha \"{{i18n:event006.Ayeisha03}}\"/move Emily 2 0 0/speak Gus \"{{i18n:event006.Gus02}}\"/speak Ayeisha \"{{i18n:event006.Ayeisha04}}\"/speak Gus \"{{i18n:event006.Gus03}}\"/move Emily 2 0 0/speak Ayeisha \"{{i18n:event006.Ayeisha05}}\"/advancedMove Gus false 4 0 0 -1/move Ayeisha -1 0 1/showFrame Ayeisha 17/pause 1200/end",
+	 },
+},
+
+//--Mister Ginger Fish Delivery (Nexus 5295)
+{
+	"Action": "EditData",
+	"Target": "data/events/forest",
+	"Entries": {
+	"64271006/f MisterGinger 750/Hl Tristan_Returns/t 800 1400": "distantBanjo/90 23/farmer 83 23 1 MisterGinger 90 23 2 Ayeisha 97 24 4/skippable/animate MisterGinger false true 400 29 30 31/move Ayeisha -7 0 0/speak Ayeisha \"{{i18n:event007.Ayeisha01}}\"/stopAnimation MisterGinger 26/speak MisterGinger \"{{i18n:event007.MrGinger01}}\"/speak Ayeisha \"{{i18n:event007.Ayeisha02}}\"/speak MisterGinger \"{{i18n:event007.MrGinger02}}\"/speak Ayeisha \"{{i18n:event007.Ayeisha03}}\"/speak MisterGinger \"{{i18n:event007.MrGinger03}}\"/speak Ayeisha \"{{i18n:event007.Ayeisha04}}\"/speak MisterGinger \"{{i18n:event007.MrGinger04}}\"/emote MisterGinger 20/pause 1000/speak MisterGinger \"{{i18n:event007.MrGinger05}}\"/speak Ayeisha \"{{i18n:event007.Ayeisha05}}\"/end",
+	},
+},
+
+//--Marnie Lew Lew Gift Delivery
+//50706110 is an event from 'The Ranch Expansion Marnie and Jas'
+{
+	"Action": "EditData",
+	"Target": "data/events/animalshop",
+	"Entries": {
+	"64271007/f Marnie 750/t 800 1150/k 50706110": "distantBanjo/13 16/farmer 17 16 3 Marnie 12 14 2 Ayeisha 13 19 0/skippable/move Ayeisha 0 -3 0/speak Ayeisha \"{{i18n:event008.Ayeisha01}}\"/speak Marnie \"{{i18n:event008.Marnie01}}\"/speak Ayeisha \"{{i18n:event008.Ayeisha02}}\"/pause 1000/speak Marnie \"{{i18n:event008.Marnie02}}\"/pause 500/speak Marnie \"{{i18n:event008.Marnie03}}\"/pause 200/showFrame Ayeisha 19/playSound throwDownITem/pause 1000/showFrame Ayeisha 8/pause 500/speak Marnie \"{{i18n:event008.Marnie04}}\"/speak Ayeisha \"{{i18n:event008.Ayeisha03}}\"/speak Marnie \"{{i18n:event008.Marnie05}}\"/speak Ayeisha \"{{i18n:event008.Ayeisha04}}\"/pause 500/move Ayeisha 0 3 2/playSound doorClose/warp Ayeisha -100 -100/end position 17 16",
+	},
+},
+
+//--Maru Heavy Package Delivery
+{
+	"Action": "EditData",
+	"Target": "data/events/mountain",
+	"Entries": {
+	"64271008/f Maru 1250/t 1200 1600/w sunny": "distantBanjo/10 25/farmer 12 26 3 Maru 8 23 2 Ayeisha 7 28 0/skippable/move Ayeisha 0 -2 0/speak Ayeisha \"{{i18n:event009.Ayeisha01}}\"/speak Maru \"{{i18n:event009.Maru01}}\"/pause 400/move Ayeisha 0 0 1/pause 400/addObject 8 26 923/playSound axe/pause 800/move Ayeisha 0 0 0/pause 200/speak Ayeisha \"{{i18n:event009.Ayeisha02}}\"/speak Maru \"{{i18n:event009.Maru02}}\"/pause 200/move Maru 0 0 3/pause 1000/move Maru 0 0 2/pause 200/speak Maru \"{{i18n:event009.Maru03}}\"/speak Ayeisha \"{{i18n:event009.Ayeisha03}}\"/speak Maru \"{{i18n:event009.Maru04}}\"/move Maru 0 0 3/move Ayeisha 0 2 0/textAboveHead Ayeisha \"{{i18n:event009.Ayeisha04 |PlayerName={{PlayerName}}}}\"/move Ayeisha 5 0 0/move Ayeisha 0 6 0/end position 12 26",
+	},
+},
+
+//--Jacob Animal Drug Delivery (Nexus 5787)
+{
+	"Action": "EditData",
+	"Target": "data/events/EastScarp_VetHouse",
+	"Entries": {
+	"64271009/f Jacob 1250/t 1000 1100": "breezy/10 22/farmer 12 27 0 Jacob 5 23 2 Ayeisha 5 25 0 RichieTheMacaw 8 22 0/skippable/move farmer 0 -3 0/move farmer 2 0 3/speak Ayeisha \"{{i18n:event010.Ayeisha01}}\"/pause 500/speak Ayeisha \"{{i18n:event010.Ayeisha02}}\"/playSound parrot/speak RichieTheMacaw \"{{i18n:event010.Richie01}}\"/pause 500/speak Ayeisha \"{{i18n:event010.Ayeisha03}}\"/pause 500/speak Ayeisha \"{{i18n:event010.Ayeisha04}}\"/speak Jacob \"{{i18n:event010.Jacob01}}\"/speak Ayeisha \"{{i18n:event010.Ayeisha05}}\"/speak Jacob \"{{i18n:event010.Jacob02}}\"/pause 300/speak Jacob \"{{i18n:event010.Jacob03}}\"/speak Ayeisha \"{{i18n:event010.Ayeisha06}}\"/playSound parrot/speak RichieTheMacaw \"{{i18n:event010.Richie02}}\"/speak Jacob \"{{i18n:event010.Jacob04}}\"/pause 200/speak Ayeisha \"{{i18n:event010.Ayeisha07}}\"/speak Jacob \"{{i18n:event010.Jacob05}}\"/playSound parrot/speak RichieTheMacaw \"{{i18n:event010.Richie03}}\"/move Ayeisha 7 0 2/move Ayeisha 0 2 2/playSound doorClose/warp Ayeisha -100 -100/end position 14 24",
+	},
+},
+
+//Juna Question (Nexus 8606)
+{
+	"Action": "EditData",
+	"Target": "data/events/BusStop",
+	"Entries": {
+	"64271012/f Juna 750/t 730 1330/w sunny": "ragtime/25 21/farmer 17 22 1 Ayeisha 24 22 0 Juna -200 -200 3/skippable/move Ayeisha 4 0 1/playSound wand/screenFlash 1/warp Juna 30 22/jump Ayeisha/textAboveHead Ayeisha \"!?!?\"/speak Ayeisha \"... $6\"/speak Juna \"{{i18n:event011.Juna01}}\"/speak Ayeisha \"{{i18n:event011.Ayeisha01}}\"/speak Juna \"{{i18n:event011.Juna02}}\"/speak Ayeisha \"{{i18n:event011.Ayeisha02}}\"/speak Juna \"{{i18n:event011.Juna03}}\"/speak Ayeisha \"{{i18n:event011.Ayeisha03}}\"/speak Juna \"{{i18n:event011.Juna04}}\"/speak Ayeisha \"{{i18n:event011.Ayeisha04}}\"/emote Juna 32/speak Juna \"{{i18n:event011.Juna05}}\"/emote Ayeisha 16/speak Ayeisha \"{{i18n:event011.Ayeisha05}}\"/pause 400/textAboveHead Juna \"{{i18n:event011.Juna06}}\"/pause 500/speak Juna \"{{i18n:event011.Juna07}}\"/pause 300/playSound wand/screenFlash 1/warp Juna -200 -200/pause 50/jump Ayeisha/pause 200/speak Ayeisha \"{{i18n:event011.Ayeisha06}}\"/pause 500/advancedMove Ayeisha false 5 0 0 5000/pause 800/end",
+	},
+},
+
+//Ridgeside Quest start
+{
+	"Action": "EditData",
+	"Target": "data/events/BusStop",
+	"Entries": {
+	"64273008/f Ayeisha 1250/t 700 1000/w sunny/c 1": "ragtime/25 21/farmer 19 23 1 Ayeisha 24 23 1/textAboveHead Ayeisha \"{{i18n:Ayeisha.Event.Bustop01}}\"/move farmer 4 0 1/pause 1000/move Ayeisha 0 0 3/pause 200/speak Ayeisha \"{{i18n:Ayeisha.Event.Bustop02}}\"/pause 500/quickQuestion #{{i18n:Ayeisha.Event.Bustop03}}#{{i18n:Ayeisha.Event.Bustop04}}#{{i18n:Ayeisha.Event.Bustop05}}(break)speak Ayeisha \"{{i18n:Ayeisha.Event.Bustop06}}\"\\additem (O)TheLimeyDragon.Ayeisha_Package 6\\action AddQuest TheLimeyDragon.Ayeisha_Quest3\\pause 1200\\speak Ayeisha \"{{i18n:Ayeisha.Event.Bustop07}}\"(break)speak Ayeisha \"{{i18n:Ayeisha.Event.Bustop08}}\"(break)friendship Ayeisha -1000\\speak Ayeisha \"...$5\"/end",
+	},
+	"When": {"HasMod |contains=Rafseazz.RSVCP": true}
+},
+
+//Jack the Snowman
+{
+	"Action": "EditData",
+	"Target": "data/events/BusStop",
+	"Entries": {
+	"64271028/f parcy.jack_Jack 10/t 600 1600/w sunny/Season Winter/Year 1/DayOfMonth 20 21": "continue/27 20/farmer 22 23 1 Ayeisha 26 23 1 parcy.jack_Jack 27 18 2/skippable/advancedmove Ayeisha false 6 0 1 2200/pause 1000/playSound throwDownITem/addObject 27 23 350/pause 300/textAboveHead parcy.jack_Jack \"{{i18n:event022.Jack01}}\"/pause 1800/textAboveHead parcy.jack_Jack \"{{i18n:event022.Jack02}}\"/pause 2000/move Ayeisha 0 0 3/pause 500/emote Ayeisha 8/speak Ayeisha \"{{i18n:event022.Ayeisha01}}\"/move Ayeisha -4 0 3/pause 400/removeObject 27 23/playSound pickUpItem/pause 500/speak Ayeisha \"{{i18n:event022.Ayeisha02}}\"/pause 300/quickQuestion #{{i18n:event022.Farmer01}}#{{i18n:event022.Farmer02}}(break)emote parcy.jack_Jack 28\\speak Ayeisha \"{{i18n:event022.Ayeisha03}}\"\\move Ayeisha 6 0 1\\friendship parcy.jack_Jack -30\\addConversationTopic AyeishaParcyLie 0(break)pause 300\\move Ayeisha 0 0 0\\emote Ayeisha 8\\pause 600\\move Ayeisha 0 0 3\\pause 200\\emote parcy.jack_Jack 32\\speak Ayeisha \"{{i18n:event022.Ayeisha04}}\"\\pause 300\\speak Ayeisha \"{{i18n:event022.Ayeisha05}}\"\\move Ayeisha 6 0 1\\friendship parcy.jack_Jack 20\\addConversationTopic AyeishaParcyTruth 0/end",
+	},
+},
+
+
+//--Pelican Town Municipal (Nexus 38698)
+{
+	"Action": "EditData",
+	"Target": "data/events/MunicipalFloor1",
+	"Entries": {
+	"64271022/f MV.Municipal_SheriffBill 1000/t 1600 1650": "distantBanjo/9 9/farmer 13 13 1 Ayeisha 10 12 0/addTemporaryActor MV.Municipal_ClerkAlicia 1 1 -200 -200 2 false Character/changeName MV.Municipal_ClerkAlicia {{i18n:event017.Alicia01}}/skippable/pause 1000/speak MV.Municipal_ClerkAlicia \"{{i18n:event017.Alicia02}}\"/Speak Ayeisha \"{{i18n:event017.Ayeisha01}}\"/speak MV.Municipal_ClerkAlicia \"{{i18n:event017.Alicia03}}\"/pause 200/playSound pickUpItem/pause 200/speak Ayeisha \"{{i18n:event017.Ayeisha02}}\"/move Ayeisha 2 0 0/move Ayeisha 0 -5 3/move Ayeisha -3 0 0/move Ayeisha 0 -1 0/pause 100/playsound doorClose/warp Ayeisha -200 -200/pause 200/viewport 500 500/stopMusic/PlayMusic tickTock/pause 150/Playsound mouseClick/pause 250/Playsound mouseClick/pause 100/speak Ayeisha \"{{i18n:event017.Ayeisha03}}\"/pause 200/playsound coin/pause 300/playsound coin/pause 300/playsound coin/pause 300/playsound clank/pause 300/playsound coin/pause 300/playsound fishSlap/pause 50/speak Ayeisha \"{{i18n:event017.Ayeisha04}}\"/pause 300/playsound coin/pause 300/playsound coin/pause 300/Speak Ayeisha \"{{i18n:event017.Ayeisha05}}\"/pause 200/playsound coin/pause 300/playsound coin/pause 300/playsound hammer/pause 150/Speak Ayeisha \"{{i18n:event017.Ayeisha06}}\"/pause 300/playsound coin/pause 300/playsound coin/pause 600/Speak Ayeisha \"{{i18n:event017.Ayeisha07}}\"/pause 400/playSound doorClose/pause 400/end position 13 13",
+	},
+},
+
+//--EastScarp Duck
+{
+	"Action": "EditData",
+	"Target": "Data/Events/EastScarp_Village",
+	"Entries": {
+	"64271024/t 1000 1200/f Ayeisha 900/w sunny/e 57870002/z winter/d Tue Wed Fri": "playful/16 68/DuckNPC 17 65 2 Ayeisha 13 67 0/skippable/animate Ayeisha false false 120 19 19 19 19 19 19 19 19 19 19 8 8 8 8 8 19 19 19 19 19 19 19 19 19 19 8 8 8 8 8/move DuckNPC 0 5 3/playSound Duck/pause 200/stopAnimation Ayeisha/move Ayeisha 4 0 2/emote Ayeisha 32/move DuckNPC -1 0 0/playSound Duck/move DuckNPC 0 -2 0/Speak Ayeisha \"{{i18n:event019.Ayeisha01}}\"/pause 200/playSound Duck/pause 200/move DuckNPC 1 0 0/Speak Ayeisha \"{{i18n:event019.Ayeisha02}}\"/pause 200/playSound Duck/pause 200/move DuckNPC 1 0 3/pause 300/move DuckNPC 0 1 2/playSound Duck/emote Ayeisha 32/pause 100/speed Ayeisha 2/advancedMove Ayeisha false 0 -12/pause 200/playSound Duck/advancedMove DuckNPC false -1 0 2 250 0 -12/pause 2500/playSound Duck/pause 1200/end",
+	"64271026/t 1300 1430/w sunny/e 64271024/z winter/d Tue Wed Fri": "event1/34 57/DuckNPC 25 57 1 Ayeisha 30 57 1/skippable/playSound Duck/advancedMove Ayeisha false 5 0 3 2000 15 0 1 3000/advancedMove DuckNPC false 6 0 1 500 0 2 2 1400 0 -2 1 1 10 0 1 1/pause 1700/playSound Duck/pause 300/emote Ayeisha 8/pause 850/playSound Duck/pause 3000/playSound Duck/pause 3250/playSound Duck/end",
+	"64271027/t 1530 1650/w sunny/e 64271026/z winter/d Tue Wed Fri": "distantBanjo/25 36/DuckNPC 33 36 3 Ayeisha 28 36 3 Eloise -1000 -1000 2/skippable/advancedMove Ayeisha false -5 0 4 1 0 0 4 600 0 0 1 2000/advancedMove DuckNPC false -5 0 3 2800 0 -2 3 800 -1 0 2 700 3 0 2 1200 0 3 3 900 0 -1 2 1400 -2 0 3 500 1 0 1 1600 0 -2 2 1200 -1 0 3 1000 0 2 3 2000 4 0 3 1400 -3 0 3 900 -1 0 3 1000 0 2 4 800 0 -1 1 700 0 -1 3 2000/pause 900/playSound Duck/pause 1500/speak Ayeisha \"{{i18n:event021.Ayeisha01}}\"/pause 100/playSound Duck/pause 200/animate Ayeisha false true 120 19 19 19 19 19 19 19 19 19 19 8 8 8 8 8/playSound doorClose/warp Eloise 14 24/speed Eloise 4/advancedMove Eloise false 0 8 2 1 10 0 3 1 0 4 3 1/pause 1300/playSound Duck/pause 700/playSound Duck/pause 1600/playSound Duck/pause 1400/stopAnimation Ayeisha/speak Eloise \"{{i18n:event021.Eloise01}}\"/speak Ayeisha \"{{i18n:event021.Ayeisha02}}\"/pause 300/playSound Duck/pause 100/move Eloise 0 0 1/pause 700/playSound Duck/pause 200/move Eloise 0 0 3/pause 200/speak Eloise \"{{i18n:event021.Eloise02}}\"/speak Ayeisha \"{{i18n:event021.Ayeisha03}}\"/pause 400/move Eloise 0 0 1/pause 500/playSound Duck/pause 300/speak Ayeisha \"{{i18n:event021.Ayeisha04}}\"/pause 600/emote Eloise 16/move Eloise 0 0 3/speak Eloise \"{{i18n:event021.Eloise03}}\"/pause 700/emote Eloise 40/playSound Duck/pause 500/speak Eloise \"{{i18n:event021.Eloise04}}\"/pause 200/speak Ayeisha \"{{i18n:event021.Ayeisha05}}\"/move Eloise 3 0 1/speak Eloise \"{{i18n:event021.Eloise05}}\"/pause 300/playSound Duck/pause 200/animate DuckNPC false true 120 22 22 22 22 22 23 23 23 23 23 23 21 21 21 21 21/pause 600/emote Ayeisha 32/advancedMove Ayeisha false 1 0 4 1 0 -2 3 1 -18 0 2 1/pause 3000/end"
+	},
+},
+
+//Love Token Deliveries
+{
+	 "LogName": "Love Token Deliveries",
+	 "Action": "EditData",
+	 "Target": "data/events/farm",
+	 "Entries": {
+//Vanilla
+	 "64272000/f Abigail 2125/D Abigail/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Abigail}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Abigail}}\"/end",
+	 "64272001/f Emily 2125/D Emily/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Emily}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Emily}}\"/end",
+	 "64272002/f Haley 2125/D Haley/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Haley}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Haley}}\"/end",
+	 "64272003/f Leah 2125/D Leah/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Leah}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Leah}}\"/end",
+	 "64272004/f Maru 2125/D Maru/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Maru}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Maru}}\"/end",
+	 "64272005/f Penny 2125/D Penny/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Penny}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Penny}}\"/end",
+	 "64272006/f Alex 2125/D Alex/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Alex}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Alex}}\"/end",
+	 "64272007/f Elliott 2125/D Elliott/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Elliott}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Elliott}}\"/end",
+	 "64272008/f Harvey 2125/D Harvey/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Harvey}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Harvey}}\"/end",
+	 "64272009/f Sam 2125/D Sam/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Sam}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Sam}}\"/end",
+	 "64272010/f Sebastian 2125/D Sebastian/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Sebastian}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Sebastian}}\"/end",
+	 "64272011/f Shane 2125/D Shane/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Shane}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Shane}}\"/end",
+//SVE 
+	 "64272012/f Claire 2125/D Claire/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Claire}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Claire}}\"/end",
+	 "64272013/f Olivia 2125/D Olivia/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Olivia}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Olivia}}\"/end",
+	 "64272014/f Sophia 2125/D Sophia/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Sophia}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Sophia}}\"/end",
+	 "64272015/f Victor 2125/D Victor/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Victor}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Victor}}\"/end",
+	 "64272044/f Lance 2125/D Lance/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Lance}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Lance}}\"/end",
+	 "64272054/f Scarlett 2125/D Scarlett/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Scarlett}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Scarlett}}\"/end",
+//Ridgeside
+	 "64272016/f Alissa 2125/D Alissa/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Alissa}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Alissa}}\"/end",
+	 "64272017/f Corine 2125/D Corine/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Corine}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Corine}}\"/end",
+	 "64272018/f Flor 2125/D Flor/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Flor}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Flor}}\"/end",
+	 "64272019/f Ian 2125/D Ian/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Ian}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Ian}}\"/end",
+	 "64272020/f Jeric 2125/D Jeric/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Jeric}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Jeric}}\"/end",
+	 "64272021/f Kenneth 2125/D Kenneth/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Kenneth}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Kenneth}}\"/end",
+	 "64272022/f Maddie 2125/D Maddie/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Maddie}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Maddie}}\"/end",
+	 "64272023/f Philip 2125/D Philip/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Philip}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Philip}}\"/end",
+	 "64272024/f Shiro 2125/D Shiro/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Shiro}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Shiro}}\"/end",
+	 "64272025/f Ysabelle 2125/D Ysabelle/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Ysabelle}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Ysabelle}}\"/end",
+	 "64272040/f Daia 2125/D Daia/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Daia}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Daia}}\"/end",
+	 "64272041/f Kiarra 2125/D Kiarra/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Kiarra}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Kiarra}}\"/end",
+	 "64272042/f Jio 2125/D Jio/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Jio}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Jio}}\"/end",
+	 "64272043/f Sean 2125/D Sean/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Sean}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Sean}}\"/end",
+	 "64272045/f Paula 2125/D Paula/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Paula}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Paula}}\"/end",
+	 "64272046/f Anton 2125/D Anton/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Anton}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Anton}}\"/end",
+	 "64272047/f June 2125/D June/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.June}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.June}}\"/end",
+	 "64272057/f Bryle 2125/D Bryle/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Bryle}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Bryle}}\"/end",
+	 "64272058/f Faye 2125/D Faye/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Faye}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Faye}}\"/end",
+	 "64272059/f Irene 2125/D Irene/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Irene}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Irene}}\"/end",
+	 "64272060/f Zayne 2125/D Zayne/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Zayne}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Zayne}}\"/end",
+//Boarding House
+	 "64272026/f Gregory 2125/D Gregory/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Gregory}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Gregory}}\"/end",
+	 "64272027/f Sheila 2125/D Sheila/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Sheila}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Sheila}}\"/end",
+//Stray Catfe
+	 "64272055/f Tabitha 2125/D Tabitha/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Tabitha}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Tabitha}}\"/end",
+	 "64272056/f Theo 2125/D Theo/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Theo}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Theo}}\"/end",
+//Other
+	 "64272028/f FC.John 2125/D FC.John/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.John}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.John}}\"/end",
+	 "64272029/f FC.Nikolai 2125/D FC.Nikolai/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Nikolai}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Nikolai}}\"/end",
+	 "64272030/f FC.Lyell 2125/D FC.Lyell/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Lyell}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Lyell}}\"/end",
+	 "64272031/f Juliet 2125/D Juliet/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Juliet}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Juliet}}\"/end",
+	 "64272032/f Jasper 2125/D Jasper/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Jasper}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Jasper}}\"/end",
+	 "64272033/f Charlie 2125/D Charlie/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Charlie}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Charlie}}\"/end",
+	 "64272034/f Riley 2125/D Riley/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Riley}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Riley}}\"/end",
+	 "64272035/f Jade 2125/D Jade/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Jade}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Jade}}\"/end",
+	 "64272036/f Delores 2125/D Delores/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Delores}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Delores}}\"/end",
+	 "64272037/f Aspen 2125/D Aspen/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Aspen}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Aspen}}\"/end",
+	 "64272038/f Aideen 2125/D Aideen/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Aideen}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Aideen}}\"/end",
+	 "64272039/f Sterling 2125/D Sterling/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Sterling}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Sterling}}\"/end",
+	 "64272048/f Katrielle 2125/D Katrielle/t 600 730/c 1/u 21/e 999979/k 64272049": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.KatrielleGlitch}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.KatrielleGlitch}}\"/end",
+	 "64272049/f Katrielle 2125/D Katrielle/t 600 730/c 1/e 999979/k 64272048": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Katrielle}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Katrielle}}\"/end",
+	 "64272050/f FC.Barron 2125/D FC.Barron/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Barron}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Barron}}\"/end",
+	 "64272051/f SydneyLex 2125/D SydneyLex/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Sydney}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Sydney}}\"/end",
+	 "64272052/f AsterPellegrinVMV 2125/D AsterPellegrinVMV/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Aster}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Aster}}\"/end",
+	 "64272053/f EliasSBV 2125/D EliasSBV/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Elias}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Elias}}\"/end",
+	 "64272061/f Wem.Bundle.Tilly 2125/D Wem.Bundle.Tilly/t 600 730/c 1":"50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Tilly}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Tilly}}\"/end",
+	 "64272062/f NassiLove.AikawaAsakaiCP_Arumi 2125/D NassiLove.AikawaAsakaiCP_Arumi/t 600 730/c 1":"50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Arumi}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Arumi}}\"/end",
+	 "64272063/f Otter.Cambria 2125/D Otter.Cambria/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Cambria}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Cambria}}\"/end",
+	 "64272064/f KeanuAvis 2125/D KeanuAvis/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Keanu}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Keanu}}\"/end",
+	 "64272065/f DaleWaede 2125/D DaleWaede/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Dale}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Dale}}\"/end",
+	 "64272066/f CorwinLK 2125/D CorwinLK/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Corwin}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Corwin}}\"/end",
+	 "64272067/f Quinn 2125/D Quinn/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Quinn}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Quinn}}\"/end",
+	 "64262068/f Nora 2125/D Nora/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"{{i18n:LoveToken.Greeting}}\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"{{i18n:LoveToken.Gift.Nora}}\"/showFrame Ayeisha 8/pause 400/message \"{{i18n:LoveToken.Note}}\"/message \"{{i18n:LoveToken.Sig.Nora}}\"/end",
+	 },
+	 "When": {"Love Token Events": true}
+//2069
+},
+
+//EVENTS
+//--Spring and Autumn  Seed Gift
+{
+	 "Action": "EditData",
+	 "Target": "data/events/farm",
+	 "Entries": {
+	 "64273000/f Ayeisha 1100/t 600 700/c 1/z summer/z fall/z winter": "Pink Petals/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/skippable/pause 1500/speak Ayeisha \"{{i18n:Ayeisha.Event.Farm01}}\"/end",
+	 "64273001/f Ayeisha 1600/t 600 700/c 1/z spring/z summer/z winter": "kindadumbautumn/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/skippable/pause 1500/speak Ayeisha \"{{i18n:Ayeisha.Event.Farm02}}\"/end",
+	 },
+},
+
+{
+	 "Action": "EditData",
+	 "Target": "data/events/farm",
+	 "Entries": {
+	 "64273002/w sunny": "spring_day_ambient/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/skippable/pause 1500/speak Ayeisha \"{{i18n:Ayeisha.Event.Farm03}}\"/quickQuestion #{{i18n:Ayeisha.Event.Farm04}}#{{i18n:Ayeisha.Event.Farm05}}#{{i18n:Ayeisha.Event.Farm06}}(break)speak Ayeisha \"{{i18n:Ayeisha.Event.Farm07}}\"(break)speak Ayeisha \"{{i18n:Ayeisha.Event.Farm08}}\"(break)speak Ayeisha \"{{i18n:Ayeisha.Event.Farm09}}\"\\friendship Ayeisha -100/end",
+	 },
+	 "When": { "HasFlag": "trashBearDone" },
+},
+
+
+//--TrashBear
+{
+	"Action": "EditData",
+	"Target": "data/events/TheLimeyDragon.Ayeisha_AyeishaVanRoad",
+	"Entries": {
+	"64273003/e 64273002": "spring_day_ambient/5 10/farmer 1 13 0/skippable/addTemporaryActor TrashBear 32 32 9 9 0 false/animate TrashBear false true 250 0 1/move farmer 8 0 0/move farmer 0 -1 0/pause 250/stopAnimation TrashBear/pause 100/animate TrashBear false true 275 13 14 15 14/playSound trashbear_flute/pause 1300/removeTile 3 8 Buildings/pause 1300/removeTile 4 8 Buildings/pause 1300/removeTile 5 8 Buildings/pause 1300/removeTile 8 8 Buildings/pause 1300/removeTile 9 8 Buildings/pause 1300/removeTile 7 8 Buildings/pause 800/stopAnimation TrashBear/animate TrashBear false true 250 0 1/pause 1500/playSound yoba/screenFlash 1/warp TrashBear -100 -100/stopAnimation TrashBear/pause 500/animate farmer false true 100 94/jump farmer/pause 800/stopAnimation farmer/move farmer 0 -3 0/emote farmer 8/pause 300/move farmer 0 0 1/pause 280/move farmer 0 0 3/pause 280/move farmer 0 0 2/pause 250/move farmer 0 0 1/pause 240/move farmer 0 0 1/pause 1000/end position 9 9",
+	},
+
+},
+
+ {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "MapTiles": [
+                {
+                    "Position": { "X": 34, "Y": 95 },
+                    "Layer": "AlwaysFront",
+                    "SetTilesheet": "outdoors",
+                    "SetIndex": "1972"
+                },
+                {
+                    "Position": { "X": 34, "Y": 94 },
+                    "Layer": "AlwaysFront",
+                    "SetTilesheet": "outdoors",
+                    "SetIndex": "1947"
+                }
+            ],
+            "When": {"HasSeenEvent |contains=64273004,64273007": "false"}
+},
+
+{
+	 "Action": "EditData",
+	 "Target": "data/events/forest",
+	 "Entries": {
+	 "64273004/w sunny/k 64273007": "none/34 98/Ayeisha 32 97 0/addObject 30 96 923/addObject 31 96 923/addObject 32 96 923/addObject 33 96 923/addObject 35 96 923/ambientLight 0 0 0/message \"{{i18n:Ayeisha.Event.Forest01}}\"/pause 1000/speak Ayeisha \"{{i18n:Ayeisha.Event.Forest02}}\"/pause 500/speak Ayeisha \"{{i18n:Ayeisha.Event.Forest03}}\"/pause 700/speak Ayeisha \"{{i18n:Ayeisha.Event.Forest04}}\"/pause 100/move Ayeisha 0 0 2/pause 280/move Ayeisha 0 0 3/pause 280/move Ayeisha 0 0 2/pause 250/move Ayeisha 0 0 1/pause 240/move Ayeisha 0 0 2/pause 700/speak Ayeisha \"{{i18n:Ayeisha.Event.Forest05}}#$b#{{i18n:Ayeisha.Event.Forest06}}\"/pause 500/advancedMove Ayeisha false 5 0 0 5000/fade/viewport -200 -200/removeTile 34 94 AlwaysFront/removeTile 34 95 AlwaysFront/end",
+	 "64273007/w rainy/k 64273004": "none/34 98/Ayeisha 32 97 0/addObject 30 96 923/addObject 31 96 923/addObject 32 96 923/addObject 33 96 923/addObject 35 96 923/ambientLight 0 0 0/message \"{{i18n:Ayeisha.Event.Forest01}}\"/pause 1000/speak Ayeisha \"{{i18n:Ayeisha.Event.Forest02}}\"/pause 500/speak Ayeisha \"{{i18n:Ayeisha.Event.Forest03}}\"/pause 700/speak Ayeisha \"{{i18n:Ayeisha.Event.Forest04}}\"/pause 100/move Ayeisha 0 0 2/pause 280/move Ayeisha 0 0 3/pause 280/move Ayeisha 0 0 2/pause 250/move Ayeisha 0 0 1/pause 240/move Ayeisha 0 0 0/pause 700/speak Ayeisha \"{{i18n:Ayeisha.Event.Forest05}}\"/pause 100/move Ayeisha 0 0 2/pause 400/textAboveHead Ayeisha \"{{i18n:Ayeisha.Event.Forest07}}\"/pause 1200/textAboveHead Ayeisha \"{{i18n:Ayeisha.Event.Forest08}}\"/pause 1300/showFrame Ayeisha 22/pause 1000/move Ayeisha 0 0 0/speak Ayeisha \"{{i18n:Ayeisha.Event.Forest06}}\"/pause 500/advancedMove Ayeisha false 5 0 0 5000/fade/viewport -200 -200/removeTile 34 94 AlwaysFront/removeTile 34 95 AlwaysFront/end",
+	 },
+	 "When": { "HasFlag": "hatter" },
+},
+
+//No i18n yet. Just here for testing and fun for now.  (Айеша アイシャ)
+
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Ayeisha",
+            "Entries": {
+                "Introduction": "Hello, you must be the new farmer. I'm Ayeisha, I...#$b#...Oh? Your name is Ayeisha too? That will be easy to remember.$h#$b#I work for the Ferngill Postal Service. I normally get to your house by 5:30 in the morning.$h"
+            },
+			"When": {"PlayerName |contains=Ayeisha": "true"}
+        },
+
+//MODIFIED VANILLA EVENTS
+{
+	 "LogName": "Modify Vanilla Events",
+	 "Action": "EditData",
+	 "Target": "data/events/town",
+	 "Entries": {
+	 "choseToBeKnown": "pause 200/addConversationTopic pamHouseUpgrade/speak Robin \"{{i18n:Event.Town.Robin01}}\"/pause 500/move Robin 0 1 2/move farmer 0 2 2 true/move Robin 0 3 1 false/move Robin 2 0 1/move farmer 3 0 1/move farmer 0 1 1/faceDirection Pam 3/move Penny 0 -1 3/move Penny -1 0 3/speak Robin \"{{i18n:Event.Town.Robin02}}\"/pause 250/playMusic musicboxsong/speak Pam \"{{i18n:Event.Town.Pam01}}\"/faceDirection Pam 2/animate Pam false true 100 25/pause 1000/animate Pam false true 150 26 27/pause 1000/speak Penny \"{{i18n:Event.Town.Penny01}}\"/speak Robin \"{{i18n:Event.Town.Robin03}}\"/pause 100/stopAnimation Pam/showFrame Pam 12/pause 500/speak Penny \"{{i18n:Event.Town.Penny02}}\"/stopAnimation Pam/faceDirection Pam 3/stopAnimation Penny/faceDirection Penny 3/pause 300/speak Pam \"{{i18n:Event.Town.Pam02}}\"/pause 300/question fork1 \"...#{{i18n:Event.Town.Fork01}}#{{i18n:Event.Town.Fork02}}\"/fork itsagift/pause 500/faceDirection Pam 2/showFrame Pam 25/pause 250/faceDirection Penny 2/speak Pam \"{{i18n:Event.Town.Pam03}}\"/pause 500/speak Pam \"{{i18n:Event.Town.Pam04}}\"/pause 500/animate Robin false true 150 34 35/pause 500/speak Penny \"{{i18n:Event.Town.Penny03}}\"/faceDirection Pam 0/speak Penny \"{{i18n:Event.Town.Penny04}}\"/stopAnimation Robin/faceDirection Robin 1/speak Pam \"{{i18n:Event.Town.Pam05}}\"/emote Penny 20/pause 100/animate Penny false true 200 0 1 2 3/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 500/positionOffset Penny 0 8/animate Penny false true 100 39/warp Pam -100 -100/playSound coin/pause 3000/fade/viewport -2000 -2000/pause 400/playMusic none/pause 1000/end",
+	 "choseToBeKnown_pennySpouse": "pause 200/addConversationTopic pamHouseUpgrade/speak Robin \"{{i18n:Event.Town.Robin04}}\"/pause 500/move Robin 0 1 2/move farmer 0 2 2 true/move Robin 0 3 1 false/move Robin 2 0 1/move farmer 3 0 1/move farmer 0 1 1/faceDirection Pam 3/move Penny 0 -1 3/move Penny -1 0 3/speak Robin \"{{i18n:Event.Town.Robin05}}\"/pause 250/playMusic musicboxsong/speak Pam \"{{i18n:Event.Town.Pam06}}\"/faceDirection Pam 2/animate Pam false true 100 25/pause 1000/animate Pam false true 150 26 27/pause 1000/speak Penny \"{{i18n:Event.Town.Penny05}}\"/speak Robin \"{{i18n:Event.Town.Robin06}}\"/faceDirection Robin 0/faceDirection farmer 2/pause 100/faceDirection Robin 1/speak Robin \"{{i18n:Event.Town.Robin06}}\"/faceDirection farmer 1/stopAnimation Pam/showFrame Pam 12/pause 500/speak Penny \"{{i18n:Event.Town.Penny06}}\"/stopAnimation Pam/faceDirection Pam 3/stopAnimation Penny/faceDirection Penny 3/pause 300/speak Pam \"{{i18n:Event.Town.Pam07}}\"/pause 300/question fork1 \"{{i18n:Event.Town.Fork03}}#{{i18n:Event.Town.Fork04}}#{{i18n:Event.Town.Fork05}}\"/fork itsagift_pennySpouse/pause 500/faceDirection Pam 2/showFrame Pam 25/pause 250/faceDirection Penny 2/speak Pam \"{{i18n:Event.Town.Pam08}}\"/pause 500/speak Pam \"{{i18n:Event.Town.Pam09}}\"/pause 500/animate Robin false true 150 34 35/pause 500/speak Penny \"{{i18n:Event.Town.Penny07}}\"/faceDirection Pam 0/speak Penny \"{{i18n:Event.Town.Penny08}}\"/stopAnimation Robin/faceDirection Robin 1/speak Pam \"{{i18n:Event.Town.Pam10}}\"/emote Penny 20/pause 100/animate Penny false true 200 0 1 2 3/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 500/positionOffset Penny 0 8/animate Penny false true 100 39/warp Pam -100 -100/playSound coin/pause 3000/fade/viewport -2000 -2000/pause 400/playMusic none/pause 1000/end"
+	 },
+},
+
+//AYEISHA REPLACES MARNIE FOR PET ADOPTION
+
+{
+	 "Action": "EditData",
+	 "Target": "Data/Events/Farm",
+	 "Entries": {
+  "1590166/m 1000/t 600 930/d Mon Tue Thu Sat Sun/w sunny/h cat/H": null,
+   "897405/m 1000/t 600 930/d Mon Tue Thu Sat Sun/w sunny/h dog/H": null,
+  "64273005/m 1000/t 600 930/d Mon Tue Thu Sat Sun/w sunny/h cat/H": "continue/64 15/farmer 64 15 2 Ayeisha 65 16 0 cat 63 16 2 Marnie 0 0 0/skippable/replaceWithClone Marnie/warp Marnie -500 -500/changeName Marnie Ayeisha/changePortrait Marnie Ayeisha/faceDirection Cat 2/pause 500/animate Cat false false 120 16 17 18 18/pause 480/animate Cat false true 120 18/pause 1000/speak Ayeisha \"{{i18n:Pet.Adoption01}}\"/faceDirection Ayeisha 3/pause 400/showFrame Cat 18/playSound cat/pause 1200/faceDirection Ayeisha 0/speak Ayeisha \"{{i18n:Pet.Adoption02}}\"/showFrame Cat 19/pause 500/showFrame Cat 18/playSound cat/shake Cat 150/pause 1500/speak Ayeisha \"{{i18n:Pet.Adoption03}}\"/catQuestion/pause 1000/faceDirection Ayeisha 3/speak Ayeisha \"{{i18n:Pet.Adoption04}}\"/pause 500/showFrame Cat 19/shake Cat 100/playSound cat/pause 800/animate Cat false false 120 20 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23/pause 200/globalFade/viewport -1000 -1000/end",
+  "64273006/m 1000/t 600 930/d Mon Tue Thu Sat Sun/w sunny/h dog/H": "continue/64 15/farmer 64 15 2 Ayeisha 65 16 0 dog 63 16 2 Marnie 0 0 0/skippable/replaceWithClone Marnie/warp Marnie -500 -500/changeName Marnie Ayeisha/changePortrait Marnie Ayeisha/faceDirection Dog 1/pause 500/animate Dog false false 120 20 21 22 23 23/pause 480/animate Dog false true 120 23/pause 1000/speak Ayeisha \"{{i18n:Pet.Adoption05}}\"/faceDirection Ayeisha 3/pause 400/showFrame Dog 26/playSound dog_bark/pause 200/showFrame Dog 23/pause 600/showFrame Dog 26/playSound dog_bark/pause 200/showFrame Dog 23/pause 1000/animate Dog false true 200 24 25/playSound dog_pant/pause 400/playSound dog_pant/pause 400/playSound dog_pant/pause 1200/faceDirection Ayeisha 0/speak Ayeisha \"{{i18n:Pet.Adoption06}}\"/pause 500/animate Dog false true 400 23 31/pause 1500/speak Ayeisha \"{{i18n:Pet.Adoption07}}\"/catQuestion/pause 1000/faceDirection Ayeisha 3/speak Ayeisha \"{{i18n:Pet.Adoption04}}\"/pause 500/stopAnimation Dog/showFrame Dog 26/playSound dog_bark/pause 200/showFrame Dog 23/pause 1000/globalFade/viewport -1000 -1000/end",
+  "64279000/e 64273005 64273006/Hn rejectedPet": "continue/64 15/Ayeisha 0 0 0/warp Ayeisha -500 -500/viewport 500 500/addConversationTopic PetRejectionAyeisha/end",
+  },
+	 "When": {"Ayeisha Asks Pet Question": true}
+},
+
+{
+      "LogName": "Pet Rejection Vanilla",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromCSFiles",
+      "Entries": {"Event.cs.1798": "{{i18n:Pet.Adoption08}}",},
+      "When": {"Ayeisha Asks Pet Question": true,
+      	       "HasMod |contains=Lemurkat.EastScarp": false,}
+},
+{
+      "LogName": "Pet Rejection East Scarp",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromCSFiles",
+      "Entries": {"Event.cs.1798": "{{i18n:Pet.Adoption09}}",},
+      "When": {"Ayeisha Asks Pet Question": true,
+      	       "HasMod |contains=Lemurkat.EastScarp": true,}
+},
+
+  ]
+}

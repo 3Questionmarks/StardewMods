@@ -1,0 +1,14 @@
+{
+	"Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Ayeisha)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Ayeisha",
+      "FromFile": "assets/Maps/Ayeisha/Ayeisha_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+				"RMP Enable (Earthy) Recolour": "ON"
+			}
+    }
+  ]
+}

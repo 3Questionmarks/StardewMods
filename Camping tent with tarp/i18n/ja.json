@@ -1,0 +1,79 @@
+{
+
+//★★★ModConfig★★★
+
+    "config.EnableThisMod.name": "MODを有効にする",
+    "config.EnableThisMod.description": "このMOD自体のOn/Off設定です。",
+
+    "config.EntranceSleep.name": "入り口で寝れる",
+    "config.EntranceSleep.description": "設定をONにするとテントの入り口(室内Mapに入る前)のタイルに触れた時に寝る事が出来るようになります。(確認の選択肢をキャンセルしてテントの中に入ることは出来ます)",
+
+    "config.FreeToBuild.name": "建設費、素材がかからない",
+    "config.FreeToBuild.description": "設定をONにすると建設費用が0になり必要素材も無くなります。",
+
+    "config.ImmediateBuildFinish.name": "建設が一瞬で終わる",
+    "config.ImmediateBuildFinish.description": "設定をONにすると建設が一瞬で終わる様になります。",
+
+    "config.SeasonalAppearance.name": "季節の見た目を適用する",
+    "config.SeasonalAppearance.description": "OFFにすると季節によって見た目が変更されなくなります。(春の見た目に固定) この設定は全てのカラータイプのテントに適用されます。",
+
+    "config.TentShadowTyep.name": "テントの影のタイプ",
+    "config.TentShadowTyep.description": "「ブラウン」がバニラの建物の影の色と濃さです。この設定は全てのカラータイプのテントに適用されます。",
+    "config.TentShadowTyep.values.Brown": "ブラウン",
+    "config.TentShadowTyep.values.Brown(Thinner)": "ブラウン(薄)",
+    "config.TentShadowTyep.values.Black": "ブラック",
+    "config.TentShadowTyep.values.Black(Thinner)": "ブラック(薄)",
+
+    "config.InDoorColor.name": "テントの中の色を選択する",
+    "config.InDoorColor.description": "テントの中の色を変更できます。この設定は全てのカラータイプのテントに適用されます。",
+    "config.InDoorColor.values.Vanilla(Yellow)": "バニラ(黄)",
+    "config.InDoorColor.values.Black": "黒",
+    "config.InDoorColor.values.Blue": "青",
+    "config.InDoorColor.values.Green": "緑",
+    "config.InDoorColor.values.Purple": "紫",
+    "config.InDoorColor.values.Red": "赤",
+    "config.InDoorColor.values.White": "白",
+
+  //●以下、動物表示関係のセクション
+    "config.section.DisplayAnimalsSetting.name": "動物の表示設定",
+    "config.section.DisplayAnimalsSetting.description": "動物の表示位置(全テント共通)、各テントに動物を表示するかの設定です。",
+
+    "config.AnimalsDrawPosition.name": "動物の表示位置",
+    "config.AnimalsDrawPosition.description": "動物の表示される位置を選択できます。この設定は全てのカラータイプのテントに適用されます。",
+    "config.AnimalsDrawPosition.values.OnTheTarp": "タープの上",
+    "config.AnimalsDrawPosition.values.OnTheTent": "テントの上",
+
+    "config.EnableAnimal_Vanilla(Yellow).name": "テント(黄)に表示する",
+    "config.EnableAnimal_Vanilla(Yellow).description": "タープ付きキャンプテント(黄)に動物を表示します。",
+    "config.EnableAnimal_Black.name": "テント(黒)に表示する",
+    "config.EnableAnimal_Black.description": "タープ付きキャンプテント(黒)に動物を表示します。",
+    "config.EnableAnimal_Blue.name": "テント(青)に表示する",
+    "config.EnableAnimal_Blue.description": "タープ付きキャンプテント(青)に動物を表示します。",
+    "config.EnableAnimal_Green.name": "テント(緑)に表示する",
+    "config.EnableAnimal_Green.description": "タープ付きキャンプテント(緑)に動物を表示します。",
+    "config.EnableAnimal_Purple.name": "テント(紫)に表示する",
+    "config.EnableAnimal_Purple.description": "タープ付きキャンプテント(紫)に動物を表示します。",
+    "config.EnableAnimal_Red.name": "テント(赤)に表示する",
+    "config.EnableAnimal_Red.description": "タープ付きキャンプテント(赤)に動物を表示します。",
+    "config.EnableAnimal_White.name": "テント(白)に表示する",
+    "config.EnableAnimal_White.description": "タープ付きキャンプテント(白)に動物を表示します。",
+    "config.EnableAnimal_RandomColor.name": "テント(ランダム)に表示する",
+    "config.EnableAnimal_RandomColor.description": "タープ付きキャンプテント(ランダム)に動物を表示します。",
+
+
+
+//★★★Name, Description, Text★★★
+
+    "CampingTentWithTarp_Name": "タープ付きキャンプテント(黄)",
+    "CampingTentWithTarp_Black_Name": "タープ付きキャンプテント(黒)",
+    "CampingTentWithTarp_Blue_Name": "タープ付きキャンプテント(青)",
+    "CampingTentWithTarp_Green_Name": "タープ付きキャンプテント(緑)",
+    "CampingTentWithTarp_Purple_Name": "タープ付きキャンプテント(紫)",
+    "CampingTentWithTarp_Red_Name": "タープ付きキャンプテント(赤)",
+    "CampingTentWithTarp_White_Name": "タープ付きキャンプテント(白)",
+    "CampingTentWithTarp_Description": "ひとやすみしよう！\n中の寝袋で一日を終えてセーブする事ができます。",
+
+    "CampingTentWithTarp_RandomColor_Name": "タープ付きキャンプテント(ランダム)",
+    "CampingTentWithTarp_RandomColor_Description": "ひとやすみしよう！\nなぜか毎朝起きると色が変わっている不思議なテント。",
+
+}

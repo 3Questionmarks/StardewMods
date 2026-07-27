@@ -1,0 +1,116 @@
+{
+	"Changes": [
+	//Load Map Textures
+	{
+		"Action": "Load",
+		"Target": "{{ModId}}_WorldMap",
+		"FromFile": "assets/Maps/WorldMapPngs/{{StyleDT}}/minimap_spring_{{BuildingDT}}_{{LocationDT}}_{{StyleDT}}.png",
+		"Priority": "Low",
+	},
+	{
+		"Action": "Load",
+		"Target": "{{ModId}}_WorldMap",
+		"FromFile": "assets/Maps/WorldMapPngs/{{StyleDT}}/minimap_summer_{{BuildingDT}}_{{LocationDT}}_{{StyleDT}}.png",
+		"Priority": "Low + 10",
+		"When": { 
+			"Season": "Summer" 
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "{{ModId}}_WorldMap",
+		"FromFile": "assets/Maps/WorldMapPngs/{{StyleDT}}/minimap_fall_{{BuildingDT}}_{{LocationDT}}_{{StyleDT}}.png",
+		"Priority": "Low + 10",
+		"When": { 
+			"Season": "Fall" 
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "{{ModId}}_WorldMap",
+		"FromFile": "assets/Maps/WorldMapPngs/{{StyleDT}}/minimap_winter_{{BuildingDT}}_{{LocationDT}}_{{StyleDT}}.png",
+		"Priority": "Low + 10",
+		"When": { 
+			"Season": "Winter" 
+		}
+	},
+	
+	
+	//Edit the Town minimap
+	
+	//Textures
+	{
+		"LogName": "Minimap House Textures - Above Blacksmith",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas", "Town", "Textures"],
+		"Entries": {
+				"{{ModId}}_TillyHouse": {
+					"Id": "{{ModId}}_TillyHouse",
+					"Texture": "{{ModId}}_WorldMap",
+					"SourceRect": { "X": 0, "Y": 0, "Width": 13, "Height": 12 },
+					"MapPixelArea": { "X": 212, "Y": 88, "Width": 13, "Height": 12 },
+				},
+		},
+		"When": {
+			"Tilly's House Location": "Above Blacksmith",
+		},
+	},
+	{
+		"LogName": "Minimap House Textures - Below Penny",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas", "Town", "Textures"],
+		"Entries": {
+				"{{ModId}}_TillyHouse": {
+					"Id": "{{ModId}}_TillyHouse",
+					"Texture": "{{ModId}}_WorldMap",
+					"SourceRect": { "X": 0, "Y": 0, "Width": 11, "Height": 14 },
+					"MapPixelArea": { "X": 199, "Y": 96, "Width": 11, "Height": 14 },
+				},
+		},
+		"When": {
+			"Tilly's House Location": "Below Penny",
+		},
+	},
+
+	{
+		"LogName": "Minimap House Tooltips",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas", "Town", "Tooltips" ],
+		"Entries": {
+			"{{ModId}}_TillyHouse": {
+				"Id": "{{ModId}}_TillyHouse",
+				"PixelArea": {
+					"X": "{{WorldMap X Coord TT}}", "Y": "{{WorldMap Y Coord TT}}", "Width": "{{WorldMap Width TT}}",	"Height": "{{WorldMap Height TT}}",
+					//"X": 202, "Y": 102, "Width": 7, "Height": 7,
+				},
+				"Text": "{{Building Name}}", 
+			}
+		},
+	},
+	{
+		"LogName": "Minimap House WorldPositions",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas", "Town", "WorldPositions" ],
+		"Entries": {
+			"{{ModId}}_TillyHouse": {
+				"Id": "{{ModId}}_TillyHouse",
+				"LocationContext": "Default",
+				"LocationName": "{{Location Name}}",
+				"MapPixelArea": {
+					"X": "{{WorldMap X Coord WP}}", "Y": "{{WorldMap Y Coord WP}}", "Width": "{{WorldMap Width WP}}",	"Height": "{{WorldMap Height WP}}",
+					//"X": 203, "Y": 102, "Width": 3, "Height": 5,
+				},
+				"ScrollText": "{{Scroll Name}}",
+			},
+		},
+	},
+	
+	
+	
+	]
+	
+}

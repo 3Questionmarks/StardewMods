@@ -6,17 +6,38 @@
          "Target": "Data/Fish",
          "Entries": {
 		 "Aimon111.WitchSwampOverhaulCP_Swamp_Leech": "Swamp Leech/25/mixed/4/10/600 2600/spring summer fall winter/both/-1/1/.30/.1/0/false",
-		 "Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab": "Giant Horsehoe Crab/100/dart/15/50/600 2600/spring summer fall winter/both/-1/1/.2/.1/8/false",
+		 "Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab": "Giant Horsehoe Crab/100/dart/15/50/600 2600/spring summer fall winter/both/-1/1/.3/.1/6/false",
 		  "Aimon111.WitchSwampOverhaulCP_Void_Minnow": "Void Minnow/15/mixed/1/3/600 2600/spring summer fall winter/both/-1/1/.45/.1/0/false",
-		  "Aimon111.WitchSwampOverhaulCP_Purple_Algae": "Purple Algae/5/sinker/5/30/600 2600/spring summer fall winter/both/-1/0/.3/0/0/false",
+		  //"Aimon111.WitchSwampOverhaulCP_Purple_Algae": "Purple Algae/5/floater/5/30/600 2600/spring summer fall winter/both/-1/0/.3/0/0/false",
+		  "Aimon111.WitchSwampOverhaulCP_Spotted_Crayfish": "Spotted Crayfish/trap/.35/682 .4/swamp/1/8/false",
+		  "Aimon111.WitchSwampOverhaulCP_Water_Bug": "Water Bug/trap/.35/682 .4/swamp/1/8/false",
+		  "Aimon111.WitchSwampOverhaulCP_Swamp_Slug": "Swamp Slug/trap/.35/682 .4/swamp/1/8/false",
 		  }
       },
 
-		 
 		
-  
- 
-		 
+    { //WitchSwamp FishAreas 
+			"LogName": "Swamp FishAreas",
+	"Action": "EditData",
+	"Target": "Data/Locations",
+	  "TargetField":  [ "WitchSwamp", "FishAreas" ],  
+            "Entries": {
+   "Ponds": {
+        "DisplayName": null,
+        "Position": {
+          "X": 0,
+          "Y": 0,
+          "Width": 40,
+          "Height": 57
+        },
+        "CrabPotFishTypes": [
+          "swamp", 
+	
+        ],
+        "CrabPotJunkChance": 0.3
+			},
+		},
+	 },	 
 	 
 		 
 		 
@@ -26,10 +47,29 @@
 	"Target": "Data/Locations",
 	  "TargetField":  [ "WitchSwamp", "Fish" ],  //, "Fish" 
             "Entries": {
+			"Aimon111.GreenAlgae": {
+					"ID": "(O)153",
+					"ItemId": "(O)153",
+					"Chance": 0.001,
+					"CatchLimit": 1,
+					 "MinFishingLevel": 0,
+					"MinDistanceFromShore": 20,
+					"MaxDistanceFromShore": 20,
+						},
+						"Aimon111.WitchSwampOverhaulCP_stone": {
+					"ID": "(O)390",
+					"ItemId": "(O)390",
+					"Chance": 0.1,
+					"CatchLimit": -1,
+					 "MinFishingLevel": 0,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": 4,
+						},
+						
 				"Aimon111.WitchSwampOverhaulCP_Swamp_Leech": {
 					"ID": "Aimon111.WitchSwampOverhaulCP_Swamp_Leech",
 					"ItemId": "Aimon111.WitchSwampOverhaulCP_Swamp_Leech",
-					"Chance": 1.0,
+					"Chance": 0.8,
 					"CatchLimit": -1,
 					 "MinFishingLevel": 0,
 					"MinDistanceFromShore": 0,
@@ -41,7 +81,7 @@
 					"CatchLimit": -1,
 					"Chance": 1.0,
 					 "MinFishingLevel": 0,
-					"MinDistanceFromShore": 0,
+					"MinDistanceFromShore": 1,
 					"MaxDistanceFromShore": -1,
 						},
 				"Aimon111.WitchSwampOverhaulCP_Purple_Algae": {
@@ -57,33 +97,17 @@
 						"ID": "Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab",
 						"ItemId": "Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab",
 						"Chance": 0.3,
-						 "MinFishingLevel": 8,
-						"MinDistanceFromShore": 1,
+						 "MinFishingLevel": 6,
+						"MinDistanceFromShore": 3,
 						"MaxDistanceFromShore": -1,
 						"CatchLimit": 1,
 						"CuriosityLureBuff": 0.6,
 						"IsBossFish": true,
-						}
+						},
 					}
 			
 		},
-		  
-		 
 
-	 // {   
-	 //"Action": "EditData",
-	//"Target": "Data/ObjectContextTags",
-	// "Entries": { 
-	//	 "Void Minnow": "fish_void_minnow, fish_swamp, color_dark_purple, season_all, fish_pond",
-	//	 "Swamp Leech": "fish_swamp_leech, fish_swamp, color_black, season_all, fish_pond",
-	//	 "Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab": "fish_giant_horsehoe_crab, fish_swamp, color_brown, season_all, fish_pond",
-	//	 "Giant Horsehoe Crab": "fish_giant_horsehoe_crab, fish_swamp, color_brown, season_all, fish_pond",
-	//	 "Purple Algae": "fish_purple_algae, fish_swamp, color_purple, season_all, fish_pond",
-	//	 },
-	//	},
-		
-		
-		
 		//fish pond data
 		{ //purple algae
       "Action": "EditData",
@@ -93,7 +117,7 @@
         "Id": "(O)Aimon111.WitchSwampOverhaulCP_Purple_Algae",
 		"Precedence": 0,
           "RequiredTags": [
-            "fish_purple_algae" 
+           "algae_item",
           ],
           "SpawnTime": -1,
           "ProducedItems": [
@@ -238,6 +262,54 @@
         }
       }
     },
+	{ //Swamp slug
+      "Action": "EditData",
+      "Target": "Data/FishPondData", 
+      "Entries": {
+         "Aimon111.WitchSwampOverhaulCP_Swamp_Slug": {
+        "Id": "(O)Aimon111.WitchSwampOverhaulCP_Swamp_Slug",
+		"Precedence": 0,
+          "RequiredTags": [
+            "fish_swampslug" 
+          ],
+          "SpawnTime": -1,
+          "ProducedItems": [
+         
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.40,
+              "ItemID": "(O)766", 
+              "MinQuantity": 7,
+              "MaxQuantity": 10
+            },
+			 {
+              "RequiredPopulation": 3,
+                 "Chance": 1.0,
+              "ItemID": "(O)766", 
+              "MinQuantity": 3,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 1.0,
+              "ItemID": "(O)812", //812 is roe
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+           
+            "3": [
+              "(O)157 3"  
+            ],
+          
+            "5": [
+              "(O)Aimon111.WitchSwampOverhaulCP_Purple_Algae 3"  
+            ]
+          }
+        }
+      }
+    },
 	{ //GIANT HORSEHOE CRAB
 	 "LogName": "horsehoe crap fishpond",
       "Action": "EditData",
@@ -304,6 +376,36 @@
 	}
      }
     },
+	{
+   "Action": "EditData",
+   "Target": "Data/FishPondData",
+   "MoveEntries": [
+     {
+       "ID": "(O)Aimon111.WitchSwampOverhaulCP_Water_Bug",
+       "ToPosition": "Top"
+     }
+   ]
+ },
+ {
+   "Action": "EditData",
+   "Target": "Data/FishPondData",
+   "MoveEntries": [
+     {
+       "ID": "(O)Aimon111.WitchSwampOverhaulCP_Swamp_Slug",
+       "ToPosition": "Top"
+     }
+   ]
+ },
+ {
+   "Action": "EditData",
+   "Target": "Data/FishPondData",
+   "MoveEntries": [
+     {
+       "ID": "(O)Aimon111.WitchSwampOverhaulCP_Spotted_Crayfish",
+       "ToPosition": "Top"
+     }
+   ]
+ },
 	 {
    "Action": "EditData",
    "Target": "Data/FishPondData",
@@ -354,7 +456,10 @@
   "Entries": {
     "Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab": "160/ground",
 	"Aimon111.WitchSwampOverhaulCP_Swamp_Leech": "161/eel",
-	  "Aimon111.WitchSwampOverhaulCP_Void_Minnow": "162/fish"
+	  "Aimon111.WitchSwampOverhaulCP_Void_Minnow": "162/fish",
+	   "Aimon111.WitchSwampOverhaulCP_Spotted_Crayfish": "163/ground",
+	    "Aimon111.WitchSwampOverhaulCP_Water_Bug": "164/ground",
+		 "Aimon111.WitchSwampOverhaulCP_Swamp_Slug": "165/ground",
   },
 },
 
@@ -364,7 +469,7 @@
 		"LogName": "Fish Image Aquarium",
 		    "Target": "LooseSprites/AquariumFish",
 		"FromFile": "assets/Tilesheets/aquariumfish/aquariumdataDistantLands.png",
-        "ToArea": { "X": 0, "Y": 384, "Width": 72, "Height": 48 },
+        "ToArea": { "X": 0, "Y": 384, "Width": 144, "Height": 48 },
 	   },
 	 
 	 

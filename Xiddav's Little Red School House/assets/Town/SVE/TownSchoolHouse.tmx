@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="27" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="9">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="9">
  <tileset firstgid="1" name="Landscape" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source=".spring_outdoorsTileSheet.png" width="400" height="1264"/>
   <tile id="150">
@@ -1512,7 +1512,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="4344" name="zzzXiddav" tilewidth="16" tileheight="16" tilecount="1140" columns="30">
+ <tileset firstgid="4344" name="ZZZXiddav" tilewidth="16" tileheight="16" tilecount="1140" columns="30">
   <image source=".spring_Xiddav.png" width="480" height="608"/>
   <tile id="339">
    <properties>
@@ -1784,45 +1784,45 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="5484" name="z_SVEbuildingShadow" tilewidth="16" tileheight="16" tilecount="600" columns="24">
+ <tileset firstgid="5484" name="z_SVEbuildingShadow" tilewidth="16" tileheight="16" tilecount="0" columns="24">
   <image source=".z_SVEbuildingShadow.png" width="384" height="400"/>
  </tileset>
- <tileset firstgid="6084" name="zspring_beach" tilewidth="16" tileheight="16" tilecount="527" columns="17">
+ <tileset firstgid="5484" name="zspring_beach" tilewidth="16" tileheight="16" tilecount="0" columns="17">
   <image source=".spring_beach.png" width="272" height="496"/>
  </tileset>
- <tileset firstgid="6611" name="zspring_z_extras" tilewidth="16" tileheight="16" tilecount="6400" columns="25">
+ <tileset firstgid="5484" name="zspring_z_extras" tilewidth="16" tileheight="16" tilecount="0" columns="25">
   <image source=".spring_z_extras.png" width="400" height="4096"/>
  </tileset>
- <tileset firstgid="13011" name="v16_Waterfalls" tilewidth="16" tileheight="16" tilecount="900" columns="36">
+ <tileset firstgid="5484" name="v16_Waterfalls" tilewidth="16" tileheight="16" tilecount="900" columns="36">
   <image source=".spring_Waterfalls.png" width="576" height="400"/>
  </tileset>
- <tileset firstgid="13911" name="v16_landscape2" tilewidth="16" tileheight="16" tilecount="1120" columns="16">
+ <tileset firstgid="6384" name="v16_landscape2" tilewidth="16" tileheight="16" tilecount="1120" columns="16">
   <image source=".spring_outdoorsTileSheet2.png" width="256" height="1120"/>
  </tileset>
- <tileset firstgid="15031" name="v16_Shadows" tilewidth="16" tileheight="16" tilecount="1120" columns="16">
-  <image source=".spring_outdoorsTileSheet2.png" width="256" height="1120"/>
+ <tileset firstgid="7504" name="v16_Shadows" tilewidth="16" tileheight="16" tilecount="475" columns="19">
+  <image source=".spring_Shadows.png" width="304" height="400"/>
  </tileset>
  <layer id="1" name="Back" width="27" height="22">
   <data encoding="base64" compression="zlib">
-   eJytlb9uE0EQxnesSJEgFXKSMvAAFM4LkBSJI4sHCFXuAqROCY7vqCmdP9gp8ghAJN4BCXgBaiRKajpgRveN9vPYRImTkz7d3ezu/HZmZ3e7Cyl1SVuqImg72ON/qaolpX1VXzVUHav2VIWqB0WOjRurvZL83oH9HWz+fyCNzTRSlSoBSwJrX6Y5FbW9Djol3+6f+3lMl6nRq9AWOWNqs/7ua1nyWPteUa2i3zExRimzxvRt2lqYnGuBMfb+hbwM8c2+Rv/xF8VszttT5GQZvlcpvkO52ud1VCHvxkmIg3MieL+9A9Yb5M3n3w+MSrK4ZudRjVg8nnn9xD3pdntmsYZUl3HsVfI1d12kZg8WYHm/Gjks0Y/rnx/79737974alq4vWWrG1TI5Jz8PImuAvh3Vmo59eAM9Uj2fwaok5/V3O6Xv91L63G7OGz8n5mENKC+eZ2a9X0zpg+rjYj4z+rdg1djHXdWONHtgFutc5/FF9VX1RMdu3ECbqjPJtcH1wTbm/VBOr5XSJ33/UbUl3x0d9F+nsT28O8h9Td99Yq3DFlnO8bOwDdbFg8woiO32UibvuMs0GZe129lpHMvfN9XPcN4ay9byFP6t3l5ALzFn4x3B7xHWaijTLPdrMR22Gpb5Z9l8nDdAjR2gbgvJ91KMwVkd2Ixja8L5Ow88az9BLs9k+h71O85ZHpuzHhOL87eNmvW6HROX72Fn8LycFWuDc2gxtZC/PdSXrUFJscVYbdyungPPSP8ANT4AzQ==
+   eJytlM8uQ1EQxuc0kiZ0Ja0uLPAAFrwAFlQaD8BKS2JtSbnX2rJVbi26skYTTyHWXkBi6RUwkzuT+3X6B40mv9xz55wz35mvc25liqgCbDI1x5aL+/c6EweiA6bBNJkWs8/UmKridWRfh+NRyJ7bGr/RmL0fhTQmJEydCaoVnNZBGNSJYO7U0Ybclh/XWU09Sjlxc16nA3Oy3nKVQrZXxnNMWde1QCOhTKsDY2Fzqv+sNd0jzw/1paljzJWMyOdBbfRtRz0pae4y1Hccxuf8DZH6LjqkdaAnQZ+X/6B1ob7Z+RtOIwoZ2LOTEGstVs+kefyd/EmrCX3p947D/nOjS+kd9Oti9bCu67D/8Sfvdne/ZjhQ+D2hkO6LQ/+ZRKdLg1p4dxd47+IfWGIOh2jh+RG8/5NonUNe8zlS/e5s6ut9nugxn/XtM02uFes9rjDbIb0D+M1GLdG54zOs8d71P7DBXIesN7A/MCYaD6r3xuNqjuiJn59MUe9JcQiJzsu3fkXPHsO4AVqrGvNapiPxW+rP36FBTflet7UO9KtH/XXJvOmIfy/Mu/ve+tytIWOp7Uzznul/1QyDvWF5pabjXKo1yi/B12q1nboaEqgLfZXzoX8+n8xfjdG3NaZltZnWsupj/0lNW9qz1rfD/iMEz2VavjesVln7Ok+UU//E+yp4PKov5H13mmgP+AYyK/af
   </data>
  </layer>
- <layer id="11" name="Back 2" width="27" height="22">
+ <layer id="11" name="Back2" width="27" height="22">
   <properties>
    <property name="Draw" value="Back"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo4A64Aoj9cxyJGDWWyraFUXALDYm6tlVTMAueSrahQv8E2Rg+C9Ie3tAgF720Bp8FUHlHxXBro5aQEiUgUEJiJfR2B50sFSIvvaNglFAClhBxfS5hEyzlmHRBwCz7AwG
+   eJxjYBgFgxksExpoFxAPrjBSzyxHAma9paJdUQTMYmOinl3FBOySp6JduMA/QQaG/4K0twcE6GUPrcFXEQaG70D8DIi7gPioCO3s0gXmeSFRBgYlIF4GtEdvCJUBQxksoUE4D6XyeyiAFVQMz5VEmoVuJ7Z0AgCYVxFU
   </data>
  </layer>
- <layer id="13" name="Back 3" width="27" height="22">
+ <layer id="13" name="Back3" width="27" height="22">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFgxk8ERpoF4yCUTAKRgo4PlreUBUcGQ1PqgJC4UlK+qVm3QoA5TgFSw==
+   eJxjYBgFgxoID3LzaAQcGelnVxQd7Sqmo12jYBSMAtzguBDt7ThCBzuIAUcHiTsoBccI+IOUOCU3/p9g0QcAq2gHPg==
   </data>
  </layer>
- <layer id="14" name="Back 4" width="27" height="22">
+ <layer id="14" name="Back4" width="27" height="22">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFgxk8EqKueUzC1DVvFIyCUTB8wGMqlzeDGYyWheQD5hEcdtjSDQBNrQI/
+   eJxjYBgFgxk8EqKueUzC1DWPVsCRkX52RdHRrmI62jUKRsEowA2Y6VAWUrv8hgMS3f6Yyu6gR9iRAxhJcBfRfkBTh60OBQAnGQSV
   </data>
  </layer>
  <objectgroup id="2" name="Back"/>

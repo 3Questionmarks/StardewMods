@@ -1,0 +1,51 @@
+{
+	"Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Sunberry)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Sunberry",
+      "FromFile": "assets/Maps/Sunberry Village/Sunberry_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Sunberry.GF)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Sunberry.GF",
+      "FromFile": "assets/Maps/Sunberry Village/Sunberry.GF_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+//Boat Journey
+    {	
+		  "LogName": "Remapping (Earthy) Recolor Sunberry Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap",
+		  "FromFile": "assets/Maps/Sunberry Village/SunberryBJ_{{season}}_{{RMP.Source}}.png",
+		  "ToArea": {"X": 274, "Y": 0, "Width": 183, "Height": 92},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			  "HasMod: |contains=skellady.SBVCP": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {	
+		  "LogName": "Remapping (Earthy) Recolor Sunberry Boat Journey SVE",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Sunberry Village/SunberryBJ_{{season}}_{{RMP.Source}}.png",
+		  "ToArea": {"X": 274, "Y": 0, "Width": 130, "Height": 92},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			  "HasMod: |contains=skellady.SBVCP": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  }
+  ]
+}

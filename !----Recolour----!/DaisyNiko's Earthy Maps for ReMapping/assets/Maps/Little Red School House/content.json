@@ -1,0 +1,24 @@
+{
+	"Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Red.School.Novo)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Red.School.Novo",
+      "FromFile": "assets/Maps/Little Red School House/Red.School.Novo_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Red.School.Velho)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Red.School.Velho",
+      "FromFile": "assets/Maps/Little Red School House/Red.School.Velho_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

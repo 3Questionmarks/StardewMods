@@ -1,0 +1,17 @@
+﻿{
+	"Name": "Custom Companions Sirona NPC",
+	"Author": "dedpeech",
+	"Version": "1.0.2",
+	"Description": "adds seal to beach sometimes",
+	"UniqueID": "dedpeech.sironaCC",
+	"Dependencies":[
+		{   
+			"UniqueID": "dedpeech.sirona",
+			"IsRequired": true
+		}
+	],
+	"ContentPackFor": {
+		"UniqueID": "PeacefulEnd.CustomCompanions",
+		"MinimumVersion": "1.4.3"
+  }
+}

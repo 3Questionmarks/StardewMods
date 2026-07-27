@@ -1,0 +1,41 @@
+{
+	"Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Cape.Stardew)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Cape.Stardew",
+      "FromFile": "assets/Maps/Cape Stardew/Cape.Stardew_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+//Boat Journey
+    {	
+		  "LogName": "Remapping (Earthy) Recolor Cape Stardew Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap",
+		  "FromFile": "assets/Maps/Cape Stardew/Cape.Stardew_BJ_{{season}}_Vanilla.png", 
+		  "ToArea": {"X": 20, "Y": 0, "Width": 132, "Height": 101},	
+		  "PatchMode": "Overlay",
+		  "When": { 
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			  "HasMod: |contains=dreamy.kickitspot": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {	
+		  "LogName": "Remapping (Earthy) Recolor Cape Stardew Boat Journey SVE",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap",
+		  "FromFile": "assets/Maps/Cape Stardew/Cape.Stardew_BJ_{{season}}_SVE.png", 
+		  "ToArea": {"X": 0, "Y": 50, "Width": 157, "Height": 152},
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			  "HasMod: |contains=dreamy.kickitspot": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  }
+  ]
+}

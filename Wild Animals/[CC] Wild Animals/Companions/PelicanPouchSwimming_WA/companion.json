@@ -530,10 +530,10 @@
 	"TimeBetweenSound": 2000
 	},
 	{
-	"SoundName": "seagulls",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.1
+	"SoundName": "Pelican_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.2
 	}
 ]  
 }

@@ -1,0 +1,35 @@
+{
+	"Changes": [
+	{
+	"LogName": "PGHE Triggers",
+	"Action": "EditData",
+	"Target": "Data/TriggerActions",
+	"Entries": {
+		"{{ModId}}_PamGusMarriedLetter": {
+			"Id": "{{ModId}}_PamGusMarriedLetter",
+			"Trigger": "DayEnding",
+			"Condition": "ANY \"PLAYER_HAS_SEEN_EVENT Current teainthesunroom.PamGusHappyEnding_HeartEvent.10.3a\" \"PLAYER_HAS_SEEN_EVENT Current teainthesunroom.PamGusHappyEnding_HeartEvent.10.3b\"",
+			"Actions": [
+				"AddMail Current PamGusMarriedLetter tomorrow"
+				]
+			},
+		"{{ModId}}_PamYobaLetter": {
+			"Id": "{{ModId}}_PamYobaLetter",
+			"Trigger": "DayEnding",
+			"Condition": "PLAYER_HAS_SEEN_EVENT Current 503180\"",
+			"Actions": [
+				"AddMail Current PamYobaLetter"
+				]
+			},
+		"{{ModId}}_PamBusChangedLetter": {
+			"Id": "{{ModId}}_PamBusChangedLetter",
+			"Trigger": "DayStarted",
+			"Condition": "PLAYER_HAS_MAIL Current PamYobaLetter\"",
+			"Actions": [
+				"AddMail Current PamBusChangedLetter tomorrow"
+				]
+			}
+ 		 }
+	     }
+	]
+}

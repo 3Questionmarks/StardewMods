@@ -1,0 +1,138 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":
+        {
+    //Sam 1-Heart Event: "Rocket Science"
+    "{{ModId}}_E01/F/f Sam 250/t 1100 1400/w sunny":"
+    playful/
+    {{Miihau.SamEE.E01.Starting}}
+    skippable/
+    addConversationTopic {{ModId}}_Topic_E01/
+    showFrame Sam 34/
+    move farmer 7 0 1 true/
+    pause 4000/
+    playSound openBox/
+    pause 400/
+    showFrame Sam 4/
+    faceDirection Sam 1/
+    pause 100/
+    textAboveHead Sam \"{{i18n:E01.001}}\"/
+    speed Sam 4/
+    move Sam -2 0 1/
+    pause 1400/
+    speak Vincent \"{{i18n:E01.002}}\"/
+    pause 200/
+    speak Sam \"{{i18n:E01.003}}\"/
+    pause 200/
+    move farmer 0 -1 1/
+    move farmer 1 0 1/
+    emote farmer {{?}}/
+    pause 100/
+    faceDirection Sam 2/
+    faceDirection Sam 3/
+    pause 200/
+    speak Sam \"{{i18n:E01.004}}\"/
+    pause 200/
+    faceDirection Vincent 0/
+    jump Vincent 3/
+    pause 200/
+    jump Vincent 3/
+    pause 200/
+    jump Vincent 3/
+    pause 200/
+    jump Vincent 3/
+    pause 200/
+    speak Vincent \"{{i18n:E01.005}}\"/
+    pause 100/
+    speak Sam \"{{i18n:E01.006}}\"/
+    pause 100/
+    shake {{ModId}}_Rocket 6000/
+    pause 200/
+    emote Sam {{!}} true/
+    pause 400/
+    faceDirection Sam 1/
+    playSound robotBLASTOFF/
+    textAboveHead Sam \"{{i18n:E01.007}}\"/
+    advancedMove farmer false 0 -1 1 0 1 1000/
+    jump Vincent 4/
+    faceDirection Vincent 1/
+    animate {{ModId}}_Rocket false false 150 0 0 0 0 0 0 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20/
+    pause 5000/
+    playSound clubSmash/
+    stopAdvancedMoves/
+    speed Vincent 5/
+    move Vincent 1 0 1/
+    stopAnimation {{ModId}}_Rocket 20/
+    speak Vincent \"{{i18n:E01.008}}\"/
+    speak Sam \"{{i18n:E01.009}}\"/
+    faceDirection Vincent 0/
+    pause 100/
+    faceDirection Sam 2/
+    speak Vincent \"{{i18n:E01.010}}\"/
+    speak Sam \"{{i18n:E01.011}}\"/
+    textAboveHead Vincent \"{{i18n:E01.012}}\"/
+    speed Vincent 4/
+    move Vincent 4 0 0/
+    pause 400/
+    advancedMove farmer false 0 1 1 1000/
+    pause 600/
+    emote farmer {{happy}} true/
+    pause 200/
+    faceDirection Sam 3/
+    pause 400/
+    stopAdvancedMoves/
+    speak Sam \"{{i18n:E01.013}}\"/
+    pause 500/
+    textAboveHead Vincent \"{{i18n:E01.014}}\"/
+    speed Vincent 4/
+    move Vincent -4 0 0/
+    pause 500/
+    faceDirection Sam 2/
+    pause 200/
+    speak Vincent \"{{i18n:E01.015}}\"/
+    pause 300/
+    speak Sam \"{{i18n:E01.016}}\"/
+    pause 200/
+    emote Vincent {{happy}}/
+    pause 300/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    end/
+    ",
+    
+        }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Jas",
+        "Entries":{
+            "{{ModId}}_Topic_E01":"{{i18n:E01.017}}",
+            }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Penny",
+        "Entries":{
+            "{{ModId}}_Topic_E01":"{{i18n:E01.018}}",
+            }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Vincent",
+        "Entries":{
+            "{{ModId}}_Topic_E01":"{{i18n:E01.019}}",
+            }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Sam",
+        "Entries":{
+            "{{ModId}}_Topic_E01":"{{i18n:E01.020}}",
+            }
+    },
+    ]
+}

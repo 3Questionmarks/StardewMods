@@ -1,7 +1,7 @@
 ﻿{
   "Name": "Polyamory Sweet Bed",
   "Author": "ApryllForever",
-  "Version": "1.2.5",
+  "Version": "1.6.1",
   "Description": "Bed part of the Polyamory Sweet!",
   "UniqueID": "ApryllForever.PolyamorySweetBed",
   "EntryDll": "PolyamorySweetBed.dll",
@@ -11,7 +11,7 @@
   "Dependencies": [
     {
       "UniqueID": "spacechase0.SpaceCore",
-      "IsRequired": true
+      "IsRequired": false
     },
     {
       "UniqueID": "Pathoschild.ContentPatcher",

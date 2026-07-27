@@ -1,0 +1,12 @@
+{
+  "Name": "Sandy Dialogue Expansion",
+  "Author": "Godvid",
+  "Version": "1.0.1",
+  "Description": "adds new dialogues to make sandy more inmersive.",
+  "UniqueID": "Godvid.SandyDialogues",
+  "MinimumApiVersion": "3.18.0",
+  "UpdateKeys": ["Nexus:45701"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

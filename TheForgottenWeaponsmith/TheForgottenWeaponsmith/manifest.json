@@ -1,0 +1,17 @@
+{
+  "Name": "The Forgotten Weaponsmith",
+  "Author": "TimBukTwo",
+  "Version": "1.1.2",
+  "Description": "Donate weapons to a robot so he can learn how to make better weapons you can buy.",
+  "UniqueID": "TimBukTwo.TheForgottenWeaponsmith",
+  "EntryDll": "TheForgottenWeaponsmith.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": ["Nexus:48058"],
+
+  "Dependencies": [
+    {
+        "UniqueID": "Pathoschild.ContentPatcher",
+        "IsRequired": true
+    }
+  ]
+}

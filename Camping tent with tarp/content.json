@@ -1,0 +1,838 @@
+{
+  "Format": "2.8.0",
+
+
+    "ConfigSchema": {
+
+      "EnableThisMod": {
+        "AllowValues": "true, false",
+        "Default": "true"
+      },
+
+      "EntranceSleep": {//入り口で寝れる
+        "AllowValues": "true, false",
+        "Default": "false"
+      },
+
+      "SeasonalAppearance": {//季節で見た目を変化させる
+        "AllowValues": "true, false",
+        "Default": "true"
+      },
+      "TentShadowTyep": {//テントの影のタイプ
+        "AllowValues": "Brown, Brown(Thinner), Black, Black(Thinner)",
+        "Default": "Brown"
+      },
+      "InDoorColor": {//テントの中の色変更
+        "AllowValues": "Vanilla(Yellow), Black, Blue, Green, Purple, Red, White",
+        "Default": "Vanilla(Yellow)"
+      },
+
+      "AnimalsDrawPosition": {//動物の表示位置
+        "AllowValues": "OnTheTarp, OnTheTent",
+        "Default": "OnTheTarp",
+        "Section": "DisplayAnimalsSetting"
+      },
+      "EnableAnimal_Vanilla(Yellow)": {//動物アニメーション表示
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "DisplayAnimalsSetting"
+      },
+      "EnableAnimal_Black": {//動物アニメーション表示
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "DisplayAnimalsSetting"
+      },
+      "EnableAnimal_Blue": {//動物アニメーション表示
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "DisplayAnimalsSetting"
+      },
+      "EnableAnimal_Green": {//動物アニメーション表示
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "DisplayAnimalsSetting"
+      },
+      "EnableAnimal_Purple": {//動物アニメーション表示
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "DisplayAnimalsSetting"
+      },
+      "EnableAnimal_Red": {//動物アニメーション表示
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "DisplayAnimalsSetting"
+      },
+      "EnableAnimal_White": {//動物アニメーション表示
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "DisplayAnimalsSetting"
+      },
+      "EnableAnimal_RandomColor": {//動物アニメーション表示
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "DisplayAnimalsSetting"
+      },
+
+      "FreeToBuild": {//建設費用素材無し
+        "AllowValues": "true,false",
+        "Default": "false"
+      },
+      "ImmediateBuildFinish": {//建設即終了
+        "AllowValues": "true,false",
+        "Default": "false"
+      }
+
+    },//▼"ConfigSchema"の終了▼
+
+
+    "DynamicTokens": [
+
+    //●以下、「入り口で寝る」用トークン
+      {
+        "Name": "DT_EntranceSleep_Name",
+        "Value": "Bed",
+        "When": {
+          "EntranceSleep": "false"
+        }
+      },
+      {
+        "Name": "DT_EntranceSleep_Value",
+        "Value": "T",
+        "When": {
+          "EntranceSleep": "false"
+        }
+      },
+      {
+        "Name": "DT_EntranceSleep_Name",
+        "Value": "TouchAction",
+        "When": {
+          "EntranceSleep": "true"
+        }
+      },
+      {
+        "Name": "DT_EntranceSleep_Value",
+        "Value": "Sleep",
+        "When": {
+          "EntranceSleep": "true"
+        }
+      },
+
+    //●以下、ランダムテントカラー用トークン
+      {
+        "Name": "RandomColor",
+        "Value": "{{Random: Vanilla(Yellow), Black, Blue, Green, Purple, Red, White}}"
+      },
+
+    //●以下、動物テクスチャランダム化用トークン
+      {
+        "Name": "R-BirdColorName",
+        "Value": "{{Random: Blue, Brown, Purple, Red}}"
+      },
+      {
+        "Name": "R-RabbitColorName",
+        "Value": "{{Random: Brown, White}}"
+      },
+
+    //●以下、アニメーション用 "DrawLayers" 内で使用するトークン
+      {
+        "Name": "SourceRect_X",//ソースX位置(シーズンオフセのズレ修正用)
+        "Value": "0",
+        "When": {
+          "SeasonalAppearance": "true",
+          "Season": "Spring"
+        }
+      },
+      {
+        "Name": "SourceRect_X",//ソースX位置(シーズンオフセのズレ修正用)
+        "Value": "-96",
+        "When": {
+          "SeasonalAppearance": "true",
+          "Season": "Summer"
+        }
+      },
+      {
+        "Name": "SourceRect_X",//ソースX位置(シーズンオフセのズレ修正用)
+        "Value": "-192",
+        "When": {
+          "SeasonalAppearance": "true",
+          "Season": "Fall"
+        }
+      },
+      {
+        "Name": "SourceRect_X",//ソースX位置(シーズンオフセのズレ修正用)
+        "Value": "-288",
+        "When": {
+          "SeasonalAppearance": "true",
+          "Season": "Winter"
+        }
+      },
+      {
+        "Name": "SourceRect_X",//ソースX位置(SA無し時)
+        "Value": "0",
+        "When": {
+          "SeasonalAppearance": "false"
+        }
+      },
+      {
+        "Name": "SourceRect_Width",//ソース横幅(鳥、カエル用)
+        "Value": "16",
+        "When": {
+          "Season": "Spring, Summer, Fall"
+        }
+      },
+      {
+        "Name": "SourceRect_Width",//ソース横幅(ウサギ用)
+        "Value": "32",
+        "When": {
+          "Season": "Winter"
+        }
+      },
+      {
+        "Name": "AnimalsDrawPosition_X",//動物表示位置[X](春夏のタープ時の鳥、カエル共有)
+        "Value": "60",
+        "When": {
+          "AnimalsDrawPosition": "OnTheTarp",
+          "Season": "Spring, Summer"
+        }
+      },
+      {
+        "Name": "AnimalsDrawPosition_Y",//動物表示位置[Y](春のタープ時の鳥、カエル共有)
+        "Value": "15",
+        "When": {
+          "AnimalsDrawPosition": "OnTheTarp",
+          "Season": "Spring"
+        }
+      },
+      {
+        "Name": "AnimalsDrawPosition_Y",//動物表示位置[Y](夏のタープ時の鳥、カエル共有)
+        "Value": "5",
+        "When": {
+          "AnimalsDrawPosition": "OnTheTarp",
+          "Season": "Summer"
+        }
+      },
+      {
+        "Name": "AnimalsDrawPosition_X",//動物表示位置[X](秋のタープ時の鳥、カエル共有)
+        "Value": "70",
+        "When": {
+          "AnimalsDrawPosition": "OnTheTarp",
+          "Season": "Fall"
+        }
+      },
+      {
+        "Name": "AnimalsDrawPosition_Y",//動物表示位置[Y](秋のタープ時の鳥)
+        "Value": "-2",
+        "When": {
+          "AnimalsDrawPosition": "OnTheTarp",
+          "Season": "Fall",
+          "Weather |contains=Rain, Storm, GreenRain": "false"
+        }
+      },
+      {
+        "Name": "AnimalsDrawPosition_Y",//動物表示位置[Y](秋のタープ時のカエル)
+        "Value": "8",
+        "When": {
+          "AnimalsDrawPosition": "OnTheTarp",
+          "Season": "Fall",
+          "Weather": "Rain, Storm, GreenRain"
+        }
+      },
+      {
+        "Name": "AnimalsDrawPosition_X",//動物表示位置(ウサギ用(設定共有でタープのみ))
+        "Value": "55",
+        "When": {
+          "Season": "Winter"
+        }
+      },
+      {
+        "Name": "AnimalsDrawPosition_Y",//動物表示位置(ウサギ用(設定共有でタープのみ))
+        "Value": "16",
+        "When": {
+          "Season": "Winter"
+        }
+      },
+      {
+        "Name": "AnimalsDrawPosition_X",//動物表示位置[X](春夏秋のテント時の鳥、カエル共有)
+        "Value": "16",
+        "When": {
+          "AnimalsDrawPosition": "OnTheTent",
+          "Season": "Spring, Summer, Fall"
+        }
+      },
+      {
+        "Name": "AnimalsDrawPosition_Y",//動物表示位置[Y](春のテント時の鳥、カエル共有)
+        "Value": "8",
+        "When": {
+          "AnimalsDrawPosition": "OnTheTent",
+          "Season": "Spring"
+        }
+      },
+      {
+        "Name": "AnimalsDrawPosition_Y",//動物表示位置[Y](夏のテント時の鳥、カエル共有)
+        "Value": "-3",
+        "When": {
+          "AnimalsDrawPosition": "OnTheTent",
+          "Season": "Summer"
+        }
+      },
+      {
+        "Name": "AnimalsDrawPosition_Y",//動物表示位置[Y](秋のテント時の鳥、カエル共有)
+        "Value": "-16",
+        "When": {
+          "AnimalsDrawPosition": "OnTheTent",
+          "Season": "Fall"
+        }
+      },
+      {
+        "Name": "FrameDuration_Number",//フレーム表示時間(鳥、カエル用)
+        "Value": "100",
+        "When": {
+          "Season": "Spring, Summer, Fall"
+        }
+      },
+      {
+        "Name": "FrameDuration_Number",//フレーム表示時間(ウサギ用)
+        "Value": "50",
+        "When": {
+          "Season": "Winter"
+        }
+      },
+      {
+        "Name": "FrameCount_Number",//フレーム枚数(鳥用)
+        "Value": "342",
+        "When": {
+          "Season": "Spring, Summer, Fall",
+          "Weather |contains=Rain, Storm, GreenRain": "false"
+        }
+      },
+      {
+        "Name": "FrameCount_Number",//フレーム枚数(カエル用)
+        "Value": "120",
+        "When": {
+          "Season": "Spring, Summer, Fall",
+          "Weather": "Rain, Storm, GreenRain"
+        }
+      },
+      {
+        "Name": "FrameCount_Number",//フレーム枚数(ウサギ用)
+        "Value": "525",
+        "When": {
+          "Season": "Winter"
+        }
+      },
+      {
+        "Name": "FramesPerRow_Number",//フレーム行数(鳥、カエル用)
+        "Value": "30",
+        "When": {
+          "Season": "Spring, Summer, Fall"
+        }
+      },
+      {
+        "Name": "FramesPerRow_Number",//フレーム行数(ウサギ用)
+        "Value": "15",
+        "When": {
+          "Season": "Winter"
+        }
+      }
+
+    ],//▼"DynamicTokens"の終了▼
+
+
+    "CustomLocations": [
+      {
+        "Name": "Custom_CampingTentWithTarp_InDoor",
+        "FromMapFile": "assets/InDoor/CampingTentWithTarp_InDoor.tmx"
+      }
+    ],//▼"CustomLocations"の終了▼
+
+
+    "Changes": [
+
+
+//■■■タイルシートの読み込み＋α■■■
+
+  //★★★ タイルシート関係 ★★★
+
+    //●基礎タイルシートの読み込み
+      {
+        "Action": "Load",
+        "Target": "Buildings/CampingTentWithTarp_Vanilla(Yellow),
+                   Buildings/CampingTentWithTarp_Black,
+                   Buildings/CampingTentWithTarp_Blue,
+                   Buildings/CampingTentWithTarp_Green,
+                   Buildings/CampingTentWithTarp_Purple,
+                   Buildings/CampingTentWithTarp_Red,
+                   Buildings/CampingTentWithTarp_White,
+                   Buildings/CampingTentWithTarp_RandomColor
+                  ",
+        "FromFile": "assets/{{TargetWithoutPath}}.png"
+      },
+
+    //●基礎タイルシートの読み込み(ペイントマスク)
+      {
+        "Action": "Load",
+        "Target": "Buildings/CampingTentWithTarp_Vanilla(Yellow)_PaintMask,
+                   Buildings/CampingTentWithTarp_Black_PaintMask,
+                   Buildings/CampingTentWithTarp_Blue_PaintMask,
+                   Buildings/CampingTentWithTarp_Green_PaintMask,
+                   Buildings/CampingTentWithTarp_Purple_PaintMask,
+                   Buildings/CampingTentWithTarp_Red_PaintMask,
+                   Buildings/CampingTentWithTarp_White_PaintMask
+                  ",
+        "FromFile": "assets/CampingTentWithTarp_PaintMask.png"
+      },
+
+    //●室内用テクスチャの基礎を読み込み
+      {
+        "Action": "Load",
+        "Target": "Maps/z_CampingTentWithTarp_InDoor",
+        "FromFile": "assets/InDoor/CampingTentWithTarp_InDoor_Vanilla(Yellow).png"
+      },
+
+    //●テントの影の変更
+      {
+        "Action": "EditImage",
+        "Target": "Buildings/CampingTentWithTarp_Vanilla(Yellow),
+                   Buildings/CampingTentWithTarp_Black,
+                   Buildings/CampingTentWithTarp_Blue,
+                   Buildings/CampingTentWithTarp_Green,
+                   Buildings/CampingTentWithTarp_Purple,
+                   Buildings/CampingTentWithTarp_Red,
+                   Buildings/CampingTentWithTarp_White,
+                   Buildings/CampingTentWithTarp_RandomColor
+                  ",
+        "FromFile": "assets/CampingTentWithTarp_ShadowTyep_{{TentShadowTyep}}.png",
+        "ToArea": { "X": 0, "Y": 80, "Width": 384, "Height": 64 },
+        "When": {
+          "EnableThisMod": "true"
+        }
+      },
+
+    //●ランダムカラーテント用パッチ
+      {
+        "Action": "EditImage",
+        "Target": "Buildings/CampingTentWithTarp_RandomColor",
+        "FromFile": "assets/CampingTentWithTarp_{{RandomColor}}.png",
+        "FromArea": { "X": 0, "Y": 0, "Width": 480, "Height": 80 },
+        "ToArea": { "X": 0, "Y": 0, "Width": 480, "Height": 80 },
+        "When": {
+          "EnableThisMod": "true"
+        }
+      },
+
+    //●鳥のテクスチャを追加(晴れ/春夏秋)
+      {
+        "Action": "EditImage",
+        "Target": "Buildings/CampingTentWithTarp_Vanilla(Yellow),
+                   Buildings/CampingTentWithTarp_Black,
+                   Buildings/CampingTentWithTarp_Blue,
+                   Buildings/CampingTentWithTarp_Green,
+                   Buildings/CampingTentWithTarp_Purple,
+                   Buildings/CampingTentWithTarp_Red,
+                   Buildings/CampingTentWithTarp_White,
+                   Buildings/CampingTentWithTarp_RandomColor
+                  ",
+        "FromFile": "assets/Animal_Bird_{{R-BirdColorName}}.png",
+        "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 384 },
+        "When": {
+          "EnableThisMod": "true",
+          "Season": "Spring, Summer, Fall",
+          "Weather |contains=Rain, Storm, GreenRain": "false"
+        }
+      },
+
+    //●カエルのテクスチャを追加(雨、グリーンレイン/春夏秋)
+      {
+        "Action": "EditImage",
+        "Target": "Buildings/CampingTentWithTarp_Vanilla(Yellow),
+                   Buildings/CampingTentWithTarp_Black,
+                   Buildings/CampingTentWithTarp_Blue,
+                   Buildings/CampingTentWithTarp_Green,
+                   Buildings/CampingTentWithTarp_Purple,
+                   Buildings/CampingTentWithTarp_Red,
+                   Buildings/CampingTentWithTarp_White,
+                   Buildings/CampingTentWithTarp_RandomColor
+                  ",
+        "FromFile": "assets/Animal_Frog.png",
+        "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 128 },
+        "When": {
+          "EnableThisMod": "true",
+          "Season": "Spring, Summer, Fall",
+          "Weather": "Rain, Storm, GreenRain"
+        }
+      },
+
+    //●うさぎのテクスチャを追加(晴れ/冬)
+      {
+        "Action": "EditImage",
+        "Target": "Buildings/CampingTentWithTarp_Vanilla(Yellow),
+                   Buildings/CampingTentWithTarp_Black,
+                   Buildings/CampingTentWithTarp_Blue,
+                   Buildings/CampingTentWithTarp_Green,
+                   Buildings/CampingTentWithTarp_Purple,
+                   Buildings/CampingTentWithTarp_Red,
+                   Buildings/CampingTentWithTarp_White,
+                   Buildings/CampingTentWithTarp_RandomColor
+                  ",
+        "FromFile": "assets/Animal_Rabbit_{{R-RabbitColorName}}.png",
+        "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+        "When": {
+          "EnableThisMod": "true",
+          "Season": "Winter",
+          "Weather |contains=Rain": "false"
+        }
+      },
+
+    //●動物アニメーション有効、で非表示が選択されているものがある場合のブランク上書き
+      {
+        "Action": "EditImage",
+        "Target": "Buildings/CampingTentWithTarp_Vanilla(Yellow)",
+        "FromFile": "assets/Animal_z_Blank.png",
+        "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+        "When": {
+          "EnableThisMod": "true",
+          "EnableAnimal_Vanilla(Yellow)": "false",
+        }
+      },
+      {
+        "Action": "EditImage",
+        "Target": "Buildings/CampingTentWithTarp_Black",
+        "FromFile": "assets/Animal_z_Blank.png",
+        "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+        "When": {
+          "EnableThisMod": "true",
+          "EnableAnimal_Black": "false",
+        }
+      },
+      {
+        "Action": "EditImage",
+        "Target": "Buildings/CampingTentWithTarp_Blue",
+        "FromFile": "assets/Animal_z_Blank.png",
+        "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+        "When": {
+          "EnableThisMod": "true",
+          "EnableAnimal_Blue": "false",
+        }
+      },
+      {
+        "Action": "EditImage",
+        "Target": "Buildings/CampingTentWithTarp_Green",
+        "FromFile": "assets/Animal_z_Blank.png",
+        "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+        "When": {
+          "EnableThisMod": "true",
+          "EnableAnimal_Green": "false",
+        }
+      },
+      {
+        "Action": "EditImage",
+        "Target": "Buildings/CampingTentWithTarp_Purple",
+        "FromFile": "assets/Animal_z_Blank.png",
+        "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+        "When": {
+          "EnableThisMod": "true",
+          "EnableAnimal_Purple": "false",
+        }
+      },
+      {
+        "Action": "EditImage",
+        "Target": "Buildings/CampingTentWithTarp_Red",
+        "FromFile": "assets/Animal_z_Blank.png",
+        "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+        "When": {
+          "EnableThisMod": "true",
+          "EnableAnimal_Red": "false",
+        }
+      },
+      {
+        "Action": "EditImage",
+        "Target": "Buildings/CampingTentWithTarp_White",
+        "FromFile": "assets/Animal_z_Blank.png",
+        "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+        "When": {
+          "EnableThisMod": "true",
+          "EnableAnimal_White": "false",
+        }
+      },
+      {
+        "Action": "EditImage",
+        "Target": "Buildings/CampingTentWithTarp_RandomColor",
+        "FromFile": "assets/Animal_z_Blank.png",
+        "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+        "When": {
+          "EnableThisMod": "true",
+          "EnableAnimal_RandomColor": "false",
+        }
+      },
+
+
+  //★★★ ビルドデータ ★★★
+
+    //●基礎ビルドデータ追加
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "Entries": {
+          "{{ModId}}_CampingTentWithTarp": {
+            "Name": "{{i18n:CampingTentWithTarp_Name}}",
+            "Description": "{{i18n:CampingTentWithTarp_Description}}",
+            "Texture": "Buildings\\CampingTentWithTarp_Vanilla(Yellow)",
+            "DrawShadow": false,
+            "Size": { "X": 6, "Y": 4 },
+            "SourceRect": { "X": 0, "Y": 0, "Width": 96, "Height": 80 },
+            "SeasonOffset": { "X": 96, "Y": 0 },
+            "CollisionMap": "000000\nXXX00X\nXXX00X\nX0X00X",
+            "IndoorMap": "Custom_CampingTentWithTarp_InDoor",
+            "HumanDoor": { "X": 1, "Y": 2 },//{ "X": 1, "Y": 2 },
+            "DrawLayers": [
+              {
+                "Id": "Kage_to_Kasou",//影と下層描写
+                "SourceRect": { "X": 0, "Y": 80, "Width": 96, "Height": 64 },
+                "DrawPosition": "0, 32",
+                "DrawInBackground": true,
+              }
+            ],
+            "TileProperties": [
+              {
+                "Id": "NoSpawn",
+                "Name": "NoSpawn",
+                "Value": "All",
+                "Layer": "Back",
+                "TileArea": { "X": 1, "Y": 2, "Width": 1, "Height": 2 }
+              },
+              {
+                "Id": "NoSpawn2",
+                "Name": "NoSpawn",
+                "Value": "All",
+                "Layer": "Back",
+                "TileArea": { "X": 0, "Y": 3, "Width": 2, "Height": 4 }
+              },
+              {
+                "Id": "NoFurniture",
+                "Name": "NoFurniture",
+                "Value": "T",
+                "Layer": "Back",
+                "TileArea": { "X": 1, "Y": 2, "Width": 1, "Height": 2 }
+              },
+              {
+                "Id": "Option_Bed",
+                "Name": "Bed",
+                "Value": "T",
+                "Layer": "Back",
+                "TileArea": { "X": 1, "Y": 3, "Width": 1, "Height": 2 }
+              },
+              {
+                "Id": "Option_Sleep",
+                "Name": "{{DT_EntranceSleep_Name}}",
+                "Value": "{{DT_EntranceSleep_Value}}",
+                "Layer": "Back",
+                "TileArea": { "X": 1, "Y": 3, "Width": 1, "Height": 2 }
+              },
+            ],
+            "Skins": [
+              {
+                "Id": "{{ModId}}_CampingTentWithTarp_Black",
+                "Name": "{{i18n:CampingTentWithTarp_Black_Name}}",
+                "Description": "{{i18n:CampingTentWithTarp_Description}}",
+                "Texture": "Buildings\\CampingTentWithTarp_Black"
+              },
+              {
+                "Id": "{{ModId}}_CampingTentWithTarp_Blue",
+                "Name": "{{i18n:CampingTentWithTarp_Blue_Name}}",
+                "Description": "{{i18n:CampingTentWithTarp_Description}}",
+                "Texture": "Buildings\\CampingTentWithTarp_Blue"
+              },
+              {
+                "Id": "{{ModId}}_CampingTentWithTarp_Green",
+                "Name": "{{i18n:CampingTentWithTarp_Green_Name}}",
+                "Description": "{{i18n:CampingTentWithTarp_Description}}",
+                "Texture": "Buildings\\CampingTentWithTarp_Green"
+              },
+              {
+                "Id": "{{ModId}}_CampingTentWithTarp_Purple",
+                "Name": "{{i18n:CampingTentWithTarp_Purple_Name}}",
+                "Description": "{{i18n:CampingTentWithTarp_Description}}",
+                "Texture": "Buildings\\CampingTentWithTarp_Purple"
+              },
+              {
+                "Id": "{{ModId}}_CampingTentWithTarp_Red",
+                "Name": "{{i18n:CampingTentWithTarp_Red_Name}}",
+                "Description": "{{i18n:CampingTentWithTarp_Description}}",
+                "Texture": "Buildings\\CampingTentWithTarp_Red"
+              },
+              {
+                "Id": "{{ModId}}_CampingTentWithTarp_White",
+                "Name": "{{i18n:CampingTentWithTarp_White_Name}}",
+                "Description": "{{i18n:CampingTentWithTarp_Description}}",
+                "Texture": "Buildings\\CampingTentWithTarp_White"
+              },
+              {
+                "Id": "{{ModId}}_CampingTentWithTarp_RandomColor",
+                "Name": "{{i18n:CampingTentWithTarp_RandomColor_Name}}",
+                "Description": "{{i18n:CampingTentWithTarp_RandomColor_Description}}",
+                "Texture": "Buildings\\CampingTentWithTarp_RandomColor"
+              }
+            ],
+            "BuildCondition": null,
+            "BuildCost": 1000,
+            "BuildDays": 1,
+            "Builder": "Robin", //( Robin, Wizard )
+            "BuildMaterials": [
+              {
+                "Id": "(O)388",
+                "ItemId": "(O)388", //木材
+                "Amount": 50
+              },
+              {
+                "Id": "(O)428",
+                "ItemId": "(O)428", //布
+                "Amount": 5
+              },
+              {
+                "Id": "(O)335",
+                "ItemId": "(O)335", //鉄ののべ棒
+                "Amount": 1
+              }
+            ],
+            "FadeWhenBehind": true,
+            "AllowsFlooringUnderneath": false,//床敷けるか
+          }
+        },
+        "When": {
+          "EnableThisMod": "true"
+        }
+      },
+
+    //●動物表示時の編集(トークンで全共通)
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "TargetField": [
+          "{{ModId}}_CampingTentWithTarp",
+        ],
+        "Entries": {
+          "DrawLayers": [
+            {
+              "Id": "AnimalsAnimation",
+              "SourceRect": { "X": "{{SourceRect_X}}", "Y": 144, "Width": "{{SourceRect_Width}}", "Height": 32 },
+              "DrawPosition": " {{AnimalsDrawPosition_X}}, {{AnimalsDrawPosition_Y}} ",
+              "DrawInBackground": false,
+              "FrameDuration": "{{FrameDuration_Number}}",
+              "FrameCount": "{{FrameCount_Number}}",
+              "FramesPerRow": "{{FramesPerRow_Number}}"
+            },
+            {
+              "Id": "Kage_to_Kasou",//影と下層描写
+              "SourceRect": { "X": 0, "Y": 80, "Width": 96, "Height": 64 },
+              "DrawPosition": "0, 32",
+              "DrawInBackground": "true"
+            }
+          ]
+        },
+        "When": {
+          "EnableThisMod": "true",
+          "Time": "{{Range: 0600, 1440}}"
+        },
+        "Update": "OnTimeChange"
+      },
+
+
+  //★★★ その他の編集 ★★★
+
+    //●ペイントマスク のデータを追加
+      {
+        "Action": "EditData",
+        "Target": "Data/PaintData",
+        "Entries": {
+          "{{ModId}}_CampingTentWithTarp": "Building/-50 10",
+          "{{ModId}}_CampingTentWithTarp_Black": "Building/-50 10",
+          "{{ModId}}_CampingTentWithTarp_Blue": "Building/-50 10",
+          "{{ModId}}_CampingTentWithTarp_Green": "Building/-50 10",
+          "{{ModId}}_CampingTentWithTarp_Purple": "Building/-50 10",
+          "{{ModId}}_CampingTentWithTarp_Red": "Building/-50 10",
+          "{{ModId}}_CampingTentWithTarp__White": "Building/-50 10",
+        },
+        "When": {
+          "EnableThisMod": "true"
+        }
+      },
+
+    //●テント内を夜に暗くする
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_CampingTentWithTarp_InDoor",
+        "MapProperties": {
+          "AmbientLight": "150 150 150"
+        },
+        "When": {
+          "EnableThisMod": "true",
+          "Query: (('{{Season}}' = 'spring' OR '{{Season}}' = 'summer') AND {{Time}} >= 2010 AND {{Time}} <= 2600) OR ('{{Season}}' = 'fall' AND {{Time}} >= 1910 AND {{Time}} <= 2600) OR ('{{Season}}' = 'winter' AND {{Time}} >= 1810 AND {{Time}} <= 2600)": "true"
+        },
+        "Update": "OnTimeChange"
+      },
+
+
+  //★★★ その他のModConfigでの設定変更 ★★★
+
+    //●(テント内の色を変更)
+      {
+        "Action": "EditImage",
+        "Target": "Maps/z_CampingTentWithTarp_InDoor",
+        "FromFile": "assets/InDoor/CampingTentWithTarp_InDoor_{{InDoorColor}}.png",
+        "When": {
+          "EnableThisMod": "true"
+        }
+      },
+
+    //●季節の見た目の設定変更(デフォルトがSAだから false 時の変更)
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "TargetField": [
+          "{{ModId}}_CampingTentWithTarp",
+        ],
+        "Entries": {
+          "SeasonOffset": { "X": 0, "Y": 0 }
+        },
+        "When": {
+          "EnableThisMod": "true",
+          "SeasonalAppearance": "false"
+        }
+      },
+
+    //●建築費用と素材無し
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "TargetField": [
+          "{{ModId}}_CampingTentWithTarp",
+        ],
+        "Entries": {
+          "BuildCost": "0",
+          "BuildMaterials": []
+        },
+        "When": {
+          "EnableThisMod": "true",
+          "FreeToBuild": "true"
+        }
+      },
+
+    //●即建設終了
+      {
+        "Action": "EditData",
+        "Target": "Data/Buildings",
+        "TargetField": [
+          "{{ModId}}_CampingTentWithTarp",
+        ],
+        "Entries": {
+          "BuildDays": "0"
+        },
+        "When": {
+          "EnableThisMod": "true",
+          "ImmediateBuildFinish": "true"
+        },
+      }
+
+
+    ]//▼▼"Changes"の終了▼▼
+}

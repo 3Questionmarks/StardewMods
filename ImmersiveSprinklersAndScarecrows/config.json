@@ -1,0 +1,43 @@
+{
+  "EnableMod": true,
+  "Debug": false,
+  "ShowRangeWhenPlacing": true,
+  "Scale": 4.0,
+  "Alpha": 1.0,
+  "BothRangeTint": {
+    "B": 0,
+    "G": 100,
+    "R": 0,
+    "A": 255
+  },
+  "ScarecrowRangeTint": {
+    "B": 0,
+    "G": 128,
+    "R": 0,
+    "A": 255
+  },
+  "SprinklerRangeTint": {
+    "B": 0,
+    "G": 128,
+    "R": 0,
+    "A": 255
+  },
+  "RangeAlpha": 1.0,
+  "DrawOffsetX": 0,
+  "DrawOffsetY": 0,
+  "DrawOffsetZ": 0,
+  "PickupButton": "E",
+  "PickupNearby": false,
+  "ActivateButton": "Enter",
+  "ActivateNearby": false,
+  "ActivateNearbyRange": 2,
+  "PickupNearbyRange": 2,
+  "ShowScarecrowRangeButton": "RightControl",
+  "ShowSprinklerRangeButton": "LeftControl",
+  "SprinklerRadii": {
+    "Sprinkler": 0,
+    "Quality Sprinkler": 1,
+    "Iridium Sprinkler": 2,
+    "PrismaticSprinkler": 3
+  }
+}

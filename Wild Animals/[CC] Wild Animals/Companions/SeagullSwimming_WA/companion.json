@@ -274,14 +274,14 @@
 
 "Sounds": [
 	{
-	"SoundName": "waterSlosh",
+	"SoundName": "WaterSlosh_WA_Sound",
 	"WhenToPlay": "Moving",
 	"TimeBetweenSound": 2000
 	},
 	{
 	"SoundName": "seagulls",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
 	"ChanceOfPlaying": 0.4
 	}
 ]  

@@ -1,0 +1,75 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "{{ModId}}_Sirona": {
+          "DisplayName": "{{i18n:Name.Sirona}}",
+          "Gender": "female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Shy",
+          "Optimism": "Positive",
+          "BirthSeason": "Fall",
+          "BirthDay": "12",
+          "HomeRegion": "Town",
+          "CanBeRomanced": true,
+          "CanVisitIsland": false,
+          "CanGreetNearbyCharacters": true,
+          "SpouseAdopts": null,
+          "SpouseWantsChildren": true,
+          "SpouseGiftJealousy": true,
+          "SpouseGiftJealousyFriendshipChange": -25,
+          "SpouseRoom": {
+            "MapAsset": "{{ModId}}_sironaspouseroom"
+          },
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": false,
+          "WinterStarParticipent": true,
+          "WinterStarGifts": [
+            {
+              "Id": "Wine",
+              "ItemId": "(O)348"
+            },
+            {
+              "Id": "Rabbit's Foot",
+              "ItemId": "(O)446"
+            },
+            {
+              "Id": "Pearl",
+              "ItemId": "(O)797"
+            }
+          ],
+          "DumpsterDiveEmote": 5,
+          "DumpsterDiveFriendshipEffect": -1,
+          "FlowerDanceCanDance": true,
+          "KissSpriteIndex": 28,
+          "KissSpriteFacingRight": 35,
+          "Appearance": [],
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "dedpeech.seacave_SeaCave",
+              "Tile": {
+                "X": 14,
+                "Y": 10
+              },
+              "Direction": "down"
+            }
+          ],
+          "SpousePatio": {
+            "MapAsset": "{{ModId}}_sironapatio",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 4,
+              "Height": 4
+            }
+          }
+        }
+      }
+    }
+  ]
+}

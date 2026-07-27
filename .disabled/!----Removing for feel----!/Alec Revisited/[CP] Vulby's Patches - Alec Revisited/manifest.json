@@ -1,0 +1,26 @@
+{
+  "Name": "Vulby's Alec Revisited - Patches",
+  "Author": "Vulby",
+  "Version": "0.0.4",
+  "Description": "",
+  "UniqueID": "Vulbys_Alec_Patches",
+  "MinimumApiVersion": "3.4.1",
+  "UpdateKeys": [
+    "Nexus:21574"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP"
+    },
+    {
+      "UniqueID": "SoftPandaBoi.CPAlecRevisited"
+    },
+	{
+      "UniqueID": "Adaire.Aymeric",
+      "IsRequired": false
+   }
+  ]
+}

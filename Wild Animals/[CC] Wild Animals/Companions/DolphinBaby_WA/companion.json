@@ -4,10 +4,18 @@
 	"EnableSpawnAtDayStart": false,
 	"EnableCharacterCollision": false,
 	"EnableFarmerCollision": false,
+	"EnableShadow": true,
+	"Shadow": {
+		"OffsetX": 2,
+		"OffsetY": 20,
+		"Scale": 0.8,
+		"Alpha": 200
+	},
 	"TravelSpeed": 2,
 	"MaxIdleDistance": -1,
 	"MaxDistanceBeforeTeleport": -1,
 	"IdleBehavior": "Wander",
+	"IdleArguments": [ 5, 5000 ],
 	"AppearUnderwater": true,
 	"FrameSizeWidth": 32,
 	"FrameSizeHeight": 32,
@@ -557,15 +565,15 @@
 
 "Sounds": [
 	{
-	"SoundName": "waterSlosh",
+	"SoundName": "WaterSlosh_WA_Sound",
 	"WhenToPlay": "Moving",
 	"TimeBetweenSound": 2000
 	},
 	{
-	"SoundName": "waterSlosh",
-	"WhenToPlay": "Moving",
-	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.3
+	"SoundName": "Dolphin_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.2
 	}
 ]  
 }

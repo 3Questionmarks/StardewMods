@@ -1,0 +1,1880 @@
+{
+  "ForageSpawnEnabled": true,
+  "LargeObjectSpawnEnabled": false,
+  "OreSpawnEnabled": false,
+  "MonsterSpawnEnabled": true,
+  "Forage_Spawn_Settings": {
+    "Areas": [
+      {
+        "SpringItemIndex": [
+          169
+        ],
+        "SummerItemIndex": [
+          169
+        ],
+        "FallItemIndex": [
+          169
+        ],
+        "WinterItemIndex": [
+          169
+        ],
+        "UniqueAreaID": "Beach_West SH's Beach Crabs and Garden Snails compat - driftwood",
+        "MapName": "Aimon.Beach_West",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "29,26;32,38",
+          "33,31;35,39",
+          "36,35;39,43",
+          "40,38;44,45",
+          "45,42;55,44",
+          "50,40;54,41"
+        ],
+        "ExcludeCoordinates": [
+          "29,0;61,25",
+          "34,26;61,30",
+          "36,31;26,2",
+          "38,33;61,35",
+          "41,36;61,37",
+          "43,38;61,40"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [
+            "Rain",
+            "Storm"
+          ],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=SmolHooman.BeachCrabsAndSnailsSpawns": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          169
+        ],
+        "SummerItemIndex": [
+          169
+        ],
+        "FallItemIndex": [
+          169
+        ],
+        "WinterItemIndex": [
+          169
+        ],
+        "UniqueAreaID": "Forest shore SVE SH's Beach Crabs and Garden Snails compat - driftwood",
+        "MapName": "Forest",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Stone",
+          "Wood",
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "74,107;114,111",
+          "113,99;119,106"
+        ],
+        "ExcludeCoordinates": [
+          "45,98;73,119",
+          "0,0;119,97",
+          "67,98;112,105",
+          "0,68;69,119"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [
+            "Rain",
+            "Storm"
+          ],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            "HasMod |contains=SmolHooman.BeachCrabsAndSnailsSpawns": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          169
+        ],
+        "SummerItemIndex": [
+          169
+        ],
+        "FallItemIndex": [
+          169
+        ],
+        "WinterItemIndex": [
+          169
+        ],
+        "UniqueAreaID": "Forest shore Vanilla SH's Beach Crabs and Garden Snails compat - driftwood",
+        "MapName": "Forest",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Wood",
+          "Water",
+          "Grass",
+          "Stone"
+        ],
+        "IncludeCoordinates": [
+          "74,110/82,112",
+          "83,108/91,110",
+          "96,107/103,109",
+          "104,109/113,111",
+          "113,107/115,109",
+          "115,105/118,106",
+          "118,103/119,104",
+          "2,87/7,106",
+          "8,102/50,112"
+        ],
+        "ExcludeCoordinates": [
+          "0,0/119,87",
+          "7,87/119,97",
+          "13,98/116,101"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [
+            "Rain",
+            "Storm"
+          ],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            "HasMod |contains=SmolHooman.BeachCrabsAndSnailsSpawns": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          717
+        ],
+        "SummerItemIndex": [
+          717
+        ],
+        "FallItemIndex": [
+          717
+        ],
+        "WinterItemIndex": null,
+        "UniqueAreaID": "Beach_West SH's Beach Crabs and Garden Snails compat - crabs",
+        "MapName": "Aimon.Beach_West",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "29,26;32,38",
+          "33,31;35,39",
+          "36,35;39,43",
+          "40,38;44,45",
+          "45,42;55,44",
+          "50,40;54,41"
+        ],
+        "ExcludeCoordinates": [
+          "29,0;61,25",
+          "34,26;61,30",
+          "36,31;26,2",
+          "38,33;61,35",
+          "41,36;61,37",
+          "43,38;61,40"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [
+            "Rain",
+            "Storm"
+          ],
+          "WeatherToday": [
+            "Sun",
+            "Wind"
+          ],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=SmolHooman.BeachCrabsAndSnailsSpawns": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          717
+        ],
+        "SummerItemIndex": [
+          717
+        ],
+        "FallItemIndex": [
+          717
+        ],
+        "WinterItemIndex": null,
+        "UniqueAreaID": "Forest shore SVE SH's Beach Crabs and Garden Snails compat - crabs",
+        "MapName": "Forest",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Stone",
+          "Wood",
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "74,107;114,111",
+          "113,99;119,106"
+        ],
+        "ExcludeCoordinates": [
+          "45,98;73,119",
+          "0,0;119,97",
+          "67,98;112,105",
+          "0,68;69,119"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [
+            "Rain",
+            "Storm"
+          ],
+          "WeatherToday": [
+            "Sun",
+            "Wind"
+          ],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=SmolHooman.BeachCrabsAndSnailsSpawns": "true",
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          717
+        ],
+        "SummerItemIndex": [
+          717
+        ],
+        "FallItemIndex": [
+          717
+        ],
+        "WinterItemIndex": null,
+        "UniqueAreaID": "Forest shore Vanilla SH's Beach Crabs and Garden Snails compat - crabs",
+        "MapName": "Forest",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Wood",
+          "Water",
+          "Grass",
+          "Stone"
+        ],
+        "IncludeCoordinates": [
+          "74,110/82,112",
+          "83,108/91,110",
+          "96,107/103,109",
+          "104,109/113,111",
+          "113,107/115,109",
+          "115,105/118,106",
+          "118,103/119,104",
+          "2,87/7,106",
+          "8,102/50,112"
+        ],
+        "ExcludeCoordinates": [
+          "0,0/119,87",
+          "7,87/119,97",
+          "13,98/116,101"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [
+            "Rain",
+            "Storm"
+          ],
+          "WeatherToday": [
+            "Sun",
+            "Wind"
+          ],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            "HasMod |contains=SmolHooman.BeachCrabsAndSnailsSpawns": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          "Big Conch"
+        ],
+        "SummerItemIndex": [
+          "Big Conch"
+        ],
+        "FallItemIndex": [
+          "Big Conch"
+        ],
+        "WinterItemIndex": [
+          "Big Conch"
+        ],
+        "UniqueAreaID": "Big Conch spawns for BlueMoonVineyard SVE",
+        "MapName": "Custom_BlueMoonVineyard",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Wood",
+          "Water",
+          "Grass",
+          "Stone"
+        ],
+        "IncludeCoordinates": [
+          "0,68;14,74",
+          "41,64;55,66"
+        ],
+        "ExcludeCoordinates": [
+          "0,0;56,63"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [
+            "1",
+            "2",
+            "7",
+            "11",
+            "16",
+            "19",
+            "22",
+            "26"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          "Big Conch"
+        ],
+        "SummerItemIndex": [
+          "Big Conch"
+        ],
+        "FallItemIndex": [
+          "Big Conch"
+        ],
+        "WinterItemIndex": [
+          "Big Conch"
+        ],
+        "UniqueAreaID": "Big Conch spawns for Cindersap Shore SVE",
+        "MapName": "Forest",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Diggable"
+        ],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Stone",
+          "Wood",
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "74,107;114,111",
+          "113,99;119,106"
+        ],
+        "ExcludeCoordinates": [
+          "45,98;73,119",
+          "0,0;119,97",
+          "67,98;112,105",
+          "0,68;69,119"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [
+            "1",
+            "2",
+            "7",
+            "11",
+            "16",
+            "19",
+            "22",
+            "26"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          "Big Conch"
+        ],
+        "SummerItemIndex": [
+          "Big Conch"
+        ],
+        "FallItemIndex": [
+          "Big Conch"
+        ],
+        "WinterItemIndex": [
+          "Big Conch"
+        ],
+        "UniqueAreaID": "Big Conch spawns for Beach_West SVE",
+        "MapName": "Aimon.Beach_West",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Diggable"
+        ],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Stone",
+          "Wood",
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "29,26;32,38",
+          "33,31;35,39",
+          "36,35;39,43",
+          "40,38;44,45",
+          "45,42;55,44",
+          "50,40;54,41"
+        ],
+        "ExcludeCoordinates": [
+          "29,0;61,25",
+          "34,26;61,30",
+          "36,31;26,2",
+          "38,33;61,35",
+          "41,36;61,37",
+          "43,38;61,40"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [
+            "1",
+            "2",
+            "7",
+            "11",
+            "16",
+            "19",
+            "22",
+            "26"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          "Big Conch"
+        ],
+        "SummerItemIndex": [
+          "Big Conch"
+        ],
+        "FallItemIndex": [
+          "Big Conch"
+        ],
+        "WinterItemIndex": [
+          "Big Conch"
+        ],
+        "UniqueAreaID": "Dried Sand Dollar spawns for BlueMoonVineyard SVE",
+        "MapName": "Custom_BlueMoonVineyard",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Wood",
+          "Water",
+          "Grass",
+          "Stone"
+        ],
+        "IncludeCoordinates": [
+          "0,68;14,74",
+          "41,64;55,66"
+        ],
+        "ExcludeCoordinates": [
+          "0,0;56,63"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [
+            "Summer",
+            "Fall"
+          ],
+          "Days": [
+            "1",
+            "4",
+            "7-9",
+            "13-15",
+            "17",
+            "20",
+            "23",
+            "25-26",
+            "28"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [],
+        "SummerItemIndex": [
+          "Dried Sand Dollar"
+        ],
+        "FallItemIndex": [
+          "Dried Sand Dollar"
+        ],
+        "WinterItemIndex": [],
+        "UniqueAreaID": "Dried Sand Dollar spawns for West Beach",
+        "MapName": "Aimon.Beach_West",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Diggable"
+        ],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Stone",
+          "Wood",
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "29,26;32,38",
+          "33,31;35,39",
+          "36,35;39,43",
+          "40,38;44,45",
+          "45,42;55,44",
+          "50,40;54,41"
+        ],
+        "ExcludeCoordinates": [
+          "29,0;61,25",
+          "34,26;61,30",
+          "36,31;26,2",
+          "38,33;61,35",
+          "41,36;61,37",
+          "43,38;61,40"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [
+            "Summer",
+            "Fall"
+          ],
+          "Days": [
+            "1",
+            "4",
+            "7-9",
+            "13-15",
+            "17",
+            "20",
+            "23",
+            "25-26",
+            "28"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [],
+        "SummerItemIndex": [
+          "Dried Sand Dollar"
+        ],
+        "FallItemIndex": [
+          "Dried Sand Dollar"
+        ],
+        "WinterItemIndex": [],
+        "UniqueAreaID": "Dried Sand Dollar spawns for Cindersap Shore",
+        "MapName": "Forest",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Diggable"
+        ],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Stone",
+          "Wood",
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "74,110/82,112",
+          "83,108/91,110",
+          "96,107/103,109",
+          "104,109/113,111",
+          "113,107/115,109",
+          "115,105/118,106",
+          "118,103/119,104",
+          "2,87/7,106",
+          "8,102/50,112"
+        ],
+        "ExcludeCoordinates": [
+          "0,0/119,87",
+          "7,87/119,97",
+          "13,98/116,101",
+          "0,68;69,119"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [
+            "Summer",
+            "Fall"
+          ],
+          "Days": [
+            "1",
+            "4",
+            "7-9",
+            "13-15",
+            "17",
+            "20",
+            "23",
+            "25-26",
+            "28"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          16,
+          18,
+          20,
+          22,
+          257
+        ],
+        "SummerItemIndex": [
+          396,
+          398,
+          402,
+          420
+        ],
+        "FallItemIndex": [
+          281,
+          404,
+          406,
+          408,
+          410,
+          422
+        ],
+        "WinterItemIndex": [
+          414,
+          418,
+          283
+        ],
+        "UniqueAreaID": "SVE_CindersapForageAddition",
+        "MapName": "Custom_ForestWest",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Stone",
+          "Wood",
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "0,135/27,155"
+        ],
+        "ExcludeCoordinates": [
+          "28,135/155,155",
+          "0,135/155,0"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "SpringItemIndex": [
+          16,
+          18,
+          20,
+          22,
+          257
+        ],
+        "SummerItemIndex": [
+          396,
+          398,
+          402,
+          420
+        ],
+        "FallItemIndex": [
+          281,
+          404,
+          406,
+          408,
+          410,
+          422
+        ],
+        "WinterItemIndex": [
+          414,
+          418,
+          283
+        ],
+        "UniqueAreaID": "ForestForage",
+        "MapName": "Aimon.Beach_West",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Stone",
+          "Wood",
+          "Water"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "48,11/54,22"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "SpringItemIndex": [
+          16,
+          18,
+          20,
+          22,
+          257
+        ],
+        "SummerItemIndex": [
+          396,
+          398,
+          259,
+          402,
+          420
+        ],
+        "FallItemIndex": [
+          281,
+          404,
+          406,
+          408,
+          410,
+          422
+        ],
+        "WinterItemIndex": [
+          414,
+          418,
+          283
+        ],
+        "UniqueAreaID": "Aimon.Forest_Festival Forest Forage - common",
+        "MapName": "Aimon.Forest_Festival",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Stone",
+          "Wood",
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "19,0;62,13",
+          "27,14;57,25",
+          "39,26;49,39"
+        ],
+        "ExcludeCoordinates": [
+          "0,19;35,49",
+          "0,0;16,18",
+          "54,14;62,20",
+          "34,37;48,49"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "SpringItemIndex": [
+          18,
+          22,
+          591,
+          597
+        ],
+        "SummerItemIndex": [
+          402,
+          593,
+          376
+        ],
+        "FallItemIndex": [
+          406,
+          408,
+          421,
+          595
+        ],
+        "WinterItemIndex": [
+          414,
+          418,
+          283
+        ],
+        "UniqueAreaID": "Aimon.Forest_Festival Forest Forage - flowers",
+        "MapName": "Aimon.Forest_Festival",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Stone",
+          "Wood",
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "0,20;28,38"
+        ],
+        "ExcludeCoordinates": [
+          "29,0;62,49",
+          "0,0;28,18"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "SpringItemIndex": [
+          372,
+          723,
+          152
+        ],
+        "SummerItemIndex": [
+          372,
+          394,
+          723,
+          152
+        ],
+        "FallItemIndex": [
+          372,
+          723,
+          152
+        ],
+        "WinterItemIndex": [
+          372,
+          392,
+          723,
+          152
+        ],
+        "UniqueAreaID": "Beach_West Clams",
+        "MapName": "Aimon.Beach_West",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Wood",
+          "Water",
+          "Grass",
+          "Stone"
+        ],
+        "IncludeCoordinates": [
+          "29,26;32,38",
+          "33,31;35,39",
+          "36,35;39,43",
+          "40,38;44,45",
+          "45,42;55,44",
+          "50,40;54,41"
+        ],
+        "ExcludeCoordinates": [
+          "29,0;61,25",
+          "34,26;61,30",
+          "36,31;26,2",
+          "38,33;61,35",
+          "41,36;61,37",
+          "43,38;61,40"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          393,
+          397
+        ],
+        "SummerItemIndex": [
+          393,
+          397
+        ],
+        "FallItemIndex": [
+          393,
+          397
+        ],
+        "WinterItemIndex": [
+          393,
+          397
+        ],
+        "UniqueAreaID": "Beach_West Corals",
+        "MapName": "Aimon.Beach_West",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Wood",
+          "Water",
+          "Dirt",
+          "Grass"
+        ],
+        "IncludeCoordinates": [
+          "32,31;34,31",
+          "45,41;48,42",
+          "39,38;42,39"
+        ],
+        "ExcludeCoordinates": [
+          "53,36;53,40"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          372,
+          723,
+          152
+        ],
+        "SummerItemIndex": [
+          372,
+          394,
+          723,
+          152
+        ],
+        "FallItemIndex": [
+          372,
+          723,
+          152
+        ],
+        "WinterItemIndex": [
+          372,
+          392,
+          723,
+          152
+        ],
+        "UniqueAreaID": "Forest Vanilla Clams",
+        "MapName": "Forest",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Diggable"
+        ],
+        "ExcludeTerrainTypes": [
+          "Wood",
+          "Water",
+          "Grass",
+          "Stone"
+        ],
+        "IncludeCoordinates": [
+          "74,110/82,112",
+          "83,108/91,110",
+          "96,107/103,109",
+          "104,109/113,111",
+          "113,107/115,109",
+          "115,105/118,106",
+          "118,103/119,104",
+          "2,87/7,106",
+          "8,102/50,112"
+        ],
+        "ExcludeCoordinates": [
+          "0,0/119,87",
+          "7,87/119,97",
+          "13,98/116,101"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          372,
+          723,
+          152
+        ],
+        "SummerItemIndex": [
+          372,
+          394,
+          723,
+          152
+        ],
+        "FallItemIndex": [
+          372,
+          723,
+          152
+        ],
+        "WinterItemIndex": [
+          372,
+          392,
+          723,
+          152
+        ],
+        "UniqueAreaID": "Forest SVE Clams",
+        "MapName": "Forest",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Diggable"
+        ],
+        "ExcludeTerrainTypes": [
+          "Wood",
+          "Water",
+          "Grass",
+          "Stone"
+        ],
+        "IncludeCoordinates": [
+          "74,107;114,111",
+          "113,99;119,106"
+        ],
+        "ExcludeCoordinates": [
+          "45,98;73,119",
+          "0,0;119,97",
+          "67,98;112,105",
+          "0,68;69,119"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          372,
+          723,
+          152
+        ],
+        "SummerItemIndex": [
+          372,
+          394,
+          723,
+          152
+        ],
+        "FallItemIndex": [
+          372,
+          723,
+          152
+        ],
+        "WinterItemIndex": [
+          372,
+          392,
+          723,
+          152
+        ],
+        "UniqueAreaID": "BlueMoonVineyard SVE Clams",
+        "MapName": "Custom_BlueMoonVineyard",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Wood",
+          "Water",
+          "Grass",
+          "Stone"
+        ],
+        "IncludeCoordinates": [
+          "0,68;14,74",
+          "41,64;55,66"
+        ],
+        "ExcludeCoordinates": [
+          "0,0;56,63"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          922,
+          923,
+          924
+        ],
+        "SummerItemIndex": [
+          922,
+          923,
+          924
+        ],
+        "FallItemIndex": [
+          922,
+          923,
+          924
+        ],
+        "WinterItemIndex": [
+          922,
+          923,
+          924
+        ],
+        "UniqueAreaID": "Beach_West Supply Crates",
+        "MapName": "Aimon.Beach_West",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Stone",
+          "Wood",
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "30,26/32,29",
+          "29,30/30,38",
+          "31,38/35,40",
+          "36,39/37,42",
+          "38,43/40,44",
+          "41,44/47,45",
+          "47,43/56,44"
+        ],
+        "ExcludeCoordinates": [
+          "36,12/61,38"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "SpringItemIndex": [
+          922,
+          923,
+          924
+        ],
+        "SummerItemIndex": [
+          922,
+          923,
+          924
+        ],
+        "FallItemIndex": [
+          922,
+          923,
+          924
+        ],
+        "WinterItemIndex": [
+          922,
+          923,
+          924
+        ],
+        "UniqueAreaID": "Forest SVE Supply Crates",
+        "MapName": "Forest",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Stone",
+          "Wood",
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "74,110/82,112",
+          "83,108/91,110",
+          "96,107/103,109",
+          "104,109/113,111",
+          "113,107/115,109",
+          "115,105/118,106",
+          "118,103/119,104"
+        ],
+        "ExcludeCoordinates": [
+          "0,0/119,100",
+          "45,101/73,119",
+          "74,100/112,105",
+          "0,68;69,119"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      },
+      {
+        "SpringItemIndex": [
+          922,
+          923,
+          924
+        ],
+        "SummerItemIndex": [
+          922,
+          923,
+          924
+        ],
+        "FallItemIndex": [
+          922,
+          923,
+          924
+        ],
+        "WinterItemIndex": [
+          922,
+          923,
+          924
+        ],
+        "UniqueAreaID": "Forest Vanilla Supply Crates",
+        "MapName": "Forest",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Stone",
+          "Wood",
+          "Water"
+        ],
+        "IncludeCoordinates": [
+          "74,110/82,112",
+          "83,108/91,110",
+          "96,107/103,109",
+          "104,109/113,111",
+          "113,107/115,109",
+          "115,105/118,106",
+          "118,103/119,104",
+          "2,87/7,106",
+          "8,102/50,112"
+        ],
+        "ExcludeCoordinates": [
+          "0,0/119,87",
+          "7,87/119,97",
+          "13,98/116,101"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      }
+    ],
+    "PercentExtraSpawnsPerForagingLevel": 0,
+    "SpringItemIndex": [
+      16,
+      20,
+      22,
+      257
+    ],
+    "SummerItemIndex": [
+      396,
+      398,
+      402,
+      404
+    ],
+    "FallItemIndex": [
+      281,
+      404,
+      420,
+      422
+    ],
+    "WinterItemIndex": [],
+    "CustomTileIndex": []
+  },
+  "Large_Object_Spawn_Settings": {
+    "Areas": [],
+    "CustomTileIndex": []
+  },
+  "Ore_Spawn_Settings": {
+    "Areas": [],
+    "PercentExtraSpawnsPerMiningLevel": 0,
+    "MiningLevelRequired": {
+      "Stone": 0,
+      "Geode": 0,
+      "FrozenGeode": 3,
+      "MagmaGeode": 6,
+      "OmniGeode": 4,
+      "Gem": 5,
+      "Copper": 0,
+      "Iron": 4,
+      "Gold": 6,
+      "Iridium": 9,
+      "Mystic": 10,
+      "Radioactive": 10,
+      "Diamond": 5,
+      "Ruby": 5,
+      "Jade": 5,
+      "Amethyst": 2,
+      "Topaz": 2,
+      "Emerald": 2,
+      "Aquamarine": 2,
+      "Mussel": 0,
+      "Fossil": 0,
+      "Clay": 0,
+      "CinderShard": 8
+    },
+    "StartingSpawnChance": {
+      "Stone": 66,
+      "Geode": 8,
+      "FrozenGeode": 4,
+      "MagmaGeode": 2,
+      "OmniGeode": 0,
+      "Gem": 5,
+      "Copper": 21,
+      "Iron": 15,
+      "Gold": 10,
+      "Iridium": 1,
+      "Mystic": 1,
+      "Radioactive": 0,
+      "Diamond": 0,
+      "Ruby": 0,
+      "Jade": 0,
+      "Amethyst": 0,
+      "Topaz": 0,
+      "Emerald": 0,
+      "Aquamarine": 0,
+      "Mussel": 0,
+      "Fossil": 0,
+      "Clay": 0,
+      "CinderShard": 0
+    },
+    "LevelTenSpawnChance": {
+      "Stone": 48,
+      "Geode": 2,
+      "FrozenGeode": 2,
+      "MagmaGeode": 2,
+      "OmniGeode": 0,
+      "Gem": 5,
+      "Copper": 16,
+      "Iron": 13,
+      "Gold": 10,
+      "Iridium": 1,
+      "Mystic": 1,
+      "Radioactive": 0,
+      "Diamond": 0,
+      "Ruby": 0,
+      "Jade": 0,
+      "Amethyst": 0,
+      "Topaz": 0,
+      "Emerald": 0,
+      "Aquamarine": 0,
+      "Mussel": 0,
+      "Fossil": 0,
+      "Clay": 0,
+      "CinderShard": 0
+    },
+    "CustomTileIndex": []
+  },
+  "Monster_Spawn_Settings": {
+    "Areas": [
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "HP": 3,
+              "Damage": 1,
+              "Loot": [],
+              "EXP": 1
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "HP": 3,
+              "Damage": 1,
+              "Loot": [
+                "Crab"
+              ],
+              "EXP": 1
+            }
+          }
+        ],
+        "UniqueAreaID": "Beach_West Crabs",
+        "MapName": "Aimon.Beach_West",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "29,26;32,38",
+          "33,31;35,39",
+          "36,35;39,43",
+          "40,38;44,45",
+          "45,42;55,44",
+          "50,40;54,41"
+        ],
+        "ExcludeCoordinates": [
+          "29,0;61,25",
+          "34,26;61,30",
+          "36,31;26,2",
+          "38,33;61,35",
+          "41,36;61,37",
+          "43,38;61,40"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [
+            "Spring",
+            "Summer",
+            "Fall"
+          ],
+          "Days": [],
+          "WeatherYesterday": [
+            "Rain",
+            "Storm"
+          ],
+          "WeatherToday": [
+            "Rain",
+            "Storm"
+          ],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod |contains=SmolHooman.BeachCrabsAndSnailsSpawns": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      }
+    ],
+    "CustomTileIndex": []
+  },
+  "QuarryTileIndex": [
+    556,
+    608,
+    607,
+    606,
+    558,
+    685,
+    583,
+    481
+  ],
+  "File_Conditions": {
+    "FarmTypes": [],
+    "FarmerNames": [],
+    "SaveFileNames": [],
+    "OtherMods": {}
+  }
+}

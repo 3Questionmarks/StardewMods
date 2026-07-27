@@ -18,7 +18,8 @@
             "Action": "Include",
             "FromFile": "assets/code/Events.json",
             "When": {
-                "Relationship:Krobus": "Friendly"
+			
+               "Hearts:Krobus": "{{Range: 2, 14}}"
             }
         },
         {
@@ -28,6 +29,10 @@
         {
             "Action": "Include",
             "FromFile": "assets/code/newgarbage.json"
+        },
+		 {
+            "Action": "Include",
+            "FromFile": "assets/code/Objects.json"
         },
 		
 		
@@ -168,7 +173,7 @@
                 "Time": "{{Range: 600, 2000}}",
                 "Weather|contains=Rain, Storm": false
             },
-            "Update": "OnTimeChange",
+            "Update": "OnLocationChange",
             "MapProperties": {
                 "Light": "3 47 2 16 12 7 16 26 5 21 18 2 27 18 2 3 41 2 16 18 2 25 5 2 31 7 2 23 13 2 15 9 2 17 9 2 24 9 2 3 18 2"
             }
@@ -181,7 +186,7 @@
                 "Time": "{{Range: 2000, 2600}}",
                 "Weather|contains=Rain, Storm": false
             },
-            "Update": "OnTimeChange",
+           "Update": "OnLocationChange",
             "MapProperties": {
                 "Light": "21 18 2 27 18 2 3 41 2 25 5 2 31 7 2 23 13 2"
             }
@@ -193,7 +198,7 @@
             "When": {
                 "Weather|contains=Rain, Storm": true
             },
-            "Update": "OnTimeChange",
+           "Update": "OnLocationChange",
             "MapProperties": {
                 "Light": "21 18 2 27 18 2 3 41 2 25 5 2 31 7 2 23 13 2"
             }
@@ -261,7 +266,18 @@
                 "HasSeenEvent |contains=194050010": false,
                 "LocationName |contains=Mountain": false
             },
-            "Update": "OnTimeChange"
+          "Update": "OnLocationChange",
+        },
+		
+		
+		//warp fix 
+		
+		  {
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "AddWarps": [
+                "16 10 Town 35 97"
+            ]
         },
      
     ]

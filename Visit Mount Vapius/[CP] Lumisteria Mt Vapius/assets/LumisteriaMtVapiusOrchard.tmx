@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="53" height="61" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="70">
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="53" height="61" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="71">
  <properties>
   <property name="AllowGiantCrops" value="T"/>
   <property name="DefaultWarpLocation" value="10 2"/>
@@ -2871,6 +2871,12 @@
     <property name="NoSpawn" value="All"/>
    </properties>
   </object>
+  <object id="70" name="TileData" x="528" y="816" width="16" height="16">
+   <properties>
+    <property name="NoFurniture" value="total"/>
+    <property name="NoSpawn" value="All"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="7" name="Buildings">
   <object id="42" name="TileData" x="0" y="16" width="16" height="16">
@@ -2903,7 +2909,7 @@
  <objectgroup id="8" name="Paths">
   <object id="68" name="TileData" x="80" y="352" width="16" height="16">
    <properties>
-    <property name="SpawnTree" value="fruit Lumisteria.MtVapius_GrapeSapling 5 4"/>
+    <property name="SpawnTree" value="fruit Lumisteria.MtVapius_GrapeSapling"/>
    </properties>
   </object>
  </objectgroup>

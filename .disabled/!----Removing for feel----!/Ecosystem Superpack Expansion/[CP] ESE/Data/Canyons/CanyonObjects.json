@@ -1,0 +1,515 @@
+{// 0 = up, 1 = right, 2 = down, 3 = left
+    "Changes": [
+ {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/creosotecrop",
+            "FromFile": "assets/Canyons/creosotecrop.png"
+        },
+ {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Objects",
+            "FromFile": "assets/Canyons/objects.png"
+        },
+		 {
+        //Egg Object
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "CC_Turtegg": {
+           "Name": "CC_Turtegg",
+    "DisplayName": "Turtle Eggs",
+    "Description": "Incubate to hatch an island turtle, or pickle five in a jar.",
+    "Type": "Basic",
+    "Category": -5,
+    "Price": 80,
+    "Texture": "Mods/{{ModId}}/Objects",
+    "SpriteIndex": 9,
+    "ColorOverlayFromNextIndex": false,
+    "Edibility": 15,
+    "IsDrink": false,
+    "Buffs": null,
+    "GeodeDropsDefaultItems": false,
+    "GeodeDrops": null,
+    "ArtifactSpotChances": null,
+    "CanBeGivenAsGift": true,
+    "CanBeTrashed": true,
+    "ExcludeFromFishingCollection": false,
+    "ExcludeFromShippingCollection": false,
+    "ExcludeFromRandomSale": true,
+    "ContextTags": [
+      "color_white",
+      "egg_item"
+	  
+              ],      
+			  "CustomFields": null
+            
+          }
+          }
+        },
+		 {
+        //Egg 2 Object
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "CC_Pickledegg": {
+           "Name": "CC_Pickledegg",
+    "DisplayName": "Pickled Eggs",
+    "Description": "Softly boiled and fermented with vinegar. Gets tangier with age!",
+    "Type": "Basic",
+    "Category": -26,
+    "Price": 950,
+    "Texture": "Mods/{{ModId}}/Objects",
+    "SpriteIndex": 6,
+    "ColorOverlayFromNextIndex": false,
+    "Edibility": -1,
+    "IsDrink": false,
+    "Buffs": null,
+    "GeodeDropsDefaultItems": false,
+    "GeodeDrops": null,
+    "ArtifactSpotChances": null,
+    "CanBeGivenAsGift": true,
+    "CanBeTrashed": true,
+    "ExcludeFromFishingCollection": false,
+    "ExcludeFromShippingCollection": false,
+    "ExcludeFromRandomSale": true,
+    "ContextTags": [
+   
+              ],      
+			  "CustomFields": null
+            
+          }
+          }
+        },
+		 {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)15",
+        "OutputRules"
+      ],
+      "Entries": {
+        "CC_EggtoPickle2": {
+        "Id": "EggtoPickle2",
+        "Triggers": [
+          {
+            "Id": "ItemPlacedInMachine",
+            "Trigger": "ItemPlacedInMachine",
+            "RequiredItemId": "CC_Turtegg",
+            "RequiredTags": null,
+            "RequiredCount": 5,
+            "Condition": null
+          }
+        ],
+        "UseFirstValidOutput": false,
+        "OutputItem": [
+          {
+            "CustomData": null,
+            "OutputMethod": null,
+            "CopyColor": false,
+            "CopyPrice": false,
+            "CopyQuality": false,
+            "PreserveType": null,
+            "PreserveId": null,
+            "IncrementMachineParentSheetIndex": 0,
+            "PriceModifiers": null,
+            "PriceModifierMode": "Stack",
+            "Condition": null,
+            "Id": "CC_Pickledegg",
+            "ItemId": "CC_Pickledegg",
+            "RandomItemId": null,
+            "MaxItems": null,
+            "MinStack": -1,
+            "MaxStack": -1,
+            "Quality": -1,
+            "ObjectInternalName": null,
+            "ObjectDisplayName": null,
+            "ToolUpgradeLevel": -1,
+            "IsRecipe": false,
+            "StackModifiers": null,
+            "StackModifierMode": "Stack",
+            "QualityModifiers": null,
+            "QualityModifierMode": "Stack",
+            "ModData": null,
+            "PerItemCondition": null
+          }
+        ],
+        "MinutesUntilReady": 4000,
+        "DaysUntilReady": -1,
+        "InvalidCountMessage": null,
+        "RecalculateOnCollect": false
+       },
+      },
+      "MoveEntries": [
+        {
+          "Id": "CC_PickledEgg",
+          "BeforeID": "CC_Turtegg"
+        }
+      ]
+    },
+  {
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Entries": {
+        "CC_Remedytea": "CC_Rainpuff 5 815 5 245 1/999 999/CC_Remedytea/none/",
+        "CC_Greasetea": "CC_Rainflower 5 830 1 245 1/999 999/CC_Greasetea/none/",
+        "CC_Spicedtea": "CC_Rainpuff 5 829 1 245 1/999 999/CC_Spicedtea/none/"
+      }
+    },
+			    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "Hairpin": "CC_Tortoiseshell 1 881 5/999 999/CC_Hairpin/none/"
+      }
+    },
+	
+{
+        //Seed Object
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "CC_creosoteseeds": {
+            "Name": "CC_CreosoteSeeds",
+            "Displayname": "Creosote Seeds",
+            "Description": "Grows in the summer or indoors all year. Takes 11 days to fully grow and produces puffs after.",
+            "Type": "Seeds",
+            "Category": -74,
+            "Texture": "Mods/{{ModId}}/Objects",
+			"SpriteIndex": 0,
+            "Price": 20
+          }
+        }
+      },
+      {
+        //Puff Object
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "CC_Rainpuff": {
+            "Name": "CC_Rainpuff",
+            "Displayname": "Rainpuff",
+            "Description": "A soft white ball that smells like rain.",
+            "Type": "Basic",
+            "Category": -81,
+            "Texture": "Mods/{{ModId}}/Objects",
+			"SpriteIndex": 1,
+			"Edibility": -300, 
+            "Price": 2,
+			"ContextTags": [ "color_white", "tea_item", "cc_forage" ]
+          }
+        }
+      },
+{
+        //Puff Object
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "CC_Rainflower": {
+            "Name": "CC_Rainflower",
+            "Displayname": "Rainflower",
+            "Description": "Bright and delicate flower that can be used as medicine.",
+            "Type": "Basic",
+            "Category": -81,
+            "Texture": "Mods/{{ModId}}/Objects",
+			"SpriteIndex": 10,
+			"Edibility": -300, 
+            "Price": 2,
+			"ContextTags": [ "color_yellow", "tea_item", "cc_forage" ]
+          }
+        }
+      },
+      {
+        //Tea Object
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "CC_Remedytea": {
+            "Name": "CC_Remedytea",
+            "Displayname": "Remedy Tea",
+            "Description": "Sweet-smelling herbal tea that protects the immune system all day.",
+            "Type": "Cooking",
+            "Category": -7,
+            "Texture": "Mods/{{ModId}}/Objects",
+			"SpriteIndex": 2,
+			   "Edibility": 30,
+          "IsDrink": true,
+            "Price": 25,
+			 "Buffs": [
+            {
+              "Id": "RemedyDrink",
+			  "GlowColor": null,
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": -2,
+              "IsDebuff": false,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.2,
+                "Defense": 0.0,
+				"Immunity": 5.0,
+                "Attack": 0.0
+              },      
+			  "CustomFields": null
+            }
+          ],
+          }
+        }
+      },
+	     {
+        //Tea Object
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "CC_Greasetea": {
+            "Name": "CC_Greasetea",
+            "Displayname": "Grease Tea",
+            "Description": "Thick medicinal tea that increases strength all day.",
+            "Type": "Cooking",
+            "Category": -7,
+            "Texture": "Mods/{{ModId}}/Objects",
+			"SpriteIndex": 3,
+			   "Edibility": 30,
+          "IsDrink": true,
+            "Price": 25,
+			 "Buffs": [
+            {
+              "Id": "GreaseDrink",
+			  "GlowColor": null,
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": -2,
+              "IsDebuff": false,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.2,
+                "Defense": 0.0,
+				"Immunity": 0.0,
+                "Attack": 5.0
+              },      
+			  "CustomFields": null
+            }
+          ],
+          }
+        }
+      },
+	   {
+        //Tea Object
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "CC_Spicedtea": {
+            "Name": "CC_Spicedtea",
+            "Displayname": "Spiced Tea",
+            "Description": "Rich and zangy tea that makes you feel lucky all day.",
+            "Type": "Cooking",
+            "Category": -7,
+            "Texture": "Mods/{{ModId}}/Objects",
+			"SpriteIndex": 4,
+			   "Edibility": 30,
+          "IsDrink": true,
+            "Price": 25,
+			 "Buffs": [
+            {
+              "Id": "SpicedDrink",
+			  "GlowColor": null,
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": -2,
+              "IsDebuff": false,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 5.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.2,
+                "Defense": 0.0,
+				"Immunity": 0.0,
+                "Attack": 0.0
+              },      
+			  "CustomFields": null
+            }
+          ],
+          }
+        }
+      },
+	   {
+        //Egg Object
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "CC_Tortoiseegg": {
+           "Name": "TortoiseEgg",
+    "DisplayName": "Tortoise Egg",
+    "Description": "Incubate to hatch a desert tortoise, or pickle five in a jar.",
+    "Type": "Basic",
+    "Category": -5,
+    "Price": 80,
+    "Texture": "Mods/{{ModId}}/Objects",
+    "SpriteIndex": 5,
+    "ColorOverlayFromNextIndex": false,
+    "Edibility": 15,
+    "IsDrink": false,
+    "Buffs": null,
+    "GeodeDropsDefaultItems": false,
+    "GeodeDrops": null,
+    "ArtifactSpotChances": null,
+    "CanBeGivenAsGift": true,
+    "CanBeTrashed": true,
+    "ExcludeFromFishingCollection": false,
+    "ExcludeFromShippingCollection": false,
+    "ExcludeFromRandomSale": true,
+    "ContextTags": [
+      "color_white",
+      "egg_item"
+	  
+              ],      
+			  "CustomFields": null
+            
+          }
+          }
+        },
+		
+		 {
+        //Shell Object
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "CC_Tortoiseshell": {
+           "Name": "Tortoiseshell",
+    "DisplayName": "Tortoiseshell Flake",
+    "Description": "A highly-prized flake that sheds off naturally.",
+    "Type": "Basic",
+    "Category": -8,
+    "Price": 150,
+    "Texture": "Mods/{{ModId}}/Objects",
+    "SpriteIndex": 7,
+    "ColorOverlayFromNextIndex": false,
+    "Edibility": -1,
+    "IsDrink": false,
+    "Buffs": null,
+    "GeodeDropsDefaultItems": false,
+    "GeodeDrops": null,
+    "ArtifactSpotChances": null,
+    "CanBeGivenAsGift": true,
+    "CanBeTrashed": true,
+    "ExcludeFromFishingCollection": false,
+    "ExcludeFromShippingCollection": false,
+    "ExcludeFromRandomSale": true,
+    "ContextTags": [
+   
+              ],      
+			  "CustomFields": null
+            
+          }
+          }
+        },
+		 {
+        //Egg 2 Object
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "CC_Pickledegg": {
+           "Name": "CC_Pickledegg",
+    "DisplayName": "Pickled Eggs",
+    "Description": "Softly boiled and fermented with vinegar. Gets tangier with age!",
+    "Type": "Basic",
+    "Category": -26,
+    "Price": 950,
+    "Texture": "Mods/{{ModId}}/Objects",
+    "SpriteIndex": 6,
+    "ColorOverlayFromNextIndex": false,
+    "Edibility": -1,
+    "IsDrink": false,
+    "Buffs": null,
+    "GeodeDropsDefaultItems": false,
+    "GeodeDrops": null,
+    "ArtifactSpotChances": null,
+    "CanBeGivenAsGift": true,
+    "CanBeTrashed": true,
+    "ExcludeFromFishingCollection": false,
+    "ExcludeFromShippingCollection": false,
+    "ExcludeFromRandomSale": true,
+    "ContextTags": [
+   
+              ],      
+			  "CustomFields": null
+            
+          }
+          }
+        },
+		 {
+        //Shell 2 Object
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "CC_Hairpin": {
+           "Name": "Hairpin",
+    "DisplayName": "Tortoiseshell Hairpin",
+    "Description": "An elegant, hand-sculpted pin for fancy hairstyles.",
+    "Type": "Basic",
+    "Category": -26,
+    "Price": 900,
+    "Texture": "Mods/{{ModId}}/Objects",
+    "SpriteIndex": 8,
+    "ColorOverlayFromNextIndex": false,
+    "Edibility": -1,
+    "IsDrink": false,
+    "Buffs": null,
+    "GeodeDropsDefaultItems": false,
+    "GeodeDrops": null,
+    "ArtifactSpotChances": null,
+    "CanBeGivenAsGift": true,
+    "CanBeTrashed": true,
+    "ExcludeFromFishingCollection": false,
+    "ExcludeFromShippingCollection": false,
+    "ExcludeFromRandomSale": true,
+    "ContextTags": [
+   
+              ],      
+			  "CustomFields": null
+            
+          }
+          }
+        },
+		{
+        //Crop
+        "Action": "EditData",
+        "Target": "Data/Crops",
+        "Entries": {
+          "CC_creosoteseeds": {
+            "Seasons": ["summer"],
+            "DaysInPhase": [1, 2, 2, 3, 3],
+			"RegrowDays": 3,
+			"HarvestMinStack": 4,
+			"HarvestMaxStack": 5,
+			"ExtraHarvestChance": 0.55,
+			   "IsRaised": false,
+    "IsPaddyCrop": false,
+    "NeedsWatering": true,
+			"HarvestItemId": "CC_Rainpuff",
+            "Texture": "Mods/{{ModId}}/creosotecrop",
+			"SpriteIndex": 0
+          },
+        }
+      },
+    ]
+}   
+

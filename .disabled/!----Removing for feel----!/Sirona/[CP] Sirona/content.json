@@ -1,0 +1,132 @@
+{
+  "Format": "2.9.0",
+  "DynamicTokens": [
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Monday"
+      },
+      "Value": "Mon"
+    },
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Tuesday"
+      },
+      "Value": "Tue"
+    },
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Wednesday"
+      },
+      "Value": "Wed"
+    },
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Thursday"
+      },
+      "Value": "Thu"
+    },
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Friday"
+      },
+      "Value": "Fri"
+    },
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Saturday"
+      },
+      "Value": "Sat"
+    },
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Sunday"
+      },
+      "Value": "Sun"
+    }
+  ],
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Sirona, Characters/Dialogue/MarriageDialogue{{ModId}}_Sirona, Characters/Schedules/{{ModId}}_Sirona, Strings/schedules/{{ModId}}_Sirona",
+      "FromFile": "assets/data/Blank/blank.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/data/Mail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/data/characters.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/data/CustomCompanions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/data/schedules.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/data/Dialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/data/MarriageDialogue.json"
+    },
+    {
+      "LogName": "Sirona Portraits",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_Sirona",
+      "FromFile": "assets/portraits/portraits.png"
+    },
+    {
+      "LogName": "Sirona Sprites",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_Sirona",
+      "FromFile": "assets/sprites/spritesheet.png"
+    },
+    {
+      "LogName": "Sirona Spouse Room",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_sironaspouseroom",
+      "FromFile": "assets/Maps/sironaspouseroom.tmx"
+    },
+    {
+      "LogName": "Sirona Spouse Room",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_sironapatio",
+      "FromFile": "assets/Maps/sironapatio.tmx"
+    },
+    {
+      "LogName": "Gift Tastes Include",
+      "Action": "Include",
+      "FromFile": "assets/data/gifttastes.json"
+    },
+    {
+      "LogName": "Sirona Event Data",
+      "Action": "Include",
+      "FromFile": "assets/data/Events.json"
+    },
+    {
+      "LogName": "Sirona Animations",
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+        "{{ModId}}_sit": "16/17 16 16 16 17 16/16",
+        "{{ModId}}_read": "18/19/18",
+        "{{ModId}}_wave": "23/22/23",
+        "{{ModId}}_drink": "24/25/26",
+        "{{ModId}}_giggle": "30/31/30",
+        "{{ModId}}_invisible": "39 39 39/39 39 39 39 39/39 39 39 39"
+      }
+    }
+  ]
+}

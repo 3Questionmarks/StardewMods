@@ -1,0 +1,12 @@
+{
+    "Changes": [
+		{
+			"LogName": "{{ModId}}_Sandy",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sandy",
+			"Entries":{
+				"{{ModId}}_CoffeeBean_CT": "{{i18n: Sandy.CoffeeBean_CT}}"
+			}
+		}
+	]
+}

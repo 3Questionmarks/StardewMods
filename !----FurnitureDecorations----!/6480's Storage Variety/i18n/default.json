@@ -1,0 +1,62 @@
+{
+  // Objects
+  "AdventurersPack.name": "Adventurer's Pack",
+  "AdventurersPack.description": "Go trawling through dark dungeons and caverns with this bag to hold rare treasures in!",
+  "CigarBox.name": "Cigar Box",
+  "CigarBox.description": "A small wooden box to leave your valuables in.",
+  "DimensionalPortal.name": "Dimensional Portal",
+  "DimensionalPortal.description": "You can store items in a pocket dimension. How convenient!",
+  "IceCooler.name": "Ice Cooler",
+  "IceCooler.description": "A cooler full of ice to keep perishables fresh!",
+  "LumberPile.name": "Lumber Pile",
+  "LumberPile.description": "A sturdy shelf to keep all your building materials in one spot.",
+  "MiniStorageShed.name": "Mini Storage Shed",
+  "MiniStorageShed.description": "A small shed, just for keeping stuff in.",
+  "WoodenCabinet.name": "Wooden Cabinet",
+  "WoodenCabinet.description": "A tall mahogany cabinet with plenty of room inside.",
+  "WroughtIronCellar.name": "Wrought-Iron Cellar",
+  "WroughtIronCellar.description": "This staircase leads down to a roomy cellar with plenty of space for items.",
+
+  // Config
+  "config.section.AdventurersPack.name": "Adventurer's Pack",
+  "config.section.AdventurersPack.description": "Config options for the Adventurer's Pack",
+  "config.AdventurersPackEnabled.name": "Enabled",
+  "config.AdventurersPackCapacity.name": "Capacity",
+
+  "config.section.CigarBox.name": "Cigar Box",
+  "config.section.CigarBox.description": "Config options for the Cigar Box",
+  "config.CigarBoxEnabled.name": "Enabled",
+  "config.CigarBoxCapacity.name": "Capacity",
+
+  "config.section.DimensionalPortal.name": "Dimensional Portal",
+  "config.section.DimensionalPortal.description": "Config options for the Dimensional Portal",
+  "config.DimensionalPortalEnabled.name": "Enabled",
+  "config.DimensionalPortalCapacity.name": "Capacity",
+
+  "config.section.IceCooler.name": "Ice Cooler",
+  "config.section.IceCooler.description": "Config options for the Ice Cooler",
+  "config.IceCoolerEnabled.name": "Enabled",
+  "config.IceCoolerCapacity.name": "Capacity",
+
+  "config.section.LumberPile.name": "Lumber Pile",
+  "config.section.LumberPile.description": "Config options for the Lumber Pile",
+  "config.LumberPileEnabled.name": "Enabled",
+  "config.LumberPileCapacity.name": "Capacity",
+
+  "config.section.MiniStorageShed.name": "Mini Storage Shed",
+  "config.section.MiniStorageShed.description": "Config options for the Mini Storage Shed",
+  "config.MiniStorageShedEnabled.name": "Enabled",
+  "config.MiniStorageShedCapacity.name": "Capacity",
+
+  "config.section.WoodenCabinet.name": "Wooden Cabinet",
+  "config.section.WoodenCabinet.description": "Config options for the Wooden Cabinet",
+  "config.WoodenCabinetEnabled.name": "Enabled",
+  "config.WoodenCabinetCapacity.name": "Capacity",
+
+  "config.section.WroughtIronCellar.name": "Wrought-Iron Cellar",
+  "config.section.WroughtIronCellar.description": "Config options for the Wrought-Iron Cellar",
+  "config.WroughtIronCellarEnabled.name": "Enabled",
+  "config.WroughtIronCellarCapacity.name": "Capacity",
+
+  "$schema": "https://smapi.io/schemas/i18n.json",
+}

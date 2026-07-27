@@ -1,0 +1,80 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (MySubmarine)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/MySubmarine",
+      "FromFile": "assets/Maps/My Submarine/MySubmarine_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (MySubmarine.Bridge)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/MySubmarine.Bridge",
+      "FromFile": "assets/Maps/My Submarine/MySubmarine2_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (MySubmarine.Ginger.Bridge)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/MySubmarine.Ginger.Bridge",
+      "FromFile": "assets/Maps/My Submarine/MySubmarine3.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (MySubmarine.Ginger.A)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/MySubmarine.Ginger.A",
+      "FromFile": "assets/Maps/My Submarine/MySubmarine4.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (MySubmarine.Ginger.B)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/MySubmarine.Ginger.B",
+      "FromFile": "assets/Maps/My Submarine/MySubmarine5.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+//Boat Journey
+    {	
+		  "LogName": "Remapping (Earthy) Recolor MySubmarine Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap",
+		  "FromFile": "assets/Maps/My Submarine/MySubmarine_{{season}}.png", 
+		  "ToArea": {"X": 300, "Y": 47, "Width": 8, "Height": 5},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=Tikamin557.CP.MySubmarine": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {	
+		  "LogName": "Remapping (Earthy) Recolor MySubmarine2 Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap",
+		  "FromFile": "assets/Maps/My Submarine/MySubmarine2_{{season}}.png", 
+		  "ToArea": {"X": 301, "Y": 48, "Width": 10, "Height": 6},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasReadLetter": "MySubmarine.AvailableMailId",
+			  "HasMod: |contains=Tikamin557.CP.MySubmarine": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  }
+  ]
+}

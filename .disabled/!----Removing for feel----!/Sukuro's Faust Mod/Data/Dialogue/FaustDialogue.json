@@ -1,0 +1,386 @@
+{
+	"Changes": [
+		{
+			"LogName": "Faust Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Faust",
+			"Entries": {
+				//Specific Day
+				"spring_12_2": "{{i18n:Faust.Spring12.2}}",
+				"spring_23_2": "{{i18n:Faust.Spring23.2}}",
+				
+				"summer_10": "{{i18n:Faust.Summer10.1}}",
+				"summer_10_2": "{{i18n:Faust.Summer10.2}}",
+				"summer_19": "{{i18n:Faust.Summer19}}",
+				"summer_27": "{{i18n:Faust.Summer27.1}}",
+				"summer_27_2": "{{i18n:Faust.Summer27.2}}",
+				
+				"fall_1": "{{i18n:Faust.Fall1}}",
+				"fall_8": "{{i18n:Faust.Fall8}}",
+				"fall_15": "{{i18n:Faust.Fall15.1}}",
+				"fall_15_2": "{{i18n:Faust.Fall15.2}}",
+				"fall_26": "{{i18n:Faust.Fall26.1}}",
+				"fall_26_2": "{{i18n:Faust.Fall26.2}}",
+				"fall_28": "{{i18n:Faust.Fall28.1}}",
+				"fall_28_2": "{{i18n:Faust.Fall28.2.{{Random: A,B}}}}",
+				
+				"winter_7": "{{i18n:Faust.Winter7.1}}",
+				"winter_7_2": "{{i18n:Faust.Winter7.2}}",
+				"winter_12": "{{i18n:Faust.Winter12}}",
+				"winter_12_2": "{{i18n:Faust.Winter12}}",
+				"winter_24": "{{i18n:Faust.Winter24.1}}",
+				"winter_24_2": "{{i18n:Faust.Winter24.2}}",
+				
+				
+				//Monday
+				"spring_Mon": "{{i18n:Faust.Mon}}",
+				"spring_Mon4": "{{i18n:Faust.Mon4}}",
+				"spring_Mon6": "{{i18n:Faust.Mon6}}",
+				"spring_Mon8": "{{i18n:Faust.Mon8}}",
+				
+				"summer_Mon": "{{i18n:Faust.Summer.Mon}}",
+				"summer_Mon2": "{{i18n:Faust.Summer.Mon2}}",
+				"summer_Mon4": "{{i18n:Faust.Summer.Mon4}}",
+				"summer_Mon8": "{{i18n:Faust.Summer.Mon8}}",
+				
+				"fall_Mon": "{{i18n:Faust.Fall.Mon}}",
+				"fall_Mon2": "{{i18n:Faust.Fall.Mon2}}",
+				"fall_Mon4": "{{i18n:Faust.Fall.Mon4}}",
+				"fall_Mon8": "{{i18n:Faust.Fall.Mon8}}",
+				
+				"winter_Mon": "{{i18n:Faust.Winter.Mon}}",
+				"winter_Mon4": "{{i18n:Faust.Winter.Mon4}}",
+				"winter_Mon6": "{{i18n:Faust.Winter.Mon6}}",
+				"winter_Mon8": "{{i18n:Faust.Winter.Mon8}}",
+				"winter_Mon10": "{{i18n:Faust.Winter.Mon10}}",
+				
+				
+				//Tuesday
+				"spring_Tue": "{{i18n:Faust.Tue}}",
+				"spring_Tue2": "{{i18n:Faust.Tue2}}",
+				"spring_Tue4": "{{i18n:Faust.Tue4}}",
+				"spring_Tue10": "{{i18n:Faust.Tue10}}",
+				
+				"summer_Tue": "{{i18n:Faust.Summer.Tue}}",
+				"summer_Tue2": "{{i18n:Faust.Summer.Tue2}}",
+				"summer_Tue6": "{{i18n:Faust.Summer.Tue6}}",
+				"summer_Tue10": "{{i18n:Faust.Summer.Tue10}}",
+				
+				"fall_Tue": "{{i18n:Faust.Fall.Tue}}",
+				"fall_Tue4": "{{i18n:Faust.Fall.Tue4}}",
+				"fall_Tue6": "{{i18n:Faust.Fall.Tue6}}",
+				
+				"winter_Tue": "{{i18n:Faust.Winter.Tue}}",
+				"winter_Tue4": "{{i18n:Faust.Winter.Tue4}}",
+				"winter_Tue8": "{{i18n:Faust.Winter.Tue8}}",
+				
+				
+				//Wednesday
+				"spring_Wed": "{{i18n:Faust.Wed}}",
+				"spring_Wed4": "{{i18n:Faust.Wed4}}",
+				"spring_Wed6": "{{i18n:Faust.Wed6}}",
+				"spring_Wed8": "{{i18n:Faust.Wed8}}",
+				
+				"summer_Wed": "{{i18n:Faust.Summer.Wed}}",
+				"summer_Wed2": "{{i18n:Faust.Summer.Wed2}}",
+				"summer_Wed6": "{{i18n:Faust.Summer.Wed6}}",
+				"summer_Wed8": "{{i18n:Faust.Summer.Wed8}}",
+				
+				"fall_Wed": "{{i18n:Faust.Fall.Wed}}",
+				"fall_Wed4": "{{i18n:Faust.Fall.Wed4}}",
+				"fall_Wed6": "{{i18n:Faust.Fall.Wed6}}",
+				"fall_Wed10": "{{i18n:Faust.Fall.Wed10}}",
+				
+				"winter_Wed": "{{i18n:Faust.Winter.Wed}}",
+				"winter_Wed2": "{{i18n:Faust.Winter.Wed2}}",
+				"winter_Wed6": "{{i18n:Faust.Winter.Wed6}}",
+				"winter_Wed8": "{{i18n:Faust.Winter.Wed8}}",
+				
+				
+				//Thursday
+				"spring_Thu": "{{i18n:Faust.Thu}}",
+				"spring_Thu2": "{{i18n:Faust.Thu2}}",
+				"spring_Thu6": "{{i18n:Faust.Thu6}}",
+				
+				"summer_Thu": "{{i18n:Faust.Summer.Thu}}",
+				"summer_Thu4": "{{i18n:Faust.Summer.Thu4}}",
+				"summer_Thu6": "{{i18n:Faust.Summer.Thu6}}",
+				"summer_Thu8": "{{i18n:Faust.Summer.Thu8}}",
+				
+				"fall_Thu": "{{i18n:Faust.Fall.Thu}}",
+				"fall_Thu2": "{{i18n:Faust.Fall.Thu2}}",
+				"fall_Thu4": "{{i18n:Faust.Fall.Thu4}}",
+				"fall_Thu8": "{{i18n:Faust.Fall.Thu8}}",
+				
+				"winter_Thu": "{{i18n:Faust.Winter.Thu}}",
+				"winter_Thu4": "{{i18n:Faust.Winter.Thu4}}",
+				"winter_Thu6": "{{i18n:Faust.Winter.Thu6}}",
+				
+				
+				//Friday
+				"spring_Fri": "{{i18n:Faust.Fri}}",
+				"spring_Fri2": "{{i18n:Faust.Fri2}}",
+				"spring_Fri6": "{{i18n:Faust.Fri6}}",
+				"spring_Fri8": "{{i18n:Faust.Fri8}}",
+				
+				"summer_Fri": "{{i18n:Faust.Summer.Fri}}",
+				"summer_Fri2": "{{i18n:Faust.Summer.Fri2}}",
+				"summer_Fri4": "{{i18n:Faust.Summer.Fri4}}",
+				"summer_Fri10": "{{i18n:Faust.Summer.Fri10}}",
+				
+				"fall_Fri": "{{i18n:Faust.Fall.Fri}}",
+				"fall_Fri4": "{{i18n:Faust.Fall.Fri4}}",
+				"fall_Fri6": "{{i18n:Faust.Fall.Fri6}}",
+				"fall_Fri8": "{{i18n:Faust.Fall.Fri8}}",
+				
+				"winter_Fri": "{{i18n:Faust.Winter.Fri}}",
+				"winter_Fri2": "{{i18n:Faust.Winter.Fri2}}",
+				"winter_Fri6": "{{i18n:Faust.Winter.Fri6}}",
+				"winter_Fri10": "{{i18n:Faust.Winter.Fri10}}",
+				
+				
+				//Saturday
+				"spring_Sat": "{{i18n:Faust.Sat}}",
+				"spring_Sat4": "{{i18n:Faust.Sat4}}",
+				"spring_Sat8": "{{i18n:Faust.Sat8}}",
+				"spring_Sat10": "{{i18n:Faust.Sat10}}",
+				
+				"summer_Sat": "{{i18n:Faust.Summer.Sat}}",
+				"summer_Sat2": "{{i18n:Faust.Summer.Sat2}}",
+				"summer_Sat6": "{{i18n:Faust.Summer.Sat6}}",
+				
+				"fall_Sat": "{{i18n:Faust.Fall.Sat}}",
+				"fall_Sat4": "{{i18n:Faust.Fall.Sat4}}",
+				"fall_Sat6": "{{i18n:Faust.Fall.Sat6}}",
+				"fall_Sat8": "{{i18n:Faust.Fall.Sat8}}",
+				
+				"winter_Sat": "{{i18n:Faust.Winter.Sat}}",
+				"winter_Sat2": "{{i18n:Faust.Winter.Sat2}}",
+				"winter_Sat4": "{{i18n:Faust.Winter.Sat4}}",
+				"winter_Sat8": "{{i18n:Faust.Winter.Sat8}}",
+
+				
+				//Sunday
+				"spring_Sun": "{{i18n:Faust.Sun}}",
+				"spring_Sun4": "{{i18n:Faust.Sun4}}",
+				"spring_Sun6": "{{i18n:Faust.Sun6}}",
+				"spring_Sun8": "{{i18n:Faust.Sun8}}",
+				
+				"summer_Sun": "{{i18n:Faust.Summer.Sun}}",
+				"summer_Sun2": "{{i18n:Faust.Summer.Sun2}}",
+				"summer_Sun4": "{{i18n:Faust.Summer.Sun4}}",
+				"summer_Sun8": "{{i18n:Faust.Summer.Sun8}}",
+				
+				"fall_Sun": "{{i18n:Faust.Fall.Sun}}",
+				"fall_Sun4": "{{i18n:Faust.Fall.Sun4}}",
+				"fall_Sun6": "{{i18n:Faust.Fall.Sun6}}",
+				"fall_Sun10": "{{i18n:Faust.Fall.Sun10}}",
+				
+				"winter_Sun": "{{i18n:Faust.Winter.Sun}}",
+				"winter_Sun2": "{{i18n:Faust.Winter.Sun2}}",
+				"winter_Sun4": "{{i18n:Faust.Winter.Sun4}}",
+				"winter_Sun8": "{{i18n:Faust.Winter.Sun8}}",
+				
+				
+				//Dating & stuff
+				"refusal_no_heartsA": "{{i18n:Faust.Refusal.0HA}}",
+				"refusal_no_heartsB": "{{i18n:Faust.Refusal.0HB}}",
+				"reject_two_heartA": "{{i18n:Faust.Reject.2HA}}",
+				"reject_two_heartB": "{{i18n:Faust.Reject.2HB}}",
+				"reject_four_heartA": "{{i18n:Faust.Reject.4HA}}",
+				"reject_four_heartB": "{{i18n:Faust.Reject.4HB}}",
+				"refusal_knownA": "{{i18n:Faust.RefusalKnown.A}}",
+				"refusal_knownB": "{{i18n:Faust.RefusalKnown.B}}",
+				"refusal_botherA": "{{i18n:Faust.RefusalBother.A}}",
+				"refusal_botherB": "{{i18n:Faust.RefusalBother.B}}",
+				"engageA": "{{i18n:Faust.Engaged.A}}",
+				"engageB": "{{i18n:Faust.Engaged.B}}",
+				"marriedA": "{{i18n:Faust.RefusalMarried.A}}",
+				"marriedB": "{{i18n:Faust.RefusalMarried.B}}",
+				"give_flowersA": "{{i18n:Faust.GiveFlowers.A}}",
+				"give_flowersB": "{{i18n:Faust.GiveFlowers.B}}",
+				"give_pendant": "{{i18n:Faust.GivePendant}}",
+				"secondChance_Girls": "{{i18n:Faust.SecondChance}}",
+				"secondChance_Guys": "{{i18n:Faust.SecondChance}}",
+				"dating_Faust": "{{i18n:Faust.Dating}}",
+				"dating_Faust_memory_oneday": "{{i18n:Faust.Dating.OneDay}}",
+				"dating_Faust_memory_oneyear": "{{i18n:Faust.Dating.OneYear}}",
+				"stardrop_gift": "{{i18n:Faust.StardropGift}}",
+				
+				
+				//Gift Tastes
+				"AcceptGift_(O)StardropTea": "{{i18n:Gifts.Faust.StardropTea}}",
+				"AcceptBirthdayGift_Positive": "{{i18n:Gifts.Faust.Positive}}",
+				"AcceptBirthdayGift_Negative": "{{i18n:Gifts.Faust.Negative}}",
+				"AcceptGift_(O)346": "{{i18n:Gifts.Faust.BitterAlcohol}}",
+				"AcceptGift_(O)303": "{{i18n:Gifts.Faust.BitterAlcohol}}",
+				"AcceptGift_(O)348": "{{i18n:Gifts.Faust.SweetAlcohol}}",
+				"AcceptGift_(O)459": "{{i18n:Gifts.Faust.SweetAlcohol}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine": "{{i18n:Gifts.Faust.BlueMoonWine}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine": "{{i18n:Gifts.Faust.BlueMoonWine}}",
+				"AcceptGift_(O)296": "{{i18n:Gifts.Faust.ForageBerries}}",
+				"AcceptGift_(O)396": "{{i18n:Gifts.Faust.ForageBerries}}",
+				"AcceptGift_(O)410": "{{i18n:Gifts.Faust.ForageBerries}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Bearberrys": "{{i18n:Gifts.Faust.ForageBerries}}",
+				"AcceptGift_(O)Cornucopia_Raspberry": "{{i18n:Gifts.Faust.ForageBerries}}",
+				"AcceptGift_(O)Cornucopia_JuniperBerries": "{{i18n:Gifts.Faust.ForageBerries}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice": "{{i18n:Gifts.Faust.MushroomBerryRice}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Red_Baneberry": "{{i18n:Gifts.Faust.Ingredient}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Poison_Mushroom": "{{i18n:Gifts.Faust.Ingredient}}",
+				"AcceptGift_(O)258": "{{i18n:Gifts.Faust.CropBerries}}",
+				"AcceptGift_(O)282": "{{i18n:Gifts.Faust.CropBerries}}",
+				"AcceptGift_(O)400": "{{i18n:Gifts.Faust.CropBerries}}",
+				"AcceptGift_(O)417": "{{i18n:Gifts.Faust.CropBerries}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Salal_Berry": "{{i18n:Gifts.Faust.CropBerries}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry": "{{i18n:Gifts.Faust.CropBerries}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Slime_Berry": "{{i18n:Gifts.Faust.Slimeberry}}",
+				"AcceptGift_(O)395": "{{i18n:Gifts.Faust.Coffee}}",
+				"AcceptGift_(O)253": "{{i18n:Gifts.Faust.Coffee}}",
+				"AcceptGift_(O)561": "{{i18n:Gifts.Faust.GhostCrystal}}",
+				"AcceptGift_(O)109": "{{i18n:Gifts.Faust.Sword}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Rusty_Blade": "{{i18n:Gifts.Faust.Sword}}",
+				"AcceptGift_(O)768": "{{i18n:Gifts.Faust.Essence}}",
+				"AcceptGift_(O)769": "{{i18n:Gifts.Faust.Essence}}",
+				"AcceptGift_(O)212": "{{i18n:Gifts.Faust.SalmonDinner}}",
+				
+				
+				//Other
+				//"Introduction": "{{i18n:Faust.Introduction}}",
+				
+				"Resort_Entering": "{{i18n:Faust.Resort.Entering}}",
+				"Resort_Leaving": "{{i18n:Faust.Resort.Leaving}}",
+				"Resort_Leaving_2": "{{i18n:Faust.Resort.Leaving.2}}",
+				"Resort_Wander": "{{i18n:Faust.Resort.Wander}}",
+				"Resort_Towel": "{{i18n:Faust.Resort.Towel}}",
+				"Resort_Shore": "{{i18n:Faust.Resort.Shore}}",
+				"Resort_Chair": "{{i18n:Faust.Resort.Chair}}",
+				"Resort_Bar": "{{i18n:Faust.Resort.Bar}}",
+				
+				"FlowerDance_Accept": "{{i18n:Faust.DanceAccept}}",
+				"FlowerDance_Accept_Spouse": "{{i18n:Faust.DanceAcceptSpouse}}",
+				"FlowerDance_Decline": "{{i18n:Faust.DanceRejection}}",
+				"danceRejection": "{{i18n:Faust.DanceRejection}}",
+				
+				"GreenRain": "{{i18n:Faust.GreenRain}}",
+				"GreenRain_2": "{{i18n:Faust.GreenRain.2}}",
+				"GreenRainFinished": "{{i18n:Faust.GreenRainFinished}}",
+				
+				"Divorced": "{{i18n:Faust.Divorced}}",
+				"RejectGift_Divorced": "{{i18n:Faust.GiftDivorced}}",
+				"RejectBouquet_Divorced": "{{i18n:Faust.FlowersDivorced}}",
+				"RejectMermaidPendant_Divorced": "{{i18n:Faust.PendantDivorced}}",
+				"RejectMovieTicket_Divorced": "{{i18n:Faust.TicketDivorced}}",
+				"WipedMemory": "{{i18n:Faust.MemoryWipe}}",
+				
+				"eventSeen_1000077_memory_oneweek": "{{i18n:Faust.LandslideClear.OneWeek}}",
+				"firstVisit_FaustHouse": "{{i18n:Faust.HouseFirstEntry}}",
+				"firstVisit_Railroad": "{{i18n:Faust.RailroadFirstEntry}}",
+				"mineArea_80": "{{i18n:Faust.Mines}}",
+				
+				"SeedShop_Fri": "{{i18n:Faust.PierreShop}}",
+				"Saloon": "{{i18n:Faust.Saloon.{{Random: 1,2,3,4,5}}}}",
+				"Saloon4": "{{i18n:Faust.Saloon.4Hearts.{{Random: 1,2,3,4,5}}}}",
+				"Saloon8": "{{i18n:Faust.Saloon.8Hearts.{{Random: 1,2,3,4,5}}}}",
+				
+				"eventSeen_95790305_memory_oneweek": "{{i18n:Faust.ElliottFriendship.OneWeek}}",
+				"eventSeen_95790305_memory_twoweeks": "{{i18n:Faust.ElliottFriendship.TwoWeeks}}",
+				"eventSeen_95790305_memory_fourweeks": "{{i18n:Faust.ElliottFriendship.FourWeeks}}",
+			}
+		},
+		{
+			"LogName": "Faust Engagement Dialogue",
+			"Action": "EditData",
+			"Target": "Data/EngagementDialogue",
+			"Entries": {
+				"Faust0": "{{i18n:Engagement.Faust0}}",
+				"Faust1": "{{i18n:Engagement.Faust1}}"
+			}
+		},
+		{
+			"LogName": "Faust Post-Wedding Dialogue",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"Faust_AfterWedding": "{{i18n:Faust.PostWedding}}",
+			}
+		},
+		{//Post-friendship dialogue alterations
+			"LogName": "Faust Dialogue 8-Heart Event Changes",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Faust",
+			"When": { "HasSeenEvent |contains=95790305": true },
+			"Entries": {
+				"fall_Mon4": "{{i18n:Faust.Fall.Mon4.Alt}}",
+				"summer_Tue6": "{{i18n:Faust.Summer.Tue6.Alt}}",
+				"winter_Tue8": "{{i18n:Faust.Winter.Tue8.Alt}}",
+				"spring_Thu6": "{{i18n:Faust.Thu6.Alt}}",
+				"fall_Thu4": "{{i18n:Faust.Fall.Thu4.Alt}}",
+				"winter_Fri6": "{{i18n:Faust.Winter.Fri6.Alt}}",
+				"spring_Sat8": "{{i18n:Faust.Sat8.Alt}}",
+				"spring_Sun6": "{{i18n:Faust.Sun6.Alt}}",
+				
+				"dating_Elliott": "{{i18n:Faust.DatingElliott}}",
+				"married_Elliott": "{{i18n:Faust.MarriedElliott}}",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Faust",
+			"When": {
+				"HasSeenEvent |contains=95790305": true,
+				"Hearts:Leah": "0, 1, 2, 3, 4, 5",
+				"Hearts:Elliott": "0, 1, 2, 3, 4, 5"
+			},
+			"Entries": {
+				"Saloon_Fri": "{{i18n:Faust.Saloon.{{Random: 8Hearts.1,8Hearts.2,Elliott.1,Elliott.2,Elliott.3}}}}",
+			}
+		},
+		{//Dating dialogue alterations
+			"LogName": "Faust Dialogue Dating Changes",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Faust",
+			"When": { "Relationship:Faust": "Dating" },
+			"Entries": {
+				"Saloon8": "{{i18n:Faust.Saloon.{{Random: Dating.1,Dating.2,8Hearts.3,8Hearts.4,8Hearts.5}}}}",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Faust",
+			"When": {
+				"Relationship:Faust": "Dating",
+				"HasSeenEvent |contains=95790305": true,
+				"Hearts:Leah": "0, 1, 2, 3, 4, 5",
+				"Hearts:Elliott": "0, 1, 2, 3, 4, 5"
+			},
+			"Entries": {
+				"Saloon_Fri": "{{i18n:Faust.Saloon.{{Random: Dating.1,Dating.2,8Hearts.3,Elliott.2,Elliott.3}}}}",
+			}
+		},
+		{//No SVE Dialogue Changes
+			"LogName": "Changes Faust's Dialogue Related to SVE",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Faust",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"Entries": {
+				"fall_Mon8": "{{i18n:Faust.Fall.Mon8.NoSVE}}",
+				"winter_Mon8": "{{i18n:Faust.Winter.Mon8.NoSVE}}",
+				"spring_Tue2": "{{i18n:Faust.Tue2.NoSVE}}",
+				"spring_Tue4": "{{i18n:Faust.Tue4.NoSVE}}",
+				"summer_Thu4": "{{i18n:Faust.Summer.Thu4.NoSVE}}",
+				"summer_Thu8": "{{i18n:Faust.Summer.Thu8.NoSVE}}",
+				"fall_Thu4": "{{i18n:Faust.Fall.Thu4.NoSVE}}",
+				"fall_Thu8": "{{i18n:Faust.Fall.Thu8.NoSVE}}",
+				"fall_Fri4": "{{i18n:Faust.Fall.Fri4.NoSVE}}",
+				"winter_Sat4": "{{i18n:Faust.Winter.Sat4.NoSVE}}",
+				"summer_Sun8": "{{i18n:Faust.Summer.Sun8.NoSVE}}",
+				"winter_Sun8": "{{i18n:Faust.Winter.Sun8.NoSVE}}",
+				
+				"Introduction": "{{i18n:Faust.Introduction.NoSVE}}",
+				"WipedMemory": "{{i18n:Faust.MemoryWipe.NoSVE}}",
+				"eventSeen_1000077_memory_oneweek": "{{i18n:Faust.LandslideClear.OneWeek.NoSVE}}",
+				"firstVisit_Railroad": "{{i18n:Faust.RailroadFirstEntry.NoSVE}}",
+			}
+		}
+	]
+}

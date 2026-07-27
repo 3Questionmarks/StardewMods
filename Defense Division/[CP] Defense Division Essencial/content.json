@@ -1,0 +1,187 @@
+{
+	"Format": "2.5.0",
+	"ConfigSchema":
+	{
+		//Config
+		"DefenseDiv.Leaves.01": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "DDConfig"
+		},
+		"DefenseDiv.Leaves.02": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "DDConfig"
+		},
+		"DefenseDiv.Time.01": {
+            "AllowValues": "1_Years.2_Months, 2_Years.2_Months",
+            "Default": "1_Years.2_Months",
+			"Section": "DDConfig"
+		},
+		"DefenseDiv.Time.02": {
+            "AllowValues": "2_Months, 1_Years",
+            "Default": "2_Months",
+			"Section": "DDConfig"
+		},
+		"DefenseDiv.Monster": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "DDConfig"
+		},
+		"DefenseDiv.Censure": {
+            "AllowValues": "true, false",
+            "Default": false,
+			"Section": "DDConfig"
+		},
+		"DefenseDiv.Info": {
+            "AllowValues": "Unread, Agree, Disagree",
+            "Default": "Unread",
+			"Section": "DDInfo"
+		},
+	},
+	"DynamicTokens": [
+		{
+			"Name": "IsEvenYear",
+			"Value": "{{Query: {{Year}} % 2 = 0}}"
+		},
+		{
+			"Name": "DDLeaves01",
+			"Value": "AddMail",
+		},
+		{
+			"Name": "DDLeaves01",
+			"Value": "RemoveMail",
+			"When": { "DefenseDiv.Leaves.01": false }
+		},
+		{
+			"Name": "DDLeaves02",
+			"Value": "AddMail",
+		},
+		{
+			"Name": "DDLeaves02",
+			"Value": "RemoveMail",
+			"When": { "DefenseDiv.Leaves.02": false }
+		},
+		{
+			"Name": "DDTime01",
+			"Value": "AddMail",
+		},
+		{
+			"Name": "DDTime01",
+			"Value": "RemoveMail",
+			"When": { "DefenseDiv.Time.01": "2_Years.2_Months", }
+		},
+		{
+			"Name": "DDTime02",
+			"Value": "AddMail",
+		},
+		{
+			"Name": "DDTime02",
+			"Value": "RemoveMail",
+			"When": { "DefenseDiv.Time.02": "1_Years", }
+		},
+		{
+			"Name": "EnableMonsterDD",
+			"Value": "AddMail",
+		},
+		{
+			"Name": "EnableMonsterDD",
+			"Value": "RemoveMail",
+			"When": { "DefenseDiv.Monster": false }
+		},
+    ], 	
+	"Changes": [
+	
+		{	// Incluir Varios
+		"LogName": "Incluir Varios",
+		"Action": "Include",
+		"FromFile": "Ativos/Terreno.json, Ativos/Mapas/Textos/TextoMapa.json, Ativos/Mapas/MiniMapa/MiniMapa.json, Ativos/Personagens/Edward.json, Ativos/Personagens/Isis.json, Ativos/Personagens/Miranda.json, Ativos/Personagens/Lee.json, Ativos/Personagens/Textos/DialogosAgendados.json, Ativos/Personagens/Eventos/DD_Eventos.json, Ativos/Personagens/Textos/TopicosEventos.json, Ativos/Personagens/Temporario/Atores.json, Ativos/Personagens/Textos/Correio.json, Ativos/Personagens/Eventos/Mini_Quest.json, Ativos/Som.json, Ativos/Loja.json, Ativos/Objetos.json, Ativos/Personagens/Eventos/Timer_ Eventos.json"
+		},
+		{ 	// Adds Calls e Extra Agenda
+        "Action": "Include",
+        "FromFile": "Ativos/Personagens/Eventos/Telefone.json, Ativos/Personagens/Agenda/Extra_Agenda.json"
+        },
+		{
+		"LogName": "Outros Mods Sem Script",
+		"Action": "Include",
+		"FromFile": "Ativos/Personagens/Compatibilidades/ReactToDeath.json"
+		},
+		{
+		"LogName": "FarmhouseVisits Mods",
+		"Action": "Include",
+		"FromFile": "Ativos/Personagens/Compatibilidades/FarmhouseVisits.json",
+		"When": { "HasMod |contains=mistyspring.farmhousevisits": true }
+		},
+		{
+		"LogName": "BuffFramework Mods",
+		"Action": "Include",
+		"FromFile": "Ativos/Personagens/Compatibilidades/BuffFramework.json",
+		"When": { "HasMod |contains=aedenthorn.BuffFramework": true, "HasMod |contains=PeacefulEnd.CustomCompanions": true }
+		},
+		{	// Gatilhos de Configurações (Dessa Forma Evita Problemas com Multiplayer)
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {
+			"DD_Leaves01": {
+              "Id": "DD_Leaves01",
+              "Trigger": "DayStarted",
+              "HostOnly": true,
+              "Action": "{{DDLeaves01}} Current DD_Leaves01 received",
+              "MarkActionApplied": false
+				}
+			}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {
+			"DD_Leaves02": {
+              "Id": "DD_Leaves02",
+              "Trigger": "DayStarted",
+              "HostOnly": true,
+              "Action": "{{DDLeaves02}} Current DD_Leaves02 received",
+              "MarkActionApplied": false
+				}
+			}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {
+			"DD_Time01": {
+              "Id": "DD_Time01",
+              "Trigger": "DayStarted",
+              "HostOnly": true,
+              "Action": "{{DDTime01}} Current DD_Time01 received",
+              "MarkActionApplied": false
+				}
+			}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {
+			"DD_Time02": {
+              "Id": "DD_Time02",
+              "Trigger": "DayStarted",
+              "HostOnly": true,
+              "Action": "{{DDTime02}} Current DD_Time02 received",
+              "MarkActionApplied": false
+				}
+			}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {
+			"DD_MonsterFTM": {
+              "Id": "DD_MonsterFTM",
+              "Trigger": "DayStarted",
+              "HostOnly": true,
+              "Action": "{{EnableMonsterDD}} Current DD_MonsterFTM received",
+              "MarkActionApplied": false
+				}
+			}
+		}
+	]
+}

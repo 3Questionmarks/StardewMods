@@ -1,10 +1,12 @@
-﻿{
-  "Name": "Non Destructive NPCs - 1.6 Unofficial update",
-  "Author": "Madara Uchiha - IamSaulC",
-  "Version": "1.6",
-  "Description": "NPCs no longer destroy placed objects in their paths. They would instead pass through them.",
-  "UniqueID": "IamSaulC.NonDestructiveNPCs",
-  "EntryDll": "NonDestructiveNPCs.dll",
-  "MinimumApiVersion": "3.1.0",
-  "UpdateKeys": []
+{
+  "Name": "Non Destructive NPCs Redux",
+  "Author": "ThaleTheGreat",
+  "Version": "2.2.1",
+  "Description": "NPCs no longer destroy placed objects in their paths.",
+  "UniqueID": "ThaleTheGreat.NonDestructiveNPCsRedux",
+  "EntryDll": "NonDestructiveNPCsRedux.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [
+    "Nexus:42667"
+  ]
 }

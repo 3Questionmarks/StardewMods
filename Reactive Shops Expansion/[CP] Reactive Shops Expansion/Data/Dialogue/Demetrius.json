@@ -1,0 +1,13 @@
+{
+    "Changes": [
+		{
+			"LogName": "{{ModId}}_Demetrius",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Demetrius",
+			"Entries":{
+				"{{ModId}}_MushroomLog_MCave_CT": "{{i18n: Demetrius.MushroomLog_MCave_CT}}",
+				"{{ModId}}_MushroomLog_BCave_CT": "{{i18n: Demetrius.MushroomLog_BCave_CT}}"
+			}
+		}
+	]
+}

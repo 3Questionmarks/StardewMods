@@ -1,0 +1,32 @@
+{
+    "Changes": [
+        {
+			"LogName": "{{ModId}}_Adventure Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AdventureShop",
+                "Items"
+            ],
+            "Entries": {
+				
+				// FOODSTUFFS
+				
+                "{{ModId}}_ID_BugSteak": {
+                    "Id": "{{ModId}}_ID_BugSteak",
+                    "ItemId": "(O)874",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Marlon_Foodstuffs Received",
+                    "Price": "72",
+					"AvailableStock": "5"
+                },
+                "{{ModId}}_ID_FieldSnack": {
+                    "Id": "{{ModId}}_ID_FieldSnack",
+                    "ItemId": "(O)403",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Marlon_Foodstuffs Received, MINE_LOWEST_LEVEL_REACHED 25, YEAR 1 1",
+                    "Price": "180",
+					"AvailableStock": "3"
+                }
+            }
+        }
+    ]
+}

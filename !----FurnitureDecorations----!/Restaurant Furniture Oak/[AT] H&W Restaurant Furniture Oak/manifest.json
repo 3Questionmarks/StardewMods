@@ -1,0 +1,14 @@
+﻿{
+  "Name": "[AT] H&W Restaurant Furniture - Oak",
+  "Author": "HimeTarts & wildflourmods",
+  "Version": "1.0.0",
+  "Description": "Pack adding oak wood variations for furniture restaurant tables.",
+  "UniqueID": "HXW.RestaurantFurni.Oak.AT",
+  "Dependencies": [
+      {"UniqueID": "HXW.RestaurantFurni", "IsRequired": true}
+    ],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.AlternativeTextures",
+    "MinimumVersion": "2.0.0"
+  }
+}

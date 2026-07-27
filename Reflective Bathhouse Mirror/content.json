@@ -1,0 +1,344 @@
+{
+    "Format": "2.0.3",
+    
+    "ConfigSchema": {
+        "Mod Enabled": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Bathhouse Layout": {
+            "AllowValues": "Automatic, Vanilla, Less Ugly Town Interiors",
+            "Default": "Automatic"
+        },
+        "Color Scheme": {
+            "AllowValues": "Automatic, Vanilla, Vibrant Pastoral, Clean Bathhouse, Toned Down Match",
+            "Default": "Automatic"
+        }
+    },
+    
+    "Changes": [
+        {
+            "LogName": "Load custom tiles",
+            "Action": "Load",
+            "Target": "Maps/mirror_tiles",
+            "FromFile": "assets/mirror_tiles.png"
+        },
+        {
+            "LogName": "Automatic recolor: VPR",
+            "Action": "EditImage",
+            "Target": "Maps/mirror_tiles",
+            "FromFile": "assets/patches/tilesheets/Vibrant Pastoral.png",
+            "When": {
+                "HasMod": "grapeponta.VibrantPastoralRecolor",
+                "Color Scheme": "Automatic"
+            }
+        },
+        {
+            "LogName": "Automatic recolor: clean bathhouse",
+            "Action": "EditImage",
+            "Target": "Maps/mirror_tiles",
+            "FromFile": "assets/patches/tilesheets/Clean Bathhouse.png",
+            "When": {
+                "HasMod": "KaileyAllen.Cleanbathhouse",
+                "Color Scheme": "Automatic"
+            }
+        },
+        {
+            "LogName": "Automatic recolor: toned down",
+            "Action": "EditImage",
+            "Target": "Maps/mirror_tiles",
+            "FromFile": "assets/patches/tilesheets/Toned Down Match.png",
+            "When": {
+                "HasMod": "LaurellaBellaBean.CP.BathhouseRecolorTonedDown",
+                "Color Scheme": "Automatic"
+            }
+        },
+        {
+            "LogName": "Manual recolor",
+            "Action": "EditImage",
+            "Target": "Maps/mirror_tiles",
+            "FromFile": "assets/patches/tilesheets/{{Color Scheme}}.png",
+            "When": { "HasFile:{{FromFile}}": true }
+        },
+        
+        
+        {
+            "LogName": "(Automatic) Vanilla men's mirror",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_MensLocker",
+            "FromFile": "assets/mensMirrors.tmx",
+            "ToArea": { "X": 3, "Y": 10, "Width": 7, "Height": 2 },
+            "When": {
+                "HasMod |contains=uglynt.town.interiors": "false",
+                "Bathhouse Layout": "Automatic",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Automatic) Vanilla women's mirror #1",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_WomensLocker",
+            "FromFile": "assets/womensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 6, "Height": 3 },
+            "ToArea": { "X": 8, "Y": 3, "Width": 6, "Height": 3 },
+            "When": {
+                "HasMod |contains=uglynt.town.interiors": "false",
+                "Bathhouse Layout": "Automatic",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Automatic) Vanilla women's mirror #2",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_WomensLocker",
+            "FromFile": "assets/womensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 3, "Width": 3, "Height": 2 },
+            "ToArea": { "X": 14, "Y": 8, "Width": 3, "Height": 2 },
+            "When": {
+                "HasMod |contains=uglynt.town.interiors": "false",
+                "Bathhouse Layout": "Automatic",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Manual) Vanilla men's mirror",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_MensLocker",
+            "FromFile": "assets/mensMirrors.tmx",
+            "ToArea": { "X": 3, "Y": 10, "Width": 7, "Height": 2 },
+            "When": { 
+                "Bathhouse Layout": "Vanilla",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Manual) Vanilla women's mirror #1",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_WomensLocker",
+            "FromFile": "assets/womensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 6, "Height": 3 },
+            "ToArea": { "X": 8, "Y": 3, "Width": 6, "Height": 3 },
+            "When": { 
+                "Bathhouse Layout": "Vanilla",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Manual) Vanilla women's mirror #2",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_WomensLocker",
+            "FromFile": "assets/womensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 3, "Width": 3, "Height": 2 },
+            "ToArea": { "X": 14, "Y": 8, "Width": 3, "Height": 2 },
+            "When": { 
+                "Bathhouse Layout": "Vanilla",
+                "Mod Enabled": "true"
+            }
+        },
+        
+        
+        {
+            "LogName": "(Automatic) LUTI men's mirror #1",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_MensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/mensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 4, "Height": 3 },
+            "ToArea": { "X": 5, "Y": 9, "Width": 4, "Height": 3 },
+            "When": {
+                "HasMod": "uglynt.town.interiors",
+                "Bathhouse Layout": "Automatic",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Automatic) LUTI men's mirror #2",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_MensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/mensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 3, "Width": 4, "Height": 2 },
+            "ToArea": { "X": 5, "Y": 15, "Width": 4, "Height": 2 },
+            "When": {
+                "HasMod": "uglynt.town.interiors",
+                "Bathhouse Layout": "Automatic",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Automatic) LUTI men's mirror #3",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_MensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/mensMirrors.tmx",
+            "FromArea": { "X": 4, "Y": 0, "Width": 3, "Height": 2 },
+            "ToArea": { "X": 1, "Y": 1, "Width": 3, "Height": 2 },
+            "When": {
+                "HasMod": "uglynt.town.interiors",
+                "Bathhouse Layout": "Automatic",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Automatic) LUTI women's mirror #1",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_WomensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/womensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 6, "Height": 3 },
+            "ToArea": { "X": 8, "Y": 3, "Width": 6, "Height": 3 },
+            "When": {
+                "HasMod": "uglynt.town.interiors",
+                "Bathhouse Layout": "Automatic",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Automatic) LUTI men's mirror #2",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_WomensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/womensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 3, "Width": 4, "Height": 2 },
+            "ToArea": { "X": 9, "Y": 13, "Width": 4, "Height": 2 },
+            "When": {
+                "HasMod": "uglynt.town.interiors",
+                "Bathhouse Layout": "Automatic",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Automatic) LUTI men's mirror #3",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_WomensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/womensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 5, "Width": 3, "Height": 2 },
+            "ToArea": { "X": 1, "Y": 8, "Width": 3, "Height": 2 },
+            "When": {
+                "HasMod": "uglynt.town.interiors",
+                "Bathhouse Layout": "Automatic",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Automatic) LUTI men's mirror #4",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_WomensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/womensMirrors.tmx",
+            "FromArea": { "X": 3, "Y": 5, "Width": 3, "Height": 2 },
+            "ToArea": { "X": 16, "Y": 5, "Width": 3, "Height": 2 },
+            "When": {
+                "HasMod": "uglynt.town.interiors",
+                "Bathhouse Layout": "Automatic",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Manual) LUTI men's mirror #1",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_MensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/mensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 4, "Height": 3 },
+            "ToArea": { "X": 5, "Y": 9, "Width": 4, "Height": 3 },
+            "When": {
+                "Bathhouse Layout": "Less Ugly Town Interiors",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Manual) LUTI men's mirror #2",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_MensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/mensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 3, "Width": 4, "Height": 2 },
+            "ToArea": { "X": 5, "Y": 15, "Width": 4, "Height": 2 },
+            "When": {
+                "Bathhouse Layout": "Less Ugly Town Interiors",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Manual) LUTI men's mirror #3",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_MensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/mensMirrors.tmx",
+            "FromArea": { "X": 4, "Y": 0, "Width": 3, "Height": 2 },
+            "ToArea": { "X": 1, "Y": 1, "Width": 3, "Height": 2 },
+            "When": {
+                "Bathhouse Layout": "Less Ugly Town Interiors",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Manual) LUTI women's mirror #1",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_WomensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/womensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 6, "Height": 3 },
+            "ToArea": { "X": 8, "Y": 3, "Width": 6, "Height": 3 },
+            "When": {
+                "Bathhouse Layout": "Less Ugly Town Interiors",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Manual) LUTI women's mirror #2",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_WomensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/womensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 3, "Width": 4, "Height": 2 },
+            "ToArea": { "X": 9, "Y": 13, "Width": 4, "Height": 2 },
+            "When": {
+                "Bathhouse Layout": "Less Ugly Town Interiors",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Manual) LUTI women's mirror #3",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_WomensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/womensMirrors.tmx",
+            "FromArea": { "X": 0, "Y": 5, "Width": 3, "Height": 2 },
+            "ToArea": { "X": 1, "Y": 8, "Width": 3, "Height": 2 },
+            "When": {
+                "Bathhouse Layout": "Less Ugly Town Interiors",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "(Manual) LUTI women's mirror #4",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_WomensLocker",
+            "FromFile": "assets/patches/Less Ugly Town Interiors/womensMirrors.tmx",
+            "FromArea": { "X": 3, "Y": 5, "Width": 3, "Height": 2 },
+            "ToArea": { "X": 16, "Y": 5, "Width": 3, "Height": 2 },
+            "When": {
+                "Bathhouse Layout": "Less Ugly Town Interiors",
+                "Mod Enabled": "true"
+            }
+        },
+        
+        
+        {
+            "LogName": "Valley Girls' female toilet",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FemaleToilet",
+            "FromFile": "assets/patches/valleygirls.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 3, "Height": 2 },
+            "ToArea": { "X": 4, "Y": 13, "Width": 3, "Height": 2 },
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod": "Trashracc.VG",
+                "Mod Enabled": "true"
+            }
+        },
+        {
+            "LogName": "Valley Girls' male toilet",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_MaleToilet",
+            "FromFile": "assets/patches/valleygirls.tmx",
+            "FromArea": { "X": 3, "Y": 0, "Width": 3, "Height": 2 },
+            "ToArea": { "X": 3, "Y": 13, "Width": 3, "Height": 2 },
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod": "Trashracc.VG",
+                "Mod Enabled": "true"
+            }
+        }
+    ]
+}

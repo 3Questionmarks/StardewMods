@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Juliet.Jessie)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Juliet.Jessie",
+      "FromFile": "assets/Maps/Juliet and Jessie/Juliet.Jessie_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

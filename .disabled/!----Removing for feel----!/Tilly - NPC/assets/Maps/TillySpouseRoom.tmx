@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="12">
+ <properties>
+  <property name="DayTiles" value="Back2 2 0 256 Front 2 1 288 "/>
+  <property name="NightTiles" value="Back2 2 0 1253 Back2 2 1 1285"/>
+ </properties>
+ <tileset firstgid="1" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2241" name="v15_TownInterior2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <tileset firstgid="3553" name="wizard_furniture" tilewidth="16" tileheight="16" tilecount="351" columns="13">
+  <image source="wizard_furniture.png" width="208" height="432"/>
+ </tileset>
+ <tileset firstgid="3904" name="springobjects" tilewidth="16" tileheight="16" tilecount="936" columns="24">
+  <image source="springobjects.png" width="384" height="624"/>
+ </tileset>
+ <tileset firstgid="4840" name="CarolineGreenhouseTiles" tilewidth="16" tileheight="16" tilecount="128" columns="8">
+  <image source="CarolineGreenhouseTiles.png" width="128" height="256"/>
+ </tileset>
+ <tileset firstgid="4968" name="bushes" tilewidth="16" tileheight="16" tilecount="176" columns="8">
+  <image source="bushes.png" width="128" height="352"/>
+ </tileset>
+ <tileset firstgid="5144" name="furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="furniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="8120" name="editedcrops" tilewidth="16" tileheight="16" tilecount="8" columns="4">
+  <image source="editedcrops.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="8128" name="tomatobird" tilewidth="16" tileheight="16" tilecount="2" columns="1">
+  <image source="tomatobird.png" width="16" height="42"/>
+ </tileset>
+ <layer id="1" name="Back" width="6" height="9">
+  <data encoding="csv">
+3315,3315,3315,3315,3315,3315,
+3347,3347,3347,3347,3347,3347,
+177,3379,3379,3379,3379,3379,
+1338,2143,1338,1337,1338,1337,
+1370,1369,1370,1369,1370,1369,
+1402,1401,1402,1401,1402,1401,
+1370,1370,1370,1370,1370,1370,
+2175,2175,2175,2175,2175,2175,
+2175,2175,2175,2175,2175,2175
+</data>
+ </layer>
+ <layer id="2" name="Back2" width="6" height="9">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,321,0,0,0,
+145,145,353,2605,2606,0,
+0,177,177,0,0,0,
+0,2524,2525,2525,2527,0,
+0,2556,2557,2557,2559,0,
+0,2556,2557,2557,2559,0,
+0,2588,2589,2589,2591,2591,
+0,0,0,4869,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="13" name="Back3" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+553,0,0,0,0,0,
+0,0,0,2386,2387,0,
+0,2386,0,2418,2419,0,
+0,0,2355,2356,2419,0,
+145,145,145,145,145,145,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Buildings" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,145,
+0,0,0,2637,2638,177,
+585,5488,5489,2669,2670,2238,
+0,0,0,0,0,6484,
+952,953,0,720,721,722,
+0,0,618,752,753,754,
+0,2246,8124,0,4959,4958,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,2532,
+373,374,0,2605,2606,2564,
+0,5456,5457,0,0,2206,
+0,0,0,0,0,6452,
+920,921,0,688,689,690,
+0,0,0,1556,282,281,
+0,0,8120,145,145,145,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="5" name="Front2" width="6" height="9">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="csv">
+0,0,2503,2504,0,0,
+0,0,2535,2536,0,8128,
+4244,0,0,0,0,8129,
+0,0,0,0,0,0,
+4245,809,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,5103,4950,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="6" name="Paths" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="7" name="Back"/>
+ <objectgroup id="8" name="Back2"/>
+ <objectgroup id="9" name="Buildings">
+  <object id="11" name="TileData" x="80" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Wem.Tilly_House20&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="Front"/>
+ <objectgroup id="11" name="Front2"/>
+ <objectgroup id="12" name="Paths"/>
+</map>

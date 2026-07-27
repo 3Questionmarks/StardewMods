@@ -1,0 +1,39 @@
+{
+//Dianna Lunar Astray full day school schedule.
+        "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Dianna",
+            "When": {
+                "HasMod |contains=Rafseazz.LunnaCP": "true"
+            },
+            "Entries": { 
+//Spring	
+	            "spring": "700 Custom_LASV_DiannaHouse 9 9 2 dianna_dance/800 Custom_LASV_Umuwi 55 36 2/1000 Custom_LASV_Umuwi 55 30 2 dianna_eat/1300 Custom_LASV_Umuwi 66 34 0/2000 Custom_LASV_DiannaHouse 8 5 3 dianna_sleep",
+	
+//Winter
+	            "winter_2": "700 Custom_LASV_DiannaHouse 9 9 2 dianna_dace/900 Custom_LASV_Umuwi 55 36 2/1100 Custom_LASV_Umuwi 86 21 1/1600 Custom_LASV_DiannaHouse 7 10 dianna_eat/2000 Custom_LASV_DiannaHouse 8 5 dianna_sleep",
+	
+//Rain
+	            "rain": "610 Custom_LASV_Umuwi 86 21 1/1200 Custom_LASV_Umuwi 55 36 2/1400 Custom_LASV_DiannaHouse 9 9 2/1600 Custom_LASV_DiannaHouse 7 10 dianna_eat/2000 Custom_LASV_DiannaHouse 8 5 dianna_sleep",
+	            "rain2": "610 Custom_LASV_Umuwi 86 21 1/1400 Custom_LASV_DiannaHouse 9 9 2/1600 Custom_LASV_DiannaHouse 7 10 dianna_eat/2000 Custom_LASV_DiannaHouse 8 5 dianna_sleep",
+            },
+        },
+//After seen Event to Human Form
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Dianna",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasSeenEvent: hostPlayer": 75160033,
+                "HasMod |contains=Rafseazz.LunnaCP": "true"
+            },
+            "Entries": {
+                "Tue": "0 Forest 4 5 2/610 Custom_SchoolHouse_SecondFloor 20 17 3/800 Custom_SchoolHouse_SecondFloor 19 16 3 dianna_sit_left/1130 Town 12 19 2 dianna_sit_forward/1230 Custom_SchoolHouse_SecondFloor 20 17 3/1250 Custom_SchoolHouse_SecondFloor 19 16 3 dianna_sit_left/1600 Forest 26 37 3/1620 Custom_LASV_DiannaHouse 7 10 dianna_eat/2000 Custom_LASV_DiannaHouse 8 5 dianna_sleep",
+                "Wed": "0 Forest 4 5 2/610 Custom_SchoolHouse_SecondFloor 20 17 3/800 Custom_SchoolHouse_SecondFloor 19 16 3 dianna_sit_left/1130 Town 12 19 2 dianna_sit_forward/1230 Custom_SchoolHouse_SecondFloor 20 17 3/1250 Custom_SchoolHouse_SecondFloor 19 16 3 dianna_sit_left/1600 Forest 26 37 3/1620 Custom_LASV_DiannaHouse 7 10 dianna_eat/2000 Custom_LASV_DiannaHouse 8 5 dianna_sleep",
+                "Fri": "0 Forest 4 5 2/610 Custom_SchoolHouse_SecondFloor 20 17 3/800 Custom_SchoolHouse_SecondFloor 19 16 3 dianna_sit_left/1130 Town 12 19 2 dianna_sit_forward/1230 Custom_SchoolHouse_SecondFloor 20 17 3/1250 Custom_SchoolHouse_SecondFloor 19 16 3 dianna_sit_left/1600 Forest 26 37 3/1620 Custom_LASV_DiannaHouse 7 10 dianna_eat/2000 Custom_LASV_DiannaHouse 8 5 dianna_sleep",
+                //"Fri":"0 Forest 4 5 2/620 Forest 33 25 2/800 ArchaeologyHouse 18 12 0/1620 Forest 26 37 3/2200 Custom_LASV_LunnaHouse 2 5 0"
+            },
+        },
+    ]
+}

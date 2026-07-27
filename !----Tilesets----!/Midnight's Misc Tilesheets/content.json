@@ -1,0 +1,153 @@
+{
+    "Format": "2.9.0",
+    "ConfigSchema": {
+        "AutoRecolor": {
+            "Description": "Exterior recolor. Defaults to automatic, based on your installed mods.",
+            "AllowValues": "Automatic, Vanilla, Earthy, Starblue, Vibrant",
+            "Default": "Automatic",
+            "AllowBlank": false
+        },
+        "AutoRecolorInterior": {
+            "Description": "Interior recolor. Defaults to automatic, based on your installed mods.",
+            "AllowValues": "Automatic, Vanilla, Earthy, Starblue, Vibrant",
+            "Default": "Automatic",
+            "AllowBlank": false
+        },
+        "Mailboxes": {
+            "Description": "What style of mailbox do you want? Either based on your recolor settings or specific overrides.",
+            "AllowValues": "Automatic, Wayback, Rurals",
+            "Default": "Automatic",
+            "AllowBlank": false
+        },
+        "SaturationLevel": {
+            "Description": "What saturation level do you want for Solstice Winter Star Compatibility? (Optional, if you use it)",
+            "AllowValues": "Saturated, Desaturated",
+            "Default": "Saturated",
+            "AllowBlank": false
+        }
+    },
+    "DynamicTokens": [
+        {
+            "Name": "InteriorRecolorTag",
+            "Value": "vanilla",
+            "When": {
+                "AutoRecolorInterior": "Automatic, Vanilla"
+            }
+        },
+        {
+            "Name": "InteriorRecolorTag",
+            "Value": "earthy",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyInteriors",
+                "AutoRecolorInterior": "Automatic"
+            }
+        },
+        {
+            "Name": "InteriorRecolorTag",
+            "Value": "starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValleyUnofficial",
+                "AutoRecolorInterior": "Automatic"
+            }
+        },
+        {
+            "Name": "InteriorRecolorTag",
+            "Value": "vibrant",
+            "When": {
+                "HasMod": "grapeponta.VibrantPastoralRecolor",
+                "AutoRecolorInterior": "Automatic"
+            }
+        },
+        {
+            "Name":"InteriorRecolorTag",
+            "Value":"{{AutoRecolorInterior}}",
+            "When":{
+                "AutoRecolorInterior |contains=Automatic":"false"
+            }
+        },
+        {
+            "Name": "ExteriorRecolorTag",
+            "Value": "vanilla",
+            "When": {
+                "AutoRecolor": "Automatic, Vanilla"
+            }
+        },
+        {
+            "Name": "ExteriorRecolorTag",
+            "Value": "earthy",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyRecolour",
+                "AutoRecolor": "Automatic"
+            }
+        },
+        {
+            "Name": "ExteriorRecolorTag",
+            "Value": "starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValleyUnofficial",
+                "AutoRecolor": "Automatic"
+            }
+        },
+        {
+            "Name": "ExteriorRecolorTag",
+            "Value": "vibrant",
+            "When": {
+                "HasMod": "grapeponta.VibrantPastoralRecolor",
+                "AutoRecolor": "Automatic"
+            }
+        },
+        {
+            "Name":"ExteriorRecolorTag",
+            "Value":"{{AutoRecolor}}",
+            "When":{
+                "AutoRecolor |contains=Automatic":"false"
+            }
+        },
+        {
+            "Name": "MailboxRecolorTag",
+            "Value": "{{ExteriorRecolorTag}}",
+            "When": {
+                "HasMod |contains=Gweniaczek.WayBackPT, Latteholn.RuralsOfItaly": false,
+                "AutoRecolor": "Automatic"
+            }
+        },
+        {
+            "Name": "MailboxRecolorTag",
+            "Value": "Wayback",
+            "When": {
+                "HasMod": "Gweniaczek.WayBackPT",
+                "AutoRecolor": "Automatic"
+            }
+        },
+        {
+            "Name": "MailboxRecolorTag",
+            "Value": "Rurals",
+            "When": {
+                "HasMod": "Latteholn.RuralsOfItaly",
+                "AutoRecolor": "Automatic"
+            }
+        },
+        {
+            "Name":"MailboxRecolorTag",
+            "Value":"{{Mailboxes}}",
+            "When":{
+                "Mailboxes |contains=Automatic":"false"
+            }
+        }
+    ],
+    "Changes": [
+        {
+            "LogName": "Tilesheet Include",
+            "Action": "Include",
+            "FromFile": "Data/Technical/Tilesheets.json"
+        },
+        {
+            "LogName": "Solstice Winter Star Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/Solstice.json",
+            "When": {
+                "HasMod": "Airyn.CPSolsticeWinterStar"
+            }
+        }
+    ]
+}

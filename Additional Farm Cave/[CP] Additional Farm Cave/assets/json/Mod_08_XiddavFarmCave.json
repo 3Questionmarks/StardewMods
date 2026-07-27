@@ -1,0 +1,84 @@
+{
+
+    "Changes": [
+
+
+//■■■ Xiddav's Farm Cave (全種類共通でDTで変更制御) ■■■
+
+
+  //★★★ FarmCave側の編集 ★★★
+
+    //●AFCへの入り口を制御
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/tmx/Mod_08_XiddavFarmCave/TsAFC_XiddavFC_{{XiddavFC_CaveType}}_{{DT_Entrance}}.tmx",
+        "ToArea": { "X": 11, "Y": 0, "Width": 9, "Height": 7 },
+        "When": {
+          "LocationName": "FarmCave"
+        },
+        "Update": "OnLocationChange"
+      },
+
+    //●AFCへのワープ追加
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Warp"],
+            "Value": "16 {{DT_XiddavFC_FC_WarpIN_Y}} {{DT_AddFarmCaveName}} 9 {{DT_XiddavFC_FC_WarpOut_Y}}",
+            "Delimiter": " "
+          }
+        ]
+      },
+
+
+  //★★★ AddFarmCave側の編集 ★★★
+
+    //●AFCの見た目を合わせる
+      {
+        "Action": "EditMap",
+        "Target": "Maps/{{DT_AddFarmCaveName}}",
+        "FromFile": "assets/tmx/Mod_08_XiddavFarmCave/TsAFC_XiddavFC_{{XiddavFC_CaveType}}_AFC.tmx"
+      },
+
+    //●FCへのワープ変更
+      {
+        "Action": "EditMap",
+        "Target": "Maps/{{DT_AddFarmCaveName}}",
+        "MapProperties": { "Warp": "9 {{DT_XiddavFC_AFC_WarpIN_Y}} FarmCave 16 {{DT_XiddavFC_AFC_WarpOUT_Y}} 9 {{DT_XiddavFC_AFC-2nd_WarpIN_Y}} Custom_AdditionalFarmCave_2ndArea 9 14" }
+      },
+
+    //●2ndエリア解放まで奥の入り口を封鎖
+      {
+        "Action": "EditMap",
+        "Target": "Maps/{{DT_AddFarmCaveName}}",
+        "FromFile": "assets/tmx/Mod_08_XiddavFarmCave/TsAFC_XiddavFC_{{XiddavFC_CaveType}}_AFC_Close.tmx",
+        "ToArea": { "X": 8, "Y": 0, "Width": 3, "Height": 6 },
+        "When": {
+          "OpenImmediately_2nd": "false",
+          "HasSeenEvent |contains=1410977501": "false",
+          "LocationName": "{{DT_AddFarmCaveName}}"
+        },
+        "Update": "OnLocationChange"
+      },
+
+
+  //★★★ AddFarmCave_2ndArea側の編集 ★★★
+
+    //●FCへのワープ変更(Desert, DesertDangerの時のみ変更の為ここで上書き変更)
+      {
+        "Priority": "Late",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_AdditionalFarmCave_2ndArea",
+        "MapProperties": { "Warp": "9 15 {{DT_AddFarmCaveName}} 9 0" },
+        "When": {
+          "XiddavFC_CaveType": "Desert, DesertDanger"
+        },
+      }
+
+
+    ]//▼▼"Changes"の終了▼▼
+}

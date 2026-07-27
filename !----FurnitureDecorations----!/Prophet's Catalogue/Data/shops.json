@@ -1,0 +1,56 @@
+{"Changes":[{
+	"LogName": "Add Furniture Catalogue Shop",
+	"Action": "EditData",
+	"Target": "Data/Shops",
+	"Entries": 
+
+{"Proph_Catalogue": 
+	{"PriceModifiers": null,
+	"PriceModifierMode": "Stack",
+	"Items": [{"Price": 0,
+	"AvailableStockLimit": "Global",
+	"AvoidRepeat": false,
+	"UseObjectDataPrice": false,
+	"IgnoreShopPriceModifiers": false,
+	"PriceModifiers": null,
+	"PriceModifierMode": "Stack",
+	"AvailableStockModifiers": null,
+	"AvailableStockModifierMode": "Stack",
+	"Condition": null,"Id": "Default",
+	"ItemId": "ALL_ITEMS (F)","MinStack": -1,
+	"MaxStack": -1,
+	"Quality": -1,
+	"PerItemCondition": "ITEM_CONTEXT_TAG Target collection_prophFurniture"
+},],
+
+"CustomFields":{"HappyHomeDesigner/Catalogue":"true"}}}},
+
+{"LogName": "Add Furniture Catalogue Item",
+	"Action": "EditData",
+	"Target": "Data/Furniture",
+	"Entries": 
+	{"Proph_Catalogue":"Proph_Catalogue/other/2 3/2 1/1/20000/2/Prophet's Furniture Catalogue/0/Tilesheets\\Proph_Catalogue/true"}},
+
+{"LogName": "Add Furniture Catalogue Tile Actions",
+	"Action": "EditData",
+	"Target":"sophie.Calcifer/FurnitureActions",
+	"Entries": {"(F)Proph_Catalogue": 
+	{"TileActions": [{"TileAction": "OpenShop Proph_Catalogue"}]}}},
+
+{"LogName": "Add Furniture Catalogue to Robin's Shop",
+	"Action": "EditData",
+	"Target": "Data/Shops",
+	"TargetField": [ "Carpenter", "Items" ],
+	"Entries": 
+	{"Proph_Catalogue":{"Id": "Proph_Catalogue","ItemId":"(F)Proph_Catalogue","Price": 15000}
+
+}}]}
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,14 @@
+{
+	"Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Aspen)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Aspen",
+      "FromFile": "assets/Maps/Aspen/Aspen_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+				"RMP Enable (Earthy) Recolour": "ON"
+			}
+    }
+  ]
+}

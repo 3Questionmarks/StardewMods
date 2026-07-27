@@ -1,0 +1,15 @@
+{
+  "Name": "Community Park Decor for Alternative Textures",
+  "Author": "FarmerBeans",
+  "Version": "1.0.2",
+  "Description": "Alternative Textures for decorating Parks and Public Spaces",
+  "UniqueID": "FarmerBeans.ParkAT",
+  "UpdateKeys": ["Nexus:24566"],
+   "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.AlternativeTextures"
+  },
+  "Dependencies": [ {
+      "UniqueID": "glymr.FurnitureOutside",
+      "IsRequired": false
+   }]
+}

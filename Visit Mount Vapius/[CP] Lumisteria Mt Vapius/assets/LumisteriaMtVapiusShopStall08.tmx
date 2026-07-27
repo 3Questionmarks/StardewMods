@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="4" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="123">
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="4" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="124">
  <properties>
   <property name="DefaultWarpLocation" value="49 76"/>
   <property name="LocationContext" value="Lumisteria_MtVapius_Main"/>
@@ -1835,6 +1835,11 @@
   <object id="79" name="TileData" x="32" y="64" width="16" height="16">
    <properties>
     <property name="Action" value="OpenShop Lumisteria.MtVapius_MoiraShop down 600 2600 37 74 3 3"/>
+   </properties>
+  </object>
+  <object id="123" name="TileData" x="16" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="mushymato.LivestockBazaar_Shop Lumisteria.MtVapius_MoiraAnimalShop down 600 2600 37 74 3 3"/>
    </properties>
   </object>
  </objectgroup>

@@ -1,0 +1,25 @@
+{
+    "Changes": [
+        {
+			"LogName": "Bri.ShopExpansion_Sandy",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Sandy",
+                "Items"
+            ],
+            "Entries": {
+				
+				// COFFEE BEANS
+				
+                "Bri.ShopExpansion_ID_CoffeeBean": {
+                    "Id": "Bri.ShopExpansion_ID_CoffeeBean",
+                    "ItemId": "(O)433",
+					"Condition": "PLAYER_HAS_MAIL Any Bri.ShopExpansion_Mail_Sandy_CoffeeBeans Received",
+                    "Price": "150",
+					"AvailableStock": "1"
+                }
+            }
+        }
+    ]
+}

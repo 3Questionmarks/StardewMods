@@ -1,0 +1,13 @@
+{
+  "Name": "Antique TV Sets",
+  "Author": "Nyx",
+  "Version": "1.0.0",
+  "Description": "Antique reskin of the basic floor and budget TVs.",
+  "UniqueID": "Nyx.AntiqueTVSets",
+  "UpdateKeys": [ "Nexus:10994" ],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.AlternativeTextures",
+    "MinimumVersion": "5.0.6"
+  }
+}

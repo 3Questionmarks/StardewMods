@@ -13,7 +13,7 @@
                "Position": { "X": 5, "Y": 50 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_A_Timid_WA, Squirrel_B_Timid_WA, Squirrel_A_WA, Squirrel_B_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
                },
             },
          ],
@@ -103,8 +103,8 @@
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 27, 123 |key=westforest coordinate}}",
-					"Y": "{{Random: 92, 83 |key=westforest coordinate}}"
+					"X": "{{Random: 27, 123 |key=westforest bobcats coordinate}}",
+					"Y": "{{Random: 92, 83 |key=westforest bobcats coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -126,8 +126,8 @@
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 23, 48 |key=westforest coordinates}}",
-					"Y": "{{Random: 127, 116 |key=westforest coordinates}}"
+					"X": "{{Random: 23, 48 |key=westforest deers coordinate}}",
+					"Y": "{{Random: 127, 116 |key=westforest deers coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -149,8 +149,8 @@
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 25, 55 |key=westforest coordinates}}",
-					"Y": "{{Random: 130, 120 |key=westforest coordinates}}"
+					"X": "{{Random: 25, 55 |key=westforest deers coordinate}}",
+					"Y": "{{Random: 130, 120 |key=westforest deers coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -172,8 +172,8 @@
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 26, 59 |key=westforest coordinates}}",
-					"Y": "{{Random: 128, 118 |key=westforest coordinates}}"
+					"X": "{{Random: 26, 59 |key=westforest deers coordinate}}",
+					"Y": "{{Random: 128, 118 |key=westforest deers coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -196,8 +196,8 @@
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 88, 125, 120 |key=westforest coordinates}}",
-					"Y": "{{Random: 37, 57, 113 |key=westforest coordinates}}"
+					"X": "{{Random: 88, 125, 120 |key=westforest foxes coordinate}}",
+					"Y": "{{Random: 37, 57, 113 |key=westforest foxes coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -207,6 +207,30 @@
          ],
 		"When": {
 			"Load Wild Animals |contains= Foxes": true,
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add foxes in the west forest (winter)",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 88, 125, 120 |key=westforest foxes coordinate}}",
+					"Y": "{{Random: 37, 57, 113 |key=westforest foxes coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 1, 2 |key=Foxes}} SmolHooman.WildAnimalsCC.{{Random: FoxWinter_WA, Fox_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Foxes": true,
+			"Season": "Winter",
 			"Weather": "Snow, Sun, Wind",
 			},
 		"Update": "OnLocationChange"
@@ -218,8 +242,8 @@
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 90, 127, 116 |key=westforest coordinates}}",
-					"Y": "{{Random: 37, 48, 111 |key=westforest coordinates}}"
+					"X": "{{Random: 90, 127, 116 |key=westforest foxes coordinate}}",
+					"Y": "{{Random: 37, 48, 111 |key=westforest foxes coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -299,14 +323,50 @@
                "Position": { "X": 42, "Y": 65 },
                "Layer": "Back",
                "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Horse_A_WA, Horse_B_WA, Horse_C_WA, HorseFoal_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Horses": true,
+			"Season": "Spring",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add wild horses in the west forest 2",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": { "X": 42, "Y": 66 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Horse_A_WA, Horse_B_WA, Horse_C_WA}}"
+               },
+            },
+            {
+               "Position": { "X": 43, "Y": 66 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Horse_A_WA, Horse_B_WA, Horse_C_WA}}"
+               },
+            },
+            {
+               "Position": { "X": 42, "Y": 65 },
+               "Layer": "Back",
+               "SetProperties": {
                   "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Horse_A_WA, Horse_B_WA, Horse_C_WA}}"
                },
             },
          ],
 		"When": {
 			"Load Wild Animals |contains= Horses": true,
+			"Season": "Summer, Fall",
 			"Weather": "Sun, Wind",
-			"Time": "{{Range: 0600, 1800}}",		
+			"Time": "{{Range: 0600, 1800}}",
 			},
 		"Update": "OnLocationChange"
 	},
@@ -340,8 +400,8 @@
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 137, 102, 38 |key=westforest coordinates}}",
-					"Y": "{{Random: 44, 35, 51 |key=westforest coordinates}}"
+					"X": "{{Random: 137, 102, 38 |key=westforest opossums coordinate}}",
+					"Y": "{{Random: 44, 35, 51 |key=westforest opossums coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -364,8 +424,8 @@
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 36, 63, 115 |key=westforest coordinates}}",
-					"Y": "{{Random: 75, 48, 9 |key=westforest coordinates}}"
+					"X": "{{Random: 36, 63, 115 |key=westforest pinemartens coordinate}}",
+					"Y": "{{Random: 75, 48, 9 |key=westforest pinemartens coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -421,8 +481,8 @@
 		"MapTiles": [
             {		
                "Position": {
-					"X": "{{Random: 28, 115, 90 |key=westforest coordinates}}",
-					"Y": "{{Random: 121, 11, 39 |key=westforest coordinates}}"
+					"X": "{{Random: 28, 115, 90 |key=westforest raccoons coordinate}}",
+					"Y": "{{Random: 121, 11, 39 |key=westforest raccoons coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -444,8 +504,8 @@
 		"MapTiles": [
             {		
                "Position": {
-					"X": "{{Random: 54, 50, 123 |key=westforest coordinates}}",
-					"Y": "{{Random: 103, 62, 30 |key=westforest coordinates}}"
+					"X": "{{Random: 54, 50, 123 |key=westforest rabbits coordinate}}",
+					"Y": "{{Random: 103, 62, 30 |key=westforest rabbits coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -454,8 +514,8 @@
             },
             {		
                "Position": {
-					"X": "{{Random: 123, 54, 50 |key=westforest coordinates}}",
-					"Y": "{{Random: 30, 103, 62 |key=westforest coordinates}}"
+					"X": "{{Random: 123, 54, 50 |key=westforest rabbits coordinate}}",
+					"Y": "{{Random: 30, 103, 62 |key=westforest rabbits coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -477,8 +537,8 @@
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 66, 84, 131 |key=westforest coordinates}}",
-					"Y": "{{Random: 36, 29, 90 |key=westforest coordinates}}"
+					"X": "{{Random: 66, 84, 131 |key=westforest rats coordinate}}",
+					"Y": "{{Random: 36, 29, 90 |key=westforest rats coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -499,8 +559,8 @@
 		"MapTiles": [
             {		
                "Position": {
-					"X": "{{Random: 103, 71, 58 |key=westforest coordinates}}",
-					"Y": "{{Random: 111, 50, 128 |key=westforest coordinates}}"
+					"X": "{{Random: 103, 71, 58 |key=westforest skunks coordinate}}",
+					"Y": "{{Random: 111, 50, 128 |key=westforest skunks coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -544,22 +604,22 @@
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 100, 41, 57 |key=westforest coordinate}}",
-					"Y": "{{Random: 23, 38, 101 |key=westforest coordinate}}"
+					"X": "{{Random: 100, 41, 57 |key=westforest squirrels coordinate}}",
+					"Y": "{{Random: 23, 38, 101 |key=westforest squirrels coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_A_Timid_WA, Squirrel_B_Timid_WA, Squirrel_A_WA, Squirrel_B_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
                },
             },
             {
                "Position": {
-					"X": "{{Random: 57, 100, 41 |key=westforest coordinate}}",
-					"Y": "{{Random: 101, 23, 38 |key=westforest coordinate}}"
+					"X": "{{Random: 57, 100, 41 |key=westforest squirrels coordinate}}",
+					"Y": "{{Random: 101, 23, 38 |key=westforest squirrels coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_A_Timid_WA, Squirrel_B_Timid_WA, Squirrel_A_WA, Squirrel_B_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
                },
             },
          ],
@@ -674,6 +734,82 @@
 		"Update": "OnLocationChange"
 	},
 
+//AQUATIC
+
+	{
+		"LogName": "Add swimming crayfishes in the west forest's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 19, 29 |key=w forest swimming crayfishes coordinates}}",
+					"Y": "{{Random: 138, 153 |key=w forest swimming crayfishes coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Crayfish_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= Crustaceans": true,
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add swimming frogs in the west forest's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 5, 20, 33 |key=w forest swimming frogs coordinates}}",
+					"Y": "{{Random: 151, 139, 149 |key= wforest swimming frogs coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: FrogSwimming_A_WA, FrogSwimming_B_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Wild Critters |contains= Frogs + Toads": true,
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add swimming salamanders in the west forest's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 33, 13 |key=w forest swimming salamanders coordinates}}",
+					"Y": "{{Random: 152, 134 |key=w forest swimming salamanders coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Salamander_WA"
+               },
+            },
+         ],
+		"When": {
+			"Allow Aquatic Animals": "true",
+			"Load Aquatic Animals |contains= Salamanders": true,
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Rain, Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+
 //GARDEN
 	{
 		"LogName": "Add opossums in the garden",
@@ -705,7 +841,7 @@
                "Position": { "X": 14, "Y": 32 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_A_Timid_WA, Squirrel_B_Timid_WA, Squirrel_A_WA, Squirrel_B_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
                },
             },
          ],
@@ -725,8 +861,8 @@
 		"MapTiles": [
             {
                "Position": {
-					"X": "{{Random: 29, 27 |key=bridge geese coordinates}}",
-					"Y": "{{Random: 29, 15 |key=bridge geese coordinates}}"
+					"X": "{{Random: 29, 27 |key=bridge geese coordinate}}",
+					"Y": "{{Random: 29, 15 |key=bridge geese coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -735,8 +871,8 @@
             },
             {
                "Position": {
-					"X": "{{Random: 27, 29 |key=bridge geese coordinates}}",
-					"Y": "{{Random: 29, 15 |key=bridge geese coordinates}}"
+					"X": "{{Random: 27, 29 |key=bridge geese coordinate}}",
+					"Y": "{{Random: 29, 15 |key=bridge geese coordinate}}"
             },
                "Layer": "Back",
                "SetProperties": {
@@ -764,7 +900,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_A_Timid_WA, Squirrel_B_Timid_WA, Squirrel_A_WA, Squirrel_B_WA, Chipmunk_Timid_WA, Chipmunk_WA}}"
                },
             },
          ],

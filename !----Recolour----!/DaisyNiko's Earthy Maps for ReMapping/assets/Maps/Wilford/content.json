@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Wilford)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Wilford",
+      "FromFile": "assets/Maps/Wilford/Wilford_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

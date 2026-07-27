@@ -1,0 +1,15 @@
+{
+    "Format": "2.5.0",
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Mods/gaussfire.ConvenientInventory/quickStackIcon",
+            "FromFile": "assets/quickStackIcon.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Mods/gaussfire.ConvenientInventory/autoOrganizeIcon",
+            "FromFile": "assets/autoOrganizeIcon.png"
+        }
+    ]
+}

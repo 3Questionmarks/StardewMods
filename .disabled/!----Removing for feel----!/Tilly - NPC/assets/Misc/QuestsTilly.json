@@ -1,0 +1,279 @@
+{
+  "Changes": [
+	{
+		"LogName": "Quests",
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"{{ModId}}.Tilly_LostScissors": "LostItem/{{i18n:Wem.Bundle.Tilly_LostScissorsQuest.title}}/{{i18n:Wem.Bundle.Tilly_LostScissorsQuest.text}}/{{i18n:Wem.Bundle.Tilly_LostScissorsQuest.objective}}/{{ModId}}.Tilly {{ModId}}.Tilly_Scissors SeedShop 33 5/-1/250/-1/false/{{i18n:Wem.Bundle.Tilly_LostScissorsQuest.reaction}}",
+		}
+	},
+	
+	//Special Order Strings
+	
+	{
+		"LogName": "SO Strings",
+		"Action": "EditData",
+		"Target": "Strings/SpecialOrderStrings",
+		"Entries": {
+			"{{ModId}}.Tilly.SO_MapleOrder_Name": "{{i18n:Wem.Bundle.Tilly.SO_MapleOrder_Name}}",
+			"{{ModId}}.Tilly.SO_MapleOrder_Text": "{{i18n:Wem.Bundle.Tilly.SO_MapleOrder_Text}}",
+			"{{ModId}}.Tilly_MapleObjective_Text": "{{i18n:Wem.Bundle.Tilly_MapleObjective_Text}}",
+			"{{ModId}}.Tilly.SO_FlowerDelivery_Name": "{{i18n:Wem.Bundle.Tilly.SO_FlowerDelivery_Name}}",
+			"{{ModId}}.Tilly.SO_FlowerDelivery_Text": "{{i18n:Wem.Bundle.Tilly.SO_FlowerDelivery_Text}}",
+			"{{ModId}}.Tilly_FlowerDeliveryObjective_Text": "{{i18n:Wem.Bundle.Tilly_FlowerDeliveryObjective_Text}}",
+			"{{ModId}}.Tilly.SO_HoneyOrder_Name": "{{i18n:Wem.Bundle.Tilly.SO_HoneyOrder_Name}}",
+			"{{ModId}}.Tilly.SO_HoneyOrder_Text": "{{i18n:Wem.Bundle.Tilly.SO_HoneyOrder_Text}}",
+			"{{ModId}}.Tilly_HoneyObjective_Text1": "{{i18n:Wem.Bundle.Tilly_HoneyObjective_Text1}}",
+			"{{ModId}}.Tilly_HoneyObjective_Text2": "{{i18n:Wem.Bundle.Tilly_HoneyObjective_Text2}}",
+			"{{ModId}}.Tilly_HoneyObjective_Text3": "{{i18n:Wem.Bundle.Tilly_HoneyObjective_Text3}}",
+			"{{ModId}}.Tilly_HoneyObjective_Text4": "{{i18n:Wem.Bundle.Tilly_HoneyObjective_Text4}}",
+			
+			//Romantic Version
+			"{{ModId}}.Tilly.SO_ConstructionOrder_Name": "{{i18n:Wem.Bundle.Tilly.SO_ConstructionOrder_Name}}",
+			"{{ModId}}.Tilly.SO_ConstructionOrder_Text": "{{i18n:Wem.Bundle.Tilly.SO_ConstructionOrder_Text}}",
+			"{{ModId}}.Tilly_ConstructionOrderObjective_Text1": "{{i18n:Wem.Bundle.Tilly_ConstructionOrderObjective_Text1}}",
+			"{{ModId}}.Tilly_ConstructionOrderObjective_Text2": "{{i18n:Wem.Bundle.Tilly_ConstructionOrderObjective_Text2}}",
+			
+			
+			"{{ModId}}.Tilly.SO_HongbaoDelivery_Name": "{{i18n:Tilly.SO_HongbaoDelivery_Name}}",
+			"{{ModId}}.Tilly.SO_HongbaoDelivery_Text": "{{i18n:Tilly.SO_HongbaoDelivery_Text}}",
+			"{{ModId}}.Tilly_HongbaoDeliveryObjective_Text1": "{{i18n:Tilly_HongbaoDeliveryObjective_Text1}}",
+			"{{ModId}}.Tilly_HongbaoDeliveryObjective_Text2": "{{i18n:Tilly_HongbaoDeliveryObjective_Text2}}",
+
+
+		}
+	},
+	
+	//Special Orders
+	{
+		"LogName": "Special Order Data",
+		"Action": "EditData",
+		"Target": "Data/SpecialOrders",
+		"Entries": {
+			"{{ModId}}.Tilly_MapleOrder": {
+				"Name": "[Wem.Bundle.Tilly.SO_MapleOrder_Name]",
+				"Requester": "{{ModId}}.Tilly",
+				"Duration": "TwoWeeks",
+				"Repeatable": true,
+				"RequiredTags": "season_fall",
+				"OrderType": "",
+				"SpecialRule": "",
+				"Text": "[Wem.Bundle.Tilly.SO_MapleOrder_Text]",
+				"ItemToRemoveOnEnd": null,
+				"MailToRemoveOnEnd": null,
+				"RandomizedElements": null,
+				"Objectives": [
+					{
+						"Type": "Donate",
+						"Text": "[Wem.Bundle.Tilly_MapleObjective_Text]",
+						"RequiredCount": "6",
+						"Data": {
+							"DropBox": "TillyBin",
+							"DropBoxGameLocation": "{{ModId}}.Tilly_TillyHouse",
+							"DropBoxIndicatorLocation": "5 12",
+							"AcceptedContextTags": "item_maple_syrup",
+						},
+					}
+					
+				],
+				"Rewards": [
+					{
+						"Type": "Money",
+						"Data": {
+							"Amount": "3000",
+						}
+					},
+					{
+						"Type": "Mail",
+						"Data": {
+							"MailReceived": "{{ModId}}.Tilly_MapleOrderComplete",
+						}
+					},
+					{
+						"Type": "Friendship",
+						"Data": {
+							"Amount": "500",
+							"Target": "{{ModId}}.Tilly",
+						}
+					},
+				]
+			},
+			
+			"{{ModId}}.Tilly_FlowerDelivery": {
+				"Name": "[Wem.Bundle.Tilly.SO_FlowerDelivery_Name]",
+				"Requester": "{{ModId}}.Tilly",
+				"Duration": "Week",
+				"Repeatable": true,
+				"RequiredTags": "season_winter",
+				"OrderType": "",
+				"SpecialRule": "",
+				"Text": "[Wem.Bundle.Tilly.SO_FlowerDelivery_Text]",
+				"ItemToRemoveOnEnd": null,
+				"MailToRemoveOnEnd": null,
+				"RandomizedElements": null,
+				"Objectives": [
+					{
+						"Type": "Gift",
+						"Text": "[Wem.Bundle.Tilly_FlowerDeliveryObjective_Text]",
+						"RequiredCount": "15",
+						"Data": {
+							"AcceptedContextTags": "flower_item",
+						},
+					}
+					
+				],
+				"Rewards": [
+					{
+						"Type": "Mail",
+						"Data": {
+							"MailReceived": "{{ModId}}.Tilly_FlowerDeliveryComplete",
+						}
+					},
+					{
+						"Type": "Friendship",
+						"Data": {
+							"Amount": "500",
+							"Target": "{{ModId}}.Tilly",
+						}
+					},
+				]
+			},
+			//Add a Shop version
+			"{{ModId}}.Tilly_HoneyOrder": {
+				"Name": "[Wem.Bundle.Tilly.SO_HoneyOrder_Name]",
+				"Requester": "{{ModId}}.Tilly",
+				"Duration": "TwoWeeks",
+				"Repeatable": true,
+				"RequiredTags": "season_spring",
+				"OrderType": "",
+				"SpecialRule": "",
+				"Text": "[Wem.Bundle.Tilly.SO_HoneyOrder_Text]",
+				"ItemToRemoveOnEnd": null,
+				"MailToRemoveOnEnd": null,
+				"RandomizedElements": null,
+				"Objectives": [
+					{
+						"Type": "Donate",
+						"Text": "[Wem.Bundle.Tilly_HoneyObjective_Text1]",
+						"RequiredCount": "3",
+						"Data": {
+							"DropBox": "TillyBin",
+							"DropBoxGameLocation": "{{ModId}}.Tilly_TillyHouse",
+							"DropBoxIndicatorLocation": "5 12",
+							"AcceptedContextTags": "honey_item, preserve_sheet_index_597",
+						},
+					},
+					{
+						"Type": "Donate",
+						"Text": "[Wem.Bundle.Tilly_HoneyObjective_Text2]",
+						"RequiredCount": "3",
+						"Data": {
+							"DropBox": "TillyBin",
+							"DropBoxGameLocation": "{{ModId}}.Tilly_TillyHouse",
+							"DropBoxIndicatorLocation": "5 12",
+							"AcceptedContextTags": "honey_item, preserve_sheet_index_593",
+						},
+					},
+					{
+						"Type": "Donate",
+						"Text": "[Wem.Bundle.Tilly_HoneyObjective_Text3]",
+						"RequiredCount": "3",
+						"Data": {
+							"DropBox": "TillyBin",
+							"DropBoxGameLocation": "{{ModId}}.Tilly_TillyHouse",
+							"DropBoxIndicatorLocation": "5 12",
+							"AcceptedContextTags": "honey_item, preserve_sheet_index_376",
+						},
+					},
+					{
+						"Type": "Donate",
+						"Text": "[Wem.Bundle.Tilly_HoneyObjective_Text4]",
+						"RequiredCount": "3",
+						"Data": {
+							"DropBox": "TillyBin",
+							"DropBoxGameLocation": "{{ModId}}.Tilly_TillyHouse",
+							"DropBoxIndicatorLocation": "5 12",
+							"AcceptedContextTags": "honey_item, preserve_sheet_index_421",
+						},
+					},
+					
+				],
+				"Rewards": [
+					{
+						"Type": "Money",
+						"Data": {
+							"Amount": "8000",
+						}
+					},
+					{
+						"Type": "Mail",
+						"Data": {
+							"MailReceived": "{{ModId}}.Tilly_HoneyOrderComplete",
+						}
+					},
+					{
+						"Type": "Friendship",
+						"Data": {
+							"Amount": "750",
+							"Target": "{{ModId}}.Tilly",
+						}
+					},
+				]
+			},
+			
+			//Hongbao Delivery
+			"{{ModId}}.Tilly_HongbaoDelivery": {
+				"Name": "[Wem.Bundle.Tilly.SO_HongbaoDelivery_Name]",
+				"Requester": "{{ModId}}.Tilly",
+				"Duration": "ThreeDays",
+				"Repeatable": false,
+				"RequiredTags": "event_{{ModId}}.Tilly_HongbaoGive",
+				"OrderType": "",
+				"SpecialRule": "",
+				"Text": "[Wem.Bundle.Tilly.SO_HongbaoDelivery_Text]",
+				"ItemToRemoveOnEnd": null,
+				"MailToRemoveOnEnd": null,
+				"RandomizedElements": null,
+				"Objectives": [
+					{
+						"Type": "Deliver",
+						"Text": "[Wem.Bundle.Tilly_HongbaoDeliveryObjective_Text1]",
+						"RequiredCount": "1",
+						"Data": {
+							"AcceptedContextTags": "item_tilly_hongbao",
+							"TargetName": "Jas",
+						},
+					},
+					{
+						"Type": "Deliver",
+						"Text": "[Wem.Bundle.Tilly_HongbaoDeliveryObjective_Text2]",
+						"RequiredCount": "1",
+						"Data": {
+							"AcceptedContextTags": "item_tilly_hongbao",
+							"TargetName": "Vincent",
+						},
+					},
+					
+				],
+				"Rewards": [
+					{
+						"Type": "Friendship",
+						"Data": {
+							"Amount": "150",
+							"Target": "Jas",
+						}
+					},
+					{
+						"Type": "Friendship",
+						"Data": {
+							"Amount": "150",
+							"Target": "Vincent",
+						}
+					},
+				]
+			},
+		}
+	},
+  ]
+}

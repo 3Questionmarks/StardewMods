@@ -1,0 +1,28 @@
+{
+	"Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Bridge.Blue.Moon)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Bridge.Blue.Moon",
+      "FromFile": "assets/Maps/Bridge to Blue Moon/Bridge.Blue.Moon_{{RMP.Season}}_SVE.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+//Boat Journey
+    {	
+		  "LogName": "Remapping (Earthy) Recolor Bridge Blue Moon Boat Journey SVE",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Bridge to Blue Moon/Bridge.Blue.Moon_{{season}}_SVE.png", 
+		  "ToArea": {"X": 246, "Y": 30, "Width": 10, "Height": 9},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			  "HasMod: |contains=AndrewJC.SVEBeachBridge": true,
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  }
+  ]
+}

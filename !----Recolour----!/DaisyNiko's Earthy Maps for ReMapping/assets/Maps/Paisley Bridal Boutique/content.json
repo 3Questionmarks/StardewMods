@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (CMM.Paisley.Bridal)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/CMM.Paisley.Bridal",
+      "FromFile": "assets/Maps/Paisley Bridal Boutique/CMM.Paisley.Bridal_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

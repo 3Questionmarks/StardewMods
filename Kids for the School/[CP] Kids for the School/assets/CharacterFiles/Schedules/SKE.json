@@ -1,0 +1,372 @@
+{   
+	"Changes": [
+//NPC Warp
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WizardHouse",
+            "MapProperties": {
+                "NPCWarp": "2 12 Custom_DouglasRoom 3 10"
+            }
+        },
+//Schedules	
+//Adrian
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/Adrian",
+	 		"Entries": {   
+				"Tue": "700 Custom_SchoolHouse_SecondFloor 23 14 3/800 Custom_SchoolHouse_SecondFloor 22 13 3 adrian_read_left/1130 Town 15 14 1/1250 Custom_SchoolHouse_SecondFloor 23 14 3/1300 Custom_SchoolHouse_SecondFloor 22 13 3 adrian_read_left/1550 Town 24 13 2/1740 SeedShop 24 14 1 Adrian_PlayToys/2000 Custom_AdrianRoom 8 5 2 Adrian_Sleep",
+            	"Wed": "GOTO Tue", 
+				"Fri": "GOTO Tue", 
+		 		"9":"GOTO season", 
+		 		"23":"GOTO season" 
+			},
+			"When": {
+                "Weather |contains=Rain,Storm,GreenRain": "false",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true
+			}
+		},	
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/Adrian",
+			"When": {
+				"Weather": "Rain,Storm,GreenRain",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true
+			},
+	 		"Entries": {     
+		 		"rain": "700 Custom_SchoolHouse_SecondFloor 23 14 3/800 Custom_SchoolHouse_SecondFloor 22 13 3 adrian_read_left/1550 Town 24 13 2/1740 SeedShop 24 14 1 Adrian_PlayToys/2000 Custom_AdrianRoom 8 5 2 Adrian_Sleep"   
+	 		}
+		},	
+			{ "Action": "EditData",	 
+			"Target": "characters/schedules/Adrian",
+			"When": { 
+				"Hasmod|contains=N3cro_92.KidsfortheSchoolTokens": true,
+				"N3cro_92.KidsfortheSchoolTokens/LRSHFiveDays": "true",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true
+			},  
+	 		"Entries": { 
+				"Mon": "GOTO Tue", 
+				"Thu": "GOTO Tue"
+			}
+		}, 
+//James  
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/James",
+	 		"Entries": {  
+                "Tue": "710 Custom_SchoolHouse_SecondFloor 20 12 3/810 Custom_SchoolHouse_SecondFloor 19 11 3 james_read_right/1130 Town 12 11 1/1250 Custom_SchoolHouse_SecondFloor 20 12 3/1300 Custom_SchoolHouse_SecondFloor 19 11 3 james_read_right/1550 Town 50 68 1/1740 JoshHouse 7 19 2/2000 Custom_JamesRoom 7 5 0",
+               	"Wed": "GOTO Tue", 
+				"Fri": "GOTO Tue", 
+		 		"9":"GOTO season", 
+		 		"23":"GOTO season"
+			},
+			"When": {
+                "Weather |contains=Rain,Storm,GreenRain": "false",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true
+				
+			}
+		},
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/James",
+			"When": {
+				"Weather": "Rain,Storm,GreenRain",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true
+			},
+	 		"Entries": {     
+		 	"rain": "710 Custom_SchoolHouse_SecondFloor 20 12 3/810 Custom_SchoolHouse_SecondFloor 19 11 3 james_read_right/1550 Town 50 68 1/1740 JoshHouse 7 19 2/2000 Custom_JamesRoom 7 5 0"
+			}
+		},	
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/James",
+			"When": { 
+				"Hasmod|contains=N3cro_92.KidsfortheSchoolTokens": true,
+				"N3cro_92.KidsfortheSchoolTokens/LRSHFiveDays": "true",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true
+			},  
+	 		"Entries": { 
+				"Mon": "GOTO Tue", 
+				"Thu": "GOTO Tue"
+			}
+		}, 
+//Tina
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/Tina",
+	 		"Entries": {     
+		 		"Tue": "750 Custom_SchoolHouse_SecondFloor 23 12 3/1000 Custom_SchoolHouse_SecondFloor 22 11 Tina_Sit/1120 Town 17 14 3/1250 Custom_SchoolHouse_SecondFloor 23 12 3/1300 Custom_SchoolHouse_SecondFloor 22 11 Tina_Sit/1550 Town 17 16 square_3_3/1740 ScienceHouse 22 18 1/2000 ScienceHouse 8 6 2",     
+                "Wed": "GOTO Tue", 
+				"Fri": "GOTO Tue",
+		 		"9":"GOTO season", 
+		 		"23":"GOTO season"
+			},
+			"When": {
+                "Weather |contains=Rain,Storm,GreenRain": "false",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true
+			}
+		},
+		{
+			"Action": "EditData",	 
+			"Target": "characters/schedules/Tina",
+			"When": {
+				"Weather": "Rain,Storm,GreenRain",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true
+			},
+	 		"Entries": {     
+		 		"rain": "750 Custom_SchoolHouse_SecondFloor 23 12 3/1000 Custom_SchoolHouse_SecondFloor 22 11 Tina_Sit/1550 Town 17 16 square_3_3/1740 ScienceHouse 22 18 1/2000 ScienceHouse 8 6 2" 
+	 		}		
+		},	
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/Tina",
+			"When": { 
+				"Hasmod|contains=N3cro_92.KidsfortheSchoolTokens": true,
+				"N3cro_92.KidsfortheSchoolTokens/LRSHFiveDays": "true",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true
+			},  
+	 		"Entries": {
+		 		"Mon": "GOTO Tue",
+				"Thu": "GOTO Tue"
+			}
+		}, 
+//Vanessa
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/Vanessa",
+	 		"Entries": {     
+		 		"Tue": "800 Custom_SchoolHouse_SecondFloor 20 14 3/1000 Custom_SchoolHouse_SecondFloor 19 13 3 Vanessa_Read/1530 Town 20 93 0/1750 Saloon 35 18 0/2000 Saloon 35 17 2 Vanessa_Sleep",    
+	     		"Wed": "GOTO Tue", 
+				"Fri": "GOTO Tue", 
+		 		"9":"GOTO season", 
+		 		"23":"GOTO season"
+			},
+			"When": {
+                "Weather |contains=Rain,Storm,GreenRain": "false",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true
+			}
+		},	
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/Vanessa",
+			"When": {
+				"Weather": "Rain,Storm,GreenRain",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true
+			},
+	 		"Entries": {     
+		 		"rain": "800 Custom_SchoolHouse_SecondFloor 20 14 3/1000 Custom_SchoolHouse_SecondFloor 19 13 3 Vanessa_Read/1530 Town 20 93 0/1750 Saloon 35 18 0/2000 Saloon 35 17 2 Vanessa_Sleep"    
+	 		}
+		},	
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/Vanessa",
+			"When": { 
+				"Hasmod|contains=N3cro_92.KidsfortheSchoolTokens": true,
+				"N3cro_92.KidsfortheSchoolTokens/LRSHFiveDays": "true",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true
+			},
+	 		"Entries": {
+		 		"Mon": "GOTO Tue",
+				"Thu": "GOTO Tue"
+			}
+		},
+//Douglas
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/Douglas",
+	 		"Entries": {     
+		 		"Tue": "610 Custom_SchoolHouse_SecondFloor 23 17 3/1000 Custom_SchoolHouse_SecondFloor 22 16 3 douglas_read_left/1530 Town 15 14 0/1630 WizardHouse 1 20 1/2230 Custom_DouglasRoom 2 5 2",    
+	     		"Wed": "GOTO Tue", 
+				"Fri": "GOTO Tue", 
+		 		"9":"GOTO season", 
+		 		"23":"GOTO season"
+			},
+			"When": {
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true,
+				"Douglas go to School": true
+			}
+		},	
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/Douglas",
+			"When": {
+				"weather": "rain",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true,
+				"Douglas go to School": true
+			},
+	 		"Entries": {     
+		 		"rain": "610 Custom_SchoolHouse_SecondFloor 23 17 3/1000 Custom_SchoolHouse_SecondFloor 22 16 3 douglas_read_left/1530 Town 15 14 0/1630 WizardHouse 1 20 1/2230 Custom_DouglasRoom 2 5 2"    
+	 		}
+		},	
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/Douglas",
+			"When": { 
+				"Hasmod|contains=N3cro_92.KidsfortheSchoolTokens": true,
+				"N3cro_92.KidsfortheSchoolTokens/LRSHFiveDays": "true",
+				"HasSeenEvent |contains=9695002": true,
+				"HasMod| contains=BURAKMESE.SKE": true,
+				"Douglas go to School": true
+			},
+	 		"Entries": {
+		 		"Mon": "GOTO Tue",
+				"Thu": "GOTO Tue"
+			}
+		},
+//James Sprite
+		/*{
+            "Action": "EditImage",
+            "Target": "Characters/James_Spring",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/James/James_Spring.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Characters/James_Summer",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/James/James_Summer.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Characters/James_Fall",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/James/James_Fall.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Characters/james_Winter_Inside",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/James/James_Winter_Inside.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Characters/James_Winter_Outside",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/James/James_Winter_Outside.png"
+        },*/
+//James Animation
+		{
+			"Action": "EditData",
+			"Target": "Data/animationdescriptions",
+			"Entries": {
+				"james_read_left": "26/26/26",
+				"james_read_right": "24/24/24"
+			}
+		},
+//Adrian Sprite
+		{
+            "Action": "EditImage",
+            "Target": "Characters/Adrian_Spring",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Adrian/Adrian_Spring.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Characters/Adrian_Summer",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Adrian/Adrian_Summer.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Characters/Adrian_Fall",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Adrian/Adrian_Fall.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Characters/Adrian_Winter_Inside",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Adrian/Adrian_Winter_Inside.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Characters/Adrian_Winter_Outside",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Adrian/Adrian_Winter_Outside.png"
+        },
+//Adrian Animation
+		{
+			"Action": "EditData",
+			"Target": "Data/animationdescriptions",
+			"Entries": {
+				"adrian_read_left": "26/26/26",
+				"adrian_read_right": "24/24/24"
+			}
+		},
+//Douglas Sprite
+		{
+            "Action": "EditImage",
+            "Target": "Characters/Douglas_{{season}}",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Douglas/Douglas_{{season}}.png"
+        },
+//Douglas Animation
+		{
+			"Action": "EditData",
+			"Target": "Data/animationdescriptions",
+			"Entries": {
+				"douglas_read_left": "17/17/17",
+				"douglas_read_right": "16/16/16"
+			}
+		},
+//StringsFromMaps
+//Adrian
+		{	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.19": "{{i18n:Seat_Adrian}}" },
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=BURAKMESE.SKE": "true"
+            }
+        },
+//James
+		{	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.22": "{{i18n:Seat_James}}" },
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=BURAKMESE.SKE": "true"
+            }
+        },
+//Tina
+		{	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.18": "{{i18n:Seat_Tina}}" },
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=BURAKMESE.SKE": "true"
+            }
+        },
+//Vanessa
+		{	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.23": "{{i18n:Seat_Vanessa}}" },
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=BURAKMESE.SKE": "true"
+            }
+        },
+//Douglas
+		{	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.20": "{{i18n:Seat_Douglas}}" },
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=BURAKMESE.SKE": "true",
+				"Douglas go to School": true
+            }
+        }
+  	]
+}

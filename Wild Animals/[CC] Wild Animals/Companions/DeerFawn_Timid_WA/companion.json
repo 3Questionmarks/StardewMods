@@ -3,7 +3,7 @@
 	"Type": "Walking",
 	"EnableSpawnAtDayStart": false,
 	"EnableCharacterCollision": false,
-	"EnableFarmerCollision": true,
+	"EnableFarmerCollision": false,
 	"TravelSpeed": 2,
 	"MaxIdleDistance": -1,
 	"MaxDistanceBeforeTeleport": -1,
@@ -283,7 +283,7 @@
 	"Type": "Walking",
 	"TravelSpeed": 2,
 	"EnableCharacterCollision": false,
-	"EnableFarmerCollision": true,
+	"EnableFarmerCollision": false,
 	"MaxIdleDistance": -1,
 	"MaxDistanceBeforeTeleport": -1,
 	"IdleBehavior": "Nothing",
@@ -338,10 +338,10 @@
 
 "Sounds": [
 	{
-	"SoundName": "rabbit",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.3
+	"SoundName": "Fawn_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.2
 	}
 ]  
 }

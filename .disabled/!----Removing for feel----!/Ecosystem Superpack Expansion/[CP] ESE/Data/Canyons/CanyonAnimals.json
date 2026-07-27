@@ -1,0 +1,274 @@
+{// 0 = up, 1 = right, 2 = down, 3 = left
+    "Changes": [
+ {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Tortoise",
+            "FromFile": "assets/Canyons/Tortoise.png"  
+        },
+		    {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/BabyTortoise",
+            "FromFile": "assets/Canyons/BabyTortoise.png"  
+        },
+
+
+								{
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Tortoise2",
+            "FromFile": "assets/Canyons/Tortoise2.png"  
+        },
+						{
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Tortoise3",
+            "FromFile": "assets/Canyons/Tortoise3.png"  
+        },
+		{
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/IslandTurtle",
+            "FromFile": "assets/FIASA/IslandTurtle.png"  
+        },
+			{
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/IslandTurtle2",
+            "FromFile": "assets/FIASA/IslandTurtle2.png"  
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				  "CC_Turt": {
+    "DisplayName": "Island Turtle",
+    "House": "Coop",
+    "Gender": "MaleOrFemale",
+    "SellPrice": 1200,
+    "EggItemIds": [
+      "CC_Turtegg"
+    ],
+    "IncubationTime": -1,
+    "IncubatorParentSheetOffset": 1,
+    "BirthText": "An island turtle managed to hatch!",
+    "DaysToMature": 2,
+    "CanGetPregnant": false,
+    "DaysToProduce": 4,
+    "HarvestType": "DropOvernight",
+    "HarvestTool": null,
+    "ProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 0,
+        "ItemId": "CC_Turtegg"
+      }
+    ],
+    "ProduceOnMature": false,
+    "FriendshipForFasterProduce": -1,
+    "DeluxeProduceMinimumFriendship": 200,
+    "DeluxeProduceCareDivisor": 4750.0,
+    "DeluxeProduceLuckMultiplier": 1.01,
+    "CanEatGoldenCrackers": true,
+    "ProfessionForHappinessBoost": 2,
+    "ProfessionForQualityBoost": 2,
+    "ProfessionForFasterProduce": -1,
+    "Sound": "turtle_pet",
+    "BabySound": "turtle_pet",
+    "Texture": "Mods/{{ModId}}/IslandTurtle",
+    "HarvestedTexture": null,
+    "BabyTexture": "Mods/{{ModId}}/IslandTurtle",
+    "UseFlippedRightForLeft": false,
+    "SpriteWidth": 16,
+    "SpriteHeight": 16,
+    "UseDoubleUniqueAnimationFrames": true,
+    "SleepFrame": 16,
+    "EmoteOffset": {
+      "X": 0,
+      "Y": -16
+    },
+    "SwimOffset": {
+      "X": 0,
+      "Y": 112
+    },
+    "Skins": [
+		{
+							"id": "IslandColor",
+							"Weight": 2,
+							"Texture": "Mods/{{ModId}}/IslandTurtle2",
+							"BabyTexture": "Mods/{{ModId}}/IslandTurtle2"
+						}
+			
+					],
+    "ShadowWhenBabySwims": null,
+    "ShadowWhenBaby": {
+                    "Visible": false,
+                },
+    "ShadowWhenAdultSwims": null,
+    "ShadowWhenAdult": {
+                    "Visible": false,
+                },
+    "Shadow": null,
+    "CanSwim": true,
+    "BabiesFollowAdults": true,
+    "GrassEatAmount": 2,
+    "HappinessDrain": 5,
+    "UpDownPetHitboxTileSize": "1, 1",
+    "LeftRightPetHitboxTileSize": "1, 1",
+    "BabyUpDownPetHitboxTileSize": "1, 1",
+    "BabyLeftRightPetHitboxTileSize": "1, 1",
+    "ShowInSummitCredits": true,
+    "CustomFields": null
+  }
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"CC_DesertTortoise": {
+					"DisplayName": "Tortoise",
+					"House": "Barn",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": -1,
+					"SellPrice": 5000,
+					"EggItemIds": [
+						"CC_Tortoiseegg"
+					],
+					"BirthText": "A tortoise hatchling has emerged!",
+					"DaysToMature": 10,
+					"DaysToProduce": 1,
+					"ProduceItemIds": [
+						{
+							"ItemId": "CC_Tortoiseegg",
+						},
+						{
+							"ItemId": "CC_Tortoiseshell",
+						}
+						
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "CC_Tortoiseegg",
+						},
+						{
+							"ItemId": "CC_Tortoiseshell",
+						}
+					],
+					"HarvestType": "DropOvernight",
+					"Sound": "turtle_pet",
+					"BabySound": "turtle_pet",
+					"Texture": "Mods/{{ModId}}/Tortoise",
+					"BabyTexture": "Mods/{{ModId}}/BabyTortoise",
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+						"X": 0,
+						"Y": 0,
+						},
+					"UpDownPetHitboxTileSize": "1, 2",
+					"LeftRightPetHitboxTileSize": "2, 2",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"UseDoubleUniqueAnimationFrames": false,
+					"UseFlippedRightForLeft": true,
+					"SleepFrame": 12,
+					"SpeedOverride": 1,
+					"Skins": [
+						{
+							"id": "TColor",
+							"Weight": 3,
+							"Texture": "Mods/{{ModId}}/Tortoise2",
+							"BabyTexture": "Mods/{{ModId}}/BabyTortoise"
+						},
+							{
+							"id": "TColor1",
+							"Weight": 3,
+							"Texture": "Mods/{{ModId}}/Tortoise3",
+							"BabyTexture": "Mods/{{ModId}}/BabyTortoise"
+						}
+					],
+					"ShadowWhenBaby": {
+							"Visible": false
+						},
+					"ShadowWhenAdult": {
+							"Visible": false
+						},
+					"CanSwim": false,
+					"CanGetPregnant": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 7,
+					"CustomFields": {
+						
+					}
+				}	
+			}
+		},
+		{
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)15",
+        "OutputRules"
+      ],
+      "Entries": {
+        "CC_EggtoPickle": {
+        "Id": "EggtoPickle",
+        "Triggers": [
+          {
+            "Id": "ItemPlacedInMachine",
+            "Trigger": "ItemPlacedInMachine",
+            "RequiredItemId": "CC_Tortoiseegg",
+            "RequiredTags": null,
+            "RequiredCount": 1,
+            "Condition": null
+          }
+        ],
+        "UseFirstValidOutput": false,
+        "OutputItem": [
+          {
+            "CustomData": null,
+            "OutputMethod": null,
+            "CopyColor": false,
+            "CopyPrice": false,
+            "CopyQuality": false,
+            "PreserveType": null,
+            "PreserveId": null,
+            "IncrementMachineParentSheetIndex": 0,
+            "PriceModifiers": null,
+            "PriceModifierMode": "Stack",
+            "Condition": null,
+            "Id": "CC_Pickledegg",
+            "ItemId": "CC_Pickledegg",
+            "RandomItemId": null,
+            "MaxItems": null,
+            "MinStack": -1,
+            "MaxStack": -1,
+            "Quality": -1,
+            "ObjectInternalName": null,
+            "ObjectDisplayName": null,
+            "ToolUpgradeLevel": -1,
+            "IsRecipe": false,
+            "StackModifiers": null,
+            "StackModifierMode": "Stack",
+            "QualityModifiers": null,
+            "QualityModifierMode": "Stack",
+            "ModData": null,
+            "PerItemCondition": null
+          }
+        ],
+        "MinutesUntilReady": 4000,
+        "DaysUntilReady": -1,
+        "InvalidCountMessage": null,
+        "RecalculateOnCollect": false
+       },
+      },
+      "MoveEntries": [
+        {
+          "Id": "CC_PickledEgg",
+          "BeforeID": "CC_Tortoiseegg"
+        }
+      ]
+    },
+	
+    ]
+}   
+

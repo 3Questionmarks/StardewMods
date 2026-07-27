@@ -1,0 +1,33 @@
+{
+  "Format": "2.5.0",
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Mods/Pathoschild.CentralStation/Stops",
+      "When": {
+        "HasMod": "Pathoschild.CentralStation.Content",
+"HasFlag |contains=ccVault,jojaVault": true,
+      },
+      "Entries": {
+        "{{ModId}}_CapeBusStop": {
+          "DisplayName": "{{i18n:CapeBusStop_Name}}",
+          "ToLocation": "Custom_CapeBusStop",
+          "Network": "Bus",
+          "ToTile": { "X": 29, "Y": 25 },
+          "ToFacingDirection": "down",
+          "Cost": 200,
+
+        }
+      }
+    },
+
+{
+  "Action": "EditMap",
+  "Target": "Maps/Custom_CapeBusStop",
+  "When": { "HasMod": "Pathoschild.CentralStation.Content" },
+  "MapProperties": {
+    "Pathoschild.CentralStation_TicketMachine": "29 24 Bus"
+  }
+}
+  ]
+}

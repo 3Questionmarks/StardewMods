@@ -1,13 +1,19 @@
 {
   "ShowLoveBubblesOverAnimalsWhenWateredTrough": true,
   "ShowAnimalsLeftThirstyMessage": true,
+  "ShowMoodThirstyStatus": true,
   "UseWateringSystems": true,
-  "ReplaceCoopTextureIfTroughIsEmpty": true,
+  "ChangeBuildingTextureIfTroughIsEmpty": true,
   "FriendshipPointsForWateredTrough": 15,
   "AdditionalFriendshipPointsForWateredTroughWithAnimalsInsideBuilding": 15,
   "NegativeFriendshipPointsForNotWateredTrough": 10,
   "AnimalsCanDrinkOutside": true,
   "AnimalsCanOnlyDrinkFromWaterBodies": false,
+  "TroughsCanRemainFull": true,
   "CleanerTroughs": false,
-  "MarnieWaterBowlPrice": 0
+  "MarnieSellsWaterBowl": true,
+  "MarnieWaterBowlPrice": 0,
+  "ShowThirstyEmotes": true,
+  "ThirstyEmoteStartTime": 1500,
+  "SprinklersFillWaterBowls": true
 }

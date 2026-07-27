@@ -1,0 +1,49 @@
+{
+  "Name": "Baubles",
+  "Author": "appleseed",
+  "Version": "1.1.5",
+  "Description": "Become an artisan toymaker and craft lots of new cute, valuable and mysterious items with materials found through foraging, farming, and adventuring.",
+  "UniqueID": "appleseed.BCP",
+  "ContentPackFor": {
+	"UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "UpdateKeys": ["Nexus:29720"],
+	"Dependencies": [
+   	{
+      "UniqueID": "Esca.FarmTypeManager",
+      "IsRequired": true
+   	},
+	{
+      "UniqueID": "leclair.bettercrafting",
+      "IsRequired": true
+   	},
+	{
+      "UniqueID": "Spiderbuttons.BETAS",
+      "IsRequired": true
+   	},
+	{
+      "UniqueID": "Spacechase0.SpaceCore",
+      "IsRequired": true
+   	},
+	{
+      "UniqueID": "selph.ExtraMachineConfig",
+      "IsRequired": true
+   	},
+	{
+      "UniqueID": "mistyspring.ItemExtensions",
+      "IsRequired": false
+   	},
+	{
+      "UniqueID": "Lemurkat.EastScarpNPCs",
+      "IsRequired": false
+   	},
+	{
+      "UniqueID": "Lemurkat.EastScarpNPCs.CP",
+      "IsRequired": false
+   	},
+	{
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+      "IsRequired": false
+   	}
+  ]
+}

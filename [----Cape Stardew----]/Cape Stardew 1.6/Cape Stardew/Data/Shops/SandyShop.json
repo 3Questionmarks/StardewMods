@@ -1,0 +1,125 @@
+{
+  "Changes": [
+{
+  "LogName": "SandyShavegrass",
+  "Action": "EditData",
+  "Target": "Data/Shops",
+  "TargetField": ["Sandy","Items"],
+  "Entries": {
+    "Cape.Shavegrass": {
+      "Condition": "Season summer fall winter",
+      "Id": "Cape.Shavegrass",
+      "ItemId": "Cape.Shavegrass",
+      "AvailableStock": 5,
+      "AvailableStockLimit": "Player",
+      "Price": 600,
+      "MinStack": 5
+    }
+  }
+},
+
+
+{
+  "LogName": "SandyUvaUrsi",
+  "Action": "EditData",
+  "Target": "Data/Shops",
+  "TargetField": [
+    "Sandy",
+    "Items"
+  ],
+  "Entries": {
+    "Cape.UvaUrsi": {
+      "Condition": "Season spring summer fall",
+      "Id": "Cape.UvaUrsi",
+      "ItemId": "Cape.UvaUrsi",
+      "AvailableStock": 4,
+      "AvailableStockLimit": "Player",
+      "Price": 880,
+      "MinStack": 4
+    }
+  }
+},
+
+
+
+{
+  "LogName":"SandyStickyRiceFlour",
+  "Action":"EditData",
+  "Target":"Data/Shops",
+  "TargetField":["Sandy","Items"],
+  "When":{
+    "HasSeenEvent |contains=14635124":"true"
+  },
+  "Entries":{
+    "Cape.StickyRiceFlour":{
+      "Id":"Cape.StickyRiceFlour",
+      "ItemId":"Cape.StickyRiceFlour",
+      "Price":720,
+ "AvailableStock": 4,
+      "AvailableStockLimit": "Player",
+      "MinStack":4
+    }
+  }
+},
+
+{
+  "LogName":"SandyGumiSweetRice",
+  "Action":"EditData",
+  "Target":"Data/Shops",
+  "TargetField":["Sandy","Items"],
+  "When":{
+    "HasSeenEvent |contains=14635124":"true"
+  },
+  "Entries":{
+    "Cape.GumiSweetRice":{
+      "Id":"Cape.GumiSweetRice",
+      "ItemId":"Cape.GumiSweetRice",
+      "Price":700,
+ "AvailableStock": 5,
+      "AvailableStockLimit": "Player",
+      "MinStack":5
+    }
+  }
+},
+
+{
+  "LogName":"SandyCornSilk",
+  "Action":"EditData",
+  "Target":"Data/Shops",
+  "TargetField":["Sandy","Items"],
+  "When":{
+    "HasSeenEvent |contains=146356991":"true"
+  },
+  "Entries":{
+    "Cape.CornSilk":{
+      "Id":"Cape.CornSilk",
+      "ItemId":"Cape.CornSilk",
+      "Price":375,
+ "AvailableStock": 5,
+      "AvailableStockLimit": "Player",
+      "MinStack":5
+    }
+  }
+},
+
+{
+  "LogName":"SandyCuachalalateBark",
+  "Action":"EditData",
+  "Target":"Data/Shops",
+  "TargetField":["Sandy","Items"],
+  "When":{
+    "HasSeenEvent |contains=146356991":"true"
+  },
+  "Entries":{
+    "Cape.CuachalalateBark":{
+      "Id":"Cape.CuachalalateBark",
+      "ItemId":"Cape.CuachalalateBark",
+      "Price":475,
+ "AvailableStock": 4,
+      "AvailableStockLimit": "Player",
+      "MinStack":5
+    }
+  }
+}
+]
+}

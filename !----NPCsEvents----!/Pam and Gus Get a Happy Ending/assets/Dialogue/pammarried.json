@@ -1,0 +1,36 @@
+{
+    "Changes": [
+        {
+            "LogName": "Pam Marriage Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pam",
+            "Entries": {
+                "Mon": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Mon}}",
+                "Tue": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Tue}}",
+                "summer_Tue6": "{{i18n:{{ModId}}_MarriageDialogue.Pam.summer_Tue6}}",
+                "fall_Wed": "{{i18n:{{ModId}}_MarriageDialogue.Pam.fall_Wed}}",
+		"Thu4": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Thu4}}",
+                "Thu4_inlaw_Penny": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Thu4_inlaw_Penny}}",
+                "summer_Thu4": "{{i18n:{{ModId}}_MarriageDialogue.Pam.summer_Thu4}}",
+                "fall_Thu": "{{i18n:{{ModId}}_MarriageDialogue.Pam.fall_Thu}}",
+                "winter_Thu": "{{i18n:{{ModId}}_MarriageDialogue.Pam.winter_Thu}}",
+                "Fri": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Fri}}",
+                "Fri2": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Fri2}}",
+                "fall_Fri": "{{i18n:{{ModId}}_MarriageDialogue.Pam.fall_Fri}}",
+                "Saloon_Entry": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Saloon_Entry.{{Random:1,2}}}}",
+                "Trailer_Entry": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Trailer_Entry.{{Random:1,2,3,4,5}}}}",
+ 		"Pam.Saloon": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Saloon.{{Random:1,2,3,4,5,6}}}}",
+                "Saloon6": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Saloon6}}",
+                "Saloon_Tue": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Saloon_Tue}}",
+                "Saloon_Wed": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Saloon_Wed}}",
+                "Saloon_Thu": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Saloon_Thu}}",
+                "Saloon_Fri": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Saloon_Fri}}",
+                "Saloon_Sat": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Saloon_Sat}}",
+                "Saloon_Sun": "{{i18n:{{ModId}}_MarriageDialogue.Pam.Saloon_Sun}}",
+                "spring_18": "{{i18n:{{ModId}}_MarriageDialogue.Pam.spring_18}}",
+                "fall_2": "{{i18n:{{ModId}}_MarriageDialogue.Pam.fall_2}}",
+                "summer_8": "{{i18n:{{ModId}}_MarriageDialogue.Pam.summer_8}}"
+            }
+        }
+    ]
+}

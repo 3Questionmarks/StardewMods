@@ -1,37 +1,68 @@
 {
-    "config.Ts_AFC_EnableThisMod.name": "Enable the mod.",
-    "config.Ts_AFC_EnableThisMod.description": "On/Off setting of this mod itself.",
-
-    "config.Ts_AFC_AvoidCertainBugs.name": "Avoid certain bugs.",
-    "config.Ts_AFC_AvoidCertainBugs.description": "There was a bug up to v1.3 where warp totems would appear on the collectibles in front of the dusty chapel and would not disappear. If you have this condition, please turn on this item. A word of caution! If you turn this item ON, the cave will be created as a different MAP, although it looks the same. If you have placed valuable items in the cave, please remove them before changing the settings.",
-
-    "config.Ts_AFC_OpenImmediately.name": "Immediate Open",
-    "config.Ts_AFC_OpenImmediately.description": "Originally, they are opened when the conditions are cleared, but checking this item will allow you to enter additional areas immediately.",
+    "config.EnableThisMod.name": "Enable the mod.",
+    "config.EnableThisMod.description": "On/Off setting of this mod itself.",
 
 
-    "config.section.Ts_AFC_Cautions.name": "Below are the settings when using^Hippo's Farm Cave Variety mod",
-    "config.section.Ts_AFC_Cautions.description": "The settings must be exactly the same as the settings in the Hippo's Farm Cave Variety mod. If the settings are not exactly the same, unexpected patching may occur and display problems may occur.",
+    "config.section.S_1stArea.name": "1st Additional Area Setting",
+    "config.section.S_1stArea.description": "This is a setting item related to the first additional area accessible from the vanilla farm cave.",
+
+    "config.OpenImmediately.name": "Immediate Open",
+    "config.OpenImmediately.description": "Originally, they are opened when the conditions are cleared, but checking this item will allow you to enter additional areas immediately.",
+
+    "config.AvoidCertainBugs.name": "(Notes) Avoid certain bugs.",
+    "config.AvoidCertainBugs.description": "This option will be removed in an upcoming update, and any rooms that had this option enabled will disappear. If you have this option ON, please collect the items in your current room and disable it. Rooms that you can enter with this option disabled will continue to be used. The totem bug is not currently occurring, so please rest assured. (The following text is the previous description for this item. \"There was a bug up to v1.3 where warp totems would appear on the collectibles in front of the dusty chapel and would not disappear. If you have this condition, please turn on this item. A word of caution! If you turn this item ON, the cave will be created as a different MAP, although it looks the same. If you have placed valuable items in the cave, please remove them before changing the settings.\")",
 
 
-    "config.Ts_AFC_HFCV_CaveType.name": "CaveType",
-    "config.Ts_AFC_HFCV_MatchFarm.name": "MatchFarm",
-    "config.Ts_AFC_HFCV_AlternateCombat.name": "AlternateCombat",
-    "config.Ts_AFC_HFCV_AlternateIsland.name": "AlternateIsland",
+    "config.section.S_2ndArea.name": "2nd Additional Area Setting",
+    "config.section.S_2ndArea.description": "These are the settings for the second additional area, which can be accessed from the first additional area.",
+
+    "config.OpenImmediately_2nd.name": "Immediate Open",
+    "config.OpenImmediately_2nd.description": "Originally, they are opened when the conditions are cleared, but checking this item will allow you to enter additional areas immediately.",
+
+    "config.2ndArea_Minecart.name": "Install Minecart",
+    "config.2ndArea_Minecart.description": "Enabling this setting will install minecart in the second additional area. You must have visited the second additional area at least once for minecart to appear as a destination.",
 
 
-    "config.section.Section for line breaks.name": "^^Section for line breaks",
-    "config.section.Section for line breaks.description": "This item is a non-functional item to address a problem that occurs when mod config is displayed in a particular language and the necessary items are not displayed until the end.",
+    "config.section.S_KisaaFCP.name": "Below are the settings when using^Kisaa's Farm Cave Pack mod",
+    "config.section.S_KisaaFCP.description": "The settings must be exactly the same as the settings in the Kisaa's Farm Cave Pack mod. If the settings are not exactly the same, unexpected patching may occur and display problems may occur. (If the cave type is \"Fantasy\", the entrance is shown on the right side of the cave.)",
 
-    "config.This is a meaningless item.name": "This is a meaningless item",
-    "config.This is a meaningless item.description": "This item is a non-functional item to address a problem that occurs when mod config is displayed in a particular language and the necessary items are not displayed until the end. There is no point in turning it on and off, so you can switch it on and off as much as you like and play with it.",
-
+    "config.KisaaFCP_CaveType.name": "Farm Cave Type",
 
 
-    "AdFCms01": "There's a faint rustling sound coming from behind the small shrine...",
-    "AdFCms02": "Someone has been leaving gifts at this shrine. Who could it be?",
-    "AdFCms03": "A breeze from the surface is blowing in through the opening in the shrine.^Maybe it's a passage for small creatures?",
-    "AdFCms04": "There's a small shrine here.^Wait, is there something moving in there...?",
+    "config.section.S_XiddavFC.name": "Below are the settings when using^Xiddav's Farm Cave mod",
+    "config.section.S_XiddavFC.description": "The settings must be exactly the same as the settings in the Xiddav's Farm Cave mod. If the settings are not exactly the same, unexpected patching may occur and display problems may occur.",
+
+    "config.XiddavFC_CaveType.name": "Cave",
+
+
+    "config.section.S_HFCV.name": "Below are the settings when using^Hippo's Farm Cave Variety mod",
+    "config.section.S_HFCV.description": "The settings must be exactly the same as the settings in the Hippo's Farm Cave Variety mod. If the settings are not exactly the same, unexpected patching may occur and display problems may occur.",
+
+    "config.HFCV_CaveType.name": "CaveType",
+    "config.HFCV_MatchFarm.name": "MatchFarm",
+    "config.HFCV_AlternateCombat.name": "AlternateCombat",
+    "config.HFCV_AlternateIsland.name": "AlternateIsland",
+
+
+    "DisplayName_AFC": "Farm Cave Additional Room",
+
+    "AdFCms01": "There's a faint rustling sound coming from behind the small hut...",
+    "AdFCms02": "Someone has been leaving gifts at this hut. Who could it be?",
+    "AdFCms03": "A breeze from the surface is blowing in through the opening in the hut.^Maybe it's a passage for small creatures?",
+    "AdFCms04": "There's a small hut here.^Wait, is there something moving in there...?",
     "AdFCms05": "This little forest spirit was the one delivering the gifts all along!",
+    "AdFCms06": "There's nothing inside.",
+    "AdFCms07": "There's some liquid at the bottom, but I don't know what it is.#...It's probably best not to touch it.",
+    "AdFCms08": "There are several well-worn tools lying around.#There are still some things that could be used, but I think I'll refrain from taking them.",
 
+    "Ev01_01": "...???",
+    "Ev01_02": "I thought I heard a sound coming from the cave...",
+    "Ev01_03": "I think I'll go see it.",
 
+    "Ev02_01": "Oh? You are...",
+    "Ev02_02": "Did you open the way for me?",
+    "Ev02_03": "...",
+
+    "Mail Title 01": "Opened a hidden room in the farm cave.",
+    "Mail Text 01": "Dear, @.^^Demetrius discovered a boarded-up room in the back of your farm cave while he was setting up his research specimens.^We've removed the boards from the doorway, but unfortunately the room is too bright to expand his experiment. Maybe you can make some use of that extra space!^^-Robin",
 }

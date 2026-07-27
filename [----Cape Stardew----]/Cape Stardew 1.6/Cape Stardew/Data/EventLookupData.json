@@ -1,0 +1,48 @@
+{
+  "Changes": [
+
+    ///eventlookup//
+    {
+      "Action": "EditData",
+      "Target": "Mods/shekurika.EventLookup/locationnames",
+      "When": {
+        "HasMod": "shekurika.EventLookup"
+      },
+      "Entries": {
+        "Custom_CapeStardew": "Cape Stardew",
+        "Custom_Cape": "Cape Cave",
+
+        "Custom_CapeForest": "Cape Forest",
+        "Custom_CapeIslandEntry": "Sleepy Sea Grotto",
+        "Custom_CapeKeyMaze": "Key Maze",
+
+        "Custom_CapeCaving": "Cape Caverns",
+        "Custom_CapeCavingArea3": "Cape Cave Entrance",
+        "Custom_CapeCavingSecretroom": "Hidden Chamber",
+
+        "Custom_CapeMineForest": "Old Mine Forest",
+        "Custom_CapeMineCart": "Mine Cart Tunnel",
+
+        "Custom_DarkCave2": "Dark Depths",
+        "Custom_DarkCave3": "Depths of Cape Stardew",
+
+        "Custom_SecretBase": "Cape Caverns",
+        "Custom_CapeSecretBaseDropArea": "Underground Cape",
+        "Custom_CapeSecretBaseDropAreaScene": "Underground Cape",
+
+        "Custom_RealSecretBase": "Hidden Canals",
+        "Custom_RealSecretBase2": "Hidden Cavern River",
+        "Custom_RealSecretBase2Unlocked": "Hidden Waterway",
+        "Custom_UnlockSecretBase": "Secret Base",
+
+        "Custom_SeaCavernDepths2": "Spirit Depths",
+
+        "Custom_AbandonedHouse": "Abandoned House",
+        "Custom_AbandonedHauntedHouse": "Lost Cabin",
+        "Custom_AreaSecretTrapRoom": "Trap Room",
+        "Custom_AnnettaHouse": "Annetta Residence"
+      }
+    }
+
+  ]
+}

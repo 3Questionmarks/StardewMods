@@ -1,0 +1,149 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/Town",
+        "Entries":
+    {
+    //Sam 4-Heart Event: "Band Practice Blues"
+    "{{ModId}}_E04/F/f Sam 1000/t 1400 1800/e {{ModId}}_E03":"
+    playful/
+    10 85/ 
+    farmer 200 200 0 Sam 17 15 2 Sebastian 18 18 0 Abigail 15 18 0/
+    addTemporaryActor {{ModId}}_Rocket 16 32 12 85 2 false/
+    positionOffset Sebastian 32 -31/
+    addConversationTopic {{ModId}}_Topic_E04/
+    positionOffset Abigail 32 -31/
+    skippable/
+    showFrame Sam 20/
+    pause 3000/
+    textAboveHead {{ModId}}_Rocket \"{{i18n:E04.001}}\"/
+    pause 3500/
+    globalFade/
+    viewport -1200 -1200/
+    changeLocation SamHouse/
+    globalFadeToClear 0.007 true/
+    viewport 17 16/
+    pause 2000/
+    stopMusic/
+    showFrame Sebastian 8/
+    pause 400/
+    emote Sam {{pause}}/
+    speak Sam \"{{i18n:E04.002}}\"/
+    pause 200/
+    speak Abigail \"{{i18n:E04.003}}\"/
+    faceDirection Sebastian 3/
+    playSound drumkit0/
+    pause 100/
+    playSound drumkit4/
+    pause 250/
+    playSound drumkit3/
+    pause 1000/
+    speak Sebastian \"{{i18n:E04.004}}\"/
+    pause 400/
+    speak Sam \"{{i18n:E04.005}}\"/
+    pause 500/
+    faceDirection Sebastian 0/
+    pause 200/
+    speak Sebastian \"{{i18n:E04.006}}\"/
+    pause 200/
+    speak Sam \"{{i18n:E04.007}}\"/
+    pause 300/
+    textAboveHead Sam \"{{i18n:E04.008}}\"/
+    pause 700/
+    showFrame Sebastian 41/
+    pause 800/
+    textAboveHead Sam \"{{i18n:E04.009}}\"/
+    pause 3000/
+    playMusic sampractice/
+    animate Sam false true 200 20 21/
+    showFrame Abigail 21/
+    pause 1000/
+    playSound clank/
+    pause 1000/
+    playSound clank/
+    playSound drumkit3/
+    pause 900/
+    playSound clank/
+    pause 1200/
+    playSound clank/
+    playSound drumkit1/
+    pause 1100/
+    playSound clank/
+    pause 1500/
+    playSound clank/
+    pause 1000/
+    playSound clank/
+    pause 1000/
+    playSound clank/
+    playSound drumkit3/
+    pause 900/
+    playSound clank/
+    pause 1200/
+    playSound clank/
+    playSound drumkit3/
+    pause 1100/
+    playSound clank/
+    pause 1500/
+    playSound clank/
+    pause 1000/
+    stopMusic/
+    showFrame Abigail 8/
+    stopAnimation Sam 20/
+    showFrame Sebastian 8/
+    pause 400/
+    emote Sam {{pause}}/
+    speak Sam \"{{i18n:E04.010}}\"/
+    pause 200/
+    speak Abigail \"{{i18n:E04.011}}\"/
+    pause 400/
+    speak Sam \"{{i18n:E04.012}}\"/
+    pause 200/
+    speak Sebastian \"{{i18n:E04.013}}\"/
+    pause 300/
+    emote Sam {{sad}}/
+    pause 200/
+    speak Abigail \"{{i18n:E04.014}}\"/
+    pause 200/
+    globalFade/
+    viewport -1200 -1200/
+    pause 100/
+    message \"{{i18n:E04.015}}\"/
+    pause 500/
+    speak Sam \"{{i18n:E04.016}}\"/
+    pause 300/
+    speak Sam \"{{i18n:E04.017}}\"/
+    pause 300/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    end/
+    ",
+    
+        
+    },
+},
+
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Sam",
+        "Entries":{
+            "{{ModId}}_Topic_E04":"{{i18n:E04.018}}",
+            }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Sebastian",
+        "Entries":{
+            "{{ModId}}_Topic_E04":"{{i18n:E04.019}}",
+            }
+    },
+        {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Abigail",
+        "Entries":{
+            "{{ModId}}_Topic_E04":"{{i18n:E04.020}}",
+            }
+    },
+    ]
+}

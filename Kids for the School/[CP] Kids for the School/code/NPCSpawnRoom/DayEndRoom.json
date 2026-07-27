@@ -1,0 +1,21 @@
+{
+    "Changes": [
+//Test
+//NPC warp from bus stop to DayEnd Room      
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "TextOperations": [
+            {
+                "Operation": "Append",
+                "Target": [
+                    "MapProperties",
+                    "NPCWarp"
+                ],
+            "Value": "22 8 Custom_WarpRoom_DayEnd 3 3",
+            "Delimiter": " "
+            }
+        ]
+    },
+]
+}

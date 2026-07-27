@@ -1,0 +1,27 @@
+{
+  "Name": "NPC Sirona",
+  "Author": "dedpeech",
+  "Description": "selkie npc",
+  "Version": "1.1.6",
+  "UniqueID": "dedpeech.sirona",
+  "Dependencies": [
+    {
+      "UniqueID": "PeacefulEnd.CustomCompanions",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "aedenthorn.CustomFixedDialogue",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "dedpeech.seacave",
+      "IsRequired": true
+    }
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "UpdateKeys": [
+    "Nexus:43386"
+  ]
+}

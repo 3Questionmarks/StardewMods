@@ -1,0 +1,84 @@
+{
+
+    "config.EnableThisMod.name": "MODを有効にする",
+    "config.EnableThisMod.description": "このMOD自体のOn/Off設定です。",
+
+    "config.RemoveBuildRestrictions.name": "建設解放条件の削除",
+    "config.RemoveBuildRestrictions.description": "設定をONにすると全ての木が直ぐに建設可能になります。(建設のロック解除)",
+
+    "config.FreeToBuild.name": "建設費がかからない",
+    "config.FreeToBuild.description": "設定をONにすると建設費用が0になります。.",
+
+    "config.ImmediateBuildFinish.name": "建設が一瞬で終わる",
+    "config.ImmediateBuildFinish.description": "設定をONにすると建設が一瞬で終わる様になります。",
+
+    "config.TransparentWhenGoBehind.name": "背後に立った時に透過する",
+    "config.TransparentWhenGoBehind.description": "建設された木の後ろ側にキャラクターが立った時に木を透過する様にします。",
+
+    "config.BuildOnTheFloor.name": "装飾床の上に建設できる",
+    "config.BuildOnTheFloor.description": "「木の床」等の装飾床の上に建設出来る様になります。",
+
+    "config.DisableAction.name": "アクションを無効にする",
+    "config.DisableAction.description": "木をクリックした時に表示されるテキストボックスを無効にし、クリックに反応しなくなります。",
+
+
+    "config.section.ConstructionMenu.name": "建設メニューに表示",
+    "config.section.ConstructionMenu.description": "ロビンの建設メニューに表示するかどうかの設定です。設定を無効にすると対象の木がメニューに表示されなくなります。",
+
+    "config.Enable_Large.name": "大きな木",
+    "config.Enable_Large.description": "季節によって自動で見た目が変わる「大きな木」を表示します。",
+
+    "config.Enable_Large_Replica.name": "大きな木(レプリカ)",
+    "config.Enable_Large_Replica.description": "「大きな木」の各季節のレプリカを表示します。",
+
+    "config.Enable_Town.name": "街の大きな木",
+    "config.Enable_Town.description": "季節によって自動で見た目が変わる「街の大きな木」を表示します。",
+
+    "config.Enable_Town_Replica.name": "街の大きな木(レプリカ)",
+    "config.Enable_Town_Replica.description": "「街の大きな木」の各季節のレプリカを表示します。",
+
+    "config.Enable_Wild.name": "野生の大きな木",
+    "config.Enable_Wild.description": "季節によって自動で見た目が変わる「野生の大きな木」を表示します。",
+
+    "config.Enable_Wild_Replica.name": "野生の大きな木(レプリカ)",
+    "config.Enable_Wild_Replica.description": "「野生の大きな木」の各季節のレプリカを表示します。",
+
+    "config.Enable_Very.name": "とても大きな木",
+    "config.Enable_Very.description": "季節によって自動で見た目が変わる「とても大きな木」を表示します。",
+
+    "config.Enable_Very_Replica.name": "とても大きな木(レプリカ)",
+    "config.Enable_Very_Replica.description": "「とても大きな木」の各季節のレプリカを表示します。",
+
+
+
+    "LargeTree_Name": "大きな木",
+    "TownLargeTree_Name": "街の大きな木",
+    "WildLargeTree_Name": "野生の大きな木",
+    "VeryLargeTree_Name": "とても大きな木",
+
+    "Tree_Description": "四季折々の容姿で農場を華やかにしてくれるでしょう。",
+    "Tree_Description(DN)": "四季折々の容姿で農場を華やかにしてくれるでしょう。\n(DaisyNiko's EarthyRecolour)",
+    "Tree_Description(SF)": "四季折々の容姿で農場を華やかにしてくれるでしょう。\n(SimpleFoliage)",
+    "Tree_Description(SF-DN)": "四季折々の容姿で農場を華やかにしてくれるでしょう。\n(SimpleFoliage)\n(DaisyNiko's EarthyRecolour)",
+    "Tree_Description(SF-VP)": "四季折々の容姿で農場を華やかにしてくれるでしょう。\n(SimpleFoliage)\n(VibrantPastoralRecolor)",
+    "Tree_Description(SF-VP_GreenFall)": "四季折々の容姿で農場を華やかにしてくれるでしょう。\n(SimpleFoliage)\n(VibrantPastoralRecolor/GreenFall)",
+    "Tree_Description(VP)": "四季折々の容姿で農場を華やかにしてくれるでしょう。\n(VibrantPastoralRecolor)",
+    "Tree_Description(VP_GreenFall)": "レプリカの木。季節で見た目が変化する事は無い…\n(VibrantPastoralRecolor/GreenFall)",
+
+    "Replica_Tree_Description": "レプリカの木。季節で見た目が変化する事は無い…",
+    "Replica_Tree_Description(DN)": "レプリカの木。季節で見た目が変化する事は無い…\n(DaisyNiko's EarthyRecolour)",
+    "Replica_Tree_Description(SF)": "レプリカの木。季節で見た目が変化する事は無い…\n(SimpleFoliage)",
+    "Replica_Tree_Description(SF-DN)": "レプリカの木。季節で見た目が変化する事は無い…\n(SimpleFoliage)\n(DaisyNiko's EarthyRecolour)",
+    "Replica_Tree_Description(SF-VP)": "レプリカの木。季節で見た目が変化する事は無い…\n(SimpleFoliage)\n(VibrantPastoralRecolor)",
+    "Replica_Tree_Description(SF-VP_GreenFall)": "レプリカの木。季節で見た目が変化する事は無い…\n(SimpleFoliage)\n(VibrantPastoralRecolor/GreenFall)",
+    "Replica_Tree_Description(VP)": "レプリカの木。季節で見た目が変化する事は無い…\n(VibrantPastoralRecolor)",
+    "Replica_Tree_Description(VP_GreenFall)": "レプリカの木。季節で見た目が変化する事は無い…\n(VibrantPastoralRecolor/GreenFall)",
+
+
+
+    "Mail_Title": "植樹業開始のお知らせ",
+    "Mail_Text": "@ へ^^こんにちわ。以前から植樹技術を勉強していたんだけど、そろそろ仕事としてやってもいいくらいには上達したから今度から依頼してね！^本物の木とレプリカの木があるから農場の外観を彩るのにいいかもね！^^-ロビン より",
+
+    "Dialogue": "植樹した木は大切にしましょう。^(撤去の際はロビンにお願いしましょう)",
+
+}

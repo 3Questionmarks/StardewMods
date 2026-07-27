@@ -1,0 +1,27 @@
+{
+  "ItemName": "Gate",
+  "Type": "Craftable",
+	"Keywords": ["Gwen", "gate" ],
+	"Seasons": ["Winter"],
+  "TextureWidth": 48,
+  "TextureHeight": 224,
+  "Variations": 4,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "wood gate",
+		},
+		{
+		"Id": 1,
+		"Name": "stone gate",
+		},
+		{
+		"Id": 2,
+		"Name": "iron gate",
+		},
+		{
+		"Id": 3,
+		"Name": "hardwood gate",
+		},
+	]
+}

@@ -1,0 +1,431 @@
+{
+    "Changes": [
+		
+		//"Maps/Aimon.Beach_East",	
+			//"Maps/Aimon.Cave_West",
+			//"Maps/Aimon.Cave_Summit", 
+			//"Maps/Aimon.Cave_Lush",
+
+//-------------<CUSTOM LOCATIONS (Artifacts/FishAreas/Fish)>-------------//
+//-------------<Aimon.Beach_West
+	{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Aimon.Beach_West": {
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\Aimon.Beach_West",
+		//"Type": "StardewValley.Locations.Beach",
+		//"AlwaysActive": false
+                    },
+		"DisplayName": "West Beach Shore",
+		"DefaultArrivalTile": { "X": 53, "Y": 40 },
+		"ExcludeFromNpcPathfinding": false,
+		"CanPlantHere": null,
+		"CanHaveGreenRainSpawns": true,
+  "Forage": [],
+//ARTIFACTS	
+"ArtifactSpots":  [    
+	//beach artifacts
+{
+        "Chance": 0.08,
+        "ApplyGenerousEnchantment": true,
+        "OneDebrisPerDrop": true,
+        "Precedence": 0,
+        "ContinueOnDrop": false,
+        "Condition": null,
+        "Id": "(O)384",
+        "ItemId": "(O)384",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": 1,
+        "MaxStack": 3,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "Chance": 0.03,
+        "ApplyGenerousEnchantment": false,
+        "OneDebrisPerDrop": true,
+        "Precedence": 0,
+        "ContinueOnDrop": false,
+        "Condition": null,
+        "Id": "(O)589",
+        "ItemId": "(O)589",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "Chance": 0.15,
+        "ApplyGenerousEnchantment": false,
+        "OneDebrisPerDrop": true,
+        "Precedence": 0,
+        "ContinueOnDrop": false,
+        "Condition": null,
+        "Id": "LOST_BOOK_OR_ITEM (O)770",
+        "ItemId": "LOST_BOOK_OR_ITEM (O)770",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "Chance": 0.25,
+        "ApplyGenerousEnchantment": true,
+        "OneDebrisPerDrop": true,
+        "Precedence": 0,
+        "ContinueOnDrop": false,
+        "Condition": null,
+        "Id": "(O)390",
+        "ItemId": "(O)390",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": 1,
+        "MaxStack": 3,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      }
+    ],
+//FISHAREAS	
+ "FishAreas": {
+                        "West_Ocean": {
+                            "DisplayName": null,
+                            "Position": {     "X": 0,  "Y": 22,   "Width": 44, "Height": 30  },
+                            "CrabPotFishTypes": [   "ocean"  ],
+				},
+		"West_Ocean2": {
+                            "DisplayName": null,
+                            "Position": {  "X": 44,   "Y": 36,   "Width": 18,    "Height": 16   },
+                              "CrabPotFishTypes": [   "ocean"  ],
+				},
+                        "West_Lake": {
+                            "DisplayName": null,
+                               "Position": {     "X": 44,  "Y": 15,   "Width": 10, "Height": 16  },
+                            "CrabPotFishTypes": [   "freshwater"  ],
+                            },
+                        },
+//FISH
+  "Fish": [ 
+   {
+	"Id": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+	"ItemId": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+	"FishAreaID": "West_Ocean",
+	"Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+	"Chance": 1.0,
+       
+      },
+   {
+       "Id": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+	"ItemId": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+	"FishAreaID": "West_Ocean",
+	"Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+	"Chance": 1.0,
+      },
+	  {
+       "Id": "LOCATION_FISH Forest BOBBER_X BOBBER_Y WATER_DEPTH",
+	"ItemId": "LOCATION_FISH Forest BOBBER_X BOBBER_Y WATER_DEPTH",
+	"FishAreaID": "West_Lake",
+	"Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+	"Chance": 1.0,
+      },
+  ],
+                },
+
+//-------------<Aimon.Forest_Festival
+    "Aimon.Forest_Festival": {
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\Aimon.Forest_Festival",
+		//"Type": "StardewValley.Locations.Beach",
+		//"AlwaysActive": false
+                    },
+		"DisplayName": "Forest Clearing",
+		"DefaultArrivalTile": { "X": 52, "Y":18 },
+		"ExcludeFromNpcPathfinding": false,
+		"CanPlantHere": null,
+		"CanHaveGreenRainSpawns": true,
+  "Forage": [],
+//ARTIFACTS	
+"ArtifactSpots": [
+      {
+        "Chance": 0.08,
+        "ApplyGenerousEnchantment": true,
+        "OneDebrisPerDrop": true,
+        "Precedence": 0,
+        "ContinueOnDrop": false,
+        "Condition": null,
+        "Id": "(O)378",
+        "ItemId": "(O)378",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": 1,
+        "MaxStack": 3,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "Chance": 0.1,
+        "ApplyGenerousEnchantment": false,
+        "OneDebrisPerDrop": true,
+        "Precedence": 0,
+        "ContinueOnDrop": false,
+        "Condition": null,
+        "Id": "(O)579",
+        "ItemId": "(O)579",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "Chance": 0.01,
+        "ApplyGenerousEnchantment": false,
+        "OneDebrisPerDrop": true,
+        "Precedence": 0,
+        "ContinueOnDrop": false,
+        "Condition": null,
+        "Id": "(O)588",
+        "ItemId": "(O)588",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "Chance": 0.15,
+        "ApplyGenerousEnchantment": false,
+        "OneDebrisPerDrop": true,
+        "Precedence": 0,
+        "ContinueOnDrop": false,
+        "Condition": null,
+        "Id": "LOST_BOOK_OR_ITEM (O)770",
+        "ItemId": "LOST_BOOK_OR_ITEM (O)770",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "Chance": 0.25,
+        "ApplyGenerousEnchantment": true,
+        "OneDebrisPerDrop": true,
+        "Precedence": 0,
+        "ContinueOnDrop": false,
+        "Condition": null,
+        "Id": "(O)390",
+        "ItemId": "(O)390",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": 1,
+        "MaxStack": 3,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      }
+    ],
+    
+//FISHAREAS	
+     "FishAreas": {
+	   "ForestFestival_Mix": {
+                            "DisplayName": null,
+                            "Position": {     "X": 0,  "Y": 36,   "Width": 48, "Height": 14  },
+                            "CrabPotFishTypes": [   "freshwater"  ],
+			},
+			   "ForestFestival_Mix2": {
+                            "DisplayName": null,
+                            "Position": {     "X": 48,  "Y": 26,   "Width": 15, "Height": 24  },
+                            "CrabPotFishTypes": [   "freshwater"  ],
+			},
+			 "ForestFestival_River": {
+                            "DisplayName": null,
+                            "Position": {     "X": 34,  "Y": 2,   "Width": 7, "Height": 32  },
+                            "CrabPotFishTypes": [   "freshwater"  ],
+			},
+	 },
+//FISH
+  "Fish": [ 
+  {
+	"Id": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+	"ItemId": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+	"FishAreaID": "ForestFestival_Mix",
+	"Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+	"Chance": 0.3,
+      },
+	   {
+	"Id": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+	"ItemId": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+	"FishAreaID": "ForestFestival_Mix2",
+	"Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+	"Chance": 0.4,
+      },
+ {
+	"Id": "LOCATION_FISH Forest BOBBER_X BOBBER_Y WATER_DEPTH",
+	"ItemId": "LOCATION_FISH Forest BOBBER_X BOBBER_Y WATER_DEPTH",
+	"FishAreaID": "ForestFestival_Mix",
+	"Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+	"Chance": 1.0,
+      },
+	  {
+	"Id": "LOCATION_FISH Forest BOBBER_X BOBBER_Y WATER_DEPTH",
+	"ItemId": "LOCATION_FISH Forest BOBBER_X BOBBER_Y WATER_DEPTH",
+	"FishAreaID": "ForestFestival_River",
+	"Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+	"Chance": 1.0,
+      },
+  ],
+					},
+		},
+	},
+//-------------<VANILLA LOCATIONS EDIT (FishAreas, Fish)>-------------// 
+	{ 
+	"Action": "EditData",
+	"Target": "Data/Locations",
+	"TargetField": [ "Forest", "FishAreas" ],
+	"Entries": {
+	
+	"Forest_OceanFish": {
+                            "DisplayName": null,
+                            "Position": {     "X": 66,  "Y": 103,   "Width": 54, "Height": 17  },
+                            "CrabPotFishTypes": [   "ocean"  ],
+			},
+	"Forest_OceanFish2": {
+                            "DisplayName": null,
+                            "Position": {     "X": 0,  "Y": 108,   "Width": 66, "Height": 12  },
+                            "CrabPotFishTypes": [   "ocean"  ],
+			},		
+		},	
+	},		
+	
+	{ 
+	"Action": "EditData",
+	"Target": "Data/Locations",
+	"TargetField": [ "Forest", "Fish" ],
+	"Entries": {
+	
+	"Forest_OceanFish": {
+	"Id": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+	"ItemId": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+	"FishAreaID": "Forest_OceanFish",
+	"Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+	"Chance": 1.0,
+      },
+	 "Forest_OceanFish2": {
+	"Id": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+	"ItemId": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+	"FishAreaID": "Forest_OceanFish2",
+	"Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+	"Chance": 1.0,
+      },
+		},
+	},
+		
+
+
+
+
+
+
+
+
+    ]
+}

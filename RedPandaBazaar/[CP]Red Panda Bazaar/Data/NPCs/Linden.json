@@ -1,0 +1,110 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "RedPandaBazaar_Linden": {
+                    "DisplayName": "{{i18n:NPCName:RedPandaBazaar_Linden}}",
+                    "Language": "default",
+                    "Gender": "Undefined",
+                    "Age": "Adult",
+                    "Manner": "rude",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Neutral",
+                    "HomeRegion": "Other",
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts":false,
+                    "CanCommentOnPurchasedShopItems":false,
+                    "CanGreetNearbyCharacters":false,
+                    "CanVisitIslandCondition": false,
+                    "LoveInterest": "",
+                    "Calendar": "HiddenAlways",
+                    "SocialTab": "UnknownUntilMet",
+                    "ExcludeFromIntroductionsQuest": false,
+                    "IntroductionsQuest": false,
+                    "ItemDeliveryQuests": false,
+                    "PerfectionScore": false,
+                    "ExcludeFromPerfectionScore": false,
+                    "WinterStarParticipant": false,
+                    "EndSlideShow": "Hidden",
+                    "FriendsAndFamily": {},
+                    "UnlockConditions": null,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Custom_PlantResearch",
+                            "Condition": null,
+                            "Location": "Custom_PlantResearch",
+                            "Tile": {
+                                "X": 42,
+                                "Y": 29
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    },
+                    "CustomFields": {}
+                }
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/RedPandaBazaar_Linden",
+            "FromFile": "assets/Sprites/Linden.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/RedPandaBazaar_Linden",
+            "FromFile": "assets/Portraits/Linden.png"
+        },
+        {
+            "LogName": "Linden's Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "RedPandaBazaar_Linden": "{{i18n:Linden.GiftTastes.love}}/614 236 606 233 RedPandaBazaar_Coffee_Popsicle RedPandaBazaar_Fern_Popsicle RedPandaBazaar_Mango_Popsicle RedPandaBazaar_Peach_Popsicle RedPandaBazaar_Pumpkin_Popsicle 815 417 454 257 259 422/{{i18n:Linden.GiftTastes.like}}/283/{{i18n:Linden.GiftTastes.dislike}}/433/{{i18n:Linden.GiftTastes.hate}}/909 910 337 386 74 446 684/{{i18n:Linden.GiftTastes.neutral}}/227//"
+            }
+        },
+        {
+            "LogName": "Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_LiQingFengCafe1",
+            "Entries": {
+                "RPB.Linden.Heart.2/t 600 2400/f RedPandaBazaar_Linden 500": "none/9 23/farmer 500 500 0 RedPandaBazaar_Linden 9 25 0 RedPandaBazaar_LiQingFeng 9 23 2/skippable/pause 2000/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.1.Linden}}\"/pause 200/speak RedPandaBazaar_LiQingFeng \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.2.LiQingFeng}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.3.Linden}}\"/pause 200/move RedPandaBazaar_Linden 4 0 0/move RedPandaBazaar_Linden 0 -3 0/pause 1000/emote RedPandaBazaar_Linden 40/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.4.Linden}}\"/pause 200/faceDirection RedPandaBazaar_LiQingFeng 1 true/pause 200/speak RedPandaBazaar_LiQingFeng \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.5.LiQingFeng}}\"/pause 200/faceDirection RedPandaBazaar_Linden 3 true/pause 200/faceDirection RedPandaBazaar_Linden 0 true/pause 200/faceDirection RedPandaBazaar_Linden 3 true/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.6.Linden}}\"/pause 200/speak RedPandaBazaar_LiQingFeng \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.7.LiQingFeng}}\"/pause 200/speak RedPandaBazaar_LiQingFeng \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.8.LiQingFeng}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.9.Linden}}\"/pause 200/warp farmer 5 26/playSound doorClose/pause 100/faceDirection RedPandaBazaar_LiQingFeng 2/advancedMove farmer false 0 -1 3 0 1 1500/pause 200/advancedMove RedPandaBazaar_Linden false 0 3 -3 0 3 1500/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.10.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.11.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.12.Linden}}\"/pause 200/question fork1 \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.13.Farmer}}\"/fork RPB.Linden.Heart.2.2/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.14.Linden}}\"/addItem RedPandaBazaar_Golden_Flavor_Popsicle/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.15.Linden}}\"/pause 200/faceDirection farmer 0/pause 200/faceDirection RedPandaBazaar_Linden 0/pause 200/speak RedPandaBazaar_LiQingFeng \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.16.LiQingFeng}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.17.Linden}}\"/pause 500/end",
+                "RPB.Linden.Heart.2.2": "pause 200/addItem RedPandaBazaar_Fern_Popsicle/pause 200/faceDirection farmer 0/pause 200/faceDirection RedPandaBazaar_Linden 0/pause 200/speak RedPandaBazaar_LiQingFeng \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.17.LiQingFeng}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.2.18.Linden}}\"/pause 500/end"
+            }
+        },
+        {
+            "LogName": "Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_LindenHouse.1",
+            "Entries": {
+                "RPB.Linden.Heart.4/t 600 2400/f RedPandaBazaar_Linden 1000": "none/7 13/farmer 7 19 0 RedPandaBazaar_Linden 7 13 0/skippable/pause 2000/move farmer 0 -5 0/pause 200/faceDirection RedPandaBazaar_Linden 2/pause 200/emote RedPandaBazaar_Linden 40/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.1.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.2.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.3.Linden}}\"/pause 200/quickQuestion #{{i18n:Event.RedPandaBazaar.Linden.Heart.4.4.Farmer}}#{{i18n:Event.RedPandaBazaar.Linden.Heart.4.5.Farmer}}(break)speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.6.Linden}}\"(break)speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.7.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.8.Linden}}\"/pause 200/question none #{{i18n:Event.RedPandaBazaar.Linden.Heart.4.9.Farmer}}/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.10.Linden}}\"/pause 200/globalFade/viewport -1000 -1000/pause 200/warp RedPandaBazaar_Linden 7 5/warp farmer 9 6/faceDirection farmer 3 true/faceDirection RedPandaBazaar_Linden 2 true/pause 500/viewport 7 6 clamp true/pause 2000/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.11.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.12.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.13.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.14.Linden}}\"/quickQuestion #{{i18n:Event.RedPandaBazaar.Linden.Heart.4.15.Farmer}}#{{i18n:Event.RedPandaBazaar.Linden.Heart.4.16.Farmer}}(break)speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.17.Linden}}\"(break)speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.18.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.4.19.Linden}}\"/pause 200/end"
+            }
+        },
+        {
+            "LogName": "Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_PlantResearch",
+            "Entries": {
+                "RPB.Linden.Heart.6/t 600 2400/f RedPandaBazaar_Linden 1500": "none/42 33/farmer 500 500 0 RedPandaBazaar_Linden 42 33 0/skippable/pause 2000/warp farmer 42 35/playSound doorClose/pause 100/move farmer 0 -1 0/pause 200/emote RedPandaBazaar_Linden 40/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.1.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.2.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.3.Linden}}\"/pause 200/move RedPandaBazaar_Linden 2 0 0/move RedPandaBazaar_Linden 0 -3 0/pause 200/emote RedPandaBazaar_Linden 12/pause 2000/move RedPandaBazaar_Linden 0 3 2/faceDirection farmer 1 true/move RedPandaBazaar_Linden -2 0 2/faceDirection farmer 0 true/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.4.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.5.Linden}}\"/pause 200/quickQuestion #{{i18n:Event.RedPandaBazaar.Linden.Heart.6.6.Farmer}}#{{i18n:Event.RedPandaBazaar.Linden.Heart.6.7.Farmer}}(break)speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.8.Linden}}\"(break)speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.9.Linden}}\"/pause 200/question none #{{i18n:Event.RedPandaBazaar.Linden.Heart.6.10.Farmer}}/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.11.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.12.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.13.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.14.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.15.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.16.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.17.Linden}}\"/pause 200/emote farmer 40/pause 200/question fork1 \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.18.Farmer}}\"/fork RPB.Linden.Heart.6.2/friendship RedPandaBazaar_Linden 50/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.19.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.20.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.21.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.22.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.23.Linden}}\"/pause 200/question none #{{i18n:Event.RedPandaBazaar.Linden.Heart.6.24.Farmer}}/pause 500/end",
+                "RPB.Linden.Heart.6.2": "friendship RedPandaBazaar_Linden 20/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.2.1.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.2.2.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.6.2.3.Linden}}\"/pause 500/end"
+            }
+        },
+        {
+            "LogName": "Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_PlantResearch",
+            "Entries": {
+                "RPB.Linden.Heart.8/t 1800 2400/f RedPandaBazaar_Linden 2000/Weather rainy": "none/42 33/farmer 500 500 0 RedPandaBazaar_Linden 41 31 2/skippable/addConversationTopic RPB.Linden.Heart.8 7/pause 2000/warp farmer 42 35/playSound doorClose/pause 100/move farmer 0 -1 0/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.1.Linden}}\"/pause 200/advancedMove RedPandaBazaar_Linden false -1 0 0 3 1 1500/pause 200/faceDirection farmer 3 true/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.2.Linden}}\"/pause 200/quickQuestion #{{i18n:Event.RedPandaBazaar.Linden.Heart.8.3.Farmer}}#{{i18n:Event.RedPandaBazaar.Linden.Heart.8.4.Farmer}}(break)speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.5.Linden}}\"(break)speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.6.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.7.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.8.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.9.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.10.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.11.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.12.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.13.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.14.Linden}}\"/quickQuestion #{{i18n:Event.RedPandaBazaar.Linden.Heart.8.15.Farmer}}#{{i18n:Event.RedPandaBazaar.Linden.Heart.8.16.Farmer}}(break)speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.17.Linden}}\"(break)speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.18.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.19.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.20.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.21.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.22.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.23.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.24.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.25.Linden}}\"/pause 500/end",
+                "RPB.Linden.Heart.8.2/ActiveDialogueEvent RPB.Linden.Heart.8/e RPB.Linden.Heart.8/t 1900 2400/f RedPandaBazaar_Linden 2000": "none/42 33/farmer 500 500 0 RedPandaBazaar_Linden 41 31 2/skippable/pause 2000/warp farmer 42 35/playSound doorClose/pause 100/move farmer 0 -1 0/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.2.1.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.2.2.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.2.3.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.2.4.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.2.5.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.2.6.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.2.7.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.2.8.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.2.9.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.2.10.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.2.11.Linden}}\"/pause 200/speak RedPandaBazaar_Linden \"{{i18n:Event.RedPandaBazaar.Linden.Heart.8.2.12.Linden}}\"/pause 500/end"
+            }
+        }
+    ]
+}

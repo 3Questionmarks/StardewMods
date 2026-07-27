@@ -10,6 +10,7 @@
 	"IdleBehavior": "Wander",
 	"FrameSizeWidth": 32,
 	"FrameSizeHeight": 32,
+	"TileSheetPath": "Characters\\Gembird_WA",
 
 	// This plays when the companion travels upwards
 	"UpAnimation": {
@@ -396,8 +397,8 @@
 "Sounds": [
 	{
 	"SoundName": "SpringBirds",
-	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
 	"ChanceOfPlaying": 0.4
 	}
 ]  

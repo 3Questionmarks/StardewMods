@@ -1,0 +1,252 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    /* --- EVENT ---*/
+
+    /* --- ADD LOCATION (House) ---*/,
+    {
+      "Action": "Load",
+      "Target": "Maps/MagicStardew_AsharaHouse",
+      "FromFile": "assets/AsharaHouse.tmx"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "MagicStardew_AsharaHouse": {
+          "DisplayName": "AsharaHouse",
+          "CreateOnLoad": {
+            "MapPath": "Maps/MagicStardew_AsharaHouse"
+          },
+          "DefaultArrivalTile": {
+            "X": 24,
+            "Y": 37
+          }
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "AsharaHouse_Tiles",
+      "FromFile": "assets/MagicStardew.png"
+    }
+    /* --- ADD LOCATION (Cellar) ---*/,
+    {
+      "Action": "Load",
+      "Target": "Maps/MagicStardew_AsharaHouse_Cellar",
+      "FromFile": "assets/MagicStardew_AsharaHouse_Cellar.tmx"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "MagicStardew_AsharaHouse_Cellar": {
+          "DisplayName": "AsharaCellar",
+          "CreateOnLoad": {
+            "MapPath": "Maps/MagicStardew_AsharaHouse_Cellar"
+          },
+          "DefaultArrivalTile": {
+            "X": 3,
+            "Y": 2
+          }
+        }
+      }
+    }
+    /* --- SEASONAL TILESET (AsharaHouse_Outside) ---*/,
+    {
+      "Action": "Load",
+      "Target": "AsharaHouse_Outside_Tiles",
+      "FromFile": "assets/spring_MagicStardew_Outside.png",
+      "When": {
+        "Season": "spring"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "AsharaHouse_Outside_Tiles",
+      "FromFile": "assets/summer_MagicStardew_Outside.png",
+      "When": {
+        "Season": "summer"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "AsharaHouse_Outside_Tiles",
+      "FromFile": "assets/fall_MagicStardew_Outside.png",
+      "When": {
+        "Season": "fall"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "AsharaHouse_Outside_Tiles",
+      "FromFile": "assets/winter_MagicStardew_Outside.png",
+      "When": {
+        "Season": "winter"
+      }
+    }
+    /* --- ADD LOCATION (Outside) ---*/,
+    {
+      "Action": "Load",
+      "Target": "Maps/MagicStardew_AsharaHouse_Outside",
+      "FromFile": "assets/AsharaHouse_Outside.tmx"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "MagicStardew_AsharaHouse_Outside": {
+          "DisplayName": "AsharaHouse_Outside",
+          "CreateOnLoad": {
+            "MapPath": "Maps/MagicStardew_AsharaHouse_Outside"
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Doors outside",
+      "Action": "EditMap",
+      "Target": "Maps/MagicStardew_AsharaHouse_Outside",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 15
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "LockedDoorWarp 24 37 MagicStardew_AsharaHouse 600 2400"
+          }
+        }
+      ],
+      "When": {"HasSeenEvent |contains= MagicStardew_FirstMeet": true}
+    },
+    {
+      "LogName": "Doors outside",
+      "Action": "EditMap",
+      "Target": "Maps/MagicStardew_AsharaHouse_Outside",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 15
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message HaleyHouse.1"
+          }
+        }
+      ],
+      "When": {"HasSeenEvent |contains= MagicStardew_FirstMeet": false}
+    },
+
+    {
+      "LogName": "Doors to cellar 1",
+      "Action": "EditMap",
+      "Target": "Maps/MagicStardew_AsharaHouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 27,
+            "Y": 16
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "LockedDoorWarp 3 3 MagicStardew_AsharaHouse_Cellar 600 2400 Ashara 0"
+          }
+        }
+      ],
+      "When": {"HasSeenEvent |contains= MagicStardew_SecondEvent": true}
+    },
+    {
+      "LogName": "Doors to cellar 1",
+      "Action": "EditMap",
+      "Target": "Maps/MagicStardew_AsharaHouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 27,
+            "Y": 16
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message HaleyHouse.1"
+          }
+        }
+      ],
+      "When": {"HasSeenEvent |contains= MagicStardew_SecondEvent": false}
+    },
+    /* --- SITTING ---*/,
+    {
+      "Action": "EditData",
+      "Target": "Data/ChairTiles",
+      "Entries": {
+        "MagicStardew/9/8": "1/1/down/chair/-1/-1/false",
+        "MagicStardew/10/7": "1/2/up/custom 0 1 0/10/7/false/AsharaHouse_Tiles",
+        "MagicStardew/11/8": "1/1/left/chair/-1/-1/false",
+        "MagicStardew/12/8": "1/1/right/custom 0 0.5 0/-1/-1/false",
+        "MagicStardew/11/6": "1/1/down/bench/-1/-1/false",
+        "MagicStardew/28/8": "1/1/down/chair/-1/-1/false",
+        "MagicStardew/29/7": "1/2/up/custom 0 1 0/30/7/false/AsharaHouse_Tiles",
+        "MagicStardew/31/8": "1/1/left/chair/-1/-1/false",
+        "MagicStardew/32/8": "1/1/right/chair/-1/-1/false",
+        "MagicStardew/16/12": "1/2/right/custom 0 -0.25 0/-1/-1/false",
+        "spring_MagicStardew_Outside/26/7": "3/1/down/bench/-1/-1/true"
+      }
+    }
+    /* --- STRINGS ---*/,
+    {
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+        "MagicStardew_Message1": "{{i18n:MagicStardew_Message1}}",
+        "MagicStardew_Message2": "{{i18n:MagicStardew_Message2}}",
+        "MagicStardew_Outdoor_Patrick_Statue": "{{i18n:MagicStardew_Outdoor_Patrick_Statue}}"
+      }
+    }
+    /* --- LOAD CUSTOM SPRITE ---*/,
+    {
+      "Action": "Load",
+      "Target": "Mods/MagicStardew/spell_book",
+      "FromFile": "assets/spell_book.png"
+    }
+    /*Forest patch vanilla*/,
+    {
+      "LogName": "Forest patch1.0",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "assets/forest_magicstradew_patch1.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 3,
+        "Height": 13
+      },
+      "ToArea": {
+        "X": 117,
+        "Y": 87,
+        "Width": 3,
+        "Height": 13
+      } 
+    }
+    /* Adds warps Forest patch vanilla*/,
+    {
+      "LogName": "Forest patch1.1",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "AddWarps": [
+        "120 92 MagicStardew_AsharaHouse_Outside 0 19"
+      ]
+    },
+    {
+      "LogName": "Outside patch1.1",
+      "Action": "EditMap",
+      "Target": "Maps/MagicStardew_AsharaHouse_Outside",
+      "AddWarps": [
+        "-1 17 Forest 119 92",
+        "-1 18 Forest 119 92",
+        "-1 19 Forest 119 92"
+      ],
+    }
+  ]
+}

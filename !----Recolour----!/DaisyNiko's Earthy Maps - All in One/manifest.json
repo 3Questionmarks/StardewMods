@@ -1,0 +1,102 @@
+{
+	"Name": "DaisyNiko's Earthy Maps - All in One",
+	"Author": "N3cro_92",
+	"Description": "DaisyNiko's Earthy Maps - All in One",
+	"Version": "1.2.0",
+	"UniqueID": "N3cro_92.DaisyNikosEarthyMapsAllinOne",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "Nexus:30063" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+    },
+	"Dependencies": [
+    {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "IsRequired": true
+    },
+		{
+		   "UniqueID": "invatorzen.AspenCP",
+		   "IsRequired": false
+		},
+		{
+			"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "flashshifter.GrampletonFields",
+			"IsRequired": false
+		},
+    {
+			"UniqueID": "flashshifter.FrontierFarm",
+			"IsRequired": false
+		},
+    {
+			"UniqueID": "flashshifter.GrandpasFarm",
+			"IsRequired": false
+		},
+    {
+			"UniqueID": "flashshifter.immersivefarm2remastered",
+			"IsRequired": false
+		},
+    {
+			"UniqueID": "shekurika.worldMaps",
+			"IsRequired": false
+		},
+    {
+			"UniqueID": "Rafseazz.RSVCP",
+			"IsRequired": false
+		},
+    {
+			"UniqueID": "Bouhm.NPCMapLocations",
+			"IsRequired": false
+		},
+    {
+			"UniqueID": "LemurKat.EastScarp",
+			"IsRequired": false
+		},
+    {
+			"UniqueID": "DTZ.DowntownZuzuCP",
+			"IsRequired": false
+		},
+    {
+			"UniqueID": "Lumisteria.MtVapius",
+			"IsRequired": false
+		},
+    {
+			"UniqueID": "DaisyNiko.EarthyRecolour",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DaisyNiko.EarthyInterface",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Rexstrife20.MineralTownCP",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "skellady.SBVCP",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Himetarts.ARV.CP",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Clara.Ripley",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Yoshimax.MarryMorris",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "yuninocorn.CustomNPCAliyah",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "handwrittenhello.dbda",
+			"IsRequired": false
+		}
+	]
+}

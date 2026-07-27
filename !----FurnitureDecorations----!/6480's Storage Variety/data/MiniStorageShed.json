@@ -1,0 +1,56 @@
+{
+  "Changes": [
+    // Add Object
+    {
+      "LogName": "Load Mini Storage Shed Object",
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "6480.StorageVariety_MiniStorageShed": {
+          "Name": "Mini Storage Shed",
+          "DisplayName": "{{i18n: MiniStorageShed.name}}",
+          "Description": "{{i18n: MiniStorageShed.description}}",
+          "Texture": "{{InternalAssetKey: assets/MiniStorageShed.png}}",
+          "CustomFields": {
+            // Expanded Storage Data
+            "furyx639.ExpandedStorage/Enabled": "true",
+            "furyx639.ExpandedStorage/Frames": "5",
+            "furyx639.ExpandedStorage/OpenNearby": "true",
+            "furyx639.ExpandedStorage/OpenSound": "doorCreak",
+            "furyx639.ExpandedStorage/PlayerColor": "true",
+            // Better Chests Data
+            "furyx639.BetterChests/ResizeChest": "Large",
+            "furyx639.BetterChests/ResizeChestCapacity": "70"
+          }
+        }
+      }
+    },
+    // Add Crafting Recipe
+    {
+      "LogName": "Load Mini Storage Shed Crafting Recipe",
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "MiniStorageShed": "709 10 388 100/Home/6480.StorageVariety_MiniStorageShed/true/null/{{i18n: MiniStorageShed.name}}"
+      }
+    },
+    // Add Shop Entry
+    {
+      "LogName": "Load Mini Storage Shed Shop Entry",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Carpenter",
+        "Items"
+      ],
+      "Entries": {
+        "6480.StorageVariety_MiniStorageShed": {
+          "Id": "6480.StorageVariety_MiniStorageShed",
+          "ItemId": "(BC)6480.StorageVariety_MiniStorageShed",
+          "Price": 20000,
+          "IsRecipe": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+    "$schema": "https://smapi.io/schemas/manifest.json",
+    "Name": "Earthy Crops and Forage",
+    "Author": "willowmods",
+    "Version": "1.1.1",
+    "Description": "Recolours crops and forage to match DaisyNiko's Earthy Recolour.",
+    "UniqueID": "willowmods.EarthyCrops",
+    "UpdateKeys": ["Nexus:44070"],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "DaisyNiko.EarthyRecolour",
+            "IsRequired": false
+        }
+    ]
+}

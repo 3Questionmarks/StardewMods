@@ -1,0 +1,27 @@
+{
+//Outfit Loads when use GrowthSpurt from Growing Valley
+        "Changes": [
+            {
+                "Action": "EditImage",
+                "Target": "Characters/Leo_GrowthSpurt",
+                "FromFile": "code/Compatibilitys/GrowingValley/GrowthSpurt/Leo/Leo_GrowthSpurt.png",
+            "When": {
+                "HasSeenEvent |contains=9695002": true,
+                "HasSeenEvent |contains=6497428": true,
+                "HasMod |contains=siliconmodding.GVGrowthSpurt": true,
+                "Season": "Spring, Summer, Fall"
+            },
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Leo_GrowthSpurt_Winter",
+            "FromFile": "code/Compatibilitys/GrowingValley/GrowthSpurt/Leo/Leo_GrowthSpurt_Winter.png",
+            "When": {
+                "HasSeenEvent |contains=9695002": true,
+                "HasSeenEvent |contains=6497428": true,
+                "HasMod |contains=siliconmodding.GVGrowthSpurt": true,
+                "Season": "Winter"
+            },
+        },
+    ]
+}

@@ -1,5 +1,5 @@
 {
-   "Format": "2.4.0",
+   "Format": "2.5.0",
    
 	"ConfigSchema": {
 		"Mod enabled": {
@@ -49,7 +49,7 @@
             "Target": "Maps/Mountain",
             "FromFile": "assets/quarrymistsve.tmx",
 			   "PatchMode": "Overlay",
-			      //"Update": "OnTimeChange",
+			  
 				    "Priority": "Late",
             "When": {
                 "SVE MistEffects": "true",
@@ -200,7 +200,7 @@
    {
         "Action": "EditMap",
         "Target": "Maps/Mountain",
-		 "Update": "OnTimeChange",
+		
 		 "When": {
                 "Shed": true,	
             },	

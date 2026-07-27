@@ -1,0 +1,154 @@
+{
+		
+"Changes": [
+
+	{
+		"LogName": "Load Mermaid Grotto Map",
+		"Action": "Load",
+		"Target": "Maps/{{ModId}}_MermaidGrotto",
+		"FromFile": "assets/Maps/MermaidGrotto.tmx"
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"Entries": {
+		"{{ModId}}_MermaidGrotto": {
+			"CreateOnLoad": {
+				"MapPath": "Maps/{{ModId}}_MermaidGrotto",
+				"AlwaysActive":true
+			},
+			"FormerLocationNames": [ "Custom_WF_MermaidGrotto"],
+			"DisplayName": "{{i18n: MermaidGrotto}}",
+			"CanPlantHere": false,
+			"ExcludeFromNpcPathfinding": true,
+            "DefaultArrivalTile": {
+                "X": 27,
+                "Y": 28
+            },
+			"Music": [],
+            "MusicIgnoredInRain": false,
+			"ArtifactSpots": [
+			],
+            "FishAreas": {},
+            "Fish": [
+			],
+            "Forage": [
+				{
+                    "Id": "{{ModId}}_MermaidGrotto_Spring_Drops",
+					"RandomItemId": [
+						"(O)393",
+						"(O)152",
+						"(O)397",
+						"(O)717",
+						"(O)723"
+              		],
+					"Season":"spring",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_MermaidGrotto_Summer_Drops",
+					"RandomItemId": [
+						"(O)152",
+						"(O)397",
+						"(O)372",
+						"(O)719",
+						"(O)718",
+						"(O)394"
+              		],
+					"Season":"summer",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_MermaidGrotto_Fall_Drops",
+					"RandomItemId": [
+						"(O)393",
+						"(O)152",
+						"(O)397",
+						"(O)719",
+						"(O)718",
+						"(O)717"
+              		],
+					"Season":"fall",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_MermaidGrotto_Winter_Drops",
+					"RandomItemId": [
+						"(O)372",
+						"(O)718",
+						"(O)392",
+						"(O)723"
+              		],
+					"Season":"winter",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_Grotto_WAG_Beach_Forage",
+					"RandomItemId": [
+						"(O)Wildflour.AtelierGoods_Mallow",
+						"(O)Wildflour.AtelierGoods_Cashew",
+						"(O)Wildflour.AtelierGoods_Olive"
+              		],
+                    "Chance": 1.0,
+					"Condition":"{{HasMod |contains=Wildflour.AtelierGoods}}"
+                }
+			],
+			"MinDailyForageSpawn": 3,
+			"MaxDailyForageSpawn": 8,
+          	"MaxSpawnedForageAtOnce": 12
+		}
+	}
+	},
+
+//-----------------------------MAP PATCHES---------------------------//
+
+{
+	"LogName":"Map Patch Beach for Mermaid Grotto",
+	"Action": "EditMap",
+	"Target": "Maps/Beach", 
+	"FromFile": "assets/Maps/BeachEdit.tmx",
+	"ToArea": {
+			"X": 64,
+			"Y": 3,
+			"Width": 2,
+			"Height": 3
+			},
+
+	"When":{"MermaidGrottoToken": "1"}	
+},
+
+//-----------------------------WARPS---------------------------//
+
+{
+	"LogName":"Add Warps to Beach for Mermaid Grotto",
+	"Action": "EditMap",
+	"Target": "Maps/Beach",
+	"MapTiles": [
+		{
+		"Position": {
+			"X": 65,
+			"Y": 5
+		},
+		"Layer": "Buildings",
+		"SetProperties": {"Action": "Warp 27 27 {{ModId}}_MermaidGrotto"}
+		}
+	],
+
+	"When":{"MermaidGrottoToken": "1"}	
+},
+
+{
+	"LogName":"Add Warps to Mermaid Grotto Map",
+	"Action": "EditMap",
+	"Target": "Maps/{{ModId}}_MermaidGrotto",
+	"AddWarps": [	
+		"26 31 Beach 64 6",
+		"27 31 Beach 65 7", 
+		"28 31 Beach 66 6"
+	]
+},
+
+
+	]
+}

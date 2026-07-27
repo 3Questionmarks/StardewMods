@@ -1,0 +1,50 @@
+﻿[
+  {
+    "FurnitureId": "PeacefulEnd.CP.FashionableMirrors_LeaningMirror",
+    "MaskTexture": "leaning_mirror_mask.png",
+    "Mirror": {
+      "Dimensions": {
+        "Width": 16,
+        "Height": 44
+      },
+      "ReflectionOverlay": {
+        "R": 255,
+        "G": 255,
+        "B": 255,
+        "A": 155
+      }
+    }
+  },
+  {
+    "FurnitureId": "PeacefulEnd.CP.FashionableMirrors_DoubleLeaningMirror",
+    "MaskTexture": "double_leaning_mirror_mask.png",
+    "Mirror": {
+      "Dimensions": {
+        "Width": 32,
+        "Height": 44
+      },
+      "ReflectionOverlay": {
+        "R": 255,
+        "G": 255,
+        "B": 255,
+        "A": 155
+      }
+    }
+  },
+  {
+    "FurnitureId": "PeacefulEnd.CP.FashionableMirrors_TableMirror",
+    "MaskTexture": "table_mirror_mask.png",
+    "Mirror": {
+      "Dimensions": {
+        "Width": 32,
+        "Height": 48
+      },
+      "ReflectionOverlay": {
+        "R": 255,
+        "G": 255,
+        "B": 255,
+        "A": 125
+      }
+    }
+  }
+]

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="4">
+ <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="2241" name="sewer" tilewidth="16" tileheight="16" tilecount="88" columns="8">
+  <image source="SewerTiles" width="128" height="176"/>
+ </tileset>
+ <tileset firstgid="2329" source="Kodaroom.tsx"/>
+ <tileset firstgid="2389" source="walls_and_floors.tsx"/>
+ <tileset firstgid="3077" source="summer_Turtles.tsx"/>
+ <tileset firstgid="5674" source="townInterior_2.tsx"/>
+ <tileset firstgid="6986" source="townInterior.tsx"/>
+ <tileset firstgid="9162" source="night_market_tilesheet_objectssa.tsx"/>
+ <layer id="1" name="Back" width="6" height="9">
+  <data encoding="csv">
+2398,2398,2398,2398,2398,2398,
+2414,2414,2414,2414,2414,2414,
+99,99,99,99,99,99,
+2353,2353,2353,2353,2353,2353,
+2365,2365,2365,2365,2365,2365,
+2365,2365,2365,2365,2365,2365,
+2365,2365,2365,2365,2365,2365,
+2365,2365,2365,2365,2365,2365,
+2365,2365,2365,2365,2365,2365
+</data>
+ </layer>
+ <layer id="9" name="Back2" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,6254,6255,6736,6256,6257,
+0,6286,6287,6768,6288,6289,
+0,6318,6319,6800,6320,6321,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="6" height="9">
+  <data encoding="csv">
+2398,2398,3952,3953,3954,3955,
+0,2347,2348,4002,7550,7551,
+2377,2377,2377,2377,2377,2377,
+0,2378,0,2383,2384,7872,
+0,0,0,0,0,0,
+0,0,0,0,7572,7573,
+0,0,7872,0,7604,7605,
+0,2373,9850,2375,2376,0,
+0,2385,2386,2387,2388,0
+</data>
+ </layer>
+ <layer id="10" name="Buildings2" width="6" height="9">
+  <data encoding="csv">
+2339,0,2336,0,0,0,
+9749,0,0,0,0,0,
+9773,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,9994,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,2184,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="6" height="9">
+  <data encoding="csv">
+0,2335,6905,0,7518,7519,
+9922,9991,6937,0,0,0,
+0,2366,0,2371,2372,0,
+0,0,0,0,0,0,
+0,0,0,0,7540,7541,
+0,0,0,0,0,0,
+0,2361,2362,2363,2364,0,
+0,0,0,2340,2333,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="11" name="AlwaysFront" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,9970,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings">
+  <object id="1" name="TileData" x="16" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;kodaroom.1&quot;"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="32" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;kodaroom.3&quot;"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="16" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;kodaroom.2&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+</map>

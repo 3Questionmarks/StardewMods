@@ -1,0 +1,13 @@
+{
+  "Name": "FTM Pocket",
+  "Author": "cajcbell",
+  "Version": "1.61",
+  "Description": "forage",
+  "UniqueID": "CC.canyonforage",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": ["Nexus:40376"],
+  "ContentPackFor": {
+    "UniqueID": "Esca.FarmTypeManager",
+    "MinimumVersion": "1.23.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+//Outfit Loads when use Seasonal Improved Leo
+        "Changes": [    
+        {
+            "Action": "EditImage",
+            "Target": "Characters/ParrotBoy",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Characters/Leo.png",
+             "When": {
+                "HasSeenEvent |contains=9695002": true,
+                "HasSeenEvent |contains=6497428": true,
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+            },
+        },
+//Outfit Loads when use Seasonal Improved Leo New Outfit
+        {
+            "Action": "EditImage",
+            "Target": "Characters/ParrotBoy",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Characters/NewLeo.png",
+             "When": {
+                "HasSeenEvent |contains=9695002": true,
+                "HasSeenEvent |contains=6497428": true,
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+                "Hairdo Leo": "true"
+            },
+        },
+//Portrait Loads when use Seasonal Improved Leo
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/ParrotBoy",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Portraits/portrait_Leo.png",
+            "When": {
+                "HasSeenEvent |contains=9695002": true,
+                "HasSeenEvent |contains=6497428": true,
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+            },
+        },
+//Portrait Loads when use Seasonal Improved Leo New Portrait
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/ParrotBoy",
+            "FromFile": "code/Compatibilitys/SeasonalImprovedLeo/Portraits/portrait_NewLeo.png",
+            "When": {
+                "HasSeenEvent |contains=9695002": true,
+                "HasSeenEvent |contains=6497428": true,
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=Zilch.SeasonalImprovedLeo": true,
+                "Hairdo Leo": "true"
+            },
+        },
+    ]
+}

@@ -1,0 +1,85 @@
+{
+  "Changes": [
+	{
+      "Action": "Load",
+      "Target": "Characters/CC_Kaho",
+      "FromFile": "assets/FIASA/Kaho.png"
+    },
+
+   {
+            "LogName": "Portrait Load",
+            "Action": "Load",
+            "Target": "Portraits/CC_Kaho",
+             "FromFile": "assets/FIASA/Kaho_{{Portraits}}.png",
+       },
+	       
+
+  {
+    "LogName": "NPC Dispositions",
+    "Action": "EditData",
+    "Target": "Data/Characters",
+    "Entries": {
+      "CC_Kaho": {
+        "DisplayName": "Kaho",
+        "BirthSeason": "summer",
+        "BirthDay": 21,
+        "HomeRegion": "Other",
+        "Gender": "Male",
+        "Age": "Adult",
+        "Manner": "Polite",
+        "SocialAnxiety": "Outgoing",
+        "Optimism": "Neutral",
+        "CanBeRomanced": false,
+  
+        "CanReceiveGifts": false,
+		"CanVisitIsland": false,
+        "Calendar": "HiddenAlways",
+        "SocialTab": "HiddenAlways",
+		"CanSocialize": false,
+        "ExcludeFromIntroductionsQuest": true,
+        "ItemDeliveryQuests": false,
+        "ExcludeFromPerfectionScore": true,
+        "EndSlideShow": "MainGroup",
+ "Home": [
+            {
+              "Id": "Default",
+              "Location": "Koda_Sub",
+              "Tile": {
+                "X": 600,
+                "Y": 600
+              },
+              "Direction": "down"
+            }
+          ],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          
+        "Breather": true,
+		 "TextureName": null,
+          "Appearance": [
+            {
+              "Id": "Kaho",
+              "Condition": null,
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_Kaho",
+              "Sprite": "Characters/CC_Kaho",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 0
+            }
+			    
+
+          ]
+                }
+            }
+        },
+		
+		
+    
+
+	]
+}

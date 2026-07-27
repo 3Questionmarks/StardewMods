@@ -1,0 +1,36 @@
+{
+
+  "Changes": [
+
+    {
+        "LogName": "MMAP Secret Orchard",
+        "Action": "EditMap",
+        "Target": "Maps/{{ModId}}_SecretOrchard",
+        "MapProperties": {
+            "mushymato.MMAP_ProtectFruitTree": "{{i18n:Protected_Tree_Warning}}",
+            "mushymato.MMAP_LightRays": "T"
+        }
+    },
+
+    {
+        "LogName": "MMAP Mushroom Forest",
+        "Action": "EditMap",
+        "Target": "Maps/{{ModId}}_SecretOrchard",
+        "MapProperties": {
+            "mushymato.MMAP_ProtectTree": "{{i18n:Protected_Tree_Warning}}",
+            "mushymato.MMAP_LightRays": "T"
+        }
+    },
+
+    {
+        "LogName": "MMAP Woods Lighting Old Forest",
+        "Action": "EditMap",
+        "Target": "Maps/{{ModId}}_Forest_Cafe",
+        "MapProperties": {
+            "mushymato.MMAP_WoodsLighting": "#6987cd White false",
+            
+        }
+    },
+
+  ]
+}

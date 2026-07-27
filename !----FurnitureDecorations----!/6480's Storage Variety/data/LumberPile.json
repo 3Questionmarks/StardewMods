@@ -1,0 +1,37 @@
+{
+  "Changes": [
+    // Add Object
+    {
+      "LogName": "Load Lumber Pile Object",
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "6480.StorageVariety_LumberPile": {
+          "Name": "Lumber Pile",
+          "DisplayName": "{{i18n: LumberPile.name}}",
+          "Description": "{{i18n: LumberPile.description}}",
+          "Texture": "{{InternalAssetKey: assets/LumberPile.png}}",
+          "CustomFields": {
+            // Expanded Storage Data
+            "furyx639.ExpandedStorage/Enabled": "true",
+            "furyx639.ExpandedStorage/OpenSound": "Ship",
+            "furyx639.ExpandedStorage/PlayerColor": "false",
+            // Better Chests Data
+            "furyx639.BetterChests/FilterItemsList": "category_gem,category_crafting,category_minerals,category_metal_resources,category_building_resources,category_equipment,item_sap,item_geode,item_frozen_geode,item_magma_geode,item_omni_geode",
+            "furyx639.BetterChests/ResizeChest": "Medium",
+            "furyx639.BetterChests/ResizeChestCapacity": "36"
+          }
+        }
+      }
+    },
+    // Add Crafting Recipe
+    {
+      "LogName": "Load Lumber Pile Crafting Recipe",
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "LumberPile": "388 30 390 10/Home/6480.StorageVariety_LumberPile/true/{{UnlockLumberPile}}/{{i18n: LumberPile.name}}"
+      }
+    }
+  ]
+}

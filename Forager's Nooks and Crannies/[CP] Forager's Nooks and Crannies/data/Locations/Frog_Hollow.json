@@ -1,0 +1,229 @@
+{
+
+"Changes": [
+	
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"Entries": {
+		"{{ModId}}_FrogHollow": {
+			"CreateOnLoad": {
+				"MapPath": "Maps/{{ModId}}_FrogHollow",
+				"AlwaysActive":true
+			},
+			"FormerLocationNames": [ "Custom_WF_FrogHollow"],
+			"DisplayName": "{{i18n: FrogHollow}}",
+			"CanPlantHere": false,
+			"ExcludeFromNpcPathfinding": true,
+            "DefaultArrivalTile": {
+                "X": 28,
+                "Y": 34
+            },
+			"Music": [],
+            "MusicIgnoredInRain": false,
+			"ArtifactSpots": [
+			],
+           	"FishAreas": {
+				"Default": {
+					"CrabPotFishTypes": [
+						"freshwater"
+					],
+					"CrabPotJunkChance": 0.3
+				}
+			},
+			"Fish": [
+				{
+					"Id": "{{ModId}}_GreenAlgae",
+					"ItemId": "(O)153"
+				},
+				{
+					"Id": "{{ModId}}_Chub",
+					"ItemId": "(O)702"
+				},
+				{
+					"Id": "{{ModId}}_LargemouthBass",
+					"ItemId": "(O)136"
+				},
+				{
+					"Id": "{{ModId}}_Sturgeon",
+					"ItemId": "(O)698",
+					"Condition": "LOCATION_SEASON Here summer winter"
+				},
+				{
+					"Id": "{{ModId}}_Bullhead",
+					"ItemId": "(O)700"
+				},
+				{
+
+					"Id": "{{ModId}}_TigerTrout",
+					"ItemId": "(O)699",
+					"Condition": "LOCATION_SEASON Here fall winter"
+				},
+				{
+					"Id": "{{ModId}}_Perch",
+					"ItemId": "(O)141",
+					"Season": "Winter"
+				}
+			],
+            "Forage": [
+				{
+                    "Id": "{{ModId}}_FrogHollow_Spring_Forage",
+					"RandomItemId": [
+						"(O)400",
+						"(O)296",
+						"(O)591",
+						"(O)18",
+						"(O)597",
+						"(O)257"
+              		],
+					"Season":"spring",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_FrogHollow_WAG_Spring_Forage",
+					"RandomItemId": [
+						"(O)Wildflour.AtelierGoods_Chamomile",
+						"(O)Wildflour.AtelierGoods_Cherry_Blossoms",
+						"(O)Wildflour.AtelierGoods_Wild_Strawberry",
+						"(O)Wildflour.AtelierGoods_Honey_Fungus"
+              		],
+					"Season":"spring",
+                    "Chance": 1.0,
+					"Condition":"{{HasMod |contains=Wildflour.AtelierGoods}}"
+                },
+				{
+                    "Id": "{{ModId}}_FrogHollow_Summer_Forage",
+					"RandomItemId": [
+						"(O)396",
+						"(O)402",
+						"(O)593",
+						"(O)420",
+						"(O)376",
+						"(O)258",
+
+              		],
+					"Season":"spring",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_FrogHollow_WAG_Summer_Forage",
+					"RandomItemId": [
+						"(O)Wildflour.AtelierGoods_Lavender",
+						"(O)Wildflour.AtelierGoods_Mallow",
+						"(O)Wildflour.AtelierGoods_Mint",
+						"(O)Wildflour.AtelierGoods_Wild_Raspberry"
+              		],
+					"Season":"summer",
+                    "Chance": 1.0,
+					"Condition":"{{HasMod |contains=Wildflour.AtelierGoods}}"
+                },
+				{
+                    "Id": "{{ModId}}_FrogHollow_Fall_Forage",
+					"RandomItemId": [
+						"(O)406",
+						"(O)408",
+						"(O)422",
+						"(O)281"
+              		],
+					"Season":"spring",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_FrogHollow_WAG_Fall_Forage",
+					"RandomItemId": [
+						"(O)Wildflour.AtelierGoods_Milk_Mushroom",
+						"(O)Wildflour.AtelierGoods_Sage",
+						"(O)Wildflour.AtelierGoods_Rosemary"
+              		],
+					"Season":"fall",
+					"Condition":"{{HasMod |contains=Wildflour.AtelierGoods}}",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_FrogHollow_Winter_Forage",
+					"RandomItemId": [
+						"(O)412",
+						"(O)414",
+						"(O)416",
+						"(O)418"
+              		],
+					"Season":"spring",
+                    "Chance": 1.0
+                },
+				{
+                    "Id": "{{ModId}}_FrogHollow_WAG_Winter_Crops",
+					"RandomItemId": [
+						"(O)Wildflour.AtelierGoods_Cinnamon",
+						"(O)Wildflour.AtelierGoods_Sage"
+              		],
+					"Season":"winter",
+                    "Chance": 1.0,
+					"Condition":"{{HasMod |contains=Wildflour.AtelierGoods}}"
+                },
+				{
+                    "Id": "{{ModId}}_FrogHollow_Seed_Node",
+					"RandomItemId": [
+						"Wildflour.NooksCrannies_Berry_Node",
+          				"Wildflour.NooksCrannies_Herb_Seed_Node"
+              		],
+                    "Chance": 1.0
+                }
+			],
+			"MinDailyForageSpawn": 3,
+			"MaxDailyForageSpawn": 8,
+		}
+		}
+	},
+
+	{
+		"LogName": "Load Frog Hollow Map",
+		"Action": "Load",
+		"Target": "Maps/{{ModId}}_FrogHollow",
+		"FromFile": "assets/Maps/FrogHollow.tmx"
+	},
+
+//-----------------------------MAP PATCHES---------------------------//
+
+{
+	"LogName":"Map Patch Mountain for Frog Hollow",
+	"Action": "EditMap",
+	"Target": "Maps/Mountain", 
+	"FromFile": "assets/Maps/MountainEdit.tmx",
+	"ToArea": {
+			"X": 26,
+			"Y": 18,
+			"Width": 2,
+			"Height": 3
+			},
+
+	"When": {"FrogHollowToken": "1"}			
+},
+
+//-----------------------------WARPS---------------------------//
+
+{
+	"LogName":"Add Warps to Frog Hollow Map",
+	"Action": "EditMap",
+	"Target": "Maps/{{ModId}}_FrogHollow",
+	"AddWarps": ["28 39 Mountain 27 22"]
+},
+
+{
+	"LogName":"Add Warps to Mountain for Frog Hollow",
+	"Action": "EditMap",
+	"Target": "Maps/Mountain",
+	"MapTiles": [
+		{
+		"Position": {
+			"X": 27,
+			"Y": 20
+		},
+		"Layer": "Buildings",
+		"SetProperties": {"Action": "Warp 28 37 {{ModId}}_FrogHollow"}
+		}
+	],
+	"When":{"FrogHollowToken": "1"}	
+}
+
+	]
+}

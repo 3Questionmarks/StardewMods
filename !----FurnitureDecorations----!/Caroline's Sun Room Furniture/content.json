@@ -1,0 +1,283 @@
+{
+  "Format": "2.0",
+  "Changes": [
+    //Add Furniture 
+    {
+      "Action": "EditData",
+      "Target": "Data/Furniture",
+      "Entries": {
+        "Dolly.CarolineSunRoomFurniture_BambooGardenPond": "Bamboo Garden Pond/decor/2 5/2 2/1/150/-1/{{i18n: furniture.BambooGardenPond.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\BambooGardenPond",
+        "Dolly.CarolineSunRoomFurniture_ElegantTeaTable": "Elegant Tea Table/decor/2 2/2 1/1/150/-1/{{i18n: furniture.ElegantTeaTable.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\ElegantTeaTable",
+        "Dolly.CarolineSunRoomFurniture_ExoticPalaceMiniature": "Exotic Palace Miniature/decor/5 5/5 2/1/150/-1/{{i18n: furniture.ExoticPalaceMiniature.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\ExoticPalaceMiniature",
+        "Dolly.CarolineSunRoomFurniture_GardeningTools": "Gardening Tools/decor/1 1/1 1/1/150/-1/{{i18n: furniture.GardeningTools.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\GardeningTools",
+        "Dolly.CarolineSunRoomFurniture_HangingPlantPot": "Hanging Plant Pot/painting/1 2/1 2/1/150/-1/{{i18n: furniture.HangingPlantPot.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\HangingPlantPot",
+        "Dolly.CarolineSunRoomFurniture_PlantBox1": "Plant Box 1/decor/2 4/2 3/1/150/-1/{{i18n: furniture.PlantBox1.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\PlantBox1",
+        "Dolly.CarolineSunRoomFurniture_PlantBox2": "Plant Box 2/decor/3 2/3 1/1/150/-1/{{i18n: furniture.PlantBox2.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\PlantBox2",
+        "Dolly.CarolineSunRoomFurniture_PlantBox3": "Plant Box 3/decor/1 4/1 3/1/150/-1/{{i18n: furniture.PlantBox3.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\PlantBox3",
+        "Dolly.CarolineSunRoomFurniture_PlantBox4": "Plant Box 4/decor/1 4/1 3/1/150/-1/{{i18n: furniture.PlantBox4.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\PlantBox4",
+        "Dolly.CarolineSunRoomFurniture_PlantPot1": "Plant Pot 1/decor/1 2/1 1/1/150/-1/{{i18n: furniture.PlantPot1.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\PlantPot1",
+        "Dolly.CarolineSunRoomFurniture_PlantPot2": "Plant Pot 2/decor/1 2/1 1/1/150/-1/{{i18n: furniture.PlantPot2.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\PlantPot2",
+        "Dolly.CarolineSunRoomFurniture_PlantShelf": "Plant Shelf/painting/2 3/2 3/1/150/-1/{{i18n: furniture.PlantShelf.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\PlantShelf",
+        "Dolly.CarolineSunRoomFurniture_SeedBag": "Seed Bag/decor/1 1/1 1/1/150/-1/{{i18n: furniture.SeedBag.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\SeedBag",
+        "Dolly.CarolineSunRoomFurniture_SmallPlant": "Small Plant/decor/1 1/1 1/1/150/-1/{{i18n: furniture.SmallPlant.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\SmallPlant",
+        "Dolly.CarolineSunRoomFurniture_SmallPlantPot": "Small Plant Pot/decor/1 1/1 1/1/150/-1/{{i18n: furniture.SmallPlantPot.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\SmallPlantPot",
+        "Dolly.CarolineSunRoomFurniture_SunRoomDoor": "Sun Room Door/painting/1 3/1 3/1/150/-1/{{i18n: furniture.SunRoomDoor.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\SunRoomDoor",
+        "Dolly.CarolineSunRoomFurniture_SunRoomDoorWithVase": "Sun RoomDoor With Vase/painting/1 4/1 3/1/150/-1/{{i18n: furniture.SunRoomDoorWithVase.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\SunRoomDoorWithVase",
+        "Dolly.CarolineSunRoomFurniture_TeaLeaves": "Tea Leaves/decor/1 1/1 1/1/150/-1/{{i18n: furniture.TeaLeaves.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\TeaLeaves",
+        "Dolly.CarolineSunRoomFurniture_TreePot1": "Tree Pot 1/decor/2 3/2 1/1/150/-1/{{i18n: furniture.TreePot1.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\TreePot1",
+        "Dolly.CarolineSunRoomFurniture_TreePot2": "Tree Pot 2/decor/3 4/3 1/1/150/-1/{{i18n: furniture.TreePot2.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\TreePot2",
+        "Dolly.CarolineSunRoomFurniture_PlantVase": "Plant Vase/decor/2 2/2 1/1/150/-1/{{i18n: furniture.PlantVase.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\PlantVase",
+        "Dolly.CarolineSunRoomFurniture_TreeVase": "Tree Vase/decor/1 3/1 1/1/150/-1/{{i18n: furniture.TreeVase.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\TreeVase",
+        "Dolly.CarolineSunRoomFurniture_WateringCan": "Watering Can/decor/1 1/1 1/1/150/-1/{{i18n: furniture.WateringCan.name}}/0/Mods\\Dolly.CarolineSunRoomFurniture\\WateringCan"
+      }
+    },
+    //Furniture Descriptions 
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/FurnitureExtensionData",
+      "Entries": {
+        "Dolly.CarolineSunRoomFurniture_BambooGardenPond": {
+          "DescriptionOverride": "{{i18n: furniture.BambooGardenPond.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_ElegantTeaTable": {
+          "DescriptionOverride": "{{i18n: furniture.ElegantTeaTable.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_ExoticPalaceMiniature": {
+          "DescriptionOverride": "{{i18n: furniture.ExoticPalaceMiniature.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_GardeningTools": {
+          "DescriptionOverride": "{{i18n: furniture.GardeningTools.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_HangingPlantPot": {
+          "DescriptionOverride": "{{i18n: furniture.HangingPlantPot.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_PlantBox1": {
+          "DescriptionOverride": "{{i18n: furniture.PlantBox1.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_PlantBox2": {
+          "DescriptionOverride": "{{i18n: furniture.PlantBox2.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_PlantBox3": {
+          "DescriptionOverride": "{{i18n: furniture.PlantBox3.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_PlantBox4": {
+          "DescriptionOverride": "{{i18n: furniture.PlantBox4.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_PlantPot1": {
+          "DescriptionOverride": "{{i18n: furniture.PlantPot1.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_PlantPot2": {
+          "DescriptionOverride": "{{i18n: furniture.PlantPot2.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_PlantShelf": {
+          "DescriptionOverride": "{{i18n: furniture.PlantShelf.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_SeedBag": {
+          "DescriptionOverride": "{{i18n: furniture.SeedBag.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_SmallPlant": {
+          "DescriptionOverride": "{{i18n: furniture.SmallPlant.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_SmallPlantPot": {
+          "DescriptionOverride": "{{i18n: furniture.SmallPlantPot.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_SunRoomDoor": {
+          "DescriptionOverride": "{{i18n: furniture.SunRoomDoor.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_SunRoomDoorWithVase": {
+          "DescriptionOverride": "{{i18n: furniture.SunRoomDoorWithVase.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_TeaLeaves": {
+          "DescriptionOverride": "{{i18n: furniture.TeaLeaves.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_TreePot1": {
+          "DescriptionOverride": "{{i18n: furniture.TreePot1.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_TreePot2": {
+          "DescriptionOverride": "{{i18n: furniture.TreePot2.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_PlantVase": {
+          "DescriptionOverride": "{{i18n: furniture.PlantVase.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_TreeVase": {
+          "DescriptionOverride": "{{i18n: furniture.TreeVase.description}}"
+        },
+        "Dolly.CarolineSunRoomFurniture_WateringCan": {
+          "DescriptionOverride": "{{i18n: furniture.WateringCan.description}}"
+        }
+      }
+    },
+    //Furniture Animations 
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/TextureOverrides",
+      "Entries": {
+        "Dolly.CarolineSunRoomFurniture_BambooGardenPond": {
+          "TargetTexture": "Mods/Dolly.CarolineSunRoomFurniture/BambooGardenPond",
+          "TargetRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 32,
+            "Height": 80
+          },
+          "SourceTexture": "Mods/Dolly.CarolineSunRoomFurniture/BambooGardenPond:0..5@7"
+        }
+      }
+    },
+    //Sell Furniture 
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "SeedShop",
+        "Items"
+      ],
+      "Entries": {
+        "Dolly.CarolineSunRoomFurniture_PierreShop.BambooGardenPond": {
+          "Id": "Dolly.CarolineSunRoomFurniture_RobinShop.BambooGardenPond",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_BambooGardenPond",
+          "Price": 900,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.ElegantTeaTable": {
+          "Id": "Dolly.CarolineSunRoomFurniture_RobinShop.ElegantTeaTable",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_ElegantTeaTable",
+          "Price": 1250,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.ExoticPalaceMiniature": {
+          "Id": "Dolly.CarolineSunRoomFurniture_RobinShop.ExoticPalaceMiniature",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_ExoticPalaceMiniature",
+          "Price": 2000,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.GardeningTools": {
+          "Id": "Dolly.CarolineSunRoomFurniture_RobinShop.GardeningTools",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_GardeningTools",
+          "Price": 150,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.HangingPlantPot": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.HangingPlantPot",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_HangingPlantPot",
+          "Price": 250,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.PlantBox1": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.PlantBox1",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_PlantBox1",
+          "Price": 850,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.PlantBox2": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.PlantBox2",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_PlantBox2",
+          "Price": 425,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.PlantBox3": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.PlantBox3",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_PlantBox3",
+          "Price": 425,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.PlantBox4": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.PlantBox4",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_PlantBox4",
+          "Price": 425,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.PlantPot1": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.PlantPot1",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_PlantPot1",
+          "Price": 350,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.PlantPot2": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.PlantPot2",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_PlantPot2",
+          "Price": 350,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.PlantShelf": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.PlantShelf",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_PlantShelf",
+          "Price": 850,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.SeedBag": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.SeedBag",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_SeedBag",
+          "Price": 150,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.SmallPlant": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.SmallPlant",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_SmallPlant",
+          "Price": 250,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.SmallPlantPot": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.SmallPlantPot",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_SmallPlantPot",
+          "Price": 250,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.SunRoomDoor": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.SunRoomDoor",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_SunRoomDoor",
+          "Price": 600,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.SunRoomDoorWithVase": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.SunRoomDoorWithVase",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_SunRoomDoorWithVase",
+          "Price": 700,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.TeaLeaves": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.TeaLeaves",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_TeaLeaves",
+          "Price": 125,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.TreePot1": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.TreePot1",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_TreePot1",
+          "Price": 500,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.TreePot2": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.TreePot2",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_TreePot2",
+          "Price": 750,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.PlantVase": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.PlantVase",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_PlantVase",
+          "Price": 500,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.TreeVase": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.TreeVase",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_TreeVase",
+          "Price": 500,
+          "IgnoreShopPriceModifiers": true
+        },
+        "Dolly.CarolineSunRoomFurniture_PierreShop.WateringCan": {
+          "Id": "Dolly.CarolineSunRoomFurniture_PierreShop.WateringCan",
+          "ItemId": "(F)Dolly.CarolineSunRoomFurniture_WateringCan",
+          "Price": 150,
+          "IgnoreShopPriceModifiers": true
+        }
+      }
+    },
+    //Load Assets 
+    {
+      "Action": "Load",
+      "Target": "Mods/Dolly.CarolineSunRoomFurniture/BambooGardenPond, Mods/Dolly.CarolineSunRoomFurniture/ElegantTeaTable, Mods/Dolly.CarolineSunRoomFurniture/ExoticPalaceMiniature, Mods/Dolly.CarolineSunRoomFurniture/GardeningTools, Mods/Dolly.CarolineSunRoomFurniture/HangingPlantPot, Mods/Dolly.CarolineSunRoomFurniture/PlantBox1, Mods/Dolly.CarolineSunRoomFurniture/PlantBox2, Mods/Dolly.CarolineSunRoomFurniture/PlantBox3, Mods/Dolly.CarolineSunRoomFurniture/PlantBox4, Mods/Dolly.CarolineSunRoomFurniture/PlantPot1, Mods/Dolly.CarolineSunRoomFurniture/PlantPot2, Mods/Dolly.CarolineSunRoomFurniture/PlantShelf, Mods/Dolly.CarolineSunRoomFurniture/SeedBag, Mods/Dolly.CarolineSunRoomFurniture/SmallPlant, Mods/Dolly.CarolineSunRoomFurniture/SmallPlantPot, Mods/Dolly.CarolineSunRoomFurniture/SunRoomDoor, Mods/Dolly.CarolineSunRoomFurniture/SunRoomDoorWithVase, Mods/Dolly.CarolineSunRoomFurniture/TeaLeaves, Mods/Dolly.CarolineSunRoomFurniture/TreePot1, Mods/Dolly.CarolineSunRoomFurniture/TreePot2, Mods/Dolly.CarolineSunRoomFurniture/PlantVase, Mods/Dolly.CarolineSunRoomFurniture/TreeVase, Mods/Dolly.CarolineSunRoomFurniture/WateringCan",
+      "FromFile": "assets/{{TargetWithoutPath}}.png"
+    }
+  ]
+}

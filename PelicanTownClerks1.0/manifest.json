@@ -1,0 +1,13 @@
+{
+  "Name": "Pelican Town Clerks",
+  "Author": "AndrewJC",
+  "Version": "1.0",
+  "Description": "Adds Abigail and Thompson as General Store Clerks.",
+  "UniqueID": "AndrewJC.Clerks",
+  "UpdateKeys": ["Nexus:43840"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+  ],
+}

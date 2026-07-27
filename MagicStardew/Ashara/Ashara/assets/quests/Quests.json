@@ -1,0 +1,15 @@
+{
+    "Changes": [
+         {
+      "LogName": "SpellbookForestQUEST",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+      "{{ModId}}_ForestGetSpellbook_quest_1": "ItemDelivery/{{i18n:ForestGetSpellbook_quest_request_1}}/{{i18n:ForestGetSpellbook_quest_description_1}}/{{i18n:ForestGetSpellbook_quest_deliver_1}}/Ashara (O)769 1/{{ModId}}_ForestGetSpellbook_quest_2/0/-1/false/{{i18n:ForestGetSpellbook_quest_response_1}}",
+        //"{{ModId}}_ForestGetSpellbook_quest_2": "ItemDelivery/{{i18n:ForestGetSpellbook_quest_request_2}}/{{i18n:ForestGetSpellbook_quest_description_2}}/{{i18n:ForestGetSpellbook_quest_deliver_2}}/Ashara (O)768 1/{{ModId}}_ForestGetSpellbook_quest_3/0/-1/false/{{i18n:ForestGetSpellbook_quest_response_2}}",
+        //"{{ModId}}_ForestGetSpellbook_quest_3": "ItemDelivery/{{i18n:ForestGetSpellbook_quest_request_3}}/{{i18n:ForestGetSpellbook_quest_description_3}}/{{i18n:ForestGetSpellbook_quest_deliver_3}}/Ashara (O)422 1/0/0/-1/false/{{i18n:ForestGetSpellbook_quest_response_3}}",
+        "Hearts_MagicStardew_2Event_Quest": "ItemDelivery/{{i18n:quest.2heart.title}}/{{i18n:quest.2heart.desc}}/{{i18n:quest.2heart.objective}}/Ashara (O)74 1//0/-1/false/{{i18n:quest.2heart.complete}}"
+      }
+    }
+    ]
+}

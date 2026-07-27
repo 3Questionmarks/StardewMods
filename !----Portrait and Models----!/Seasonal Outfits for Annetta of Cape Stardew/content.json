@@ -1,0 +1,47 @@
+{
+    "Format": "1.29.3",
+	
+	"ConfigSchema": {
+		"On/Off": { "AllowValues": "true, false", "Default": true }
+	},
+	
+	"DynamicTokens": [
+		{
+			"Name": "InsideOutside",
+			"Value": "out"
+		},
+		{
+			"Name": "InsideOutside",
+			"Value": "in",
+			"When": { "IsOutdoors": false }
+		}
+	],
+
+    "Changes": [
+        {
+            "LogName": "Annetta Seasonal portrait",
+            "Action": "EditImage",
+            "Target": "Portraits/Annetta",
+            "FromFile": "assets/Annetta_portrait_{{Season}}_{{InsideOutside}}.png",
+			"PatchMode": "overlay",
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+				"On/Off": true
+            }
+        },
+        {
+            "LogName": "Annetta Seasonal spritesheet",
+            "Action": "EditImage",
+            "Target": "Characters/Annetta",
+            "FromFile": "assets/Annetta_sprite_{{Season}}_{{InsideOutside}}.png",
+			"PatchMode": "overlay",
+            "Update": "OnLocationChange, OnDayStart",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+				"On/Off": true
+            }
+        },
+ 
+    ]
+}

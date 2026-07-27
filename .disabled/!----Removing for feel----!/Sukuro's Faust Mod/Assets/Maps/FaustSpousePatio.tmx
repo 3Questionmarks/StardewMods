@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-down" width="4" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="1">
+ <tileset firstgid="1" name="spring_AlvadeasTileSheet" tilewidth="16" tileheight="16" tilecount="1800" columns="30">
+  <image source="spring_AlvadeasTileSheet.png" width="480" height="960"/>
+  <tile id="184">
+   <animation>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="186" duration="250"/>
+    <frame tileid="188" duration="250"/>
+    <frame tileid="190" duration="250"/>
+    <frame tileid="192" duration="250"/>
+    <frame tileid="190" duration="250"/>
+    <frame tileid="192" duration="250"/>
+    <frame tileid="190" duration="250"/>
+    <frame tileid="188" duration="250"/>
+    <frame tileid="186" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="186" duration="250"/>
+    <frame tileid="188" duration="250"/>
+    <frame tileid="190" duration="250"/>
+    <frame tileid="192" duration="250"/>
+    <frame tileid="190" duration="250"/>
+    <frame tileid="192" duration="250"/>
+    <frame tileid="190" duration="250"/>
+    <frame tileid="188" duration="250"/>
+    <frame tileid="186" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="184" duration="250"/>
+    <frame tileid="254" duration="250"/>
+    <frame tileid="284" duration="250"/>
+    <frame tileid="314" duration="250"/>
+    <frame tileid="314" duration="250"/>
+    <frame tileid="284" duration="250"/>
+    <frame tileid="254" duration="250"/>
+    <frame tileid="184" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="185">
+   <animation>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="187" duration="250"/>
+    <frame tileid="189" duration="250"/>
+    <frame tileid="191" duration="250"/>
+    <frame tileid="193" duration="250"/>
+    <frame tileid="191" duration="250"/>
+    <frame tileid="193" duration="250"/>
+    <frame tileid="191" duration="250"/>
+    <frame tileid="189" duration="250"/>
+    <frame tileid="187" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="187" duration="250"/>
+    <frame tileid="189" duration="250"/>
+    <frame tileid="191" duration="250"/>
+    <frame tileid="193" duration="250"/>
+    <frame tileid="191" duration="250"/>
+    <frame tileid="193" duration="250"/>
+    <frame tileid="191" duration="250"/>
+    <frame tileid="189" duration="250"/>
+    <frame tileid="187" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="185" duration="250"/>
+    <frame tileid="255" duration="250"/>
+    <frame tileid="285" duration="250"/>
+    <frame tileid="315" duration="250"/>
+    <frame tileid="315" duration="250"/>
+    <frame tileid="285" duration="250"/>
+    <frame tileid="255" duration="250"/>
+    <frame tileid="185" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="1801" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="1865" name="hime_outdoorfurniture" tilewidth="16" tileheight="16" tilecount="1554" columns="42">
+  <image source="hime_outdoorfurniture.png" width="672" height="592"/>
+ </tileset>
+ <layer id="1" name="Back" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="5" name="Back1" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,195,196,
+249,250,225,226
+</data>
+ </layer>
+ <layer id="6" name="Back2" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,308
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+1979,0,0,0,
+2021,0,185,186,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Front" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Paths" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,1808,0,0,
+0,0,0,0
+</data>
+ </layer>
+</map>

@@ -1,0 +1,85 @@
+{
+
+
+    "Changes": [
+
+
+//■■■ Hippo's Farm Cave Variety ■■■
+
+/*////////////////////////////////////////////////////////
+┃ファームタイプ farming   は ファイル名では Standard
+┃               foraging  ----------------- Forest
+┃               fishing   ----------------- Riverland
+┃               mining    ----------------- Hilltop
+┃               combat    ----------------- Wilderness
+┃               island    ----------------- Island
+┃               beach     ----------------- Beach
+┃               hotspring ----------------- Hotspring
+*////////////////////////////////////////////////////////
+
+
+  //★★★ FarmCave側の編集 ★★★
+
+  //●AFCへの入り口を制御
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/tmx/Mod_02_Hippo'sFarmCaveVariety/TsAFC_HFCV_{{DT_HFCV_CaveType}}_{{DT_Entrance}}.tmx",
+        "ToArea": { "X": "{{DT_HFCV_FC_ToArea_X}}", "Y": 0, "Width": "{{DT_HFCV_FC_ToArea_Width}}", "Height": "{{DT_HFCV_FC_ToArea_Height}}" },
+        "When": {
+          "LocationName": "FarmCave"
+        },
+        "Update": "OnLocationChange"
+      },
+
+    //●AFCへのワープ追加
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Warp"],
+            "Value": "{{DT_HFCV_FC_WarpIN}} {{DT_AddFarmCaveName}} 9 14",
+            "Delimiter": " "
+          }
+        ]
+      },
+
+
+  //★★★ AddFarmCave側の編集 ★★★
+
+    //●AFCの見た目を合わせる(一部タイプのみStandardを流用)
+      {
+        "Action": "EditMap",
+        "Target": "Maps/{{DT_AddFarmCaveName}}",
+        "FromFile": "assets/tmx/Mod_02_Hippo'sFarmCaveVariety/TsAFC_HFCV_AFC.tmx",
+        "When": {
+          "HFCV_CaveType": "farming, foraging, beach, hotspring"
+        },
+      },
+
+    //●FCへのワープ変更
+      {
+        "Action": "EditMap",
+        "Target": "Maps/{{DT_AddFarmCaveName}}",
+        "MapProperties": { "Warp": "9 15 FarmCave {{DT_HFCV_AFC_WarpOUT}} 9 4 Custom_AdditionalFarmCave_2ndArea 9 14" }
+      },
+
+    //●2ndエリア解放まで奥の入り口を封鎖
+      {
+        "Action": "EditMap",
+        "Target": "Maps/{{DT_AddFarmCaveName}}",
+        "FromFile": "assets/tmx/{{DT_HFCV_AFC_Close_FromFile}}.tmx",
+        "ToArea": { "X": 8, "Y": 2, "Width": 3, "Height": 4 },
+        "When": {
+          "OpenImmediately_2nd": "false",
+          "HasSeenEvent |contains=1410977501": "false",
+          "LocationName": "{{DT_AddFarmCaveName}}"
+        },
+        "Update": "OnLocationChange"
+      }
+
+
+    ]//▼▼"Changes"の終了▼▼
+}

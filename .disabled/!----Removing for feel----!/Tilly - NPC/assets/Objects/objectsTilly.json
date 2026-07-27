@@ -1,0 +1,698 @@
+{
+  "Changes": [
+	
+	{ // Add Tilly's Scissors
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_Scissors": {
+			  "Name": "{{ModId}}.Tilly_Scissors",
+			  "DisplayName": "{{i18n:{{ModId}}.Tilly_Scissors.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_Scissors.Description}}",
+			  "Type": "Basic",
+			  "Category": 0,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 0,
+			  "Edibility": -300,
+			  "IsDrink": false,
+		  },
+	  },
+	},
+	
+	
+	{ // Add Tea Egg
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_TeaEgg": {
+			  "Name": "{{ModId}}.Tilly_TeaEgg",
+			  "DisplayName": "{{i18n:Wem.Bundle.Tilly_TeaEgg.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_TeaEgg.Description}}",
+			  "Category": -7,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 1,
+			  "Edibility": 25,
+			  "IsDrink": false,
+			  "Price": "300",
+		  },
+	  },
+	},
+	
+	//Egg Recipe
+		{
+            "LogName": "Tea Egg Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}.Tilly_TeaEgg": "-5 1 614 1 829 1 245 1/25 25/{{ModId}}.Tilly_TeaEgg",
+              }
+        },
+	
+	// Gift Tastes for Egg
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "{{ModId}}.Tilly", 1],
+				"Value": "{{ModId}}.Tilly_TeaEgg",
+				"Delimiter": " "
+			}
+		]
+	},
+	
+	//Sweet Tea
+		
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_SweetTea": {
+			  "Name": "{{ModId}}.Tilly_SweetTea",
+			  "DisplayName": "{{i18n:Wem.Bundle.Tilly_SweetTea.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_SweetTea.Description}}",
+			  "Category": -7,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 2,
+			  "Edibility": 25,
+			  "IsDrink": true,
+			  "Price": "100",
+		  }
+	  }
+	},
+		
+		{
+            "LogName": "Sweet Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}.Tilly_SweetTea": "815 1 245 2/25 25/{{ModId}}.Tilly_SweetTea",
+              }
+        },
+	
+	// Gift Tastes for Sweet Tea
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "{{ModId}}.Tilly", 1],
+				"Value": "{{ModId}}.Tilly_SweetTea",
+				"Delimiter": " "
+			}
+		]
+	},
+	
+	//Add to Saloon
+	{
+			"LogName": "Add Sweet Tea to Saloon",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Saloon", "Items" ],
+			"Entries": {
+				"{{ModId}}.Tilly_SweetTea": {
+					"Id": "{{ModId}}.Tilly_SweetTea",
+					"ItemId": "{{ModId}}.Tilly_SweetTea",
+					"Price": 250,
+					"IsRecipe": true,
+				},
+			}
+	},
+
+	//Honeycomb Sponge Cake
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_HoneyCake": {
+			  "Name": "{{ModId}}.Tilly_HoneyCake",
+			  "DisplayName": "{{i18n:Wem.Bundle.Tilly_HoneyCake.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_HoneyCake.Description}}",
+			  "Category": -7,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 3,
+			  "Edibility": 25,
+			  "IsDrink": true,
+			  "Price": 400,
+		  }
+	  }
+	},
+		
+		{
+            "LogName": "Honey Cake Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}.Tilly_HoneyCake": "340 1 -5 1 -6 1 245 1 246 1/25 25/{{ModId}}.Tilly_HoneyCake",
+              }
+        },
+	
+	//Tea Cake
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_TeaCake": {
+			  "Name": "{{ModId}}.Tilly_TeaCake",
+			  "DisplayName": "{{i18n:Wem.Bundle.Tilly_TeaCake.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_TeaCake.Description}}",
+			  "Category": -7,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 4,
+			  "Edibility": 25,
+			  "IsDrink": true,
+			  "Price": 300,
+		  }
+	  }
+	},
+		
+		{
+            "LogName": "Tea Cake Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}.Tilly_TeaCake": "614 1 -5 1 -6 1 245 1 246 1/25 25/{{ModId}}.Tilly_TeaCake",
+              }
+        },
+		
+	//Jasmine Tea 
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_JTea": {
+			  "Name": "{{ModId}}.Tilly_JTea",
+			  "DisplayName": "{{i18n:Wem.Bundle.Tilly_JTea.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_JTea.Description}}",
+			  "Category": 100,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 9,
+			  "Edibility": 25,
+			  "IsDrink": true,
+			  "Price": 100,
+			  "ExcludeFromShippingCollection": true,
+		  }
+	  }
+	},
+	
+	//Matcha
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_MatchaLatte": {
+			  "Name": "{{ModId}}.Tilly_MatchaLatte",
+			  "DisplayName": "{{i18n:Wem.Bundle.Tilly_MatchaLatte.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_MatchaLatte.Description}}",
+			  "Category": 100,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 6,
+			  "Edibility": 25,
+			  "IsDrink": true,
+			  "Price": 200,
+			  "ExcludeFromShippingCollection": true,
+		  }
+	  }
+	},
+	
+	//Chai
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_MasalaChai": {
+			  "Name": "{{ModId}}.Tilly_MasalaChai",
+			  "DisplayName": "{{i18n:Wem.Bundle.Tilly_MasalaChai.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_MasalaChai.Description}}",
+			  "Category": 100,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 7,
+			  "Edibility": 25,
+			  "IsDrink": true,
+			  "Price": 200,
+			  "ExcludeFromShippingCollection": true,
+		  }
+	  }
+	},
+	
+	//Sakura Tea
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_SakuraTea": {
+			  "Name": "{{ModId}}.Tilly_SakuraTea",
+			  "DisplayName": "{{i18n:Wem.Bundle.Tilly_SakuraTea.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_SakuraTea.Description}}",
+			  "Category": 100,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 8,
+			  "Edibility": 25,
+			  "IsDrink": true,
+			  "Price": 200,
+			  "ExcludeFromShippingCollection": true,
+		  }
+	  }
+	},
+	
+	//London Fog
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_LFog": {
+			  "Name": "{{ModId}}.Tilly_LFog",
+			  "DisplayName": "{{i18n:Wem.Bundle.Tilly_LFog.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_LFog.Description}}",
+			  "Category": 100,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 12,
+			  "Edibility": 25,
+			  "IsDrink": true,
+			  "Price": 200,
+			  "ExcludeFromShippingCollection": true,
+		  }
+	  }
+	},
+	
+	//Tiramisu
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_Tiramisu": {
+			  "Name": "{{ModId}}.Tilly_Tiramisu",
+			  "DisplayName": "{{i18n:Wem.Bundle.Tilly_Tiramisu.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_Tiramisu.Description}}",
+			  "Category": 100,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 13,
+			  "Edibility": 25,
+			  "IsDrink": false,
+			  "Price": 350,
+			  "ExcludeFromShippingCollection": true,
+		  }
+	  }
+	},
+	
+	//Matcha Tiramisu
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_MatchaTiramisu": {
+			  "Name": "{{ModId}}.Tilly_MatchaTiramisu",
+			  "DisplayName": "{{i18n:Wem.Bundle.Tilly_MatchaTiramisu.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_MatchaTiramisu.Description}}",
+			  "Category": 100,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 14,
+			  "Edibility": 25,
+			  "IsDrink": false,
+			  "Price": 350,
+			  "ExcludeFromShippingCollection": true,
+		  }
+	  }
+	},
+	
+	//Mousse Cake
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_MousseCake": {
+			  "Name": "{{ModId}}.Tilly_MousseCake",
+			  "DisplayName": "{{i18n:Wem.Bundle.Tilly_MousseCake.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_MousseCake.Description}}",
+			  "Category": 100,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 10,
+			  "Edibility": 25,
+			  "IsDrink": false,
+			  "Price": 250,
+			  "ExcludeFromShippingCollection": true,
+		  }
+	  }
+	},
+	
+	//Star Cookie
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Objects",
+	  "Entries": {
+		  "{{ModId}}.Tilly_StarCookie": {
+			  "Name": "{{ModId}}.Tilly_StarCookie",
+			  "DisplayName": "{{i18n:Wem.Bundle.Tilly_StarCookie.DisplayName}}",
+			  "Description": "{{i18n:Wem.Bundle.Tilly_StarCookie.Description}}",
+			  "Category": 100,
+			  "Texture": "{{ModId}}.Tilly/Objects",
+			  "SpriteIndex": 11,
+			  "Edibility": 25,
+			  "IsDrink": false,
+			  "Price": 150,
+			  "ExcludeFromShippingCollection": true,
+		  }
+	  }
+	},
+		
+		//Elliott's Bound Book
+		{
+		  "Action": "EditData",
+		  "Target": "Data/Objects",
+		  "Entries": {
+			  "{{ModId}}.Tilly_ElliottBook": {
+				  "Name": "{{ModId}}.Tilly_ElliottBook",
+				  "DisplayName": "{{i18n:Wem.Bundle.Tilly_ElliottBook.DisplayName}}",
+				  "Description": "{{i18n:Wem.Bundle.Tilly_ElliottBook.Description}}",
+				  "Category": -26,
+				  "Type": "Arch",
+				  "Texture": "{{ModId}}.Tilly/Objects",
+				  "SpriteIndex": 5,
+				  "Price": 5000,
+				  "Edibility": -300,
+				  "IsDrink": false,
+				  "ExcludeFromShippingCollection": true,
+			  }
+		  }
+		},
+
+		//Gift tastes for other NPCs
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Elliott", 1],
+					"Value": "{{ModId}}.Tilly_ElliottBook",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Evelyn", 1],
+					"Value": "{{ModId}}.Tilly_JTea {{ModId}}.Tilly_EggTart {{ModId}}.Tilly_SakuraTea {{ModId}}.Tilly_RedBeanSoup",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Evelyn", 3],
+					"Value": "{{ModId}}.Tilly_MasalaChai {{ModId}}.Tilly_TeaEgg",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Caroline", 1],
+					"Value": "{{ModId}}.Tilly_SakuraTea {{ModId}}.Tilly_JTea {{ModId}}.Tilly_TeaCake",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Caroline", 3],
+					"Value": "{{ModId}}.Tilly_MasalaChai",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Penny", 1],
+					"Value": "{{ModId}}.Tilly_MasalaChai",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Emily", 1],
+					"Value": "{{ModId}}.Tilly_JTea",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Haley", 1],
+					"Value": "{{ModId}}.Tilly_MatchaLatte",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Jas", 1],
+					"Value": "{{ModId}}.Tilly_StarCookie {{ModId}}.Tilly_HoneyCake {{ModId}}.Tilly_SesameBalls {{ModId}}.Tilly_RedBeanSoup {{ModId}}.Tilly_SweetRiceCake {{ModId}}.Tilly_EggTart",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Vincent", 1],
+					"Value": "{{ModId}}.Tilly_StarCookie {{ModId}}.Tilly_HoneyCake {{ModId}}.Tilly_SesameBalls {{ModId}}.Tilly_RedBeanSoup {{ModId}}.Tilly_SweetRiceCake {{ModId}}.Tilly_EggTart",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Vincent", 5],
+					"Value": "{{ModId}}.Tilly_MousseCake {{ModId}}.Tilly_Tiramisu",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Jas", 5],
+					"Value": "{{ModId}}.Tilly_MousseCake {{ModId}}.Tilly_Tiramisu",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Harvey", 3],
+					"Value": "{{ModId}}.Tilly_MousseCake",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Harvey", 1],
+					"Value": "{{ModId}}.Tilly_Tiramisu",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Pam", 1],
+					"Value": "{{ModId}}.Tilly_SweetTea",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Alex", 1],
+					"Value": "{{ModId}}.Tilly_EggTart {{ModId}}.Tilly_TeaEgg",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		//Universal Tastes
+		{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Universal_Like"],
+					"Value": "{{ModId}}.Tilly_HoneyCake {{ModId}}.Tilly_Tiramisu {{ModId}}.Tilly_MatchaTiramisu {{ModId}}.Tilly_EggTart {{ModId}}.Tilly_SesameBalls {{ModId}}.Tilly_SweetRiceCake {{ModId}}.Tilly_RedBeanSoup {{ModId}}.Tilly_SweetTea",
+					"Delimiter": " "
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Universal_Neutral"],
+					"Value": "{{ModId}}.Tilly_MousseCake {{ModId}}.Tilly_StarCookie {{ModId}}.Tilly_SakuraTea {{ModId}}.Tilly_JTea {{ModId}}.Tilly_MasalaChai {{ModId}}.Tilly_MatchaLatte {{ModId}}.Tilly_TeaEgg {{ModId}}.Tilly_TeaCake {{ModId}}.Tilly_LFog",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		
+		//Spouse Portraits
+		{
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+				"{{ModId}}_TillyPortrait1":"{{ModId}}_TillyPortrait1/painting/2 2/2 2/1/30000/2/{{i18n:Wem.Bundle.Tilly_Portrait1DisplayName}}/0/{{ModId}}\\Furniture//SpousePortrait",
+				"{{ModId}}_TillyPortrait2":"{{ModId}}_TillyPortrait2/painting/2 2/2 2/1/30000/2/{{i18n:Wem.Bundle.Tilly_Portrait2DisplayName}}/2/{{ModId}}\\Furniture//SpousePortrait",
+			},
+		},
+		
+		//LNY
+		{ 
+		  "Action": "EditData",
+		  "Target": "Data/Objects",
+		  "Entries": {
+			  
+			  //Hongbao
+			  "{{ModId}}.Tilly_Hongbao": {
+				  "Name": "Tilly Hongbao",
+				  "DisplayName": "{{i18n:Wem.Bundle.Tilly_Hongbao.DisplayName}}",
+				  "Description": "{{i18n:Wem.Bundle.Tilly_Hongbao.Description}}",
+				  "Type": "Basic",
+				  "Category": 0,
+				  "Texture": "{{ModId}}.Tilly/Objects",
+				  "SpriteIndex": 15,
+				  "Edibility": -300,
+				  "IsDrink": false,
+				  "CanBeGivenAsGift": false,
+			  },
+			  
+			  //LNY Food
+				"{{ModId}}.Tilly_EggTart": {
+				  "Name": "{{ModId}}.Tilly_EggTart",
+				  "DisplayName": "{{i18n:Tilly_EggTart.DisplayName}}",
+				  "Description": "{{i18n:Tilly_EggTart.Description}}",
+				  "Category": 100,
+				  "Texture": "{{ModId}}.Tilly/Objects",
+				  "SpriteIndex": 16,
+				  "Edibility": 25,
+				  "IsDrink": false,
+				  "Price": 0,
+				  "ExcludeFromShippingCollection": true,
+				},
+				
+				"{{ModId}}.Tilly_SesameBalls": {
+				  "Name": "{{ModId}}.Tilly_SesameBalls",
+				  "DisplayName": "{{i18n:Tilly_SesameBalls.DisplayName}}",
+				  "Description": "{{i18n:Tilly_SesameBalls.Description}}",
+				  "Category": 100,
+				  "Texture": "{{ModId}}.Tilly/Objects",
+				  "SpriteIndex": 17,
+				  "Edibility": 30,
+				  "IsDrink": false,
+				  "Price": 0,
+				  "ExcludeFromShippingCollection": true,
+				},
+				
+				"{{ModId}}.Tilly_SweetRiceCake": {
+				  "Name": "{{ModId}}.Tilly_SweetRiceCake",
+				  "DisplayName": "{{i18n:Tilly_SweetRiceCake.DisplayName}}",
+				  "Description": "{{i18n:Tilly_SweetRiceCake.Description}}",
+				  "Category": 100,
+				  "Texture": "{{ModId}}.Tilly/Objects",
+				  "SpriteIndex": 18,
+				  "Edibility": 45,
+				  "IsDrink": false,
+				  "Price": 0,
+				  "ExcludeFromShippingCollection": true,
+				},
+
+				"{{ModId}}.Tilly_RedBeanSoup": {
+				  "Name": "{{ModId}}.Tilly_RedBeanSoup",
+				  "DisplayName": "{{i18n:Tilly_RedBeanSoup.DisplayName}}",
+				  "Description": "{{i18n:Tilly_RedBeanSoup.Description}}",
+				  "Category": 100,
+				  "Texture": "{{ModId}}.Tilly/Objects",
+				  "SpriteIndex": 19,
+				  "Edibility": 30,
+				  "IsDrink": false,
+				  "Price": 0,
+				  "ExcludeFromShippingCollection": true,
+				},
+			
+		  },
+		},
+		
+		
+  ]
+}

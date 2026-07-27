@@ -1,0 +1,129 @@
+{
+    "Changes": [
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Ayeisha",
+            "Entries": {
+  "Introduction": "{{i18n:dialogue.Introduction}}",
+  "BeachNightMarket": "{{i18n:dialogue.BeachNightMarket}}",
+  "TheLimeyDragon.Ayeisha_AyeishaVanRoad": "{{i18n:dialogue.AyeishaVanRoad}}",
+  "TheLimeyDragon.Ayeisha_AyeishaWarpRoom": "{{i18n:dialogue.AyeishaWarpRoom}}",
+  "Town_35_56": "{{i18n:dialogue.Town_35_56}}",
+  "Saloon_15_20": "{{i18n:dialogue.Saloon_15_20}}",
+  "Custom_StrayCatfe_CafeIndoors_10_21": "{{i18n:dialogue.StrayCatfe}}",
+  "PetRejectionAyeisha": "{{i18n:dialogue.PetRejectionAyeisha}}",
+  "dialogue.ChickenAyeisha": "{{i18n:dialogue.ChickenAyeisha}}",
+  "GreenRain": "{{i18n:dialogue.GreenRain}}",
+  "GreenRainFinished": "{{i18n:dialogue.GreenRainFinished}}",
+  "GreenRain_2": "{{i18n:dialogue.GreenRain_2}}",
+
+  "SterlingDrugs": "{{i18n:dialogue.SterlingDrugs}}",
+  "SterlingRiver": "{{i18n:dialogue.SterlingRiver}}",
+  "AfterProposal": "{{i18n:dialogue.AfterProposal}}",
+  "keahi_prank": "{{i18n:dialogue.keahi_prank}}",
+  "JasperGone2": "{{i18n:dialogue.JasperGone2}}",
+
+  "TwoPlayerPrairieKing_start": "{{i18n:TwoPlayerPrairieKing.start}}",
+  "TwoPlayerPrairieKing_mid": "{{i18n:TwoPlayerPrairieKing.mid}}",
+  "TwoPlayerPrairieKing_end": "{{i18n:TwoPlayerPrairieKing.end}}",
+  "TwoPlayerPrairieKing_die": "{{i18n:TwoPlayerPrairieKing.die}}",
+
+  "Mon": "{{i18n:dialogue.Mon}}",
+  "Tue": "{{i18n:dialogue.Tue}}",
+  "Wed": "{{i18n:dialogue.Wed}}",
+  "Thu": "{{i18n:dialogue.Thu}}",
+  "Fri": "{{i18n:dialogue.Fri}}",
+  "Sat": "{{i18n:dialogue.Sat}}",
+  "Sun": "{{i18n:dialogue.Sun}}",
+  "Mon2": "{{i18n:dialogue.Mon2}}",
+  "Tue2": "{{i18n:dialogue.Tue2}}",
+  "Wed2": "{{i18n:dialogue.Wed2}}",
+  "Thu2": "{{i18n:dialogue.Thu2}}",
+  "Fri2": "{{i18n:dialogue.Fri2}}",
+  "Sat2": "{{i18n:dialogue.Sat2}}",
+  "Sun2": "{{i18n:dialogue.Sun2}}",
+  "Mon4": "{{i18n:dialogue.Mon4}}",
+  "Tue4": "{{i18n:dialogue.Tue4}}",
+  "Wed4": "{{i18n:dialogue.Wed4}}",
+  "summer_Wed4": "{{i18n:dialogue.summer_Wed4_1}}
+#$q 64270001/64270002 filmquestionfollowup#{{i18n:dialogue.summer_Wed4_2}}
+#$r 64270001 10 filmquestion1#{{i18n:dialogue.summer_Wed4_3}}
+#$r 64270001 20 filmquestion2#{{i18n:dialogue.summer_Wed4_4}}
+#$r 64270002 -10 filmquestion3#{{i18n:dialogue.summer_Wed4_5}}
+#$r 64270002 0 filmquestion4#{{i18n:dialogue.summer_Wed4_6}}
+#$r 64270002 -50 filmquestion5#{{i18n:dialogue.summer_Wed4_7}}",
+"filmquestion1": "{{i18n:dialogue.filmquestion1}}",
+"filmquestion2": "{{i18n:dialogue.filmquestion2}}",
+"filmquestion3": "{{i18n:dialogue.filmquestion3}}",
+"filmquestion4": "{{i18n:dialogue.filmquestion4}}",
+"filmquestion5": "{{i18n:dialogue.filmquestion5}}",
+"filmquestionfollowup": "$p 642670001#{{i18n:dialogue.filmquestionfollowup01}}|{{i18n:dialogue.filmquestionfollowup02}}",
+  "Thu4": "{{i18n:dialogue.Thu4}}",
+  "Fri4": "{{i18n:dialogue.Fri4}}",
+  "Sat4": "{{i18n:dialogue.Sat4}}",
+  "Sun4": "{{i18n:dialogue.Sun4}}",
+  "Mon6": "{{i18n:dialogue.Mon6}}",
+  "Tue6": "{{i18n:dialogue.Tue6}}",
+  "Wed6": "{{i18n:dialogue.Wed6}}",
+  "Thu6": "{{i18n:dialogue.Thu6}}",
+  "Fri6": "{{i18n:dialogue.Fri6}}",
+  "winter_Fri6": "{{i18n:dialogue.winter_Fri6_1}}
+#$q 64270003/64270004 itemscarryfollowup#{{i18n:dialogue.winter_Fri6_2}}
+#$r 64270003 5 itemscarryquestion1#{{i18n:dialogue.winter_Fri6_3}}
+#$r 64270003 5 itemscarryquestion2#{{i18n:dialogue.winter_Fri6_4}}
+#$r 64270004 -50 itemscarryquestion3#{{i18n:dialogue.winter_Fri6_5}}",
+"itemscarryquestion1": "{{i18n:dialogue.itemscarryquestion1}}",
+"itemscarryquestion2": "{{i18n:dialogue.itemscarryquestion2}}",
+"itemscarryquestion3": "{{i18n:dialogue.itemscarryquestion3}}",
+"itemscarryfollowup": "$p 64270003#{{i18n:dialogue.itemscarryfollowup01}}|{{i18n:dialogue.itemscarryfollowup02}}",
+
+  "fall_Mon8": "{{i18n:dialogue.fall_Mon8_1}}
+#$q 64270005/64270006/64270007 catnamefollowup#{{i18n:dialogue.fall_Mon8_2}}
+#$r 64270005 15 catname0#{{i18n:dialogue.fall_Mon8_3}}
+#$r 64270005 15 catname1#{{i18n:dialogue.fall_Mon8_4}}
+#$r 64270006 5 catname2#{{i18n:dialogue.fall_Mon8_5}}
+#$r 64270006 0 catname3#{{i18n:dialogue.fall_Mon8_6}}
+#$r 64270006 0 catname4#{{i18n:dialogue.fall_Mon8_7}}
+#$r 64270007 -250 catname5#{{i18n:dialogue.fall_Mon8_8}}",
+"catname0": "{{i18n:dialogue.catname0}}",
+"catname1": "{{i18n:dialogue.catname1}}",
+"catname2": "{{i18n:dialogue.catname2}}",
+"catname3": "{{i18n:dialogue.catname3}}",
+"catname4": "{{i18n:dialogue.catname4}}",
+"catname5": "{{i18n:dialogue.catname5}}",
+"catnamefollowup": "$p 64270005#{{i18n:dialogue.catnamefollowup01}}|$p 64270007#{{i18n:dialogue.catnamefollowup02}}|{{i18n:dialogue.catnamefollowup03}}",
+
+  "Tue8": "{{i18n:dialogue.Tue8}}",
+  "Mon10": "{{i18n:dialogue.Mon10}}",
+  "Wed10": "{{i18n:dialogue.Wed10}}",
+  "Sat10": "{{i18n:dialogue.Sat10}}",
+
+  "spring_1_2": "{{i18n:dialogue.spring_1_2}}",
+  "spring_2_1": "{{i18n:dialogue.spring_2_1}}",
+  "spring_4_1": "{{i18n:dialogue.spring_4_1}}",
+  "spring_14_*": "{{i18n:dialogue.spring_14}}",
+  "spring_24_*": "{{i18n:dialogue.spring_24}}",
+  "spring_25_*": "{{i18n:dialogue.spring_25}}",
+
+  "summer_1_1": "{{i18n:dialogue.summer_1_1}}",
+  "summer_9_*": "{{i18n:dialogue.summer_9}}",
+  "summer_11_*": "{{i18n:dialogue.summer_11}}",
+  "summer_28_*": "{{i18n:dialogue.summer_28}}",
+
+  "fall_3_*": "{{i18n:dialogue.fall_3}}",
+  "fall_27": "{{i18n:dialogue.fall_27}}",
+  "fall_27_2": "{{i18n:dialogue.fall_27_2}}",
+
+  "winter_1": "{{i18n:dialogue.winter_1}}",
+  "winter_7_*": "{{i18n:dialogue.winter_7}}",
+  "winter_15_*": "{{i18n:dialogue.winter_15}}",
+  "winter_15_2": "{{i18n:dialogue.winter_15_2}}",
+  "winter_17_*": "{{i18n:dialogue.winter_17}}",
+  "winter_25": "{{i18n:dialogue.winter_25}}",
+  "winter_25_2": "{{i18n:dialogue.winter_25_2}}"
+}
+}
+]
+}
+ 

@@ -1,0 +1,164 @@
+{
+    "Format": "2.0",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Maps/WerdonForge",
+            "FromFile": "assets/Werdon_Forge.tmx"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "WerdonForge": {
+                    "DisplayName": "{{i18n: location.forge.name}}",
+                    "DefaultArrivalTile": { "X": 6, "Y": 19 },
+                    "ExcludeFromNPCPathfinding": true,
+                    "CreateOnLoad": {
+                        "Type": "StardewValley.Locations.DecoratableLocation",
+                        "AlwaysActive": true,
+                        "MapPath": "Maps\\WerdonForge"
+                    }
+                }
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Werdon_Forge_Tiles",
+            "FromFile": "assets/Werdon_Forge_Tiles.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/CJBok.CheatsMenu/Warps",
+            "Entries": {
+                "TimBukTwo.TheForgottenWeaponsmith.CP_WerdonForge": {
+                    "Id": "TimBukTwo.TheForgottenWeaponsmith.CP_WerdonForge",
+                    "DisplayName": "{{i18n: location.forge.name}}",
+                    "Location": "WerdonForge",
+                    "Tile": "6, 18",
+                    "SectionId": "Werdon's Forge"
+                }
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/WerdonGallery",
+            "FromFile": "assets/Werdon_Gallery.tmx"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "WerdonGallery": {
+                    "DisplayName": "{{i18n: location.gallery.name}}",
+                    "DefaultArrivalTile": { "X": 4, "Y": 19 },
+                    "ExcludeFromNPCPathfinding": true,
+                    "CreateOnLoad": {
+                        "Type": "StardewValley.Locations.DecoratableLocation",
+                        "AlwaysActive": true,
+                        "MapPath": "Maps\\WerdonGallery"
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/CJBok.CheatsMenu/Warps",
+            "Entries": {
+                "TimBukTwo.TheForgottenWeaponsmith.CP_WerdonGallery": {
+                    "Id": "TimBukTwo.TheForgottenWeaponsmith.CP_WerdonGallery",
+                    "DisplayName": "{{i18n: location.gallery.name}}",
+                    "Location": "WerdonGallery",
+                    "Tile": "4, 19",
+                    "SectionId": "Werdon's Forge"
+                }
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Werdon",
+            "FromFile": "assets/Werdon_Portrait.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "TimBukTwo.TheForgottenWeaponsmith_Werdon": {
+                    "Id": "TimBukTwo.TheForgottenWeaponsmith_Werdon",
+                    "Owners": [
+                        {
+                            "Id": "Default",
+                            "Name": "AnyOrNone",
+                            "Portrait": "Portraits/Werdon",
+                            "Dialogues": [
+                                {
+                                    "Id": "Default",
+                                    "Dialogue": "{{i18n: shop.werdon.welcome}}"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "TFW_ForgeDoor",
+            "FromFile": "assets/Forge_Door.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "TFW_Werdon",
+            "FromFile": "assets/Werdon.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "TFW_WerdonActive",
+            "FromFile": "assets/Werdon_Animation.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "TFW_WerdonIcon",
+            "FromFile": "assets/Werdon_Head.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "TFW_Smoke",
+            "FromFile": "assets/Smoke_Animation_Tiles.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Werdon",
+            "FromFile": "assets/InvisiMan.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Werdon": {
+                    "DisplayName": "{{i18n: character.werdon.name}}",
+                    "DefaultMap": "WerdonForge",
+                    "DefaultPosition": { "X": 0, "Y": 0 },
+                    "HomeRegion": "Other",
+                    "CanSocialize": "FALSE",
+                    "CanBeRomanced": false,
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "SpawnIfMissing": false
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Werdon",
+            "Entries": {
+                "Introduction": " "
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Werdon_Body",
+            "FromFile": "assets/Werdon.png"
+        }
+    ]
+}

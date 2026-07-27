@@ -1,0 +1,15 @@
+{
+    "Format": "2.5.0",
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Mods\\blueberry.LoveOfCooking.Assets\\CookbookSprites",
+            "FromFile": "assets/cookbook-sprites.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Mods\\blueberry.LoveOfCooking.Assets\\Sprites",
+            "FromFile": "assets/mod-sprites.png"
+        }
+    ]
+}

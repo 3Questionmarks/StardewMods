@@ -1,0 +1,231 @@
+{
+  "Changes": [
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "{{ModId}}_Sirona": "{{i18n:Sirona.love}}/84 90 265 184 186 227 151 212 258 268 279 282 296 340 372 396 400 410 417 454 564 565 577 717 -27 814 724/{{i18n:Sirona.like}}/242 129 130 131 132 137 128 136 138 139 141 140 142 143 145 144 146 147 148 149 150 152 153 156 158 159 160 162 161 163 165 164 213 613 618 614 698 699 700 701 702 704 706 705 707 708 715 716 718 720 798 812 -4 -6 -12 -75 -80 -2 815/{{i18n:Sirona.dislike}}/219 225 732 766 767 769 795 799 800 -20 807 787 772/{{i18n:Sirona.hate}}/308 154 155 203 720 608 -5 796 733 729 730 725/{{i18n:Sirona.neutral}}/610 612 611 634 635 636 637 638 648 649 651 682 684 685 609 -7 -26 "
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/ConcessionTastes",
+      "Entries": {
+        "Sirona": {
+          "Name": "{{ModId}}_Sirona",
+          "LovedTags": [
+            "Joja Cola",
+            "Salmon Burger",
+            "Sour Slimes"
+          ],
+          "LikedTags": [
+            "Sweet",
+            "Salty"
+          ],
+          "DislikedTags": [
+            "Truffle Popcorn",
+            "Healthy",
+            "Panzanella Salad"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Movie Theatre Sirona",
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",
+      "Entries": {
+        "Sirona": {
+          "NPCName": "{{ModId}}_Sirona",
+          "Reactions": [
+            {
+              "Tag": "spring_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.0}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": "Fearing for his life, and demoralized by the relentless downpour, the brave little sapling begins to lose hope...",
+                  "Script": "message \"{{i18n:Sirona.Movie.1}}\"",
+                  "Text": ""
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.2}}"
+                }
+              },
+              "ID": "reaction_0"
+            },
+            {
+              "Tag": "summer_movie_0",
+              "Response": "dis klike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.3}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": "But what's this? Water's flying everywhere!",
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.4}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.5}}"
+                }
+              },
+              "ID": "reaction_0"
+            },
+            {
+              "Tag": "fall_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.6}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "message \"{{i18n:Sirona.Movie.7}}\"",
+                  "Text": ""
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.8}}"
+                }
+              },
+              "ID": "reaction_0"
+            },
+            {
+              "Tag": "winter_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.9}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.10}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.11}}"
+                }
+              },
+              "ID": "reaction_0"
+            },
+            {
+              "Tag": "spring_movie_1",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.12}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": "",
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.13}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.14}}"
+                }
+              },
+              "ID": "reaction_0"
+            },
+            {
+              "Tag": "summer_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.15}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.16}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.17}}"
+                }
+              },
+              "ID": "reaction_0"
+            },
+            {
+              "Tag": "fall_movie_1",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.18}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "message \"{{i18n:Sirona.Movies.19}}\"",
+                  "Text": ""
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.20}}"
+                }
+              },
+              "ID": "reaction_0"
+            },
+            {
+              "Tag": "winter_movie_1",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.21}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.22}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Sirona.Movies.23}}"
+                }
+              },
+              "ID": "reaction_0"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

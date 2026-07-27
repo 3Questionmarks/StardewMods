@@ -1,0 +1,577 @@
+{
+	"Changes": [
+		
+		//Patch Pierre's shop to include the catalogue 
+		{
+			"Action": "EditMap",
+			"Target": "Maps/SeedShop",
+			"FromFile": "assets/Maps/PierrePatch.tmx",
+			"ToArea": { "X": 4, "Y": 26, "Width": 1, "Height": 2 }
+		},
+		
+		//Patch Town Map - Y1, Above Blacksmith
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillyHouseExt.tmx",
+			"ToArea": { "X": 88, "Y": 60, "Width": 12, "Height": 15 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": false,
+				"Year": "1",
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		
+		//Patch Town Map - Y2, Above Blacksmith
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillyHouseExtY2.tmx",
+			"ToArea": { "X": 88, "Y": 60, "Width": 12, "Height": 15 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": false,
+				"Year | contains = 1": false,
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		
+		//Patch Town Map - Y1, Below Penny
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillyHouseExtV2.tmx",
+			"ToArea": { "X": 70, "Y": 69, "Width": 18, "Height": 18 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": false,
+				"Year": "1",
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		
+		//Patch Town Map - Y2, Below Penny
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillyHouseExtY2V2.tmx",
+			"ToArea": { "X": 70, "Y": 69, "Width": 18, "Height": 18 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": false,
+				"Year | contains = 1": false,
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		
+		//Patch Town Map - Y1 SVE, Above Blacksmith
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillySVE.tmx",
+			"ToArea": { "X": 87, "Y": 60, "Width": 15, "Height": 17 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+				"Year": "1",
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		
+		//Patch Town Map - Y2 SVE, Above Blacksmith
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillySVEY2.tmx",
+			"ToArea": { "X": 87, "Y": 60, "Width": 15, "Height": 17 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+				"Year | contains = 1": false,
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		
+		//Patch Town Map - Y1 SVE, Below Penny
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillySVEV2.tmx",
+			"ToArea": { "X": 70, "Y": 69, "Width": 17, "Height": 18 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+				"Year": 1,
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		
+		//Patch Town Map - Y2 SVE, Below Penny
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillySVEY2V2.tmx",
+			"ToArea": { "X": 70, "Y": 69, "Width": 17, "Height": 18 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+				"Year | contains = 1": false,
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		
+		//Patch Town Map -- Shop Vanilla, Above Blacksmith
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillyShop.tmx",
+			"ToArea": { "X": 88, "Y": 57, "Width": 12, "Height": 18 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": false,
+				"Year | contains = 1": false,
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		//Patch Town Map -- Shop Vanilla, Below Penny
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillyShopV2.tmx",
+			"ToArea": { "X": 70, "Y": 66, "Width": 18, "Height": 21 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": false,
+				"Year | contains = 1": false,
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		
+		//Patch Town Map -- Shop SVE, Above Blacksmith
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillyShopSVE.tmx",
+			"ToArea": { "X": 87, "Y": 57, "Width": 15, "Height": 20 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+				"Year | contains = 1": false,
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		
+		//Patch Town Map -- Shop SVE, Below Penny
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillySVEShopV2.tmx",
+			"ToArea": { "X": 70, "Y": 66, "Width": 18, "Height": 21 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+				"Year | contains = 1": false,
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		
+		//ADD WARPS TO HOUSE INTERIOR 
+		{
+			"LogName": "Warps for Above Blacksmith",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}.Tilly_TillyHouse",
+			"AddWarps": [
+				"7 15 Town 92 67",
+			],
+			"When": {
+				"Tilly's House Location": "Above Blacksmith",
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+			},
+		},
+		{
+			"LogName": "Warps for Below Penny",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}.Tilly_TillyHouse",
+			"AddWarps": [
+				"7 15 Town 76 77",
+			],
+			"When": {
+				"Tilly's House Location": "Below Penny",
+				"HasReadLetter | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+			},
+		},
+		
+		
+		//ADD WARPS FOR SHOP INTERIOR
+		{
+			"LogName": "Warps for Above Blacksmith",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}.Tilly_TillyShop",
+			"AddWarps": [
+				"7 17 Town 92 68",
+			],
+			"When": {
+				"Tilly's House Location": "Above Blacksmith",
+			},
+		},
+		{
+			"LogName": "Warps for Below Penny",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}.Tilly_TillyShop",
+			"AddWarps": [
+				"7 17 Town 81 77",
+			],
+			"When": {
+				"Tilly's House Location": "Below Penny",
+			},
+		},
+		
+		
+		//ADD LIGHTING TO EXT - Vanilla 
+		
+		//Regular House
+		{
+			   "LogName": "Reg Ext Lighting, Above Blacksmith",
+               "Action": "EditMap",
+               "Target": "Maps/Town",
+               "TextOperations": [
+                    {
+                         "Operation": "Append",
+                         "Target": [
+                              "MapProperties",
+                              "Light"
+                         ],
+                         "Value": "91 65 4 92 65 4 94 65 4 95 65 4 94 66 4 95 66 4",
+                         "Delimiter": " "
+                    },
+               ],
+			   "When": {
+					"HasFlag | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+					"Tilly's House Location": "Above Blacksmith",
+				},
+          },
+		  {
+			   "LogName": "Reg Ext Lighting, Below Penny",
+               "Action": "EditMap",
+               "Target": "Maps/Town",
+               "TextOperations": [
+                    {
+                         "Operation": "Append",
+                         "Target": [
+                              "MapProperties",
+                              "Light"
+                         ],
+                         "Value": "75 74 4 76 74 4 78 74 4 79 74 4 78 75 4 79 75 4",
+                         "Delimiter": " "
+                    },
+               ],
+			   "When": {
+					"HasFlag | contains = {{ModId}}.Tilly_GrandOpeningMail": false,
+					"Tilly's House Location": "Below Penny",
+				},
+          },
+		  
+		  //Shop 
+		  { 
+			"LogName": "Shop Ext Lighting, Above Blacksmith",
+               "Action": "EditMap",
+               "Target": "Maps/Town",
+               "TextOperations": [
+                    {
+                         "Operation": "Append",
+                         "Target": [
+                              "MapProperties",
+                              "Light"
+                         ],
+                         "Value": "91 61 4 92 61 4 91 62 4 92 62 4 94 61 4 95 61 4 94 62 4 95 62 4",
+                         "Delimiter": " "
+                    },
+               ],
+			   "When": {
+					"HasFlag | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+					"Tilly's House Location": "Above Blacksmith",
+				},
+          },
+		  { 
+			"LogName": "Shop Ext Lighting, Below Penny",
+               "Action": "EditMap",
+               "Target": "Maps/Town",
+               "TextOperations": [
+                    {
+                         "Operation": "Append",
+                         "Target": [
+                              "MapProperties",
+                              "Light"
+                         ],
+                         "Value": "80 70 4 81 70 4 80 71 4 81 71 4 83 69 4 84 69 4 83 70 4 84 70 4",
+                         "Delimiter": " "
+                    },
+               ],
+			   "When": {
+					"HasFlag | contains = {{ModId}}.Tilly_GrandOpeningMail": true,
+					"Tilly's House Location": "Below Penny",
+				},
+          },
+		
+		
+		//Load Maps - Interior
+		
+		{ // Reg House
+			"LogName": "Load Map Asset - Reg House",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}.Tilly_TillyHouse",
+			"FromFile": "assets/Maps/TillyHouseInt.tmx",
+			"Priority": "Medium",
+		},
+		
+		{ //Shop 
+			"LogName": "Load Map Asset - Renovated House",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}.Tilly_TillyHouse",
+			"FromFile": "assets/Maps/TillyHouseIntRe.tmx",
+			"When": {
+				"HasReadLetter": "{{ModId}}.Tilly_GrandOpeningMail",
+			},
+			"Priority": "High",
+		},
+	
+		{
+			"LogName": "Add Custom Location",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"{{ModId}}.Tilly_TillyHouse": {
+					"DisplayName": "Tilly's House",
+					"DefaultArrivalTile": {
+						"X": 7,
+						"Y": 13,
+					},
+					"ExcludeFromPathfinding": false,
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}.Tilly_TillyHouse",
+						"Type": null,
+						"AlwaysActive": false,
+					},
+					"FormerLocationNames": [ "Custom_NPCTilly_TillyHouse" ],
+					"CanPlantHere": null,
+					"ArtifactSpots": [],
+					"FishAreas": {},
+					"Fish": [],
+					"Forage": [],
+					"Music": [
+						{
+							"Id": "TillyTrack",
+							"Track": "playful",
+						}
+					],
+					
+				},
+			}
+		},
+		
+		//Load Maps - Shop Downstairs
+		
+		{
+			"LogName": "Load Map Asset",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}.Tilly_TillyShop",
+			"FromFile": "assets/Maps/TillyShopInt.tmx",
+		},
+	
+		{
+			"LogName": "Add Custom Location",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"{{ModId}}.Tilly_TillyShop": {
+					"DisplayName": "Tilly's Tea Shop",
+					"DefaultArrivalTile": {
+						"X": 7,
+						"Y": 15,
+					},
+					"ExcludeFromPathfinding": false,
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}.Tilly_TillyShop",
+						"Type": null,
+						"AlwaysActive": false,
+					},
+					"FormerLocationNames": [ "Custom_NPCTilly_TillyShop" ],
+					"CanPlantHere": null,
+					"ArtifactSpots": [],
+					"FishAreas": {},
+					"Fish": [],
+					"Forage": [],
+					"Music": [
+						{
+							"Id": "TillyTrack",
+							"Track": "50s",
+						}
+					],
+					
+				},
+			},
+		},
+		
+		//Add Map Strings
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries": {
+				"Wem.Tilly_PierrePatch": "{{i18n:Wem.Tilly_PierrePatch}}",
+				"Wem.Tilly_House1": "{{i18n:Wem.Tilly_House1}}",
+				"Wem.Tilly_House2": "{{i18n:Wem.Tilly_House2}}",
+				"Wem.Tilly_House3": "{{i18n:Wem.Tilly_House3}}",
+				"Wem.Tilly_House4": "{{i18n:Wem.Tilly_House4}}",
+				"Wem.Tilly_House5": "{{i18n:Wem.Tilly_House5}}",
+				"Wem.Tilly_House6": "{{i18n:Wem.Tilly_House6}}",
+				"Wem.Tilly_House7": "{{i18n:Wem.Tilly_House7}}",
+				"Wem.Tilly_House8": "{{i18n:Wem.Tilly_House8}}",
+				"Wem.Tilly_House9": "{{i18n:Wem.Tilly_House9}}",
+				"Wem.Tilly_House10": "{{i18n:Wem.Tilly_House10}}",
+				"Wem.Tilly_House11": "{{i18n:Wem.Tilly_House11}}",
+				"Wem.Tilly_House12": "{{i18n:Wem.Tilly_House12}}",
+				"Wem.Tilly_House13": "{{i18n:Wem.Tilly_House13}}",
+				"Wem.Tilly_House14": "{{i18n:Wem.Tilly_House14}}",
+				"Wem.Tilly_House15": "{{i18n:Wem.Tilly_House15}}",
+				"Wem.Tilly_House16": "{{i18n:Wem.Tilly_House16}}",
+				"Wem.Tilly_House17": "{{i18n:Wem.Tilly_House17}}",
+				"Wem.Tilly_House18": "{{i18n:Wem.Tilly_House18}}",
+				"Wem.Tilly_House19": "{{i18n:Wem.Tilly_House19}}",
+				"Wem.Tilly_House20": "{{i18n:Wem.Tilly_House20}}",
+				
+				"Wem.Tilly_Ext1": "{{i18n:Wem.Tilly_Ext1}}",
+				"Wem.Tilly_Ext2": "{{i18n:Wem.Tilly_Ext2}}",
+				
+				"Wem.Tilly_Shop1": "{{i18n:Wem.Tilly_Shop1}}",
+				"Wem.Tilly_Shop2": "{{i18n:Wem.Tilly_Shop2}}",
+				"Wem.Tilly_Shop3": "{{i18n:Wem.Tilly_Shop3}}",
+				"Wem.Tilly_Shop4": "{{i18n:Wem.Tilly_Shop4}}",
+				"Wem.Tilly_Shop5": "{{i18n:Wem.Tilly_Shop5}}",
+				"Wem.Tilly_Shop6": "{{i18n:Wem.Tilly_Shop6}}",
+				"Wem.Tilly_Shop7": "{{i18n:Wem.Tilly_Shop7}}",
+				"Wem.Tilly_Shop8": "{{i18n:Wem.Tilly_Shop8}}",
+
+
+			}
+		},
+		
+		//Garbage Can Data Tilly
+		{
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+            "TargetField": [ "GarbageCans" ],
+            "Entries": {
+                "{{ModId}}.Tilly_Can": {
+                    "Items": [
+                        {
+							"IgnoreBaseChance": true,
+                            "ID": "{{ModId}}.Tilly_BrokenGlasses",
+                            "Condition": "RANDOM 0.05",
+                            "ItemId": "(O)170"
+                        },
+                        {
+							"IgnoreBaseChance": true,
+                            "ID": "{{ModId}}.Tilly_BrokenCD",
+							"Condition": "RANDOM 0.05",
+                            "ItemID": "(O)171"
+                        },
+						{
+							"IgnoreBaseChance": true,
+                            "ID": "{{ModId}}.Tilly_PaleAle",
+							"Condition": "RANDOM 0.1416",
+                            "ItemID": "(O)303",
+                        },
+						{
+							"IgnoreBaseChance": true,
+                            "ID": "{{ModId}}.Tilly_Beer",
+							"Condition": "RANDOM 0.1416",
+                            "ItemID": "(O)346",
+                        },
+						{
+							"IgnoreBaseChance": true,
+                            "ID": "{{ModId}}.Tilly_CranSauce",
+							"Condition": "RANDOM 0.1416",
+                            "ItemID": "(O)238",
+                        },
+						{
+							"IgnoreBaseChance": true,
+                            "ID": "{{ModId}}.Tilly_Pickles",
+							"Condition": "RANDOM 0.1416",
+                            "ItemID": "(O)342",
+                        },
+						{
+							"IgnoreBaseChance": true,
+                            "ID": "{{ModId}}.Tilly_Weeds",
+							"Condition": "RANDOM 0.1416",
+                            "ItemID": "(O)677",
+                        },
+						{
+							"IgnoreBaseChance": true,
+                            "ID": "{{ModId}}.Tilly_RottenPlant",
+							"Condition": "RANDOM 0.1416",
+                            "ItemID": "(O)748",
+                        },
+                    ]
+                }
+            }
+        },
+		
+		//Load Map for Tilly's Island Picnic
+		{ 
+			"LogName": "Load Map Asset - Island Picnic",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}.Tilly_TillyPicnic",
+			"FromFile": "assets/Maps/TillyPicnic.tmx",
+		},
+		
+		//Load Map for Tilly's Pottery Painting Date
+		{ 
+			"LogName": "Load Map Asset - Pottery Date",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}.Tilly_PotteryDate",
+			"FromFile": "assets/Maps/PotteryDate.tmx",
+		},
+		
+		//Load Map for Tilly's Ad Event
+		{ 
+			"LogName": "Load Map Asset - Tilly Ad Event",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}.Tilly_AdEvent",
+			"FromFile": "assets/Maps/TillyAdEvent.tmx",
+		},
+		
+		//Load Map for Morris Defeated Event
+		{ 
+			"LogName": "Load Map Asset - Tilly Ad Event",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}.Tilly_NoMorris",
+			"FromFile": "assets/Maps/JojaNoMorris.tmx",
+		},
+		
+		
+		//LNY Map Edit
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillyStand.tmx",
+			"ToArea": { "X": 86, "Y": 89, "Width": 5, "Height": 4 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": false,
+				"Season": "spring",
+				"Day": 8,
+				"Lunar New Year Stand": true,
+			},
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/TillyStandSVE.tmx",
+			"ToArea": { "X": 86, "Y": 89, "Width": 5, "Height": 4 },
+			"When": {
+				"HasMod | contains = FlashShifter.StardewValleyExpandedCP": true,
+				"Season": "spring",
+				"Day": 8,
+				"Lunar New Year Stand": true,
+			},
+		},
+	
+	]
+	
+}

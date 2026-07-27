@@ -1,0 +1,97 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.SeaWornSteelEdge": {
+          "Texture": "Mods/CapeStardew/Weapons/Sea Worn Steel Edge",
+          "SpriteIndex": 0,
+          "Name": "Sea Worn Steel Edge",
+          "DisplayName": "{{i18n:Sea-Worn-Steel-Edge_Translated}}",
+          "Description": "{{i18n:Sea-Worn-Steel-Edge_Description_Translated}}",
+          "Type": "0",
+          "Category": -98,
+          "Price": 3000,
+          "MinDamage": 70,
+          "MaxDamage": 85,
+          "Knockback": 0.4,
+          "Speed": -1,
+          "Precision": 20,
+          "Defense": 2,
+          "AreaOfEffect": 0,
+          "CritChance": 0.02,
+          "CritMultiplier": 2.5,
+          "CanPurchase": false
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Vanilla"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.SeaWornSteelEdge": {
+          "Texture": "Mods/CapeStardew/Weapons/Sea Worn Steel Edge",
+          "SpriteIndex": 0,
+          "Name": "Sea Worn Steel Edge",
+          "DisplayName": "{{i18n:Sea-Worn-Steel-Edge_Translated}}",
+          "Description": "{{i18n:Sea-Worn-Steel-Edge_Description_Translated}}",
+          "Type": "0",
+          "Category": -98,
+          "Price": 3000,
+          "MinDamage": 78,
+          "MaxDamage": 92,
+          "Knockback": 0.06,
+          "Speed": -2,
+          "Precision": 40,
+          "Defense": 6,
+          "AreaOfEffect": 0,
+          "CritChance": 0.04,
+          "CritMultiplier": 2.6,
+          "CanPurchase": false
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Balanced"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Cape.SeaWornSteelEdge": {
+          "Texture": "Mods/CapeStardew/Weapons/Sea Worn Steel Edge",
+          "SpriteIndex": 0,
+          "Name": "Sea Worn Steel Edge",
+          "DisplayName": "{{i18n:Sea-Worn-Steel-Edge_Translated}}",
+          "Description": "{{i18n:Sea-Worn-Steel-Edge_Description_Translated}}",
+          "Type": "0",
+          "Category": -98,
+          "Price": 3000,
+          "MinDamage": 90,
+          "MaxDamage": 110,
+          "Knockback": 0.08,
+          "Speed": -1,
+          "Precision": 44,
+          "Defense": 8,
+          "AreaOfEffect": 0,
+          "CritChance": 0.05,
+          "CritMultiplier": 2.8,
+          "CanPurchase": false
+        }
+      },
+      "When": {
+        "WeaponsBalance": "Stronger"
+      }
+    },
+
+{
+      "Action": "Load",
+      "Target": "Mods/CapeStardew/Weapons/Sea Worn Steel Edge",
+      "FromFile": "Weapons/{{TargetWithoutPath}}/weapon.png"
+    }
+  ]
+}

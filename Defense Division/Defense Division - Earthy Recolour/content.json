@@ -1,0 +1,37 @@
+{
+  "Format": "2.5.0",	
+	"Changes": [
+      {
+			"Action": "EditImage",
+			"Target": "Maps/spring_Casa, Maps/summer_Casa, Maps/fall_Casa, Maps/winter_Casa",
+			"FromFile": "Ativos/Tile/{{TargetWithoutPath}}.png",
+			"PatchMode":"Overlay"
+       },
+	   {
+			"Action": "EditImage",
+			"Target": "LooseSprites/map, LooseSprites/map_summer, LooseSprites/map_fall, LooseSprites/map_winter",
+			"FromFile": "Ativos/WordMap/Mapa_Casa.Cx_{{season}}.png",
+			"ToArea": {	"X": 147,	"Y": 76,	"Width": 10,	"Height": 10	},
+			"PatchMode": "Overlay",
+			"When": { "HasMod: |contains=ReMapping.Vlgor": false }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map, LooseSprites/map_summer, LooseSprites/map_fall, LooseSprites/map_winter",
+			"FromFile": "Ativos/WordMap/Mapa_Casa.Loja.Comu.Cx_{{season}}.png",
+			"ToArea": {	"X": 147,	"Y": 76,	"Width": 10,	"Height": 10	},
+			"PatchMode": "Overlay",
+			"When": { "HasMod: |contains=ReMapping.Vlgor": false, "HasSeenEvent |contains=61743015": true },
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map, LooseSprites/map_summer, LooseSprites/map_fall, LooseSprites/map_winter",
+			"FromFile": "Ativos/WordMap/Mapa_Casa.Loja.Joja.Cx_{{season}}.png",
+			"ToArea": {	"X": 147,	"Y": 76,	"Width": 10,	"Height": 10	},
+			"PatchMode": "Overlay",
+			"When": { "HasMod: |contains=ReMapping.Vlgor": false, "HasSeenEvent |contains=61743017": true },
+			"Update": "OnLocationChange"
+		}
+	]
+}

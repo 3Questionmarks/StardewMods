@@ -1,0 +1,143 @@
+{
+  "Changes": [
+
+///SeedShop//
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "When": {
+        "HasSeenEvent |contains=14635124": "true"
+      },
+      "TargetField": [
+        "SeedShop",
+        "Items"
+      ],
+      "Entries": {
+        "Cape.StickyRiceFlour": {
+          "Id": "Cape.StickyRiceFlour",
+          "ItemId": "Cape.StickyRiceFlour",
+          "Price": "200",
+          "IsRecipe": "false"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "When": {
+        "HasSeenEvent |contains=14635124": "true"
+      },
+      "TargetField": [
+        "SeedShop",
+        "Items"
+      ],
+      "Entries": {
+        "Cape.StickyRiceFlourRecipe": {
+          "Id": "Cape.StickyRiceFlourRecipe",
+          "ItemId": "Cape.StickyRiceFlour",
+          "Price": "300",
+          "IsRecipe": "true"
+        }
+      }
+    },
+
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "When": {
+        "HasSeenEvent |contains=14635124": "true"
+      },
+      "TargetField": [
+        "SeedShop",
+        "Items"
+      ],
+      "Entries": {
+        "Cape.GumiSweetRice": {
+          "Id": "Cape.GumiSweetRice",
+          "ItemId": "Cape.GumiSweetRice",
+          "Price": "150",
+          "IsRecipe": "false"
+        }
+      }
+    },
+
+
+
+
+  {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "When": {
+        "HasSeenEvent |contains=146356991": "true"
+      },
+      "TargetField": [
+        "SeedShop",
+        "Items"
+      ],
+      "Entries": {
+        "Cape.CornSilk": {
+          "Id": "Cape.CornSilk",
+          "ItemId": "Cape.CornSilk",
+          "Price": "80",
+          "IsRecipe": "false"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "When": {
+        "HasSeenEvent |contains=146356991": "true"
+      },
+      "TargetField": [
+        "SeedShop",
+        "Items"
+      ],
+      "Entries": {
+        "Cape.CuachalalateBark": {
+          "Id": "Cape.CuachalalateBark",
+          "ItemId": "Cape.CuachalalateBark",
+          "Price": "100",
+          "IsRecipe": "false"
+        }
+      }
+    },
+   {
+  "LogName": "SeedShopShavegrass",
+  "Action": "EditData",
+  "Target": "Data/Shops",
+  "TargetField": ["SeedShop","Items"],
+  "Entries": {
+    "Cape.Shavegrass": {
+      "Condition": "Season summer fall winter",
+      "Id": "Cape.Shavegrass",
+      "ItemId": "Cape.Shavegrass",
+      "AvailableStock": 10,
+      "AvailableStockLimit": "Player",
+      "Price": 390,
+      "MinStack": 3
+    }
+  }
+},
+{
+  "LogName": "SeedShopUvaUrsi",
+  "Action": "EditData",
+  "Target": "Data/Shops",
+  "TargetField": [
+    "SeedShop",
+    "Items"
+  ],
+  "Entries": {
+    "Cape.UvaUrsi": {
+      "Condition": "Season spring summer fall",
+      "Id": "Cape.UvaUrsi",
+      "ItemId": "Cape.UvaUrsi",
+      "AvailableStock": 8,
+      "AvailableStockLimit": "Global",
+      "Price": 690,
+      "MinStack": 3
+    }
+  }
+},
+]
+}

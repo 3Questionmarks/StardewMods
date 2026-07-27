@@ -1,0 +1,35 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "Cape.SecretCaveKey": {
+          "Texture": "Mods/CapeStardew/Objects/Secret Cave Key",
+          "SpriteIndex": 0,
+          "Price": 0,
+          "Name": "Secret Cave Key",
+          "Description": "{{i18n:Secret-Cave-Key_Description_Translated}}",
+          "Type": "Basic",
+          "Category": 0,
+          "CategoryTextOverride": "Key",
+          "CanTrash": false,
+          "CanSell": true,
+          "TranslationKey": "object.Secret-Cave-Key",
+          "NameLocalization": {},
+          "DescriptionLocalization": {},
+          "ContextTags": [
+            "color_yellow",
+            "capequest_item"
+          ],
+          "DisplayName": "{{i18n:Secret-Cave-Key_Translated}}"
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/CapeStardew/Objects/Secret Cave Key",
+      "FromFile": "Objects/{{TargetWithoutPath}}/object.png"
+    }
+  ]
+}

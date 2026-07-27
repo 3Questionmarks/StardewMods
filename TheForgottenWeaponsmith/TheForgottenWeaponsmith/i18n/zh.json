@@ -1,0 +1,125 @@
+{
+    "mod.name": "被遗忘的武器匠",
+
+    "config.section.gameplay": "游戏玩法",
+    "config.section.debug": "Debug",
+
+    "config.debuglogging.name": "启用Debug日志",
+    "config.debuglogging.tooltip": "在SMAPI控制台中启用debug日志记录",
+
+    "config.donatableicon.name": "可捐赠图标模式",
+    "config.donatableicon.tooltip": "悬停在可捐赠武器上时，铁匠铺图标的显示方式。",
+    "config.donatableicon.cornerbox": "角落方框",
+    "config.donatableicon.tooltipicon": "提示框图标",
+    "config.donatableicon.tooltipbottom": "提示框图标（靠下）",
+    "config.donatableicon.off": "关闭",
+
+    "config.forcedonationmenu.name": "强制捐赠样式",
+    "config.forcedonationmenu.tooltip": "强制使用特定的捐赠样式。“常规”会在桌子处打开捐赠菜单，“安卓”会显示提示，点击沃登进行捐赠。“自动”会根据平台自动检测。",
+    "config.forcedonationmenu.none": "自动",
+    "config.forcedonationmenu.android": "安卓",
+    "config.forcedonationmenu.regular": "标准",
+
+    "config.trackermenukey.name": "追踪菜单快捷键",
+    "config.trackermenukey.tooltip": "打开武器捐赠追踪菜单的快捷键。",
+
+    "config.revealundiscoverednames.name": "显示未发现武器名称",
+    "config.revealundiscoverednames.tooltip": "启用后，会显示尚未捐赠的武器名称，而非？？？。",
+
+    "config.enableforgeexitoffset.name": "启用锻造室出口偏移",
+    "config.enableforgeexitoffset.tooltip": "如果你在离开锻造室时遇到画面闪烁，请关闭此选项。",
+
+    "config.section.restrictions": "限制选项",
+
+    "config.tier2weaponupgrade.name": "第 2 阶：武器强化",
+    "config.tier2weaponupgrade.tooltip": "禁用后，沃登的复刻品将不再获得同类武器中最强属性加成。",
+
+    "config.tier3forgeenchant.name": "第 3 阶：锻造附魔",
+    "config.tier3forgeenchant.tooltip": "禁用后，沃登的复刻品将不再获得随机锻造附魔。",
+
+    "config.tier4firstinnate.name": "第 4 阶：第一先天属性",
+    "config.tier4firstinnate.tooltip": "禁用后，沃登的复刻品将不再获得第一项随机先天属性。",
+
+    "config.tier5donationscaling.name": "第 5 阶：捐赠加成",
+    "config.tier5donationscaling.tooltip": "禁用后，沃登的复刻品将不再根据你的总捐赠数获得额外伤害和速度加成。",
+
+    "config.tier6secondinnate.name": "第 6 阶：第二先天属性",
+    "config.tier6secondinnate.tooltip": "禁用后，沃登的复刻品将不再获得第二项随机先天属性。",
+
+    "config.allowmoddedenchants.name": "模组武器附魔",
+    "config.allowmoddedenchants.tooltip": "启用后，捐赠给沃登的模组武器可以获得锻造附魔和先天属性（属性加成仍仅限于原版武器）。",
+
+    "config.allowmoddedstatboost.name": "模组武器属性加成",
+    "config.allowmoddedstatboost.tooltip": "启用后，捐赠给沃登的模组武器可以获得属性加成和捐赠伤害加成。",
+
+    "location.werdon.writing.unknown": "机器背面刻着奇怪的符号。你看不懂。",
+    "location.werdon.writing.translated": "如遇能源中断：将火水晶置入中央舱室。",
+    "location.werdon.activated": "有什么东西在里面苏醒了...也许你应该先出去再回来。",
+
+    "location.jailbar.locked": "看来这些铁栅栏暂时不会为你打开...",
+
+    "dialogue_water_box": "这水不知道为什么触手冰凉？",
+    "dialogue_anvil": "每当你靠近铁砧的金属时，都会感到一阵微麻！",
+    "dialogue_spare": "看起来它被当作备件使用过。",
+    "dialogue_statue": "你感觉到雕像在注视着你。",
+
+    "dialogue_chest": "这个以后可能会有用。",
+    "dialogue_chest_empty": "里面是空的。",
+    "dialogue_chest_ready": "把一件武器放进去，让沃登摆弄一番。",
+    "dialogue_chest_skinned": "这把武器已经受过锻造炉的洗礼了——沃登不会再碰它。",
+    "dialogue_chest_confirm": "要把你的{{weaponName}}放进箱子里让沃登重铸吗？",
+    "dialogue_chest_takeback": "要把你的{{weaponName}}从箱子里取回来吗？",
+    "dialogue_chest_locked": "看来你得先买回你留给沃登的上一把武器，他才会接受新的。",
+    "dialogue_chest_not_donated": "沃登不会重铸一把他没见过捐赠记录的武器。",
+    "dialogue_chest_confirm_yes": "好的",
+    "dialogue_chest_confirm_no": "算了",
+
+    "menu.donate.title": "捐赠一件武器",
+    "menu.donate.action": "捐赠",
+
+    "shop.desk.prompt": "你想做什么？",
+    "shop.desk.donate": "捐赠一件武器",
+    "shop.desk.adroid": "在桌子后面捐赠武器",
+    "shop.desk.check": "查看已捐赠物品",
+    "shop.desk.shop": "浏览沃登的货物",
+    "shop.desk.empty": "货架已空，{{days}}天后再来看看！",
+    "shop.desk.leave": "算了",
+
+    "iteract.android": "点击沃登即可捐赠手持物品！",
+
+    "source.tracker": "追踪菜单",
+    "source.vanilla": "原版武器",
+    "source.modded": "模组武器",
+
+    "ui.hover.locked": "锁定至{{tier}}阶解锁",
+    "ui.tier": "{{tier}}阶",
+
+    "ui.button.back": "返回",
+    "ui.tracker.notdonated": "尚未捐赠。",
+
+    "werdon.intro.line1": "启动完成。",
+    "werdon.intro.line2": "啊，唤醒我系统的人。感谢你的点火。$2",
+    "werdon.intro.line3": "嗯...",
+    "werdon.intro.line4": "奇怪，你不是矮人族，却能听懂我的方言。$1",
+    "werdon.intro.line5": "作为你唤醒我的回报，我会为你说明眼前所见的一切。",
+    "werdon.intro.line6": "我叫沃登，是一台自动化武器锻造师。",
+    "werdon.intro.line7": "这座锻造炉曾在对抗暗影人的战争中使用，但看来在我休眠期间，那场战争已经结束了。",
+    "werdon.intro.line8": "看来我的武器制作数据已经丢失了...$1",
+    "werdon.intro.line9": "也许你能助我一臂之力？$1",
+    "werdon.intro.line10": "把武器带给我，我可以通过研究它们来恢复数据。",
+    "werdon.intro.line11": "在我全盛时期，我制作过强大的附魔物品。不知你是否感兴趣？$1",
+    "werdon.intro.line12": "很好。那我等候你的归来。$2",
+
+    "werdon.active.line1": "这些武器已编录在案，妥善保存。",
+    "werdon.active.line2": "我的锻造炉已准备就绪，我亦然。",
+    "werdon.active.line3": "我有能力用金币来转化材料。",
+
+    "hud.tiershop.tier1": "沃登已经开始锻造你所捐赠武器的复刻品了。",
+    "hud.tiershop.tier2": "沃登的复刻品现在变得更加坚固了。",
+    "hud.tiershop.tier3": "沃登已经开始在复刻品中融入附魔了。",
+    "hud.tiershop.tier4": "沃登的复刻品开始拥有自己的先天属性了。",
+    "hud.tiershop.tier5": "沃登不断增长的收藏正在磨砺他的工艺。",
+    "hud.tiershop.tier6": "沃登的复刻品正在达到它们前所未有的巅峰形态。",
+
+    "hud.wishitem.set": "沃登注意到了你对{{weaponName}}的兴趣。"
+}

@@ -1,0 +1,75 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/Beach",
+        "Entries":
+    {
+    //Sam 5-Heart Event: "Big Fish, Small Pond"
+    "{{ModId}}_E05/F/f Sam 1250/t 1700 2000/e {{ModId}}_E04/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest":"
+    echos/
+    19 25/
+    farmer 25 15 2 Sam 19 24 2/
+    skippable/
+    move farmer 0 8 3/
+    pause 1500/
+    move farmer -5 0 2/
+    move farmer 0 1 3/
+    pause 600/
+    faceDirection Sam 1/
+    pause 200/
+    speak Sam \"{{i18n:E05.001}}\"/
+    pause 500/
+    faceDirection Sam 2/
+    pause 300/
+    speak Sam \"{{i18n:E05.002}}\"/
+    pause 200/
+    faceDirection farmer 2/
+    pause 100/
+    question null \"{{i18n:E05.003}}\"/
+    pause 200/
+    speak Sam \"{{i18n:E05.004}}\"/
+    pause 200/
+    speak Sam \"{{i18n:E05.005}}\"/
+    pause 800/
+    speak Sam \"{{i18n:E05.006}}\"/
+    pause 700/
+    speak Sam \"{{i18n:E05.007}}\"/
+    pause 400/
+    speak Sam \"{{i18n:E05.008}}\"/
+    pause 400/
+    speak Sam \"{{i18n:E05.009}}\"/
+    pause 600/
+    emote Sam {{pause}}/
+    pause 400/
+    speak Sam \"{{i18n:E05.010}}\"/
+    pause 300/
+    emote Sam {{sad}}/
+    pause 200/
+    speak Sam \"{{i18n:E05.011}}\"/
+    pause 300/
+    quickQuestion {{i18n:E05.012}}(break)pause 500\\speak Sam \"{{i18n:E05.013}}\"(break)pause 500\\speak Sam \"{{i18n:E05.014}}\"(break)pause 500\\speak Sam \"{{i18n:E05.015}}\"/
+    pause 500/
+    faceDirection Sam 1/
+    pause 200/
+    faceDirection farmer 3/
+    speak Sam \"{{i18n:E05.016}}\"/
+    pause 100/
+    emote farmer {{happy}}/
+    pause 100/
+    speak Sam \"{{i18n:E05.017}}\"/
+    pause 100/
+    emote Sam {{happy}}/
+    pause 100/
+    speak Sam \"{{i18n:E05.018}}\"/
+    pause 300/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    end dialogue Sam \"{{i18n:E05.019}}\"/
+    ",
+    },
+},
+
+    ]
+}

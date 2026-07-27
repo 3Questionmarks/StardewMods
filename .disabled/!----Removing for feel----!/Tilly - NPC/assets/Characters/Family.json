@@ -1,0 +1,244 @@
+{
+	"Changes": [	
+	{
+	  // Loading Image Assets 
+      "LogName": "Rebecca Sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}.Rebecca",
+      "FromFile": "assets/img/MamaSheet.png"
+    },
+	
+    {
+      "LogName": "Rebecca Portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}.Rebecca",
+      "FromFile": "assets/img/MamaPortrait.png"
+    },
+	
+	{
+      "LogName": "Benjamin Sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}.Benjamin",
+      "FromFile": "assets/img/PapaSheet.png"
+    },
+	
+    {
+      "LogName": "Benjamin Portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}.Benjamin",
+      "FromFile": "assets/img/PapaPortrait.png"
+    },
+	
+	{
+      "LogName": "Landon Sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}.Landon",
+      "FromFile": "assets/img/BroSheet.png"
+    },
+	
+    {
+      "LogName": "Benjamin Portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}.Landon",
+      "FromFile": "assets/img/BroPortrait.png"
+    },
+	
+	{ // Manifest Mom
+	  "LogName": "NPC Manifestation",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "{{ModId}}.Rebecca": {
+			"DisplayName": "{{i18n:Wem.Bundle.Tilly_RebeccaDisplayName}}",
+			"HomeRegion": "{{ModId}}.StorageWarp",
+			"Gender": "Female",
+			"Age": "Adult",
+			"Manner": "Neutral",
+			"SocialAnxiety": "Neutral",
+			"Optimism": "Negative",
+			"CanSocialize": false,
+			"CanBeRomanced": false,
+			"CanReceiveGifts": false,
+			"Calendar": "HiddenAlways",
+			"SocialTab": "HiddenAlways",
+			"IntroductionsQuest": false,
+			"Appearance": [
+				{ 
+					"Id": "Default",
+					"Portrait": "Portraits/{{ModId}}.Rebecca",
+					"Sprite": "Characters/{{ModId}}.Rebecca",
+					"Precedence": 1
+				},
+			],
+			"Home": [
+			  {
+				"Id": "Default",
+				"Condition": null,
+				"Location": "{{ModId}}.StorageWarp",
+				"Tile": {
+				  "X": 0,
+				  "Y": 1
+				},
+				"Direction": "down"
+			  }
+			],
+		}
+      },
+    },
+	
+	{ // Manifest Dad
+	  "LogName": "NPC Manifestation",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "{{ModId}}.Benjamin": {
+			"DisplayName": "{{i18n:Wem.Bundle.Tilly_BenjaminDisplayName}}",
+			"HomeRegion": "{{ModId}}.StorageWarp",
+			"Gender": "Male",
+			"Age": "Adult",
+			"Manner": "Neutral",
+			"SocialAnxiety": "Neutral",
+			"Optimism": "Neutral",
+			"CanSocialize": false,
+			"CanBeRomanced": false,
+			"CanReceiveGifts": false,
+			"Calendar": "HiddenAlways",
+			"SocialTab": "HiddenAlways",
+			"IntroductionsQuest": false,
+			"Appearance": [
+				{ 
+					"Id": "Default",
+					"Portrait": "Portraits/{{ModId}}.Benjamin",
+					"Sprite": "Characters/{{ModId}}.Benjamin",
+					"Precedence": 1
+				},
+			],
+			"Home": [
+			  {
+				"Id": "Default",
+				"Condition": null,
+				"Location": "{{ModId}}.StorageWarp",
+				"Tile": {
+				  "X": 0,
+				  "Y": 1
+				},
+				"Direction": "down"
+			  }
+			],
+		}
+      },
+    },
+	
+	{ // Manifest Landon
+	  "LogName": "NPC Manifestation",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "{{ModId}}.Landon": {
+			"DisplayName": "{{i18n:Wem.Bundle.Tilly_LandonDisplayName}}",
+			"HomeRegion": "{{ModId}}.StorageWarp",
+			"Gender": "Male",
+			"Age": "Adult",
+			"Manner": "Neutral",
+			"SocialAnxiety": "Neutral",
+			"Optimism": "Neutral",
+			"CanSocialize": false,
+			"CanBeRomanced": false,
+			"CanReceiveGifts": false,
+			"Calendar": "HiddenAlways",
+			"SocialTab": "HiddenAlways",
+			"IntroductionsQuest": false,
+			"Appearance": [
+				{ 
+					"Id": "Default",
+					"Portrait": "Portraits/{{ModId}}.Landon",
+					"Sprite": "Characters/{{ModId}}.Landon",
+					"Precedence": 1
+				},
+			],
+			"Home": [
+			  {
+				"Id": "Default",
+				"Condition": null,
+				"Location": "{{ModId}}.StorageWarp",
+				"Tile": {
+				  "X": 0,
+				  "Y": 1
+				},
+				"Direction": "down"
+			  }
+			],
+		}
+      },
+    },
+
+	//Add Storage Location
+		{
+			"LogName": "Load Map Asset",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}.StorageWarp",
+			"FromFile": "assets/Maps/StorageWarp.tmx",
+		},
+	
+		{
+			"LogName": "Add Custom Location",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"{{ModId}}.StorageWarp": {
+					"DisplayName": "Storage Warp",
+					"DefaultArrivalTile": {
+						"X": 0,
+						"Y": 1,
+					},
+					"ExcludeFromPathfinding": true,
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}.StorageWarp",
+						"Type": null,
+						"AlwaysActive": false,
+					},
+					"CanPlantHere": null,
+					"ArtifactSpots": [],
+					"FishAreas": {},
+					"Fish": [],
+					"Forage": [],
+					
+				},
+			},
+		},	
+
+	//NYAPU-STYLE PORTRAITS 
+
+	{
+		"LogName": "Edit Rebecca's's Default Portraits",
+		"Action": "EditImage",
+		"Priority": "Late + 3",
+		"Target": "Portraits/{{ModId}}.Rebecca",
+		"FromFile": "assets/img/MamaNyapu.png",
+		"When": {
+				"Nyapu-style Portraits": true,
+			},		
+	},
+	{
+		"LogName": "Edit Benjamin's's Default Portraits",
+		"Action": "EditImage",
+		"Priority": "Late + 3",
+		"Target": "Portraits/{{ModId}}.Benjamin",
+		"FromFile": "assets/img/PapaNyapu.png",
+		"When": {
+				"Nyapu-style Portraits": true,
+			},		
+	},
+	{
+		"LogName": "Edit Landon's's Default Portraits",
+		"Action": "EditImage",
+		"Priority": "Late + 3",
+		"Target": "Portraits/{{ModId}}.Landon",
+		"FromFile": "assets/img/BroNyapu.png",
+		"When": {
+				"Nyapu-style Portraits": true,
+			},		
+	},
+
+	]
+}

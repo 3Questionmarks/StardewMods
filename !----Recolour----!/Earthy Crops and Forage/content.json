@@ -1,0 +1,156 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Format": "2.9.0",
+    "ConfigSchema": {
+        "Crops recoloured":{
+            "Default": "true",
+            "AllowValues": "true, false",
+            "Description": "Recolours crop item sprites."
+        },
+        "Crop stages recoloured": {
+            "Default": "true",
+            "AllowValues": "true, false",
+            "Description": "Recolours the different growth stages of crops and flowers."
+        },
+        "Giant crops recoloured": {
+            "Default": "true",
+            "AllowValues": "true, false",
+            "Description": "Recolours the giant cauliflower, melon, and pumpkin crops."
+        },
+        "Flowers recoloured": {
+            "Default": "true",
+            "AllowValues": "true, false",
+            "Description": "Recolours flower item sprites."
+        },
+        "Forage recoloured":{
+            "Default": "true",
+            "AllowValues": "true, false",
+            "Description": "Recolours forage."
+        },
+        "Fruits recoloured": {
+            "Default": "true",
+            "AllowValues": "true, false",
+            "Description": "Recolours the fruit from fruit trees. Note: does not recolour the trees themselves."
+        },
+        "Hay recoloured":{
+            "Default": "Earthy",
+            "AllowValues": "Wheat, Earthy, Vanilla",
+            "Description": "Whether hay should be recoloured to match the wheat recolour from this mod (Wheat), the hay on the coop/barn floor in Earthy Recolour (Earthy), or remain Vanilla."
+        },
+        "Hay additions": {
+            "Default": "Earthy",
+            "AllowValues": "Wheat, Earthy, Vanilla",
+            "Description": "Whether hay should be recoloured to match the wheat recolour from this mod (Wheat), the hay on the coop/barn floor in Earthy Recolour (Earthy), or remain Vanilla. Affects the hay visible in the hay bale inside the barn/coop, the hay in the the egg incubator, the Ornamental Hay Bale, and the Straw Floor decorative paths."
+        }
+    },
+    "Changes": [
+        //Crops
+        {
+            "Action": "Include",
+            "FromFile": "data/crops.json",
+            "When": {"Crops recoloured":"true"}
+        },
+        //Crop growth stages
+        {
+            "Action": "Include",
+            "FromFile": "data/cropstages.json",
+            "When": {"Crop stages recoloured":"true"}
+        },
+        //Giant crops
+        {
+            "Action": "EditImage",
+            "Target": "TileSheets/crops",
+            "FromFile": "assets/Overlays/GiantCrops.png",
+            "Priority": "Early",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 112,
+                "Y": 512,
+                "Width": 144,
+                "Height": 64
+            },
+            "When": {"Giant crops recoloured":"true"}
+        },
+        //Flowers
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/overlays/Flowers.png",
+            "PatchMode": "Overlay",
+            "Priority": "Early",
+            "When": {"Flowers recoloured":"true"}
+        },
+        //Forage
+        {
+            "Action": "Include",
+            "FromFile": "data/forage.json",
+            "When": {"Forage recoloured":"true"}
+        },
+        //Fruit
+        {
+            "Action": "Include",
+            "FromFile": "data/fruit.json",
+            "When": {"Fruits recoloured":"true"}
+        },
+        //Hay
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Hay_wheat.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 160,
+                "Y": 112,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {"Hay recoloured":"Wheat"}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/springobjects",
+            "FromFile": "assets/Replacers/Hay_earthy.png",
+            "Priority": "Early",
+            "ToArea": {
+                "X": 160,
+                "Y": 112,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {"Hay recoloured":"Earthy"}
+        },
+        //Hay additions
+        {
+            "Action": "EditImage",
+            "Target": "TileSheets/Craftables",
+            "FromFile": "assets/Overlays/CraftablesHay_wheat.png",
+            "PatchMode": "Overlay",
+            "Priority": "Early",
+            "When": {"Hay additions":"Wheat"}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "TileSheets/Craftables",
+            "FromFile": "assets/Overlays/CraftablesHay_Earthy.png",
+            "PatchMode": "Overlay",
+            "Priority": "Early",
+            "When": {"Hay additions":"Earthy"}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "TerrainFeatures/Flooring, TerrainFeatures/Flooring_winter, TileSheets/Floors",
+            "FromFile": "assets/Overlays/{{TargetWithoutPath}}_Wheat.png",
+            "PatchMode": "Overlay",
+            "Priority": "Early",
+            "When": {"Hay additions": "Wheat"}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "TerrainFeatures/Flooring, TerrainFeatures/Flooring_winter, TileSheets/Floors",
+            "FromFile": "assets/Overlays/{{TargetWithoutPath}}_Earthy.png",
+            "PatchMode": "Overlay",
+            "Priority": "Early",
+            "When": {"Hay additions": "Earthy"}
+        }
+    ]
+}

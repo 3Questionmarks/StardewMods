@@ -1,0 +1,23 @@
+{   
+  "Changes": [
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Jas",
+      "FromFile": "assets/CharacterFiles/OverworldSprites/Jas/Jas.png",
+      "Patchmode": "Overlay"
+      },
+      {
+        "Action": "EditImage",
+        "Target": "Characters/Jas_winter",
+        "FromFile": "assets/CharacterFiles/OverworldSprites/Jas/Jas_winter.png",
+        "Patchmode": "Overlay"
+      },
+      {
+        "Action": "EditData",
+        "Target": "Data/animationdescriptions",
+        "Entries": {
+          "jas_read_left": "26/26/26"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "Changes": [
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Ashara": "{{i18n:gifttase.love}}/422 220 223 221 222 155 904 91 547 224 category_trinket/{{i18n:gifttase.like}}/233 154 72 64 82 400 613 612 638 848 340/{{i18n:gifttase.dislike}}/deluxeBait 908 category_fish/{{i18n:gifttase.hated}}/18 68 92 99 116 124 125 128 178 195 247 268 270 303 346 373 459 549/{{i18n:gifttase.neutral}}/80 84 78 66 62 60 148"
+      }
+    }
+  ]
+}

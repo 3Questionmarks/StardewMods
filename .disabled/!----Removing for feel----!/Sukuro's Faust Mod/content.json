@@ -1,0 +1,640 @@
+{
+	"Format": "2.9.1",
+	"ConfigSchema": {
+		"Romantic Interest": {
+			"AllowValues": "haha don't worry about it",
+			"Default": "haha don't worry about it",
+			"AllowBlank": false,
+			"Description": "Currently does nothing"
+		},
+		"House Location": {
+			"AllowValues": "Normal, Alternate",
+			"Default": "Normal",
+			"AllowBlank": false,
+			"Description": "Changes the location of Faust's house when using SVE, in case it causes conflicts with any of your other mods. (This will cause small changes in his schedule and take out one of the graves in the graveyard.)"
+		}
+	},
+	"Changes": [
+		{//Spouse Room
+			"Action": "Load",
+			"Target": "Maps/FaustSpouseRoom",
+			"FromFile": "assets/Maps/FaustSpouseRoom.tmx"
+		},
+		{//Spouse Patio
+			"Action": "Load",
+			"Target": "Maps/FaustSpousePatio",
+			"FromFile": "assets/Maps/FaustSpousePatio.tmx"
+		},
+		{//House Interior
+			"Action": "Load",
+			"Target": "Maps/FaustHouse",
+			"FromFile": "Assets/Maps/FaustHouse_Inside.tmx"
+		},
+		{//Faust's House (Exterior)
+			"LogName": "Add's Faust's House",
+			"Action": "EditMap",
+			"Target": "Maps/Railroad",
+			"When": { "House Location": "Normal", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"PatchMode": "Overlay",
+			"FromFile": "Assets/Maps/FaustHouse_Outside.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 11,
+				"Height": 8
+			},
+			"ToArea": {
+				"X": 13,
+				"Y": 34,
+				"Width": 11,
+				"Height": 8
+			}
+		},
+		{
+			"LogName": "Add's Faust's House (alt location)",
+			"Action": "EditMap",
+			"Target": "Maps/Railroad",
+			"When": { "House Location": "Alternate", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"PatchMode": "Overlay",
+			"FromFile": "Assets/Maps/FaustHouse_Outside.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 11,
+				"Height": 8
+			},
+			"ToArea": {
+				"X": 4,
+				"Y": 13,
+				"Width": 11,
+				"Height": 8
+			}
+		},
+		{
+			"LogName": "Add's Faust's House (No SVE)",
+			"Action": "EditMap",
+			"Target": "Maps/Railroad",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"PatchMode": "Overlay",
+			"FromFile": "Assets/Maps/FaustHouse_Outside.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 11,
+				"Height": 8
+			},
+			"ToArea": {
+				"X": 33,
+				"Y": 46,
+				"Width": 11,
+				"Height": 8
+			}
+		},
+		{//Faust's House (Interior)
+			"LogName": "Add Faust's House Interior",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"FaustHouse": {
+					"DisplayName": "Faust's House",
+					"DefaultArrivalTile": {
+						"X": 18,
+						"Y": 12
+					},
+					"CreateOnLoad": {
+						"MapPath": "Maps/FaustHouse"
+					}
+				}
+			}
+		},
+		{//Adds warp into Faust's House
+			"LogName": "Add Faust House Warp",
+			"Action": "EditMap",
+			"Target": "Maps/Railroad",
+			"When": { "House Location": "Normal", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"MapTiles": [
+				{
+					"Position": { "X": 18, "Y": 39 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "LockedDoorWarp 18 14 FaustHouse 700 2200 Faust 500"
+					}
+				}
+			]
+		},
+		{
+			"LogName": "Add Faust House Warp (alt location)",
+			"Action": "EditMap",
+			"Target": "Maps/Railroad",
+			"When": { "House Location": "Alternate", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"MapTiles": [
+				{
+					"Position": { "X": 9, "Y": 18 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "LockedDoorWarp 18 14 FaustHouse 700 2200 Faust 500"
+					}
+				}
+			]
+		},
+		{
+			"LogName": "Add Faust House Warp (No SVE)",
+			"Action": "EditMap",
+			"Target": "Maps/Railroad",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"MapTiles": [
+				{
+					"Position": { "X": 38, "Y": 51 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "LockedDoorWarp 18 14 FaustHouse 700 2200 Faust 500"
+					}
+				}
+			]
+		},
+		{//Adds warp out of Faust's House
+			"LogName": "Add Faust House Exit Warp",
+			"Action": "EditMap",
+			"Target": "Maps/FaustHouse",
+			"When": { "House Location": "Normal", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"AddWarps": [
+				"18 15 Railroad 18 40"
+			]
+		},
+		{
+			"LogName": "Add Faust House Exit Warp (Alt location)",
+			"Action": "EditMap",
+			"Target": "Maps/FaustHouse",
+			"When": { "House Location": "Alternate", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"AddWarps": [
+				"18 15 Railroad 9 19"
+			]
+		},
+		{
+			"LogName": "Add Faust House Exit Warp (No SVE)",
+			"Action": "EditMap",
+			"Target": "Maps/FaustHouse",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"AddWarps": [
+				"18 15 Railroad 38 52"
+			]
+		},
+		{//Faust's Mother's Grave
+			"LogName": "Changes the text on Faust's Mother's grave",
+			"Action": "EditMap",
+			"Target": "Maps/Railroad",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"MapTiles": [
+				{
+					"Position": { "X": 4, "Y": 33 },
+                    "Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message MomsGrave.1",
+					}
+				}
+			]
+		},
+		{
+			"LogName": "(No SVE) Faust's Mother's grave",
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"MapTiles": [
+				{
+					"Position": { "X": 42, "Y": 90 },
+                    "Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message MomsGrave.1",
+					}
+				}
+			]
+		},
+		{
+			"LogName": "Alters the text on Faust's Mother's grave",
+			"Action": "EditMap",
+			"Target": "Maps/Railroad",
+			"When": { "HasSeenEvent |contains=95790302": true, "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"MapTiles": [
+				{
+					"Position": { "X": 4, "Y": 33 },
+                    "Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message MomsGrave.2",
+					}
+				}
+			]
+		},
+		{
+			"LogName": "(No SVE) Alters the text on Faust's Mother's grave",
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"When": { "HasSeenEvent |contains=95790302": true, "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"MapTiles": [
+				{
+					"Position": { "X": 42, "Y": 90 },
+                    "Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message MomsGrave.2",
+					}
+				}
+			]
+		},
+		{
+			"LogName": "Character",
+			"Action": "Load",
+			"Target": "Characters/Faust",
+			"FromFile": "Assets/Characters/winter_outdoor.png"
+		},
+		{
+			"LogName": "Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Faust",
+			"FromFile": "Assets/Portraits/winter_outdoor.png"
+		},
+		{
+			"LogName": "Blank File Load",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Faust, Characters/Schedules/Faust, Characters/Dialogue/MarriageDialogueFaust, Strings/schedules/Faust, Data/Events/FaustHouse",
+			"FromFile": "Assets/blank.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/Dialogue/FaustDialogue.json, Data/Dialogue/marriageDialogue.json, Data/FaustStrings.json",
+		},
+		{
+			"Action": "Include",
+			"When": { "HasVisitedLocation |contains=Railroad": false },
+			"FromFile": "Data/Schedules/FaustSchedule_Landslide.json"
+		},
+		{
+			"Action": "Include",
+			"When": { "HasVisitedLocation |contains=Railroad": true, "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+			"FromFile": "Data/Schedules/FaustSchedule.json"
+		},
+		{
+			"Action": "Include",
+			"When": { "HasVisitedLocation |contains=Railroad": true, "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"FromFile": "Data/Schedules/FaustSchedule_NoSVE.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/Dialogue/OtherDialogue.json, Data/Strings.json"
+		},
+		{
+			"LogName": "Faust Disposition",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries": {
+				"Faust": {
+					"DisplayName": "{{i18n:Name.Faust}}",
+					"BirthSeason": "fall",
+					"BirthDay": 28,
+					"HomeRegion": "Town",
+					"Gender": "Male",
+					"Manner": "Polite",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Negative",
+					"CanGreetNearbyCharacters": true,
+					"CanBeRomanced": true,
+					"Calendar": "AlwaysShown",
+					"SocialTab": "UnknownUntilMet",
+					"CanSocialize": true,
+					"CanVisitIsland": false,
+					//"CanVisitIsland": "!DAY_OF_WEEK Wednesday",
+					"ExcludeFromIntroductionsQuest": true,
+					"ExcludeFromPerfectionScore": true,
+					"EndSlideShow": "MainGroup",
+					"WinterStarParticipant": true,
+					"WinterStarGifts": [
+						{
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": null,
+							"RandomItemId": [
+								"FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie",
+								"253",
+								"303",
+								"346",
+								"348",
+								"459",
+								"522",
+								"524",
+								"(W)5",
+							]
+						}
+					],
+					"SpawnIfMissing": true,
+					"SpouseRoom": {
+						"MapAsset": "FaustSpouseRoom",
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 6,
+							"Height": 9
+						}
+					},
+					"SpousePatio": {
+						"MapAsset": "FaustSpousePatio",
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 4,
+							"Height": 4
+						},
+						"SpriteAnimationFrames": [
+							[34, 2400],
+							[33, 120],
+							[32, 240],
+							[33, 120],
+						]
+					},
+					"Home": [
+						{
+							"Id": "Default",
+							"Location": "FaustHouse",
+							"Tile": {
+								"X": 6,
+								"Y": 6
+							},
+							"Direction": "left"
+						}
+					],
+					"Size": {
+						"X": 16,
+						"Y": 32
+					},
+					"Breather": true,
+					"KissSpriteIndex": 30,
+					"KissSpriteFacingRight": false,
+					"Appearance": [
+						{
+							"ID": "Spring",
+							"Season": "Spring",
+							"Portrait": "{{InternalAssetKey: Assets/Portraits/spring.png}}",
+							"Sprite": "{{InternalAssetKey: Assets/Characters/spring.png}}",
+							"Precedence": 0,
+							"Weight": 1
+						},
+						{
+							"ID": "Summer",
+							"Season": "Summer",
+							"Portrait": "{{InternalAssetKey: Assets/Portraits/summer.png}}",
+							"Sprite": "{{InternalAssetKey: Assets/Characters/summer.png}}",
+							"Precedence": 0,
+							"Weight": 1
+						},
+						{
+							"ID": "Fall",
+							"Season": "Fall",
+							"Portrait": "{{InternalAssetKey: Assets/Portraits/fall.png}}",
+							"Sprite": "{{InternalAssetKey: Assets/Characters/fall.png}}",
+							"Precedence": 0,
+							"Weight": 1
+						},
+						{
+							"ID": "Winter_Outdoor",
+							"Season": "Winter",
+							"Indoors": false,
+							"Outdoors": true,
+							"Portrait": "{{InternalAssetKey: Assets/Portraits/winter_outdoor.png}}",
+							"Sprite": "{{InternalAssetKey: Assets/Characters/winter_outdoor.png}}",
+							"Precedence": 0,
+							"Weight": 1
+						},
+						{
+							"ID": "Winter_Indoor",
+							"Season": "Winter",
+							"Indoors": true,
+							"Outdoors": false,
+							"Portrait": "{{InternalAssetKey: Assets/Portraits/winter_indoor.png}}",
+							"Sprite": "{{InternalAssetKey: Assets/Characters/winter_indoor.png}}",
+							"Precedence": 0,
+							"Weight": 1
+						},
+						{
+							"ID": "Spirit's Eve",
+							"Condition": "IS_EVENT festival_fall27",
+							"Portrait": "{{InternalAssetKey: Assets/Portraits/halloween.png}}",
+							"Sprite": "{{InternalAssetKey: Assets/Characters/halloween.png}}",
+							"Precedence": -20,
+							"Weight": 1
+						},
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Faust Disposition No SVE",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+			"Entries": {
+				"Faust": {
+					"DisplayName": "{{i18n:Name.Faust}}",
+					"BirthSeason": "fall",
+					"BirthDay": 28,
+					"HomeRegion": "Town",
+					"Gender": "Male",
+					"Manner": "Polite",
+					"SocialAnxiety": "Neutral",
+					"Optimism": "Negative",
+					"CanGreetNearbyCharacters": true,
+					"CanBeRomanced": true,
+					"Calendar": "AlwaysShown",
+					"SocialTab": "UnknownUntilMet",
+					"CanSocialize": true,
+					"CanVisitIsland": false,
+					//"CanVisitIsland": "!DAY_OF_WEEK Wednesday",
+					"ExcludeFromIntroductionsQuest": true,
+					"ExcludeFromPerfectionScore": true,
+					"EndSlideShow": "MainGroup",
+					"WinterStarParticipant": true,
+					"WinterStarGifts": [
+						{
+							"Condition": null,
+							"Id": "Default",
+							"ItemId": null,
+							"RandomItemId": [
+								"253",
+								"303",
+								"346",
+								"348",
+								"459",
+								"522",
+								"524",
+								"(W)5",
+							]
+						}
+					],
+					"SpawnIfMissing": true,
+					"SpouseRoom": {
+						"MapAsset": "FaustSpouseRoom",
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 6,
+							"Height": 9
+						}
+					},
+					"SpousePatio": {
+						"MapAsset": "FaustSpousePatio",
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 4,
+							"Height": 4
+						},
+						"SpriteAnimationFrames": [
+							[34, 2400],
+							[33, 120],
+							[32, 240],
+							[33, 120],
+						]
+					},
+					"Home": [
+						{
+							"Id": "Default",
+							"Location": "FaustHouse",
+							"Tile": {
+								"X": 6,
+								"Y": 6
+							},
+							"Direction": "left"
+						}
+					],
+					"Size": {
+						"X": 16,
+						"Y": 32
+					},
+					"Breather": true,
+					"KissSpriteIndex": 30,
+					"KissSpriteFacingRight": false,
+					"Appearance": [
+						{
+							"ID": "Spring",
+							"Season": "Spring",
+							"Portrait": "{{InternalAssetKey: Assets/Portraits/spring.png}}",
+							"Sprite": "{{InternalAssetKey: Assets/Characters/spring.png}}",
+							"Precedence": 0,
+							"Weight": 1
+						},
+						{
+							"ID": "Summer",
+							"Season": "Summer",
+							"Portrait": "{{InternalAssetKey: Assets/Portraits/summer.png}}",
+							"Sprite": "{{InternalAssetKey: Assets/Characters/summer.png}}",
+							"Precedence": 0,
+							"Weight": 1
+						},
+						{
+							"ID": "Fall",
+							"Season": "Fall",
+							"Portrait": "{{InternalAssetKey: Assets/Portraits/fall.png}}",
+							"Sprite": "{{InternalAssetKey: Assets/Characters/fall.png}}",
+							"Precedence": 0,
+							"Weight": 1
+						},
+						{
+							"ID": "Winter_Outdoor",
+							"Season": "Winter",
+							"Indoors": false,
+							"Outdoors": true,
+							"Portrait": "{{InternalAssetKey: Assets/Portraits/winter_outdoor.png}}",
+							"Sprite": "{{InternalAssetKey: Assets/Characters/winter_outdoor.png}}",
+							"Precedence": 0,
+							"Weight": 1
+						},
+						{
+							"ID": "Winter_Indoor",
+							"Season": "Winter",
+							"Indoors": true,
+							"Outdoors": false,
+							"Portrait": "{{InternalAssetKey: Assets/Portraits/winter_indoor.png}}",
+							"Sprite": "{{InternalAssetKey: Assets/Characters/winter_indoor.png}}",
+							"Precedence": 0,
+							"Weight": 1
+						},
+						{
+							"ID": "Spirit's Eve",
+							"Condition": "IS_EVENT festival_fall27",
+							"Portrait": "{{InternalAssetKey: Assets/Portraits/halloween.png}}",
+							"Sprite": "{{InternalAssetKey: Assets/Characters/halloween.png}}",
+							"Precedence": -20,
+							"Weight": 1
+						},
+					]
+				}
+			}
+		},
+		{//Animations
+			"LogName": "Animations",
+			"Action": "EditData",
+			"Target": "Data/animationDescriptions",
+			"entries": {
+				"Faust_Lantern": "16/16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 17 17 17 17 17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16/16",
+				"Faust_LanternBack": "18/18/18",
+				"Faust_Doze": "0 0 0 0 0 0 0 20 20 20 20 20 21 21 20 20 20 20 21 21 21/20 20 20 21 21 22 22 22 22 23 23 23 23 22 22 22 22 23 23 23 23 22 22 22 22 23 23 23 23 22 22 22 22 23 23 23 23 21 21 20 20 20/21 21 20 20 20 21 21 20 20 0 0",
+				"Faust_Drink": "26/26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 27 27 27 27 27 27 27 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26/26",
+				"Faust_Read": "32 32 33 33/33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 32 32 32 32 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33/33 33 32",
+				"faust_sleep": "43/51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 43 43 43 43 43 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 51 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 51 51 51 51/51"
+			}
+		},
+		{//Events
+			"LogName": "Add Events",
+			"Action": "Include",
+			"FromFile": "Data/Events.json",
+		},
+		{//Gifts
+			"LogName": "Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"Faust": "{{i18n:Gifts.Faust.Love}}/253 296 303 346 395 396 410 418 561 575 611 FlashShifter.StardewValleyExpandedCP_Baked_Berry_Oatmeal FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice FlashShifter.StardewValleyExpandedCP_Bearberrys Cornucopia_Raspberry Cornucopia_JuniperBerries/{{i18n:Gifts.Faust.Like}}/109 119 258 282 348 376 398 400 417 433 444 446 454 459 539 553 558 566 577 579 580 581 582 583 584 585 595 768 769 SkillBook_4 Book_Void Book_Marlon Book_Artifact FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Red_Baneberry FlashShifter.StardewValleyExpandedCP_Poison_Mushroom FlashShifter.StardewValleyExpandedCP_Rusty_Blade FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Void_Shard FlashShifter.StardewValleyExpandedCP_Void_Soul FlashShifter.StardewValleyExpandedCP_Salal_Berry/{{i18n:Gifts.Faust.Dislike}}/category_vegetable 92 200 207 231 235 350 767 812 829/{{i18n:Gifts.Faust.Hate}}/212 230 237 250 266 278 300 306 307 308 342 787/{{i18n:Gifts.Faust.Neutral}}/78 101 103 123 156 213 269 275 305 397 432 445 447 606 648 684 795 798 799 852 FlashShifter.StardewValleyExpandedCP_Slime_Berry",
+			}
+		},
+		//{//Gifts (No SVE)
+		//	"LogName": "Gift Tastes Without SVE",
+		//	"Action": "EditData",
+		//	"Target": "Data/NPCGiftTastes",
+		//	"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+		//	"Entries": {
+		//		"Faust": "{{i18n:Gifts.Faust.Love}}/253 296 303 346 395 396 410 418 561 575 611/{{i18n:Gifts.Faust.Like}}/109 119 258 282 348 376 398 400 417 433 444 446 454 459 539 553 558 566 577 579 580 581 582 583 584 585 595 768 769 SkillBook_4 Book_Void Book_Marlon Book_Artifact/{{i18n:Gifts.Faust.Dislike}}/category_vegetable 92 200 207 231 235 350 767 812 829/{{i18n:Gifts.Faust.Hate}}/212 230 237 250 266 278 300 306 307 308 342 787/{{i18n:Gifts.Faust.Neutral}}/78 101 103 123 156 213 269 275 305 397 432 445 447 606 648 684 795 798 799 852",
+		//	}
+		//},
+		{//Engagement Dialogue
+			"LogName": "Engagement Dialogue",
+			"Action": "EditData",
+			"Target": "Data/EngagementDialogue",
+			"Entries": {
+				"Faust0": "{{i18n:Engagement.Faust0}}",
+				"Faust1": "{{i18n:Engagement.Faust1}}"
+			}
+		},
+		{//Movies
+			"LogName": "Movie-Related Data",
+			"Action": "Include",
+			"FromFile": "Data/Movies.json",
+		},
+		{//Festivals
+			"LogName": "Include Faust in Festivals",
+			"Action": "Include",
+			"When": { "HasVisitedLocation |contains=Railroad": true },
+			"FromFile": "Data/Festivals.json",
+		},
+		{//Faust Attends Weddings
+			"LogName": "Add Faust to Wedding Data",
+            "Action": "EditData",
+            "Target": "Data/Weddings",
+			"When": { "HasVisitedLocation |contains=Railroad": true },
+            "TargetField": [
+                "Attendees"
+			],
+            "Entries": {
+				"Faust": {
+                    "ID": "Faust",
+                    "Setup": "Faust 33 68 0"
+				},
+			}
+		},
+	]
+}

@@ -1,0 +1,14 @@
+{
+    "Changes": [
+		{
+			"LogName": "{{ModId}}_Dwarf",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Dwarf",
+			"Entries":{
+				"{{ModId}}_BigStoneChest_CT": "{{i18n: Dwarf.BigStoneChest_CT}}",
+				"{{ModId}}_Consumables_CT": "{{i18n: Dwarf.Consumables_CT}}",
+				"{{ModId}}_Minerals_CT": "{{i18n: Dwarf.Minerals_CT}}"
+			}
+		}
+	]
+}

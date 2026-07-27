@@ -1,0 +1,84 @@
+{
+
+    "config.EnableThisMod.name": "Enable this mod",
+    "config.EnableThisMod.description": "On/Off setting of this mod itself.",
+
+    "config.RemoveBuildRestrictions.name": "Remove Build Restrictions",
+    "config.RemoveBuildRestrictions.description": "Building is available immediately upon turning on the setting.(Unlocking build)",
+
+    "config.FreeToBuild.name": "Free To Build",
+    "config.FreeToBuild.description": "When the setting is turned on, the cost of building is zero.",
+
+    "config.ImmediateBuildFinish.name": "Immediate Build Finish",
+    "config.ImmediateBuildFinish.description": "Turning on the setting allows building to be finished in a fraction of a second.",
+
+    "config.TransparentWhenGoBehind.name": "Transparent When Go Behind",
+    "config.TransparentWhenGoBehind.description": "The tree should be transparent when the character stands behind the building tree.",
+
+    "config.BuildOnTheFloor.name": "Build On The Floor",
+    "config.BuildOnTheFloor.description": "The building can be built on a decorative floor, such as a \"wood floor\".",
+
+    "config.DisableAction.name": "Disable Action",
+    "config.DisableAction.description": "Disables the text box that appears when you click on a tree, so it no longer responds to clicks.",
+
+
+    "config.section.ConstructionMenu.name": "Show in Build Menu",
+    "config.section.ConstructionMenu.description": "This setting determines whether the tree will appear in Robin's build menu. Disabling this setting will prevent the tree from appearing in the menu.",
+
+    "config.Enable_Large.name": "Large Tree",
+    "config.Enable_Large.description": "Displays a \"Large Tree\" whose appearance changes automatically depending on the season.",
+
+    "config.Enable_Large_Replica.name": "Large Tree Replica",
+    "config.Enable_Large_Replica.description": "It displays a replica \"Large Tree\" whose appearance does not change with the seasons.",
+
+    "config.Enable_Town.name": "Town Large Tree",
+    "config.Enable_Town.description": "Displays a \"Town Large Tree\" whose appearance changes automatically depending on the season.",
+
+    "config.Enable_Town_Replica.name": "Town Large Tree Replica",
+    "config.Enable_Town_Replica.description": "It displays a replica \"Town Large Tree\" whose appearance does not change with the seasons.",
+
+    "config.Enable_Wild.name": "Wild Large Tree",
+    "config.Enable_Wild.description": "Displays a \"Wild Large Tree\" whose appearance changes automatically depending on the season.",
+
+    "config.Enable_Wild_Replica.name": "Wild Large Tree Replica",
+    "config.Enable_Wild_Replica.description": "It displays a replica \"Wild Large Tree\" whose appearance does not change with the seasons.",
+
+    "config.Enable_Very.name": "Very Large Tree",
+    "config.Enable_Very.description": "Displays a \"Very Large Tree\" whose appearance changes automatically depending on the season.",
+
+    "config.Enable_Very_Replica.name": "Very Large Tree Replica",
+    "config.Enable_Very_Replica.description": "It displays a replica \"Very Large Tree\" whose appearance does not change with the seasons.",
+
+
+
+    "LargeTree_Name": "Large Tree",
+    "TownLargeTree_Name": "Town Large Tree",
+    "WildLargeTree_Name": "Wild Large Tree",
+    "VeryLargeTree_Name": "Very Large Tree",
+
+    "Tree_Description": "They will grace your farm with their seasonal appearance.",
+    "Tree_Description(DN)": "(DaisyNiko's EarthyRecolour)",
+    "Tree_Description(SF)": "(SimpleFoliage)",
+    "Tree_Description(SF-DN)": "(SimpleFoliage)\n(DaisyNiko's EarthyRecolour)",
+    "Tree_Description(SF-VP)": "(SimpleFoliage)\n(VibrantPastoralRecolor)",
+    "Tree_Description(SF-VP_GreenFall)": "(SimpleFoliage)\n(VibrantPastoralRecolor\n/GreenFall)",
+    "Tree_Description(VP)": "(VibrantPastoralRecolor)",
+    "Tree_Description(VP_GreenFall)": "(VibrantPastoralRecolor\n/GreenFall)",
+
+    "Replica_Tree_Description": "Replica tree. The seasons don't change the way we look...",
+    "Replica_Tree_Description(DN)": "(DaisyNiko's EarthyRecolour)",
+    "Replica_Tree_Description(SF)": "(SimpleFoliage)",
+    "Replica_Tree_Description(SF-DN)": "(SimpleFoliage)\n(DaisyNiko's EarthyRecolour)",
+    "Replica_Tree_Description(SF-VP)": "(SimpleFoliage)\n(VibrantPastoralRecolor)",
+    "Replica_Tree_Description(SF-VP_GreenFall)": "(SimpleFoliage)\n(VibrantPastoralRecolor\n/GreenFall)",
+    "Replica_Tree_Description(VP)": "(VibrantPastoralRecolor)",
+    "Tree_Description(VP_GreenFall)": "(VibrantPastoralRecolor\n/GreenFall)",
+
+
+
+    "Mail_Title": "Announcement of the start of the tree-planting",
+    "Mail_Text": "Dear @^^I've been studying tree-planting techniques for a while now, and I've improved enough that it's about time I did it as a job, so next time you ask!^Maybe some real trees and replica trees to spruce up the look of the farm!^^-Robin",
+
+    "Dialogue": "Take care of the trees you plant.^(When removing it, go to Robin's Build menu)",
+
+}

@@ -1,0 +1,245 @@
+//I have no idea what I am doing but trial and error are my best friends <3
+//hope you have a nice day! thanks for checking out my "Code" - Miihau
+//MiihausSamEventExpansion
+
+{
+    "Format": "2.0.0",
+
+//DynamicTokes that add compatibility with SVE
+"DynamicTokens": [
+{ 
+            "Name": "?",
+            "Value": "8"
+        },
+        {
+            "Name": "angry",
+            "Value": "12"
+        },
+        {
+            "Name": "!",
+            "Value": "16"
+        },
+        {
+            "Name": "love",
+            "Value": "20"
+        },
+        {
+            "Name": "sleep",
+            "Value": "24"
+        },
+        {
+            "Name": "sad",
+            "Value": "28"
+        },
+        {
+            "Name": "happy",
+            "Value": "32"
+        },
+        {
+            "Name": "x",
+            "Value": "36"
+        },
+        {
+            "Name": "pause",
+            "Value": "40"
+        },
+        {
+            "Name": "video game",
+            "Value": "52"
+        },
+        {
+            "Name": "music",
+            "Value": "56"
+        },
+        {
+            "Name": "blush",
+            "Value": "60"
+        },
+        {
+            "Name": "Winter",
+            "Value": "",
+        },
+        {
+            "Name": "Winter",
+            "When": {"Season": "Winter"},
+            "Value": "_Winter",
+            
+        },
+            {
+            "Name": "Miihau.SamEE.Relation",
+            "Value": "Lovers",
+        },
+        {
+            "Name": "Miihau.SamEE.Relation",
+            "Value": "Friends",
+            "When":{
+                "HasSeenEvent": "Miihau.SamEE.008.Friends"
+            },
+        },
+
+        //EXPANDED STUFF
+        {
+            "Name":"Miihau.SamEE.E01.Starting",
+            "Value": "29 18/farmer 17 19 1 Sam 29 18 1 Vincent 26 19 1/addTemporaryActor {{ModId}}_Rocket 32 128 30 17 2 false/",
+        },
+        {
+            "Name":"Miihau.SamEE.E01.Starting",
+            "Value": "21 18/farmer 9 19 1 Sam 21 18 1 Vincent 18 19 1/addTemporaryActor {{ModId}}_Rocket 32 128 22 17 2 false/",
+            "When": { 
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "Name":"Miihau.SamEE.E02.Starting",
+            "Value": "81 62/farmer 87 53 2 Sam 81 61 2/",
+        },
+        {
+            "Name":"Miihau.SamEE.E02.Starting",
+            "Value": "97 74/farmer 102 65 2 Sam 96 73 2/",
+            "When": { 
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+                {
+            "Name":"Miihau.SamEE.E02.NotesSpawn",
+            "Value": "82 60",
+        },
+        {
+            "Name":"Miihau.SamEE.E02.NotesSpawn",
+            "Value": "97 72",
+            "When": { 
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+],
+
+"Changes": [
+
+//ASSETS
+
+
+    //Loading in assets
+    {
+        "Action":"Load",
+        "Target":"Characters/{{ModId}}_Rocket",
+        "FromFile":"assets/{{ModId}}_Rocket.png"
+    },
+    {
+        "Action":"Load",
+        "Target":"Characters/{{ModId}}_GameBoard",
+        "FromFile":"assets/{{ModId}}_GameBoard.png"
+    },
+    {
+        "Action":"Load",
+        "Target":"Characters/{{ModId}}_CampFire",
+        "FromFile":"assets/{{ModId}}_CampFire.png"
+    },
+    {
+        "Action":"Load",
+        "Target":"Characters/{{ModId}}_Snail",
+        "FromFile":"assets/{{ModId}}_Snail.png"
+    },
+    {
+        "Action":"Load",
+        "Target":"Characters/{{ModId}}_Box",
+        "FromFile":"assets/{{ModId}}_Box.png"
+    },
+    {
+        "Action":"Load",
+        "Target":"Mods/{{ModId}}/{{ModId}}_Drawing",
+        "FromFile":"assets/{{ModId}}_Drawing.png"
+    },
+        {
+        "Action":"Load",
+        "Target":"Mods/{{ModId}}/{{ModId}}_Drawing-Sheet",
+        "FromFile":"assets/{{ModId}}_Drawing-Sheet.png"
+    },
+        {
+        "Action":"Load",
+        "Target":"Mods/{{ModId}}/{{ModId}}_Drawing-Sheet-Reverse",
+        "FromFile":"assets/{{ModId}}_Drawing-Sheet-Reverse.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "YourName_CustomTrack": {
+          "ID": "{{ModId}}_melody-of-feels",
+          "Category": "Music",
+          "FilePaths": [ "{{AbsoluteFilePath: assets/Miihau.SamEE_melody-of-feels.ogg}}" ],
+          "StreamedVorbis": true,
+          "Looped": false
+        }
+      }
+    },
+
+    //Adding Mail 
+{   
+    "Action": "Include",
+    "FromFile": "mail/mail.json",
+},  
+
+//Trigger Mail
+{   
+    "Action": "Include",
+    "FromFile": "mail/triggerMail.json",
+},  
+//EVENTS
+
+    //Loading in Event 1
+    {
+        "Action": "Include",
+        "FromFile": "events/Event1.json"
+    },
+
+    //Loading in Event 2
+    {
+        "Action": "Include",
+        "FromFile": "events/Event2.json"
+    },
+    //Loading in Event 3
+    {
+        "Action": "Include",
+        "FromFile": "events/Event3.json"
+    },
+    //Loading in Event 4
+    {
+        "Action": "Include",
+        "FromFile": "events/Event4.json"
+    },
+    //Loading in Event 5
+    {
+        "Action": "Include",
+        "FromFile": "events/Event5.json"
+    },
+    //Loading in Event 6
+    {
+        "Action": "Include",
+        "FromFile": "events/Event6.json"
+    },
+    //Loading in Event 7
+    {
+        "Action": "Include",
+        "FromFile": "events/Event7.json"
+    },
+
+    //Loading in Event 8
+    {
+        "Action": "Include",
+        "FromFile": "events/Event8.json"
+    },
+
+    //Loading in Event 9
+    {
+        "Action": "Include",
+        "FromFile": "events/Event9.json"
+    },
+
+    //Loading in Event 10
+    {
+        "Action": "Include",
+        "FromFile": "events/Event10.json"
+    },
+    ]
+}
+

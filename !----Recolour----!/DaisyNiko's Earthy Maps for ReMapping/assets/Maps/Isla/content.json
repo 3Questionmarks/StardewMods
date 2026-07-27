@@ -1,0 +1,77 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Isla)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Isla",
+      "FromFile": "assets/Maps/Isla/Isla_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Isla.Ilha)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Isla.Ilha",
+      "FromFile": "assets/Maps/Isla/Isla.Ilha_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+    {
+      "LogName": "(Earthy) Recolor Remapping (Isla.Ilha.SBV)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Isla.Ilha.SBV",
+      "FromFile": "assets/Maps/Isla/Isla.Ilha.SBV_{{RMP.Season}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+//Boat Journey
+    {	
+		  "LogName": "Remapping (Earthy) Recolor Isla Ilha Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Isla/Isla.Ilha_{{season}}_Vanilla.png", 
+		  "ToArea": {"X": 345, "Y": 13, "Width": 28, "Height": 22},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			  "HasMod: |contains=PaperNautilus.Isla": true,
+			  "HasMod: |contains=skellady.SBVCP": false,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {	
+		  "LogName": "Remapping (Earthy) Recolor Isla Ilha Boat Journey SVE",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Isla/Isla.Ilha_{{season}}_SVE.png", 
+		  "ToArea": {"X": 341, "Y": 14, "Width": 27, "Height": 21},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			  "HasMod: |contains=PaperNautilus.Isla": true,
+			  "HasMod: |contains=skellady.SBVCP": false,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {
+		  "LogName": "Remapping (Earthy) Recolor Isla Ilha SBV Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Isla/Isla.Ilha.SBV_{{season}}.png", 
+		  "ToArea": {"X": 311, "Y": 26, "Width": 24, "Height": 21},
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=PaperNautilus.Isla": true,
+			  "HasMod: |contains=skellady.SBVCP": true,
+			  "HasMod: |contains=handwrittenhello.dbdaP": false,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  }
+  ]
+}

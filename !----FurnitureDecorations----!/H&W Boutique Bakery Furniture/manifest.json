@@ -1,0 +1,17 @@
+{
+    "Name": "[CP] H&W Boutique Bakery Furniture",
+    "Author": "HimeTarts and wildflourmods",
+    "Version": "1.0.1",
+    "Description": "CP Version of H&W Boutique Bakery Furniture Set",
+    "UniqueID": "HXW.BoutiqueBakeryFurniture",
+    "UpdateKeys": ["nexus:9987"], 
+    "Dependencies": [
+        {
+            "UniqueID": "sophie.Calcifer",
+            "IsRequired": true
+        }
+    ], 
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

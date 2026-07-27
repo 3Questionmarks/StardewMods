@@ -1,0 +1,15 @@
+{
+	"Changes": [
+//Custom NPC Aliyah
+		{
+            "Action": "EditImage",
+            "Target": "LooseSprites/yuninocorn.CustomNPCAliyahRailroadWoods",
+            "FromFile": "assets/Maps/Custom NPC Aliyah/Aliyah_{{season}}.png",
+            "PatchMode": "Overlay",
+			"When": {
+				"HasMod|contains=yuninocorn.CustomNPCAliyah": true
+			},
+			"Update": "OnLocationChange"
+		}
+    ]
+}

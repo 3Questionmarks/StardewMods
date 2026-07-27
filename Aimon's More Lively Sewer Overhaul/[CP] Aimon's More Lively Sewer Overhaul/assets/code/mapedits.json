@@ -152,8 +152,10 @@
             "LogName": "aimonhutchopenropeplace",
             "Action": "EditMap",
             "Target": "Maps/Sewer",
+			"Update": "OnTimeChange",
             "When": {
-                "HasSeenEvent": "194050011"
+                "HasSeenEvent": "194050011",
+			 
             },
             "MapTiles": [
                 {

@@ -1,0 +1,234 @@
+{
+
+    "Changes": [
+
+
+//■■■ 奥のエリア関連のエディット ■■■
+
+
+  //★★★ 総合項目 ★★★
+
+    //●「2ndArea」から「AddFarmCave」への戻りワープ追加(マップ名DTの為ここで)
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_AdditionalFarmCave_2ndArea",
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Warp"],
+            "Value": "9 15 {{DT_AddFarmCaveName}} 9 5",
+            "Delimiter": " "
+          }
+        ]
+      },
+
+    //●ロケーションデータ(釣れる魚の設定等)
+      {
+        "Action": "EditData",
+        "Target": "Data/Locations",
+        "Entries": {
+          "Custom_AdditionalFarmCave_2ndArea": {
+            "DisplayName": "{{i18n:DisplayName_AFC}}",
+            "ExcludeFromNpcPathfinding": true,
+            "CreateOnLoad": {
+              "MapPath": "Maps\\Custom_AdditionalFarmCave_2ndArea",
+              "AlwaysActive": false
+            },
+            "ArtifactSpots": [],
+            "Forage": [],
+            "FishAreas": {
+              "Default": {
+                "DisplayName": "{{i18n:DisplayName_AFC}}",
+                "Position": null,
+                "CrabPotFishTypes": [ "freshwater" ],
+                "CrabPotJunkChance": 0.45
+              }
+            },
+            "Fish": [
+              {
+                "Chance": 1.0,
+                "Season": null,
+                "Id": "(O)153",//Green Algae
+                "ItemId": "(O)153" //緑の藻
+              },
+              {
+                "Chance": 1.0,
+                "Season": null,
+                "Id": "(O)156",//Ghostfish
+                "ItemId": "(O)156" //ヒヨケウオ
+              },
+              {
+                "Chance": 1.0,
+                "Season": null,
+                "Id": "(O)157",//White Algae
+                "ItemId": "(O)157" //白い藻
+              },
+              {
+                "Chance": 0.1,
+                "Season": null,
+                "Id": "(O)CaveJelly",
+                "ItemId": "(O)CaveJelly" //洞窟ゼリー
+              },
+              {
+                "Chance": 1.0,
+                "Season": null,
+                "Id": "(O)142",//Carp
+                "ItemId": "(O)142" //コイ
+              },
+              {
+                "Chance": 0.3,
+                "Season": null,
+                "Id": "(O)158",//Stonefish
+                "ItemId": "(O)158" //ダルマオコゼ
+              }
+            ],
+            "Music": [],
+            "MusicDefault": null,
+            "MusicContext": "Default",
+            "MusicIgnoredInRain": false,
+            "MusicIgnoredInSpring": false,
+            "MusicIgnoredInSummer": false,
+            "MusicIgnoredInFall": false,
+            "MusicIgnoredInFallDebris": false,
+            "MusicIgnoredInWinter": false,
+            "MusicIsTownTheme": false,
+          }
+        }
+      },
+
+
+  //★★★ イベント関係 ★★★
+
+    //●ワインorジュース5本出荷で農場でイベント(洞窟イベントへ誘導)
+    //   また、このイベントをトリガーで2ndエリアへの入り口を解放
+      {
+        "Action": "EditData",
+        "Target": "Data/Events/Farm",
+        "Entries":{
+          "1410977501/Time 600 1600/GameStateQuery PLAYER_VISITED_LOCATION Current {{DT_AddFarmCaveName}}/GameStateQuery ANY \"PLAYER_SHIPPED_BASIC_ITEM Current 348 5\" \"PLAYER_SHIPPED_BASIC_ITEM Current 350 5\"":
+          "continue/-2000 -1000/farmer 0 0 0/
+           skippable/
+           pause 1000/
+           playSound axchop/
+           pause 700/
+           playSound axchop/
+           pause 700/
+           playSound axchop/
+           pause 700/
+           playSound axchop/
+           pause 1500/
+           playSound axchop/
+           pause 700/
+           playSound axchop/
+           pause 700/
+           playSound axe/
+           pause 2000/
+           message \"{{i18n:Ev01_01}}\"/
+           pause 2000/
+           playSound getNewSpecialItem/
+           pause 2000/
+           message \"{{i18n:Ev01_02}}\"/
+           pause 500/
+           message \"{{i18n:Ev01_03}}\"/
+           end
+          "
+        },
+        "When": { 
+          "OpenImmediately_2nd": "false"
+        }
+      },
+
+    //●農場イベントを見た後にAFCでイベント
+    //  (ジュニモ小屋の入り口のタイル上書きするやつは
+    //    Mod互換性で変化する場合あるけどDT制御で対応)
+      {
+        "Action": "EditData",
+        "Target": "Data/Events/{{DT_AddFarmCaveName}}",
+        "Entries":{
+          "1410977502/SawEvent 1410977501":
+          "continue/9 8/farmer 9 14 0/
+           skippable/
+           addLantern 735 9 5 1/
+           removeTemporarySprites/
+           addTemporaryActor TsAFC_JunimoNPC 16 16 9 6 0 false Character Junimo/
+           showFrame Junimo 0/
+           animate Junimo false true 150 32 33 34 35 36 37/
+           changeMapTile Buildings2 5 7 {{DT_2ndEv_JunimoTileID}}/
+           move farmer 0 -3 0 false/
+           pause 1000/
+           emote farmer 8/
+           message \"{{i18n:Ev02_01}}\"/
+           pause 1000/
+           emote Junimo 16 true/
+           playSound junimoMeep1/
+           jump Junimo 10/
+           animate Junimo false true 150 0 1 2 3 4 5/
+           pause 2000/        
+           pause 200/
+           message \"{{i18n:Ev02_02}}\"/
+           pause 500/
+           textAboveHead Junimo \"{{i18n:Ev02_03}}\"/
+           pause 3300/
+           emote Junimo 32 true/
+           playSound junimoMeep1/
+           jump Junimo 8/
+           playSound junimoMeep1/
+           animate Junimo false true 90 8 9 10 11/
+           playSound junimoMeep1/
+           pause 200/
+           playSound junimoMeep1/
+           pause 200/
+           playSound junimoMeep1/
+           pause 200/
+           playSound junimoMeep1/
+           pause 1000/
+           emote farmer 32/
+           playSound junimoMeep1/
+           pause 2000/
+           globalFade/
+           viewport -1000 -1000/
+           end
+          "
+        },
+        "When": { 
+          "OpenImmediately_2nd": "false"
+        }
+      },
+
+
+  //★★★ トロッコ関連 ★★★
+
+    //●トロッコの追加(マップ編集)
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_AdditionalFarmCave_2ndArea",
+        "FromFile": "assets/tmx/TsAFC_Minecart.tmx",
+        "ToArea": { "X": 2, "Y": 6, "Width": 4, "Height": 2 },
+        "When": {
+          "2ndArea_Minecart": "true"
+        }
+      },
+
+    //●トロッコの追加(データ編集)
+      {
+        "Action": "EditData",
+        "Target": "Data/Minecarts",
+        "TargetField": [ "Default", "Destinations" ],
+        "Entries": {
+          "morecarts_AdditionalFarmCave_2ndArea": {
+            "Id": "Custom_AdditionalFarmCave_2ndArea",
+            "DisplayName": "{{i18n:DisplayName_AFC}}",
+            "Condition": "PLAYER_VISITED_LOCATION Current Custom_AdditionalFarmCave_2ndArea", 
+            "TargetLocation": "Custom_AdditionalFarmCave_2ndArea",
+            "TargetTile": { "X": 4, "Y": 7 },
+            "TargetDirection": "right"
+          }
+        },
+        "When": { 
+          "2ndArea_Minecart": "true"
+        }
+      }
+
+
+    ]//▼▼"Changes"の終了▼▼
+}

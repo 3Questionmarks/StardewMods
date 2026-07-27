@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Dam)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Dam",
+      "FromFile": "assets/Maps/Dam/Dam_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

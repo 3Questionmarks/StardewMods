@@ -1,0 +1,33 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries": {
+				"FaustRoom.1": "{{i18n:FaustRoom.1}}",
+				"FaustRoom.2": "{{i18n:FaustRoom.2}}",
+				"FaustRoom.3": "{{i18n:FaustRoom.3}}",
+				"FaustRoom.4": "{{i18n:FaustRoom.4}}",
+				"FaustRoom.5": "{{i18n:FaustRoom.5}}",
+				"FaustRoom.6": "{{i18n:FaustRoom.6}}",
+				"FaustRoom.7": "{{i18n:FaustRoom.7}}",
+				"FaustRoom.8": "{{i18n:FaustRoom.8}}",
+				
+				"FaustSpouseRoom.1": "{{i18n:FaustSpouseRoom.1}}",
+				"FaustSpouseRoom.2": "{{i18n:FaustSpouseRoom.2}}",
+				"FaustSpouseRoom.3": "{{i18n:FaustSpouseRoom.3}}",
+				
+				"MomsGrave.1": "{{i18n:MomsGrave.1}}",
+				"MomsGrave.2": "{{i18n:MomsGrave.2}}",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"When": { "HasSeenEvent |contains=95790302": true },
+			"Entries": {
+				"FaustRoom.2": "{{i18n:FaustRoom.2.MomLetter}}",
+			}
+		},
+	]
+}

@@ -1,0 +1,48 @@
+{
+    "Changes": [
+//Kilian
+        {
+            "Action": "EditData",
+            "Target": "characters/schedules/SEAT4",
+            "When": {
+                "N3cro_92.KidsfortheSchoolTokens/LRSHSeatFourAntisocial": "true",
+                "Hasmod|contains=N3cro_92.KidsfortheSchoolTokens": true,
+                "Hasmod|contains=Xiddav.LRSHStudentsandTeachers": true,
+                "HasMod|contains=Rafseazz.RSVCP": false
+            },
+            "Entries":{
+                "rain":"0 Town 81 0 2/620 Custom_SchoolHouse_SecondFloor 10 11 1/820 Custom_SchoolHouse_SecondFloor 11 11 LittleRed_Read_1/1140 Custom_SchoolHouse_SecondFloor 16 17 3/1250 Custom_SchoolHouse_SecondFloor 27 8 0/1550 Custom_SchoolHouse_NPCTrainRoom 4 4 2"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "characters/schedules/SEAT4",
+            "When": {
+                "N3cro_92.KidsfortheSchoolTokens/LRSHSeatFourAntisocial": "true",
+                "Hasmod|contains=N3cro_92.KidsfortheSchoolTokens": true,
+                "Hasmod|contains=Xiddav.LRSHStudentsandTeachers": true,
+                "HasMod|contains=Rafseazz.RSVCP": false
+            },
+            "Entries":{
+                "Tue": "0 Town 81 0 2/620 Custom_SchoolHouse_SecondFloor 10 11 1/820 Custom_SchoolHouse_SecondFloor 11 11 LittleRed_Read_1/1120 Town 8 16 square_1_2_3/1320 Custom_SchoolHouse_SecondFloor 10 11 1/1330 Custom_SchoolHouse_SecondFloor 11 11 LittleRed_Read_1/1540 Town 8 16 square_1_2_3/2000 Custom_SchoolHouse_NPCTrainRoom 4 4 2",
+                "Wed": "0 Town 81 0 2/620 Custom_SchoolHouse_SecondFloor 10 11 1/820 Custom_SchoolHouse_SecondFloor 11 11 LittleRed_Read_1/1120 Town 8 16 square_1_2_3/1320 Custom_SchoolHouse_SecondFloor 10 11 1/1330 Custom_SchoolHouse_SecondFloor 11 11 LittleRed_Read_1/1540 Town 8 16 square_1_2_3/2000 Custom_SchoolHouse_NPCTrainRoom 4 4 2",
+                "Fri": "0 Town 81 0 2/620 Custom_SchoolHouse_SecondFloor 10 11 1/820 Custom_SchoolHouse_SecondFloor 11 11 LittleRed_Read_1/1120 Town 8 16 square_1_2_3/1320 Custom_SchoolHouse_SecondFloor 10 11 1/1330 Custom_SchoolHouse_SecondFloor 11 11 LittleRed_Read_1/1540 Town 8 16 square_1_2_3/2000 Custom_SchoolHouse_NPCTrainRoom 4 4 2"
+            }
+        },
+        { 
+            "Action": "EditData",
+	        "Target": "characters/schedules/SEAT4",
+		    "When": { 
+                "N3cro_92.KidsfortheSchoolTokens/LRSHSeatFourAntisocial": "true",
+                "N3cro_92.KidsfortheSchoolTokens/LRSHFiveDays": "true",
+                "Hasmod|contains=N3cro_92.KidsfortheSchoolTokens": true,
+                "Hasmod|contains=Xiddav.LRSHStudentsandTeachers": true,
+                "HasMod|contains=Rafseazz.RSVCP": false
+            },
+	        "Entries": {
+                "Mon": "0 Town 81 0 2/620 Custom_SchoolHouse_SecondFloor 10 11 1/820 Custom_SchoolHouse_SecondFloor 11 11 LittleRed_Read_1/1120 Town 8 16 square_1_2_3/1320 Custom_SchoolHouse_SecondFloor 10 11 1/1330 Custom_SchoolHouse_SecondFloor 11 11 LittleRed_Read_1/1540 Town 8 16 square_1_2_3/2000 Custom_SchoolHouse_NPCTrainRoom 4 4 2",
+		 		"Thu": "0 Town 81 0 2/620 Custom_SchoolHouse_SecondFloor 10 11 1/820 Custom_SchoolHouse_SecondFloor 11 11 LittleRed_Read_1/1120 Town 8 16 square_1_2_3/1320 Custom_SchoolHouse_SecondFloor 10 11 1/1330 Custom_SchoolHouse_SecondFloor 11 11 LittleRed_Read_1/1540 Town 8 16 square_1_2_3/2000 Custom_SchoolHouse_NPCTrainRoom 4 4 2"
+            }
+        }
+    ]
+}

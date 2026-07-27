@@ -1,0 +1,58 @@
+{
+	"Changes": [
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries": {
+		  "RangerFirstMet": "A strange signal showed up on my radio recently.#$b#It's source is nearby, but it's broadcasting across the Gem Sea.$s#$b#I wonder what it could be?",
+ "RangerSettlesIn": "That strange signal disappeared recently.#$b#I guess it was nothing to worry about!$h"
+			},
+		},
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Wizard",
+			"Entries": {
+			  "RangerFirstMet": "A new energy in the northern forest disturbs my protective barrier...#$b#It's yet to be seen whether the balance will tip towards ill or gain.#$b#...so go check it out and tell me what you find.",
+ "RangerSettlesIn": "I'm pleased that Ms. Takahashi and the Ranger were able to resolve their issues without interference.#$b#I've decided to allow the Ranger to stay for now.#$b#The ferns grow richer with her presence."	
+			},
+		},
+		
+		{ 
+			"Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": { 
+	"RangerFirstMet": "Someone pitched a tent deep in Cindersap Forest.#$b#I hope they're decent stewards of the land while they're camped here.",
+	"RangerSettlesIn": "Taro should get rid of the title 'Ranger'.#$b#It's better to leave your ego behind as far as nature is concerned.",
+	"RangerHike": "It's important to me that Leo thinks well of other people, even if I don't#$b#I don't want to teach the boy to be bitter...$s#$b#Taro is a decent role-model for him."
+			},
+		},
+				{ 
+			"Action": "EditData",
+      "Target": "Characters/Dialogue/Leo",
+      "Entries": { 
+"RangerSettlesIn": "I wonder if the Ranger in the forest knows the old man on my island?#$b#They both have nice hats.$h",
+	"RangerHike": "Ranger Taro has a neat big hat!$h#$b#I bet the parrots and I could weave a bunch of grass to make a hat like that."
+			},
+		},
+		
+		{ 
+			"Action": "EditData",
+      "Target": "Characters/Dialogue/Leah",
+      "Entries": { 
+	"RangerFirstMet": "Someone in a park ranger uniform is hiking around the forest.#$b#I didn't know Cindersap was a Ferngill State Forest!$h"
+			},
+		},
+		
+
+		{ 
+			"Action": "EditData",
+      "Target": "Characters/Dialogue/Shane",
+      "Entries": { 
+	"RangerFirstMet": "Some jerk in a ranger outfit is hanging around the woods behind the ranch.#$b#Marnie's not worried, but I sure am.#$b#We don't need another weirdo in this town."	
+			}
+		},
+		
+	]
+}

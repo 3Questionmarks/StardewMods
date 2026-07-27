@@ -210,8 +210,20 @@
 	{
 	"SoundName": "yoba",
 	"WhenToPlay": "Idle",
-	"TimeBetweenSound": 5000,
+	"TimeBetweenSound": 3000,
+	"ChanceOfPlaying": 0.2
+	},
+	{
+	"SoundName": "Horse_WA_Sound",
+	"WhenToPlay": "Always",
+	"TimeBetweenSound": 3000,
 	"ChanceOfPlaying": 0.3
-	}
+	},
+	{
+	"SoundName": "Gallop_WA_Sound",
+	"WhenToPlay": "Moving",
+	"TimeBetweenSound": 550,
+	"ChanceOfPlaying": 1
+	},
 ]  
 }

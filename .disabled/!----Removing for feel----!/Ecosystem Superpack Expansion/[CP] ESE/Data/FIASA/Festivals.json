@@ -1,0 +1,193 @@
+{
+	"Changes": 
+    [
+		{
+		"LogName": "Ice Festival CC_KodaK",
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter8",
+		"TextOperations": [
+		{
+			"Operation": "Append",
+			"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+			"Value": "CC_KodaK 71 50 2",
+			"Delimiter": "/"
+		},
+		{
+			"Operation": "Append",
+			"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+			"Value": "CC_KodaK 67 42 0",
+			"Delimiter": "/"
+		},
+		]
+		},
+
+		{	
+			"LogName": "CC_KodaK ice - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": 
+			
+			{ "CC_KodaK": "Brr!#$b#How is everyone just standing around in the cold like this?#$b#Maybe I underestimated the hardy nature of this valley.$1",
+			"CC_KodaK_spouse": "I'm torn between cheering for Elliott or Willy.$2#$b#They were both 'neighbors' when I lived on the boat.$1#$b#Wait! Of course I'm cheering for you, babe!$5"
+			}
+		},
+		{
+		"LogName": "xmas Festival CC_KodaK",
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter25",
+		"TextOperations": [
+		{
+			"Operation": "Append",
+			"Target": [ "Entries", "Set-Up_additionalCharacters" ],
+			"Value": "CC_KodaK 40 59 1",
+			"Delimiter": "/"
+		},
+		{
+			"Operation": "Append",
+			"Target": [ "Entries", "MainEvent_additionalCharacters" ],
+			"Value": "CC_KodaK 40 59 1",
+			"Delimiter": "/"
+		},
+		]
+		},
+
+		{	
+			"LogName": "CC_KodaK ice - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": 
+			
+			{ "CC_KodaK": "Thanks for saying hi, @.$1#$b#I know you have a lot of people to check-in with today.",
+			"CC_KodaK_spouse": "We'll do our own presents at home later.$1#$b#Enjoy this time with the community, @!$1"
+			}
+		},
+			{
+		"LogName": "Fair",
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall16",
+		"When": {
+		"Spouse": "CC_KodaK" },
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "CC_KodaK 50 87 2",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "CC_KodaK 50 87 2",
+                    "Delimiter": "/"
+                }
+			]
+		},
+			{	
+			"LogName": "CC_KodaK Fair - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": 
+			{ "CC_KodaK_spouse": "You got everything for the grange display?#$b#Let me know if you need me to carry anything.$1"
+			}
+		},
+		{	
+			"LogName": "CC_KodaK Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "CC_KodaK 37 24 0",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "CC_KodaK 30 12 1",
+                    "Delimiter": "/"
+                }
+			]
+		},
+		{	
+			"LogName": "CC_KodaK Luau - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": 
+			{ "CC_KodaK": "Wow, just like the luaus we have back home!$1#$b#My little brother would be dancing up a storm.$1",
+			"CC_KodaK_spouse": "Let's dance, babe!$1#$b#Here, take my hand.$4"
+			}
+		},
+		{	
+			"LogName": "CC_KodaK Dance of the Moonlight Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations":
+			[
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "CC_KodaK 63 21 2",
+					"Delimiter": "/"
+				},
+
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "CC_KodaK 24 34 3",
+					"Delimiter": "/"
+					
+				}
+
+				
+			]
+		},
+		{	
+			"LogName": "KI Dance of the Moonlight Jellies - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries":
+			{ "CC_KodaK": "...#$b#I came on my own, without the boat.#$b#This is really special for me.$4",
+			"CC_KodaK_spouse": "...$4#$b#Thanks for being here with me tonight.$4",
+			}
+		},
+			{	
+			"LogName": "CC_Inke Dance of the Moonlight Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"When":
+			{"HasSeenEvent": "cc_kodasixfinal" },
+			
+			"TextOperations":
+			[
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "CC_Inke 63 11 3",
+					"Delimiter": "/"
+				},
+
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "CC_Inke 63 11 3",
+					"Delimiter": "/"
+				}
+
+			]
+		},
+		{	
+			"LogName": "CC_Inke Dance of the Moonlight Jellies - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": 
+			{ "CC_Inke": "Hi there hatchlin'.#$b#Shh... tonight let's learn from mama ocean herself.$2"
+			}
+		}
+		
+		
+		
+	]
+}										

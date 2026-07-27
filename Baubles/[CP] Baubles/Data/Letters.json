@@ -1,0 +1,192 @@
+{
+  "Changes":
+    [
+	{
+	  "Action": "Load",
+	  "Target": "Mods/appleseed.BCP.LetterBackgrounds",
+	  "FromFile": "Assets/Letters/LetterBackgrounds.png"
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Mail",
+	  "Entries": 
+	    {
+		"appleseed.BCP.DyeGuideLetter": "{{i18n:appleseed.BCP.DyeGuideLetter}}[letterbg Mods/appleseed.BCP.LetterBackgrounds 3][textcolor gray][#]{{i18n:appleseed.BCP.DyeGuideLetterTitle}}"
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Mail",
+	  "When": { "Quests": "Off" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.BaublesIntro": "{{i18n:appleseed.BCP.BaublesIntro}}%item craftingRecipe appleseed.BCP.AtelierTable %%[letterbg Mods/appleseed.BCP.LetterBackgrounds 0][textcolor gray][#]{{i18n:appleseed.BCP.BaublesIntroTitle}}",
+		"appleseed.BCP.WhimsychineHint": "{{i18n:appleseed.BCP.WhimsychineHint}}[letterbg Mods/appleseed.BCP.LetterBackgrounds 2][textcolor black][#]{{i18n: appleseed.BCP.WhimsychineHintTitle}}",
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Mail",
+	  "When": { "Quests": "On" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.BaublesIntro": "{{i18n:appleseed.BCP.BaublesIntro}}%item craftingRecipe appleseed.BCP.AtelierTable %% %item quest appleseed.BCP.IntroQuest true%%[letterbg Mods/appleseed.BCP.LetterBackgrounds 0][textcolor gray][#]{{i18n:appleseed.BCP.BaublesIntroTitle}}",
+		"appleseed.BCP.WizardRequest": "{{i18n:appleseed.BCP.WizardRequest}}%item quest appleseed.BCP.WhimsychineQuest true %%[letterbg 2][textcolor cyan][#]{{i18n:appleseed.BCP.WizardRequestTitle}}",
+		"appleseed.BCP.WhimsychineHint": "{{i18n:appleseed.BCP.WhimsychineHint}}[letterbg Mods/appleseed.BCP.LetterBackgrounds 2][textcolor black][#]{{i18n: appleseed.BCP.WhimsychineHintTitle}}",
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "Entries": 
+	    {
+		"appleseed.BCP.SendBaublesIntro":
+		  {
+		    "Id": "appleseed.BCP.SendBaublesIntro",
+		    "Trigger": "DayEnding",
+		    "Condition": "DAYS_PLAYED 0",
+		    "Action": "Addmail Current appleseed.BCP.BaublesIntro"
+		  },
+		"appleseed.BCP.SendBaublesIntroBackup":
+		  {
+		    "Id": "appleseed.BCP.SendBaublesIntroBackup",
+		    "Trigger": "DayStarted",
+		    "Condition": "!PLAYER_HAS_MAIL Current appleseed.BCP.BaublesIntro",
+		    "Action": "Addmail Current appleseed.BCP.BaublesIntro now"
+		  }
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Mail",
+	  "When": { "CurioUnlockMode": "MakeFriends, CompleteCC, Free" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.CurioBookLetter": "{{i18n: appleseed.BCP.CurioBookLetter}}%item object appleseed.BCP.CurioBook 1 %%[letterbg Mods/appleseed.BCP.LetterBackgrounds 1][textcolor black][#]{{i18n:appleseed.BCP.CurioBookLetterTitle}}"
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "When": { "CurioUnlockMode": "Free" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.SendCurioBookLetter":
+		  {
+		    "Id": "appleseed.BCP.SendCurioBookLetterF",
+		    "Trigger": "DayEnding",
+		    "Condition": "DAYS_PLAYED 0",
+		    "Action": "Addmail Current appleseed.BCP.CurioBookLetter"
+		  },
+		"appleseed.BCP.SendCurioBookLetterBackup":
+		  {
+		    "Id": "appleseed.BCP.SendCurioBookLetterFBackup",
+		    "Trigger": "DayStarted",
+		    "Condition": "!PLAYER_HAS_MAIL Current appleseed.BCP.CurioBookLetter",
+		    "Action": "Addmail Current appleseed.BCP.CurioBookLetter now"
+		  }
+
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "When": { "CurioUnlockMode": "MakeFriends" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.SendCurioBookLetterMF":
+		  {
+		    "Id": "appleseed.BCP.SendCurioBookLetterMF",
+		    "Trigger": "DayEnding",
+		    "Condition": "PLAYER_HAS_ACHIEVEMENT Current 12",
+		    "Action": "Addmail Current appleseed.BCP.CurioBookLetter"
+		  },
+		"appleseed.BCP.SendCurioBookLetterMFBackup":
+		  {
+		    "Id": "appleseed.BCP.SendCurioBookLetterMFBackup",
+		    "Trigger": "DayStarted",
+		    "Condition": "!PLAYER_HAS_MAIL Current appleseed.BCP.CurioBookLetter, PLAYER_HAS_ACHIEVEMENT Current 12",
+		    "Action": "Addmail Current appleseed.BCP.CurioBookLetter now"
+		  }
+
+	    }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "When": { "CurioUnlockMode": "CompleteCC" },
+	  "Entries": 
+	    {
+		"appleseed.BCP.SendCurioBookLetterCC":
+		  {
+		    "Id": "appleseed.BCP.SendCurioBookLetterCC",
+		    "Trigger": "DayEnding",
+		    "Condition": "IS_COMMUNITY_CENTER_COMPLETE true",
+		    "Action": "Addmail Current appleseed.BCP.CurioBookLetter"
+		  },
+		"appleseed.BCP.SendCurioBookLetterCCBackup":
+		  {
+		    "Id": "appleseed.BCP.SendCurioBookLetterCCBackup",
+		    "Trigger": "DayStarted",
+		    "Condition": "!PLAYER_HAS_MAIL Current appleseed.BCP.CurioBookLetter, IS_COMMUNITY_CENTER_COMPLETE true",
+		    "Action": "Addmail Current appleseed.BCP.CurioBookLetter now"
+		  }
+
+	    }
+	},
+
+//SPECIAL ORDER MAIL
+
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Mail",
+	  "When": { "SpecialOrders": "On" },
+	  "Entries": 
+	    {
+		"BCP.AbigailOrderComplete": "{{i18n:BCP.AbigailOrderComplete}}%item object 279 1%%[#]{{i18n:BCP.AbigailOrderCompleteTitle}}",
+		"BCP.EvelynOrderComplete": "{{i18n:BCP.EvelynOrderComplete}}[#]{{i18n:BCP.EvelynOrderCompleteTitle}}",
+		"BCP.MarnieOrderComplete": "{{i18n:BCP.MarnieOrderComplete}}%item furniture appleseed.BCP.JasDrawing%%[#]{{i18n:BCP.MarnieOrderCompleteTitle}}",
+		"BCP.HaleyOrderComplete": "{{i18n:BCP.HaleyOrderComplete}}%item furniture appleseed.BCP.HaleyEmbroidery%%[#]{{i18n:BCP.HaleyOrderCompleteTitle}}",
+		"BCP.LeahOrderComplete": "{{i18n:BCP.LeahOrderComplete}}%item furniture appleseed.BCP.LeahStillLife%%[#]{{i18n:BCP.LeahOrderCompleteTitle}}",
+		"BCP.HarveyOrderComplete": "{{i18n:BCP.HarveyOrderComplete}}%item object appleseed.BCP.BurnTonic 3%%[#]{{i18n:BCP.HarveyOrderCompleteTitle}}",
+		"BCP.PennyOrderComplete": "{{i18n:BCP.PennyOrderComplete}}%item object 613 5%%[#]{{i18n:BCP.PennyOrderCompleteTitle}}",
+		"BCP.AlexOrderComplete": "{{i18n:BCP.AlexOrderComplete}}%item object 220 3%%[#]{{i18n:BCP.AlexOrderCompleteTitle}}",
+		"BCP.PierreOrderComplete": "{{i18n:BCP.PierreOrderComplete}}[#]{{i18n:BCP.PierreOrderCompleteTitle}}",
+		"BCP.JodiOrderComplete": "{{i18n:BCP.JodiOrderComplete}}%item furniture appleseed.BCP.VincentDrawing%%[#]{{i18n:BCP.JodiOrderCompleteTitle}}",
+		"BCP.LewisOrderComplete": "{{i18n:BCP.LewisOrderComplete}}%item object StardropTea 3%%[#]{{i18n:BCP.LewisOrderCompleteTitle}}"
+
+	    }
+	},
+
+//SHIRT TRIGGERS
+
+	{
+	  "Action": "EditData",
+	  "Target": "Data/TriggerActions",
+	  "When": { "SpecialOrders": "On" },
+	  "Entries": 
+	    {
+		"BCP.EvelynSweater":
+		  {
+		    "Id": "BCP.EvelynSweater",
+		    "Trigger": "DayStarted",
+		    "Condition": "PLAYER_HAS_MAIL Host BCP.EvelynOrderComplete",
+		    "Actions": 
+			[
+			  "AddItem (S)appleseed.BCP.KnitSweater"
+			]
+		  },
+		"BCP.PierreShirt":
+		  {
+		    "Id": "BCP.PierreShirt",
+		    "Trigger": "DayStarted",
+		    "Condition": "PLAYER_HAS_MAIL Host BCP.PierreOrderComplete",
+		    "Actions": 
+			[
+			  "AddItem (S)appleseed.BCP.ILoveSDShirt"
+			]
+		  }
+	    }
+	}
+    ]
+}

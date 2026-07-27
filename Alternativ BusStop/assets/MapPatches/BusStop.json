@@ -1,0 +1,636 @@
+{
+    "Changes": [
+//Vanilla
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/Busstop.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 22, "Height": 13 },
+			"ToArea": { "X": 20, "Y": 10, "Width": 22, "Height": 13 },
+            "When": {
+                "HasMod |contains=Rafseazz.RSVCP": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Stuyk.HardwareStoreCP": false,
+                "HasMod |contains=Kana.PrettierBusStop": false
+            },
+            "Patchmode": "Replace"
+        },
+//SVE
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/Busstop.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 22, "Height": 13 },
+			"ToArea": { "X": 20, "Y": 10, "Width": 22, "Height": 13 },
+            "When": {
+                "HasMod |contains=Rafseazz.RSVCP": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Stuyk.HardwareStoreCP": false,
+                "HasMod |contains=Kana.PrettierBusStop": false
+            },
+            "Patchmode": "Replace"
+        },
+//RSV
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/Busstop.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 22, "Height": 13 },
+			"ToArea": { "X": 20, "Y": 10, "Width": 22, "Height": 13 },
+            "When": {
+                "HasMod |contains=Rafseazz.RSVCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Stuyk.HardwareStoreCP": false,
+                "HasMod |contains=Kana.PrettierBusStop": false
+            },
+            "Patchmode": "Replace"
+        },
+//SVE and RSV
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/Busstop.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 22, "Height": 13 },
+			"ToArea": { "X": 20, "Y": 10, "Width": 22, "Height": 13 },
+            "When": {
+                "HasMod |contains=Rafseazz.RSVCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Stuyk.HardwareStoreCP": false,
+                "HasMod |contains=Kana.PrettierBusStop": false
+            },
+            "Patchmode": "Replace"
+        },
+//HardwareShop Vanilla
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/Busstop_HardwareShop.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 13 },
+            "ToArea": { "X": 21, "Y": 10, "Width": 21, "Height": 13 },
+            "When": {
+                "HasMod |contains=Stuyk.HardwareStoreCP": true
+            },
+            "Patchmode": "Replace"
+        },
+//SVE + RSV
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/Busstop_HardwareShop.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 13 },
+            "ToArea": { "X": 21, "Y": 10, "Width": 21, "Height": 13 },
+            "When": {
+                "HasMod |contains=Stuyk.HardwareStoreCP": true,
+                "HasMod |contains=Rafseazz.RSVCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Patchmode": "Replace"
+        },
+//SVE
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/Busstop_HardwareShop.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 13 },
+            "ToArea": { "X": 21, "Y": 10, "Width": 21, "Height": 13 },
+            "When": {
+                "HasMod |contains=Stuyk.HardwareStoreCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Patchmode": "Replace"
+        },
+//RSV
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/Busstop_HardwareShop.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 13 },
+            "ToArea": { "X": 21, "Y": 10, "Width": 21, "Height": 13 },
+            "When": {
+                "HasMod |contains=Stuyk.HardwareStoreCP": true,
+                "HasMod |contains=Rafseazz.RSVCP": true
+            },
+            "Patchmode": "Replace"
+        },
+//Prettier BusStop Vanilla
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/Busstop_PB.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 22, "Height": 13 },
+            "ToArea": { "X": 20, "Y": 10, "Width": 22, "Height": 13 },
+            "When": {
+                "HasMod |contains=Kana.PrettierBusStop": true
+            },
+            "Patchmode": "Replace"
+        },
+//SVE + RSV
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/Busstop_PB.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 22, "Height": 13 },
+            "ToArea": { "X": 20, "Y": 10, "Width": 22, "Height": 13 },
+            "When": {
+                "HasMod |contains=Kana.PrettierBusStop": true,
+                "HasMod |contains=Rafseazz.RSVCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Patchmode": "Replace"
+        },
+//SVE
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/Busstop_PB.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 22, "Height": 13 },
+            "ToArea": { "X": 20, "Y": 10, "Width": 22, "Height": 13 },
+            "When": {
+                "HasMod |contains=Kana.PrettierBusStop": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Patchmode": "Replace"
+        },
+//RSV
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/Busstop_PB.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 22, "Height": 13 },
+            "ToArea": { "X": 20, "Y": 10, "Width": 22, "Height": 13 },
+            "When": {
+                "HasMod |contains=Kana.PrettierBusStop": true,
+                "HasMod |contains=Rafseazz.RSVCP": true
+            },
+            "Patchmode": "Replace"
+        },
+//DayTiles
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 30 12 907",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 36 12 907",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 21 18 907",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 26 18 907",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": " AlwaysFront 36 18 907",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 40 18 907",
+                    "Delimiter": " "
+                }
+            ]
+        },
+//NightTiles
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 30 12 908",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 36 12 908",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 21 18 908",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 26 18 908",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 36 18 908",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 40 18 908",
+                    "Delimiter": " "
+                }
+            ]
+        },
+//Light
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "30 14 4",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "36 14 4",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "21 20 4",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "26 20 4",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "36 20 4",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "40 20 4",
+                    "Delimiter": " "
+                }
+            ]
+        },
+//Leaves
+//SVE + RSV
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/BusStop_Leaves.tmx",
+            "When": {
+                "Season": "Fall",
+                "SeasonalEdits": true,
+                "HasMod |contains=Rafseazz.RSVCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "ToArea": {
+                "X": 20,
+                "Y": 10,
+                "Width": 22,
+                "Height": 13
+            }
+        },
+//SVE
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "assets/MapPatches/BusStop_Leaves.tmx",
+            "When": {
+                "Season": "Fall",
+                "SeasonalEdits": true,
+                "HasMod |contains=Rafseazz.RSVCP": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "ToArea": {
+                "X": 26,
+                "Y": 11,
+                "Width": 22,
+                "Height": 13
+            }
+        },
+//RSV Shild
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "When": {
+                "HasMod |contains=Rafseazz.RSVCP": true
+            },
+            "FromFile": "assets/MapPatches/RSV_Shild.tmx",
+            "ToArea": {
+                "X": 40, 
+                "Y": 19,
+                "Width": 5,
+                "Height": 3,
+            "Patchmode": "Overlay"
+            }
+        },
+//RSV Street
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "When": {
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "HasMod |contains=Rafseazz.RSVCP": true,
+                "Rafseazz.RidgesideVillage/EnableBetterBusStop": true
+            },
+            "FromFile": "assets/MapPatches/Street.tmx",
+            "ToArea": {
+                "X": 38, 
+                "Y": 10,
+                "Width": 1,
+                "Height": 1,
+            "Patchmode": "Overlay"
+            }
+        },
+//Stones
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "When": {
+                        "Remove Stones": true
+                    },
+            "MapTiles": [
+                { 
+                    "Position": { "X": 14, "Y": 17 },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                { 
+                    "Position": { "X": 15, "Y": 13 },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                { 
+                    "Position": { "X": 26, "Y": 13 },
+                    "Layer": "Buildings",
+                    "Remove": true
+                }
+            ]
+        },
+//BusStop Shield
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "When": {
+                        "Remove BusStop Shield": true
+                    },
+            "MapTiles": [
+                { 
+                    "Position": { "X": 28, "Y": 12 },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                { 
+                    "Position": { "X": 28, "Y": 11 },
+                    "Layer": "Front",
+                    "Remove": true
+                },
+                { 
+                    "Position": { "X": 28, "Y": 10 },
+                    "Layer": "Front",
+                    "Remove": true
+                }
+            ]
+        },
+//Compatibility with Prettier BusStop
+//Prettier BusStop Lantern
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "When": {
+                "HasMod |contains=Kana.PrettierBusStop": true
+            },
+            "FromFile": "assets/MapPatches/Lantern.tmx",
+            "ToArea": {
+                "X": 14, 
+                "Y": 8,
+                "Width": 1,
+                "Height": 4,
+            "Patchmode": "Overlay",
+            },
+        },
+//DayTiles
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "When": {
+                "HasMod |contains=Kana.PrettierBusStop": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 14 8 907",
+                    "Delimiter": " "
+                }
+            ]
+        },
+//NightTiles
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "When": {
+                "HasMod |contains=Kana.PrettierBusStop": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 14 8 908",
+                    "Delimiter": " "
+                }
+            ]
+        },
+//Light
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Busstop",
+            "When": {
+                "HasMod |contains=Kana.PrettierBusStop": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "14 10 4",
+                    "Delimiter": " "
+                }
+            ]
+        },
+    ]
+}

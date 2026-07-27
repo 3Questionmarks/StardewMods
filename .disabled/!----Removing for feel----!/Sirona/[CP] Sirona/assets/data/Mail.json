@@ -1,0 +1,25 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_HeartEvent8_Mail": {
+          "Id": "{{ModId}}_HeartEvent8_Mail",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HEARTS Current {{ModId}}_Sirona 8, PLAYER_HAS_SEEN_EVENT Current {{ModId}}_SironaHeartEvent7",
+          "Actions": [
+            "AddMail Current {{ModId}}_HeartEvent8_Mail"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}_HeartEvent8_Mail": "{{i18n:Mail.HeartEvent8_Mail.text}}[#]{{i18n:Mail.HeartEvent8_Mail.title}}"
+      }
+    }
+  ]
+}

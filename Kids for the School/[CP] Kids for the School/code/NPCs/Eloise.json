@@ -1,0 +1,42 @@
+{
+    "Changes": [
+//Sprite
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Eloise_{{season}}_1",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Eloise/Eloise_{{season}}_1.png",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Lemurkat.EastScarpNPCs": "true"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Eloise_{{season}}_2",
+            "FromFile": "assets/CharacterFiles/OverworldSprites/Eloise/Eloise_{{season}}_2.png",
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Lemurkat.EastScarpNPCs": "true"
+            }
+        },
+//NPC Animation
+        {
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "Eloise_sit_right": "29/29/29"
+            }
+        },
+//StringsFromMaps
+        {	 
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Priority": "Late",
+            "Entries": { "Desk.10": "{{i18n:Seat_Eloise}}" },
+            "When": {
+                "HasSeenEvent |contains=9695002": "true",
+                "HasMod| contains=Lemurkat.EastScarpNPCs": "true"
+            }
+        }
+    ]
+}

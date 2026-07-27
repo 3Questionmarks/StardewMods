@@ -1,0 +1,38 @@
+{
+    "Name": "Reflective Bathhouse Mirror",
+    "Author": "Noav",
+    "Version": "1.2.1",
+    "Description": "Make the mirrors in the bathhouse actually functional.",
+    "UniqueID": "NOAV.ReflectiveBathhouseMirror",
+    "UpdateKeys": [ "Nexus:15900" ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher",
+        "MinimumVersion": "2.0.3"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "PeacefulEnd.DynamicReflections",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "uglynt.town.interiors",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "grapeponta.VibrantPastoralRecolor",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "KaileyAllen.Cleanbathhouse",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "LaurellaBellaBean.CP.BathhouseRecolorTonedDown",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Trashracc.VG",
+            "IsRequired": false
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "Name": "[CP] H&W Fairy Garden Indoor Furniture",
+    "Author": "HimeTarts and wildflourmods",
+    "Version": "1.0.3",
+    "Description": "H&W Fairy Garden Indoor Furniture Set",
+    "UniqueID": "HXW.FairyGardenIndoor",
+    "UpdateKeys": ["nexus:9989"], 
+    "Dependencies": [
+        {
+            "UniqueID": "sophie.Calcifer",
+            "IsRequired": true
+        }
+    ], 
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

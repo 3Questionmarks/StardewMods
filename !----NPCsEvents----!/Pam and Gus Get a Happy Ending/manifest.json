@@ -1,0 +1,30 @@
+{
+   "Name": "Pam and Gus Get a Happy Ending",
+   "Author": "teainthesunroom",
+   "Version": "2.2.1",
+   "Description": "Romantic heart events for Pam and Gus",
+   "UniqueID": "teainthesunroom.PamGusHappyEnding",
+   "MinimumApiVersion": "2.0",
+   "UpdateKeys": ["Nexus:17296"],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+      },
+   "Dependencies": [
+      {
+        "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+        "IsRequired": false 
+      },
+      {
+        "UniqueID": "DSV.Core",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "recon88.NoPamEnabling",
+        "IsRequired": false
+      },
+      {
+        "UniqueID": "Jonqora.DontEnablePam",
+        "IsRequired": false
+      }
+   ]
+}

@@ -1,0 +1,20 @@
+{
+    "Name": "An Updated Earthy Recolor - Convenient Inventory",
+    "Author": "AztecViper",
+    "Description": "An updated recolor for Convenient Inventory",
+    "Version": "1.0.0",
+    "UniqueID": "aztecviper.earthyrecolor.convenientinventory",
+    "Format": "2.5.0",
+    "UpdateKeys": [
+        "Nexus:31464"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "gaussfire.ConvenientInventory",
+            "IsRequired": true
+        }
+    ]
+}

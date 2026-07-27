@@ -1,0 +1,359 @@
+{
+  "Changes": [
+    {
+      "LogName": "SASS Special Orders Dropbox",
+      "Action": "EditMap",
+      "Target": "Maps/MagicStardew_AsharaHouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 25,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "DropBox MagicStardewDropBox"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "SASS Special Orders Dropbox",
+      "Action": "EditMap",
+      "Target": "Maps/MagicStardew_AsharaHouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 26,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "DropBox MagicStardewDropBox"
+          }
+        }
+      ]
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "MagicStardew_Hearts_MagicStardew_5Event": {
+          "Name": "{{i18n:MagicStardew_Hearts_MagicStardew_5Event_name}}",
+          "Requester": "Ashara",
+          "Duration": "Month",
+          "Repeatable": "true",
+          "RequiredTags": null,
+          "OrderType": "",
+          "SpecialRule": "",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Text": "{{i18n:MagicStardew_Hearts_MagicStardew_5Event_text}}",
+          "Objectives": [
+            {
+              "Type": "Donate",
+              "Text": "{{i18n:MagicStardew_Hearts_MagicStardew_5Event_text.deliver1}}",
+              "RequiredCount": "1",
+              "Data": {
+                "DropBox": "MagicStardewDropBox",
+                "DropBoxGameLocation": "MagicStardew_AsharaHouse",
+                "DropBoxIndicatorLocation": "25.5 12.5",
+                "AcceptedContextTags": "item_galaxy_sword"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "{{i18n:MagicStardew_Hearts_MagicStardew_5Event_.deliver2}}",
+              "RequiredCount": "3",
+              "Data": {
+                "DropBox": "MagicStardewDropBox",
+                "DropBoxGameLocation": "MagicStardew_AsharaHouse",
+                "DropBoxIndicatorLocation": "25.5 12.5",
+                "AcceptedContextTags": "item_Fairy_Stone"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "{{i18n:MagicStardew_Hearts_MagicStardew_5Event_.deliver3}}",
+              "RequiredCount": "3",
+              "Data": {
+                "DropBox": "MagicStardewDropBox",
+                "DropBoxGameLocation": "MagicStardew_AsharaHouse",
+                "DropBoxIndicatorLocation": "25.5 12.5",
+                "AcceptedContextTags": "item_Prismatic_Shard"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "{{i18n:MagicStardew_Hearts_MagicStardew_5Event_.deliver4}}",
+              "RequiredCount": "3",
+              "Data": {
+                "DropBox": "MagicStardewDropBox",
+                "DropBoxGameLocation": "MagicStardew_AsharaHouse",
+                "DropBoxIndicatorLocation": "25.5 12.5",
+                "AcceptedContextTags": "item_Star_Shards"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "{{i18n:MagicStardew_Hearts_MagicStardew_5Event_.deliver5}}",
+              "RequiredCount": "3",
+              "Data": {
+                "DropBox": "MagicStardewDropBox",
+                "DropBoxGameLocation": "MagicStardew_AsharaHouse",
+                "DropBoxIndicatorLocation": "25.5 12.5",
+                "AcceptedContextTags": "item_Ruby"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Friendship",
+              "Data": {
+                "Amount": "100",
+                "TargetName": "Ashara"
+              }
+            }
+          ],
+          "CustomFields": {
+            "MagicStardew.InfiniteDuration": "true",
+          }
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      	//Book Order
+        "MagicStardew_SO_1": {
+          "Name": "{{i18n:SO_MAGICSTARDEW1name}}",
+          "Requester": "Ashara",
+          "Duration": "Month",
+          "Repeatable": "true",
+          "RequiredTags": null,
+          "OrderType": "",
+          "SpecialRule": "",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Text": "{{i18n:SO_MAGICSTARDEW1text}}",
+          "Objectives": [
+            {
+              "Type": "Donate",
+              "Text": "{{i18n:SO_MAGICSTARDEW1text.deliver1}}",
+              "RequiredCount": "3",
+              "Data": {
+                "DropBox": "MagicStardewDropBox",
+                "DropBoxGameLocation": "MagicStardew_AsharaHouse",
+                "DropBoxIndicatorLocation": "25.5 12.5",
+                "AcceptedContextTags": "item_void_essence"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "{{i18n:SO_MAGICSTARDEW1text.deliver2}}",
+              "RequiredCount": "3",
+              "Data": {
+                "DropBox": "MagicStardewDropBox",
+                "DropBoxGameLocation": "MagicStardew_AsharaHouse",
+                "DropBoxIndicatorLocation": "25.5 12.5",
+                "AcceptedContextTags": "item_solar_essence"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Friendship",
+              "Data": {
+                "Amount": "100",
+                "TargetName": "Ashara"
+              }
+            }
+          ],
+          "CustomFields": {
+            "MagicStardew.InfiniteDuration": "true",
+          }
+        },
+
+
+
+
+
+
+        //Spell Warp To Farm
+        "MagicStardew_Spell_WarmToFarm": {
+          "Name": "{{i18n:Spell_WarmToFarm_name}}",
+          "Requester": "Ashara",
+          "Duration": "Month",
+          "Repeatable": "False",
+          "RequiredTags": "!event_MagicStardew_Spell_WarmToFarm",
+          "OrderType": "SpellBook",
+          "SpecialRule": "",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Text": "{{i18n:Spell_WarmToFarm_text}}",
+          "Objectives": [
+            {
+              "Type": "Deliver",
+              "Text": "{{i18n:Spell_WarmToFarm_collect}}",
+              "RequiredCount": "1",
+              "Data": {
+                "AcceptedContextTags": "item_Warp_Totem:_Farm",
+                "TargetName": "Ashara House"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Friendship",
+              "Data": {
+                "Amount": "100",
+                "TargetName": "Ashara"
+              }
+            }
+          ],
+          "CustomFields": {
+            "MagicStardew.InfiniteDuration": "true",
+          }
+        },
+        //Magnetic skin
+        "MagicStardew_Spell_MagneticSkin": {
+          "Name": "{{i18n:Spell_MagneticSkin_name}}",
+          "Requester": "Ashara",
+          "Duration": "Month",
+          "Repeatable": "False",
+          "RequiredTags": "!event_MagicStardew_Spell_MagneticSkin",
+          "OrderType": "SpellBook",
+          "SpecialRule": "",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Text": "{{i18n:Spell_MagneticSkin_text}}",
+          "Objectives": [
+            {
+              "Type": "Deliver",
+              "Text": "{{i18n:Spell_MagneticSkin_collect}}",
+              "RequiredCount": "1",
+              "Data": {
+                "AcceptedContextTags": "item_magnet_ring",
+                "TargetName": "Ashara House"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Friendship",
+              "Data": {
+                "Amount": "100",
+                "TargetName": "Ashara"
+              }
+            }
+          ],
+          "CustomFields": {
+            "MagicStardew.InfiniteDuration": "true",
+          }
+        },
+
+
+        //Explosvie hammer
+        "MagicStardew_Spell_Explosive_Hammer": {
+          "Name": "{{i18n:Spell_MagicStardew_Spell_Explosive_Hammer_name}}",
+          "Requester": "Ashara",
+          "Duration": "Month",
+          "Repeatable": "False",
+          "RequiredTags": "!event_MagicStardew_Spell_Explosive_Hammer",
+          "OrderType": "SpellBook",
+          "SpecialRule": "",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Text": "{{i18n:Spell_MagicStardew_Spell_Explosive_Hammer_text}}",
+          "Objectives": [
+            {
+              "Type": "Deliver",
+              "Text": "{{i18n:Spell_MagicStardew_Spell_Explosive_Hammer_collect}}",
+              "RequiredCount": "1",
+              "Data": {
+                "AcceptedContextTags": "item_Mega_Bomb",
+                "TargetName": "Ashara House"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Friendship",
+              "Data": {
+                "Amount": "100",
+                "TargetName": "Ashara"
+              }
+            }
+          ],
+          "CustomFields": {
+            "MagicStardew.InfiniteDuration": "true",
+          }
+        },
+        // Spell Living Chest
+        "MagicStardew_Spell_LivingChest": {
+          "Name": "{{i18n:Spell_LivingChest_name}}",
+          "Requester": "Ashara",
+          "Duration": "Month",
+          "Repeatable": "False",
+          "RequiredTags": "!event_MagicStardew_Spell_LivingChest_Event",
+          "OrderType": "SpellBook",
+          "SpecialRule": "",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Text": "{{i18n:Spell_LivingChest_text}}",
+          "Objectives": [
+            {
+              "Type": "Donate",
+              "Text": "{{i18n:Spell_LivingChest_deliver1}}",
+              "RequiredCount": "1",
+              "Data": {
+                "DropBox": "MagicStardewDropBox",
+                "DropBoxGameLocation": "MagicStardew_AsharaHouse",
+                "DropBoxIndicatorLocation": "25.5 12.5",
+                "AcceptedContextTags": "item_chest"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "{{i18n:Spell_LivingChest_deliver2}}",
+              "RequiredCount": "5",
+              "Data": {
+                "DropBox": "MagicStardewDropBox",
+                "DropBoxGameLocation": "MagicStardew_AsharaHouse",
+                "DropBoxIndicatorLocation": "25.5 12.5",
+                "AcceptedContextTags": "item_void_essence"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Friendship",
+              "Data": {
+                "Amount": "100",
+                "TargetName": "Ashara"
+              }
+            }
+          ],
+          "CustomFields": {
+            "MagicStardew.InfiniteDuration": "true"
+          }
+        }
+      }
+    }
+  ]
+}

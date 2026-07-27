@@ -1,0 +1,50 @@
+{
+	"Changes": [
+//Adds Morris's house to world map (SVE)
+		{
+            "Action": "EditImage",
+            "Target": "LooseSprites/Map",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, 
+                "HasMod |contains=Yoshimax.MarryMorris": true
+            },
+            "FromFile": "assets/Maps/Marry Morris/{{season}}svemappatch.png",
+            "ToArea": {"X": 129, "Y": 32, "Height": 20, "Width": 22}
+        },
+//Adds Morris's house to world map (has SVE, has NPC Map Locations )
+		{
+            "Action": "EditImage",
+            "Target": "LooseSprites/Map",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, 
+                "HasMod |contains=Bouhm.NPCMapLocations": true, 
+                "HasMod |contains=Yoshimax.MarryMorris": true
+            },
+            "FromFile": "assets/Maps/Marry Morris/{{season}}svemappatch.png",
+            "ToArea": {"X": 129, "Y": 32, "Height": 20, "Width": 22}
+        },
+//Adds Morris's house to world map (No SVE, has NPC Map Locations)
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Map",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false, 
+                "HasMod |contains=Bouhm.NPCMapLocations": true, 
+                "HasMod |contains=Yoshimax.MarryMorris": true
+            },
+            "FromFile": "assets/Maps/Marry Morris/{{season}}mappatch.png",
+            "ToArea": {"X": 129, "Y": 32, "Height": 20, "Width": 22}
+        },
+//Adds Morris's house to world map (No SVE, no NPC Map Locations)
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Map",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false, 
+                "HasMod |contains=Bouhm.NPCMapLocations": false
+            },
+            "FromFile": "assets/Maps/Marry Morris/{{season}}mappatch.png",
+            "ToArea": {"X": 129, "Y": 34, "Height": 20, "Width": 22}
+        },
+	],
+}

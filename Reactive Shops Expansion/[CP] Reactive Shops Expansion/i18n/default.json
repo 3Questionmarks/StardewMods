@@ -1,0 +1,59 @@
+{
+	// VANILLA NPC DIALOGUE
+   
+   // ANIMAL SHOP
+   
+   "Shane.BlueGrassStarter_CT": "Hey, @. Doing good?$h#$b#Say, you ever tried feeding your animals Blue Grass? We've been trying it lately, and ours seem to like it.#$b#Marnie's selling it in the store, if you want to try it at %farm Farm.",
+   
+   // BLACKSMITH
+   
+   "Clint.EarthCrystal_CT": "Hey, @. Just to let you know, I carry Earth Crystals at my shop now.#$b#It's nice to see someone else learning to work with metals. Earth Crystals are essential if you plan to make certain machines.$h",
+   "Clint.RefinedQuartz_CT": "@, how's it going?#$b#Hey, you should know, I decided to start selling Refined Quartz at my shop.#$b#As your farm grows, I'm sure you'll want to make a lot of Sprinklers. Good quality ones take Refined Quartz to build.",
+   "Clint.IridiumOre_CT": "It's nice to see you, @.#$b#You sure have been mining a lot. If I were any good at fighting, I'd have half a mind to join you in the mountain caves.$h#$b#Ah, but my back isn't as forgiving as it used to be.$s#$b#Anyway, thanks for coming to talk. Hey, listen, I started stocking Iridium Ore at the shop.#$b#I can only sell it in small amounts at a time, just because it's hard for a guy like me to build up a stockpile of the stuff. It's there if you need it, though.",
+   "Clint.RadioactiveOre_CT": "@! What's up?$h#$b#I'm doing all right. So, hey, I realize you've been working with some new materials. Normally, Radioactive Ore is something I wouldn't feel comfortable selling to people, but I feel like I know you well by now.#$b#You're responsible with your work and you know how to handle resources of all kinds safely.$h#$b#That's to say, I'm gonna start setting aside some Radioactive Ore every week for purchase, and that offer's only for %farm Farm. Just let me know if you need any.",
+   "Clint.Furnace_CT": "Oh, hey, @.#$b#Say, do you have enough Furnaces at %farm Farm?#$b#If you need some more to process all the metals you bring back, I've started selling them in small quantities at my shop.",
+   "Clint.CharcoalKiln_CT": "Good day, @.#$b#Hey, you're getting good at foraging. You probably have a lot of wood lying around, huh?#$b#Do you own any Charcoal Kilns? You can process surplus wood into coal, using one of those.#$b#I added them to my stock recently. I can sell a couple a week, if you feel like picking one up.",
+   "Clint.LightningRod_CT": "Hey, @. How's %farm Farm?#$b#You have any storm protection for your crops? If you'd like some, I'm selling Lightning Rods at my shop now.#$b#I can only have so many ready at a time, so I'm only selling a few per week. Let me know if you want to come pick one up.",
+   
+   // CARPENTER
+   
+   "Demetrius.MushroomLog_MCave_CT": "@, you seem well.$h#$b#It's good we ran into each other. I wanted to tell you, my research into the mushrooms we started propagating in %farm Farm's cave has led to something that might prove beneficial for you.#$b#You only have those six boxes right now, but how would you like to get some more propagators going?#$b#Well, in truth they're not man-made propagators. All you need is a proper-sized log and nutrients that will allow for mycelia spread.#$b#If you want a lot of them and you find yourself limited on time to put them together, come on over and see Robin.#$b#She and I can put together a small number of all-natural Mushroom Logs for purchase every week.$h",
+   "Demetrius.MushroomLog_BCave_CT": "@, you seem well.$h#$b#It's good we ran into each other. I wanted to tell you, studying the fruit bats in %farm Farm's cave is going just great.#$b#I've been thinking, though... How would you like to get some Mushroom propagators going?#$b#Well, in truth they're not man-made propagators like we would have used in the cave. All you need is a proper-sized log and nutrients that will allow for mycelia spread.#$b#You can put them outside if you want. Nearby trees will promote their growth.#$b#A resourceful person like you could set it up without issue, but if you want a lot of them and you find yourself limited on time to put them together, come on over and see Robin.#$b#She and I can put together a small number of all-natural Mushroom Logs for purchase every week.$h",
+   "Robin.Sap_CT": "Hey, @!$h#$b#You might be interested to learn I added Sap to the list of materials I sell.$h#$b#Sap is more versatile than it looks. You can make a couple types of fertilizer out of it, if you have the skills to refine it.",
+   "Robin.Hardwood_CT": "@, %farm Farm is coming along well. You're making good use of the land's natural resources.#$b#I started stocking Hardwood at the shop. If you feel like saving yourself some time cutting it down, I have plenty available.$h",
+   "Robin.TapperOutputs_CT": "You have a real talent with crops, @! It's been a long time since %farm Farm looked so bountiful.$h#$b#I heard you've been shipping out some quality artisan goods. You know, I know a thing or two about making the producers you use.#$b#Tappers take a long time to output enough to craft with. The way you work, I bet you'll need what feels like an endless amount of tapper product.#$b#Lucky for you, I recently added Oak Resin, Maple Syrup, and Pine Tar to the list of materials you can pick up from the shop.$h#$b#Keep up the good work!$h",
+   "Robin.TreeSeeds_CT": "Hey, @. Just to let you know, I've started selling tree seeds.#$b#Lumber is an important material in our lives, and it's also vital to replant what we use.#$b#The types of trees in the valley are also suited for tapping, once fully grown.$h",
+   "Robin.Chest_CT": "@, good to see you. I hope you're settling into life at %farm Farm well.#$b#Just so you know, if you're looking for quick storage solutions while you clean up the place, I've started selling Chests at my shop.#$b#I can only make them so fast, so I can only sell a couple every week.$h#$b#Let me know if you think of picking one up!",
+   "Robin.BigChest_CT": "@, how are you doing?$h#$b#I added larger chests to my stock, if you're looking to upgrade your storage. Though, like the smaller ones, I'll only have a few available every week.#$b#Figure it might be time, soon! You've been here a little bit now!$h",
+   "Robin.StoneChest_CT": "@! Just the farmer I wanted to see!$h#$b#Good job again on collecting all that material in a week. I thought I'd let you know, I started making some of those Stone Chests I gave you the blueprints for.#$b#You're much more self-sufficient than when you first came here, but if you wanna pick one up faster than it takes to gather the stone to make it, you know where to find me!",
+   "Robin.Scarecrow_CT": "Farmer @! How are your crops doing so far?$h#$b#Having crow trouble? I know making a Scarecrow takes quite a bit of material. If you need more to cover your fields, there are newly ready-made ones for sale at my shop.#$b#Everyone in the world only needs so many Scarecrows, though, so I'll only stock a handful during the week.",
+   
+   // DWARF
+   
+   "Dwarf.BigStoneChest_CT": "I have a new item to sell. Big Stone Chest is its name. A busy human must need spacious personal storage.",
+   "Dwarf.Consumables_CT": "Are you hungry? I'm selling some natural food from the caves.#$b#A word of caution... I don't know if it is all safe for humans to eat.",
+   "Dwarf.Minerals_CT": "You collect gemstones and minerals from these caves, yes?#$b#If it will aid you, look at my stock each day. I will have a different stone for sale.",
+   
+   // FISH SHOP
+   
+   "Willy.QualityBobber_CT": "Ahoy there, @!$h#$b#Glad to see you. How's the fishing been treating you?#$b#Ah, I should tell you, I started selling new Quality Bobbers at my shop.#$b#If you're after prime trophy fish, there's nothing like 'em.$h",
+   "Willy.CuriosityLure_CT": "Good day, @! Hope %farm Farm is having a good {Season}.$h#$b#Listen here, I recently got some new stock I think you'd be keen to see. It's called a Curiosity Lure.#$b#Makes fish of all sorts much more interested in your line.#$b#Ain't easy to get ahold of, so I'm only letting go of a couple every week. You know where to find the shop, if you want to buy one.",
+   "Willy.BaitMaker_CT": "Ah, good of you to stop by, @.#$b#You've been catching a lot of fish. Makes an old sea dog happy to see.$h#$b#You might be interested to hear, I've started selling Bait Makers at my shop. You can use the bait they produce to target certain species of fish.#$b#Not easy to make room for a surplus of 'em, so they'll be stocked in small numbers. Let me know if you're thinking of making a purchase.",
+   
+   // SANDY
+   
+   "Sandy.CoffeeBean_CT": "Hey there!#$b#Say, are you growing any Coffee Beans in the valley? I just started selling them here, if you're interested!$h",
+   
+   // SEED SHOP
+	
+   "Caroline.TeaSapling_CT": "Hello, @.#$b#Just to let you know, I spoke with my husband and we've agreed that he'll start stocking Tea Saplings at the shop.#$b#He won't sell them in Winter. They don't do well in the cold.#$b#Let me know if you start cultivating any Tea Saplings at %farm Farm! I'd love to see how they turn out!$h",
+   "Pierre.StrawberrySeeds_CT": "@! It's good to see you.$h#$b#I didn't get a chance to tell you yet, so I'll tell you now.#$b#The Strawberry Seeds I sell at the Egg Festival are such a hit that I've decided to start selling them during all of Spring!#$b#If you buy them at the Egg Festival, I'll charge a lower rate than the rest of Spring.#$b#It promotes getting more of you farmers to the festival!$h",
+   "Pierre.ArtisanGoods_CT": "Hi, @.#$b#Ah, you should know, I've started selling certain artisan goods at the shop. Wine, pickles, that sort of thing.#$b#They can be a nice treat on special occasions, or just after a hard day of work.$h",
+   
+   // SVE NPC DIALOGUE
+   
+   // SOPHIA
+   
+   "Sophia.Year2FriendshipDiscount_CT": "Hey, @! It's really nice to see you.$h#$b#So, listen... You're a really talented farmer, and an even better friend. It means a lot that you come to see me so much.#$b#I had to increase the prices of my Sprinklers with resource costs going up. If you still need more for any new fields, I want to offer you a discount.#$b#I'll still charge enough to make money, but consider this a small gesture of thanks from me... for everything.$h"
+   
+}

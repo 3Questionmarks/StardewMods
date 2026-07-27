@@ -1,0 +1,113 @@
+{
+	"Changes": [
+		//Brings Marlon and Gunther into the game
+		{
+			"LogName": "NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Gunther"
+			],
+			"Entries": {
+				"SocialTab": "UnknownUntilMet",
+				"CanSocialize": "true",
+				"CanVisitIsland": "FALSE",
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP,Yoshimax.BefriendMarlon,andril11.charlie, ChicoLopes.GuntherToNPC, Wolf.Gun, Endwyr.ValleyNPCs": false
+			}
+		},
+		{
+			"LogName": "NPC Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"Gunther": "{{i18n:gift.love.Gun}}/226 104/{{i18n:gift.like.Gun}}/106 123 124 125 107 108 115 119 120 121 122 96 97 98 99 -2 -12/{{i18n:gift.dislike.Gun}}/78 110/{{i18n:gift.hate.Gun}}//{{i18n:gift.neutral.Gun}}/-4/"
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, andril11.charlie, ChicoLopes.GuntherToNPC, Wolf.Gun, Endwyr.ValleyNPCs": false
+			}
+		},		{
+			"LogName": "Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Gunther",
+			"FromFile": "assets/Blank.json",
+			"When": {
+				"HasMod |contains=ChicoLopes.GuntherToNPC,FlashShifter.StardewValleyExpandedCP,Yoshimax.BefriendMarlon, andril11.charlie, Wolf.Gun, Endwyr.ValleyNPCs": false
+			}
+		},
+		{
+			"LogName": "Gunther Dialogue",
+			"Action": "Include",
+			"FromFile": "assets/GuntherDialogue.json",
+			"When": {
+				"HasMod |contains=Wolf.Gun": false
+			}
+		},
+        //Remove obstacles from museum so you can reach Gunther
+		{
+			"LogName": "Removes obstacles from museum",
+			"Action": "EditMap",
+			"Target": "Maps/ArchaeologyHouse",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 4,
+						"Y": 7
+					},
+					"Layer": "Front",
+					"Remove": true
+				}
+			],
+			"When": {
+				"HasMod |contains=ChicoLopes.GuntherToNPC,Karmylla.ImmersiveMaps, andril11.charlie, FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, Wolf.Gun, Endwyr.ValleyNPCs": false
+			}
+		},
+		
+		{
+			"LogName": "Removes obstacles from museum",
+			"Action": "EditMap",
+			"Target": "Maps/ArchaeologyHouse",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 4,
+						"Y": 8
+					},
+					"Layer": "Buildings",
+					"Remove": true
+				},
+				{
+					"Position": {
+						"X": 5,
+						"Y": 8
+					},
+					"Layer": "Buildings",
+					"Remove": true
+				}
+			],
+			"When": {
+				"HasMod |contains=ChicoLopes.GuntherToNPC,Karmylla.ImmersiveMaps, andril11.charlie, FlashShifter.StardewValleyExpandedCP, Yoshimax.BefriendMarlon, Wolf.Gun, Endwyr.ValleyNPCs": false
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall20",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Gunther 91 60 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RSVCP"
+            }
+        },
+ 
+	]
+}

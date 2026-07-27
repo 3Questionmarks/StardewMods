@@ -1,0 +1,19 @@
+{
+  "Changes": [
+    {
+      "LogName": "Sirona's Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_Sirona",
+      "Entries": {
+        "spring": "900 Beach 83 40 2/1100 Beach 88 7 2/1400 Beach 67 25 2/1900 Beach 82 39 3/2100 dedpeech.seacave_SeaCave 16 15 0",
+        "spring_Tue": "610 dedpeech.seacave_SeaCave 9 6 0 {{ModId}}_invisible/2100 dedpeech.seacave_SeaCave 9 6 0 {{ModId}}_invisible",
+        "summer": "900 dedpeech.seacave_SeaCave 6 6 3/1100 dedpeech.seacave_SeaCave 9 9 1/1400 dedpeech.seacave_SeaCave 16 11 3/1900 Beach 82 39 3/2100 dedpeech.seacave_SeaCave 16 15 0",
+        "summer_Tue": "610 dedpeech.seacave_SeaCave 16 11 3/2100 dedpeech.seacave_SeaCave 16 15 0",
+        "fall": "900 Beach 83 40 2/1100 Beach 88 7 2/1400 Beach 67 25 2/1900 Beach 82 39 3/2100 dedpeech.seacave_SeaCave 16 15 0",
+        "fall_Tue": "610 dedpeech.seacave_SeaCave 9 6 0 {{ModId}}_invisible/2100 dedpeech.seacave_SeaCave 9 6 0 {{ModId}}_invisible",
+        "winter": "900 Beach 83 40 2/1100 Beach 88 7 2/1400 Beach 67 25 2/1900 Beach 82 39 3/2100 dedpeech.seacave_SeaCave 16 15 0",
+        "winter_Tue": "610 dedpeech.seacave_SeaCave 9 6 0 {{ModId}}_invisible/2100 dedpeech.seacave_SeaCave 9 6 0 {{ModId}}_invisible"
+      }
+    }
+  ]
+}

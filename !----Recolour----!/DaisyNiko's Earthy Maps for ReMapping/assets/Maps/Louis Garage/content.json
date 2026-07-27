@@ -1,0 +1,41 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Louis.Garage)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Louis.Garage",
+      "FromFile": "assets/Maps/Louis Garage/Louis.Garage_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+//Boat Journey
+    {	
+		  "LogName": "Remapping (Earthy) Recolor Louis's Garage Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Louis Garage/Louis.Garage_{{season}}_Vanilla.png", 
+		  "ToArea": {"X": 285, "Y": 4, "Width": 14, "Height": 8},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			  "HasMod: |contains=R5.CP": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {	
+		  "LogName": "Remapping (Earthy) Recolor Louis's Garage Boat Journey SVE",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap", 
+		  "FromFile": "assets/Maps/Louis Garage/Louis.Garage_{{season}}_SVE.png", 
+		  "ToArea": {"X": 296, "Y": 1, "Width": 10, "Height": 9},	
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			  "HasMod: |contains=R5.CP": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  }
+  ]
+}

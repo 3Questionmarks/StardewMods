@@ -1,0 +1,13 @@
+{
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Mods/Lumisteria.MtVapius/Map/MtVapiusMap",
+            "FromFile": "assets/Maps/VisitMountVapius/MtVapiusMap_{{Season}}.png",
+            "When": {
+                "HasMod": "Lumisteria.MtVapius"
+            },
+            "Update": "OnLocationChange"
+        },
+    ]
+}

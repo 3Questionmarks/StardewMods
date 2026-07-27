@@ -1,0 +1,141 @@
+{
+  "Changes": [
+  
+	//Matilda
+	{
+			"LogName": "Matilda Dialogue Trigger Action",
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModId}}.Tilly_MatildaCT": {
+					"Id": "{{ModId}}.Tilly_MatildaCT",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{ModId}}.Tilly 500",
+					"Trigger": "DayEnding",
+					"HostOnly": false,
+					"Action": "AddConversationTopic {{ModId}}.Tilly_Matilda 20",
+					"MarkActionApplied": true,
+				},
+			}
+	},
+  
+	//Cap Hearts if Joja
+	{
+		"LogName": "Cap Hearts to 2",
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {
+			"{{ModId}}.Tilly_CapHearts": {
+				"Id": "{{ModId}}.Tilly_CapHearts",
+				"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{ModId}}.Tilly 500",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "Spiderbuttons.BETAS_SetFriendshipPoints {{ModId}}.Tilly 550",
+				"MarkActionApplied": false,
+			},
+		},
+		"When": {
+			"HasSeenEvent": "502261",
+			"HasSeenEvent | contains = {{ModId}}.Tilly_JojaPlans": false,
+			"HasSeenEvent | contains = {{ModId}}.Tilly_GrandOpeningJoja": false,
+		},
+	},
+	{ //Change the heart cap to 4 hearts after the Joja Plans event as farmer is now helping Tilly
+		"LogName": "Cap Hearts to 4",
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {
+			"{{ModId}}.Tilly_CapHearts4": {
+				"Id": "{{ModId}}.Tilly_CapHearts4",
+				"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{ModId}}.Tilly 1000",
+				"Trigger": "DayEnding",
+				"HostOnly": false,
+				"Action": "Spiderbuttons.BETAS_SetFriendshipPoints {{ModId}}.Tilly 1050",
+				"MarkActionApplied": false,
+			},
+		},
+		"When": {
+			"HasSeenEvent": "502261",
+			"HasSeenEvent | contains = {{ModId}}.Tilly_JojaPlans": true,
+			"HasSeenEvent | contains = {{ModId}}.Tilly_GrandOpeningJoja": false,
+		}, 
+	},
+	
+		//Sweet Tea Recipe ID Migration
+	{
+			"LogName": "Sweet Tea Recipe Migration Trigger Action",
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModId}}.Tilly_SweetTeaRecipeMigration": {
+					"Id": "{{ModId}}.Tilly_SweetTeaRecipeMigration",
+					"Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModId}}.Tilly_SweetTeaRecipe",
+					"Trigger": "DayStarted",
+					"HostOnly": true,
+					"Actions": [
+						"Pathoschild.ContentPatcher_MigrateIds CookingRecipes {{ModId}}.Tilly_SweetTeaRecipe {{ModId}}.Tilly_SweetTea",
+					],
+					"MarkActionApplied": true,
+				},
+			}
+	},
+	
+	//Tea egg Recipe ID Migration
+	{
+			"LogName": "Tea Egg Recipe Migration Trigger Action",
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModId}}.Tilly_TeaEggRecipeMigration": {
+					"Id": "{{ModId}}.Tilly_TeaEggRecipeMigration",
+					"Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModId}}.Tilly_TeaEggRecipe",
+					"Trigger": "DayStarted",
+					"HostOnly": true,
+					"Actions": [
+						"Pathoschild.ContentPatcher_MigrateIds CookingRecipes {{ModId}}.Tilly_TeaEggRecipe {{ModId}}.Tilly_TeaEgg",
+					],
+					"MarkActionApplied": true,
+				},
+			}
+	},
+	
+	//Honeycomb Cake Recipe ID Migration
+	{
+			"LogName": "Honeycomb Cake Recipe Migration Trigger Action",
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModId}}.Tilly_HoneyCakeRecipeMigration": {
+					"Id": "{{ModId}}.Tilly_HoneyCakeRecipeMigration",
+					"Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModId}}.Tilly_HoneyCakeRecipe",
+					"Trigger": "DayStarted",
+					"HostOnly": true,
+					"Actions": [
+						"Pathoschild.ContentPatcher_MigrateIds CookingRecipes {{ModId}}.Tilly_HoneyCakeRecipe {{ModId}}.Tilly_HoneyCake",
+					],
+					"MarkActionApplied": true,
+				},
+			}
+	},
+	
+	//Tea Cake Recipe ID Migration
+	{
+			"LogName": "Tea Cake Recipe Migration Trigger Action",
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModId}}.Tilly_TeaCakeRecipeMigration": {
+					"Id": "{{ModId}}.Tilly_TeaCakeRecipeMigration",
+					"Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModId}}.Tilly_TeaCakeRecipe",
+					"Trigger": "DayStarted",
+					"HostOnly": true,
+					"Actions": [
+						"Pathoschild.ContentPatcher_MigrateIds CookingRecipes {{ModId}}.Tilly_TeaCakeRecipe {{ModId}}.Tilly_TeaCake",
+					],
+					"MarkActionApplied": true,
+				},
+			}
+	},
+	
+	
+  ]
+}

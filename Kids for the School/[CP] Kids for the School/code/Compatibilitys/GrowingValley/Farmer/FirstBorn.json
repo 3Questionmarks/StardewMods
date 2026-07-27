@@ -1,0 +1,41 @@
+{
+  "Changes": [
+//Schedules
+  	{
+			"LogName": "Add Little Red School House schedule for Farmer's daughter as firstborn.",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Characters/schedules/{{Candidus42.LittleNPCs/FirstLittleNPC:Name}}",
+			"Entries": {
+				"Tue": "800 Custom_SchoolHouse 8 16 1 {{Candidus42.LittleNPCs/FirstLittleNPC:Name}}_read \"Strings\\schedules\\{{Candidus42.LittleNPCs/FirstLittleNPC:Name}}:Schoolhouse.000\"/1130 Town 22 26 1 square_3_7 \"Strings\\schedules\\{{Candidus42.LittleNPCs/FirstLittleNPC:Name}}:Schoolhouse.001\"/1250 Custom_SchoolHouse 8 16 1 {{Candidus42.LittleNPCs/FirstLittleNPC:Name}}_read/1550 Town 106 27 2/1820 bed",
+				"Wed": "GOTO Tue",
+				"Fri": "GOTO Tue",
+				"winter_Tue": "GOTO Tue"
+			},
+			"When": {
+        "HasSeenEvent": "9695002",
+				"HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+				"HasMod |contains=siliconmodding.GVChildNPCs": "true",
+				"HasMod |contains=Candidus42.LittleNPCs": "true",
+				"LRSH_NoSchoolDay": false
+			}
+		},
+		{
+			"LogName": "Add Little Red School House schedule for Farmer's daughter as firstborn (rain).",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Characters/schedules/{{Candidus42.LittleNPCs/FirstLittleNPC:Name}}",
+			"Entries": {
+				"rain": "800 Custom_SchoolHouse 8 16 1 {{Candidus42.LittleNPCs/FirstLittleNPC:Name}}_read \"Strings\\schedules\\{{Candidus42.LittleNPCs/FirstLittleNPC:Name}}:Schoolhouse.000\"/1130 Custom_SchoolHouse 8 16 1 {{Candidus42.LittleNPCs/FirstLittleNPC:Name}}_sit \"Strings\\schedules\\{{Candidus42.LittleNPCs/FirstLittleNPC:Name}}:Schoolhouse.002\"/1250 Custom_SchoolHouse 8 16 1 {{Candidus42.LittleNPCs/FirstLittleNPC:Name}}_read/1550 SeedShop 24 15 2/1730 bed"
+			},
+			"When": {
+        "HasSeenEvent": "9695002",
+				"DayOfWeek": "Tuesday, Wednesday, Friday",
+				"HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+				"HasMod |contains=siliconmodding.GVChildNPCs": "true",
+				"HasMod |contains=Candidus42.LittleNPCs": "true",
+				"LRSH_NoSchoolDay": false
+			}
+		}
+  ]
+}

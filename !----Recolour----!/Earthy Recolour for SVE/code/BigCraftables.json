@@ -1,0 +1,23 @@
+{
+    "Changes": 
+    [
+     
+        {
+			"Action": "EditImage",
+            "PatchMode": "Replace",
+            "Priority": "Early",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Beautiful Flower, Mods/FlashShifter.StardewValleyExpandedCP/Big Bush L, Mods/FlashShifter.StardewValleyExpandedCP/Big Bush R, Mods/FlashShifter.StardewValleyExpandedCP/Big Foliage,  Mods/FlashShifter.StardewValleyExpandedCP/Curly Foliage,  Mods/FlashShifter.StardewValleyExpandedCP/Foliage, Mods/FlashShifter.StardewValleyExpandedCP/Jagged Boulder L, Mods/FlashShifter.StardewValleyExpandedCP/Jagged Boulder R,  Mods/FlashShifter.StardewValleyExpandedCP/Little Shrub,  Mods/FlashShifter.StardewValleyExpandedCP/Ordinary Mushroom, Mods/FlashShifter.StardewValleyExpandedCP/Potted Plant, Mods/FlashShifter.StardewValleyExpandedCP/Pretty Flower, Mods/FlashShifter.StardewValleyExpandedCP/Shrub, Mods/FlashShifter.StardewValleyExpandedCP/Small Foliage, Mods/FlashShifter.StardewValleyExpandedCP/Smooth Boulder L, Mods/FlashShifter.StardewValleyExpandedCP/Smooth Boulder R,  Mods/FlashShifter.StardewValleyExpandedCP/Tall Mushroom, Mods/FlashShifter.StardewValleyExpandedCP/Tree Stump, Mods/FlashShifter.StardewValleyExpandedCP/Trimmed Berry Bush L, Mods/FlashShifter.StardewValleyExpandedCP/Trimmed Berry Bush R, Mods/FlashShifter.StardewValleyExpandedCP/Trimmed Bush L, Mods/FlashShifter.StardewValleyExpandedCP/Trimmed Bush R, Mods/FlashShifter.StardewValleyExpandedCP/Wild Berry Bush L, Mods/FlashShifter.StardewValleyExpandedCP/Wild Berry Bush R, Mods/FlashShifter.StardewValleyExpandedCP/Wild Bush L, Mods/FlashShifter.StardewValleyExpandedCP/Wild Bush R",
+			"FromFile": "assets/Items/bigcraftables/{{TargetWithoutPath}}.png",			
+		},
+        {
+			"Action": "EditImage",
+            "PatchMode": "Replace",
+            "Priority": "Early",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Big Crop (stage 1), Mods/FlashShifter.StardewValleyExpandedCP/Big Crop (stage 2), Mods/FlashShifter.StardewValleyExpandedCP/Big Crop (stage 3),  Mods/FlashShifter.StardewValleyExpandedCP/Bushy Crop (stage 1), Mods/FlashShifter.StardewValleyExpandedCP/Bushy Crop (stage 2), Mods/FlashShifter.StardewValleyExpandedCP/Bushy Crop (stage 3),  Mods/FlashShifter.StardewValleyExpandedCP/Corn Crop (stage 1), Mods/FlashShifter.StardewValleyExpandedCP/Corn Crop (stage 2), Mods/FlashShifter.StardewValleyExpandedCP/Corn Crop (stage 3),  Mods/FlashShifter.StardewValleyExpandedCP/Flower Bushel 1, Mods/FlashShifter.StardewValleyExpandedCP/Flower Bushel 2, Mods/FlashShifter.StardewValleyExpandedCP/Flower Bushel 3, Mods/FlashShifter.StardewValleyExpandedCP/Flower Bushel 4, Mods/FlashShifter.StardewValleyExpandedCP/Flower Bushel 5, Mods/FlashShifter.StardewValleyExpandedCP/Flower Bushel 6, Mods/FlashShifter.StardewValleyExpandedCP/Leafy Crop (stage 1), Mods/FlashShifter.StardewValleyExpandedCP/Leafy Crop (stage 2), Mods/FlashShifter.StardewValleyExpandedCP/Leafy Crop (stage 3),   Mods/FlashShifter.StardewValleyExpandedCP/Special Crop (stage 1), Mods/FlashShifter.StardewValleyExpandedCP/Special Crop (stage 2), Mods/FlashShifter.StardewValleyExpandedCP/Special Crop (stage 3),   Mods/FlashShifter.StardewValleyExpandedCP/Tiny Crop (stage 1), Mods/FlashShifter.StardewValleyExpandedCP/Tiny Crop (stage 2), Mods/FlashShifter.StardewValleyExpandedCP/Tiny Crop (stage 3), Mods/FlashShifter.StardewValleyExpandedCP/Trellis Crop (Stage 1), Mods/FlashShifter.StardewValleyExpandedCP/Trellis Crop (Stage 2), Mods/FlashShifter.StardewValleyExpandedCP/Trellis Crop (Stage 3), ",
+			"FromFile": "assets/Items/bigcraftables/{{TargetWithoutPath}}.png",	
+            "When": { "BetterCropsMatching": true, },
+		},
+    
+    
+    ]
+}

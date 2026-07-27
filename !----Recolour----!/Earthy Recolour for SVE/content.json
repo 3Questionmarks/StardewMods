@@ -1,0 +1,185 @@
+{
+    "Format": "2.8.0",
+    "ConfigSchema": {
+        "BigCraftables": {
+		  "AllowValues": "true, false",
+		  "Default": "true",
+		  "Description": "Earthy Recolour-matching decorative boulders, bushes, mushrooms, weeds, etc.",
+	    },
+        "BetterCropsMatching": {
+		  "AllowValues": "true, false",
+		  "Default": "true",
+		  "Description": "Makes the BigCraftable and static map crops match Cometkins' Better Crops. **BigCraftables must also be set to true for this to show**",
+	    },
+        "EnchantedGrove": {
+		  "AllowValues": "true, false",
+		  "Default": "true",
+		  "Description": "Recolor the grass & tree in the enchanted grove warp area",
+	    },
+        "ReplaceFences": {
+		  "AllowValues": "false, BasicOnly, HardwoodOnly, Both",
+		  "Default": "Both",
+		  "Description": "Makes the crafted wood and hardwood fences match the Earthy Recolour static fences (changes seasonally). **Disable the fence replacements in SVE's config as they are unnecessary**",
+	    },
+        "Fences": {
+		  "AllowValues": "true, false",
+		  "Default": "true",
+		  "Description": "Recolors the small hardwood fence & hedge fence. The small hardwood fence matches the Earthy Recolour static fence (not seasonal) and the Hedge Fence has seasonal Earthy leaves and matching gate",
+	    },
+        "SeasonalEdits": {
+		  "AllowValues": "true, false",
+		  "Default": "true",
+		  "Description": "Recolors the seasonal edits (snow piles and leaves) **Disable seasonal edits in SVE's config since unnecessary**",
+	    },
+        "SnowyDebris": {
+		  "AllowValues": "true, false",
+		  "Default": "true",
+		  "Description": "Allows you to turn off the snowy debris (sticks, rocks, logs, etc) separately, in case you use a mod that changes their appearance (must also have SeasonalEdits enabled for it to show)",
+	    },
+        "Trees": {
+		  "AllowValues": "true, false",
+		  "Default": "true",
+		  "Description": "Earthy Recolour-matching wild (fir & birch), fruit (pear, nectarine, persimmon, money), and static (tall evergreen, mushroom, etc) trees",
+	    },
+    },
+    "Changes": [
+    // Big Craftables
+        {
+			"LogName": "BigCraftables Code", 
+			"Action": "Include",
+			"FromFile": "code/BigCraftables.json",
+            "When": {
+                "BigCraftables": true,
+            },
+		},
+    //Fences 
+        {
+            //Basic Fences
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Fence1",
+            "FromFile": "assets/Recolors/Fences/Default/Fence1_{{season}}.png",
+            "When": {
+                "ReplaceFences": "BasicOnly, Both"
+            }
+        },
+        {
+            //Hardwood Fences
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "LooseSprites/Fence5",
+            "FromFile": "assets/Recolors/Fences/Default/Fence5_{{season}}.png",            
+            "When": {
+                "ReplaceFences": "HardwoodOnly, Both"
+            }
+        },
+        {
+			//Hedge Fence base
+            "Action": "EditImage",
+			"PatchMode": "Replace",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Hedge Fence Tilesheet",
+			"FromFile": "assets/Items/fences/Hedge Fence Tilesheet.png",
+            "When": {
+                "Fences": true
+               }
+		},
+        {
+			//Hedge Fence seasonal
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Hedge Fence Tilesheet",
+			"FromFile": "assets/Items/fences/hedge fence tilesheet {{season}}.png",
+			"When": {
+                "Season": "Summer, Fall, Winter",
+				"Fences": true
+               }
+		},
+        {
+			//Small Hardwood Fence
+            "Action": "EditImage",
+			"PatchMode": "Replace",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/Small Hardwood Fence Tilesheet",
+            "FromFile": "assets/Items/Fences/Small Hardwood Fence Tilesheet.png", 
+            "When": {
+                "Fences": true
+               }
+		},
+        
+    //Seasonal edits - primarily snow - from "recolors" folder
+        {
+			"LogName": "Seasonal Edits Code", //Split separately to save "on location change" checks if seasonal edits are disabled
+			"Action": "Include",
+			"FromFile": "code/SeasonalEdits.json",
+            "When": {
+                "SeasonalEdits": true,
+            },
+		},
+        {
+            //Removes leaves
+            "Action": "EditImage",
+            "Target": "Maps/z_Leafs",
+            "Priority": "Late",
+            "FromFile": "Mods/FlashShifter.StardewValleyExpandedCP/assets/Tilesheets/z_NoLeaves.png",
+            "When": {
+                "SeasonalEdits": false
+            },
+        },
+        
+        
+    //Tilesheets that can be targeted normally
+        {			
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+			"Target": "Maps/CastleVillage_Tilesheet, Maps/fall_ValleyBackdrop, Maps/fall_z_extras, Maps/HighlandsBackground, Maps/HighlandsBackground_Fall, Maps/HighlandsBackground_Summer, Maps/HighlandsBackground_Winter, Maps/SakuraVineyardTilesheet, Maps/spring_ValleyBackdrop, Maps/spring_z_extras, Maps/summer_ValleyBackdrop, Maps/summer_z_extras, Maps/VanillaCursors, Maps/winter_GrampletonSuburbsTilesheet, Maps/winter_MorrisModernHouse, Maps/winter_ShearwaterBridgeRenovated, Maps/spring_SVE_Tilesheet2, Maps/summer_SVE_Tilesheet2, Maps/fall_SVE_Tilesheet2, Maps/winter_SVE_Tilesheet2, Maps/winter_ValleyBackdrop, Maps/winter_z_extras, Maps/z_Leaves,",
+			"FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png",			
+		},
+        { 
+            "Action": "EditImage",  //fix shadow on castle
+            "PatchMode": "Replace",
+            "Target": "Maps/CastleVillage_Tilesheet",
+            "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png",
+            "ToArea": { "X": 197, "Y": 298, "Width": 170, "Height": 106 },
+            "FromArea": { "X": 197, "Y": 298, "Width": 170, "Height": 106 },
+        },
+        {			
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+			"Target": "Maps/fall_z_Waterfalls, Maps/IridiumQuarry, Mods/FlashShifter.StardewValleyExpandedCP/SeasonalJA, Maps/spring_z_Waterfalls, Maps/summer_z_Waterfalls, Maps/winter_z_Waterfalls, Maps/z_SVEbuildingShadow, Maps/z_winter_SVEbuildingShadow,",
+			"FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png",			
+		},
+    // Stuff with toggles    
+        //Cometkins Crop-Matching (non-big craftable)
+        {			
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+			"Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+			"FromFile": "assets/Tilesheets/{{TargetWithoutPath}}_Crops.png",
+            "When": { "BetterCropsMatching": true, },
+		},
+        //Enchanted Grove
+        {			
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+			"Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+			"FromFile": "assets/Tilesheets/EnchantedGrove.png",
+            "When": { "EnchantedGrove": true }
+		},
+        //Trees
+        {			
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+			"Target": "Mods/FlashShifter.StardewValleyExpandedCP/{{season}}_Birch_Tree, Mods/FlashShifter.StardewValleyExpandedCP/{{season}}_Fir_Tree, Mods/FlashShifter.StardewValleyExpandedCP/SVEFruitTrees",
+			"FromFile": "assets/Trees/{{TargetWithoutPath}}.png",
+            "When": { "Trees": true }			
+		},
+        {			
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+			"Target": "Maps/spring_SVE_Tilesheet2, Maps/summer_SVE_Tilesheet2, Maps/fall_SVE_Tilesheet2, Maps/winter_SVE_Tilesheet2, Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+			"FromFile": "assets/Tilesheets/{{TargetWithoutPath}}_Trees.png",
+            "When": { "Trees": true }
+		},
+        
+        
+    ]
+}   

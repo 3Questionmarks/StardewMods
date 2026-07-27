@@ -1,0 +1,19 @@
+{
+    "Changes": [
+		{
+			"LogName": "{{ModId}}_Robin",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Robin",
+			"Entries":{
+				"{{ModId}}_Sap_CT": "{{i18n: Robin.Sap_CT}}",
+				"{{ModId}}_Hardwood_CT": "{{i18n: Robin.Hardwood_CT}}",
+				"{{ModId}}_TapperOutputs_CT": "{{i18n: Robin.TapperOutputs_CT}}",
+				"{{ModId}}_TreeSeeds_CT": "{{i18n: Robin.TreeSeeds_CT}}",
+				"{{ModId}}_Chest_CT": "{{i18n: Robin.Chest_CT}}",
+				"{{ModId}}_BigChest_CT": "{{i18n: Robin.BigChest_CT}}",
+				"{{ModId}}_StoneChest_CT": "{{i18n: Robin.StoneChest_CT}}",
+				"{{ModId}}_Scarecrow_CT": "{{i18n: Robin.Scarecrow_CT}}"
+			}
+		}
+	]
+}

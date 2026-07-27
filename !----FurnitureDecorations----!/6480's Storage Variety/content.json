@@ -1,0 +1,158 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    // Adventurer's Pack
+    "AdventurersPackEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "AdventurersPack"
+    },
+
+    // Cigar Box
+    "CigarBoxEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "CigarBox"
+    },
+
+    // Dimensional Portal
+    "DimensionalPortalEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "DimensionalPortal"
+    },
+
+    // Ice Cooler
+    "IceCoolerEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "IceCooler"
+    },
+
+    // Lumber Pile
+    "LumberPileEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "LumberPile"
+    },
+
+    // Mini Storage Shed
+    "MiniStorageShedEnabled": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "MiniStorageShed"
+    },
+
+    // Wooden Cabinet
+    "WoodenCabinetEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "WoodenCabinet"
+    },
+
+    // Wrought-Iron Cellar
+    "WroughtIronCellarEnabled": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "WroughtIronCellar"
+    },
+  },
+  "Changes": [
+    // Adventurer's Pack
+    {
+      "Action": "Include",
+      "FromFile": "data/AdventurersPack.json",
+      "When": {
+        "AdventurersPackEnabled": true
+      }
+    },
+
+    // Cigar Box
+    {
+      "Action": "Include",
+      "FromFile": "data/CigarBox.json",
+      "When": {
+        "CigarBoxEnabled": true
+      }
+    },
+
+    // Dimensional Portal
+    {
+      "Action": "Include",
+      "FromFile": "data/DimensionalPortal.json",
+      "When": {
+        "DimensionalPortalEnabled": true
+      }
+    },
+
+    // Ice Cooler
+    {
+      "Action": "Include",
+      "FromFile": "data/IceCooler.json",
+      "When": {
+        "IceCoolerEnabled": true
+      }
+    },
+
+    // Lumber Pile
+    {
+      "Action": "Include",
+      "FromFile": "data/LumberPile.json",
+      "When": {
+        "LumberPileEnabled": true
+      }
+    },
+
+    // Mini Storage Shed
+    {
+      "Action": "Include",
+      "FromFile": "data/MiniStorageShed.json",
+      "When": {
+        "MiniStorageShedEnabled": true
+      }
+    },
+
+    // Wooden Cabinet
+    {
+      "Action": "Include",
+      "FromFile": "data/WoodenCabinet.json",
+      "When": {
+        "WoodenCabinetEnabled": true
+      }
+    },
+
+    // Wrought-Iron Cellar
+    {
+      "Action": "Include",
+      "FromFile": "data/WroughtIronCellar.json",
+      "When": {
+        "WroughtIronCellarEnabled": true
+      }
+    },
+  ],
+  "DynamicTokens": [
+    {
+      "Name": "UnlockIceCooler",
+      "Value": "null"
+    },
+    {
+      "Name": "UnlockIceCooler",
+      "Value": "default",
+      "When": {
+        "query: {{SkillLevel:Farming}} >= 1": true
+      }
+    },
+    {
+      "Name": "UnlockLumberPile",
+      "Value": "null"
+    },
+    {
+      "Name": "UnlockLumberPile",
+      "Value": "default",
+      "When": {
+        "query: {{SkillLevel:Foraging}} >= 1": true
+      }
+    }
+  ],
+  "$schema": "https://smapi.io/schemas/content-patcher.json"
+}

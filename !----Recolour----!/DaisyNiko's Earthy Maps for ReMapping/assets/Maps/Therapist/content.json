@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Therapist)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Therapist",
+      "FromFile": "assets/Maps/Therapist/Therapist_{{RMP.Season}}.png",
+      "Priority": "Default",
+			"When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    }
+  ]
+}

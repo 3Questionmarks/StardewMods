@@ -1,0 +1,152 @@
+{
+    "Changes": [
+        {
+			"LogName": "{{ModId}}_Blacksmith Shop WITHOUT Year 2 Price Changes Fields",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Blacksmith",
+                "Items"
+            ],
+			"Fields": {
+				"CopperOre_YearOne": {
+					"Condition": ""
+				},
+				"IronOre_YearOne": {
+					"Condition": ""
+				},
+				"GoldOre_YearOne": {
+					"Condition": ""
+				}
+			}
+		},
+		{
+			"LogName": "{{ModId}}_Blacksmith Shop WITHOUT Year 2 Price Changes Entries",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Blacksmith",
+                "Items"
+            ],
+			"Entries": {
+				
+				// RESOURCES
+				
+                "{{ModId}}_ID_IridiumOre": {
+                    "Id": "{{ModId}}_ID_IridiumOre",
+                    "ItemId": "(O)386",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Blacksmith_IridiumOre Received",
+                    "Price": "1000",
+					"AvailableStock": "5"
+                },
+				"{{ModId}}_ID_RadioactiveOre": {
+                    "Id": "{{ModId}}_ID_RadioactiveOre",
+                    "ItemId": "(O)909",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Blacksmith_RadioactiveOre Received",
+                    "Price": "3000",
+					"AvailableStock": "5"
+                },
+				"{{ModId}}_ID_EarthCrystal": {
+                    "Id": "{{ModId}}_ID_EarthCrystal",
+                    "ItemId": "(O)86",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Blacksmith_EarthCrystal Received",
+                    "Price": "500",
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+                "{{ModId}}_ID_RefinedQuartz": {
+                    "Id": "{{ModId}}_ID_RefinedQuartz",
+                    "ItemId": "(O)338",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Blacksmith_RefinedQuartz Received",
+                    "Price": "500",
+					"AvailableStock": "5",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5,
+								1.4,
+								1.3,
+								1.2,
+								1.1,
+								1.0,
+								0.9,
+								0.8,
+								0.7,
+								0.6,
+								0.5,
+							]
+						}
+					]
+                },
+				
+				// BIG CRAFTABLES
+				
+                "{{ModId}}_ID_Furnace": {
+                    "Id": "{{ModId}}_ID_Furnace",
+                    "ItemId": "(BC)13",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Blacksmith_Furnace Received",
+                    "Price": "1800",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_CharcoalKiln": {
+                    "Id": "{{ModId}}_ID_CharcoalKiln",
+                    "ItemId": "(BC)114",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Blacksmith_CharcoalKiln Received",
+                    "Price": "1125",
+					"AvailableStock": "1"
+                },
+                "{{ModId}}_ID_LightningRod": {
+                    "Id": "{{ModId}}_ID_LightningRod",
+                    "ItemId": "(BC)9",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Blacksmith_LightningRod Received",
+                    "Price": "1935",
+					"AvailableStock": "1"
+                },
+				
+				// NON-SVE PLAYERS: SPRINKLERS
+				// MEANT TO BE AVAILABLE FROM GAME START
+				
+                
+                "{{ModId}}_ID_Sprinkler": {
+                    "Id": "{{ModId}}_ID_Sprinkler",
+                    "ItemId": "(O)599",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Clint_Sprinklers Received",
+                    "Price": "1282",
+					"AvailableStock": "5"
+                },
+				"{{ModId}}_ID_QualitySprinkler": {
+                    "Id": "{{ModId}}_ID_QualitySprinkler",
+                    "ItemId": "(O)621",
+					"Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Mail_Clint_Sprinklers Received",
+                    "Price": "3195",
+					"AvailableStock": "5"
+                },
+				
+				// EXISTING ENTRIES CHANGES
+				
+				"CopperOre_AfterYearOne": null,
+				"IronOre_AfterYearOne": null,
+				"Coal_AfterYearOne": null,
+				"GoldOre_AfterYearOne": null,
+            }
+        }
+    ]
+}

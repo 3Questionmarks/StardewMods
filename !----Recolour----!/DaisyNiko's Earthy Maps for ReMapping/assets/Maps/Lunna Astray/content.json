@@ -1,0 +1,43 @@
+{
+	"Changes": [
+    {
+      "LogName": "(Earthy) Recolor Remapping (Lunna)",
+      "Action": "EditImage",
+      "Target": "Mods/ReMapping.Vlgor/Lunna",
+      "FromFile": "assets/Maps/Lunna Astray/Lunna_{{RMP.Season}}_{{RMP.Source}}.png",
+      "Priority": "Default",
+      "When": {
+			  "RMP Enable (Earthy) Recolour": "ON"
+		  }
+    },
+//Boat Journey
+    {	
+		  "LogName": "Remapping (Earthy) Recolor Lunna Boat Journey",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap",
+		  "FromFile": "assets/Maps/Lunna Astray/Lunna_{{season}}_Vanilla.png",
+		  "FromArea": {"X": 0, "Y": 26, "Width": 31, "Height": 16},
+		  "ToArea": {"X": 85, "Y": 6, "Width": 31, "Height": 16},
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			  "HasMod: |contains=Rafseazz.LunnaCP": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  },
+	  {	
+		  "LogName": "Remapping (Earthy) Recolor Lunna Boat Journey SVE",
+		  "Action": "EditImage",
+		  "Target": "Minigames/{{season}}_boatJourneyMap",
+		  "FromFile": "assets/Maps/Lunna Astray/Lunna_{{season}}_SVE.png",
+		  "FromArea": {"X": 0, "Y": 23, "Width": 31, "Height": 17},
+		  "ToArea": {"X": 85, "Y": 4, "Width": 31, "Height": 17},
+		  "PatchMode": "Overlay",
+		  "When": {
+			  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			  "HasMod: |contains=Rafseazz.LunnaCP": true,
+        "RMP Enable (Earthy) Recolour": "ON"
+		  }
+	  }
+  ]
+}

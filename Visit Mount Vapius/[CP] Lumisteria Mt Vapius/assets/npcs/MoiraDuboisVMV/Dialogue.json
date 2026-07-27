@@ -15,10 +15,13 @@
 		//2
         "Mon4": "{{i18n: MoiraDialogueMon2}}",
         "Tue2": "{{i18n: MoiraDialogueTue2{{Random:R01, R02}}|RandomPlaceName={{RandomPlaceName}}}}",
+        "Lumisteria.MtVapius_Tue2R01BetasReaction": "{{i18n: MoiraDialogueTue2R01BetasReaction}}",
         "Wed2": "{{i18n: MoiraDialogueWed2}}",
         "Thu2": "{{i18n: MoiraDialogueThu2}}",
         "Fri2": "{{i18n: MoiraDialogueFri2}}",
         "Sat2": "{{i18n: MoiraDialogueSat2{{Random:R01, R02}}}}",
+        "Lumisteria.MtVapius_Sat2R01BetasReaction": "{{i18n: MoiraDialogueSat2R01BetasReaction}}",
+        "Lumisteria.MtVapius_Sat2R02BetasReaction": "{{i18n: MoiraDialogueSat2R02BetasReaction}}",
         "Sun2": "{{i18n: MoiraDialogueSun2}}",
 		//4
         "Mon4": "{{i18n: MoiraDialogueMon4}}",
@@ -44,7 +47,7 @@
         "winter_20": "{{i18n: MoiraDialoguewinter_20}}",
         "winter_20_2": "{{i18n: MoiraDialoguewinter_20_2}}",
         "winter_24": "{{i18n: MoiraDialoguewinter_24}}",
-        "winter_24_2": "{{i18n: MoiraDialoguewinter_20_2}}",
+        "winter_24_2": "{{i18n: MoiraDialoguewinter_24_2}}",
 		//Resort
 		"Resort": "{{i18n: MoiraDialogueResort}}",
 		//Conversation Topics
@@ -55,6 +58,11 @@
         "eventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneday": "{{i18n: MoiraDialogueeventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneday}}",
         "eventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneweek": "{{i18n: MoiraDialogueeventSeen_Lumisteria.MtVapius_Inn_MoiraCelestineMeeting_memory_oneweek}}",
         "eventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday": "{{i18n: MoiraDialogueeventSeen_Lumisteria.MtVapius_Hamlet_Maddy4H_memory_oneday}}",
+        "eventSeen_tiakall.wren.H4_memory_oneweek": "{{i18n: MoiraDialogueeventSeen_tiakall.wren.H4_memory_oneweek}}",
+		
+        "GreenRain": "{{i18n: MoiraDialogueGreenRain}}",
+        "Lumisteria.MtVapius_GreenRainBetasReaction": "{{i18n: MoiraDialogueGreenRainBetasReaction}}",
+      
       }
     },
     {
@@ -104,18 +112,36 @@
       "Entries": {
 	  
 		//10
-        "Mon10": "{{i18n: MoiraDialogueMon10}}",
+        "Mon10": "{{i18n: MoiraDialogueMon10{{Random:R01, R02}}}}",
         "Tue10": "{{i18n: MoiraDialogueTue10}}",
         "Wed10": "{{i18n: MoiraDialogueWed10}}",
         "Thu10": "{{i18n: MoiraDialogueThu10}}",
         "Fri10": "{{i18n: MoiraDialogueFri10}}",
         "Sat10": "{{i18n: MoiraDialogueSat10}}",
-        "Sun10": "{{i18n: MoiraDialogueSun10}}",
+        "Sun10": "{{i18n: MoiraDialogueSun10{{Random:R01, R02}}}}",
 		
 		
       },
 	  "When": { "Random: true, true, true, true, false": "true"}
 
+    },
+    {
+      "LogName": "Moira 10 Heart Romantic Conditional",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MoiraDuboisVMV",
+      "Entries": {
+        "Mon10": "{{i18n: MoiraDialogueMon10Romantic}}",
+        "Tue10": "{{i18n: MoiraDialogueTue10Romantic}}",
+        "Wed10": "{{i18n: MoiraDialogueWed10Romantic}}",
+        "Fri10": "{{i18n: MoiraDialogueThu10Romantic}}",
+        "Fri10": "{{i18n: MoiraDialogueFri10Romantic}}",
+        "Sat10": "{{i18n: MoiraDialogueSat10Romantic}}",
+        "Sat10": "{{i18n: MoiraDialogueSun10Romantic}}",
+      },
+      "When": {
+        "Random: true, true, true, false": "true",
+		"Relationship:MoiraDuboisVMV": "Dating, Engaged",
+      }
     },
     {
       "LogName": "Moira Dialogue Gift Taste",

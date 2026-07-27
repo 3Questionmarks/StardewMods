@@ -1,0 +1,46 @@
+{
+    "Name": "Alternativ BusStop",
+    "Author": "N3cro_92",
+    "Version": "1.0.6",
+    "Description": "Alternativ BusStop",
+    "UniqueID": "N3cro_92.AlternativBusStop",
+    "MinimumApiVersion": "4.0.7",
+    "UpdateKeys": [ "Nexus:30973" ],
+    "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "DaisyNiko.EarthyRecolour",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "grapeponta.VibrantPastoralRecolor",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Lita.StarblueValleyUnofficial",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Stuyk.HardwareStoreCP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Kana.PrettierBusStop",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Rafseazz.RSVCP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Rafseazz.RidgesideVillage",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+            "IsRequired": false
+        },
+    ]
+}

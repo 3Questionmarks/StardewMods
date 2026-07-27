@@ -1,0 +1,21 @@
+{
+  "Changes": [
+    {
+			"LogName": "Add Little Red School House schedule for Alex's daughter as secondborn.",
+			"Action": "EditData",
+			"Target": "Characters/schedules/{{Candidus42.LittleNPCs/SecondLittleNPC:Name}}",
+			"Priority": "Late",
+			"Entries": {
+				"Tue": "710 Custom_SchoolHouse_SecondFloor 10 17 1/800 Custom_SchoolHouse_SecondFloor 11 16 1 {{Candidus42.LittleNPCs/SecondLittleNPC:Name}}_read \"Strings\\schedules\\{{Candidus42.LittleNPCs/SecondLittleNPC:Name}}:Schoolhouse.000\"/1130 Town 18 89 1 \"Strings\\schedules\\{{Candidus42.LittleNPCs/SecondLittleNPC:Name}}:trash.000/1600 Town 38 78 2 {{Candidus42.LittleNPCs/SecondLittleNPC:Name}}_spin \"Strings\\schedules\\{{Candidus42.LittleNPCs/SecondLittleNPC:Name}}:spin.000/1730 bed",
+				"Wed": "710 Custom_SchoolHouse_SecondFloor 10 17 1/800 Custom_SchoolHouse_SecondFloor 11 16 1 {{Candidus42.LittleNPCs/SecondLittleNPC:Name}}_read \"Strings\\schedules\\{{Candidus42.LittleNPCs/SecondLittleNPC:Name}}:Schoolhouse.000\"/1130 Town 51 63 1 \"Strings\\schedules\\{{Candidus42.LittleNPCs/SecondLittleNPC:Name}}:trash.001/1600 Town 38 78 2 {{Candidus42.LittleNPCs/SecondLittleNPC:Name}}_spin \"Strings\\schedules\\{{Candidus42.LittleNPCs/SecondLittleNPC:Name}}:spin.000/1730 bed"
+			},
+			"When": {
+        "HasSeenEvent": "9695002",
+				"HasMod |contains=Xiddav.LittleRedSchoolHouse": "true",
+				"HasMod |contains=siliconmodding.GVChildNPCs": "true",
+				"HasMod |contains=Candidus42.LittleNPCs": "true",
+				"LRSH_NoSchoolDay": false
+			}
+		}
+  ]
+}

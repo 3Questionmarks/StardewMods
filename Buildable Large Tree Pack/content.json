@@ -1,0 +1,392 @@
+{
+  "Format": "2.8.0",
+
+
+    "ConfigSchema": {
+
+      "EnableThisMod": {
+        "AllowValues": "true, false",
+        "Default": "true"
+      },
+
+      "RemoveBuildRestrictions": { //建設解放条件の削除
+        "AllowValues": "true,false",
+        "Default": "false"
+      },
+      "FreeToBuild": { //建設費がかからない
+        "AllowValues": "true, false",
+        "Default": "false"
+      },
+      "ImmediateBuildFinish": { //建設が一瞬で終わる
+        "AllowValues": "true, false",
+        "Default": "false"
+      },
+      "TransparentWhenGoBehind": { //背後に立った時に透過する
+        "AllowValues": "true, false",
+        "Default": "false"
+      },
+      "BuildOnTheFloor": { //装飾床の上に建設する
+        "AllowValues": "true, false",
+        "Default": "false"
+      },
+      "DisableAction": { //アクションを無効にする
+        "AllowValues": "true, false",
+        "Default": "false"
+      },
+
+      "Enable_Large": { //ラージ
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "ConstructionMenu"
+      },
+      "Enable_Large_Replica": { //ラージ レプリカ
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "ConstructionMenu"
+      },
+      "Enable_Town": { //タウン
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "ConstructionMenu"
+      },
+      "Enable_Town_Replica": { //タウン レプリカ
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "ConstructionMenu"
+      },
+      "Enable_Wild": { //ワイルド
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "ConstructionMenu"
+      },
+      "Enable_Wild_Replica": { //ワイルド レプリカ
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "ConstructionMenu"
+      },
+      "Enable_Very": { //ベリーラージ
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "ConstructionMenu"
+      },
+      "Enable_Very_Replica": { //ベリーラージ レプリカ
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "ConstructionMenu"
+      }
+
+    },//▼"ConfigSchema"の終了▼
+
+
+    "DynamicTokens": [
+
+    //●以下、「建築制限制御 ラージ」用トークン
+      {
+        "Name": "DT_BuildCondition",
+        "Value": "PLAYER_HAS_MAIL Any {{ModId}}_BuildableLargeTreePack.Mail Received"
+      },
+      {
+        "Name": "DT_BuildCondition",
+        "Value": "YEAR 1",
+        "When": {
+          "RemoveBuildRestrictions": "true"
+        }
+      },
+      {
+        "Name": "DT_BuildCondition",
+        "Value": "YEAR 99",
+        "When": {
+          "Enable_Large": "false"
+        }
+      },
+
+    //●以下、「建築制限制御 ラージ のレプリカ」用トークン
+      {
+        "Name": "DT_BuildCondition_Replica",
+        "Value": "PLAYER_HAS_MAIL Any {{ModId}}_BuildableLargeTreePack.Mail Received"
+      },
+      {
+        "Name": "DT_BuildCondition_Replica",
+        "Value": "YEAR 1",
+        "When": {
+          "RemoveBuildRestrictions": "true"
+        }
+      },
+      {
+        "Name": "DT_BuildCondition_Replica",
+        "Value": "YEAR 99",
+        "When": {
+          "Enable_Large_Replica": "false"
+        }
+      },
+
+   //●以下、「建築制限制御 タウン」用トークン
+      {
+        "Name": "DT_BuildCondition_Town",
+        "Value": "PLAYER_HAS_MAIL Any {{ModId}}_BuildableLargeTreePack.Mail Received"
+      },
+      {
+        "Name": "DT_BuildCondition_Town",
+        "Value": "YEAR 1",
+        "When": {
+          "RemoveBuildRestrictions": "true"
+        }
+      },
+      {
+        "Name": "DT_BuildCondition_Town",
+        "Value": "YEAR 99",
+        "When": {
+          "Enable_Town": "false"
+        }
+      },
+
+   //●以下、「建築制限制御 タウン のレプリカ」用トークン
+      {
+        "Name": "DT_BuildCondition_Town_Replica",
+        "Value": "PLAYER_HAS_MAIL Any {{ModId}}_BuildableLargeTreePack.Mail Received"
+      },
+      {
+        "Name": "DT_BuildCondition_Town_Replica",
+        "Value": "YEAR 1",
+        "When": {
+          "RemoveBuildRestrictions": "true"
+        }
+      },
+      {
+        "Name": "DT_BuildCondition_Town_Replica",
+        "Value": "YEAR 99",
+        "When": {
+          "Enable_Town_Replica": "false"
+        }
+      },
+
+   //●以下、「建築制限制御 ワイルド」用トークン
+      {
+        "Name": "DT_BuildCondition_Wild",
+        "Value": "PLAYER_HAS_MAIL Any {{ModId}}_BuildableLargeTreePack.Mail Received"
+      },
+      {
+        "Name": "DT_BuildCondition_Wild",
+        "Value": "YEAR 1",
+        "When": {
+          "RemoveBuildRestrictions": "true"
+        }
+      },
+      {
+        "Name": "DT_BuildCondition_Wild",
+        "Value": "YEAR 99",
+        "When": {
+          "Enable_Wild": "false"
+        }
+      },
+
+   //●以下、「建築制限制御 ワイルド のレプリカ」用トークン
+      {
+        "Name": "DT_BuildCondition_Wild_Replica",
+        "Value": "PLAYER_HAS_MAIL Any {{ModId}}_BuildableLargeTreePack.Mail Received"
+      },
+      {
+        "Name": "DT_BuildCondition_Wild_Replica",
+        "Value": "YEAR 1",
+        "When": {
+          "RemoveBuildRestrictions": "true"
+        }
+      },
+      {
+        "Name": "DT_BuildCondition_Wild_Replica",
+        "Value": "YEAR 99",
+        "When": {
+          "Enable_Wild_Replica": "false"
+        }
+      },
+
+   //●以下、「建築制限制御 ベリーラージ」用トークン
+      {
+        "Name": "DT_BuildCondition_Very",
+        "Value": "PLAYER_HAS_MAIL Any {{ModId}}_BuildableLargeTreePack.Mail Received"
+      },
+      {
+        "Name": "DT_BuildCondition_Very",
+        "Value": "YEAR 1",
+        "When": {
+          "RemoveBuildRestrictions": "true"
+        }
+      },
+      {
+        "Name": "DT_BuildCondition_Very",
+        "Value": "YEAR 99",
+        "When": {
+          "Enable_Very": "false"
+        }
+      },
+
+   //●以下、「建築制限制御 ベリーラージ のレプリカ」用トークン
+      {
+        "Name": "DT_BuildCondition_Very_Replica",
+        "Value": "PLAYER_HAS_MAIL Any {{ModId}}_BuildableLargeTreePack.Mail Received"
+      },
+      {
+        "Name": "DT_BuildCondition_Very_Replica",
+        "Value": "YEAR 1",
+        "When": {
+          "RemoveBuildRestrictions": "true"
+        }
+      },
+      {
+        "Name": "DT_BuildCondition_Very_Replica",
+        "Value": "YEAR 99",
+        "When": {
+          "Enable_Very_Replica": "false"
+        }
+      },
+
+   //●以下、「共通その他」用トークン
+      {
+        "Name": "DT_BuildCost",
+        "Value": "3000"
+      },
+      {
+        "Name": "DT_BuildCost",
+        "Value": "0",
+        "When": {
+          "FreeToBuild": "true"
+        }
+      },
+      {
+        "Name": "DT_BuildCost_Replica",
+        "Value": "1500"
+      },
+      {
+        "Name": "DT_BuildCost_Replica",
+        "Value": "0",
+        "When": {
+          "FreeToBuild": "true"
+        }
+      },
+      {
+        "Name": "DT_BuildCost_Very",
+        "Value": "5000"
+      },
+      {
+        "Name": "DT_BuildCost_Very",
+        "Value": "0",
+        "When": {
+          "FreeToBuild": "true"
+        }
+      },
+      {
+        "Name": "DT_BuildCost_Very_Replica",
+        "Value": "2500"
+      },
+      {
+        "Name": "DT_BuildCost_Very_Replica",
+        "Value": "0",
+        "When": {
+          "FreeToBuild": "true"
+        }
+      },
+      {
+        "Name": "DT_BuildDays",
+        "Value": "2"
+      },
+      {
+        "Name": "DT_BuildDays",
+        "Value": "0",
+        "When": {
+          "ImmediateBuildFinish": "true"
+        }
+      },
+      {
+        "Name": "DT_BuildDays_Very",
+        "Value": "3"
+      },
+      {
+        "Name": "DT_BuildDays_Very",
+        "Value": "0",
+        "When": {
+          "ImmediateBuildFinish": "true"
+        }
+      },
+      {
+        "Name": "DT_DefaultAction",
+        "Value": "Dialogue {{i18n:Dialogue}}"
+      },
+      {
+        "Name": "DT_DefaultAction",
+        "Value": "null",
+        "When": {
+          "DisableAction": "true"
+        }
+      },
+
+   //●以下、「共通その他」用トークン
+      {
+        "Name": "DT_TriggerPatch",
+        "Value": "Now",
+        "When": {
+          "RemoveBuildRestrictions": "false"
+        }
+      },
+      {
+        "Name": "DT_TriggerPatch",
+        "Value": "Received",
+        "When": {
+          "RemoveBuildRestrictions": "true"
+        }
+      }
+
+    ],//▼"DynamicTokens"の終了▼
+
+
+    "Changes": [
+
+
+  //★★★ タイルシートの読み込み★★★
+      {
+        "Action": "Load",
+        "Target": "
+                   Buildings/Ts_BLTP_LargeTree,
+                   Buildings/Ts_BLTP_LargeTree(DN),
+                   Buildings/Ts_BLTP_LargeTree(SF),
+                   Buildings/Ts_BLTP_LargeTree(SF-DN),
+                   Buildings/Ts_BLTP_LargeTree(SF-VP),
+                   Buildings/Ts_BLTP_LargeTree(SF-VP_GreenFall),
+                   Buildings/Ts_BLTP_LargeTree(VP),
+                   Buildings/Ts_BLTP_LargeTree(VP_GreenFall),
+                   Buildings/Ts_BLTP_TownLargeTree,
+                   Buildings/Ts_BLTP_TownLargeTree(DN),
+                   Buildings/Ts_BLTP_TownLargeTree(SF),
+                   Buildings/Ts_BLTP_TownLargeTree(SF-DN),
+                   Buildings/Ts_BLTP_TownLargeTree(SF-VP),
+                   Buildings/Ts_BLTP_TownLargeTree(SF-VP_GreenFall),
+                   Buildings/Ts_BLTP_TownLargeTree(VP),
+                   Buildings/Ts_BLTP_TownLargeTree(VP_GreenFall),
+                   Buildings/Ts_BLTP_WildLargeTree,
+                   Buildings/Ts_BLTP_WildLargeTree(DN),
+                   Buildings/Ts_BLTP_WildLargeTree(SF),
+                   Buildings/Ts_BLTP_WildLargeTree(SF-DN),
+                   Buildings/Ts_BLTP_WildLargeTree(SF-VP),
+                   Buildings/Ts_BLTP_WildLargeTree(VP),
+                   Buildings/Ts_BLTP_VeryLargeTree,
+                   Buildings/Ts_BLTP_VeryLargeTree(DN),
+                   Buildings/Ts_BLTP_VeryLargeTree(SF),
+                   Buildings/Ts_BLTP_VeryLargeTree(SF-DN),
+                   Buildings/Ts_BLTP_VeryLargeTree(SF-VP),
+                   Buildings/Ts_BLTP_VeryLargeTree(VP),
+                  ",
+        "FromFile": "assets/png/{{TargetWithoutPath}}.png"
+      },
+
+
+  //★★★ 別json読み込み ★★★
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/Buildings.json,
+                     assets/json/Mail_and_TriggerActions.json
+                    ",
+        "When": { "EnableThisMod": "true" }
+      },
+
+
+    ]//▼▼"Changes"の終了▼▼
+}

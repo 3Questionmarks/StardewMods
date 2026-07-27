@@ -1,0 +1,15 @@
+{
+   "Name":"Maximalism - Artist Debris CP",
+   "Author":"smallcopper",
+   "Version":"1.0.0",
+   "Description":"Adds a collection of decorative artist's clutter via Content Patcher.",
+   "UniqueID":"smallcopper.art.cp",
+   "MinimumApiVersion":"4.0",
+   "UpdateKeys": [
+      "Nexus:26106"
+   ],
+   "ContentPackFor":{
+      "UniqueID":"Pathoschild.ContentPatcher",
+      "MinimumVersion": "2.7.0"
+   }
+}

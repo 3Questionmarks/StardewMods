@@ -1,0 +1,79 @@
+{
+
+//★★★ModConfig★★★
+
+    "config.EnableThisMod.name": "Habilitar este mod",
+    "config.EnableThisMod.description": "Activar/Desactivar este mod en sí.",
+
+    "config.EntranceSleep.name": "Entrada Dormir",
+    "config.EntranceSleep.description": "Si activas esta opción, podrás dormir al tocar la casilla a la entrada de la tienda (antes de entrar al mapa interior). (Puedes cancelar la confirmación y entrar en la tienda).",
+
+    "config.FreeToBuild.name": "Gratis el costo de construir",
+    "config.FreeToBuild.description": "Cuando se activa la configuración, el costo de construcción será cero y se eliminarán los materiales necesarios..",
+
+    "config.ImmediateBuildFinish.name": "Construcción de inmediato",
+    "config.ImmediateBuildFinish.description": "Activar la configuración permite terminar la construcción de la tienda de campaña de inmediato.",
+
+    "config.SeasonalAppearance.name": "Apariencia estacional",
+    "config.SeasonalAppearance.description": "Si está desactivado, la apariencia no cambiará según la temporada. (Fijado a la primavera) Esta configuración se aplica a todos los tipos de tiendas de campaña.",
+
+    "config.TentShadowTyep.name": "Tent Shadow Tyep",
+    "config.TentShadowTyep.description": "\"Brown\" is the color and intensity of the shadow of the vanilla building. This setting applies to all color type tents.",
+    "config.TentShadowTyep.values.Brown": "Brown",
+    "config.TentShadowTyep.values.Brown(Thinner)": "Brown(Thinner)",
+    "config.TentShadowTyep.values.Black": "Black",
+    "config.TentShadowTyep.values.Black(Thinner)": "Black(Thinner)",
+
+    "config.InDoorColor.name": "Color interior",
+    "config.InDoorColor.description": "Puedes cambiar el color del interior de las tiendas de campaña. Esta configuración se aplica a tiendas de campaña de todos los tipos de color..",
+    "config.InDoorColor.values.Vanilla(Yellow)": "Vanilla (Amarillo)",
+    "config.InDoorColor.values.Black": "Negra",
+    "config.InDoorColor.values.Blue": "Azul",
+    "config.InDoorColor.values.Green": "Verde",
+    "config.InDoorColor.values.Purple": "Morada",
+    "config.InDoorColor.values.Red": "Roja",
+    "config.InDoorColor.values.White": "Blanca",
+
+  //●以下、動物表示関係のセクション
+    "config.section.DisplayAnimalsSetting.name": "Visualización de animales",
+    "config.section.DisplayAnimalsSetting.description": "La posición de la exhibición de animales (común a todas las tiendas) y si el animal se exhibe en cada tienda.",
+
+    "config.AnimalsDrawPosition.name": "Posición del dibujo de animales",
+    "config.AnimalsDrawPosition.description": "Puedes seleccionar la posición donde aparecerá el animal. Esta configuración se aplica a todas las tiendas de campaña.",
+    "config.AnimalsDrawPosition.values.OnTheTarp": "En la lona",
+    "config.AnimalsDrawPosition.values.OnTheTent": "En la tienda",
+
+    "config.EnableAnimal_Vanilla(Yellow).name": "Tienda de campaña amarilla",
+    "config.EnableAnimal_Vanilla(Yellow).description": "Exhibe animales en tiendas de campaña de este color.",
+    "config.EnableAnimal_Black.name": "Tienda de campaña negra",
+    "config.EnableAnimal_Black.description": "Exhibe animales en tiendas de campaña de este color.",
+    "config.EnableAnimal_Blue.name": "Tienda de campaña azul",
+    "config.EnableAnimal_Blue.description": "Exhibe animales en tiendas de campaña de este color.",
+    "config.EnableAnimal_Green.name": "Tienda de campaña verde",
+    "config.EnableAnimal_Green.description": "Exhibe animales en tiendas de campaña de este color.",
+    "config.EnableAnimal_Purple.name": "Tienda de campaña moradas",
+    "config.EnableAnimal_Purple.description": "Exhibe animales en tiendas de campaña de este color.",
+    "config.EnableAnimal_Red.name": "Tienda de campaña rojas",
+    "config.EnableAnimal_Red.description": "Exhibe animales en tiendas de campaña de este color.",
+    "config.EnableAnimal_White.name": "Tienda de campaña blancas",
+    "config.EnableAnimal_White.description": "Exhibe animales en tiendas de campaña de este color.",
+    "config.EnableAnimal_RandomColor.name": "Tienda de campaña aleatorias",
+    "config.EnableAnimal_RandomColor.description": "Exhibe animales en tiendas de campaña de este color.",
+
+
+
+//★★★Name, Description, Text★★★
+
+    "CampingTentWithTarp_Name": "Tienda de campaña con lona (Amarilla)",
+    "CampingTentWithTarp_Black_Name": "Tienda de campaña con lona (Negra)",
+    "CampingTentWithTarp_Blue_Name": "Tienda de campaña con lona (Azul)",
+    "CampingTentWithTarp_Green_Name": "Tienda de campaña con lona(Verde)",
+    "CampingTentWithTarp_Purple_Name": "Tienda de campaña con lona(Morada)",
+    "CampingTentWithTarp_Red_Name": "Tienda de campaña con lona (Roja)",
+    "CampingTentWithTarp_White_Name": "Tienda de campaña con lona (Blanca)",
+    "CampingTentWithTarp_Description": "¡Tomemos un descanso!\nEl saco de dormir del interior se puede utilizar para terminar el día y guardar partida.",
+
+    "CampingTentWithTarp_RandomColor_Name": "Tienda de campaña (Aleatoria)",
+    "CampingTentWithTarp_RandomColor_Description": "Por alguna razón, esta misteriosa tienda cambia de color cada mañana cuando te despiertas.",
+
+}

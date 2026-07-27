@@ -1,0 +1,52 @@
+{
+"Changes": [
+
+
+    {
+      "Action": "EditImage",
+      "Target": "Maps/capebuildings",
+      "FromFile": "Assets/Tilesheets/capebuildings_fall.png",
+      "When": {
+        "Season": "Fall"
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/capebuildings",
+      "FromFile": "Assets/Tilesheets/capebuildings_winter.png",
+      "When": {
+        "Season": "Winter"
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/spring_fixedhouse",
+      "FromFile": "Assets/Tilesheets/winter_fixedhouse.png",
+      "When": {
+        "Season": "Winter"
+      },
+      "PatchMode": "Replace"
+    },
+    
+    {
+      "Action": "EditImage",
+      "Target": "TileSheets/Projectiles",
+      "PatchMode": "Overlay",
+      "FromFile": "assets/TileSheets/capeprojectiles.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 128,
+        "Height": 112
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 128,
+        "Height": 112
+      }
+    },
+////////
+
+]
+}
