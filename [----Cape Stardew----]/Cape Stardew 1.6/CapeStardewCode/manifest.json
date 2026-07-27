@@ -1,0 +1,32 @@
+{
+"Name": "CapeStardewCode",
+"Description": "misc",
+"UniqueID": "dreamygloom.CapeStardewCode",
+"UpdateKeys": [ "Nexus:14635" ],
+"Author": "dreamygloom",
+"Version": "7.2.4",
+"EntryDll": "CapeStardewCode.dll",
+"MinimumApiVersion": "3.0.0",
+"Dependencies": [
+{
+"UniqueID": "dreamy.kickitspot",
+"IsRequired": true
+},
+{
+"UniqueID": "Pathoschild.ContentPatcher",
+"IsRequired": false
+},
+{
+"UniqueID": "spacechase0.SpaceCore",
+"IsRequired": true
+},
+{
+"UniqueID": "DLX.Bundles",
+"IsRequired": false
+},
+{
+"UniqueID": "spacechase0.GenericModConfigMenu",
+"IsRequired": false
+}
+]
+}
